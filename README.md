@@ -22,6 +22,7 @@ Benchmarked across 10 test cases (2 per framework) using eval framework — each
   - [HIPAA](#-hipaa)
 - [Potential Use Cases](#potential-use-cases)
 - [How to Install a Skill](#how-to-install-a-skill)
+- [Install via Claude Code Marketplace](#install-via-claude-code-marketplace)
 - [Skill Evaluation](#skill-evaluation)
 - [Support & Contributing](#support--contributing)
 - [Author](#author)
@@ -177,14 +178,40 @@ The HIPAA skill turns Claude into a knowledgeable HIPAA compliance advisor cover
 
 ## How to Install a Skill
 
-1. Download the `.skill` file for the framework you need from this repository (see the folders above).
-2. Open Claude and navigate to **Settings → Skills**.
+1. Download the `.skill` file for the framework you need:
+
+   | Framework | File |
+   |-----------|------|
+   | 🔐 ISO 27001 | [`ISO 27001 - Claude Skill/iso27001.skill`](ISO%2027001%20-%20Claude%20Skill/iso27001.skill) |
+   | ✅ SOC 2 | [`SOC 2 - Claude Skill/soc2.skill`](SOC%202%20-%20Claude%20Skill/soc2.skill) |
+   | 🏛️ FedRAMP | [`FedRamp - Claude Skill/fedramp.skill`](FedRamp%20-%20Claude%20Skill/fedramp.skill) |
+   | 🇪🇺 GDPR | [`GDPR - Claude Skill/gdpr-compliance.skill`](GDPR%20-%20Claude%20Skill%20/gdpr-compliance.skill) |
+   | 🏥 HIPAA | [`HIPAA - Claude Skill/hipaa-compliance.skill`](HIPAA%20-%20Claude%20Skill/hipaa-compliance.skill) |
+
+2. Open Claude and navigate to **Customize → Skills**.
 3. Click **Upload Skill** and select the `.skill` file.
 4. The skill is now active. Start a new conversation and ask your compliance question — Claude will automatically apply the skill.
 
 > **Tip:** You can install multiple skills at once. If you work across several frameworks (e.g., both ISO 27001 and SOC 2), install all of them — Claude will activate whichever is most relevant to each question.
 
 ![Installing Skills in Claude](Installing%20Skills%20in%20Claude.png)
+
+---
+
+## Install via Claude Code Marketplace
+
+If you use [Claude Code](https://claude.ai/claude-code) — the AI-powered CLI for developers — these skills are also available as installable Claude Code plugins through a hosted marketplace. This is the recommended installation path for developers and teams, as it supports version-pinning, automatic updates, and team-wide distribution without any manual file handling.
+
+Add the marketplace and install the skills you need directly from the terminal:
+
+```shell
+/plugin marketplace add Sushegaad/Claude-Skills-Governance-Risk-and-Compliance
+/plugin install iso27001@grc-skills
+```
+
+Teams can pre-wire the marketplace in `.claude/settings.json` so every developer gets the skills automatically when they open the project — no manual install required.
+
+📖 **[Full installation instructions, team setup, and update guide → INSTALLATION.md](INSTALLATION.md)**
 
 ---
 
