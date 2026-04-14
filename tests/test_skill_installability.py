@@ -184,6 +184,7 @@ EXPECTED_SKILLS = {
     "hipaa-compliance.skill",
     "iso27001.skill",
     "ISO-42001.skill",
+    "ISO-9001.skill",
     "NIST Cybersecurity.skill",
     "PCI-Compliance.skill",
     "soc2.skill",
@@ -192,7 +193,7 @@ EXPECTED_SKILLS = {
 
 
 def test_all_expected_skills_present():
-    """All 9 expected .skill files must exist in the repository."""
+    """All 10 expected .skill files must exist in the repository."""
     found = {p.name for p in SKILL_FILES}
     missing = EXPECTED_SKILLS - found
     assert not missing, (

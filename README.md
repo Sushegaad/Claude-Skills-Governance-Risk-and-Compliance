@@ -1,11 +1,11 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
-Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, and ISO 42001 AI Management System — powered by Claude Skills.
+Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, and ISO 9001 Quality Management System — powered by Claude Skills.
 
 Benchmarked across 18 test cases (2 per framework) using the eval framework — each graded against 4–5 verifiable assertions by independent agents. Skills scored **94% ± 10%** vs a baseline of 72% ± 28%.
 
 [![Release: v0.3.0](https://img.shields.io/badge/Release-v0.3.0-brightgreen.svg)](../../releases/tag/v0.3.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills: 9](https://img.shields.io/badge/Skills-9-green.svg)](#the-skills)
+[![Skills: 10](https://img.shields.io/badge/Skills-10-green.svg)](#the-skills)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)](https://claude.ai)
 
 ---
@@ -24,6 +24,7 @@ Benchmarked across 18 test cases (2 per framework) using the eval framework — 
   - [PCI DSS](#-pci-dss)
   - [TSA Cybersecurity](#-tsa-cybersecurity)
   - [ISO 42001 AI Management System](#-iso-42001-ai-management-system)
+  - [ISO 9001 Quality Management System](#-iso-9001-quality-management-system)
 - [Potential Use Cases](#potential-use-cases)
 - [How to Install a Skill](#how-to-install-a-skill)
 - [Install via Claude Code Marketplace](#install-via-claude-code-marketplace)
@@ -241,6 +242,26 @@ The ISO 42001 skill turns Claude into an expert **ISO/IEC 42001:2023** AI Manage
 
 ---
 
+### 🏭 ISO 9001 Quality Management System
+
+**File:** `ISO 9001 - Claude Skill/ISO-9001.skill`
+
+The ISO 9001 skill turns Claude into an expert ISO 9001 Lead Auditor and QMS implementation consultant. It covers **ISO 9001:2015** in full — all mandatory clauses (4–10), the seven quality management principles, risk-based thinking, process approach, and all required documented information. It is aware of common valid exclusions (e.g. Clause 8.3 Design and Development) and sector-specific extensions including IATF 16949 (automotive), AS9100D (aerospace), ISO 13485 (medical devices), and ISO/IEC 90003 (software).
+
+**What it does:**
+- Runs structured **gap analyses** against all mandatory clauses (4–10) with 🔴/🟡/🟢 status and prioritised remediation roadmaps
+- Generates complete, audit-ready **QMS policies and procedures** — Quality Policy, Documented Information Control, CAPA, Internal Audit, Management Review, Supplier Control — with document control blocks and clause citations
+- Provides detailed **process documentation** using SIPOC tables and the process approach framework (inputs, outputs, controls, resources, KPIs, risks)
+- Builds **risk and opportunities registers** (Clause 6.1) at the process level, replacing the old preventive action requirement
+- Produces ready-to-use **document templates**: Quality Objectives Register, Internal Audit Report, CAPA Report, Management Review Minutes, Supplier Evaluation Form, Competency Matrix, Customer Satisfaction Survey
+- Supports **nonconformity and corrective action (CAPA)** with structured root cause analysis (5-Why, Fishbone) and effectiveness verification
+- Guides **Stage 1 and Stage 2 certification readiness** with mandatory document checklists and auditor evidence expectations
+- Advises on **sector scheme extensions** — IATF 16949, AS9100D, ISO 13485, ISO/IEC 90003
+
+**Trigger phrases:** `ISO 9001`, `QMS`, `quality management`, `quality policy`, `quality objectives`, `gap analysis ISO 9001`, `internal audit`, `corrective action`, `CAPA`, `nonconformity`, `management review`, `supplier qualification`, `calibration`, `design and development`, `process approach`, `risk-based thinking`, `certification readiness`, `IATF 16949`, `AS9100D`
+
+---
+
 ## Potential Use Cases
 
 | Scenario | Relevant Skill(s) |
@@ -290,6 +311,14 @@ The ISO 42001 skill turns Claude into an expert **ISO/IEC 42001:2023** AI Manage
 | Mapping ISO 42001 AISIA requirements to EU AI Act Fundamental Rights Impact Assessment (FRIA) | ISO 42001 |
 | Integrating an ISO 42001 AIMS with an existing ISO 27001 ISMS | ISO 42001 + ISO 27001 |
 | Governing staff use of public AI tools (ChatGPT, Copilot) under Annex A control A.9.7 | ISO 42001 |
+| Running a gap analysis against ISO 9001:2015 for a manufacturing or services organisation | ISO 9001 |
+| Writing a Quality Policy, CAPA procedure, or Documented Information Control procedure | ISO 9001 |
+| Preparing Stage 1 and Stage 2 audit evidence for ISO 9001:2015 certification | ISO 9001 |
+| Building a process-level risk and opportunities register under Clause 6.1 | ISO 9001 |
+| Drafting a corrective action report with full root cause analysis (5-Why / Fishbone) | ISO 9001 |
+| Preparing a Management Review agenda and minutes with all required ISO 9001:2015 inputs | ISO 9001 |
+| Setting up supplier qualification and evaluation under Clause 8.4 | ISO 9001 |
+| Implementing ISO 9001 alongside ISO 27001 or ISO 42001 as an integrated management system | ISO 9001 + ISO 27001 / ISO 42001 |
 
 ---
 
@@ -308,6 +337,7 @@ The ISO 42001 skill turns Claude into an expert **ISO/IEC 42001:2023** AI Manage
    | 💳 PCI DSS | [PCI-Compliance.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/PCI%20Compliance%20-%20Claude%20Skill/PCI-Compliance.skill) |
    | 🚨 TSA Cybersecurity | [TSA-Compliance.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TSA%20Compliance%20-%20Claude%20Skill/TSA-Compliance.skill) |
    | 🤖 ISO 42001 AI Management System | [ISO-42001.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2042001%20-%20Claude%20Skill/ISO-42001.skill) |
+   | 🏭 ISO 9001 Quality Management System | [ISO-9001.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%209001%20-%20Claude%20Skill/ISO-9001.skill) |
 
 2. Open Claude and navigate to **Customize → Skills**.
 3. Click **Upload Skill** and select the `.skill` file.
@@ -327,7 +357,7 @@ Add the marketplace and install the skills you need directly from the terminal:
 
 ```shell
 /plugin marketplace add Sushegaad/Claude-Skills-Governance-Risk-and-Compliance
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills tsa-compliance@grc-skills iso42001@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills tsa-compliance@grc-skills iso42001@grc-skills iso9001@grc-skills
 ```
 
 Teams can pre-wire the marketplace in `.claude/settings.json` so every developer gets the skills automatically when they open the project — no manual install required.

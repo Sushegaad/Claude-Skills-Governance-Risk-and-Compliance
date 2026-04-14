@@ -38,6 +38,7 @@ EXPECTED_PLUGINS = {
     "hipaa-compliance",
     "iso27001",
     "iso42001",
+    "iso9001",
     "nist-csf",
     "pci-compliance",
     "soc2",

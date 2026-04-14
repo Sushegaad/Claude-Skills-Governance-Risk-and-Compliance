@@ -180,6 +180,27 @@
       ]
     },
     {
+      "name": "iso9001",
+      "source": "./plugins/iso9001",
+      "description": "ISO 9001:2015 Quality Management System (QMS) advisor \u2014 gap analysis, quality policy and procedure writing, clause-by-clause implementation guidance, process documentation, nonconformity and CAPA management, audit preparation, and certification readiness.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso9001",
+        "quality-management",
+        "qms",
+        "compliance",
+        "gap-analysis",
+        "certification",
+        "grc"
+      ]
+    },
+    {
       "name": "iso42001",
       "source": "./plugins/iso42001",
       "description": "ISO 42001 AI Management System (AIMS) advisor \u2014 gap analysis, AI risk assessment, AI system impact assessment (AISIA), Annex A control guidance, SoA generation, policy writing, and certification readiness for ISO/IEC 42001:2023.",
