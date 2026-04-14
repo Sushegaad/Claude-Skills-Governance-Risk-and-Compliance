@@ -180,6 +180,30 @@
       ]
     },
     {
+      "name": "iso27017",
+      "source": "./plugins/iso27017",
+      "description": "ISO/IEC 27017:2015 cloud security controls advisor — gap analysis, shared responsibility mapping, CSP/CSC control guidance, CLD control implementation, cloud service agreement security reviews, and virtual environment security.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso27017",
+        "cloud-security",
+        "cloud-controls",
+        "csp",
+        "csc",
+        "shared-responsibility",
+        "virtual-machine-security",
+        "iso27002",
+        "grc",
+        "compliance"
+      ]
+    },
+    {
       "name": "iso42001",
       "source": "./plugins/iso42001",
       "description": "ISO 42001 AI Management System (AIMS) advisor \u2014 gap analysis, AI risk assessment, AI system impact assessment (AISIA), Annex A control guidance, SoA generation, policy writing, and certification readiness for ISO/IEC 42001:2023.",
