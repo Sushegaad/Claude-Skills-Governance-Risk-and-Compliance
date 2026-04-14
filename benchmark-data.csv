@@ -1,0 +1,55 @@
+skill,prompt,descricao_prompt,condicao,rodada,precisao,especificidade,estrutura,aplicabilidade,completude,total
+ISO27001,P1,Credenciais via Slack — controles Annex A,sem-skill,1,3,2,2,3,3,13
+ISO27001,P1,Credenciais via Slack — controles Annex A,sem-skill,2,3,2,3,3,3,14
+ISO27001,P1,Credenciais via Slack — controles Annex A,sem-skill,3,3,2,3,3,3,14
+ISO27001,P1,Credenciais via Slack — controles Annex A,com-skill,1,5,5,5,5,5,25
+ISO27001,P1,Credenciais via Slack — controles Annex A,com-skill,2,5,5,5,5,5,25
+ISO27001,P1,Credenciais via Slack — controles Annex A,com-skill,3,5,5,4,5,5,24
+ISO27001,P2,Transicao 2013 para 2022 — mudancas,sem-skill,1,3,2,3,3,3,14
+ISO27001,P2,Transicao 2013 para 2022 — mudancas,sem-skill,2,3,2,3,3,3,14
+ISO27001,P2,Transicao 2013 para 2022 — mudancas,sem-skill,3,3,2,2,3,2,12
+ISO27001,P2,Transicao 2013 para 2022 — mudancas,com-skill,1,5,5,5,5,5,25
+ISO27001,P2,Transicao 2013 para 2022 — mudancas,com-skill,2,5,5,5,5,5,25
+ISO27001,P2,Transicao 2013 para 2022 — mudancas,com-skill,3,5,5,5,4,5,24
+ISO27001,P3,Registro de riscos SaaS dados financeiros,sem-skill,1,3,2,2,3,3,13
+ISO27001,P3,Registro de riscos SaaS dados financeiros,sem-skill,2,3,2,3,3,3,14
+ISO27001,P3,Registro de riscos SaaS dados financeiros,sem-skill,3,3,2,3,3,3,14
+ISO27001,P3,Registro de riscos SaaS dados financeiros,com-skill,1,5,5,5,5,5,25
+ISO27001,P3,Registro de riscos SaaS dados financeiros,com-skill,2,5,5,5,5,5,25
+ISO27001,P3,Registro de riscos SaaS dados financeiros,com-skill,3,5,5,5,4,5,24
+GDPR,P1,App fitness frequencia cardiaca/GPS na UE,sem-skill,1,4,2,3,3,3,15
+GDPR,P1,App fitness frequencia cardiaca/GPS na UE,sem-skill,2,4,2,3,3,3,15
+GDPR,P1,App fitness frequencia cardiaca/GPS na UE,sem-skill,3,4,2,3,4,3,16
+GDPR,P1,App fitness frequencia cardiaca/GPS na UE,com-skill,1,5,5,5,4,5,24
+GDPR,P1,App fitness frequencia cardiaca/GPS na UE,com-skill,2,5,5,5,4,5,24
+GDPR,P1,App fitness frequencia cardiaca/GPS na UE,com-skill,3,5,5,5,5,5,25
+GDPR,P2,Apagamento Art 17 DB/analytics/backups,sem-skill,1,4,2,3,3,3,15
+GDPR,P2,Apagamento Art 17 DB/analytics/backups,sem-skill,2,4,2,3,4,3,16
+GDPR,P2,Apagamento Art 17 DB/analytics/backups,sem-skill,3,4,2,3,3,3,15
+GDPR,P2,Apagamento Art 17 DB/analytics/backups,com-skill,1,5,5,5,5,5,25
+GDPR,P2,Apagamento Art 17 DB/analytics/backups,com-skill,2,5,5,5,5,5,25
+GDPR,P2,Apagamento Art 17 DB/analytics/backups,com-skill,3,5,5,4,5,5,24
+GDPR,P3,Banner cookies e-commerce FR/DE/NL,sem-skill,1,3,2,3,3,3,14
+GDPR,P3,Banner cookies e-commerce FR/DE/NL,sem-skill,2,4,2,3,4,3,16
+GDPR,P3,Banner cookies e-commerce FR/DE/NL,sem-skill,3,4,2,3,3,3,15
+GDPR,P3,Banner cookies e-commerce FR/DE/NL,com-skill,1,5,5,5,5,5,25
+GDPR,P3,Banner cookies e-commerce FR/DE/NL,com-skill,2,5,5,5,5,5,25
+GDPR,P3,Banner cookies e-commerce FR/DE/NL,com-skill,3,5,5,4,5,5,24
+NIST_CSF,P1,Plano 90 dias pos-ransomware manufatura,sem-skill,1,4,2,3,3,3,15
+NIST_CSF,P1,Plano 90 dias pos-ransomware manufatura,sem-skill,2,4,2,3,4,3,16
+NIST_CSF,P1,Plano 90 dias pos-ransomware manufatura,sem-skill,3,4,2,3,3,3,15
+NIST_CSF,P1,Plano 90 dias pos-ransomware manufatura,com-skill,1,5,5,5,4,5,24
+NIST_CSF,P1,Plano 90 dias pos-ransomware manufatura,com-skill,2,5,5,5,5,5,25
+NIST_CSF,P1,Plano 90 dias pos-ransomware manufatura,com-skill,3,5,5,4,5,5,24
+NIST_CSF,P2,KPIs trimestrais conselho por funcoes CSF,sem-skill,1,4,2,3,3,3,15
+NIST_CSF,P2,KPIs trimestrais conselho por funcoes CSF,sem-skill,2,4,2,3,4,3,16
+NIST_CSF,P2,KPIs trimestrais conselho por funcoes CSF,sem-skill,3,4,2,4,4,3,17
+NIST_CSF,P2,KPIs trimestrais conselho por funcoes CSF,com-skill,1,5,5,5,5,5,25
+NIST_CSF,P2,KPIs trimestrais conselho por funcoes CSF,com-skill,2,5,5,5,5,5,25
+NIST_CSF,P2,KPIs trimestrais conselho por funcoes CSF,com-skill,3,5,4,5,5,5,24
+NIST_CSF,P3,Hospital HIPAA para CSF 2.0 mapeamento,sem-skill,1,4,1,2,3,3,13
+NIST_CSF,P3,Hospital HIPAA para CSF 2.0 mapeamento,sem-skill,2,4,2,3,3,3,15
+NIST_CSF,P3,Hospital HIPAA para CSF 2.0 mapeamento,sem-skill,3,4,2,3,3,3,15
+NIST_CSF,P3,Hospital HIPAA para CSF 2.0 mapeamento,com-skill,1,5,5,5,5,5,25
+NIST_CSF,P3,Hospital HIPAA para CSF 2.0 mapeamento,com-skill,2,5,5,5,5,5,25
+NIST_CSF,P3,Hospital HIPAA para CSF 2.0 mapeamento,com-skill,3,5,5,5,4,5,24
