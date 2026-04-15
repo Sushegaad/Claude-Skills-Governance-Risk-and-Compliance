@@ -136,10 +136,10 @@
       ]
     },
     {
-      "name": "pci-compliance",
-      "source": "./plugins/pci-compliance",
-      "description": "PCI DSS v4.0.1 compliance advisor \u2014 CDE scoping, SAQ selection, gap assessments, control implementation guidance, QSA audit preparation, and remediation planning.",
-      "version": "0.3.0",
+      "name": "pci-dss",
+      "source": "./plugins/pci-dss",
+      "description": "PCI DSS compliance advisor covering all versions v1.0 through v4.0.1 \u2014 CDE scoping, SAQ selection, gap assessments, version migration planning, control implementation guidance, QSA audit preparation, and remediation planning.",
+      "version": "1.0.0",
       "author": {
         "name": "Hemant Naik",
         "email": "hemant.naik@gmail.com"
@@ -148,12 +148,16 @@
       "category": "compliance",
       "keywords": [
         "pci-dss",
+        "pci-dss-v4",
+        "pci-dss-v3",
         "pci-compliance",
         "payment-security",
         "cardholder-data",
         "cde",
         "saq",
         "qsa",
+        "roc",
+        "aoc",
         "grc"
       ]
     },
