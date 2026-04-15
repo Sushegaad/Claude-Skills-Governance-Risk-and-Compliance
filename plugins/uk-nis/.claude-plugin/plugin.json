@@ -1,0 +1,24 @@
+{
+  "name": "uk-nis",
+  "description": "UK Network and Information Systems (NIS) Regulations 2018 compliance advisor — Operators of Essential Services, Digital Service Providers, Cyber Assessment Framework (CAF) objectives, incident reporting obligations, competent authority requirements, and enforcement guidance.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "uk-nis",
+    "nis-regulations",
+    "cyber-assessment-framework",
+    "caf",
+    "ncsc",
+    "oes",
+    "dsp",
+    "critical-infrastructure",
+    "cybersecurity",
+    "grc"
+  ]
+}

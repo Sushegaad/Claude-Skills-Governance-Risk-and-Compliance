@@ -200,6 +200,30 @@
         "aisia",
         "grc"
       ]
+    },
+    {
+      "name": "uk-nis",
+      "source": "./plugins/uk-nis",
+      "description": "UK NIS Regulations 2018 compliance advisor — Operators of Essential Services (OES), Digital Service Providers (DSPs), NCSC Cyber Assessment Framework (CAF) gap assessments, incident reporting, Competent Authority requirements, and enforcement guidance.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "uk-nis",
+        "nis-regulations",
+        "cyber-assessment-framework",
+        "caf",
+        "ncsc",
+        "oes",
+        "dsp",
+        "critical-infrastructure",
+        "cybersecurity",
+        "grc"
+      ]
     }
   ]
 }
