@@ -183,6 +183,7 @@ EXPECTED_SKILLS = {
     "gdpr-compliance.skill",
     "hipaa-compliance.skill",
     "iso27001.skill",
+    "iso27701.skill",
     "ISO-42001.skill",
     "NIST Cybersecurity.skill",
     "PCI-Compliance.skill",

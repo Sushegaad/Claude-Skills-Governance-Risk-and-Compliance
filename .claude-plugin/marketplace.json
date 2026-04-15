@@ -200,6 +200,28 @@
         "aisia",
         "grc"
       ]
+    },
+    {
+      "name": "iso27701",
+      "source": "./plugins/iso27701",
+      "description": "ISO/IEC 27701:2019 Privacy Information Management System (PIMS) advisor \u2014 gap analysis, PII Controller and PII Processor control guidance, privacy impact assessments, GDPR mapping, records of processing activities, PII principal rights workflows, and certification readiness as an extension to ISO 27001.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso27701",
+        "pims",
+        "privacy",
+        "pii",
+        "gdpr",
+        "data-protection",
+        "privacy-information-management",
+        "grc"
+      ]
     }
   ]
 }
