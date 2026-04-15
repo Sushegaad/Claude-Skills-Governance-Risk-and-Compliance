@@ -182,6 +182,7 @@ EXPECTED_SKILLS = {
     "fedramp.skill",
     "gdpr-compliance.skill",
     "hipaa-compliance.skill",
+    "iso13485.skill",
     "iso27001.skill",
     "ISO-42001.skill",
     "NIST Cybersecurity.skill",
