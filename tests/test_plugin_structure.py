@@ -42,6 +42,7 @@ EXPECTED_PLUGINS = {
     "pci-compliance",
     "soc2",
     "tsa-compliance",
+    "uk-nis-csrb",
 }
 
 REQUIRED_PLUGIN_JSON_FIELDS = {"name", "version", "description"}
@@ -186,7 +187,7 @@ class TestPluginDirectory:
 # ---------------------------------------------------------------------------
 
 def test_all_expected_plugins_present():
-    """All 9 expected plugin directories must exist under plugins/."""
+    """All 10 expected plugin directories must exist under plugins/."""
     found = {p.name for p in PLUGIN_DIRS}
     missing = EXPECTED_PLUGINS - found
     assert not missing, (
