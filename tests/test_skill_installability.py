@@ -179,6 +179,7 @@ class TestSkillArchiveStructure:
 # ---------------------------------------------------------------------------
 
 EXPECTED_SKILLS = {
+    "eu-ai-act.skill",
     "fedramp.skill",
     "gdpr-compliance.skill",
     "hipaa-compliance.skill",
@@ -192,7 +193,7 @@ EXPECTED_SKILLS = {
 
 
 def test_all_expected_skills_present():
-    """All 9 expected .skill files must exist in the repository."""
+    """All 10 expected .skill files must exist in the repository."""
     found = {p.name for p in SKILL_FILES}
     missing = EXPECTED_SKILLS - found
     assert not missing, (

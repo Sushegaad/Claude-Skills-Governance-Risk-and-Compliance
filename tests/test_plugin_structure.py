@@ -42,6 +42,7 @@ EXPECTED_PLUGINS = {
     "pci-compliance",
     "soc2",
     "tsa-compliance",
+    "eu-ai-act",
 }
 
 REQUIRED_PLUGIN_JSON_FIELDS = {"name", "version", "description"}

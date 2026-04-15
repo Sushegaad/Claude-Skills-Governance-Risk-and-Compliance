@@ -200,6 +200,30 @@
         "aisia",
         "grc"
       ]
+    },
+    {
+      "name": "eu-ai-act",
+      "source": "./plugins/eu-ai-act",
+      "description": "EU AI Act (Regulation (EU) 2024/1689) compliance advisor \u2014 risk classification, prohibited AI practices, high-risk AI requirements, GPAI model obligations, conformity assessment, deployer obligations, FRIA, and compliance roadmaps.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "eu-ai-act",
+        "artificial-intelligence-act",
+        "ai-regulation",
+        "high-risk-ai",
+        "gpai",
+        "ai-compliance",
+        "eu-regulation",
+        "ai-governance",
+        "conformity-assessment",
+        "grc"
+      ]
     }
   ]
 }
