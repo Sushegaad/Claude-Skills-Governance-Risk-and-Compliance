@@ -188,6 +188,7 @@ EXPECTED_SKILLS = {
     "PCI-Compliance.skill",
     "soc2.skill",
     "TSA-Compliance.skill",
+    "cmmc.skill",
 }
 
 
