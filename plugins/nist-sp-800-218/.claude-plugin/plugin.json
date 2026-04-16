@@ -1,0 +1,22 @@
+{
+  "name": "nist-sp-800-218",
+  "version": "1.0.0",
+  "description": "NIST SP 800-218 Secure Software Development Framework (SSDF) skill providing comprehensive guidance on secure software development practices, including the four SSDF practice groups (PO, PS, PW, RV), all 19 practices with tasks and implementation examples, supply chain security, EO 14028 software security requirements, and mapping to SP 800-53, NIST CSF, and ISO 27001.",
+  "author": {
+    "name": "Simon Jackson",
+    "email": "sjackson0109@github"
+  },
+  "homepage": "https://csrc.nist.gov/publications/detail/sp/800-218/final",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "SSDF",
+    "secure-software-development",
+    "software-security",
+    "supply-chain-security",
+    "EO-14028",
+    "DevSecOps",
+    "SBOM",
+    "vulnerability-management"
+  ]
+}
