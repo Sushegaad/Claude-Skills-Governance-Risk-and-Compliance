@@ -1,0 +1,21 @@
+{
+  "name": "nist-sp-800-207",
+  "version": "1.0.0",
+  "description": "NIST SP 800-207 Zero Trust Architecture (ZTA) skill for designing, implementing, and migrating to zero trust architectures using the policy engine, policy administrator, and policy enforcement point model, covering ZTA tenets, deployment approaches, enhanced identity governance, microsegmentation, software-defined networking, and migration from perimeter-based security models.",
+  "author": {
+    "name": "Simon Jackson",
+    "email": "sjackson0109@gmail.com"
+  },
+  "homepage": "https://github.com/sjackson0109/Claude-Skills-Governance-Risk-and-Compliance",
+  "repository": "https://github.com/sjackson0109/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "zero-trust",
+    "ZTA",
+    "policy-engine",
+    "microsegmentation",
+    "identity-governance",
+    "software-defined-networking",
+    "NIST"
+  ]
+}
