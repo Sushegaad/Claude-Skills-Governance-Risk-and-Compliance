@@ -187,6 +187,7 @@ EXPECTED_SKILLS = {
     "NIST Cybersecurity.skill",
     "PCI-Compliance.skill",
     "soc2.skill",
+    "tisax.skill",
     "TSA-Compliance.skill",
 }
 

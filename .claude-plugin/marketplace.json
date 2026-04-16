@@ -200,6 +200,31 @@
         "aisia",
         "grc"
       ]
+    },
+    {
+      "name": "tisax",
+      "source": "./plugins/tisax",
+      "description": "TISAX (Trusted Information Security Assessment Exchange) compliance advisor for automotive suppliers \u2014 label selection (Info/Info High/Prototype/Strict Prototype/Data), VDA ISA 6.0 gap analysis, assessment level guidance (AL1/AL2/AL3), ENX portal registration, Audit Provider engagement, and maturity assessment for the automotive supply chain.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Simon Jackson",
+        "url": "https://github.com/sjackson0109"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "tisax",
+        "vda-isa",
+        "enx",
+        "automotive",
+        "supply-chain",
+        "prototype-protection",
+        "information-security",
+        "gap-analysis",
+        "iso27001",
+        "gdpr",
+        "grc"
+      ]
     }
   ]
 }
