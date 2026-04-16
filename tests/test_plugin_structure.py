@@ -40,6 +40,7 @@ EXPECTED_PLUGINS = {
     "iso42001",
     "nist-csf",
     "pci-compliance",
+    "soc",
     "soc2",
     "tsa-compliance",
 }

@@ -200,6 +200,31 @@
         "aisia",
         "grc"
       ]
+    },
+    {
+      "name": "soc",
+      "source": "./plugins/soc",
+      "description": "AICPA System and Organization Controls (SOC) advisor covering SOC 1 (SSAE 18), SOC 3, SOC for Cybersecurity, and SOC for Supply Chain — report selection, scoping, control objectives, readiness assessment, and audit preparation.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "soc",
+        "soc1",
+        "soc3",
+        "ssae18",
+        "aicpa",
+        "service-organization",
+        "audit",
+        "icfr",
+        "cybersecurity",
+        "supply-chain",
+        "grc"
+      ]
     }
   ]
 }
