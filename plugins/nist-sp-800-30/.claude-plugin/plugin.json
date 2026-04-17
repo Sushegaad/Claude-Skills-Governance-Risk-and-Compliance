@@ -1,0 +1,23 @@
+{
+  "name": "nist-sp-800-30",
+  "description": "NIST SP 800-30 Rev 1 Risk Assessment advisor — threat source identification, risk model construction, likelihood and impact determination, risk communication, and integration with the RMF and organisational risk management processes.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "nist",
+    "nist-sp-800-30",
+    "risk-assessment",
+    "threat-analysis",
+    "vulnerability-assessment",
+    "risk-management",
+    "grc",
+    "federal",
+    "cybersecurity"
+  ]
+}

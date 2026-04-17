@@ -1,0 +1,22 @@
+{
+  "name": "nist-sp-800-137",
+  "version": "1.0.0",
+  "description": "NIST SP 800-137 Information Security Continuous Monitoring (ISCM) skill for defining, establishing, implementing, analyzing, responding to, and reviewing ISCM strategies and programmes across the three-tier organisation, mission/business process, and information system hierarchy.",
+  "author": {
+    "name": "Simon Jackson",
+    "email": "sjackson0109@gmail.com"
+  },
+  "homepage": "https://github.com/sjackson0109/Claude-Skills-Governance-Risk-and-Compliance",
+  "repository": "https://github.com/sjackson0109/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "ISCM",
+    "continuous-monitoring",
+    "information-security",
+    "risk-management",
+    "SCAP",
+    "security-metrics",
+    "ongoing-authorization",
+    "NIST"
+  ]
+}

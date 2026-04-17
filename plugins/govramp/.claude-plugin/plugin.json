@@ -1,0 +1,24 @@
+{
+  "name": "govramp",
+  "description": "GovRAMP security authorization advisor for state and local government cloud — impact level selection, SSP documentation, gap analysis, Core/Ready/Authorized status paths, Fast Track, continuous monitoring, and NIST 800-53 Rev 5 control guidance for SLED organizations.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "govramp",
+    "stateramp",
+    "sled",
+    "state-local-government",
+    "cloud-security",
+    "nist-800-53",
+    "authorization",
+    "3pao",
+    "grc",
+    "public-sector"
+  ]
+}
