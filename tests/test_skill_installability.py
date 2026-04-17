@@ -182,6 +182,7 @@ EXPECTED_SKILLS = {
     "eu-ai-act.skill",
     "fedramp.skill",
     "gdpr-compliance.skill",
+    "govramp.skill",
     "hipaa-compliance.skill",
     "iso22301.skill",
     "iso27001.skill",

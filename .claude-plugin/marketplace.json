@@ -248,6 +248,30 @@
       ]
     },
     {
+      "name": "govramp",
+      "source": "./plugins/govramp",
+      "description": "GovRAMP security authorization advisor for state and local government cloud \u2014 impact level selection, SSP documentation, gap analysis, Core/Ready/Authorized status paths, Fast Track, continuous monitoring, and NIST 800-53 Rev 5 control guidance for SLED organizations.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "govramp",
+        "stateramp",
+        "sled",
+        "state-local-government",
+        "cloud-security",
+        "nist-800-53",
+        "authorization",
+        "3pao",
+        "grc",
+        "public-sector"
+      ]
+    },
+    {
       "name": "cmmc",
       "source": "./plugins/cmmc",
       "description": "CMMC 2.0 compliance advisor for defense contractors — Level 1/2/3 gap analysis, scoping, SPRS scoring, SSP documentation, POA&M development, C3PAO assessment preparation, and NIST 800-171/800-172 practice guidance for organizations protecting FCI and CUI under DoD contracts.",

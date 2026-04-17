@@ -45,6 +45,7 @@ EXPECTED_PLUGINS = {
     "pci-compliance",
     "soc2",
     "tsa-compliance",
+    "govramp",
     "eu-ai-act",
     "cmmc",
 }
