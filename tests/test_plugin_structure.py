@@ -36,6 +36,7 @@ EXPECTED_PLUGINS = {
     "fedramp",
     "gdpr-compliance",
     "hipaa-compliance",
+    "iso22301",
     "iso27001",
     "iso27017",
     "iso31000",
@@ -189,7 +190,7 @@ class TestPluginDirectory:
 # ---------------------------------------------------------------------------
 
 def test_all_expected_plugins_present():
-    """All 11 expected plugin directories must exist under plugins/."""
+    """All expected plugin directories must exist under plugins/."""
     found = {p.name for p in PLUGIN_DIRS}
     missing = EXPECTED_PLUGINS - found
     assert not missing, (
