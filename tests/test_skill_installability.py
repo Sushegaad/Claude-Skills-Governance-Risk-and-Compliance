@@ -190,6 +190,7 @@ EXPECTED_SKILLS = {
     "iso27017.skill",
     "iso31000.skill",
     "ISO-42001.skill",
+    "ISO-9001.skill",
     "NIST Cybersecurity.skill",
     "PCI-Compliance.skill",
     "soc2.skill",
