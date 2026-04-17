@@ -184,6 +184,7 @@ EXPECTED_SKILLS = {
     "gdpr-compliance.skill",
     "govramp.skill",
     "hipaa-compliance.skill",
+    "iso13485.skill",
     "hitrust.skill",
     "iso22301.skill",
     "iso27001.skill",

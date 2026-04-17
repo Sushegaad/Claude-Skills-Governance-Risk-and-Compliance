@@ -36,6 +36,7 @@ EXPECTED_PLUGINS = {
     "fedramp",
     "gdpr-compliance",
     "hipaa-compliance",
+    "iso13485",
     "hitrust",
     "iso22301",
     "iso27001",
