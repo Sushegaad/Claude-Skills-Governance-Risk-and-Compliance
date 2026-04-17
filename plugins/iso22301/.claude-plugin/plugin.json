@@ -1,0 +1,22 @@
+{
+  "name": "iso22301",
+  "description": "ISO 22301:2019 Business Continuity Management System (BCMS) advisor — gap analysis, BIA, risk assessment, BC strategy, BCP authoring, exercise programmes, and certification readiness.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "iso22301",
+    "bcms",
+    "business-continuity",
+    "bcp",
+    "bia",
+    "disaster-recovery",
+    "resilience",
+    "grc"
+  ]
+}
