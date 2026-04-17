@@ -202,6 +202,30 @@
       ]
     },
     {
+      "name": "iso27017",
+      "source": "./plugins/iso27017",
+      "description": "ISO/IEC 27017:2015 cloud security controls advisor — gap analysis, shared responsibility mapping, CSP/CSC control guidance, CLD control implementation, cloud service agreement security reviews, and virtual environment security.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso27017",
+        "cloud-security",
+        "cloud-controls",
+        "csp",
+        "csc",
+        "shared-responsibility",
+        "virtual-machine-security",
+        "iso27002",
+        "grc",
+        "compliance"
+      ]
+    },
+    {
       "name": "iso42001",
       "source": "./plugins/iso42001",
       "description": "ISO 42001 AI Management System (AIMS) advisor \u2014 gap analysis, AI risk assessment, AI system impact assessment (AISIA), Annex A control guidance, SoA generation, policy writing, and certification readiness for ISO/IEC 42001:2023.",
@@ -220,6 +244,52 @@
         "ai-governance",
         "ai-risk",
         "aisia",
+        "grc"
+      ]
+    },
+    {
+      "name": "cmmc",
+      "source": "./plugins/cmmc",
+      "description": "CMMC 2.0 compliance advisor for defense contractors — Level 1/2/3 gap analysis, scoping, SPRS scoring, SSP documentation, POA&M development, C3PAO assessment preparation, and NIST 800-171/800-172 practice guidance for organizations protecting FCI and CUI under DoD contracts.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "cmmc",
+        "cmmc-2.0",
+        "dod",
+        "defense-contractor",
+        "dib",
+        "cui",
+        "nist-800-171",
+        "sprs",
+        "c3pao",
+        "grc"
+      ]
+    },
+    {
+      "name": "iso31000",
+      "source": "./plugins/iso31000",
+      "description": "ISO 31000:2018 Risk Management advisor — risk framework design, gap analysis, risk register development, risk treatment planning, risk appetite statements, monitoring and review, board risk reporting, and integration with ISO 27001, ISO 9001, and ISO 42001.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso31000",
+        "risk-management",
+        "risk-assessment",
+        "risk-treatment",
+        "risk-register",
+        "enterprise-risk",
+        "erm",
         "grc"
       ]
     }

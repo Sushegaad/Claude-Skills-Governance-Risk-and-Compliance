@@ -29,7 +29,7 @@ Benchmarked across 18 test cases (2 per framework) using the eval framework — 
 - [Install via Claude Code Marketplace](#install-via-claude-code-marketplace)
 - [Skill Evaluation](#skill-evaluation)
 - [Customer Testimonials](#customer-testimonials)
-- [Support & Contributing](#support--contributing)
+- [Support](#support)
 - [Author](#author)
 - [Disclaimer](#disclaimer)
 
@@ -399,7 +399,7 @@ Additional feedback from the Reddit community: [r/grc](https://www.reddit.com/r/
 
 ---
 
-## Support & Contributing
+## Support
 
 ### Reporting Issues
 
@@ -411,23 +411,6 @@ If you find an error, outdated regulatory reference, or missing coverage in any 
 ### Requesting New Skills
 
 Have a compliance framework not covered here? Open a GitHub issue with the tag `skill-request` and describe the framework, your use case, and the audience it would serve. Community suggestions are welcome for frameworks such as NIST CSF, PCI DSS, CCPA, SOX, CMMC, and others.
-
-### Contributing
-
-Contributions are welcome and encouraged. To contribute:
-
-1. **Fork** this repository and create a new branch for your changes.
-2. **For skill improvements** — edit the relevant skill's `SKILL.md` or reference files. Follow the existing structure: YAML frontmatter, a routing/trigger section, and modular reference files.
-3. **For new skills** — use the [Claude Skill Creator](https://claude.ai) to build your skill using the same progressive disclosure pattern (a lean `SKILL.md` + reference files loaded on demand).
-4. **Cite your sources** — all regulatory content must be traceable to official sources (ISO standards, NIST publications, official regulatory text, agency guidance documents).
-5. Submit a **Pull Request** with a clear description of what changed and why.
-
-### Guidelines
-
-- Keep `SKILL.md` focused and under ~500 lines. Offload detailed reference content to separate files in a `references/` folder.
-- All compliance assertions must cite the governing clause, article, or control ID.
-- Skills should include a disclaimer that outputs are informational guidance, not legal advice.
-- Avoid paraphrasing regulatory text in ways that alter its meaning. Where possible, use the authoritative language directly.
 
 ---
 

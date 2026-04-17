@@ -38,11 +38,14 @@ EXPECTED_PLUGINS = {
     "hipaa-compliance",
     "iso22301",
     "iso27001",
+    "iso27017",
+    "iso31000",
     "iso42001",
     "nist-csf",
     "pci-compliance",
     "soc2",
     "tsa-compliance",
+    "cmmc",
 }
 
 REQUIRED_PLUGIN_JSON_FIELDS = {"name", "version", "description"}
@@ -187,7 +190,7 @@ class TestPluginDirectory:
 # ---------------------------------------------------------------------------
 
 def test_all_expected_plugins_present():
-    """All 10 expected plugin directories must exist under plugins/."""
+    """All expected plugin directories must exist under plugins/."""
     found = {p.name for p in PLUGIN_DIRS}
     missing = EXPECTED_PLUGINS - found
     assert not missing, (
