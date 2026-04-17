@@ -224,6 +224,28 @@
         "c3pao",
         "grc"
       ]
+    },
+    {
+      "name": "iso31000",
+      "source": "./plugins/iso31000",
+      "description": "ISO 31000:2018 Risk Management advisor — risk framework design, gap analysis, risk register development, risk treatment planning, risk appetite statements, monitoring and review, board risk reporting, and integration with ISO 27001, ISO 9001, and ISO 42001.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso31000",
+        "risk-management",
+        "risk-assessment",
+        "risk-treatment",
+        "risk-register",
+        "enterprise-risk",
+        "erm",
+        "grc"
+      ]
     }
   ]
 }
