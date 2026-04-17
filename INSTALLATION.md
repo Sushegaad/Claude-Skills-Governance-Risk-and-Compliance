@@ -76,16 +76,20 @@ Once the marketplace is registered, install only the frameworks you need.
 /plugin install iso42001@grc-skills
 ```
 
+```shell
+/plugin install iso9001@grc-skills
+```
+
 Each plugin is installed to a local cache (`~/.claude/plugins/cache`) and activates immediately in new Claude Code sessions.
 
 ---
 
-## 3. Install All Nine at Once
+## 3. Install All Ten at Once
 
 To install the full GRC suite in a single command:
 
 ```shell
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills tsa-compliance@grc-skills iso42001@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills tsa-compliance@grc-skills iso42001@grc-skills iso9001@grc-skills
 ```
 
 ---

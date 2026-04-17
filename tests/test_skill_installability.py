@@ -179,21 +179,34 @@ class TestSkillArchiveStructure:
 # ---------------------------------------------------------------------------
 
 EXPECTED_SKILLS = {
+    "eu-ai-act.skill",
     "fedramp.skill",
     "gdpr-compliance.skill",
+    "govramp.skill",
     "hipaa-compliance.skill",
+    "iso13485.skill",
+    "hitrust.skill",
+    "iso22301.skill",
     "iso27001.skill",
+    "iso27701.skill",
+    "iso27017.skill",
+    "iso27018.skill",
+    "iso31000.skill",
     "ISO-42001.skill",
+    "ISO-9001.skill",
     "NIST Cybersecurity.skill",
-    "PCI-Compliance.skill",
+    "PCI-DSS.skill",
     "soc2.skill",
     "tisax.skill",
     "TSA-Compliance.skill",
+    "uk-nis.skill",
+    "cmmc.skill",
+    "uk-nis-csrb.skill",
 }
 
 
 def test_all_expected_skills_present():
-    """All 9 expected .skill files must exist in the repository."""
+    """All expected .skill files must exist in the repository."""
     found = {p.name for p in SKILL_FILES}
     missing = EXPECTED_SKILLS - found
     assert not missing, (

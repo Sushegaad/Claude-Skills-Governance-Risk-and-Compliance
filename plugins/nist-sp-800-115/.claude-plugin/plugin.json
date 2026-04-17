@@ -1,0 +1,24 @@
+{
+  "name": "nist-sp-800-115",
+  "version": "1.0.0",
+  "description": "NIST SP 800-115 Technical Guide to Information Security Testing and Assessment skill for planning and executing security assessments including network scanning, vulnerability analysis, penetration testing, social engineering, and wireless security testing.",
+  "author": {
+    "name": "Simon Jackson",
+    "email": "sjackson0109@gmail.com"
+  },
+  "homepage": "https://github.com/sjackson0109/Claude-Skills-Governance-Risk-and-Compliance",
+  "repository": "https://github.com/sjackson0109/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "nist-sp-800-115",
+    "security-testing",
+    "penetration-testing",
+    "vulnerability-assessment",
+    "security-assessment",
+    "network-scanning",
+    "social-engineering",
+    "wireless-security",
+    "red-team",
+    "FISMA"
+  ]
+}

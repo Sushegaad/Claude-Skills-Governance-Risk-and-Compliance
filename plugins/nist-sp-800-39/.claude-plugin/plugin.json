@@ -1,0 +1,24 @@
+{
+  "name": "nist-sp-800-39",
+  "description": "NIST SP 800-39 Enterprise Risk Management advisor — three-tier risk management hierarchy, risk framing, risk assessment, risk response, risk monitoring, organisational risk tolerance, and integration with the NIST RMF.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "nist",
+    "nist-sp-800-39",
+    "enterprise-risk-management",
+    "erm",
+    "risk-framing",
+    "risk-governance",
+    "federal",
+    "fisma",
+    "cybersecurity",
+    "grc"
+  ]
+}
