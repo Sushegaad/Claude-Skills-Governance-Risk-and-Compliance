@@ -1,0 +1,24 @@
+{
+  "name": "uk-nis-csrb",
+  "description": "UK Cyber Security and Resilience Bill (CSRB) readiness advisor — expanded scope beyond NIS Regulations, managed service provider obligations, enhanced incident reporting, regulator powers, critical infrastructure protection, and transition planning from NIS Regulations 2018.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "uk-csrb",
+    "cyber-security-resilience-bill",
+    "csrb",
+    "nis-regulations",
+    "managed-service-providers",
+    "incident-reporting",
+    "critical-infrastructure",
+    "uk-cybersecurity",
+    "resilience",
+    "grc"
+  ]
+}

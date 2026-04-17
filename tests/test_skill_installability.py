@@ -200,6 +200,7 @@ EXPECTED_SKILLS = {
     "TSA-Compliance.skill",
     "uk-nis.skill",
     "cmmc.skill",
+    "uk-nis-csrb.skill",
 }
 
 

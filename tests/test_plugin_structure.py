@@ -54,6 +54,7 @@ EXPECTED_PLUGINS = {
     "govramp",
     "eu-ai-act",
     "cmmc",
+    "uk-nis-csrb",
 }
 
 REQUIRED_PLUGIN_JSON_FIELDS = {"name", "version", "description"}
