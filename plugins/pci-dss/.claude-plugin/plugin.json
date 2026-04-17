@@ -1,7 +1,7 @@
 {
-  "name": "pci-compliance",
-  "description": "PCI DSS v4.0.1 compliance advisor \u2014 CDE scoping, SAQ selection, gap assessments, control implementation guidance, QSA audit preparation, and remediation planning.",
-  "version": "0.3.0",
+  "name": "pci-dss",
+  "description": "PCI DSS all-versions compliance advisor covering v1.0 through v4.0.1 \u2014 CDE scoping, SAQ selection, gap assessments across all versions, control implementation guidance, QSA audit preparation, v3.2.1 to v4.0 migration, and remediation planning.",
+  "version": "1.0.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"
@@ -11,12 +11,16 @@
   "license": "MIT",
   "keywords": [
     "pci-dss",
+    "pci-dss-v4",
+    "pci-dss-v3",
     "pci-compliance",
     "payment-security",
     "cardholder-data",
     "cde",
     "saq",
     "qsa",
+    "roc",
+    "aoc",
     "grc"
   ]
 }
