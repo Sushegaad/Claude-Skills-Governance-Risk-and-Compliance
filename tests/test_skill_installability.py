@@ -196,6 +196,7 @@ EXPECTED_SKILLS = {
     "ISO-9001.skill",
     "NIST Cybersecurity.skill",
     "PCI-DSS.skill",
+    "soc.skill",
     "soc2.skill",
     "TSA-Compliance.skill",
     "uk-nis.skill",
