@@ -40,6 +40,7 @@ EXPECTED_PLUGINS = {
     "hitrust",
     "iso22301",
     "iso27001",
+    "iso27701",
     "iso27017",
     "iso27018",
     "iso31000",

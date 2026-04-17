@@ -188,6 +188,7 @@ EXPECTED_SKILLS = {
     "hitrust.skill",
     "iso22301.skill",
     "iso27001.skill",
+    "iso27701.skill",
     "iso27017.skill",
     "iso27018.skill",
     "iso31000.skill",
