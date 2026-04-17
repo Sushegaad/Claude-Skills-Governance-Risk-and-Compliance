@@ -319,6 +319,31 @@
       ]
     },
     {
+      "name": "soc",
+      "source": "./plugins/soc",
+      "description": "AICPA System and Organization Controls (SOC) advisor covering SOC 1 (SSAE 18), SOC 3, SOC for Cybersecurity, and SOC for Supply Chain — report selection, scoping, control objectives, readiness assessment, and audit preparation.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "soc",
+        "soc1",
+        "soc3",
+        "ssae18",
+        "aicpa",
+        "service-organization",
+        "audit",
+        "icfr",
+        "cybersecurity",
+        "supply-chain",
+        "grc"
+      ]
+    },
+    {
       "name": "tisax",
       "source": "./plugins/tisax",
       "description": "TISAX (Trusted Information Security Assessment Exchange) compliance advisor for automotive suppliers — label selection (Info/Info High/Prototype/Strict Prototype/Data), VDA ISA 6.0 gap analysis, assessment level guidance (AL1/AL2/AL3), ENX portal registration, Audit Provider engagement, and maturity assessment for the automotive supply chain.",

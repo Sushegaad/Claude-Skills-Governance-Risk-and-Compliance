@@ -48,6 +48,7 @@ EXPECTED_PLUGINS = {
     "iso9001",
     "nist-csf",
     "pci-dss",
+    "soc",
     "soc2",
     "tisax",
     "tsa-compliance",
