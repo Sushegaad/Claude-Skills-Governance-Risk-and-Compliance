@@ -37,6 +37,7 @@ EXPECTED_PLUGINS = {
     "gdpr-compliance",
     "hipaa-compliance",
     "iso27001",
+    "iso31000",
     "iso42001",
     "nist-csf",
     "pci-compliance",
