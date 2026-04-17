@@ -1,0 +1,24 @@
+{
+  "name": "iso27017",
+  "description": "ISO/IEC 27017:2015 cloud security controls advisor — gap analysis, shared responsibility mapping, CSP/CSC control guidance, CLD control implementation, cloud service agreement security reviews, and virtual environment security.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "iso27017",
+    "cloud-security",
+    "cloud-controls",
+    "csp",
+    "csc",
+    "shared-responsibility",
+    "virtual-machine-security",
+    "iso27002",
+    "grc",
+    "compliance"
+  ]
+}

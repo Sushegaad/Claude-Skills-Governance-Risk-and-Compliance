@@ -1,0 +1,22 @@
+{
+  "name": "nist-sp-800-161",
+  "version": "1.0.0",
+  "description": "NIST SP 800-161 Rev 1 Cybersecurity Supply Chain Risk Management (C-SCRM) skill for identifying, assessing, and mitigating ICT supply chain risks across the enterprise, mission/business, and system levels through integrated C-SCRM programmes, supplier assessments, acquisition lifecycle controls, and SP 800-53 SR control family implementation.",
+  "author": {
+    "name": "Simon Jackson",
+    "email": "sjackson0109@gmail.com"
+  },
+  "homepage": "https://github.com/sjackson0109/Claude-Skills-Governance-Risk-and-Compliance",
+  "repository": "https://github.com/sjackson0109/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "C-SCRM",
+    "supply-chain",
+    "ICT-risk",
+    "SR-controls",
+    "SBOM",
+    "supplier-assessment",
+    "acquisition",
+    "NIST"
+  ]
+}
