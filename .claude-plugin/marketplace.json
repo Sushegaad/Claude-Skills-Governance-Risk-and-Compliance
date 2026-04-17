@@ -1,12 +1,34 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "grc-skills",
-  "description": "Claude Code skills for Governance, Risk & Compliance \u2014 ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, and ISO 42001 AI Management System.",
+  "description": "Claude Code skills for Governance, Risk & Compliance — ISO 22301, ISO 27001, ISO 27017, ISO 27018, SOC 2, FedRAMP, GDPR, HIPAA, HITRUST, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 9001, ISO 13485 Medical Device QMS, GovRAMP, CMMC, ISO 31000, and EU AI Act, and UK Cyber Security and Resilience Bill.",
   "owner": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"
   },
   "plugins": [
+    {
+      "name": "iso22301",
+      "source": "./plugins/iso22301",
+      "description": "ISO 22301:2019 Business Continuity Management System (BCMS) advisor — gap analysis, BIA, risk assessment, BC strategy, BCP authoring, exercise programmes, and certification readiness.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso22301",
+        "bcms",
+        "business-continuity",
+        "bcp",
+        "bia",
+        "disaster-recovery",
+        "resilience",
+        "grc"
+      ]
+    },
     {
       "name": "iso27001",
       "source": "./plugins/iso27001",
@@ -31,7 +53,7 @@
     {
       "name": "soc2",
       "source": "./plugins/soc2",
-      "description": "Expert SOC 2 compliance advisor covering all Trust Services Criteria \u2014 gap analysis, policy drafting, control documentation, audit evidence, and vendor risk.",
+      "description": "Expert SOC 2 compliance advisor covering all Trust Services Criteria — gap analysis, policy drafting, control documentation, audit evidence, and vendor risk.",
       "version": "0.3.0",
       "author": {
         "name": "Hemant Naik",
@@ -51,7 +73,7 @@
     {
       "name": "fedramp",
       "source": "./plugins/fedramp",
-      "description": "End-to-end FedRAMP authorization guidance \u2014 readiness assessments, SSP narratives, POA&M management, NIST 800-53 Rev 5 control mapping, and ConMon support.",
+      "description": "End-to-end FedRAMP authorization guidance — readiness assessments, SSP narratives, POA&M management, NIST 800-53 Rev 5 control mapping, and ConMon support.",
       "version": "0.3.0",
       "author": {
         "name": "Hemant Naik",
@@ -73,7 +95,7 @@
     {
       "name": "gdpr-compliance",
       "source": "./plugins/gdpr-compliance",
-      "description": "GDPR compliance assistant \u2014 code and system audits, privacy notice drafting, DPAs, DPIAs, data flow reviews, and authoritative article-cited Q&A.",
+      "description": "GDPR compliance assistant — code and system audits, privacy notice drafting, DPAs, DPIAs, data flow reviews, and authoritative article-cited Q&A.",
       "version": "0.3.0",
       "author": {
         "name": "Hemant Naik",
@@ -94,7 +116,7 @@
     {
       "name": "hipaa-compliance",
       "source": "./plugins/hipaa-compliance",
-      "description": "HIPAA compliance advisor covering Privacy Rule, Security Rule, and Breach Notification \u2014 document generation, technical safeguards for cloud, and breach response.",
+      "description": "HIPAA compliance advisor covering Privacy Rule, Security Rule, and Breach Notification — document generation, technical safeguards for cloud, and breach response.",
       "version": "0.3.0",
       "author": {
         "name": "Hemant Naik",
@@ -115,7 +137,7 @@
     {
       "name": "nist-csf",
       "source": "./plugins/nist-csf",
-      "description": "NIST Cybersecurity Framework (CSF 2.0 and 1.1) advisor \u2014 gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping, and cybersecurity policy generation.",
+      "description": "NIST Cybersecurity Framework (CSF 2.0 and 1.1) advisor — gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping, and cybersecurity policy generation.",
       "version": "0.3.0",
       "author": {
         "name": "Hemant Naik",
@@ -136,10 +158,10 @@
       ]
     },
     {
-      "name": "pci-compliance",
-      "source": "./plugins/pci-compliance",
-      "description": "PCI DSS v4.0.1 compliance advisor \u2014 CDE scoping, SAQ selection, gap assessments, control implementation guidance, QSA audit preparation, and remediation planning.",
-      "version": "0.3.0",
+      "name": "pci-dss",
+      "source": "./plugins/pci-dss",
+      "description": "PCI DSS compliance advisor covering all versions v1.0 through v4.0.1 \u2014 CDE scoping, SAQ selection, gap assessments, version migration planning, control implementation guidance, QSA audit preparation, and remediation planning.",
+      "version": "1.0.0",
       "author": {
         "name": "Hemant Naik",
         "email": "hemant.naik@gmail.com"
@@ -148,19 +170,23 @@
       "category": "compliance",
       "keywords": [
         "pci-dss",
+        "pci-dss-v4",
+        "pci-dss-v3",
         "pci-compliance",
         "payment-security",
         "cardholder-data",
         "cde",
         "saq",
         "qsa",
+        "roc",
+        "aoc",
         "grc"
       ]
     },
     {
       "name": "tsa-compliance",
       "source": "./plugins/tsa-compliance",
-      "description": "TSA cybersecurity compliance advisor for critical infrastructure \u2014 pipeline, freight rail, and transit Security Directive requirements including CIP/COIP, IRP, ADR, CAP, incident reporting, and OT/ICS security.",
+      "description": "TSA cybersecurity compliance advisor for critical infrastructure — pipeline, freight rail, and transit Security Directive requirements including CIP/COIP, IRP, ADR, CAP, incident reporting, and OT/ICS security.",
       "version": "0.3.0",
       "author": {
         "name": "Hemant Naik",
@@ -180,9 +206,100 @@
       ]
     },
     {
+      "name": "iso9001",
+      "source": "./plugins/iso9001",
+      "description": "ISO 9001:2015 Quality Management System (QMS) advisor — gap analysis, quality policy and procedure writing, clause-by-clause implementation guidance, process documentation, nonconformity and CAPA management, audit preparation, and certification readiness.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso9001",
+        "quality-management",
+        "qms",
+        "compliance",
+        "gap-analysis",
+        "certification",
+        "grc"
+      ]
+    },
+    {
+      "name": "iso27017",
+      "source": "./plugins/iso27017",
+      "description": "ISO/IEC 27017:2015 cloud security controls advisor — gap analysis, shared responsibility mapping, CSP/CSC control guidance, CLD control implementation, cloud service agreement security reviews, and virtual environment security.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso27017",
+        "cloud-security",
+        "cloud-controls",
+        "csp",
+        "csc",
+        "shared-responsibility",
+        "virtual-machine-security",
+        "iso27002",
+        "grc",
+        "compliance"
+      ]
+    },
+    {
+      "name": "iso27018",
+      "source": "./plugins/iso27018",
+      "description": "ISO/IEC 27018 compliance advisor for public cloud PII processors — Annex A extended control gap analysis, DPA drafting, sub-processor programme management, government request procedures, PII disposal obligations, and mapping to GDPR, ISO 27701, and regional privacy laws.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso27018",
+        "pii",
+        "cloud-privacy",
+        "data-protection",
+        "gdpr",
+        "public-cloud",
+        "pii-processor",
+        "compliance",
+        "grc"
+      ]
+    },
+    {
+      "name": "hitrust",
+      "source": "./plugins/hitrust",
+      "description": "HITRUST CSF compliance advisor covering all assessment types (e1, i1, r2) — gap analysis, control implementation guidance, MyCSF assessment support, CAP management, inheritance planning, and certification readiness for healthcare and regulated industries.",
+      "version": "0.3.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "hitrust",
+        "hitrust-csf",
+        "healthcare-security",
+        "hipaa",
+        "e1",
+        "i1",
+        "r2",
+        "mycsf",
+        "grc"
+      ]
+    },
+    {
       "name": "iso42001",
       "source": "./plugins/iso42001",
-      "description": "ISO 42001 AI Management System (AIMS) advisor \u2014 gap analysis, AI risk assessment, AI system impact assessment (AISIA), Annex A control guidance, SoA generation, policy writing, and certification readiness for ISO/IEC 42001:2023.",
+      "description": "ISO 42001 AI Management System (AIMS) advisor — gap analysis, AI risk assessment, AI system impact assessment (AISIA), Annex A control guidance, SoA generation, policy writing, and certification readiness for ISO/IEC 42001:2023.",
       "version": "0.3.0",
       "author": {
         "name": "Hemant Naik",
@@ -223,6 +340,196 @@
         "icfr",
         "cybersecurity",
         "supply-chain",
+        "grc"
+      ]
+    },
+    {
+      "name": "uk-nis",
+      "source": "./plugins/uk-nis",
+      "description": "UK NIS Regulations 2018 compliance advisor — Operators of Essential Services (OES), Digital Service Providers (DSPs), NCSC Cyber Assessment Framework (CAF) gap assessments, incident reporting, Competent Authority requirements, and enforcement guidance.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "uk-nis",
+        "nis-regulations",
+        "cyber-assessment-framework",
+        "caf",
+        "ncsc",
+        "oes",
+        "dsp",
+        "critical-infrastructure",
+        "cybersecurity",
+        "grc"
+      ]
+    },
+    {
+      "name": "iso27701",
+      "source": "./plugins/iso27701",
+      "description": "ISO/IEC 27701:2019 Privacy Information Management System (PIMS) advisor — gap analysis, PII Controller and PII Processor control guidance, privacy impact assessments, GDPR mapping, records of processing activities, PII principal rights workflows, and certification readiness as an extension to ISO 27001.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso27701",
+        "pims",
+        "privacy",
+        "pii",
+        "gdpr",
+        "data-protection",
+        "privacy-information-management",
+        "grc"
+      ]
+    },
+    {
+      "name": "iso13485",
+      "source": "./plugins/iso13485",
+      "description": "ISO 13485:2016 medical device quality management system (QMS) advisor — gap analysis, design control guidance, DHF structure, regulatory mapping (EU MDR, FDA 21 CFR Part 820, MDSAP), CAPA, complaint handling, vigilance reporting, and certification readiness for medical device manufacturers and suppliers.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso13485",
+        "medical-devices",
+        "qms",
+        "quality-management",
+        "mdr",
+        "fda-820",
+        "design-controls",
+        "mdsap",
+        "grc",
+        "compliance",
+        "regulatory"
+      ]
+    },
+    {
+      "name": "govramp",
+      "source": "./plugins/govramp",
+      "description": "GovRAMP security authorization advisor for state and local government cloud — impact level selection, SSP documentation, gap analysis, Core/Ready/Authorized status paths, Fast Track, continuous monitoring, and NIST 800-53 Rev 5 control guidance for SLED organizations.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "govramp",
+        "stateramp",
+        "sled",
+        "state-local-government",
+        "cloud-security",
+        "nist-800-53",
+        "authorization",
+        "3pao",
+        "grc",
+        "public-sector"
+      ]
+    },
+    {
+      "name": "cmmc",
+      "source": "./plugins/cmmc",
+      "description": "CMMC 2.0 compliance advisor for defense contractors — Level 1/2/3 gap analysis, scoping, SPRS scoring, SSP documentation, POA&M development, C3PAO assessment preparation, and NIST 800-171/800-172 practice guidance for organizations protecting FCI and CUI under DoD contracts.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "cmmc",
+        "cmmc-2.0",
+        "dod",
+        "defense-contractor",
+        "dib",
+        "cui",
+        "nist-800-171",
+        "sprs",
+        "c3pao",
+        "grc"
+      ]
+    },
+    {
+      "name": "iso31000",
+      "source": "./plugins/iso31000",
+      "description": "ISO 31000:2018 Risk Management advisor — risk framework design, gap analysis, risk register development, risk treatment planning, risk appetite statements, monitoring and review, board risk reporting, and integration with ISO 27001, ISO 9001, and ISO 42001.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "iso31000",
+        "risk-management",
+        "risk-assessment",
+        "risk-treatment",
+        "risk-register",
+        "enterprise-risk",
+        "erm",
+        "grc"
+      ]
+    },
+    {
+      "name": "eu-ai-act",
+      "source": "./plugins/eu-ai-act",
+      "description": "EU AI Act (Regulation (EU) 2024/1689) compliance advisor — risk classification, prohibited AI practices, high-risk AI requirements, GPAI model obligations, conformity assessment, deployer obligations, FRIA, and compliance roadmaps.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "eu-ai-act",
+        "artificial-intelligence-act",
+        "ai-regulation",
+        "high-risk-ai",
+        "gpai",
+        "ai-compliance",
+        "eu-regulation",
+        "ai-governance",
+        "conformity-assessment",
+        "grc"
+      ]
+    },
+    {
+      "name": "uk-nis-csrb",
+      "source": "./plugins/uk-nis-csrb",
+      "description": "UK Cyber Security and Resilience Bill (CSRB) readiness advisor — expanded MSP and data centre scope, enhanced incident reporting, proactive regulator powers, transition planning from NIS Regulations 2018, and compliance templates.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Simon Jackson",
+        "email": "sjackson0109@users.noreply.github.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "uk-csrb",
+        "cyber-security-resilience-bill",
+        "csrb",
+        "nis-regulations",
+        "managed-service-providers",
+        "incident-reporting",
+        "critical-infrastructure",
+        "data-centres",
+        "dsit",
+        "ncsc",
         "grc"
       ]
     }

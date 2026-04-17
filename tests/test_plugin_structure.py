@@ -36,13 +36,26 @@ EXPECTED_PLUGINS = {
     "fedramp",
     "gdpr-compliance",
     "hipaa-compliance",
+    "iso13485",
+    "hitrust",
+    "iso22301",
     "iso27001",
+    "iso27701",
+    "iso27017",
+    "iso27018",
+    "iso31000",
     "iso42001",
+    "iso9001",
     "nist-csf",
-    "pci-compliance",
+    "pci-dss",
     "soc",
     "soc2",
     "tsa-compliance",
+    "uk-nis",
+    "govramp",
+    "eu-ai-act",
+    "cmmc",
+    "uk-nis-csrb",
 }
 
 REQUIRED_PLUGIN_JSON_FIELDS = {"name", "version", "description"}
@@ -187,7 +200,7 @@ class TestPluginDirectory:
 # ---------------------------------------------------------------------------
 
 def test_all_expected_plugins_present():
-    """All 9 expected plugin directories must exist under plugins/."""
+    """All expected plugin directories must exist under plugins/."""
     found = {p.name for p in PLUGIN_DIRS}
     missing = EXPECTED_PLUGINS - found
     assert not missing, (

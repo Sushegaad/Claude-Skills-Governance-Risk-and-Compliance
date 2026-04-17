@@ -1,0 +1,24 @@
+{
+  "name": "eu-ai-act",
+  "description": "EU AI Act (Regulation (EU) 2024/1689) compliance advisor — risk classification, prohibited AI practices, high-risk AI system requirements, GPAI obligations, conformity assessment, deployer obligations, fundamental rights impact assessment, and compliance roadmaps.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "eu-ai-act",
+    "artificial-intelligence-act",
+    "ai-regulation",
+    "high-risk-ai",
+    "gpai",
+    "ai-compliance",
+    "eu-regulation",
+    "ai-governance",
+    "conformity-assessment",
+    "grc"
+  ]
+}
