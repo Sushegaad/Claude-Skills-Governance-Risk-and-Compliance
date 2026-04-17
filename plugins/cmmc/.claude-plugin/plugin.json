@@ -1,0 +1,28 @@
+{
+  "name": "cmmc",
+  "description": "CMMC 2.0 compliance advisor for defense contractors — Level 1/2/3 gap analysis, scoping, SPRS scoring, SSP documentation, POA&M development, C3PAO assessment preparation, and NIST 800-171/800-172 practice guidance for organizations protecting FCI and CUI under DoD contracts.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "cmmc",
+    "cmmc-2.0",
+    "dod",
+    "defense-contractor",
+    "dib",
+    "cui",
+    "fci",
+    "nist-800-171",
+    "nist-800-172",
+    "c3pao",
+    "sprs",
+    "dfars",
+    "cybersecurity",
+    "certification"
+  ]
+}

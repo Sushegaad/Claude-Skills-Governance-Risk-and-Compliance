@@ -1,0 +1,21 @@
+{
+  "name": "iso9001",
+  "description": "ISO 9001:2015 Quality Management System (QMS) advisor — gap analysis, quality policy and procedure writing, clause-by-clause implementation guidance, process documentation, audit preparation, and certification readiness.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "iso9001",
+    "quality-management",
+    "qms",
+    "compliance",
+    "gap-analysis",
+    "certification",
+    "grc"
+  ]
+}

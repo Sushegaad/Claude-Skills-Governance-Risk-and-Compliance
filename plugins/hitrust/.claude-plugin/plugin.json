@@ -1,0 +1,23 @@
+{
+  "name": "hitrust",
+  "description": "HITRUST CSF compliance advisor covering all assessment types (e1, i1, r2) \u2014 gap analysis, control implementation guidance, MyCSF assessment support, corrective action planning, and certification readiness for healthcare and other regulated industries.",
+  "version": "0.3.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "hitrust",
+    "hitrust-csf",
+    "healthcare-security",
+    "hipaa",
+    "e1",
+    "i1",
+    "r2",
+    "mycsf",
+    "grc"
+  ]
+}
