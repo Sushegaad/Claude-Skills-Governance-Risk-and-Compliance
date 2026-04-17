@@ -183,17 +183,21 @@ EXPECTED_SKILLS = {
     "fedramp.skill",
     "gdpr-compliance.skill",
     "hipaa-compliance.skill",
+    "iso22301.skill",
     "iso27001.skill",
+    "iso27017.skill",
+    "iso31000.skill",
     "ISO-42001.skill",
     "NIST Cybersecurity.skill",
     "PCI-Compliance.skill",
     "soc2.skill",
     "TSA-Compliance.skill",
+    "cmmc.skill",
 }
 
 
 def test_all_expected_skills_present():
-    """All 10 expected .skill files must exist in the repository."""
+    """All expected .skill files must exist in the repository."""
     found = {p.name for p in SKILL_FILES}
     missing = EXPECTED_SKILLS - found
     assert not missing, (
