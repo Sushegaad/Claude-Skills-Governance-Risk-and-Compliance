@@ -41,6 +41,7 @@ EXPECTED_PLUGINS = {
     "iso22301",
     "iso27001",
     "iso27017",
+    "iso27018",
     "iso31000",
     "iso42001",
     "iso9001",

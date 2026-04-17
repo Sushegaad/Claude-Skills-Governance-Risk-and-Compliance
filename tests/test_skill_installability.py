@@ -189,6 +189,7 @@ EXPECTED_SKILLS = {
     "iso22301.skill",
     "iso27001.skill",
     "iso27017.skill",
+    "iso27018.skill",
     "iso31000.skill",
     "ISO-42001.skill",
     "ISO-9001.skill",
