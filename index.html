@@ -757,6 +757,12 @@ layout: null
         </div>
 
         <div class="form-group">
+          <label for="email">Email <span style="font-weight:400;color:var(--text-muted)">(optional)</span></label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" data-fs-field />
+          <span data-fs-error="email" style="color:#dc3545;font-size:0.82rem;margin-top:0.25rem;display:block;"></span>
+        </div>
+
+        <div class="form-group">
           <label for="feedback-title">Feedback Title <span style="color:#c0392b">*</span></label>
           <input type="text" id="feedback-title" name="feedback_title" placeholder="e.g. Great ISO 27001 gap analysis output" required data-fs-field />
           <span data-fs-error="feedback_title" style="color:#dc3545;font-size:0.82rem;margin-top:0.25rem;display:block;"></span>
@@ -785,7 +791,7 @@ layout: null
   <!-- ═══ TAB 5: Resources ═══ -->
   <section class="tab-panel" id="tab-resources" role="tabpanel">
 
-    <h2>Support &amp; Contributing</h2>
+    <h2>Support</h2>
 
     <h3>Reporting Issues</h3>
     <p>If you find an error, outdated regulatory reference, or missing coverage in any skill, please <a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/issues">open a GitHub issue</a> and include:</p>
@@ -797,23 +803,6 @@ layout: null
 
     <h3>Requesting New Skills</h3>
     <p>Have a compliance framework not covered here? Open a GitHub issue with the tag <code>skill-request</code> and describe the framework, your use case, and the audience it would serve. Community suggestions are welcome for frameworks such as CMMC, CCPA, SOX, and others.</p>
-
-    <h3>Contributing</h3>
-    <ol>
-      <li><strong>Fork</strong> this repository and create a new branch for your changes.</li>
-      <li><strong>For skill improvements</strong> — edit the relevant skill's <code>SKILL.md</code> or reference files. Follow the existing structure: YAML frontmatter, a routing/trigger section, and modular reference files.</li>
-      <li><strong>For new skills</strong> — use the <a href="https://claude.ai">Claude Skill Creator</a> to build your skill using the same progressive disclosure pattern.</li>
-      <li><strong>Cite your sources</strong> — all regulatory content must be traceable to official sources (ISO standards, NIST publications, official regulatory text, agency guidance documents).</li>
-      <li>Submit a <strong>Pull Request</strong> with a clear description of what changed and why.</li>
-    </ol>
-
-    <h3>Guidelines</h3>
-    <ul>
-      <li>Keep <code>SKILL.md</code> focused and under ~500 lines. Offload detailed reference content to separate files in a <code>references/</code> folder.</li>
-      <li>All compliance assertions must cite the governing clause, article, or control ID.</li>
-      <li>Skills should include a disclaimer that outputs are informational guidance, not legal advice.</li>
-      <li>Avoid paraphrasing regulatory text in ways that alter its meaning. Where possible, use the authoritative language directly.</li>
-    </ul>
 
     <hr />
 
