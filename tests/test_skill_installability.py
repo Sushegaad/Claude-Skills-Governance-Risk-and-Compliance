@@ -179,6 +179,7 @@ class TestSkillArchiveStructure:
 # ---------------------------------------------------------------------------
 
 EXPECTED_SKILLS = {
+    "eu-ai-act.skill",
     "fedramp.skill",
     "gdpr-compliance.skill",
     "hipaa-compliance.skill",
