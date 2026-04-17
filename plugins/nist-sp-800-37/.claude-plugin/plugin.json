@@ -1,0 +1,24 @@
+{
+  "name": "nist-sp-800-37",
+  "description": "NIST SP 800-37 Rev 2 Risk Management Framework (RMF) advisor — all six RMF steps (Categorise, Select, Implement, Assess, Authorise, Monitor), roles and responsibilities, control tailoring, system security plans, authorization packages, and continuous monitoring strategy.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "nist",
+    "nist-sp-800-37",
+    "rmf",
+    "risk-management-framework",
+    "ato",
+    "authorization",
+    "federal",
+    "fisma",
+    "cybersecurity",
+    "grc"
+  ]
+}

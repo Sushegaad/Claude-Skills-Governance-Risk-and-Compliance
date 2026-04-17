@@ -1,0 +1,23 @@
+{
+  "name": "iso27018",
+  "description": "Expert ISO/IEC 27018 compliance assistant for protecting personally identifiable information (PII) in public cloud environments. Covers Annex A extended controls, PII processor obligations, gap analysis, data subject rights, sub-processor management, government request handling, and alignment with GDPR and ISO 27701.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "iso27018",
+    "pii",
+    "cloud-privacy",
+    "data-protection",
+    "gdpr",
+    "public-cloud",
+    "pii-processor",
+    "compliance",
+    "grc"
+  ]
+}

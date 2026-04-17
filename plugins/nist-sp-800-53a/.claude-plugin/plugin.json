@@ -1,0 +1,24 @@
+{
+  "name": "nist-sp-800-53a",
+  "description": "NIST SP 800-53A Rev 5 Control Assessment advisor — assessment procedures, assessment methods (examine, interview, test), depth and coverage, Security Assessment Plan (SAP), Security Assessment Report (SAR), finding severity, and integration with the RMF Assess step.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "nist",
+    "nist-sp-800-53a",
+    "control-assessment",
+    "security-assessment",
+    "sap",
+    "sar",
+    "examine-interview-test",
+    "federal",
+    "fisma",
+    "grc"
+  ]
+}

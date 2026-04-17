@@ -1,0 +1,25 @@
+{
+  "name": "nist-sp-800-63",
+  "version": "1.0.0",
+  "description": "NIST SP 800-63 Rev 3 Digital Identity Guidelines skill for guidance on identity assurance levels, authenticator assurance levels, federation assurance levels, identity proofing, credential management, and federation protocols.",
+  "author": {
+    "name": "Simon Jackson",
+    "email": "sjackson0109@gmail.com"
+  },
+  "homepage": "https://github.com/sjackson0109/Claude-Skills-Governance-Risk-and-Compliance",
+  "repository": "https://github.com/sjackson0109/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "nist-sp-800-63",
+    "digital-identity",
+    "identity-assurance",
+    "authenticator-assurance",
+    "federation-assurance",
+    "identity-proofing",
+    "IAL",
+    "AAL",
+    "FAL",
+    "MFA",
+    "FISMA"
+  ]
+}

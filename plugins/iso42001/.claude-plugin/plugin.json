@@ -1,7 +1,7 @@
 {
   "name": "iso42001",
-  "description": "ISO 42001 AI Management System (AIMS) advisor \u2014 gap analysis, AI risk assessment, AI system impact assessment (AISIA), Annex A control guidance, SoA generation, policy writing, and certification readiness for ISO/IEC 42001:2023.",
-  "version": "0.3.0",
+  "description": "ISO 42001 AI Management System (AIMS) advisor — gap analysis, AI risk and impact assessment (AISIA), all 38 Annex A controls, EU AI Act mapping, SoA generation, policy drafting, document templates, and certification readiness for ISO/IEC 42001:2023.",
+  "version": "1.0.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"
@@ -17,6 +17,7 @@
     "ai-governance",
     "ai-risk",
     "aisia",
+    "eu-ai-act",
     "grc"
   ]
 }
