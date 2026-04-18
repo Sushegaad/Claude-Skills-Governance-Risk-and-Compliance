@@ -181,7 +181,7 @@ Determine risks and opportunities that could affect AIMS achievement. Plan actio
 **Requirement:** Determine internal and external communications relevant to AIMS: what to communicate, when, to whom, how.
 
 **AI-specific communications:**
-- External: transparency disclosures to AI-affected individuals (links to A.8.1)
+- External: transparency disclosures to AI-affected individuals (links to A.8.2 and A.8.5)
 - Internal: AI incident alerts, policy updates, training announcements
 - Regulatory: AI incident notifications where required
 
@@ -207,7 +207,7 @@ Determine risks and opportunities that could affect AIMS achievement. Plan actio
 **Requirement:** Plan, implement, and control processes to meet AIMS requirements; implement control plans; manage planned changes; address unintended changes.
 
 **Key operational controls:**
-- AI system development follows documented lifecycle (A.5)
+- AI system development follows documented lifecycle (A.6)
 - Data governance controls applied (A.7)
 - Impact assessments completed before deployment
 - Change management process for AI systems — reassess risk/impact when systems change

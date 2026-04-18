@@ -94,9 +94,10 @@ For AI risk and impact assessment methodology → read `references/iso42001-ai-r
 **Output format:**
 ```
 CLAUSE/CONTROL | REQUIREMENT | STATUS | EVIDENCE NEEDED | GAP/ACTION
-4.1            | Context documented | 🔴 Not started | AIMS Scope doc | Define AI system boundary and organisational context
+4.1            | Context documented | 🔴 Not started | Context analysis (PESTLE or equivalent) | Identify external/internal issues relevant to AI governance
+4.3            | AIMS scope defined | 🔴 Not started | AIMS Scope doc | Define AI system boundary, inclusions, exclusions, and justification
 6.1.2          | AI risk assessment | 🟡 Partial | Risk register | Expand to cover all in-scope AI systems
-A.5.1          | AI policy | 🟢 Implemented | Signed policy doc | Review against 42001 requirements
+A.2.2          | AI policy | 🟢 Implemented | Signed policy doc | Review against 42001 requirements
 ```
 
 ### 2. AI System Impact Assessment (AISIA)
@@ -117,7 +118,7 @@ The AISIA is a **mandatory** process under Clause 6.1.2. It assesses the potenti
 |-------|-------------|-------------------|
 | Low | Limited, easily reversible impact on non-vulnerable individuals | Standard controls apply |
 | Medium | Moderate impact, partially reversible, some vulnerable individuals | Enhanced transparency + human oversight |
-| High | Significant, hard-to-reverse impact on vulnerable individuals or society | Maximum controls — ADR, human review mandatory, high disclosure |
+| High | Significant, hard-to-reverse impact on vulnerable individuals or society | Maximum controls — mandatory human review, full transparency disclosure, formal right to challenge AI decisions |
 
 ### 3. AI Risk Assessment
 
@@ -134,18 +135,18 @@ Separate from the AISIA (which is impact-focused), the AI risk assessment evalua
 - Modify the AI system (retrain, add guardrails, change architecture)
 - Accept with monitoring (continuous monitoring + defined thresholds)
 - Avoid (do not deploy the AI system for this use case)
-- Transfer (contractual obligations to AI provider via Annex A.9 controls)
+- Transfer (contractual obligations to AI provider via Annex A.10 controls — specifically A.10.3 Suppliers)
 
 ### 4. Statement of Applicability (SoA) for AI
 
-Generate a SoA table covering all 38 Annex A controls:
+Generate a SoA table covering all Annex A controls across domains A.2–A.10 (38 controls total):
 
 **SoA format:**
 ```
 Control ID | Control Name | Applicable? | Justification | Implementation Status | Evidence Reference
-A.4.1 | Policies for AI systems | Yes | Required for all AIMS | Implemented | AI-POL-001
-A.5.1 | Resources for AI systems | Yes | Provider role | In progress | N/A
-A.6.1 | Processes for responsible AI | Yes | Provider role | Planned | N/A
+A.2.2 | AI policy | Yes | Required for all AIMS | Implemented | AI-POL-001
+A.4.3 | Data resources | Yes | Provider role — training data governance | In progress | N/A
+A.9.2 | Processes for responsible use of AI systems | Yes | AI user role | Planned | N/A
 ```
 
 For all 38 controls with descriptions → read `references/iso42001-controls-annex-a.md`
@@ -155,11 +156,11 @@ For all 38 controls with descriptions → read `references/iso42001-controls-ann
 **Core AIMS policies required:**
 - AI Policy (Clause 5.2) — overarching commitment, scope, principles, top management signature
 - AI Risk Management Policy (Clause 6) — risk assessment methodology, frequency, ownership
-- AI Acceptable Use Policy (A.4.1) — permitted and prohibited AI uses, user obligations
+- AI Acceptable Use Policy (A.9.2) — permitted and prohibited AI uses, user obligations
 - Data Governance for AI Policy (A.7) — training data quality, data sourcing, retention, bias controls
-- AI Incident Management Policy (A.8) — incident classification, reporting, response, post-incident review
-- AI System Lifecycle Policy (A.6) — development, testing, deployment, monitoring, decommission
-- AI Supplier Management Policy (A.9) — third-party AI provider due diligence, contractual clauses
+- AI Incident/Reporting Policy (A.8.4) — incident classification, reporting, response, post-incident review
+- AI System Lifecycle Policy (A.6) — development, testing, deployment, monitoring
+- AI Third-Party and Supplier Policy (A.10.3) — third-party AI provider due diligence, contractual clauses
 
 **Policy document structure (use for all):**
 ```
@@ -189,7 +190,7 @@ Auditor reviews: AIMS scope, AI policy, risk assessment records, AISIA records, 
 - [ ] AI system register (all systems in scope listed)
 - [ ] AI risk assessment completed for all in-scope systems (Clause 6.1.2)
 - [ ] AISIA completed for all in-scope systems (Clause 6.1.2)
-- [ ] Statement of Applicability (SoA) for all 38 Annex A controls
+- [ ] Statement of Applicability (SoA) covering all applicable Annex A controls (A.2–A.10)
 - [ ] AIMS objectives documented and measurable (Clause 6.2)
 - [ ] Internal audit programme (Clause 9.2)
 - [ ] Management review agenda template (Clause 9.3)
@@ -217,10 +218,10 @@ ISO 42001 uses HLS so it integrates cleanly:
 
 | ISO Standard | Integration Point |
 |-------------|-----------------|
-| ISO 27001:2022 | A.7 (data governance) maps to ISO 27001 Annex A.8 (asset controls); AI incident management links to 27001 Clause 6.4; supplier AI risk maps to 27001 A.5.19–5.22 |
+| ISO 27001:2022 | A.7 (data governance) maps to ISO 27001 Annex A.8 (technological controls); AI incident management links to 27001 Annex A.5.24–A.5.28 (incident management controls); supplier AI risk maps to 27001 A.5.19–A.5.22 |
 | ISO 9001:2015 | Quality management processes (Clause 8) align with AI lifecycle; PDCA cycle shared |
 | ISO 31000 | AI risk assessment methodology aligns with ISO 31000 risk framework |
-| NIST AI RMF | CSF-style four functions (Map, Measure, Manage, Govern) map to 42001 clauses and Annex A |
+| NIST AI RMF | Four core functions (Govern, Map, Measure, Manage) map to 42001 clauses and Annex A |
 | EU AI Act | High-risk AI system requirements align closely with 42001 AISIA and Annex A controls; 42001 certification may support EU AI Act conformity |
 
 ---
@@ -231,7 +232,7 @@ ISO 42001 uses HLS so it integrates cleanly:
 2. **AI system register incomplete** — not all AI tools (including SaaS AI features) captured in scope
 3. **Data governance for AI** (Annex A.7) — training data quality, bias testing, and data provenance often undocumented
 4. **Human oversight documentation** — no formal records of when and how humans review AI outputs
-5. **Supplier AI assessments** (A.9) — third-party AI providers not assessed; no contractual AI-specific clauses
+5. **Supplier AI assessments** (A.10.3) — third-party AI providers not assessed; no contractual AI-specific clauses
 6. **Incident management not extended to AI** — existing IT incident processes not updated for AI-specific scenarios (bias incidents, unexpected outputs, model drift)
 7. **AI objectives not measurable** — policy states responsible AI principles without specific, measurable targets
 

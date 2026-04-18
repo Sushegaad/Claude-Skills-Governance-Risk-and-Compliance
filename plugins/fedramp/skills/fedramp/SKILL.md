@@ -34,7 +34,7 @@ Identify the user's goal and jump to the appropriate section:
 ## Current FedRAMP State (as of 2025–2026)
 
 - **Baseline**: NIST SP 800-53 **Rev 5** (approved May 2023, fully in effect)
-- **Control counts** (Rev 5): Low = ~156, Moderate = 323, High = 410
+- **Control counts** (Rev 5): Low = ~156, Moderate = 323, High = 421
 - **OSCAL mandate**: RFC-0024 requires all CSPs to transition to machine-readable OSCAL packages by **September 2026**
 - **Security Inbox**: As of January 5, 2026, all authorized CSPs must maintain a dedicated Security Inbox for urgent vulnerability directives (no CAPTCHAs or barriers)
 - **FedRAMP 20x**: A modernization initiative in progress; introduces continuous authorization and modular/API-driven submissions. Traditional SSP/SAP/SAR templates remain required for non-20x paths.
@@ -46,7 +46,7 @@ Identify the user's goal and jump to the appropriate section:
 
 ### Approach
 1. **Clarify scope** — Ask the user: What is the CSO (Cloud Service Offering)? IaaS/PaaS/SaaS? Target impact level?
-2. **Identify authorization path** — Agency Authorization (sponsor needed) vs. JAB (Joint Authorization Board, now limited) vs. FedRAMP 20x pilot
+2. **Identify authorization path** — Agency Authorization (sponsor needed) vs. JAB P-ATO (Joint Authorization Board — effectively suspended since 2024; verify current status with FedRAMP PMO) vs. FedRAMP 20x pilot
 3. **Run through the readiness checklist** — See `references/readiness-checklist.md`
 4. **Surface gaps** — Map current state to required controls; flag missing documentation, unimplemented controls, and architectural deficiencies
 5. **Prioritize** — Group gaps by: (a) blockers for readiness review, (b) items addressable before 3PAO assessment, (c) POA&M candidates

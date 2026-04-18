@@ -59,8 +59,8 @@ data flows, control implementations, roles, and boundary. Many SSPs exceed 500 p
 - Leveraged FedRAMP services (IaaS/PaaS) and their authorization status
 - Inherited controls from leveraged services must be documented in CIS/CRM workbook
 
-### Section 9: Laws, Regulations, Standards (Appendix A-12)
-- Required attachment: SSP Appendix A-12 (Laws & Regulations) — use the FedRAMP template
+### Section 9: Laws, Regulations, Standards (Appendix B)
+- Required attachment: SSP Appendix B (Laws & Regulations) — use the FedRAMP template
 - Lists applicable federal laws (FISMA, Privacy Act, etc.)
 - May include agency-specific requirements (HIPAA, CJIS if applicable)
 

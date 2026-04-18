@@ -74,7 +74,7 @@ These skills are designed for professionals who work on information security, pr
 
 ## The Skills
 
-### 🔐 ISO 27001
+### 1. 🔐 ISO 27001
 
 **File:** `ISO 27001 - Claude Skill/iso27001.skill`
 
@@ -92,7 +92,7 @@ The ISO 27001 skill turns Claude into an expert ISO 27001 Lead Auditor and ISMS 
 
 ---
 
-### ✅ SOC 2
+### 2. ✅ SOC 2
 
 **File:** `SOC 2 - Claude Skill/soc2.skill`
 
@@ -110,7 +110,7 @@ The SOC 2 skill turns Claude into an expert SOC 2 compliance advisor grounded in
 
 ---
 
-### 🏛️ FedRAMP
+### 3. 🏛️ FedRAMP
 
 **File:** `FedRamp - Claude Skill/fedramp.skill`
 
@@ -128,7 +128,7 @@ The FedRAMP skill turns Claude into a knowledgeable FedRAMP advisor covering the
 
 ---
 
-### 🇪🇺 GDPR
+### 4. 🇪🇺 GDPR
 
 **File:** `GDPR - Claude Skill/gdpr-compliance.skill`
 
@@ -145,7 +145,7 @@ The GDPR skill turns Claude into an expert GDPR compliance assistant that bridge
 
 ---
 
-### 🏥 HIPAA
+### 5. 🏥 HIPAA
 
 **File:** `HIPAA - Claude Skill/hipaa-compliance.skill`
 
@@ -162,7 +162,7 @@ The HIPAA skill turns Claude into a knowledgeable HIPAA compliance advisor cover
 
 ---
 
-### 🛡️ NIST CSF
+### 6. 🛡️ NIST CSF
 
 **File:** `NIST Cybersecurity framework - Claude Skill/NIST Cybersecurity.skill`
 
@@ -181,7 +181,7 @@ The NIST CSF skill turns Claude into an expert NIST Cybersecurity Framework advi
 
 ---
 
-### 💳 PCI DSS
+### 7. 💳 PCI DSS
 
 **File:** `PCI Compliance - Claude Skill/PCI-Compliance.skill`
 
@@ -200,7 +200,7 @@ The PCI DSS skill turns Claude into an expert PCI DSS compliance advisor coverin
 
 ---
 
-### 🚨 TSA Cybersecurity
+### 8. 🚨 TSA Cybersecurity
 
 **File:** `TSA Compliance - Claude Skill/TSA-Compliance.skill`
 
@@ -221,17 +221,17 @@ The TSA Cybersecurity skill turns Claude into an expert TSA cybersecurity direct
 
 ---
 
-### 🤖 ISO 42001 AI Management System
+### 9. 🤖 ISO 42001 AI Management System
 
 **File:** `ISO 42001 - Claude Skill/ISO-42001.skill`
 
 The ISO 42001 skill turns Claude into an expert **ISO/IEC 42001:2023** AI Management System (AIMS) advisor — the world's first international standard for AI governance. It serves both **AI providers** (organisations that develop or deploy AI) and **AI users** (organisations integrating third-party AI), covering the full certification lifecycle from gap assessment through Stage 2 audit readiness.
 
 **What it does:**
-- Conducts structured **gap assessments** across all mandatory clauses (4–10) and all **38 Annex A controls** with 🔴/🟡/🟢 status, evidence requirements, and a phased remediation roadmap
+- Conducts structured **gap assessments** across all mandatory clauses (4–10) and all **38 Annex A controls** (domains A.2–A.10) with 🔴/🟡/🟢 status, evidence requirements, and a phased remediation roadmap
 - Guides the mandatory **AI System Impact Assessment (AISIA)** step by step — identifying affected populations, assessing impact dimensions (severity, reversibility, breadth, human oversight), classifying impact level (Low/Medium/High), and determining proportionate control requirements
 - Performs **AI risk assessment** across all risk categories: model risks (bias, drift, hallucination, adversarial attacks), data risks (quality, poisoning, privacy in training data), operational risks (scope creep, human over-reliance), and supply chain risks (third-party model risk, API dependencies)
-- Generates a complete **Statement of Applicability (SoA)** for all 38 Annex A controls with applicability decisions, justifications, and implementation status
+- Generates a complete **Statement of Applicability (SoA)** covering all 38 Annex A controls (A.2.2–A.10.4) with applicability decisions, justifications, and implementation status
 - Drafts all core **AIMS policies** — AI Policy, AI Risk Management Policy, AI Acceptable Use Policy, Data Governance for AI Policy, AI Incident Management Policy, AI System Lifecycle Policy, and AI Supplier Management Policy — each with document control blocks and clause citations
 - Produces **Stage 1 and Stage 2 audit checklists** with RAG status, evidence requirements per clause, and common auditor focus areas
 - **Maps ISO 42001 to the EU AI Act** — aligns AISIA to the Fundamental Rights Impact Assessment (FRIA) for high-risk AI systems; maps Annex A controls to EU AI Act technical requirements
@@ -283,13 +283,13 @@ The ISO 42001 skill turns Claude into an expert **ISO/IEC 42001:2023** AI Manage
 | Aligning a TSA CRMP to NIST CSF 2.0 and CISA Cross-Sector CPGs | TSA Cybersecurity + NIST CSF |
 | Running an ISO 42001 gap assessment for an AI provider with multiple ML models in production | ISO 42001 |
 | Completing an AI System Impact Assessment (AISIA) for an automated hiring tool | ISO 42001 |
-| Building a Statement of Applicability (SoA) for all 38 ISO 42001 Annex A controls | ISO 42001 |
+| Building a Statement of Applicability (SoA) covering all 38 ISO 42001 Annex A controls (A.2–A.10) | ISO 42001 |
 | Drafting an AI Policy and AI Acceptable Use Policy for a financial services firm | ISO 42001 |
 | Assessing whether a customer-facing AI system requires high-impact controls under ISO 42001 | ISO 42001 |
 | Preparing evidence packages for ISO 42001 Stage 1 and Stage 2 certification audits | ISO 42001 |
 | Mapping ISO 42001 AISIA requirements to EU AI Act Fundamental Rights Impact Assessment (FRIA) | ISO 42001 |
 | Integrating an ISO 42001 AIMS with an existing ISO 27001 ISMS | ISO 42001 + ISO 27001 |
-| Governing staff use of public AI tools (ChatGPT, Copilot) under Annex A control A.9.7 | ISO 42001 |
+| Governing staff use of public AI tools (ChatGPT, Copilot) under Annex A control A.9.2 and A.9.4 | ISO 42001 |
 
 ---
 

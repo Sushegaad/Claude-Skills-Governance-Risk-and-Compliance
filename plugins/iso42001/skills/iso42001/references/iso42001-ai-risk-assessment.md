@@ -116,7 +116,7 @@ For each identified risk with rating Medium or above:
 | **Add operational controls** | Risk can be managed through process | Human review checkpoints, output filtering, monitoring, incident alerting |
 | **Accept with monitoring** | Residual risk is acceptable; monitoring can detect materialisation | Document acceptance decision with senior sign-off; define alert thresholds |
 | **Avoid** | Risk cannot be reduced to acceptable level | Do not deploy AI for this use case; find non-AI alternative |
-| **Transfer** | Third-party better placed to manage | Contractual liability allocation; insurance; require vendor indemnification (A.9.2) |
+| **Transfer** | Third-party better placed to manage | Contractual liability allocation; insurance; require vendor indemnification (A.10.2 Allocating responsibilities, A.10.3 Suppliers) |
 
 ---
 
@@ -129,7 +129,7 @@ Risk ID | AI System | Risk Category | Risk Description | Likelihood | Severity |
 
 **Example entry:**
 ```
-R-001 | Loan_Approval_Model_v2 | Model - Bias | Model may produce discriminatory outcomes for applicants by protected characteristic | 3 | 5 | 15 | High | Modify: implement fairness-aware retraining + quarterly demographic disparity monitoring | A.5.3, A.5.5, A.5.8 | Medium (score 6) after treatment | AI Risk Owner - Credit | Q2 2025
+R-001 | Loan_Approval_Model_v2 | Model - Bias | Model may produce discriminatory outcomes for applicants by protected characteristic | 3 | 5 | 15 | High | Modify: implement fairness-aware retraining + quarterly demographic disparity monitoring | A.5.4, A.5.5, A.6.2.4, A.6.2.6 | Medium (score 6) after treatment | AI Risk Owner - Credit | Q2 2025
 ```
 
 ---
@@ -137,7 +137,7 @@ R-001 | Loan_Approval_Model_v2 | Model - Bias | Model may produce discriminatory
 ## Part 2: AI System Impact Assessment (AISIA)
 
 ### Purpose
-The AISIA takes a **stakeholder and societal lens** — it assesses impacts on individuals, groups, and society from the AI system's outputs and decisions. This is mandatory under Clause 6.1.2 and directly referenced in Annex A.6.
+The AISIA takes a **stakeholder and societal lens** — it assesses impacts on individuals, groups, and society from the AI system's outputs and decisions. This is mandatory under Clause 6.1.2 and directly referenced in Annex A.5 (controls A.5.2–A.5.5).
 
 ### When to Conduct an AISIA
 - **Before initial deployment** of any AI system in scope
@@ -194,13 +194,13 @@ For each affected population, assess:
 
 | Control Area | Low Impact | Medium Impact | High Impact |
 |-------------|-----------|--------------|-------------|
-| Transparency (A.8.1) | General notice that AI is used | Inform affected individuals; describe what AI does | Full disclosure; right to explanation; right to human review |
-| Human oversight | Human oversight available on request | Structured human review for edge cases | Mandatory human review of all consequential AI outputs |
-| Bias testing (A.5.5) | Basic performance testing | Fairness testing before deployment | Ongoing fairness monitoring with demographic breakdown |
-| Documentation (A.5.6) | Technical documentation | Technical + user-facing documentation | Full model card; audit trail per decision |
-| Monitoring (A.5.8) | Annual performance review | Quarterly monitoring | Continuous monitoring with automated alerts |
+| Transparency (A.8.2, A.8.5) | General notice that AI is used | Inform affected individuals; describe what AI does | Full disclosure; right to explanation; right to human review |
+| Human oversight (A.6.2.6) | Human oversight available on request | Structured human review for edge cases | Mandatory human review of all consequential AI outputs |
+| Verification & bias testing (A.6.2.4, A.7.4) | Basic performance testing | Fairness testing before deployment | Ongoing fairness monitoring with demographic breakdown |
+| Documentation (A.6.2.7, A.5.3) | Technical documentation | Technical + user-facing documentation | Full model card; audit trail per decision |
+| Monitoring (A.6.2.6, A.6.2.8) | Annual performance review | Quarterly monitoring | Continuous monitoring with automated alerts |
 | Recourse mechanism | General complaints process | AI-specific appeal process | Formal right to challenge AI decisions; human decision-maker available |
-| AISIA review cycle | Every 3 years or at major change | Annually or at significant change | Every 6 months or at any change |
+| AISIA review cycle (A.5.2) | Every 3 years or at major change | Annually or at significant change | Every 6 months or at any change |
 
 **Step 6: Document AISIA Findings**
 
@@ -255,4 +255,4 @@ ISO 42001 AISIA aligns closely with **EU AI Act Fundamental Rights Impact Assess
 | Law enforcement | High impact |
 | Migration/asylum/border control | High impact |
 | Justice/democratic processes | High impact |
-| General purpose AI (GPAI) | A.5.6 documentation; A.8.1 transparency |
+| General purpose AI (GPAI) | A.6.2.7 technical documentation; A.8.2 and A.8.5 transparency |
