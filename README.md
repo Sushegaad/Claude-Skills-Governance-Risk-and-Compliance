@@ -1,11 +1,11 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
-Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, and ISO 27701 Privacy Information Management — powered by Claude Skills.
+Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, and DORA Digital Operational Resilience — powered by Claude Skills.
 
 Benchmarked across 18 test cases (2 per framework) using the eval framework — each graded against 4–5 verifiable assertions by independent agents. Skills scored **94% ± 10%** vs a baseline of 72% ± 28%.
 
 [![Release: v0.3.0](https://img.shields.io/badge/Release-v0.3.0-brightgreen.svg)](../../releases/tag/v0.3.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills: 10](https://img.shields.io/badge/Skills-10-green.svg)](#the-skills)
+[![Skills: 11](https://img.shields.io/badge/Skills-11-green.svg)](#the-skills)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)](https://claude.ai)
 
 ---
@@ -25,6 +25,7 @@ Benchmarked across 18 test cases (2 per framework) using the eval framework — 
   - [TSA Cybersecurity](#-tsa-cybersecurity)
   - [ISO 42001 AI Management System](#-iso-42001-ai-management-system)
   - [ISO 27701 Privacy Information Management](#-iso-27701-privacy-information-management)
+  - [DORA Digital Operational Resilience](#-dora-digital-operational-resilience)
 - [Potential Use Cases](#potential-use-cases)
 - [How to Install a Skill](#how-to-install-a-skill)
 - [Install via Claude Code Marketplace](#install-via-claude-code-marketplace)
@@ -261,6 +262,28 @@ The ISO 27701 skill turns Claude into an expert **ISO/IEC 27701:2025** Privacy I
 
 ---
 
+### 11. 🏦 DORA Digital Operational Resilience
+
+**File:** `DORA - Claude Skill/dora.skill`
+
+The DORA skill turns Claude into an expert advisor on **Regulation (EU) 2022/2554** (the Digital Operational Resilience Act) — the anchoring ICT regulation for EU financial entities since 17 January 2025. It encodes all 64 DORA articles, all 12 adopted RTS/ITS, and provides precise article-level guidance for every compliance workflow. It explicitly separates DORA from NIS2, legacy EBA ICT guidelines, and ISO 27001 — a common source of conflation in general LLM responses.
+
+**What it does:**
+- Conducts structured **DORA gap analyses** across all four pillars: ICT risk management framework (Chapter II, Art. 5–16), incident management (Chapter III, Art. 17–23), resilience testing / TLPT (Chapter IV, Art. 24–27), and ICT third-party risk (Chapter V, Art. 28–44)
+- Guides **ICT-related incident classification** against Art. 18 criteria and the materiality thresholds in CDR (EU) 2024/1772, with a full decision tree for major vs. non-major
+- Builds **three-stage incident reporting procedures** per Art. 19 and CDR (EU) 2025/301 — initial (4h), intermediate (72h), final (1 month) — including content requirements at each stage
+- Reviews and drafts **contractual provisions** per Art. 30(2)(a)–(i), flagging the common audit-rights gap with hyperscale cloud providers
+- Builds or validates the **Register of Information** with all mandatory fields per CIR (EU) 2024/2956
+- Assesses **ICT concentration risk** per Art. 28(6) and Art. 29 — including multi-function reliance on a single cloud provider
+- Scopes **TLPT programmes** per Art. 26 and CDR (EU) 2025/1190, covering threat intelligence phase, red team test, mutual recognition, and tester qualification requirements
+- Drafts **ICT risk management framework** documentation per Art. 6–14 and CDR (EU) 2024/1774
+- Precisely distinguishes **Chapter II** (proactive ICT risk governance) from **Chapter III** (reactive incident management) — a common compliance confusion point
+- References all **12 adopted RTS/ITS** by exact regulation number (CDR/CIR) with article-level mapping
+
+**Trigger phrases:** `DORA`, `Regulation (EU) 2022/2554`, `digital operational resilience`, `ICT risk management framework`, `DORA gap analysis`, `Art. 6 DORA`, `Art. 17 ICT incident`, `Art. 18 classification`, `Art. 19 incident reporting`, `Art. 26 TLPT`, `Art. 28 third-party risk`, `Art. 30 contractual provisions`, `Register of Information`, `CIR 2024/2956`, `CDR 2024/1772`, `CDR 2024/1773`, `CDR 2024/1774`, `CDR 2025/301`, `CDR 2025/1190`, `TLPT financial entities`, `ICT concentration risk`, `critical ICT TPSP`, `DORA vs NIS2`, `EBA ICT guidelines DORA`, `DORA incident classification`, `DORA reporting timelines`, `Chapter II DORA`, `Chapter III DORA`
+
+---
+
 ## Potential Use Cases
 
 | Scenario | Relevant Skill(s) |
@@ -319,6 +342,16 @@ The ISO 27701 skill turns Claude into an expert **ISO/IEC 27701:2025** Privacy I
 | Mapping ISO 27701:2025 controls to GDPR articles for a compliance audit | ISO 27701 |
 | Assessing sub-processor management obligations for a cloud-native B2B SaaS | ISO 27701 |
 | Integrating a PIMS with an existing ISO 27001:2022 ISMS to avoid duplicating controls | ISO 27701 + ISO 27001 |
+| Running a DORA gap analysis for an EU credit institution ahead of a supervisory review | DORA |
+| Classifying an ICT incident against Art. 18 criteria and CDR (EU) 2024/1772 thresholds | DORA |
+| Building a three-stage incident reporting procedure (4h / 72h / 1 month) per Art. 19 | DORA |
+| Reviewing ICT vendor contracts against Art. 30(2) mandatory provisions | DORA |
+| Building or validating the Register of Information per CIR (EU) 2024/2956 | DORA |
+| Assessing ICT concentration risk for a bank reliant on a single hyperscaler | DORA |
+| Scoping a TLPT programme and evaluating whether the Art. 26 threshold applies | DORA |
+| Drafting an ICT Third-Party Risk Policy satisfying CDR (EU) 2024/1773 | DORA |
+| Advising on the interaction between DORA and NIS2 for a financial entity | DORA |
+| Mapping DORA obligations to legacy EBA ICT guidelines and identifying what changed | DORA |
 
 ---
 
@@ -338,6 +371,7 @@ The ISO 27701 skill turns Claude into an expert **ISO/IEC 27701:2025** Privacy I
    | 🚨 TSA Cybersecurity | [TSA-Compliance.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TSA%20Compliance%20-%20Claude%20Skill/TSA-Compliance.skill) |
    | 🤖 ISO 42001 AI Management System | [ISO-42001.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2042001%20-%20Claude%20Skill/ISO-42001.skill) |
    | 🔒 ISO 27701 Privacy Information Management | [iso27701.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2027701%20-%20Claude%20Skill/iso27701.skill) |
+   | 🏦 DORA Digital Operational Resilience | [dora.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DORA%20-%20Claude%20Skill/dora.skill) |
 
 2. Open Claude and navigate to **Customize → Skills**.
 3. Click **Upload Skill** and select the `.skill` file.
@@ -357,7 +391,7 @@ Add the marketplace and install the skills you need directly from the terminal:
 
 ```shell
 /plugin marketplace add Sushegaad/Claude-Skills-Governance-Risk-and-Compliance
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills tsa-compliance@grc-skills iso42001@grc-skills iso27701@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills tsa-compliance@grc-skills iso42001@grc-skills iso27701@grc-skills dora@grc-skills
 ```
 
 Teams can pre-wire the marketplace in `.claude/settings.json` so every developer gets the skills automatically when they open the project — no manual install required.

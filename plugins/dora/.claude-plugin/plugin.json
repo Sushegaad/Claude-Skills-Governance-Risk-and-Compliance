@@ -1,0 +1,24 @@
+{
+  "name": "dora",
+  "description": "DORA (Regulation (EU) 2022/2554) compliance advisor for EU financial entities — ICT risk management framework, incident classification and reporting, TLPT, ICT third-party risk, Register of Information, and all adopted RTS/ITS with article-level citations.",
+  "version": "0.3.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "dora",
+    "eu-2022-2554",
+    "ict-risk",
+    "digital-operational-resilience",
+    "financial-entities",
+    "third-party-risk",
+    "tlpt",
+    "rts",
+    "its",
+    "grc"
+  ]
+}
