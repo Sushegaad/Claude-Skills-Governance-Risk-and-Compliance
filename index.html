@@ -206,6 +206,25 @@ layout: null
     }
     .testimonial-card p { font-style: italic; color: #2d3748; font-size: 0.95rem; margin: 0 0 0.6rem; }
     .testimonial-card .author { font-style: normal; font-weight: 600; font-size: 0.85rem; color: var(--text-muted); }
+    .linkedin-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      margin: 1.4rem 0;
+      display: flex;
+      gap: 0;
+    }
+    .linkedin-card-accent { width: 4px; background: #0a66c2; flex-shrink: 0; }
+    .linkedin-card-body { padding: 1.25rem 1.5rem; flex: 1; }
+    .linkedin-card-body p { font-style: italic; color: #2d3748; font-size: 0.95rem; margin: 0 0 0.8rem; }
+    .linkedin-card-author { font-weight: 600; font-size: 0.875rem; color: var(--text-muted); display: flex; align-items: center; gap: 0.5rem; }
+    .linkedin-badge { display: inline-flex; align-items: center; gap: 4px; background: #0a66c2; color: #fff; font-size: 0.72rem; font-weight: 700; padding: 0.15em 0.6em; border-radius: 20px; text-decoration: none; }
+    .linkedin-badge:hover { background: #004182; }
+    .linkedin-card-image { flex-shrink: 0; width: 260px; }
+    .linkedin-card-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    @media (max-width: 680px) { .linkedin-card { flex-direction: column; } .linkedin-card-image { width: 100%; max-height: 220px; } }
 
     /* ── FEEDBACK FORM ── */
     .form-card {
@@ -846,8 +865,29 @@ layout: null
   <section class="tab-panel" id="tab-feedback" role="tabpanel">
 
     <h2>Customer Testimonials</h2>
-    <p>Feedback from the GRC and Claude AI community on Reddit: <a href="https://www.reddit.com/r/grc/comments/1rwp2x4/using_claude_ai_skills_to_act_as_a_dedicated_grc/" target="_blank" rel="noopener">r/grc</a> · <a href="https://www.reddit.com/r/ClaudeAI/comments/1s6r359/comment/od4k30y/" target="_blank" rel="noopener">r/ClaudeAI</a></p>
+    <p>Feedback from the GRC and Claude AI community on <a href="https://www.linkedin.com/posts/jaanametsamaa_an-open-source-repository-of-grc-claude-skills-share-7449381233484034048-xBAf" target="_blank" rel="noopener">LinkedIn</a>, Reddit (<a href="https://www.reddit.com/r/grc/comments/1rwp2x4/using_claude_ai_skills_to_act_as_a_dedicated_grc/" target="_blank" rel="noopener">r/grc</a> · <a href="https://www.reddit.com/r/ClaudeAI/comments/1s6r359/comment/od4k30y/" target="_blank" rel="noopener">r/ClaudeAI</a>), and beyond.</p>
 
+    <!-- LinkedIn testimonial -->
+    <a href="https://www.linkedin.com/posts/jaanametsamaa_an-open-source-repository-of-grc-claude-skills-share-7449381233484034048-xBAf" target="_blank" rel="noopener" style="text-decoration:none;display:block;">
+      <div class="linkedin-card">
+        <div class="linkedin-card-accent"></div>
+        <div class="linkedin-card-body">
+          <p>"An open-source repository of GRC Claude skills that are pretty good! It has ISO 27001, ISO 42001, SOC 2, FedRAMP, GDPR, and others. I checked them out and tested a few. It looks like the skills are at different levels but definitely a very good starting point if your AI assistant doesn't have any GRC skills installed yet."</p>
+          <div class="linkedin-card-author">
+            — Jaana Metsamaa, Co-Founder at Kontion.app &nbsp;
+            <span class="linkedin-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              LinkedIn
+            </span>
+          </div>
+        </div>
+        <div class="linkedin-card-image">
+          <img src="LinkedIn%20Feedback.png" alt="Jaana Metsamaa's LinkedIn post about GRC Claude Skills" loading="lazy" />
+        </div>
+      </div>
+    </a>
+
+    <!-- Reddit testimonials -->
     <div class="testimonial-grid">
       <div class="testimonial-card">
         <p>"Fantastic work. Going to follow this and test it out myself."</p>
