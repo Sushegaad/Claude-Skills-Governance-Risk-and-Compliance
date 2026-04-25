@@ -1,0 +1,12 @@
+{
+  "eval_id": 69,
+  "eval_name": "nist-ai-rmf-eu-ai-act-mapping",
+  "prompt": "We are subject to the EU AI Act and also want to align with NIST AI RMF. How do these two frameworks map to each other? Are there gaps we need to fill if we implement AI RMF but still need to comply with the EU AI Act?",
+  "assertions": [
+    "Provides a mapping between AI RMF functions and EU AI Act articles (e.g., GOVERN to Art. 9, MAP to Art. 9(2), MEASURE 2 to Art. 10/15)",
+    "States clearly that NIST AI RMF is voluntary while EU AI Act is mandatory",
+    "Identifies that AI RMF covers societal/ethical risks (bias, fairness) that go beyond EU AI Act technical requirements",
+    "Notes the EU AI Act requires mandatory post-market monitoring under Art. 72, aligning to MEASURE 3 and MANAGE 3",
+    "Explains that AI RMF implementation can satisfy the Art. 9 risk management system requirement for high-risk AI systems"
+  ]
+}

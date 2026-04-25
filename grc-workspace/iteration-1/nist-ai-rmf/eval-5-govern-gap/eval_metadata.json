@@ -1,0 +1,12 @@
+{
+  "eval_id": 70,
+  "eval_name": "nist-ai-rmf-govern-gap",
+  "prompt": "Conduct a GOVERN gap assessment for our organization. We have an AI ethics statement but no formal AI risk policy, no cross-functional AI team, no defined risk tolerance for AI, and our legal team is not involved in AI deployments. Rate each GOVERN category and give us a prioritised remediation plan.",
+  "assertions": [
+    "Assesses all 6 GOVERN categories: GV-1 through GV-6 with individual status ratings",
+    "Rates GV-1 as partial (ethics statement exists but no formal risk policy), GV-4 and GV-6 as not started based on stated facts",
+    "Provides specific remediation actions for each gap including drafting an AI Risk Management Policy",
+    "Includes a prioritised roadmap distinguishing quick wins from medium/long-term actions",
+    "Recommends establishing cross-functional AI risk working group including legal as a specific action for GV-4"
+  ]
+}

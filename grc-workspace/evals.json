@@ -1,6 +1,6 @@
 {
   "skill_name": "grc-skills",
-  "description": "Evaluations for all 12 GRC skills: ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001, ISO 27701, DORA, DPDPA",
+  "description": "Evaluations for all 14 GRC skills: ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001, ISO 27701, DORA, DPDPA, CMMC 2.0, NIST AI RMF",
   "evals": [
     {
       "id": 1,
@@ -870,6 +870,76 @@
       "id": 65,
       "prompt": "We are a prime contractor and discovered that two of our subcontractors handle CUI under our DoD contract. One subcontractor stores CUI on a personal Google Drive. The other has a CMMC Level 2 self-assessment score of 42 in SPRS. What are our obligations under DFARS 252.204-7021 for each subcontractor, and what steps should we take immediately?",
       "expected_output": "Explains DFARS 7021 flow-down obligations, Google Drive violates DFARS 7012 (non-FedRAMP cloud for CUI), SPRS score of 42 is concerning but not disqualifying alone, prime must verify subcontractor certification, steps: issue cure notice, require remediation plan, consider contract action",
+      "files": []
+    },
+    {
+      "id": 66,
+      "skill": "nist-ai-rmf",
+      "prompt": "Our company is starting to deploy AI systems and wants to use the NIST AI RMF. Can you explain the four core functions \u2014 GOVERN, MAP, MEASURE, and MANAGE \u2014 and how they relate to each other? What should we implement first?",
+      "expected_output": "Explanation of all four NIST AI RMF functions with their categories, the interdependency (GOVERN underpins all), and guidance that GOVERN should be established first as the foundation for the others.",
+      "assertions": [
+        "Lists all four functions: GOVERN, MAP, MEASURE, MANAGE with brief description of each",
+        "Correctly states GOVERN has 6 categories and underpins the other three functions",
+        "Explains MAP as context-setting for risk identification before measurement",
+        "Recommends implementing GOVERN first as the organizational foundation",
+        "Mentions the AI RMF is voluntary and non-prescriptive"
+      ],
+      "files": []
+    },
+    {
+      "id": 67,
+      "skill": "nist-ai-rmf",
+      "prompt": "We have an AI hiring tool that screens resumes and ranks candidates. Using the NIST AI RMF, what are the key risks we need to assess, which trustworthiness properties are most relevant, and what specific MEASURE 2.x actions should we take before deploying it?",
+      "expected_output": "Identification of fairness/bias as the primary risk, coverage of relevant trustworthiness properties (fair/bias managed, explainable, accountable), and specific MEASURE 2 suggested actions including disaggregated testing across demographic groups.",
+      "assertions": [
+        "Identifies fairness and demographic bias as the primary risk for hiring AI",
+        "Names at least 3 relevant trustworthiness properties including fairness/bias managed and explainability",
+        "References MEASURE 2.2 specifically for bias and fairness testing across demographic groups",
+        "Mentions disparate impact testing and demographic parity or equalized odds metrics",
+        "Notes regulatory considerations such as EEOC guidelines or EU AI Act high-risk classification for employment AI"
+      ],
+      "files": []
+    },
+    {
+      "id": 68,
+      "skill": "nist-ai-rmf",
+      "prompt": "Build me an AI risk register template for a financial services firm deploying a credit scoring model. Include the AI RMF categories each risk maps to, and suggest treatment options.",
+      "expected_output": "A structured risk register table with at least 5 risk entries, each mapped to specific AI RMF categories, with likelihood, impact, and treatment options including technical, operational, and governance approaches.",
+      "assertions": [
+        "Provides a structured risk register table with Risk ID, Description, Likelihood, Impact, and Treatment columns",
+        "Includes at least 5 distinct risk entries covering bias, explainability, data quality, model drift, and security/adversarial risks",
+        "Maps each risk to specific AI RMF categories using correct notation (e.g., MEASURE 2.2, MAP 5.1)",
+        "Includes treatment options for the credit bias risk referencing adverse action notice and disparate impact testing",
+        "Mentions MANAGE 2.3 or equivalent for defining emergency intervention procedures for critical model failures"
+      ],
+      "files": []
+    },
+    {
+      "id": 69,
+      "skill": "nist-ai-rmf",
+      "prompt": "We are subject to the EU AI Act and also want to align with NIST AI RMF. How do these two frameworks map to each other? Are there gaps we need to fill if we implement AI RMF but still need to comply with the EU AI Act?",
+      "expected_output": "A detailed cross-framework mapping table between AI RMF functions/categories and EU AI Act articles, plus identification of gaps \u2014 specifically that AI RMF is voluntary while EU AI Act is mandatory for in-scope providers.",
+      "assertions": [
+        "Provides a mapping between AI RMF functions and EU AI Act articles (e.g., GOVERN to Art. 9, MAP to Art. 9(2), MEASURE 2 to Art. 10/15)",
+        "States clearly that NIST AI RMF is voluntary while EU AI Act is mandatory",
+        "Identifies that AI RMF covers societal/ethical risks (bias, fairness) that go beyond EU AI Act technical requirements",
+        "Notes the EU AI Act requires mandatory post-market monitoring under Art. 72, aligning to MEASURE 3 and MANAGE 3",
+        "Explains that AI RMF implementation can satisfy the Art. 9 risk management system requirement for high-risk AI systems"
+      ],
+      "files": []
+    },
+    {
+      "id": 70,
+      "skill": "nist-ai-rmf",
+      "prompt": "Conduct a GOVERN gap assessment for our organization. We have an AI ethics statement but no formal AI risk policy, no cross-functional AI team, no defined risk tolerance for AI, and our legal team is not involved in AI deployments. Rate each GOVERN category and give us a prioritised remediation plan.",
+      "expected_output": "A gap assessment table for all 6 GOVERN categories with RAG status, specific gaps noted for each, and a prioritised remediation roadmap with concrete actions.",
+      "assertions": [
+        "Assesses all 6 GOVERN categories: GV-1 through GV-6 with individual status ratings",
+        "Rates GV-1 as partial (ethics statement exists but no formal risk policy), GV-4 and GV-6 as not started based on stated facts",
+        "Provides specific remediation actions for each gap including drafting an AI Risk Management Policy",
+        "Includes a prioritised roadmap distinguishing quick wins from medium/long-term actions",
+        "Recommends establishing cross-functional AI risk working group including legal as a specific action for GV-4"
+      ],
       "files": []
     }
   ]

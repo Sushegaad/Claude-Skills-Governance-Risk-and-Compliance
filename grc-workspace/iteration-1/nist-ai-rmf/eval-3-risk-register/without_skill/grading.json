@@ -1,0 +1,31 @@
+{
+  "eval_id": 3,
+  "eval_name": "eval-3-risk-register WITHOUT_SKILL",
+  "expectations": [
+    {
+      "text": "Provides a structured risk register table with Risk ID, Description, Likelihood, Impact, and Treatment columns",
+      "passed": true,
+      "evidence": "Each risk entry (RISK-001 through RISK-010) uses a structured table format with Risk ID, Description, Likelihood (numeric 1-5), Impact (numeric 1-5), and Treatment Options sections. A Risk Summary Matrix table at the end consolidates all entries with these columns."
+    },
+    {
+      "text": "Includes at least 5 distinct risk entries covering bias, explainability, data quality, model drift, and security/adversarial risks",
+      "passed": true,
+      "evidence": "RISK-001 covers algorithmic bias/discrimination; RISK-003 covers explainability and adverse action compliance; RISK-004 covers training data quality and representativeness; RISK-002 covers model performance degradation over time (drift); RISK-007 covers cybersecurity/adversarial attacks. All five required categories are present."
+    },
+    {
+      "text": "Maps each risk to specific AI RMF categories using correct notation (e.g., MEASURE 2.2, MAP 5.1)",
+      "passed": true,
+      "evidence": "Every risk entry includes a 'NIST AI RMF Mapping' field using correct notation: e.g., RISK-001 maps to 'MAP 1.5, MAP 2.3, MEASURE 2.5, MEASURE 2.9, MANAGE 2.2'; RISK-004 maps to 'MAP 2.1, MAP 2.2, MEASURE 1.3, MEASURE 2.3'. All entries use the standard function.subcategory format."
+    },
+    {
+      "text": "Includes treatment options for the credit bias risk referencing adverse action notice and disparate impact testing",
+      "passed": true,
+      "evidence": "RISK-001 treatment option 1 references 'disparate impact analysis using the four-fifths rule across all protected class proxies' and treatment option 6 mentions 'documented adverse action reason codes that are meaningful and non-discriminatory'. RISK-003 is dedicated to 'Lack of Explainability and Adverse Action Compliance'."
+    },
+    {
+      "text": "Mentions MANAGE 2.3 or equivalent for defining emergency intervention procedures for critical model failures",
+      "passed": false,
+      "evidence": "RISK-007 (cybersecurity) references 'MANAGE 2.3' but in the context of adversarial attack defense, not emergency intervention for critical model failures. RISK-002 (model drift/degradation) maps to 'MANAGE 3.1, MANAGE 3.2' and mentions rollback capability in treatment, but does not reference MANAGE 2.3 or explicitly frame this as an emergency intervention procedure for critical model failures."
+    }
+  ]
+}

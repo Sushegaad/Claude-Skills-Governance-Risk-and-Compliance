@@ -1,0 +1,12 @@
+{
+  "eval_id": 66,
+  "eval_name": "nist-ai-rmf-four-functions",
+  "prompt": "Our company is starting to deploy AI systems and wants to use the NIST AI RMF. Can you explain the four core functions — GOVERN, MAP, MEASURE, and MANAGE — and how they relate to each other? What should we implement first?",
+  "assertions": [
+    "Lists all four functions: GOVERN, MAP, MEASURE, MANAGE with brief description of each",
+    "Correctly states GOVERN has 6 categories and underpins the other three functions",
+    "Explains MAP as context-setting for risk identification before measurement",
+    "Recommends implementing GOVERN first as the organizational foundation",
+    "Mentions the AI RMF is voluntary and non-prescriptive"
+  ]
+}

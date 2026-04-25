@@ -1,0 +1,31 @@
+{
+  "eval_id": 4,
+  "eval_name": "eval-4-eu-ai-act-mapping WITH_SKILL",
+  "expectations": [
+    {
+      "text": "Provides a mapping between AI RMF functions and EU AI Act articles (e.g., GOVERN to Art. 9, MAP to Art. 9(2), MEASURE 2 to Art. 10/15)",
+      "passed": true,
+      "evidence": "Part 2 contains four detailed mapping tables: GOVERN maps GV-1 to Art. 9, GV-5 to Art. 9(2)(a); MAP maps MP-1 to Art. 9(2) and Art. 13, MP-1.4 to Art. 9(2)(b); MEASURE maps MS-1 to Art. 15 and Art. 10(2), MS-2 to Art. 9(6)/Art. 10/Art. 15, MS-3 to Art. 72; MANAGE maps MG-2.3 to Art. 14(4)(d), MG-3 to Art. 73."
+    },
+    {
+      "text": "States clearly that NIST AI RMF is voluntary while EU AI Act is mandatory",
+      "passed": true,
+      "evidence": "The Executive Summary explicitly states: 'The AI RMF is a voluntary, risk-based framework...The EU AI Act is mandatory EU law imposing specific legal obligations'. The framework comparison table also lists 'Legal nature: Voluntary guidance' vs 'Mandatory regulation (EU law)'."
+    },
+    {
+      "text": "Identifies that AI RMF covers societal/ethical risks (bias, fairness) that go beyond EU AI Act technical requirements",
+      "passed": false,
+      "evidence": "The response does not explicitly state that AI RMF covers societal/ethical risks (bias, fairness) that exceed EU AI Act coverage. The analysis is primarily framed around gaps where EU AI Act requires more than AI RMF (conformity assessment, Annex IX, Art. 5 prohibitions). GV-4 (cross-functional teams) is noted as having no EU AI Act equivalent, but bias/fairness going beyond EU AI Act technical requirements is not directly claimed."
+    },
+    {
+      "text": "Notes the EU AI Act requires mandatory post-market monitoring under Art. 72, aligning to MEASURE 3 and MANAGE 3",
+      "passed": true,
+      "evidence": "The MEASURE mapping table states: 'MS-3 — Ongoing monitoring | Art. 72 — Post-market monitoring obligation for providers'. The MANAGE mapping states: 'MG-4 — Review and improvement | Art. 9(1) — continuous iterative process'. Gap 9 in the gap analysis also explicitly discusses Art. 72 Post-Market Monitoring Plan and its alignment with MS-3 monitoring activities."
+    },
+    {
+      "text": "Explains that AI RMF implementation can satisfy the Art. 9 risk management system requirement for high-risk AI systems",
+      "passed": true,
+      "evidence": "Implementation Recommendation Step 2 states: 'Implementing GOVERN, MAP, MEASURE, and MANAGE at AI RMF Tier 3 (Repeatable) maturity provides the strongest available methodology for satisfying Art. 9. Document this explicitly — regulators and notified bodies understand AI RMF.' The GOVERN mapping also notes 'GV-1's requirement...directly supports Art. 9 compliance'."
+    }
+  ]
+}

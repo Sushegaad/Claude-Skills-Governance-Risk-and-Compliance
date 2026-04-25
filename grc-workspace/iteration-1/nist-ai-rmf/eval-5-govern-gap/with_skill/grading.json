@@ -1,0 +1,31 @@
+{
+  "eval_id": 5,
+  "eval_name": "eval-5-govern-gap WITH_SKILL",
+  "expectations": [
+    {
+      "text": "Assesses all 6 GOVERN categories: GV-1 through GV-6 with individual status ratings",
+      "passed": true,
+      "evidence": "Section 1 contains a table covering GV-1 through GV-6, each with explicit ratings (e.g., GV-1: Not Started, GV-6: Partial) and gap summaries."
+    },
+    {
+      "text": "Rates GV-1 as partial (ethics statement exists but no formal risk policy), GV-4 and GV-6 as not started based on stated facts",
+      "passed": false,
+      "evidence": "GV-1 is rated 'Not Started' (not partial), GV-4 is 'Not Started' (correct), and GV-6 is rated 'Partial' (not 'not started'). The response assigns partial status to GV-6 (ethics statement provides surface-level ethical principles alignment) and not-started to GV-1, which is the inverse of what the assertion expects."
+    },
+    {
+      "text": "Provides specific remediation actions for each gap including drafting an AI Risk Management Policy",
+      "passed": true,
+      "evidence": "Section 5 contains detailed remediation actions per GOVERN category. Action 2.1 explicitly states 'Publish an AI Risk Management Policy signed by senior leadership, incorporating trustworthy AI properties' addressing GV-1.1 and GV-1.2."
+    },
+    {
+      "text": "Includes a prioritised roadmap distinguishing quick wins from medium/long-term actions",
+      "passed": true,
+      "evidence": "Section 5 is titled 'Prioritised Remediation Roadmap' and explicitly labels Priority 1 as 'Quick Wins (0-60 days)', Priority 2 as 'Short Term (60-120 days)', Priority 3 as 'Medium Term (120-180 days)', and Priority 4 as 'Long Term (180+ days)'."
+    },
+    {
+      "text": "Recommends establishing cross-functional AI risk working group including legal as a specific action for GV-4",
+      "passed": true,
+      "evidence": "Action 1.2 states 'Convene an AI Risk Working Group — invite Legal, Privacy, Security, HR, Ethics, Engineering' and is explicitly mapped to GV-4.1 in the roadmap table."
+    }
+  ]
+}

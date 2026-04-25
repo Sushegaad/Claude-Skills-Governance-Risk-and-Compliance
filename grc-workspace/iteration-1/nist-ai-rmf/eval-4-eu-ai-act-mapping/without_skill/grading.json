@@ -1,0 +1,31 @@
+{
+  "eval_id": 4,
+  "eval_name": "eval-4-eu-ai-act-mapping WITHOUT_SKILL",
+  "expectations": [
+    {
+      "text": "Provides a mapping between AI RMF functions and EU AI Act articles (e.g., GOVERN to Art. 9, MAP to Art. 9(2), MEASURE 2 to Art. 10/15)",
+      "passed": true,
+      "evidence": "Sections 2.1 through 2.6 provide detailed mapping tables: GOVERN 5.1 to Art. 14, MAP 5.1 to Art. 9(2), MEASURE 2.2 to Art. 9(6), MEASURE 2.6 to Art. 10(2)/Art. 9(7), RESPOND 2.1 to Art. 72. The summary table in section 6 also maps EU AI Act articles to AI RMF coverage including Art. 9 to MAP+MEASURE+RESPOND."
+    },
+    {
+      "text": "States clearly that NIST AI RMF is voluntary while EU AI Act is mandatory",
+      "passed": true,
+      "evidence": "The Executive Summary states: 'The AI RMF is a voluntary, flexible risk management framework...while the EU AI Act is mandatory EU legislation with binding legal obligations, enforcement mechanisms, and penalties.' The conclusion reiterates: 'the AI RMF is a voluntary management tool, not a compliance framework'."
+    },
+    {
+      "text": "Identifies that AI RMF covers societal/ethical risks (bias, fairness) that go beyond EU AI Act technical requirements",
+      "passed": false,
+      "evidence": "The response does not make the claim that AI RMF covers societal/ethical risks (bias, fairness) beyond EU AI Act technical requirements. The analysis focuses on the reverse — gaps where EU AI Act requires more than AI RMF. While MEASURE 2.6 (bias/fairness evaluation) is noted as partial coverage of Art. 10(2), there is no statement that AI RMF's ethical/fairness coverage exceeds that of the EU AI Act."
+    },
+    {
+      "text": "Notes the EU AI Act requires mandatory post-market monitoring under Art. 72, aligning to MEASURE 3 and MANAGE 3",
+      "passed": false,
+      "evidence": "Art. 72 post-market monitoring is mentioned and mapped to 'RESPOND 2.1' (section 2.5 table and summary table). The response uses 'RESPOND' as the fourth function rather than 'MANAGE', and maps to RESPOND 2.1 rather than MEASURE 3 and MANAGE 3. No mention of MEASURE 3 or MANAGE 3 alignment with Art. 72 is present."
+    },
+    {
+      "text": "Explains that AI RMF implementation can satisfy the Art. 9 risk management system requirement for high-risk AI systems",
+      "passed": true,
+      "evidence": "The summary table rates Art. 9 risk management system as 'Strong (MAP + MEASURE + RESPOND)' with gap level 'Low'. The conclusion states: 'The NIST AI RMF provides a strong risk management foundation that aligns well with the EU AI Act's risk management system requirements'. Section 4 also notes AI RMF practices 'may serve as evidence of conformity for certain requirements — particularly around risk management systems'."
+    }
+  ]
+}

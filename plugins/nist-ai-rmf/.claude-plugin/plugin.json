@@ -1,0 +1,22 @@
+{
+  "name": "nist-ai-rmf",
+  "description": "Expert NIST AI Risk Management Framework (AI RMF 1.0) advisor — gap assessments, organizational profiles, GOVERN/MAP/MEASURE/MANAGE function guidance, AI risk registers, trustworthiness evaluation, and cross-framework mapping to ISO 42001, EU AI Act, and NIST CSF.",
+  "version": "0.5.0",
+  "author": {
+    "name": "Hemant Naik",
+    "email": "hemant.naik@gmail.com"
+  },
+  "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+  "repository": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance",
+  "license": "MIT",
+  "keywords": [
+    "nist-ai-rmf",
+    "ai-risk-management",
+    "ai-governance",
+    "responsible-ai",
+    "ai-trustworthiness",
+    "ai-bias",
+    "govern-map-measure-manage",
+    "grc"
+  ]
+}

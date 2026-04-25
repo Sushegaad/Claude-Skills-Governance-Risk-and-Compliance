@@ -1,0 +1,31 @@
+{
+  "eval_id": 2,
+  "eval_name": "eval-2-hiring-ai-risks WITHOUT_SKILL",
+  "expectations": [
+    {
+      "text": "Identifies fairness and demographic bias as the primary risk for hiring AI",
+      "passed": true,
+      "evidence": "'The most significant risk for a hiring AI is encoding or amplifying historical bias.' Risk section 1 is titled 'Bias and Discriminatory Outcomes' and is listed first. The trustworthiness properties section ranks Fairness as #1: 'Fairness is the paramount concern for a hiring AI.'"
+    },
+    {
+      "text": "Names at least 3 relevant trustworthiness properties including fairness/bias managed and explainability",
+      "passed": true,
+      "evidence": "Six trustworthiness properties are named: (1) Fairness (including bias management), (2) Explainability and Interpretability, (3) Accountability, (4) Privacy, (5) Reliability and Safety, (6) Transparency — all three minimum requirements are met."
+    },
+    {
+      "text": "References MEASURE 2.2 specifically for bias and fairness testing across demographic groups",
+      "passed": true,
+      "evidence": "Section 'MEASURE 2.2 — Evaluate AI Systems Against Defined Risk Criteria' includes: 'Conduct pre-deployment bias audits using demographically representative test sets', 'Perform adversarial testing: construct synthetic resumes that are identical except for demographic signals', and testing across 'non-traditional backgrounds, career changers, candidates with employment gaps'."
+    },
+    {
+      "text": "Mentions disparate impact testing and demographic parity or equalized odds metrics",
+      "passed": true,
+      "evidence": "MEASURE 2.1 states: 'Define quantitative fairness metrics for evaluation: demographic parity ratio, equalized odds (true positive rate parity and false positive rate parity across demographic groups).' MEASURE 2.4 references 'maximum acceptable disparate impact ratios (a common legal benchmark is the 4/5ths rule from the EEOC)'."
+    },
+    {
+      "text": "Notes regulatory considerations such as EEOC guidelines or EU AI Act high-risk classification for employment AI",
+      "passed": true,
+      "evidence": "Pre-Deployment Gate Checklist item 10: 'Compliance review completed for applicable employment law requirements (EEOC guidelines, NYC Local Law 144, EU AI Act high-risk classification if applicable).' Also references 'EEOC's uniform guidelines on employee selection procedures' and 'New York City Local Law 144' in the Explainability section."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "eval_id": 68,
+  "eval_name": "nist-ai-rmf-risk-register",
+  "prompt": "Build me an AI risk register template for a financial services firm deploying a credit scoring model. Include the AI RMF categories each risk maps to, and suggest treatment options.",
+  "assertions": [
+    "Provides a structured risk register table with Risk ID, Description, Likelihood, Impact, and Treatment columns",
+    "Includes at least 5 distinct risk entries covering bias, explainability, data quality, model drift, and security/adversarial risks",
+    "Maps each risk to specific AI RMF categories using correct notation (e.g., MEASURE 2.2, MAP 5.1)",
+    "Includes treatment options for the credit bias risk referencing adverse action notice and disparate impact testing",
+    "Mentions MANAGE 2.3 or equivalent for defining emergency intervention procedures for critical model failures"
+  ]
+}

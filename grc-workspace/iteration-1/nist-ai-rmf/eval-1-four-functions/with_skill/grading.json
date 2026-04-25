@@ -1,0 +1,31 @@
+{
+  "eval_id": 1,
+  "eval_name": "eval-1-four-functions WITH_SKILL",
+  "expectations": [
+    {
+      "text": "Lists all four functions: GOVERN, MAP, MEASURE, MANAGE with brief description of each",
+      "passed": true,
+      "evidence": "All four functions are listed with dedicated sections: GOVERN ('Organizational Accountability'), MAP ('Risk Identification'), MEASURE ('Risk Analysis'), MANAGE ('Risk Response'), each with detailed descriptions of key activities and purpose."
+    },
+    {
+      "text": "Correctly states GOVERN has 6 categories and underpins the other three functions",
+      "passed": true,
+      "evidence": "Section header reads 'GOVERN — Organizational Accountability (GV-1 through GV-6)' confirming 6 categories. Response states 'GOVERN underpins all three operational functions' and 'Without GOVERN, MAP, MEASURE, and MANAGE will lack the authority, ownership, and policy backing needed to operate consistently.'"
+    },
+    {
+      "text": "Explains MAP as context-setting for risk identification before measurement",
+      "passed": true,
+      "evidence": "'MAP establishes context. Before you can measure or manage AI risks, you need to understand what each AI system does, who it affects, and what could go wrong.' and 'MAP feeds MEASURE. You can only measure what you have identified.'"
+    },
+    {
+      "text": "Recommends implementing GOVERN first as the organizational foundation",
+      "passed": true,
+      "evidence": "'Start with GOVERN. This is not merely because it appears first in the framework's name — it is because every other function depends on it. Attempting to run MAP assessments or MEASURE evaluations without established policies, ownership, and risk tolerance produces outputs that no one has authority to act on.'"
+    },
+    {
+      "text": "Mentions the AI RMF is voluntary and non-prescriptive",
+      "passed": true,
+      "evidence": "'The AI RMF is voluntary and non-prescriptive. It defines outcomes and practices, not a single mandated method.'"
+    }
+  ]
+}

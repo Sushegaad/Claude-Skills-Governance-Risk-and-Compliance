@@ -1,0 +1,12 @@
+{
+  "eval_id": 67,
+  "eval_name": "nist-ai-rmf-hiring-ai-risks",
+  "prompt": "We have an AI hiring tool that screens resumes and ranks candidates. Using the NIST AI RMF, what are the key risks we need to assess, which trustworthiness properties are most relevant, and what specific MEASURE 2.x actions should we take before deploying it?",
+  "assertions": [
+    "Identifies fairness and demographic bias as the primary risk for hiring AI",
+    "Names at least 3 relevant trustworthiness properties including fairness/bias managed and explainability",
+    "References MEASURE 2.2 specifically for bias and fairness testing across demographic groups",
+    "Mentions disparate impact testing and demographic parity or equalized odds metrics",
+    "Notes regulatory considerations such as EEOC guidelines or EU AI Act high-risk classification for employment AI"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "eval_id": 3,
+  "eval_name": "eval-3-risk-register WITH_SKILL",
+  "expectations": [
+    {
+      "text": "Provides a structured risk register table with Risk ID, Description, Likelihood, Impact, and Treatment columns",
+      "passed": true,
+      "evidence": "Each risk entry (CS-001 through CS-010) is presented in a structured table with Risk ID, Risk Description, Likelihood, Impact, Risk Rating, and Treatment Options fields. A summary table at the end also captures all five required columns across all 10 risks."
+    },
+    {
+      "text": "Includes at least 5 distinct risk entries covering bias, explainability, data quality, model drift, and security/adversarial risks",
+      "passed": true,
+      "evidence": "CS-001 covers algorithmic bias; CS-002 covers explainability and adverse action; CS-003 covers training data quality; CS-004 covers model performance degradation and drift; CS-006 covers adversarial manipulation and model security. All five required risk categories are present."
+    },
+    {
+      "text": "Maps each risk to specific AI RMF categories using correct notation (e.g., MEASURE 2.2, MAP 5.1)",
+      "passed": true,
+      "evidence": "Every risk entry includes an 'AI RMF Categories' field using correct notation: e.g., CS-001 maps to 'MAP 3.3, MAP 5.2, MAP 5.3, MEASURE 2.2, MEASURE 3.1, MG-1.1, MG-2.1'; CS-003 maps to 'MAP 2.2, MAP 2.3, MAP 5.1, MEASURE 1.1, MEASURE 2.1, MEASURE 2.2'."
+    },
+    {
+      "text": "Includes treatment options for the credit bias risk referencing adverse action notice and disparate impact testing",
+      "passed": true,
+      "evidence": "CS-001 treatment option 1 references 'Disparate Impact Ratio (maintain ≥0.8 per EEOC 4/5ths rule)' for disparate impact testing. CS-002 (explainability/adverse action risk) treatment option 2 explicitly describes building 'an automated pipeline that translates model explanations into plain-language adverse action notices meeting Regulation B requirements'."
+    },
+    {
+      "text": "Mentions MANAGE 2.3 or equivalent for defining emergency intervention procedures for critical model failures",
+      "passed": true,
+      "evidence": "CS-004 treatment option 5 states: 'Document an emergency model rollback procedure specifying: trigger conditions, authorization chain, fallback scoring method, and customer communication protocol (MG-2.3)'. CS-006 also references MG-2.3 for 'Cryptographically sign model artifacts and verify integrity before deployment'."
+    }
+  ]
+}

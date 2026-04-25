@@ -1,11 +1,11 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
-Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, DORA Digital Operational Resilience, India's Digital Personal Data Protection Act (DPDPA), and CMMC 2.0 Cybersecurity Maturity Model Certification — powered by Claude Skills.
+Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, DORA Digital Operational Resilience, India's Digital Personal Data Protection Act (DPDPA), CMMC 2.0 Cybersecurity Maturity Model Certification, and NIST AI Risk Management Framework — powered by Claude Skills.
 
-Benchmarked across 65 test cases (5 per framework) using the eval framework — each graded against 5 verifiable assertions by independent agents. Skills scored **94%** vs a baseline of **85%** across 325 total assertions.
+Benchmarked across 70 test cases (5 per framework) using the eval framework — each graded against 5 verifiable assertions by independent agents. Skills scored **94%** vs a baseline of **84%** across 350 total assertions.
 
 [![Release: v0.5.0](https://img.shields.io/badge/Release-v0.5.0-brightgreen.svg)](../../releases/tag/v0.5.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills: 13](https://img.shields.io/badge/Skills-13-green.svg)](#the-skills)
+[![Skills: 14](https://img.shields.io/badge/Skills-14-green.svg)](#the-skills)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)](https://claude.ai)
 [![GitHub Stars](https://img.shields.io/github/stars/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance?style=flat&label=Stars&color=gold)](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance)
 
@@ -29,6 +29,7 @@ Benchmarked across 65 test cases (5 per framework) using the eval framework — 
   - [DORA Digital Operational Resilience](#-dora-digital-operational-resilience)
   - [DPDPA India Digital Personal Data Protection](#-dpdpa-india-digital-personal-data-protection)
   - [CMMC 2.0 Cybersecurity Maturity Model Certification](#-cmmc-20-cybersecurity-maturity-model-certification)
+  - [NIST AI Risk Management Framework](#-nist-ai-risk-management-framework)
 - [Potential Use Cases](#potential-use-cases)
 - [How to Install a Skill](#how-to-install-a-skill)
 - [Install via Claude Code Marketplace](#install-via-claude-code-marketplace)
@@ -329,6 +330,25 @@ The CMMC 2.0 skill turns Claude into an expert CMMC compliance advisor for US de
 
 ---
 
+### 14. 🤖 NIST AI Risk Management Framework
+
+**File:** `NIST AI RMF - Claude Skill/nist-ai-rmf.skill`
+
+The NIST AI RMF skill turns Claude into an expert advisor on the **NIST AI Risk Management Framework (AI RMF 1.0)**, published January 2023 as NIST AI 100-1. It covers all four core functions — GOVERN, MAP, MEASURE, and MANAGE — with their 19 categories and subcategories, the AI RMF Playbook's suggested actions, and deep guidance on evaluating AI systems for trustworthiness.
+
+**What it does:**
+- Builds **AI organizational profiles** — Current Profile (where you are) and Target Profile (where you want to be) across all 19 categories with gap scoring and a prioritised remediation roadmap
+- Conducts **GOVERN gap assessments** across all 6 categories (GV-1 to GV-6) — AI risk policies, accountability structures, roles, cross-functional teams, risk tolerance, and regulatory alignment
+- Guides **MAP context-setting** for any AI system — intended use documentation, affected stakeholder mapping, risk/benefit analysis, and likelihood/impact characterization
+- Specifies **MEASURE 2.x evaluation actions** before deployment — bias/fairness testing (demographic parity, equalized odds, disparate impact), explainability (SHAP, LIME, counterfactuals), adversarial robustness, privacy assessment, and human oversight validation
+- Builds **AI risk registers** with per-risk AI RMF category citations (e.g., MAP 5.2, MEASURE 2.2, MANAGE 2.3), trustworthiness property at risk, treatment options, and owners
+- Provides **MANAGE incident response** guidance — model failure triggers, containment procedures, stakeholder notification thresholds, and lessons-learned cycles
+- **Maps AI RMF to ISO 42001, EU AI Act, and NIST CSF** — showing which AI RMF categories satisfy Art. 9 (EU AI Act risk management system), equivalent ISO 42001 clauses, and how AI RMF extends NIST CSF beyond cybersecurity into societal and ethical AI risk
+
+**Trigger phrases:** `NIST AI RMF`, `AI RMF`, `NIST AI 100-1`, `AI Risk Management Framework`, `GOVERN function`, `MAP function`, `MEASURE function`, `MANAGE function`, `AI RMF Playbook`, `AI risk profile`, `AI trustworthiness`, `AI bias assessment`, `AI explainability`, `MEASURE 2.2`, `AI risk register`, `AI organizational profile`, `responsible AI framework`, `AI governance framework`, `AI incident response`, `AI RMF gap assessment`
+
+---
+
 ## Potential Use Cases
 
 | Scenario | Relevant Skill(s) |
@@ -416,6 +436,14 @@ The CMMC 2.0 skill turns Claude into an expert CMMC compliance advisor for US de
 | Scoping CUI within your organisation and designing an enclave to reduce CMMC scope | CMMC 2.0 |
 | Managing DFARS 252.204-7012 incident reporting obligations (72-hour DIBNET reporting) | CMMC 2.0 |
 | Flowing down CMMC requirements to subcontractors handling CUI | CMMC 2.0 |
+| Building an AI organizational profile using NIST AI RMF Current and Target states | NIST AI RMF |
+| Running a GOVERN gap assessment for an organization starting its AI risk programme | NIST AI RMF |
+| Evaluating a credit scoring model against MEASURE 2.x trustworthiness criteria | NIST AI RMF |
+| Building an AI risk register mapped to NIST AI RMF categories for a deployed ML system | NIST AI RMF |
+| Mapping NIST AI RMF to the EU AI Act Article 9 risk management system requirement | NIST AI RMF + ISO 42001 |
+| Assessing bias and fairness of a hiring AI tool (demographic parity, equalized odds, EEOC 4/5ths rule) | NIST AI RMF |
+| Designing a post-deployment AI monitoring programme using MEASURE 3.x and MANAGE 3.x | NIST AI RMF |
+| Integrating NIST AI RMF with an existing NIST CSF programme | NIST AI RMF + NIST CSF |
 
 ---
 
@@ -438,6 +466,7 @@ The CMMC 2.0 skill turns Claude into an expert CMMC compliance advisor for US de
    | 🏦 DORA Digital Operational Resilience | [dora.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DORA%20-%20Claude%20Skill/dora.skill) |
    | 🇮🇳 DPDPA India Digital Personal Data Protection | [dpdpa.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DPDPA%20-%20Claude%20Skill/dpdpa.skill) |
    | 🛡️ CMMC 2.0 Cybersecurity Maturity Model Certification | [cmmc.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CMMC%20-%20Claude%20Skill/cmmc.skill) |
+   | 🤖 NIST AI Risk Management Framework | [nist-ai-rmf.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20AI%20RMF%20-%20Claude%20Skill/nist-ai-rmf.skill) |
 
 2. Open Claude and navigate to **Customize → Skills**.
 3. Click **Upload Skill** and select the `.skill` file.
@@ -457,7 +486,7 @@ Add the marketplace and install the skills you need directly from the terminal:
 
 ```shell
 /plugin marketplace add Sushegaad/Claude-Skills-Governance-Risk-and-Compliance
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills tsa-compliance@grc-skills iso42001@grc-skills iso27701@grc-skills dora@grc-skills dpdpa@grc-skills cmmc@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills tsa-compliance@grc-skills iso42001@grc-skills iso27701@grc-skills dora@grc-skills dpdpa@grc-skills cmmc@grc-skills nist-ai-rmf@grc-skills
 ```
 
 Teams can pre-wire the marketplace in `.claude/settings.json` so every developer gets the skills automatically when they open the project — no manual install required.
@@ -468,13 +497,13 @@ Teams can pre-wire the marketplace in `.claude/settings.json` so every developer
 
 ## Skill Evaluation
 
-These skills were benchmarked using the [Claude Skill Creator](https://claude.ai) eval framework. **65 realistic test cases** were run across all 13 skills — 5 per framework — covering gap analysis, policy drafting, control deep-dives, edge cases, and compliance advice scenarios. Each test case was evaluated against 5 objectively verifiable assertions by independent grader agents comparing skill-assisted vs. baseline Claude responses.
+These skills were benchmarked using the [Claude Skill Creator](https://claude.ai) eval framework. **70 realistic test cases** were run across all 14 skills — 5 per framework — covering gap analysis, policy drafting, control deep-dives, edge cases, and compliance advice scenarios. Each test case was evaluated against 5 objectively verifiable assertions by independent grader agents comparing skill-assisted vs. baseline Claude responses.
 
 | Configuration | Pass Rate | Assertions Passed |
 |---------------|-----------|-------------------|
-| **With GRC Skills installed** | **94%** | **307 / 325** |
-| Without skills (baseline Claude) | 85% | 275 / 325 |
-| **Delta** | **+9 points** | **+32 assertions** |
+| **With GRC Skills installed** | **94%** | **330 / 350** |
+| Without skills (baseline Claude) | 84% | 294 / 350 |
+| **Delta** | **+10 points** | **+36 assertions** |
 
 ### Per-Skill Results
 
@@ -493,8 +522,9 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | DORA | 5 | **88%** | 72% | +16% | Five pillars; ICT incident reporting timelines; TLPT requirements; Third-party contracts; DORA vs EBA |
 | DPDPA | 5 | **96%** | 80% | +16% | Applicability to foreign entities; Consent vs GDPR; Children's data (18-year threshold); Cross-border transfers; SDF obligations |
 | CMMC 2.0 | 5 | **100%** | 100% | +0% | Level determination; SPRS scoring; CUI scoping; SSP structure; C3PAO assessment readiness |
+| NIST AI RMF | 5 | **92%** | 76% | +16% | Four functions overview; Hiring AI risk assessment; Credit scoring risk register; EU AI Act mapping; GOVERN gap assessment |
 
-Skills add the most measurable value on highly framework-specific tasks: clause-level precision for ISO 27001, CC criteria mapping for SOC 2, exact FedRAMP POA&M timeframes and document names, GDPR article citations, HIPAA regulatory section references, CSF 2.0 subcategory IDs, PCI DSS v4.0.1 requirement numbers, TSA Security Directive citations, ISO 42001 AIMS clause references, DORA Article citations and exact incident reporting timelines (4h/72h/1 month), DPDPA-specific terminology (Data Fiduciary, 8 legitimate uses, blacklist transfers), and CMMC practice IDs, SPRS scoring methodology, and DFARS clause obligations.
+Skills add the most measurable value on highly framework-specific tasks: clause-level precision for ISO 27001, CC criteria mapping for SOC 2, exact FedRAMP POA&M timeframes and document names, GDPR article citations, HIPAA regulatory section references, CSF 2.0 subcategory IDs, PCI DSS v4.0.1 requirement numbers, TSA Security Directive citations, ISO 42001 AIMS clause references, DORA Article citations and exact incident reporting timelines (4h/72h/1 month), DPDPA-specific terminology, CMMC practice IDs and SPRS scoring, and NIST AI RMF category notation (GV-1 through MG-4.x) and trustworthiness metrics.
 
 📊 **[View the full eval results →](grc-skills-eval-results.html)**
 

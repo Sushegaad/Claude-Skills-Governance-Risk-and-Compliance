@@ -1,0 +1,31 @@
+{
+  "eval_id": 1,
+  "eval_name": "eval-1-four-functions WITHOUT_SKILL",
+  "expectations": [
+    {
+      "text": "Lists all four functions: GOVERN, MAP, MEASURE, MANAGE with brief description of each",
+      "passed": true,
+      "evidence": "All four functions are covered with dedicated sections and descriptions. A summary table at the end also captures all four: GOVERN ('Are we organized and accountable for AI risk?'), MAP ('What risks does this AI system create and for whom?'), MEASURE ('How significant are these risks?'), MANAGE ('What are we doing about these risks?')."
+    },
+    {
+      "text": "Correctly states GOVERN has 6 categories and underpins the other three functions",
+      "passed": false,
+      "evidence": "The response states GOVERN 'provides the enabling conditions for MAP, MEASURE, and MANAGE to operate effectively' and is 'the enabling backbone', satisfying the underpinning claim. However, it never mentions that GOVERN has 6 categories nor references category numbering (e.g., GV-1 through GV-6). The number '6' appears nowhere in the response."
+    },
+    {
+      "text": "Explains MAP as context-setting for risk identification before measurement",
+      "passed": true,
+      "evidence": "'MAP is the function focused on understanding and contextualizing AI risks.' and 'MAP creates the situational awareness needed before risks can be measured or mitigated.' and 'MAP feeds MEASURE: You cannot measure what you have not identified.'"
+    },
+    {
+      "text": "Recommends implementing GOVERN first as the organizational foundation",
+      "passed": true,
+      "evidence": "'Start with GOVERN — but begin MAP work in parallel.' and 'Begin with GOVERN because it creates the organizational conditions for everything else to succeed.'"
+    },
+    {
+      "text": "Mentions the AI RMF is voluntary and non-prescriptive",
+      "passed": true,
+      "evidence": "The overview states the framework 'provides a structured, voluntary approach for organizations to manage risks associated with AI systems.' The conclusion adds 'The NIST AI RMF is designed to be flexible and scalable.' While 'non-prescriptive' is not used verbatim, 'voluntary' and 'flexible and scalable' convey the same meaning."
+    }
+  ]
+}

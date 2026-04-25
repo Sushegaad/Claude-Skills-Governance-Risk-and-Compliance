@@ -1,0 +1,31 @@
+{
+  "eval_id": 5,
+  "eval_name": "eval-5-govern-gap WITHOUT_SKILL",
+  "expectations": [
+    {
+      "text": "Assesses all 6 GOVERN categories: GV-1 through GV-6 with individual status ratings",
+      "passed": true,
+      "evidence": "The response covers GV.1 through GV.6 with individual ratings using a four-point scale (Initial/Developing/Defined/Optimizing), and a summary ratings table lists all six categories."
+    },
+    {
+      "text": "Rates GV-1 as partial (ethics statement exists but no formal risk policy), GV-4 and GV-6 as not started based on stated facts",
+      "passed": false,
+      "evidence": "GV.1 is rated '2 — Developing' (not 'partial' in NIST tier terminology, though the ethics statement is acknowledged). GV.6 is rated '1 — Initial' which corresponds to not started (correct). However, GV.4 in this response maps to 'DEIA in AI' (not cross-functional collaboration), and is rated '1 — Initial'. The response uses a non-standard GV category mapping where GV.4=DEIA rather than cross-functional teams, making GV.1 and GV.4 ratings diverge from the assertion's expectations in both value and meaning."
+    },
+    {
+      "text": "Provides specific remediation actions for each gap including drafting an AI Risk Management Policy",
+      "passed": true,
+      "evidence": "Section 2.2 is explicitly titled 'Develop a Formal AI Risk Policy' and describes evolving the ethics statement into an enforceable AI risk policy. Specific remediation actions are provided across all four priority tiers."
+    },
+    {
+      "text": "Includes a prioritised roadmap distinguishing quick wins from medium/long-term actions",
+      "passed": true,
+      "evidence": "The remediation plan is structured into Priority 1 (Immediate, 0-60 days), Priority 2 (Short-Term, 60-120 days), Priority 3 (Medium-Term, 120-180 days), and Priority 4 (Ongoing, 180+ days), with a summary roadmap table."
+    },
+    {
+      "text": "Recommends establishing cross-functional AI risk working group including legal as a specific action for GV-4",
+      "passed": false,
+      "evidence": "Section 2.1 recommends forming 'a Cross-Functional AI Governance Body' with Legal included, but this action is mapped to GV.2 (Accountability Mechanisms), not GV.4. In this response, GV.4 covers DEIA in AI, not cross-functional collaboration. No specific cross-functional working group action is tied to GV.4."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "eval_id": 2,
+  "eval_name": "eval-2-hiring-ai-risks WITH_SKILL",
+  "expectations": [
+    {
+      "text": "Identifies fairness and demographic bias as the primary risk for hiring AI",
+      "passed": true,
+      "evidence": "The risk register lists HR-001 ('Model perpetuates historical hiring biases'), HR-002 ('Disparate impact on protected classes'), and HR-004 ('Proxy variable use') all as P1/Critical under 'Fair / Bias Managed'. Section 2 explicitly states 'Fair / Bias Managed — This is the most critical property for hiring AI.'"
+    },
+    {
+      "text": "Names at least 3 relevant trustworthiness properties including fairness/bias managed and explainability",
+      "passed": true,
+      "evidence": "Seven trustworthiness properties are named: (1) Fair / Bias Managed, (2) Explainable & Interpretable, (3) Valid & Verified, (4) Accountable & Transparent, (5) Privacy-Enhanced, (6) Reliable, (7) Safe — well exceeding the minimum of 3 and including both required properties."
+    },
+    {
+      "text": "References MEASURE 2.2 specifically for bias and fairness testing across demographic groups",
+      "passed": true,
+      "evidence": "Section 'MS-2.2 — Bias and Fairness Testing Across Demographic Groups' explicitly covers disaggregated performance analysis, Disparate Impact Ratio measurement, Equalized Odds testing, proxy variable audit, counterfactual fairness tests, and third-party bias audit — all tied to demographic groups."
+    },
+    {
+      "text": "Mentions disparate impact testing and demographic parity or equalized odds metrics",
+      "passed": true,
+      "evidence": "'Disparate Impact Ratio measurement. Calculate the ratio of positive screening outcomes... Flag any group where the ratio falls below 0.8 relative to the highest-rate group (EEOC 4/5ths rule).' and 'Equalized Odds testing. Verify that True Positive Rates... and False Positive Rates... are equivalent across demographic groups.' Demographic Parity is also listed in the trustworthiness properties section."
+    },
+    {
+      "text": "Notes regulatory considerations such as EEOC guidelines or EU AI Act high-risk classification for employment AI",
+      "passed": true,
+      "evidence": "The response explicitly references 'EEOC and Title VII standards — failure to meet the 4/5ths (80%) disparate impact ratio rule' (HR-002), 'EU AI Act (Annex III — employment, workers management, and access to self-employment)' in the context section, and a dedicated Regulatory Note section citing EU AI Act Articles 9–15 and NYC Local Law 144."
+    }
+  ]
+}
