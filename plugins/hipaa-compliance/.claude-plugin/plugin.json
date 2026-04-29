@@ -1,7 +1,7 @@
 {
   "name": "hipaa-compliance",
   "description": "HIPAA compliance advisor covering Privacy Rule, Security Rule, and Breach Notification \u2014 document generation, technical safeguards for cloud, and breach response.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

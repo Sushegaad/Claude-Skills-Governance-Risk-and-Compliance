@@ -1,6 +1,6 @@
 {
   "name": "ccpa",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) compliance advisor — business threshold analysis, consumer rights fulfillment, privacy notice drafting, service provider classification, sensitive personal information (SPI) handling, opt-out mechanisms (including GPC), CPPA enforcement, penalty exposure, and GDPR alignment.",
   "author": {
     "name": "Hemant Naik",

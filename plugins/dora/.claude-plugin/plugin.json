@@ -1,7 +1,7 @@
 {
   "name": "dora",
   "description": "DORA (Regulation (EU) 2022/2554) compliance advisor for EU financial entities — ICT risk management framework, incident classification and reporting, TLPT, ICT third-party risk, Register of Information, and all adopted RTS/ITS with article-level citations.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

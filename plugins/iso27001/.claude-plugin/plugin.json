@@ -1,7 +1,7 @@
 {
   "name": "iso27001",
   "description": "Expert ISO 27001 gap analysis, policy writing, Annex A control guidance, SoA generation, and risk register creation for both 2013 and 2022 versions.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

@@ -1,7 +1,7 @@
 {
   "name": "fedramp",
   "description": "End-to-end FedRAMP authorization guidance \u2014 readiness assessments, SSP narratives, POA&M management, NIST 800-53 Rev 5 control mapping, and ConMon support.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

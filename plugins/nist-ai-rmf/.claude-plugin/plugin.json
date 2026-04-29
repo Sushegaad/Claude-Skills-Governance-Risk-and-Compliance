@@ -1,7 +1,7 @@
 {
   "name": "nist-ai-rmf",
   "description": "Expert NIST AI Risk Management Framework (AI RMF 1.0) advisor — gap assessments, organizational profiles, GOVERN/MAP/MEASURE/MANAGE function guidance, AI risk registers, trustworthiness evaluation, and cross-framework mapping to ISO 42001, EU AI Act, and NIST CSF.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

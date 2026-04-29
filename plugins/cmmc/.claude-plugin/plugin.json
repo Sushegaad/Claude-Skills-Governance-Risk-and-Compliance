@@ -1,7 +1,7 @@
 {
   "name": "cmmc",
   "description": "Expert CMMC 2.0 compliance advisor for US defense contractors — gap analysis, SSP drafting, POA&M management, SPRS scoring, CUI scoping, and C3PAO assessment readiness for Level 1, 2, and 3.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

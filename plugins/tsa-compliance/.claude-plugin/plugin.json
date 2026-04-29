@@ -1,7 +1,7 @@
 {
   "name": "tsa-compliance",
   "description": "TSA cybersecurity compliance advisor for critical infrastructure \u2014 pipeline, freight rail, and transit Security Directive requirements including CIP/COIP, IRP, ADR, CAP, incident reporting, and OT/ICS security.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

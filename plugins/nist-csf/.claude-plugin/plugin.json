@@ -1,7 +1,7 @@
 {
   "name": "nist-csf",
   "description": "NIST Cybersecurity Framework (CSF 2.0 and 1.1) advisor \u2014 gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping, and cybersecurity policy generation.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

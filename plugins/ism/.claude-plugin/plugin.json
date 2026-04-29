@@ -1,7 +1,7 @@
 {
   "name": "ism",
   "description": "Expert Australian Information Security Manual (ISM) advisor for Australian government entities, contractors and supply chains. Gap analysis, system authorisation, IRAP preparation, control scoping, and ASD compliance guidance.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

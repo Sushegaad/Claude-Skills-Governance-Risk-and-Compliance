@@ -1,7 +1,7 @@
 {
   "name": "soc2",
   "description": "Expert SOC 2 compliance advisor covering all Trust Services Criteria \u2014 gap analysis, policy drafting, control documentation, audit evidence, and vendor risk.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

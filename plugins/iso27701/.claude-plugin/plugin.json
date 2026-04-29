@@ -1,7 +1,7 @@
 {
   "name": "iso27701",
   "description": "ISO 27701 Privacy Information Management System (PIMS) advisor — gap analysis, PIMS implementation, Annex A control guidance, SoA generation, privacy risk assessment, GDPR alignment, and certification readiness for ISO/IEC 27701:2025 (standalone PIMS) and 27701:2019.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"
