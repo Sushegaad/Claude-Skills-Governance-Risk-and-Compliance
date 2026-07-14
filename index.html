@@ -2998,51 +2998,58 @@ layout: null
 </section>
 <!-- ═══ TAB: Additional Projects ═══ -->
 <section class="tab-panel" id="tab-additional-projects" role="tabpanel">
-<h2>Additional Projects</h2>
-<p>Open-source projects from the same author, complementing the GRC skills collection.</p>
-<div class="project-card">
-<img alt="iso27001-mcp — npm package header with version, downloads, CI, license, ISO 27001:2022 and Socket badges" loading="lazy" onerror="this.style.display='none'" src="assets/projects/iso27001-mcp.png"/>
-<h3>iso27001-mcp — ISO 27001 Compliance Workspace for Claude</h3>
-<p>A stateful MCP server that turns Claude into a full ISO 27001 ISMS assistant. Unlike static prompt templates, it maintains a live, encrypted local database, so Claude can query, reason across, and update an entire ISMS within a single conversation. It ships with all 93 ISO 27001:2022 controls pre-seeded, a working risk register, 30 policy and procedure templates, evidence tracking, Statement of Applicability generation, and Clause 9.3/10.1 management review workflows.</p>
-<p><strong>Highlights</strong></p>
-<ul>
-<li>50 tools, 20 MCP resources, and 3 access roles covering the full ISMS lifecycle</li>
-<li>Security-first architecture: AES-256 encrypted SQLite, HMAC-signed API keys, tamper-evident audit log, and RBAC (viewer / analyst / admin)</li>
-<li>Human-in-the-loop confirmation gates on all critical writes</li>
-<li>Local-first by design — no telemetry, no cloud sync; installs in one line via npm</li>
-</ul>
-<p><strong>Links:</strong> <a href="https://www.npmjs.com/package/iso27001-mcp" rel="noopener" target="_blank">npm</a> · <a href="https://github.com/Sushegaad/MCP-Server-for-ISO27001" rel="noopener" target="_blank">GitHub</a> · <a href="https://sushegaad.github.io/MCP-Server-for-ISO27001/" rel="noopener" target="_blank">Live Demo</a></p>
-<p class="project-tags">ISO 27001 · ISMS · GRC · Risk Management · MCP · Open Source</p>
-</div>
-<div class="project-card">
-<img alt="Responsible AI Model Evaluations — nine-week red-teaming study infographic with safety leaderboard and top risk categories" loading="lazy" onerror="this.style.display='none'" src="assets/projects/responsible-ai-evals.png"/>
-<h3>Responsible AI Model Evaluations for the NIST AI Risk Management Framework</h3>
-<p>An open-source, automated red-teaming study benchmarking frontier LLMs from Anthropic, OpenAI, and Google against the RedBench dataset — 29,362 prompts spanning 37 sub-benchmarks and 22 safety risk categories. Results are scored through a dual-judge pipeline (deterministic regex plus a neural judge), mapped to the NIST AI RMF, published to a live public dashboard, and compiled into a research paper. Across nine weekly evaluation runs and more than 27,000 evaluations, the study surfaced repeatable, structural safety differences between providers.</p>
-<p><strong>Highlights</strong></p>
-<ul>
-<li>Demonstrated that safety and utility are not inherently in tension: Anthropic's Claude models were the only ones to sustain under 6% attack success rate and under 1.2% false refusals simultaneously</li>
-<li>Identified CBRN prompts as the most severe universal failure mode (35.41% average bypass rate across all providers), and election interference as an unsolved structural vulnerability industry-wide</li>
-<li>Measured multi-turn guardrail drift, showing some models erode under sustained adversarial pressure while Claude models tightened (−0.12 per turn)</li>
-<li>Fully reproducible: MIT-licensed code, open dataset, and a live public dashboard</li>
-</ul>
-<p><strong>Links:</strong> <a href="https://sushegaad.github.io/Responsible-AI-Model-Evaluations/" rel="noopener" target="_blank">Live Dashboard</a> · <a href="https://sushegaad.github.io/Responsible-AI-Model-Evaluations/paper/research-paper.pdf" rel="noopener" target="_blank">Research Paper (PDF)</a> · <a href="https://github.com/Sushegaad/Responsible-AI-Model-Evaluations" rel="noopener" target="_blank">GitHub</a></p>
-<p class="project-tags">AI Safety · Red Teaming · NIST AI RMF · LLM Evaluation · Open Source</p>
-</div>
-<div class="project-card">
-<img alt="AI Safety Guard — shield logo and Chrome extension warning dialog flagging IBAN, company secrets, PHI, email and phone number before sending to an AI chatbot" loading="lazy" onerror="this.style.display='none'" src="assets/projects/ai-safety-guard.png"/>
-<h3>AI Safety Guard — Chrome Extension for Sensitive-Data Protection</h3>
-<p>A free, open-source Chrome extension that warns users before they send sensitive data to AI chatbots (ChatGPT, Claude, Gemini, Perplexity, Copilot, and custom domains). It scans prompts as you type — entirely on-device, with no network calls, accounts, or logging — and interrupts risky sends with a masked warning and one-click redaction. Attached PDF and Word files are scanned locally, and pasted screenshots trigger a privacy nudge.</p>
-<p><strong>Highlights</strong></p>
-<ul>
-<li>Detects API keys, private keys, SSNs, credit cards, and EU identifiers (IBAN, NIR, Steuer-ID, DNI), plus confidential business, legal, and health language</li>
-<li>Multilingual detection in English, French, German, and Spanish</li>
-<li>100% local processing — no data ever leaves the device</li>
-<li>Built to WCAG 2.1 AA accessibility standards, with a public SBOM and federal security overview for organizational review</li>
-</ul>
-<p><strong>Links:</strong> <a href="https://sushegaad.github.io/AI-Safety-Guard-Chrome-Extension/" rel="noopener" target="_blank">Website</a> · <a href="https://github.com/Sushegaad/AI-Safety-Guard-Chrome-Extension" rel="noopener" target="_blank">GitHub</a> · <a href="https://youtu.be/cRWgHaxGqjY" rel="noopener" target="_blank">Demo Video</a></p>
-<p class="project-tags">Privacy · Browser Security · Data Loss Prevention · Chrome Extension · Open Source</p>
-</div>
-</section>
+
+    <h2>Additional Projects</h2>
+    <p>Open-source projects from the same author, complementing the GRC skills collection.</p>
+
+    <div class="project-card">
+      <img src="assets/projects/iso27001-mcp.png" alt="iso27001-mcp — npm package header with version, downloads, CI, license, ISO 27001:2022 and Socket badges" loading="lazy" onerror="this.style.display='none'" />
+      <h3>iso27001-mcp — ISO 27001 Compliance MCP Server</h3>
+      <p>A stateful MCP server that turns Claude into a full ISO 27001 ISMS assistant. Unlike static prompt templates, it maintains a live, encrypted local database — so Claude can query, reason across, and update an entire ISMS within a single conversation. It ships with all 93 ISO 27001:2022 controls pre-seeded, a working risk register, 30 policy and procedure templates, evidence tracking, Statement of Applicability generation, and Clause 9.3/10.1 management review workflows.</p>
+      <p><strong>Highlights</strong></p>
+      <ul>
+        <li>52 tools, 20 MCP resources, 4 workflow prompts, and 3 access roles covering the full ISMS lifecycle</li>
+        <li>Security-first architecture: AES-256 encrypted SQLite, HMAC-signed API keys, tamper-evident audit log, and RBAC (viewer / analyst / admin)</li>
+        <li>Human-in-the-loop confirmation gates with server-side proposal tokens — the model cannot self-confirm a write without returning a preview to a human first</li>
+        <li>CSV bulk import for risks and control statuses — migrate existing spreadsheet workflows without reformatting</li>
+        <li>Local-first by design — no telemetry, no cloud sync; installs in one line via npm</li>
+      </ul>
+      <p><strong>Links:</strong> <a href="https://www.npmjs.com/package/iso27001-mcp" target="_blank" rel="noopener">npm</a> · <a href="https://github.com/Sushegaad/MCP-Server-for-ISO27001" target="_blank" rel="noopener">GitHub</a> · <a href="https://sushegaad.github.io/MCP-Server-for-ISO27001/" target="_blank" rel="noopener">Live Demo</a></p>
+      <p class="project-tags">ISO 27001 · ISMS · GRC · Risk Management · MCP · Open Source</p>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/projects/ai-safety-guard.png" alt="AI Prompt - Security Guard — shield logo and Chrome extension warning dialog flagging IBAN, company secrets, PHI, email and phone number before sending to an AI chatbot" loading="lazy" onerror="this.style.display='none'" />
+      <h3>AI Prompt - Security Guard — Chrome Extension for Sensitive-Data Protection</h3>
+      <p>A free, open-source Chrome extension that protects what you type into AI chatbots (ChatGPT, Claude, Gemini, Perplexity, Copilot, and custom domains). It scans prompts as you type — entirely on-device, with no network calls, accounts, or logging — and interrupts risky sends with a masked warning and one-click redaction. New <strong>Shield Mode</strong> goes further: click the Shield chip on the chat box to type inside a private composer the site can't read, then redact &amp; send, insert, or cancel — nothing reaches the page until you approve it. Attached PDF and Word files are scanned locally, and pasted screenshots trigger a privacy nudge.</p>
+      <p><strong>Highlights</strong></p>
+      <ul>
+        <li>Detects API keys, private keys, SSNs, credit cards, and EU identifiers (IBAN, NIR, Steuer-ID, DNI), plus confidential business, legal, and health language</li>
+        <li>Shield Mode: secure typing in AI chatbots — your draft stays invisible to the site until you approve it</li>
+        <li>Multilingual detection in English, French, German, and Spanish</li>
+        <li>100% local processing — nothing you type is ever stored or transmitted, not even masked</li>
+        <li>Built to WCAG 2.1 AA accessibility standards, with a public SBOM and federal security overview for organizational review</li>
+      </ul>
+      <p><strong>Links:</strong> <a href="https://chromewebstore.google.com/detail/ai-prompt-security-guard/ipoadoogocaeeijapcohiehibkoihcdn" target="_blank" rel="noopener">Chrome Web Store</a> · <a href="https://sushegaad.github.io/AI-Prompt-Security-Guard-Chrome-Extension/" target="_blank" rel="noopener">Website</a> · <a href="https://github.com/Sushegaad/AI-Prompt-Security-Guard-Chrome-Extension" target="_blank" rel="noopener">GitHub</a> · <a href="https://youtu.be/cRWgHaxGqjY" target="_blank" rel="noopener">Demo Video</a></p>
+      <p class="project-tags">Privacy · Browser Security · Data Loss Prevention · Chrome Extension · Open Source</p>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/projects/responsible-ai-evals.png" alt="Responsible AI Model Evaluations — nine-week red-teaming study infographic with safety leaderboard and top risk categories" loading="lazy" onerror="this.style.display='none'" />
+      <h3>Responsible AI Model Evaluations for the NIST AI Risk Management Framework</h3>
+      <p>An open-source, automated red-teaming study benchmarking frontier LLMs from Anthropic, OpenAI, and Google against the RedBench dataset — 29,362 prompts spanning 37 sub-benchmarks and 22 safety risk categories. Results are scored through a dual-judge pipeline (deterministic regex plus a neural judge), mapped to the NIST AI RMF, published to a live public dashboard, and compiled into a research paper. Across nine weekly evaluation runs and more than 27,000 evaluations, the study surfaced repeatable, structural safety differences between providers.</p>
+      <p><strong>Highlights</strong></p>
+      <ul>
+        <li>Demonstrated that safety and utility are not inherently in tension: Anthropic's Claude models were the only ones to sustain under 6% attack success rate and under 1.2% false refusals simultaneously</li>
+        <li>Identified CBRN prompts as the most severe universal failure mode (35.41% average bypass rate across all providers), and election interference as an unsolved structural vulnerability industry-wide</li>
+        <li>Measured multi-turn guardrail drift, showing some models erode under sustained adversarial pressure while Claude models tightened (−0.12 per turn)</li>
+        <li>Fully reproducible: MIT-licensed code, open dataset, and a live public dashboard</li>
+      </ul>
+      <p><strong>Links:</strong> <a href="https://sushegaad.github.io/Responsible-AI-Model-Evaluations/" target="_blank" rel="noopener">Live Dashboard</a> · <a href="https://sushegaad.github.io/Responsible-AI-Model-Evaluations/paper/research-paper.pdf" target="_blank" rel="noopener">Research Paper (PDF)</a> · <a href="https://github.com/Sushegaad/Responsible-AI-Model-Evaluations" target="_blank" rel="noopener">GitHub</a></p>
+      <p class="project-tags">AI Safety · Red Teaming · NIST AI RMF · LLM Evaluation · Open Source</p>
+    </div>
+
+  </section>
 </main>
 <!-- ══════════════ FOOTER ══════════════ -->
 <footer class="site-footer">
