@@ -1,7 +1,7 @@
 {
   "name": "itar",
   "description": "Expert ITAR compliance advisor for US defense contractors, exporters, and manufacturers \u2014 USML classification, DDTC registration, export license applications (DSP-5/73/94), Technical Assistance Agreements (TAA), Manufacturing License Agreements (MLA), brokering regulations (Part 129), deemed export rules for foreign nationals, technology control plans, voluntary disclosures, violation mitigation, and Blue Lantern end-use checks. Use for any question about 22 CFR Parts 120-130, defense article/service classification, jurisdiction determination (ITAR vs EAR), or US Munitions List category scoping.",
-  "version": "1.6.2",
+  "version": "1.7.1",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

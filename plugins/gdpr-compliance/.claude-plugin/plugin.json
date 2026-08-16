@@ -1,7 +1,7 @@
 {
   "name": "gdpr-compliance",
   "description": "GDPR compliance assistant \u2014 code and system audits, privacy notice drafting, DPAs, DPIAs, data flow reviews, and authoritative article-cited Q&A.",
-  "version": "1.6.2",
+  "version": "1.7.1",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

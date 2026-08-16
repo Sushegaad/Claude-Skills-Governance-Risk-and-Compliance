@@ -1,7 +1,7 @@
 {
   "name": "pci-compliance",
   "description": "PCI DSS v4.0.1 compliance advisor \u2014 CDE scoping, SAQ selection, gap assessments, control implementation guidance, QSA audit preparation, and remediation planning.",
-  "version": "1.6.2",
+  "version": "1.7.1",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

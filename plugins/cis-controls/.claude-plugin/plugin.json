@@ -1,7 +1,7 @@
 {
   "name": "cis-controls",
   "description": "CIS Controls v8 (CIS Top 18) advisor \u2014 Implementation Group scoping (IG1/IG2/IG3), gap assessments across all 153 safeguards, asset/software inventory, data protection, secure configuration, MFA and access control, vulnerability management, audit log management, malware defenses, incident response, penetration testing, and CIS Controls mapping to NIST CSF 2.0, ISO 27001:2022, SOC 2, PCI DSS, and CMMC 2.0. Use for any CIS Controls, CIS Benchmarks, or prioritized cyber hygiene question.",
-  "version": "1.6.2",
+  "version": "1.7.1",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

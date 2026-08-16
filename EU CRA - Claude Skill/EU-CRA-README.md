@@ -84,7 +84,7 @@ Once installed, try prompts like:
 | **Full application** | 11 December 2027 |
 | **Vulnerability reporting** | 11 September 2026 |
 | **Enforcing body** | National Market Surveillance Authorities + ENISA |
-| **Skill version** | 1.6.2 |
+| **Skill version** | 1.7.1 |
 | **File** | `eu-cra.skill` |
 
 **Reference files bundled in the skill:**

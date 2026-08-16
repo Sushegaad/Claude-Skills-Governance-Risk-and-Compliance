@@ -1,7 +1,7 @@
 {
   "name": "fedramp",
   "description": "End-to-end FedRAMP authorization guidance under CR26 \u2014 Certification Classes A-D, FedRAMP 20x pathway, readiness assessments, SSP narratives, POA&M management, NIST 800-53 Rev 5 control mapping, OSCAL mandate, and ConMon support.",
-  "version": "1.6.2",
+  "version": "1.7.1",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

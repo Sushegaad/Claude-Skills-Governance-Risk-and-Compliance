@@ -1,7 +1,7 @@
 {
   "name": "nzism",
   "description": "Expert New Zealand Information Security Manual (NZISM) advisor for NZ government agencies. Gap analysis, system certification & accreditation, classification framework guidance, control implementation, and GCSB/NCSC NZ compliance.",
-  "version": "1.6.2",
+  "version": "1.7.1",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

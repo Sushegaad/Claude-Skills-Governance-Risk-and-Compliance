@@ -138,5 +138,5 @@ The skill activates on any of the following topics (non-exhaustive):
 [LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
 **Built with:** Claude (Anthropic) using the Claude Skills framework
 **Date:** March 2026
-**Skill version:** 1.6.2
+**Skill version:** 1.7.1
 **Standard coverage:** NIST Cybersecurity Framework 2.0 (February 2024) and NIST CSF 1.1 (April 2018)

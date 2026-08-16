@@ -252,4 +252,4 @@ eu-ai-act/
 **Hemant Naik**
 [LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
 
-Skill version: 1.6.2 — July 2026. Updated for: Digital Omnibus formally adopted June 29, 2026 (Annex III deferral to Dec 2, 2027 and Annex I to Aug 2, 2028 confirmed as law); AI Office enforcement powers over GPAI providers activate August 2, 2026 (one month away — urgent); 9 prohibited practices (9th: nudification/CSAM, Dec 2, 2026); all conditional language removed. Benchmark: 100% with skill vs 80% baseline (+20%).
+Skill version: 1.7.1 — August 2026. Updated for: Digital Omnibus formally adopted June 29, 2026 (Annex III deferral to Dec 2, 2027 and Annex I to Aug 2, 2028 confirmed as law); AI Office enforcement powers over GPAI providers activate August 2, 2026 (one month away — urgent); 9 prohibited practices (9th: nudification/CSAM, Dec 2, 2026); all conditional language removed. Benchmark: 100% with skill vs 80% baseline (+20%).

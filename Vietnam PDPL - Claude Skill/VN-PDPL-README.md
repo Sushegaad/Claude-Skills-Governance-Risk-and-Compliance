@@ -81,7 +81,7 @@ Once installed, try prompts like:
 | **Implementing decree** | Decree 356/2025/ND-CP (31 December 2025) |
 | **Effective date** | 1 January 2026 |
 | **Administering authority** | Ministry of Public Security of Vietnam |
-| **Skill version** | 1.6.2 |
+| **Skill version** | 1.7.1 |
 | **File** | `vn-pdpl.skill` |
 
 **Reference files bundled in the skill:**

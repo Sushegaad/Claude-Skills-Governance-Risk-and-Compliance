@@ -909,7 +909,7 @@ layout: null
 </div>
 </div>
 <div class="badges">
-<img alt="Release v1.6.2" src="https://img.shields.io/badge/Release-v1.6.2-brightgreen.svg"/>
+<img alt="Release v1.7.1" src="https://img.shields.io/badge/Release-v1.7.1-brightgreen.svg"/>
 <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-blue.svg"/>
 <img alt="30 Skills" src="https://img.shields.io/badge/Skills-30-green.svg"/>
 <img alt="Built with Claude" src="https://img.shields.io/badge/Built%20with-Claude-orange.svg"/>
@@ -2902,19 +2902,38 @@ layout: null
 <p style="margin-top:1rem;"><em>Licensed under the <a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/LICENSE">MIT License</a>.</em></p>
 <hr/>
 <h2>Release Notes</h2>
-<p>Full changelog for all public releases. Latest release: <strong>v1.6.2</strong>.</p>
-<!-- v1.6.2 -->
+<p>Full changelog for all public releases. Latest release: <strong>v1.7.1</strong>.</p>
+<!-- v1.7.1 -->
 <div class="release current">
+<div class="release-header">
+<span class="tag">v1.7.1</span>
+<span class="date">15 Aug 2026</span>
+<span class="whats-new-current-badge">Latest</span>
+</div>
+<ul>
+<li><span class="release-badge badge-improve">Improved</span> <strong>August 2026 regulatory cycle — five skills updated for July changes</strong>: CMMC (July 13 Phase 2 suspension interim guidance with built-in re-verify date), FedRAMP (CR26 final; Legacy Ready conversion deadlines; Class A/B/C pipeline dates; KSIs named), Australian ISM (June 2026 release: 49 restructured principles, AI application controls ISM-2112/2113/2114, expanded in-transit cryptography, cloud answer checklist), CSRD (full post-Omnibus scope rewrite per Directive (EU) 2026/470 — 1,000+ employees AND €450M — plus revised ESRS of July 3, 2026 with the current-vs-revised basis workflow), EU AI Act (Reg. (EU) 2026/1744 OJ citation, enforcement-era framing, Art. 50(2)/50(4) distinctness rule). All facts verified against primary sources before editing</li>
+<li><span class="release-badge badge-improve">Improved</span> <strong>Benchmark re-run (60 runs, primary-source assertions)</strong> — CMMC <strong>100%</strong> vs 44% (+56); FedRAMP <strong>96%</strong> vs 72% (+24); ISM <strong>92%</strong> vs 84% (+8, first primary-source set, one content iteration); CSRD <strong>88%</strong> vs 32% (+56, first primary-source set); EU AI Act <strong>84%</strong> vs 64% (+20). Suite headline: <strong>93% vs 79% (703/596 of 752, +14pp, +107)</strong>. CMMC assertion revision for the suspension logged as errata; one ISM grading judgment amended with documented note. Artifacts: <code>grc-workspace/rerun-2026-08/</code></li>
+<li><span class="release-badge badge-new">New</span> <strong>August 2026 GRC Framework Updates</strong> published covering July activity for all 30 frameworks (July entry archived); monthly-update cadence now surfaced in the site header ("Updated Monthly")</li>
+<li><span class="release-badge badge-improve">Improved</span> <strong>Site redesign</strong> — professional typography (Source Serif 4 headlines, Inter body, IBM Plex Mono code) across homepage and eval page; new layered header gradient with corrected text/grid contrast; 30 raw file paths replaced with download CTA buttons; 3-step quick-start rebuilt as a clean visual stepper; release notes collapsed to the two most recent; Additional Projects tab (iso27001-mcp, AI Prompt - Security Guard with Shield Mode + Chrome Web Store link, Responsible AI Model Evaluations) with project images</li>
+<li><span class="release-badge badge-new">New</span> <strong>Installer-constraint CI</strong> — every .skill archive is now machine-checked for one-level SKILL.md nesting, valid frontmatter name format, description ≤1024 chars, no junk entries, and bundled-content-matches-source; INSTALLATION.md gained step-by-step troubleshooting for the "SKILL.md must be in the top-level folder" error</li>
+<li><span class="release-badge badge-fix">Fix</span> <strong>Documentation drift</strong> — INSTALLATION.md corrected (SWIFT 32 controls / 25 mandatory; ISO 27701:2025 transition; FedRAMP/CMMC/ISM/CSRD/EU-AI-Act rows refreshed); README/site skill descriptions aligned with August skill content; README tagline gains "Updated Monthly."</li>
+</ul>
+</div>
+
+<!-- v1.6.2 -->
+<div class="release">
 <div class="release-header">
 <span class="tag">v1.6.2</span>
 <span class="date">03 Jul 2026</span>
-<span class="whats-new-current-badge">Latest</span>
 </div>
 <ul>
 <li><span class="release-badge badge-fix">Fix</span> <strong>Documentation drift</strong> — EU AI Act descriptions (README + site) updated from 8 to <strong>9 prohibited practices</strong> (9th: non-consensual intimate imagery / CSAM generation, Digital Omnibus, applies 2 Dec 2026) and now document the <strong>FRIA (Art. 27)</strong> capability added in v1.6.0; NZISM descriptions now document the <strong>verified control-ID citation</strong> capability added in v1.6.1. No skill content changed — docs only</li>
 <li><span class="release-badge badge-improve">Improved</span> <strong>Site</strong> — Release Notes now show only the two most recent releases (older releases collapsed by default); the Additional Resources section moved to a dedicated <strong>Additional Projects</strong> tab covering iso27001-mcp, Responsible AI Model Evaluations, and AI Safety Guard</li>
 </ul>
 </div>
+<details class="releases-archive">
+<summary>▸ Show older releases (v1.6.1 and earlier)</summary>
+
 <!-- v1.6.1 -->
 <div class="release">
 <div class="release-header">
@@ -2930,8 +2949,7 @@ layout: null
 <li><span class="release-badge badge-improve">Improved</span> All 30 plugins bumped to v1.6.1; the four revised skills' ZIPs rebuilt</li>
 </ul>
 </div>
-<details class="releases-archive">
-<summary>▸ Show older releases (v1.6.0 and earlier)</summary>
+
 <!-- v1.6.0 -->
 <div class="release">
 <div class="release-header">

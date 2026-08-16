@@ -204,7 +204,7 @@ To remove the marketplace entirely:
 | `ccpa` | CCPA / CPRA | Consumer rights workflows, ADMT opt-out (regulations effective Jan 2026, deadline Jan 2027), cybersecurity audit/risk assessment obligations, 2026 enforcement precedents (Disney $2.75M, PlayOn $1.1M) |
 | `lgpd` | Brazil LGPD | All 10 legal bases, Brazil-EU mutual adequacy (Jan 2026 — SCCs no longer needed for Brazil↔EU transfers), data subject rights, ANPD enforcement, breach notification |
 | `vn-pdpl` | Vietnam PDPL 2026 | Gap analysis, cross-border transfer impact assessments, DPIAs, breach notification (72h) |
-| `iso27701` | ISO 27701:2019 | PIMS gap analysis, PII controller/processor mapping, GDPR alignment |
+| `iso27701` | ISO 27701:2025 | Standalone-PIMS gap analysis, 2019→2025 transition (deadline Oct 2028), PII controller/processor mapping, GDPR alignment |
 
 ### Cyber & Resilience Regulation
 

@@ -128,5 +128,5 @@ pci-compliance/
 [LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
 **Built with:** Claude (Anthropic) using the Claude Skills framework
 **Date:** March 2026
-**Skill version:** 1.6.2
+**Skill version:** 1.7.1
 **Standard coverage:** PCI DSS v4.0.1 (June 2024) and PCI DSS v4.0 (March 2022)
