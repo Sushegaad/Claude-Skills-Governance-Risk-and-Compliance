@@ -1,0 +1,39 @@
+# FedRAMP Impact Levels: Low, Moderate, High — and Law Enforcement Sensitive Data
+
+## How Impact Levels Are Determined
+
+FedRAMP impact levels are based on **FIPS 199** categorization, which rates the potential impact of a loss of **Confidentiality, Integrity, and Availability (CIA)** of the information the system processes, stores, or transmits. Each of the three CIA properties is rated Low, Moderate, or High, and the overall system categorization is generally set to the **highest ("high water mark")** of the three ratings. FedRAMP then maps that categorization to a control baseline drawn from NIST SP 800-53.
+
+### FedRAMP Low
+- For systems where loss of confidentiality, integrity, or availability would have a **limited adverse effect** on organizational operations, assets, or individuals.
+- Smallest control baseline (fewest controls / control enhancements).
+- Appropriate for lower-risk data such as public information or systems with minimal sensitivity.
+- There is also a **FedRAMP Low Impact SaaS (LI-SaaS)** baseline, a lighter-weight variant for low-risk SaaS applications that don't store PII beyond basic login information.
+
+### FedRAMP Moderate
+- For systems where loss of CIA would have a **serious adverse effect** — this is the most common baseline, covering the majority of FedRAMP-authorized systems.
+- Appropriate for data such as most controlled unclassified information (CUI), personally identifiable information (PII) in typical business systems, financial data, and general mission-support systems.
+- Substantially larger control set than Low (roughly 320+ controls, depending on current baseline revision).
+
+### FedRAMP High
+- For systems where loss of CIA would have a **severe or catastrophic adverse effect** on operations, assets, or individuals — e.g., major financial loss, serious harm to individuals, or threat to human life.
+- Used for the most sensitive unclassified data, including data supporting law enforcement, emergency services, financial systems, and healthcare systems where the consequences of a breach are severe.
+- Largest control baseline (400+ controls), with the most stringent requirements (e.g., broader use of FIPS 140-validated cryptography, more extensive continuity/contingency planning, stricter personnel and physical security controls).
+- Historically has required agency data center hosting in some cases for select data types (verify current policy), and generally maps to CNSSI 1253 / NIST high-water-mark categorization at the High tier.
+
+## Which Impact Level Applies to Law Enforcement Sensitive (LES) Data?
+
+**Law Enforcement Sensitive (LES)** data should generally be treated as requiring the **FedRAMP High baseline**, for the following reasons:
+
+1. **Severity of impact:** Unauthorized disclosure of LES information can compromise ongoing investigations, endanger informants or law enforcement personnel, and undermine judicial proceedings — effects that are typically classified as "severe or catastrophic" under FIPS 199, particularly for confidentiality and often for integrity as well.
+2. **Precedent:** Data types associated with law enforcement, criminal justice, and public safety are commonly categorized at High impact under federal risk frameworks (similar reasoning applies to systems supporting emergency response and national security-adjacent missions), because the consequences of compromise go beyond financial harm to potential physical safety and mission-critical risks.
+3. **CJIS overlap:** If your system handles Criminal Justice Information (CJI) specifically, you may also need to comply with the FBI's **CJIS Security Policy** in addition to (or instead of) FedRAMP, depending on the agency and use case — CJIS has its own stringent requirements (e.g., advanced authentication, specific encryption, personnel background check requirements) that often align closely with High-baseline-equivalent controls.
+
+### Practical Guidance
+- Don't assume the impact level yourself — the **sponsoring agency's Authorizing Official (AO)**, in coordination with their information security office, is ultimately responsible for the formal FIPS 199 categorization of the system, based on the specific data types, mission context, and any statutory/regulatory drivers.
+- Perform a data inventory: confirm exactly what LES data elements will be processed (e.g., case files, informant identities, active investigation details vs. more general/administrative law enforcement data), since not all "law enforcement" data is automatically High — the categorization depends on actual sensitivity and consequence of compromise.
+- Engage early with your target agency's security team to confirm whether High is required, whether CJIS Security Policy applies concurrently, and whether there are additional agency-specific overlays.
+- Budget accordingly: FedRAMP High authorizations are significantly more resource-intensive (cost, timeline, control complexity) than Moderate, so confirming the correct impact level early is critical for planning.
+
+## Bottom Line
+Given that your product handles law enforcement sensitive data, you should plan for **FedRAMP High** as the likely required impact level, and separately evaluate whether CJIS Security Policy compliance is also required based on the specific nature of the data (especially if it includes Criminal Justice Information as defined by CJIS). Confirm the final categorization with your sponsoring agency's AO before committing to a specific baseline, since final categorization authority rests with them.

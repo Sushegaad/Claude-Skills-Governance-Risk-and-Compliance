@@ -1,0 +1,33 @@
+{
+  "eval_id": 104,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies the genuine head start: GRI maps well to ESRS impact-materiality content and TCFD's four-pillar structure (governance/strategy/risk management/metrics & targets) is embedded in ESRS 2 and E1",
+      "passed": true,
+      "evidence": "Response states 'GRI → ESRS impact side: ESRS's impact materiality concept and many topical disclosures are structurally close to GRI's...' and 'TCFD → ESRS E1: ESRS E1 explicitly adopts TCFD's four-pillar structure (governance, strategy, risk management, metrics and targets).'"
+    },
+    {
+      "text": "Names the likely gaps concretely: formalised double-materiality assessment, value-chain coverage, ESRS-specific datapoints and phrasing, assurance-ready documentation and internal controls, and digital tagging",
+      "passed": true,
+      "evidence": "Numbered gap list covers 'Double materiality, not single materiality' (item 1), 'Value chain scope' (item 3), 'Prescriptiveness and granularity of datapoints' (item 2), 'External assurance... audit-ready evidence trails, defined internal controls' (item 4), and 'Digital tagging (XBRL/ESEF)' (item 6)."
+    },
+    {
+      "text": "Scope gate first: advises confirming the company is still in mandatory scope under the 2026 Omnibus thresholds (1,000+ employees AND >€450M) before scoping a transition programme",
+      "passed": false,
+      "evidence": "The response never raises a scope-confirmation question; it proceeds directly to estimating transition effort and gaps without mentioning Directive (EU) 2026/470 or the 1,000-employee/€450M thresholds at all."
+    },
+    {
+      "text": "Right-sizes the effort with the July 2026 revision: mapping should target the revised ESRS (~61% fewer mandatory datapoints, applying FY2027 / early adoption FY2026 once in force), which materially reduces the pre-Omnibus gap estimates",
+      "passed": false,
+      "evidence": "No mention anywhere of the July 2026 revised ESRS, the ~61% datapoint reduction, or FY2027 applicability. The gap analysis is built entirely against the pre-Omnibus/current ESRS baseline with no acknowledgment that a lighter revised standard exists."
+    },
+    {
+      "text": "Delivers a practical transition plan (GRI/TCFD-to-ESRS mapping table, DMA build, gap register, data ownership and controls) rather than abstract commentary",
+      "passed": false,
+      "evidence": "Response gives a 9-item numbered list of gap areas and a short 'Practical next steps' list, but no structured mapping/gap-register table with priorities, owners, or actions — the deliverable reads as narrative commentary rather than a working transition-plan artifact."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

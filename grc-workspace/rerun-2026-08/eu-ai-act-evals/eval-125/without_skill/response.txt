@@ -1,0 +1,36 @@
+# Article 50 Transparency Obligations — Chatbot and AI-Generated Images
+
+## When these obligations apply
+Article 50 transparency obligations apply from **2 August 2026** (the general application date for most of the AI Act's remaining provisions, 24 months after entry into force on 1 August 2024). As of today, this date has already passed, so these obligations are **currently in force** and you should already be compliant (or treat remediation as urgent if you are not).
+
+Note Article 50 obligations apply **regardless of whether the underlying AI system is high-risk** — they are freestanding transparency duties tied to specific interaction/output types, applicable to any provider or deployer meeting the criteria, including yours as an e-commerce operator.
+
+## 1. Customer service chatbot — Article 50(1)
+Providers must ensure that AI systems intended to **interact directly with natural persons** are designed so that the individuals are informed **that they are interacting with an AI system**, unless this is **obvious** from the circumstances to a reasonably well-informed person.
+
+Practical implications for your chatbot:
+- Unless it is unmistakably obvious to an average user that they're talking to a bot (which is rarely a safe assumption to rely on for a customer-service widget), you must proactively disclose this — e.g., a clear label such as "You are chatting with an AI assistant" at the start of the interaction, a persistent bot icon/name (e.g., "AI Assistant"), or equivalent clear notice before/at first interaction.
+- The disclosure must be clear and understandable at the point the interaction begins — a buried disclosure in general terms & conditions is not sufficient.
+- Exceptions exist for AI systems authorised by law to detect/prevent/investigate criminal offences, subject to safeguards — not relevant to your e-commerce chatbot.
+
+## 2. AI-generated product images — Article 50(2) and 50(4)
+Two related but distinct duties can apply:
+
+**As the provider of the AI system generating the images (Art. 50(2))** — if you develop/operate the image-generation system yourselves: outputs that constitute synthetic image content must be marked in a **machine-readable format** and be **detectable as artificially generated or manipulated**. Technical solutions must be effective, interoperable, robust, and reliable as far as technically feasible (e.g., embedded watermarking, metadata/provenance signals, cryptographic content credentials such as C2PA-style markers).
+
+**As a deployer using an AI system to generate/manipulate image content that constitutes a "deep fake" (Art. 50(4)):** deployers of an AI system that generates or manipulates image content must **disclose that the content has been artificially generated or manipulated**. For product photography that is realistically depicting a product (rather than depicting a real identifiable person/event in a misleading way), the "deep fake" framing under Art. 50(4) is less likely to be the operative trigger — but the **Art. 50(2) provider-side machine-readable marking obligation** on synthetic content generally is broader and more likely to be the relevant duty for AI-generated product images.
+
+Practical implications for your AI-generated product images:
+- If you use a third-party image-generation tool (e.g., a GPAI-based image generator), the **tool provider** is primarily responsible for embedding machine-readable markings (Art. 50(2)), but as the deployer publishing that content, you should still ensure any provenance/watermarking metadata is preserved (not stripped out during editing/publishing) and consider adding your own clear, human-visible disclosure (e.g., "AI-generated image") near the content, both as good practice and to reduce consumer-protection/misleading-advertising risk under separate EU consumer law (e.g., the Unfair Commercial Practices Directive, as amended by the Empowering Consumers Directive, which from 2026 also treats certain undisclosed AI-generated content in commercial contexts as a potentially unfair practice).
+- Exemptions exist for content that is part of an evidently artistic/creative/satirical work, in which case a lighter-touch disclosure suffices; unlikely to be your primary use case for standard product images, but the general marking/labelling duty still applies to the extent it is synthetic content.
+
+## Summary table
+
+| Feature | Obligation | Who owes it | Trigger date |
+|---|---|---|---|
+| Customer service chatbot | Inform users they're interacting with AI (unless obvious) | You, as provider/deployer of the chatbot | 2 Aug 2026 |
+| AI-generated product images | Machine-readable marking of synthetic content | Provider of the generative AI system (may be you or your vendor) | 2 Aug 2026 |
+| AI-generated product images | Disclosure of artificial generation/manipulation where applicable (deep-fake style content) | You, as deployer | 2 Aug 2026 |
+
+## Recommendation
+Audit your current chatbot UI and image-publishing workflow now: (1) confirm a clear, prominent "you're chatting with AI" disclosure appears at the outset of every chatbot session, and (2) confirm your image-generation vendor embeds machine-readable provenance markers, and add a visible "AI-generated" label on product images where practical, to stay compliant with Article 50 and reduce related consumer-protection exposure.

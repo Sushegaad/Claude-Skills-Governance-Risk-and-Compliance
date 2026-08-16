@@ -1,0 +1,13 @@
+{
+  "eval_id": 123,
+  "eval_name": "open-source-gpai-cop",
+  "run_type": "without_skill",
+  "prompt": "We release an open-source LLM (weights, architecture and usage documentation publicly available, free license). It was trained with about 8 x 10^23 FLOPs. What GPAI obligations apply to us, and does the GPAI Code of Practice help?",
+  "assertions": [
+    "Identifies the model as a GPAI model subject to Chapter V, and correctly applies the open-source exemption: free & open-source GPAI providers are exempt from the Art. 53(1)(a)-(b) technical documentation duties BUT must still comply with the copyright policy (Art. 53(1)(c)) and publish the public training-content summary (Art. 53(1)(d))",
+    "Correctly assesses systemic risk: 8x10^23 FLOPs is below the 10^25 FLOPs presumption threshold (Art. 51), so no systemic-risk obligations (Art. 55) absent a Commission designation — and notes the open-source exemption does NOT apply to systemic-risk models",
+    "States GPAI obligations have applied since 2 August 2025",
+    "Describes the GPAI Code of Practice (published July 2025) as a voluntary compliance pathway with chapters on transparency, copyright, and safety/security, and explains adherence eases demonstrating compliance",
+    "Mentions AI Office enforcement powers over GPAI providers activating 2 August 2026 (fines possible from that date)"
+  ]
+}

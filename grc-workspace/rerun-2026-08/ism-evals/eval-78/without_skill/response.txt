@@ -1,0 +1,61 @@
+# ISM Chapter 13 (System Hardening) — Windows Server 2022 Deployment
+
+## Overview
+
+The ISM's system hardening guidance (commonly referred to in the "System Hardening" chapter/guideline set) covers hardening of operating systems, applications, and server platforms to reduce attack surface. For a Windows Server 2022 deployment, the relevant control areas typically include operating system hardening, application/service hardening, administrative privilege restriction, authentication hardening, and secure configuration baselining. Note: exact chapter numbering changes between ISM releases, so confirm the current numbering against the latest published ISM before citing it in formal documentation — the guidance below reflects the substantive control areas regardless of numbering.
+
+## What ISM System Hardening requires, by area
+
+### 1. Operating system hardening
+- Use the **latest supported version** of the OS (Windows Server 2022 is compliant here) and apply vendor hardening guidance — for Microsoft this typically means aligning to the Microsoft Security Baseline for Windows Server 2022 or an equivalent hardened configuration (e.g., ASD/ACSC hardening guides, CIS Benchmarks).
+- **Remove or disable unnecessary features, roles, and services** — only install server roles actually required (e.g., don't install IIS, DNS, or Print Server roles unless needed).
+- **Disable or remove unused accounts** (including default/built-in accounts like Guest), and rename or disable the default Administrator account where practical.
+- **Configure secure boot / TPM-backed protections** (Windows Server 2022 supports Secured-core server features) — enable Secure Boot, virtualization-based security (VBS), and Credential Guard where hardware supports it.
+
+### 2. Patch and vulnerability management
+- Apply **security patches within ASD-mandated timeframes** based on severity (e.g., critical/high vulnerabilities patched within very short windows — historically 48 hours to two weeks depending on exploit availability, with routine patches monthly).
+- Maintain a **documented patch management process** and evidence of patch cadence (e.g., WSUS/Windows Update for Business logs, or evidence from a patch management tool).
+- Regularly run **vulnerability scans** against the server and remediate findings.
+
+### 3. Application control
+- Implement **application control/allowlisting** (e.g., Windows Defender Application Control (WDAC) or AppLocker) to prevent execution of unapproved executables, scripts, installers, and libraries — this aligns with the Essential Eight's Application Control strategy, which the ISM incorporates as a mandated baseline for Commonwealth systems.
+
+### 4. Authentication and access control hardening
+- Enforce **multi-factor authentication** for all users, and especially for privileged/administrative access (e.g., via Azure AD/Entra ID Conditional Access, smart cards, or Windows Hello for Business where applicable).
+- Apply **least privilege** — restrict local administrator group membership, use separate privileged accounts (not the same account for daily use and admin tasks), and use Privileged Access Workstations (PAWs) or jump hosts for administration.
+- Configure **strong password/passphrase policies** or move to passwordless authentication where possible, consistent with ISM authentication guidance.
+- Disable legacy authentication protocols (e.g., NTLMv1, SMBv1, LM hashes) — Windows Server 2022 allows disabling SMBv1 entirely.
+
+### 5. Logging, auditing, and event monitoring
+- Enable **Windows Event Logging** for security-relevant events (logon/logoff, privilege use, object access, policy changes, process creation with command-line auditing).
+- Forward logs to a **centralised log management/SIEM solution** and protect log integrity (restrict access, prevent tampering, ensure adequate retention — commonly at least 12 months for security-relevant events, though your agency's policy may specify longer).
+- Enable **PowerShell script block logging and module logging** given PowerShell is a common attack/administration vector on Windows Server.
+
+### 6. Network and service hardening
+- Configure **host-based firewall (Windows Defender Firewall)** rules to restrict inbound/outbound traffic to only what's required.
+- Disable unused network protocols and services (e.g., unnecessary listening ports, legacy protocols).
+- Use **encrypted management protocols** (e.g., RDP with Network Level Authentication and TLS, WinRM over HTTPS) rather than unencrypted equivalents.
+
+### 7. Backup and recovery
+- Implement **regular, tested backups**, stored securely (including offline/immutable copies to protect against ransomware), aligned with the Essential Eight's regular backups strategy.
+
+## Evidence to collect for an assessment
+
+To demonstrate compliance, be ready to produce:
+
+- **Hardening baseline/configuration standard document** describing the target build (e.g., "Windows Server 2022 Hardening Standard v1.0") mapped to the Microsoft Security Baseline/CIS Benchmark and ISM controls.
+- **Group Policy Object (GPO) exports or configuration management tool reports** (e.g., from Microsoft Endpoint Configuration Manager, Intune, or Ansible/DSC) showing applied settings match the baseline.
+- **Vulnerability scan reports** (before/after remediation) showing patch and configuration compliance.
+- **Patch compliance reports** showing patches applied within required timeframes, with timestamps.
+- **Application control policy exports** (WDAC/AppLocker policy XML) and evidence of enforcement mode (audit vs enforced).
+- **Screenshots or exports of local security policy / account lockout policy / password policy settings**.
+- **Firewall rule exports** demonstrating restricted inbound/outbound rules.
+- **Event log configuration exports** (audit policy settings) and sample logs showing security events being captured and forwarded.
+- **List of installed roles/features and services**, with justification for each enabled role, and evidence unnecessary ones are disabled/removed.
+- **Backup job configuration and test-restore records**.
+- **Change management records** showing hardening changes went through approval and testing.
+- **Penetration test or configuration review report**, if one has been performed, showing hardening effectiveness.
+
+## Practical tip
+
+Build your hardening evidence as a **repeatable, automated baseline** (via GPO, DSC, or a configuration management tool) rather than manual one-off configuration — this makes evidence collection for the assessment (and every future assessment) far easier, since you can export the same configuration report on demand and demonstrate drift detection/remediation over time.

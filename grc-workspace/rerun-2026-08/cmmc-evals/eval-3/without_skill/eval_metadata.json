@@ -1,0 +1,13 @@
+{
+  "eval_id": 3,
+  "eval_name": "ssp-mfa-practice-section",
+  "run_type": "without_skill",
+  "prompt": "Draft a System Security Plan section for CMMC practice IA.L2-3.5.3 (multifactor authentication). Our environment: Microsoft 365 GCC High with Entra ID, Duo MFA for VPN, and on-prem Active Directory for legacy CAD workstations.",
+  "assertions": [
+    "States the requirement accurately: multifactor authentication for local and network access to privileged accounts, and network access to non-privileged accounts (IA.L2-3.5.3)",
+    "Describes implementation per named component: Entra ID MFA (conditional access) for M365 GCC High, Duo for VPN, and explicitly addresses the on-prem AD legacy CAD workstations — the local-access-to-privileged-accounts gap most environments miss",
+    "Written in SSP style: describes what IS implemented (not aspirational), names responsible roles, and covers each assessment objective (who/what/where MFA is enforced)",
+    "Identifies remaining gaps honestly and routes them to a POA&M entry rather than papering over (e.g., local admin access on legacy workstations pending smart card/Windows Hello deployment)",
+    "Includes evidence pointers an assessor would ask for (conditional access policy exports, Duo policy config, screenshots/logs demonstrating enforcement)"
+  ]
+}

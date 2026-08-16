@@ -1,0 +1,78 @@
+# FedRAMP Vulnerability Remediation Timeframes and Writing a Proper POA&M Entry
+
+## Remediation SLAs (from identification date)
+
+Per the FedRAMP Continuous Monitoring Performance Management Guide:
+
+| Risk Rating | Remediation Deadline |
+|---|---|
+| **Critical** (where a scanner distinguishes Critical from High) | ≤ 30 calendar days — treat as High-or-stricter; prioritize immediately |
+| **High** | 30 calendar days |
+| **Moderate** | 90 calendar days |
+| **Low** | 180 calendar days |
+
+Note: many scanners (e.g., CVSS-based tools) report a "Critical" severity tier distinct from "High." FedRAMP's POA&M guidance doesn't relax the timeline for Critical findings — if anything, treat Critical findings as needing to be addressed at least as fast as High, i.e., within 30 days, and prioritize them ahead of ordinary High findings given their severity. Missing these SLAs is one of the most common ConMon findings agencies flag during monthly reviews, so track dates carefully and don't let milestone dates slip without documented justification.
+
+## Your specific POA&M item
+
+"Vulnerability scan findings not remediated within required timeframes for Critical vulnerabilities" is itself describing an **SLA breach** — this is a compliance finding about your remediation program, not just a single vulnerability. It typically gets raised when a 3PAO or ConMon reviewer notices that one or more Critical/High findings blew past the 30-day window. You need two things:
+
+1. A POA&M entry for the **underlying vulnerability/vulnerabilities** that were not remediated in time (one row per finding — don't bundle them)
+2. Likely a broader corrective-action narrative (and possibly a separate POA&M item) addressing *why* your remediation process missed the SLA and what you're changing about the process itself (e.g., scan review cadence, escalation triggers, patch management workflow) — reviewers will want to see the process fix, not just the individual finding closed out
+
+## How to write a proper POA&M entry
+
+The POA&M is **SSP Appendix O** and must use the official FedRAMP POA&M template. Each row requires the following fields:
+
+| Field | What to enter |
+|---|---|
+| POA&M Item ID | Unique ID (e.g., V-2026-014) |
+| Controls | Affected NIST 800-53 Rev 5 control ID(s) — for unremediated vulnerabilities this is typically **RA-5** (Vulnerability Monitoring and Scanning); also cite **SI-2** (Flaw Remediation) if patching processes are implicated |
+| Weakness Name | Short, specific name (e.g., "Critical CVE-2026-XXXXX unpatched on [asset] beyond 30-day SLA") |
+| Weakness Description | Detailed description: what the vulnerability is, which asset(s) are affected, the CVE ID, the original scan that identified it, and how far past the SLA remediation currently stands |
+| Point of Contact | Named individual/team owning remediation |
+| Resources Required | What's needed to fix it — e.g., patch deployment window, vendor fix, engineering time |
+| Overall Remediation Plan | Concrete steps and sequence to remediate (e.g., "Apply vendor patch X.Y.Z in next maintenance window; validate via rescan") |
+| Original Detection Date | Date the vulnerability was first identified by the scan |
+| Scheduled Completion Date | Target date — must be set to bring the item back within a defensible timeframe; document why the original SLA was missed |
+| Milestone Changes | Log of any date/description changes over time, with justification |
+| Status | Open / Closed / Risk Adjusted / Vendor Dependency |
+| Risk Rating (Original) | Critical (or High, if that's how your scanner rates it) |
+| Risk Adjustment | If you're seeking a lower effective risk rating, document the mitigating factors and quantify residual risk here |
+| False Positive | Yes/No — if the finding is disputed, this needs supporting evidence |
+| Operational Requirement | Yes/No — if the vulnerability can't be fixed without breaking functionality, document the business justification and compensating controls here |
+| Deviation Request Approved | Yes/No — required if you're claiming False Positive, Risk Adjustment, or Operational Requirement; the agency AO must approve before this is marked "Yes" |
+| Comments | Any additional context, including explanation for the SLA miss |
+
+### Example POA&M row (illustrative)
+
+| Field | Value |
+|---|---|
+| POA&M Item ID | V-2026-014 |
+| Controls | RA-5, SI-2 |
+| Weakness Name | Critical CVE-2026-41207 unremediated beyond 30-day SLA on app server asset-web-03 |
+| Weakness Description | Monthly authenticated vulnerability scan on 2026-06-10 identified CVE-2026-41207 (Critical, CVSS 9.8) affecting OpenSSL library version on asset-web-03. Vendor patch was available as of 2026-06-15 but was not applied within the required 30-day window (deadline 2026-07-10); as of the current scan cycle the finding remains open. |
+| Point of Contact | [Name], Infrastructure Security Team |
+| Resources Required | Scheduled maintenance window; patch validated in staging prior to production rollout |
+| Overall Remediation Plan | Apply vendor security patch to asset-web-03 in the next available maintenance window; validate remediation via authenticated rescan; update CMDB with patched version |
+| Original Detection Date | 2026-06-10 |
+| Scheduled Completion Date | 2026-08-29 (revised — see Milestone Changes) |
+| Milestone Changes | Original target 2026-07-10 missed due to patch compatibility testing delay; revised target set 2026-08-05; revised again to 2026-08-29 pending change-control board approval |
+| Status | Open |
+| Risk Rating (Original) | Critical |
+| Risk Adjustment | None |
+| False Positive | No |
+| Operational Requirement | No |
+| Deviation Request Approved | N/A |
+| Comments | Root cause of SLA miss: patch testing queue backlog. Corrective action: Critical/High findings now escalated directly to CCB within 48 hours of detection rather than entering standard change queue (process change effective 2026-08-15). |
+
+## Writing tips specific to this situation
+
+1. **Don't just close the finding — show the process fix.** Reviewers scrutinize repeated SLA misses; a POA&M entry that only says "patched" without addressing why the timeline slipped invites a follow-up finding.
+2. **Always include the CVE ID(s)** for vulnerability scan findings — vague weakness descriptions are a common source of additional findings.
+3. **Set realistic milestone dates.** Overpromising and then missing a second deadline is treated as its own finding.
+4. **Match to SAR findings.** If this item originated in a 3PAO assessment, ensure the SAR and POA&M reference the same finding consistently — reviewers cross-check these.
+5. **Document closure evidence.** When you eventually close this item, attach the rescan result showing the vulnerability is resolved, not just a statement that it was patched.
+6. **If this finding recurs across multiple Critical items**, consider whether it indicates a systemic gap in your vulnerability management program (SSP Appendix M — Continuous Monitoring Plan) that needs to be addressed and documented separately, since a pattern of missed SLAs can put your ATO status at risk of suspension if left unaddressed during ConMon.
+
+*This is general compliance guidance, not legal advice. Use the official FedRAMP POA&M template, and verify remediation SLA specifics with your sponsoring agency AO or 3PAO, since some agencies impose stricter timeframes.*

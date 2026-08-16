@@ -1,0 +1,87 @@
+# CSRD Disclosure Requirements — Material Topics: E1 (Climate), S1 (Own Workforce), G1 (Business Conduct)
+
+Since your DMA found ESRS E1, S1, and G1 material, you must report full disclosures against those three topical standards. In addition, **ESRS 2 (General Disclosures) is always mandatory** for every in-scope company regardless of DMA outcome — it cannot be reduced or omitted, even for topics found non-material elsewhere.
+
+**One quick flag before drafting:** as of August 2026, confirm whether you're reporting on the **current ESRS (2023, Commission Delegated Regulation (EU) 2023/2772)** or the **revised, simplified ESRS** adopted 3 July 2026 (currently in Parliament/Council scrutiny, expected in force Q4 2026, mandatory for financial years beginning 1 January 2027, with FY2026 early adoption only once the delegated act formally enters into force). The datapoint list below reflects the current (2023) ESRS baseline; the revised ESRS cut mandatory datapoints by roughly 61%, so if you're targeting FY2027+, some of these will be streamlined or dropped.
+
+---
+
+## 1. ESRS 2 — General Disclosures (mandatory regardless of DMA)
+
+| Disclosure | Content |
+|---|---|
+| **GOV-1** | Governance bodies' role in sustainability — composition, diversity, sustainability expertise, oversight of IROs |
+| **GOV-2** | Information provided to and sustainability matters addressed by management/supervisory bodies |
+| **GOV-3** | Integration of sustainability performance in incentive schemes (executive remuneration linkage) |
+| **GOV-4** | Statement on due diligence (alignment with UN Guiding Principles / OECD Guidelines) |
+| **GOV-5** | Risk management and internal controls over sustainability reporting |
+| **SBM-1** | Strategy, business model, and full value chain description |
+| **SBM-2** | Stakeholder engagement process and how it informed strategy/reporting |
+| **SBM-3** | Output of your DMA — material IROs, their interaction with strategy, current and anticipated financial effects |
+| **IRO-1** | DMA methodology — scope, process, criteria, stakeholders consulted, thresholds used |
+
+---
+
+## 2. ESRS E1 — Climate Change
+
+Climate is presumed material for most large companies, so expect close scrutiny here. Two datapoints are **mandatory regardless of a materiality finding** at all (i.e., even for companies where E1 came out non-material): the transition plan (E1-1, per Accounting Directive Art. 19a(2)(a)) and fossil-fuel energy consumption (E1-5, para. 40). Since you found E1 material, the full standard applies:
+
+- **E1-1 Transition plan:** decarbonisation targets (2030/2040/2050, 1.5°C-aligned), planned actions and enablers, capex/opex/R&D resourcing, role of carbon offsets (must be distinguished from own-emission reductions), locked-in GHG assets/stranded-asset risk, EU Taxonomy alignment targets
+- **E1-2 Policies:** climate mitigation/adaptation policy scope (own ops vs. value chain), net-zero pathway
+- **E1-3 Actions and resources:** decarbonisation action plan with timelines and committed resources
+- **E1-4 Targets:** GHG reduction targets by scope (1/2/3 separately), Paris alignment, energy/renewables targets
+- **E1-5 Energy consumption and mix:** total consumption (MWh), fossil/renewable/nuclear breakdown, energy intensity, renewable share
+- **E1-6 GHG emissions:** Scope 1 (direct), Scope 2 location-based *and* market-based, Scope 3 (all 15 GHG Protocol categories), total emissions, GHG intensity per net revenue, methodology disclosure
+- **E1-7 GHG removals and carbon credits:** own-operation removals, purchased credits (volume, type, standard), clear distinction in net-zero claims
+- **E1-8 Internal carbon pricing:** whether used, price per tCO2e, application scope
+- **E1-9 Anticipated financial effects:** physical risk (acute/chronic) and transition risk (policy, technology, market, reputational) financial effects, climate opportunities, scenario analysis (1.5°C and >2°C recommended)
+
+**Biggest lift is typically E1-6 Scope 3** (all 15 categories) and **E1-1** (a credible, resourced transition plan) — plan for these early given data and modeling lead time.
+
+---
+
+## 3. ESRS S1 — Own Workforce
+
+- **S1-1** Policies on working conditions, equal treatment, health & safety
+- **S1-2** Processes for engaging with own workers and worker representatives
+- **S1-3** Remediation processes and worker grievance channels
+- **S1-4** Actions taken on material workforce impacts/risks/opportunities and their effectiveness
+- **S1-5** Targets for managing material workforce impacts and risks/opportunities
+- **S1-6** Employee characteristics: headcount by gender, country (where thresholds apply), employment type (permanent/temporary), employment regime (full/part-time); non-employee worker counts
+- **S1-7** Characteristics of non-employees in the workforce
+- **S1-8** Collective bargaining coverage (% employees, by country)
+- **S1-9** Diversity metrics: % female (total + management), age-band breakdown
+- **S1-10** Adequate wages — living wage benchmark alignment
+- **S1-11** Social protection coverage
+- **S1-12** Persons with disabilities in the workforce
+- **S1-13** Training: average hours per employee, % receiving regular performance reviews, transition assistance
+- **S1-14** Health & safety: % covered by an H&S management system, fatalities, LTIFR, recordable accidents, work-related ill health
+- **S1-15** Work-life balance — parental leave uptake by gender
+- **S1-16** Compensation: CEO pay ratio, gender pay gap (median remuneration)
+
+**Note:** gender pay gap and some workforce metrics have first-year phase-in relief under ESRS 1 transition provisions — confirm which apply to your reporting year.
+
+---
+
+## 4. ESRS G1 — Business Conduct
+
+- **G1-1** Corporate culture and business conduct policies: code of conduct, anti-corruption/anti-bribery policy, lobbying/political engagement policy, prompt-payment policy
+- **G1-2** Management of supplier relationships: responsible procurement, fair payment terms, tier-1 due-diligence coverage
+- **G1-3** Prevention/detection of corruption and bribery: risk assessment methodology, training coverage
+- **G1-4** Incidents of corruption or bribery: convictions, fine amounts, remedial actions
+- **G1-5** Political influence and lobbying: financial/in-kind contributions to political parties, significant lobbying positions
+- **G1-6** Payment practices: average payment period, % payments beyond contractual terms, supplier complaints on payment
+
+---
+
+## Cross-cutting requirements that apply to all three topics
+
+- **Location:** disclosures go in a dedicated section of the management report (Accounting Directive Art. 19a) — not a standalone sustainability report
+- **Digital tagging:** all quantitative datapoints must be tagged in XBRL/iXBRL under the ESEF taxonomy
+- **Assurance:** limited assurance required from your first reporting year (ISAE 3000 Revised standard), moving to reasonable assurance on a phased timeline pending Commission review (targeted 2028)
+- **Value chain data:** where direct supplier/customer data isn't available for E1 (Scope 3) or S1/G1 supply-chain elements, you may use proxy data or sector averages — but you must disclose the estimation methodology and its limitations
+- **Comparatives:** prior-year comparative data is required for all quantitative disclosures (after your first reporting year)
+
+## Suggested next step
+
+Build a datapoint-level gap table (ESRS reference | required datapoint | current data availability | gap | priority | owner | target date) for each of the three material topics above, starting with E1-6 Scope 3 and E1-1 transition plan since those typically require the longest lead time to close.

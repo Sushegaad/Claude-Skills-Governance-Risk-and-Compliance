@@ -1,0 +1,37 @@
+# CSRD Applicability for a US Parent with EU Subsidiaries
+
+Yes — based on the facts given, CSRD is very likely to apply to you, and in two distinct ways: through your **German subsidiary's own standalone obligation**, and potentially through the **third-country (non-EU parent) group-level obligation**. These are separate legal hooks and you should analyze both.
+
+## 1. The German subsidiary may be independently in scope
+
+CSRD applies to any "large undertaking" established in the EU, regardless of who its parent is. A company is large if it exceeds at least two of three thresholds:
+- More than 250 employees
+- Net turnover above roughly €50M
+- Balance sheet total above roughly €25M
+
+Your German subsidiary has 600 employees, which alone clears the employee threshold. If its standalone turnover and/or balance sheet also clear the other thresholds (plausible, given it's contributing to €200M in combined EU revenue), it qualifies as a large undertaking in its own right and has its own CSRD reporting obligation — being non-listed doesn't exempt it; listing only matters for determining which reporting wave and timeline applies (non-listed large companies fall into the second wave rather than the first).
+
+Note: an EU subsidiary can sometimes be exempted from producing its *own* standalone sustainability statement if its results are included in a consolidated sustainability report prepared at the group level that meets equivalent CSRD/ESRS requirements — but since your parent is US-based and outside the CSRD's ordinary consolidation mechanics, this exemption path typically converges with the third-country reporting route described below rather than eliminating the obligation entirely.
+
+## 2. The third-country parent (non-EU group) obligation
+
+CSRD also has a specific provision aimed at non-EU parent companies with substantial EU activity. Broadly, it's triggered when:
+- The non-EU group generates **more than €150M in net turnover in the EU** (on a consolidated basis, over two consecutive financial years), **and**
+- The group has at least one EU subsidiary that is itself a large undertaking (or listed on an EU regulated market), **or** an EU branch generating more than €40M in net turnover
+
+Your facts — a US parent with €200M in combined EU revenue from German and French subsidiaries, and a German subsidiary with 600 employees that is plausibly "large" — appear to satisfy both legs of this test. If so, the US parent (the ultimate non-EU parent) has an obligation to prepare and publish a **sustainability report at the group/consolidated level**, covering the worldwide group, prepared according to ESRS (or a Commission-recognized equivalent standard). This report can be prepared by the parent itself or, if the parent doesn't do so, the EU subsidiary becomes responsible for publishing it (and for obtaining/publishing the information from the parent), with the EU subsidiary/branch potentially bearing liability for ensuring the obligation is met.
+
+This third-country obligation was designed to apply on a later timeline than the standard EU-company waves — originally targeted at financial years starting from 2028, with first reports published around 2029 — reflecting that it was the last phase-in tranche in the original directive.
+
+## 3. What this means practically for you
+
+- **Don't wait for the parent-level (third-country) deadline** to start work — your German subsidiary's standalone obligation, if triggered by its own size, will likely come due earlier under the standard EU company timeline.
+- **Confirm your German subsidiary's exact financials** (turnover and balance sheet, not just headcount) to nail down whether it meets 2 of 3 "large" thresholds on its own.
+- **Confirm your French subsidiary's status too** — if it's also large (or listed), it has its own separate obligation, or its data may need to feed into a French-domiciled consolidated report.
+- **Model the €150M EU turnover test carefully** — confirm whether it's measured as combined EU-generated net turnover across all EU operations (not just these two subsidiaries) and whether it needs to hold for two consecutive years.
+- **Decide on a reporting strategy**: will the US parent prepare one worldwide group sustainability report to satisfy the third-country obligation (potentially also covering/exempting the EU subsidiaries), or will each EU subsidiary report separately? This has real cost and governance implications and is worth deciding early with input from EU counsel.
+- **Watch for legislative changes.** The EU has been actively revising CSRD scope, thresholds, and timelines (including for third-country parents) through its 2025 simplification ("Omnibus") efforts. Given how much movement there's been, I'd strongly recommend confirming the current, finalized thresholds and deadlines with EU counsel or your auditor before finalizing a compliance timeline — the €150M/€40M figures and the FY2028 target date reflect the directive as originally adopted, and specifics may have shifted.
+
+## Bottom line
+
+As a non-EU (US) parent, you don't escape CSRD simply because your headquarters is outside the EU. With €200M in EU revenue and a 600-employee German subsidiary, you likely face obligations on two fronts: the German subsidiary's own standalone large-undertaking reporting duty (sooner), and the broader group-level third-country parent reporting duty (originally later-phased). Both should be scoped now, even if the second one's deadline is further out, because the underlying data collection, double materiality assessment, and governance build-out take significant lead time either way.

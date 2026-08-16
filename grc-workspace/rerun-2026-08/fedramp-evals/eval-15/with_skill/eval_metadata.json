@@ -1,0 +1,13 @@
+{
+  "eval_id": 15,
+  "eval_name": "poam-remediation-timeframes",
+  "run_type": "with_skill",
+  "prompt": "We received a POA&M item for 'Vulnerability scan findings not remediated within required timeframes for Critical vulnerabilities.' What are the FedRAMP remediation timeframes for Critical, High, and Medium vulnerabilities, and how do we write a proper POA&M entry?",
+  "assertions": [
+    "States documented FedRAMP ConMon remediation timeframes including High-severity = 30 days and Moderate = 90 days from identification (Low = 180 days); any Critical-specific figure given must be 30 days or less",
+    "Explains that findings past their SLA must be tracked as POA&M items with milestones — not silently closed — and that overdue items affect ConMon standing with the agency/PMO",
+    "Provides a proper POA&M entry structure including at minimum: finding description and source (scan ID/tool), severity/risk rating, point of contact/owner, milestones with scheduled completion dates, and status",
+    "Mentions the Deviation Request process (false positive / risk adjustment / operational requirement) and/or Vendor Dependency handling where remediation depends on a third party",
+    "Advises documenting remediation evidence and closure validation (e.g., rescan to confirm the fix) rather than just marking the item complete"
+  ]
+}

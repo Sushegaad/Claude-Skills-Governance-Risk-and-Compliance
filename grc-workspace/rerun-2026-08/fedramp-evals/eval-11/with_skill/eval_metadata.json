@@ -1,0 +1,13 @@
+{
+  "eval_id": 11,
+  "eval_name": "authorization-pathways-first-ato",
+  "run_type": "with_skill",
+  "prompt": "We are a cloud software vendor interested in selling to US federal agencies. Explain the FedRAMP authorization process from start to finish, the difference between Agency ATO and JAB P-ATO, and which path we should consider for a first authorization.",
+  "assertions": [
+    "States that the JAB P-ATO path no longer exists — the JAB was dissolved in the 2024 FedRAMP restructuring (FedRAMP Authorization Act / OMB M-24-15) — rather than presenting JAB P-ATO as a currently available option",
+    "Describes the currently available path(s): FedRAMP 20x and/or Rev5 agency-sponsored authorization, consistent with the post-2024 program (single 'FedRAMP Certification' label per notice NTC-0004)",
+    "Explains the core package artifacts or phases: SSP, independent 3PAO assessment (SAP/SAR), POA&M, and the agency authorization decision",
+    "Mentions continuous monitoring obligations after authorization (monthly vulnerability scanning / POA&M updates, annual assessment)",
+    "Gives a concrete recommendation for a first-time CSP appropriate to 2026 (e.g., FedRAMP 20x or agency partnership), without recommending the defunct JAB route"
+  ]
+}

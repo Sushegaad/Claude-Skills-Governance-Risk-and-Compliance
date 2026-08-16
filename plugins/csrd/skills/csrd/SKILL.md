@@ -6,14 +6,18 @@ description: >
   (ESRS), double materiality assessment, sustainability reporting obligations, ESG disclosure,
   CSRD scope and thresholds, value chain reporting, XBRL digital tagging, third-party assurance,
   CSRD gap assessments, CSRD implementation timelines, ESRS E1–E5 environmental standards,
-  ESRS S1–S4 social standards, ESRS G1 governance, CSRD vs GRI/TCFD/SASB alignment,
+  ESRS S1–S4 social standards, ESRS G1 governance, the 2026 Omnibus scope change
+  (Directive (EU) 2026/470, 1,000+ employees) and revised/simplified ESRS (July 2026),
+  CSRD vs GRI/TCFD/SASB alignment,
   or any EU corporate sustainability reporting question. Trigger even if the user only
   mentions "ESG reporting Europe", "sustainability disclosure EU", or "non-financial reporting".
 ---
 
 # CSRD Compliance Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-08-15
+
+> ⚠️ **The Omnibus changed this framework materially in 2026.** Scope is now governed by **Directive (EU) 2026/470** (OJ February 26, 2026; in force March 2026): mandatory CSRD reporting applies to large undertakings with **more than 1,000 employees AND net turnover above €450 million**. Companies below that line are out of mandatory scope (the VSME-based voluntary standard is available instead). On **July 3, 2026** the Commission adopted the delegated acts with the **revised, simplified ESRS** (mandatory datapoints cut by roughly 61%) — currently in the Parliament/Council scrutiny period (2 months, extendable by 2), with entry into force expected Q4 2026. Revised ESRS apply for financial years beginning **January 1, 2027**; **FY2026 early adoption is permitted only once the delegated act enters into force**. Member-State transposition of the scope changes is due by ≈ March 19, 2027. **Before any gap assessment, ask: current ESRS (2023) basis or revised ESRS (2026) basis?**
 
 You are an expert EU sustainability reporting advisor with deep knowledge of the **Corporate Sustainability Reporting Directive (CSRD)** — Directive (EU) 2022/2464 — and the **European Sustainability Reporting Standards (ESRS)** issued by EFRAG under Commission Delegated Regulation (EU) 2023/2772. You assist finance, legal, sustainability, and compliance teams preparing for CSRD obligations.
 
@@ -55,16 +59,17 @@ Ensure companies disclose consistent, comparable, and reliable sustainability in
 
 ### In-Scope Entities
 
-| Category | Criteria | First Report (FY) |
-|----------|----------|------------------|
-| **Large PIEs** (listed, banks, insurers) with >500 employees | Already subject to NFRD | FY 2024 (reports in 2025) |
-| **Other large companies** (EU listed + unlisted) | ≥2 of 3: >250 employees, >€40M turnover, >€20M total assets | FY 2025 (reports in 2026) |
-| **Listed SMEs** (EU-regulated markets) | Listed on EU regulated market (not micro) | FY 2026 (reports in 2027) — voluntary standard available |
-| **Non-EU companies** | >€150M net turnover in EU + ≥1 EU subsidiary (large/listed) OR ≥1 EU branch (>€40M EU turnover) | FY 2028 (reports in 2029) |
+Post-Omnibus scope (Directive (EU) 2026/470 — supersedes the original wave structure):
 
-**Listed SME opt-out:** May delay until FY 2028 with explanation.
+| Category | Criteria | Status |
+|----------|----------|--------|
+| **In mandatory scope** | Large undertakings with **>1,000 employees AND net turnover >€450M** | Wave-one NFRD-era reporters continue; others report per the amended timeline as transposed |
+| **Below the threshold (≤1,000 employees or ≤€450M)** | Formerly wave 2/3 companies and listed SMEs | **Out of mandatory scope** — the VSME-based voluntary standard (adopted July 3, 2026 alongside the revised ESRS) is the reporting vehicle if stakeholders request data |
+| **Non-EU companies** | Thresholds under review in the Omnibus package | Confirm current Art. 40a status before advising — do not rely on the pre-2026 €150M construct without checking |
 
-**Micro-enterprises** are fully exempt.
+**Stop-the-clock (Directive (EU) 2025/794, April 2025):** wave 2/3 reporting was deferred two years before the scope cut landed; companies that relied on it and are now under the 1,000-employee line simply exit mandatory scope.
+
+**Practical rule:** determine scope from headcount + turnover under 2026/470 first; only then discuss content. A company at 800 employees is no longer a CSRD-mandatory reporter regardless of turnover.
 
 ### Value Chain Scope
 CSRD reporting must consider **upstream and downstream value chain** where material. Companies cannot limit to their own operations — they must report on impacts, risks, and opportunities throughout the value chain to the extent information is reasonably available.
@@ -200,7 +205,7 @@ Where value chain data is unavailable, companies may use:
 | Listed SMEs first report | FY 2026 → published 2027 |
 | Non-EU companies first report | FY 2028 → published 2029 |
 
-**Omnibus Proposal (2025):** The European Commission proposed simplifications in the CSRD Omnibus Package (February 2025), which may narrow scope and reduce datapoints. Check current legislative status before advising.
+**Omnibus status (August 2026):** the February 2025 proposals are now law or near-law — scope: **Directive (EU) 2026/470** in force (see callout above); content: **revised ESRS delegated acts adopted July 3, 2026** (~61% fewer mandatory datapoints; VSME voluntary standard), in scrutiny with entry into force expected Q4 2026. Revised ESRS mandatory for FYs beginning **January 1, 2027**; FY2026 early adoption available only after entry into force. Wave-one reporters should decide their FY2026 basis now: final year on ESRS (2023), or early-adopt the revised ESRS if the scrutiny period completes in time.
 
 ---
 

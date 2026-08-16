@@ -1,0 +1,33 @@
+{
+  "eval_id": 1,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Explains CMMC Level 2 correctly: 110 security requirements drawn from NIST SP 800-171 (Rev 2) protecting Controlled Unclassified Information (CUI), codified in the 32 CFR Part 170 program rule",
+      "passed": true,
+      "evidence": "\"You must implement all 110 practices from NIST SP 800-171 Rev 2, spanning 14 security domains\"; \"You handle CUI (Controlled Unclassified Information)\"; \"32 CFR Part 170 and DFARS 252.204-7012/7019/7020/7021 are still the law\" explicitly cites 32 CFR 170 as the program rule."
+    },
+    {
+      "text": "States the July 13, 2026 program status: DoD suspended CMMC Phase 2 — including the C3PAO third-party assessment requirements due in new contracts from November 10, 2026 — pending a 60-day CMMC Reform Task Force review (report due ≈ September 13, 2026); in the interim only Level 1 (Self) or Level 2 (Self) may be designated, and 32 CFR 170 / DFARS clauses remain law (suspension is policy, not repeal)",
+      "passed": true,
+      "evidence": "\"On July 13, 2026, DoD suspended CMMC Phase 2 — the part of the rollout that would have required third-party (C3PAO) assessments in new contracts starting November 10, 2026... 60-day CMMC Reform Task Force review, with a report due around September 13, 2026... Contracting officers can currently only designate Level 1 (Self) or Level 2 (Self)... 32 CFR Part 170 and DFARS 252.204-7012/7019/7020/7021 are still the law.\" All elements of the assertion are present, including the policy-not-repeal framing."
+    },
+    {
+      "text": "Explains prerequisite mechanics that CONTINUE unchanged: SPRS score submission (Basic Assessment against 800-171), SSP requirement, annual senior-official affirmation, and DFARS 252.204-7012 obligations (incl. 72-hour DIBNET incident reporting)",
+      "passed": true,
+      "evidence": "\"DFARS 252.204-7012 — requires you to safeguard CUI and report cyber incidents to the DoD's DIBNET portal within 72 hours of discovery\"; \"You calculate a Basic Assessment SPRS score... submit it at sprs.csd.disa.mil, with a senior company official affirming its accuracy — annually\"; \"Build a System Security Plan (SSP)\" listed as step 2."
+    },
+    {
+      "text": "Gives a realistic readiness timeline for a first-timer (commonly 9-18 months of remediation) and advises HOLDING the remediation course because the task-force outcome may restore third-party assessment on short notice",
+      "passed": true,
+      "evidence": "\"a commonly cited planning window is 9–18 months from initial gap assessment to being ready for a full third-party (C3PAO) assessment\"; \"don't slow down. Build your program as if a third-party assessment could still happen — the task force could restore that requirement on short notice.\""
+    },
+    {
+      "text": "Recommends concrete first steps: scope where CUI lives, consider an enclave, gap-assess against 800-171, build SSP and POA&M — with C3PAO scheduling framed as paused/on-hold rather than an immediate booking",
+      "passed": true,
+      "evidence": "Step-by-step list: \"1. Scope your CUI environment... 2. Build a System Security Plan (SSP)... 3. Run a gap assessment against all 110 practices and produce a Plan of Action & Milestones (POA&M)\"; C3PAO explicitly described as \"paused for now\" rather than something to book. Note: the response does not use the specific word 'enclave' — it recommends FedRAMP-authorized cloud services and CUI boundary-scoping instead, which is directionally similar but not an explicit enclave recommendation."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

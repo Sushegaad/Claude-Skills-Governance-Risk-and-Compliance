@@ -1,0 +1,33 @@
+# CSRD Scope Determination — German Manufacturing Company
+
+**Short answer: As of today (15 August 2026), your company is *not* in mandatory CSRD scope.**
+
+## Criteria → Verdict
+
+CSRD scope is no longer governed by the original 2023 wave structure. It is now governed by **Directive (EU) 2026/470** (in force since March 2026), which reset the mandatory-scope test following the Omnibus simplification package.
+
+| Criterion | Your company | Post-Omnibus mandatory threshold (Dir. (EU) 2026/470) | Met? |
+|---|---|---|---|
+| Employees | 800 | **> 1,000** | ❌ No |
+| Net turnover | €120M | **> €450M** | ❌ No |
+| Total assets | €55M | (assets are no longer the operative test — headcount + turnover control) | n/a |
+| Listing status | Listed, Frankfurt Stock Exchange | Listing alone no longer triggers mandatory scope post-Omnibus | ❌ No |
+
+**Both** the >1,000-employee and >€450M-turnover conditions must be met for mandatory CSRD reporting. Your company clears neither threshold — 800 employees is well under 1,000, and €120M turnover is well under €450M. Under the current rule, **headcount below 1,000 takes a company out of mandatory scope regardless of turnover**, so the turnover and asset figures don't change the outcome here.
+
+Listing on a regulated market (Frankfurt) does **not** independently pull you back into mandatory scope. Under the pre-Omnibus regime, being a listed public-interest entity with >500 employees would have placed you in "wave 1" (first reporting FY2024). That structure has been superseded — listed companies below the new combined threshold now fall into the "out of mandatory scope" category, alongside former wave 2/3 companies and listed SMEs.
+
+## Verdict
+
+**Your company is currently outside mandatory CSRD scope.** You do not have a mandatory first CSRD reporting year under the current rules.
+
+## What this means in practice
+
+- **No mandatory CSRD/ESRS report is currently required.** You are not obligated to produce Scope 1/2/3 disclosures, a double materiality assessment, or a CSRD-tagged management report section under the mandatory regime.
+- **Voluntary reporting option:** The Commission adopted the **VSME (Voluntary SME/simplified) standard** on 3 July 2026 alongside the revised ESRS. If lenders, investors, or large customers in your value chain request sustainability data from you (a common "trickle-down" effect even for out-of-scope companies), VSME is the appropriate voluntary reporting vehicle — proportionate and much lighter than full ESRS.
+- **If you were already reporting:** If your company had begun CSRD/ESRS reporting under the earlier wave-1 rules (plausible, given your listed PIE status and >500 employees under the old NFRD/CSRD threshold), you should confirm with legal/statutory counsel how the German transposition of Directive (EU) 2026/470 treats companies that already published a CSRD report before the scope change. Member-state transposition of the scope cut is due by approximately 19 March 2027, so there may be a transitional period to manage — don't assume you can simply stop without checking your specific transposition status in Germany.
+- **Monitor for change:** If headcount or turnover growth (organic or M&A) pushes you past 1,000 employees *and* €450M turnover, you would re-enter mandatory scope from the relevant future financial year. Track this annually as part of your standard compliance calendar.
+
+## Caveat
+
+This assessment reflects the post-Omnibus framework as understood in August 2026. Non-EU-company thresholds and some transposition details are still being finalized at Member State level. Given your listed status and the recency of this scope change, I'd recommend a brief confirmation with German transposition counsel (or your statutory auditor) before formally communicating an "out of scope" position to your board or investors — this is general compliance information, not legal advice.

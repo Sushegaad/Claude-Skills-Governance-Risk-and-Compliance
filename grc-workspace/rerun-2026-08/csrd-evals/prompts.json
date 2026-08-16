@@ -1,0 +1,25 @@
+{
+  "skill": "csrd",
+  "prompts": [
+    {
+      "id": 101,
+      "prompt": "We are a German manufacturing company with 800 employees, €120M turnover, and €55M total assets. We are listed on the Frankfurt Stock Exchange. Do we fall under CSRD, and if so, when do we first need to report?"
+    },
+    {
+      "id": 102,
+      "prompt": "Explain the concept of double materiality under CSRD. How is it different from how materiality works under GRI or TCFD? Walk me through how a company should conduct a double materiality assessment."
+    },
+    {
+      "id": 103,
+      "prompt": "Our company has completed our double materiality assessment. Climate change (ESRS E1), own workforce (ESRS S1), and business conduct (ESRS G1) came out as material. What do we actually need to disclose under CSRD?"
+    },
+    {
+      "id": 104,
+      "prompt": "We currently report under GRI Standards and have a TCFD report. How much work is it to transition to CSRD/ESRS? What gaps are we likely to have?"
+    },
+    {
+      "id": 105,
+      "prompt": "We are a US-headquartered technology company with €200M in EU revenue from our German and French subsidiaries combined. The German subsidiary has 600 employees and is not listed. Does CSRD apply to us as a non-EU company, and what do we need to do?"
+    }
+  ]
+}

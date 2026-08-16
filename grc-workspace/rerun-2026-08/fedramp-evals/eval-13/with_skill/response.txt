@@ -1,0 +1,46 @@
+# FedRAMP 20x: What It Is and How It Changes Authorization
+
+*As of August 15, 2026*
+
+## What FedRAMP 20x is
+
+FedRAMP 20x is **now the primary authorization pathway** for FedRAMP, superseding the traditional document-heavy process as the PMO's preferred route. Its core shifts:
+
+- **Continuous authorization** rather than a single point-in-time ATO decision followed by periodic annual reassessment
+- **Modular, API-driven submissions** — instead of one monolithic SSP/SAP/SAR package, evidence and control implementations are submitted in structured, machine-readable modules
+- **Automated evidence collection** — leaning on tooling and integrations to pull evidence continuously rather than relying solely on manual documentation cycles
+- Traditional SSP/SAP/SAR templates **still exist and remain in use** for the legacy authorization path, which is still available (particularly for complex systems) during the CR26 transition period
+
+## How 20x fits into the current (CR26) framework
+
+FedRAMP restructured its whole authorization model this year under **CR26 (FedRAMP Consolidated Rules for 2026)**, finalized June 25, 2026, with optional early adoption since July 4, 2026, and mandatory compliance from January 1, 2027. Key structural changes tied to 20x:
+
+- **JAB P-ATO is fully suspended.** The FedRAMP PMO is now the sole authorization body — there's no more Joint Authorization Board provisional path to weigh against 20x.
+- **Certification Classes A–D** replace the old Low/Moderate/High/LI-SaaS labels (mapping: LI-SaaS+Low → B, Moderate → C, High → D; Class A is new).
+  - **Class A** (pilot/transitional): entry via an external framework, initially SOC 2 Type II, through Program Certification — open since **August 3, 2026**. Class A holders get a 2-year window to pursue a full B/C/D certification.
+  - **Classes B and C** open **August 31, 2026** — that's roughly two weeks from today.
+  - **Class D** is expected to pilot **late 2026**, with a formal option in **early 2027**.
+- **Legacy FedRAMP Ready was retired July 28, 2026** (now "Legacy FedRAMP Ready") — no new submissions accepted under that designation.
+- **OSCAL (machine-readable submissions) becomes mandatory** for new authorizations on September 30, 2026, and for all packages (including legacy) by September 30, 2027 — this dovetails directly with 20x's API-driven, automated-evidence model.
+- The legacy Rev5 path isn't gone: new Rev5 applications stop being accepted after June 11, 2027, and Rev5 fully sunsets December 31, 2028.
+
+## Should you plan for 20x or pursue traditional authorization?
+
+**Plan for FedRAMP 20x as your primary target**, for a few concrete reasons:
+
+1. It is explicitly the PMO's now-primary pathway going forward — traditional templates are being maintained mainly for legacy/transition purposes, not as the long-term default.
+2. JAB P-ATO's suspension removes what used to be the main alternative "fast path" for multi-agency reuse — 20x's continuous/modular model is the closest current equivalent for reducing per-agency review friction.
+3. The OSCAL mandate (Sept 30, 2026 for new authorizations) pushes everyone toward machine-readable, automation-friendly submissions anyway — building for 20x now means you're not duplicating effort later.
+4. Rev5's traditional pipeline has a defined expiration (new applications stop June 11, 2027; sunset December 31, 2028), so a first-time or near-term authorization effort risks running into the wind-down if it leans entirely on the legacy path.
+
+That said, keep the traditional/legacy path on the table in specific situations:
+
+- **You need Class D (High)-equivalent authorization soon.** Class D under 20x is still in pilot (late 2026) with a formal option not expected until early 2027 — if your timeline can't wait, the legacy Agency Authorization package (traditional SSP/SAP/SAR) using the High baseline is your only mature option right now.
+- **Your system is unusually complex** with many custom components and interconnections — the skill's own guidance notes the legacy Agency Authorization package "is still available for complex systems during the CR26 transition."
+- **Classes B/C aren't open yet as of today** (August 15, 2026) — they open August 31, 2026. If you need to start work immediately, you may need to begin with readiness/gap-closure activities now and formally enter the Class B/C pipeline in two weeks, or consider Class A as an interim step if you already hold a qualifying external certification like SOC 2 Type II.
+
+## Bottom line
+
+Treat FedRAMP 20x as the strategic direction to build toward — architecture, evidence automation, and OSCAL-readiness should all be designed with 20x in mind. Use the traditional/legacy Agency Authorization path only where 20x isn't yet mature enough for your target Certification Class (notably Class D) or timeline, and expect that legacy path to be phased out entirely by the end of 2028.
+
+*This is general compliance information, not legal advice. Confirm current pipeline open dates and pilot status directly on fedramp.gov before committing to a path.*

@@ -1,0 +1,52 @@
+*This answer assumes the ISM **June 2026 release** (published 9 June 2026). Since you haven't stated the system's classification level, this answer defaults to the **OFFICIAL: Sensitive (OS)** baseline — if your system will handle PROTECTED information, let me know and I'll extend this to the additional P-level controls. Note also that while the ISM is a Commonwealth framework, many state agencies adopt it directly or align their own frameworks to it — confirm which applies in your jurisdiction.*
+
+# ISM Chapter 13 (System Hardening) — Windows Server 2022 Deployment
+
+## Purpose
+Chapter 13 exists to reduce the attack surface of operating systems and applications before they're exposed to production traffic — removing unnecessary functionality, enforcing least privilege, and locking down firmware so that a compromised account or unpatched service can't be trivially leveraged for lateral movement or privilege escalation.
+
+## Requirement
+
+Chapter 13 requires four things for any OS deployment, including your Windows Server 2022 build:
+
+1. **OS hardening** — remove/disable unnecessary services, roles, and features; disable default/built-in accounts (or at minimum disable and rename Administrator, enforce strong credentials).
+2. **Application hardening** — disable unused application features; apply vendor hardening guides for anything installed on top of the base OS.
+3. **Firmware security** — Secure Boot enabled, BIOS/UEFI passwords set, TPM enabled where applicable.
+4. **Least privilege** — no standing administrative access; privileged access must be just-in-time/just-enough, not permanent local admin membership.
+
+This overlaps directly with several Essential Eight strategies (application control/allow-listing, restricting admin privileges, user application hardening) — those E8 controls are ISM Chapter 13 controls, not a separate requirement, so implementing one satisfies both where the scope matches.
+
+**Patching is part of this answer too.** Hardening and patch management are treated as a single evidence package under the ISM — a hardened build that isn't kept patched isn't actually hardened. For Windows Server 2022 you need to demonstrate:
+- Critical OS patches applied within **48 hours** if internet-facing, or **14 days** if internal-only
+- High-severity patches within 14 days, medium within 30 days
+- A repeatable patch-status reporting process (not just ad hoc Patch Tuesday application) — this should be part of your Chapter 14 System Management practice, but the evidence sits alongside your hardening baseline when you're assessed.
+
+## Implementation Steps (Windows Server 2022–specific)
+
+1. **Baseline selection** — adopt a recognised hardening baseline (Microsoft Security Compliance Toolkit / Windows Server 2022 security baseline, or a DoD/ACSC-aligned STIG/CIS benchmark) as your starting configuration rather than hardening from scratch.
+2. **Reduce attack surface** — uninstall unused roles/features (e.g., disable SMBv1, remove legacy protocols), disable unused services, close unneeded ports.
+3. **Harden authentication** — enable Credential Guard, LSA protection, disable NTLM where feasible (or restrict to NTLMv2 with strong policies), enforce Windows Defender Firewall rules.
+4. **Application allow-listing** — implement Windows Defender Application Control (WDAC) or AppLocker to prevent execution of unapproved software (this is your Chapter 13 application-control control, also an Essential Eight ML requirement).
+5. **Firmware/boot security** — confirm Secure Boot is enabled, TPM 2.0 is active, and BIOS/UEFI is password-protected; enable BitLocker for data-at-rest protection on the boot volume.
+6. **Least privilege / PAM** — remove standing local admin rights; deploy LAPS (Local Administrator Password Solution) for unique, rotated local admin credentials; use a PAM/just-in-time elevation solution for any admin activity.
+7. **Group Policy enforcement** — push the hardening baseline via GPO (or equivalent, e.g., Intune/Azure Policy if hybrid/cloud-managed) so configuration drift is prevented, not just corrected after the fact.
+8. **Patch pipeline** — establish a patch management process (WSUS/Windows Update for Business/SCCM or equivalent) mapped explicitly to the SLA timeframes above, with reporting.
+
+## Audit Evidence to Collect
+
+To demonstrate compliance during an assessment, have the following ready and mapped to each control above:
+
+- **Hardening build standard/checklist** — signed-off document showing the baseline applied (e.g., CIS/STIG benchmark reference) and any documented deviations with risk justification
+- **GPO baseline export** — showing the enforced configuration settings
+- **WDAC/AppLocker policy configuration** — screenshots or exported policy files showing application control is active and in enforcement (not audit-only) mode
+- **Vulnerability/configuration scan results** — showing unnecessary services/features are absent and no default accounts remain enabled
+- **LAPS/PAM evidence** — showing no standing local admin access and rotation of local admin credentials
+- **Secure Boot/TPM/BitLocker configuration evidence** — screenshots or scripted verification output
+- **Patch status reports** — demonstrating critical/high/medium patches applied within SLA, ideally as an ongoing dashboard rather than a point-in-time snapshot
+- **Change records** — showing hardening configuration is under change management, so any deviation from baseline is tracked and approved
+
+## Summary
+Chapter 13 for your Windows Server 2022 build comes down to: start from a recognised baseline, cut the attack surface, enforce application allow-listing and least privilege, lock down firmware/boot, and — critically — pair all of that with a patch management program that meets the ISM's SLA timeframes and produces reportable evidence. An assessor will expect to see the hardening baseline *and* the patch reports side by side, not one without the other.
+
+---
+*This is general compliance guidance, not legal advice. Verify current control text against the ISM June 2026 release on cyber.gov.au and consult your IRAP assessor or accredited advisor for formal sign-off.*

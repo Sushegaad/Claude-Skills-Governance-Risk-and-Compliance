@@ -1,0 +1,51 @@
+# Uncertified Subcontractors Handling CUI — Your Flow-Down Obligations and Next Steps
+
+## Program status note (Aug 15, 2026)
+
+CMMC Phase 2 (C3PAO third-party assessment requirements) was suspended by DoD on July 13, 2026, pending a CMMC Reform Task Force review (report due ≈ September 13, 2026). Currently, contracting officers can only designate **Level 1 (Self)** or **Level 2 (Self)** — not Level 2 (C3PAO) or Level 3 — and C3PAO/DIBCAC requirements are being removed from solicitations and existing contracts at the next option/modification. This matters directly for your situation: it likely means the certification your CUI-handling subcontractors need to demonstrate right now is a **Level 2 self-assessment with SPRS submission and senior-official affirmation**, not a completed C3PAO audit. It does **not** reduce your obligation to verify their status before the next option period — DFARS 252.204-7012/7019/7020/7021 and the underlying NIST SP 800-171 requirements are unchanged.
+
+## Your flow-down obligations under DFARS 252.204-7021(c)
+
+As the prime, you are required to:
+
+- **Include CMMC requirements in all subcontracts, at all tiers**, where the subcontractor processes, stores, or transmits FCI or CUI. Sub-subcontractors are not exempt.
+- **Specify the required CMMC level in the subcontract itself.**
+- **Verify subcontractor certification/assessment status before flowing FCI/CUI to them, or continuing to do so** — check SPRS and, where applicable, the CMMC-AB registry.
+- Understand that the clause family travels together: **7012** (safeguarding CUI + 72-hour DIBNET incident reporting), **7019** (self-assessment currency), and **7020** (SPRS posting and DoD access to assessment results) flow down alongside 7021.
+
+## The level distinction matters here
+
+Not every subcontractor needs the same level — this determines your remediation path for each of the two subs:
+
+- **FCI-only subcontractors** need only **Level 1** (17 practices, annual self-assessment).
+- **Subcontractors who process, store, or transmit CUI** need **Level 2** (110 practices, SPRS submission, annual affirmation — and currently, given the Phase 2 suspension, self-assessment rather than C3PAO).
+
+Your first step with each of the two subcontractors should be to **confirm which category they actually fall into** — some subs assumed to need Level 2 may, on closer review of the statement of work, only handle FCI, which meaningfully lowers the bar and the urgency.
+
+## What you should do before the next option period
+
+Since these two subs have **no certification at all** and are (per your description) handling CUI, treat this as an active compliance gap requiring immediate action. The remediation menu, in rough order of speed/least disruption:
+
+1. **Stop the CUI flow to both subcontractors immediately** and document the containment step. This is the non-negotiable first move — continuing to flow CUI to a known-uncertified sub while your own SPRS affirmation stands is the highest-risk course of action available to you.
+2. **Rescope the subcontractor to FCI-only work**, if the statement of work allows it. If they don't actually need CUI to perform their portion of the contract, this drops their requirement to Level 1 — a much faster remediation than getting them to Level 2.
+3. **Sponsor an enclave**: bring the sub inside a prime-controlled, already-certified environment (e.g., a segmented environment you control) so CUI never leaves your certified boundary. This lets performance continue without requiring the sub to independently reach Level 2.
+4. **Replace the subcontractor** before the next option period if neither rescoping nor an enclave is feasible and the sub cannot reasonably reach Level 2 self-assessment readiness in time.
+
+Advise on **all four options** to your leadership/contracts team — the right choice will differ per subcontractor depending on how essential CUI access is to their scope of work and how close they are to compliance readiness.
+
+## Risk you need to flag internally
+
+**Continuing to flow CUI to a subcontractor you know is non-compliant — while affirming your own compliance in SPRS — creates False Claims Act exposure for your firm as the prime**, not just a contractual risk. This is a real legal exposure, not just an administrative one, and should be escalated to your compliance/legal function alongside the technical remediation steps.
+
+## Documentation to put in place now
+
+- **Map CUI flows to each subcontractor** — which sub touches which CUI category, and why.
+- **Record required levels per subcontractor** in your supply chain security program documentation.
+- **Document the interim risk-acceptance decision** for whichever option (1–4 above) you choose for each sub, including who approved it and why, in case this is scrutinized during your own assessment or DoD audit.
+- **Verify status going forward** via SPRS score submission before any future CUI flow — don't rely on a one-time check.
+
+## Bottom line before the next option period
+
+Contain the immediate exposure (stop CUI flow), determine the actual FCI-vs-CUI scope for each subcontractor, and pick a remediation path (rescope, enclave, or replace) for each — documenting the decision. Given the current Phase 2 suspension, the practical target for your CUI-handling subs right now is Level 2 self-assessment readiness with SPRS submission, not a completed C3PAO certification, but don't treat that as license to delay — get them moving now in case the third-party requirement is reinstated after the task force review.
+
+*This is general compliance information, not legal advice. Consult qualified counsel regarding False Claims Act exposure and contract remedies, and verify current subcontractor certification requirements against official DoD/CMMC-AB sources before acting.*

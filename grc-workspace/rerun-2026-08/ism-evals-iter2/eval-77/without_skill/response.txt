@@ -1,0 +1,60 @@
+# Preparing for Your First IRAP Assessment (PROTECTED-Level System)
+
+## What is IRAP, briefly
+The **Infosec Registered Assessors Program (IRAP)** is administered by the Australian Signals Directorate (ASD). IRAP-endorsed assessors independently evaluate a system's security controls against the **Information Security Manual (ISM)** and provide a report on the system's security posture to help the Authorising Officer make an informed risk-based decision about whether to grant an Authority to Operate (ATO).
+
+## 1. Artefacts to prepare before the assessment
+
+Assemble these before engaging the assessor — incomplete documentation is the most common cause of delayed or unsuccessful assessments:
+
+- **System Security Plan (SSP)** — the core document mapping each applicable ISM control to how it is implemented in your system, including compensating controls where a control isn't implemented as-is.
+- **Security Risk Management Plan (SRMP)** — threat and risk assessment specific to the system, including business impact level (BIL) determination that justifies the PROTECTED classification.
+- **System architecture diagrams** — network topology, data flow diagrams, trust boundaries, system boundary definition (critical — assessors will want to know exactly what is "in scope").
+- **Standard Operating Procedures (SOPs)** — for operations like patch management, account provisioning/deprovisioning, backup and restore, incident response, and change management.
+- **Incident Response Plan** and evidence of testing (e.g., tabletop exercise records).
+- **Continuous Monitoring Plan** — how you'll maintain assurance post-authorisation (vulnerability scanning cadence, log review, reassessment triggers).
+- **Asset register / configuration baseline** — hardware, software, and cloud service inventory, including versions and patch levels.
+- **Evidence artefacts** for technical controls, such as:
+  - Vulnerability scan reports and evidence of remediation
+  - Patch compliance reports
+  - Access control lists / RBAC matrices
+  - MFA configuration evidence
+  - Logging and SIEM configuration, sample logs, retention settings
+  - Encryption configuration (at rest and in transit) and cryptographic protocol details
+  - Hardening evidence (e.g., against ASD or vendor hardening guides — STIGs, CIS benchmarks, or ASD hardening guidance)
+  - Firewall rule sets and network segmentation evidence
+- **Previous assessment reports**, if any (e.g., penetration test results, prior internal audits).
+- **Personnel security evidence** — clearances or background checks for privileged users where relevant to PROTECTED handling.
+- **Third-party/supplier documentation** — if using a cloud provider or MSP, their own IRAP report, certifications, and shared responsibility matrix.
+- **Essential Eight maturity self-assessment**, since assessors will often map against this as a baseline indicator alongside full ISM control coverage.
+
+## 2. What to expect during the assessment
+
+1. **Scoping and kickoff** — the assessor confirms system boundary, classification, and assessment scope (full assessment vs. delta/gap assessment). Agree on timeline, evidence access, and stakeholder availability.
+2. **Documentation review** — the assessor reviews your SSP, SRMP, and supporting evidence against each applicable ISM control for PROTECTED.
+3. **Technical testing / validation** — this typically includes:
+   - Configuration reviews (server builds, network devices, cloud tenancy settings)
+   - Interviews with system administrators and security staff
+   - Sampling of evidence (e.g., spot-checking patch levels, reviewing access logs)
+   - Vulnerability scanning or review of your own recent scan results
+   - Possibly a limited penetration test, depending on scope agreed with the agency
+4. **Control-by-control assessment** — each ISM control applicable to PROTECTED is rated (e.g., effective, partially effective, ineffective/not implemented), with findings and evidence references.
+5. **Draft findings and clarification** — the assessor typically shares draft findings so your team can respond, provide missing evidence, or clarify context before the report is finalised. This is your opportunity to correct misunderstandings.
+6. **Final IRAP report issuance** — a formal report documenting the assessed security posture, control-by-control findings, identified risks/gaps, and an overall statement of the assessor's observations (note: IRAP assessors do not certify or accredit systems — that decision rests with the Authorising Officer).
+
+## 3. What happens after the report is issued
+
+- **Risk treatment** — your team addresses any gaps or findings, either by implementing missing controls or documenting compensating controls and accepted residual risk.
+- **Update the SRMP** — reflect the assessor's findings and your treatment decisions/residual risk.
+- **Authorising Officer decision** — the agency's Authorising Officer (a senior executive with delegated authority) reviews the IRAP report, SSP, and SRMP, and makes the formal decision to grant, conditionally grant, or withhold an **Authority to Operate (ATO)**. This decision-maker is internal to your agency — IRAP assessors advise but do not grant authorisation.
+- **Conditions and timelines** — the ATO may include conditions (e.g., remediate specific findings within X months) or be time-limited, requiring periodic reassessment (commonly every 24 months for PROTECTED systems, or sooner if there's a significant change to the system).
+- **Continuous monitoring** — post-ATO, maintain the controls validated during the assessment: ongoing patching, log review, periodic vulnerability scanning, and change management to avoid configuration drift that would invalidate the assessment's findings.
+- **Reassessment triggers** — significant architecture changes, major incidents, or the ATO's expiry will trigger a need for a follow-up or full reassessment.
+
+## Practical tips for a first-time assessment
+- Engage an ASD IRAP-endorsed assessor early — check ASD's public register of endorsed assessors.
+- Do a self-assessment / gap analysis against the ISM PROTECTED control set before the formal engagement to avoid surprises.
+- Ensure a single accountable owner (e.g., CISO or ISSO) coordinates evidence collection — fragmented ownership is the most common cause of delay.
+- Budget realistic time — first-time PROTECTED assessments for moderately complex systems often take several weeks to a few months end-to-end, including remediation cycles.
+
+*This answer reflects the general IRAP process structure and ISM framework as commonly understood; confirm specific timelines, report templates, and reassessment cycles against the current ASD IRAP policy and your agency's own governance requirements, as processes are periodically updated.*

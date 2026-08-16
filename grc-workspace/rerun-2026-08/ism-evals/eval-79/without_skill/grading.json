@@ -1,0 +1,33 @@
+{
+  "eval_id": 79,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Frames the relationship correctly: the Essential Eight is a prioritised set of mitigation strategies aligned with a subset of ISM controls — E8 maturity work complements but does not substitute for broader ISM compliance and authorisation",
+      "passed": true,
+      "evidence": "'The Essential Eight is a prioritised set of eight mitigation strategies... The Essential Eight is not the entirety of the ISM — the ISM covers many additional areas... The Essential Eight specifically targets the mitigations... most effective against common intrusion techniques.'"
+    },
+    {
+      "text": "Names all eight strategies correctly: application control, patch applications, configure Microsoft Office macro settings, user application hardening, restrict administrative privileges, patch operating systems, multi-factor authentication, regular backups",
+      "passed": true,
+      "evidence": "Mapping table and ML2 section list all eight strategies exactly as named."
+    },
+    {
+      "text": "Explains the maturity model correctly: levels 0-3 with ML2 tightening scope and timeframes over ML1 (e.g., broader coverage, faster patching, phishing-resistant MFA expectations), giving per-strategy ML2 guidance without contradicting the model's structure",
+      "passed": true,
+      "evidence": "'Each strategy has four maturity levels: ML0 (not implemented / not aligned), ML1, ML2, and ML3' — explicit, plus detailed per-strategy ML2 requirements (fortnightly scanning, 48-hour patch SLA, path+publisher/hash rules, phishing-resistant MFA noted as increasing toward ML3)."
+    },
+    {
+      "text": "Maps each strategy to the relevant ISM control areas/chapters (system hardening, privileged access, authentication/MFA, patch management, backup and recovery) — mapping is directional and accurate, not invented control IDs",
+      "passed": true,
+      "evidence": "Table maps each strategy to a named control theme (application security/hardening, vulnerability/patch management, access control/IAM, authentication hardening, backup/BC) without inventing specific chapter numbers or control IDs, explicitly caveating 'exact chapter numbers shift between ISM revisions'."
+    },
+    {
+      "text": "Notes at least one accurate currency fact: none of the 2026-added ISM controls (including the June 2026 AI controls) carry Essential Eight mappings, and/or that E8 assessment expectations for Commonwealth entities sit under PSPF policy rather than the ISM itself",
+      "passed": false,
+      "evidence": "No mention of the 2026-added controls or their (lack of) Essential Eight mapping. The closest reference — 'incorporated directly into the ISM... as a mandated (for many Commonwealth entities, under PSPF Policy 10)' — conflates rather than clearly distinguishes PSPF-driven E8 mandate from ISM control content, so it does not clearly satisfy either currency fact."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

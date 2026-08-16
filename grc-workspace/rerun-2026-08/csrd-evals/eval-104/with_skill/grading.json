@@ -1,0 +1,33 @@
+{
+  "eval_id": 104,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies the genuine head start: GRI maps well to ESRS impact-materiality content and TCFD's four-pillar structure (governance/strategy/risk management/metrics & targets) is embedded in ESRS 2 and E1",
+      "passed": true,
+      "evidence": "Response states 'GRI covers impact materiality (single materiality)... TCFD covers financial materiality for climate only — ESRS E1 incorporates TCFD's four pillars (governance, strategy, risk management, metrics & targets), so climate governance/strategy disclosures largely transfer.'"
+    },
+    {
+      "text": "Names the likely gaps concretely: formalised double-materiality assessment, value-chain coverage, ESRS-specific datapoints and phrasing, assurance-ready documentation and internal controls, and digital tagging",
+      "passed": true,
+      "evidence": "Gap table rows explicitly cover 'Double Materiality (CRITICAL)', 'Value Chain (E1, S2 where material)', ESRS-specific datapoints per topic, 'Assurance readiness (CRITICAL)... ISAE 3000-ready evidence trails,' and 'Digital tagging (XBRL/iXBRL).'"
+    },
+    {
+      "text": "Scope gate first: advises confirming the company is still in mandatory scope under the 2026 Omnibus thresholds (1,000+ employees AND >€450M) before scoping a transition programme",
+      "passed": true,
+      "evidence": "Opens with: 'Before sizing the transition, I'd want to pin down two things... 1. Are you actually in mandatory CSRD scope right now? As of August 2026, mandatory scope is governed by Directive (EU) 2026/470: large undertakings with >1,000 employees AND net turnover >€450M.'"
+    },
+    {
+      "text": "Right-sizes the effort with the July 2026 revision: mapping should target the revised ESRS (~61% fewer mandatory datapoints, applying FY2027 / early adoption FY2026 once in force), which materially reduces the pre-Omnibus gap estimates",
+      "passed": true,
+      "evidence": "Response states: 'A revised, simplified ESRS (roughly 61% fewer mandatory datapoints) was adopted 3 July 2026... mandatory for financial years beginning 1 January 2027 (FY2026 early adoption only after the delegated act enters into force). If your first mandatory year is FY2027 or later, plan against the revised ESRS... this can significantly reduce your gap list.'"
+    },
+    {
+      "text": "Delivers a practical transition plan (GRI/TCFD-to-ESRS mapping table, DMA build, gap register, data ownership and controls) rather than abstract commentary",
+      "passed": true,
+      "evidence": "Provides a structured Gap Assessment table (ESRS Topic | Current State | Gap | Priority | Action) plus a 'Practical sequencing' section with concrete ordered steps."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

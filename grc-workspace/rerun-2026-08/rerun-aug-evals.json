@@ -1,0 +1,140 @@
+{
+  "description": "August 2026 re-run (Top-5 stale skills). CMMC set = rerun-2026-07c revised for the July 13, 2026 Phase 2 suspension (assertion errata logged); FedRAMP set = rerun-2026-07 unchanged; EU AI Act set = rerun-2026-07b unchanged; ISM and CSRD receive their FIRST primary-source assertion sets (ISM June 2026 release / ASD publications; Directive (EU) 2026/470 + revised ESRS delegated acts of July 3, 2026). Post-cutoff ground truths embedded in assertion text.",
+  "evals": [
+    {"id": 1, "skill": "cmmc", "eval_name": "level2-plain-english-intro",
+     "prompt": "We are a 45-person aerospace engineering firm that recently won our first DoD contract. The contract contains DFARS 252.204-7021 requiring CMMC Level 2. We have never heard of CMMC before. Give us a plain-English explanation of what CMMC Level 2 means for us, what we need to do, and roughly how long it will take to get certified.",
+     "assertions": [
+       "Explains CMMC Level 2 correctly: 110 security requirements drawn from NIST SP 800-171 (Rev 2) protecting Controlled Unclassified Information (CUI), codified in the 32 CFR Part 170 program rule",
+       "States the July 13, 2026 program status: DoD suspended CMMC Phase 2 — including the C3PAO third-party assessment requirements due in new contracts from November 10, 2026 — pending a 60-day CMMC Reform Task Force review (report due ≈ September 13, 2026); in the interim only Level 1 (Self) or Level 2 (Self) may be designated, and 32 CFR 170 / DFARS clauses remain law (suspension is policy, not repeal)",
+       "Explains prerequisite mechanics that CONTINUE unchanged: SPRS score submission (Basic Assessment against 800-171), SSP requirement, annual senior-official affirmation, and DFARS 252.204-7012 obligations (incl. 72-hour DIBNET incident reporting)",
+       "Gives a realistic readiness timeline for a first-timer (commonly 9-18 months of remediation) and advises HOLDING the remediation course because the task-force outcome may restore third-party assessment on short notice",
+       "Recommends concrete first steps: scope where CUI lives, consider an enclave, gap-assess against 800-171, build SSP and POA&M — with C3PAO scheduling framed as paused/on-hold rather than an immediate booking"
+     ]},
+    {"id": 2, "skill": "cmmc", "eval_name": "level2-gap-assessment",
+     "prompt": "Perform a CMMC Level 2 gap assessment. Our current state: MFA only on cloud email; no FIPS-validated encryption for CUI at rest; SSP last updated in 2022; incident response plan exists but never tested; flat network with CUI on shared drives; annual security awareness training in place; background screening for all staff. Rate the relevant practice areas and give us a prioritised remediation plan with SPRS score impact.",
+     "assertions": [
+       "Flags MFA scope gap against IA.L2-3.5.3 (MFA required for local and network access to privileged accounts and network access to non-privileged accounts — cloud email alone is insufficient)",
+       "Flags FIPS-validated cryptography gap (SC.L2-3.13.11 requires FIPS-validated cryptography to protect CUI confidentiality) and the flat-network/shared-drive state against scoping and SC.L2-3.13.1/AC.L2-3.1.3 (boundary protection / control CUI flow), recommending segmentation or an enclave",
+       "Flags untested IR plan against IR.L2-3.6.3 (test incident response capability) and the stale SSP against CA.L2-3.12.4 (SSP must be current)",
+       "Correctly credits compliant items (awareness training AT.L2-3.2.1/.2; personnel screening PS.L2-3.9.1) instead of marking everything deficient",
+       "Explains SPRS scoring impact using the DoD methodology: score starts from 110 with weighted deductions (5/3/1 points; MFA and FIPS crypto are 5-point/partial-credit items), and prioritises remediation by point value and POA&M eligibility"
+     ]},
+    {"id": 3, "skill": "cmmc", "eval_name": "ssp-mfa-practice-section",
+     "prompt": "Draft a System Security Plan section for CMMC practice IA.L2-3.5.3 (multifactor authentication). Our environment: Microsoft 365 GCC High with Entra ID, Duo MFA for VPN, and on-prem Active Directory for legacy CAD workstations.",
+     "assertions": [
+       "States the requirement accurately: multifactor authentication for local and network access to privileged accounts, and network access to non-privileged accounts (IA.L2-3.5.3)",
+       "Describes implementation per named component: Entra ID MFA (conditional access) for M365 GCC High, Duo for VPN, and explicitly addresses the on-prem AD legacy CAD workstations — the local-access-to-privileged-accounts gap most environments miss",
+       "Written in SSP style: describes what IS implemented (not aspirational), names responsible roles, and covers each assessment objective (who/what/where MFA is enforced)",
+       "Identifies remaining gaps honestly and routes them to a POA&M entry rather than papering over (e.g., local admin access on legacy workstations pending smart card/Windows Hello deployment)",
+       "Includes evidence pointers an assessor would ask for (conditional access policy exports, Duo policy config, screenshots/logs demonstrating enforcement)"
+     ]},
+    {"id": 4, "skill": "cmmc", "eval_name": "poam-conditional-certification",
+     "prompt": "Our C3PAO assessment found 8 practices NOT MET. Can we still get certified? Explain conditional certification, which practices are POA&M-eligible, the minimum score requirement, and the closeout timeline.",
+     "assertions": [
+       "Explains conditional certification: possible only if the assessment score is at least 88 (0.8 x 110) AND every NOT MET practice is POA&M-eligible",
+       "States POA&M eligibility rules correctly: only practices worth 1 point may be on a POA&M (no 5-point items; 3-point items excluded except limited partial-credit cases), and names non-POA&M-eligible critical examples (e.g., SC.L2-3.13.11 FIPS crypto, AC.L2-3.1.3, IA.L2-3.5.3)",
+       "States the closeout: POA&M items must be remediated and verified by a closeout assessment within 180 days, or the conditional certification lapses",
+       "Explains the consequence math for THIS scenario: 8 NOT MET practices are compatible with conditional certification only if all 8 are 1-point items and the score floor holds — otherwise remediate and re-assess",
+       "Notes the July 13, 2026 context accurately: with Phase 2 suspended pending the task-force review, C3PAO certification mechanics are described under the rule as written while acknowledging new C3PAO-designated requirements are in abeyance; the annual senior-official affirmation in SPRS continues, and a lapsed conditional status affects contract eligibility"
+     ]},
+    {"id": 5, "skill": "cmmc", "eval_name": "subcontractor-flowdown",
+     "prompt": "We are a prime contractor and discovered that two of our subcontractors handling CUI have no CMMC certification. What are our flow-down obligations under DFARS 252.204-7021, and what should we do before the next option period?",
+     "assertions": [
+       "States the flow-down rule: DFARS 252.204-7021 flows down to subcontractors at all tiers where they process, store, or transmit FCI/CUI; subs handling CUI need Level 2, subs with FCI only need Level 1",
+       "States the prime's duty: verify subcontractor CMMC status (via SPRS or certificate evidence) BEFORE awarding/continuing subcontract performance involving CUI",
+       "Gives concrete remediation options: stop CUI flow to the uncertified subs (rescope what they receive), move them to FCI-only scope, sponsor an enclave approach, or replace them — with interim risk documentation",
+       "Notes the July 13, 2026 interim state accurately: with Phase 2 suspended, subs cannot currently be required to hold C3PAO certification (self-assessment designations only), C3PAO requirements are being removed from solicitations/contracts at next modification — but 7012 safeguarding, 7019/7020 SPRS obligations, and 800-171 flow-down protections remain fully in force",
+       "Warns about misrepresentation risk (False Claims Act exposure for affirming compliance while knowingly flowing CUI to non-compliant subs) and advises documenting corrective action"
+     ]},
+    {"id": 76, "skill": "ism", "eval_name": "os-cloud-authorisation",
+     "prompt": "We are a federal government agency in Australia running a cloud-hosted case management system that stores OFFICIAL: Sensitive information. We need to understand: which ISM control applicability markings apply to our system, what the key controls we must implement are, and what the authorisation pathway looks like before we can go live.",
+     "assertions": [
+       "Explains ISM applicability markings correctly: controls are marked for applicability by classification (OFFICIAL / OFFICIAL: Sensitive / PROTECTED / SECRET / TOP SECRET), and an OFFICIAL: Sensitive system implements the controls marked applicable at that level (with 'All'-marked controls included)",
+       "Describes the authorisation pathway as a define → select → implement → assess → authorise → monitor lifecycle, ending with an Authorising Official making a risk-based authorisation decision before go-live and ongoing monitoring after",
+       "Names the core authorisation artefacts: a System Security Plan (with its control-implementation annex/matrix), documented security risk assessment, and incident response planning evidence",
+       "Addresses the cloud dimension: using an IRAP-assessed cloud provider (consuming its assessment report), documenting the shared responsibility split between CSP and agency, and covering data sovereignty/residency considerations",
+       "Demonstrates release-awareness: states or reflects that the ISM is updated quarterly with June 2026 as the current release (e.g., ISM-XXXX control ID format, or an explicit release citation) — no invented control numbers"
+     ]},
+    {"id": 77, "skill": "ism", "eval_name": "irap-assessment-prep",
+     "prompt": "Our agency is preparing for an IRAP assessment of our PROTECTED-level system next quarter. What artefacts do we need to prepare, what should we expect during the assessment, and what happens after the IRAP report is issued? We have not had an IRAP assessment before.",
+     "assertions": [
+       "Frames IRAP correctly: ASD-endorsed independent assessors who assess the implementation and effectiveness of ISM controls — an IRAP assessment informs but does NOT itself constitute authorisation; the agency's Authorising Official still makes the risk-acceptance decision",
+       "Lists the right artefacts: System Security Plan plus its control-implementation annex/matrix, security risk assessment/management documentation, architecture and data-flow documentation, and supporting policies/procedures with implementation evidence",
+       "Sets process expectations: scoping, documentation review, then control-effectiveness validation (interviews, configuration review, testing) — evidence of operation, not just documentation",
+       "Explains the aftermath: an assessment report with control effectiveness findings and residual risks → agency remediation planning → Authorising Official reviews and makes the authorisation decision; periodic reassessment thereafter",
+       "PROTECTED-appropriate: applies PROTECTED-marked controls and classification-appropriate handling throughout (not OFFICIAL-level shortcuts)"
+     ]},
+    {"id": 78, "skill": "ism", "eval_name": "system-hardening-windows",
+     "prompt": "We are a state government IT team responsible for hardening a new Windows Server 2022 deployment. Walk us through what the ISM Chapter 13 (System Hardening) requires and what evidence we need to collect to demonstrate compliance during an assessment.",
+     "assertions": [
+       "Covers the core ISM hardening requirements: harden against vendor/ASD guidance (e.g., Microsoft security baselines), remove or disable unneeded services, accounts, and functionality, and maintain a documented standard operating environment",
+       "Includes application control and patching: application control on servers where applicable, and timely patching of the OS and applications with defined timeframes",
+       "Specifies concrete Windows Server measures (e.g., baseline/GPO configuration, disabling legacy protocols, restricting administrative tooling, local admin management) rather than generic advice",
+       "Details assessment evidence: exported configuration baselines/GPO reports, compliance-scan results against the baseline, patch status reports, application control policy exports, and change records",
+       "Structured per the skill's control-guidance format (purpose → requirement → implementation steps → audit evidence) and cites controls only in valid ISM-XXXX format without inventing numbers"
+     ]},
+    {"id": 79, "skill": "ism", "eval_name": "essential-eight-vs-ism",
+     "prompt": "Our organisation is required to achieve Essential Eight Maturity Level 2 by the end of this financial year. How does the Essential Eight relate to the broader ISM? Which ISM chapters and control areas does each of the eight strategies map to, and what does ML2 require us to implement for each strategy?",
+     "assertions": [
+       "Frames the relationship correctly: the Essential Eight is a prioritised set of mitigation strategies aligned with a subset of ISM controls — E8 maturity work complements but does not substitute for broader ISM compliance and authorisation",
+       "Names all eight strategies correctly: application control, patch applications, configure Microsoft Office macro settings, user application hardening, restrict administrative privileges, patch operating systems, multi-factor authentication, regular backups",
+       "Explains the maturity model correctly: levels 0-3 with ML2 tightening scope and timeframes over ML1 (e.g., broader coverage, faster patching, phishing-resistant MFA expectations), giving per-strategy ML2 guidance without contradicting the model's structure",
+       "Maps each strategy to the relevant ISM control areas/chapters (system hardening, privileged access, authentication/MFA, patch management, backup and recovery) — mapping is directional and accurate, not invented control IDs",
+       "Notes at least one accurate currency fact: none of the 2026-added ISM controls (including the June 2026 AI controls) carry Essential Eight mappings, and/or that E8 assessment expectations for Commonwealth entities sit under PSPF policy rather than the ISM itself"
+     ]},
+    {"id": 80, "skill": "ism", "eval_name": "private-cloud-provider-obligations",
+     "prompt": "We are a private sector company that has just won a contract to provide cloud services to an Australian federal government agency. The contract requires ISM compliance. What are our obligations, what controls are most critical for our cloud environment, and do we need an IRAP assessment even though we are not a government entity ourselves?",
+     "assertions": [
+       "Explains the obligation mechanism: the ISM applies to the provider contractually — the provider implements ISM controls appropriate to the classification of the data handled, and the customer agency remains the authorising party",
+       "Answers the IRAP question correctly: yes in practice — commercial cloud providers serving government undergo IRAP assessments (whose reports agencies consume for their authorisation decisions); private-sector status does not exempt the provider",
+       "Identifies the critical cloud control areas: tenant isolation, ASD-approved cryptography for data in transit (noting the June 2026 expansion to all data-in-transit scenarios) and at rest, access control with MFA, event logging/monitoring accessible to the agency, and personnel security",
+       "Requires a documented shared-responsibility matrix (which ISM controls the provider vs the agency owns) and contractual security terms (incident notification to the agency, evidence/assurance provision, right to audit)",
+       "Addresses data sovereignty/residency and supply-chain transparency (subcontractors, support locations) as agency-facing obligations"
+     ]},
+    {"id": 101, "skill": "csrd", "eval_name": "scope-german-manufacturer",
+     "prompt": "We are a German manufacturing company with 800 employees, €120M turnover, and €55M total assets. We are listed on the Frankfurt Stock Exchange. Do we fall under CSRD, and if so, when do we first need to report?",
+     "assertions": [
+       "Applies the post-Omnibus scope test correctly: under Directive (EU) 2026/470 (OJ February 26, 2026), mandatory CSRD reporting requires MORE THAN 1,000 employees AND net turnover above €450M — at 800 employees / €120M this company is OUT of mandatory CSRD scope. FAIL any answer that concludes the company must report under the pre-2026 wave structure (e.g., FY2025/FY2026 first report as a large listed company)",
+       "Explains the change accurately: the original CSRD would have captured them, but the 2025 stop-the-clock directive (EU) 2025/794 deferred wave 2/3 and the 2026 Omnibus content directive then removed sub-1,000-employee companies from scope; national transposition of the amendments is due around March 2027",
+       "Offers the voluntary route: the VSME-based voluntary standard (delegated act adopted July 3, 2026) as the vehicle for responding to customer, bank, and investor data requests",
+       "Flags residual real-world obligations: value-chain information requests from in-scope business partners, and the need to monitor final scrutiny/transposition outcomes before treating the exemption as fully settled",
+       "States the thresholds explicitly with the AND conjunction (1,000+ employees AND >€450M turnover) and cites the Omnibus/2026 directive rather than vaguely referencing 'proposals'"
+     ]},
+    {"id": 102, "skill": "csrd", "eval_name": "double-materiality",
+     "prompt": "Explain the concept of double materiality under CSRD. How is it different from how materiality works under GRI or TCFD? Walk me through how a company should conduct a double materiality assessment.",
+     "assertions": [
+       "Defines both perspectives correctly: impact materiality (the company's effects on people/environment — inside-out) and financial materiality (sustainability matters creating financial risks/opportunities — outside-in), with a topic material if EITHER test is met",
+       "Contrasts frameworks accurately: GRI is impact-materiality-only; TCFD is financial/climate-risk-only; CSRD/ESRS requires both lenses in one assessment",
+       "Walks through a real DMA process: context and value-chain mapping, identification of impacts/risks/opportunities, scoring (severity via scale/scope/irremediability, plus likelihood; financial magnitude), thresholds, stakeholder engagement, and governance validation",
+       "Notes documentation/assurance readiness: the DMA methodology and conclusions must be documented because they are subject to assurance and anchor which ESRS topics are reported",
+       "Correctly states that the July 2026 revised ESRS simplify datapoints but keep the double-materiality assessment as the cornerstone — the DMA obligation did not go away"
+     ]},
+    {"id": 103, "skill": "csrd", "eval_name": "disclosure-requirements-e1-s1-g1",
+     "prompt": "Our company has completed our double materiality assessment. Climate change (ESRS E1), own workforce (ESRS S1), and business conduct (ESRS G1) came out as material. What do we actually need to disclose under CSRD?",
+     "assertions": [
+       "States that ESRS 2 general disclosures (governance, strategy, IRO management, metrics & targets) are mandatory for all reporters regardless of the DMA outcome, on top of the material topical standards",
+       "Summarises the right content per topic: E1 — transition plan, Scope 1/2/3 GHG emissions, targets, energy; S1 — own-workforce policies, processes, and workforce metrics; G1 — business-conduct policies including anti-corruption/anti-bribery",
+       "Asks or states the reporting-basis question: current ESRS (2023) vs revised ESRS (2026) — revised standards apply for financial years beginning January 1, 2027, with FY2026 early adoption available only once the July 3, 2026 delegated act completes scrutiny and enters into force (expected Q4 2026)",
+       "Mentions the practical effect of the revision: roughly 61% fewer mandatory datapoints under the revised ESRS, so the disclosure inventory should be built against the basis actually used",
+       "Covers reporting mechanics: disclosures sit in the management report, subject to limited assurance, with digital (ESEF/XBRL) tagging"
+     ]},
+    {"id": 104, "skill": "csrd", "eval_name": "gri-tcfd-transition-gap",
+     "prompt": "We currently report under GRI Standards and have a TCFD report. How much work is it to transition to CSRD/ESRS? What gaps are we likely to have?",
+     "assertions": [
+       "Identifies the genuine head start: GRI maps well to ESRS impact-materiality content and TCFD's four-pillar structure (governance/strategy/risk management/metrics & targets) is embedded in ESRS 2 and E1",
+       "Names the likely gaps concretely: formalised double-materiality assessment, value-chain coverage, ESRS-specific datapoints and phrasing, assurance-ready documentation and internal controls, and digital tagging",
+       "Scope gate first: advises confirming the company is still in mandatory scope under the 2026 Omnibus thresholds (1,000+ employees AND >€450M) before scoping a transition programme",
+       "Right-sizes the effort with the July 2026 revision: mapping should target the revised ESRS (~61% fewer mandatory datapoints, applying FY2027 / early adoption FY2026 once in force), which materially reduces the pre-Omnibus gap estimates",
+       "Delivers a practical transition plan (GRI/TCFD-to-ESRS mapping table, DMA build, gap register, data ownership and controls) rather than abstract commentary"
+     ]},
+    {"id": 105, "skill": "csrd", "eval_name": "non-eu-parent-scope",
+     "prompt": "We are a US-headquartered technology company with €200M in EU revenue from our German and French subsidiaries combined. The German subsidiary has 600 employees and is not listed. Does CSRD apply to us as a non-EU company, and what do we need to do?",
+     "assertions": [
+       "Analyses the EU subsidiary correctly under current law: at 600 employees the German subsidiary is below the 1,000-employee mandatory-scope line set by Directive (EU) 2026/470, so it is not itself a mandatory CSRD reporter",
+       "Handles the non-EU (Art. 40a) question with appropriate care: the pre-2026 construct (>€150M EU turnover plus a qualifying subsidiary/branch, first reports FY2028) is under revision in the Omnibus package — the answer must flag that these thresholds are being amended and require a current-status check, not assert the old construct as settled",
+       "Does not fabricate deadlines: any dates given are anchored to verifiable milestones (2026/470 in force March 2026; transposition ≈ March 2027; revised ESRS FY2027) rather than invented non-EU reporting dates",
+       "Gives pragmatic guidance: monitor final scope/transposition outcomes, prepare voluntarily via the VSME standard if EU customers or lenders request data, and centralise group sustainability data so a scope flip is absorbable",
+       "Notes the value-chain reality: even out-of-scope entities receive ESRS-shaped data requests from in-scope EU business partners, which is often the operative compliance driver"
+     ]}
+  ]
+}

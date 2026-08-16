@@ -1,0 +1,13 @@
+{
+  "eval_id": 78,
+  "eval_name": "system-hardening-windows",
+  "run_type": "with_skill",
+  "prompt": "We are a state government IT team responsible for hardening a new Windows Server 2022 deployment. Walk us through what the ISM Chapter 13 (System Hardening) requires and what evidence we need to collect to demonstrate compliance during an assessment.",
+  "assertions": [
+    "Covers the core ISM hardening requirements: harden against vendor/ASD guidance (e.g., Microsoft security baselines), remove or disable unneeded services, accounts, and functionality, and maintain a documented standard operating environment",
+    "Includes application control and patching: application control on servers where applicable, and timely patching of the OS and applications with defined timeframes",
+    "Specifies concrete Windows Server measures (e.g., baseline/GPO configuration, disabling legacy protocols, restricting administrative tooling, local admin management) rather than generic advice",
+    "Details assessment evidence: exported configuration baselines/GPO reports, compliance-scan results against the baseline, patch status reports, application control policy exports, and change records",
+    "Structured per the skill's control-guidance format (purpose → requirement → implementation steps → audit evidence) and cites controls only in valid ISM-XXXX format without inventing numbers"
+  ]
+}

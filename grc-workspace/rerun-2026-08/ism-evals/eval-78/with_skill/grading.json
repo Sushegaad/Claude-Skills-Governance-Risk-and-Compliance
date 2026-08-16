@@ -1,0 +1,33 @@
+{
+  "eval_id": 78,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Covers the core ISM hardening requirements: harden against vendor/ASD guidance (e.g., Microsoft security baselines), remove or disable unneeded services, accounts, and functionality, and maintain a documented standard operating environment",
+      "passed": true,
+      "evidence": "'OS hardening — remove or disable unnecessary services and disable default/unused accounts', 'Applying Microsoft's Security Compliance Toolkit / Group Policy security baseline for Server 2022', 'Build from a hardened image — start from a CIS-benchmarked or Microsoft-baseline Server 2022 image'."
+    },
+    {
+      "text": "Includes application control and patching: application control on servers where applicable, and timely patching of the OS and applications with defined timeframes",
+      "passed": false,
+      "evidence": "Application control is covered (WDAC/AppLocker, Chapter 13). Patching is entirely absent from the response — no mention of OS/application patch timeframes anywhere in the Requirement, Implementation Steps, or Audit Evidence sections."
+    },
+    {
+      "text": "Specifies concrete Windows Server measures (e.g., baseline/GPO configuration, disabling legacy protocols, restricting administrative tooling, local admin management) rather than generic advice",
+      "passed": true,
+      "evidence": "Concrete measures: 'Disabling the built-in Administrator and Guest accounts', 'Removing/disabling unnecessary Windows roles... e.g., Print Spooler, SMBv1', GPO/Security Compliance Toolkit baseline, WDAC/AppLocker, Secure Boot/TPM 2.0, JIT/PAM for admin access."
+    },
+    {
+      "text": "Details assessment evidence: exported configuration baselines/GPO reports, compliance-scan results against the baseline, patch status reports, application control policy exports, and change records",
+      "passed": false,
+      "evidence": "Evidence list includes hardening baseline/GPO export, compliance scan report, WDAC/AppLocker policy export, and change records — but 'patch status reports' is entirely missing, consistent with the broader omission of patching from the response."
+    },
+    {
+      "text": "Structured per the skill's control-guidance format (purpose → requirement → implementation steps → audit evidence) and cites controls only in valid ISM-XXXX format without inventing numbers",
+      "passed": true,
+      "evidence": "Response uses exactly the headers 'Purpose', 'Requirement', 'Implementation Steps', 'Audit Evidence'. No specific ISM-XXXX control numbers are cited in this response, so no invented numbers occur."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

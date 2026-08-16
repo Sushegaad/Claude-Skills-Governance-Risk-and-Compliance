@@ -10,14 +10,14 @@ description: >
   B = LI-SaaS/Low, C = Moderate, D = High, per NTC-0004), FedRAMP 20x
   (now the primary authorization pathway), OSCAL mandate (September 2026), 3PAO
   assessments, continuous monitoring (ConMon), gap assessments, system boundary
-  definition, or architecture reviews for federal cloud. FedRAMP Ready retires
-  July 28, 2026. When in doubt, use this skill — it covers the full FedRAMP lifecycle
+  definition, or architecture reviews for federal cloud. FedRAMP Ready retired
+  July 28, 2026 (Legacy FedRAMP Ready). When in doubt, use this skill — it covers the full FedRAMP lifecycle
   from readiness through continuous monitoring.
 ---
 
 # FedRAMP Certification Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-08-15
 
 A comprehensive guide for helping users navigate FedRAMP authorization — from initial
 readiness through ATO and ongoing continuous monitoring.
@@ -36,17 +36,20 @@ Identify the user's goal and jump to the appropriate section:
 
 ---
 
-## Current FedRAMP State (as of July 2026 — CR26)
+## Current FedRAMP State (as of August 2026 — CR26)
 
 > ⚠️ **CR26 (FedRAMP Consolidated Rules for 2026)**: FedRAMP has restructured its authorization framework. FIPS 199-based baseline labels (Low/Moderate/High/LI-SaaS) are replaced with **Certification Classes A–D** (per notice NTC-0004; CR26 rules valid through December 31, 2028). Class labels change the *names* of the baselines, not their requirements. CSPs already authorized under the old labels retain their authorization through a transition period in which old and new labels are linked.
 
 - **Baseline**: NIST SP 800-53 **Rev 5** (fully in effect)
 - **Control counts** (Rev 5): Low ≈ 156, Moderate = 323, High = 421 (legacy references; CR26 class-based counts being published by PMO)
 - **CR26 Certification Classes** (official mapping, NTC-0004): **A** = new pilot/transitional baseline (entry via external frameworks such as SOC 2 Type II through Program Certification; holders have a 2-year window to obtain B/C/D), **B** = current **LI-SaaS + Low** baselines, **C** = current **Moderate** baseline (majority of federal deployments, incl. CUI), **D** = current **High** baseline.
-- **FedRAMP 20x**: Now the **primary authorization pathway** — continuous authorization, modular API-driven submissions, automated evidence collection. Traditional SSP/SAP/SAR templates remain for legacy paths.
-- **FedRAMP Ready** designation: **Retires July 28, 2026**. CSPs currently in FedRAMP Ready status must transition to FedRAMP 20x or initiate a full authorization package. No new FedRAMP Ready designations are being issued.
+- **FedRAMP 20x**: Now the **primary authorization pathway** — continuous authorization built on **Key Security Indicators (KSIs)**, machine-readable evidence, modular API-driven submissions, and automated validation. Traditional SSP/SAP/SAR templates remain for legacy paths.
+- **CR26 status**: finalized **June 25, 2026**; optional early adoption since **July 4, 2026**; **mandatory January 1, 2027**.
+- **Legacy FedRAMP Ready**: the Ready designation was retired/relabeled **Legacy FedRAMP Ready on July 28, 2026** — no new submissions. Rev5 Ready holders must convert by the later of their annual-assessment expiration or **November 17, 2026**; the status disappears entirely **December 31, 2027**.
+- **Certification Class pipelines**: **Class A open since August 3, 2026**; Classes **B/C open August 31, 2026**; Class D pilot expected late 2026 with a formal option in early 2027.
+- **Rev5 wind-down**: new Rev5 applications are not accepted after **June 11, 2027**; Rev5 sunsets **December 31, 2028**.
 - **JAB P-ATO**: Fully suspended; FedRAMP PMO is the sole authorization body.
-- **OSCAL mandate**: RFC-0024 requires all CSPs to submit machine-readable OSCAL packages by **September 30, 2026**.
+- **OSCAL mandate (RFC-0024)**: machine-readable packages required for **new authorizations from September 30, 2026**, and for **all packages by September 30, 2027**.
 - **Security Inbox**: All authorized CSPs must maintain a dedicated Security Inbox (no CAPTCHAs or barriers) for urgent vulnerability directives — effective January 5, 2026.
 - **Key templates updated**: SSP, SAR, SAP, POA&M, CIS/CRM, IIW, ISCP — all updated to align with Rev 5 (Dec 2024 releases).
 
@@ -61,7 +64,7 @@ Identify the user's goal and jump to the appropriate section:
 4. **Surface gaps** — Map current state to required controls; flag missing documentation, unimplemented controls, and architectural deficiencies
 5. **Prioritize** — Group gaps by: (a) blockers for readiness review, (b) items addressable before 3PAO assessment, (c) POA&M candidates
 
-> **FedRAMP Ready is retiring July 28, 2026.** If a CSP is currently pursuing FedRAMP Ready, advise them to pivot immediately to FedRAMP 20x or begin a full authorization package.
+> **FedRAMP Ready retired July 28, 2026** (now "Legacy FedRAMP Ready"). Advise CSPs by pipeline instead: Class A (open since August 3, 2026) for external-framework entry, Classes B/C from August 31, 2026 for full certification; legacy Rev5 Ready holders must convert by the later of annual-assessment expiration or November 17, 2026.
 
 ### Key Readiness Questions to Ask the User
 - Are you targeting FedRAMP 20x (preferred) or a legacy authorization package?

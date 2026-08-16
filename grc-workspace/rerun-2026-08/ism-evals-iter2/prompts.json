@@ -1,0 +1,25 @@
+{
+  "skill": "ism",
+  "prompts": [
+    {
+      "id": 76,
+      "prompt": "We are a federal government agency in Australia running a cloud-hosted case management system that stores OFFICIAL: Sensitive information. We need to understand: which ISM control applicability markings apply to our system, what the key controls we must implement are, and what the authorisation pathway looks like before we can go live."
+    },
+    {
+      "id": 77,
+      "prompt": "Our agency is preparing for an IRAP assessment of our PROTECTED-level system next quarter. What artefacts do we need to prepare, what should we expect during the assessment, and what happens after the IRAP report is issued? We have not had an IRAP assessment before."
+    },
+    {
+      "id": 78,
+      "prompt": "We are a state government IT team responsible for hardening a new Windows Server 2022 deployment. Walk us through what the ISM Chapter 13 (System Hardening) requires and what evidence we need to collect to demonstrate compliance during an assessment."
+    },
+    {
+      "id": 79,
+      "prompt": "Our organisation is required to achieve Essential Eight Maturity Level 2 by the end of this financial year. How does the Essential Eight relate to the broader ISM? Which ISM chapters and control areas does each of the eight strategies map to, and what does ML2 require us to implement for each strategy?"
+    },
+    {
+      "id": 80,
+      "prompt": "We are a private sector company that has just won a contract to provide cloud services to an Australian federal government agency. The contract requires ISM compliance. What are our obligations, what controls are most critical for our cloud environment, and do we need an IRAP assessment even though we are not a government entity ourselves?"
+    }
+  ]
+}

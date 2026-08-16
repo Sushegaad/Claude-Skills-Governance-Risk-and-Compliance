@@ -1,0 +1,58 @@
+# ISM Applicability, Key Controls, and Authorisation Pathway — Cloud-Hosted OFFICIAL: Sensitive Case Management System
+
+*This answer assumes the **ISM June 2026 release** (published 9 June 2026), the current edition as of today (15 August 2026). If your system was last authorised against an earlier edition, run a delta check before go-live — see the note at the end.*
+
+## 1. Which control applicability markings apply to you
+
+Your system stores **OFFICIAL: Sensitive (OS)** information. Under the ISM's classification-based applicability markings, that means you must implement:
+
+| Marking | Classification | Applies to your system? |
+|---|---|---|
+| **NC** | Non-Classified | Yes — baseline controls apply to every government system |
+| **OS** | OFFICIAL: Sensitive | Yes — this is your system's classification, so all OS-marked controls apply |
+| **P / S / TS** | PROTECTED / SECRET / TOP SECRET | No — not required unless the system's classification changes |
+
+Controls "stack" upward, but since your ceiling is OS, you only need **NC + OS** controls — you do not need to implement PROTECTED-level controls (e.g., mandatory IRAP, evaluated cryptographic products under Chapter 10) unless your data holdings change.
+
+Practical scoping tip: because this is a case management system, double-check whether any case records could contain information that pushes the aggregate classification above OS (e.g., law-enforcement-sensitive or personal information with elevated harm potential). If so, the classification — and applicable marking set — changes and so does the rest of this answer.
+
+## 2. Key controls you must implement
+
+Given the system is cloud-hosted and handles OS information, prioritise these chapters:
+
+**Governance**
+- **Chapter 1 (Cyber Security Roles):** Appoint a CISO with authority, and designate a system owner for the case management system specifically.
+- **Chapter 3 (Procurement & Outsourcing):** Assess your cloud service provider (CSP) against the ISM and ASD Cloud Security Guidance before (or immediately after) contract signature; ensure the CSP contract requires ISM-aligned controls contractually.
+- **Chapter 4 (Cyber Security Documentation):** Produce and maintain a System Security Plan (SSP) — this is your primary authorisation artefact (see Section 3).
+
+**Protect**
+- **Chapter 13 (System Hardening):** Harden host OS images, disable unused services/default accounts, enforce least privilege — no standing admin access for case-management staff.
+- **Chapter 14 (System Management):** Patch SLAs (critical patches within 48 hours for internet-facing components, 14 days internal), tested backups, documented change management.
+- **Chapter 17 (Database Systems):** Encrypt case data at rest, enforce least-privilege database access, log all database activity.
+- **Chapter 19 (Networking) & Chapter 20 (Cryptography):** Network segmentation between the case management application and general-purpose networks; TLS 1.2 minimum (TLS 1.3 preferred) for all data in transit. Note the June 2026 update expanded the ASD Approved Cryptographic Protocols control to cover **all** scenarios where data is encrypted in transit, not just traffic crossing network infrastructure — this matters for any browser-to-app or app-to-cloud-API paths in your architecture.
+- **Chapter 9 (Enterprise Mobility):** If caseworkers access the system from mobile devices, MDM enrolment, containerised BYOD, and MFA for remote access are required.
+
+**Detect/Respond**
+- **Chapter 15 (System Monitoring):** Centralised logging (SIEM or equivalent); minimum 18 months retention for OS systems; alerting on anomalous access to case records.
+- **Chapter 2 (Cyber Security Incidents):** Documented, tested incident response procedures with defined ASD notification triggers.
+
+**AI-specific (if any AI features are in the case management workflow — e.g., triage assistants, summarisation)**
+The June 2026 release introduced the first AI application controls:
+- **ISM-2112** — disable AI applications' ability to directly access external public data sources when processing classified/sensitive data.
+- **ISM-2113** — require human approval for organisationally-defined risky AI actions before execution.
+- **ISM-2114** — establish and monitor behavioural/performance baselines for AI applications.
+Confirm exact current control numbering against the ISM June 2026 changes document on cyber.gov.au before citing these in formal documentation.
+
+## 3. Authorisation pathway before go-live
+
+1. **System Security Plan (SSP)** — Document system boundary (including the CSP's shared-responsibility boundary), OS classification, security objectives (CIA ratings), and every implemented NC/OS control with evidence references.
+2. **Security Risk Assessment** — Identify threats and vulnerabilities specific to a cloud-hosted, internet-facing case management system (e.g., credential compromise, misconfigured cloud storage, third-party API exposure); document residual risk.
+3. **Independent Assessment** — IRAP assessment is **mandatory only for PROTECTED and above**, but it is **strongly recommended for OFFICIAL: Sensitive** systems, especially one handling case records for a federal agency. Given the sensitivity and public-facing nature typical of case management systems, budget for a voluntary IRAP assessment or at minimum a rigorous internal assessment against the full control set.
+4. **Plan of Action & Milestones (POA&M)** — Track and remediate any findings from the risk assessment / IRAP review before go-live, or document risk-accepted exceptions.
+5. **Authorisation to Operate (ATO)** — Your Authorising Official formally reviews residual risk and signs the SSP. This is the gate before the system can go live.
+6. **Ongoing monitoring** — Continuous control monitoring, event logging per Chapter 15, and periodic re-assessment (minimum every 24 months, or after significant change such as a CSP migration or new integration).
+
+## Release-awareness note
+This answer is based on the **June 2026 ISM release**. If your existing security documentation (SSP, risk assessments) references an earlier edition, run a delta check before authorisation: the June 2026 release added 20 new controls (29 for 2026 overall), removed ISM-1837 ("password never expires"), introduced the AI application controls above, and broadened the cryptography-in-transit control. None of the June 2026 additions carry an Essential Eight mapping, so treat Essential Eight maturity and June 2026 ISM compliance as separate, parallel workstreams.
+
+*This is general compliance guidance, not legal advice. Verify current control text against the official ISM on cyber.gov.au and consult your agency's security advisor or an accredited IRAP assessor before finalising authorisation decisions.*

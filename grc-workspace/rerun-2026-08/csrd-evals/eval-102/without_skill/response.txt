@@ -1,0 +1,41 @@
+# Double Materiality Under CSRD
+
+## The concept
+
+Double materiality means a sustainability topic must be assessed from **two independent perspectives**, and it is considered material — triggering disclosure — if it is material under **either** one (not both):
+
+1. **Impact materiality (the "inside-out" view):** Does the company have material actual or potential, positive or negative impacts on people or the environment — through its own operations or its upstream/downstream value chain? This is assessed on severity (scale, scope, and whether the impact is irremediable) and, for potential impacts, likelihood.
+
+2. **Financial materiality (the "outside-in" view):** Do sustainability-related matters create material risks or opportunities that affect — or could reasonably be expected to affect — the company's development, financial position, financial performance, cash flows, access to finance, or cost of capital, over the short, medium, or long term? This is assessed on magnitude and likelihood of the financial effect.
+
+A topic that is material under just one lens is material for reporting purposes; you don't need both to converge.
+
+## How this differs from GRI and TCFD
+
+**GRI:** GRI's materiality concept (especially since the 2021 Universal Standards) is essentially the **impact side alone** — it defines material topics as those representing the organization's most significant impacts on the economy, environment, and people, including human rights. GRI is stakeholder-inclusive and impact-first; it doesn't require you to filter by financial relevance to investors. Because of this, ESRS's impact materiality leg is heavily derived from and compatible with GRI's approach — companies with mature GRI reporting usually have a head start on the impact side, but GRI alone won't get you to financial materiality.
+
+**TCFD:** TCFD is the mirror image — it is a **single, financial-materiality** framework focused exclusively on climate-related risks and opportunities that matter to enterprise value and to investors' capital-allocation decisions. It does not ask how the company impacts the climate; it asks how climate change (physical and transition risks/opportunities) impacts the company. ESRS E1 (Climate Change) explicitly builds on TCFD's four-pillar structure (governance, strategy, risk management, metrics and targets), but layers the impact perspective (e.g., your own GHG emissions and their contribution to climate change) on top of the financial one.
+
+So: GRI ≈ impact materiality only; TCFD ≈ financial materiality only (and climate-specific); ESRS double materiality = both, across all sustainability topics (environmental, social, governance).
+
+## How to conduct a double materiality assessment
+
+1. **Understand the business context.** Map your business model, strategy, value chain (upstream suppliers, own operations, downstream customers/users), and key stakeholders (affected stakeholders like employees, communities, workers in the value chain; and users of the report like investors and lenders).
+
+2. **Identify a long list of sustainability matters.** Start from a comprehensive list — ESRS provides a structured list of sustainability sub-topics and sub-sub-topics across environment (climate, pollution, water, biodiversity, resource use/circular economy), social (own workforce, workers in the value chain, affected communities, consumers/end-users), and governance (business conduct) as a starting inventory.
+
+3. **Engage stakeholders.** Consult affected stakeholders (or their legitimate representatives) and users of the sustainability statement to surface impacts, risks, and opportunities you might not identify internally.
+
+4. **Assess impact materiality.** For each topic, identify actual and potential impacts (positive/negative) in your own operations and value chain. Score severity (scale, scope, irremediability) and, for potential impacts, likelihood. Apply a threshold to decide which impacts are "material."
+
+5. **Assess financial materiality.** For each topic, identify risks and opportunities that could generate a material financial effect on the company now or in future reporting periods. Score by magnitude and likelihood, again against a defined threshold.
+
+6. **Consolidate into a materiality matrix.** Plot or table the results; a topic clears the bar if it's material on impact, financial, or both axes.
+
+7. **Determine the final list of material topics.** This list drives which ESRS topical standards (E1–E5, S1–S4, G1) and specific disclosure requirements/datapoints you must report — topics that aren't material can usually be dismissed with a brief explanation rather than full disclosure.
+
+8. **Document, govern, and validate.** Document the methodology, thresholds, and stakeholder input; have it reviewed and approved by management/those charged with governance (this becomes part of ESRS 2 disclosures — IRO-1 on the process, IRO-2 on the resulting disclosure requirements); ensure it can withstand audit/assurance scrutiny.
+
+9. **Review periodically.** Double materiality is not a one-off exercise — it should be revisited at least annually (or when circumstances materially change) as your business, value chain, or risk landscape evolves.
+
+This process, and its outcome, must itself be disclosed under ESRS 2 (the cross-cutting general disclosures standard), since the materiality assessment is the backbone that determines the rest of your CSRD report's content.

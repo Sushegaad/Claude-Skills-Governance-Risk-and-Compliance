@@ -1,0 +1,50 @@
+*This answer assumes the ISM **June 2026 release** (published 9 June 2026) for the ISM-side content, and the current published Essential Eight Maturity Model for the E8-side content. Confirm exact wording/thresholds against ASD's Essential Eight Maturity Model and the Essential Eight–to-ISM mapping document on cyber.gov.au before finalising your compliance plan.*
+
+# Essential Eight (ML2) and Its Relationship to the ISM
+
+## How the Essential Eight Relates to the ISM
+
+The Essential Eight (E8) is **not a separate standard** — it's ASD's prioritised subset of the broader ISM control set: eight mitigation strategies selected as the highest-value controls for preventing, limiting, and recovering from common attack techniques. A few important clarifications before you plan your ML2 uplift:
+
+- **E8 compliance ≠ full ISM compliance.** Achieving ML2 across the eight strategies addresses a meaningful slice of your risk, but it does not substitute for a full ISM gap analysis and SSP covering all applicable chapters for your system's classification.
+- **Important for your FY target: the June 2026 ISM update and E8 maturity work are separate workstreams right now.** None of the 20 new controls added in the June 2026 ISM release carry an Essential Eight mapping. That means your ML2 uplift project and your June-2026 ISM delta/compliance work should be tracked and resourced as two distinct streams — closing your E8 gaps this financial year will not automatically close any June 2026 ISM gaps, and vice versa.
+- For full government compliance, you need **both**: ISM controls (the complete applicable set) **and** your E8 maturity target.
+
+## Mapping: Essential Eight Strategy → ISM Chapter(s)
+
+| Essential Eight Strategy | Primary ISM Chapter(s) | Notes |
+|---|---|---|
+| Application control (allow-listing) | Ch. 13 — System Hardening | Prevents execution of unapproved software |
+| Patch applications | Ch. 14 — System Management | Critical application patches within SLA |
+| Configure Microsoft Office macro settings | Ch. 13 — System Hardening | Restrict/disable macro execution from the internet |
+| User application hardening | Ch. 13 — System Hardening | Browser, Office, PDF reader hardening |
+| Restrict administrative privileges | Ch. 13 — System Hardening, Ch. 6 — Personnel Security | Least privilege, privileged access management |
+| Patch operating systems | Ch. 14 — System Management | Critical OS patches within SLA (≤14 days generally; tighter for internet-facing critical) |
+| Multi-factor authentication (MFA) | Ch. 6, Ch. 9, Ch. 19 | MFA for remote access and privileged/important accounts |
+| Regular backups | Ch. 14 — System Management | Tested, isolated/offline copies, 3-2-1 approach |
+
+Practical implication: your gap analysis work for E8 ML2 can — and should — be cross-referenced directly into your ISM SSP under these chapters, since evidence for one largely satisfies evidence requirements for the other where scope overlaps (e.g., a patch management SLA report supports both your E8 "patch operating systems" maturity evidence and your Chapter 14 ISM evidence).
+
+## What ML2 Requires for Each Strategy
+
+ASD's Essential Eight Maturity Model defines maturity levels per strategy, not a single blanket bar. **ML2** is the ASD-recommended baseline maturity target for most government entities in 2026, and generally represents "mostly aligned — addresses moderately sophisticated adversary tradecraft," a meaningful step up from ML1 (which addresses only opportunistic, low-sophistication attacks). Directionally, ML2 for each strategy means:
+
+- **Application control** — allow-listing extended beyond workstations to internet-facing servers, with regular rule-set review and centrally managed enforcement (not just default/audit mode).
+- **Patch applications** — automated asset discovery and patching of internet-facing services within 48 hours for critical vulnerabilities/no patch available mitigations, and vulnerability scanning conducted at least fortnightly for internet-facing services.
+- **Configure Microsoft Office macros** — macros from the internet blocked; only vetted, digitally signed macros from trusted locations allowed to run, with logging of macro execution attempts.
+- **User application hardening** — web browsers hardened to block/prompt for Flash, ads, and Java (as applicable), and application hardening centrally managed and enforced, not just configured per-device.
+- **Restrict administrative privileges** — privileged accounts explicitly identified, disallowed from accessing email/web browsing, and access to privileged accounts and their activities logged and reviewed.
+- **Patch operating systems** — internet-facing services patched within 48 hours of critical vulnerability disclosure (or mitigated if no patch exists); regular vulnerability scanning; unsupported OS versions removed or isolated.
+- **Multi-factor authentication** — MFA enforced for all users when authenticating to internet-facing services and for privileged actions, using verifier-impersonation-resistant methods where practical.
+- **Regular backups** — backups of important data, software, and configuration settings performed and retained per business criticality, with restoration tested at least annually, and backups protected from unauthorised access/modification.
+
+**Recommendation:** because exact ML2 wording and technical thresholds are periodically refined by ASD, validate each of the above against the current published Essential Eight Maturity Model (and the Essential Eight-to-ISM mapping document) before you finalise your FY compliance evidence — I've given you the directional shape of ML2 per strategy, but the authoritative technical thresholds should be pulled straight from ASD's current publication.
+
+## Suggested Approach for Your FY Target
+1. Run a per-strategy gap analysis against ML1 → ML2 requirements (current state vs. target for each of the eight strategies).
+2. Cross-map each finding into the corresponding ISM chapter (13/14/6/9/19 as above) so the evidence feeds both your E8 maturity assessment and your ISM SSP.
+3. Track the June 2026 ISM delta separately — don't assume E8 ML2 work closes any of the new AI, cryptography, or other June 2026 control additions.
+4. Prioritise patch operating systems, MFA, and restrict admin privileges first if resourcing is constrained — these tend to have the highest risk-reduction-per-effort ratio and the most overlap with baseline ISM chapters.
+
+---
+*This is general compliance guidance, not legal advice. Confirm current Essential Eight Maturity Model wording and ISM June 2026 control mappings against cyber.gov.au before finalising your compliance evidence.*

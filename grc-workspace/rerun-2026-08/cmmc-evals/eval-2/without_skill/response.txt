@@ -1,0 +1,64 @@
+# CMMC Level 2 Gap Assessment
+
+Based on the current state you've described, here is a practice-area rating, likely SPRS score impact, and a prioritized remediation plan. This is a desk-based assessment from the facts given — a full assessment would require deeper evidence review, but the picture is clear enough to act on.
+
+## Current State Summary (as provided)
+
+- MFA only on cloud email (not enterprise-wide)
+- No FIPS-validated encryption for CUI at rest
+- SSP last updated in 2022 (stale — 3+ years old)
+- Incident response plan exists but never tested
+- Flat network with CUI on shared drives (no segmentation/access control)
+- Annual security awareness training in place
+- Background screening for all staff
+
+## Practice Area Ratings (against NIST SP 800-171 Rev 2 domains)
+
+| Domain | Rating | Rationale |
+|---|---|---|
+| **Access Control (AC)** | 🔴 Poor | Flat network + CUI on shared drives means no meaningful least-privilege or CUI-specific access restriction. This is likely the single biggest gap. |
+| **Identification & Authentication (IA)** | 🟡 Partial | MFA only on email; VPN, admin accounts, privileged access, and remote access into the CUI environment are presumably not covered. IA.L2-3.5.3 (MFA) is likely NOT MET as currently implemented. |
+| **System & Communications Protection (SC)** | 🔴 Poor | No FIPS-validated encryption at rest is a direct gap against SC.L2-3.13.11 (FIPS-validated cryptography) and affects SC.L2-3.13.16 (protect CUI at rest). |
+| **Media Protection (MP)** | 🔴 Poor | CUI on shared drives without controls implies MP requirements (marking, access restriction, sanitization) are likely unmet or unverified. |
+| **Configuration Management (CM)** | 🟡 Unknown/Likely Weak | Not mentioned directly, but a flat network with shared drives is a strong signal that CM baselines and least-functionality controls are immature. |
+| **Incident Response (IR)** | 🟡 Partial | A documented plan exists, which is a good start, but "never tested" means IR.L2-3.6.2 (incident handling capability) and IR.L2-3.6.3 (test the IR capability) are likely NOT MET — assessors want evidence of tabletop exercises or drills, not just a document. |
+| **Awareness & Training (AT)** | 🟢 Good | Annual security awareness training in place. Likely MET for AT.L2-3.2.1, though confirm role-based training for privileged/admin users (AT.L2-3.2.2) is also covered. |
+| **Personnel Security (PS)** | 🟢 Good | Background screening in place — likely MET for PS.L2-3.9.1. |
+| **Risk Assessment (RA) / Security Assessment (CA)** | 🔴 Poor (inferred) | A 2022 SSP with no update since suggests no recurring risk assessment or control assessment cycle — CA.L2-3.12.1/3.12.4 (assess/document security controls, maintain SSP) are likely NOT MET given the SSP is stale by CMMC standards. |
+| **Audit & Accountability (AU)** | 🟡 Unknown | Not described — flag as a priority unknown to verify (logging, log review, and retention are commonly weak spots in firms this size). |
+
+## SPRS Score Impact
+
+The DoD SPRS scoring methodology starts at a maximum of **110** and subtracts points for each NOT MET practice (values range from -1 to -5 depending on the practice's weight). Based on what's described, expect deductions in at least these areas:
+
+- **IA.L2-3.5.3 (MFA)** — likely NOT MET as implemented enterprise-wide: **-5**
+- **SC.L2-3.13.11 (FIPS-validated cryptography)** — NOT MET: **-5**
+- **SC.L2-3.13.16 (protect CUI at rest)** — likely NOT MET without proper encryption/access controls: **-1 to -3**
+- **AC domain gaps (multiple practices around least privilege, CUI flow control, session controls)** — flat network with shared CUI storage likely creates NOT MET findings across several AC practices, each worth -1 to -5
+- **MP domain gaps (media protection/marking/access)** — likely multiple -1 to -3 deductions
+- **IR.L2-3.6.3 (test IR capability)** — NOT MET: **-1**
+- **CA/RA gaps tied to a stale SSP and lack of recurring assessment** — **-1 to -5** depending on specific practice
+
+**Rough estimate:** given the breadth of gaps (flat network, no encryption, partial MFA, stale SSP, untested IR), a realistic current SPRS score is likely in the **40-70 range out of 110**, not the 88+ that DoD is increasingly expecting to see as a floor for contract award consideration on CUI-sensitive work. Note: DFARS 252.204-7019/7020 already require a current score in SPRS regardless of CMMC certification timeline — if the SSP hasn't been updated since 2022, the SPRS score on file (if any) is almost certainly outdated and should be treated as non-compliant with existing obligations, not just a future CMMC gap.
+
+## Prioritized Remediation Plan
+
+### Phase 1 (0-60 days) — Stop the bleeding / highest SPRS point value
+1. **Segment the network and remove CUI from general shared drives.** Move CUI into a defined, access-controlled enclave (dedicated file share, SharePoint/OneDrive library with restricted permissions, or a purpose-built CUI environment). This single move improves AC, MP, and SC posture simultaneously and is usually the highest-leverage fix.
+2. **Extend MFA beyond email** to all remote access, VPN, privileged/admin accounts, and any system that can reach CUI. Directly addresses IA.L2-3.5.3.
+3. **Implement FIPS-validated encryption for CUI at rest** (e.g., BitLocker with FIPS mode, or a cloud environment with FIPS-validated encryption like Microsoft 365 GCC High). Addresses SC.L2-3.13.11 and 3.13.16.
+
+### Phase 2 (60-120 days) — Process maturity
+4. **Update and rewrite the SSP** to reflect current environment, the new CUI enclave, and actual implementation status of all 110 practices. Treat the 2022 SSP as obsolete — it should not be relied upon for assessment.
+5. **Test the incident response plan** via a tabletop exercise; document lessons learned and update the plan. Establish a recurring test cadence (at least annual).
+6. **Stand up basic configuration management and audit logging** if not already present — baseline configurations for CUI-handling systems, and centralized log collection/review.
+
+### Phase 3 (90-150 days) — Formalize and validate
+7. **Build/update the POA&M** for any practices not fully remediated, with realistic closure dates (note some practices cannot be POA&M'd for certification purposes — confirm which of your gaps fall into that category).
+8. **Conduct an internal or third-party readiness (mock) assessment** against all 110 practices before engaging a C3PAO.
+9. **Update the SPRS score** to reflect actual current state once Phase 1-2 items are substantially complete.
+10. **Schedule the formal C3PAO assessment** once the mock assessment shows a strong likelihood of passing (ideally minimal to zero NOT MET findings, or only POA&M-eligible items remaining).
+
+## Bottom Line
+
+The most urgent and highest-impact gaps are the **flat network with CUI on shared drives** and **lack of FIPS-validated encryption** — these touch the most domains and carry some of the heaviest SPRS point deductions. MFA expansion is a close second in urgency but typically faster to fix. The stale SSP is a documentation/process problem that should be corrected in parallel, not treated as low priority, since it's both a standalone requirement and the record-of-truth an assessor will use to evaluate everything else.

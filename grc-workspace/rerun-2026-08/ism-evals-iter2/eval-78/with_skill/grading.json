@@ -1,0 +1,33 @@
+{
+  "eval_id": 78,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Covers the core ISM hardening requirements: harden against vendor/ASD guidance (e.g., Microsoft security baselines), remove or disable unneeded services, accounts, and functionality, and maintain a documented standard operating environment",
+      "passed": true,
+      "evidence": "'OS hardening — remove/disable unnecessary services, roles, and features; disable default/built-in accounts', 'adopt a recognised hardening baseline (Microsoft Security Compliance Toolkit / Windows Server 2022 security baseline, or a DoD/ACSC-aligned STIG/CIS benchmark)', and 'push the hardening baseline via GPO... so configuration drift is prevented' (documented SOE concept)."
+    },
+    {
+      "text": "Includes application control and patching: application control on servers where applicable, and timely patching of the OS and applications with defined timeframes",
+      "passed": true,
+      "evidence": "WDAC/AppLocker application allow-listing plus explicit SLAs: 'Critical OS patches applied within 48 hours if internet-facing, or 14 days if internal-only... High-severity patches within 14 days, medium within 30 days.'"
+    },
+    {
+      "text": "Specifies concrete Windows Server measures (e.g., baseline/GPO configuration, disabling legacy protocols, restricting administrative tooling, local admin management) rather than generic advice",
+      "passed": true,
+      "evidence": "GPO baseline export, 'disable SMBv1, remove legacy protocols', Credential Guard/LSA protection/NTLM restriction, LAPS for rotated local admin credentials, and PAM/just-in-time elevation."
+    },
+    {
+      "text": "Details assessment evidence: exported configuration baselines/GPO reports, compliance-scan results against the baseline, patch status reports, application control policy exports, and change records",
+      "passed": true,
+      "evidence": "Evidence list includes 'GPO baseline export', 'Vulnerability/configuration scan results', 'Patch status reports', 'WDAC/AppLocker policy configuration', and 'Change records' — all five required evidence types present."
+    },
+    {
+      "text": "Structured per the skill's control-guidance format (purpose → requirement → implementation steps → audit evidence) and cites controls only in valid ISM-XXXX format without inventing numbers",
+      "passed": true,
+      "evidence": "Response headings are exactly '## Purpose', '## Requirement', '## Implementation Steps (Windows Server 2022–specific)', '## Audit Evidence to Collect' — matches the prescribed structure precisely. No ISM-XXXX numbers are cited, so none are invented."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

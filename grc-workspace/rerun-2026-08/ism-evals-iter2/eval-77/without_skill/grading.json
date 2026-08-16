@@ -1,0 +1,33 @@
+{
+  "eval_id": 77,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Frames IRAP correctly: ASD-endorsed independent assessors who assess the implementation and effectiveness of ISM controls — an IRAP assessment informs but does NOT itself constitute authorisation; the agency's Authorising Official still makes the risk-acceptance decision",
+      "passed": true,
+      "evidence": "'IRAP assessors do not certify or accredit systems — that decision rests with the Authorising Officer' and 'IRAP assessors advise but do not grant authorisation.' Uses 'Authorising Officer' rather than 'Authorising Official' but the concept (assessors assess, agency decision-maker authorises) is clearly and correctly conveyed."
+    },
+    {
+      "text": "Lists the right artefacts: System Security Plan plus its control-implementation annex/matrix, security risk assessment/management documentation, architecture and data-flow documentation, and supporting policies/procedures with implementation evidence",
+      "passed": true,
+      "evidence": "'SSP — the core document mapping each applicable ISM control to how it is implemented', 'Security Risk Management Plan (SRMP)', 'System architecture diagrams', 'SOPs' plus an extensive evidence-artefacts list — covers all four required categories thoroughly."
+    },
+    {
+      "text": "Sets process expectations: scoping, documentation review, then control-effectiveness validation (interviews, configuration review, testing) — evidence of operation, not just documentation",
+      "passed": true,
+      "evidence": "'1. Scoping and kickoff 2. Documentation review 3. Technical testing/validation' (config reviews, interviews, sampling evidence, vulnerability scanning, possible pen test) '4. Control-by-control assessment 5. Draft findings and clarification 6. Final IRAP report issuance.'"
+    },
+    {
+      "text": "Explains the aftermath: an assessment report with control effectiveness findings and residual risks → agency remediation planning → Authorising Official reviews and makes the authorisation decision; periodic reassessment thereafter",
+      "passed": true,
+      "evidence": "'Risk treatment... Update the SRMP... Authorising Officer decision... grant, conditionally grant, or withhold an Authority to Operate (ATO)... Conditions and timelines... Continuous monitoring... Reassessment triggers.'"
+    },
+    {
+      "text": "PROTECTED-appropriate: applies PROTECTED-marked controls and classification-appropriate handling throughout (not OFFICIAL-level shortcuts)",
+      "passed": true,
+      "evidence": "Consistently PROTECTED-specific throughout: 'BIL determination that justifies the PROTECTED classification', 'each ISM control applicable to PROTECTED is rated', 'ISM PROTECTED control set', 'clearances or background checks... relevant to PROTECTED handling.'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

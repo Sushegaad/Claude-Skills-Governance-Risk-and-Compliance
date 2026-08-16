@@ -1,0 +1,33 @@
+{
+  "eval_id": 78,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Covers the core ISM hardening requirements: harden against vendor/ASD guidance (e.g., Microsoft security baselines), remove or disable unneeded services, accounts, and functionality, and maintain a documented standard operating environment",
+      "passed": true,
+      "evidence": "'apply vendor hardening guidance — for Microsoft this typically means aligning to the Microsoft Security Baseline for Windows Server 2022', 'Remove or disable unnecessary features, roles, and services', 'Disable or remove unused accounts', plus a documented 'Hardening baseline/configuration standard document' in the evidence section."
+    },
+    {
+      "text": "Includes application control and patching: application control on servers where applicable, and timely patching of the OS and applications with defined timeframes",
+      "passed": true,
+      "evidence": "Section 3 'Application control' covers WDAC/AppLocker; Section 2 'Patch and vulnerability management' explicitly covers 'security patches within ASD-mandated timeframes based on severity... 48 hours to two weeks... routine patches monthly' plus vulnerability scanning."
+    },
+    {
+      "text": "Specifies concrete Windows Server measures (e.g., baseline/GPO configuration, disabling legacy protocols, restricting administrative tooling, local admin management) rather than generic advice",
+      "passed": true,
+      "evidence": "Explicitly names 'disabling legacy authentication protocols (e.g., NTLMv1, SMBv1, LM hashes)', GPO/Microsoft Security Baseline, PAWs/jump hosts, local administrator group restriction, Secure Boot/VBS/Credential Guard for Server 2022."
+    },
+    {
+      "text": "Details assessment evidence: exported configuration baselines/GPO reports, compliance-scan results against the baseline, patch status reports, application control policy exports, and change records",
+      "passed": true,
+      "evidence": "Evidence list explicitly includes 'GPO exports', 'Vulnerability scan reports', 'Patch compliance reports', 'Application control policy exports (WDAC/AppLocker policy XML)', and 'Change management records' — all five required categories present."
+    },
+    {
+      "text": "Structured per the skill's control-guidance format (purpose → requirement → implementation steps → audit evidence) and cites controls only in valid ISM-XXXX format without inventing numbers",
+      "passed": false,
+      "evidence": "Structured as 'Overview', 'What ISM System Hardening requires, by area' (7 subsections), 'Evidence to collect', 'Practical tip' — does not follow the purpose → requirement → implementation steps → audit evidence structure. No invented control numbers are cited, but the required format is not present."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

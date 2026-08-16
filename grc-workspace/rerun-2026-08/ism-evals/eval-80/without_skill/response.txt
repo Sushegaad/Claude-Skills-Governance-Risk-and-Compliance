@@ -1,0 +1,51 @@
+# ISM Compliance Obligations for a Private-Sector Cloud Services Provider to a Federal Agency
+
+## Do your ISM obligations apply even though you're not a government entity?
+
+Yes. The ISM itself is written for Australian government entities, but when a private company contracts to provide services (especially cloud/ICT services) to a Commonwealth agency, the **agency's obligations under the ISM and PSPF flow down to you contractually**. The agency remains accountable for the security of the system and the information it holds/processes, but it will typically impose ISM-aligned requirements on you through the contract, including specific control obligations, audit/assessment rights, incident reporting duties, and evidence provision requirements. You don't have an independent statutory obligation to "comply with the ISM" as a private company outside of government — your obligation exists **because the contract requires it**, so the actual scope depends heavily on your contract terms, the data classification involved, and any specific security schedule/annex attached to the agreement.
+
+## What your obligations typically look like
+
+1. **Read the contract's security schedule closely** — it will usually specify:
+   - The information classification(s) you'll handle (OFFICIAL, OFFICIAL: Sensitive, PROTECTED, etc.) — this determines which ISM control set applies.
+   - Specific control frameworks required (ISM baseline, Essential Eight maturity level, ASD Cloud Security Guidance/Certified Cloud Services List requirements, ISO 27001, or a hybrid).
+   - Audit and assessment rights — whether the agency or its delegate (possibly via IRAP) can assess your environment, and how often.
+   - Incident notification obligations and timeframes (often very short — e.g., notify within 24-72 hours of a suspected security incident affecting agency data).
+   - Data sovereignty/data residency requirements (data must often stay within Australia, sometimes with restrictions on foreign-owned/controlled providers or personnel with appropriate visibility).
+   - Subcontractor/fourth-party flow-down requirements (your own cloud infrastructure providers, if any, may need equivalent obligations flowed to them).
+   - Exit/transition and data destruction obligations at contract end.
+
+2. **Understand the shared responsibility model** — as the cloud service provider (or reseller/integrator), you're generally responsible for infrastructure, platform, and application-layer security controls within your service boundary, while the agency retains responsibility for their own data governance, user access decisions, and information handling above the service boundary. Clarify this explicitly with the agency (often documented in a Shared Responsibility Matrix) since misunderstanding the boundary is one of the most common sources of compliance gaps and disputes.
+
+## Controls most critical for your cloud environment
+
+Given typical ISM emphasis for cloud services, prioritise:
+
+- **Data encryption at rest and in transit**, using ASD Approved Cryptographic Algorithms and Protocols (AACP) where required, with appropriate key management (ideally customer-controlled or at least agency-visible key management for sensitive data).
+- **Identity and access management** — strong authentication (MFA) for all administrative and user access to the environment, least-privilege role design, and robust logging of access to agency tenant/data.
+- **Tenant isolation and multi-tenancy controls** — clear technical and logical separation between the agency's data/workloads and other customers, especially if you run a shared/multi-tenant platform.
+- **Data sovereignty and location controls** — ensuring agency data (and backups/logs containing agency data) stays within agreed jurisdictional boundaries, and that support/administrative access is appropriately restricted (e.g., no offshore admin access without agency sign-off, consistent with Hosting Certification Framework-style requirements many agencies apply).
+- **Logging, monitoring, and incident response** — comprehensive audit logging of the environment, SIEM/monitoring capability, and a tested incident response process with defined notification obligations to the agency and, where required, the ACSC.
+- **Patch and vulnerability management** — timely patching aligned to ASD-mandated timeframes, and regular vulnerability scanning/penetration testing of the platform.
+- **Personnel security** — background checks/security clearances for staff with access to agency systems or data, particularly for higher classifications.
+- **Supply chain and subcontractor management** — due diligence and flow-down of security obligations to your own suppliers/subprocessors.
+- **Business continuity and backup/recovery** — tested backup and disaster recovery capability meeting the agency's availability requirements.
+
+## Do you need an IRAP assessment?
+
+It depends on classification and contract terms, but in practice:
+
+- If you're processing/storing **PROTECTED** or higher information, an **IRAP assessment (or equivalent) is very likely required** — many agencies will only use cloud services that appear on ASD's list of IRAP-assessed cloud services, or will require you to commission and pass an IRAP assessment as a condition of the contract.
+- If you're only handling **OFFICIAL or OFFICIAL: Sensitive** information, a full IRAP assessment may not be contractually mandated, but the agency may still require an independent security assessment (which could be IRAP or an equivalent recognised assessment/certification such as ISO 27001 certification, SOC 2, or a agency-led review) as evidence of your control effectiveness.
+- **Being privately owned does not exempt you** — the requirement attaches to the data/system being handled, not to your organisational status. If the contract specifies IRAP assessment, you'll need to engage an ACSC-endorsed IRAP assessor, prepare the same artefacts a government system would (System Security Plan, Security Risk Management Plan, architecture diagrams, evidence of Essential Eight/ISM control implementation), and go through the assessment process, generally at your own cost unless negotiated otherwise.
+- Even without a formal IRAP requirement, expect the agency to reserve **audit rights** in the contract, meaning they (or their delegate) can request evidence or conduct their own assessment of your environment at any time during the contract term.
+
+## Practical next steps
+
+1. Confirm the **exact classification level** of data you'll handle and locate the specific security schedule/annex in your contract — this determines your actual control obligations, not the ISM in the abstract.
+2. Ask the agency directly (or check the contract) whether **IRAP assessment is mandated**, and if so, by when and at whose cost.
+3. Map your current security posture (Essential Eight maturity, ISO 27001 certification, existing cloud security controls) against the ISM control set relevant to the classification, and identify gaps early — this is far cheaper to close before a formal assessment than during one.
+4. Clarify the **Shared Responsibility Matrix** in writing with the agency so there's no ambiguity about who owns which controls.
+5. Establish **incident notification processes** now, since these obligations are often the ones most likely to be breached simply from lack of preparedness, not lack of intent.
+
+As always, treat this as general guidance — confirm specific obligations against your actual contract terms and the current ISM/PSPF requirements, since these frameworks are updated periodically by the ACSC and Attorney-General's Department.

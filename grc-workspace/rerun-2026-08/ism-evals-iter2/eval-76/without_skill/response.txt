@@ -1,0 +1,51 @@
+# ISM Applicability, Key Controls, and Authorisation Pathway for an OFFICIAL: Sensitive Cloud Case Management System
+
+## 1. Which ISM control applicability markings apply
+
+The Australian Government Information Security Manual (ISM), published by the Australian Signals Directorate (ASD), organises controls using applicability markings tied to classification. For a system that stores **OFFICIAL: Sensitive** information, the relevant markings are:
+
+- **All classifications / "Official"** markings — controls marked as applying to OFFICIAL and OFFICIAL: Sensitive systems (the ISM typically distinguishes "O" for OFFICIAL and "O-S" or similar language for OFFICIAL: Sensitive, alongside PROTECTED, SECRET, and TOP SECRET markings).
+- You should **not** apply controls that are marked as only relevant to PROTECTED or higher classifications unless your agency has chosen to uplift its baseline voluntarily (common where a mixed classification environment exists, or where the agency wants a single uplifted baseline across all systems).
+- Because this is a **cloud-hosted** system, you also need to consider the ISM's **cloud computing security guidance** (chapter on cloud services), which applies regardless of classification and covers matters like cloud service provider (CSP) certification status, data sovereignty, shared responsibility, and use of ASD's **Certified Cloud Services List (CCSL)** / IRAP-assessed cloud providers.
+- The **Protective Security Policy Framework (PSPF)**, which sits alongside the ISM, is also relevant — PSPF Policy 9 (Access to information) and related policies define handling requirements for OFFICIAL: Sensitive information, and the ISM should be read as implementing the technical security controls that support PSPF obligations.
+
+## 2. Key controls you must implement
+
+For an OFFICIAL: Sensitive, cloud-hosted case management system, focus on:
+
+- **Governance and risk management** — establish a system-specific security risk management plan, appoint an Authorising Officer / System Owner, and maintain a System Security Plan (SSP) documenting how ISM controls are implemented.
+- **Cloud-specific controls**:
+  - Use a CSP that has undergone an IRAP assessment (or equivalent) appropriate to OFFICIAL: Sensitive.
+  - Understand and document the **shared responsibility model** — which controls the CSP owns (physical, hypervisor) vs. what your agency owns (application, identity, data).
+  - Ensure data sovereignty/data residency requirements are met (data stored and processed within Australia where required by agency policy).
+- **Identity and access management** — multi-factor authentication for all users (especially privileged/remote access), least-privilege role-based access control, regular access reviews, and strong password/credential policies.
+- **Essential Eight mitigation strategies** — even for OFFICIAL: Sensitive systems, ASD strongly recommends implementing the Essential Eight (patching applications and OS, application control, restricting admin privileges, MFA, restricting Microsoft Office macros, user application hardening, regular backups) to at least Maturity Level 1, with ML2 encouraged for systems holding sensitive personal or case information.
+- **Data protection** — encryption of data at rest and in transit using ASD-approved cryptographic protocols, secure key management, and data loss prevention controls given the sensitive nature of case management data (likely containing personal information).
+- **Logging, monitoring, and incident response** — centralised logging of security-relevant events, retention periods aligned with ISM guidance, integration with the agency's Security Operations Centre or equivalent, and a documented incident response plan that includes notification obligations (e.g., to the Office of the Australian Information Commissioner if a data breach involves personal information, and to ASD/ACSC for significant cyber incidents).
+- **Software and patch management** — vulnerability scanning, timely patching (extreme risk within 48 hours, high risk within two weeks per ASD patching guidance), and configuration hardening per ISM Guidelines for System Hardening.
+- **Personnel security** — appropriate security clearances or baseline checks for administrators, security awareness training, and separation-of-duties controls.
+- **Third-party/supply chain assurance** — due diligence on the CSP and any subcontractors, contractual clauses requiring ISM compliance, and right-to-audit provisions.
+
+## 3. Authorisation pathway before going live
+
+The ISM and PSPF define a risk-based security assessment and authorisation process, generally following these steps:
+
+1. **Define the system boundary and classification** — confirm OFFICIAL: Sensitive is the correct classification based on a Business Impact Level (BIL) assessment of the information handled.
+2. **Develop core documentation**:
+   - System Security Plan (SSP)
+   - Security Risk Management Plan (SRMP) — identifying threats, vulnerabilities, and residual risk
+   - Incident Response Plan
+   - Continuous Monitoring Plan
+3. **Select and implement controls** from the ISM applicable to OFFICIAL: Sensitive and cloud environments, tailored to the system's specific risk profile.
+4. **Conduct a security assessment** — for OFFICIAL: Sensitive systems, a full independent IRAP assessment is not always mandatory (that is more typical for PROTECTED and above), but many agencies still commission an internal security assessment, a vendor/CSP assurance review, or a lighter-touch IRAP "health check" depending on agency risk appetite and the sensitivity of the case data involved.
+5. **Determine residual risk** — the assessor or internal security team documents residual risks after controls are applied.
+6. **Authorisation decision** — the agency's **Authorising Officer** (typically a senior executive, often the CISO, CIO, or delegate under the agency's security governance framework) reviews the SSP, SRMP, and assessment findings, and formally accepts residual risk, issuing an **Authority to Operate (ATO)**.
+7. **Go-live** — the system may only be connected to production/operational use once the ATO is granted.
+8. **Continuous monitoring and reauthorisation** — post go-live, the agency must maintain ongoing vulnerability management, periodic reassessment (commonly annually or upon significant change), and update the ATO as required by agency policy.
+
+## Practical next steps
+- Confirm your agency's specific BIL assessment and whether internal policy requires IRAP for OFFICIAL: Sensitive systems (this varies by agency risk appetite).
+- Engage your CSP early to obtain their IRAP assessment report/certification and shared responsibility matrix.
+- Start the SSP and SRMP in parallel with technical control implementation, since the Authorising Officer will need these before granting an ATO.
+
+*Note: This response is based on general knowledge of the ISM framework as of the ISM's typical structure (chapters, control tables with applicability markings, and cloud guidance). Always validate against the current published ISM edition and your agency's PSPF-aligned security policies, as ASD updates the ISM regularly.*

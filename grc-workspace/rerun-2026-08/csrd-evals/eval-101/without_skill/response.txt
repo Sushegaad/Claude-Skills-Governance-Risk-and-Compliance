@@ -1,0 +1,35 @@
+# Does Your Company Fall Under CSRD?
+
+Short answer: **yes, almost certainly** — and if your facts are as described, you likely should already be reporting (or very close to your first report).
+
+## Why you're in scope
+
+The Corporate Sustainability Reporting Directive (CSRD) phases companies in based on two overlapping tests: (1) whether you're a "large undertaking" under the EU Accounting Directive size thresholds, and (2) whether you were already caught by the old Non-Financial Reporting Directive (NFRD).
+
+**Size test (large undertaking):** A company is "large" if it exceeds at least two of three thresholds:
+- More than 250 employees (you have 800 — well over)
+- Net turnover above roughly €50M (you have €120M — well over)
+- Balance sheet total above roughly €25M (you have €55M — well over)
+
+You clearly qualify as a large undertaking on all three metrics.
+
+**Listed status:** Being listed on the Frankfurt Stock Exchange's regulated market (as opposed to an open/MTF segment like Scale) makes you a "public-interest entity" (PIE) for EU purposes. A listed PIE with more than 500 employees was already subject to the NFRD — the CSRD's predecessor regime. Since you have 800 employees and are listed, that description fits you.
+
+## When you first report
+
+Because you appear to meet the NFRD-legacy profile (listed PIE, >500 employees, large undertaking), you fall into the **first wave** of CSRD reporters:
+- First reporting year: **financial year 2024**
+- First CSRD/ESRS report published: **2025**, alongside your FY2024 management report
+
+If that's correct, you should already have published your first ESRS-based sustainability statement in 2025, and you'd now be preparing your **second** report — for FY2025, to be published in 2026.
+
+If you were *not* actually caught by NFRD before (for example, if your listing or employee count only recently crossed 500), you may instead fall into the second wave of large companies (originally FY2025 reporting, published 2026), though note that the EU's 2025 "Omnibus" simplification package delayed this second wave's timeline by two years for companies not previously subject to NFRD — worth confirming your exact wave against the final adopted texts, since this has been a moving target.
+
+## What to check next
+
+1. Confirm your Frankfurt listing is on a regulated market (Prime Standard/General Standard), not the Scale segment, since that affects PIE status.
+2. Confirm whether you were already reporting under German NFRD implementation (§289b–e / §315b–c HGB) — if so, you're Wave 1, already in scope for FY2024.
+3. Identify your material topics via a double materiality assessment (mandatory first step) to determine which ESRS topical standards apply beyond the mandatory cross-cutting standards (ESRS 1 and ESRS 2).
+4. Line up limited assurance from your statutory auditor or an independent assurance provider, as CSRD reports require external assurance from the outset.
+
+Given the significant legislative activity around CSRD simplification in 2024–2025 (the Omnibus package), I'd recommend verifying your exact wave and first reporting deadline against the current German transposition of the directive and any subsequent amendments, since thresholds and timelines have been actively revised.

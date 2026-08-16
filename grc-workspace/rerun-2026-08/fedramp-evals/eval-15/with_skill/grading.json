@@ -1,0 +1,33 @@
+{
+  "eval_id": 15,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States documented FedRAMP ConMon remediation timeframes including High-severity = 30 days and Moderate = 90 days from identification (Low = 180 days); any Critical-specific figure given must be 30 days or less",
+      "passed": true,
+      "evidence": "Table: Critical <= 30 calendar days, High = 30 calendar days, Moderate = 90 calendar days, Low = 180 calendar days — matches ground truth exactly, and the Critical figure (<=30) satisfies the '30 days or less' requirement."
+    },
+    {
+      "text": "Explains that findings past their SLA must be tracked as POA&M items with milestones — not silently closed — and that overdue items affect ConMon standing",
+      "passed": true,
+      "evidence": "\"Missing these SLAs is one of the most common ConMon findings agencies flag during monthly reviews\" and 'Milestone Changes' field with revision history; discusses systemic patterns putting ATO status 'at risk of suspension if left unaddressed.'"
+    },
+    {
+      "text": "Provides a proper POA&M entry structure including at minimum: finding description and source, severity/risk rating, point of contact/owner, milestones with scheduled completion dates, and status",
+      "passed": true,
+      "evidence": "Field table includes Weakness Description (with scan source), Risk Rating (Original), Point of Contact, Scheduled Completion Date, Milestone Changes, and Status."
+    },
+    {
+      "text": "Mentions the Deviation Request process (false positive / risk adjustment / operational requirement) and/or Vendor Dependency handling",
+      "passed": true,
+      "evidence": "Fields include 'Risk Adjustment', 'False Positive', 'Operational Requirement', and 'Deviation Request Approved | Yes/No — required if you're claiming False Positive, Risk Adjustment, or Operational Requirement; the agency AO must approve.'"
+    },
+    {
+      "text": "Advises documenting remediation evidence and closure validation (e.g., rescan to confirm the fix) rather than just marking the item complete",
+      "passed": true,
+      "evidence": "\"Document closure evidence. When you eventually close this item, attach the rescan result showing the vulnerability is resolved, not just a statement that it was patched.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

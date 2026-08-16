@@ -1,0 +1,33 @@
+{
+  "eval_id": 13,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Describes FedRAMP 20x as the automation-oriented approach: machine-readable evidence, Key Security Indicators (KSIs), and continuous validation replacing narrative-heavy documentation",
+      "passed": false,
+      "evidence": "Response covers 'continuous authorization', 'modular, API-driven submissions', and 'automated evidence collection' but never mentions Key Security Indicators (KSIs) by name — a specific, named element of the 20x program that is entirely absent."
+    },
+    {
+      "text": "Correctly characterizes the 2026 state: 20x launched via phased implementation starting with Low-baseline pilots in 2025 and expanding; both 20x and Rev5 paths currently exist, and under CR26 a CSP pursues one path or the other",
+      "passed": true,
+      "evidence": "Describes both paths as currently coexisting: '20x as your primary target' vs. 'traditional SSP/SAP/SAR templates still exist and remain in use for the legacy authorization path ... during the CR26 transition period', with concrete 2026 rollout dates (Class A Aug 3 2026, B/C Aug 31 2026, D late 2026/early 2027) consistent with a phased rollout, though it does not cite the 2025 Low-baseline pilot origin specifically."
+    },
+    {
+      "text": "Explains concrete differences from traditional authorization (no lengthy SSP narratives, automated/API submission, continuous reporting instead of periodic snapshots)",
+      "passed": true,
+      "evidence": "\"instead of one monolithic SSP/SAP/SAR package, evidence and control implementations are submitted in structured, machine-readable modules\" and \"Continuous authorization rather than a single point-in-time ATO decision followed by periodic annual reassessment.\""
+    },
+    {
+      "text": "Provides a reasoned recommendation matched to the CSP's situation (e.g., cloud-native SaaS suits 20x; complex/legacy or High-baseline systems may need the Rev5 route) rather than a one-size-fits-all answer",
+      "passed": true,
+      "evidence": "Recommends 20x as primary target but carves out specific exceptions: 'You need Class D (High)-equivalent authorization soon ... the legacy Agency Authorization package ... is your only mature option right now' and 'Your system is unusually complex.'"
+    },
+    {
+      "text": "Does not present FedRAMP Ready as a viable ongoing designation, and if CR26 classes are mentioned the mapping is correct per NTC-0004",
+      "passed": true,
+      "evidence": "\"Legacy FedRAMP Ready was retired July 28, 2026 ... no new submissions accepted under that designation.\" Class mapping stated as LI-SaaS+Low->B, Moderate->C, High->D, Class A new — matches NTC-0004."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 11,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States that the JAB P-ATO path no longer exists — the JAB was dissolved in the 2024 FedRAMP restructuring (FedRAMP Authorization Act / OMB M-24-15) — rather than presenting JAB P-ATO as a currently available option",
+      "passed": true,
+      "evidence": "\"JAB P-ATO is fully suspended. The Joint Authorization Board no longer issues Provisional ATOs. The FedRAMP PMO is now the sole authorization body ... JAB P-ATO simply isn't an available path today.\" Table marks JAB P-ATO status as 'Fully suspended — no longer issued' and explicitly says 'do not plan around this path.'"
+    },
+    {
+      "text": "Describes the currently available path(s): FedRAMP 20x and/or Rev5 agency-sponsored authorization, consistent with the post-2024 program (single 'FedRAMP Certification' label per notice NTC-0004)",
+      "passed": true,
+      "evidence": "\"your real choice as a first-time CSP is between: 1. FedRAMP 20x (the new primary pathway), or 2. Legacy Agency Authorization\", and describes Certification Classes A-D per NTC-0004 replacing old labels."
+    },
+    {
+      "text": "Explains the core package artifacts or phases: SSP, independent 3PAO assessment (SAP/SAR), POA&M, and the agency authorization decision",
+      "passed": true,
+      "evidence": "Step 3 lists SSP+Appendices, SAP, SAR, POA&M; Step 4 describes independent 3PAO assessment; Step 6 describes the authorization decision by sponsoring AO/PMO."
+    },
+    {
+      "text": "Mentions continuous monitoring obligations after authorization (monthly vulnerability scanning / POA&M updates, annual assessment)",
+      "passed": true,
+      "evidence": "Step 7: \"Continuous monitoring (ConMon) — Monthly vulnerability scans, POA&M updates, and inventory updates; annual reassessment by your 3PAO.\""
+    },
+    {
+      "text": "Gives a concrete recommendation for a first-time CSP appropriate to 2026 (e.g., FedRAMP 20x or agency partnership), without recommending the defunct JAB route",
+      "passed": true,
+      "evidence": "Recommendation section gives situational guidance around Class A/B/C/D and legacy Agency Authorization; never suggests pursuing JAB."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

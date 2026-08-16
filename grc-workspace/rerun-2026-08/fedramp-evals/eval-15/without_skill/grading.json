@@ -1,0 +1,33 @@
+{
+  "eval_id": 15,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States documented FedRAMP ConMon remediation timeframes including High-severity = 30 days and Moderate = 90 days from identification (Low = 180 days); any Critical-specific figure given must be 30 days or less",
+      "passed": false,
+      "evidence": "High=30 and Moderate=90 are stated correctly, and Critical=15 satisfies '<=30'. However, Low is not given the documented 180-day SLA — instead the response hedges: 'Typically tracked but with more flexible timelines ... Low-severity handling expectations can vary by agency/ConMon requirements,' which misstates the fixed 180-day standard as ambiguous."
+    },
+    {
+      "text": "Explains that findings past their SLA must be tracked as POA&M items with milestones — not silently closed — and that overdue items affect ConMon standing",
+      "passed": true,
+      "evidence": "\"If a finding cannot be remediated within the required timeframe, it must be documented as an open POA&M item with a justified, risk-based extended timeline ... simply missing the deadline without documentation is a compliance failure\"; 'Repeated or excessive overdue POA&M items ... can jeopardize an agency's confidence in the CSP's security program.'"
+    },
+    {
+      "text": "Provides a proper POA&M entry structure including at minimum: finding description and source, severity/risk rating, point of contact/owner, milestones with scheduled completion dates, and status",
+      "passed": true,
+      "evidence": "Numbered field list includes Weakness/Vulnerability Description, Source/Identifying Party, Risk Rating/Severity, Scheduled Completion Date, Milestones, Status (though 'Point of Contact/owner' field is not explicitly listed as its own field, 'Resources Required' and other fields largely cover the structure)."
+    },
+    {
+      "text": "Mentions the Deviation Request process (false positive / risk adjustment / operational requirement) and/or Vendor Dependency handling",
+      "passed": true,
+      "evidence": "\"Deviation requests (sometimes called risk adjustments or false positive determinations) may be submitted when a finding is not exploitable in context\" and field 16 'Vendor Dependency (if applicable) — Note if remediation depends on a third-party vendor patch.'"
+    },
+    {
+      "text": "Advises documenting remediation evidence and closure validation (e.g., rescan to confirm the fix) rather than just marking the item complete",
+      "passed": true,
+      "evidence": "\"Actual Completion Date — Filled in once remediated, along with evidence (e.g., rescan results showing the finding cleared).\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

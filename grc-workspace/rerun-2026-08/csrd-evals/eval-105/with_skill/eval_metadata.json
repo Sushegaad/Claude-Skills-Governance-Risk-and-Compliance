@@ -1,0 +1,13 @@
+{
+  "eval_id": 105,
+  "eval_name": "non-eu-parent-scope",
+  "run_type": "with_skill",
+  "prompt": "We are a US-headquartered technology company with €200M in EU revenue from our German and French subsidiaries combined. The German subsidiary has 600 employees and is not listed. Does CSRD apply to us as a non-EU company, and what do we need to do?",
+  "assertions": [
+    "Analyses the EU subsidiary correctly under current law: at 600 employees the German subsidiary is below the 1,000-employee mandatory-scope line set by Directive (EU) 2026/470, so it is not itself a mandatory CSRD reporter",
+    "Handles the non-EU (Art. 40a) question with appropriate care: the pre-2026 construct (>€150M EU turnover plus a qualifying subsidiary/branch, first reports FY2028) is under revision in the Omnibus package — the answer must flag that these thresholds are being amended and require a current-status check, not assert the old construct as settled",
+    "Does not fabricate deadlines: any dates given are anchored to verifiable milestones (2026/470 in force March 2026; transposition ≈ March 2027; revised ESRS FY2027) rather than invented non-EU reporting dates",
+    "Gives pragmatic guidance: monitor final scope/transposition outcomes, prepare voluntarily via the VSME standard if EU customers or lenders request data, and centralise group sustainability data so a scope flip is absorbable",
+    "Notes the value-chain reality: even out-of-scope entities receive ESRS-shaped data requests from in-scope EU business partners, which is often the operative compliance driver"
+  ]
+}

@@ -1,0 +1,45 @@
+# FedRAMP Impact Levels — and Where Law Enforcement Sensitive Data Falls
+
+*As of August 15, 2026, under CR26 (FedRAMP Consolidated Rules for 2026)*
+
+## Important framing update: labels are changing
+
+FedRAMP is transitioning away from the FIPS 199-based Low/Moderate/High/LI-SaaS labels toward **Certification Classes A–D** (per notice NTC-0004). The requirements underneath each level haven't changed — only the names have — and old and new labels remain linked during the CR26 transition (through December 31, 2028). Here's the mapping:
+
+| Legacy Label | New CR26 Certification Class |
+|---|---|
+| LI-SaaS + Low | **Class B** |
+| Moderate | **Class C** |
+| High | **Class D** |
+| *(no legacy equivalent)* | **Class A** — new pilot/transitional tier, entry via external frameworks (e.g., SOC 2 Type II) with a 2-year window to reach B/C/D |
+
+## What each level/class means
+
+- **Low / Class B**: Systems handling non-sensitive federal information where a breach would cause **limited** harm (e.g., loss of confidence, minor financial loss, limited operational impact). Roughly 156 controls under NIST 800-53 Rev 5.
+- **Moderate / Class C**: The most common tier — covers the majority of federal cloud deployments, **including systems handling Controlled Unclassified Information (CUI)**. A breach would cause **serious** adverse effects. 323 controls.
+- **High / Class D**: Reserved for federal information where compromise would have a **severe or catastrophic** effect — explicitly called out for cases like **law enforcement, financial, and health data**. 421 controls — the most demanding baseline, including things like PIV/CAC support and functional (not just tabletop) contingency plan testing.
+- **Class A** doesn't map to a legacy impact level — it's a new, lighter-weight pilot pathway for market entry via an already-recognized external framework, not a permanent substitute for a full impact-level authorization.
+
+(Note: LI-SaaS was never strictly an "impact level" in the FIPS 199 sense — it was a lightweight authorization path for low-impact SaaS with limited data sensitivity. Under CR26 it's absorbed into Class B alongside Low.)
+
+## Which level applies to you: law enforcement sensitive (LES) data
+
+Based on the guidance for this system: **you should plan for the High baseline — Certification Class D.**
+
+The skill's own class definitions explicitly cite law enforcement data as a Class D example: Class D is for "federal information where compromise has severe or catastrophic effect (e.g., law enforcement, financial, health data)." Law Enforcement Sensitive information is generally treated as high-impact because unauthorized disclosure or loss of integrity can affect investigations, endanger personnel, or compromise judicial proceedings — consequences that typically exceed "serious" (Moderate) and rise to "severe/catastrophic" (High).
+
+A few caveats worth flagging to you directly:
+
+1. **This determination isn't self-certifying.** The formal step is a **FIPS 199 categorization** (documented in SSP Appendix J), which separately rates Confidentiality, Integrity, and Availability impact for each information type your system processes. The overall impact level is the **high-water mark** of those three ratings — so even if only confidentiality is rated High, the whole system inherits that impact level.
+2. **"Law enforcement sensitive" is not a single monolithic category.** Depending on the specific data elements (e.g., case files tied to active investigations vs. aggregate statistics) and the sponsoring agency's own data classification guidance, the agency AO may have a specific position on impact level — always confirm with your sponsoring agency before finalizing.
+3. **Some agencies impose overlay requirements beyond the baseline** — for instance, CJIS-related requirements can layer on top of a FedRAMP baseline for law enforcement data specifically. Ask your sponsoring agency whether a CJIS Security Policy overlay or similar applies in addition to standard High/Class D controls.
+
+## Practical implications of targeting High / Class D
+
+- Full NIST 800-53 Rev 5 High baseline: ~421 controls
+- PIV/CAC support required (or a documented plan)
+- Functional (not just tabletop) IR/CP testing preferred
+- Class D under CR26 is still maturing operationally — the skill's current-state notes indicate a **Class D pilot is expected late 2026, with a formal certification option in early 2027**. Until then, expect to pursue this via the **legacy High-baseline Agency Authorization package** rather than a fully mature Class D pipeline.
+- Confirm your cloud platform is already authorized at High (e.g., AWS GovCloud and Azure Government are both FedRAMP High authorized), which lets you inherit a substantial share of Physical/Environmental and some System & Communications Protection controls.
+
+*This is general compliance information, not legal advice. The final impact-level determination should be validated with your sponsoring federal agency and documented formally via FIPS 199 categorization — consult qualified counsel or an accredited 3PAO for the authoritative decision.*

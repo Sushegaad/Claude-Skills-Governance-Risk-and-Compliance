@@ -1,0 +1,40 @@
+# Open-Source GPAI Model (~8×10²³ FLOPs) — Obligations Assessment
+
+## 1. Scope & role
+You are a **GPAI model provider** (Art. 3(3)/(63)) releasing an open-source model — weights, architecture, and usage documentation publicly available under a free license.
+
+## 2. GPAI classification and systemic-risk threshold
+- **GPAI obligations threshold:** Models trained with **≥10²³ FLOPs** are subject to GPAI obligations under Arts. 53–55 (per Commission guidelines, July 2025). At **8×10²³ FLOPs**, your model is **above this threshold** — you are a GPAI provider subject to Art. 53.
+- **Systemic-risk presumption threshold:** ≥10²⁵ FLOPs. At 8×10²³ FLOPs, you are **roughly two orders of magnitude below** this threshold, so the automatic systemic-risk presumption (Art. 51) does **not** apply. (Note: the Commission can still designate a model as systemic-risk independent of the FLOPs threshold based on high-impact capabilities, broad EU reach, or Annex XIII criteria — but nothing in your facts suggests that applies here.)
+
+## 3. Open-source exception — which obligations actually apply
+Because your model is released with weights, architecture, and usage documentation publicly available under a free license, you qualify for the **open-source/free-license exception** to Art. 53. Under this exception, you only need to comply with **two of the four** universal GPAI obligations:
+
+| Obligation | Applies to you? |
+|---|---|
+| 1. Technical documentation (Annex XI) — for AI Office/national authorities | ❌ Not required (open-source exception) |
+| 2. Downstream provider information (Annex XII) | ❌ Not required (open-source exception) |
+| **3. Copyright compliance policy** (Directive 2019/790) | ✅ **Required** — policy to respect text-and-data-mining opt-outs (Art. 4(3) of the Directive), technically enforceable and publicly described |
+| **4. Public training content summary** | ✅ **Required** — sufficiently detailed public summary of training content, following the Commission's published template (available since July 2025) |
+
+If your model is ever later designated as having systemic risk (by crossing 10²⁵ FLOPs cumulative across training runs, or by Commission designation), the full Art. 53 obligations plus Art. 55 systemic-risk obligations (model evaluation/red-teaming, risk assessment, serious incident reporting, cybersecurity) would apply — but that is not your current position at 8×10²³ FLOPs.
+
+## 4. Does the GPAI Code of Practice help?
+**Yes — it is the primary recommended compliance pathway**, and it is directly useful even though you only owe two of the four Art. 53 obligations:
+
+- The CoP's **Copyright chapter** gives you a ready-made structure for your required copyright policy: a written policy, compliance with robots.txt and technical opt-out protocols, a rightsholder complaints mechanism, and a prohibition on infringing uses in your acceptable-use policy.
+- The CoP's **Transparency chapter** provides the **Model Documentation Form**, which — while not mandatory for you given the open-source exception — is a useful template if you want your public training summary to meet a well-recognised standard; downstream providers can request additional detail within 14 days under the CoP framework.
+- The **Safety and Security chapter** is systemic-risk-only and does not apply to you at your current compute level.
+- Signing the CoP is voluntary. Major labs (Anthropic, Google, Microsoft, OpenAI, Amazon, IBM, Mistral, and others) are signatories; if you choose not to sign, you must be able to **demonstrate compliance with your two applicable obligations by alternative means** and explain your approach to the AI Office if asked.
+
+## 5. Enforcement posture (current as of 15 August 2026)
+The **AI Office's full enforcement powers over GPAI providers have been active since 2 August 2026** — information requests (Art. 91), model evaluations (Art. 92), mitigation measures (Art. 93), and fines up to €15M or 3% of worldwide turnover for provider violations. Even though your obligations are limited to the copyright policy and training summary, both should be **in place and inspection-ready now**: publish the copyright policy and training-content summary if you have not already, and be prepared to demonstrate your TDM opt-out mechanism is technically enforceable.
+
+## 6. Practical action list
+1. Publish a written copyright compliance policy addressing Directive 2019/790 Art. 4(3) TDM opt-outs (robots.txt / technical opt-out support).
+2. Publish a public training content summary using the Commission's template.
+3. Monitor cumulative training compute — if a future training run pushes you toward or past 10²⁵ FLOPs, notify the AI Office within 2 weeks of reaching/approaching that threshold (Art. 51 notification duty), as this would trigger full Art. 53 + Art. 55 obligations and end your open-source exception for the higher-compute model.
+4. Consider adopting the CoP's Copyright and Transparency chapters as your compliance framework, even without signing formally, to have a defensible "alternative means" position.
+
+---
+*General compliance information, not legal advice — verify against official sources and consult qualified counsel for a binding compliance determination.*

@@ -1,0 +1,33 @@
+{
+  "eval_id": 121,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Classifies the CV screening/ranking tool as HIGH-RISK under Annex III point 4(a) (employment: recruitment or selection, incl. placing targeted job ads, analysing and filtering applications, evaluating candidates)",
+      "passed": true,
+      "evidence": "'Annex III, point 4 — Employment, workers' management and access to self-employment... A CV screening/ranking tool falls squarely under \"analyse and filter job applications\" and \"evaluate candidates,\" so it meets the Annex III, point 4(a) criteria.'"
+    },
+    {
+      "text": "States the compliance deadline for Annex III standalone high-risk systems as 2 December 2027 (as amended by the Digital Omnibus, adopted June 2026; originally 2 August 2026). Any deadline stated must be 2 Dec 2027, not Aug 2026.",
+      "passed": false,
+      "evidence": "Response states 'High-risk AI systems listed in Annex III become subject to the Act's high-risk obligations 24 months after entry into force, i.e. 2 August 2026... this deadline has effectively already passed.' No mention of the Digital Omnibus or the 2 Dec 2027 deadline; states the outdated/incorrect date."
+    },
+    {
+      "text": "Walks through core provider obligations citing Arts. 9-17 (risk management, data governance, technical documentation, logging, transparency to deployers, human oversight, accuracy/robustness/cybersecurity, QMS)",
+      "passed": true,
+      "evidence": "Numbered list cites Art. 9 (risk management), Art. 10 (data governance), Art. 11 (technical documentation), Art. 12 (logging), Art. 13 (transparency/instructions for use), Art. 14 (human oversight), Art. 15 (accuracy/robustness/cybersecurity), Art. 17 (QMS), and frames them under 'Articles 8–17 and related provisions.'"
+    },
+    {
+      "text": "Mentions conformity assessment and registration: self-assessment per Annex VI for Annex III point 4 systems, EU declaration of conformity (Art. 47), CE marking (Art. 48), EU database registration (Art. 49)",
+      "passed": false,
+      "evidence": "Response only vaguely describes: 'Conformity assessment (Art. 43) — for Annex III systems this is generally an internal control-based (self-assessment) procedure... followed by drawing up an EU declaration of conformity and affixing the CE marking. Registration in the EU high-risk AI database (Art. 49)...' It never cites Annex VI, Art. 47, or Art. 48 specifically — only Art. 43 and Art. 49 are cited, missing the specific article citations the assertion requires."
+    },
+    {
+      "text": "Notes the Art. 6(3) derogation exists but explains it is narrow and does not apply where the system profiles natural persons / materially influences hiring decisions (profiling is always high-risk)",
+      "passed": false,
+      "evidence": "No mention anywhere of Art. 6(3), the derogation/exception pathway, or the profiling override. The response jumps directly from the AI system definition to Annex III classification without addressing the Art. 6(3) narrow-exception analysis at all."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

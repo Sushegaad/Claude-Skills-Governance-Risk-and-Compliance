@@ -1,0 +1,69 @@
+# ISM Chapter 13 (System Hardening) — Windows Server 2022 Hardening Guide and Evidence Checklist
+
+## What ISM Chapter 13 (System Hardening) generally requires
+
+The ISM's system hardening guidance focuses on reducing the attack surface of operating systems, applications, and devices by removing or disabling unnecessary functionality and enforcing secure configuration baselines. For a Windows Server 2022 deployment, the key requirement areas typically are:
+
+### 1. Operating system hardening
+- Use the latest supported version of the OS (Windows Server 2022) with vendor security support still active.
+- Apply a recognised hardening baseline — ASD publishes its own **Hardening Microsoft Windows** guidance, and many agencies also reference Microsoft's **Security Baselines** (via the Security Compliance Toolkit) or the **CIS Benchmark for Windows Server 2022**.
+- Disable or remove unnecessary services, roles, and features (only install what's required for the server's function — e.g., don't install unnecessary IIS components on a domain controller).
+- Disable legacy/insecure protocols (e.g., SMBv1, LLMNR, NetBIOS where not required, weak TLS/SSL versions and cipher suites).
+- Configure the local firewall (Windows Defender Firewall) with least-privilege inbound/outbound rules.
+
+### 2. Application control
+- Implement application control/allowlisting (e.g., Windows Defender Application Control (WDAC) or AppLocker) to prevent execution of unapproved executables, scripts, installers, and DLLs — this directly supports the Essential Eight's Application Control strategy and is a core ISM hardening expectation.
+
+### 3. Patch and vulnerability management
+- Establish a patching regime consistent with ASD's patch timeframes (critical/extreme risk vulnerabilities patched within 48 hours, other vulnerabilities within two weeks, or sooner depending on exploitation status).
+- Patch not just the OS but also firmware, drivers, and any installed applications/agents.
+
+### 4. Authentication and access control hardening
+- Disable default/built-in accounts where possible, or rename and restrict them (e.g., local Administrator account).
+- Enforce strong authentication — multi-factor authentication for privileged and remote access.
+- Apply least privilege — restrict local administrator rights, use separate privileged access workstations (PAWs) or jump hosts for admin tasks, and implement just-in-time/just-enough-admin approaches where feasible.
+- Configure account lockout, password complexity, and Kerberos/NTLM hardening (e.g., disabling NTLMv1, restricting NTLM where possible).
+
+### 5. Logging and auditing
+- Enable and centralise Windows Event Logging (Security, System, Application, PowerShell operational logs) per ASD's guidance on event logging.
+- Ensure logs are forwarded to a central SIEM/log management platform, with appropriate retention periods.
+- Enable advanced audit policies (e.g., process creation with command-line auditing, PowerShell script block logging).
+
+### 6. Removable media and device control
+- Restrict or control use of removable storage media and peripheral devices via Group Policy or endpoint controls.
+
+### 7. Macro and script control
+- If the server hosts or supports Office-based workflows, restrict macros per ISM/Essential Eight requirements; more broadly, restrict PowerShell execution policy and use Constrained Language Mode or WDAC to limit script-based attacks.
+
+### 8. Secure configuration management
+- Maintain a documented, version-controlled configuration baseline (Group Policy Objects, security templates, or Desired State Configuration/Infrastructure-as-Code definitions).
+- Use configuration management tooling to detect and remediate drift from the approved baseline.
+
+### 9. Encryption
+- Enable BitLocker (or equivalent) for data-at-rest encryption on server volumes, especially for sensitive workloads, with keys managed and escrowed appropriately (e.g., via Active Directory or a key management service).
+- Enforce TLS 1.2/1.3 for data in transit and disable older TLS/SSL protocol versions.
+
+## Evidence to collect for an assessment
+
+Organise evidence by control area so it maps cleanly to ISM control IDs during a review or IRAP-style assessment:
+
+- **Baseline configuration documentation** — the specific hardening standard used (ASD Windows hardening guide, CIS Benchmark version, Microsoft Security Baseline version) and a record of any deviations with justification/compensating controls.
+- **Group Policy Objects (GPO) reports** — exported GPO settings (e.g., via `gpresult` or RSOP reports) showing applied security settings.
+- **Security Compliance / configuration scan reports** — output from tools like Microsoft's Security Compliance Toolkit, CIS-CAT, Tenable, Qualys, or Microsoft Defender for Cloud/Endpoint configuration assessments, showing pass/fail against the chosen baseline.
+- **Patch compliance reports** — from WSUS, SCCM/Configuration Manager, Intune, or a third-party patch management tool, showing patch levels and time-to-patch metrics against ASD timeframes.
+- **Application control evidence** — WDAC/AppLocker policy exports and event logs showing blocked execution attempts.
+- **Vulnerability scan results** — authenticated scans showing the server's vulnerability posture over time, with remediation tracking.
+- **Firewall rule exports** — Windows Defender Firewall configuration (local and any host-based rules) demonstrating least-privilege network access.
+- **Account and privilege review evidence** — local administrators group membership reports, privileged access reviews, and evidence of MFA enforcement (e.g., Conditional Access policies if hybrid-joined with Entra ID/Azure AD).
+- **Audit policy configuration and sample logs** — exported advanced audit policy settings and sample Security event log entries demonstrating logging is functioning (e.g., event ID 4624/4625 logon events, 4688 process creation).
+- **SIEM/log forwarding configuration** — evidence logs are shipped to a central platform with defined retention (e.g., Splunk, Sentinel, Elastic configuration screenshots or config exports).
+- **Encryption evidence** — BitLocker status reports (`manage-bde -status`) and TLS configuration scan results (e.g., via `nmap --script ssl-enum-ciphers` or IIS Crypto reports) showing weak protocols/ciphers are disabled.
+- **Change management records** — tickets/approvals showing hardening changes went through a controlled change process, and any exceptions were formally risk-accepted.
+- **Periodic review records** — evidence that the hardening baseline is reviewed/reassessed periodically (e.g., annually or upon major OS updates) to catch drift or new hardening guidance.
+
+## Practical recommendations
+- Map each piece of evidence explicitly to the ISM control ID it satisfies — assessors and auditors move faster when evidence is indexed against the control set rather than left as a loose folder of screenshots.
+- Automate evidence collection where possible (scheduled compliance scans, automated GPO reporting) so evidence stays current rather than being a one-time snapshot before an audit.
+- Where full hardening isn't feasible for a specific setting (e.g., a legacy application requires an older protocol), document a formal risk acceptance with compensating controls — auditors generally accept well-justified exceptions more readily than silent gaps.
+
+*This response reflects general ISM system hardening principles and common Windows Server hardening practice; validate specific control numbering and wording against the current published ISM edition, as ASD periodically restructures and renumbers ISM chapters and controls.*

@@ -1,0 +1,33 @@
+{
+  "eval_id": 11,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States that the JAB P-ATO path no longer exists — the JAB was dissolved in the 2024 FedRAMP restructuring (FedRAMP Authorization Act / OMB M-24-15) — rather than presenting JAB P-ATO as a currently available option",
+      "passed": false,
+      "evidence": "Response presents JAB P-ATO as a live, describable pathway ('The Joint Authorization Board ... reviews and grants a provisional authorization') and only hedges with 'the JAB's role and prioritization process have been undergoing changes. Vendors should verify the current state.' It never states JAB was dissolved/no longer issues P-ATOs."
+    },
+    {
+      "text": "Describes the currently available path(s): FedRAMP 20x and/or Rev5 agency-sponsored authorization, consistent with the post-2024 program (single 'FedRAMP Certification' label per notice NTC-0004)",
+      "passed": false,
+      "evidence": "Frames Agency ATO vs JAB P-ATO as the two live options throughout; FedRAMP 20x/LI-SaaS only appears as a one-line aside at the very end ('confirm ... whether newer streamlined pathways ... might better fit'). No mention of NTC-0004 or the unified 'FedRAMP Certification' relabeling."
+    },
+    {
+      "text": "Explains the core package artifacts or phases: SSP, independent 3PAO assessment (SAP/SAR), POA&M, and the agency authorization decision",
+      "passed": true,
+      "evidence": "Documentation Package section lists SSP, SAP, SAR, POA&M, continuous monitoring plan; Independent Assessment and Authorization Decision sections describe the 3PAO and reviewer steps."
+    },
+    {
+      "text": "Mentions continuous monitoring obligations after authorization (monthly vulnerability scanning / POA&M updates, annual assessment)",
+      "passed": true,
+      "evidence": "\"After authorization, the CSP must maintain ongoing compliance: monthly vulnerability scans, monthly/annual control reassessments, incident reporting, POA&M updates, and an annual assessment by the 3PAO.\""
+    },
+    {
+      "text": "Gives a concrete recommendation for a first-time CSP appropriate to 2026 (e.g., FedRAMP 20x or agency partnership), without recommending the defunct JAB route",
+      "passed": false,
+      "evidence": "Recommends Agency ATO as primary path but explicitly keeps JAB alive as a future option: \"Once you have a proven track record, you can consider engaging with the JAB (or successor prioritization process) if your product has broad, cross-government applicability.\" This treats the defunct JAB route as something to plan toward."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

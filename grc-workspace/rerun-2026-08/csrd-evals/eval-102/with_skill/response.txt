@@ -1,0 +1,64 @@
+# Double Materiality Under CSRD: Concept, Comparison, and Assessment Process
+
+## What Double Materiality Means
+
+Double materiality is the cornerstone reporting principle of CSRD (Directive (EU) 2022/2464) and is defined in **ESRS 1, paragraphs 19–44**. It requires a company to assess sustainability matters from **two independent perspectives**, and to report on a topic if it is material under *either* lens:
+
+**1. Impact Materiality ("inside-out")**
+Does the company have actual or potential impacts — positive or negative — on people or the environment, through its own operations and its upstream/downstream value chain?
+
+- Assessed using: **Scale × Scope × Irremediability** (for negative impacts), with **Likelihood** added for potential (not-yet-occurred) impacts
+- Positive impacts use Scale × Scope (× Likelihood if potential)
+- Time horizons: short (<1 year), medium (1–5 years), long (>5 years)
+
+**2. Financial Materiality ("outside-in")**
+Could the sustainability matter generate risks or opportunities that affect the company's financial position, performance, cash flows, access to finance, or cost of capital?
+
+- Assessed using: **Magnitude × Likelihood** of the financial effect
+- Sources: physical risks (acute/chronic), transition risks (policy, technology, market, reputational), and opportunities
+
+**A topic is material if it meets either criterion — it does not need to meet both.** Material topics must be reported in full against the relevant ESRS topical standard; non-material topics may be omitted, but only with a brief documented justification in the materiality statement (this omission bar is high for climate — ESRS E1 is presumed material for most large companies and requires compelling evidence to exclude).
+
+## How This Differs from GRI and TCFD
+
+| Aspect | CSRD/ESRS | GRI | TCFD |
+|---|---|---|---|
+| Materiality lens | **Double** (impact + financial) — mandatory | **Impact only** (effect on economy, environment, people) | **Financial only** (effect on the company) |
+| Legal status | Mandatory (EU law) | Voluntary | Voluntary (mandatory in some jurisdictions for climate specifically) |
+| Threshold to report | Either lens trips → report | Impact significance to stakeholders | Financial risk/opportunity relevance to investors |
+| Value chain | Required where material | Encouraged | Required for climate |
+| Scope 3 GHG | Required if E1 material | Encouraged | Required |
+
+The key conceptual difference: **GRI asks "how does the company affect the world?"** (impact materiality only), while **TCFD asks "how does the world (climate) affect the company financially?"** (financial materiality only, and only for climate). CSRD's double materiality effectively merges both questions and extends the financial-materiality lens across *all* ESRS topics (not just climate), while also formalizing GRI-style impact materiality with a EU-mandated methodology, stakeholder engagement requirement, and assurance obligation neither GRI nor TCFD carries.
+
+Practically, this means a topic that GRI would flag as material (e.g., biodiversity impact on a local community) is CSRD-material even if it has zero foreseeable effect on the company's financials — and a topic TCFD would flag as material (e.g., carbon pricing risk) is CSRD-material even if the company's own environmental footprint from that source is negligible. Companies with existing GRI reports have a head start on the impact side; companies with TCFD reports have a head start on financial materiality for climate specifically (ESRS E1 incorporates TCFD's four pillars — governance, strategy, risk management, metrics & targets), but TCFD reporters typically still need to add full Scope 3 (all 15 categories), a formal transition plan (E1-1), and EU Taxonomy alignment.
+
+## How to Conduct a Double Materiality Assessment (ESRS 1, paras. 45–56)
+
+**Step 1 — Understand the context.** Map the business model, products/services, geographies, and the full value chain (tier-1+ suppliers, distribution, customers, end-users). Identify sector-specific sustainability risks using industry references (SASB, GRI sector standards, ESRS sector guidance where published).
+
+**Step 2 — Identify actual and potential impacts.** Draw on internal sources (operations review, incident data, management interviews) and external sources (stakeholder engagement, benchmarks, ESG ratings). ESRS 1 para. 22 requires genuine engagement with *affected* stakeholders — not just investors — including workers (own and value chain), local communities, customers/consumers, NGOs, and regulators. Output: a long list of potential impacts by ESRS topic.
+
+**Step 3 — Assess significance of impacts.** Score each impact on Scale, Scope, and Irremediability (1–5 scale each), adding Likelihood for potential impacts. Compute a severity score (e.g., Scale × Scope × Irremediability, max 125 for actual impacts; × Likelihood, max 625 for potential impacts) and compare against a company-defined, documented threshold.
+
+**Step 4 — Identify financial risks and opportunities.** For each ESRS topic, identify physical risks, transition risks, and opportunities, with a description and time horizon (e.g., carbon pricing raising operating costs; water scarcity threatening a production region; employer brand as a talent-attraction opportunity).
+
+**Step 5 — Assess financial significance.** Rate each risk/opportunity on Magnitude (e.g., % of EBITDA) and Likelihood (e.g., <25%, 25–75%, >75%), and derive a financial materiality score against a documented threshold.
+
+**Step 6 — Determine materiality, topic by topic.** Build a matrix of all ESRS topics (E1–E5, S1–S4, G1) showing impact-material Y/N and financially-material Y/N. A "Yes" on either dimension means the topic is material and must be reported in full under the corresponding ESRS topical standard.
+
+**Step 7 — Document the DMA.** This is itself a mandatory disclosure: **ESRS 2 IRO-1** covers the process (scope, methodology, stakeholder engagement, thresholds), and **ESRS 2 SBM-3** covers the output (the list of material topics and their interaction with strategy). Topics excluded as non-material need a brief documented rationale.
+
+**Step 8 — Validate and update at least annually.** Treating the DMA as a one-off exercise is one of the most common pitfalls — it must be reviewed at minimum every year, and re-triggered by major business changes, new regulation, or emerging stakeholder concerns.
+
+### Common pitfalls to avoid
+- Scoping the DMA to own operations only (value chain must be considered where material)
+- Consulting only investors rather than affected stakeholders (workers, communities)
+- Skipping financial materiality and doing an impact-only assessment (or vice versa)
+- Setting undocumented/unjustified thresholds
+- Running the DMA *after* deciding what to report, rather than letting it drive the reporting scope
+- Excluding climate (E1) without strong, documented justification — it's presumed material for most large companies
+
+## A Note on Timing
+
+As of August 2026, the Omnibus reforms have also changed *who* must run a DMA at all: mandatory CSRD scope is now set by **Directive (EU) 2026/470** (>1,000 employees **and** >€450M turnover). If your company is below that combined threshold, a full ESRS-grade DMA is not legally required — though many companies still find a lightweight, DMA-informed materiality exercise useful to prioritize ESG effort and respond to investor/customer sustainability questionnaires (this is effectively what the new voluntary VSME standard, adopted July 2026, is designed to support).

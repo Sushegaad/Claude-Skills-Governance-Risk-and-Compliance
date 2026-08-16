@@ -1,0 +1,44 @@
+# Preparing for Your First IRAP Assessment (PROTECTED-Level System)
+
+## What is IRAP, briefly
+
+The Information Security Registered Assessors Program (IRAP) is an ACSC-endorsed program of independent, certified assessors who evaluate a system's security controls against the Australian Government Information Security Manual (ISM) and the Protective Security Policy Framework (PSPF). For a PROTECTED-level system, an IRAP assessment (or equivalent independent assessment) is typically expected as part of your authorisation to operate.
+
+## Artefacts to prepare beforehand
+
+Assessors will expect a well-organised evidence package. At minimum, prepare:
+
+1. **System Security Plan (SSP)** — the core document describing system architecture, data flows, classification, boundary, and which ISM controls apply and how they are implemented (including any exceptions/compensating controls with justification).
+2. **Security Risk Management Plan (SRMP)** — identified threats, risks, likelihood/consequence ratings, and treatment plans.
+3. **Standard Operating Procedures (SOPs)** — for operations like account provisioning/deprovisioning, patching, backup/restore, incident response, change management.
+4. **Network and system architecture diagrams** — logical and physical diagrams showing data flows, trust boundaries, and security zones.
+5. **Asset register / configuration baselines** — hardware, software, and configuration standards (e.g., hardened OS builds, ASD Blueprint for Secure Cloud or equivalent).
+6. **Evidence of Essential Eight maturity** — since PROTECTED systems are generally expected to be at a higher Essential Eight maturity level, have evidence (scan results, policy configs, GPO exports) ready.
+7. **Vulnerability scan and penetration test results** — recent scan reports and remediation evidence.
+8. **Incident response and business continuity/disaster recovery plans**.
+9. **Access control matrices** — showing least privilege, role-based access, and privileged access management, plus MFA implementation evidence.
+10. **Logging and audit configuration evidence** — what's logged, retention periods, and how logs are monitored/protected.
+11. **Previous assessment reports or audit findings**, if any, and evidence of remediation.
+12. **Personnel security evidence** — briefings, security clearances where relevant, and training records.
+13. **Contracts/agreements with third parties or cloud providers**, including their own certifications (e.g., IRAP-assessed cloud status) and shared responsibility matrices.
+
+## What to expect during the assessment
+
+- **Scoping/kick-off meeting** — the assessor confirms system boundary, classification, assessment methodology, and timeline with you.
+- **Documentation review** — the assessor reviews your SSP, SRMP, and supporting artefacts against ISM controls applicable to PROTECTED.
+- **Technical testing** — this typically includes control validation activities such as configuration reviews, vulnerability scanning, and sometimes limited penetration testing or control walkthroughs (live demonstration of configurations, e.g., showing MFA enforcement, patch levels, logging pipelines).
+- **Interviews** — assessors usually interview system administrators, the ISM/CISO, and possibly developers or cloud operations staff to validate that documented processes are actually followed in practice.
+- **Gap identification** — the assessor records any controls that are not implemented, partially implemented, or not effectively operating, and rates residual risk.
+- **Draft findings/report** — usually shared for factual accuracy review before finalisation; you'll have a chance to correct misunderstandings (not to argue away legitimate findings).
+
+Typical duration ranges from a couple of weeks to a couple of months depending on system complexity and assessor availability — plan for this in your go-live timeline.
+
+## What happens after the IRAP report is issued
+
+1. **Report delivery** — you receive a formal IRAP assessment report listing: control implementation status, identified vulnerabilities/gaps, and residual risk ratings. Note: IRAP assessors provide independent security assessment advice; they do **not** grant authorisation themselves.
+2. **Remediation planning** — for any gaps or findings, develop a Plan of Action and Milestones (POA&M) or remediation plan with owners and timeframes. Some findings may need urgent remediation before go-live; others may be accepted as residual risk.
+3. **Risk acceptance / Authorisation to Operate (ATO)** — the report, along with your SSP and SRMP, is submitted to the system's accountable authority (or delegate — often the agency CISO or Chief Information Officer) who makes the formal risk-based decision to authorise the system to operate, accept residual risk, or require further remediation before authorisation.
+4. **Ongoing assurance** — after authorisation, you're expected to maintain continuous monitoring, patch and vulnerability management, and periodic reassessment (many agencies re-run IRAP assessments every 24 months or on significant system change, consistent with PSPF Policy 10 expectations).
+5. **Incident and change reporting** — any significant change to the system or a security incident may trigger a reassessment or at least a review of the affected controls.
+
+**Practical tip for a first-time assessment:** engage the IRAP assessor early (before development freezes), do an internal readiness/gap assessment against the ISM first so you're not surprised, and make sure someone owns the POA&M process after the report lands — the report itself is just an input to your agency's own authorisation decision, not the finish line.

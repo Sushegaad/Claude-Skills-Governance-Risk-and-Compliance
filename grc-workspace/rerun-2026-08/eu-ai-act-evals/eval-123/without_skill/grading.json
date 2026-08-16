@@ -1,0 +1,33 @@
+{
+  "eval_id": 123,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies the model as a GPAI model subject to Chapter V, and correctly applies the open-source exemption: free & open-source GPAI providers are exempt from the Art. 53(1)(a)-(b) technical documentation duties BUT must still comply with the copyright policy (Art. 53(1)(c)) and publish the public training-content summary (Art. 53(1)(d))",
+      "passed": true,
+      "evidence": "'Article 53(2) exempts you from obligations (a) and (b) above... Important nuance: the exemption applies only to points (a) and (b). You are still required to comply with (c) the copyright-compliance policy, and (d) publishing the training data summary.'"
+    },
+    {
+      "text": "Correctly assesses systemic risk: 8x10^23 FLOPs is below the 10^25 FLOPs presumption threshold (Art. 51), so no systemic-risk obligations (Art. 55) absent a Commission designation — and notes the open-source exemption does NOT apply to systemic-risk models",
+      "passed": true,
+      "evidence": "'Article 51(2) creates a rebuttable presumption of systemic risk when cumulative compute exceeds 10^25 FLOPs. Your model... is about two orders of magnitude below that threshold... Your model is not presumed to present systemic risk... unless the AI Office separately designates it.' Also notes exemption (a)/(b) applies 'unless the model is later found to present systemic risk.'"
+    },
+    {
+      "text": "States GPAI obligations have applied since 2 August 2025",
+      "passed": true,
+      "evidence": "'GPAI obligations generally became applicable from 2 August 2025, so these obligations are already in force for you as of today.'"
+    },
+    {
+      "text": "Describes the GPAI Code of Practice (published July 2025) as a voluntary compliance pathway with chapters on transparency, copyright, and safety/security, and explains adherence eases demonstrating compliance",
+      "passed": false,
+      "evidence": "Response describes the CoP generically as 'finalized in 2025' and voluntary, offering a 'presumption of conformity' and reduced enforcement risk — but never breaks it down into its distinct chapters (transparency, copyright, safety/security) as the assertion requires, unlike a response that names each chapter specifically."
+    },
+    {
+      "text": "Mentions AI Office enforcement powers over GPAI providers activating 2 August 2026 (fines possible from that date)",
+      "passed": false,
+      "evidence": "No mention anywhere of AI Office enforcement powers, the 2 August 2026 activation date, or any GPAI-specific fine amounts."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

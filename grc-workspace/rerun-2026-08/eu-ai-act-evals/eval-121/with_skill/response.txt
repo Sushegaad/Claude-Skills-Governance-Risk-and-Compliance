@@ -1,0 +1,45 @@
+# CV Screening Tool — EU AI Act Classification
+
+## 1. AI system definition check
+An AI-powered CV screening tool that ranks applicants infers, from inputs (CVs/applications), outputs (rankings/scores) that influence a real-world decision — this meets the Art. 3(1) AI system definition.
+
+## 2. Prohibited practices screen (Art. 5)
+Ranking applicants on job-relevant criteria is not one of the 9 prohibited categories (no subliminal manipulation, social scoring, or biometric categorisation involved on the facts given) — **not prohibited**, proceed to risk-tier determination.
+
+## 3. Risk tier determination — High-Risk, Annex III Area 4(a)
+**Yes, this is high-risk.**
+
+- **Path:** Art. 6(2) / Annex III (not the Art. 6(1) sectoral-product path).
+- **Annex III area: Area 4 — Employment, Workers Management, and Self-Employment, point (a) — Recruitment and selection**, specifically "filtering or screening job applications" and "evaluat[ing] candidates." A tool that *ranks* applicants for employers falls squarely within this description.
+- **Art. 6(3) exceptions test:** None of the narrow exceptions (procedural task only / improving a completed human activity / pattern-deviation detection / preparatory task) plausibly apply — ranking applicants *is* the substantive evaluation, not a preparatory or narrow procedural step.
+- **Profiling override (Art. 6(3), final subparagraph):** Even if an exception were argued, a CV-ranking tool profiles natural persons (evaluating work-related attributes/suitability under Art. 3(52)), which makes it high-risk regardless. There is no credible path to a non-high-risk conclusion here.
+- **Conclusion:** High-risk under Annex III Area 4(a). No Art. 6(4) documentation-of-exemption route is realistically available — this system does not escape classification.
+
+## 4. Compliance deadline
+Annex III standalone high-risk systems must comply by **2 December 2027** (per the Digital Omnibus, Regulation (EU) 2026/1744, in force since 27 July 2026, which deferred the original 2 August 2026 date). As of today (15 August 2026), you have until that date to complete conformity work, but given the scope of the obligations below, work should start now.
+
+Note also that **Art. 50 transparency obligations are already in force (2 August 2026)** — if the tool or any related interface involves an AI chatbot or AI-generated content toward candidates, that transparency duty applies now, independent of the Annex III high-risk deadline.
+
+## 5. Main obligations as provider
+As the **provider** (you develop and place the system on the market for employers), your obligations run under Arts. 9–17, 43–49:
+
+| Requirement | Article | What it means for a CV-ranking tool |
+|---|---|---|
+| Risk management system | Art. 9 | Continuous 5-step process — identify risks (e.g., discriminatory ranking against protected groups), evaluate, mitigate by design first, then via information to deployers; document reasoning |
+| Data governance | Art. 10 | Training/validation/test data must be representative of the applicant pools the system will encounter; document bias examination; special-category data (e.g., inferred protected characteristics) only under strict Art. 10(5) conditions |
+| Technical documentation | Art. 11 | Annex IV file: development process, training data description, validation/testing metrics, risk management documentation — retained 10 years |
+| Record-keeping/logging | Art. 12 | Build in automatic event logging so ranking decisions can be reconstructed post-hoc |
+| Transparency to deployers | Art. 13 | Instructions for use covering accuracy/robustness metrics, known limitations, human oversight measures, input data specifications |
+| Human oversight | Art. 14 | Design the system so employer staff can understand outputs, recognize automation bias, and override/disregard rankings — not a fully automated hire/reject decision |
+| Accuracy, robustness, cybersecurity | Art. 15 | Declared accuracy levels in instructions for use; resilience to adversarial manipulation (e.g., CV keyword-stuffing attacks) |
+| Provider checklist | Art. 16 | Full 12-item list: conformity, labeling, QMS, technical file, logs, conformity assessment, EU Declaration of Conformity, CE marking, EU AI database registration, corrective action process, demonstrate conformity on request, accessible design |
+| Quality management system | Art. 17 | 13-component documented QMS |
+| Conformity assessment | Art. 43 | Annex III Area 4 is a **Points 2–8** area → **self-assessment only** (Annex VI-style internal control); no notified body route required |
+| EU Declaration of Conformity | Art. 47 | Drawn up before market placement; retained 10 years |
+| CE marking | Art. 48 | Affixed after successful self-assessment |
+| EU AI database registration | Art. 49 | Register before placing the system on the market |
+
+Separately, note that **employer-deployers** using your tool carry independent Art. 26 obligations (instructions compliance, human oversight assignment, worker notification before deployment, 6-month log retention, and — because Area 4 decisions affect natural persons — informing affected candidates under Art. 26(11)). You should factor these into your Art. 13 instructions for use so employers can meet them.
+
+---
+*General compliance information, not legal advice — verify against official sources and consult qualified counsel for binding determinations.*

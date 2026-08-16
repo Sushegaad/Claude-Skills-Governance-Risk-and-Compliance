@@ -1,0 +1,76 @@
+# Draft: System Boundary Description — SSP Section 7 (General System Description / System Environment)
+
+*Draft content for insertion into the official FedRAMP SSP template, Section 7. Target baseline: Moderate (Certification Class C under CR26).*
+
+> **Note:** Use the official FedRAMP SSP template from fedramp.gov — this content should be inserted into the appropriate template section, alongside embedded network and data flow diagrams. This draft is a starting narrative; it must be reviewed and refined with your actual architecture details, IP ranges, and configuration specifics before submission, since vague or generic boundary language is one of the most common sources of 3PAO and PMO findings.
+
+---
+
+## 7.1 Authorization Boundary Overview
+
+The authorization boundary for [System Name] ("the System") encompasses all components that process, store, or transmit federal information within the CSP's production environment hosted on **AWS GovCloud (US)**. The System is delivered as a **Software as a Service (SaaS)** offering in a **public cloud deployment model**, categorized at the **FedRAMP Moderate (Certification Class C)** baseline.
+
+The boundary includes the following in-scope components:
+
+| Component | Role | In/Out of Boundary |
+|---|---|---|
+| Web application tier | Application logic, request handling, presentation layer | In boundary |
+| PostgreSQL database | Primary system of record; stores federal data | In boundary |
+| Redis cache | Session state / application caching layer | In boundary |
+| Load balancers / API gateway | Ingress traffic management, TLS termination | In boundary |
+| Logging / SIEM aggregation | Centralized audit log collection (AU family) | In boundary |
+| AWS GovCloud infrastructure (compute, network, storage) | Underlying IaaS | In boundary; PE and select SC controls inherited from AWS GovCloud (FedRAMP High authorized) |
+| Okta (authentication/identity provider) | External SaaS — user authentication, SSO, MFA enforcement | **Interconnection — see 7.3** |
+| SendGrid (transactional email) | External SaaS — outbound system-generated email (notifications, password resets, alerts) | **Interconnection — see 7.3** |
+
+All components that process, store, or transmit federal data reside within AWS GovCloud region boundaries; standard (non-GovCloud) AWS commercial endpoints are explicitly excluded from use to avoid inadvertently placing federal data outside the authorization boundary.
+
+## 7.2 Network Architecture
+
+*[Embed network architecture diagram here.]* The diagram must depict:
+- All boundary components listed in 7.1, including subnets/VPC segmentation (e.g., public-facing, application, and data tiers)
+- Ingress and egress points, including the API gateway/load balancer and any administrative/management access paths (e.g., bastion host or VPN for engineering access — do not omit admin traffic, a common finding)
+- The two external interconnections (Okta, SendGrid) shown explicitly, with data flow direction
+- Security groups / network ACLs enforcing segmentation between tiers
+
+## 7.3 Data Flow and External Connections
+
+*[Embed data flow diagram here, showing federal data entering, moving through, and leaving the boundary.]*
+
+### External Connections Table
+
+| External Service | Purpose | Data Exchanged | Direction | FedRAMP Status | Boundary Treatment |
+|---|---|---|---|---|---|
+| Okta | Identity provider — authentication, SSO, MFA | User identity attributes, authentication tokens/assertions (SAML/OIDC) | Bidirectional | *[Confirm: Okta's FedRAMP-authorized offering, e.g. Okta for Government (FedRAMP High), or standard commercial Okta]* | If Okta's authorized government offering is used, authentication control inheritance may be documented in the CIS/CRM workbook. If using commercial (non-FedRAMP-authorized) Okta, this connection requires a documented Interconnection Security Agreement (ISA) and compensating controls, and must be explicitly justified as to why non-federal-data-bearing (e.g., transmitting only pseudonymous identifiers, not federal data itself) — or excluded/replaced if it does carry federal data. |
+| SendGrid | Outbound transactional email (notifications, alerts, password resets) | Email content/metadata — confirm whether any federal data (e.g., PII) is included in email bodies | Outbound only | *[Confirm: FedRAMP authorization status of SendGrid instance used]* | If email content includes any federal/PII data, SendGrid must either be FedRAMP-authorized or covered by a documented ISA and compensating controls (e.g., data minimization — sending only non-sensitive notification triggers rather than data content, encryption in transit). If SendGrid carries no federal data (link-only or generic notification text), document this explicitly as a boundary justification. |
+
+**Action items to close before this section is finalized (flag these — they are the most likely 3PAO/PMO findings for this boundary):**
+1. Confirm whether Okta and SendGrid instances used are their FedRAMP-authorized government offerings or standard commercial products. Standard commercial instances connected to an in-scope system are a common finding unless data flows are minimized and documented with compensating controls.
+2. Determine whether any federal data (including PII) transits or is stored by SendGrid via email content — this affects both boundary treatment and whether a Privacy Impact Assessment (SSP Appendix Q) is triggered.
+3. Document Interconnection Security Agreements (ISAs/MOUs) for both Okta and SendGrid regardless of authorization status.
+4. Confirm all administrative/management traffic (e.g., DevOps access to AWS GovCloud, database admin access) is captured in the data flow diagram — omitted admin traffic is one of the most common SSP findings.
+5. Document DNS, NTP, and any other infrastructure-support external services used by the System, even if seemingly trivial — these are frequently missed and flagged.
+
+## 7.4 Ports, Protocols, and Services
+
+*[Insert Ports, Protocols, and Services (PPS) table here — required.]* At minimum, document: HTTPS/443 (application and API traffic, TLS 1.2+ minimum, 1.3 preferred), PostgreSQL port (internal only, not internet-facing), Redis port (internal only, not internet-facing), and the specific ports used for the Okta and SendGrid integrations (typically outbound 443/HTTPS for both).
+
+## 7.5 Encryption
+
+All federal data must be encrypted at rest (PostgreSQL, Redis where applicable) and in transit (all connections, including to Okta and SendGrid) using FIPS 140-2/3 validated cryptographic modules. Document each module in the Cryptographic Modules Table (SSP Appendix L). Confirm Redis is not used to cache any federal data unencrypted in memory beyond what's operationally necessary, and document key management procedures.
+
+## 7.6 Inherited Controls
+
+Because the System runs on AWS GovCloud (FedRAMP High authorized), a substantial share of **Physical & Environmental (PE)** controls and select **System & Communications Protection (SC)** controls are inherited. Document the specific inherited controls, and the CSP's portion of any hybrid controls, in the **CIS/CRM workbook (SSP Appendix I)**. Do not describe fully-inherited controls as CSP-implemented in the control narratives — reference the CIS/CRM workbook instead.
+
+---
+
+### Consistency checklist before finalizing this section
+- [ ] Architecture diagram, data flow diagram, external connections table, and PPS table are mutually consistent
+- [ ] Okta and SendGrid authorization status confirmed and boundary treatment finalized
+- [ ] ISAs/MOUs drafted for both external connections
+- [ ] Admin/management traffic paths included in diagrams
+- [ ] CIS/CRM workbook reflects AWS GovCloud-inherited controls accurately
+- [ ] IIW (Appendix K) lists every in-boundary asset, including ephemeral/auto-scaled compute if applicable
+
+*This is a drafting aid based on general FedRAMP guidance, not a finished, submission-ready boundary description. Populate the bracketed items with your system's actual configuration, confirm external service FedRAMP status, and have the final draft reviewed by your 3PAO and/or FedRAMP-experienced compliance counsel before submission.*

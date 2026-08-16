@@ -1,0 +1,62 @@
+# 8 Practices NOT MET at C3PAO Assessment — Can You Still Get Certified?
+
+**Short answer: it depends entirely on which 8 practices, and it's currently entangled with a program-wide policy suspension you need to account for. Here's the full picture.**
+
+## Program status you need to factor in first (as of Aug 15, 2026)
+
+DoD suspended **CMMC Phase 2** — including C3PAO third-party assessment requirements — on July 13, 2026, via two policy memoranda, pending a **60-day CMMC Reform Task Force review** (report due ≈ September 13, 2026). If your C3PAO assessment and findings report were issued around or after that date, the certification *decision* itself may currently be in abeyance at CMMC-AB pending the task force outcome — contracting officers can now only designate Level 1 (Self) or Level 2 (Self), not Level 2 (C3PAO), and C3PAO requirements are being removed from contracts at the next option/modification. You should confirm directly with your C3PAO/CMMC-AB point of contact whether your specific certification decision is proceeding, paused, or being converted to a self-assessment track.
+
+What has **not** changed: your NIST SP 800-171 obligations, the scoring mechanics below, the POA&M rules, and the 180-day closeout clock all remain the governing framework — whether the certification comes from a C3PAO now or (if the suspension lifts) later. **Hold your remediation course regardless of the administrative pause.**
+
+## The two-part gate for conditional certification
+
+Conditional certification is possible only if **both** of the following hold:
+
+1. **Your post-deduction SPRS score is ≥ 88** (0.8 × 110), and
+2. **Every one of the 8 NOT MET practices carries only a 1-point deduction value** under the DoD scoring methodology (no 5-point items, and 3-point items only in the narrow partial-credit cases the rule allows).
+
+If both conditions are met: 8 practices at 1 point each = a score of 110 − 8 = **102**, well above the 88 threshold — that path leads to **conditional certification with a 180-day POA&M closeout clock**.
+
+If even **one** of the 8 is a 3- or 5-point practice, or appears on the critical-practices list below, **there is no conditional path** — you must remediate and reschedule your assessment. There is no partial credit and no averaging around a critical-practice failure.
+
+## Critical practices — never POA&M-eligible, regardless of score or point value
+
+The following must be fully **MET** before any certification (conditional or final) can be issued. If any of your 8 findings falls on this list, that alone rules out conditional certification, independent of your score:
+
+- AC.L2-3.1.3 — CUI flow control
+- IA.L2-3.5.3 — Multifactor authentication
+- SC.L2-3.13.8 — Encryption in transit
+- SC.L2-3.13.11 — FIPS-validated cryptography
+- SI.L2-3.14.6 — Attack monitoring
+- AU.L2-3.3.1 — Audit logging
+- IR.L2-3.6.1 — Incident response capability
+
+**Your first action item**: get the point value and identity of each of your 8 NOT MET findings from the C3PAO Findings Report. Cross-reference against this list and the DoD Assessment Methodology point-value table before assuming either outcome.
+
+## What to do next
+
+- **Compare your 8 findings against the critical list above.** Any match = no conditional path; plan for full remediation and reassessment.
+- **If none are critical, confirm each is a 1-point item** (not 3 or 5) and recompute your actual post-deduction score — don't assume 102; verify the exact deductions.
+- **If the gate is met**: conditional certification is issued with a **180-day clock** starting at the certification date. All 8 items must be fully remediated and evidenced within that window — miss it, and the certification is **revoked**.
+- **If the gate is not met**: remediate the disqualifying practices, then schedule reassessment. There is no conditional/interim certification available outside the two-part gate.
+
+## The 180-day closeout rule, and what happens if you miss it
+
+Once conditional certification is granted:
+- Every open POA&M item must be fully remediated within **180 days** of the certification date, with evidence of closure.
+- Update POA&M status monthly — stale entries draw assessor/auditor scrutiny even during the closeout window.
+- **Failure to close out within 180 days triggers certification revocation.**
+
+## The annual senior-official affirmation — and what a lapse means
+
+Independent of the certification decision itself, a **senior company official must affirm the accuracy of your SPRS-submitted score annually**, including in years between full reassessments. This affirmation obligation continues regardless of conditional vs. final certification status. Key consequences to understand:
+
+- A **revoked conditional certification** (from missing the 180-day window) breaks the annual affirmation you have on file in SPRS — you can't truthfully affirm a certification status that no longer holds.
+- **False affirmations carry False Claims Act exposure** — this is a real legal risk, not just an administrative technicality.
+- A revoked or lapsed certification **ends contract eligibility** for CMMC-gated work until you're reassessed and recertified.
+
+## Bottom line
+
+Yes, certification is still possible with 8 NOT MET findings — but only through the narrow two-part gate (score ≥88 AND all 8 items are 1-point, non-critical practices). Get the practice IDs and point values from your Findings Report immediately, check them against the critical list, and separately confirm with your C3PAO/CMMC-AB whether the current Phase 2 suspension affects the timing or form of your certification decision.
+
+*This is general compliance information, not legal advice. Verify point values, gate eligibility, and current program status against the official DoD Assessment Methodology, your C3PAO, and CMMC-AB guidance before making certification decisions.*

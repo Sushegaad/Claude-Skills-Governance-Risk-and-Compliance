@@ -1,0 +1,13 @@
+{
+  "eval_id": 101,
+  "eval_name": "scope-german-manufacturer",
+  "run_type": "with_skill",
+  "prompt": "We are a German manufacturing company with 800 employees, €120M turnover, and €55M total assets. We are listed on the Frankfurt Stock Exchange. Do we fall under CSRD, and if so, when do we first need to report?",
+  "assertions": [
+    "Applies the post-Omnibus scope test correctly: under Directive (EU) 2026/470 (OJ February 26, 2026), mandatory CSRD reporting requires MORE THAN 1,000 employees AND net turnover above €450M — at 800 employees / €120M this company is OUT of mandatory CSRD scope. FAIL any answer that concludes the company must report under the pre-2026 wave structure (e.g., FY2025/FY2026 first report as a large listed company)",
+    "Explains the change accurately: the original CSRD would have captured them, but the 2025 stop-the-clock directive (EU) 2025/794 deferred wave 2/3 and the 2026 Omnibus content directive then removed sub-1,000-employee companies from scope; national transposition of the amendments is due around March 2027",
+    "Offers the voluntary route: the VSME-based voluntary standard (delegated act adopted July 3, 2026) as the vehicle for responding to customer, bank, and investor data requests",
+    "Flags residual real-world obligations: value-chain information requests from in-scope business partners, and the need to monitor final scrutiny/transposition outcomes before treating the exemption as fully settled",
+    "States the thresholds explicitly with the AND conjunction (1,000+ employees AND >€450M turnover) and cites the Omnibus/2026 directive rather than vaguely referencing 'proposals'"
+  ]
+}

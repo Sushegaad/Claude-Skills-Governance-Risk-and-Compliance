@@ -1,0 +1,33 @@
+{
+  "eval_id": 4,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Explains conditional certification: possible only if the assessment score is at least 88 (0.8 x 110) AND every NOT MET practice is POA&M-eligible",
+      "passed": true,
+      "evidence": "\"Conditional certification is possible only if both of the following hold: 1. Your post-deduction SPRS score is ≥ 88 (0.8 × 110), and 2. Every one of the 8 NOT MET practices carries only a 1-point deduction value under the DoD scoring methodology (no 5-point items, and 3-point items only in the narrow partial-credit cases the rule allows).\""
+    },
+    {
+      "text": "States POA&M eligibility rules correctly: only practices worth 1 point may be on a POA&M (no 5-point items; 3-point items excluded except limited partial-credit cases), and names non-POA&M-eligible critical examples (e.g., SC.L2-3.13.11 FIPS crypto, AC.L2-3.1.3, IA.L2-3.5.3)",
+      "passed": true,
+      "evidence": "States the 1-point-only rule verbatim (\"no 5-point items, and 3-point items only in the narrow partial-credit cases\") and lists critical practices including 'AC.L2-3.1.3 — CUI flow control', 'IA.L2-3.5.3 — Multifactor authentication', and 'SC.L2-3.13.11 — FIPS-validated cryptography', matching all three required examples."
+    },
+    {
+      "text": "States the closeout: POA&M items must be remediated and verified by a closeout assessment within 180 days, or the conditional certification lapses",
+      "passed": true,
+      "evidence": "\"Every open POA&M item must be fully remediated within 180 days of the certification date, with evidence of closure... Failure to close out within 180 days triggers certification revocation.\""
+    },
+    {
+      "text": "Explains the consequence math for THIS scenario: 8 NOT MET practices are compatible with conditional certification only if all 8 are 1-point items and the score floor holds — otherwise remediate and re-assess",
+      "passed": true,
+      "evidence": "\"If both conditions are met: 8 practices at 1 point each = a score of 110 − 8 = 102, well above the 88 threshold... If even one of the 8 is a 3- or 5-point practice, or appears on the critical-practices list below, there is no conditional path — you must remediate and reschedule your assessment.\""
+    },
+    {
+      "text": "Notes the July 13, 2026 context accurately: with Phase 2 suspended pending the task-force review, C3PAO certification mechanics are described under the rule as written while acknowledging new C3PAO-designated requirements are in abeyance; the annual senior-official affirmation in SPRS continues, and a lapsed conditional status affects contract eligibility",
+      "passed": true,
+      "evidence": "\"DoD suspended CMMC Phase 2 — including C3PAO third-party assessment requirements — on July 13, 2026... pending a 60-day CMMC Reform Task Force review (report due ≈ September 13, 2026)... What has not changed: your NIST SP 800-171 obligations, the scoring mechanics below, the POA&M rules, and the 180-day closeout clock all remain the governing framework.\" Also: \"a senior company official must affirm the accuracy of your SPRS-submitted score annually... A revoked or lapsed certification ends contract eligibility for CMMC-gated work.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

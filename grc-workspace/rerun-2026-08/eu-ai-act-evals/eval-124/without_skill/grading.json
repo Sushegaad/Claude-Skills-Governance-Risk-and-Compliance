@@ -1,0 +1,33 @@
+{
+  "eval_id": 124,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Classifies the system as high-risk via the Art. 6(1) path: safety component of a product covered by Annex I Union harmonisation legislation (MDR) that undergoes third-party conformity assessment",
+      "passed": true,
+      "evidence": "'This puts it squarely under Article 6(1) of the AI Act (the \"product-related\" high-risk pathway)... Article 6(1) classifies an AI system as high-risk if (a) it is intended to be used as a safety component of a product... covered by the Union harmonisation legislation listed in Annex I (which includes the MDR and IVDR), and (b) the product is required to undergo a third-party conformity assessment.'"
+    },
+    {
+      "text": "States the compliance deadline for Annex I embedded high-risk systems as 2 August 2028 (as amended by the Digital Omnibus; originally 2 August 2027). Any deadline stated must be Aug 2028.",
+      "passed": false,
+      "evidence": "'Under Article 113(c), the high-risk obligations for these Annex I product-related systems apply 36 months after entry into force of the Act, i.e. from 2 August 2027.' States the pre-Digital-Omnibus 2027 date with no mention of the Digital Omnibus or the 2028 extension; also states an outdated Annex III deadline of '2 August 2026' elsewhere, confirming this run is not accounting for the Digital Omnibus amendments at all."
+    },
+    {
+      "text": "Explains the integrated conformity route: AI Act requirements are assessed within the existing MDR notified-body procedure (Art. 43(3)) rather than a separate parallel assessment, with a single set of technical documentation permitted",
+      "passed": true,
+      "evidence": "'Single conformity assessment process (Article 43(3)): Where a product is subject to both MDR and AI Act conformity assessment, providers may... follow the conformity assessment procedure required by the MDR, with the AI Act's requirements... built into that MDR assessment rather than run as a wholly separate parallel process... You can integrate AI Act technical documentation (Annex IV) into your existing MDR technical documentation/design dossier rather than maintaining two separate documentation sets.'"
+    },
+    {
+      "text": "Identifies the dual-regulator reality: notified body under MDR plus AI Act requirements (Arts. 9-15) folded into the MDR QMS/technical documentation",
+      "passed": true,
+      "evidence": "'the AI Act's requirements (Articles 8–15: risk management, data governance, technical documentation, logging, transparency, human oversight, accuracy/robustness/cybersecurity) built into that MDR assessment.'"
+    },
+    {
+      "text": "Gives practical sequencing advice (align AI Act risk management with ISO 14971 processes, update technical file, involve the notified body early)",
+      "passed": true,
+      "evidence": "'Start integrating AI Act requirements... into your existing MDR quality management system and technical documentation now, since the assessment will be a combined MDR + AI Act process... building this in early avoids a costly late-stage rework... Confirm with your notified body whether they are (or intend to become) qualified to assess AI Act requirements alongside MDR.' Practical sequencing and early notified-body engagement are present, though ISO 14971 is not named explicitly (only 'quality management system' generically)."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

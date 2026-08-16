@@ -1,0 +1,33 @@
+{
+  "eval_id": 77,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Frames IRAP correctly: ASD-endorsed independent assessors who assess the implementation and effectiveness of ISM controls — an IRAP assessment informs but does NOT itself constitute authorisation; the agency's Authorising Official still makes the risk-acceptance decision",
+      "passed": true,
+      "evidence": "'Confirm your chosen assessor is listed on the ASD IRAP Assessors Register and is independent...' and 'your Authorising Official reviews the IRAP report, the SSP, and the POA&M... This is a distinct step from the IRAP assessment itself — IRAP does not grant authorisation, it informs it.'"
+    },
+    {
+      "text": "Lists the right artefacts: System Security Plan plus its control-implementation annex/matrix, security risk assessment/management documentation, architecture and data-flow documentation, and supporting policies/procedures with implementation evidence",
+      "passed": true,
+      "evidence": "Checklist includes 'Current SSP... full control selection with applicability justification... implemented controls with evidence', 'Network architecture diagrams', 'Risk register', 'Policy suite', 'Evidence of implemented controls'."
+    },
+    {
+      "text": "Sets process expectations: scoping, documentation review, then control-effectiveness validation (interviews, configuration review, testing) — evidence of operation, not just documentation",
+      "passed": true,
+      "evidence": "Section 2 covers 'Assessor selection', 'Scope', 'Method: documentation review... technical testing/validation (configuration review, evidence sampling, possibly vulnerability scanning), and interviews with system owners and technical staff'."
+    },
+    {
+      "text": "Explains the aftermath: an assessment report with control effectiveness findings and residual risks → agency remediation planning → Authorising Official reviews and makes the authorisation decision; periodic reassessment thereafter",
+      "passed": true,
+      "evidence": "Section 3: 'IRAP Assessment Report is delivered', 'POA&M', 'ATO — your Authorising Official reviews the IRAP report, the SSP, and the POA&M, weighs residual risk, and formally signs off', 'Re-assessment cadence... maximum of 24 months'."
+    },
+    {
+      "text": "PROTECTED-appropriate: applies PROTECTED-marked controls and classification-appropriate handling throughout (not OFFICIAL-level shortcuts)",
+      "passed": true,
+      "evidence": "'IRAP assessment is mandatory... assessor will expect the full NC + OS + P control set', ASD-evaluated crypto (Chapter 10), Common Criteria/FIPS 140-2/3, 18-month log retention, 'broader than an OS-only review, covering physical security, personnel security, cryptography, gateways, and cross-domain controls'."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

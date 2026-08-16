@@ -1,0 +1,64 @@
+# FedRAMP Authorization Process: Agency ATO vs. JAB P-ATO
+
+## Overview
+
+FedRAMP (Federal Risk and Authorization Management Program) is the standardized, government-wide program for security assessment, authorization, and continuous monitoring of cloud products and services used by U.S. federal agencies. It is built on NIST SP 800-53 controls and is designed to let agencies reuse a single security authorization ("do once, use many times") rather than each agency independently assessing the same cloud service.
+
+## The Authorization Process, Start to Finish
+
+### 1. Readiness and Preparation
+- **Determine impact level** (Low, Moderate, High, or LI-SaaS) based on a FIPS 199 categorization of the data your system will process, store, or transmit.
+- **Select an authorization path** (Agency or JAB — see below).
+- **Build your System Security Plan (SSP)** describing your system boundary, architecture, data flows, and how each required NIST SP 800-53 control is implemented.
+- Many CSPs first complete a **FedRAMP Readiness Assessment Report (RAR)**, performed by an accredited **Third Party Assessment Organization (3PAO)**, especially if pursuing the JAB path or listing on the Marketplace as "FedRAMP Ready."
+- Stand up required capabilities: continuous monitoring tooling, vulnerability scanning, incident response processes, boundary diagrams, and a POA&M process.
+
+### 2. Documentation Package
+Core documents typically include:
+- System Security Plan (SSP) with control implementation narratives and appendices (policies, procedures, rules of behavior, configuration management plan, incident response plan, contingency plan, etc.)
+- Security Assessment Plan (SAP)
+- Security Assessment Report (SAR), produced after independent testing
+- Plan of Action and Milestones (POA&M)
+- Continuous monitoring plan
+
+### 3. Independent Assessment
+- A 3PAO conducts an independent security assessment against the SSP, performing control testing, vulnerability scanning, and penetration testing.
+- Results and any findings are documented in the SAR, and open items become POA&M entries.
+
+### 4. Authorization Decision
+- The package (SSP, SAP, SAR, POA&M) is submitted for authorization review, either to a sponsoring federal agency or to the Joint Authorization Board.
+- Reviewers evaluate residual risk and either grant authorization, request remediation, or deny.
+
+### 5. Continuous Monitoring (ConMon)
+- After authorization, the CSP must maintain ongoing compliance: monthly vulnerability scans, monthly/annual control reassessments, incident reporting, POA&M updates, and an annual assessment by the 3PAO.
+- Significant changes to the system generally require a Significant Change Request (SCR) and may trigger re-assessment.
+
+## Agency ATO vs. JAB P-ATO
+
+### Agency ATO (Authority to Operate)
+- A single federal agency sponsors the CSP, reviews the security package, and issues its own Authority to Operate.
+- The agency's own Authorizing Official (AO) accepts risk and signs the ATO.
+- Once granted, the package can be shared with other agencies through the FedRAMP Marketplace, and other agencies can issue their own ATO based on reuse of the existing package (this is sometimes referred to as an "Agency ATO with reuse").
+- This is generally faster to start because it only requires finding one agency partner willing to sponsor you, and the process/timeline is more flexible and negotiated directly with that agency.
+
+### JAB P-ATO (Provisional Authority to Operate)
+- The Joint Authorization Board — historically composed of representatives from DoD, DHS, and GSA — reviews and grants a "provisional" authorization.
+- A P-ATO is not a full ATO by itself; individual agencies still must review the package and issue their own ATO before they can use the service, but the JAB's provisional authorization signals a high level of vetting and is intended to accelerate agency adoption.
+- The JAB has historically prioritized a limited number of CSPs per year (a competitive, invitation/prioritization-based process), often favoring services with broad, high-demand use cases across government (e.g., major cloud platforms, widely-used SaaS).
+- The process is generally viewed as more rigorous and slower to enter (given prioritization and the need to satisfy three agencies' worth of technical representatives), but the resulting authorization can carry significant weight and expedite reuse across many agencies.
+
+Note: As FedRAMP has evolved (including newer initiatives sometimes referred to as FedRAMP 20x/FedRAMP modernization efforts), the JAB's role and prioritization process have been undergoing changes. Vendors should verify the current state of the JAB process, including any changes to its structure, capacity, and how CSPs are selected, at the time they are ready to pursue authorization.
+
+## Which Path Should You Consider for a First Authorization?
+
+For most vendors pursuing their **first** FedRAMP authorization, the **Agency ATO path is generally the more practical and recommended route**, for several reasons:
+
+1. **Accessibility** — You only need one agency champion/sponsor who has a genuine mission need for your product, rather than needing to be selected/prioritized by the JAB.
+2. **Timeline control** — You can negotiate scope, pace, and priorities directly with your sponsoring agency, which is often faster for a first-time CSP without an existing federal customer base.
+3. **JAB selectivity** — The JAB has historically had limited capacity and prioritized CSPs with proven, broad federal demand — a profile that is hard for a first-time entrant to meet.
+4. **Reusability** — An Agency ATO package, once established and listed on the FedRAMP Marketplace, can still be reused by other agencies, giving you a path to broader federal adoption over time without needing to start with JAB.
+
+**Practical recommendation:** Identify a federal agency that already has a strong interest in your product (ideally one where you have an existing relationship or pilot), have them sponsor your Agency ATO, and treat that as your first authorization. Once you have a proven track record, you can consider engaging with the JAB (or successor prioritization process) if your product has broad, cross-government applicability. Also confirm early with FedRAMP PMO guidance whether newer streamlined pathways (e.g., FedRAMP 20x or Low-Impact SaaS "LI-SaaS") might better fit your product's risk profile and reduce time-to-authorization.
+
+## Caveat
+FedRAMP program mechanics (JAB structure, prioritization criteria, new pathways like 20x) have been actively evolving. Before finalizing your strategy, confirm the current process details directly against the latest guidance published by the FedRAMP Program Management Office (PMO), since specifics such as JAB composition, submission windows, and pathway eligibility can change.

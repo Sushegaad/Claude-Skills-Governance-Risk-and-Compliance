@@ -1,0 +1,33 @@
+{
+  "eval_id": 5,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the flow-down rule: DFARS 252.204-7021 flows down to subcontractors at all tiers where they process, store, or transmit FCI/CUI; subs handling CUI need Level 2, subs with FCI only need Level 1",
+      "passed": true,
+      "evidence": "\"...must flow down to subcontractors and suppliers at all tiers when the subcontract will involve processing, storing, or transmitting CUI...\" and \"Not every subcontractor needs Level 2. If a subcontractor only receives FCI (not CUI), Level 1 self-assessment may be sufficient.\" This conveys the all-tiers rule and the CUI→L2 / FCI→L1 split, though phrased somewhat indirectly (\"the same level\" as the prime rather than stating Level 2 outright in the flow-down clause description)."
+    },
+    {
+      "text": "States the prime's duty: verify subcontractor CMMC status (via SPRS or certificate evidence) BEFORE awarding/continuing subcontract performance involving CUI",
+      "passed": false,
+      "evidence": "\"Verify that the subcontractor has the required CMMC certification level active in the CMMC eMASS/enterprise system (or successor system of record) at the time of award\" — the timing/duty (verify before award) is correct, but the response names a fabricated/incorrect system of record ('CMMC eMASS'), which is not SPRS and is not a real CMMC verification mechanism. eMASS is an unrelated DoD RMF authorization system. This is a factual error on the specific verification mechanism the assertion requires (SPRS or certificate evidence), so the assertion is not satisfied on its specific terms — corrected on strict re-review from an initial generous pass."
+    },
+    {
+      "text": "Gives concrete remediation options: stop CUI flow to the uncertified subs (rescope what they receive), move them to FCI-only scope, sponsor an enclave approach, or replace them — with interim risk documentation",
+      "passed": false,
+      "evidence": "Response offers pausing CUI flow (\"Limiting or pausing the flow of CUI to these subcontractors if feasible\"), rescoping (\"Restructure the subcontract so the non-compliant subcontractor no longer handles CUI\"), and replacement (\"Identify an alternate, already-certified subcontractor who could take over that scope\"), but never mentions an enclave / prime-controlled boundary approach anywhere in the text — one of the four specific remediation options is entirely absent."
+    },
+    {
+      "text": "Notes the July 13, 2026 interim state accurately: with Phase 2 suspended, subs cannot currently be required to hold C3PAO certification (self-assessment designations only), C3PAO requirements are being removed from solicitations/contracts at next modification — but 7012 safeguarding, 7019/7020 SPRS obligations, and 800-171 flow-down protections remain fully in force",
+      "passed": false,
+      "evidence": "No mention anywhere in the response of the July 13, 2026 suspension, Phase 2, the CMMC Reform Task Force, or any change in current C3PAO/self-assessment designation status. The response treats C3PAO certification as a live, unaffected requirement (e.g., \"Scheduling and completing the required CMMC assessment (self-assessment submission or C3PAO engagement)\") with no note of the interim suspension."
+    },
+    {
+      "text": "Warns about misrepresentation risk (False Claims Act exposure for affirming compliance while knowingly flowing CUI to non-compliant subs) and advises documenting corrective action",
+      "passed": false,
+      "evidence": "The response never mentions the False Claims Act or misrepresentation/affirmation exposure. It only generically notes 'some primes have separate reporting obligations for known subcontractor non-compliance — check your specific contract terms' and recommends documentation, but does not identify the specific False Claims Act risk the assertion requires."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

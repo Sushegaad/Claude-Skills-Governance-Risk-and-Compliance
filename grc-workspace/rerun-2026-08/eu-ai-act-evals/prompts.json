@@ -1,0 +1,25 @@
+{
+  "skill": "eu-ai-act",
+  "prompts": [
+    {
+      "id": 121,
+      "prompt": "We are building an AI-powered CV screening tool that ranks job applicants for employers in the EU. Is this high-risk under the EU AI Act? Which Annex III area applies, what deadline do we need to comply by, and what are our main obligations as the provider?"
+    },
+    {
+      "id": 122,
+      "prompt": "A national police force wants to procure our AI system that predicts the likelihood of individuals committing future criminal offences based on personality traits and past behaviour. Is this permitted under the EU AI Act?"
+    },
+    {
+      "id": 123,
+      "prompt": "We release an open-source LLM (weights, architecture and usage documentation publicly available, free license). It was trained with about 8 x 10^23 FLOPs. What GPAI obligations apply to us, and does the GPAI Code of Practice help?"
+    },
+    {
+      "id": 124,
+      "prompt": "Our AI-based software is a safety component of a medical device that requires notified-body conformity assessment under the MDR. How does the EU AI Act interact with MDR for us, and what is our compliance deadline?"
+    },
+    {
+      "id": 125,
+      "prompt": "We run an e-commerce site with a customer service chatbot and AI-generated product images. What transparency obligations under Article 50 of the EU AI Act apply, and from when?"
+    }
+  ]
+}

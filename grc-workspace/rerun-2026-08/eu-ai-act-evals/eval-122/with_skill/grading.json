@@ -1,0 +1,33 @@
+{
+  "eval_id": 122,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies this as a PROHIBITED practice under Art. 5(1)(d): AI systems making risk assessments of natural persons to assess or predict the risk of committing a criminal offence based solely on profiling or on assessing personality traits and characteristics",
+      "passed": true,
+      "evidence": "'this system is prohibited (not merely high-risk) under Art. 5(1)(d)... This falls within Art. 5(1)(d) — Predictive Criminal Risk Assessment: AI systems assessing the risk of natural persons committing criminal offenses based solely on profiling or personality/character traits assessment are prohibited.'"
+    },
+    {
+      "text": "States the prohibition has applied since 2 February 2025 (prohibitions were the first obligations to take effect)",
+      "passed": false,
+      "evidence": "The response never states that the Art. 5 prohibition has applied since 2 February 2025. It only references 'the AI Office's 4 February 2025 guidelines on Art. 5 prohibited practices' — a related but different date, not the application date of the prohibition itself."
+    },
+    {
+      "text": "Explains the carve-out accurately: Art. 5(1)(d) does not cover AI used to SUPPORT a human assessment already based on objective and verifiable facts directly linked to a criminal activity — and assesses whether the described system (personality traits + past behaviour) fits the prohibition (it does, to the extent based on profiling/traits)",
+      "passed": true,
+      "evidence": "'The narrow exception does not rescue this system. Art. 5(1)(d) permits AI systems that support a human assessment where that assessment is based on objective, verifiable facts directly linked to criminal activity... A system built on personality-trait profiling and general behavioural history is the opposite of this exception.'"
+    },
+    {
+      "text": "States penalty exposure for prohibited practices: up to €35M or 7% of worldwide annual turnover (Art. 99(3))",
+      "passed": true,
+      "evidence": "'Placing or using a prohibited AI system carries the highest Art. 99 penalty tier: up to €35 million or 7% of total worldwide annual turnover, whichever is higher.'"
+    },
+    {
+      "text": "Advises concretely: do not place on the EU market for this use; discusses redesign options (e.g., objective-facts-based decision support with human assessment) or declining the procurement",
+      "passed": true,
+      "evidence": "'The police force cannot lawfully procure or use this system as described. You as the would-be provider should not place it on the market for this use case in the EU... the system would need to be substantially redesigned to strip out personality-trait and general-behaviour profiling and to function as a genuine decision-support tool tied to verifiable facts.'"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

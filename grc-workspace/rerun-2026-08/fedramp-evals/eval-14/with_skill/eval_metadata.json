@@ -1,0 +1,13 @@
+{
+  "eval_id": 14,
+  "eval_name": "ssp-system-boundary-description",
+  "run_type": "with_skill",
+  "prompt": "Draft a System Boundary Description for a FedRAMP Moderate SSP. Our system is a web application hosted on AWS GovCloud with a PostgreSQL database, Redis cache, and integrations with two external SaaS tools (Okta for authentication and SendGrid for email).",
+  "assertions": [
+    "Includes all named in-boundary components: the web application, PostgreSQL database, and Redis cache, hosted in AWS GovCloud",
+    "Treats Okta and SendGrid as external services/interconnections: identifies that federal data or metadata flows to them and that their FedRAMP authorization status must be verified and documented (FedRAMP boundary guidance for external services)",
+    "Mentions inherited controls / leveraged authorization from AWS GovCloud (e.g., physical and environmental controls inherited, documented via CRM/CIS)",
+    "References the requirement for an authorization boundary diagram and data flow diagram consistent with FedRAMP SSP requirements",
+    "Written as usable SSP content: clearly describes what is inside vs outside the boundary and addresses connection security for the external integrations (ports/protocols/TLS, API connections)"
+  ]
+}

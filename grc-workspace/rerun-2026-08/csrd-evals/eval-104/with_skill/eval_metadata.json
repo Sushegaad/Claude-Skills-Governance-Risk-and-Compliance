@@ -1,0 +1,13 @@
+{
+  "eval_id": 104,
+  "eval_name": "gri-tcfd-transition-gap",
+  "run_type": "with_skill",
+  "prompt": "We currently report under GRI Standards and have a TCFD report. How much work is it to transition to CSRD/ESRS? What gaps are we likely to have?",
+  "assertions": [
+    "Identifies the genuine head start: GRI maps well to ESRS impact-materiality content and TCFD's four-pillar structure (governance/strategy/risk management/metrics & targets) is embedded in ESRS 2 and E1",
+    "Names the likely gaps concretely: formalised double-materiality assessment, value-chain coverage, ESRS-specific datapoints and phrasing, assurance-ready documentation and internal controls, and digital tagging",
+    "Scope gate first: advises confirming the company is still in mandatory scope under the 2026 Omnibus thresholds (1,000+ employees AND >€450M) before scoping a transition programme",
+    "Right-sizes the effort with the July 2026 revision: mapping should target the revised ESRS (~61% fewer mandatory datapoints, applying FY2027 / early adoption FY2026 once in force), which materially reduces the pre-Omnibus gap estimates",
+    "Delivers a practical transition plan (GRI/TCFD-to-ESRS mapping table, DMA build, gap register, data ownership and controls) rather than abstract commentary"
+  ]
+}

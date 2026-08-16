@@ -1,0 +1,13 @@
+{
+  "eval_id": 124,
+  "eval_name": "mdr-interaction-deadline",
+  "run_type": "without_skill",
+  "prompt": "Our AI-based software is a safety component of a medical device that requires notified-body conformity assessment under the MDR. How does the EU AI Act interact with MDR for us, and what is our compliance deadline?",
+  "assertions": [
+    "Classifies the system as high-risk via the Art. 6(1) path: safety component of a product covered by Annex I Union harmonisation legislation (MDR) that undergoes third-party conformity assessment",
+    "States the compliance deadline for Annex I embedded high-risk systems as 2 August 2028 (as amended by the Digital Omnibus; originally 2 August 2027). Any deadline stated must be Aug 2028.",
+    "Explains the integrated conformity route: AI Act requirements are assessed within the existing MDR notified-body procedure (Art. 43(3)) rather than a separate parallel assessment, with a single set of technical documentation permitted",
+    "Identifies the dual-regulator reality: notified body under MDR plus AI Act requirements (Arts. 9-15) folded into the MDR QMS/technical documentation",
+    "Gives practical sequencing advice (align AI Act risk management with ISO 14971 processes, update technical file, involve the notified body early)"
+  ]
+}

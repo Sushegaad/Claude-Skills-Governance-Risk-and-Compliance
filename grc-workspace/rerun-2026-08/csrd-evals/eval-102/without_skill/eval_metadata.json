@@ -1,0 +1,13 @@
+{
+  "eval_id": 102,
+  "eval_name": "double-materiality",
+  "run_type": "without_skill",
+  "prompt": "Explain the concept of double materiality under CSRD. How is it different from how materiality works under GRI or TCFD? Walk me through how a company should conduct a double materiality assessment.",
+  "assertions": [
+    "Defines both perspectives correctly: impact materiality (the company's effects on people/environment — inside-out) and financial materiality (sustainability matters creating financial risks/opportunities — outside-in), with a topic material if EITHER test is met",
+    "Contrasts frameworks accurately: GRI is impact-materiality-only; TCFD is financial/climate-risk-only; CSRD/ESRS requires both lenses in one assessment",
+    "Walks through a real DMA process: context and value-chain mapping, identification of impacts/risks/opportunities, scoring (severity via scale/scope/irremediability, plus likelihood; financial magnitude), thresholds, stakeholder engagement, and governance validation",
+    "Notes documentation/assurance readiness: the DMA methodology and conclusions must be documented because they are subject to assurance and anchor which ESRS topics are reported",
+    "Correctly states that the July 2026 revised ESRS simplify datapoints but keep the double-materiality assessment as the cornerstone — the DMA obligation did not go away"
+  ]
+}

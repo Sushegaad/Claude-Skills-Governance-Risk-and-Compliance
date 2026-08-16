@@ -1,0 +1,25 @@
+{
+  "skill": "cmmc",
+  "prompts": [
+    {
+      "id": 1,
+      "prompt": "We are a 45-person aerospace engineering firm that recently won our first DoD contract. The contract contains DFARS 252.204-7021 requiring CMMC Level 2. We have never heard of CMMC before. Give us a plain-English explanation of what CMMC Level 2 means for us, what we need to do, and roughly how long it will take to get certified."
+    },
+    {
+      "id": 2,
+      "prompt": "Perform a CMMC Level 2 gap assessment. Our current state: MFA only on cloud email; no FIPS-validated encryption for CUI at rest; SSP last updated in 2022; incident response plan exists but never tested; flat network with CUI on shared drives; annual security awareness training in place; background screening for all staff. Rate the relevant practice areas and give us a prioritised remediation plan with SPRS score impact."
+    },
+    {
+      "id": 3,
+      "prompt": "Draft a System Security Plan section for CMMC practice IA.L2-3.5.3 (multifactor authentication). Our environment: Microsoft 365 GCC High with Entra ID, Duo MFA for VPN, and on-prem Active Directory for legacy CAD workstations."
+    },
+    {
+      "id": 4,
+      "prompt": "Our C3PAO assessment found 8 practices NOT MET. Can we still get certified? Explain conditional certification, which practices are POA&M-eligible, the minimum score requirement, and the closeout timeline."
+    },
+    {
+      "id": 5,
+      "prompt": "We are a prime contractor and discovered that two of our subcontractors handling CUI have no CMMC certification. What are our flow-down obligations under DFARS 252.204-7021, and what should we do before the next option period?"
+    }
+  ]
+}

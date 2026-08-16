@@ -1,0 +1,13 @@
+{
+  "eval_id": 4,
+  "eval_name": "poam-conditional-certification",
+  "run_type": "without_skill",
+  "prompt": "Our C3PAO assessment found 8 practices NOT MET. Can we still get certified? Explain conditional certification, which practices are POA&M-eligible, the minimum score requirement, and the closeout timeline.",
+  "assertions": [
+    "Explains conditional certification: possible only if the assessment score is at least 88 (0.8 x 110) AND every NOT MET practice is POA&M-eligible",
+    "States POA&M eligibility rules correctly: only practices worth 1 point may be on a POA&M (no 5-point items; 3-point items excluded except limited partial-credit cases), and names non-POA&M-eligible critical examples (e.g., SC.L2-3.13.11 FIPS crypto, AC.L2-3.1.3, IA.L2-3.5.3)",
+    "States the closeout: POA&M items must be remediated and verified by a closeout assessment within 180 days, or the conditional certification lapses",
+    "Explains the consequence math for THIS scenario: 8 NOT MET practices are compatible with conditional certification only if all 8 are 1-point items and the score floor holds — otherwise remediate and re-assess",
+    "Notes the July 13, 2026 context accurately: with Phase 2 suspended pending the task-force review, C3PAO certification mechanics are described under the rule as written while acknowledging new C3PAO-designated requirements are in abeyance; the annual senior-official affirmation in SPRS continues, and a lapsed conditional status affects contract eligibility"
+  ]
+}

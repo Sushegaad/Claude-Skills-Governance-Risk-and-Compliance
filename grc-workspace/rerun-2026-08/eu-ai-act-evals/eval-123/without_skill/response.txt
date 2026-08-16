@@ -1,0 +1,38 @@
+# Open-Source LLM (~8×10^23 FLOPs) — GPAI Obligations
+
+## Step 1: Is it a "general-purpose AI model" (GPAI)?
+Yes. An LLM capable of a wide range of distinct tasks, trained on a large dataset with self-supervision at scale, is a GPAI model under Article 3(63) and Recital 97, regardless of how it is placed on the market.
+
+## Step 2: Does the systemic-risk threshold apply?
+Article 51(2) creates a **rebuttable presumption of systemic risk** when the cumulative compute used for training exceeds **10^25 FLOPs**. Your model was trained with roughly **8×10^23 FLOPs**, which is **about two orders of magnitude below** that threshold. So:
+- Your model is **not presumed** to present systemic risk.
+- Unless the AI Office separately designates it as having systemic risk (via a decision under Art. 51(1)(b), based on capability-based criteria — unlikely at this compute level and with no indication of exceptional capability), you are treated as a **standard (non-systemic-risk) GPAI model provider**.
+
+## Step 3: Baseline GPAI obligations (Article 53)
+All GPAI model providers, in principle, must:
+- (a) Draw up and keep up-to-date **technical documentation** of the model (Annex XI), including training/testing process and evaluation results.
+- (b) Draw up and provide **information/documentation to downstream providers** who integrate the model, sufficient for them to understand capabilities/limitations and meet their own AI Act obligations.
+- (c) Put in place a **policy to comply with EU copyright law**, including identifying and complying with rights reservations (Art. 4(3) of the DSM Copyright Directive, e.g. respecting text-and-data-mining opt-outs).
+- (d) Publish a **sufficiently detailed summary of the content used for training** the model, using the template published by the AI Office.
+
+## Step 4: The open-source exemption (Article 53(2))
+Because your model's weights, architecture, and usage information are made **publicly available** under a **free and open-source license** that permits access, use, modification, and distribution, **Article 53(2)** exempts you from obligations (a) and (b) above — i.e., you do **not** need to produce full technical documentation for the AI Office or bespoke documentation packages for every downstream provider — **unless** the model is later found to present systemic risk.
+
+Important nuance: the exemption applies **only to points (a) and (b)**. You are **still required** to comply with:
+- (c) the **copyright-compliance policy**, and
+- (d) publishing the **training data summary**.
+
+These two obligations apply to open-source GPAI providers regardless of the exemption, because they protect third-party rights (copyright holders) rather than just downstream technical transparency.
+
+## Step 5: Does the GPAI Code of Practice help?
+Yes, it's directly relevant. The **General-Purpose AI Code of Practice**, facilitated by the AI Office with industry/civil society input, was finalized in 2025 to give providers a concrete way to demonstrate compliance with Articles 53 (and 55 for systemic-risk models) ahead of/alongside harmonised standards. Benefits of signing on:
+- It offers a structured, AI-Office-endorsed template for the training data summary and documentation practices, reducing ambiguity about what "sufficiently detailed" means.
+- Providers who adhere to the Code benefit from a **presumption of conformity** with the relevant Article 53 obligations (and Article 55 if systemic risk ever applied), reducing enforcement/interpretation risk, and signalling good faith to the AI Office and to downstream customers/regulators.
+- It's **voluntary** — you aren't required to sign it, and you can instead demonstrate compliance through other adequate means (e.g., harmonised standards once available), but adherence is the lowest-friction path to demonstrable compliance, especially given regulatory guidance is still maturing.
+
+## Practical summary for your situation
+- No systemic-risk obligations (Art. 55) apply — you're well under the 10^25 FLOPs presumption threshold.
+- You are exempt from full technical documentation (to AI Office) and downstream-provider documentation packages due to the open-source exemption.
+- You **must still** maintain a copyright-compliance policy and publish a public training data summary.
+- Signing/following the GPAI Code of Practice is recommended as a practical way to meet and evidence the copyright and training-data-summary obligations with reduced regulatory risk, even though most of Article 53 doesn't strictly bind you.
+- GPAI obligations generally became applicable from **2 August 2025**, so these obligations are already in force for you as of today.

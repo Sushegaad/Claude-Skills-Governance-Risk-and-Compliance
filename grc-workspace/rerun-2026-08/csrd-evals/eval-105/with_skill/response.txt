@@ -1,0 +1,42 @@
+# CSRD Applicability — US-Headquartered Tech Company with German/French Subsidiaries
+
+## Short answer
+
+There are two separate scope questions here, and they point in different directions. Your **German subsidiary is very likely not in mandatory scope on its own** under the current post-Omnibus thresholds. Whether the **US parent has a non-EU-company obligation** (Art. 40a) is genuinely unsettled right now and I'd flag it as "needs verification" rather than give you a confident yes/no — see the caveat below.
+
+## 1. Does the German subsidiary trigger CSRD as a standalone EU undertaking?
+
+CSRD's mandatory scope for EU entities is now set by **Directive (EU) 2026/470** (in force March 2026): large undertakings with **>1,000 employees AND net turnover >€450M**.
+
+| Criterion | German subsidiary | Threshold | Met? |
+|---|---|---|---|
+| Employees | 600 | >1,000 | ❌ No |
+| Turnover | Not separately given (part of combined €200M EU revenue) | >€450M | Unlikely, but confirm standalone figure |
+| Listing | Not listed | Listing alone no longer triggers mandatory scope post-Omnibus | ❌ No |
+
+At 600 employees, the German subsidiary is well under the 1,000-employee threshold and therefore **not independently in mandatory CSRD scope**, regardless of its turnover. The French subsidiary's headcount isn't given, but unless it alone clears both 1,000 employees and €450M turnover, it wouldn't independently trigger scope either. So on a standalone-entity basis, neither EU subsidiary appears to be a mandatory CSRD reporter today.
+
+## 2. Does the US parent trigger CSRD as a non-EU company (Art. 40a)?
+
+This is the part that needs real caution. Under the **original** CSRD design, non-EU parent undertakings with **more than €150M in net turnover generated in the EU** (via an EU branch or subsidiary meeting certain size conditions) were brought into scope under Art. 40a, with a first reporting year of FY2028 (published 2029). Your combined €200M in EU revenue from the German and French subsidiaries would have cleared that legacy €150M figure.
+
+**However**, the skill guidance I'm working from is explicit that the Art. 40a non-EU threshold is **under review as part of the Omnibus package**, and instructs not to rely on the pre-2026 €150M construct without checking current status. I don't have confirmation of where that threshold landed as of August 2026 — it may have been raised (consistent with the >€450M logic applied to EU large undertakings), left unchanged, or restructured entirely. Given that ambiguity, I can't give you a reliable yes/no on the non-EU parent obligation today.
+
+**What I'd recommend:**
+- Treat this as an open compliance question requiring current-source verification (EUR-Lex / European Commission CSRD Omnibus tracker, or specialist EU counsel) before you make any scope determination or public statement.
+- In parallel, prepare as if you *may* be in scope: your €200M EU revenue figure and the subsidiary structure are exactly the fact pattern Art. 40a was designed to catch, so this isn't a remote risk — it's a live open question, not a "clearly out" answer.
+- Get a definitive read on: (a) the current non-EU turnover threshold, (b) whether it's still assessed at combined EU-subsidiary level or requires a single qualifying EU undertaking/branch, and (c) the current first-reporting-year timeline for non-EU companies (FY2028 was the pre-Omnibus target, but the Omnibus package has generally pushed timelines out — confirm this hasn't shifted further).
+
+## 3. What to do next regardless of the Art. 40a answer
+
+- **Re-run the standalone-entity check for the French subsidiary** with actual headcount and turnover figures — if it independently crosses >1,000 employees and >€450M turnover, it would be in mandatory scope on its own regardless of the parent question.
+- **Watch for group/consolidation nuances:** even where a subsidiary itself is below threshold, group reporting rules can sometimes bring a subsidiary's data into a parent's report (or allow it to rely on one) — worth checking whether the US parent already produces any group sustainability disclosure that could be leveraged.
+- **Consider the VSME voluntary standard** (adopted July 2026) as a fallback: if neither subsidiary nor the US parent turns out to be in mandatory scope, EU customers, lenders, or investors may still request proportionate sustainability data, and VSME is the designed vehicle for that.
+- **Don't default to "out of scope"** based on subsidiary headcount alone — the non-EU parent test operates on a different logic (EU-generated turnover, not EU subsidiary headcount), so the 600-employee German subsidiary being under-threshold does not resolve the Art. 40a question.
+
+## Bottom line
+
+Standalone EU-entity scope: **likely not triggered** (German subsidiary well under the 1,000-employee bar; French subsidiary needs its own headcount/turnover check). Non-EU parent scope under Art. 40a: **unresolved under current rules** — the €200M EU revenue figure would have cleared the old €150M threshold, but that threshold is explicitly under Omnibus revision, so treat this as a "verify before relying" item rather than a settled answer, and get current-source confirmation before communicating a final position.
+
+---
+*This is general compliance information, not legal advice — especially given the live legislative uncertainty on the non-EU threshold, verify with qualified EU counsel before finalizing your scope position.*

@@ -1,0 +1,13 @@
+{
+  "eval_id": 76,
+  "eval_name": "os-cloud-authorisation",
+  "run_type": "with_skill",
+  "prompt": "We are a federal government agency in Australia running a cloud-hosted case management system that stores OFFICIAL: Sensitive information. We need to understand: which ISM control applicability markings apply to our system, what the key controls we must implement are, and what the authorisation pathway looks like before we can go live.",
+  "assertions": [
+    "Explains ISM applicability markings correctly: controls are marked for applicability by classification (OFFICIAL / OFFICIAL: Sensitive / PROTECTED / SECRET / TOP SECRET), and an OFFICIAL: Sensitive system implements the controls marked applicable at that level (with 'All'-marked controls included)",
+    "Describes the authorisation pathway as a define → select → implement → assess → authorise → monitor lifecycle, ending with an Authorising Official making a risk-based authorisation decision before go-live and ongoing monitoring after",
+    "Names the core authorisation artefacts: a System Security Plan (with its control-implementation annex/matrix), documented security risk assessment, and incident response planning evidence",
+    "Addresses the cloud dimension: using an IRAP-assessed cloud provider (consuming its assessment report), documenting the shared responsibility split between CSP and agency, and covering data sovereignty/residency considerations",
+    "Demonstrates release-awareness: states or reflects that the ISM is updated quarterly with June 2026 as the current release (e.g., ISM-XXXX control ID format, or an explicit release citation) — no invented control numbers"
+  ]
+}

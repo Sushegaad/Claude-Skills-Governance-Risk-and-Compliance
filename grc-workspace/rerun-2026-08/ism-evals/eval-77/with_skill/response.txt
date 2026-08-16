@@ -1,0 +1,45 @@
+# IRAP Assessment Preparation — First-Time PROTECTED-Level Assessment
+
+*This answer assumes the **ISM June 2026 release** (current as of 15 August 2026). Confirm your assessor is scoping against this edition, not an earlier one, since your first assessment will set the baseline for future re-assessment cycles.*
+
+Since this is your first IRAP assessment, here is what to prepare, what to expect, and what happens afterward.
+
+## 1. Artefacts to prepare before the assessment
+
+Because your system handles PROTECTED information, an IRAP assessment is **mandatory** (not just recommended) and the assessor will expect the full NC + OS + P control set to be addressed. Prepare the following checklist:
+
+- [ ] **Current System Security Plan (SSP)** — must document system boundary, PROTECTED classification, security objectives (CIA ratings), full control selection with applicability justification for NC/OS/P markings, implemented controls with evidence, and any excluded controls with documented risk acceptance
+- [ ] **Network architecture diagrams** — showing zoning/segmentation, gateways, and any cross-domain solutions
+- [ ] **Asset register** — hardware and software inventory
+- [ ] **Risk register** — with current likelihood/impact ratings and treatment plans
+- [ ] **Policy suite** — every security policy referenced in the SSP (access control, incident response, change management, acceptable use, etc.)
+- [ ] **Evidence of implemented controls** — configuration screenshots, hardening checklists, log samples, penetration test / vulnerability scan results
+- [ ] **Incident register** — last 12 months of incidents, even minor ones
+- [ ] **Patch management reports** — demonstrating adherence to SLA timeframes (critical patches: 48 hours internet-facing / 14 days internal; high: 14 days; medium: 30 days)
+- [ ] Since this is a first assessment, you will **not** have a previous IRAP report or POA&M to provide — flag this explicitly to the assessor so they scope a full baseline assessment rather than a delta review
+
+Because you're PROTECTED-level, also confirm before the assessment:
+- Cryptographic products in use are ASD-evaluated/approved (Chapter 10) — Common Criteria evaluated products preferred, FIPS 140-2/3 validated modules required for classified cryptographic operations
+- Log retention is configured for a minimum of 18 months (Chapter 15)
+- Any AI-enabled components in the system have the June 2026 AI application controls addressed — e.g., disabling AI applications' direct access to external public data sources when processing classified data (ISM-2112), human approval gates for risky AI actions (ISM-2113), and behavioural baselining (ISM-2114). Verify current control numbers against the ISM June 2026 changes document before citing them in your SSP.
+
+## 2. What to expect during the assessment
+
+- **Assessor selection:** Confirm your chosen assessor is listed on the ASD IRAP Assessors Register and is independent of the system being assessed (i.e., not someone who built or operates it).
+- **Scope:** The assessor will test all controls applicable to PROTECTED (NC + OS + P markings) — expect this to be broader than an OS-only review, covering physical security, personnel security, cryptography, gateways, and cross-domain controls in addition to the standard hardening/patching/monitoring set.
+- **Method:** Expect a mix of documentation review (SSP, policies, registers), technical testing/validation (configuration review, evidence sampling, possibly vulnerability scanning), and interviews with system owners and technical staff.
+- **Duration:** First-time assessments of a full PROTECTED system typically take longer than re-assessments because there's no prior baseline to work from — build buffer into your quarter-ahead timeline for evidence-gathering, assessor Q&A cycles, and remediation of any quick-fix findings raised mid-assessment.
+- **Findings:** Expect a findings list categorised by risk/severity. Not every finding needs to be fixed before the report issues — some can be tracked as future POA&M items with agreed remediation dates, subject to your Authorising Official's risk tolerance.
+
+## 3. What happens after the IRAP report is issued
+
+1. **IRAP Assessment Report** is delivered — this documents the assessor's findings against each applicable control and an overall risk posture assessment.
+2. **Plan of Action & Milestones (POA&M)** — for every finding not immediately remediated, log it in a POA&M with owner, remediation action, and target date.
+3. **Authorisation to Operate (ATO)** — your Authorising Official reviews the IRAP report, the SSP, and the POA&M, weighs residual risk, and formally signs off. This is a distinct step from the IRAP assessment itself — IRAP does not grant authorisation, it informs it.
+4. **Ongoing monitoring** — after go-live, maintain continuous control monitoring and event logging (Chapter 15).
+5. **Re-assessment cadence** — plan your next IRAP assessment for a maximum of **24 months** from this one, or sooner if you make a significant change (major architecture change, a new classification level, or major new functionality). Start building your evidence trail now (patch reports, incident register, change logs) so the next assessment is a lighter lift than this first one.
+
+## Release-awareness note
+The June 2026 ISM release added 20 new controls and removed ISM-1837 ("password never expires"). If any part of your control implementation or documentation predates June 2026, run a delta check against the current release before your assessment kicks off — assessors will test against the current edition, not the one your original design assumed.
+
+*This is general compliance information, not legal advice. Verify current requirements against the official ISM on cyber.gov.au and confirm assessor scope and methodology directly with your engaged IRAP assessor.*

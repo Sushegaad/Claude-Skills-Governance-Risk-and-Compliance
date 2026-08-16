@@ -1,0 +1,41 @@
+# E-Commerce Chatbot + AI-Generated Product Images — Art. 50 Transparency Obligations
+
+Both features you describe sit in the **limited-risk / Art. 50 transparency** tier (not high-risk) — here is what applies to each, and from when.
+
+## 1. Customer service chatbot — Art. 50(1)
+**Obligation:** As the provider/deployer of the chatbot, you must ensure users are informed that they are interacting with an AI system.
+
+**Exceptions** (where disclosure is not required):
+- It is obvious to a reasonably well-informed user from the context and circumstances that they are talking to an AI (this is a narrow exception — do not rely on it by default for a general customer-service chatbot; err toward disclosure).
+- The system is authorised by law for detection, prevention, investigation, or prosecution of criminal offences (not relevant to your e-commerce use case).
+
+**Format requirements:**
+- Disclosure must be made **at the latest at the first interaction** with the user (e.g., an opening message: "You're chatting with an AI assistant").
+- Must be **clear and distinguishable** — not buried in fine print.
+- Must meet accessibility standards (Directive 2019/882).
+
+## 2. AI-generated product images — Art. 50(2)/(4)
+**Obligation:** As the deployer generating synthetic image content, you must disclose in **machine-readable format** that the content is artificially generated or manipulated, where the images resemble real persons, places, events, or entities such that they would appear authentic.
+
+Two practical points to flag:
+- If your AI-generated product images are stylised/clearly synthetic renders with no claim to depict a real, specific object or scene, the "resembling real persons/places/events" trigger is weaker — but product photography is often designed to look *authentic* (i.e., to look like a real photo of the real product), which is exactly the scenario Art. 50(2) is aimed at. **The safer compliance posture is to treat AI-generated product images as in scope** and apply machine-readable disclosure (e.g., embedded metadata/watermarking indicating AI generation) rather than assume an exemption.
+- **Exceptions to deployer disclosure** exist for: content authorised by law for criminal-offence detection (not applicable here), and artistic/satirical/fictional works with appropriate disclosure that doesn't impair enjoyment (not applicable to product marketing imagery).
+- If any AI-generated **text** describing products is published to inform the public and could be read as factual/informational content, note the separate text-disclosure rule: AI-generated text must be disclosed as such unless it underwent human editorial review with editorial accountability. This is a lower risk for standard product descriptions but worth confirming for any AI-written articles/blog content on the site.
+
+**Format requirements:** machine-readable marking, clear and distinguishable disclosure, first-exposure timing, accessibility-compliant.
+
+## 3. Timing — from when do these apply?
+- **New systems placed on the market:** Art. 50 obligations are **already in force as of 2 August 2026** (confirmed by the Digital Omnibus). As of today, 15 August 2026, if your chatbot or image-generation feature is newly deployed, you must already be compliant.
+- **Pre-existing systems (already on the market before 2 August 2026):** A **grace period until 2 December 2026** applies specifically to the **machine-readable marking requirement** under Art. 50(2). If your chatbot or image tool predates 2 August 2026, you have until 2 December 2026 to implement the machine-readable marking piece — but the basic "inform users they're talking to an AI" disclosure (Art. 50(1)) and other format requirements should already be in place, since that obligation is not covered by the marking-specific grace period.
+- **Regulatory context:** The AI Office published a Code of Practice on Marking and Labelling of AI-generated Content (drafts in Dec 2025 and 5 March 2026, finalisation expected mid-2026) and opened consultation on draft Art. 50 guidelines in May 2026 — no formal implementing act has been adopted yet, so use the CoP and draft guidelines as your best-practice reference for implementing the machine-readable marking mechanism while the final guidance is pending.
+
+## 4. Action checklist
+| Item | Obligation | Deadline |
+|---|---|---|
+| Chatbot: "You're talking to an AI" disclosure at first interaction | Art. 50(1) | Now (in force 2 Aug 2026) |
+| Product images: machine-readable AI-generated marking | Art. 50(2) | Now if new; 2 Dec 2026 if pre-existing |
+| Both: clear, distinguishable, accessible format | Art. 50 format rules | Now |
+| Monitor finalised AI Office marking/labelling CoP and Art. 50 guidelines | — | Ongoing, expected through 2026 |
+
+---
+*General compliance information, not legal advice — verify against official sources and consult qualified counsel for a binding compliance determination.*

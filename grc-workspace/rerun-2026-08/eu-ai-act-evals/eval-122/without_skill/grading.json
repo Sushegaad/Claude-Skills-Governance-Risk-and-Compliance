@@ -1,0 +1,33 @@
+{
+  "eval_id": 122,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies this as a PROHIBITED practice under Art. 5(1)(d): AI systems making risk assessments of natural persons to assess or predict the risk of committing a criminal offence based solely on profiling or on assessing personality traits and characteristics",
+      "passed": true,
+      "evidence": "'No — this system is prohibited under the EU AI Act... Article 5(1)(d)... prohibits... making risk assessments of natural persons in order to assess or predict the risk of a natural person committing a criminal offence, based solely on the profiling of a natural person or on assessing their personality traits and characteristics.'"
+    },
+    {
+      "text": "States the prohibition has applied since 2 February 2025 (prohibitions were the first obligations to take effect)",
+      "passed": false,
+      "evidence": "No mention anywhere in the response of when the Art. 5 prohibition took effect (2 February 2025) or that prohibitions were the first obligations to apply."
+    },
+    {
+      "text": "Explains the carve-out accurately: Art. 5(1)(d) does not cover AI used to SUPPORT a human assessment already based on objective and verifiable facts directly linked to a criminal activity — and assesses whether the described system (personality traits + past behaviour) fits the prohibition (it does, to the extent based on profiling/traits)",
+      "passed": true,
+      "evidence": "'The prohibition does not apply to AI systems used to support the human assessment... where that assessment is already based on objective and verifiable facts directly linked to a criminal activity... Based on the description given... the exception would not apply.'"
+    },
+    {
+      "text": "States penalty exposure for prohibited practices: up to €35M or 7% of worldwide annual turnover (Art. 99(3))",
+      "passed": true,
+      "evidence": "'subject to the Act's most severe penalties: fines of up to €35 million or 7% of total worldwide annual turnover, whichever is higher (Art. 99(3)).'"
+    },
+    {
+      "text": "Advises concretely: do not place on the EU market for this use; discusses redesign options (e.g., objective-facts-based decision support with human assessment) or declining the procurement",
+      "passed": true,
+      "evidence": "'Advise the customer that this specific use case cannot be built or sold as described. If they want a lawful alternative, it would need to be redesigned to support human investigators in assessing a specific, factually-grounded suspected involvement... not a general predictive/profiling risk score.'"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

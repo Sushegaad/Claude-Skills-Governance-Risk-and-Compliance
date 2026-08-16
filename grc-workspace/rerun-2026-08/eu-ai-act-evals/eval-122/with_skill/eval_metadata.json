@@ -1,0 +1,13 @@
+{
+  "eval_id": 122,
+  "eval_name": "predictive-policing-prohibition",
+  "run_type": "with_skill",
+  "prompt": "A national police force wants to procure our AI system that predicts the likelihood of individuals committing future criminal offences based on personality traits and past behaviour. Is this permitted under the EU AI Act?",
+  "assertions": [
+    "Identifies this as a PROHIBITED practice under Art. 5(1)(d): AI systems making risk assessments of natural persons to assess or predict the risk of committing a criminal offence based solely on profiling or on assessing personality traits and characteristics",
+    "States the prohibition has applied since 2 February 2025 (prohibitions were the first obligations to take effect)",
+    "Explains the carve-out accurately: Art. 5(1)(d) does not cover AI used to SUPPORT a human assessment already based on objective and verifiable facts directly linked to a criminal activity — and assesses whether the described system (personality traits + past behaviour) fits the prohibition (it does, to the extent based on profiling/traits)",
+    "States penalty exposure for prohibited practices: up to €35M or 7% of worldwide annual turnover (Art. 99(3))",
+    "Advises concretely: do not place on the EU market for this use; discusses redesign options (e.g., objective-facts-based decision support with human assessment) or declining the procurement"
+  ]
+}

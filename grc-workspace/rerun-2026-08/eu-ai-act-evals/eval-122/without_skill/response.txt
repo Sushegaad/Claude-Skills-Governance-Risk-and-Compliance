@@ -1,0 +1,25 @@
+# Predictive Policing Based on Personality Traits — Not Permitted
+
+## Short answer
+**No — this system is prohibited under the EU AI Act.** It cannot lawfully be placed on the market, put into service, or used in the EU, regardless of who the customer is (including a national police force).
+
+## Legal basis
+Article 5(1)(d) of the EU AI Act prohibits:
+
+> "the placing on the market, the putting into service for this specific purpose, or the use of an AI system for making risk assessments of natural persons in order to assess or predict the risk of a natural person committing a criminal offence, based **solely** on the profiling of a natural person or on assessing their personality traits and characteristics."
+
+Your described system — predicting the likelihood of individuals committing future criminal offences based on **personality traits and past behaviour** — is a textbook match for this prohibition. Profiling based on personality traits/characteristics to forecast future criminal conduct is exactly the practice the Act bans, because it risks generating a stigmatising, self-fulfilling "pre-crime" style assessment that isn't tied to objective, verifiable facts of actual criminal activity.
+
+## The narrow exception
+Article 5(1)(d) includes a carve-out: the prohibition **does not apply** to AI systems used to **support the human assessment** of a person's involvement in a criminal activity, where that assessment is **already based on objective and verifiable facts directly linked to a criminal activity**. In other words:
+- The AI can assist an investigation of a **specific, already-suspected** criminal activity grounded in verifiable facts (e.g., forensic data, evidence linked to a real offence).
+- It **cannot** be used to generate a general risk/propensity score about a person's likelihood of future offending based on traits, demographics, or behavioural profiling absent such concrete factual links.
+
+Based on the description given — predicting likelihood of *future* offences from personality traits and past behaviour, i.e., general risk-scoring/profiling rather than investigation of a specific factually-grounded suspected offence — the exception would **not** apply.
+
+## Consequences
+- Placing such a system on the market or using it constitutes a prohibited AI practice under Article 5, subject to the Act's most severe penalties: fines of up to **€35 million or 7% of total worldwide annual turnover**, whichever is higher (Art. 99(3)).
+- You should not proceed with this procurement/deployment. If the police force's actual need is narrower (e.g., a decision-support tool tied to specific, evidence-based investigations of an already-identified offence), that use case would need to be carefully re-scoped and would likely still be high-risk under Annex III (law enforcement) rather than prohibited — but the system as described to you falls under the Article 5(1)(d) ban.
+
+## Recommendation
+Advise the customer that this specific use case cannot be built or sold as described. If they want a lawful alternative, it would need to be redesigned to support human investigators in assessing a **specific, factually-grounded** suspected involvement in a **particular** criminal activity — not a general predictive/profiling risk score — and even then it would likely be classified as **high-risk** under Annex III, point 6 (law enforcement), triggering the full high-risk obligations (risk management, human oversight, FRIA by the deploying authority, registration, etc.).

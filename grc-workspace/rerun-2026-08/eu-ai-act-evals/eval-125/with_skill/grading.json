@@ -1,0 +1,33 @@
+{
+  "eval_id": 125,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Chatbot: Art. 50(1) requires informing users they are interacting with an AI system, unless obvious to a reasonably well-informed person",
+      "passed": true,
+      "evidence": "'As the provider/deployer of the chatbot, you must ensure users are informed that they are interacting with an AI system... It is obvious to a reasonably well-informed user from the context and circumstances that they are talking to an AI (this is a narrow exception — do not rely on it by default).'"
+    },
+    {
+      "text": "AI-generated images: Art. 50(2) requires providers to ensure outputs are marked in a machine-readable format and detectable as artificially generated",
+      "passed": true,
+      "evidence": "'you must disclose in machine-readable format that the content is artificially generated or manipulated... apply machine-readable disclosure (e.g., embedded metadata/watermarking indicating AI generation).'"
+    },
+    {
+      "text": "Correctly distinguishes provider duties (50(1)-(2)) from deployer duties (50(4) disclosure applies to deep fakes / image, audio or video content depicting real persons or events — and assesses whether ordinary product images trigger it)",
+      "passed": false,
+      "evidence": "The response conflates the two duties rather than distinguishing them: it labels the entire image-marking obligation as 'As the deployer generating synthetic image content, you must disclose in machine-readable format...' under a combined header 'Art. 50(2)/(4)', incorrectly attributing the Art. 50(2) machine-readable marking duty (a PROVIDER obligation that applies broadly, not just to content resembling real persons/events) to 'the deployer' and tying it to the 'resembling real persons, places, events' trigger that actually belongs to the Art. 50(4) deepfake duty. It never clearly separates who owes what under 50(1)-(2) vs 50(4)."
+    },
+    {
+      "text": "States the application date: Art. 50 transparency obligations apply from 2 August 2026 for new systems (with the machine-readable-marking grace period for pre-existing systems until 2 December 2026 under the Digital Omnibus)",
+      "passed": true,
+      "evidence": "'New systems placed on the market: Art. 50 obligations are already in force as of 2 August 2026 (confirmed by the Digital Omnibus)... Pre-existing systems... A grace period until 2 December 2026 applies specifically to the machine-readable marking requirement under Art. 50(2).'"
+    },
+    {
+      "text": "Notes penalty exposure for transparency violations (up to €15M or 3% under Art. 99(4)) and gives practical implementation steps (visible chatbot labelling, metadata/watermarking for generated images)",
+      "passed": false,
+      "evidence": "The response gives clear practical implementation steps (action checklist: chatbot disclosure at first interaction, machine-readable AI-generated marking, clear/distinguishable/accessible format) but never mentions penalty exposure, Art. 99(4), or the €15M/3% figure anywhere in the response — the assertion's penalty-exposure component is entirely unaddressed."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 78,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Covers the core ISM hardening requirements: harden against vendor/ASD guidance (e.g., Microsoft security baselines), remove or disable unneeded services, accounts, and functionality, and maintain a documented standard operating environment",
+      "passed": true,
+      "evidence": "'ASD publishes its own Hardening Microsoft Windows guidance, and many agencies also reference Microsoft's Security Baselines... or the CIS Benchmark', 'Disable or remove unnecessary services, roles, and features', and 'Maintain a documented, version-controlled configuration baseline (Group Policy Objects, security templates, or... Infrastructure-as-Code).'"
+    },
+    {
+      "text": "Includes application control and patching: application control on servers where applicable, and timely patching of the OS and applications with defined timeframes",
+      "passed": true,
+      "evidence": "'Application control' section (WDAC/AppLocker) plus 'critical/extreme risk vulnerabilities patched within 48 hours, other vulnerabilities within two weeks.'"
+    },
+    {
+      "text": "Specifies concrete Windows Server measures (e.g., baseline/GPO configuration, disabling legacy protocols, restricting administrative tooling, local admin management) rather than generic advice",
+      "passed": true,
+      "evidence": "GPO reports via 'gpresult'/RSOP, 'Disable legacy/insecure protocols (e.g., SMBv1, LLMNR, NetBIOS...)', privileged access workstations/jump hosts, NTLM hardening, local admin restriction."
+    },
+    {
+      "text": "Details assessment evidence: exported configuration baselines/GPO reports, compliance-scan results against the baseline, patch status reports, application control policy exports, and change records",
+      "passed": true,
+      "evidence": "Evidence list includes 'Group Policy Objects (GPO) reports', 'Security Compliance / configuration scan reports', 'Patch compliance reports', 'Application control evidence — WDAC/AppLocker policy exports', and 'Change management records.'"
+    },
+    {
+      "text": "Structured per the skill's control-guidance format (purpose → requirement → implementation steps → audit evidence) and cites controls only in valid ISM-XXXX format without inventing numbers",
+      "passed": false,
+      "evidence": "Response uses headings '## What ISM Chapter 13 (System Hardening) generally requires', '## Evidence to collect for an assessment', '## Practical recommendations' — no distinct Purpose or Implementation Steps sections, so it does not follow the required purpose → requirement → implementation steps → audit evidence structure, even though no ISM-XXXX numbers are invented."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

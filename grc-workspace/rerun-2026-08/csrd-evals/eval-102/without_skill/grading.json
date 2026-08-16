@@ -1,0 +1,33 @@
+{
+  "eval_id": 102,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Defines both perspectives correctly: impact materiality (the company's effects on people/environment — inside-out) and financial materiality (sustainability matters creating financial risks/opportunities — outside-in), with a topic material if EITHER test is met",
+      "passed": true,
+      "evidence": "Response defines 'Impact materiality (the \"inside-out\" view)' and 'Financial materiality (the \"outside-in\" view)' correctly, and states 'A topic that is material under just one lens is material for reporting purposes; you don't need both to converge.'"
+    },
+    {
+      "text": "Contrasts frameworks accurately: GRI is impact-materiality-only; TCFD is financial/climate-risk-only; CSRD/ESRS requires both lenses in one assessment",
+      "passed": true,
+      "evidence": "Response states 'GRI ≈ impact materiality only; TCFD ≈ financial materiality only (and climate-specific); ESRS double materiality = both, across all sustainability topics.'"
+    },
+    {
+      "text": "Walks through a real DMA process: context and value-chain mapping, identification of impacts/risks/opportunities, scoring (severity via scale/scope/irremediability, plus likelihood; financial magnitude), thresholds, stakeholder engagement, and governance validation",
+      "passed": true,
+      "evidence": "9-step process covers business/value-chain context (Step 1), stakeholder engagement (Step 3), impact scoring 'scale, scope, irremediability' plus likelihood against a threshold (Step 4), financial materiality 'magnitude and likelihood' against a threshold (Step 5), and governance/documentation validation (Step 8)."
+    },
+    {
+      "text": "Notes documentation/assurance readiness: the DMA methodology and conclusions must be documented because they are subject to assurance and anchor which ESRS topics are reported",
+      "passed": true,
+      "evidence": "Step 8 states: 'Document the methodology, thresholds, and stakeholder input; have it reviewed and approved...ensure it can withstand audit/assurance scrutiny,' and the closing paragraph notes the DMA 'is the backbone that determines the rest of your CSRD report's content.'"
+    },
+    {
+      "text": "Correctly states that the July 2026 revised ESRS simplify datapoints but keep the double-materiality assessment as the cornerstone — the DMA obligation did not go away",
+      "passed": false,
+      "evidence": "No mention anywhere in the response of the July 2026 revised ESRS, datapoint simplification, or the DMA's status under the revised standards."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

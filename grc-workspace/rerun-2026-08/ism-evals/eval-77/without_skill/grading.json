@@ -1,0 +1,33 @@
+{
+  "eval_id": 77,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Frames IRAP correctly: ASD-endorsed independent assessors who assess the implementation and effectiveness of ISM controls — an IRAP assessment informs but does NOT itself constitute authorisation; the agency's Authorising Official still makes the risk-acceptance decision",
+      "passed": false,
+      "evidence": "Calls IRAP an 'ACSC-endorsed program' (not ASD-endorsed) and, while it correctly states assessors 'do not grant authorisation themselves', it attributes the actual authorisation decision to 'the system's accountable authority (or delegate — often the agency CISO or Chief Information Officer)' rather than the Authorising Official — a specific misattribution."
+    },
+    {
+      "text": "Lists the right artefacts: System Security Plan plus its control-implementation annex/matrix, security risk assessment/management documentation, architecture and data-flow documentation, and supporting policies/procedures with implementation evidence",
+      "passed": true,
+      "evidence": "Lists SSP, 'Security Risk Management Plan (SRMP)', SOPs, 'Network and system architecture diagrams', asset register/config baselines, and multiple categories of implementation evidence (scan results, access matrices, logging config)."
+    },
+    {
+      "text": "Sets process expectations: scoping, documentation review, then control-effectiveness validation (interviews, configuration review, testing) — evidence of operation, not just documentation",
+      "passed": true,
+      "evidence": "Covers 'Scoping/kick-off meeting', 'Documentation review', 'Technical testing' (config reviews, vuln scanning, walkthroughs), and 'Interviews... to validate that documented processes are actually followed in practice' — explicitly captures evidence-of-operation."
+    },
+    {
+      "text": "Explains the aftermath: an assessment report with control effectiveness findings and residual risks → agency remediation planning → Authorising Official reviews and makes the authorisation decision; periodic reassessment thereafter",
+      "passed": false,
+      "evidence": "Report/remediation/reassessment steps are present, but the authorisation step again names 'the system's accountable authority (or delegate — often the agency CISO or Chief Information Officer)' rather than the Authorising Official, contradicting the required framing."
+    },
+    {
+      "text": "PROTECTED-appropriate: applies PROTECTED-marked controls and classification-appropriate handling throughout (not OFFICIAL-level shortcuts)",
+      "passed": true,
+      "evidence": "Explicitly ties advice to PROTECTED throughout: 'PROTECTED systems are generally expected to be at a higher Essential Eight maturity level', personnel security clearances, and consistent 'PROTECTED-level system' framing, though it lacks PROTECTED-specific cryptography/gateway/cross-domain detail."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

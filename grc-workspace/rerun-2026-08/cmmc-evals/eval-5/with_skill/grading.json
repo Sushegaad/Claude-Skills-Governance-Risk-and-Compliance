@@ -1,0 +1,33 @@
+{
+  "eval_id": 5,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the flow-down rule: DFARS 252.204-7021 flows down to subcontractors at all tiers where they process, store, or transmit FCI/CUI; subs handling CUI need Level 2, subs with FCI only need Level 1",
+      "passed": true,
+      "evidence": "\"Include CMMC requirements in all subcontracts, at all tiers, where the subcontractor processes, stores, or transmits FCI or CUI. Sub-subcontractors are not exempt.\" combined with \"FCI-only subcontractors need only Level 1 (17 practices, annual self-assessment)... Subcontractors who process, store, or transmit CUI need Level 2 (110 practices, SPRS submission, annual affirmation...)\""
+    },
+    {
+      "text": "States the prime's duty: verify subcontractor CMMC status (via SPRS or certificate evidence) BEFORE awarding/continuing subcontract performance involving CUI",
+      "passed": true,
+      "evidence": "\"Verify subcontractor certification/assessment status before flowing FCI/CUI to them, or continuing to do so — check SPRS and, where applicable, the CMMC-AB registry.\""
+    },
+    {
+      "text": "Gives concrete remediation options: stop CUI flow to the uncertified subs (rescope what they receive), move them to FCI-only scope, sponsor an enclave approach, or replace them — with interim risk documentation",
+      "passed": true,
+      "evidence": "Lists all four: \"1. Stop the CUI flow to both subcontractors immediately...\", \"2. Rescope the subcontractor to FCI-only work...\", \"3. Sponsor an enclave: bring the sub inside a prime-controlled, already-certified environment...\", \"4. Replace the subcontractor before the next option period...\" plus a documentation section: \"Document the interim risk-acceptance decision for whichever option (1–4 above) you choose for each sub, including who approved it and why.\""
+    },
+    {
+      "text": "Notes the July 13, 2026 interim state accurately: with Phase 2 suspended, subs cannot currently be required to hold C3PAO certification (self-assessment designations only), C3PAO requirements are being removed from solicitations/contracts at next modification — but 7012 safeguarding, 7019/7020 SPRS obligations, and 800-171 flow-down protections remain fully in force",
+      "passed": true,
+      "evidence": "\"CMMC Phase 2 (C3PAO third-party assessment requirements) was suspended by DoD on July 13, 2026, pending a CMMC Reform Task Force review... Currently, contracting officers can only designate Level 1 (Self) or Level 2 (Self) — not Level 2 (C3PAO) or Level 3 — and C3PAO/DIBCAC requirements are being removed from solicitations and existing contracts at the next option/modification... DFARS 252.204-7012/7019/7020/7021 and the underlying NIST SP 800-171 requirements are unchanged.\""
+    },
+    {
+      "text": "Warns about misrepresentation risk (False Claims Act exposure for affirming compliance while knowingly flowing CUI to non-compliant subs) and advises documenting corrective action",
+      "passed": true,
+      "evidence": "\"Continuing to flow CUI to a subcontractor you know is non-compliant — while affirming your own compliance in SPRS — creates False Claims Act exposure for your firm as the prime, not just a contractual risk.\" Followed by a dedicated documentation section advising to record decisions, approvals, and verification steps."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

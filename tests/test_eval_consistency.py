@@ -456,13 +456,13 @@ _WS = REPO_ROOT / "grc-workspace"
 
 _SKILL_GRADING_DIR: dict[str, Path] = {
     # ── July 2026 re-run with primary-source assertions (most recent) ────────
-    "fedramp":          _WS / "rerun-2026-07" / "fedramp-evals",
+    "fedramp":          _WS / "rerun-2026-08" / "fedramp-evals",
     "swift-csp":        _WS / "rerun-2026-07" / "swift-csp-evals",
     "nis2":             _WS / "rerun-2026-07b" / "nis2-evals",
     "lgpd":             _WS / "rerun-2026-07" / "lgpd-evals",
     # ── iteration-2 (previous run) ───────────────────────────────────────────
     "ccpa":             _WS / "rerun-2026-07c" / "ccpa-evals-iter2",
-    "eu-ai-act":        _WS / "rerun-2026-07b" / "eu-ai-act-evals",
+    "eu-ai-act":        _WS / "rerun-2026-08" / "eu-ai-act-evals",
     "iso27701":         _WS / "iteration-2" / "iso27701",
     # ── iteration-1 (skill-specific subdirectory) ────────────────────────────
     "gdpr-compliance":  _WS / "iteration-1" / "gdpr-compliance",
@@ -475,12 +475,12 @@ _SKILL_GRADING_DIR: dict[str, Path] = {
     "iso42001":         _WS / "iteration-1" / "iso42001",
     "dora":             _WS / "iteration-1" / "dora",
     "dpdpa":            _WS / "iteration-1" / "dpdpa",
-    "cmmc":             _WS / "rerun-2026-07c" / "cmmc-evals",
+    "cmmc":             _WS / "rerun-2026-08" / "cmmc-evals",
     "nist-ai-rmf":      _WS / "rerun-2026-07c" / "nist-ai-rmf-evals",
-    "ism":              _WS / "iteration-1" / "ism",
+    "ism":              _WS / "rerun-2026-08" / "ism-evals-iter2",
     # ── flat eval directories in iteration-1 root (identified by prefix) ─────
     "itar":             _WS / "iteration-1",   # eval-91..95
-    "csrd":             _WS / "iteration-1",   # eval-101..105
+    "csrd":             _WS / "rerun-2026-08" / "csrd-evals",
     "cis-controls":     _WS / "iteration-1",   # eval-106..110
     # ── separate named eval directories ──────────────────────────────────────
     "ear":              _WS / "ear-evals",

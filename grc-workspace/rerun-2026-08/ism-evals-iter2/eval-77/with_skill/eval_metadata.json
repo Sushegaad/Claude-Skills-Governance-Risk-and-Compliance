@@ -1,0 +1,13 @@
+{
+  "eval_id": 77,
+  "eval_name": "irap-assessment-prep",
+  "run_type": "with_skill",
+  "prompt": "Our agency is preparing for an IRAP assessment of our PROTECTED-level system next quarter. What artefacts do we need to prepare, what should we expect during the assessment, and what happens after the IRAP report is issued? We have not had an IRAP assessment before.",
+  "assertions": [
+    "Frames IRAP correctly: ASD-endorsed independent assessors who assess the implementation and effectiveness of ISM controls — an IRAP assessment informs but does NOT itself constitute authorisation; the agency's Authorising Official still makes the risk-acceptance decision",
+    "Lists the right artefacts: System Security Plan plus its control-implementation annex/matrix, security risk assessment/management documentation, architecture and data-flow documentation, and supporting policies/procedures with implementation evidence",
+    "Sets process expectations: scoping, documentation review, then control-effectiveness validation (interviews, configuration review, testing) — evidence of operation, not just documentation",
+    "Explains the aftermath: an assessment report with control effectiveness findings and residual risks → agency remediation planning → Authorising Official reviews and makes the authorisation decision; periodic reassessment thereafter",
+    "PROTECTED-appropriate: applies PROTECTED-marked controls and classification-appropriate handling throughout (not OFFICIAL-level shortcuts)"
+  ]
+}

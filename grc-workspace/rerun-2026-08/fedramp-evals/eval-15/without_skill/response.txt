@@ -1,0 +1,69 @@
+# FedRAMP Vulnerability Remediation Timeframes and Writing a Proper POA&M Entry
+
+## FedRAMP Remediation Timeframes
+
+FedRAMP requires vulnerabilities identified through scanning (or other means, such as penetration testing) to be remediated within specific timeframes based on severity, counted from the date the vulnerability is **detected** (not discovered by the vendor separately, but per the official scan/report date):
+
+| Severity | Remediation Timeframe |
+|---|---|
+| **Critical** | Within **15 days** |
+| **High** | Within **30 days** |
+| **Moderate/Medium** | Within **90 days** |
+| **Low** | Typically tracked but with more flexible timelines; often expected to be remediated within a reasonable operational timeframe, though FedRAMP has historically focused mandatory SLA enforcement on Critical/High/Moderate. Confirm current guidance, as Low-severity handling expectations can vary by agency/ConMon requirements. |
+
+**Important notes:**
+- These clocks generally start from the date of **detection** (i.e., the scan date that identified the vulnerability), not the date the report is delivered or reviewed internally.
+- If a finding cannot be remediated within the required timeframe, it must be documented as an open POA&M item with a justified, risk-based extended timeline and appropriate interim mitigations — simply missing the deadline without documentation is a compliance failure in itself.
+- Repeated or excessive **overdue** POA&M items (especially Critical/High findings past their remediation deadline) are a common cause of ConMon escalations, authorization risk, and can jeopardize an agency's confidence in the CSP's security program.
+- Deviation requests (sometimes called risk adjustments or false positive determinations) may be submitted when a finding is not exploitable in context, but these require justification and are subject to review/approval — they are not a default extension mechanism.
+
+## How to Write a Proper POA&M Entry
+
+A POA&M entry should be complete enough that an outside reviewer (agency ISSO, 3PAO, or FedRAMP PMO) can understand the risk, the plan, and the timeline without needing to ask follow-up questions. Standard FedRAMP POA&M template fields typically include:
+
+1. **POA&M ID** — Unique identifier for tracking.
+2. **Controls** — The NIST SP 800-53 control(s) affected (e.g., RA-5 Vulnerability Scanning, SI-2 Flaw Remediation).
+3. **Weakness/Vulnerability Description** — Clear, specific description of the finding (e.g., CVE identifier, affected asset, the specific vulnerability, and how it was identified — scan tool name and scan date).
+4. **Source/Identifying Party** — How the weakness was found (e.g., automated vulnerability scan, penetration test, 3PAO assessment, internal audit).
+5. **Asset Identifier** — The specific system component, host, IP address, or hostname affected.
+6. **Risk Rating/Severity** — Critical, High, Moderate, or Low, typically based on CVSS score mapped to FedRAMP severity categories.
+7. **Adjusted Risk Rating (if applicable)** — If the CSP has performed a risk adjustment (e.g., compensating controls reduce actual exploitability), this should be documented with justification, distinct from the raw scanner-assigned severity.
+8. **Mitigating Factors / Compensating Controls** — Any factors that reduce risk while the finding remains open (e.g., the vulnerable service is not internet-facing, WAF rules block the attack vector, network segmentation limits blast radius).
+9. **Remediation Plan** — Specific, actionable steps being taken to resolve the finding (e.g., "Apply vendor patch X.Y.Z to affected hosts" or "Upgrade PostgreSQL to version N to resolve CVE-XXXX-XXXXX").
+10. **Resources Required** — What's needed to complete remediation (e.g., maintenance window, vendor patch availability, budget/staffing).
+11. **Scheduled Completion Date** — The original planned remediation date, calculated per the required SLA (15/30/90 days from detection).
+12. **Milestones** — Interim steps/dates showing progress (e.g., "Patch tested in staging — [date]," "Patch scheduled for production deployment — [date]").
+13. **Actual Completion Date** — Filled in once remediated, along with evidence (e.g., rescan results showing the finding cleared).
+14. **Status** — Open, In Progress, Completed, Risk Accepted/Operationally Required, or Deviation Request approved.
+15. **Original Detection Date** — Critical for calculating whether the item is on-time or overdue against the 15/30/90-day SLA.
+16. **Vendor Dependency (if applicable)** — Note if remediation depends on a third-party vendor patch, and reference any vendor communication/timeline.
+
+### Example POA&M Entry (Illustrative)
+
+> **POA&M ID:** POA-2026-0147
+> **Control(s):** SI-2, RA-5
+> **Weakness Description:** Critical vulnerability (CVE-2026-XXXXX, CVSS 9.8) identified on host `app-prod-03` (10.x.x.x) via authenticated vulnerability scan (Tenable Nessus, scan date: 2026-08-01) — outdated OpenSSL library vulnerable to remote code execution.
+> **Source:** Monthly authenticated vulnerability scan
+> **Asset:** app-prod-03 / Application Tier (within system boundary)
+> **Original Risk Rating:** Critical
+> **Adjusted Risk Rating:** N/A (no compensating controls sufficient to downgrade)
+> **Mitigating Factors:** Host is behind WAF; outbound rules restrict lateral movement; not yet observed exploited in the wild per vendor advisory.
+> **Remediation Plan:** Upgrade OpenSSL to patched version 3.x.x on all affected hosts via configuration management pipeline; validate via rescan.
+> **Resources Required:** Standard maintenance window; no additional budget.
+> **Scheduled Completion Date:** 2026-08-16 (15 calendar days from 2026-08-01 detection date, per FedRAMP Critical SLA)
+> **Milestones:** Patch validated in staging — 2026-08-08; Production deployment — 2026-08-14; Rescan confirmation — 2026-08-16.
+> **Status:** In Progress
+> **Detection Date:** 2026-08-01
+
+### Best Practices for Managing This Specific POA&M Item (Critical Findings Not Remediated in Time)
+
+Since your item specifically flags **Critical vulnerabilities not remediated within required timeframes**, treat this as a process failure, not just a technical one:
+
+1. **Root-cause the SLA miss** — was it a patch-availability issue, a testing/change-management bottleneck, resource constraint, or a scanning/tracking gap where findings weren't triaged promptly? Document this in your remediation narrative, since agencies and 3PAOs will ask.
+2. **Update the POA&M immediately** with a revised, realistic completion date and clear milestones — don't leave it silently overdue.
+3. **Document compensating controls** in place while the item remains open, to demonstrate the residual risk is being actively managed.
+4. **Review your vulnerability management process** (SI-2, RA-5 control implementation) — an ongoing pattern of missed Critical/High SLAs often triggers deeper agency scrutiny of your overall vulnerability management program, potentially including corrective action plans beyond the individual POA&M item.
+5. **Communicate proactively** with your Authorizing Official/ISSO rather than waiting for them to flag the overdue item — this is generally viewed favorably compared to being caught by ConMon reporting.
+
+## Bottom Line
+FedRAMP requires Critical vulnerabilities remediated within **15 days**, High within **30 days**, and Moderate within **90 days** of detection. A proper POA&M entry documents the weakness, affected asset, risk rating, mitigating factors, a specific remediation plan with milestones, and both scheduled and actual completion dates — and for a Critical item that has already missed its SLA, you should also document root cause and compensating controls to demonstrate the risk is being actively managed while remediation is completed.

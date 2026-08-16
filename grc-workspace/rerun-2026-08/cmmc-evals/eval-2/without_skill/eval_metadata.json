@@ -1,0 +1,13 @@
+{
+  "eval_id": 2,
+  "eval_name": "level2-gap-assessment",
+  "run_type": "without_skill",
+  "prompt": "Perform a CMMC Level 2 gap assessment. Our current state: MFA only on cloud email; no FIPS-validated encryption for CUI at rest; SSP last updated in 2022; incident response plan exists but never tested; flat network with CUI on shared drives; annual security awareness training in place; background screening for all staff. Rate the relevant practice areas and give us a prioritised remediation plan with SPRS score impact.",
+  "assertions": [
+    "Flags MFA scope gap against IA.L2-3.5.3 (MFA required for local and network access to privileged accounts and network access to non-privileged accounts — cloud email alone is insufficient)",
+    "Flags FIPS-validated cryptography gap (SC.L2-3.13.11 requires FIPS-validated cryptography to protect CUI confidentiality) and the flat-network/shared-drive state against scoping and SC.L2-3.13.1/AC.L2-3.1.3 (boundary protection / control CUI flow), recommending segmentation or an enclave",
+    "Flags untested IR plan against IR.L2-3.6.3 (test incident response capability) and the stale SSP against CA.L2-3.12.4 (SSP must be current)",
+    "Correctly credits compliant items (awareness training AT.L2-3.2.1/.2; personnel screening PS.L2-3.9.1) instead of marking everything deficient",
+    "Explains SPRS scoring impact using the DoD methodology: score starts from 110 with weighted deductions (5/3/1 points; MFA and FIPS crypto are 5-point/partial-credit items), and prioritises remediation by point value and POA&M eligibility"
+  ]
+}

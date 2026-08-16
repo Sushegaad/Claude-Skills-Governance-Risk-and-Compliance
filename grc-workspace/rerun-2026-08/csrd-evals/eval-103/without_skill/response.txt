@@ -1,0 +1,64 @@
+# What to Disclose: E1, S1, and G1 Material Topics
+
+With Climate Change (E1), Own Workforce (S1), and Business Conduct (G1) determined material, your ESRS-based sustainability statement needs to cover three layers: (1) the mandatory cross-cutting disclosures that apply regardless of materiality outcome, (2) the full disclosure requirements under each of your three material topical standards, and (3) a brief explanation of why the other topical standards were screened out as non-material.
+
+## 1. Mandatory cross-cutting disclosures (ESRS 1 and ESRS 2)
+
+ESRS 2 (General Disclosures) applies in full regardless of your materiality results:
+- **BP-1 / BP-2** — Basis of preparation (scope of consolidation, value chain estimation approach, etc.)
+- **GOV-1 to GOV-5** — Governance: role of administrative/management/supervisory bodies, sustainability expertise, integration into incentive schemes, risk management and internal controls
+- **SBM-1 to SBM-3** — Strategy and business model: market position, strategy, stakeholders, material impacts/risks/opportunities and their interaction with strategy
+- **IRO-1 / IRO-2** — Description of the process to identify and assess material impacts, risks, and opportunities (your double materiality process), and the resulting list of material topics/disclosure requirements
+
+ESRS 1 sets out the general reporting principles (qualitative characteristics, value chain boundaries, time horizons, use of estimates) but doesn't itself require specific disclosures.
+
+## 2. ESRS E1 — Climate Change
+
+- **E1-1** — Transition plan for climate change mitigation (and whether/how it's compatible with limiting warming to 1.5°C)
+- **E1-2** — Policies related to climate change mitigation and adaptation
+- **E1-3** — Actions and resources in relation to climate policies
+- **E1-4** — Targets related to climate change mitigation and adaptation
+- **E1-5** — Energy consumption and mix
+- **E1-6** — Gross Scopes 1, 2, and 3 GHG emissions, and total GHG emissions
+- **E1-7** — GHG removals and mitigation projects financed through carbon credits
+- **E1-8** — Internal carbon pricing
+- **E1-9** — Anticipated financial effects from material physical and transition risks and potential climate-related opportunities (subject to phase-in relief in the first years for some companies)
+
+Note: several E1 datapoints (notably certain GHG figures and E1-9) carry transitional reliefs/phase-in provisions in the first year(s) of reporting — check which apply to you based on your reporting wave.
+
+## 3. ESRS S1 — Own Workforce
+
+- **S1-1** — Policies related to own workforce
+- **S1-2** — Processes for engaging with own workers and workers' representatives about impacts
+- **S1-3** — Processes to remediate negative impacts and channels for workers to raise concerns
+- **S1-4** — Taking action on material impacts, and approach to mitigating material risks/pursuing opportunities, with effectiveness tracking
+- **S1-5** — Targets related to managing material impacts, risks, and opportunities
+- **S1-6** — Characteristics of employees (headcount by gender, country, contract type, etc.)
+- **S1-7** — Characteristics of non-employee workers in own workforce
+- **S1-8** — Collective bargaining coverage and social dialogue
+- **S1-9** — Diversity metrics (e.g., gender at management levels, age distribution)
+- **S1-10** — Adequate wages
+- **S1-11** — Social protection
+- **S1-12** — Persons with disabilities
+- **S1-13** — Training and skills development metrics
+- **S1-14** — Health and safety metrics (fatalities, recordable incidents, etc.)
+- **S1-15** — Work-life balance metrics (e.g., family leave)
+- **S1-16** — Compensation metrics (pay gap, CEO pay ratio)
+- **S1-17** — Incidents, complaints, and severe human rights impacts
+
+## 4. ESRS G1 — Business Conduct
+
+- **G1-1** — Corporate culture and business conduct policies (incl. anti-corruption/anti-bribery, whistleblowing, protection of whistleblowers)
+- **G1-2** — Management of relationships with suppliers, including payment practices
+- **G1-3** — Prevention and detection of corruption and bribery, including training
+- **G1-4** — Confirmed incidents of corruption or bribery
+- **G1-5** — Political influence and lobbying activities, including public affairs and any political contributions
+- **G1-6** — Payment practices, particularly regarding late payments to SMEs
+
+## 5. What you don't need to fully disclose
+
+For the ESRS topics your double materiality assessment found non-material (e.g., Pollution [E2], Water and Marine Resources [E3], Biodiversity and Ecosystems [E4], Resource Use and Circular Economy [E5], Workers in the Value Chain [S2], Affected Communities [S3], Consumers and End-Users [S4]), you don't need to apply the full disclosure requirements — but you do need a brief explanation of the conclusion that they're not material, typically as part of your IRO-2 disclosure. Also, if a specific topical standard is material, keep in mind ESRS still lets you omit individual datapoints within it if you conclude and justify that a particular datapoint is not material — with the exception of certain items ESRS treats as always mandatory once the topic itself is material.
+
+## 6. Value chain and assurance reminders
+
+For all three material topics, ESRS expects you to consider your value chain (not just your own operations) where relevant — e.g., Scope 3 emissions under E1, or supply-chain elements touching S1/G1. Your disclosures will also be subject to external limited assurance (moving toward reasonable assurance over time), so build in data quality controls and an audit trail from the outset.

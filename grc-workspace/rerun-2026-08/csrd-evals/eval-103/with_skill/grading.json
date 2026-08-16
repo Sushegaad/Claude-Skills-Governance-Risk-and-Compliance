@@ -1,0 +1,33 @@
+{
+  "eval_id": 103,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States that ESRS 2 general disclosures (governance, strategy, IRO management, metrics & targets) are mandatory for all reporters regardless of the DMA outcome, on top of the material topical standards",
+      "passed": true,
+      "evidence": "Response states: 'ESRS 2 (General Disclosures) is always mandatory for every in-scope company regardless of DMA outcome — it cannot be reduced or omitted, even for topics found non-material elsewhere,' listing GOV-1 to GOV-5, SBM-1 to SBM-3, IRO-1."
+    },
+    {
+      "text": "Summarises the right content per topic: E1 — transition plan, Scope 1/2/3 GHG emissions, targets, energy; S1 — own-workforce policies, processes, and workforce metrics; G1 — business-conduct policies including anti-corruption/anti-bribery",
+      "passed": true,
+      "evidence": "Covers E1-1 transition plan, E1-4 targets, E1-5 energy, E1-6 Scope 1/2/3 GHG; S1-1 through S1-16 policies/processes/metrics; G1-1 'anti-corruption/anti-bribery policy' through G1-6."
+    },
+    {
+      "text": "Asks or states the reporting-basis question: current ESRS (2023) vs revised ESRS (2026) — revised standards apply for financial years beginning January 1, 2027, with FY2026 early adoption available only once the July 3, 2026 delegated act completes scrutiny and enters into force (expected Q4 2026)",
+      "passed": true,
+      "evidence": "Response states: 'confirm whether you're reporting on the current ESRS (2023, Commission Delegated Regulation (EU) 2023/2772) or the revised, simplified ESRS adopted 3 July 2026 (currently in Parliament/Council scrutiny, expected in force Q4 2026, mandatory for financial years beginning 1 January 2027, with FY2026 early adoption only once the delegated act formally enters into force).'"
+    },
+    {
+      "text": "Mentions the practical effect of the revision: roughly 61% fewer mandatory datapoints under the revised ESRS, so the disclosure inventory should be built against the basis actually used",
+      "passed": true,
+      "evidence": "Response states: 'the revised ESRS cut mandatory datapoints by roughly 61%, so if you're targeting FY2027+, some of these will be streamlined or dropped.'"
+    },
+    {
+      "text": "Covers reporting mechanics: disclosures sit in the management report, subject to limited assurance, with digital (ESEF/XBRL) tagging",
+      "passed": true,
+      "evidence": "Cross-cutting section states: 'Location: disclosures go in a dedicated section of the management report (Accounting Directive Art. 19a)... Digital tagging: all quantitative datapoints must be tagged in XBRL/iXBRL under the ESEF taxonomy... Assurance: limited assurance required from your first reporting year (ISAE 3000 Revised standard).'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

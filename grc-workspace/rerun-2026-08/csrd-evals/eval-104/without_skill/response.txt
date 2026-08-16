@@ -1,0 +1,38 @@
+# Transitioning from GRI + TCFD to CSRD/ESRS
+
+The honest answer: this is a meaningful undertaking — typically described by companies going through it as a **6–18 month, cross-functional project** — but you are starting from a much better position than a company with no prior sustainability reporting. GRI gives you a strong impact-reporting foundation, and TCFD gives you a strong climate-financial foundation. The work is mostly about combining, deepening, and formalizing what you already do, not starting from zero.
+
+## Where you already have good overlap
+
+- **GRI → ESRS impact side:** ESRS's impact materiality concept and many topical disclosures (workforce, business conduct, environmental topics) are structurally close to GRI's topic-based, impact-oriented disclosures. Companies with mature GRI reporting typically find 60–70%+ conceptual overlap on the "impact" half of double materiality, and can often reuse existing data collection processes and stakeholder engagement work.
+- **TCFD → ESRS E1:** ESRS E1 (Climate Change) explicitly adopts TCFD's four-pillar structure (governance, strategy, risk management, metrics and targets), so your existing TCFD scenario analysis, climate governance disclosures, and Scope 1/2/3 emissions reporting map directly into E1's requirements with some restructuring and additional granularity.
+
+## Where the gaps typically show up
+
+1. **Double materiality, not single materiality.** GRI is impact-only; TCFD is financial-only. ESRS requires a unified process assessing both, run through common thresholds and combined into one materiality determination that formally supports your entire disclosure scope. This is usually the single biggest new undertaking — expect to build (or significantly formalize) an IRO (impacts, risks, opportunities) assessment process, including stakeholder engagement, that didn't exist in this combined form before.
+
+2. **Prescriptiveness and granularity of datapoints.** ESRS is far more standardized and prescriptive than GRI's flexible topic-by-topic approach — it specifies over a thousand potential datapoints across the full standard set, many with defined units, breakdowns (e.g., by gender, country, employee vs. non-employee), and specific calculation methodologies. Expect gaps in data granularity even where you already report the "same" topic under GRI.
+
+3. **Value chain scope.** ESRS pushes disclosure obligations upstream and downstream more explicitly than most GRI/TCFD reports do in practice — e.g., Scope 3 emissions data quality, workers in the value chain (a topic GRI touches but ESRS treats with a dedicated standard, S2), and supplier-related business conduct disclosures. Value chain data collection is often the largest practical gap.
+
+4. **External assurance.** CSRD mandates external assurance on the sustainability statement from the first year of application (starting at limited assurance, with an EU roadmap toward reasonable assurance later). Voluntary GRI/TCFD reports are often unassured or only lightly assured. You'll need audit-ready evidence trails, defined internal controls over sustainability data (similar in spirit to internal controls over financial reporting), and early engagement with your assurance provider.
+
+5. **Legal integration and liability.** Unlike a standalone GRI or TCFD report, the CSRD sustainability statement is a mandatory part of the statutory management report, filed alongside the financial statements, subject to the same governance sign-off and (in most member states) director liability regime. This changes how the report needs to be reviewed, approved, and controlled internally.
+
+6. **Digital tagging (XBRL/ESEF).** The sustainability statement must be tagged in a machine-readable format as part of the annual financial filing — a new technical/IT workstream most voluntary reporters haven't had to handle.
+
+7. **Governance and strategy disclosures (ESRS 2 GOV/SBM series).** ESRS requires more explicit disclosure of how sustainability is embedded in governance (board oversight, expertise, incentive-linkage) and strategy (resilience analysis, business model description tied to material IROs) than typical GRI or TCFD governance sections.
+
+8. **EU Taxonomy alignment (if applicable).** If you're also in scope for EU Taxonomy reporting, you'll need to cross-reference taxonomy-eligible/aligned revenue, capex, and opex figures within the same report — an additional layer GRI/TCFD don't require.
+
+9. **Phase-in reliefs and sector standards.** Some ESRS datapoints (e.g., certain Scope 3 items, anticipated financial effects) have transitional reliefs depending on your company size and reporting wave; sector-specific ESRS standards are also being phased in and may eventually add requirements beyond the generic set you'd start with.
+
+## Practical next steps
+
+1. Run a formal **gap assessment**: map your current GRI content index and TCFD disclosures against the full ESRS datapoint list to see exactly what you already have, what needs deepening, and what's net-new.
+2. Build or formalize your **double materiality assessment process** as the first deliverable — it determines your final disclosure scope.
+3. Stand up **value chain data collection** (especially Scope 3 and workforce-in-value-chain data) early, since it typically has the longest lead time.
+4. Engage your **auditor/assurance provider** early to align on evidence requirements and internal controls.
+5. Plan for the **digital tagging/XBRL** requirement as part of your reporting technology stack.
+
+Given how much the CSRD/ESRS implementation landscape (timelines, thresholds, and even some disclosure requirements) has been actively revised through the EU's recent simplification efforts, I'd recommend validating your exact reporting wave and applicable transitional reliefs against the current, finalized regulatory texts before finalizing your project plan.

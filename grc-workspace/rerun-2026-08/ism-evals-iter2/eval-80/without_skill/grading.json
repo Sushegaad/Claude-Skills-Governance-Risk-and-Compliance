@@ -1,0 +1,33 @@
+{
+  "eval_id": 80,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Explains the obligation mechanism: the ISM applies to the provider contractually — the provider implements ISM controls appropriate to the classification of the data handled, and the customer agency remains the authorising party",
+      "passed": true,
+      "evidence": "'the agency remains ultimately accountable for its own security posture (including the security of any government data you hold or process)' and 'Contractual flow-down of ISM requirements' — conveys the agency retains ownership of the authorisation decision, though the response never uses the terms 'Authorising Official' or 'ATO.'"
+    },
+    {
+      "text": "Answers the IRAP question correctly: yes in practice — commercial cloud providers serving government undergo IRAP assessments (whose reports agencies consume for their authorisation decisions); private-sector status does not exempt the provider",
+      "passed": false,
+      "evidence": "The response is inconsistent with the required mechanism: it presents agencies commissioning a fresh assessment as an equally common path ('agencies routinely require... commission and fund an IRAP assessment as part of onboarding' and 'sometimes the agency requires you to fund and commission your own IRAP assessment... other times the agency itself commissions an assessment of the combined system') rather than clearly stating that agencies consume the provider's existing IRAP report."
+    },
+    {
+      "text": "Identifies the critical cloud control areas: tenant isolation, ASD-approved cryptography for data in transit (noting the June 2026 expansion to all data-in-transit scenarios) and at rest, access control with MFA, event logging/monitoring accessible to the agency, and personnel security",
+      "passed": true,
+      "evidence": "'Data segregation/multi-tenancy controls', 'Encryption — data encrypted at rest and in transit using ASD-approved cryptographic algorithms', 'Identity and access management — strong authentication (MFA)', 'Logging, monitoring, and auditability... made available to the agency', and personnel security/clearance requirements. Covers all five areas, though it does not flag the June 2026 crypto-scope expansion."
+    },
+    {
+      "text": "Requires a documented shared-responsibility matrix (which ISM controls the provider vs the agency owns) and contractual security terms (incident notification to the agency, evidence/assurance provision, right to audit)",
+      "passed": true,
+      "evidence": "'Shared responsibility model — ...they will expect you to clearly document where your responsibility ends and theirs begins', 'Right to audit / assurance evidence', and 'Incident notification obligations — you will likely be contractually required to notify the agency... within a defined timeframe.'"
+    },
+    {
+      "text": "Addresses data sovereignty/residency and supply-chain transparency (subcontractors, support locations) as agency-facing obligations",
+      "passed": true,
+      "evidence": "'Data sovereignty controls — technical and administrative controls ensuring data doesn't leave approved jurisdictions' and 'Supply chain and subcontractor assurance — if you use your own subcontractors or underlying infrastructure providers... demonstrate their compliance flows through to you, and ultimately to the agency.'"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

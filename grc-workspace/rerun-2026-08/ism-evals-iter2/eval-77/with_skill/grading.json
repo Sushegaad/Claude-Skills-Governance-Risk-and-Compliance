@@ -1,0 +1,33 @@
+{
+  "eval_id": 77,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Frames IRAP correctly: ASD-endorsed independent assessors who assess the implementation and effectiveness of ISM controls — an IRAP assessment informs but does NOT itself constitute authorisation; the agency's Authorising Official still makes the risk-acceptance decision",
+      "passed": true,
+      "evidence": "'The IRAP report feeds this decision — it does not itself authorise the system' and 'your Authorising Official reviews the IRAP report and your POA&M... and formally signs off (or declines) authorisation.'"
+    },
+    {
+      "text": "Lists the right artefacts: System Security Plan plus its control-implementation annex/matrix, security risk assessment/management documentation, architecture and data-flow documentation, and supporting policies/procedures with implementation evidence",
+      "passed": true,
+      "evidence": "Lists SSP (evidence 'mapped control-by-control to your SSP'), network architecture diagrams, risk register with ratings, policy suite, and 'evidence of implemented controls — configuration screenshots, logs, scan results, test outputs' — covers all four required artefact categories."
+    },
+    {
+      "text": "Sets process expectations: scoping, documentation review, then control-effectiveness validation (interviews, configuration review, testing) — evidence of operation, not just documentation",
+      "passed": true,
+      "evidence": "'1. Scoping/kick-off 2. Document review 3. Evidence verification... expect the assessor to request corroborating evidence (not just a policy statement) 4. Interviews/walkthroughs 5. Findings.'"
+    },
+    {
+      "text": "Explains the aftermath: an assessment report with control effectiveness findings and residual risks → agency remediation planning → Authorising Official reviews and makes the authorisation decision; periodic reassessment thereafter",
+      "passed": true,
+      "evidence": "'IRAP Assessment Report is delivered — documents findings, residual risk...' → 'POA&M... you develop this to track remediation' → 'ATO decision — your Authorising Official reviews the IRAP report and your POA&M... formally signs off' → 'Re-assessment cycle... at minimum every 24 months.'"
+    },
+    {
+      "text": "PROTECTED-appropriate: applies PROTECTED-marked controls and classification-appropriate handling throughout (not OFFICIAL-level shortcuts)",
+      "passed": true,
+      "evidence": "'must cover the full NC + OS + P control stack (PROTECTED systems must implement all three tiers)' and 'Covers all controls applicable to PROTECTED classification... not just the PROTECTED-only markers' — repeatedly reinforces PROTECTED-level rigor with no OFFICIAL-level shortcuts."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,47 @@
+# Essential Eight Maturity Level 2 vs. the Broader ISM
+
+*This answer assumes the **ISM June 2026 release** (current as of 15 August 2026).*
+
+## How the Essential Eight relates to the ISM
+
+The Essential Eight is **not a separate standard** — it's a prioritised subset of eight high-value mitigation strategies drawn from the broader ISM control set. Achieving Essential Eight maturity addresses a meaningful slice of your risk, but **Essential Eight compliance does not equal full ISM compliance**. For full government compliance you need both: the complete applicable ISM control set (per your system's classification — NC/OS/P/S/TS) *and* your targeted Essential Eight maturity level.
+
+Important 2026-specific caveat: **none of the 29 new controls added to the ISM during 2026 (9 in March, 20 in June) carry an Essential Eight mapping.** Treat your Essential Eight ML2 uplift and your June 2026 ISM compliance as two related but **separate workstreams** — progress on one does not automatically satisfy the other, and your gap analysis / reporting should track them independently rather than assuming overlap.
+
+## Mapping: Essential Eight strategies → ISM chapters
+
+| Essential Eight Strategy | Primary ISM Chapter(s) | What It Covers |
+|---|---|---|
+| Application control (allow-listing) | Ch. 13 System Hardening | Prevents execution of unapproved software |
+| Patch applications | Ch. 14 System Management | Critical patches within SLA timeframes |
+| Configure Microsoft Office macro settings | Ch. 13 System Hardening | Restrict macro execution |
+| User application hardening | Ch. 13 System Hardening | Browser, Office, PDF hardening |
+| Restrict administrative privileges | Ch. 13 System Hardening, Ch. 6 Personnel Security | Least privilege, privileged access management |
+| Patch operating systems | Ch. 14 System Management | Critical OS patches within SLA timeframes |
+| Multi-factor authentication (MFA) | Ch. 6 Personnel, Ch. 9 Enterprise Mobility, Ch. 19 Networking | MFA for all remote access and privileged accounts |
+| Regular backups | Ch. 14 System Management | Tested, offline/offsite backups (3-2-1 rule) |
+
+Note the concentration: five of the eight strategies map primarily to **Chapter 13 (System Hardening)** and **Chapter 14 (System Management)**. If you're resourcing this uplift, those two chapters are where the bulk of your implementation and evidence-collection effort will land.
+
+## What Maturity Level 2 (ML2) requires per strategy
+
+ASD's current recommended baseline for government entities is ML2 ("mostly aligned; addresses sophisticated threats" — as distinct from ML1's targeted-attack focus and ML3's advanced-persistent-threat focus). For each strategy, ML2 generally requires:
+
+1. **Application control** — allow-listing enforced (not just logged) on workstations and internet-facing servers, covering executables, scripts, installers, and libraries, with regular review of the allow-list.
+2. **Patch applications** — internet-facing services patched for critical vulnerabilities faster than ML1, with automated vulnerability scanning at least fortnightly and a formal patch/mitigate/document decision within the SLA window (align with Chapter 14 timeframes: critical ≤48 hours internet-facing, ≤14 days internal).
+3. **Configure Microsoft Office macro settings** — macros only allowed from trusted, vetted locations or digitally signed by a trusted publisher; macro execution blocked for users without a demonstrated business need; macro antivirus/AMSI scanning enabled.
+4. **User application hardening** — browsers hardened to block/restrict Flash, ads, and Java from the internet (legacy carry-over items still assessed); PDF readers and other internet-facing applications hardened per vendor guidance; Microsoft Office hardened to block child processes and unauthorised code injection.
+5. **Restrict administrative privileges** — privileged accounts explicitly authorised and validated at least annually; privileged users use separate, unprivileged accounts for email/web browsing; privileged access events logged and reviewed.
+6. **Patch operating systems** — same rigor as application patching: internet-facing OS instances patched within tightened timeframes, vulnerability scanning at least fortnightly, unsupported/end-of-life OS versions replaced or isolated.
+7. **Multi-factor authentication** — MFA enforced for all users when authenticating to internet-facing services, for privileged users, and for important data repositories; phishing-resistant MFA increasingly expected as leading practice even where not yet the strict ML2 floor.
+8. **Regular backups** — backups of important data, software, and configuration settings performed and retained per business criticality; backups tested for restoration at least annually; backup access restricted to prevent unauthorised modification/deletion (protecting against ransomware-style tampering).
+
+## Practical guidance for your financial-year target
+
+1. **Baseline first** — run a gap analysis against your current Essential Eight maturity per strategy (self-assessment or third-party) to identify where you sit today (likely a mix of ML0/ML1 across strategies).
+2. **Prioritise Chapter 13 and 14 uplifts** — since five of eight strategies map there, coordinated hardening and patch-management projects will move the needle across multiple strategies simultaneously.
+3. **Don't assume ISM June 2026 controls help your E8 score** — budget separate effort/evidence for the June 2026 additions (e.g., AI application controls ISM-2112/2113/2114, expanded cryptography-in-transit requirements) since they don't count toward your Essential Eight uplift.
+4. **Evidence as you go** — each strategy above needs its own evidence trail (allow-list policy exports, patch/vulnerability scan reports, MFA enforcement configuration, backup test logs) — this evidence also satisfies much of the corresponding ISM Chapter 13/14 audit evidence requirements, so build it once and reuse it for both purposes.
+5. **Reference the authoritative mapping** — ASD publishes a detailed Essential Eight Maturity Model to ISM control mapping; use it to confirm specific control IDs for your ML2 self-assessment submission.
+
+*This is general compliance guidance, not legal advice. Essential Eight maturity level definitions and specific mitigation requirements are updated periodically by ASD — verify current requirements against the official Essential Eight Maturity Model and ISM on cyber.gov.au before finalising your ML2 self-assessment.*

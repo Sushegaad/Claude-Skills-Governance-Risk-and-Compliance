@@ -1,0 +1,76 @@
+# Essential Eight Maturity Level 2: Relationship to the ISM and What ML2 Requires
+
+## How the Essential Eight relates to the broader ISM
+
+The **Essential Eight** is a prioritised set of eight mitigation strategies developed by the ACSC, originally as a standalone baseline but now **incorporated directly into the Information Security Manual (ISM)** as a mandated (for many Commonwealth entities, under PSPF Policy 10) or strongly recommended baseline for other government and private sector organisations. Practically:
+
+- The ISM contains a dedicated **Guidelines for Cyber Security Guidelines / Essential Eight** section that maps each of the eight strategies to specific ISM controls, so implementing the Essential Eight effectively means implementing a defined subset of ISM controls.
+- The Essential Eight is **not the entirety of the ISM** — the ISM covers many additional areas (physical security, personnel security, cloud, cryptography, ICT equipment management, gateways, data transfers, outsourcing, incident response, etc.). The Essential Eight specifically targets the mitigations ACSC assesses as most effective against common intrusion techniques.
+- Each strategy has **four maturity levels**: ML0 (not implemented / not aligned), ML1, ML2, and ML3, each with progressively more rigorous implementation and validation requirements. Higher classification/impact systems are generally expected to target higher maturity levels (many Commonwealth non-corporate entities target ML2 as a minimum, with high-risk/high-value systems expected to reach ML3).
+
+## Mapping of the eight strategies to ISM chapters/control areas
+
+| Essential Eight Strategy | ISM Control Area / Chapter Theme |
+|---|---|
+| 1. Application control | Software/application security — "Application control" controls (workstation and server hardening) |
+| 2. Patch applications | Vulnerability/patch management controls under system hardening and lifecycle management |
+| 3. Configure Microsoft Office macro settings | Application/office productivity suite hardening controls |
+| 4. User application hardening | Web browser and application hardening controls (e.g., disabling/restricting risky features like Flash, ads, Java in browsers) |
+| 5. Restrict administrative privileges | Access control / privileged access management, identity and access management chapter |
+| 6. Patch operating systems | Operating system hardening and patch/vulnerability management controls |
+| 7. Multi-factor authentication | Authentication hardening / identity and access management chapter |
+| 8. Regular backups | Backup and business continuity/data recovery controls |
+
+(Note: exact chapter numbers shift between ISM revisions — the ACSC periodically reorganises and renumbers chapters — so validate current numbering against the latest ISM release rather than relying on a fixed chapter number.)
+
+## What Maturity Level 2 requires for each strategy (general expectations)
+
+ML2 builds on ML1 by adding tighter scope, more consistent enforcement, and better logging/detection. Broadly, for each strategy:
+
+1. **Application control**
+   - Extend enforcement from workstations to **internet-facing servers** (not just user workstations as at ML1).
+   - Enforce allowlisting using both **path and publisher/cryptographic hash rules** (not just file path rules).
+   - Application control **rulesets validated at least annually** and events logged centrally.
+
+2. **Patch applications**
+   - Vulnerability scanning conducted at least **fortnightly** for internet-facing services and applications.
+   - Patches/mitigations for **critical vulnerabilities in internet-facing services applied within 48 hours**; other patches within two weeks of release.
+   - Applications no longer supported by vendors are removed/upgraded.
+
+3. **Configure Microsoft Office macro settings**
+   - Macros only allowed from **vetted, trusted locations with limited write access**, or digitally signed by a trusted publisher.
+   - Macro execution events are **logged** and centrally monitored.
+   - Macro antivirus/AMSI-integrated scanning enabled.
+
+4. **User application hardening**
+   - Web browsers hardened to **block/disable Flash, ads, and Java** from the internet (largely legacy now, but still referenced), and configured per ACSC/vendor hardening guidance.
+   - Blocked activity is logged centrally; PDF software and other internet-facing app hardening is applied consistently.
+
+5. **Restrict administrative privileges**
+   - Privileged access **validated at least annually or when roles change**.
+   - Privileged accounts **cannot access the internet, email, or web services** directly (must use separate unprivileged accounts for those activities).
+   - **Just-in-time/time-limited privileged access** and separate admin credentials from standard user credentials; privileged activity is logged.
+
+6. **Patch operating systems**
+   - Vulnerability scanning at least fortnightly for internet-facing OS instances.
+   - Critical vulnerabilities patched within **48 hours** for internet-facing systems; other systems within one month.
+   - Unsupported OS versions are upgraded/replaced.
+
+7. **Multi-factor authentication**
+   - MFA required for **all users** accessing important data repositories, and for all remote access, not just privileged users.
+   - MFA methods must resist common attacks (e.g., moving away from SMS-only OTP toward phishing-resistant methods becomes more emphasised as maturity increases, with ML3 pushing further toward phishing-resistant MFA like FIDO2).
+   - MFA events are logged centrally.
+
+8. **Regular backups**
+   - Backups of important data, software, and configuration settings performed and retained in accordance with business continuity needs.
+   - Backup **restoration tested at least annually** (partial/full).
+   - Backups protected from **unauthorised modification and deletion** (e.g., privileged/break-glass accounts cannot alter or delete backups, protecting against ransomware).
+
+## Practical guidance for your ML2-by-end-of-FY goal
+
+- Start with a **gap assessment against ML2 criteria for all eight strategies** — ACSC publishes an Essential Eight Maturity Model with detailed criteria per level; use it as your checklist since ML1→ML2 requirements differ meaningfully by strategy (some are mostly scope expansion, others require new logging/monitoring capability).
+- Prioritise **MFA and restricting administrative privileges** first — these typically have the highest risk-reduction value and are often achievable through Entra ID/Conditional Access and PAM tooling changes without major infrastructure rebuilds.
+- Budget time for **application control and patch management** — these usually require the most engineering effort (WDAC/AppLocker rule tuning, patch orchestration) and the longest lead time to reach ML2's tighter timeframes.
+- Ensure you can **evidence** each control (logs, scan reports, policy configs) since ML2 self-assessment or independent assessment will require documented proof, not just a statement of intent.
+
+Since specifics of ACSC's maturity model wording are periodically refined, confirm exact current criteria against the latest published Essential Eight Maturity Model before finalising your compliance plan.

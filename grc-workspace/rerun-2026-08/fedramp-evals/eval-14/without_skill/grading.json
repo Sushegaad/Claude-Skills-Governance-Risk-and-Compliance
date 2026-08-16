@@ -1,0 +1,33 @@
+{
+  "eval_id": 14,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Includes all named in-boundary components: the web application, PostgreSQL database, and Redis cache, hosted in AWS GovCloud",
+      "passed": true,
+      "evidence": "Section 3.x.2 lists 'Application/Web Tier', 'Database Tier: PostgreSQL database', 'Caching Tier: Redis cache' all within AWS GovCloud."
+    },
+    {
+      "text": "Treats Okta and SendGrid as external services/interconnections: identifies that federal data or metadata flows to them and that their FedRAMP authorization status must be verified and documented",
+      "passed": true,
+      "evidence": "Section 3.x.3: 'Confirm and document Okta's FedRAMP authorization status' and 'Twilio SendGrid's FedRAMP authorization status should be explicitly verified and documented; if SendGrid is not FedRAMP-authorized, this represents a risk that must be addressed.'"
+    },
+    {
+      "text": "Mentions inherited controls / leveraged authorization from AWS GovCloud (e.g., physical and environmental controls inherited, documented via CRM/CIS)",
+      "passed": true,
+      "evidence": "Section 3.x.6: 'The system inherits applicable infrastructure, physical, and environmental controls from AWS GovCloud (US) ... A Customer Responsibility Matrix (CRM) should be referenced/attached to the SSP.'"
+    },
+    {
+      "text": "References the requirement for an authorization boundary diagram and data flow diagram consistent with FedRAMP SSP requirements",
+      "passed": true,
+      "evidence": "Section 3.x.4: '[Insert network/boundary diagram here...]' and '[Insert a separate data flow diagram illustrating how federal data moves through the system end-to-end...]'"
+    },
+    {
+      "text": "Written as usable SSP content: clearly describes what is inside vs outside the boundary and addresses connection security for the external integrations (ports/protocols/TLS, API connections)",
+      "passed": true,
+      "evidence": "Section 3.x.5 Boundary Exclusions explicitly lists what's outside; connection security addressed via 'exchanged between the System and Okta over TLS 1.2+' (SAML 2.0/OIDC) and SendGrid 'transmitted over TLS'."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

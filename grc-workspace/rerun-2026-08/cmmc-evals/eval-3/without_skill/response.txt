@@ -1,0 +1,68 @@
+# System Security Plan (SSP) Section
+
+## IA.L2-3.5.3 — Multifactor Authentication
+
+**NIST SP 800-171 Rev 2 Requirement:** Use multifactor authentication for local and network access to privileged accounts and for network access to non-privileged accounts.
+
+**CMMC Practice:** IA.L2-3.5.3
+
+---
+
+### Implementation Status: **Partially Implemented / Planned** *(update to "Implemented" once legacy AD gap below is closed)*
+
+### System Environment Description
+
+The organization operates a hybrid identity environment consisting of:
+
+1. **Microsoft 365 GCC High** (Government Community Cloud High) as the primary cloud productivity and collaboration environment, with **Microsoft Entra ID** (formerly Azure AD) serving as the identity provider for cloud-based resources.
+2. **Duo Security (Duo MFA)** providing multifactor authentication for remote network access via VPN.
+3. **On-premises Active Directory (AD)** supporting legacy Computer-Aided Design (CAD) workstations that are not yet integrated with the cloud identity environment.
+
+### Control Implementation Narrative
+
+**Cloud/Entra ID environment (M365 GCC High):**
+All user access to Microsoft 365 GCC High resources — including email, SharePoint, OneDrive, and Teams — is authenticated through Microsoft Entra ID. Multifactor authentication is enforced via Entra ID Conditional Access policies for:
+- All privileged (administrative) accounts, requiring MFA for both local (console) and network access, satisfying the privileged-account provisions of IA.L2-3.5.3.
+- All non-privileged (standard user) accounts for network access to organizational resources, satisfying the non-privileged-account provisions of IA.L2-3.5.3.
+
+Authentication factors supported include Microsoft Authenticator (push notification/passwordless), and where applicable, FIDO2 security keys for privileged accounts to further harden against phishing-resistant authentication requirements. Conditional Access policies are configured to block legacy authentication protocols that do not support MFA enforcement.
+
+**VPN / Remote Network Access:**
+Remote access to the internal network is brokered through a VPN gateway integrated with Duo MFA. All users — privileged and non-privileged — authenticate to the VPN using their primary network credential plus a Duo-verified second factor (push notification via the Duo Mobile app, or hardware token for personnel without smartphone access). This satisfies the network-access MFA requirement for the on-premises network perimeter, independent of the Entra ID cloud boundary.
+
+**On-Premises Active Directory (Legacy CAD Workstations):**
+Legacy CAD workstations are joined to an on-premises Active Directory domain that is architecturally separate from Entra ID and does not currently enforce native MFA for local logon or domain authentication.
+
+- *Current gap:* Local (console/interactive) logon to CAD workstations and any direct network access to the on-prem AD domain (outside of the VPN-brokered path) is authenticated by single-factor username/password only. This is a partial gap against IA.L2-3.5.3, since the requirement covers *local* access to privileged accounts, and any privileged (e.g., local admin, domain admin) account used on these workstations must also be covered.
+- *Compensating consideration:* All remote/external network access to resources reachable from these workstations is already required to transit the Duo-MFA-protected VPN, which provides network-access MFA coverage for remote scenarios. However, this does not satisfy the *local access* requirement for privileged accounts on the CAD workstations themselves, nor does it cover on-site (LAN-based, non-VPN) network access.
+
+### Assessment Objectives Mapping (per NIST SP 800-171A)
+
+| Assessment Objective | Status | Evidence/Mechanism |
+|---|---|---|
+| 3.5.3[a] MFA used for local access to privileged accounts | **Partially Met** | Entra ID Conditional Access (cloud); NOT yet enforced for local logon to on-prem AD/CAD privileged accounts |
+| 3.5.3[b] MFA used for local access to non-privileged accounts | N/A per current baseline (not explicitly required by 3.5.3, but recommended) | — |
+| 3.5.3[c] MFA used for network access to privileged accounts | **Met** | Entra ID Conditional Access (cloud resources); Duo MFA (VPN/network) |
+| 3.5.3[d] MFA used for network access to non-privileged accounts | **Met** | Entra ID Conditional Access (cloud resources); Duo MFA (VPN/network) |
+
+### Plan of Action (POA&M Reference)
+
+Item: **Extend MFA coverage to on-premises Active Directory for local/console access to privileged accounts on legacy CAD workstations.**
+
+Recommended remediation approaches (to be finalized based on CAD software compatibility and budget):
+1. Deploy Duo MFA for Windows Logon (Duo's on-prem AD integration) to enforce MFA at local console logon on CAD workstations, particularly for any local administrator or domain admin accounts used on those machines.
+2. Alternatively, migrate CAD workstation authentication to Entra ID via Entra Connect / Entra Domain Services or Azure AD-joined configuration where CAD software licensing and hardware permit, consolidating identity management under a single Conditional Access policy set.
+3. Interim compensating control: restrict privileged account use on CAD workstations to break-glass procedures only, with enhanced logging and review, until MFA is enforced at the local logon level.
+
+**Target closure:** [to be set based on organizational remediation timeline]
+**Responsible party:** [IT/Systems Administrator or MSP, to be assigned]
+
+### Supporting Documentation References
+- Entra ID Conditional Access policy export (privileged and non-privileged access policies)
+- Duo Security VPN integration configuration and admin console policy settings
+- Active Directory domain/OU structure documentation for CAD workstation environment
+- POA&M entry for on-prem AD MFA gap
+
+---
+
+*Note: This SSP section should be reviewed and updated whenever the identity architecture changes (e.g., CAD workstation migration to cloud identity, Duo policy changes, or Entra Conditional Access policy modifications), and at minimum during the organization's annual SSP review cycle.*

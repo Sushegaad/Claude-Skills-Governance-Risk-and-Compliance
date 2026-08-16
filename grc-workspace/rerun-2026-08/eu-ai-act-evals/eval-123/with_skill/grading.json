@@ -1,0 +1,33 @@
+{
+  "eval_id": 123,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies the model as a GPAI model subject to Chapter V, and correctly applies the open-source exemption: free & open-source GPAI providers are exempt from the Art. 53(1)(a)-(b) technical documentation duties BUT must still comply with the copyright policy (Art. 53(1)(c)) and publish the public training-content summary (Art. 53(1)(d))",
+      "passed": true,
+      "evidence": "Table: '1. Technical documentation (Annex XI)... Not required (open-source exception)'; '2. Downstream provider information... Not required'; '3. Copyright compliance policy... Required'; '4. Public training content summary... Required'."
+    },
+    {
+      "text": "Correctly assesses systemic risk: 8x10^23 FLOPs is below the 10^25 FLOPs presumption threshold (Art. 51), so no systemic-risk obligations (Art. 55) absent a Commission designation — and notes the open-source exemption does NOT apply to systemic-risk models",
+      "passed": true,
+      "evidence": "'Systemic-risk presumption threshold: ≥10²⁵ FLOPs. At 8×10²³ FLOPs, you are roughly two orders of magnitude below this threshold, so the automatic systemic-risk presumption (Art. 51) does not apply... If your model is ever later designated as having systemic risk... the full Art. 53 obligations plus Art. 55 systemic-risk obligations... would apply.'"
+    },
+    {
+      "text": "States GPAI obligations have applied since 2 August 2025",
+      "passed": false,
+      "evidence": "No statement anywhere in the response that GPAI obligations have applied since 2 August 2025. The response mentions '2 August 2026' (AI Office enforcement activation) and 'July 2025' (Commission guidelines/template) but never states the 2 August 2025 GPAI application date."
+    },
+    {
+      "text": "Describes the GPAI Code of Practice (published July 2025) as a voluntary compliance pathway with chapters on transparency, copyright, and safety/security, and explains adherence eases demonstrating compliance",
+      "passed": true,
+      "evidence": "'The CoP's Copyright chapter gives you a ready-made structure... The CoP's Transparency chapter provides the Model Documentation Form... The Safety and Security chapter is systemic-risk-only... Signing the CoP is voluntary.'"
+    },
+    {
+      "text": "Mentions AI Office enforcement powers over GPAI providers activating 2 August 2026 (fines possible from that date)",
+      "passed": true,
+      "evidence": "'The AI Office's full enforcement powers over GPAI providers have been active since 2 August 2026 — information requests (Art. 91), model evaluations (Art. 92), mitigation measures (Art. 93), and fines up to €15M or 3% of worldwide turnover for provider violations.'"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

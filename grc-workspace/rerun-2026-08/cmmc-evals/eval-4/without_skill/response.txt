@@ -1,0 +1,49 @@
+# 8 NOT MET Practices — Can You Still Get Certified?
+
+Short answer: **possibly, yes** — but it depends heavily on *which* 8 practices, your overall score, and whether those specific practices are eligible for POA&M treatment. Here's the breakdown.
+
+## Conditional Certification / POA&M Close-Out Mechanism
+
+CMMC allows for a **Plan of Action and Milestones (POA&M) Closeout Assessment** pathway, sometimes referred to informally as "conditional" certification. The idea is that an organization doesn't have to have 100% of all 110 NIST SP 800-171 practices fully MET at the moment of assessment — a limited number of gaps can be documented in a POA&M and closed out within a defined window, rather than requiring a full re-assessment from scratch.
+
+This exists because DoD recognized that requiring perfect implementation of all 110 practices before any conditional path forward would create an unrealistic bar, particularly for the defense industrial base's smaller suppliers.
+
+## Which Practices Are POA&M-Eligible?
+
+This is the critical detail: **not all NOT MET practices can go on a POA&M.**
+
+- A defined subset of the highest-weighted, most security-critical practices are designated as **"POA&M ineligible"** — meaning they must be fully MET at the time of the assessment with no exceptions. These tend to be foundational, high-value-of-loss practices (historically including things like this designation applies to roughly the highest-point-value requirements under the DoD Assessment Methodology scoring — items worth 5-point deductions were more likely to be excluded from POA&M eligibility in the original scoring construct).
+- The remaining practices — generally the lower-weighted ones (1-point and some 3-point deductions) — are eligible to be POA&M'd.
+
+**What this means for you:** you need to go through your 8 findings individually and determine:
+1. Which of the 8 are on the "must be MET, no POA&M" list — if any of your 8 fall into that category, you cannot achieve conditional certification until those specific items are remediated and verified, regardless of your overall score.
+2. Which of the 8 are POA&M-eligible.
+
+## Minimum Score Requirement
+
+To be eligible for a POA&M-based conditional certification, an organization generally must:
+1. Have **no unmet POA&M-ineligible practices** (i.e., all the "must fully meet" practices are actually MET), and
+2. Achieve a **minimum overall SPRS-equivalent score threshold** at the time of the initial assessment — historically set at **88 out of 110 points** as the floor for POA&M eligibility (i.e., you can't be missing more than the equivalent of ~22 points' worth of deductions and still qualify for the conditional path). If your score is below that threshold, POA&M conditional certification is not available, and you'd need to remediate down to that gap-count before the C3PAO would allow a conditional pass.
+
+You should calculate your actual point deduction total based on the specific weight of each of your 8 NOT MET practices (1, 3, or 5 points each depending on the practice) and confirm you're at or above the 88-point floor.
+
+## Closeout Timeline
+
+If you qualify for conditional certification:
+- You are issued a **conditional CMMC status** effective from the date of the assessment.
+- You have a **fixed window — historically 180 days** — to remediate all POA&M items and undergo a **POA&M Closeout Assessment**, which verifies the previously NOT MET (now remediated) practices are actually implemented.
+- If you close out all POA&M items within the window and pass the closeout assessment, your status converts to a **full (final) Level 2 certification**, valid for **3 years** from the original assessment date (not from the closeout date).
+- If you **fail to close out within the window**, the conditional certification **expires**, and you lose your certified status — you would need to restart the assessment process. This can jeopardize contract performance and option period exercise if certification is a condition of the contract.
+
+## What You Should Do Now
+
+1. **Get the exact NIST SP 800-171 practice numbers and point values for all 8 findings** from your C3PAO's report — don't rely on a general count.
+2. **Cross-check each against the POA&M-eligibility list** to confirm none of the 8 are in the "must be fully met" category. If any are ineligible for POA&M, prioritize remediating those immediately, since conditional certification isn't an option until they're closed.
+3. **Calculate your total point deduction** and confirm you're at or above the 88-point minimum threshold for conditional eligibility.
+4. **Build a realistic POA&M** with assigned owners and target dates for each eligible finding, keeping the full remediation plan well inside the 180-day window (don't plan to the deadline — build in buffer for verification delays).
+5. **Coordinate with your C3PAO** on the requirements and evidence format for the POA&M Closeout Assessment so you're not scrambling to figure out what "done" looks like near the deadline.
+6. **Loop in your contracting officer or prime** if the contract has a certification deadline that could be affected by a 180-day conditional window — you want to flag risk early, not explain a lapse after the fact.
+
+## Bottom Line
+
+Conditional certification is very likely available to you if: (a) none of your 8 findings are on the POA&M-ineligible list, and (b) your total deductions keep you at or above the 88-point threshold. Get the specific practice IDs and their point weights from your assessment report first — that's the fact that determines everything else here.

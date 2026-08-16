@@ -1,0 +1,33 @@
+{
+  "eval_id": 102,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Defines both perspectives correctly: impact materiality (the company's effects on people/environment — inside-out) and financial materiality (sustainability matters creating financial risks/opportunities — outside-in), with a topic material if EITHER test is met",
+      "passed": true,
+      "evidence": "Response defines 'Impact Materiality (\"inside-out\")' and 'Financial Materiality (\"outside-in\")' with correct scoring bases, and states 'A topic is material if it meets either criterion — it does not need to meet both.'"
+    },
+    {
+      "text": "Contrasts frameworks accurately: GRI is impact-materiality-only; TCFD is financial/climate-risk-only; CSRD/ESRS requires both lenses in one assessment",
+      "passed": true,
+      "evidence": "Response states 'GRI asks \"how does the company affect the world?\" (impact materiality only)... TCFD asks \"how does the world (climate) affect the company financially?\" (financial materiality only, and only for climate)... CSRD's double materiality effectively merges both questions.'"
+    },
+    {
+      "text": "Walks through a real DMA process: context and value-chain mapping, identification of impacts/risks/opportunities, scoring (severity via scale/scope/irremediability, plus likelihood; financial magnitude), thresholds, stakeholder engagement, and governance validation",
+      "passed": true,
+      "evidence": "Steps 1-8 cover context/value-chain mapping (Step 1), impact identification via stakeholder engagement (Step 2), severity scoring 'Scale, Scope, and Irremediability... adding Likelihood' against a 'documented threshold' (Step 3), financial risk identification and 'Magnitude and Likelihood' scoring against a 'documented threshold' (Steps 4-5), and governance validation/documentation (Steps 7-8)."
+    },
+    {
+      "text": "Notes documentation/assurance readiness: the DMA methodology and conclusions must be documented because they are subject to assurance and anchor which ESRS topics are reported",
+      "passed": false,
+      "evidence": "Response states DMA documentation is 'itself a mandatory disclosure' anchoring which ESRS 2 IRO-1/SBM-3 content is reported, but never ties this documentation requirement to assurance. The only 'assurance' mention in the whole response is a generic aside comparing frameworks ('assurance obligation neither GRI nor TCFD carries'), not connected to the DMA documentation requirement specifically."
+    },
+    {
+      "text": "Correctly states that the July 2026 revised ESRS simplify datapoints but keep the double-materiality assessment as the cornerstone — the DMA obligation did not go away",
+      "passed": false,
+      "evidence": "The 'A Note on Timing' section discusses the Directive (EU) 2026/470 scope threshold change (who must run a DMA) but never mentions the July 3, 2026 revised ESRS datapoint simplification or states that DMA remains the cornerstone under the revised standards."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

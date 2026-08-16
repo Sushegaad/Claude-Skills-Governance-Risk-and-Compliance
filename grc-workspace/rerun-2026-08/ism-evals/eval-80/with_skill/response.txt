@@ -1,0 +1,50 @@
+# ISM Obligations for a Private-Sector Cloud Services Provider to a Federal Agency
+
+*This answer assumes the **ISM June 2026 release** (current as of 15 August 2026).*
+
+Congratulations on the contract. As a private-sector supplier, you don't become "a government entity," but the ISM still applies to you contractually and functionally wherever you're handling the agency's information or systems. Here's how to think about your obligations.
+
+## Your obligations as a supply-chain partner
+
+Even though you're not a government entity, the ISM reaches you through **Chapter 3 (Procurement & Outsourcing)**, which requires agencies to:
+- Assess cloud service providers for compliance with the ISM and ASD Cloud Security Guidance before/during procurement
+- Contractually require ISM-aligned security controls from outsourced/contracted service providers
+- Assess and manage supply chain risk on an ongoing basis, not just at contract signature
+
+Practically, this means your contract almost certainly requires you to:
+1. Implement the ISM controls applicable to the classification level of the data/systems you'll handle for the agency (most likely **OFFICIAL: Sensitive**, i.e., NC + OS controls, unless the agency has told you it involves PROTECTED information — confirm this explicitly, since your obligations differ significantly by tier)
+2. Provide evidence of control implementation to support the agency's own System Security Plan (SSP) and risk assessment — you are effectively supplying assurance inputs into *their* authorisation, not obtaining your own separate government "ATO"
+3. Support the agency's incident notification obligations (Chapter 2) — expect contractual requirements to report security incidents affecting their data/systems to them within defined timelines, feeding into their ASD notification obligations
+4. Cooperate with (or directly host, if it's an assessment of your environment) an IRAP assessment — see below
+5. Maintain your controls on an ongoing basis and support the agency's periodic re-assessment cycle (minimum every 24 months, or after significant change to your environment)
+
+## Most critical controls for your cloud environment
+
+Given you're providing cloud infrastructure/services, prioritise:
+
+- **Chapter 3 (Procurement & Outsourcing):** Be able to demonstrate your own sub-processor/supply-chain assurance if you use third-party infrastructure or components.
+- **Chapter 13 (System Hardening):** Hardened images for any compute you provide; least privilege; no standing admin access; application allow-listing where applicable.
+- **Chapter 14 (System Management):** Documented patch SLAs (critical patches: 48 hours internet-facing / 14 days internal), tested backups, formal change management — agencies will want to see this in your operational evidence.
+- **Chapter 19 (Networking) & Chapter 20 (Cryptography):** Network segmentation isolating the agency's tenancy/workload from other customers; TLS 1.2 minimum (1.3 preferred) for all data in transit. Note the June 2026 update broadened the ASD Approved Cryptographic Protocols control to cover **all** in-transit encryption scenarios, not just traffic crossing network infrastructure — relevant to any control-plane, API, or management traffic in your platform, not just the customer-facing data path.
+- **Chapter 15 (System Monitoring):** Centralised logging with a minimum 18-month retention for OS-classified data, and demonstrable ability to provide log evidence to the agency or its IRAP assessor on request.
+- **Chapter 10 (Evaluated Products):** If you'll handle anything at PROTECTED or above, cryptographic products must be ASD-evaluated/approved (Common Criteria preferred, FIPS 140-2/3 validated modules required) — confirm this requirement explicitly with the agency since it changes your product/vendor choices.
+- **AI controls (if your platform includes AI-enabled features the agency will use):** the June 2026 release introduced ISM-2112 (disable AI applications' direct access to external public data sources when processing classified data), ISM-2113 (human approval for risky AI actions), and ISM-2114 (behavioural/performance baselining for AI applications). If your service includes any AI-assisted functionality, expect the agency to ask how you address these — confirm exact current control numbers against the ISM June 2026 changes document before citing them in proposals or contractual responses.
+
+## Do you need an IRAP assessment yourself?
+
+**Likely yes, in practice, even though you're not a government entity.** Here's the nuance:
+
+- IRAP assessment is **mandatory for systems handling PROTECTED and above**, and **strongly recommended for OFFICIAL: Sensitive**. This requirement attaches to the *system*, not to whether the operator is a government body — if the agency's workload running in your cloud environment is PROTECTED or above, that system (including your infrastructure) needs an IRAP assessment as part of the agency's authorisation.
+- As the CSP, you will typically be the party who needs to **commission or host** the IRAP assessment of the environment you operate, since you control the infrastructure and configuration evidence the assessor needs. The agency's Authorising Official ultimately relies on that assessment (alongside their own SSP and risk assessment) to grant their ATO — but they can't grant it without visibility into your environment's control implementation.
+- Some agencies will accept an existing IRAP assessment of your platform (e.g., if you already hold one for a shared multi-tenant offering) rather than requiring a bespoke assessment just for their tenancy — clarify this early, since a fresh assessment is a significant time and cost commitment.
+- Confirm in your contract negotiations: who selects and pays for the IRAP assessor, what scope the assessment covers (your whole platform vs. just the agency's tenancy/workload), and how often re-assessment is required (24 months minimum, or after significant change to your environment).
+
+## Recommended next steps
+
+1. Confirm the exact classification level (OS vs. PROTECTED+) of the data/systems you'll handle — this determines your full applicable control set and whether IRAP is mandatory or merely recommended.
+2. Review your contract for explicit ISM/Cloud Security Guidance clauses and IRAP assessment obligations — get legal/compliance sign-off on exactly what's required and by when.
+3. Gap-assess your current environment against the applicable NC/OS (or NC/OS/P) control set using the June 2026 release as your baseline.
+4. If IRAP is required, engage an assessor from the ASD IRAP Assessors Register early — first assessments take longer, and your contract go-live may be gated on the agency's ATO, which is gated on your assessment.
+5. Build an ongoing evidence-collection process (patch reports, incident register, access logs) now, since the agency's continuous monitoring and re-assessment obligations will flow through to you contractually.
+
+*This is general compliance guidance, not legal advice. Your specific contractual obligations depend on the terms negotiated with the agency — consult your legal counsel and an accredited IRAP assessor, and verify current ISM requirements against the official ISM on cyber.gov.au, before finalising your compliance approach.*

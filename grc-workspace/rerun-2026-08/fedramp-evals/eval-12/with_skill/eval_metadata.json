@@ -1,0 +1,13 @@
+{
+  "eval_id": 12,
+  "eval_name": "impact-levels-law-enforcement-data",
+  "run_type": "with_skill",
+  "prompt": "What is the difference between FedRAMP Low, Moderate, and High impact levels? Our product handles law enforcement sensitive data. Which impact level applies to us?",
+  "assertions": [
+    "Explains that FedRAMP baselines derive from FIPS 199 impact categorization: Low = limited adverse effect, Moderate = serious adverse effect, High = severe or catastrophic adverse effect",
+    "States or implies the correct baseline rigor progression (approx. 156 controls Low, 323 Moderate, 421 High under NIST 800-53 Rev 5, or an equivalent statement that control count and assessment rigor increase with level)",
+    "Identifies that law-enforcement-sensitive data typically maps to FedRAMP High (the High baseline was designed for law enforcement, emergency services, financial and health systems) or at minimum Moderate-to-High with a reasoned FIPS 199 analysis",
+    "If the answer mentions CR26 Certification Classes, the mapping matches official FedRAMP notice NTC-0004: Class A = new pilot/transitional baseline, Class B = LI-SaaS + Low, Class C = Moderate, Class D = High. FAIL if it presents an incorrect mapping (e.g., A=Low, B=Moderate, C=High). PASS if classes are not mentioned at all.",
+    "Notes that the final security categorization / risk acceptance decision rests with the authorizing agency (per RMF and NTC-0004: a FedRAMP certification is not itself an agency risk acceptance)"
+  ]
+}

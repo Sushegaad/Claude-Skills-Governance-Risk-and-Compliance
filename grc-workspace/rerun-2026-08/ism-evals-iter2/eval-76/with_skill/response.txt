@@ -1,0 +1,58 @@
+*This answer assumes the ISM **June 2026 release** (published 9 June 2026). Australia's ISM is updated quarterly, so re-confirm currency against cyber.gov.au before you cite specific control numbers.*
+
+# ISM Applicability, Key Controls, and Authorisation Pathway for Your Cloud-Hosted Case Management System
+
+## 1. Which control applicability markings apply
+
+Your system stores **OFFICIAL: Sensitive (OS)** information. Under the ISM's stacking rule, that means you must implement:
+
+- **NC (Non-Classified)** controls — the universal baseline that applies to every government system
+- **OS (OFFICIAL: Sensitive)** controls — the additional layer specific to sensitive-but-unclassified information
+
+You do **not** need to implement PROTECTED (P), SECRET (S), or TOP SECRET (TS) controls unless the system's classification changes (e.g., if it starts handling PROTECTED-level case data). If you're not fully confident the system will never touch PROTECTED information, it's worth formally re-confirming the classification decision and documenting the rationale in your System Security Plan (SSP).
+
+## 2. Key controls you must implement
+
+Because this is a **cloud-hosted** system, your answer needs to cover both the standard OS-baseline controls and the cloud-specific considerations.
+
+### Core OS-baseline control areas
+| Chapter | Control Area | What It Means for You |
+|---|---|---|
+| Ch. 1 — Cyber Security Roles | CISO/system owner accountability | Designate a system owner and ensure CISO oversight of the case management system |
+| Ch. 3 — Procurement & Outsourcing | Cloud service provider (CSP) assessment | Assess and contractually bind your CSP to ISM-aligned controls |
+| Ch. 4 — Documentation | SSP, risk register | Maintain a current SSP as your primary authorisation artefact |
+| Ch. 6 — Personnel Security | Screening, training | Screen staff with access; annual security awareness training |
+| Ch. 9 — Enterprise Mobility | MFA, MDM | MFA for any remote/admin access to the case management system |
+| Ch. 13 — System Hardening | OS/app hardening, least privilege | Harden underlying VMs/containers; no standing admin access |
+| Ch. 14 — System Management | Patching, backups, change management | Critical patches applied within SLA (see below); tested backups |
+| Ch. 15 — System Monitoring | Logging | Centralised logging, minimum 18 months' retention for OS systems |
+| Ch. 20 — Cryptography | Encryption | ASD-approved cryptography for data in transit and at rest |
+
+**Patching note:** whatever hardening/configuration work you do on the compute layer, patch management is part of the same control set — critical patches within 48 hours (internet-facing) or 14 days (internal), high within 14 days, medium within 30 days — and you should be able to produce patch-status reports as evidence alongside your hardening baselines.
+
+### Cloud Answer Checklist — must-cover items for a cloud-hosted system
+1. **Leverage the CSP's existing IRAP report.** Don't commission a fresh assessment of the underlying cloud infrastructure — consume the CSP's current IRAP assessment report for the inherited control layer. Your agency only needs to assess your own configuration/workload layer (the case management application, its data, and your tenant configuration).
+2. **Shared responsibility matrix.** Document, with the CSP, exactly which ISM controls the provider owns versus which your agency owns. Review this annually and keep it referenced in your SSP.
+3. **Core control set specific to cloud:**
+   - Tenant isolation
+   - ASD-approved cryptography for data **in transit and at rest**
+   - MFA for privileged and remote access
+   - Event logging with agency access (don't rely solely on the CSP's internal logs — you need visibility)
+   - Personnel security — clearances/screening for CSP support staff who could access your data
+4. **Data sovereignty and residency.** Confirm where the case management data is stored, processed, and supported from, including any subcontractors or offshore support arrangements. Get contractual residency commitments — this matters particularly for case management data that may include personal/sensitive information about members of the public.
+5. **Contractual assurance.** Ensure the contract covers incident notification obligations to your agency, evidence provision on request, and a right to audit.
+
+## 3. Authorisation pathway before go-live
+
+1. **System Security Plan (SSP)** — document the system boundary (including what's inherited from the CSP vs. what you own), classification (OS), security objectives (CIA ratings), and all selected/implemented controls.
+2. **Security Risk Assessment** — identify threats, vulnerabilities, and residual risk specific to a cloud-hosted case management workload (e.g., data exposure, insider risk at the CSP, misconfiguration).
+3. **IRAP Assessment** — not mandatory at OS level, but **strongly recommended**, and effectively expected given this is a government service. Scope your own IRAP assessment to your configuration/workload layer; rely on the CSP's existing IRAP report for the underlying platform.
+4. **Plan of Action & Milestones (POA&M)** — track and remediate any findings from the risk assessment or IRAP review.
+5. **Authorisation to Operate (ATO)** — your Authorising Official reviews residual risk (including risk inherited from the CSP) and signs off before go-live.
+6. **Ongoing monitoring** — continuous monitoring, annual review of the shared-responsibility matrix, and re-assessment at least every 24 months or after significant change (e.g., CSP platform changes, new integrations, classification change).
+
+## Bottom line
+As an OS-classified system: implement NC + OS controls, treat the Cloud Answer Checklist as non-negotiable given the cloud hosting model, and run the six-step SSP → risk assessment → (recommended) IRAP → POA&M → ATO → monitoring pathway before go-live. Given this is a citizen-facing case management system, budget time for the CSP's shared-responsibility documentation and your own IRAP review — these are usually the long poles in the authorisation timeline.
+
+---
+*This is general compliance guidance, not legal advice. Verify current control text and numbering against the ISM June 2026 release on cyber.gov.au, and engage an ASD-listed IRAP assessor for formal assessment.*

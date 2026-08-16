@@ -1,7 +1,7 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
 Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, DORA Digital Operational Resilience, India's Digital Personal Data Protection Act (DPDPA), CMMC 2.0 Cybersecurity Maturity Model Certification, NIST AI Risk Management Framework, SWIFT Customer Security Programme (CSP), Australian Information Security Manual (ISM), EU NIS2 Directive, CCPA/CPRA California Privacy, ITAR (International Traffic in Arms Regulations), Brazil's LGPD (Lei Geral de Proteção de Dados), EU CSRD (Corporate Sustainability Reporting Directive), CIS Controls v8 (CIS Top 18), EAR (Export Administration Regulations), NIST SP 800-53 (Security and Privacy Controls for Federal Systems), EU AI Act (Regulation (EU) 2024/1689), Section 508 (US Federal ICT Accessibility), WCAG (Web Content Accessibility Guidelines), NZISM (New Zealand Information Security Manual), Vietnam PDPL (Law on Personal Data Protection No. 91/2025/QH15), and EU CRA (Cyber Resilience Act, Regulation (EU) 2024/2847) — powered by Claude Skills.
 
-Benchmarked across 150 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (752 assertions in total). Skills scored **94%** vs a baseline of **81%**.
+Benchmarked across 150 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (752 assertions in total). Skills scored **93%** vs a baseline of **79%**.
 
 [![Release: v1.6.2](https://img.shields.io/badge/Release-v1.6.2-brightgreen.svg)](../../releases/tag/v1.6.2)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -136,7 +136,7 @@ The SOC 2 skill turns Claude into an expert SOC 2 compliance advisor grounded in
 
 **File:** `FedRamp - Claude Skill/fedramp.skill`
 
-The FedRAMP skill turns Claude into a knowledgeable FedRAMP advisor covering the full authorization lifecycle for Cloud Service Providers (CSPs) under **NIST SP 800-53 Rev 5** and the new **CR26 (FedRAMP Consolidated Rules for 2026)** framework. Current as of July 2026 — incorporating CR26 Certification Classes A–D (new baseline labels: A = pilot/transitional, B = LI-SaaS/Low, C = Moderate, D = High), FedRAMP 20x as the primary pathway, the FedRAMP Ready retirement (July 28, 2026), and the September 2026 OSCAL mandate.
+The FedRAMP skill turns Claude into a knowledgeable FedRAMP advisor covering the full authorization lifecycle for Cloud Service Providers (CSPs) under **NIST SP 800-53 Rev 5** and the new **CR26 (FedRAMP Consolidated Rules for 2026)** framework. Current as of August 2026 — CR26 is final (mandatory January 1, 2027) with Certification Classes A–D (A = pilot/transitional, B = LI-SaaS/Low, C = Moderate, D = High), Class pipelines opening August 2026, FedRAMP 20x as the primary pathway, Ready retired July 28, 2026 (Legacy FedRAMP Ready), and the September 30, 2026 OSCAL mandate for new authorizations.
 
 **What it does:**
 - Conducts **readiness and gap assessments** using a 75+ item checklist, mapped to CR26 Certification Classes (A/B/C/D)
@@ -330,7 +330,7 @@ The DPDPA skill turns Claude into an expert advisor on India's **Digital Persona
 
 **File:** `CMMC - Claude Skill/cmmc.skill`
 
-The CMMC 2.0 skill turns Claude into an expert CMMC compliance advisor for US defense contractors navigating the Cybersecurity Maturity Model Certification program. It covers all three CMMC levels — Level 1 (17 FAR 52.204-21 practices), Level 2 (110 NIST SP 800-171 Rev 2 practices), and Level 3 (110+ NIST SP 800-172 requirements) — under the final 32 CFR Part 170 rule (effective December 16, 2024).
+The CMMC 2.0 skill turns Claude into an expert CMMC compliance advisor for US defense contractors navigating the Cybersecurity Maturity Model Certification program. It covers all three CMMC levels — Level 1 (17 FAR 52.204-21 practices), Level 2 (110 NIST SP 800-171 Rev 2 practices), and Level 3 (110+ NIST SP 800-172 requirements) — under the final 32 CFR Part 170 rule (effective December 16, 2024). Current as of August 2026 — including the **July 13, 2026 Phase 2 suspension** (C3PAO requirements in abeyance pending the CMMC Reform Task Force review due ≈ September 13, 2026; self-assessment tracks and all DFARS obligations continue).
 
 **What it does:**
 - Determines the correct **CMMC level** for a given contract based on FCI vs. CUI handling, DFARS clauses present (7012, 7019, 7020, 7021), and program criticality
@@ -389,7 +389,7 @@ The SWIFT CSP skill turns Claude into an expert advisor on the **SWIFT Customer 
 
 **File:** `ISM - Claude Skill/ism.skill`
 
-The ISM skill turns Claude into an expert advisor on the **Australian Information Security Manual** — the whole-of-government cybersecurity framework published by the Australian Signals Directorate (ASD) for Australian federal and state government entities and their supply chains. It covers all 22 guideline chapters, the six-step risk management cycle, control applicability markings (NC/OS/PROTECTED/SECRET/TOP SECRET), the IRAP assessment programme, system authorisation, and the Essential Eight relationship.
+The ISM skill turns Claude into an expert advisor on the **Australian Information Security Manual** — the whole-of-government cybersecurity framework published by the Australian Signals Directorate (ASD) for Australian federal and state government entities and their supply chains. It covers all 22 guideline chapters, the six-step risk management cycle, control applicability markings (OFFICIAL through TOP SECRET), the IRAP assessment programme, system authorisation, and the Essential Eight relationship. Current as of the **June 2026 ISM release** — including the restructured 49 cybersecurity principles (GOVERN doubled to 14), the first-of-kind **AI application controls (ISM-2112/2113/2114)**, and the expanded ASD-approved cryptography requirements for data in transit.
 
 **What it does:**
 - Applies the ISM's **control applicability marking system** — determines which NC/OS/PROTECTED/SECRET/TOP SECRET controls apply to a system and explains the stacking rule (higher classifications cumulate all lower-level controls)
@@ -490,7 +490,8 @@ The LGPD skill turns Claude into an expert advisor on **Brazil's Lei Geral de Pr
 
 The CSRD skill turns Claude into an expert advisor on **EU Directive 2022/2464 (CSRD)**, which requires approximately 50,000 companies to disclose detailed environmental, social, and governance (ESG) information under the **European Sustainability Reporting Standards (ESRS)**. CSRD came into force on 5 January 2023 and replaces the Non-Financial Reporting Directive (NFRD).
 
-- Determines **CSRD scope and first reporting year** — analyses PIE (>500 employees), large company, listed SME, and non-EU company (>€150M EU turnover) thresholds across all four cohorts (FY 2024–2028)
+- Determines **CSRD scope under the 2026 Omnibus** — applies the Directive (EU) 2026/470 test (mandatory reporting only for companies with **>1,000 employees AND >€450M turnover**), explains the stop-the-clock deferrals, flags the pending non-EU threshold revision, and routes below-threshold companies to the VSME voluntary standard
+- Advises the **revised ESRS (July 3, 2026 delegated acts)** — ~61% fewer mandatory datapoints, applying FY2027 with FY2026 early adoption once the scrutiny period completes — including the "current vs revised ESRS basis" decision every gap assessment now starts with
 - Guides the **Double Materiality Assessment (DMA)** — ESRS 1 step-by-step process covering impact materiality (scale, scope, irremediability) and financial materiality (risks and opportunities), with scoring templates
 - Produces **CSRD gap assessments** — maps current GRI/TCFD/CDP/SASB disclosures to mandatory ESRS datapoints and identifies priority gaps
 - Drafts **ESRS disclosures** — ESRS 2 General Disclosures (GOV-1 to GOV-5, SBM-1 to SBM-3, IRO-1) and all topical standards (E1–E5, S1–S4, G1) for material topics
@@ -569,7 +570,7 @@ The NIST SP 800-53 skill turns Claude into an expert federal security and privac
 
 **File:** `EU AI Act - Claude Skill/eu-ai-act.skill`
 
-The EU AI Act skill turns Claude into an expert EU AI Act compliance advisor covering the full **Regulation (EU) 2024/1689** — the world's first comprehensive horizontal AI regulation, in force from 1 August 2024. It serves AI providers, deployers, importers, and authorised representatives operating in or placing AI on the EU market.
+The EU AI Act skill turns Claude into an expert EU AI Act compliance advisor covering the full **Regulation (EU) 2024/1689** — the world's first comprehensive horizontal AI regulation, in force from 1 August 2024 and amended by the Digital Omnibus (Regulation (EU) 2026/1744, in force July 27, 2026). GPAI enforcement powers have been active since August 2, 2026. It serves AI providers, deployers, importers, and authorised representatives operating in or placing AI on the EU market.
 
 **What it does:**
 - **Classifies AI systems** across all four risk tiers — Prohibited (Art. 5), High-Risk (Art. 6 + Annex I/III), Limited Risk (Art. 50), and Minimal/No Risk — using both the Annex I safety component path (Art. 6(1)) and the Annex III listed use case path (Art. 6(2))
@@ -926,9 +927,9 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 
 | Configuration | Pass Rate | Assertions Passed |
 |---------------|-----------|-------------------|
-| **With GRC Skills installed** | **94%** | **705 / 752** |
-| Without skills (baseline Claude) | 81% | 612 / 752 |
-| **Delta** | **+13 points** | **+93 assertions** |
+| **With GRC Skills installed** | **93%** | **703 / 752** |
+| Without skills (baseline Claude) | 79% | 596 / 752 |
+| **Delta** | **+14 points** | **+107 assertions** |
 
 ### Per-Skill Results
 
@@ -936,7 +937,7 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 |-------|-----------|-----------|---------|-------|-----------------|
 | ISO 27001 | 5 | **100%** | 84% | +16% | Gap assessment; Policy drafting; 2013→2022 transition; Risk assessment; Management review CAP |
 | SOC 2 | 5 | **100%** | 84% | +16% | Type 1 vs 2; CC controls checklist; Availability criteria; Access control policy; Audit exception response |
-| FedRAMP [US] | 5 | **92%** | 84% | +8% | Authorization pathways; CR26 Certification Classes A-D; FedRAMP 20x (primary pathway); OSCAL mandate Sep 2026; POA&M remediation timelines |
+| FedRAMP [US] | 5 | **96%** | 72% | +24% | Authorization pathways; CR26 Certification Classes A-D; FedRAMP 20x (primary pathway); OSCAL mandate Sep 2026; POA&M remediation timelines |
 | GDPR [EU] | 5 | **88%** | 88% | +0% | US company checklist; Article 28 DPA; Subject access request; Cookie consent; 72-hour breach notification |
 | HIPAA [US] | 5 | **92%** | 88% | +4% | Covered entity analysis; BAA template; Encryption (addressable vs required); Risk analysis; Workforce violation |
 | NIST CSF | 5 | **96%** | 84% | +12% | CSF 2.0 overview; Ransomware recovery plan; Profile creation; Control mapping; Board reporting |
@@ -946,19 +947,19 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | ISO 27701 | 5 | **100%** | 100% | +0% | Extension to ISO 27001; GDPR mapping; Processor controls; PIA methodology; Certification as GDPR evidence |
 | DORA [EU] | 5 | **88%** | 72% | +16% | Five pillars; ICT incident reporting timelines; TLPT requirements; Third-party contracts; DORA vs EBA |
 | DPDPA [India] | 5 | **96%** | 80% | +16% | Applicability to foreign entities; Consent vs GDPR; Children's data (18-year threshold); Cross-border transfers; SDF obligations |
-| CMMC 2.0 [US] | 5 | **88%** | 80% | +8% | Level determination; SPRS scoring; CUI scoping; SSP structure; C3PAO assessment readiness |
+| CMMC 2.0 [US] | 5 | **100%** | 44% | +56% | Level determination; SPRS scoring; CUI scoping; SSP structure; C3PAO assessment readiness |
 | NIST AI RMF | 5 | **92%** | 84% | +8% | Four functions overview; Hiring AI risk assessment; Credit scoring risk register; EU AI Act mapping; GOVERN gap assessment |
 | SWIFT CSP | 5 | **96%** | 72% | +24% | Architecture scoping (A1/A2/A3/A4/B); MFA hardware token requirement; CSCF v2026 gap assessment; Control 2.4 now mandatory; KYC-SA attestation; Incident response obligations |
-| ISM [Australia] | 5 | **96%** | 52% | +44% | OS control scoping and authorisation; IRAP assessment preparation; Chapter 13 system hardening; Essential Eight to ISM mapping; Supply chain cloud provider obligations |
+| ISM [Australia] | 5 | **92%** | 84% | +8% | OS control scoping and authorisation; IRAP assessment preparation; Chapter 13 system hardening; Essential Eight to ISM mapping; Supply chain cloud provider obligations |
 | NIS2 [EU] | 5 | **100%** | 84% | +16% | Energy company EE/IE classification; SaaS provider Art. 21 obligations; Ransomware Art. 23 reporting workflow; ISO 27001 vs NIS2 gap analysis; DORA lex specialis interaction |
 | CCPA/CPRA [California] | 5 | **100%** | 80% | +20% | E-commerce threshold analysis; Combined right-to-know and delete workflow; Ad tech sale vs sharing classification; GDPR-to-CCPA gap analysis; SPI classification for mobile app |
 | ITAR [US] | 5 | **100%** | 100% | 0% | USML jurisdiction analysis for military laptops; Deemed export for German engineer; DSP-73 temporary export for trade show; Violation and VSD process; TAA mandatory clauses for India |
 | LGPD [Brazil] | 5 | **76%** | 76% | +0% | Extraterritorial scope for US SaaS with Brazilian customers; Brazil-EU mutual adequacy (Jan 2026 — no SCCs needed); Data deletion request across CRM/email/analytics; Sensitive health data marketing restrictions; International transfer mechanisms |
-| CSRD [EU] | 5 | **100%** | 72% | +28% | CSRD scope analysis for German listed manufacturer (PIE Wave 1); Double materiality vs GRI/TCFD; Post-DMA disclosure requirements for E1/S1/G1; GRI+TCFD to ESRS gap assessment; Non-EU company (US parent, €200M EU revenue) obligations |
+| CSRD [EU] | 5 | **88%** | 32% | +56% | CSRD scope analysis for German listed manufacturer (PIE Wave 1); Double materiality vs GRI/TCFD; Post-DMA disclosure requirements for E1/S1/G1; GRI+TCFD to ESRS gap assessment; Non-EU company (US parent, €200M EU revenue) obligations |
 | CIS Controls v8 | 5 | **100%** | 80% | +20% | Implementation Group determination; Gap assessment for SaaS startup; MFA safeguard scoping (IG2); CIS v8 to NIST CSF 2.0 mapping; Vulnerability management programme with remediation SLAs |
 | EAR [US] | 5 | **100%** | 88% | +12% | RF amplifier ECCN classification for Germany export; Deemed export for Chinese/Australian dual national on 5D002; Entity List re-export violation and VSD process; AES-256 software ENC exception for France/India/Brazil; ECP design for semiconductor equipment company |
 | NIST SP 800-53 | 5 | **92%** | 84% | +8% | FIPS 199 categorization for federal HR system; AC-2(3) OTS finding and POA&M documentation; MFA controls and EO 14028 phishing-resistant MFA; SSP narrative for SC-8(1) Transmission Confidentiality; ISO 27001 to FedRAMP gap analysis and RMF steps |
-| EU AI Act | 5 | **92%** | 72% | +20% | CV screening high-risk + Annex III Area 4 + Digital Omnibus Dec 2027 deadline; Predictive policing Art. 5 prohibition; Open-source GPAI CoP + 3×10²⁴ FLOPs exception; MDR+AI Act interaction + Aug 2028 Annex I deadline; E-commerce chatbot Art. 50 disclosure |
+| EU AI Act | 5 | **84%** | 64% | +20% | CV screening high-risk + Annex III Area 4 + Digital Omnibus Dec 2027 deadline; Predictive policing Art. 5 prohibition; Open-source GPAI CoP + 3×10²⁴ FLOPs exception; MDR+AI Act interaction + Aug 2028 Annex I deadline; E-commerce chatbot Art. 50 disclosure |
 | Section 508 [US] | 5 | **100%** | 100% | 0% | VPAT 2.x ACR completion and testing methodology; Keyboard-only navigation failures and WCAG remediation; PDF forms accessibility remediation (200 PDFs); Federal procurement RFP requirements and VPAT evaluation; Undue burden exception process and alternative access obligations |
 | WCAG [International] | 5 | **100%** | 85% | +15% | Colour contrast audit (SC 1.4.3) with replacement suggestions; WCAG 2.2 upgrade criteria from 2.1 AA; React modal ARIA code review with corrected implementation; Legal compliance mapping across US/EU/UK; Accessibility statement for e-commerce site |
 | NZISM [New Zealand] | 5 | **96%** | 64% | +32% | Restricted system C&A gap analysis; AWS Sydney offshore hosting obligations; Access Control Policy with NZISM control IDs; Ransomware supplier incident response; SaaS vendor due diligence and contractual requirements |

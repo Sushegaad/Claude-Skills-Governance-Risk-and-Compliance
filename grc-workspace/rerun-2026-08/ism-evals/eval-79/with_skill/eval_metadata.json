@@ -1,0 +1,13 @@
+{
+  "eval_id": 79,
+  "eval_name": "essential-eight-vs-ism",
+  "run_type": "with_skill",
+  "prompt": "Our organisation is required to achieve Essential Eight Maturity Level 2 by the end of this financial year. How does the Essential Eight relate to the broader ISM? Which ISM chapters and control areas does each of the eight strategies map to, and what does ML2 require us to implement for each strategy?",
+  "assertions": [
+    "Frames the relationship correctly: the Essential Eight is a prioritised set of mitigation strategies aligned with a subset of ISM controls — E8 maturity work complements but does not substitute for broader ISM compliance and authorisation",
+    "Names all eight strategies correctly: application control, patch applications, configure Microsoft Office macro settings, user application hardening, restrict administrative privileges, patch operating systems, multi-factor authentication, regular backups",
+    "Explains the maturity model correctly: levels 0-3 with ML2 tightening scope and timeframes over ML1 (e.g., broader coverage, faster patching, phishing-resistant MFA expectations), giving per-strategy ML2 guidance without contradicting the model's structure",
+    "Maps each strategy to the relevant ISM control areas/chapters (system hardening, privileged access, authentication/MFA, patch management, backup and recovery) — mapping is directional and accurate, not invented control IDs",
+    "Notes at least one accurate currency fact: none of the 2026-added ISM controls (including the June 2026 AI controls) carry Essential Eight mappings, and/or that E8 assessment expectations for Commonwealth entities sit under PSPF policy rather than the ISM itself"
+  ]
+}

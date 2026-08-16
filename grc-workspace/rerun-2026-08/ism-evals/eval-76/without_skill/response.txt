@@ -1,0 +1,36 @@
+# ISM Applicability, Key Controls, and Authorisation Pathway for an OFFICIAL: Sensitive Cloud-Hosted Case Management System
+
+## 1. Applicability markings that apply to your system
+
+The Australian Government Information Security Manual (ISM), published by the Australian Cyber Security Centre (ACSC), organises controls using applicability markings tied to data classification and system type. For a system storing **OFFICIAL: Sensitive** information, you need to look at:
+
+- **OFFICIAL** and **OFFICIAL: Sensitive** markings on individual controls. Many ISM controls are marked as applicable to "All classifications" — these apply regardless of your system's classification. Others are specifically scoped to PROTECTED and above (e.g., markings like "S", "TS" for SECRET/TOP SECRET) — those do **not** apply to your OFFICIAL: Sensitive system unless your agency chooses to adopt them as better practice.
+- Because this is a **cloud-hosted** system, you also need to apply the ISM's **Cloud Computing Security** chapter/guidance, including controls relating to cloud service provider (CSP) certification, shared responsibility, data sovereignty, and use of the Information Security Registered Assessors Program (IRAP) assessed cloud services list (or equivalent).
+- OFFICIAL: Sensitive information under the Protective Security Policy Framework (PSPF) is a business impact level roughly aligned to "limited damage" if compromised — this drives risk-based control selection rather than mandating the full PROTECTED control set.
+
+## 2. Key controls you must implement
+
+At minimum, expect to implement controls from these ISM chapters/areas:
+
+- **Cyber security governance** — an approved Information Security Policy, incident response plan, and a security risk management plan/framework tailored to the system.
+- **Cyber security roles** — assigned Chief Information Security Officer (CISO)/ITSA (IT Security Advisor) and system owner responsibilities, including formal risk acceptance.
+- **Access control and system hardening** — the Essential Eight is the baseline expectation for Commonwealth entities (per PSPF Policy 10), even for OFFICIAL: Sensitive systems: application control, patching applications and operating systems, restricting Microsoft Office macros, application hardening, restricting administrative privileges, multi-factor authentication, regular backups, and user application hardening.
+- **Identity and access management** — MFA for all users (and privileged users especially), least-privilege access, and formal account lifecycle management given this is a case management system likely holding personal/sensitive case data.
+- **Data encryption** — encryption of data at rest and in transit, particularly since it's cloud-hosted; use of Australian Signals Directorate (ASD) Approved Cryptographic Algorithms (AACAs) where practicable.
+- **Cloud and outsourced services** — due diligence on the CSP, contractual security requirements, understanding of the shared responsibility model, and verifying the CSP holds an IRAP assessment or equivalent certification appropriate to OFFICIAL: Sensitive workloads.
+- **Logging and monitoring** — event logging, centralised log management, and monitoring for security events, aligned with the ISM's logging and auditing chapter.
+- **Vulnerability and patch management** — regular vulnerability scanning and patching within ASD-mandated timeframes.
+- **Data spill and incident response** — procedures for responding to and reporting cyber security incidents, including notification to the ACSC.
+
+## 3. Authorisation pathway before go-live
+
+The pathway generally follows PSPF/ISM security assessment and authorisation (A&A) process:
+
+1. **Define the system security plan (SSP)** — document system boundary, information classification, threat environment, and the ISM controls selected (with justification for any tailoring, exceptions, or compensating controls).
+2. **Implement controls** and collect evidence (configuration baselines, policy documents, screenshots, scan reports).
+3. **Conduct a security assessment** — for OFFICIAL: Sensitive systems, agencies often use an internal assessor or a security professional (not necessarily a full IRAP assessor, which is generally mandated for PROTECTED and above), though many agencies choose to engage an IRAP assessor or equivalent for higher-assurance assurance.
+4. **Produce a Security Assessment Report (SAR)** summarising residual risks and control effectiveness.
+5. **Risk acceptance / Authorisation to Operate (ATO)** — the system owner or accountable authority (or delegate, often the CISO/agency head) formally accepts residual risk and authorises the system to operate, consistent with PSPF Policy 10 requirements.
+6. **Ongoing assurance** — after go-live, maintain continuous monitoring, periodic reassessment (commonly annually or on significant change), vulnerability management, and incident reporting obligations to the ACSC.
+
+**Practical recommendation:** Given this is a case management system likely holding sensitive personal information, engage your agency's ITSA/CISO early, confirm your cloud provider's certification status against the ISM cloud controls, and formally document the authorisation decision before processing live data. Since I'm answering from general knowledge only, verify current chapter numbering and control IDs against the latest published ISM (ACSC updates it periodically) and your agency's PSPF implementation guidance before finalising your control set.

@@ -1,0 +1,13 @@
+{
+  "eval_id": 5,
+  "eval_name": "subcontractor-flowdown",
+  "run_type": "without_skill",
+  "prompt": "We are a prime contractor and discovered that two of our subcontractors handling CUI have no CMMC certification. What are our flow-down obligations under DFARS 252.204-7021, and what should we do before the next option period?",
+  "assertions": [
+    "States the flow-down rule: DFARS 252.204-7021 flows down to subcontractors at all tiers where they process, store, or transmit FCI/CUI; subs handling CUI need Level 2, subs with FCI only need Level 1",
+    "States the prime's duty: verify subcontractor CMMC status (via SPRS or certificate evidence) BEFORE awarding/continuing subcontract performance involving CUI",
+    "Gives concrete remediation options: stop CUI flow to the uncertified subs (rescope what they receive), move them to FCI-only scope, sponsor an enclave approach, or replace them — with interim risk documentation",
+    "Notes the July 13, 2026 interim state accurately: with Phase 2 suspended, subs cannot currently be required to hold C3PAO certification (self-assessment designations only), C3PAO requirements are being removed from solicitations/contracts at next modification — but 7012 safeguarding, 7019/7020 SPRS obligations, and 800-171 flow-down protections remain fully in force",
+    "Warns about misrepresentation risk (False Claims Act exposure for affirming compliance while knowingly flowing CUI to non-compliant subs) and advises documenting corrective action"
+  ]
+}

@@ -1,0 +1,45 @@
+*This answer assumes the ISM **June 2026 release** (published 9 June 2026) — confirm currency against cyber.gov.au before citing specific control numbers.*
+
+# ISM Obligations for a Private-Sector Cloud Service Provider to a Federal Agency
+
+Congratulations on the contract. As a private-sector company, you're not a government entity, but the moment your contract requires ISM compliance, you become part of the agency's **supply chain** under **Chapter 3 — Procurement & Outsourcing**, and your obligations flow through the contract, not through any direct government mandate on your organisation.
+
+## Your Obligations
+
+1. **Contractual ISM alignment.** Chapter 3 requires the agency to contractually bind outsourced/cloud service providers to ISM-aligned controls — expect (or push for, if not yet finalised) explicit contract clauses defining which controls you're responsible for, incident notification obligations, evidence provision, and audit rights.
+2. **Shared responsibility, not full responsibility.** You are not on the hook for the agency's own configuration/workload-layer controls — but you are responsible for everything at the infrastructure/platform layer you control. This split needs to be **explicitly documented** — see the shared responsibility matrix below.
+3. **Ongoing evidence obligations**, not a one-off compliance exercise: incident notification, periodic control evidence, and support for the agency's re-assessment cycle (minimum every 24 months, or after significant change on your side).
+
+## Cloud Answer Checklist — What This Means for You as the CSP
+
+Since you're the provider side of this relationship, each item below is something you need to actively deliver, not just something the agency checks:
+
+1. **Your IRAP report is what the agency will lean on.** Agencies are expected to consume the CSP's current IRAP assessment report for the inherited (infrastructure/platform) control layer, rather than commissioning a fresh assessment of your environment themselves. That makes your IRAP report a **commercial asset** — see below on whether you need one.
+2. **Shared responsibility matrix** — produce and maintain, jointly with the agency, a documented split of which ISM controls you own versus which the agency owns. This should be reviewed annually and referenced in the agency's SSP — get ahead of this rather than waiting for the agency to draft it.
+3. **Core control set you must deliver:**
+   - Tenant isolation between agency and other customers
+   - ASD-approved cryptography for data **in transit and at rest**
+   - MFA for privileged and remote access to your management planes
+   - Event logging with **agency access** — the agency needs visibility into logs relevant to their tenant, not just your internal logging
+   - Personnel security — clearances/screening appropriate to the classification level for any of your support staff who could access agency data
+4. **Data sovereignty and residency** — be prepared to contractually commit to where data is stored, processed, and supported from, including any subcontractors or offshore support arrangements you use. This is frequently a deal-breaker item in federal cloud contracts, so get your subcontractor/offshoring picture accurate and disclosed up front.
+5. **Contractual assurance** — incident notification timelines to the agency, evidence provision on request, and a right to audit. Build these into your operational processes now rather than scrambling when the agency invokes them.
+
+## Do You Need an IRAP Assessment Yourself?
+
+**In practice, yes — even though you're not a government entity.** Here's why:
+
+- The agency's own authorisation pathway requires an assessed basis for every control layer in their system, including the layer you provide. If you *don't* have a current IRAP report, the agency either has to commission an assessment of your environment themselves (expensive, slow, and something most agencies will avoid) or treat your layer as an unassessed risk in their SSP — which their Authorising Official is unlikely to accept for a system of any real sensitivity.
+- Because the ISM's cloud guidance explicitly expects agencies to **reuse the CSP's current IRAP report** for the inherited control layer, not having one puts you at a structural disadvantage against competitors who do — and may simply be a hard contract requirement depending on how the agency scoped the procurement. Check your contract terms carefully; many federal cloud contracts now mandate a current IRAP assessment as a condition of service, particularly at OFFICIAL: Sensitive and above.
+- Mandatory vs. recommended thresholds still apply based on classification: if the agency's data on your platform is PROTECTED or above, an IRAP assessment of your environment is effectively mandatory for the agency to authorise use of your service at all. If it's OFFICIAL: Sensitive, it's strongly recommended and, in practice, close to expected for winning and retaining government cloud business.
+- Assessor requirements are the same regardless of who commissions it: your assessor must be on the ASD IRAP Assessors Register, independent of your organisation, and hold current ASD-recognised qualifications.
+
+## Recommended Next Steps
+1. Confirm the classification level of the data your platform will host (OS vs. PROTECTED+) — this determines whether your IRAP assessment is contractually mandatory or strongly advisable.
+2. Check your contract for an explicit IRAP requirement and re-assessment cadence (typically 24 months or after significant change).
+3. Draft the shared responsibility matrix proactively and bring it to the agency rather than waiting for them to define your obligations unilaterally.
+4. Stand up the core cloud control set (tenant isolation, encryption in transit/at rest, MFA, agency-visible logging, screened support personnel) as baseline product capability, since this will likely be required across every federal agency customer, not just this one contract.
+5. If you don't already have a current IRAP report, engage an ASD-registered assessor early — this is typically the longest lead-time item and, once obtained, becomes a reusable asset across future government contracts.
+
+---
+*This is general compliance guidance, not legal advice. Verify your specific contractual ISM obligations with the contracting agency and confirm current IRAP requirements against cyber.gov.au or qualified counsel.*

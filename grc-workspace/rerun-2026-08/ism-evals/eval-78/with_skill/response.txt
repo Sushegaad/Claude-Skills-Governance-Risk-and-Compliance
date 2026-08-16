@@ -1,0 +1,54 @@
+# ISM Chapter 13 (System Hardening) — Windows Server 2022 Deployment
+
+*This answer assumes the **ISM June 2026 release** (current as of 15 August 2026). State this release when you record your hardening evidence, so future auditors know which edition your baseline was built against.*
+
+## Purpose
+Chapter 13 exists to reduce a system's attack surface before it goes into service and to keep it minimised over its lifecycle. For a new Windows Server 2022 deployment, this means the server should never be exposed in its out-of-the-box state — every unnecessary service, account, and feature is a potential foothold for an attacker, and hardening closes those off before the server does any real work.
+
+## Requirement
+Chapter 13 requires, at minimum:
+
+1. **OS hardening** — remove or disable unnecessary services and disable default/unused accounts before the server is deployed into production.
+2. **Application hardening** — disable unused application features and apply vendor hardening guides for anything installed on top of the OS.
+3. **Firmware security** — configure Secure Boot and set BIOS/UEFI passwords where the deployment model (physical or virtualised with firmware pass-through) permits it.
+4. **Least privilege / application control** — enforce application allow-listing and eliminate standing administrative access; privileged access must be managed (PAM), not persistent.
+
+For a Windows Server 2022 build specifically, this translates to:
+
+- Disabling the built-in Administrator and Guest accounts (or renaming/disabling per your organisation's baseline), and removing default local accounts not required for operation
+- Removing/disabling unnecessary Windows roles, features, and services (e.g., Print Spooler, SMBv1, legacy protocols not required by the workload)
+- Applying Microsoft's Security Compliance Toolkit / Group Policy security baseline for Server 2022 (or an equivalent CIS Benchmark for Windows Server 2022) as your vendor hardening guide
+- Enabling Windows Defender Application Control (WDAC) or AppLocker for application allow-listing — this satisfies both the Chapter 13 application control requirement and doubles as your Essential Eight "application control" evidence if you're also tracking E8 maturity (note: E8 and June 2026 ISM control additions are tracked as separate workstreams — see below)
+- Enabling Secure Boot and TPM 2.0 (required by Server 2022 anyway) and setting a UEFI/BIOS password on physical hosts
+- Enforcing least privilege: no standing local admin for operational staff; use Just-In-Time/Just-Enough-Administration or a PAM solution for any administrative tasks
+- Restricting/controlling Office macro execution and hardening any user-facing applications on the server (per the wider Chapter 13 "user application hardening" theme), if the server hosts any interactive or application-serving role
+
+## Implementation Steps
+
+1. **Build from a hardened image** — start from a CIS-benchmarked or Microsoft-baseline Server 2022 image rather than hardening after the fact.
+2. **Apply Group Policy / Security baseline** — import the Microsoft Security Compliance Toolkit baseline (or your organisation's ISM-aligned GPO baseline) via Group Policy or Intune/Endpoint Manager.
+3. **Disable unnecessary services and roles** — audit installed roles/features against actual workload requirements; remove anything not justified.
+4. **Configure account controls** — disable default accounts, enforce strong authentication, remove standing admin rights, implement PAM for privileged access.
+5. **Enable application allow-listing** — configure WDAC/AppLocker in enforcement mode (not audit-only) before go-live.
+6. **Configure firmware security** — enable Secure Boot, TPM, and set firmware passwords.
+7. **Validate against baseline** — run a compliance scan (e.g., Microsoft Defender for Cloud baseline assessment, CIS-CAT, or your internal tooling) and remediate deviations.
+8. **Document exceptions** — any baseline setting you cannot apply (e.g., a legacy dependency requiring an older protocol) must be documented with a risk justification in the SSP, not silently skipped.
+9. **Re-validate on change** — re-run the hardening/compliance check whenever the server's role, installed software, or patch level changes materially.
+
+## Audit Evidence
+To demonstrate Chapter 13 compliance during an assessment (internal review or IRAP), collect:
+
+- The hardening baseline/standard you built against (CIS Benchmark version, Microsoft Security Baseline version) with a mapping of which settings were applied
+- Group Policy / Intune configuration export showing applied security settings
+- A compliance scan report (baseline vs. actual configuration) showing pass/fail per control, with remediation evidence for any fails
+- Local account inventory showing default accounts disabled/renamed and no unnecessary local admin accounts
+- WDAC/AppLocker policy export showing enforcement mode (not audit-only) and event logs showing blocked execution attempts
+- Firmware configuration evidence (Secure Boot status, TPM status, BIOS password confirmation) — screenshot or configuration management tool output
+- PAM/JIT access logs showing no standing administrative sessions and time-bound privilege elevation
+- A documented exceptions register for any baseline deviations, each with a risk acceptance signed by an appropriate authority
+- Change records showing the hardening baseline was reapplied/validated after any significant configuration change
+
+## Release-awareness note
+Reference the **June 2026 ISM release** as your assessment baseline in your documentation. This release did not change Chapter 13's core hardening requirements materially, but it did remove ISM-1837 ("password never expires") — if your Server 2022 account policy still enforces non-expiring passwords under an old exception, remove that setting and update your account policy documentation accordingly. Also note that the June 2026 controls carry no Essential Eight mapping, so if you're tracking both Chapter 13 hardening evidence and Essential Eight application-control/admin-privilege maturity, treat them as related but separately-tracked evidence sets.
+
+*This is general compliance guidance, not legal advice. Validate your specific hardening baseline and control text against the official ISM on cyber.gov.au and consult your agency's security advisor or an accredited assessor before finalising your compliance evidence.*

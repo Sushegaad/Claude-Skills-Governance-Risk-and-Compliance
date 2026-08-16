@@ -1,0 +1,13 @@
+{
+  "eval_id": 121,
+  "eval_name": "cv-screening-high-risk",
+  "run_type": "without_skill",
+  "prompt": "We are building an AI-powered CV screening tool that ranks job applicants for employers in the EU. Is this high-risk under the EU AI Act? Which Annex III area applies, what deadline do we need to comply by, and what are our main obligations as the provider?",
+  "assertions": [
+    "Classifies the CV screening/ranking tool as HIGH-RISK under Annex III point 4(a) (employment: recruitment or selection, incl. placing targeted job ads, analysing and filtering applications, evaluating candidates)",
+    "States the compliance deadline for Annex III standalone high-risk systems as 2 December 2027 (as amended by the Digital Omnibus, adopted June 2026; originally 2 August 2026). Any deadline stated must be 2 Dec 2027, not Aug 2026.",
+    "Walks through core provider obligations citing Arts. 9-17 (risk management, data governance, technical documentation, logging, transparency to deployers, human oversight, accuracy/robustness/cybersecurity, QMS)",
+    "Mentions conformity assessment and registration: self-assessment per Annex VI for Annex III point 4 systems, EU declaration of conformity (Art. 47), CE marking (Art. 48), EU database registration (Art. 49)",
+    "Notes the Art. 6(3) derogation exists but explains it is narrow and does not apply where the system profiles natural persons / materially influences hiring decisions (profiling is always high-risk)"
+  ]
+}

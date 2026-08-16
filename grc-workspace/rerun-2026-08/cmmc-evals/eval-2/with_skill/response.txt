@@ -1,0 +1,61 @@
+# CMMC Level 2 Gap Assessment
+
+**Program status note (Aug 15, 2026):** CMMC Phase 2 (C3PAO third-party assessment requirements) is suspended as of July 13, 2026, pending a CMMC Reform Task Force review (report due ≈ Sept 13, 2026). Your NIST SP 800-171 obligations, self-assessment, SPRS submission, and annual affirmation requirements are unchanged — so this gap assessment and remediation plan remain fully relevant regardless of which assessment track (self vs. C3PAO) ultimately applies to your contract.
+
+Based on the facts provided, I've assessed the practices directly implicated by your current-state description. This is not a full 110-practice assessment — several domains (e.g., configuration management, maintenance, wireless, mobile devices) weren't addressed in your description and should be assessed separately before you finalize your SSP or SPRS score.
+
+## Gap Table
+
+| Practice ID | Domain | Practice Statement | Status | Evidence Needed | Gap Notes |
+|---|---|---|---|---|---|
+| IA.L2-3.5.3 | IA | MFA for local/network access, privileged & non-privileged | 🟡 PARTIAL | Entra ID/AD Conditional Access policy export, MFA enrollment reports | MFA confirmed only on cloud email. No indication MFA covers VPN, domain logon, file shares, or other CUI-touching apps. **Critical practice — must be fully MET before any certification, cannot sit in POA&M.** |
+| SC.L2-3.13.16 | SC | Protect CUI at rest | ❌ NOT MET | Encryption configuration exports for file shares/storage | Explicitly stated: no FIPS-validated encryption for CUI at rest. |
+| SC.L2-3.13.11 | SC | Employ FIPS-validated cryptography | ❌ NOT MET | FIPS 140-2/3 validation certificates for crypto modules in use | Same root cause as above. **Critical practice — 5-point deduction, never POA&M-eligible.** |
+| SC.L2-3.13.8 | SC | Cryptographic protection of CUI in transit | ❓ NEEDS VERIFICATION | TLS/VPN configuration exports | Not addressed in your description — transit encryption status unknown. Given the at-rest gap, verify this immediately; it's a **critical, 5-point practice**. |
+| AC.L2-3.1.3 | AC | Control the flow of CUI per approved authorizations | ❌ NOT MET | Data flow diagrams, access control lists, network segmentation config | Flat network with CUI on shared drives = no flow control or enclave boundary. **Critical practice — 5-point deduction, never POA&M-eligible.** |
+| AC.L2-3.1.5 | AC | Least privilege, including for privileged accounts | 🟡 PARTIAL / likely NOT MET | Access rights audit of shared drives | Shared-drive CUI storage on a flat network strongly suggests broad, unmanaged access rather than least-privilege enforcement. |
+| MP.L2-3.8.1 | MP | Physically control and securely store CUI media (paper & digital) | 🟡 PARTIAL | Media inventory, access logs | Shared drives are not access-restricted or encrypted per the facts given. |
+| MP.L2-3.8.2 | MP | Limit access to CUI on media to authorized users | ❌ NOT MET | ACLs on shared drives showing role-based restriction | Same root cause as AC.L2-3.1.3 — no evidence of access limitation on shared drives. |
+| CA.L2-3.12.4 | CA | Develop, document, and periodically update the SSP | 🟡 PARTIAL / NOT MET | Updated SSP with revision history | SSP last updated 2022 — four years stale, almost certainly doesn't reflect current environment, staff, or systems. Assessors treat a stale SSP as a strong negative signal. |
+| IR.L2-3.6.1 | IR | Operational incident-handling capability (prep, detection, analysis, containment, recovery) | 🟡 PARTIAL | Test/tabletop results, IR plan document | Plan exists but its operational effectiveness is unverified. **Critical practice — must be fully MET before certification;** an untested plan is a common assessor finding of "NOT MET" in practice even when documentation exists. |
+| IR.L2-3.6.3 | IR | Test the incident response capability | ❌ NOT MET | Tabletop exercise records, after-action report | Explicitly stated: plan has never been tested. |
+| IR.L2-3.6.2 | IR | Track, document, and report incidents internally/externally | ❓ NEEDS VERIFICATION | Incident log/tracking process documentation | Not addressed in your description. |
+| AT.L2-3.2.1 | AT | Security awareness of risks/policies related to CUI | ✅ MET (assumed) | Training records, curriculum | Annual training in place — confirm curriculum explicitly covers CUI handling, not just general security hygiene. |
+| AT.L2-3.2.3 | AT | Insider-threat indicator recognition/reporting training | ❓ NEEDS VERIFICATION | Training curriculum showing insider-threat module | Generic annual awareness training often omits this specific requirement — verify before marking MET. |
+| PS.L2-3.9.1 | PS | Screen individuals before authorizing CUI access | ✅ MET | Background check records | Confirmed for all staff. |
+| PS.L2-3.9.2 | PS | Protect CUI during/after personnel actions (terminations, transfers) | ❓ NEEDS VERIFICATION | Offboarding checklist, access revocation logs | Not addressed — verify a formal offboarding/access-revocation process exists. |
+| AU.L2-3.3.1 | AU | Create and retain audit logs | ❓ NEEDS VERIFICATION | SIEM/log configuration, retention policy | Not addressed in your description but is a **critical, 3-point practice** that must be confirmed before certification — do not leave unassessed. |
+
+## Estimated SPRS Score Impact
+
+Starting from 110, using the known highest-impact point values plus reasonable estimates for domain-average weight where the exact published value wasn't cited (flagged below — confirm against the DoD Assessment Methodology v2.2 table for exact figures):
+
+| Practice | Deduction | Basis |
+|---|---|---|
+| IA.L2-3.5.3 (MFA) | −5 | Confirmed highest-impact practice |
+| AC.L2-3.1.3 (CUI flow control) | −5 | Confirmed highest-impact practice |
+| SC.L2-3.13.11 (FIPS crypto) | −5 | Confirmed highest-impact practice |
+| SC.L2-3.13.8 (transit encryption) | −5 (pending verification) | Confirmed highest-impact practice — assume NOT MET until verified |
+| AC.L2-3.1.5 (least privilege) | −3 | Confirmed highest-impact practice |
+| AU.L2-3.3.1 (audit logging) | −3 (pending verification) | Confirmed highest-impact practice — assume NOT MET until verified |
+| SC.L2-3.13.16 (CUI at rest) | −3 (estimate) | SC domain average weight; confirm exact value |
+| MP.L2-3.8.1 / 3.8.2 | −1 each (estimate) | MP domain is low total weight (~8 pts / 9 practices) |
+| CA.L2-3.12.4 (stale SSP) | −1 (estimate) | CA domain low weight |
+| IR.L2-3.6.3 (untested IR) | −1 (estimate) | IR domain low weight |
+| AT.L2-3.2.3 (insider threat training, pending) | −1 (estimate) | AT domain low weight |
+
+**Estimated interim score: roughly 110 − 33 = ~77**, which is **below the 88-point minimum** required for any conditional certification path, even before accounting for the fact that four of these are critical practices that can never sit in a POA&M regardless of score. Treat this as directional — get exact per-practice weights from the official DoD Assessment Methodology before submitting to SPRS.
+
+## Prioritized Remediation Plan
+
+1. **Deploy MFA organization-wide** (IA.L2-3.5.3) — extend beyond cloud email to VPN, domain logon, and all CUI-touching applications. Highest score impact, critical/non-negotiable for certification.
+2. **Segment CUI off the flat network** (AC.L2-3.1.3, SC.L2-3.13.16, MP.L2-3.8.1/3.8.2) — move CUI off open shared drives into an access-controlled, encrypted enclave. This single project resolves several findings at once.
+3. **Implement FIPS-validated encryption** at rest and verify in transit (SC.L2-3.13.11, SC.L2-3.13.8) — replace or reconfigure crypto modules; obtain FIPS 140-2/3 validation certificates as evidence.
+4. **Confirm and harden audit logging** (AU.L2-3.3.1) — this is unaddressed in your facts and is critical; treat as urgent until verified.
+5. **Update the SSP** (CA.L2-3.12.4) — refresh to reflect current environment; this is also the document that will host your POA&M references for everything above.
+6. **Test the incident response plan** (IR.L2-3.6.1, IR.L2-3.6.3) — run a tabletop exercise and document results; relatively low cost, meaningful score and posture improvement.
+7. **Verify and close smaller gaps**: insider-threat training content, personnel offboarding process, least-privilege enforcement on remaining systems.
+
+**Important caveat**: IA.L2-3.5.3, AC.L2-3.1.3, SC.L2-3.13.8, SC.L2-3.13.11, and (pending verification) AU.L2-3.3.1 and IR.L2-3.6.1 are all on the **critical-practices list that can never be POA&M-eligible at certification** — these must be fully remediated, not just documented as "in progress," before you can pursue certification of any kind.
+
+*This is general compliance information, not legal advice. Confirm exact SPRS point values and status determinations against official DoD guidance or a qualified assessor before submission.*

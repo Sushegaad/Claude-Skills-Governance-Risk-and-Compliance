@@ -1,0 +1,54 @@
+# FedRAMP Authorization Process: End-to-End Overview
+
+*As of August 15, 2026, under CR26 (FedRAMP Consolidated Rules for 2026)*
+
+## Important context before we start
+
+FedRAMP's authorization framework changed significantly this year. A few things affect your question directly:
+
+- **JAB P-ATO is fully suspended.** The Joint Authorization Board no longer issues Provisional ATOs. The **FedRAMP PMO is now the sole authorization body**. This isn't a "choose JAB or Agency" decision anymore — JAB P-ATO simply isn't an available path today.
+- **FedRAMP 20x is now the primary authorization pathway**, emphasizing continuous authorization, modular API-driven submissions, and automated evidence collection.
+- The old Low/Moderate/High/LI-SaaS baseline labels are being replaced by **Certification Classes A–D** (NTC-0004). Legacy labels still map cleanly (LI-SaaS/Low → Class B, Moderate → Class C, High → Class D; Class A is new, with no legacy equivalent), and both label sets are linked during the transition (through December 31, 2028).
+
+## Agency ATO vs. JAB P-ATO — what's actually true today
+
+| | Agency ATO | JAB P-ATO |
+|---|---|---|
+| Status | **Active** — the traditional path CSPs use | **Fully suspended** — no longer issued |
+| Who authorizes | A specific federal agency's Authorizing Official (AO), who sponsors your package | Formerly: the Joint Authorization Board (DoD, DHS, GSA) |
+| How other agencies use it | Other agencies review your existing package and issue their own Authority to Use (ATU) | Formerly: agencies could "leverage" a P-ATO without a full independent review |
+| Availability | Available now, and remains the legacy full-assessment path during the CR26 transition | Not available — do not plan around this path |
+
+Since JAB P-ATO doesn't exist as an option anymore, your real choice as a first-time CSP is between:
+1. **FedRAMP 20x** (the new primary pathway), or
+2. **Legacy Agency Authorization** (still available, particularly for complex systems during the CR26 transition period, which runs through Rev5 sunset on December 31, 2028)
+
+## The authorization process, start to finish
+
+1. **Readiness assessment** — Determine your Cloud Service Offering (CSO) type (IaaS/PaaS/SaaS), the federal data you'll handle, and your target Certification Class (A/B/C/D). Run a gap assessment against required controls, policies, and architecture.
+2. **Pick your path and (if legacy) find a sponsor** — For the legacy Agency Authorization route, you need a sponsoring federal agency willing to be your AO. For FedRAMP 20x, entry is more standardized and less dependent on finding an individual agency champion.
+3. **Build the authorization package**
+   - System Security Plan (SSP) + Appendices A–Q (boundary, controls, policies, POA&M, etc.)
+   - Security Assessment Plan (SAP) — prepared by your 3PAO
+   - Security Assessment Report (SAR) — prepared by your 3PAO after testing
+   - Plan of Action & Milestones (POA&M) — tracks any open findings
+   - Packages must be in **OSCAL (machine-readable) format** for new authorizations starting September 30, 2026 — worth building toward now even if you kick off before that date.
+4. **Independent 3PAO assessment** — A FedRAMP-recognized Third Party Assessment Organization tests your controls. If a 3PAO helped author your SSP, a *different* 3PAO must perform the assessment (per A2LA R311).
+5. **Remediate and finalize POA&M** — Address findings where feasible before authorization; anything not fully remediated goes into the POA&M with a remediation plan and SLA-compliant milestone dates.
+6. **Authorization decision** — The sponsoring agency AO (legacy path) or FedRAMP PMO (20x path) reviews the package and grants the ATO.
+7. **Continuous monitoring (ConMon)** — Monthly vulnerability scans, POA&M updates, and inventory updates; annual reassessment by your 3PAO, and maintenance of a dedicated Security Inbox for urgent PMO directives (required since January 5, 2026).
+
+## Note on "FedRAMP Ready"
+
+If you were planning to pursue a "FedRAMP Ready" designation as a first step, be aware it was retired on July 28, 2026 and relabeled "Legacy FedRAMP Ready." No new submissions are being accepted under that name. Look instead at the Certification Class pipelines: Class A opened August 3, 2026; Classes B and C open August 31, 2026 (just two weeks from today); Class D is expected to pilot late 2026 with a formal option in early 2027.
+
+## Recommendation for your first authorization
+
+Given where things stand right now (mid-August 2026):
+
+- **If your system is straightforward and you can align with SOC 2 Type II or another qualifying external framework**, look hard at **Class A** entry via FedRAMP 20x — it's open now and gives you federal market access with a 2-year runway to pursue a full Class B/C/D certification.
+- **If you need full Moderate-equivalent (Class C) authorization from the start** (e.g., you'll handle CUI), plan around the **Class B/C pipeline opening August 31, 2026** under FedRAMP 20x, since 20x is now the PMO's preferred pathway and legacy JAB leverage no longer exists to fast-track multi-agency use.
+- **If your system is unusually complex** (heavy custom infrastructure, multiple interconnections, High-impact data), a **legacy Agency Authorization package** may still be the more predictable route during the CR26 transition, since traditional SSP/SAP/SAR templates and processes remain available.
+- Regardless of path, start building your OSCAL capability now — it becomes mandatory for new authorizations on September 30, 2026, and for all packages by September 30, 2027.
+
+*This is general compliance guidance, not legal advice. Confirm current pathway availability and requirements directly on fedramp.gov, and consult an accredited 3PAO or FedRAMP PMO before committing to a path.*

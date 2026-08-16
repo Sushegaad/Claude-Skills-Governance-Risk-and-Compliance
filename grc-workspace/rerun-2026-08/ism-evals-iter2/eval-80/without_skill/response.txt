@@ -1,0 +1,47 @@
+# ISM Compliance Obligations for a Private Sector Cloud Provider to an Australian Federal Agency
+
+## Your obligations as a contracted cloud service provider
+
+Even though your company is not itself a government entity, once you're contracted to provide cloud services to an Australian federal agency, you inherit contractual security obligations that flow down from the agency's own compliance requirements under the **Protective Security Policy Framework (PSPF)** and the **Information Security Manual (ISM)**. In practice this means:
+
+- **Contractual flow-down of ISM requirements** — the agency remains ultimately accountable for its own security posture (including the security of any government data you hold or process), but your contract will typically require you to implement and evidence specific ISM controls relevant to the classification of data you're handling (most likely OFFICIAL or OFFICIAL: Sensitive, possibly PROTECTED depending on the workload).
+- **Shared responsibility model** — as the CSP, you're responsible for the layers of the stack you control (physical infrastructure, hypervisor, network, and depending on your service model — IaaS/PaaS/SaaS — potentially more). The agency remains responsible for the layers they control (application configuration, data classification, user access management), but they will expect you to clearly document where your responsibility ends and theirs begins.
+- **Data sovereignty and residency** — many federal contracts require data to be stored and processed within Australia, and may restrict administrative access to Australian-based (and sometimes security-cleared) personnel. Confirm this explicitly in your contract, as it affects your infrastructure and staffing decisions.
+- **Right to audit / assurance evidence** — expect contractual clauses giving the agency (or its delegate) the right to request evidence of your security controls, participate in or review assessment findings, and potentially conduct their own audits.
+- **Incident notification obligations** — you will likely be contractually required to notify the agency (and possibly ASD/ACSC) of security incidents within a defined timeframe, and to cooperate with incident response and forensic investigations.
+- **Ongoing compliance, not one-off** — ISM compliance is a continuous obligation. Expect requirements for periodic reassessment, patch/vulnerability management reporting, and maintaining currency with ISM updates as ASD revises the manual (typically multiple updates per year).
+- **Personnel security** — depending on classification, staff with access to government systems/data may need baseline or higher security clearances, and you may need to support vetting processes.
+- **Certification/registration expectations** — the agency may require or strongly prefer that your service appear on ASD-related assurance registers (historically the Certified Cloud Services List, and more recently the shift toward IRAP-assessed providers and the Hosting Certification Framework for government-related hosting).
+
+## Controls most critical for your cloud environment
+
+Prioritise these, as they're the areas agencies scrutinise most closely in cloud contracts:
+
+1. **Identity and access management** — strong authentication (MFA) for all administrative and privileged access, least-privilege role-based access control, and robust separation between your staff's administrative access and the agency's tenant data.
+2. **Encryption** — data encrypted at rest and in transit using ASD-approved cryptographic algorithms and protocols; clear key management practices (who holds keys, whether the agency can bring their own keys/HSM-backed key management).
+3. **Logging, monitoring, and auditability** — comprehensive logging of administrative actions and security-relevant events, retained for a defined period, and made available to the agency for their own monitoring/audit purposes.
+4. **Data segregation/multi-tenancy controls** — if you operate a multi-tenant platform, clear evidence that government tenant data is logically (and possibly physically) segregated from other customers.
+5. **Patch and vulnerability management** — timely patching aligned to ASD's patch timeframes (critical vulnerabilities within 48 hours, others within two weeks), with regular vulnerability scanning and reporting to the agency.
+6. **Incident response capability** — a tested incident response plan with defined notification timeframes to the agency and, for significant incidents, obligations that may extend to ASD/ACSC reporting.
+7. **Supply chain and subcontractor assurance** — if you use your own subcontractors or underlying infrastructure providers (e.g., a hyperscaler), you need to demonstrate their compliance flows through to you, and ultimately to the agency.
+8. **Data sovereignty controls** — technical and administrative controls ensuring data doesn't leave approved jurisdictions, including support/administrative access paths.
+9. **Backup and business continuity** — regular tested backups, disaster recovery capability, and protection of backups from tampering (e.g., ransomware-resistant, immutable backups).
+10. **Application/platform hardening** — for the layers of the stack you control, hardened configurations consistent with ISM system hardening guidance and vendor/industry benchmarks.
+
+## Do you need an IRAP assessment?
+
+This depends on the classification of the data and the specifics of the contract, but generally:
+
+- **Yes, in most cases, if you're hosting or processing agency data above a basic OFFICIAL level, or if the agency's policy mandates it.** While IRAP is formally a program that assesses systems against the ISM, agencies routinely require their cloud vendors to either (a) have already undergone an IRAP assessment for the relevant service/environment, or (b) commission and fund an IRAP assessment as part of onboarding, especially for PROTECTED-level workloads.
+- **You are not exempt from the ISM/IRAP expectation just because you're a private company.** The ISM applies to "systems that process, store, or communicate government information," which is defined by the sensitivity of the data and its use — not by whether the operating entity is itself a government body. If your cloud service holds federal government data, the agency will typically require you to demonstrate ISM-aligned security, and an independent IRAP assessment is the standard mechanism for doing so.
+- **For lower-sensitivity OFFICIAL data**, some agencies may accept lighter-weight assurance (e.g., a security questionnaire, SOC 2 report, or ISO 27001 certification plus a gap mapping to ISM controls) rather than a full IRAP assessment — but this is agency-dependent and should be clarified explicitly in your contract negotiations rather than assumed.
+- **Who commissions the assessment** — this varies by contract; sometimes the agency requires you to fund and commission your own IRAP assessment (using an ASD-endorsed IRAP assessor) and provide the report as a contractual deliverable; other times the agency itself commissions an assessment of the combined system (their application layer plus your infrastructure).
+- **Reassessment cadence** — expect a requirement for periodic reassessment (commonly every 24 months, or upon significant architecture change) to maintain the agency's Authority to Operate.
+
+## Recommended next steps
+- Clarify the exact data classification(s) involved (OFFICIAL, OFFICIAL: Sensitive, PROTECTED) directly with the agency's contract/security team — this determines the specific ISM control baseline and whether IRAP is mandatory.
+- Request the agency's security requirements schedule/annex from the contract — federal contracts typically include a specific ISM compliance schedule listing required controls and reporting obligations.
+- If IRAP is required and you haven't been assessed before, engage an ASD-endorsed IRAP assessor early, as assessments (especially first-time ones) can take weeks to months including remediation cycles.
+- Document your shared responsibility model clearly and share it with the agency — ambiguity here is one of the most common sources of compliance disputes in government cloud contracts.
+
+*This response reflects general knowledge of how ISM/IRAP obligations typically flow down to private-sector cloud providers contracted to Australian federal agencies. Specific obligations always depend on your actual contract terms, the agency's own policies, and the current published ISM — confirm details directly with the contracting agency's security/ICT team.*

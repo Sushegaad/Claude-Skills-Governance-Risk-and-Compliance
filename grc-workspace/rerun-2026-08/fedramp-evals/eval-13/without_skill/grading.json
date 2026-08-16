@@ -1,0 +1,33 @@
+{
+  "eval_id": 13,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Describes FedRAMP 20x as the automation-oriented approach: machine-readable evidence, Key Security Indicators (KSIs), and continuous validation replacing narrative-heavy documentation",
+      "passed": false,
+      "evidence": "Response mentions OSCAL/machine-readable data and continuous validation generally but never names Key Security Indicators (KSIs), a specific defined element of FedRAMP 20x."
+    },
+    {
+      "text": "Correctly characterizes the 2026 state: 20x launched via phased implementation starting with Low-baseline pilots in 2025 and expanding; both 20x and Rev5 paths currently exist, and under CR26 a CSP pursues one path or the other",
+      "passed": false,
+      "evidence": "Response is heavily hedged and treats 20x as still speculative/pilot-only ('has generally been introduced through pilot cohorts/phases with a limited number of participating cloud service providers', 'My knowledge may not reflect the most current state'). It never mentions CR26, never confirms 20x is now an established program with certification classes open in 2026, and does not describe the current dual-path structure."
+    },
+    {
+      "text": "Explains concrete differences from traditional authorization (no lengthy SSP narratives, automated/API submission, continuous reporting instead of periodic snapshots)",
+      "passed": true,
+      "evidence": "Comparison table: 'Large narrative SSP, SAP, SAR' vs 'structured/machine-readable data (OSCAL-based)'; 'Point-in-time assessment + annual reassessment' vs 'continuous/automated validation model.'"
+    },
+    {
+      "text": "Provides a reasoned recommendation matched to the CSP's situation rather than a one-size-fits-all answer",
+      "passed": false,
+      "evidence": "Recommendation is generic and applies uniformly regardless of CSP profile: 'Default to traditional Agency ATO planning as your baseline plan, and treat 20x participation as an accelerant/upside if you qualify' — this is a one-size-fits-all hedge, not situational guidance distinguishing e.g. cloud-native SaaS from complex/High-baseline systems."
+    },
+    {
+      "text": "Does not present FedRAMP Ready as a viable ongoing designation, and if CR26 classes are mentioned the mapping is correct per NTC-0004. PASS if classes not mentioned.",
+      "passed": true,
+      "evidence": "FedRAMP Ready and Certification Classes are not mentioned at all, so neither sub-condition is violated."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

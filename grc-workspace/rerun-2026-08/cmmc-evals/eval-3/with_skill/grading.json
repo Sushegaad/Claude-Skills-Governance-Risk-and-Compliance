@@ -1,0 +1,33 @@
+{
+  "eval_id": 3,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the requirement accurately: multifactor authentication for local and network access to privileged accounts, and network access to non-privileged accounts (IA.L2-3.5.3)",
+      "passed": true,
+      "evidence": "Requirement Statement field: 'Use multifactor authentication (MFA) for local and network access to privileged accounts and for network access to non-privileged accounts.' — verbatim match to the practice text."
+    },
+    {
+      "text": "Describes implementation per named component: Entra ID MFA (conditional access) for M365 GCC High, Duo for VPN, and explicitly addresses the on-prem AD legacy CAD workstations — the local-access-to-privileged-accounts gap most environments miss",
+      "passed": true,
+      "evidence": "Separately walks through '1. Microsoft 365 GCC High / Entra ID' (Conditional Access), '2. Duo MFA for VPN', and '3. Gap — on-premises Active Directory (legacy CAD workstations)', stating explicitly: 'MFA is not currently implemented for local or network logon to these workstations.'"
+    },
+    {
+      "text": "Written in SSP style: describes what IS implemented (not aspirational), names responsible roles, and covers each assessment objective (who/what/where MFA is enforced)",
+      "passed": true,
+      "evidence": "Dedicated 'Responsible Roles' field names 'ISSO / IT Security Manager; Identity & Access Management (IAM) Administrator; Network Administrator'; 'Associated Systems' names the specific systems (who/what/where); implementation narrative describes current state factually rather than aspirationally ('MFA is enforced through two independent mechanisms...')."
+    },
+    {
+      "text": "Identifies remaining gaps honestly and routes them to a POA&M entry rather than papering over (e.g., local admin access on legacy workstations pending smart card/Windows Hello deployment)",
+      "passed": true,
+      "evidence": "Gap explicitly named and not glossed over: 'this gap is not papered over here. This is tracked as POA&M-IA-3.5.3-01' with a full POA&M table (Weakness Description, Remediation Options, Milestones, Status: Open)."
+    },
+    {
+      "text": "Includes evidence pointers an assessor would ask for (conditional access policy exports, Duo policy config, screenshots/logs demonstrating enforcement)",
+      "passed": true,
+      "evidence": "Evidence/Artifacts section lists: 'Entra ID Conditional Access policy export...', 'Duo MFA policy configuration and enrollment report for VPN access...', and 'Active Directory Group Policy / authentication logs for CAD workstation domain...'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,44 @@
+# Transitioning from GRI/TCFD to CSRD/ESRS: Effort and Likely Gaps
+
+## First, two scoping questions before estimating effort
+
+Before sizing the transition, I'd want to pin down two things, since they materially change the answer:
+
+1. **Are you actually in mandatory CSRD scope right now?** As of August 2026, mandatory scope is governed by **Directive (EU) 2026/470**: large undertakings with **>1,000 employees AND net turnover >€450M**. If you're below that combined threshold, you are not currently required to report under full ESRS — the new **VSME voluntary standard** (adopted 3 July 2026) may be the more proportionate target, and the "gap assessment" below would look very different (lighter-touch).
+2. **Which ESRS vintage are you targeting?** The **current ESRS (2023)**, Commission Delegated Regulation (EU) 2023/2772, is the live mandatory standard today. A **revised, simplified ESRS** (roughly 61% fewer mandatory datapoints) was adopted 3 July 2026 and is in the Parliament/Council scrutiny period, expected in force Q4 2026, mandatory for financial years beginning 1 January 2027 (FY2026 early adoption only after the delegated act enters into force). If your first mandatory year is FY2027 or later, plan against the revised ESRS, not the fuller 2023 version — this can significantly reduce your gap list.
+
+The analysis below assumes you are in (or expect to be in) mandatory scope and gives you the gap picture against the fuller current ESRS baseline, which is also the safer basis to plan from today.
+
+## How much work is it, generally?
+
+Existing GRI and TCFD reporting gives you a genuine head start — you are not starting from zero — but the transition is not a light lift. Expect a **multi-quarter program** (commonly 12–18 months to first assured disclosure from a standing start), not a re-formatting exercise, because CSRD adds three things GRI/TCFD don't require: a formal, documented **double materiality assessment**, **mandatory external assurance**, and **XBRL/iXBRL digital tagging** — none of which exist in either of your current frameworks.
+
+### Why GRI and TCFD only get you partway there
+- **GRI** covers impact materiality (single materiality) — you still need to build out financial materiality from scratch and formally document both lenses per ESRS 1.
+- **TCFD** covers financial materiality for climate only — ESRS E1 incorporates TCFD's four pillars (governance, strategy, risk management, metrics & targets), so climate governance/strategy disclosures largely transfer, but TCFD doesn't require full Scope 3 (all 15 categories), a formal 1.5°C-aligned transition plan, or EU Taxonomy alignment — all of which ESRS E1 mandates.
+- **Neither** GRI nor TCFD requires third-party assurance or digital tagging — both are net-new workstreams for you.
+
+## Gap Assessment
+
+| ESRS Topic | Current State (GRI/TCFD) | Gap | Priority | Action |
+|---|---|---|---|---|
+| ESRS 1/2 – Double Materiality (IRO-1, SBM-3) | GRI-based impact materiality assessment likely exists | No formal financial materiality assessment; no ESRS-format documentation of scoring, thresholds, stakeholder engagement | **CRITICAL** | Run full DMA (impact + financial), score and document per ESRS 1 paras. 45–56; this must exist before deciding final topic scope |
+| ESRS 2 – Governance (GOV-1 to GOV-5) | Partial — board ESG oversight likely referenced in GRI/TCFD governance sections | Missing: board sustainability expertise credentials, ESG-linked incentive detail, formal internal controls over sustainability *reporting* (not just operations) | HIGH | Document board ESG agenda time/records; confirm remuneration-committee ESG KPI linkage; design an internal control framework for sustainability data akin to financial reporting controls |
+| ESRS E1 – Climate (E1-1 to E1-9) | TCFD gives governance/strategy/risk-management/metrics foundation; GRI 305 gives Scope 1/2 | Missing: full Scope 3 (all 15 categories, most companies only have partial Cat. 1/6); formal 1.5°C-aligned transition plan (E1-1); EU Taxonomy eligible/aligned revenue-capex-opex; market-based Scope 2 if not already split | **CRITICAL** (Scope 3, transition plan) | Stand up Scope 3 measurement (phase by category — Cats. 1, 3, 6, 7, 11 typically cover 80%+ of emissions in year one); draft formal transition plan aligned to SBTi/Paris; run EU Taxonomy eligibility screening |
+| ESRS S1 – Own Workforce | GRI 401/403/405 cover employment, OHS, diversity reasonably well | Missing: gender pay gap aligned with EU Pay Transparency Directive methodology; CEO pay ratio; adequate-wages/living-wage benchmarking; non-employee (contractor) H&S data | HIGH | Commission pay-gap analysis with HR/Finance; extend H&S data collection to contractors; benchmark wages against living-wage standards |
+| ESRS G1 – Business Conduct | GRI 205/206 cover anti-corruption and anti-competitive behaviour at a high level | Missing: ESRS-specific payment-practices metrics (average payment period, % beyond contractual terms); lobbying disclosure detail; anti-corruption training coverage thresholds | MEDIUM | Pull payment-terms data from AP systems; formalize lobbying/political-contribution disclosure; verify anti-corruption training coverage meets ESRS-quality documentation |
+| Value Chain (E1, S2 where material) | Limited — GRI/TCFD rarely require deep upstream/downstream data | Supplier-level emissions and labour data likely thin beyond tier 1 | HIGH | Prioritize suppliers by spend-based emissions significance and risk sector; use CDP Supply Chain / EcoVadis-style questionnaires for tier-1, spend-based EEIO factors for the long tail; disclose estimation methodology |
+| Assurance readiness | Not required under GRI/TCFD (optional at most) | No assurance-ready data trails, no documented calculation methodologies, no internal sign-off procedures | **CRITICAL** | Build ISAE 3000-ready evidence trails from day one (source system → reported figure), even though only *limited* assurance is required initially — retrofitting evidence later is expensive |
+| Digital tagging (XBRL/iXBRL) | Not applicable under GRI/TCFD | No tagging infrastructure or taxonomy mapping | HIGH | Select tagging approach (integrated software vs. post-report tagging vs. outsourced) once the ESEF sustainability taxonomy is finalized |
+| Location/format | GRI/TCFD often published as standalone reports | CSRD disclosures must sit in a **dedicated section of the management report**, not a separate sustainability report | MEDIUM | Restructure annual report production process and sign-off workflow |
+
+**Priority key:** CRITICAL = legal prerequisite, can't publish without it; HIGH = material gap, risks a qualified assurance opinion; MEDIUM = quality/completeness issue, doesn't block limited assurance.
+
+## Practical sequencing
+
+1. **Confirm scope and ESRS vintage first** (see scoping questions above) — this determines how much of the gap table below actually applies to you and by when.
+2. **Run the double materiality assessment** before anything else — it is the legal gating step that determines your final topic list (you may find topics beyond E1/S1/G1 equivalents are material, or that some GRI-reported topics turn out non-material under ESRS's dual test).
+3. **Prioritize Scope 3 and the transition plan** — these are consistently the longest-lead-time items across CSRD transitions.
+4. **Start assurance-grade documentation immediately**, even before your first mandatory report — this is the workstream companies most commonly underestimate, because GRI/TCFD experience creates false confidence that "we already collect this data," when the bar is really "we can evidence this data to an assurance provider."
+
+Given you already have GRI and TCFD in place, your realistic gap is concentrated in: financial materiality/DMA documentation, Scope 3 completeness, the formal transition plan, ESRS-specific S1 metrics (pay gap, pay ratio), value chain data depth, and the net-new assurance and tagging workstreams — rather than a wholesale rebuild of your ESG data infrastructure.

@@ -1,0 +1,33 @@
+{
+  "eval_id": 76,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Explains ISM applicability markings correctly: controls are marked for applicability by classification (OFFICIAL / OFFICIAL: Sensitive / PROTECTED / SECRET / TOP SECRET), and an OFFICIAL: Sensitive system implements the controls marked applicable at that level (with 'All'-marked controls included)",
+      "passed": true,
+      "evidence": "'the ISM typically distinguishes \"O\" for OFFICIAL and \"O-S\" or similar language for OFFICIAL: Sensitive, alongside PROTECTED, SECRET, and TOP SECRET markings' and 'You should not apply controls that are marked as only relevant to PROTECTED or higher classifications' — names all five classification tiers and the correct stacking logic, plus a proxy for 'All'-marked controls via cloud guidance that 'applies regardless of classification.'"
+    },
+    {
+      "text": "Describes the authorisation pathway as a define → select → implement → assess → authorise → monitor lifecycle, ending with an Authorising Official making a risk-based authorisation decision before go-live and ongoing monitoring after",
+      "passed": true,
+      "evidence": "Explicit numbered steps: '1. Define the system boundary and classification... 3. Select and implement controls... 4. Conduct a security assessment... 6. Authorisation decision — the agency's Authorising Officer... 7. Go-live... 8. Continuous monitoring and reauthorisation.'"
+    },
+    {
+      "text": "Names the core authorisation artefacts: a System Security Plan (with its control-implementation annex/matrix), documented security risk assessment, and incident response planning evidence",
+      "passed": true,
+      "evidence": "'Develop core documentation: System Security Plan (SSP), Security Risk Management Plan (SRMP)..., Incident Response Plan, Continuous Monitoring Plan' — names SSP, a risk assessment document, and an explicit Incident Response Plan."
+    },
+    {
+      "text": "Addresses the cloud dimension: using an IRAP-assessed cloud provider (consuming its assessment report), documenting the shared responsibility split between CSP and agency, and covering data sovereignty/residency considerations",
+      "passed": true,
+      "evidence": "'Use a CSP that has undergone an IRAP assessment...', 'Understand and document the shared responsibility model', 'Ensure data sovereignty/data residency requirements are met', and practical step 'Engage your CSP early to obtain their IRAP assessment report/certification and shared responsibility matrix.'"
+    },
+    {
+      "text": "Demonstrates release-awareness: states or reflects that the ISM is updated quarterly with June 2026 as the current release (e.g., ISM-XXXX control ID format, or an explicit release citation) — no invented control numbers",
+      "passed": false,
+      "evidence": "Closing note only says 'as ASD updates the ISM regularly' — no mention of quarterly cadence or the June 2026 release, and no ISM-XXXX control IDs are used anywhere to demonstrate release awareness."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

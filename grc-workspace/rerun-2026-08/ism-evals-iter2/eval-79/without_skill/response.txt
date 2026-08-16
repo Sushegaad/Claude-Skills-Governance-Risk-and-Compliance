@@ -1,0 +1,87 @@
+# Essential Eight Maturity Level 2 — Relationship to the ISM and What ML2 Requires
+
+## How the Essential Eight relates to the broader ISM
+
+The **Essential Eight** is a prioritised subset of mitigation strategies developed by the Australian Signals Directorate (ASD), designed as the baseline set of controls every organisation should implement first, because they address the most common attack vectors. The **Information Security Manual (ISM)** is the broader, comprehensive framework of security controls covering governance, personnel security, physical security, and the full range of technical controls across all classifications.
+
+The relationship is essentially: **the Essential Eight is a practical, prioritised entry point into the ISM's much larger control set.**
+
+- The ISM formally incorporates the Essential Eight as a chapter/set of guidelines (Guidelines for Cyber Security Roles / System Hardening area), and cross-references the Essential Eight Maturity Model as the recommended approach for organisations to sequence their implementation.
+- Achieving a given Essential Eight maturity level does **not** equate to full ISM compliance — the ISM contains hundreds of controls across many additional areas (physical security, personnel vetting, cryptography, cloud security, ICT equipment disposal, outsourced/cloud services, gateways, and more) that the Essential Eight does not cover.
+- Conversely, many ISM controls in the "system hardening," "application development," "authentication hardening," and "data backup" sections directly overlap with or are elaborated versions of the Essential Eight strategies — so implementing the Essential Eight well typically also satisfies a meaningful chunk of related ISM controls.
+- Organisations required to comply with the ISM (e.g., federal entities under PSPF) generally treat the Essential Eight as the mandatory technical baseline, then layer additional ISM controls on top based on their system's classification and risk profile.
+
+## Mapping the eight strategies to ISM chapters/control areas
+
+| Essential Eight Strategy | Primary ISM Chapter/Guideline Area |
+|---|---|
+| 1. Patch applications | Guidelines for System Hardening / Guidelines for Software Development (patch and vulnerability management controls) |
+| 2. Patch operating systems | Guidelines for System Hardening (OS patching, unsupported OS controls) |
+| 3. Multi-factor authentication (MFA) | Guidelines for System Hardening / Guidelines for Personnel Security / Authentication hardening controls (access control chapter) |
+| 4. Restrict administrative privileges | Guidelines for Personnel Security and System Hardening (privileged access management controls, separation of duties) |
+| 5. Application control | Guidelines for System Hardening (application allowlisting controls) |
+| 6. Restrict Microsoft Office macros | Guidelines for System Hardening / Guidelines for Software Development (macro security controls) |
+| 7. User application hardening | Guidelines for System Hardening (web browser and application hardening controls) |
+| 8. Regular backups | Guidelines for Data Backup and Recovery |
+
+(Exact chapter titles/numbers shift between ISM editions as ASD periodically restructures the document — treat this table as indicative of the control domain rather than a fixed citation.)
+
+## What Maturity Level 2 (ML2) requires for each strategy
+
+The Essential Eight Maturity Model defines ML1–ML3 based on how resistant the organisation is to increasingly sophisticated tradecraft. ML2 targets adversaries who are willing to invest more effort to bypass basic controls (e.g., using legitimate credentials, or phishing with basic social engineering). Broadly, ML2 requirements are:
+
+### 1. Patch applications
+- Vulnerability scanning at least fortnightly (weekly for internet-facing services).
+- Patches, updates, or vendor mitigations for critical vulnerabilities applied within 48 hours (or per vendor advisory if sooner); other vulnerabilities within two weeks.
+- Applications no longer supported by vendors are removed/upgraded.
+- Applies to office productivity suites, web browsers and extensions, PDF software, security products.
+
+### 2. Patch operating systems
+- Similar timeframes to applications: critical vulnerabilities patched/mitigated within 48 hours, others within two weeks.
+- Automated asset discovery run at least fortnightly to feed the vulnerability scanning process.
+- Applies to workstations, servers, and network devices; unsupported OS versions are upgraded or replaced.
+
+### 3. Multi-factor authentication
+- MFA enforced for all users when authenticating to online customer services that process sensitive data, and for all privileged users, and for any remote access.
+- MFA used is "something users have and either something they know or are" (e.g., not SMS-only OTP for higher assurance — ML2 generally still permits a reasonable range of MFA factors but expects phishing-resistant methods to increase further at ML3).
+- Event logs for MFA are captured and retained.
+
+### 4. Restrict administrative privileges
+- Requests for privileged access are validated when first requested.
+- Privileged accounts (excl. dedicated admin accounts) are prevented from accessing the internet, email, and web services.
+- Privileged users use separate privileged and unprivileged accounts, and privileged accounts are only used for tasks requiring privileged access.
+- Privileged access events are logged and monitored.
+
+### 5. Application control
+- Application control is implemented on workstations and internet-facing servers, restricting execution to an approved set of executables, software libraries, scripts, and installers.
+- Rules enforced for at least the standard user profile and temp folders (common malware drop locations).
+- Application control rule sets validated on at least an annual basis.
+- Allowed and blocked execution events are logged.
+
+### 6. Restrict Microsoft Office macros
+- Macros only allowed from trusted locations with limited write access, or digitally signed by a trusted publisher.
+- Macros in files from the internet are blocked.
+- Macro security settings cannot be changed by users.
+- Macro execution events are logged.
+
+### 7. User application hardening
+- Web browsers hardened to block or prompt for Flash, ads, and Java from the internet (noting Flash is now essentially deprecated/removed by vendors, so this control has evolved in practice).
+- Internet Explorer 11 disabled or removed (legacy control, largely moot now that IE is fully retired, but still referenced in older maturity model text).
+- Office is configured to block activation of OLE packages.
+- PDF software hardened to block unnecessary features.
+- Application hardening events are logged.
+
+### 8. Regular backups
+- Backups of important data, software, and configuration settings performed and retained in accordance with business criticality/continuity requirements.
+- Backups are synchronised to enable restoration to a common point in time.
+- Restoration of systems and data tested as part of disaster recovery exercises at least annually (ML2 requirement).
+- Unprivileged accounts cannot access backups belonging to other accounts, and cannot delete or modify backups (protection against ransomware).
+
+## Practical guidance for achieving ML2 by end of financial year
+- Start with a gap assessment against the current published Essential Eight Maturity Model (ASD updates this document periodically, and requirements above reflect the general ML2 intent — confirm exact wording against the latest published version).
+- Prioritise patch management and MFA first, since these tend to have the largest attack-surface reduction and are usually the fastest to operationalise with existing tooling (e.g., Intune/SCCM for patching, Entra ID Conditional Access for MFA).
+- Application control and Office macro restrictions typically require the most change management and user testing — start these early given your timeline.
+- Ensure logging is wired up for each strategy from the outset (many organisations implement the technical control but fail to enable/retain the associated logging, which is scored separately in maturity assessments).
+- Remember ML2 requires **all eight strategies** to reach ML2 simultaneously — an organisation's overall maturity rating is capped by its lowest-scoring strategy, so avoid focusing disproportionately on one or two strategies.
+
+*This response reflects the general structure and intent of the Essential Eight Maturity Model as commonly published by ASD; always verify exact ML2 requirements, thresholds, and control wording against the current official ASD Essential Eight Maturity Model publication, since ASD revises these criteria periodically (e.g., past revisions changed backup and MFA requirements).*

@@ -1,0 +1,13 @@
+{
+  "eval_id": 13,
+  "eval_name": "fedramp-20x-vs-traditional",
+  "run_type": "without_skill",
+  "prompt": "What is FedRAMP 20x and how does it change the authorization process? Should we plan for FedRAMP 20x or pursue traditional FedRAMP authorization?",
+  "assertions": [
+    "Describes FedRAMP 20x as the automation-oriented approach: machine-readable evidence, Key Security Indicators (KSIs), and continuous validation replacing narrative-heavy documentation",
+    "Correctly characterizes the 2026 state: 20x launched via phased implementation starting with Low-baseline pilots in 2025 and expanding; both 20x and Rev5 paths currently exist, and under CR26 a CSP pursues one path or the other",
+    "Explains concrete differences from traditional authorization (no lengthy SSP narratives, automated/API submission, continuous reporting instead of periodic snapshots)",
+    "Provides a reasoned recommendation matched to the CSP's situation (e.g., cloud-native SaaS suits 20x; complex/legacy or High-baseline systems may need the Rev5 route) rather than a one-size-fits-all answer",
+    "Does not present FedRAMP Ready as a viable ongoing designation (it is retired/retiring in 2026), and if CR26 classes are mentioned the mapping is correct per NTC-0004 (B=LI-SaaS+Low, C=Moderate, D=High, A=new pilot/transitional)"
+  ]
+}

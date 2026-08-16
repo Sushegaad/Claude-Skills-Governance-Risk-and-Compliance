@@ -1,0 +1,60 @@
+# System Boundary Description — Draft (FedRAMP Moderate SSP)
+
+*Note: This is a draft starting point based on the architecture you described. It should be reviewed and customized by your team and 3PAO to reflect exact configurations, and expanded with a boundary diagram, data flow diagram, and inventory tables as required by the FedRAMP SSP template.*
+
+---
+
+## 3.x System Boundary Description
+
+### 3.x.1 Overview
+
+[System Name] ("the System") is a web-based software-as-a-service application hosted entirely within **AWS GovCloud (US)**, providing [brief description of business function] to authorized federal agency users. The system's authorization boundary encompasses all components under the direct control of [Company Name] that are used to deliver, manage, and secure the service, including compute, storage, database, caching, networking, and logging infrastructure deployed within the AWS GovCloud environment, as well as defined interconnections to external Software-as-a-Service (SaaS) providers required for authentication and email notification functions.
+
+### 3.x.2 Components Within the Authorization Boundary
+
+The following components are considered **within** the system's authorization boundary:
+
+- **Application/Web Tier:** Web application servers (e.g., containerized or EC2-based compute) hosting the front-end and application logic, running within a Virtual Private Cloud (VPC) in AWS GovCloud.
+- **Database Tier:** PostgreSQL database (e.g., Amazon RDS for PostgreSQL or self-managed PostgreSQL on EC2) deployed within a private subnet, used for persistent storage of application and user data.
+- **Caching Tier:** Redis cache (e.g., Amazon ElastiCache for Redis) deployed within a private subnet, used for session management and/or performance caching of application data.
+- **Networking and Perimeter Security:** VPC(s), subnets (public/private), security groups, network access control lists (NACLs), load balancers (e.g., Application Load Balancer), web application firewall (WAF), and any bastion/jump host or VPN used for administrative access.
+- **Identity and Access Management (Internal):** IAM roles, policies, and service accounts used to control access to AWS resources within the boundary.
+- **Logging, Monitoring, and Auditing:** Centralized logging (e.g., CloudTrail, CloudWatch, VPC Flow Logs), SIEM or log aggregation tooling, and vulnerability scanning tools used to monitor the environment.
+- **Key Management:** AWS Key Management Service (KMS) or equivalent, used for encryption key management for data at rest.
+- **Backup and Recovery Infrastructure:** Automated backup services (e.g., RDS automated snapshots, S3 backup storage) supporting the system's contingency and disaster recovery capabilities.
+
+### 3.x.3 External Services / Leveraged Systems (Interconnections)
+
+The following external services are **outside** the direct authorization boundary but interconnect with the system and are documented as leveraged/interconnected systems. Each requires an Interconnection Security Agreement (ISA) or equivalent documentation, and the CSP is responsible for describing the data exchanged, the protocol/encryption used, and the compliance status of the external provider:
+
+- **Okta (Authentication/Identity Provider):** Used to provide federated authentication and identity/access management for end users via [SAML 2.0 / OIDC]. Authentication tokens and identity assertions are exchanged between the System and Okta over TLS 1.2+. [Confirm and document Okta's FedRAMP authorization status — Okta maintains its own FedRAMP-authorized offerings; verify the specific Okta product/tenant used is the FedRAMP-authorized instance, e.g., Okta's FedRAMP Moderate-authorized environment, not a commercial-only tenant.]
+- **SendGrid (Email/Notification Service):** Used to send transactional and/or notification emails (e.g., account notifications, password resets, system alerts) to end users. Data transmitted to SendGrid is limited to [specify: email addresses, message content, notification metadata] and is transmitted over TLS. [Note: Twilio SendGrid's FedRAMP authorization status should be explicitly verified and documented; if SendGrid is not FedRAMP-authorized, this represents a risk that must be addressed — e.g., through a Plan of Action, data minimization such as avoiding transmission of sensitive/CUI data via email, or an alternative FedRAMP-authorized email relay service.]
+
+*(This is a key compliance flag: FedRAMP Moderate systems generally must ensure that any external service processing federal data — including notification emails that may contain user PII — is itself appropriately authorized (FedRAMP Moderate or higher, or covered under an acceptable risk-based justification). Confirm SendGrid's authorization status and adjust the boundary/data flow description and risk narrative accordingly.)*
+
+### 3.x.4 Boundary Diagram and Data Flow Diagram
+
+*[Insert network/boundary diagram here, showing: internet-facing WAF/load balancer, public and private subnets, application servers, PostgreSQL database, Redis cache, internal security tooling, and the two external interconnections to Okta and SendGrid, with directional data flow arrows and protocol/port annotations.]*
+
+*[Insert a separate data flow diagram illustrating how federal data moves through the system end-to-end: ingress from end users → application tier → database/cache → egress to Okta (auth) and SendGrid (notifications), with encryption status (TLS in transit, AES-256 at rest) annotated at each stage.]*
+
+### 3.x.5 Boundary Exclusions
+
+The following are explicitly **outside** the authorization boundary:
+- End-user devices and networks used to access the system.
+- The underlying AWS GovCloud infrastructure below the CSP's control layer (covered under AWS GovCloud's own FedRAMP High authorization, referenced via a Customer Responsibility Matrix / inherited controls).
+- Okta's and SendGrid's internal infrastructure (covered under their respective FedRAMP authorizations or third-party risk documentation, referenced but not included in this boundary).
+
+### 3.x.6 Inherited Controls
+
+The system inherits applicable infrastructure, physical, and environmental controls from **AWS GovCloud (US)**, which holds its own FedRAMP High authorization. A Customer Responsibility Matrix (CRM) should be referenced/attached to the SSP delineating which controls are fully inherited, hybrid (shared responsibility), or fully the responsibility of [Company Name].
+
+---
+
+## Recommendations Before Finalizing
+
+1. **Confirm Okta and SendGrid's current FedRAMP authorization status** (product-specific, not just company-wide) and cite their FedRAMP Marketplace listing/authorization ID if applicable.
+2. **Complete formal ISAs/interconnection documentation** for both Okta and SendGrid, and ensure they are referenced in the SSP's interconnection table.
+3. **Add the required boundary and data flow diagrams** — these are mandatory SSP artifacts and cannot be a narrative substitute.
+4. **Address SendGrid data sensitivity** explicitly: consider whether any CUI/PII will be included in email content and whether that satisfies FedRAMP Moderate data handling requirements, or whether email content should be limited to non-sensitive notifications only.
+5. **Have your 3PAO and AO review** this boundary description early, since boundary definition is one of the most heavily scrutinized parts of an SSP and misalignment here can significantly delay authorization.

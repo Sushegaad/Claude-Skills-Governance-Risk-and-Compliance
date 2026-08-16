@@ -1,0 +1,29 @@
+# AI Safety Component of a Medical Device — AI Act × MDR Interaction
+
+## Classification: high-risk via Annex I (product-safety route), not Annex III
+Your AI system is a **safety component of a medical device** regulated under the EU Medical Device Regulation (Regulation (EU) 2017/745, "MDR"), and it requires **notified-body third-party conformity assessment** under the MDR. This puts it squarely under **Article 6(1)** of the AI Act (the "product-related" high-risk pathway), not Annex III:
+
+- Article 6(1) classifies an AI system as high-risk if (a) it is intended to be used as a safety component of a product, or is itself a product, covered by the Union harmonisation legislation listed in **Annex I** (which includes the MDR and IVDR), **and** (b) the product is required to undergo a third-party conformity assessment under that sectoral legislation with a view to placing it on the market.
+
+Both conditions are met in your case, so the AI system is high-risk under the **Annex I route**, distinct from the Annex III use-case list.
+
+## How the AI Act interacts with MDR compliance
+The AI Act is designed to be **integrated with, not duplicative of**, existing sectoral product-safety regimes:
+- **Single conformity assessment process (Article 43(3)):** Where a product is subject to both MDR and AI Act conformity assessment, providers may (and in many cases must) follow the **conformity assessment procedure required by the MDR**, with the AI Act's requirements (Articles 8–15: risk management, data governance, technical documentation, logging, transparency, human oversight, accuracy/robustness/cybersecurity) **built into that MDR assessment** rather than run as a wholly separate parallel process. The notified body assessing your device under MDR must also be designated/notified (or otherwise qualified) to assess AI Act requirements, or coordinate with an AI Act-notified body.
+- **Combined/aligned technical documentation:** You can integrate AI Act technical documentation (Annex IV) into your existing MDR technical documentation/design dossier rather than maintaining two separate documentation sets, provided all required elements from both regimes are covered.
+- **Single CE marking, dual legal basis:** The device carries **one CE mark**, but must comply with the essential requirements of both the MDR and the AI Act.
+- **Declaration of conformity:** Must reference/demonstrate compliance with both regimes.
+- **Post-market surveillance:** MDR's existing post-market surveillance/vigilance systems can largely serve the AI Act's post-market monitoring and serious-incident reporting obligations, but you must ensure AI-specific risks (e.g., model drift, performance degradation, bias) are captured within that MDR-based surveillance framework, and that AI Act-specific serious-incident reporting timelines/routes to market surveillance authorities are also satisfied.
+- **Which authority:** For medical devices, MDR notified bodies and competent authorities remain the primary interface; the AI Act designates sector-specific authorities (for medical devices, this is intended to align with existing MDR competent authorities/notified bodies) as the relevant market surveillance authority for these AI systems, rather than a generic AI Act market surveillance body, to avoid duplicative oversight.
+
+In short: you don't run two independent compliance programs — you run **one MDR-led conformity assessment process** that has been expanded to also satisfy the AI Act's high-risk requirements, coordinated by a notified body competent for both.
+
+## Compliance deadline
+High-risk AI systems that fall under the **Annex I / Article 6(1) product-safety route** (which includes medical devices under MDR) have a later application date than Annex III systems. Under **Article 113(c)**, the high-risk obligations for these Annex I product-related systems apply **36 months after entry into force of the Act**, i.e. from **2 August 2027**.
+
+This is a full year later than the Annex III deadline of 2 August 2026 (which applied to standalone high-risk use cases like recruitment, credit scoring, etc.). The rationale is to allow more time for alignment with the existing, longer sectoral conformity-assessment cycles under product-safety legislation like the MDR.
+
+## Practical takeaway
+- You have until **2 August 2027** to be fully compliant with the AI Act high-risk obligations for this system.
+- Start integrating AI Act requirements (risk management system, data governance, logging, human oversight design, accuracy/robustness/cybersecurity testing) into your existing MDR quality management system and technical documentation now, since the assessment will be a **combined** MDR + AI Act process handled by your notified body — building this in early avoids a costly late-stage rework of your design dossier.
+- Confirm with your notified body whether they are (or intend to become) qualified to assess AI Act requirements alongside MDR, since not all MDR notified bodies will initially have AI Act competence.

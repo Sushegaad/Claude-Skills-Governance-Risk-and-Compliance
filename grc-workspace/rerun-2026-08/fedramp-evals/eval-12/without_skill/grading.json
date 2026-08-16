@@ -1,0 +1,33 @@
+{
+  "eval_id": 12,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Explains that FedRAMP baselines derive from FIPS 199 impact categorization: Low = limited adverse effect, Moderate = serious adverse effect, High = severe or catastrophic adverse effect",
+      "passed": true,
+      "evidence": "\"limited adverse effect\" (Low), \"serious adverse effect\" (Moderate), \"severe or catastrophic adverse effect\" (High) — all present under the FIPS 199/CIA framing."
+    },
+    {
+      "text": "States or implies the correct baseline rigor progression (approx. 156 controls Low, 323 Moderate, 421 High under NIST 800-53 Rev 5, or an equivalent statement that control count and assessment rigor increase with level)",
+      "passed": true,
+      "evidence": "\"Smallest control baseline\" (Low), \"roughly 320+ controls\" (Moderate), \"Largest control baseline (400+ controls), with the most stringent requirements\" (High) — close to ground truth and clearly shows increasing rigor, satisfying the 'equivalent statement' allowance."
+    },
+    {
+      "text": "Identifies that law-enforcement-sensitive data typically maps to FedRAMP High (the High baseline was designed for law enforcement, emergency services, financial and health systems) or at minimum Moderate-to-High with a reasoned FIPS 199 analysis",
+      "passed": true,
+      "evidence": "\"Law Enforcement Sensitive (LES) data should generally be treated as requiring the FedRAMP High baseline\" with reasoned justification (severity of impact, precedent, CJIS overlap)."
+    },
+    {
+      "text": "If the answer mentions CR26 Certification Classes, the mapping matches official FedRAMP notice NTC-0004. PASS if classes are not mentioned at all.",
+      "passed": true,
+      "evidence": "Response never mentions Certification Classes A-D or NTC-0004 at all, so the conditional assertion passes by default (not triggered)."
+    },
+    {
+      "text": "Notes that the final security categorization / risk acceptance decision rests with the authorizing agency (per RMF and NTC-0004: a FedRAMP certification is not itself an agency risk acceptance)",
+      "passed": true,
+      "evidence": "\"Don't assume the impact level yourself — the sponsoring agency's Authorizing Official (AO) ... is ultimately responsible for the formal FIPS 199 categorization\" and \"final categorization authority rests with them.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 80,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Explains the obligation mechanism: the ISM applies to the provider contractually — the provider implements ISM controls appropriate to the classification of the data handled, and the customer agency remains the authorising party",
+      "passed": true,
+      "evidence": "'you become part of the agency's supply chain under Chapter 3 — Procurement & Outsourcing, and your obligations flow through the contract, not through any direct government mandate on your organisation', with the agency's 'Authorising Official' identified as the decision-maker who accepts residual risk."
+    },
+    {
+      "text": "Answers the IRAP question correctly: yes in practice — commercial cloud providers serving government undergo IRAP assessments (whose reports agencies consume for their authorisation decisions); private-sector status does not exempt the provider",
+      "passed": true,
+      "evidence": "'In practice, yes — even though you're not a government entity' and 'Agencies are expected to consume the CSP's current IRAP assessment report for the inherited (infrastructure/platform) control layer, rather than commissioning a fresh assessment of your environment themselves' — matches the required mechanism precisely."
+    },
+    {
+      "text": "Identifies the critical cloud control areas: tenant isolation, ASD-approved cryptography for data in transit (noting the June 2026 expansion to all data-in-transit scenarios) and at rest, access control with MFA, event logging/monitoring accessible to the agency, and personnel security",
+      "passed": true,
+      "evidence": "'Tenant isolation between agency and other customers', 'ASD-approved cryptography for data in transit and at rest', 'MFA for privileged and remote access', 'Event logging with agency access', 'Personnel security — clearances/screening.' Covers all five core areas, though it does not explicitly flag the June 2026 crypto-scope expansion."
+    },
+    {
+      "text": "Requires a documented shared-responsibility matrix (which ISM controls the provider vs the agency owns) and contractual security terms (incident notification to the agency, evidence/assurance provision, right to audit)",
+      "passed": true,
+      "evidence": "'Shared responsibility matrix — produce and maintain, jointly with the agency, a documented split of which ISM controls you own versus which the agency owns' and 'Contractual assurance — incident notification timelines to the agency, evidence provision on request, and a right to audit.'"
+    },
+    {
+      "text": "Addresses data sovereignty/residency and supply-chain transparency (subcontractors, support locations) as agency-facing obligations",
+      "passed": true,
+      "evidence": "'Data sovereignty and residency — be prepared to contractually commit to where data is stored, processed, and supported from, including any subcontractors or offshore support arrangements you use.'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

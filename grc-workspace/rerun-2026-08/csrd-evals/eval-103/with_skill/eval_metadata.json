@@ -1,0 +1,13 @@
+{
+  "eval_id": 103,
+  "eval_name": "disclosure-requirements-e1-s1-g1",
+  "run_type": "with_skill",
+  "prompt": "Our company has completed our double materiality assessment. Climate change (ESRS E1), own workforce (ESRS S1), and business conduct (ESRS G1) came out as material. What do we actually need to disclose under CSRD?",
+  "assertions": [
+    "States that ESRS 2 general disclosures (governance, strategy, IRO management, metrics & targets) are mandatory for all reporters regardless of the DMA outcome, on top of the material topical standards",
+    "Summarises the right content per topic: E1 — transition plan, Scope 1/2/3 GHG emissions, targets, energy; S1 — own-workforce policies, processes, and workforce metrics; G1 — business-conduct policies including anti-corruption/anti-bribery",
+    "Asks or states the reporting-basis question: current ESRS (2023) vs revised ESRS (2026) — revised standards apply for financial years beginning January 1, 2027, with FY2026 early adoption available only once the July 3, 2026 delegated act completes scrutiny and enters into force (expected Q4 2026)",
+    "Mentions the practical effect of the revision: roughly 61% fewer mandatory datapoints under the revised ESRS, so the disclosure inventory should be built against the basis actually used",
+    "Covers reporting mechanics: disclosures sit in the management report, subject to limited assurance, with digital (ESEF/XBRL) tagging"
+  ]
+}

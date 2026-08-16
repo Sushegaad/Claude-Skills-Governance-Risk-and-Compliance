@@ -1,0 +1,33 @@
+# CV Screening Tool — EU AI Act Classification
+
+## Is it high-risk?
+Yes. An AI system used to rank/screen job applicants is very likely classified as **high-risk** under the EU AI Act (Regulation (EU) 2024/1689).
+
+## Which Annex III area applies?
+**Annex III, point 4 — Employment, workers' management and access to self-employment.** This category specifically covers AI systems intended to be used for:
+- Recruitment or selection of natural persons, in particular to place targeted job advertisements, analyse and filter job applications, and **evaluate candidates**.
+- Making decisions affecting terms of work-related relationships, promotion, termination, task allocation, and monitoring/evaluating performance.
+
+A CV screening/ranking tool falls squarely under "analyse and filter job applications" and "evaluate candidates," so it meets the Annex III, point 4(a) criteria.
+
+## Compliance deadline
+High-risk AI systems listed in **Annex III** become subject to the Act's high-risk obligations **24 months after entry into force**, i.e. **2 August 2026**. The AI Act entered into force on 1 August 2024, and this is the general application date for Chapter III (high-risk systems), Chapter IV (transparency for certain systems), governance provisions, and penalties. Note that this deadline has effectively already passed relative to today's date (15 August 2026), so if you have not yet completed compliance, you are already past the applicable date and should treat this as urgent.
+
+(Separately: Article 5 prohibited practices applied from 2 February 2025, and GPAI model obligations applied from 2 August 2025 — neither is directly relevant here unless you're using a general-purpose AI model as a component.)
+
+## Main obligations as the provider
+As the **provider** of a high-risk AI system, under Articles 8–17 and related provisions you must, among other things:
+1. **Risk management system** (Art. 9) — establish, implement, document, and maintain a continuous risk management process across the system's lifecycle.
+2. **Data governance** (Art. 10) — ensure training, validation, and testing data are relevant, representative, and examined for biases (critical for a CV-screening tool given discrimination risk).
+3. **Technical documentation** (Art. 11) — prepare documentation demonstrating compliance before placing on the market (Annex IV content).
+4. **Record-keeping / automatic logging** (Art. 12) — enable automatic logging of events over the system's lifetime for traceability.
+5. **Transparency and instructions for use** (Art. 13) — provide clear information to deployers (employers) about capabilities, limitations, and intended purpose.
+6. **Human oversight** (Art. 14) — design the system so deployers can effectively oversee it (e.g., ensuring a human reviews/can override rankings before a hiring decision).
+7. **Accuracy, robustness, and cybersecurity** (Art. 15).
+8. **Quality management system** (Art. 17) covering the whole organisation.
+9. **Conformity assessment** (Art. 43) — for Annex III systems this is generally an internal control-based (self-assessment) procedure unless a harmonised standard requires otherwise, followed by drawing up an **EU declaration of conformity** and affixing the **CE marking**.
+10. **Registration** in the EU high-risk AI database (Art. 49) before placing the system on the market.
+11. **Post-market monitoring** (Art. 72) and **serious incident reporting** to market surveillance authorities (Art. 73).
+12. Cooperate with authorities and, if established outside the EU, appoint an **authorised representative** in the EU.
+
+You should also be aware that **deployers** (the employer using your tool) have their own separate obligations under Article 26, including conducting a **Fundamental Rights Impact Assessment (FRIA)** under Article 27 for employment use cases, and informing workers' representatives/affected individuals as required by national and EU law (including GDPR Article 22 considerations on automated decision-making).

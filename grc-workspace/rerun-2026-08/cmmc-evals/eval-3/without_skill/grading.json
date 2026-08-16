@@ -1,0 +1,33 @@
+{
+  "eval_id": 3,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the requirement accurately: multifactor authentication for local and network access to privileged accounts, and network access to non-privileged accounts (IA.L2-3.5.3)",
+      "passed": true,
+      "evidence": "'NIST SP 800-171 Rev 2 Requirement: Use multifactor authentication for local and network access to privileged accounts and for network access to non-privileged accounts.' — accurate verbatim statement."
+    },
+    {
+      "text": "Describes implementation per named component: Entra ID MFA (conditional access) for M365 GCC High, Duo for VPN, and explicitly addresses the on-prem AD legacy CAD workstations — the local-access-to-privileged-accounts gap most environments miss",
+      "passed": true,
+      "evidence": "Separately covers 'Cloud/Entra ID environment (M365 GCC High)', 'VPN / Remote Network Access' (Duo), and 'On-Premises Active Directory (Legacy CAD Workstations)' with explicit statement: 'Local (console/interactive) logon to CAD workstations...is authenticated by single-factor username/password only.'"
+    },
+    {
+      "text": "Written in SSP style: describes what IS implemented (not aspirational), names responsible roles, and covers each assessment objective (who/what/where MFA is enforced)",
+      "passed": false,
+      "evidence": "Assessment-objective coverage is strong (explicit 3.5.3[a]-[d] table), but the document never names a responsible role for the implemented controls; the only role reference anywhere is the unassigned placeholder in the POA&M section: 'Responsible party: [IT/Systems Administrator or MSP, to be assigned]'. No named owner (e.g., ISSO, IAM Administrator) is attached to the implementation description itself, so the 'names responsible roles' component of this assertion is not met."
+    },
+    {
+      "text": "Identifies remaining gaps honestly and routes them to a POA&M entry rather than papering over (e.g., local admin access on legacy workstations pending smart card/Windows Hello deployment)",
+      "passed": true,
+      "evidence": "'*Current gap:* Local (console/interactive) logon to CAD workstations...is authenticated by single-factor username/password only.' is routed to a 'Plan of Action (POA&M Reference)' section with remediation options and target closure field."
+    },
+    {
+      "text": "Includes evidence pointers an assessor would ask for (conditional access policy exports, Duo policy config, screenshots/logs demonstrating enforcement)",
+      "passed": false,
+      "evidence": "Supporting Documentation References lists 'Entra ID Conditional Access policy export', 'Duo Security VPN integration configuration and admin console policy settings', and 'Active Directory domain/OU structure documentation' — but no screenshots, authentication logs, or other artifacts demonstrating actual enforcement (as opposed to configuration/policy documents) are mentioned anywhere in the response."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

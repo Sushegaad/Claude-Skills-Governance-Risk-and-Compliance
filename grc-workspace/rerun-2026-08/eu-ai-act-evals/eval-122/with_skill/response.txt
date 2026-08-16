@@ -1,0 +1,29 @@
+# Predictive Criminal Risk Assessment Tool — EU AI Act Screen
+
+**Short answer: No — this system is prohibited (not merely high-risk) under Art. 5(1)(d) of the EU AI Act, and cannot be lawfully procured or deployed by the police force in the EU.**
+
+## 1. AI system definition check
+A system that predicts the likelihood of individuals committing future criminal offences from personality traits and behavioural data meets the Art. 3(1) AI system definition (infers outputs — a risk prediction — from inputs).
+
+## 2. Prohibited practices screen (Art. 5) — this is the controlling issue
+This falls within **Art. 5(1)(d) — Predictive Criminal Risk Assessment**:
+
+> AI systems assessing the risk of natural persons committing criminal offenses **based solely on profiling or personality/character traits assessment** are prohibited.
+
+Your description — "predicts the likelihood of individuals committing future criminal offences **based on personality traits and past behaviour**" — matches this prohibited category directly. Profiling and personality/character-trait assessment are exactly the inputs Art. 5(1)(d) targets.
+
+**The narrow exception does not rescue this system.** Art. 5(1)(d) permits AI systems that *support* a human assessment where that assessment is based on **objective, verifiable facts directly linked to criminal activity** — e.g., forensic evidence tied to a specific offence. A system built on personality-trait profiling and general behavioural history is the opposite of this exception: it is precisely the kind of character-based, non-fact-specific prediction the exception was drafted to exclude. There is no indication here that the tool is confined to objective, verifiable facts tied to a specific criminal act, or that it merely supports (rather than drives) a human officer's assessment.
+
+**Conclusion:** This is not a high-risk/Annex III classification question — the Art. 5 prohibited-practices screen is dispositive and takes precedence. A match with any of the 9 prohibited categories means the system **cannot be lawfully deployed in the EU**, regardless of Annex III or conformity-assessment considerations. Predictive risk-scoring tools of this kind are sometimes miscategorised as "high-risk" (Annex III Area 6(d) — assessing risk of offending/reoffending) — but Area 6(d) only applies to systems that pass the Art. 5 screen first. This one does not.
+
+## 3. What this means practically
+- The police force cannot lawfully procure or use this system as described.
+- You as the would-be provider should not place it on the market for this use case in the EU.
+- If there is a legitimate underlying use case (e.g., supporting an officer's assessment using objective, verifiable, offence-specific facts — such as prior convictions for the same offence type, documented case evidence, or forensic indicators — rather than personality/character profiling), the system would need to be substantially redesigned to strip out personality-trait and general-behaviour profiling and to function as a genuine decision-support tool tied to verifiable facts. Even then, careful legal review would be needed to confirm it falls outside Art. 5(1)(d) before considering it under the Annex III Area 6 high-risk framework.
+- Consult the AI Office's 4 February 2025 guidelines on Art. 5 prohibited practices, which include worked examples for this category, and the Commission's May 2026 studies on Art. 5, before finalising any redesign.
+
+## 4. Penalties for non-compliance
+Placing or using a prohibited AI system carries the highest Art. 99 penalty tier: **up to €35 million or 7% of total worldwide annual turnover**, whichever is higher.
+
+---
+*General compliance information, not legal advice — verify against official sources and consult qualified counsel before making a procurement or deployment decision on this system.*

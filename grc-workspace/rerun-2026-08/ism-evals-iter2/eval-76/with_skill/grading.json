@@ -1,0 +1,33 @@
+{
+  "eval_id": 76,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Explains ISM applicability markings correctly: controls are marked for applicability by classification (OFFICIAL / OFFICIAL: Sensitive / PROTECTED / SECRET / TOP SECRET), and an OFFICIAL: Sensitive system implements the controls marked applicable at that level (with 'All'-marked controls included)",
+      "passed": false,
+      "evidence": "Response substitutes non-standard terminology for the real ISM markings: 'Under the ISM's stacking rule... NC (Non-Classified) controls — the universal baseline... OS (OFFICIAL: Sensitive) controls...'. It never uses 'OFFICIAL' as a marking level (using 'NC' instead) and never mentions 'All'-marked controls being included."
+    },
+    {
+      "text": "Describes the authorisation pathway as a define → select → implement → assess → authorise → monitor lifecycle, ending with an Authorising Official making a risk-based authorisation decision before go-live and ongoing monitoring after",
+      "passed": true,
+      "evidence": "Section 3 lists SSP, Security Risk Assessment, IRAP Assessment, POA&M, ATO, and Ongoing monitoring, concluding: 'your Authorising Official reviews residual risk... and signs off before go-live' and 'Ongoing monitoring — continuous monitoring, annual review... and re-assessment at least every 24 months.'"
+    },
+    {
+      "text": "Names the core authorisation artefacts: a System Security Plan (with its control-implementation annex/matrix), documented security risk assessment, and incident response planning evidence",
+      "passed": false,
+      "evidence": "SSP and Security Risk Assessment are both named ('document... all selected/implemented controls'), but no Incident Response Plan or 'incident response planning evidence' is listed among the authorisation artefacts; incident response only appears once, narrowly, as a CSP contract notification clause ('Ensure the contract covers incident notification obligations to your agency')."
+    },
+    {
+      "text": "Addresses the cloud dimension: using an IRAP-assessed cloud provider (consuming its assessment report), documenting the shared responsibility split between CSP and agency, and covering data sovereignty/residency considerations",
+      "passed": true,
+      "evidence": "'Leverage the CSP's existing IRAP report. Don't commission a fresh assessment of the underlying cloud infrastructure — consume the CSP's current IRAP assessment report...' plus explicit 'Shared responsibility matrix' and 'Data sovereignty and residency' sections."
+    },
+    {
+      "text": "Demonstrates release-awareness: states or reflects that the ISM is updated quarterly with June 2026 as the current release (e.g., ISM-XXXX control ID format, or an explicit release citation) — no invented control numbers",
+      "passed": true,
+      "evidence": "Opens with: 'This answer assumes the ISM June 2026 release (published 9 June 2026). Australia's ISM is updated quarterly...' No invented ISM-XXXX control numbers are cited anywhere."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

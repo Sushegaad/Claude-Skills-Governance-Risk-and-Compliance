@@ -1,0 +1,33 @@
+{
+  "eval_id": 103,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States that ESRS 2 general disclosures (governance, strategy, IRO management, metrics & targets) are mandatory for all reporters regardless of the DMA outcome, on top of the material topical standards",
+      "passed": true,
+      "evidence": "Response states: 'ESRS 2 (General Disclosures) applies in full regardless of your materiality results,' listing BP-1/BP-2, GOV-1 to GOV-5, SBM-1 to SBM-3, IRO-1/IRO-2."
+    },
+    {
+      "text": "Summarises the right content per topic: E1 — transition plan, Scope 1/2/3 GHG emissions, targets, energy; S1 — own-workforce policies, processes, and workforce metrics; G1 — business-conduct policies including anti-corruption/anti-bribery",
+      "passed": true,
+      "evidence": "Covers E1-1 transition plan, E1-4 targets, E1-5 energy, E1-6 Scope 1/2/3 GHG; S1-1 through S1-17 policies/processes/metrics; G1-1 'anti-corruption/anti-bribery' through G1-6."
+    },
+    {
+      "text": "Asks or states the reporting-basis question: current ESRS (2023) vs revised ESRS (2026) — revised standards apply for financial years beginning January 1, 2027, with FY2026 early adoption available only once the July 3, 2026 delegated act completes scrutiny and enters into force (expected Q4 2026)",
+      "passed": false,
+      "evidence": "No mention anywhere in the response of a current-vs-revised ESRS choice, the July 3, 2026 delegated act, FY2027 applicability, or FY2026 early adoption."
+    },
+    {
+      "text": "Mentions the practical effect of the revision: roughly 61% fewer mandatory datapoints under the revised ESRS, so the disclosure inventory should be built against the basis actually used",
+      "passed": false,
+      "evidence": "No mention of the ~61% datapoint reduction or the revised ESRS at all."
+    },
+    {
+      "text": "Covers reporting mechanics: disclosures sit in the management report, subject to limited assurance, with digital (ESEF/XBRL) tagging",
+      "passed": false,
+      "evidence": "Response mentions only assurance ('subject to external limited assurance (moving toward reasonable assurance over time)') — it never states that disclosures sit in the management report, and never mentions digital/ESEF/XBRL tagging. Two of the three required mechanics are missing."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

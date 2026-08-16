@@ -1,0 +1,33 @@
+# AI as a Safety Component of a Medical Device — EU AI Act / MDR Interaction
+
+## 1. AI system definition & role
+Your AI-based software infers outputs affecting patient safety within a medical device — it meets the Art. 3(1) AI system definition, and you act as **provider** under the AI Act.
+
+## 2. Prohibited practices screen (Art. 5)
+Nothing in the facts suggests a prohibited-practice match — proceed to risk-tier determination.
+
+## 3. Risk tier — High-Risk via Art. 6(1), Annex I (Path A), not Annex III
+This is the **sectoral-product path**, not the Annex III use-case path:
+
+- **Art. 6(1) test:** High-risk when (1) the AI is a safety component of a product covered by Annex I harmonisation legislation, **and** (2) that product requires third-party conformity assessment under the relevant Annex I legislation.
+- **Medical devices are Annex I, Section A, item 11** — Regulation (EU) 2017/745 (MDR). Your facts state the device requires **notified-body conformity assessment under the MDR**, which satisfies condition (2). Your AI is described as a **safety component**, satisfying condition (1).
+- **Conclusion:** Both Art. 6(1) conditions are met — this is high-risk under the **Annex I embedded-product path**, not Annex III. (Annex III would only be relevant if the software were a standalone AI system not embedded in an Annex I product — that is not your case here.)
+
+## 4. How the AI Act interacts with the MDR
+The AI Act is designed to **integrate with**, not duplicate, your existing MDR regime:
+
+- **Conformity assessment (Art. 43):** For Annex I products, AI Act conformity assessment is **integrated into the existing conformity assessment procedure already required under the product's Annex I legislation** — here, the MDR notified-body process. You do not run two separate, parallel conformity assessments; your MDR notified body assesses AI Act compliance (Arts. 9–15 requirements) as part of the same MDR conformity assessment procedure, provided that notified body is appropriately designated/competent to also cover AI Act requirements.
+- **Substantive requirements still apply in full:** Arts. 9–17 (risk management, data governance, technical documentation, logging, transparency to deployers, human oversight, accuracy/robustness/cybersecurity, provider checklist, QMS) all apply to the AI component — your existing MDR risk management (ISO 14971) and QMS (ISO 13485) processes can and should be extended/mapped to cover the AI Act's additional requirements (e.g., Art. 9's 5-step process, Art. 10 data governance for training data, Art. 14 human oversight for the AI-driven functionality) rather than built as a separate silo.
+- **Documentation:** Your Annex IV technical documentation (Art. 11) should be integrated with your MDR technical file where content overlaps (e.g., risk management documentation, validation/testing data) to avoid duplicative documentation sets.
+- **CE marking and Declaration of Conformity:** A single CE marking process results once both the MDR and AI Act conformity requirements are satisfied through the integrated assessment; the EU Declaration of Conformity (Art. 47) should reference both regimes.
+- **Post-market monitoring (Art. 72) and incident reporting (Art. 73):** Existing MDR post-market surveillance and vigilance/incident-reporting systems may be adapted and integrated to also satisfy AI Act obligations, rather than maintaining separate systems.
+
+**Practical takeaway:** Treat this as "one conformity assessment, two legal bases layered together" via your notified body, not as two independent compliance programmes.
+
+## 5. Compliance deadline
+Annex I embedded-product high-risk systems (like yours) must comply by **2 August 2028** — this is the deadline set by the Digital Omnibus (Regulation (EU) 2026/1744, in force since 27 July 2026), which extended the original 2 August 2027 date. As of today (15 August 2026), you have roughly two years, but because your AI Act conformity work is integrated into your MDR notified-body assessment cycle, you should align AI Act readiness (risk management, data governance, technical documentation, human oversight design) with your next scheduled MDR conformity assessment milestone rather than waiting until close to the 2028 deadline.
+
+Note: this Annex I deadline is separate from and later than the Annex III standalone-system deadline (2 December 2027) and the Art. 50 transparency deadline (already in force since 2 August 2026) — confirm none of your device's user-facing features (e.g., an AI chatbot for patient support) separately trigger Art. 50 obligations now.
+
+---
+*General compliance information, not legal advice — verify against official sources and consult qualified counsel or your notified body for a binding compliance determination.*

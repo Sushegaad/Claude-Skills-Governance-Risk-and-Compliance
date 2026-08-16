@@ -184,12 +184,12 @@ To remove the marketplace entirely:
 |---|---|---|
 | `iso27001` | ISO 27001:2022 | Gap analysis, policy writing, Annex A control guidance, SoA generation, risk registers |
 | `soc2` | SOC 2 | TSC gap analysis, policy drafting, control documentation, audit evidence, vendor risk |
-| `fedramp` | FedRAMP (CR26) | Readiness assessments under CR26 (Certification Classes A–D), FedRAMP 20x primary pathway, SSP narratives, POA&M with correct remediation SLAs, OSCAL mandate Sep 2026, ConMon |
+| `fedramp` | FedRAMP (CR26) | Readiness under CR26 (final; Classes A–D, pipelines open Aug 2026), FedRAMP 20x primary pathway, Legacy Ready conversion, SSP narratives, POA&M SLAs, OSCAL mandate Sep 30 2026, ConMon |
 | `nist-csf` | NIST CSF 2.0 / 1.1 | Gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping |
 | `nist-800-53` | NIST SP 800-53 Rev 5 | All 20 control families, FIPS 199/200 categorisation, baseline selection, SSP narratives, RMF |
-| `cmmc` | CMMC 2.0 | CMMC Level 1/2/3 gap analysis, SPRS scoring, POA&M, OSC assessment prep, CUI scoping |
-| `swift-csp` | SWIFT CSP 2026 | CSCF v2026 (31 controls: 24 mandatory + 7 advisory), Control 2.4 back-office data flow now mandatory, architecture scoping (A1/A2/A3/A4/B), independent assessment prep, KYC-SA attestation |
-| `ism` | Australian ISM (ACSC) | ISM control assessment, Essential Eight maturity, system authorisation, ACSC guidance |
+| `cmmc` | CMMC 2.0 | Level 1/2/3 gap analysis, SPRS scoring, POA&M, CUI scoping, assessment prep — incl. the Jul 13 2026 Phase 2 suspension interim guidance |
+| `swift-csp` | SWIFT CSP 2026 | CSCF v2026 (32 controls: 25 mandatory + 7 advisory), Control 2.4 back-office data flow now mandatory, architecture scoping (A1/A2/A3/A4/B), independent assessment prep, KYC-SA attestation |
+| `ism` | Australian ISM (ASD) | ISM control assessment (June 2026 release incl. AI controls), Essential Eight maturity, system authorisation, IRAP prep |
 | `nzism` | NZISM (GCSB/NCSC NZ) | NZISM gap analysis, C&A for Restricted+ systems, NZ classification framework, SSP preparation |
 | `cis-controls` | CIS Controls v8 | IG selection, all 153 safeguards, gap assessment, SIEM/log design, cross-framework mapping |
 
@@ -221,7 +221,7 @@ To remove the marketplace entirely:
 |---|---|---|
 | `iso42001` | ISO/IEC 42001:2023 | AI Management System gap analysis, AISIA, AI risk assessment, SoA, certification readiness |
 | `nist-ai-rmf` | NIST AI RMF 1.0 | GOVERN/MAP/MEASURE/MANAGE function guidance, AI risk registers, organisational profiles |
-| `eu-ai-act` | EU AI Act 2024/1689 | Risk classification (9 prohibited practices, high-risk/limited/minimal), Digital Omnibus (adopted Jun 2026) extended deadlines (Annex III Dec 2027, Annex I Aug 2028), GPAI enforcement active Aug 2, 2026 |
+| `eu-ai-act` | EU AI Act 2024/1689 | Risk classification (9 prohibited practices, high-risk/limited/minimal), Digital Omnibus (Reg. (EU) 2026/1744, in force Jul 27 2026) extended deadlines (Annex III Dec 2027, Annex I Aug 2028), GPAI enforcement active Aug 2, 2026 |
 
 ### Export Controls & Sustainability
 
@@ -229,7 +229,7 @@ To remove the marketplace entirely:
 |---|---|---|
 | `itar` | ITAR (22 CFR 120–130) | USML classification, DSP-5/73/85 licence workflows, TAA/MLA drafting, deemed export, DDTC |
 | `ear` | EAR (15 CFR 730–774) | ECCN classification, licence requirements, Entity List screening, licence exceptions |
-| `csrd` | CSRD / ESRS | Double materiality assessment, Wave 1–4 scoping, GRI/TCFD gap analysis, EU Taxonomy alignment |
+| `csrd` | CSRD / ESRS | 2026 Omnibus scoping (1,000+ employees & €450M), revised ESRS (Jul 2026), double materiality, GRI/TCFD gap analysis |
 
 ### Accessibility
 

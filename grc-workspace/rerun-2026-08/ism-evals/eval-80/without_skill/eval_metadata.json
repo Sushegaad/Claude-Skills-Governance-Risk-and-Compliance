@@ -1,0 +1,13 @@
+{
+  "eval_id": 80,
+  "eval_name": "private-cloud-provider-obligations",
+  "run_type": "without_skill",
+  "prompt": "We are a private sector company that has just won a contract to provide cloud services to an Australian federal government agency. The contract requires ISM compliance. What are our obligations, what controls are most critical for our cloud environment, and do we need an IRAP assessment even though we are not a government entity ourselves?",
+  "assertions": [
+    "Explains the obligation mechanism: the ISM applies to the provider contractually — the provider implements ISM controls appropriate to the classification of the data handled, and the customer agency remains the authorising party",
+    "Answers the IRAP question correctly: yes in practice — commercial cloud providers serving government undergo IRAP assessments (whose reports agencies consume for their authorisation decisions); private-sector status does not exempt the provider",
+    "Identifies the critical cloud control areas: tenant isolation, ASD-approved cryptography for data in transit (noting the June 2026 expansion to all data-in-transit scenarios) and at rest, access control with MFA, event logging/monitoring accessible to the agency, and personnel security",
+    "Requires a documented shared-responsibility matrix (which ISM controls the provider vs the agency owns) and contractual security terms (incident notification to the agency, evidence/assurance provision, right to audit)",
+    "Addresses data sovereignty/residency and supply-chain transparency (subcontractors, support locations) as agency-facing obligations"
+  ]
+}

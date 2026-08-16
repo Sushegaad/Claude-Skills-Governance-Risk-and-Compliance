@@ -1,0 +1,33 @@
+{
+  "eval_id": 105,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Analyses the EU subsidiary correctly under current law: at 600 employees the German subsidiary is below the 1,000-employee mandatory-scope line set by Directive (EU) 2026/470, so it is not itself a mandatory CSRD reporter",
+      "passed": false,
+      "evidence": "Response applies the outdated 250-employee 'large undertaking' threshold and concludes: 'Your German subsidiary has 600 employees, which alone clears the employee threshold... it qualifies as a large undertaking in its own right and has its own CSRD reporting obligation.' This directly contradicts the current 1,000-employee line under Directive (EU) 2026/470, which is never mentioned."
+    },
+    {
+      "text": "Handles the non-EU (Art. 40a) question with appropriate care: the pre-2026 construct (>€150M EU turnover plus a qualifying subsidiary/branch, first reports FY2028) is under revision in the Omnibus package — the answer must flag that these thresholds are being amended and require a current-status check, not assert the old construct as settled",
+      "passed": false,
+      "evidence": "Response opens 'Yes — based on the facts given, CSRD is very likely to apply to you' and states 'Your facts... appear to satisfy both legs of this test,' presenting the pre-2026 €150M/qualifying-subsidiary construct as the operative analysis. A generic caveat appears only at the very end ('specifics may have shifted') but the 'Bottom line' still asserts obligations 'on two fronts' rather than treating the old construct as unsettled and requiring current-status verification."
+    },
+    {
+      "text": "Does not fabricate deadlines: any dates given are anchored to verifiable milestones (2026/470 in force March 2026; transposition ≈ March 2027; revised ESRS FY2027) rather than invented non-EU reporting dates",
+      "passed": false,
+      "evidence": "Response presents the pre-Omnibus FY2028/2029 non-EU reporting dates as the working timeline without anchoring to any current 2026 milestone; Directive (EU) 2026/470, the March 2026 in-force date, the ~March 2027 transposition date, and revised-ESRS FY2027 applicability are never mentioned anywhere in the response."
+    },
+    {
+      "text": "Gives pragmatic guidance: monitor final scope/transposition outcomes, prepare voluntarily via the VSME standard if EU customers or lenders request data, and centralise group sustainability data so a scope flip is absorbable",
+      "passed": false,
+      "evidence": "VSME is never mentioned. The response's only forward-looking guidance is a generic 'Watch for legislative changes' note; it does not recommend voluntary VSME preparation or centralising group sustainability data for scope-flip readiness."
+    },
+    {
+      "text": "Notes the value-chain reality: even out-of-scope entities receive ESRS-shaped data requests from in-scope EU business partners, which is often the operative compliance driver",
+      "passed": false,
+      "evidence": "No mention of value-chain/customer/lender data requests as a compliance driver; the response instead concludes the company is in scope on two fronts, so this out-of-scope value-chain dynamic is not addressed."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

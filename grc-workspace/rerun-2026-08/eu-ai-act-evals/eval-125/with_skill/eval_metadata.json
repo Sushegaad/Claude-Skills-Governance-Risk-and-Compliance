@@ -1,0 +1,13 @@
+{
+  "eval_id": 125,
+  "eval_name": "chatbot-art50-transparency",
+  "run_type": "with_skill",
+  "prompt": "We run an e-commerce site with a customer service chatbot and AI-generated product images. What transparency obligations under Article 50 of the EU AI Act apply, and from when?",
+  "assertions": [
+    "Chatbot: Art. 50(1) requires informing users they are interacting with an AI system, unless obvious to a reasonably well-informed person",
+    "AI-generated images: Art. 50(2) requires providers to ensure outputs are marked in a machine-readable format and detectable as artificially generated",
+    "Correctly distinguishes provider duties (50(1)-(2)) from deployer duties (50(4) disclosure applies to deep fakes / image, audio or video content depicting real persons or events — and assesses whether ordinary product images trigger it)",
+    "States the application date: Art. 50 transparency obligations apply from 2 August 2026 for new systems (with the machine-readable-marking grace period for pre-existing systems until 2 December 2026 under the Digital Omnibus)",
+    "Notes penalty exposure for transparency violations (up to €15M or 3% under Art. 99(4)) and gives practical implementation steps (visible chatbot labelling, metadata/watermarking for generated images)"
+  ]
+}

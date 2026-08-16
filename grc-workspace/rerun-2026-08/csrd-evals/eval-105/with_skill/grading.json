@@ -1,0 +1,33 @@
+{
+  "eval_id": 105,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Analyses the EU subsidiary correctly under current law: at 600 employees the German subsidiary is below the 1,000-employee mandatory-scope line set by Directive (EU) 2026/470, so it is not itself a mandatory CSRD reporter",
+      "passed": true,
+      "evidence": "Response states: 'At 600 employees, the German subsidiary is well under the 1,000-employee threshold and therefore not independently in mandatory CSRD scope, regardless of its turnover,' citing Directive (EU) 2026/470's >1,000 employees AND >€450M turnover test."
+    },
+    {
+      "text": "Handles the non-EU (Art. 40a) question with appropriate care: the pre-2026 construct (>€150M EU turnover plus a qualifying subsidiary/branch, first reports FY2028) is under revision in the Omnibus package — the answer must flag that these thresholds are being amended and require a current-status check, not assert the old construct as settled",
+      "passed": true,
+      "evidence": "Response explicitly states the Art. 40a threshold 'is under review as part of the Omnibus package' and 'instructs not to rely on the pre-2026 €150M construct without checking current status. I don't have confirmation of where that threshold landed as of August 2026... I can't give you a reliable yes/no on the non-EU parent obligation today.'"
+    },
+    {
+      "text": "Does not fabricate deadlines: any dates given are anchored to verifiable milestones (2026/470 in force March 2026; transposition ≈ March 2027; revised ESRS FY2027) rather than invented non-EU reporting dates",
+      "passed": true,
+      "evidence": "Only concrete dates cited are Directive (EU) 2026/470 'in force March 2026' and the pre-Omnibus FY2028 figure explicitly flagged as an unconfirmed legacy target ('FY2028 was the pre-Omnibus target'); no new non-EU reporting date is invented."
+    },
+    {
+      "text": "Gives pragmatic guidance: monitor final scope/transposition outcomes, prepare voluntarily via the VSME standard if EU customers or lenders request data, and centralise group sustainability data so a scope flip is absorbable",
+      "passed": true,
+      "evidence": "Response recommends 'Consider the VSME voluntary standard (adopted July 2026) as a fallback' if customers/lenders/investors request data, advises checking 'whether the US parent already produces any group sustainability disclosure that could be leveraged,' and says 'Don't default to \"out of scope\"... treat this as a \"verify before relying\" item.'"
+    },
+    {
+      "text": "Notes the value-chain reality: even out-of-scope entities receive ESRS-shaped data requests from in-scope EU business partners, which is often the operative compliance driver",
+      "passed": true,
+      "evidence": "Response notes 'if neither subsidiary nor the US parent turns out to be in mandatory scope, EU customers, lenders, or investors may still request proportionate sustainability data, and VSME is the designed vehicle for that.'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}
