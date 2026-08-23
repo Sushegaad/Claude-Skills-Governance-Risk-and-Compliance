@@ -711,7 +711,7 @@ The UAE GRC skill turns Claude into a **jurisdiction-first compliance router**: 
 
 ---
 
-### 33. 🚗 TISAX — Trusted Information Security Assessment Exchange
+### 33. <img src="assets/Logos/TISAX.svg" alt="TISAX" height="20" style="vertical-align:middle;object-fit:contain;"> TISAX — Trusted Information Security Assessment Exchange
 
 **File:** `TISAX - Claude Skill/tisax.skill`
 
