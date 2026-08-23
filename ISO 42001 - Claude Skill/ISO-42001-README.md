@@ -145,3 +145,7 @@ The skill activates automatically when your conversation includes:
 **Standard version covered:** ISO/IEC 42001:2023
 
 > This skill provides compliance guidance based on publicly available ISO 42001 documentation and expert interpretation. It does not substitute for professional legal, audit, or consulting advice. Organisations pursuing ISO 42001 certification should engage an accredited certification body.
+
+---
+
+*Skill version: 1.8.0 — August 2026*

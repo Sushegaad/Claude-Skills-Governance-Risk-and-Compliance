@@ -1,7 +1,7 @@
 {
   "name": "lgpd",
   "description": "Expert LGPD compliance advisor for Brazil's data protection law (Law 13,709/2018). Covers legal bases, data subject rights, ANPD obligations, DPO appointment, breach notification, DPIA, international transfers including Brazil-EU mutual adequacy (January 2026 \u2014 no SCCs/BCRs needed for EU transfers), penalties up to 2% revenue / R$50M, gap assessments, and GDPR comparison.",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

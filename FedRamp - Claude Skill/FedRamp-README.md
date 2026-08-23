@@ -196,7 +196,7 @@ The skill was authored using the **Claude Skill Creator** framework, which struc
 
 | Version | Date | Changes |
 |---|---|---|
-| **1.5.0** | July 2026 | Corrected CR26 Certification Class mapping to official NTC-0004 (A = pilot/transitional, B = LI-SaaS + Low, C = Moderate, D = High); CR26 renamed to "Consolidated Rules for 2026"; POA&M remediation SLAs corrected to ConMon Performance Management Guide values (High 30d / Moderate 90d / Low 180d); benchmark re-run with primary-source assertions: 92% with skill vs 84% baseline |
+| **1.5.0** | July 2026 | Corrected CR26 Certification Class mapping to official NTC-0004 (A = pilot/transitional, B = LI-SaaS + Low, C = Moderate, D = High); CR26 renamed to "Consolidated Rules for 2026"; POA&M remediation SLAs corrected to ConMon Performance Management Guide values (High 30d / Moderate 90d / Low 180d); benchmark re-run with primary-source assertions: 96% with skill vs 72% baseline |
 | **1.4.0** | July 2026 | CR26 update: Certification Classes A–D, FedRAMP 20x as primary pathway, FedRAMP Ready retirement (July 28, 2026), OSCAL mandate (September 30, 2026), JAB P-ATO retirement |
 | **1.0.0** | March 2026 | Initial release with Rev 5 baseline, ConMon guidance, OSCAL awareness |
 
@@ -207,3 +207,7 @@ The skill was authored using the **Claude Skill Creator** framework, which struc
 **Hemant Naik**
 [LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
 July 2026
+
+---
+
+*Skill version: 1.8.0 — August 2026*

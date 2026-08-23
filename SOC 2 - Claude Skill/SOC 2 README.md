@@ -175,3 +175,7 @@ The skill was built using the following inputs:
 
 **Hemant Naik**
 [LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
+
+---
+
+*Skill version: 1.8.0 — August 2026*

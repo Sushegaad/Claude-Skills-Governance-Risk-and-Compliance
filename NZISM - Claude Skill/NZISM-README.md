@@ -103,3 +103,7 @@ Email: hemant.naik@gmail.com
 GitHub: [Sushegaad/Claude-Skills-Governance-Risk-and-Compliance](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance)
 Website: [sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance](https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/)
 License: MIT
+
+---
+
+*Skill version: 1.8.0 — August 2026*

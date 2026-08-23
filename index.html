@@ -918,7 +918,7 @@ layout: null
 </div>
 </div>
 <div class="badges">
-<img alt="Release v1.7.1" src="https://img.shields.io/badge/Release-v1.7.1-brightgreen.svg"/>
+<img alt="Release v1.8.0" src="https://img.shields.io/badge/Release-v1.8.0-brightgreen.svg"/>
 <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-blue.svg"/>
 <img alt="33 Skills" src="https://img.shields.io/badge/Skills-33-green.svg"/>
 <img alt="Built with Claude" src="https://img.shields.io/badge/Built%20with-Claude-orange.svg"/>
@@ -2953,13 +2953,28 @@ layout: null
 <p style="margin-top:1rem;"><em>Licensed under the <a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/LICENSE">MIT License</a>.</em></p>
 <hr/>
 <h2>Release Notes</h2>
-<p>Full changelog for all public releases. Latest release: <strong>v1.7.1</strong>.</p>
-<!-- v1.7.1 -->
+<p>Full changelog for all public releases. Latest release: <strong>v1.8.0</strong>.</p>
+<!-- v1.8.0 -->
 <div class="release current">
+<div class="release-header">
+<span class="tag">v1.8.0</span>
+<span class="date">23 Aug 2026</span>
+<span class="whats-new-current-badge">Latest</span>
+</div>
+<ul>
+<li><span class="release-badge badge-new">New</span> <strong>Three new skills — collection grows to 33</strong>: 🇸🇦 <strong>Saudi Arabia GRC</strong> (#31) and 🇦🇪 <strong>UAE GRC</strong> (#32), router-first country compliance advisors covering NCA ECC-2:2024 / Saudi PDPL / SAMA CSF / CST cloud and UAE Federal PDPL / DIFC / ADGM / CBUAE / ICT Health Law with jurisdiction-routing intake gates; and <strong>TISAX</strong> (#33) for the automotive supply chain — VDA ISA 6 (rev 6.0.3), the ISA2027 transition (mandatory for assessments ordered from Jan 1, 2027), all 12 labels with AL1/AL2/AL3 mapping, maturity scoring with cutback, ENX process, and ISO 27001 mapping</li>
+<li><span class="release-badge badge-improve">Improved</span> <strong>Benchmark suite expanded to 165 test cases / 827 assertions</strong> — new skills evaluated with primary-source assertion sets: Saudi Arabia GRC <strong>96%</strong> vs 28% (+68); UAE GRC <strong>84%</strong> vs 28% (+56); TISAX <strong>96%</strong> vs 16% (<strong>+80 — largest delta in the collection</strong>; baseline refused or fabricated ISA2027 answers). Suite headline: <strong>93% vs 74% (772/614 of 827, +19pp, +158)</strong>. Artifacts: <code>grc-workspace/rerun-2026-08/</code></li>
+<li><span class="release-badge badge-new">New</span> <strong>Test suite grown to 1,621 checks</strong> — grading-file audits, installability, freshness, and cross-surface consistency now cover all 33 skills and 66 .skill archives</li>
+<li><span class="release-badge badge-improve">Improved</span> <strong>Site</strong> — Country GRC category added to the header skills grid; TISAX logo added across the skill card, install and eval tables, and README</li>
+<li><span class="release-badge badge-fix">Fix</span> <strong>Standalone README drift</strong> — stale benchmark lines corrected to current published numbers (GDPR 88%/88%, EU AI Act 84%/64%, FedRAMP 96%/72%); version footers unified at 1.8.0 across all 33 standalone skill folders</li>
+</ul>
+</div>
+
+<!-- v1.7.1 -->
+<div class="release">
 <div class="release-header">
 <span class="tag">v1.7.1</span>
 <span class="date">15 Aug 2026</span>
-<span class="whats-new-current-badge">Latest</span>
 </div>
 <ul>
 <li><span class="release-badge badge-improve">Improved</span> <strong>August 2026 regulatory cycle — five skills updated for July changes</strong>: CMMC (July 13 Phase 2 suspension interim guidance with built-in re-verify date), FedRAMP (CR26 final; Legacy Ready conversion deadlines; Class A/B/C pipeline dates; KSIs named), Australian ISM (June 2026 release: 49 restructured principles, AI application controls ISM-2112/2113/2114, expanded in-transit cryptography, cloud answer checklist), CSRD (full post-Omnibus scope rewrite per Directive (EU) 2026/470 — 1,000+ employees AND €450M — plus revised ESRS of July 3, 2026 with the current-vs-revised basis workflow), EU AI Act (Reg. (EU) 2026/1744 OJ citation, enforcement-era framing, Art. 50(2)/50(4) distinctness rule). All facts verified against primary sources before editing</li>
@@ -2971,6 +2986,8 @@ layout: null
 </ul>
 </div>
 
+<details class="releases-archive">
+<summary>▸ Show older releases (v1.6.2 and earlier)</summary>
 <!-- v1.6.2 -->
 <div class="release">
 <div class="release-header">
@@ -2982,8 +2999,7 @@ layout: null
 <li><span class="release-badge badge-improve">Improved</span> <strong>Site</strong> — Release Notes now show only the two most recent releases (older releases collapsed by default); the Additional Resources section moved to a dedicated <strong>Additional Projects</strong> tab covering iso27001-mcp, Responsible AI Model Evaluations, and AI Safety Guard</li>
 </ul>
 </div>
-<details class="releases-archive">
-<summary>▸ Show older releases (v1.6.1 and earlier)</summary>
+
 
 <!-- v1.6.1 -->
 <div class="release">

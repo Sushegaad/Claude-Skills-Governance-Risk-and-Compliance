@@ -190,7 +190,7 @@ The skill covers the full regulation across these key areas:
 
 **Hemant Naik**
 [LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
-Skill version: 1.1.0 — May 2026. Updated for: UK DUAA 2025; EU–US DPF with CJEU appeal guidance; EDPB Opinion 28/2024 on AI models; CJEU SRB pseudonymisation ruling; Russmedia platform controller ruling; EDPB Guidelines 1/2024 on legitimate interests; CEF 2025 erasure enforcement; ePrivacy Regulation withdrawal. Benchmark: 100% with skill vs 96% baseline (+4%).
+Skill version: 1.8.0 — August 2026. Updated for: UK DUAA 2025; EU–US DPF with CJEU appeal guidance; EDPB Opinion 28/2024 on AI models; CJEU SRB pseudonymisation ruling; Russmedia platform controller ruling; EDPB Guidelines 1/2024 on legitimate interests; CEF 2025 erasure enforcement; ePrivacy Regulation withdrawal. Benchmark: 88% with skill vs 88% baseline (±0%) — primary-source assertion set.
 
 > ⚠️ **Disclaimer**: This skill provides informational guidance based on the GDPR text and
 > established regulatory guidance (EDPB/ICO). It does not constitute legal advice. For matters

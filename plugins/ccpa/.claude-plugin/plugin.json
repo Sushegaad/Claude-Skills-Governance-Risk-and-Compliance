@@ -1,6 +1,6 @@
 {
   "name": "ccpa",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) compliance advisor \u2014 business threshold analysis, consumer rights fulfillment, ADMT opt-out (Jan 2027 deadline), cybersecurity audits and risk assessments (live Jan 2026), enforcement precedents (Disney $2.75M record), privacy notice drafting, SPI handling, GPC opt-out, CPPA enforcement, and GDPR alignment.",
   "author": {
     "name": "Hemant Naik",

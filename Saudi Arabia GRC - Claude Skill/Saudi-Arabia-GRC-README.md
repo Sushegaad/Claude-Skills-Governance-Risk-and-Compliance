@@ -17,4 +17,4 @@ Applicability matrices before detail · per-framework gap assessments with evide
 **Trigger phrases:** `Saudi Arabia compliance`, `KSA`, `NCA ECC`, `SDAIA`, `Saudi PDPL`, `SAMA CSF`, `CST cloud`, `Saudi data residency`, `expanding to Saudi Arabia`, `نظام حماية البيانات الشخصية`
 
 ---
-Skill version: 1.7.1 — August 2026
+Skill version: 1.8.0 — August 2026

@@ -1,7 +1,7 @@
 {
   "name": "csrd",
   "description": "EU CSRD (Corporate Sustainability Reporting Directive, EU 2022/2464) compliance advisor \u2014 scope & threshold analysis (large PIEs, other large, listed SMEs, non-EU), double materiality assessment (DMA), ESRS gap assessment, ESRS E1\u2013E5 environmental disclosures, ESRS S1\u2013S4 social disclosures, ESRS G1 governance, Scope 1/2/3 GHG emissions, transition plan drafting, assurance readiness, XBRL tagging, value chain reporting, and CSRD vs GRI/TCFD/SASB comparison.",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

@@ -109,3 +109,7 @@ Once installed, try prompts like:
 **Hemant Naik**
 Email: hemant.naik@gmail.com
 GitHub: [Sushegaad/Claude-Skills-Governance-Risk-and-Compliance](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance)
+
+---
+
+*Skill version: 1.8.0 — August 2026*

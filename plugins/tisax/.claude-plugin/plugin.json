@@ -1,6 +1,6 @@
 {
   "name": "tisax",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "TISAX advisor for the automotive supply chain — VDA ISA 6 and the ISA2027 transition, assessment levels AL1-AL3, all 12 labels, maturity scoring with cutback, ENX portal process, corrective windows, and ISO 27001 mapping.",
   "author": {
     "name": "Hemant Naik",

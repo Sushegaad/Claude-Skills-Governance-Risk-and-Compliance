@@ -1,7 +1,7 @@
 {
   "name": "eu-ai-act",
   "description": "EU AI Act (Regulation (EU) 2024/1689) compliance advisor \u2014 risk classification across all four tiers, all 9 prohibited practices (Art. 5), Annex III high-risk use cases, provider and deployer obligations (Arts. 9\u201317, 26), GPAI model obligations and systemic risk (Arts. 51\u201355, enforcement Aug 2, 2026), conformity assessment and CE marking (Arts. 43\u201348), EU AI database registration, Art. 50 transparency (Aug 2, 2026), governance (AI Office, AI Board), penalties (Art. 99), Digital Omnibus adopted June 29, 2026 (Annex III deferred to Dec 2027, Annex I to Aug 2028), and cross-framework mapping to ISO 42001, NIST AI RMF, and GDPR.",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

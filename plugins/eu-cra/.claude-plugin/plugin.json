@@ -1,7 +1,7 @@
 {
   "name": "eu-cra",
   "description": "Expert EU Cyber Resilience Act (CRA) advisor for Regulation (EU) 2024/2847. Covers product classification (Default/Class I/Class II), Annex I essential requirements gap analysis, conformity assessment (self-assessment vs Notified Body), CE marking, SBOM, vulnerability handling, 24/72-hour ENISA reporting, support period obligations, and manufacturer/importer/distributor duties. Full application: December 11, 2027.",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

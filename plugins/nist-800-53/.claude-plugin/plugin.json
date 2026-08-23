@@ -1,7 +1,7 @@
 {
   "name": "nist-800-53",
   "description": "NIST SP 800-53 Rev 5 compliance advisor \u2014 all 20 control families, Low/Moderate/High baseline selection, FIPS 199/200 categorization, control tailoring, ODVs, overlays, privacy controls (PT family), supply chain (SR family), SSP narrative writing, assessment procedures (SP 800-53A), POA&M management, RMF steps (SP 800-37), continuous monitoring, OSCAL, and mapping to FedRAMP, FISMA, CMMC 2.0, and ISO 27001.",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

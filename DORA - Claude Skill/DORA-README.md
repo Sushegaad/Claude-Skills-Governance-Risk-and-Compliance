@@ -206,4 +206,4 @@ dora/
 **Hemant Naik**
 [LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
 
-Skill version: 1.7.1 — August 2026
+Skill version: 1.8.0 — August 2026

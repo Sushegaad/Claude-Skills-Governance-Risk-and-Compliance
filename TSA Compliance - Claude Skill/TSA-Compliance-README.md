@@ -142,5 +142,5 @@ TSA Security Directives are classified as **Sensitive Security Information (SSI)
 [LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
 **Built with:** Claude (Anthropic) using the Claude Skills framework
 **Date:** March 2026
-**Skill version:** 1.7.1
+**Skill version:** 1.8.0
 **Standard coverage:** TSA SD Pipeline-2021-01G, SD Pipeline-2021-02F, SD 1580-21-01E, SD 1582-21-01E, November 2024 NPRM
