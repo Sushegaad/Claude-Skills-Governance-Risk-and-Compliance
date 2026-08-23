@@ -1,0 +1,29 @@
+# ISO 27001:2022 and TISAX: Do You Still Need a Separate TISAX Assessment?
+
+**Short answer: yes, you still need TISAX.** ISO 27001 certification does not substitute for a TISAX label, but it will meaningfully reduce the effort required to get one.
+
+## Why ISO 27001 Doesn't Automatically Satisfy a TISAX Requirement
+
+VW (like other OEMs in the TISAX ecosystem) requires suppliers to hold a TISAX assessment result that is registered and shared through the **ENX Association's TISAX portal**, assessed against the **VDA ISA (Information Security Assessment)** catalogue by an accredited TISAX audit provider. An ISO 27001 certificate, even a current 2022-revision one, isn't visible or verifiable in that system, and VW's procurement/security teams are set up to check TISAX participant IDs and shared assessment results — not third-party ISO certificates — as part of their supplier onboarding and monitoring process.
+
+There are structural reasons the two aren't interchangeable:
+- **Different catalogues.** VDA ISA is built on the same backbone as ISO 27001 Annex A but adds automotive-specific control areas: prototype protection, connected vehicle/telematics data handling, physical security tailored to automotive R&D and testing environments, and data protection modules aligned with GDPR in an automotive supply-chain context.
+- **Different maturity model.** ISO 27001 is pass/fail against Annex A applicability (via the Statement of Applicability) plus a functioning ISMS; VDA ISA uses an explicit 0–5 maturity scale per control, and TISAX generally expects "Level 3 (established)" or higher on relevant controls, not just "control exists."
+- **Different governance/exchange mechanism.** TISAX's value proposition is a shared, portable assessment result via ENX — that's the actual "product" VW is asking for, not merely evidence of a management system.
+
+## How Much Extra Work It Is
+
+Because of the shared DNA between ISO 27001 Annex A and VDA ISA, having a current ISO 27001:2022 certificate meaningfully lightens the load:
+- Most of your **policy documentation, risk management process, access control framework, incident management process, and asset management practices** can be reused largely as-is — you'll map/cross-reference them rather than write them from scratch.
+- Your **internal audit and management review cadence** (already required by ISO 27001 clause 9) demonstrates the kind of ongoing governance TISAX assessors look for.
+- You will still need to **add or strengthen automotive-specific elements** not typically covered (or covered only lightly) under a generic ISO 27001 scope: prototype/confidential vehicle data handling if applicable, physical security specifics for any R&D/testing areas, and possibly a data protection module if you process significant personal data for VW.
+- You'll need to **engage a TISAX-accredited audit provider** (separate from your ISO 27001 certification body, unless they also offer TISAX assessments) and go through the ENX registration, scoping, and assessment/labeling process — this is a discrete project even if the underlying controls are already in place.
+- Expect to spend time producing **evidence mapped specifically to VDA ISA control language and maturity levels**, since auditors will assess against that catalogue's wording and scoring, not your ISO 27001 SoA directly.
+
+## Rough Effort Estimate
+
+Compared to starting from zero (which might take 6–9 months), a company with solid, current ISO 27001:2022 certification can often complete a first TISAX assessment (typically AL2) in **roughly 2–4 months**: a few weeks for gap-mapping ISO controls to VDA ISA, a few weeks to close any automotive-specific gaps, then provider booking and the assessment itself. If VW is asking for a higher protection level (e.g., "Strictly Confidential" / AL3 with an on-site assessment) or specific modules like prototype protection, add time accordingly.
+
+## Recommended Next Step
+
+Do a formal gap mapping of your ISO 27001:2022 Annex A controls (and your Statement of Applicability) against the current VDA ISA catalogue. That mapping exercise will tell you precisely what's already covered versus what's net-new, and let you size the remaining project accurately rather than guessing.

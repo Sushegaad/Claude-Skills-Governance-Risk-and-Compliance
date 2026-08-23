@@ -1,0 +1,33 @@
+{
+  "eval_id": 224,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Selects the right objectives: prototype-related labels (Proto Vehicles / Test Vehicles — and Proto Parts / Proto Events where relevant to the activity) rather than only the confidentiality labels",
+      "passed": false,
+      "evidence": "Response never uses the actual TISAX label names 'Proto Vehicles', 'Test Vehicles', or 'Proto Parts'; it only offers generic, run-together sub-categories: \"Prototype vehicles/components — physical handling, storage, and protection of prototype hardware\" and \"Prototype (test) events / trials\". It fails to identify 'Test Vehicles' as the likely primary applicable label for prototype vehicle testing, which is the specific mapping the assertion requires."
+    },
+    {
+      "text": "States the level rule correctly: physical prototype labels require AL3 — a comprehensive ON-SITE assessment including physical inspection",
+      "passed": false,
+      "evidence": "Response hedges rather than stating the rule: \"Expect Assessment Level 2 (AL2) at minimum, and very plausibly AL3 (on-site assessment) given prototypes typically carry 'high' or 'very high' protection needs...\" — this presents AL3 as merely plausible/likely rather than a hard requirement for physical prototype labels."
+    },
+    {
+      "text": "Describes the Prototype Protection catalogue accurately: a dedicated ISA 6 module (22 controls) covering physical/organizational protections — perimeter and zone security, camouflage and transport rules, test-drive protections, photo/film controls, personnel commitments",
+      "passed": false,
+      "evidence": "Response covers many relevant physical-control themes (camouflage, access control, photography bans, secure transport, test track controls) but never identifies it as a defined ISA 6 module or gives the '22 controls' figure (no occurrence of '22 control' or module structure anywhere in the response) — the assertion's specific catalogue-structure fact is missing."
+    },
+    {
+      "text": "Notes the ISA2027 change accurately where versioning comes up: the prototype module is restructured (20 controls in 2 domains, new PTS label structure) for assessments ordered from January 1, 2027",
+      "passed": true,
+      "evidence": "Conditional assertion not triggered: the response never discusses catalogue versioning/ISA2027 at all (no occurrence of '2027', 'PTS', or a control count anywhere in the response), so per grading rules this conditional assertion passes by default since it was never triggered."
+    },
+    {
+      "text": "Covers the practical path: ENX registration and scoping of the testing locations, ENX-accredited provider with prototype competence, evidence and site readiness for physical inspection, maturity-3 target with cutback",
+      "passed": false,
+      "evidence": "No mention anywhere in the response of ENX, portal registration, scoping of testing locations, provider accreditation, maturity levels, or cutback rules (no occurrence of 'ENX', 'maturity', 'cutback', 'accredited provider', or 'registration'). Practical next steps only cover asking the OEM for requirements, a gap assessment, and budgeting for an on-site visit."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

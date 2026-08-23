@@ -1,0 +1,41 @@
+# TISAX for a New Supplier — BMW "Confidential" Requirement
+
+Congratulations on the contract. Here's what "TISAX Label Confidential" means and what it will take to get there.
+
+## What TISAX is
+
+TISAX (Trusted Information Security Assessment Exchange) is **an assessment, not a certification**. It's governed by the **ENX Association** on behalf of the **VDA** (German Automotive Industry Association): VDA owns the assessment catalogue (the VDA ISA), and ENX runs the exchange platform and accredits the audit providers who perform assessments. The model is "assess once, share with many" — you complete one assessment and share the results with BMW (and any other OEM/partner) via the ENX platform, instead of undergoing a separate audit for every customer. It's de facto mandatory across the German automotive supply chain (VW, BMW, Mercedes-Benz, Audi, and others all require it).
+
+## Version status (relevant to your planning)
+
+- The **current catalogue is VDA ISA 6** (revision 6.0.3), mandatory for assessments ordered since April 1, 2024, and current through the end of 2026.
+- **ISA2027** was published July 1, 2026, and becomes **mandatory for assessments ordered from January 1, 2027** — it's a substantial revision (44 of 46 Information Security controls edited, prototype module restructured, updated ISO 27001:2022/NIST CSF 2.0 mappings).
+- Since today is August 23, 2026: **if you order your assessment now, in 2026, you'll be assessed against ISA 6.** If you wait until 2027 to place the order, you'll run on ISA2027 instead. Decide your order date deliberately and gap-assess against the catalogue you'll actually face.
+
+## What "Confidential" means and what level it requires
+
+"Confidential" is one of the current TISAX **labels** (introduced with ISA 6, replacing part of the old "Info High" naming — if you see "Info High" anywhere, that's legacy terminology). It signals high confidentiality protection needs for the information BMW will share with or receive from you.
+
+The objective you choose determines your **assessment level**:
+- **Confidential → AL2**: an audit-provider **plausibility check** — your self-assessment is reviewed against evidence and interviews, usually conducted **remotely** (not a full on-site audit).
+
+So you're looking at AL2, not the more intensive AL3 (which applies to Strictly Confidential, Very High Availability, physical prototype labels, and Special Data).
+
+## What it will take
+
+1. **ENX portal registration** for your legal entity/location(s). Fees: either **€405 net per location and scope** (one-time, Assessment Based Charges) or a **€5,000/year** flat fee (Participation Based Charges) covering unlimited locations/scopes, plus VAT.
+2. **Scoping** — use the **standard scope** (strongly recommended); it's what partners like BMW expect and compare against. Custom scopes reduce acceptance.
+3. **Select an ENX-accredited audit provider** and confirm the Confidential objective / AL2 level. Book early — provider capacity drives your timeline.
+4. **Self-assessment** against the applicable ISA catalogue — for a standard Confidential objective, this is the **Information Security catalogue (46 controls)** covering IS policy/organization, HR security, physical security, access management, IT security/cryptography, operations security, supplier relationships, incident management, and business continuity, with additional layered requirements because you're going for a "High protection need" label.
+5. Each applicable requirement is scored on a **maturity scale of 0 (Incomplete) to 5 (Optimizing)**, with a **target maturity of 3 ("Established")**. **Cutback rules** mean over-performing on some questions can't offset weak ones — your result is driven by your weakest areas, so aim for a consistent 3 across the board rather than excelling in a few spots.
+6. **Initial assessment** (remote plausibility review for AL2). If nonconformities are found, you'll go through a **corrective action plan assessment**, possibly get **temporary labels**, and need a **follow-up assessment within 9 months** of the initial assessment's closing meeting (miss that window and the assessment restarts).
+7. Once passed, you receive the **Confidential label, valid 3 years**, shareable with BMW at whatever detail level you choose on the ENX platform (results are never public by default).
+
+## Roughly how long
+
+For a first-time organization with no existing ISMS, plan on **6–12 months** to reach a consistent maturity 3 across applicable controls, before you're realistically ready for the initial assessment — plus lead time to book an accredited audit provider. If you already have reasonable information-security practices in place (even informally), you may be on the faster end; if you're starting from very little, budget toward the longer end. Given BMW's contract timeline, it's worth starting the ENX registration and provider search now while you run your internal gap assessment in parallel.
+
+## Bottom line
+You'll need: ENX registration → standard scope → an accredited audit provider → self-assessment and remediation to maturity 3 on the Information Security catalogue → AL2 assessment → (possible corrective action) → the Confidential label, valid for 3 years. If you can order the assessment before year-end 2026, you'll run on the current ISA 6 catalogue; ordering from 2027 shifts you to ISA2027.
+
+*This is general compliance information, not legal advice. Confirm current fees, timelines, and provider availability directly with ENX and your chosen accredited audit provider.*

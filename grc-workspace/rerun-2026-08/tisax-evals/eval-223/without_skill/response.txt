@@ -1,0 +1,38 @@
+# TISAX Non-Conformities: Corrective Action Process, Temporary Labels, and Deadlines
+
+Finding non-conformities in access control and supplier management is common, especially on a first assessment. Here's how the process generally works.
+
+## 1. How Non-Conformities Get Identified
+
+During your TISAX assessment, the audit provider scores each applicable control against the VDA ISA maturity model (a 0–5 scale, where **Level 3 "established"** is generally the minimum target for controls tied to your required protection level). Any control area — like access control or supplier/third-party risk management — that scores below the required maturity level is flagged as a **finding / non-conformity (control gap)**, distinguished loosely by severity (broadly: something that's a documentation/process gap versus something that represents a genuine, higher-risk exposure).
+
+## 2. Corrective Action Plan (CAP)
+
+Once findings are documented in the assessment report, you don't get an automatic pass or fail on the spot — you're given the opportunity to remediate:
+
+- **You submit a corrective action plan (CAP).** This describes, for each finding, the root cause, the planned remediation, the owner, and the target completion date. There is typically a **defined window (commonly around 2 months) to submit this plan** after the assessment findings are communicated.
+- **The auditor/provider reviews the CAP** to confirm the proposed actions would actually close the gap and are realistic and time-bound.
+- **You implement the corrective actions** against the plan. Overall, TISAX participants are generally expected to have all corrective actions implemented and verified **within a bounded period after the initial assessment (commonly cited in the ENX/TISAX process as up to around 9 months in total)** — though the exact deadline depends on the severity of the findings and what your specific audit provider sets in the assessment report. More severe or higher-risk findings (e.g., in areas directly affecting confidentiality of shared OEM data) are typically expected to be closed faster than lower-severity documentation gaps.
+- **You provide evidence of remediation** (updated policies, screenshots/configuration evidence, revised supplier contracts or risk assessments, access reviews performed, etc.) back to the audit provider for verification, usually via a remote follow-up review rather than a full re-assessment.
+
+## 3. Temporary / Provisional Label Status
+
+While corrective actions are outstanding, the assessment result in the ENX system typically shows as **"valid with correction requirement" (i.e., a provisional/temporary status)** rather than a clean, fully valid label. This lets you continue sharing your assessment result with customers like the requesting OEM during the remediation window, while transparently signaling that open items remain — OEMs can see this status when they review your shared result. It is not the same as a fully closed/clean TISAX label, and some customers may ask about your remediation timeline directly.
+
+## 4. Deadlines and What Happens If You Miss Them
+
+- If the CAP isn't submitted within the initial window, or corrective actions aren't completed and verified within the overall deadline, the audit provider can escalate this — potentially resulting in the assessment result being downgraded, marked as not valid, or in a worst case requiring a fresh assessment.
+- Because your OEM customer can see your assessment status through the shared result, missed deadlines are visible to them, which can affect the business relationship — so treat the CAP deadlines as hard commitments, not soft targets.
+- If you genuinely cannot meet a deadline, proactively communicate with your audit provider — there is generally more flexibility if you're transparent early than if you simply miss the date.
+
+## 5. Practical Steps for Your Access Control and Supplier Management Findings
+
+- **Access control:** typical root causes are missing periodic access reviews, weak joiner/mover/leaver processes, lack of least-privilege enforcement, or insufficient logging/monitoring of privileged access. Remediation usually means documenting (or tightening) an access control policy, implementing/evidencing regular access recertification, and showing consistent enforcement (not just a policy on paper).
+- **Supplier management:** typical root causes are lack of a formal third-party/supplier risk assessment process, missing security clauses in supplier contracts, or no ongoing monitoring of critical suppliers' security posture. Remediation usually means establishing a supplier risk classification and due-diligence process, updating contracts with security requirements, and showing evidence of risk assessments performed for your critical suppliers.
+
+## Recommended Immediate Actions
+
+1. Get the detailed finding write-ups from your audit provider (not just the category) so you know exactly what evidence and maturity level is expected.
+2. Assign owners and draft your CAP now — don't wait until close to the submission deadline.
+3. Prioritize the higher-severity/higher-risk findings first, since those are likely to carry the tighter remediation timelines.
+4. Keep a clear evidence trail (dated documents, screenshots, meeting minutes, review logs) as you close each item — you'll need to submit this for verification.

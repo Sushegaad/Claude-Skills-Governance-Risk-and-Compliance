@@ -1,0 +1,47 @@
+# TISAX Labels and Level for Prototype Vehicle Testing
+
+Prototype vehicle testing work puts you squarely in TISAX's **Prototype Protection** territory, on top of whatever information-security objectives apply to the data you exchange with the OEM.
+
+## Version status (relevant to your planning)
+
+- The **current catalogue is VDA ISA 6** (revision 6.0.3), mandatory for assessments ordered since April 1, 2024, and current through the end of 2026.
+- **ISA2027** was published July 1, 2026, and becomes **mandatory for assessments ordered from January 1, 2027** — notably, it **restructures the prototype module from 22 to 20 controls across 2 domains** and introduces a **new PTS prototype-label structure**.
+- Since today is August 23, 2026: order your assessment **in 2026 and you're on ISA 6** (with the current Proto Parts / Proto Vehicles / Test Vehicles / Proto Events labels below); order **from January 1, 2027** and you'll be assessed under **ISA2027's restructured prototype module and new PTS label structure** instead. Given the direct relevance of the ISA2027 prototype restructuring to your business, it's worth confirming with your audit provider which structure you'll actually be assessed against before committing to an order date.
+
+## Which labels you likely need
+
+The current (ISA 6) prototype-related objectives/labels are:
+
+| Label | Protection focus |
+|---|---|
+| **Proto Parts** | Physical protection of prototype components/parts |
+| **Proto Vehicles** | Physical protection of prototype vehicles |
+| **Test Vehicles** | Protection specific to vehicles used in testing (this is likely your primary label for "prototype vehicle testing") |
+| **Proto Events** | Protection of prototype-related events (e.g., test drives, filming, demonstrations) |
+
+Since you specifically handle **prototype vehicle testing**, **Test Vehicles** is the most directly applicable label, and **Proto Vehicles** may also apply depending on whether you also store/handle prototype vehicles outside active testing. Don't guess — confirm the exact objective set with the OEM you're testing for, since they specify which labels they require from their supplier contractually. If your testing work also involves exchanging confidential technical information (not just physical vehicle handling), you may also need an information-security confidentiality objective (**Confidential** or **Strictly Confidential**) alongside the prototype labels — that's a separate determination based on what data flows to you.
+
+## Assessment level: AL3
+
+All of the physical prototype labels (Proto Parts, Proto Vehicles, Test Vehicles, Proto Events) require **AL3** — a **comprehensive on-site assessment** involving evidence review, interviews, **and physical inspection** of your facilities/processes. This is more intensive than AL2 (remote plausibility check used for objectives like Confidential or Data alone), because physical prototype protection can only be meaningfully verified in person. Expect the audit provider to physically inspect your test facilities, storage, transport arrangements, and access controls.
+
+## What the Prototype Protection catalogue requires
+
+The **Prototype Protection catalogue (22 controls under ISA 6; restructuring to 20 controls in 2 domains under ISA2027)** covers physical and organizational protection measures including:
+
+- **Perimeter and zone security** — controlled access to areas where prototype vehicles/parts are stored, tested, or transported
+- **Camouflage and transport rules** — measures to prevent visual identification of prototype vehicles during testing, transit, and storage
+- **Test-drive protections** — controls around who can drive, observe, or be near prototype vehicles during testing
+- **Film/photo controls** — restrictions on photography/recording near prototypes, and handling of any authorized imagery
+- **Personnel commitments** — confidentiality/NDA-type commitments specifically covering staff with prototype access
+
+These sit alongside (not instead of) the core **Information Security catalogue (46 controls)** — every TISAX assessment includes that base catalogue's policy, HR, physical security, access management, IT security, operations, supplier, incident, and continuity requirements, with additional layered requirements if your objectives include High/Very High protection needs.
+
+## Practical next steps
+
+1. Confirm the **exact objectives/labels** the OEM requires (likely Test Vehicles, possibly Proto Vehicles and/or a confidentiality label) — this is contractual, not something to infer.
+2. Plan for **AL3**: budget for an on-site visit, not just remote evidence review.
+3. Gap-assess against both the **Information Security catalogue** and the **Prototype Protection catalogue**, targeting **maturity 3** on all applicable requirements (cutback rules mean weak spots in either catalogue will drag your result down regardless of strengths elsewhere).
+4. Decide your **order timing** deliberately given the ISA2027 prototype restructuring — if you order before year-end 2026 you get the current 22-control structure; from 2027 you're on the new 20-control/2-domain PTS structure.
+
+*This is general compliance information, not legal advice. Confirm the exact objectives/labels your OEM customer requires, and verify current prototype catalogue content with your ENX-accredited audit provider or the official VDA ISA download.*

@@ -1,0 +1,33 @@
+{
+  "eval_id": 221,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Frames TISAX correctly: an assessment-and-label-exchange regime governed by the ENX Association on behalf of the VDA — an assessment with shareable labels, NOT a certification — built on 'assess once, share with many' and de facto mandatory for OEM suppliers",
+      "passed": true,
+      "evidence": "\"TISAX ... is an assessment, not a certification. It's governed by the ENX Association on behalf of the VDA ... The model is 'assess once, share with many' ... It's de facto mandatory across the German automotive supply chain (VW, BMW, Mercedes-Benz, Audi, and others all require it).\""
+    },
+    {
+      "text": "Maps the objective correctly: 'Confidential' is a current ISA-6-era label (part of the renaming that split Info High into Confidential + High Availability) and typically requires an AL2 assessment (audit-provider plausibility check with evidence review and interviews, usually remote) — not AL1 (no labels) and not necessarily on-site AL3",
+      "passed": true,
+      "evidence": "\"'Confidential' is one of the current TISAX labels (introduced with ISA 6, replacing part of the old 'Info High' naming...)\" and \"Confidential → AL2: an audit-provider plausibility check — your self-assessment is reviewed against evidence and interviews, usually conducted remotely ... So you're looking at AL2, not the more intensive AL3 (which applies to Strictly Confidential, Very High Availability, physical prototype labels, and Special Data).\""
+    },
+    {
+      "text": "Describes the real process: ENX portal registration (fees ~€405 net per location and scope, or a €5,000/year flat participation option), standard scope recommended, ENX-accredited audit provider selection, assessment, corrective action plan if needed, labels valid 3 years and shared via the ENX platform",
+      "passed": true,
+      "evidence": "\"Fees: either €405 net per location and scope (one-time, Assessment Based Charges) or a €5,000/year flat fee (Participation Based Charges)...\" \"Scoping — use the standard scope (strongly recommended)...\" \"Select an ENX-accredited audit provider...\" \"corrective action plan assessment...\" \"you receive the Confidential label, valid 3 years, shareable with BMW ... on the ENX platform\""
+    },
+    {
+      "text": "Explains scoring honestly: VDA ISA maturity levels 0-5 with target maturity 3 and cutback rules (over-performance cannot offset weak areas), and gives a realistic first-timer runway (roughly 6-12 months to consistent maturity 3)",
+      "passed": true,
+      "evidence": "\"scored on a maturity scale of 0 (Incomplete) to 5 (Optimizing), with a target maturity of 3 ('Established'). Cutback rules mean over-performing on some questions can't offset weak ones...\" and \"plan on 6–12 months to reach a consistent maturity 3 across applicable controls\""
+    },
+    {
+      "text": "States the version-timing fact: assessments ordered through 2026 run on VDA ISA 6; assessments ordered from January 1, 2027 run on ISA2027 (published July 1, 2026) — the supplier should plan its order date and gap-assess against the right catalogue",
+      "passed": true,
+      "evidence": "\"The current catalogue is VDA ISA 6 (revision 6.0.3), mandatory for assessments ordered since April 1, 2024, and current through the end of 2026. ISA2027 was published July 1, 2026, and becomes mandatory for assessments ordered from January 1, 2027...\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

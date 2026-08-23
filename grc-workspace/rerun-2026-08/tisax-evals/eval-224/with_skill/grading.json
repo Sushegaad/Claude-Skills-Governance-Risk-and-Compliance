@@ -1,0 +1,33 @@
+{
+  "eval_id": 224,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Selects the right objectives: prototype-related labels (Proto Vehicles / Test Vehicles — and Proto Parts / Proto Events where relevant to the activity) rather than only the confidentiality labels",
+      "passed": true,
+      "evidence": "Table lists Proto Parts, Proto Vehicles, Test Vehicles, and Proto Events; response states \"Test Vehicles is the most directly applicable label, and Proto Vehicles may also apply\" and treats a confidentiality label (Confidential/Strictly Confidential) as a separate, additional determination rather than the primary answer."
+    },
+    {
+      "text": "States the level rule correctly: physical prototype labels require AL3 — a comprehensive ON-SITE assessment including physical inspection",
+      "passed": true,
+      "evidence": "\"All of the physical prototype labels (Proto Parts, Proto Vehicles, Test Vehicles, Proto Events) require AL3 — a comprehensive on-site assessment involving evidence review, interviews, and physical inspection of your facilities/processes.\""
+    },
+    {
+      "text": "Describes the Prototype Protection catalogue accurately: a dedicated ISA 6 module (22 controls) covering physical/organizational protections — perimeter and zone security, camouflage and transport rules, test-drive protections, photo/film controls, personnel commitments",
+      "passed": true,
+      "evidence": "\"The Prototype Protection catalogue (22 controls under ISA 6; restructuring to 20 controls in 2 domains under ISA2027) covers physical and organizational protection measures including: Perimeter and zone security ... Camouflage and transport rules ... Test-drive protections ... Film/photo controls ... Personnel commitments\""
+    },
+    {
+      "text": "Notes the ISA2027 change accurately where versioning comes up: the prototype module is restructured (20 controls in 2 domains, new PTS label structure) for assessments ordered from January 1, 2027",
+      "passed": true,
+      "evidence": "\"ISA2027 was published July 1, 2026, and becomes mandatory for assessments ordered from January 1, 2027 — notably, it restructures the prototype module from 22 to 20 controls across 2 domains and introduces a new PTS prototype-label structure.\""
+    },
+    {
+      "text": "Covers the practical path: ENX registration and scoping of the testing locations, ENX-accredited provider with prototype competence, evidence and site readiness for physical inspection, maturity-3 target with cutback",
+      "passed": false,
+      "evidence": "Practical next steps cover maturity-3/cutback fully (\"targeting maturity 3 on all applicable requirements (cutback rules mean weak spots in either catalogue will drag your result down...)\") and site readiness partially (\"Plan for AL3: budget for an on-site visit\"), but never mention ENX portal registration or scoping the testing locations as a step, and never call for selecting a provider with specific prototype-assessment competence (the only mention of an 'ENX-accredited audit provider' is a generic line in the closing disclaimer, not part of the practical path)."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

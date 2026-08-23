@@ -93,6 +93,7 @@ EXPECTED_SKILL_NAMES = {
 EXPECTED_STANDALONE_FILENAMES = {
     "ccpa.skill",
     "saudi-arabia-grc.skill",
+    "tisax.skill",
     "uae-grc.skill",
     "cis-controls.skill",
     "cmmc.skill",

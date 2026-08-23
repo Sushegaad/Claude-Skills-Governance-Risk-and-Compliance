@@ -1,11 +1,11 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
-Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, DORA Digital Operational Resilience, India's Digital Personal Data Protection Act (DPDPA), CMMC 2.0 Cybersecurity Maturity Model Certification, NIST AI Risk Management Framework, SWIFT Customer Security Programme (CSP), Australian Information Security Manual (ISM), EU NIS2 Directive, CCPA/CPRA California Privacy, ITAR (International Traffic in Arms Regulations), Brazil's LGPD (Lei Geral de Proteção de Dados), EU CSRD (Corporate Sustainability Reporting Directive), CIS Controls v8 (CIS Top 18), EAR (Export Administration Regulations), NIST SP 800-53 (Security and Privacy Controls for Federal Systems), EU AI Act (Regulation (EU) 2024/1689), Section 508 (US Federal ICT Accessibility), WCAG (Web Content Accessibility Guidelines), NZISM (New Zealand Information Security Manual), Vietnam PDPL (Law on Personal Data Protection No. 91/2025/QH15), EU CRA (Cyber Resilience Act, Regulation (EU) 2024/2847), Saudi Arabia GRC (NCA ECC, Saudi PDPL, SAMA, CST), and UAE GRC (Federal PDPL, DIFC, ADGM, CBUAE, ICT Health Law) — powered by Claude Skills. **Updated Monthly.**
+Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, DORA Digital Operational Resilience, India's Digital Personal Data Protection Act (DPDPA), CMMC 2.0 Cybersecurity Maturity Model Certification, NIST AI Risk Management Framework, SWIFT Customer Security Programme (CSP), Australian Information Security Manual (ISM), EU NIS2 Directive, CCPA/CPRA California Privacy, ITAR (International Traffic in Arms Regulations), Brazil's LGPD (Lei Geral de Proteção de Dados), EU CSRD (Corporate Sustainability Reporting Directive), CIS Controls v8 (CIS Top 18), EAR (Export Administration Regulations), NIST SP 800-53 (Security and Privacy Controls for Federal Systems), EU AI Act (Regulation (EU) 2024/1689), Section 508 (US Federal ICT Accessibility), WCAG (Web Content Accessibility Guidelines), NZISM (New Zealand Information Security Manual), Vietnam PDPL (Law on Personal Data Protection No. 91/2025/QH15), EU CRA (Cyber Resilience Act, Regulation (EU) 2024/2847), Saudi Arabia GRC (NCA ECC, Saudi PDPL, SAMA, CST), UAE GRC (Federal PDPL, DIFC, ADGM, CBUAE, ICT Health Law), and TISAX (VDA ISA / ENX automotive supplier security) — powered by Claude Skills. **Updated Monthly.**
 
-Benchmarked across 160 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (802 assertions in total). Skills scored **93%** vs a baseline of **76%**.
+Benchmarked across 165 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (827 assertions in total). Skills scored **93%** vs a baseline of **74%**.
 
 [![Release: v1.7.1](https://img.shields.io/badge/Release-v1.7.1-brightgreen.svg)](../../releases/tag/v1.7.1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills: 32](https://img.shields.io/badge/Skills-32-green.svg)](#the-skills)
+[![Skills: 33](https://img.shields.io/badge/Skills-33-green.svg)](#the-skills)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)](https://claude.ai)
 [![GitHub Stars](https://img.shields.io/github/stars/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance?style=flat&label=Stars&color=gold)](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance)
 
@@ -48,6 +48,7 @@ Benchmarked across 160 test cases using the eval framework — each graded again
   - [EU CRA — Cyber Resilience Act](#-eu-cra--cyber-resilience-act)
   - [Saudi Arabia GRC — Country Compliance Advisor](#-saudi-arabia-grc--country-compliance-advisor)
   - [UAE GRC — Country Compliance Advisor](#-uae-grc--country-compliance-advisor)
+  - [TISAX — Trusted Information Security Assessment Exchange](#-tisax--trusted-information-security-assessment-exchange)
 - [Potential Use Cases](#potential-use-cases)
 - [How to Install a Skill](#how-to-install-a-skill)
 - [Install via Claude Code Marketplace](#install-via-claude-code-marketplace)
@@ -710,6 +711,22 @@ The UAE GRC skill turns Claude into a **jurisdiction-first compliance router**: 
 
 ---
 
+### 33. 🚗 TISAX — Trusted Information Security Assessment Exchange
+
+**File:** `TISAX - Claude Skill/tisax.skill`
+
+The TISAX skill turns Claude into an expert advisor on the **automotive industry's information-security assessment regime**, governed by the ENX Association on behalf of the VDA. TISAX labels are de facto mandatory for suppliers and service providers to VW, BMW, Mercedes-Benz, Audi and other OEMs — an assessment with shareable labels ("assess once, share with many"), not a certification.
+
+**What it does:**
+- Covers **VDA ISA 6** (46 IS controls, 22 prototype controls, 4 data-protection controls; must/should tiers) and the **ISA2027 transition** — published July 1, 2026, mandatory for assessments ordered from January 1, 2027 (44/46 IS controls edited; prototype module restructured; new PTS labels; year-based naming)
+- Walks the **12 assessment objectives/labels** with the ISA-6 renaming (Confidential / Strictly Confidential + availability split) and the objective → **AL1/AL2/AL3** level mapping
+- Explains **maturity scoring** (0–5, target 3, cutback rules), the **ENX portal process** (fees, standard scoping, audit providers), corrective action plans with the **9-month window**, temporary labels, and **3-year validity**
+- **Maps to ISO 27001:2022** (~70–80% overlap) with automotive-specific deltas — and re-expresses ISO evidence in maturity terms
+
+**Trigger phrases:** `TISAX`, `VDA ISA`, `ENX`, `TISAX label`, `AL2 assessment`, `AL3 assessment`, `prototype protection`, `automotive supplier security`, `ISA2027`, `TISAX vs ISO 27001`
+
+---
+
 ## Potential Use Cases
 
 | Scenario | Relevant Skill(s) |
@@ -957,13 +974,13 @@ Teams can pre-wire the marketplace in `.claude/settings.json` so every developer
 
 ## Skill Evaluation
 
-These skills were benchmarked using the [Claude Skill Creator](https://claude.ai) eval framework. **160 realistic test cases** were run across all 32 skills — 5 per framework — with **Claude Sonnet as both the skill-assisted and baseline model** (same model on both sides, so the delta measures the skills, not model strength) — covering gap analysis, policy drafting, control deep-dives, edge cases, and compliance advice scenarios. Each test case was evaluated against at least 5 objectively verifiable assertions (802 in total) by independent grader agents comparing skill-assisted vs. baseline Claude responses.
+These skills were benchmarked using the [Claude Skill Creator](https://claude.ai) eval framework. **165 realistic test cases** were run across all 33 skills — 5 per framework — with **Claude Sonnet as both the skill-assisted and baseline model** (same model on both sides, so the delta measures the skills, not model strength) — covering gap analysis, policy drafting, control deep-dives, edge cases, and compliance advice scenarios. Each test case was evaluated against at least 5 objectively verifiable assertions (827 in total) by independent grader agents comparing skill-assisted vs. baseline Claude responses.
 
 | Configuration | Pass Rate | Assertions Passed |
 |---------------|-----------|-------------------|
-| **With GRC Skills installed** | **93%** | **748 / 802** |
-| Without skills (baseline Claude) | 76% | 610 / 802 |
-| **Delta** | **+17 points** | **+138 assertions** |
+| **With GRC Skills installed** | **93%** | **772 / 827** |
+| Without skills (baseline Claude) | 74% | 614 / 827 |
+| **Delta** | **+19 points** | **+158 assertions** |
 
 ### Per-Skill Results
 
@@ -1001,6 +1018,7 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | EU CRA [EU] | 5 | **80%** | 80% | +0% | PDE scope and classification (Default/Class I/Class II); Annex I gap assessment for consumer IoT router; Vulnerability and ENISA reporting timelines; SBOM programme design; Manufacturer vs importer/distributor obligations |
 | Saudi Arabia GRC | 5 | **96%** | 28% | +68% | Market-entry applicability routing; SAMA vs NCA stacking; cloud-for-government residency (CST/CCC); PDPL breach response; ISO 27001 to ECC-2:2024 mapping |
 | UAE GRC | 5 | **84%** | 28% | +56% | DIFC routing + 2025 amendment; health-data localization vs US cloud; mainland PDPL status; ADGM breach clock; CBUAE cloud offshoring constraints |
+| TISAX | 5 | **96%** | 16% | +80% | First-timer BMW Confidential label; ISO 27001 to TISAX delta; corrective action 9-month window; prototype labels and AL3; ISA2027 transition |
 
 📊 **[View the full eval results →](grc-skills-eval-results.html)**
 

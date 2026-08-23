@@ -1,0 +1,25 @@
+# Which TISAX Catalogue Applies to a Q1 2027 Assessment?
+
+Here's what I can tell you with confidence, and where you should double check with authoritative sources before finalizing your assessment plan.
+
+## What I Know as of My Training Data
+
+As of my knowledge, the current control catalogue underpinning TISAX assessments is **VDA ISA 6.0**, published by the VDA (German Association of the Automotive Industry) and rolled out as the mandatory basis for TISAX assessments starting in 2024, replacing the prior **VDA ISA 5.1**. Key changes introduced in ISA 6.0 versus the earlier 5.x generation included:
+- Restructuring and relabeling of control groups to align more closely with the **ISO/IEC 27001:2022** control set (which itself was a significant revision from the 2013 version), reflecting the broader industry shift to the updated ISO structure.
+- Refined/expanded treatment of newer risk areas such as cloud services usage, and general modernization of control language.
+- Continued separation into the same overall assessment objectives (Information Security, Data Protection, Prototype Protection), but with updated requirement wording and maturity expectations within each.
+
+ENX/VDA periodically issue minor updates and clarifications to the catalogue and to the TISAX participant handbook/FAQ between major versions, so even "VDA ISA 6.0" may have point revisions depending on exactly when you last checked.
+
+## Why I Can't Confirm What Applies in Q1 2027 With Certainty
+
+TISAX catalogue versions are updated on VDA/ENX's own release cadence (historically every couple of years for major versions), and **my knowledge has a cutoff and no ability to browse the web in this context**, so I cannot confirm whether a newer catalogue version (e.g., a "VDA ISA 7.0" or a further point release of 6.x) will be in effect by Q1 2027, or whether ISA 6.0 (possibly with minor revisions) will still be current at that time. Given normal release cycles, it's plausible either that ISA 6.0 is still the active version, or that a successor version has been introduced with a transition period by then — I genuinely don't have reliable visibility into that.
+
+## What I'd Recommend
+
+1. **Check directly with the ENX Association and VDA QMC (Quality Management Center) websites** — they publish the authoritative current catalogue version and any announced transition timelines for upcoming versions.
+2. **Ask your TISAX audit provider** (e.g., TÜV Rheinland, TÜV SÜD, DEKRA, DQS, SGS, or whichever provider you plan to use) which catalogue version they expect to be assessing against for a Q1 2027 engagement — providers typically know upcoming version transitions well in advance since they have to retrain their assessors and update their tooling.
+3. **If a new version is coming**, confirm the transition/grace period rules — TISAX generally allows a window where the prior version remains acceptable for assessments already in progress or scheduled, so a Q1 2027 booking might still fall under whichever version is current at booking time rather than a version releasing shortly before your assessment.
+4. **Build in a buffer** in your project plan to review the delta between whatever catalogue version is confirmed as applicable and the version you may have been preparing against, in case requirement wording, maturity expectations, or control groupings shift.
+
+Given the stakes of aligning your remediation work to the correct catalogue, I'd treat this as a "verify before you plan" item rather than relying on any assumption I could offer here — the exact version and its specific changes versus the prior one are best confirmed directly from ENX/VDA or your chosen audit provider close to your assessment booking date.

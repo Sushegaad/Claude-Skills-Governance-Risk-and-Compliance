@@ -1,0 +1,42 @@
+# TISAX for a First-Time Supplier: What "TISAX Label Confidential" Means for You
+
+Congratulations on the BMW contract — and welcome to TISAX. Here's a practical primer.
+
+## What TISAX Is
+
+TISAX (Trusted Information Security Assessment Exchange) is the automotive industry's shared information security assessment standard. It was created by the German association of the automotive industry (VDA) and is operated by the **ENX Association**. Instead of every OEM running its own separate security audit of every supplier, TISAX lets you get assessed once by an accredited audit provider and then share the results with multiple customers (BMW, VW, Daimler/Mercedes-Benz, and hundreds of others) through the ENX TISAX portal.
+
+Key building blocks:
+- **VDA ISA (Information Security Assessment) catalogue** — the question set/control catalogue your assessment is measured against. It's heavily based on ISO 27001/27002 structure but adds automotive-specific requirements (prototype handling, connected vehicle data, physical security for R&D areas, etc.).
+- **Assessment Levels (AL1–AL3)** — AL1 is self-assessment only (rarely accepted by OEMs), AL2 involves a remote/plausibility-checked assessment by an accredited auditor, AL3 adds an on-site assessment. Most "Confidential" data handling requirements map to AL2 or AL3.
+- **Labels** — the output of a successful assessment. They indicate what protection level you've demonstrated (e.g., handling of information with "high" protection needs, often referred to informally as "Confidential," versus "very high," informally "Strictly Confidential"). Separate label families exist for information security, data protection (personal data), and prototype protection.
+- **ENX Portal** — where you register, get a company/participant ID, book an assessment, and later share your results with BMW (or any other OEM) by granting them access.
+
+## What "TISAX Label Confidential" Specifically Means
+
+BMW is asking for evidence that you can protect information with a "high" protection need. In VDA ISA terms this typically corresponds to an **Assessment Level 2 (AL2)** assessment on the Information Security module, assessed against a maturity model (VDA ISA uses a 0–5 maturity scale, with Level 3 "established" generally being the bar you need to clear on applicable controls). If BMW is sharing prototype or highly sensitive data with you, they may instead require "Strictly Confidential" (higher protection needs, often AL3, on-site).
+
+## What It Will Take
+
+1. **Register on the ENX TISAX portal** and obtain your Scope ID / participant registration.
+2. **Define your scope** — which sites, business units, IT systems, and processes are in scope (keep this as tight as reasonably possible to reduce assessment burden).
+3. **Gap assessment / readiness review** — map your current information security practices (policies, access control, asset management, incident response, physical security, supplier management, etc.) against the VDA ISA catalogue. Expect gaps if you've never done a formal ISMS before.
+4. **Remediate gaps** — implement missing policies and controls: information security policy, risk management process, access control/least privilege, asset classification, incident management, business continuity, supplier/third-party risk management, and physical security for areas handling confidential data.
+5. **Select and book an accredited audit provider** (e.g., TÜV Rheinland, TÜV SÜD, DEKRA, SGS, DQS, or others listed on the ENX site) and schedule the assessment.
+6. **Undergo the assessment** — document review plus interviews (and a site visit if AL3 applies).
+7. **Address any findings/non-conformities** — if maturity targets aren't met on some controls, you'll need a corrective action plan with a defined remediation deadline before the label is finalized.
+8. **Receive your label** and share the assessment result with BMW via the ENX portal (they'll request access, and you approve sharing).
+
+## Roughly How Long
+
+For a company with no prior formal ISMS, a realistic timeline is:
+- **Gap assessment and remediation:** 2–4 months (this is usually the long pole — building out policies, access controls, and evidence takes time).
+- **Booking + conducting the assessment:** 4–8 weeks lead time to book a provider, plus the assessment itself (days to a couple of weeks depending on scope and AL level).
+- **Closing out any corrective actions:** typically weeks to a few months, depending on severity of findings.
+
+**Total: plan for roughly 4–9 months from a standing start to a finalized, shareable TISAX label**, with 6 months being a common planning assumption for a first-time AL2 assessment. If you already have decent security hygiene (documented policies, access reviews, incident response), you can compress this; if you're starting from nothing, budget toward the longer end. Start engaging with an audit provider early — booking slots can themselves take several weeks, and many providers offer a pre-assessment/readiness check that's worth using.
+
+## Immediate Next Steps
+- Register on the ENX portal now (this alone doesn't cost anything and starts your clock).
+- Do an internal gap assessment against VDA ISA as soon as possible so remediation work can start in parallel with provider selection.
+- Confirm with BMW exactly which label and assessment level (and any specific control catalogue modules, e.g., prototype protection if relevant) they require — this determines your scope precisely.

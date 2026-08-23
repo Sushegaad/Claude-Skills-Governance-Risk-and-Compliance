@@ -1,0 +1,41 @@
+# Which Catalogue Applies to Your Q1 2027 TISAX Assessment
+
+## The rule that determines your catalogue: order date, not assessment date
+
+This is the key thing to get right: the **VDA ISA catalogue version is fixed by when you ORDER the assessment, not when the assessment itself takes place**.
+
+- **VDA ISA 6** (revision 6.0.3) is the current catalogue — mandatory for assessments ordered since April 1, 2024, and current through the end of 2026.
+- **ISA2027** was published July 1, 2026, and becomes **mandatory for assessments ordered from January 1, 2027** onward.
+
+So for your Q1 2027 assessment, the deciding question is: **when do you place the order with your ENX-accredited audit provider?**
+- If you **order in 2026** (i.e., before January 1, 2027) — even though the assessment itself happens in Q1 2027 — you run on **ISA 6**.
+- If you **order from January 1, 2027** — you run on **ISA2027**.
+
+Since today is August 23, 2026, you still have time to lock in an order this year if you want ISA 6, or you can plan to order in early 2027 and land on ISA2027. Given a Q1 2027 assessment date, ordering is likely to fall right around that boundary — **confirm your exact order/booking date with your audit provider now**, because it determines which catalogue your gap assessment should target. Don't gap-assess against the wrong version.
+
+## What changes in ISA2027 versus ISA 6
+
+If your order date puts you on ISA2027, here's what's different:
+
+- **Year-based naming replaces version numbers**, and VDA moves to an **annual release cadence** going forward (no more waiting years between major revisions).
+- **44 of the 46 Information Security controls are edited or clarified** — nearly the entire core catalogue changes in some way, so don't assume prior ISA 6 gap-assessment results carry over cleanly.
+- **Prototype Protection catalogue is restructured**: from 22 controls down to **20 controls across 2 domains**, with a **new PTS (prototype label) structure** replacing the current Proto Parts / Proto Vehicles / Test Vehicles / Proto Events label set. If prototype objectives are part of your scope, this is the most consequential change.
+- **Updated mappings to ISO 27001:2022 and NIST CSF 2.0** — useful if you're leveraging an existing ISMS, since the crosswalk itself has been refreshed.
+- The **Data Protection catalogue (4 controls, GDPR Art. 28 / Art. 9 Special Data)** isn't called out as restructured in the same way, but treat all catalogue content as subject to revision under ISA2027 until you've confirmed specifics against the official VDA ISA2027 download.
+
+## What doesn't change
+
+- TISAX remains **an assessment with shareable labels, not a certification**, run through the ENX Association on behalf of the VDA.
+- The **assessment level framework (AL1/AL2/AL3)** and the principle that your **chosen objectives determine the level** still apply.
+- The **maturity model** (0–5 scale, **target maturity 3**, **cutback rules** preventing over-performance from offsetting weak areas) carries forward.
+- **Labels remain valid 3 years**, and the **9-month corrective action window** for nonconformities still applies.
+- Current label names (**Confidential**, **Strictly Confidential**, **High Availability**, **Very High Availability**, **Data**, **Special Data**) continue for non-prototype objectives — only the prototype labels get the new PTS structure.
+
+## Practical guidance for your planning
+
+1. **Nail down the order date** with your audit provider first — this is the single fact that determines everything else about your gap assessment.
+2. If it lands on **ISA2027**: don't reuse an ISA 6 gap assessment wholesale, especially for prototype objectives — re-baseline against the restructured 20-control/2-domain prototype module and the edited Information Security controls once the official ISA2027 documents are available to you.
+3. If it lands on **ISA 6**: proceed as normal against the current 46-control Information Security catalogue and current prototype/data catalogues, with maturity-3 as your target.
+4. Either way, cite specific control numbers only from the official current VDA ISA download for the applicable version — don't rely on control numbering carrying over between ISA 6 and ISA2027 given the scale of edits.
+
+*This is general compliance information, not legal advice. Confirm your assessment's actual order date and the finalized ISA2027 catalogue content directly with your ENX-accredited audit provider or via vda.de / enx.com.*

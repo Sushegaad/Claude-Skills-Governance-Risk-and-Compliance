@@ -71,6 +71,7 @@ EXPECTED_PLUGINS = {
     "tsa-compliance",
     "wcag",
     "saudi-arabia-grc",
+    "tisax",
     "uae-grc",
 }
 

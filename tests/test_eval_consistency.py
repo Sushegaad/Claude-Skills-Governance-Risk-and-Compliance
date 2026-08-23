@@ -52,7 +52,7 @@ EVAL_PAGE  = REPO_ROOT / "grc-skills-eval-results.html"
 INDEX_HTML = REPO_ROOT / "index.html"
 README     = REPO_ROOT / "README.md"
 
-EXPECTED_SKILL_COUNT = 32   # update this constant when a new skill is added
+EXPECTED_SKILL_COUNT = 33   # update this constant when a new skill is added
 
 
 # ---------------------------------------------------------------------------
@@ -492,6 +492,7 @@ _SKILL_GRADING_DIR: dict[str, Path] = {
     "eu-cra":           _WS / "rerun-2026-07b" / "eu-cra-evals",
     "saudi-arabia-grc": _WS / "rerun-2026-08" / "saudi-arabia-grc-evals",
     "uae-grc":          _WS / "rerun-2026-08" / "uae-grc-evals",
+    "tisax":            _WS / "rerun-2026-08" / "tisax-evals",
 }
 
 # Flat-eval skills that share the iteration-1 root; restrict search by prefix.
@@ -547,6 +548,7 @@ _SKILL_ID_TO_NORM_KEY: dict[str, str] = {
     "eu-cra":           "eu cra",
     "saudi-arabia-grc": "saudi arabia grc",
     "uae-grc":          "uae grc",
+    "tisax":            "tisax",
 }
 
 

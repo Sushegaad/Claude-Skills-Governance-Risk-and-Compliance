@@ -1,6 +1,6 @@
 # Installation Guide — GRC Skills for Claude Code
 
-This guide covers how to install the GRC Skills marketplace in [Claude Code](https://claude.ai/claude-code), the AI-powered CLI for developers. The marketplace provides **32 compliance skills** as Claude Code plugins — each one extends Claude with deep, framework-specific expertise across data privacy, information security, AI governance, export controls, sustainability, and accessibility.
+This guide covers how to install the GRC Skills marketplace in [Claude Code](https://claude.ai/claude-code), the AI-powered CLI for developers. The marketplace provides **33 compliance skills** as Claude Code plugins — each one extends Claude with deep, framework-specific expertise across data privacy, information security, AI governance, export controls, sustainability, and accessibility.
 
 ---
 
@@ -53,6 +53,7 @@ Once the marketplace is registered, install only the frameworks you need.
 /plugin install ism@grc-skills
 /plugin install nzism@grc-skills
 /plugin install cis-controls@grc-skills
+/plugin install tisax@grc-skills
 ```
 
 ### Data Privacy & Protection
@@ -111,12 +112,12 @@ Each plugin is installed to a local cache (`~/.claude/plugins/cache`) and activa
 
 ---
 
-## 3. Install All 32 at Once
+## 3. Install All 33 at Once
 
 To install the full GRC suite in a single command:
 
 ```shell
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills nist-csf@grc-skills nist-800-53@grc-skills cmmc@grc-skills swift-csp@grc-skills ism@grc-skills nzism@grc-skills cis-controls@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills pci-compliance@grc-skills dpdpa@grc-skills ccpa@grc-skills lgpd@grc-skills vn-pdpl@grc-skills iso27701@grc-skills nis2@grc-skills dora@grc-skills tsa-compliance@grc-skills eu-cra@grc-skills iso42001@grc-skills nist-ai-rmf@grc-skills eu-ai-act@grc-skills itar@grc-skills ear@grc-skills csrd@grc-skills section-508@grc-skills wcag@grc-skills saudi-arabia-grc@grc-skills uae-grc@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills nist-csf@grc-skills nist-800-53@grc-skills cmmc@grc-skills swift-csp@grc-skills ism@grc-skills nzism@grc-skills cis-controls@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills pci-compliance@grc-skills dpdpa@grc-skills ccpa@grc-skills lgpd@grc-skills vn-pdpl@grc-skills iso27701@grc-skills nis2@grc-skills dora@grc-skills tsa-compliance@grc-skills eu-cra@grc-skills iso42001@grc-skills nist-ai-rmf@grc-skills eu-ai-act@grc-skills itar@grc-skills ear@grc-skills csrd@grc-skills section-508@grc-skills wcag@grc-skills saudi-arabia-grc@grc-skills uae-grc@grc-skills tisax@grc-skills
 ```
 
 ---
@@ -147,7 +148,7 @@ Add the following to your project's `.claude/settings.json` (include only the sk
 }
 ```
 
-Commit this file to your repository. The next time a team member trusts the project folder in Claude Code, the marketplace and plugins will be registered automatically. Only enable the skills your team actually needs — you don't have to include all 32.
+Commit this file to your repository. The next time a team member trusts the project folder in Claude Code, the marketplace and plugins will be registered automatically. Only enable the skills your team actually needs — you don't have to include all 33.
 
 ---
 
@@ -199,6 +200,7 @@ To remove the marketplace entirely:
 | `ism` | Australian ISM (ASD) | ISM control assessment (June 2026 release incl. AI controls), Essential Eight maturity, system authorisation, IRAP prep |
 | `nzism` | NZISM (GCSB/NCSC NZ) | NZISM gap analysis, C&A for Restricted+ systems, NZ classification framework, SSP preparation |
 | `cis-controls` | CIS Controls v8 | IG selection, all 153 safeguards, gap assessment, SIEM/log design, cross-framework mapping |
+| `tisax` | TISAX (VDA ISA / ENX) | ISA 6 + ISA2027 transition, labels & AL1-AL3, maturity scoring with cutback, ENX process, ISO 27001 mapping |
 
 ### Data Privacy & Protection
 

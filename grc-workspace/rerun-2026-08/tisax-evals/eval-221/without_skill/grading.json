@@ -1,0 +1,33 @@
+{
+  "eval_id": 221,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Frames TISAX correctly: an assessment-and-label-exchange regime governed by the ENX Association on behalf of the VDA — an assessment with shareable labels, NOT a certification — built on 'assess once, share with many' and de facto mandatory for OEM suppliers",
+      "passed": false,
+      "evidence": "Response never states TISAX is 'not a certification' (no occurrence of the word 'certif' anywhere in the response); it also inverts the governance relationship: \"It was created by the German association of the automotive industry (VDA) and is operated by the ENX Association\" rather than ENX governing on behalf of VDA. Missing the explicit not-a-certification framing that the assertion requires."
+    },
+    {
+      "text": "Maps the objective correctly: 'Confidential' is a current ISA-6-era label (part of the renaming that split Info High into Confidential + High Availability) and typically requires an AL2 assessment (audit-provider plausibility check with evidence review and interviews, usually remote) — not AL1 (no labels) and not necessarily on-site AL3",
+      "passed": false,
+      "evidence": "Response treats 'Confidential' as informal shorthand rather than the current official ISA-6 label name: \"handling of information with 'high' protection needs, often referred to informally as 'Confidential'\" — no mention of the Info High -> Confidential + High Availability renaming. It also hedges the assessment level incorrectly: \"Most 'Confidential' data handling requirements map to AL2 or AL3\" instead of confirming AL2 as typical and AL3 not necessary."
+    },
+    {
+      "text": "Describes the real process: ENX portal registration (fees ~€405 net per location and scope, or a €5,000/year flat participation option), standard scope recommended, ENX-accredited audit provider selection, assessment, corrective action plan if needed, labels valid 3 years and shared via the ENX platform",
+      "passed": false,
+      "evidence": "No fee figures given at all (no '€', '405', or '5,000' anywhere in the response), no mention of 'standard scope', and no statement that labels are valid 3 years. Only generic steps (register, define scope, select accredited provider, corrective action plan) are present without the specific figures required by the assertion."
+    },
+    {
+      "text": "Explains scoring honestly: VDA ISA maturity levels 0-5 with target maturity 3 and cutback rules (over-performance cannot offset weak areas), and gives a realistic first-timer runway (roughly 6-12 months to consistent maturity 3)",
+      "passed": false,
+      "evidence": "Response does mention \"VDA ISA uses a 0-5 maturity scale, with Level 3 'established' generally being the bar\" but never mentions cutback rules or that over-performance can't offset weak areas (no occurrence of 'cutback' or 'offset'). Timeline given is \"Total: plan for roughly 4-9 months ... with 6 months being a common planning assumption\", not the roughly 6-12 months the ground truth specifies."
+    },
+    {
+      "text": "States the version-timing fact: assessments ordered through 2026 run on VDA ISA 6; assessments ordered from January 1, 2027 run on ISA2027 (published July 1, 2026) — the supplier should plan its order date and gap-assess against the right catalogue",
+      "passed": false,
+      "evidence": "No mention of ISA2027, the 2027 mandatory date, or any catalogue version timing anywhere in the response (no occurrence of '2027' or 'ISA2027')."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

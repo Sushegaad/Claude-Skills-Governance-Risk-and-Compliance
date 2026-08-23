@@ -1,0 +1,33 @@
+{
+  "eval_id": 223,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Describes the corrective sequence correctly: nonconformities lead to a corrective action plan assessed by the audit provider (corrective action plan assessment), followed by follow-up assessment(s) verifying implementation",
+      "passed": true,
+      "evidence": "\"Corrective action plan assessment: you submit a remediation plan to your audit provider — what you'll fix, how, and by when — and the provider reviews it for adequacy.\" followed by \"Follow-up assessment(s): your audit provider verifies the access control and supplier management fixes are actually implemented and operating (not just planned).\""
+    },
+    {
+      "text": "States the temporary-label mechanics: temporary labels may be issued on an approved corrective action plan, and they EXPIRE 9 months after the initial assessment's closing meeting",
+      "passed": true,
+      "evidence": "\"Temporary labels may be issued at this stage, allowing you to share provisional results with partners while remediation is underway. Temporary labels are not indefinite\" and \"Temporary labels expire 9 months after the initial assessment's closing meeting.\""
+    },
+    {
+      "text": "States the hard deadline: all corrective work and follow-up must complete within the 9-month window — miss it and the assessment must be redone",
+      "passed": true,
+      "evidence": "\"All corrective action plan review and follow-up assessment activity needs to complete within that window ... If you miss the 9-month window, the assessment restarts — meaning you'd go back to a full initial assessment rather than simply resuming corrective follow-up.\""
+    },
+    {
+      "text": "Gives substantive remediation guidance for the named areas (access control: e.g., joiner-mover-leaver, privileged access, reviews; supplier management: contracts/security requirements, supplier assessment) tied to reaching target maturity 3 given cutback scoring",
+      "passed": true,
+      "evidence": "\"Access control: ... provisioning/deprovisioning, least-privilege enforcement, periodic access reviews, privileged-account controls — assessed for both implementation and maturity (target maturity 3, with cutback rules meaning strong scores elsewhere won't offset this gap).\" and \"Supplier management: ... flow down security requirements to your own sub-suppliers/vendors, monitor their compliance, and manage supplier-related information-security risk.\""
+    },
+    {
+      "text": "Covers the practical mechanics: work with the same audit provider for follow-up, evidence-first remediation (documents + operating records), and final labels (3-year validity) shared via the ENX platform once closed",
+      "passed": true,
+      "evidence": "\"your audit provider verifies the ... fixes\" (same provider throughout) and \"policies with approval trails, operational records (e.g., access review logs, supplier assessment records), technical configuration exports, and interview-ready control owners\" and \"Final report and labels issued once nonconformities are closed — labels valid 3 years from that point, shared via the ENX platform at whatever disclosure level you choose.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

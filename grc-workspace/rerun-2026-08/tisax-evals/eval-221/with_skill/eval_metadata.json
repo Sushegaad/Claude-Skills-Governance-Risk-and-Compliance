@@ -1,0 +1,13 @@
+{
+  "eval_id": 221,
+  "eval_name": "first-timer-bmw-confidential",
+  "run_type": "with_skill",
+  "prompt": "We're a German plastics supplier that just won a contract with BMW requiring a 'TISAX Label Confidential.' We've never done TISAX. What is it, what will it take, and roughly how long?",
+  "assertions": [
+    "Frames TISAX correctly: an assessment-and-label-exchange regime governed by the ENX Association on behalf of the VDA — an assessment with shareable labels, NOT a certification — built on 'assess once, share with many' and de facto mandatory for OEM suppliers",
+    "Maps the objective correctly: 'Confidential' is a current ISA-6-era label (part of the renaming that split Info High into Confidential + High Availability) and typically requires an AL2 assessment (audit-provider plausibility check with evidence review and interviews, usually remote) — not AL1 (no labels) and not necessarily on-site AL3",
+    "Describes the real process: ENX portal registration (fees ~€405 net per location and scope, or a €5,000/year flat participation option), standard scope recommended, ENX-accredited audit provider selection, assessment, corrective action plan if needed, labels valid 3 years and shared via the ENX platform",
+    "Explains scoring honestly: VDA ISA maturity levels 0-5 with target maturity 3 and cutback rules (over-performance cannot offset weak areas), and gives a realistic first-timer runway (roughly 6-12 months to consistent maturity 3)",
+    "States the version-timing fact: assessments ordered through 2026 run on VDA ISA 6; assessments ordered from January 1, 2027 run on ISA2027 (published July 1, 2026) — the supplier should plan its order date and gap-assess against the right catalogue"
+  ]
+}

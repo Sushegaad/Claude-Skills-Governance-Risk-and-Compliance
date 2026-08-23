@@ -1,0 +1,25 @@
+{
+  "skill": "tisax",
+  "prompts": [
+    {
+      "id": 221,
+      "prompt": "We're a German plastics supplier that just won a contract with BMW requiring a 'TISAX Label Confidential.' We've never done TISAX. What is it, what will it take, and roughly how long?"
+    },
+    {
+      "id": 222,
+      "prompt": "We hold ISO 27001:2022 certification. Do we still need TISAX for our VW contract, and how much extra work is it?"
+    },
+    {
+      "id": 223,
+      "prompt": "Our TISAX assessment found nonconformities in access control and supplier management. Walk us through the corrective action process, temporary labels, and deadlines."
+    },
+    {
+      "id": 224,
+      "prompt": "We handle prototype vehicle testing for an OEM. Which TISAX labels and assessment level do we need, and what does the prototype catalogue require?"
+    },
+    {
+      "id": 225,
+      "prompt": "We're planning our TISAX assessment for Q1 2027. Which catalogue version applies, and what changed versus the current one?"
+    }
+  ]
+}

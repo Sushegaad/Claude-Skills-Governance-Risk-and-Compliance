@@ -33,6 +33,7 @@ exclude:
   - "NZISM - Claude Skill"
   - "PCI Compliance - Claude Skill"
   - "SOC 2 - Claude Skill"
+  - "TISAX - Claude Skill"
   - "Saudi Arabia GRC - Claude Skill"
   - "UAE GRC - Claude Skill"
   - "SWIFT CSP - Claude Skill"

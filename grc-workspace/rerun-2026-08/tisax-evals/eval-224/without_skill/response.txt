@@ -1,0 +1,41 @@
+# TISAX Requirements for Prototype Vehicle Testing
+
+Handling prototype vehicles for an OEM puts you squarely in TISAX's **Prototype Protection** assessment objective, on top of the standard Information Security module. Here's what to expect.
+
+## Which Labels You Likely Need
+
+TISAX labels are organized around a few assessment objectives, and for prototype work you should expect to need a combination of:
+
+1. **Information Security** — covering general handling of the OEM's confidential information (specs, test data, engineering documents). Given you're working with prototype vehicles, this is very likely to be at the "high" or "very high" protection level (informally "Confidential" / "Strictly Confidential").
+2. **Prototype Protection** — a distinct module/label specifically covering physical and procedural protection of prototype vehicles, components, or events. Depending on exactly what you do, this could fall under sub-categories such as:
+   - **Prototype vehicles/components** — physical handling, storage, and protection of prototype hardware.
+   - **Prototype (test) events / trials** — protection during test drives, track testing, or public-road testing.
+3. **Data Protection** module — only relevant if you also handle personal data (e.g., test driver data, telematics data tied to individuals) as part of the testing process; if so, you may need this as an additional label.
+
+Confirm with the OEM exactly which label combination and protection level they expect — this is usually specified in their supplier security requirements or RFP/contract documentation, since it drives your assessment scope precisely.
+
+## Assessment Level
+
+Prototype protection almost always demands a higher level of assurance because leaked prototype images/specs are commercially and reputationally damaging to OEMs. In practice:
+- Expect **Assessment Level 2 (AL2) at minimum**, and very plausibly **AL3 (on-site assessment)** given prototypes typically carry "high" or "very high" protection needs and involve physical security controls that are best verified in person (fencing, camouflage storage, access control at test tracks, secure transport).
+- On-site verification is common specifically because prototype protection controls are physical/procedural (site security, camera/photography bans, restricted-access areas) and harder to assess remotely than pure IT controls.
+
+## What the Prototype Catalogue Covers
+
+The VDA/TISAX prototype protection requirements (often referred to as the prototype guideline or prototype catalogue) go well beyond standard information security and focus heavily on physical and operational controls, including things like:
+
+- **Physical security of prototype storage and work areas** — secured, access-controlled buildings/rooms, prototype-specific parking or garage areas, perimeter fencing, and visual screening (opaque fencing/covers so prototypes aren't visible from outside).
+- **Camouflage requirements** — disguise/wrap requirements for prototype vehicles when moved or tested outside of secure facilities, including on public roads.
+- **Access control and need-to-know** — restricted, logged access to areas and documentation related to the prototype, visitor/escort policies, and staff/contractor NDAs specific to the prototype program.
+- **Photography and recording bans** — strict controls (including device restrictions/bans) around cameras and phones near prototypes, with signage and enforcement procedures.
+- **Secure transport and logistics** — controls for how prototypes are transported between sites or to test locations, including vehicle tracking/GPS and secure loading/unloading procedures.
+- **Test track and public-road testing controls** — requirements for test track security (fencing, access lists, overlook/observation risk mitigation) and, for public-road testing, permits, camouflage, and incident-handling procedures if a prototype is involved in an accident or draws public attention.
+- **Third-party/subcontractor management** — if you use subcontractors or additional test sites, you'll need to ensure they meet equivalent prototype protection requirements and are contractually bound to them.
+- **Incident reporting and breach handling** — a defined process for reporting any loss, theft, unauthorized photography, or exposure of prototype vehicles/information to the OEM promptly.
+- **Data/document handling** — protection of technical specs, test protocols, and telemetry/test data associated with the prototype, layered on top of your general Information Security controls.
+
+## Practical Next Steps
+
+1. Ask the OEM directly which specific label(s), sub-category (vehicle/component/event), and assessment level they require for your engagement — this is typically stated in their supplier onboarding requirements.
+2. Do a gap assessment specifically against the prototype protection catalogue's physical security requirements (secure facilities, camouflage, access control, photography bans) since these are often the biggest lift for suppliers new to prototype work, distinct from standard IT/InfoSec controls.
+3. Plan for an on-site (AL3-level) assessment given the physical-security-heavy nature of prototype protection, and budget more lead time than a pure information-security-only assessment.

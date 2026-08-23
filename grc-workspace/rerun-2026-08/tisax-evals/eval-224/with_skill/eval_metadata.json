@@ -1,0 +1,13 @@
+{
+  "eval_id": 224,
+  "eval_name": "prototype-labels-level",
+  "run_type": "with_skill",
+  "prompt": "We handle prototype vehicle testing for an OEM. Which TISAX labels and assessment level do we need, and what does the prototype catalogue require?",
+  "assertions": [
+    "Selects the right objectives: prototype-related labels (Proto Vehicles / Test Vehicles — and Proto Parts / Proto Events where relevant to the activity) rather than only the confidentiality labels",
+    "States the level rule correctly: physical prototype labels require AL3 — a comprehensive ON-SITE assessment including physical inspection",
+    "Describes the Prototype Protection catalogue accurately: a dedicated ISA 6 module (22 controls) covering physical/organizational protections — perimeter and zone security, camouflage and transport rules, test-drive protections, photo/film controls, personnel commitments",
+    "Notes the ISA2027 change accurately where versioning comes up: the prototype module is restructured (20 controls in 2 domains, new PTS label structure) for assessments ordered from January 1, 2027",
+    "Covers the practical path: ENX registration and scoping of the testing locations, ENX-accredited provider with prototype competence, evidence and site readiness for physical inspection, maturity-3 target with cutback"
+  ]
+}

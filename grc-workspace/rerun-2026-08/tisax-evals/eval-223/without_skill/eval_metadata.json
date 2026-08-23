@@ -1,0 +1,13 @@
+{
+  "eval_id": 223,
+  "eval_name": "corrective-action-window",
+  "run_type": "without_skill",
+  "prompt": "Our TISAX assessment found nonconformities in access control and supplier management. Walk us through the corrective action process, temporary labels, and deadlines.",
+  "assertions": [
+    "Describes the corrective sequence correctly: nonconformities lead to a corrective action plan assessed by the audit provider (corrective action plan assessment), followed by follow-up assessment(s) verifying implementation",
+    "States the temporary-label mechanics: temporary labels may be issued on an approved corrective action plan, and they EXPIRE 9 months after the initial assessment's closing meeting",
+    "States the hard deadline: all corrective work and follow-up must complete within the 9-month window — miss it and the assessment must be redone",
+    "Gives substantive remediation guidance for the named areas (access control: e.g., joiner-mover-leaver, privileged access, reviews; supplier management: contracts/security requirements, supplier assessment) tied to reaching target maturity 3 given cutback scoring",
+    "Covers the practical mechanics: work with the same audit provider for follow-up, evidence-first remediation (documents + operating records), and final labels (3-year validity) shared via the ENX platform once closed"
+  ]
+}

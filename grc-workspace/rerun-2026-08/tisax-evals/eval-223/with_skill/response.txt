@@ -1,0 +1,32 @@
+# TISAX Nonconformities — Corrective Action, Temporary Labels, and Deadlines
+
+Nonconformities in access control and supplier management are common findings — both are core control areas in the **VDA ISA Information Security catalogue (46 controls)**, which every TISAX assessment includes alongside identity/access management and supplier-relationship requirements. Here's the process from here.
+
+## Version status (relevant context)
+
+- Your assessment ran (or is running) against the **current catalogue, VDA ISA 6** (revision 6.0.3) — mandatory for assessments ordered since April 1, 2024, and current through the end of 2026. This governs the corrective-action process below.
+- Note for planning ahead: **ISA2027** was published July 1, 2026, and becomes mandatory for assessments **ordered from January 1, 2027**. That doesn't affect your current nonconformities (those are scored against the catalogue your assessment was ordered under), but if this corrective process runs close to year-end and you need a full re-assessment later, keep the order-date rule in mind.
+
+## The corrective action process
+
+1. **Nonconformities identified** at the initial assessment (findings below target maturity 3, or unmet "must"/"should" requirements) in access control and supplier management.
+2. **Corrective action plan assessment**: you submit a remediation plan to your audit provider — what you'll fix, how, and by when — and the provider reviews it for adequacy.
+3. **Temporary labels may be issued** at this stage, allowing you to share provisional results with partners while remediation is underway. Temporary labels are not indefinite — see deadline below.
+4. **Follow-up assessment(s)**: your audit provider verifies the access control and supplier management fixes are actually implemented and operating (not just planned). This can involve evidence review and interviews (and on-site verification if your objectives require AL3).
+5. **Final report and labels issued** once nonconformities are closed — labels valid **3 years** from that point, shared via the ENX platform at whatever disclosure level you choose.
+
+## The critical deadline: 9-month corrective window
+
+- **Temporary labels expire 9 months after the initial assessment's closing meeting.** All corrective action plan review and follow-up assessment activity needs to complete within that window.
+- **If you miss the 9-month window, the assessment restarts** — meaning you'd go back to a full initial assessment rather than simply resuming corrective follow-up. This is the deadline to build your remediation timeline around; work backward from the closing-meeting date, not from when you receive the corrective action plan template.
+
+## Practically, for access control and supplier management
+
+- **Access control**: expect the audit provider to focus on identity/access management fundamentals — provisioning/deprovisioning, least-privilege enforcement, periodic access reviews, privileged-account controls — assessed for both implementation and maturity (target maturity 3, with cutback rules meaning strong scores elsewhere won't offset this gap).
+- **Supplier management**: this sits in the supplier-relationships control area of the Information Security catalogue — expect scrutiny on how you flow down security requirements to your own sub-suppliers/vendors, monitor their compliance, and manage supplier-related information-security risk. If you handle prototype or special-category data through sub-suppliers, this can intersect with additional requirements — worth flagging to your audit provider if relevant.
+- Evidence discipline matters here as in an ISO audit: **policies with approval trails, operational records (e.g., access review logs, supplier assessment records), technical configuration exports, and interview-ready control owners** for both areas.
+
+## Bottom line
+You're in a normal, expected part of the process — most first assessments surface some nonconformities. Get the corrective action plan submitted promptly, use the temporary label period productively, and target closing both access control and supplier management gaps well before the **9-month mark from your initial assessment's closing meeting**, since missing that deadline means restarting the assessment rather than simply continuing remediation.
+
+*This is general compliance information, not legal advice. Confirm exact deadlines and remediation expectations directly with your ENX-accredited audit provider, since they set the specific corrective action plan timeline for your case.*

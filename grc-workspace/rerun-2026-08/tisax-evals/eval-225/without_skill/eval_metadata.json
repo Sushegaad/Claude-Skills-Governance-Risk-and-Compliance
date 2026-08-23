@@ -1,0 +1,13 @@
+{
+  "eval_id": 225,
+  "eval_name": "isa2027-transition",
+  "run_type": "without_skill",
+  "prompt": "We're planning our TISAX assessment for Q1 2027. Which catalogue version applies, and what changed versus the current one?",
+  "assertions": [
+    "States the transition rule precisely: the catalogue version is fixed by the assessment ORDER date — orders through the end of 2026 run on VDA ISA 6 (rev. 6.0.3); orders from January 1, 2027 run on ISA2027 — so a Q1 2027 order runs on ISA2027",
+    "Dates the release correctly: ISA2027 was published July 1, 2026, introducing year-based naming (replacing version numbers) and an annual release cadence",
+    "Summarizes the changes accurately: 44 of the 46 information-security controls edited, the prototype module restructured to 20 controls in 2 domains with a new PTS label structure, and updated mappings to ISO 27001:2022 and NIST CSF 2.0",
+    "Gives the strategic option honestly: ordering before the end of 2026 locks ISA 6 (useful if readiness work targeted it), while a 2027 order requires gap-assessing against ISA2027 — with labels valid 3 years either way",
+    "Keeps the stable mechanics straight: assessment levels (AL1/AL2/AL3), maturity target 3 with cutback, ENX portal process and 9-month corrective window continue to apply across the version change"
+  ]
+}

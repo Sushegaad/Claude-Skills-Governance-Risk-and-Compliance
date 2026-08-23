@@ -1,0 +1,33 @@
+{
+  "eval_id": 222,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Answers the core question correctly: yes — ISO 27001 certification does NOT substitute for TISAX; OEMs like VW contractually require TISAX labels, and TISAX is an assessment/label regime on the ENX platform, not a certificate",
+      "passed": true,
+      "evidence": "\"Short answer: yes, you still need TISAX. ISO 27001 certification does not substitute for a TISAX label...\" and \"VW ... requires suppliers to hold a TISAX assessment result that is registered and shared through the ENX Association's TISAX portal ... VW's procurement/security teams are set up to check TISAX participant IDs and shared assessment results — not third-party ISO certificates.\""
+    },
+    {
+      "text": "Quantifies the head start credibly: roughly 70-80% control overlap with ISO 27001, so the certified ISMS (policies, risk register, evidence) is the best starting point",
+      "passed": false,
+      "evidence": "No percentage or numeric overlap figure appears anywhere in the response (no '70', '80', or '%'); it only vaguely says 'shared DNA between ISO 27001 Annex A and VDA ISA' and that ISO 27001 'meaningfully lightens the load' without quantifying the overlap as the assertion requires."
+    },
+    {
+      "text": "Names the real deltas: fixed maturity targets with CUTBACK scoring (no SoA-style tailoring — every applicable question must reach target maturity 3), High/Very-High additional requirements, the prototype-protection module where in scope, and ENX label/exchange mechanics (3-year validity, corrective windows)",
+      "passed": false,
+      "evidence": "Mentions prototype protection and a general maturity-scale difference (\"VDA ISA uses an explicit 0-5 maturity scale per control, and TISAX generally expects 'Level 3 (established)' or higher\") but never uses or explains 'cutback' scoring/rules, never mentions High/Very-High additional requirements, and never states the 3-year label validity or corrective-action windows (no occurrence of 'cutback', '3-year', or 'corrective' anywhere in the response)."
+    },
+    {
+      "text": "Recommends the right workflow: map existing ISO evidence to ISA control areas first, re-express evidence in maturity terms (ISO 'implemented' is only maturity 3 when established and demonstrably operating), then close automotive-specific gaps — one ISMS, not a parallel programme",
+      "passed": false,
+      "evidence": "Recommends a 'formal gap mapping' as the next step (matches the first part) but never explains re-expressing ISO evidence specifically in TISAX maturity terms, and explicitly frames TISAX as \"a discrete project even if the underlying controls are already in place\" (line 20) rather than recommending one integrated ISMS instead of a parallel programme — this contradicts the assertion's required framing."
+    },
+    {
+      "text": "Mentions assessment mechanics accurately: objectives determine the assessment level (AL2/AL3), assessment by an ENX-accredited audit provider, results shared with VW via the ENX platform at a chosen disclosure level",
+      "passed": true,
+      "evidence": "\"a company ... can often complete a first TISAX assessment (typically AL2) ... If VW is asking for a higher protection level (e.g., 'Strictly Confidential' / AL3 with an on-site assessment) ... add time accordingly\" and \"engage a TISAX-accredited audit provider\" and \"shared through the ENX Association's TISAX portal\"."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}
