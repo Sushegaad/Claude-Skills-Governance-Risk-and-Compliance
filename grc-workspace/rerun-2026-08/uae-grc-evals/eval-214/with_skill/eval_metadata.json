@@ -1,0 +1,13 @@
+{
+  "eval_id": 214,
+  "eval_name": "adgm-breach-clock",
+  "run_type": "with_skill",
+  "prompt": "We are an ADGM-based asset manager. A laptop with client personal data was stolen. What are our notification obligations and deadlines?",
+  "assertions": [
+    "Applies the right law: ADGM Data Protection Regulations 2021 (not the federal PDPL, not DIFC law), overseen by the ADGM Office of Data Protection / Commissioner",
+    "States the deadline correctly: notify the Commissioner within 72 HOURS of becoming aware of the breach, and notify affected data subjects where there is high risk to them",
+    "Covers incident mechanics: assess scope (encryption status of the laptop matters to risk), contain (remote wipe, credential rotation), preserve evidence, and document the incident and decision-making even if notification is judged unnecessary",
+    "Notes the parallel regulator: as an FSRA-regulated asset manager, operational-incident expectations to FSRA run alongside the DP notification — and the answer must not cite CBUAE",
+    "Includes follow-through: root-cause remediation (encryption, MDM), RoPA/security-policy updates, and annual-notification standing with the ODP"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 202,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Answers the stacking question correctly: SAMA CSF applies to all SAMA-regulated entities (including licensed fintechs); NCA ECC additionally applies only if the entity owns/operates/hosts Critical National Infrastructure — the regimes stack rather than displace, and the answer must not claim ECC is mandatory for every fintech",
+      "passed": false,
+      "evidence": "Frames it as SAMA being the sole 'primary and mandatory' framework with NCA having 'historically deferred day-to-day supervision... to SAMA' and ECC objectives 'already embedded in SAMA CSF'. This is a displacement/absorption framing, not the stacking/cumulative-regimes framing the assertion requires; it never states the regimes apply together and stack when CNI is triggered."
+    },
+    {
+      "text": "States the SAMA CSF structure accurately: 4 domains (Leadership & Governance; Risk Management & Compliance; Operations & Technology; Third-Party Cyber Security)",
+      "passed": false,
+      "evidence": "No domain structure is given anywhere in the response — only the maturity model is described. The 4-domain breakdown is entirely absent."
+    },
+    {
+      "text": "States the maturity expectation correctly: 6-level maturity model (0-5) with SAMA expecting minimum maturity level 3",
+      "passed": true,
+      "evidence": "'SAMA CSF uses a maturity model... roughly: 0 – Non-Existent, 1 – Ad-hoc, 2 – Repeatable but Informal, 3 – Structured/Defined, 4 – Managed and Measurable, 5 – Adaptive/Optimized.' 'Baseline expectation for regulated financial institutions, including licensed fintechs: Maturity Level 3.'"
+    },
+    {
+      "text": "Notes that PDPL applies in parallel for customer personal data (SDAIA, distinct from SAMA)",
+      "passed": false,
+      "evidence": "PDPL and SDAIA are never mentioned anywhere in the response."
+    },
+    {
+      "text": "Gives practical unify-and-map advice: maintain one internal control set mapped to both SAMA CSF and ECC (if CNI) rather than duplicate programmes, and confirm CNI designation status rather than assuming",
+      "passed": true,
+      "evidence": "'Build (or update) a control-mapping matrix: SAMA CSF domains ↔ current NCA ECC version...' and 'If you operate or plan to operate payment infrastructure that could be deemed critical infrastructure, proactively confirm with SAMA/NCA whether direct ECC obligations attach to that specific system.'"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

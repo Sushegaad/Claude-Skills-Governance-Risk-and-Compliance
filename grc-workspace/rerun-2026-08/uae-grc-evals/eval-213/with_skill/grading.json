@@ -1,0 +1,33 @@
+{
+  "eval_id": 213,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the pivotal status fact accurately and with a date: the federal PDPL (Decree-Law 45/2021) has been in force since January 2, 2022, but its EXECUTIVE REGULATIONS remain unissued as of August 2026 — penalties and operational detail await them, and enforcement is effectively dormant. FAIL any answer asserting the regulations are issued or citing enacted PDPL fine amounts",
+      "passed": true,
+      "evidence": "\"The Federal PDPL has been in force since 2 January 2022, but its Executive Regulations have still not been issued as of August 2026... enforcement of the PDPL is effectively dormant right now.\" No enacted fine amounts cited."
+    },
+    {
+      "text": "States the grace mechanism: organizations get a 6-month compliance period from the regulations' issuance — which is exactly why readiness work should start now",
+      "passed": true,
+      "evidence": "\"once they're issued, organizations get a 6-month compliance grace period to close gaps\"; \"Once the Executive Regulations are issued, you'll have a 6-month compliance sprint. The whole point of doing the above now...\""
+    },
+    {
+      "text": "Correctly scopes what DOES bite a mainland retailer today: the cybercrime law (Federal Decree-Law 34/2021), sector rules if applicable, and contractual/counterparty expectations — not zone DP laws (DIFC/ADGM excluded and irrelevant to a mainland retailer)",
+      "passed": true,
+      "evidence": "\"Federal Decree-Law 34/2021 (the cybercrime law), in force since January 2022, already carries real legal exposure today\"; \"'actually enforceable today' = cybercrime law exposure + basic contractual/reputational risk\"; matrix marks DIFC/ADGM as 'No — you're mainland, not in a financial free zone'."
+    },
+    {
+      "text": "Prescribes a sensible GDPR-family readiness build: data inventory/RoPA, lawful-basis and consent design, privacy notices, DPO assessment, breach-response playbook, transfer mapping — framed as preparation for the regulations",
+      "passed": true,
+      "evidence": "Numbered list covers lawful basis mapping, privacy notices, RoPA, DSR workflow, DPO assessment, security safeguards, cross-border transfer posture, and breach response plan, explicitly framed as 'Build to that standard now rather than waiting for the regulations to force a scramble.'"
+    },
+    {
+      "text": "Notes the carve-outs correctly (government data, health data under the ICT Health Law, banking/credit data under CBUAE rules, DIFC/ADGM) when describing the PDPL's scope",
+      "passed": false,
+      "evidence": "Applicability matrix correctly excludes DIFC/ADGM, CBUAE (banking), and ICT Health Law (health data), but 'government data' is never mentioned anywhere as a PDPL scope carve-out."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

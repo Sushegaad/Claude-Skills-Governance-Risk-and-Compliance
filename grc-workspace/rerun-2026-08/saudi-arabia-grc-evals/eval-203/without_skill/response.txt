@@ -1,0 +1,41 @@
+# Compliance Requirements for a Global SaaS Provider Hosting a Saudi Government Ministry
+
+*Disclaimer: General guidance based on publicly known Saudi cloud and cybersecurity regulatory structures, not legal advice. Government hosting engagements typically require a formal compliance review with CST/NCA and the specific ministry's IT governance team before contracting.*
+
+## 1. Framework Overview
+
+Hosting workloads for a Saudi government ministry puts you squarely inside the Kingdom's most stringent regulatory tier. The key regimes are:
+
+- **Cloud Computing Regulatory Framework (CCRF)**, issued by the Communications, Space & Technology Commission (CST, formerly CITC). This is the master framework governing cloud service providers (CSPs) and cloud service customers (CSCs) in Saudi Arabia, including data classification tiers and hosting location rules.
+- **NCA Essential Cybersecurity Controls (ECC)** — the national cybersecurity baseline, mandatory for government entities and their contractors/service providers handling government data.
+- **NCA Cloud Cybersecurity Controls (CCC)** — a cloud-specific control set issued by the National Cybersecurity Authority that applies specifically to CSPs and CSCs handling government or sensitive data in cloud environments; this sits on top of the general ECC baseline.
+- **Personal Data Protection Law (PDPL)** and its Implementing Regulations (SDAIA) — applies because ministry systems will almost certainly process personal data of Saudi citizens/residents.
+- **National Data Management Office (NDMO) / SDAIA data classification policy** — government data must be classified (e.g., public, restricted, confidential, top secret/highly sensitive) and handled according to the rules attached to that classification tier.
+- **CST licensing requirements** — providing cloud/telecom infrastructure services in the Kingdom generally requires either a CST-issued license or delivery through a CST-licensed/accredited local partner.
+
+## 2. Where the Data Must Live
+
+The CCRF classifies government and government-related data into tiers, and the hosting-location rules scale with sensitivity:
+
+- **Lower-sensitivity/public data**: may in some cases be hosted outside the Kingdom, but this is the exception, not the norm, for government ministry workloads.
+- **Sensitive/restricted government data**: generally must be hosted **inside Saudi Arabia**, in a facility that meets CST/NCA accreditation requirements.
+- **Highly sensitive/classified or national-security-relevant data**: must be hosted **in-Kingdom with no foreign remote access**, stricter personnel vetting, and often requires the CSP to operate through a wholly Saudi-incorporated entity or joint venture with in-country data center infrastructure.
+
+**Practical implication:** for a government ministry engagement, assume from the outset that in-country hosting will be required unless the ministry's data classification review explicitly designates the workload as low-sensitivity/public. Global hyperscalers active in this space have generally addressed this by standing up dedicated in-Kingdom cloud regions (with local data center infrastructure and, in some cases, local partnership structures) specifically to meet government/sovereign hosting requirements — you will likely need an equivalent local presence or partnership rather than serving the ministry from an offshore region.
+
+## 3. What You Must Comply With
+
+1. **Data classification** — work with the ministry (or independently, per NDMO/SDAIA policy) to classify the workload's data before deciding architecture; this classification drives every downstream hosting and access-control decision.
+2. **CST accreditation/licensing** — confirm whether you need to become a CST-licensed CSP directly, or whether you can operate through an existing CST-licensed/"Government Authorized" cloud provider as your underlying infrastructure. Many foreign SaaS vendors deliver into Saudi government customers by running on top of an accredited local cloud region rather than obtaining their own infrastructure license.
+3. **NCA ECC baseline controls** — governance, asset management, identity and access management, cryptography, logging/monitoring, incident management, business continuity, and physical security controls all apply to the systems hosting ministry data.
+4. **NCA Cloud Cybersecurity Controls (CCC)** — additional cloud-specific requirements covering shared responsibility definitions between CSP and CSC, tenant isolation, cloud-specific incident response, and data sanitization/destruction on contract termination.
+5. **PDPL compliance** — lawful basis for processing, data subject rights handling, breach notification to SDAIA (generally within a short window, commonly cited as 72 hours for qualifying incidents), and strict controls on any cross-border transfer of personal data — cross-border transfer of government-related personal data is highly restricted and typically requires specific government/regulatory approval, if it is permitted at all.
+6. **No unauthorized offshoring** — do not assume you can replicate, back up, or support the workload from outside the Kingdom without explicit contractual and regulatory approval; remote access by non-Kingdom personnel to production government data is often specifically restricted or prohibited depending on classification.
+7. **Contractual/procurement requirements** — Saudi government procurement often layers additional requirements (e.g., local content/IKTVA-style requirements, escrow or exit provisions, audit rights for NCA/CST, and specific SLAs) on top of the regulatory baseline; review the ministry's RFP/contract terms closely as they may exceed the regulatory minimum.
+
+## 4. Recommended Path Forward
+1. Engage the ministry's IT/security team early to obtain (or jointly perform) the data classification for the specific workload — this single step determines your hosting architecture.
+2. Determine whether to deliver via an existing CST-accredited/government-authorized local cloud provider (fastest path) versus pursuing your own CST license and in-Kingdom infrastructure build-out (longer, higher-investment path).
+3. Perform a gap assessment against NCA ECC + NCA CCC using your current security program (ISO 27001, SOC 2, etc. are good starting points but do not substitute for these Saudi-specific frameworks).
+4. Build a PDPL-compliant data processing and cross-border transfer position, in writing, before contract signature — this is frequently the item that stalls government cloud deals late in procurement.
+5. Confirm personnel/access requirements (e.g., whether only Saudi-based or Saudi-vetted personnel may have production access) before committing to a support model.

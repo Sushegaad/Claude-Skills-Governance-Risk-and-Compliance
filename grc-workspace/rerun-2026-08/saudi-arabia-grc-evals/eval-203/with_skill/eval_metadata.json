@@ -1,0 +1,13 @@
+{
+  "eval_id": 203,
+  "eval_name": "cloud-for-government",
+  "run_type": "with_skill",
+  "prompt": "We are a global SaaS provider planning to host workloads for a Saudi government ministry on our cloud. What must we comply with, and where must the data live?",
+  "assertions": [
+    "Identifies the full stack for a CSP serving government: CST Cloud Computing Regulatory Framework registration (class determines permissible data levels), NCA CCC provider-side controls (as the ministry is ECC-covered), and PDPL for any personal data — all three named with their regulators",
+    "States the residency rule decisively: government data must remain in-Kingdom (localization is exclusive, narrow exceptions) — an answer suggesting offshore hosting of ministry workloads with contractual fixes FAILS this assertion",
+    "Explains the classification-driven model: cloud levels tied to data classification (Top Secret/Secret/Confidential/Public) and CST customer-data Levels with Levels 3-4 requiring in-Kingdom hosting",
+    "Reflects the CCC's role-split design: provider-side vs tenant-side controls (e.g., P vs T control markers), with the ministry remaining accountable as tenant — no invented control IDs",
+    "Gives a realistic sequencing: CST registration/class, in-Kingdom infrastructure or partnership, CCC control implementation with evidence, then contract with the ministry — including Arabic-language/local-presence practicalities where relevant"
+  ]
+}

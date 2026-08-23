@@ -1,0 +1,33 @@
+{
+  "eval_id": 211,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Routes correctly: DIFC entities are excluded from the federal PDPL — the DIFC Data Protection Law No. 5 of 2020 applies, overseen by the DIFC Commissioner of Data Protection",
+      "passed": true,
+      "evidence": "\"DIFC and ADGM are expressly carved out of the federal PDPL's scope; each free zone runs its own GDPR-family data protection regime, enforced by its own Commissioner\"; table names 'DIFC DP Law No. 5 of 2020... DIFC Commissioner of Data Protection'."
+    },
+    {
+      "text": "States the 2025 change accurately: Amendment Law No. 1 of 2025, in force July 15, 2025 — the biggest update since 2020",
+      "passed": true,
+      "evidence": "\"Amendment Law No. 1 of 2025 took effect 15 July 2025 — the most significant change to DIFC data protection since the law's 2020 enactment\""
+    },
+    {
+      "text": "Names the amendment's key risk shift: a statutory PRIVATE RIGHT OF ACTION for data subjects (GDPR-style claims exposure), plus documented transfer-adequacy assessments and Commissioner power to review/withdraw adequacy decisions",
+      "passed": true,
+      "evidence": "Lists: 'Statutory private right of action... GDPR-style'; 'Documented transfer adequacy assessments'; 'Commissioner power to review/withdraw adequacy decisions'."
+    },
+    {
+      "text": "Mentions the raised fine tiers accurately (e.g., new USD 25,000-50,000 tiers for failure to notify processing or conduct required DPIAs) and ongoing duties: annual notification/registration with the Commissioner, DPO for high-risk processing, breach notification",
+      "passed": false,
+      "evidence": "Fine tiers ('USD 25,000–50,000 tiers'), annual notification, and breach notification are covered, but the response never mentions a DPO requirement for high-risk processing anywhere in the text — a specifically named ongoing duty is missing."
+    },
+    {
+      "text": "Keeps regulators straight: prudential/conduct supervision for a DIFC fintech sits with the DFSA — the answer must not cite CBUAE rules unless the firm is separately CBUAE-licensed",
+      "passed": true,
+      "evidence": "\"assuming DFSA-regulated for conduct/prudential purposes, and not separately CBUAE-licensed. If you also hold a CBUAE license... CBUAE... rules apply in parallel — flag if that's you.\" CBUAE only invoked conditionally, never asserted as default."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

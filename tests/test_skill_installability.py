@@ -92,6 +92,8 @@ EXPECTED_SKILL_NAMES = {
 # Standalone filenames as they actually appear on disk (some legacy names differ)
 EXPECTED_STANDALONE_FILENAMES = {
     "ccpa.skill",
+    "saudi-arabia-grc.skill",
+    "uae-grc.skill",
     "cis-controls.skill",
     "cmmc.skill",
     "eu-cra.skill",

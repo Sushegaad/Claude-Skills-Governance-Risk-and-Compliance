@@ -1,0 +1,33 @@
+{
+  "eval_id": 202,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Answers the stacking question correctly: SAMA CSF applies to all SAMA-regulated entities (including licensed fintechs); NCA ECC additionally applies only if the entity owns/operates/hosts Critical National Infrastructure — the regimes stack rather than displace, and the answer must not claim ECC is mandatory for every fintech",
+      "passed": true,
+      "evidence": "'SAMA Cyber Security Framework (CSF)... Yes — mandatory. Binds all SAMA-regulated entities... including licensed fintechs.' 'NCA ECC-2:2024... Conditional. Mandatory only if NCA has designated you... as Critical National Infrastructure... If not CNI, ECC is recommended best practice, not a legal mandate.' 'Stacking rule: if you are CNI-designated, you must satisfy SAMA CSF and NCA ECC-2:2024 simultaneously — these are cumulative regimes, not alternatives.'"
+    },
+    {
+      "text": "States the SAMA CSF structure accurately: 4 domains (Leadership & Governance; Risk Management & Compliance; Operations & Technology; Third-Party Cyber Security)",
+      "passed": true,
+      "evidence": "'Four domains: (1) Cyber Security Leadership & Governance, (2) Cyber Security Risk Management & Compliance, (3) Cyber Security Operations & Technology, (4) Third-Party Cyber Security.'"
+    },
+    {
+      "text": "States the maturity expectation correctly: 6-level maturity model (0-5) with SAMA expecting minimum maturity level 3",
+      "passed": true,
+      "evidence": "'SAMA CSF uses a six-level maturity model (0–5): 0 Non-existent → 1 Ad-hoc → 2 Repeatable but informal → 3 Structured & formalized → 4 Managed & measurable → 5 Adaptive. SAMA's minimum expectation is Level 3.'"
+    },
+    {
+      "text": "Notes that PDPL applies in parallel for customer personal data (SDAIA, distinct from SAMA)",
+      "passed": true,
+      "evidence": "'Saudi PDPL | SDAIA | Yes — mandatory. You process Saudi residents' personal... data as a fintech... Fully enforced since 14 September 2024, independent of your SAMA license.'"
+    },
+    {
+      "text": "Gives practical unify-and-map advice: maintain one internal control set mapped to both SAMA CSF and ECC (if CNI) rather than duplicate programmes, and confirm CNI designation status rather than assuming",
+      "passed": true,
+      "evidence": "'the practical approach is to maintain one internal control set mapped to both frameworks, satisfy whichever requirement is stricter on any given point...' and 'Confirm CNI designation status directly with NCA/SAMA — this determines whether ECC compliance reporting is a legal obligation or a voluntary maturity uplift for you.'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,25 @@
+{
+  "skill": "saudi-arabia-grc",
+  "prompts": [
+    {
+      "id": 201,
+      "prompt": "We are a European e-commerce retailer opening a Saudi entity and an online store for Saudi customers. No government contracts. What Saudi regulations apply to us, and what should our first 90 days of compliance work look like?"
+    },
+    {
+      "id": 202,
+      "prompt": "We are a fintech licensed by SAMA. Do the NCA Essential Cybersecurity Controls also apply to us, or only the SAMA framework? What maturity level do we need?"
+    },
+    {
+      "id": 203,
+      "prompt": "We are a global SaaS provider planning to host workloads for a Saudi government ministry on our cloud. What must we comply with, and where must the data live?"
+    },
+    {
+      "id": 204,
+      "prompt": "A marketing employee at our Riyadh company emailed a spreadsheet of 40,000 customer records including national IDs to an external vendor without authorization. Walk us through our obligations under Saudi law."
+    },
+    {
+      "id": 205,
+      "prompt": "We already hold ISO 27001:2022. How much of NCA ECC-2:2024 does that cover, and what specifically remains for a Saudi government subsidiary?"
+    }
+  ]
+}

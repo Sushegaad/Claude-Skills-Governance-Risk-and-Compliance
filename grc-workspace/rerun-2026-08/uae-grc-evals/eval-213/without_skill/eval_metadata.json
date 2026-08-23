@@ -1,0 +1,13 @@
+{
+  "eval_id": 213,
+  "eval_name": "mainland-pdpl-status",
+  "run_type": "without_skill",
+  "prompt": "Our mainland Dubai retail company wants to get ahead of UAE privacy law. What is actually enforceable today, and what should we build now?",
+  "assertions": [
+    "States the pivotal status fact accurately and with a date: the federal PDPL (Decree-Law 45/2021) has been in force since January 2, 2022, but its EXECUTIVE REGULATIONS remain unissued as of August 2026 — penalties and operational detail await them, and enforcement is effectively dormant. FAIL any answer asserting the regulations are issued or citing enacted PDPL fine amounts",
+    "States the grace mechanism: organizations get a 6-month compliance period from the regulations' issuance — which is exactly why readiness work should start now",
+    "Correctly scopes what DOES bite a mainland retailer today: the cybercrime law (Federal Decree-Law 34/2021), sector rules if applicable, and contractual/counterparty expectations — not zone DP laws (DIFC/ADGM excluded and irrelevant to a mainland retailer)",
+    "Prescribes a sensible GDPR-family readiness build: data inventory/RoPA, lawful-basis and consent design, privacy notices, DPO assessment, breach-response playbook, transfer mapping — framed as preparation for the regulations",
+    "Notes the carve-outs correctly (government data, health data under the ICT Health Law, banking/credit data under CBUAE rules, DIFC/ADGM) when describing the PDPL's scope"
+  ]
+}

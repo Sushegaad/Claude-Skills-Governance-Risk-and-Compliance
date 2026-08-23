@@ -1,0 +1,33 @@
+{
+  "eval_id": 205,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States ECC applicability correctly for this entity: as a government subsidiary, ECC-2:2024 is MANDATORY (not merely recommended)",
+      "passed": true,
+      "evidence": "'You said \"Saudi government subsidiary,\" so NCA ECC-2:2024 is mandatory for you outright (government entities and their subsidiaries are always ECC-covered, no CNI test needed).'"
+    },
+    {
+      "text": "Describes ECC-2:2024's structure accurately: 4 domains (Governance; Defense; Resilience; Third-Party & Cloud), 28 subdomains, 108 main controls (+92 subcontrols), control IDs in domain-subdomain-control format — and does not invent specific control IDs",
+      "passed": true,
+      "evidence": "'ECC-2:2024 has 4 domains, 28 subdomains, 108 main controls + 92 subcontrols (control IDs in domain-subdomain-control format, e.g., 1-1-1).' Domain table lists: '1. Cybersecurity Governance', '2. Cybersecurity Defense', '3. Cybersecurity Resilience', '4. Third-Party & Cloud Computing Cybersecurity'. Only a generic illustrative format example (1-1-1) is used, no specific real control IDs are fabricated."
+    },
+    {
+      "text": "Gives a credible ISO mapping: ISO 27001:2022 Annex A covers much of Governance/Defense/Third-Party thematically, and certification evidence can be reused — but ISO certification does NOT constitute ECC compliance",
+      "passed": true,
+      "evidence": "Domain-by-domain table shows 'Substantial overlap' for Governance and Defense mapped to Annex A controls, 'Partial overlap' for Third-Party. States plainly: 'ISO 27001:2022 certification is strong evidence for many ECC controls, but it does not satisfy the ECC compliance obligation itself.'"
+    },
+    {
+      "text": "Names Saudi-specific deltas ISO does not satisfy: NCA compliance-tool reporting/self-assessment mechanics and NCA audits, Arabic-language governance artifacts where required, KSA residency/cloud rules for government data (CCC/CST), and OT/telework/data siblings (OTCC/TCC/DCC) where in scope",
+      "passed": true,
+      "evidence": "'Formal ECC self-assessment and NCA submission... submitted via NCA's compliance tool, and be prepared for NCA audit/on-site assessment.' 'Arabic-language governance artifacts where NCA requires them.' 'NCA CCC tenant-side controls and cloud residency confirmation.' 'OT/ICS, telework, and critical-systems controls (OTCC/TCC/CSCC) if any of those environments exist' plus 'NCA DCC-1:2022 (Data Cybersecurity Controls)' named earlier in the applicability table."
+    },
+    {
+      "text": "Recommends the right process: map Annex A controls to ECC domains, gap-assess the uncovered ECC controls, and prepare NCA-facing evidence — structured as a gap table with evidence columns",
+      "passed": true,
+      "evidence": "Provides an actual domain-by-domain table with columns 'ECC Domain | Roughly maps to (ISO 27001:2022 Annex A) | Coverage from ISO cert | What still needs direct ECC work', and closes with 'Run a formal control-by-control ECC-2:2024 gap assessment using your ISO 27001 Statement of Applicability and audit evidence as the starting evidence base... If you share your current ISO SoA and cloud footprint, I can build the full Requirement/Control ref/Current state/Gap/Evidence needed/Priority table.'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

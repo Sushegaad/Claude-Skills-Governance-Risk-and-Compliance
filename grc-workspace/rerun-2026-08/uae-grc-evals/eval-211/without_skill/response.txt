@@ -1,0 +1,27 @@
+# Which data protection law applies to a DIFC-licensed fintech?
+
+## Short answer
+
+As a fintech **licensed in the DIFC**, you are governed by the **DIFC Data Protection Law (DIFC Law No. 5 of 2020, as amended)** and its accompanying Data Protection Regulations — not the UAE Federal Personal Data Protection Law (Federal Decree-Law No. 45 of 2021, "PDPL").
+
+## Why the DIFC regime, not the federal PDPL
+
+- The UAE federal PDPL explicitly carves out entities established and licensed in financial free zones that have their own data protection legislation. The DIFC (and ADGM) each maintain independent, common-law-based data protection regimes that pre-date and sit outside the federal PDPL's territorial scope.
+- The DIFC Data Protection Law is enforced by the **DIFC Commissioner of Data Protection**, an independent regulator within the DIFC Authority — separate from the federal UAE Data Office that enforces the PDPL over mainland and non-financial free zone entities.
+- The DIFC law is modeled closely on the EU GDPR, so if your compliance program is already GDPR-aligned (lawful basis assessments, DPIAs, breach notification, data subject rights, cross-border transfer mechanisms, appointment of a DPO where required), you have a strong starting point — but you still need a DIFC-specific gap assessment, since the DIFC law has its own registration/notification mechanics, enforcement powers, and administrative fine structure.
+- Note the boundary carefully: DIFC law applies to processing that occurs *within the DIFC* by DIFC-registered entities. If your fintech also processes personal data through a mainland UAE entity, branch, or group company outside the DIFC, that mainland processing would separately fall under the federal PDPL, and you'd need to manage both regimes in parallel (and consider cross-border transfer rules between the DIFC and mainland/other jurisdictions as "international" transfers under the DIFC law).
+
+## What to watch from developments around 2024–2025
+
+- The federal PDPL's executive regulations (issued via Cabinet Decision in 2024) fleshed out obligations that were previously high-level in the 2021 law — including clearer rules on consent, data subject rights, DPO appointment triggers, cross-border transfer mechanisms, and breach notification timing to the UAE Data Office. While these executive regulations primarily bind mainland/non-financial-free-zone entities, they are useful as an indicator of the UAE's overall regulatory direction and are often referenced by regulators and counterparties even in DIFC contexts.
+- The DIFC has continued to refine its own regulations and guidance (e.g., updates to its data protection regulations, guidance on AI and data processing, and enforcement/fee schedules) to keep pace with market practice and to stay aligned with international standards like the GDPR. As a DIFC fintech, the practical "watch items" are: any updates to the DIFC Data Protection Regulations, updated Commissioner guidance on cross-border transfer mechanisms (adequacy decisions/permitted jurisdictions list, standard contractual clauses), and any sector-specific guidance from the DFSA (as your financial services regulator) touching data governance, outsourcing, and cloud/tech risk — since DFSA rules layer on top of, and interact with, the DIFC Data Protection Law for regulated financial activities.
+- Because you are a fintech, also confirm whether any of your data (e.g., payments data, KYC data) triggers additional DFSA rulebook requirements (e.g., outsourcing, IT/cyber risk, business continuity) that function alongside — not instead of — your DIFC data protection obligations.
+
+## Practical next steps
+
+1. Confirm all data processing that happens strictly within the DIFC is mapped and governed under the DIFC DP Law/Regulations, with a DIFC-registered Commissioner filing/notification if your processing profile requires it.
+2. If you have any mainland UAE nexus (parent company, shared services, mainland customers), get a separate PDPL gap assessment — don't assume DIFC compliance automatically satisfies federal law.
+3. Review your cross-border data transfer mechanism (especially if data leaves the DIFC/UAE to a parent company, cloud provider, or processor abroad) against the DIFC's current adequacy/permitted-transfer framework.
+4. Confirm with DFSA-specific rulebooks whether your fintech activity requires additional outsourcing or technology governance controls that intersect with data protection.
+
+*This is general guidance based on the DIFC/UAE data protection framework as understood through 2025; confirm current text of the DIFC Data Protection Law/Regulations and any recent Commissioner guidance with DIFC counsel before finalizing your compliance position.*

@@ -1,0 +1,34 @@
+# ADGM asset manager: stolen laptop with client personal data — notification obligations
+
+## Governing framework
+
+As an ADGM-based entity, you are subject to the **ADGM Data Protection Regulations 2021** (as amended), enforced by the **ADGM Office of Data Protection / Commissioner of Data Protection** — a GDPR-modeled regime independent of the UAE federal PDPL. Because you're also an asset manager, you are almost certainly a **Financial Services Regulatory Authority (FSRA)**-regulated entity, which layers additional operational/incident reporting obligations on top of the data protection ones. Treat this as (at least) a two-track notification problem: data protection regulator + financial services regulator, potentially plus contractual/client-level obligations.
+
+## Track 1 — ADGM Data Protection Regulations (Commissioner notification)
+
+- A stolen laptop containing client personal data is a **personal data breach** under the ADGM regime (unauthorized access/loss of personal data).
+- **Obligation to the Commissioner:** You must notify the ADGM Office of Data Protection **without undue delay**, and — where feasible — **within 72 hours** of becoming aware of the breach, unless the breach is unlikely to result in a risk to the rights and freedoms of the affected individuals. Given a stolen (unencrypted, or unclear encryption status) laptop with client PII, you should treat this as reportable rather than assume it falls under the "unlikely to result in risk" exception, unless you can affirmatively show the device was encrypted, remotely wiped, and inaccessible.
+- **Content of notification** typically needs to cover: nature of the breach, categories and approximate number of data subjects/records affected, likely consequences, and the measures taken or proposed to address the breach and mitigate harm.
+- **Obligation to affected individuals:** If the breach is likely to result in a **high risk** to the rights and freedoms of affected clients (which is plausible for stolen client financial/personal data), you must also notify the affected data subjects **without undue delay**, in clear and plain language, describing the nature of the breach and recommended protective steps.
+- **Internal documentation:** Regardless of whether the breach meets the notification threshold, you're expected to **document all breaches internally** (facts, effects, remedial action) — this record can itself be requested by the Commissioner.
+
+## Track 2 — FSRA regulatory notification (as a regulated asset manager)
+
+- Separate from data protection notification, FSRA's regulatory framework for Authorised Persons generally requires **prompt notification of significant incidents** — including operational/technology incidents, security breaches, or events that could affect the firm's ability to meet its regulatory obligations, harm clients, or damage market/firm integrity.
+- A stolen laptop containing client data is very likely to qualify as a **reportable incident to the FSRA**, both because of the client-data/confidentiality angle and because of potential operational risk/control-failure implications under your risk management and systems & controls obligations.
+- Practically: your compliance/MLRO function should be notifying FSRA promptly (in parallel with, not instead of, the Data Protection Commissioner notification) — don't treat these as substitutes for each other.
+
+## Practical next steps and timeline discipline
+
+1. **Immediately:** Contain and assess — determine what data was on the laptop, whether it was encrypted/password-protected/remotely wipeable, and whether remote wipe was executed successfully. This materially affects your risk assessment and whether the "unlikely to result in risk" exception is credible.
+2. **Within hours:** Escalate internally to your DPO/compliance officer and MLRO; start the incident log.
+3. **Within 72 hours (target):** Notify the ADGM Office of Data Protection if the breach is reportable, and separately notify FSRA per your firm's incident reporting obligations — don't wait to have "the full picture" before making an initial notification; regulators generally expect timely initial notice with follow-up detail as the investigation matures.
+4. **As applicable:** Notify affected clients if high risk is assessed, and consider credit-monitoring or other mitigation offers depending on the sensitivity of the data involved.
+5. **Also assess:** whether any affected clients are individuals in other jurisdictions (e.g., EU/UK clients) that could trigger separate GDPR-style notification obligations to their home regulators — asset managers frequently have cross-border client bases.
+6. **Root cause and remediation:** Device encryption policy, mobile device management (remote wipe capability), and physical security controls should be reviewed and reported as remedial actions in both notifications.
+
+## Bottom line
+
+Expect two parallel, time-sensitive notification tracks — the ADGM Data Protection Commissioner (72-hour target, plus individual notification if high risk) and the FSRA (incident/operational risk reporting) — both of which should be triggered promptly once the theft is confirmed, not held pending a full forensic investigation.
+
+*General guidance based on the ADGM Data Protection Regulations 2021 and typical FSRA incident-reporting expectations for regulated firms; confirm exact deadlines, thresholds, and notification templates against the current ADGM Data Protection Regulations text and your firm's specific FSRA licensing conditions/GEN rulebook obligations with ADGM counsel.*

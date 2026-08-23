@@ -1,0 +1,45 @@
+# Global SaaS Hosting a Saudi Government Ministry — Compliance & Residency
+
+A few facts would sharpen the specifics, and I've made working assumptions where you haven't told me — flag anything that's wrong:
+
+- I'm assuming your company does **not** currently hold a CST cloud registration or KSA-based infrastructure (you're a "global SaaS provider" planning to enter, not already licensed).
+- I'm assuming the ministry workload will include the ministry's operational/citizen data, which likely includes Saudi residents' personal data.
+- I'm assuming the **data classification** hasn't been formally set yet with the ministry — this is the single fact that will most determine your obligations, so get it nailed down early (see below).
+
+## Applicability Matrix
+
+| Instrument | Regulator | Applies to you? | Why |
+|---|---|---|---|
+| **CST Cloud Computing Regulatory Framework v3** | CST | **Yes — mandatory** | You are acting as a Cloud Service Provider (CSP) hosting workloads in/for KSA. CSP registration with CST is required to legally operate. Your registration class (Qualification / A / B / C) determines which customer data levels you're permitted to host. |
+| **NCA CCC** (Cloud Cybersecurity Controls) | NCA | **Yes — mandatory (CSP-side controls)** | You're serving an entity (a government ministry) that is itself mandatorily ECC-covered. CCC binds CSPs serving ECC-covered tenants — you'll need to implement the CSP-role controls (role marker "P" in control IDs), while the ministry carries the tenant-side ("T") controls and remains accountable for its own data. |
+| **NCA ECC-2:2024** | NCA | **Indirectly — the ministry's obligation, but it constrains you** | ECC is mandatory for the government ministry itself. It doesn't bind you directly as an external CSP, but the ministry will require contractual evidence that your service supports its ECC compliance (this is standard practice for NCA-regulated cloud engagements with government). |
+| **Saudi PDPL** | SDAIA | **Yes — mandatory** | If the workload processes any personal data of Saudi residents (near-certain for a ministry system), PDPL applies to you as the processor (and possibly joint controller depending on contract terms), independent of your CST/CCC obligations. Fully enforced since 14 September 2024. |
+| **NCA DCC-1:2022** (Data Cybersecurity Controls) | NCA | **Likely relevant** | Data-lifecycle protections (classification, handling, storage, disposal) for ECC-covered entities and their service providers — routes alongside CCC for this engagement. |
+| **SAMA / CMA** | SAMA / CMA | **No** | Not applicable unless the ministry is itself a financial or capital-markets regulator (not stated). |
+
+**Stacking rule:** you face CST registration + CCC (CSP-side) + PDPL (processor obligations) + likely DCC, concurrently — not a choice between them. Treat this as one combined compliance program for the engagement, not four separate initiatives.
+
+## Where must the data live?
+
+This is governed by two overlapping rules, and for a government ministry the answer is strict:
+
+1. **Government data localization is exclusive under the CST framework**: government workloads must remain **in-Kingdom (Saudi Arabia)**, with only narrow, specifically-approved exceptions. As a practical matter, plan for **100% in-Kingdom hosting** of this workload — don't architect around exceptions unless the ministry and CST explicitly grant one in writing.
+2. **Cloud levels are tied to data classification** (Top Secret / Secret / Confidential / Public) under both NCA CCC and the CST framework. Higher classification (Secret/Top Secret) requires higher-assurance cloud environments and stricter controls; even at the lower end, **CST customer data Levels 3–4 require in-Kingdom residency** regardless of classification label. Given this is a government ministry, assume at minimum "Confidential" classification driving Level 3+ requirements unless the ministry tells you otherwise in writing.
+
+**Action item:** get the ministry to formally classify the workload's data (Top Secret/Secret/Confidential/Public and the corresponding CST data level) before you finalize architecture — this single input determines your required cloud level, your CST registration class, and your residency design. Don't proceed on an assumed classification.
+
+## What you need to do, sequenced
+
+1. **CST registration** — apply for CSP registration at the class that covers the data levels the ministry needs (likely Class A/B given government data, pending classification confirmation). This typically requires establishing in-Kingdom infrastructure/presence — a "global" footprint without a KSA region won't satisfy this.
+2. **NCA CCC CSP-side controls** — implement and evidence the provider-side control set; be ready to support the ministry's own ECC compliance reporting with technical evidence, attestations, and audit cooperation.
+3. **PDPL processor posture** — execute a PDPL-compliant data processing agreement with the ministry, confirm lawful basis and purpose limitation on your side, and build breach-notification cooperation into the contract (SDAIA's 72-hour clock runs from when the controller/processor becomes aware — your incident response needs to feed the ministry fast enough for them to meet it, or you may have direct notification duties depending on contract terms).
+4. **Data lifecycle controls (DCC)** — classification-driven handling, storage, and disposal procedures aligned to NCA's Data Cybersecurity Controls.
+5. **Contractual/architecture lock-in** — no cross-border replication, backup, or support-tooling data flows that would move ministry data outside the Kingdom, including logging, telemetry, and support-ticket attachments — these are common residency leaks in global SaaS architectures.
+
+## Penalties/enforcement context
+Beyond CST/NCA enforcement mechanics (not separately detailed here), PDPL violations carry fines up to **SAR 5,000,000 per violation** (doubling for repeats) and criminal exposure up to **2 years' imprisonment** for unlawful disclosure of sensitive data — relevant if ministry data includes sensitive categories (health, biometric, criminal/security, etc.).
+
+**Dated item:** proposed PDPL amendments from SDAIA's April 2025 consultation are **not enacted as of today (23 August 2026)** — build on the current law and confirm status with SDAIA before relying on anticipated changes.
+
+---
+*General compliance information, not legal advice. Confirm CST registration classes, exact data classification, and residency exception scope directly with CST/NCA and the ministry before committing to an architecture.*

@@ -1,0 +1,46 @@
+# ADGM Asset Manager — Stolen Laptop, Notification Obligations
+
+## Quick intake (stating assumptions — correct me if off)
+- **Jurisdiction:** ADGM (as stated).
+- **Organization type:** Asset manager — assuming FSRA-regulated for prudential/conduct purposes, and **not** separately CBUAE-licensed. If you also hold a CBUAE license, CBUAE notification obligations would run in parallel — confirm.
+- **Data on the laptop:** "client personal data" — assuming this is ordinary client personal data (identity, contact, financial holdings info), not health data. If any health data was on that device, the ICT Health Law's overlay and MOHAP/DHA/DoH routing would also apply — flag if relevant.
+- Not assuming encryption status of the device — this materially affects your risk assessment (see below), so confirm immediately if you haven't already.
+
+## Applicability matrix
+
+| Instrument | Regulator | Applies here? |
+|---|---|---|
+| **ADGM Data Protection Regulations 2021** | ADGM Office of Data Protection (Commissioner) | **Yes — this governs your breach notification duty** |
+| FSRA rules (incident/notification requirements for regulated firms) | FSRA | Likely — separate from the DP Regulations; check the FSRA rulebook for parallel regulatory notification duties tied to operational incidents |
+| Federal PDPL / CBUAE / ICT Health Law | UAE Data Office / CBUAE / MOHAP-DHA-DoH | **No** — ADGM is carved out of the federal PDPL, and neither CBUAE nor health-sector rules apply absent the license/data types noted above |
+
+## The clock you're on: 72 hours
+
+Under the **ADGM Data Protection Regulations 2021**, you must notify the **ADGM Office of Data Protection (Commissioner)** within **72 hours** of becoming aware of the breach. This is a hard, specific deadline — not a "reasonable time" standard like some other UAE regimes.
+
+- **The clock starts when you became aware**, not when the theft occurred — so document precisely when your organization first learned of the loss (e.g., when the employee reported it), and preserve that timeline.
+- **Data subject notification** is also required, **without undue delay, where the breach is likely to result in high risk** to the affected individuals. A stolen laptop containing client personal data is very likely to meet that "high risk" bar unless you can demonstrate the data was inaccessible (see encryption point below) — treat data-subject notification as the working assumption, not the exception, until you've assessed and can document otherwise.
+
+## Immediate steps (before and alongside notification)
+
+1. **Determine encryption/access status of the laptop immediately.** If the device was fully encrypted (disk-level, with the key not compromised) and/or remotely wiped before any plausible unauthorized access, this materially changes your risk classification and may reduce (though not necessarily eliminate) the data-subject notification trigger — but you still likely need to notify the Commissioner given confidentiality/security was compromised by the theft itself.
+2. **Attempt remote wipe / remote lock** if not already done, and log the attempt and outcome.
+3. **Scope the data**: which clients, which categories of personal data (identity, contact, financial/holdings info, any special-category data), and approximate number of data subjects affected.
+4. **Document the discovery timeline** precisely — this is your evidentiary basis for the 72-hour clock and for demonstrating good-faith compliance even if the exact theft time is unclear.
+5. **Loop in your DPO** (if designated) and legal counsel now, in parallel with the above — not sequentially.
+
+## What your Commissioner notification needs to cover
+- Nature of the breach (device theft)
+- Categories and approximate number of data subjects and records affected
+- Contact details for your DPO or breach-response lead
+- Likely consequences of the breach
+- Mitigation measures already taken (remote wipe attempt, encryption status, access revocation, client comms plan)
+
+## Don't stop at the DP Regulations — check FSRA separately
+As an FSRA-regulated asset manager, you likely have **separate operational/incident notification obligations to FSRA** under the ADGM financial services framework — these run in parallel to, not instead of, your ADGM Office of Data Protection notification. Confirm the specific FSRA rulebook trigger and timeline for this incident with your compliance/legal team; it is a distinct regulator and a distinct clock from the Commissioner's 72 hours.
+
+## What doesn't apply here
+Given you're ADGM-based and (per the stated facts) not separately CBUAE-licensed, the federal PDPL, CBUAE consumer-data rules, and the ICT Health Law overlay are not in play for this incident — don't cite them in your notification or client communications, as that would misstate your regulatory obligations.
+
+---
+*This is general compliance information, not legal advice. Given the live 72-hour clock, engage ADGM-qualified legal counsel and your DPO immediately — don't wait to finalize this analysis before starting your internal breach-response process.*

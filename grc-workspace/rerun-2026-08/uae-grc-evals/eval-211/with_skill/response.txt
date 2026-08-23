@@ -1,0 +1,40 @@
+# DIFC Fintech — Which Privacy Law Applies, and the 2025 Change
+
+## Quick intake (stating assumptions so you can correct me)
+- **Jurisdiction:** DIFC (as you stated) — I'm assuming you're *licensed/registered in DIFC*, not just doing business with DIFC counterparties.
+- **Organization type:** Fintech — I'm assuming DFSA-regulated for conduct/prudential purposes, and **not** separately CBUAE-licensed. If you *also* hold a CBUAE license (e.g., a payment or banking license), CBUAE consumer-data residency and outsourcing rules apply in parallel — flag if that's you.
+- **Data:** UAE resident personal data assumed in scope; no indication of health data. If you process health/medical data on customers, the ICT Health Law's localization rule applies on top, regardless of your DIFC status.
+
+## Applicability matrix
+
+| Instrument | Regulator | Applies to you? |
+|---|---|---|
+| **DIFC DP Law No. 5 of 2020**, as amended by **Amendment Law No. 1 of 2025** | DIFC Commissioner of Data Protection | **Yes — this is your governing privacy law** |
+| Federal PDPL (Decree-Law 45/2021) | UAE Data Office | **No** — DIFC is carved out of the federal PDPL; entities inside DIFC follow DIFC's own law, not the federal statute |
+| CBUAE Consumer Protection / Outsourcing Regs | CBUAE | Only if you separately hold a CBUAE license (confirm) |
+| ICT Health Law | MOHAP / DHA | Only if you process health data — jurisdiction-proof overlay that would apply regardless of DIFC status |
+
+**Direct answer:** The **DIFC Data Protection Law No. 5 of 2020** (as amended) governs you — not the UAE federal PDPL. DIFC and ADGM are expressly carved out of the federal PDPL's scope; each free zone runs its own GDPR-family data protection regime, enforced by its own Commissioner, not the UAE Data Office. Don't conflate the two regulators or the two statutes in any filing or contract.
+
+## What changed in 2025
+
+**Amendment Law No. 1 of 2025** took effect **15 July 2025** — the most significant change to DIFC data protection since the law's 2020 enactment:
+
+1. **Statutory private right of action** — data subjects can now bring claims directly, not just complain to the Commissioner. This is a genuine litigation-risk shift, GDPR-style.
+2. **Documented transfer adequacy assessments** — cross-border data exports now require a documented assessment, not just reliance on the adequacy list or standard safeguards.
+3. **Commissioner power to review/withdraw adequacy decisions** — a jurisdiction or mechanism you're relying on today for transfers could be revisited.
+4. **Higher fine tiers** — e.g., up to **USD 50,000** for Article 28 public-authority data-sharing breaches (up from USD 10,000), and new **USD 25,000–50,000** tiers specifically for failing to notify processing activities or failing to conduct required DPIAs.
+
+## What you should actually worry about / build
+
+- **Litigation exposure, not just regulatory risk.** The private right of action means a mishandled data subject request or a breach can turn into a direct claim, independent of whether the Commissioner ever investigates. Get your DSR (access, correction, deletion, portability, objection) processes tight and evidenced.
+- **Transfer adequacy documentation.** If you route customer data to processors outside DIFC (cloud infra, analytics vendors, payment processors), you need a *documented* adequacy/safeguards assessment on file now — "we use SCCs" is no longer enough without the written assessment behind it.
+- **DPIA discipline.** Fintechs routinely trigger high-risk processing (fraud/transaction monitoring, credit scoring, behavioral analytics) — the new fine tier makes DPIA gaps a specific, priced exposure rather than a general compliance gap.
+- **Confirm your annual notification/registration** with the DIFC Commissioner is current and fee-paid — this is an ongoing DIFC obligation independent of the amendment.
+- **Breach response readiness:** DIFC requires notifying the Commissioner "as soon as practicable" where a breach compromises confidentiality, security, or privacy of personal data (data subjects too, where high risk) — have this playbook ready given the private-right-of-action backdrop.
+
+## One adjacent note on federal PDPL (for completeness, not because it applies to you)
+Since DIFC is carved out, the federal PDPL (Decree-Law 45/2021) doesn't touch your DIFC-licensed entity's processing. For awareness only: the federal PDPL has been in force since January 2022 but its Executive Regulations remain unissued as of August 2026, so enforcement there is effectively dormant. This only becomes relevant to you if you also operate a mainland UAE entity processing personal data outside DIFC.
+
+---
+*This is general compliance information, not legal advice. Verify current DIFC Commissioner guidance and the amendment's fine schedule against official DIFC sources, and consult DIFC-qualified counsel before relying on this for a filing or client communication.*

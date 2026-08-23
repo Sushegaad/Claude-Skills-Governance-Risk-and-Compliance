@@ -1,0 +1,33 @@
+{
+  "eval_id": 204,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the core clock correctly: notify SDAIA within 72 hours of becoming aware, via the National Data Governance Platform, and notify affected data subjects where the breach risks harm to them",
+      "passed": false,
+      "evidence": "'the Implementing Regulations set a 72-hour benchmark from the point the controller becomes aware...' and 'Notify affected individuals: If the breach is likely to result in harm...' — both timing/data-subject elements present, but the specific notification channel, SDAIA's National Data Governance Platform, is never named anywhere in the response."
+    },
+    {
+      "text": "Frames the incident correctly as a PDPL personal-data breach / unauthorized disclosure (national IDs + customer records), engaging containment (recall/delete demands to the vendor, access revocation) and evidence preservation before/alongside notification",
+      "passed": true,
+      "evidence": "'This is a personal data breach under the Personal Data Protection Law (PDPL)...' 'Contain the breach: Attempt to recall/delete the email, request written confirmation of deletion and non-use... Suspend the responsible employee's access pending investigation... Preserve evidence: Retain logs.'"
+    },
+    {
+      "text": "Covers the vendor dimension: whether the vendor is an authorized processor under a compliant processing arrangement matters; unauthorized disclosure to a third party is itself a violation category SDAIA has enforced against",
+      "passed": true,
+      "evidence": "'If the external vendor was meant to be a legitimate data processor, this incident may also reveal that you lacked... a proper PDPL-compliant Data Processing Agreement... If no such agreement existed, or the vendor was not authorized to receive this data at all, this transfer was itself an unauthorized processing/disclosure event.'"
+    },
+    {
+      "text": "States realistic consequences: administrative fines up to SAR 5M (doubling on repeat), SDAIA's active enforcement posture (first-wave decisions 2025-26), and criminal exposure reserved for sensitive-data disclosure (and correctly does NOT claim national IDs alone are 'sensitive data' under the PDPL's sensitive categories)",
+      "passed": false,
+      "evidence": "Only vague figures are given: 'regulations set maximum fine tiers, historically referenced up to several million SAR for serious violations, with the ability to double fines for repeat violations' — no specific SAR 5M figure, and no mention of SDAIA's first-wave 2025-26 enforcement decisions at all."
+    },
+    {
+      "text": "Includes accountability follow-through: document the incident, root-cause and remediate (DLP/training/access), update RoPA and vendor contracts",
+      "passed": false,
+      "evidence": "Covers documentation and access/DLP remediation ('Document every step taken... Review and remediate the underlying access control and data governance gaps (least-privilege access... DLP on outbound communications, mandatory approval for bulk exports)') but never mentions updating the RoPA, does not name training as a remediation item, and does not call for updating vendor contracts as a forward-looking action."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

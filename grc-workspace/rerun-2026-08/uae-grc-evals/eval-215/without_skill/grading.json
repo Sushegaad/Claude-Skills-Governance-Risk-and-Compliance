@@ -1,0 +1,33 @@
+{
+  "eval_id": 215,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Leads with the residency constraint: under the CBUAE Consumer Protection Regulation (Circular 8/2020) and Standards, consumer/transaction data must be stored and processed WITHIN the UAE — Bahrain-hosted consumer data conflicts with this baseline",
+      "passed": false,
+      "evidence": "Never cites Circular 8/2020; only hedges that CBUAE 'historically... has been cautious about core banking data... leaving the UAE without safeguards' and 'some expectations may require local backup' — vague, not a definitive in-UAE storage/processing requirement."
+    },
+    {
+      "text": "States the transfer gate correctly: sharing/transferring confidential consumer data outside the UAE requires CBUAE approval AND prior written customer consent — not merely contractual safeguards",
+      "passed": false,
+      "evidence": "No mention of the CBUAE-approval-plus-written-customer-consent gate anywhere; only discusses generic PDPL cross-border transfer mechanisms (adequacy, safeguards, Data Office permit)."
+    },
+    {
+      "text": "Applies the Outsourcing Regulation (Circular 14/2021): material outsourcing (core banking to cloud qualifies) needs CBUAE approval before implementation, with a Master System of Record maintained in the UAE, retained data ownership, and mandatory audit/on-site inspection rights (bank and CBUAE) plus breach-notification and exit clauses",
+      "passed": false,
+      "evidence": "Describes generic CBUAE outsourcing obligations (board approval, risk assessment, audit rights, exit plan) but never names Circular 14/2021 and never mentions the Master System of Record (MSoR) requirement or UAE-retained data ownership."
+    },
+    {
+      "text": "Gives the realistic architecture conclusion: in-UAE hosting (e.g., UAE regions/data centers) for consumer data with any offshore elements limited to non-consumer data or explicitly approved arrangements — an answer waving Bahrain hosting through FAILS",
+      "passed": false,
+      "evidence": "\"Consider whether a local UAE backup/DR copy of critical data, or a hybrid architecture keeping the most sensitive data/processing in-UAE while using Bahrain for other workloads, reduces regulatory friction — this is often the practical compromise banks use\" — effectively waves Bahrain hosting through with a backup mitigation rather than requiring in-UAE hosting of consumer/transaction data."
+    },
+    {
+      "text": "Adds the parallel tracks: federal PDPL readiness posture (banking-data carve-out notwithstanding) and operational-resilience/security expectations, with early CBUAE engagement advised on timeline",
+      "passed": false,
+      "evidence": "Treats federal PDPL cross-border transfer rules as directly and independently binding on this bank's customer data ('Customer personal data is also subject to the PDPL's cross-border transfer conditions') without noting the banking-data carve-out under CBUAE rules, contradicting the ground truth."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

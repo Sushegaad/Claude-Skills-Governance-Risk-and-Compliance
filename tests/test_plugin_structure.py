@@ -70,6 +70,8 @@ EXPECTED_PLUGINS = {
     "swift-csp",
     "tsa-compliance",
     "wcag",
+    "saudi-arabia-grc",
+    "uae-grc",
 }
 
 REQUIRED_PLUGIN_JSON_FIELDS = {"name", "version", "description"}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 201,
+  "eval_name": "market-entry-retailer",
+  "run_type": "without_skill",
+  "prompt": "We are a European e-commerce retailer opening a Saudi entity and an online store for Saudi customers. No government contracts. What Saudi regulations apply to us, and what should our first 90 days of compliance work look like?",
+  "assertions": [
+    "Delivers an applicability determination BEFORE detail: Saudi PDPL applies (personal data of Saudi residents); NCA ECC-2:2024 is NOT mandatory for a private non-CNI retailer (recommended best practice only); SAMA and CST licensing regimes do not apply to a plain retailer — each conclusion tied to the right regulator (SDAIA / NCA / SAMA / CST)",
+    "States the PDPL enforcement reality: Royal Decree M/19 as amended by M/148, fully enforced since September 14, 2024, with SDAIA actively enforcing (first-wave violation decisions issued in 2025-26)",
+    "Names concrete PDPL first-90-days actions: controller registration on SDAIA's National Data Governance Platform, RoPA, lawful bases (including the M/148 legitimate-interest basis for non-sensitive data), privacy notices, and a transfer mechanism for EU-KSA data flows (SDAIA SCC modules / adequacy / BCRs)",
+    "States the breach-notification rule correctly: 72 hours to SDAIA (via the platform), with data-subject notification where they are at risk",
+    "States penalty exposure correctly: fines up to SAR 5M per violation (doubling for repeat), with criminal exposure for unlawful disclosure of sensitive data — without inventing enacted amendments (the 2025 graduated-penalty proposals are not enacted as of August 2026; a compliant answer either omits them or flags them as pending)"
+  ]
+}

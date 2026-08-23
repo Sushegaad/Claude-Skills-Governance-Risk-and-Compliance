@@ -1,0 +1,32 @@
+# UAE privacy law for a mainland Dubai retailer: what's enforceable today, and what to build now
+
+## What's actually enforceable today
+
+- **Federal PDPL (Federal Decree-Law No. 45 of 2021)** is the core, currently-in-force data protection law applicable to your mainland Dubai retail company (mainland businesses fall under the federal regime, not a free-zone-specific law like DIFC/ADGM).
+- **Executive regulations** (issued via Cabinet Decision in 2024) have added operative detail to the previously high-level 2021 law — covering areas like consent standards, data subject rights mechanics, DPO appointment triggers, breach notification expectations, and cross-border transfer conditions. Treat the PDPL as a real, active compliance obligation, not an aspirational framework.
+- The **UAE Data Office** is the federal regulator responsible for enforcement, guidance, and (increasingly) registration/notification processes; it functions similarly to the role a data protection authority plays under GDPR-style regimes.
+- Adjacent/overlapping obligations already in force that a retailer should not ignore:
+  - **Consumer Protection Law** (Federal Law No. 15 of 2020) — governs marketing, e-commerce practices, and consumer data handling in commercial contexts.
+  - **Cybercrime law** (Federal Decree-Law No. 34/2021 and related legislation) — creates liability exposure for data breaches, misuse of electronic data, and security failures.
+  - **TDRA regulations** — relevant if you handle telecom-adjacent data (SMS marketing, call center recordings, etc.).
+  - Sector rules from bodies like the **Dubai Economy and Tourism (DET)** for consumer-facing commercial licensing may also touch data handling practices for retail specifically.
+- Core substantive obligations already live under PDPL: a lawful basis for processing (generally consent, or a specified statutory exception), transparency/privacy notice obligations, data subject rights (access, correction, deletion/erasure, objection, restriction), security/safeguarding obligations, breach notification to the Data Office (and in some cases affected individuals) without undue delay, and cross-border transfer restrictions when personal data leaves the UAE (adequacy, safeguards, consent, or permit-based mechanisms).
+
+## What to build now, practically, as a retailer
+
+1. **Data inventory and mapping.** Know what personal data you collect (loyalty program, e-commerce accounts, payment data, marketing data, CCTV/in-store data, employee data) and where it flows — including any third-party marketing platforms, POS systems, or cloud vendors, especially if hosted outside the UAE.
+2. **Privacy notice.** A clear, PDPL-aligned privacy notice covering categories of data collected, purposes, legal basis, retention periods, third-party sharing, and how customers exercise their rights — published at point of collection (website, app, in-store signage where relevant).
+3. **Consent and marketing controls.** Documented, granular consent capture for marketing communications (SMS/email/push), with an easy opt-out mechanism, since retail heavily relies on direct marketing.
+4. **Data subject rights process.** An operational workflow (not just policy) for handling access, correction, and deletion requests within a reasonable timeframe, including verifying requester identity.
+5. **Vendor/processor contracts.** Data processing addenda with your POS, e-commerce platform, CRM, payment processor, and marketing tech vendors — covering security obligations, breach notification flow-through, and data location.
+6. **Cross-border transfer safeguards.** If any customer data is processed or stored outside the UAE (common with global SaaS/marketing tools), put contractual safeguards in place and confirm the destination doesn't require a specific Data Office mechanism.
+7. **Security baseline.** Reasonable technical and organizational measures — encryption in transit/at rest for customer and payment data, access controls, logging, and a written incident response plan with a breach notification runbook (who notifies the Data Office, on what timeline, and what triggers notifying affected customers).
+8. **DPO / accountable owner.** Even if you don't clearly cross the threshold that legally mandates a formal Data Protection Officer, designate an accountable internal owner for privacy compliance now — it's the single highest-leverage governance step and positions you to formalize a DPO role if your processing scale (e.g., large-scale profiling, loyalty analytics) triggers that requirement.
+9. **Records of processing activities.** Maintain an internal register describing processing purposes, categories of data/subjects, retention, and recipients — useful both for regulator inquiries and for your own governance.
+10. **Employee data.** Don't forget PDPL also covers employee personal data (HR records, biometric access control, CCTV of staff areas) — build the same rigor into HR processes.
+
+## Bottom line
+
+The federal PDPL (plus its 2024 executive regulations) is a live, enforceable obligation for a mainland Dubai retailer today — this isn't "future-proofing" against a law that doesn't exist yet. The practical gap for most retailers is operational: policies exist on paper far more often than rights-request handling, vendor contracts, and breach response actually work in practice. Prioritize the inventory, the privacy notice, vendor DPAs, and a tested breach response runbook first — those are the areas regulators and plaintiffs' counsel tend to probe first.
+
+*General guidance based on the UAE federal PDPL framework and its 2024 executive regulations; confirm current thresholds (e.g., DPO appointment triggers, exact breach notification timelines) with UAE counsel, as executive-regulation-level detail is more likely to be refined over time than the underlying law.*

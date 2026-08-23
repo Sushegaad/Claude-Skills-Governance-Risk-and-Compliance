@@ -1,0 +1,46 @@
+# Unauthorized Disclosure of 40,000 Customer Records — Obligations Under Saudi Law
+
+*Disclaimer: General guidance based on publicly known provisions of the Saudi Personal Data Protection Law (PDPL) and related regulations, not legal advice. Given the scale (40,000 individuals) and inclusion of national ID numbers, engage Saudi data protection counsel immediately and in parallel with the steps below.*
+
+## 1. Immediate Framing
+
+This is a personal data breach under the **Personal Data Protection Law (PDPL)** and its Implementing Regulations, regulated by the **Saudi Data & Artificial Intelligence Authority (SDAIA)**. The facts that make this higher-severity than a routine incident:
+- **Scale**: 40,000 individuals is a large-scale breach.
+- **Data type**: national ID numbers are a unique national identifier tied to a person's legal identity and, combined with names/contact data, create significant identity-theft and fraud risk — regulators and courts will treat this as high-risk/high-harm data.
+- **Cause**: an internal employee sent the data to an *external, unauthorized* recipient — this is not a hack, it's an internal control failure (unauthorized processing/disclosure), which raises questions about your access controls, data loss prevention, and processor/vendor management.
+
+## 2. Immediate Response Obligations (Containment)
+
+1. **Contain the breach**: Attempt to recall/delete the email, request written confirmation of deletion and non-use from the external vendor, and consider whether a legal hold or non-disclosure/data-destruction undertaking should be obtained from the vendor in writing.
+2. **Preserve evidence**: Retain logs (email metadata, access logs, DLP alerts if any) — you will need this both for your internal investigation and for any SDAIA inquiry.
+3. **Suspend the responsible employee's access** pending investigation, consistent with your internal disciplinary policy and Saudi labor law procedures.
+
+## 3. Regulatory Notification Obligations
+
+Under the PDPL Implementing Regulations, controllers must notify the competent authority (SDAIA) of a personal data breach **without undue delay** — the Implementing Regulations set a **72-hour** benchmark from the point the controller becomes aware of an incident that meets the notification threshold (breaches likely to cause harm to the data subject or their data).
+
+- **Notify SDAIA**: Given the volume and sensitivity of the data (national IDs), this breach almost certainly crosses the notification threshold. Prepare a notification describing the nature of the breach, categories and approximate number of individuals/records affected, likely consequences, and measures taken/proposed.
+- **Notify affected individuals**: If the breach is likely to result in harm to the data subjects or their data (which is a reasonable conclusion here, given national ID exposure), you are also obligated to notify the affected individuals directly, without undue delay, describing the nature of the incident and recommended protective steps (e.g., watching for identity-theft indicators).
+- **Sector regulator notification**: If your company is also regulated by another authority (e.g., SAMA if you handle payments, CST/CITC for telecom-adjacent services, or MoC for consumer protection), check whether that regulator has its own separate breach notification requirement — PDPL notification does not automatically satisfy sector-specific obligations.
+
+## 4. Internal/Contractual Issues to Address
+
+- **Vendor relationship**: If the external vendor was meant to be a legitimate data processor, this incident may also reveal that you lacked (or did not follow) a proper PDPL-compliant Data Processing Agreement — PDPL requires written contractual terms governing any third party's processing of personal data on your behalf, including purpose limitation, security obligations, and data return/destruction at the end of the engagement. If no such agreement existed, or the vendor was not authorized to receive this data at all, this transfer was itself an unauthorized processing/disclosure event independent of any subsequent misuse by the vendor.
+- **Access controls**: Investigate why a marketing employee had unrestricted access/export capability to a dataset of 40,000 full customer records including national IDs — this is a strong governance failure indicator (lack of least-privilege access, no DLP controls on outbound email, no approval workflow for bulk data exports) that SDAIA is likely to scrutinize as part of any inquiry into root cause and accountability.
+- **HR/disciplinary process**: Handle the employee matter through your internal disciplinary process consistent with the Saudi Labor Law; depending on intent and findings, this could range from formal warning to termination, and in cases involving apparent malicious intent or personal gain, potential referral to the Public Prosecution.
+
+## 5. Potential Penalties and Liability Exposure
+
+- **Administrative fines**: PDPL violations can carry substantial fines (regulations set maximum fine tiers, historically referenced up to several million SAR for serious violations, with the ability to double fines for repeat violations) — the scale and sensitivity here places you at the higher end of regulatory risk.
+- **Criminal exposure**: The PDPL includes criminal penalties (including potential imprisonment) specifically for the unlawful disclosure or misuse of sensitive personal data, particularly if disclosure is found to be intentional or for personal benefit or to cause harm — this is a relevant consideration given the employee's role in directly sending the data externally without authorization, even though intent/motive still needs to be established through investigation.
+- **Civil liability**: Affected individuals may have a right to compensation for material or moral damage suffered as a result of a PDPL violation; with 40,000 affected individuals, aggregate exposure could be significant if harm materializes (e.g., identity theft, fraud).
+- **Reputational and commercial risk**: Regulatory investigation, required corrective action plans, and potential public disclosure obligations can also affect customer trust and B2B relationships.
+
+## 6. Recommended Next Steps (in order)
+1. Engage Saudi data protection counsel and, if available, a forensic/incident-response firm today.
+2. Complete containment (recall data, secure written vendor confirmation of deletion/non-use).
+3. Run a fast but thorough root-cause investigation (how the employee accessed/exported the data, whether DLP/approval controls existed and failed or were absent).
+4. Prepare and submit the SDAIA breach notification within the 72-hour benchmark, and prepare individual notifications to the 40,000 affected customers.
+5. Review and remediate the underlying access control and data governance gaps (least-privilege access to full PII/national ID datasets, DLP on outbound communications, mandatory approval for bulk exports).
+6. Document every step taken (accountability principle) — SDAIA will expect to see a documented incident record and remediation plan, not just the notification itself.
+7. Address the employee matter through HR/legal channels in parallel, keeping personnel action separate from (but coordinated with) the regulatory response.

@@ -1,0 +1,13 @@
+{
+  "eval_id": 215,
+  "eval_name": "cbuae-cloud-offshoring",
+  "run_type": "with_skill",
+  "prompt": "Our CBUAE-licensed bank wants to move its core banking system and customer data to a cloud provider whose regional data centers are in Bahrain. What approvals and constraints apply?",
+  "assertions": [
+    "Leads with the residency constraint: under the CBUAE Consumer Protection Regulation (Circular 8/2020) and Standards, consumer/transaction data must be stored and processed WITHIN the UAE — Bahrain-hosted consumer data conflicts with this baseline",
+    "States the transfer gate correctly: sharing/transferring confidential consumer data outside the UAE requires CBUAE approval AND prior written customer consent — not merely contractual safeguards",
+    "Applies the Outsourcing Regulation (Circular 14/2021): material outsourcing (core banking to cloud qualifies) needs CBUAE approval before implementation, with a Master System of Record maintained in the UAE, retained data ownership, and mandatory audit/on-site inspection rights (bank and CBUAE) plus breach-notification and exit clauses",
+    "Gives the realistic architecture conclusion: in-UAE hosting (e.g., UAE regions/data centers) for consumer data with any offshore elements limited to non-consumer data or explicitly approved arrangements — an answer waving Bahrain hosting through FAILS",
+    "Adds the parallel tracks: federal PDPL readiness posture (banking-data carve-out notwithstanding) and operational-resilience/security expectations, with early CBUAE engagement advised on timeline"
+  ]
+}

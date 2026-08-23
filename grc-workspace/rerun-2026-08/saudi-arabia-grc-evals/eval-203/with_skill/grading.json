@@ -1,0 +1,33 @@
+{
+  "eval_id": 203,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies the full stack for a CSP serving government: CST Cloud Computing Regulatory Framework registration (class determines permissible data levels), NCA CCC provider-side controls (as the ministry is ECC-covered), and PDPL for any personal data — all three named with their regulators",
+      "passed": true,
+      "evidence": "Applicability matrix: 'CST Cloud Computing Regulatory Framework v3 | CST | Yes — mandatory... Your registration class... determines which customer data levels you're permitted to host.' 'NCA CCC (Cloud Cybersecurity Controls) | NCA | Yes — mandatory (CSP-side controls)... the ministry is itself mandatorily ECC-covered.' 'Saudi PDPL | SDAIA | Yes — mandatory... as the processor.'"
+    },
+    {
+      "text": "States the residency rule decisively: government data must remain in-Kingdom (localization is exclusive, narrow exceptions) — an answer suggesting offshore hosting of ministry workloads with contractual fixes FAILS this assertion",
+      "passed": true,
+      "evidence": "'Government data localization is exclusive under the CST framework: government workloads must remain in-Kingdom (Saudi Arabia), with only narrow, specifically-approved exceptions... plan for 100% in-Kingdom hosting of this workload — don't architect around exceptions.'"
+    },
+    {
+      "text": "Explains the classification-driven model: cloud levels tied to data classification (Top Secret/Secret/Confidential/Public) and CST customer-data Levels with Levels 3-4 requiring in-Kingdom hosting",
+      "passed": true,
+      "evidence": "'Cloud levels are tied to data classification (Top Secret / Secret / Confidential / Public) under both NCA CCC and the CST framework... CST customer data Levels 3–4 require in-Kingdom residency regardless of classification label.'"
+    },
+    {
+      "text": "Reflects the CCC's role-split design: provider-side vs tenant-side controls (e.g., P vs T control markers), with the ministry remaining accountable as tenant — no invented control IDs",
+      "passed": true,
+      "evidence": "'CCC binds CSPs serving ECC-covered tenants — you'll need to implement the CSP-role controls (role marker \"P\" in control IDs), while the ministry carries the tenant-side (\"T\") controls and remains accountable for its own data.' No specific fabricated control ID numbers are used."
+    },
+    {
+      "text": "Gives a realistic sequencing: CST registration/class, in-Kingdom infrastructure or partnership, CCC control implementation with evidence, then contract with the ministry — including Arabic-language/local-presence practicalities where relevant",
+      "passed": true,
+      "evidence": "Sequenced list: '1. CST registration... This typically requires establishing in-Kingdom infrastructure/presence — a \"global\" footprint without a KSA region won't satisfy this. 2. NCA CCC CSP-side controls... 3. PDPL processor posture... 4. Data lifecycle controls (DCC)... 5. Contractual/architecture lock-in.' Local-presence practicalities are explicitly addressed."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

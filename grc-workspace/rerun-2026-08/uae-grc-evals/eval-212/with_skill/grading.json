@@ -1,0 +1,33 @@
+{
+  "eval_id": 212,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Leads with the decisive rule: the ICT Health Law (Federal Law 2/2019) generally PROHIBITS storing/processing/transferring UAE health data outside the UAE — default answer: patient data cannot live in a US-hosted cloud",
+      "passed": true,
+      "evidence": "\"Short answer up front: No, not by default. UAE health data generally cannot be stored, processed, generated, or transferred outside the UAE\"; \"Federal Law 2/2019\" named as the controlling law."
+    },
+    {
+      "text": "States the exception pathway correctly: exceptions require authorization via the relevant health authority and MOHAP (Cabinet Decision 32/2020; Ministerial Resolution 51/2021 covers approved cases such as specified telemedicine) — not fixable by contracts alone",
+      "passed": true,
+      "evidence": "\"Federal Law 2/2019 (+ Cabinet Decision 32/2020, Ministerial Resolution 51/2021) prohibits... unless an exception is specifically authorized by the relevant health authority and MOHAP... requires a formal approval, not a contractual workaround. Don't assume a DPA or encryption gets you there.\""
+    },
+    {
+      "text": "Quantifies exposure: localization violations carry fines of AED 500,000-700,000",
+      "passed": true,
+      "evidence": "\"Fines for localization violations: AED 500,000–700,000.\""
+    },
+    {
+      "text": "Routes to the right authority for a Dubai private hospital (DHA, with MOHAP at federal level) and notes the law prevails over the federal PDPL via the health-data carve-out",
+      "passed": true,
+      "evidence": "\"Relevant health authority for a Dubai hospital: DHA. Federal oversight: MOHAP.\"; \"it's a sector overlay that prevails over general privacy carve-outs\" and separately routes non-health data to federal PDPL."
+    },
+    {
+      "text": "Gives the practical architecture answer: in-UAE hosting (or an authorized exception) for patient data, with a split analysis for non-health personal data (federal PDPL readiness posture) — and advises the vendor to verify current authority guidance before promising any exception",
+      "passed": true,
+      "evidence": "Options given: in-country hosting, authorized exception, data splitting; \"Non-health personal data... likely federal PDPL... treat this as a readiness posture rather than a fully operational enforcement regime\"; closing disclaimer to confirm exception pathways with MOHAP/DHA before finalizing."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

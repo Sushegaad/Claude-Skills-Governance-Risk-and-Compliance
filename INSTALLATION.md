@@ -1,6 +1,6 @@
 # Installation Guide — GRC Skills for Claude Code
 
-This guide covers how to install the GRC Skills marketplace in [Claude Code](https://claude.ai/claude-code), the AI-powered CLI for developers. The marketplace provides **30 compliance skills** as Claude Code plugins — each one extends Claude with deep, framework-specific expertise across data privacy, information security, AI governance, export controls, sustainability, and accessibility.
+This guide covers how to install the GRC Skills marketplace in [Claude Code](https://claude.ai/claude-code), the AI-powered CLI for developers. The marketplace provides **32 compliance skills** as Claude Code plugins — each one extends Claude with deep, framework-specific expertise across data privacy, information security, AI governance, export controls, sustainability, and accessibility.
 
 ---
 
@@ -100,16 +100,23 @@ Once the marketplace is registered, install only the frameworks you need.
 /plugin install wcag@grc-skills
 ```
 
+### Country GRC
+
+```shell
+/plugin install saudi-arabia-grc@grc-skills
+/plugin install uae-grc@grc-skills
+```
+
 Each plugin is installed to a local cache (`~/.claude/plugins/cache`) and activates immediately in new Claude sessions.
 
 ---
 
-## 3. Install All 30 at Once
+## 3. Install All 32 at Once
 
 To install the full GRC suite in a single command:
 
 ```shell
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills nist-csf@grc-skills nist-800-53@grc-skills cmmc@grc-skills swift-csp@grc-skills ism@grc-skills nzism@grc-skills cis-controls@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills pci-compliance@grc-skills dpdpa@grc-skills ccpa@grc-skills lgpd@grc-skills vn-pdpl@grc-skills iso27701@grc-skills nis2@grc-skills dora@grc-skills tsa-compliance@grc-skills eu-cra@grc-skills iso42001@grc-skills nist-ai-rmf@grc-skills eu-ai-act@grc-skills itar@grc-skills ear@grc-skills csrd@grc-skills section-508@grc-skills wcag@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills nist-csf@grc-skills nist-800-53@grc-skills cmmc@grc-skills swift-csp@grc-skills ism@grc-skills nzism@grc-skills cis-controls@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills pci-compliance@grc-skills dpdpa@grc-skills ccpa@grc-skills lgpd@grc-skills vn-pdpl@grc-skills iso27701@grc-skills nis2@grc-skills dora@grc-skills tsa-compliance@grc-skills eu-cra@grc-skills iso42001@grc-skills nist-ai-rmf@grc-skills eu-ai-act@grc-skills itar@grc-skills ear@grc-skills csrd@grc-skills section-508@grc-skills wcag@grc-skills saudi-arabia-grc@grc-skills uae-grc@grc-skills
 ```
 
 ---
@@ -140,7 +147,7 @@ Add the following to your project's `.claude/settings.json` (include only the sk
 }
 ```
 
-Commit this file to your repository. The next time a team member trusts the project folder in Claude Code, the marketplace and plugins will be registered automatically. Only enable the skills your team actually needs — you don't have to include all 30.
+Commit this file to your repository. The next time a team member trusts the project folder in Claude Code, the marketplace and plugins will be registered automatically. Only enable the skills your team actually needs — you don't have to include all 32.
 
 ---
 
@@ -237,6 +244,13 @@ To remove the marketplace entirely:
 |---|---|---|
 | `section-508` | Section 508 (US) | VPAT 2.x ACR completion, procurement language (FAR 52.239-2), AT testing, undue burden exceptions |
 | `wcag` | WCAG 2.0/2.1/2.2 | POUR audit, SC-level gap analysis, ARIA patterns, screen reader testing, legal compliance mapping |
+
+### Country GRC
+
+| Plugin name | Framework | What it does |
+|---|---|---|
+| `saudi-arabia-grc` | Saudi Arabia (NCA/SDAIA/SAMA/CST) | Applicability routing, ECC-2:2024 & PDPL gap assessments, cloud residency, SAMA CSF, ISO/NIST/SOC 2 mapping |
+| `uae-grc` | UAE (PDPL/DIFC/ADGM/CBUAE/Health) | Jurisdiction-first routing, zone DP laws, health-data localization, CBUAE cloud approvals, ISO/NIST/SOC 2 mapping |
 
 ---
 

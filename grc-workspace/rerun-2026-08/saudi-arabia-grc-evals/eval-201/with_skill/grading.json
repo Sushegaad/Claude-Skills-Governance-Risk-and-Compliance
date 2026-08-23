@@ -1,0 +1,33 @@
+{
+  "eval_id": 201,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Delivers an applicability determination BEFORE detail: Saudi PDPL applies (personal data of Saudi residents); NCA ECC-2:2024 is NOT mandatory for a private non-CNI retailer (recommended best practice only); SAMA and CST licensing regimes do not apply to a plain retailer — each conclusion tied to the right regulator (SDAIA / NCA / SAMA / CST)",
+      "passed": true,
+      "evidence": "Opens with an 'Applicability Matrix' table before any detail: PDPL/SDAIA 'Yes — mandatory'; NCA ECC-2:2024/NCA 'No — recommended only... Mandatory only for government entities/subsidiaries and CNI operators'; CST Cloud Computing Regulatory Framework/CST 'No (as a cloud tenant)'; SAMA/SAMA 'No... Applies to SAMA-licensed banks/insurers/financing companies/fintechs'; CMA/CMA 'No'. Each row names the regulator."
+    },
+    {
+      "text": "States the PDPL enforcement reality: Royal Decree M/19 as amended by M/148, fully enforced since September 14, 2024, with SDAIA actively enforcing (first-wave violation decisions issued in 2025-26)",
+      "passed": true,
+      "evidence": "'Saudi PDPL (Royal Decree M/19, as amended by M/148)... fully enforced since 14 September 2024.' Later: 'SDAIA's enforcement committees issued roughly 48 violation decisions in the first wave (2025–26).'"
+    },
+    {
+      "text": "Names concrete PDPL first-90-days actions: controller registration on SDAIA's National Data Governance Platform, RoPA, lawful bases (including the M/148 legitimate-interest basis for non-sensitive data), privacy notices, and a transfer mechanism for EU-KSA data flows (SDAIA SCC modules / adequacy / BCRs)",
+      "passed": true,
+      "evidence": "'Register as a data controller on SDAIA's National Data Governance Platform (dgp.sdaia.gov.sa)... Build a Record of Processing Activities (RoPA)... legitimate interest (added by M/148) is available for most marketing/analytics uses but not for sensitive data... Draft/localize your privacy notice... Establish a lawful transfer mechanism: SDAIA-assessed adequacy..., SDAIA Standard Contractual Clauses (C2C/C2P/P2C/P2P modules as appropriate), or Binding Common Rules.'"
+    },
+    {
+      "text": "States the breach-notification rule correctly: 72 hours to SDAIA (via the platform), with data-subject notification where they are at risk",
+      "passed": true,
+      "evidence": "'Stand up a breach response procedure with a hard 72-hour SDAIA notification clock, plus a threshold test for when affected customers must also be notified (risk-based).'"
+    },
+    {
+      "text": "States penalty exposure correctly: fines up to SAR 5M per violation (doubling for repeat), with criminal exposure for unlawful disclosure of sensitive data — without inventing enacted amendments (the 2025 graduated-penalty proposals are not enacted as of August 2026; a compliant answer either omits them or flags them as pending)",
+      "passed": true,
+      "evidence": "'fines up to SAR 5,000,000 per violation (doubling for repeat violations), and criminal exposure up to 2 years' imprisonment for unlawful disclosure of sensitive data.' Then explicitly: 'SDAIA ran a public consultation in April 2025 on proposed PDPL amendments (including graduated penalties). As of today (23 August 2026), those amendments are not enacted.'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,43 @@
+# ISO 27001:2022 Coverage of NCA ECC-2:2024 for a Saudi Government Subsidiary
+
+*Disclaimer: General guidance based on publicly known structures of ISO/IEC 27001:2022 and the NCA Essential Cybersecurity Controls, not a certified gap assessment. A formal control-by-control mapping against the current published ECC-2:2024 text, performed by a qualified assessor, is required before you rely on this for a compliance submission to the National Cybersecurity Authority (NCA).*
+
+## 1. Why ISO 27001:2022 Gets You Meaningfully Far — But Not All the Way
+
+ISO/IEC 27001:2022 (with its 93 Annex A controls across four themes — Organizational, People, Physical, Technological) and the NCA's Essential Cybersecurity Controls (ECC) are both broadly aligned to international information security good practice, and the NCA has historically designed ECC to be substantially compatible with ISO 27001, NIST CSF, and similar frameworks. In practice, organizations that hold a mature ISO 27001:2022 certification typically find that a large majority of ECC's operational and technical control objectives are already substantively covered — control areas such as:
+
+- Access control and identity management
+- Asset management and information classification
+- Cryptography
+- Physical and environmental security
+- Operations security (logging, monitoring, malware protection, backup)
+- Communications/network security
+- Secure system acquisition, development, and maintenance
+- Supplier/third-party relationship security
+- Incident management fundamentals
+- HR security (screening, training, termination)
+- Business continuity fundamentals
+
+These map reasonably closely to ISO 27001:2022 Annex A controls, so if your Statement of Applicability (SoA) is comprehensive and your controls are operating effectively (not just documented), you likely have strong coverage of ECC's technical and operational baseline — commonly estimated in the range of roughly 60–75% of ECC subcontrols in practice, though the exact percentage depends on your SoA scope and the specific ECC-2:2024 control list, which should be confirmed via a formal mapping exercise rather than assumed.
+
+## 2. What Is Unlikely to Be Covered — the Saudi- and Government-Specific Gaps
+
+ISO 27001 is a generic, internationally portable ISMS standard; it is not written with Saudi national regulatory requirements or government-sector obligations in mind. For a **government subsidiary** specifically, expect these gaps:
+
+1. **Direct regulatory reporting and self-assessment obligations** — ECC requires periodic self-assessment and compliance reporting/submission to the NCA (and, depending on entity type, may require review through the NCA's compliance tools/portal). ISO 27001 certification is a third-party audit against an accredited certification body; it does not satisfy the NCA's own reporting/submission requirements, which you must build as a separate process.
+2. **National incident reporting requirements** — ECC mandates incident reporting to the NCA (and coordination with national CERT functions) within Saudi-specific timeframes and formats. ISO 27001's incident management clause (Annex A.5.24–5.28 area) covers *having* an incident process, but not the specific obligation to report to a Saudi national authority.
+2a. **Alignment with National Data Classification Policy** — ECC (and related SDAIA/NDMO data governance requirements) expects classification schemes aligned to Saudi national data classification levels, which may differ from a generic ISO information classification scheme.
+3. **Government-specific governance requirements** — ECC typically expects a board/senior-management-approved cybersecurity strategy explicitly aligned with national cybersecurity objectives, a formally designated and often specifically vetted CISO role, and cybersecurity steering committee structures that go beyond ISO 27001's more generic "top management commitment" clauses (Clause 5).
+4. **Third-Party & Cloud Cybersecurity domain specifics** — if you use cloud services, ECC's cloud-related expectations are closely tied to the NCA Cloud Cybersecurity Controls (CCC) and CST's Cloud Computing Regulatory Framework (data residency, licensed/accredited providers, in-Kingdom hosting for government-classified data). ISO 27001's supplier-management controls (A.5.19–5.23) address vendor risk generically but do not enforce Saudi data-residency or CSP-licensing requirements.
+5. **ICS/OT-specific controls** — if your subsidiary has any operational technology/industrial control systems footprint, ECC includes a dedicated OT/ICS domain that ISO 27001 does not address at all unless you've separately scoped ISO 27019 or IEC 62443 controls into your ISMS.
+6. **Saudi-specific technical/cryptographic standards** — ECC may reference NCA-approved cryptographic standards and specific technical configurations that are more prescriptive than ISO 27001's generic "use appropriate cryptography" control (A.8.24).
+7. **National threat intelligence and coordination participation** — requirements to participate in national information-sharing/threat-intelligence programs are outside ISO 27001's scope entirely.
+8. **Personnel vetting for government-linked entities** — government subsidiaries often face additional personnel security/clearance-style requirements for staff with privileged access, beyond ISO 27001's generic background-verification control (A.6.1).
+9. **Audit/certification cycle mismatch** — ISO 27001 runs on a 3-year certification cycle with annual surveillance audits; ECC compliance for government-linked entities is typically expected to be demonstrated on a more frequent (often annual or more frequent) self-assessment/reporting cycle to the NCA, so your assurance cadence needs to be adapted, not just your control set.
+
+## 3. Recommended Approach
+
+1. **Commission a formal control-mapping exercise**: map your current ISO 27001:2022 SoA (both included and excluded controls, and how each is actually implemented) against the full current text of NCA ECC-2:2024 domain by domain and subcontrol by subcontrol — don't rely on high-level thematic similarity, since NCA assessors and self-assessment tools will expect subcontrol-level evidence.
+2. **Prioritize the government-subsidiary-specific gaps** identified above first, since these are the areas least likely to be incidentally covered by a generic ISMS: NCA reporting/self-assessment workflow, incident reporting to the NCA/national CERT, cloud/third-party alignment with CCC and CST data residency rules, OT/ICS controls if applicable, and governance artifacts explicitly referencing national cybersecurity alignment.
+3. **Treat ISO 27001 as your evidentiary base, not your compliance target** — use existing ISO-driven documentation (risk assessments, SoA, policies, audit records) as supporting evidence within your ECC compliance file, but build a separate ECC-specific compliance package and reporting cadence for the NCA.
+4. **Re-run the mapping whenever either standard updates** — since you're referencing ECC-2:2024 specifically, confirm you're mapping against the current published version and not an earlier ECC-1:2018 baseline, and re-validate the mapping after any future ISO 27001 Annex A revisions or further ECC updates.

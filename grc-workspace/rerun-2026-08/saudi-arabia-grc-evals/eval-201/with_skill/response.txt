@@ -1,0 +1,50 @@
+# Saudi Market Entry — Applicability & First 90 Days
+
+A couple of quick confirmations that would sharpen this (I've made reasonable working assumptions where you haven't told me, flagged below — correct me if any are wrong):
+
+- I'm assuming you are **not** SAMA-, CST-, or CMA-licensed (i.e., you're not becoming a payment institution yourselves — you'll use a licensed Saudi/regional payment gateway) and you are **not** designated Critical National Infrastructure (CNI).
+- I'm assuming your Saudi online store will process ordinary customer data (name, contact, address, order/payment metadata) — not health, biometric, or other "sensitive" categories under Saudi law.
+- I'm assuming you'll host on a mainstream cloud provider (in- or out-of-Kingdom) rather than operating your own cloud infrastructure.
+
+## Applicability Matrix
+
+| Instrument | Regulator | Applies to you? | Why |
+|---|---|---|---|
+| **Saudi PDPL** (Royal Decree M/19, as amended by M/148) | SDAIA | **Yes — mandatory** | You will process personal data of Saudi residents (customers) through your new entity and online store. PDPL applies regardless of where the processing entity sits, and is fully enforced since 14 September 2024. |
+| **NCA ECC-2:2024** (Essential Cybersecurity Controls) | NCA | **No — recommended only** | Mandatory only for government entities/subsidiaries and CNI operators. As a private e-commerce retailer with no government contracts, ECC is best-practice, not a legal obligation — but it's the standard NCA/customers/partners will benchmark you against informally. |
+| **NCA CCC** (Cloud Cybersecurity Controls) | NCA | **No** | Only binds CSPs serving, or cloud tenants that are, ECC-covered entities. You are neither. |
+| **CST Cloud Computing Regulatory Framework** | CST | **No** (as a cloud tenant) | This binds cloud service *providers* operating in KSA and sets residency rules for Level 3–4 customer data. You're a tenant buying cloud services, not a CSP, so it doesn't bind you directly — but it governs *your provider's* obligations and shapes where they can legally host Saudi customer data if you go with a locally registered CSP. |
+| **SAMA Cyber Security Framework** | SAMA | **No** | Applies to SAMA-licensed banks/insurers/financing companies/fintechs. You're not becoming a payment licensee. |
+| **CMA Cybersecurity Guidelines** | CMA | **No** | Capital markets only. |
+
+**Bottom line:** your binding Saudi compliance obligation is the **PDPL**, administered by **SDAIA**. Everything else (ECC, NCA reporting) is voluntary hygiene that's still worth doing because it signals maturity to Saudi partners, insurers, and increasingly to enterprise/government customers you may pursue later.
+
+Note: standing up a Saudi entity and e-commerce operation also triggers general commercial-law requirements (MISA foreign-investment licensing, Ministry of Commerce e-commerce registration/consumer-protection rules, Zakat/tax registration) that sit outside cybersecurity/data-protection GRC and outside what I can authoritatively detail here — loop in Saudi corporate counsel for those in parallel.
+
+## First 90 Days
+
+**Days 1–30 — PDPL foundations (SDAIA)**
+- Register as a data controller on SDAIA's **National Data Governance Platform** (dgp.sdaia.gov.sa).
+- Build a **Record of Processing Activities (RoPA)** covering the online store: what customer data you collect, purpose, retention, who it flows to (payment gateway, logistics, marketing tools, EU HQ systems).
+- Determine your **lawful basis** per data flow — consent as the default; contract performance for order fulfillment; legitimate interest (added by M/148) is available for most marketing/analytics uses but **not for sensitive data**.
+- Draft/localize your **privacy notice** (Arabic + English) — purpose limitation and minimization built in from day one.
+- Assess whether SDAIA rules require a **DPO appointment** given the scale of your processing (retail at volume typically triggers this).
+- Stand up a **breach response procedure** with a hard **72-hour SDAIA notification clock**, plus a threshold test for when affected customers must also be notified (risk-based).
+
+**Days 30–60 — Cross-border data flows and vendor contracts**
+- Since you're a European retailer, customer data will likely flow back to EU-based systems (ERP, CRM, analytics, group reporting). Establish a lawful **transfer mechanism**: SDAIA-assessed adequacy (unlikely to cover EU→other-EU internal flows the way you'd want; check current SDAIA adequacy list), **SDAIA Standard Contractual Clauses** (C2C/C2P/P2C/P2P modules as appropriate), or **Binding Common Rules** if this is an intra-group transfer program.
+- Paper your vendor relationships (payment gateway, cloud host, logistics, marketing/CDP tools) with **DPAs** reflecting PDPL processor obligations, not just GDPR ones — the two overlap heavily but aren't identical (SDAIA registration, Arabic artifacts, and the 72-hour clock are Saudi-specific).
+- Confirm your cloud provider's hosting location and residency posture. You have no legal residency mandate (you're not government/CNI, and customer data levels 3–4 residency rules bind your *CSP*, not you) — but many Saudi consumers and regulators view in-Kingdom or regional hosting favorably, so factor this into vendor selection even though it's not compulsory.
+
+**Days 60–90 — Security baseline and cross-mapping**
+- Adopt **NCA ECC-2:2024** as a voluntary best-practice baseline — you don't need full formal compliance, but pull the core hygiene: asset management, access control, encryption of data at rest/in transit, logging/monitoring, incident response, patch management, backup.
+- **Cross-map your existing EU compliance work** (GDPR program, ISO 27001 if certified) to PDPL — most controllers find 70–80% evidence reuse is possible (privacy notices, RoPA, DSR handling, breach procedures), with the deltas being SDAIA-specific: platform registration, Arabic-language artifacts, the SDAIA transfer-mechanism paperwork, and the 72-hour notification channel (distinct from GDPR's 72-hour-to-supervisory-authority, but not automatically satisfied by your existing GDPR process).
+- Run a light internal audit against your RoPA and privacy notice before go-live, and confirm your customer-facing consent flows (cookie/marketing consent) meet PDPL's consent standard, not just GDPR's.
+
+## Enforcement context to plan around
+PDPL enforcement is active and material: fines up to **SAR 5,000,000 per violation** (doubling for repeat violations), and criminal exposure up to **2 years' imprisonment** for unlawful disclosure of sensitive data. SDAIA's enforcement committees issued roughly 48 violation decisions in the first wave (2025–26), so this isn't a dormant law — budget real compliance effort, not a checkbox privacy notice.
+
+**Dated item:** SDAIA ran a public consultation in April 2025 on proposed PDPL amendments (including graduated penalties). As of today (23 August 2026), those amendments are **not enacted** — build your compliance program on the current law and confirm directly with SDAIA before relying on any proposed changes.
+
+---
+*General compliance information, not legal advice. Confirm current requirements with SDAIA/NCA and Saudi counsel before finalizing your entry plan.*

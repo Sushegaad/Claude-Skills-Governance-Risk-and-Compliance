@@ -1,0 +1,33 @@
+{
+  "eval_id": 214,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Applies the right law: ADGM Data Protection Regulations 2021 (not the federal PDPL, not DIFC law), overseen by the ADGM Office of Data Protection / Commissioner",
+      "passed": true,
+      "evidence": "\"ADGM Data Protection Regulations 2021 | ADGM Office of Data Protection (Commissioner) | Yes — this governs your breach notification duty\"; \"ADGM is carved out of the federal PDPL\"."
+    },
+    {
+      "text": "States the deadline correctly: notify the Commissioner within 72 HOURS of becoming aware of the breach, and notify affected data subjects where there is high risk to them",
+      "passed": true,
+      "evidence": "\"you must notify the ADGM Office of Data Protection (Commissioner) within 72 hours of becoming aware of the breach\"; \"Data subject notification is also required, without undue delay, where the breach is likely to result in high risk\"."
+    },
+    {
+      "text": "Covers incident mechanics: assess scope (encryption status of the laptop matters to risk), contain (remote wipe, credential rotation), preserve evidence, and document the incident and decision-making even if notification is judged unnecessary",
+      "passed": false,
+      "evidence": "Covers assessing encryption status, scoping affected data, remote wipe/lock, and documenting the discovery timeline, but never mentions credential rotation, and never explicitly instructs documenting the incident/decision if notification is ultimately judged unnecessary."
+    },
+    {
+      "text": "Notes the parallel regulator: as an FSRA-regulated asset manager, operational-incident expectations to FSRA run alongside the DP notification — and the answer must not cite CBUAE",
+      "passed": true,
+      "evidence": "\"you likely have separate operational/incident notification obligations to FSRA under the ADGM financial services framework — these run in parallel to, not instead of, your ADGM Office of Data Protection notification\"; CBUAE mentioned only conditionally ('If you also hold a CBUAE license... confirm'), never asserted as applicable."
+    },
+    {
+      "text": "Includes follow-through: root-cause remediation (encryption, MDM), RoPA/security-policy updates, and annual-notification standing with the ODP",
+      "passed": false,
+      "evidence": "No follow-through/remediation section exists — the response ends with notification content, FSRA cross-check, and a disclaimer; encryption/MDM remediation, RoPA updates, and annual-notification standing with the ODP are never addressed."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

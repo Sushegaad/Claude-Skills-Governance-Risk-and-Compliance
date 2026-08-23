@@ -1,0 +1,48 @@
+# Saudi Arabia Compliance Roadmap for a European E-Commerce Retailer
+
+*Disclaimer: This is general guidance based on publicly known regulatory frameworks, not legal advice. Engage Saudi outside counsel and a licensed Mudad/GOSI-registered advisor before launch.*
+
+## 1. Regulatory Landscape That Applies to You
+
+Even without government contracts, a foreign e-commerce retailer selling to Saudi consumers touches a wide set of regimes:
+
+- **Foreign investment licensing** – Ministry of Investment (MISA, formerly SAGIA) license is required to legally establish and own a Saudi entity as a foreign investor.
+- **Companies Law (2022)** – governs your legal form (typically an LLC), governance, capital, and reporting.
+- **Commercial Registration (CR)** – Ministry of Commerce (MoC) registration, plus a National Address and Wasel registration.
+- **E-Commerce Law (2019) and its Executive Regulations** – MoC rules on mandatory website disclosures (CR number, legal name, address, prices in SAR, contact details), return/refund policy, order confirmation, and marketing/advertising conduct.
+- **Consumer Protection Law** – governs product quality, warranty, misleading advertising, and complaint handling; enforced by MoC.
+- **Personal Data Protection Law (PDPL)** and its Implementing Regulations (SDAIA is the regulator) – applies to any processing of personal data of individuals in the Kingdom, including customer names, addresses, phone numbers, payment metadata, and order history. Enforcement is active as of late 2024, so you are already in scope.
+- **SASO / SABER** – if you sell physical goods (electronics, toys, cosmetics, textiles, etc.), Saudi Standards, Metrology and Quality Organization (SASO) product conformity certificates must be issued through the SABER platform before goods clear customs.
+- **ZATCA (Zakat, Tax and Customs Authority)** – VAT registration (15%) and mandatory e-invoicing (Fatoora), including phase 2 integration once you exceed the applicable revenue threshold. Customs duties apply to imported goods.
+- **Payments** – SAMA regulates payment services; you will almost certainly integrate with a SAMA-licensed Payment Service Provider (PSP)/acquirer (e.g., a licensed gateway) rather than becoming a licensed PSP yourself, but your checkout flow, refund handling, and any stored card data must meet PCI DSS and SAMA's outsourcing expectations for your PSP relationship.
+- **Anti-Commercial Fraud Law** – prohibits misleading claims about origin, quality, and pricing.
+- **Anti-Cyber Crime Law** – relevant to how you secure customer data and respond to breaches.
+- **Labor Law, Saudization (Nitaqat), and GOSI** – once you hire local staff, you must meet Saudization quotas for your company size/sector and register employees with GOSI for social insurance.
+- **Municipal/business licensing** – warehouse, fulfillment center, or office locations need municipal (baladiya) licenses.
+
+## 2. First 90 Days – Suggested Sequence
+
+**Days 1–30: Legal and Regulatory Foundation**
+- Finalize MISA investment license and MoC Commercial Registration.
+- Register with ZATCA for VAT and confirm e-invoicing (Fatoora) system requirements for your billing software.
+- Appoint (or contract) a Data Protection Officer / PDPL compliance owner and run an initial PDPL gap assessment covering: lawful basis for processing, data inventory, cross-border transfer exposure (especially if customer data flows back to EU servers), consent flows, and a breach-notification procedure (SDAIA notification obligations, typically within 72 hours of becoming aware of a qualifying incident).
+- Map current EU privacy notices/GDPR program against PDPL requirements – GDPR gives you a head start, but PDPL has distinct definitions of sensitive data, different consent standards, and its own data-subject-rights procedures.
+
+**Days 31–60: Commercial and Product Readiness**
+- Rebuild or localize the website: Arabic-language version, SAR pricing, mandatory MoC e-commerce disclosures, return/refund policy compliant with the E-Commerce Law, and clear terms of service.
+- Begin SASO/SABER product certification for any physical SKUs; build this into your supply chain lead times since it can take several weeks per product category.
+- Finalize your PSP/payment gateway integration and confirm it is SAMA-licensed; document the data flow and any PCI DSS obligations.
+- Draft a PDPL-compliant privacy policy and cookie/consent banner; update your Data Processing Agreements with any vendors (fulfillment, marketing, analytics, cloud hosting) to reflect PDPL processor obligations.
+- Assess data residency: decide whether customer data will be hosted in-Kingdom, in the EU, or in a hybrid model, and document the legal basis for any cross-border transfer under PDPL's transfer rules.
+
+**Days 61–90: Operational Launch Readiness**
+- Complete GOSI registration and Saudization planning for any local hires; confirm your Nitaqat category obligations.
+- Finalize warehouse/fulfillment municipal licensing if you operate local logistics.
+- Run an internal compliance dry-run: test the checkout flow for MoC disclosure compliance, test a simulated data subject access request, test your incident response plan against PDPL notification timelines.
+- Put a recurring compliance calendar in place (VAT filings, PDPL record-of-processing updates, SASO certificate renewals, Nitaqat reporting) and assign internal owners.
+- Consider engaging local counsel for a final pre-launch legal review of your Arabic terms and privacy policy, since MoC and SDAIA both scrutinize consumer-facing language.
+
+## 3. Key Risk Areas to Watch
+- PDPL enforcement is active and fines can be significant; treat this as equal priority to VAT/commercial registration, not an afterthought.
+- SASO/SABER certification lead times are a common launch bottleneck for retailers — start early.
+- Saudization quotas can affect your ability to hire expatriate staff quickly; plan headcount accordingly.

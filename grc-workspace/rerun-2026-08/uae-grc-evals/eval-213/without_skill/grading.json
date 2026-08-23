@@ -1,0 +1,33 @@
+{
+  "eval_id": 213,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the pivotal status fact accurately and with a date: the federal PDPL (Decree-Law 45/2021) has been in force since January 2, 2022, but its EXECUTIVE REGULATIONS remain unissued as of August 2026 — penalties and operational detail await them, and enforcement is effectively dormant. FAIL any answer asserting the regulations are issued or citing enacted PDPL fine amounts",
+      "passed": false,
+      "evidence": "\"Executive regulations (issued via Cabinet Decision in 2024) have added operative detail...\" and \"the federal PDPL (plus its 2024 executive regulations) is a live, enforceable obligation for a mainland Dubai retailer today — this isn't 'future-proofing' against a law that doesn't exist yet.\" Directly asserts the regulations were issued, contradicting the ground truth."
+    },
+    {
+      "text": "States the grace mechanism: organizations get a 6-month compliance period from the regulations' issuance — which is exactly why readiness work should start now",
+      "passed": false,
+      "evidence": "No mention of any 6-month grace/compliance period anywhere in the response."
+    },
+    {
+      "text": "Correctly scopes what DOES bite a mainland retailer today: the cybercrime law (Federal Decree-Law 34/2021), sector rules if applicable, and contractual/counterparty expectations — not zone DP laws (DIFC/ADGM excluded and irrelevant to a mainland retailer)",
+      "passed": true,
+      "evidence": "\"Cybercrime law (Federal Decree-Law No. 34/2021...)\", plus Consumer Protection Law and TDRA sector rules; \"mainland businesses fall under the federal regime, not a free-zone-specific law like DIFC/ADGM\"."
+    },
+    {
+      "text": "Prescribes a sensible GDPR-family readiness build: data inventory/RoPA, lawful-basis and consent design, privacy notices, DPO assessment, breach-response playbook, transfer mapping — framed as preparation for the regulations",
+      "passed": false,
+      "evidence": "Content items overlap (inventory, RoPA, privacy notice, DPO, breach plan) but are explicitly framed as compliance with an already fully-enforceable law ('a live, enforceable obligation... not future-proofing'), the opposite of 'preparation for the regulations' given the actual dormant-enforcement status."
+    },
+    {
+      "text": "Notes the carve-outs correctly (government data, health data under the ICT Health Law, banking/credit data under CBUAE rules, DIFC/ADGM) when describing the PDPL's scope",
+      "passed": false,
+      "evidence": "Only a brief mention that mainland falls under the federal regime 'not a free-zone-specific law like DIFC/ADGM'; no mention of government-data, ICT Health Law, or CBUAE/banking carve-outs from PDPL scope."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

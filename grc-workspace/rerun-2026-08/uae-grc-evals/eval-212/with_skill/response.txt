@@ -1,0 +1,37 @@
+# US Healthtech Selling to a Dubai Hospital — Can Patient Data Live in a US Cloud?
+
+**Short answer up front: No, not by default.** UAE health data generally cannot be stored, processed, generated, or transferred outside the UAE. Hosting the hospital's patient data in your US cloud, without an authorized exception or health-authority approval, breaches the UAE's health-data localization rule — and this rule applies regardless of who owns the software or where the vendor is based.
+
+## Quick intake (stating assumptions — please confirm)
+- **Jurisdiction of the hospital:** "private hospital in Dubai" — I'm assuming this is a **mainland Dubai** hospital regulated by the **Dubai Health Authority (DHA)**, not a Dubai Healthcare City (DHCC) licensee. If it's DHCC-licensed, an additional zone-specific regime (DHCC Health Data Protection Regulation 2013, enforced by CPQ) layers on top of everything below — please confirm which.
+- **Your role:** US-based SaaS vendor acting as a processor/technology supplier to the hospital (not a licensed UAE entity yourself).
+- **Data in scope:** patient/health data specifically — the localization rule below is jurisdiction-proof and applies to this data regardless of zone.
+
+## The controlling rule: ICT Health Law
+
+**Federal Law 2/2019** (+ Cabinet Decision 32/2020, Ministerial Resolution 51/2021) prohibits storing, processing, generating, or transferring UAE health data **outside the UAE**, unless an exception is specifically authorized by the relevant health authority and MOHAP (e.g., certain approved telemedicine scenarios under MR 51/2021).
+
+- **Fines for localization violations: AED 500,000–700,000.**
+- This applies **across all zones** — mainland, DIFC, ADGM, DHCC — because it's a sector overlay that prevails over general privacy carve-outs. A hospital's DIFC or ADGM status (not relevant here, but worth knowing) wouldn't change this.
+- It covers the full lifecycle, including data *created abroad* in the course of delivering UAE health services — so "the data originates in our US system" doesn't get you out of it.
+- Relevant health authority for a Dubai hospital: **DHA**. Federal oversight: **MOHAP**.
+
+## What this means for your architecture
+
+**You cannot host this hospital's patient data in your US-based cloud on a standard SaaS basis.** Your options:
+
+1. **In-country hosting.** Deploy the application (or at minimum, the patient-data-processing layer) in a UAE data center/region. Most major hyperscalers now have UAE regions (e.g., AWS UAE, Microsoft Azure UAE, Google Cloud, Oracle UAE) as do sovereign UAE providers (e.g., G42/Core42, e&). This is the standard path healthtech vendors take to serve UAE hospitals.
+2. **An authorized exception.** MOHAP/DHA can authorize specific scenarios (the law names telemedicine as an example) for offshore processing — but this requires a formal approval, not a contractual workaround. Don't assume a DPA or encryption gets you there; the prohibition is about *location*, not just security controls.
+3. **Split the data.** Non-health administrative data tied to the same relationship (e.g., hospital staff/admin records, billing metadata not classified as health data) may be handled under ordinary privacy rules rather than the health-data localization rule — but this requires a careful, documented classification exercise, not an assumption. Don't let convenience drive the classification.
+
+## What else applies (splitting the analysis)
+- **Health authority routing:** engage DHA for the hospital-facing compliance posture; MOHAP at the federal level for the localization exception process if you pursue one.
+- **Non-health personal data** the hospital or your platform processes (e.g., general contact/admin data unrelated to patient care) would follow the ordinary privacy regime for wherever that data controller sits — likely federal PDPL for a mainland Dubai hospital (in force since 2022, but Executive Regulations still unissued as of August 2026, so treat this as a readiness posture rather than a fully operational enforcement regime today).
+- **Contracting:** as the vendor, your DPA/services agreement with the hospital needs to explicitly allocate responsibility for localization compliance — don't let this default silently to "the hospital's problem" if your infrastructure choice is what's causing the exposure.
+- **Not applicable here:** CBUAE rules (no financial/banking data indicated).
+
+## Bottom line
+Plan for UAE-region hosting of patient data as the default architecture for this deal, treat any offshore processing as requiring a formal, named health-authority exception (not a contractual fix), and get explicit written clarity with the hospital on which data is "health data" under the law versus ordinary personal data.
+
+---
+*This is general compliance information, not legal advice. Confirm current localization exception pathways and DHA-specific requirements with MOHAP/DHA directly or through UAE health-regulatory counsel before finalizing your hosting architecture.*

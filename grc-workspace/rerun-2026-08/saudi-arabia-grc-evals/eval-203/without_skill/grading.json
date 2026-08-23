@@ -1,0 +1,33 @@
+{
+  "eval_id": 203,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies the full stack for a CSP serving government: CST Cloud Computing Regulatory Framework registration (class determines permissible data levels), NCA CCC provider-side controls (as the ministry is ECC-covered), and PDPL for any personal data — all three named with their regulators",
+      "passed": true,
+      "evidence": "'Cloud Computing Regulatory Framework (CCRF), issued by... CST.' 'NCA Cloud Cybersecurity Controls (CCC) — a cloud-specific control set issued by the National Cybersecurity Authority.' 'Personal Data Protection Law (PDPL) and its Implementing Regulations (SDAIA).' All three named with regulators."
+    },
+    {
+      "text": "States the residency rule decisively: government data must remain in-Kingdom (localization is exclusive, narrow exceptions) — an answer suggesting offshore hosting of ministry workloads with contractual fixes FAILS this assertion",
+      "passed": false,
+      "evidence": "Response gives a graduated model where 'Lower-sensitivity/public data: may in some cases be hosted outside the Kingdom' and only 'Sensitive/restricted' and 'Highly sensitive' tiers must stay in-Kingdom. This contradicts the decisive/exclusive localization rule for government data required by the assertion — it implies some ministry data could legitimately be hosted offshore based on classification tier rather than treating in-Kingdom hosting as the default, narrow-exception rule for all government workloads."
+    },
+    {
+      "text": "Explains the classification-driven model: cloud levels tied to data classification (Top Secret/Secret/Confidential/Public) and CST customer-data Levels with Levels 3-4 requiring in-Kingdom hosting",
+      "passed": false,
+      "evidence": "Uses its own generic tiers ('Lower-sensitivity/public', 'Sensitive/restricted', 'Highly sensitive/classified') instead of the specific Top Secret/Secret/Confidential/Public classification and never mentions CST customer-data Levels 3-4 by name."
+    },
+    {
+      "text": "Reflects the CCC's role-split design: provider-side vs tenant-side controls (e.g., P vs T control markers), with the ministry remaining accountable as tenant — no invented control IDs",
+      "passed": false,
+      "evidence": "Only generic language is used: 'shared responsibility definitions between CSP and CSC, tenant isolation, cloud-specific incident response.' No provider-side vs tenant-side (P/T) role-split framing is given anywhere."
+    },
+    {
+      "text": "Gives a realistic sequencing: CST registration/class, in-Kingdom infrastructure or partnership, CCC control implementation with evidence, then contract with the ministry — including Arabic-language/local-presence practicalities where relevant",
+      "passed": true,
+      "evidence": "'1. Engage the ministry's IT/security team early... 2. Determine whether to deliver via an existing CST-accredited/government-authorized local cloud provider... 3. Perform a gap assessment against NCA ECC + NCA CCC... 4. Build a PDPL-compliant data processing... 5. Confirm personnel/access requirements' — a realistic, ordered sequence including local-presence practicalities."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

@@ -1,0 +1,49 @@
+# Unauthorized Disclosure of 40,000 Customer Records — Your Obligations
+
+This is a personal data breach under Saudi law, and the clock is already running. Before the detail, a few clarifying facts would sharpen the exact obligation set (I've proceeded on reasonable assumptions, flagged below):
+
+- I'm assuming your company is a **private commercial entity**, not SAMA/CST/CMA-licensed and not a government subsidiary or CNI operator — tell me if that's wrong, since it would add SAMA or NCA incident-reporting duties on top of what's below.
+- I'm assuming the 40,000 records belong to **Saudi residents** (if a meaningful share are foreign nationals outside KSA, PDPL still applies to the KSA-resident subset regardless of where your company sits).
+- National ID numbers are direct identifiers with serious fraud/impersonation potential. Saudi PDPL's specific "sensitive data" category (health, genetic, biometric, location, criminal/security data, and data revealing racial/ethnic/religious/political information) doesn't explicitly list national ID as such — but confirm this classification with counsel, since it changes whether the criminal-exposure provisions below apply. Regardless of that classification question, this is unambiguously a **reportable personal data breach**.
+
+## Applicable law
+| Instrument | Regulator | Relevance |
+|---|---|---|
+| **Saudi PDPL** (Royal Decree M/19, as amended by M/148) | SDAIA | Governs this incident directly — unauthorized disclosure of personal data by your workforce to an unauthorized third party, breach notification duties, and penalty exposure. |
+| **NCA / SAMA / CST reporting** | NCA/SAMA/CST | Only relevant if you're government-subsidiary/CNI (NCA), SAMA-licensed (SAMA), or a CSP (CST) — confirm your status, as this would add parallel incident-reporting obligations. |
+
+## What happened, in PDPL terms
+An employee disclosed personal data (including what functions as a highly sensitive identifier — national ID) to an external party **without authorization and without a lawful basis for that specific disclosure**. This is a breach regardless of intent — it's not something a data processing agreement or consent notice retroactively covers, because the disclosure fell outside your stated purposes and outside any lawful basis you had for sharing with that vendor. Treat this as a **confirmed personal data breach**, not merely a "possible" one.
+
+## Immediate steps (hours, not days)
+
+1. **Contain**: revoke the employee's ability to send further data externally where feasible, and secure the systems/exports involved. Do not wait for the investigation to finish before containing exposure.
+2. **Engage the vendor immediately and in writing**: demand written confirmation that they will not use, further disclose, or retain the data, and request immediate deletion with certification. If a data processing agreement didn't exist before this transfer (likely, since it was "unauthorized"), you have no contractual leverage compelling their cooperation — this is a real limitation; involve legal counsel now to explore what recourse exists (breach of confidence, unlawful processing claims against the recipient under PDPL if they knowingly process improperly obtained data).
+3. **Preserve evidence**: email logs, access logs, file/export logs, the employee's role and access rights at the time, and timeline of discovery. This underpins both your regulatory notification and any internal disciplinary/legal action against the employee.
+4. **Scope the breach precisely**: confirm exactly 40,000 records, exactly which fields (national ID number plus what else — name, DOB, contact, financial data?), and whether the vendor has already used or redistributed it. The presence of national ID numbers at this scale should be treated as high risk to data subjects (identity theft, fraud, impersonation) regardless of the sensitive-data classification question above.
+
+## Regulatory notification — the 72-hour clock
+- **Notify SDAIA within 72 hours of becoming aware** of the breach, via SDAIA's **National Data Governance Platform**. This clock started when someone in your organization became aware of the unauthorized transfer — confirm that timestamp precisely, since "awareness" (not "root-cause-confirmed") is what starts it.
+- **Notify affected data subjects** where the breach poses risk to them. At 40,000 records including national IDs, this crosses the risk threshold — plan for direct customer notification (or public notice if direct contact isn't feasible at that scale) describing what happened, what data was involved, and what protective steps customers should take (e.g., monitoring for identity misuse).
+- If your company is separately NCA/SAMA/CST-regulated (see assumption above), those regulators likely have their own incident-reporting timelines and channels running in parallel to the SDAIA notification — don't assume one filing satisfies all regulators.
+
+## Internal accountability
+- This was caused by an employee action, but under PDPL your company as **controller** carries the compliance obligation regardless of individual fault — the employee's unauthorized act doesn't shift the notification duty or the exposure away from the company.
+- Separately, pursue the employee matter through your normal HR/disciplinary and, if warranted, legal process (unauthorized data disclosure of this scale may itself have criminal dimensions for the individual, independent of your corporate PDPL exposure).
+- Use this to trigger a control fix: review who has export/bulk-download rights to customer PII, add data loss prevention (DLP) controls on outbound email for large PII exports, and refresh workforce training on data handling — evidence of a documented root-cause fix matters both for SDAIA's assessment of the incident and for demonstrating "adequate safeguards" going forward.
+
+## Penalty exposure
+- Fines up to **SAR 5,000,000 per violation** (doubling for repeat violations) apply to PDPL breaches generally.
+- **Criminal exposure up to 2 years' imprisonment** applies specifically to unlawful disclosure of **sensitive data** — get the classification question above resolved with counsel, since it determines whether this provision is in play here; even if national ID isn't classified as "sensitive" under PDPL's specific list, the scale (40,000 records) and nature of the data still drive significant fine exposure and enforcement attention.
+- SDAIA's enforcement committees are actively issuing decisions (roughly 48 in the first wave, 2025–26) — this is not a regime that lets incidents like this go unaddressed. Treat prompt, well-documented notification and remediation as materially mitigating in any enforcement review.
+
+## Recommended immediate sequence
+1. Contain and preserve evidence (today).
+2. Legal counsel engaged now, both for the SDAIA notification and for vendor recovery/legal options.
+3. Scope confirmation (data fields, exact count, vendor's current possession/use status).
+4. SDAIA notification within the 72-hour window from awareness.
+5. Customer notification plan given the risk profile.
+6. Root-cause remediation (DLP, access review, training) documented for your regulatory file.
+
+---
+*General compliance information, not legal advice — this specific incident (regulatory exposure, employee liability, and vendor recovery options) needs qualified Saudi counsel engaged immediately, not after the notification window closes.*

@@ -1,0 +1,37 @@
+# SAMA-Licensed Fintech: Does NCA ECC Also Apply?
+
+Short answer: **both frameworks can apply, and they stack rather than one displacing the other.** The SAMA Cyber Security Framework is mandatory for you regardless. Whether NCA ECC-2:2024 is *also* mandatory turns on one fact I don't have: **has NCA designated your systems as Critical National Infrastructure (CNI)?** I'll answer both branches below, plus the maturity-level question, which is unambiguous.
+
+## Applicability Matrix
+
+| Instrument | Regulator | Applies to you? |
+|---|---|---|
+| **SAMA Cyber Security Framework (CSF)** v1.0 | SAMA | **Yes — mandatory.** Binds all SAMA-regulated entities: banks, insurers, financing companies, credit bureaus, and licensed fintechs. No exceptions for license type. |
+| **NCA ECC-2:2024** | NCA | **Conditional.** Mandatory only if NCA has designated you (or the systems/services you operate) as Critical National Infrastructure. Most licensed fintechs are not CNI-designated unless they operate systemically important payment infrastructure or rails. If not CNI, ECC is *recommended best practice*, not a legal mandate, for you. |
+| **NCA CCC** (Cloud Cybersecurity Controls) | NCA | **Conditional, follows ECC.** If you're ECC-covered (CNI) and you use cloud infrastructure, CCC tenant-side controls apply. If not ECC-covered, CCC doesn't bind you, though your cloud provider may still be bound on the CSP side if they serve other ECC-covered clients. |
+| **Saudi PDPL** | SDAIA | **Yes — mandatory.** You process Saudi residents' personal (and likely financial, which is not automatically "sensitive" under PDPL's specific categories but is treated carefully in practice) data as a fintech. Fully enforced since 14 September 2024, independent of your SAMA license. |
+| **CST / CMA** | CST / CMA | **No**, unless you separately hold a CST cloud/telecom registration or a CMA capital-markets license. |
+
+**Stacking rule:** if you *are* CNI-designated, you must satisfy SAMA CSF **and** NCA ECC-2:2024 simultaneously — these are cumulative regimes, not alternatives. There's no published deconfliction protocol between SAMA and NCA where their requirements overlap or appear to conflict; the practical approach is to maintain one internal control set mapped to both frameworks, satisfy whichever requirement is stricter on any given point, document the mapping, and engage both regulators directly if a genuine conflict arises rather than assuming either one's requirement supersedes the other's.
+
+**If you're not sure of your CNI status:** confirm with SAMA/NCA directly — this determines whether ECC compliance reporting is a legal obligation or a voluntary maturity uplift for you. In the meantime, treat ECC as your target-state baseline regardless, since SAMA CSF and ECC overlap substantially in the controls they expect (governance, access control, incident management, third-party/cloud security).
+
+## Maturity Level Required
+
+This part is unambiguous under SAMA CSF:
+
+- SAMA CSF uses a **six-level maturity model (0–5)**: 0 Non-existent → 1 Ad-hoc → 2 Repeatable but informal → **3 Structured & formalized** → 4 Managed & measurable → 5 Adaptive.
+- **SAMA's minimum expectation is Level 3 — "Structured & formalized"**: defined, approved, and consistently implemented processes, not just informal or ad-hoc practices. This is the floor for compliance, assessed via periodic self-assessment plus SAMA reviews.
+- In practice, entities handling higher transaction volumes, holding e-money/payment licenses, or otherwise carrying systemic importance often push toward **Level 4 (Managed & measurable)** — SAMA doesn't mandate this uniformly, but supervisory expectations tend to rise with risk profile, so don't treat Level 3 as a ceiling if your risk footprint is significant.
+- If you are also ECC-covered (CNI), NCA ECC doesn't use the same 0–5 maturity scale — it's assessed as implemented / partially implemented / not implemented / not applicable per control, via NCA's compliance tool and self-assessment plus NCA audits. You'd need to satisfy both the SAMA maturity-3 floor and full ECC control implementation concurrently.
+
+## SAMA CSF structure, for context
+Four domains: (1) Cyber Security Leadership & Governance, (2) Cyber Security Risk Management & Compliance, (3) Cyber Security Operations & Technology, (4) Third-Party Cyber Security. Adjacent SAMA instruments you're also likely subject to as a licensee: the **IT Governance Framework**, the **Business Continuity Management Framework**, and **Cyber Threat Intelligence Principles (2022)** — these ride alongside CSF rather than replacing it.
+
+## Recommended next step
+1. Confirm CNI designation status directly with NCA/SAMA — this is the single fact that changes your legal obligation set.
+2. Regardless of the answer, benchmark your current controls against SAMA CSF Level 3 requirements now, since that's mandatory either way.
+3. If CNI-designated, start an ECC-2:2024 gap assessment in parallel (domain/subdomain based — I can build that gap table if you share current-state detail).
+
+---
+*General compliance information, not legal advice. Confirm CNI status and current framework versions with SAMA and NCA directly.*

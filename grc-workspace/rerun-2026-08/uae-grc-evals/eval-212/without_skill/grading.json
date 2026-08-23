@@ -1,0 +1,33 @@
+{
+  "eval_id": 212,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Leads with the decisive rule: the ICT Health Law (Federal Law 2/2019) generally PROHIBITS storing/processing/transferring UAE health data outside the UAE — default answer: patient data cannot live in a US-hosted cloud",
+      "passed": false,
+      "evidence": "Reaches the right conclusion ('Not by default') but never names the ICT Health Law / Federal Law 2/2019; instead attributes the localization requirement to 'DHA's own health data protection framework' and the federal PDPL's sensitive-data rules — misidentifies the controlling law."
+    },
+    {
+      "text": "States the exception pathway correctly: exceptions require authorization via the relevant health authority and MOHAP (Cabinet Decision 32/2020; Ministerial Resolution 51/2021 covers approved cases such as specified telemedicine) — not fixable by contracts alone",
+      "passed": false,
+      "evidence": "Only references a generic 'DHA approval process'; never cites Cabinet Decision 32/2020, Ministerial Resolution 51/2021, or MOHAP authorization."
+    },
+    {
+      "text": "Quantifies exposure: localization violations carry fines of AED 500,000-700,000",
+      "passed": false,
+      "evidence": "No fine figures are mentioned anywhere in the response."
+    },
+    {
+      "text": "Routes to the right authority for a Dubai private hospital (DHA, with MOHAP at federal level) and notes the law prevails over the federal PDPL via the health-data carve-out",
+      "passed": false,
+      "evidence": "Mentions DHA (and DoH for Abu Dhabi) but never MOHAP at the federal level, and never states a health-law carve-out from PDPL — instead treats PDPL's sensitive-personal-data cross-border rules as directly governing this health data alongside DHA rules."
+    },
+    {
+      "text": "Gives the practical architecture answer: in-UAE hosting (or an authorized exception) for patient data, with a split analysis for non-health personal data (federal PDPL readiness posture) — and advises the vendor to verify current authority guidance before promising any exception",
+      "passed": false,
+      "evidence": "Conflates health data governance with PDPL 'sensitive personal data' transfer mechanics rather than giving a split analysis distinguishing health data (localization) from non-health personal data (ordinary PDPL posture)."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 204,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the core clock correctly: notify SDAIA within 72 hours of becoming aware, via the National Data Governance Platform, and notify affected data subjects where the breach risks harm to them",
+      "passed": true,
+      "evidence": "'Notify SDAIA within 72 hours of becoming aware of the breach, via SDAIA's National Data Governance Platform... Notify affected data subjects where the breach poses risk to them.'"
+    },
+    {
+      "text": "Frames the incident correctly as a PDPL personal-data breach / unauthorized disclosure (national IDs + customer records), engaging containment (recall/delete demands to the vendor, access revocation) and evidence preservation before/alongside notification",
+      "passed": true,
+      "evidence": "'Treat this as a confirmed personal data breach, not merely a \"possible\" one.' 'Contain: revoke the employee's ability to send further data externally... Engage the vendor immediately and in writing: demand written confirmation... request immediate deletion with certification... Preserve evidence: email logs, access logs, file/export logs...'"
+    },
+    {
+      "text": "Covers the vendor dimension: whether the vendor is an authorized processor under a compliant processing arrangement matters; unauthorized disclosure to a third party is itself a violation category SDAIA has enforced against",
+      "passed": true,
+      "evidence": "'If a data processing agreement didn't exist before this transfer (likely, since it was \"unauthorized\"), you have no contractual leverage compelling their cooperation... unlawful processing claims against the recipient under PDPL if they knowingly process improperly obtained data.' The unauthorized/no-lawful-basis nature of the disclosure is treated as the core violation throughout."
+    },
+    {
+      "text": "States realistic consequences: administrative fines up to SAR 5M (doubling on repeat), SDAIA's active enforcement posture (first-wave decisions 2025-26), and criminal exposure reserved for sensitive-data disclosure (and correctly does NOT claim national IDs alone are 'sensitive data' under the PDPL's sensitive categories)",
+      "passed": true,
+      "evidence": "'Fines up to SAR 5,000,000 per violation (doubling for repeat violations)... Criminal exposure up to 2 years' imprisonment applies specifically to unlawful disclosure of sensitive data.' 'Saudi PDPL's specific \"sensitive data\" category... doesn't explicitly list national ID as such.' 'SDAIA's enforcement committees are actively issuing decisions (roughly 48 in the first wave, 2025–26).'"
+    },
+    {
+      "text": "Includes accountability follow-through: document the incident, root-cause and remediate (DLP/training/access), update RoPA and vendor contracts",
+      "passed": false,
+      "evidence": "Covers documentation, root-cause fix, DLP, access review, and training ('review who has export/bulk-download rights... add data loss prevention (DLP) controls... refresh workforce training'), but never mentions updating the RoPA or updating vendor contracts as follow-through actions — both specifically required by the assertion."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

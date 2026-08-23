@@ -1,0 +1,46 @@
+# ISO 27001:2022 vs NCA ECC-2:2024 — Coverage and Remaining Gaps
+
+A couple of confirmations that would sharpen the gap list — I've proceeded on stated assumptions:
+
+- You said "Saudi government subsidiary," so **NCA ECC-2:2024 is mandatory** for you outright (government entities and their subsidiaries are always ECC-covered, no CNI test needed).
+- I'm assuming your ISO 27001:2022 certification is current, covers the same organizational/system scope as the ECC assessment will need to cover, and that you haven't yet run a formal ECC self-assessment.
+- I'm assuming you also process Saudi residents' personal data (near-universal for any operating entity) and use cloud infrastructure to some degree — both add obligations beyond ECC itself (see matrix).
+
+## Applicability Matrix
+
+| Instrument | Regulator | Applies to you? |
+|---|---|---|
+| **NCA ECC-2:2024** | NCA | **Yes — mandatory.** Government subsidiaries are always ECC-covered. |
+| **NCA CCC** (Cloud Cybersecurity Controls) | NCA | **Yes, if you use cloud** — tenant-side controls, since you're an ECC-covered entity. Confirm your cloud footprint. |
+| **NCA DCC-1:2022** (Data Cybersecurity Controls) | NCA | **Likely yes** — data-lifecycle controls for ECC-covered entities. |
+| **NCA OTCC-1:2022 / TCC-1:2021 / CSCC-1:2019** | NCA | **Conditional** — only if you operate OT/ICS environments, telework at scale, or critical systems respectively. Flag if any apply; otherwise out of scope here. |
+| **Saudi PDPL** | SDAIA | **Yes — mandatory**, independent of ECC, for any personal data you process. |
+| **ISO 27001:2022** | (voluntary certification, not a Saudi legal instrument) | Your existing certification — valuable as evidence and control-maturity signal, but it does **not** substitute for NCA's ECC self-assessment/reporting obligation. |
+
+**The core point:** ISO 27001:2022 certification is strong *evidence* for many ECC controls, but it does not satisfy the ECC compliance obligation itself. NCA requires its own self-assessment against ECC's specific control set, submitted through NCA's compliance tool, with NCA audit/on-site assessment rights — a third-party ISO certificate is supporting evidence, not a substitute filing.
+
+## Domain-by-domain coverage estimate
+
+ECC-2:2024 has **4 domains, 28 subdomains, 108 main controls + 92 subcontrols** (control IDs in domain-subdomain-control format, e.g., 1-1-1). I'm citing by domain/subdomain name rather than specific control IDs, since a precise control-ID crosswalk requires the official ECC-2:2024 text and your actual Statement of Applicability — treat the below as a planning-level estimate, not a certified mapping.
+
+| ECC Domain | Roughly maps to (ISO 27001:2022 Annex A) | Coverage from ISO cert | What still needs direct ECC work |
+|---|---|---|---|
+| **1. Cybersecurity Governance** — strategy, management commitment, policies, roles, risk management, HR security, awareness, in-project cybersecurity, compliance review | Annex A Organizational controls (A.5) + People controls (A.6) | **Substantial overlap.** ISO's ISMS governance, risk methodology, HR security, and awareness program map closely. | NCA-specific compliance reporting cadence and channel; **Arabic-language governance documentation** where NCA requires it; explicit "in-project cybersecurity" control (security-by-design gates in project management) is more prescriptive under ECC than ISO's general A.8.25/8.26 secure development controls — verify you have a dedicated project-stage-gate process, not just SDLC controls. |
+| **2. Cybersecurity Defense** — asset mgmt, identity/access, system/info protection, email, network, mobile, data protection, cryptography, backup, vulnerability/patch mgmt, penetration testing, logging/monitoring, incident & threat mgmt, physical security, web app security | Annex A Technological controls (A.8) + Physical controls (A.7) | **Substantial overlap** — this is ISO 27001:2022's deepest coverage area (asset inventory A.5.9-5.14, access control A.5.15-5.18, cryptography A.8.24, network security A.8.20-8.23, backup A.8.13, vulnerability mgmt A.8.8, logging A.8.15-8.16, incident mgmt A.5.24-5.28, physical A.7, web app security A.8.26). | Verify **frequency and rigor** match ECC's specific expectations (e.g., penetration testing cadence, patch SLAs) — ECC often specifies concrete thresholds where ISO leaves them to risk-based judgment; you'll need to confirm your current SLAs meet ECC's explicit bar, not just "a documented policy exists." Evidence needs to be mapped to NCA's assessment rating scale (implemented / partially implemented / not implemented / N/A with justification). |
+| **3. Cybersecurity Resilience** — business continuity aspects of cybersecurity | ISO 27001:2022 A.5.29–5.30 (ICT readiness for business continuity) | **Partial overlap.** ISO 27001:2022 added BC-related controls in the 2022 refresh, but treats resilience as one control area among many. | ECC treats this as a full standalone domain with more depth — you likely need a **dedicated cybersecurity resilience testing and reporting program** (not just a general BCP) to satisfy this domain fully. Gap-assess your current BC/DR testing evidence specifically against ECC's resilience subdomains. |
+| **4. Third-Party & Cloud Computing Cybersecurity** — supplier/outsourcing cybersecurity, cloud computing cybersecurity | ISO 27001:2022 A.5.19–5.23 (supplier relationships) | **Partial overlap** on general third-party risk management. | ISO doesn't address **NCA CCC's role-based, cloud-level-tied controls** or **in-Kingdom residency requirements** at all — these are Saudi-specific and need a dedicated build-out: confirm your cloud tenant-side CCC controls, data classification (Top Secret/Secret/Confidential/Public) mapped to the correct cloud level, and residency posture for any cloud-hosted data. Government subsidiary status likely means default-to-in-Kingdom hosting expectations regardless of specific classification. |
+
+## What specifically remains, beyond the domain table
+
+1. **Formal ECC self-assessment and NCA submission** — your ISO audit trail doesn't automatically populate this; you need a control-by-control ECC self-assessment (108 main controls + 92 subcontrols) with evidence mapped to NCA's rating scale, submitted via NCA's compliance tool, and be prepared for NCA audit/on-site assessment.
+2. **Arabic-language governance artifacts** where NCA requires them — confirm which policy/procedure documents need Arabic versions for NCA review.
+3. **PDPL registration and program**, entirely separate from ECC — SDAIA National Data Governance Platform registration, RoPA, DPO assessment, breach notification procedure (72-hour SDAIA clock). ISO 27001 doesn't cover this at all; it's a parallel legal obligation, not a subset of ECC.
+4. **NCA CCC tenant-side controls and cloud residency confirmation** if you use any cloud services — this is the biggest structural gap ISO doesn't touch.
+5. **OT/ICS, telework, and critical-systems controls** (OTCC/TCC/CSCC) if any of those environments exist in your operations — these sit outside ECC-2:2024 itself (ICS was moved out of ECC-2 into standalone OTCC-1:2022) and outside ISO 27001 entirely; confirm applicability.
+6. **Resilience domain depth** — likely your single biggest content gap versus ISO, since ECC treats cybersecurity resilience as a full domain while ISO 27001:2022 covers it more lightly.
+
+## Recommended next step
+Run a formal control-by-control ECC-2:2024 gap assessment using your ISO 27001 Statement of Applicability and audit evidence as the starting evidence base — expect high reuse in Domains 1–2, and dedicated new work in Domains 3–4 plus the PDPL/SDAIA registration track, which sits outside ECC and outside ISO entirely. If you share your current ISO SoA and cloud footprint, I can build the full Requirement/Control ref/Current state/Gap/Evidence needed/Priority table per subdomain.
+
+---
+*General compliance information, not legal advice. Cite specific ECC-2:2024 control IDs only from the official NCA document and your certified assessor's mapping — the table above is planning-level, not a certified crosswalk.*

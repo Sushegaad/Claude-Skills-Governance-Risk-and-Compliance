@@ -1,11 +1,11 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
-Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, DORA Digital Operational Resilience, India's Digital Personal Data Protection Act (DPDPA), CMMC 2.0 Cybersecurity Maturity Model Certification, NIST AI Risk Management Framework, SWIFT Customer Security Programme (CSP), Australian Information Security Manual (ISM), EU NIS2 Directive, CCPA/CPRA California Privacy, ITAR (International Traffic in Arms Regulations), Brazil's LGPD (Lei Geral de Proteção de Dados), EU CSRD (Corporate Sustainability Reporting Directive), CIS Controls v8 (CIS Top 18), EAR (Export Administration Regulations), NIST SP 800-53 (Security and Privacy Controls for Federal Systems), EU AI Act (Regulation (EU) 2024/1689), Section 508 (US Federal ICT Accessibility), WCAG (Web Content Accessibility Guidelines), NZISM (New Zealand Information Security Manual), Vietnam PDPL (Law on Personal Data Protection No. 91/2025/QH15), and EU CRA (Cyber Resilience Act, Regulation (EU) 2024/2847) — powered by Claude Skills. **Updated Monthly.**
+Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, DORA Digital Operational Resilience, India's Digital Personal Data Protection Act (DPDPA), CMMC 2.0 Cybersecurity Maturity Model Certification, NIST AI Risk Management Framework, SWIFT Customer Security Programme (CSP), Australian Information Security Manual (ISM), EU NIS2 Directive, CCPA/CPRA California Privacy, ITAR (International Traffic in Arms Regulations), Brazil's LGPD (Lei Geral de Proteção de Dados), EU CSRD (Corporate Sustainability Reporting Directive), CIS Controls v8 (CIS Top 18), EAR (Export Administration Regulations), NIST SP 800-53 (Security and Privacy Controls for Federal Systems), EU AI Act (Regulation (EU) 2024/1689), Section 508 (US Federal ICT Accessibility), WCAG (Web Content Accessibility Guidelines), NZISM (New Zealand Information Security Manual), Vietnam PDPL (Law on Personal Data Protection No. 91/2025/QH15), EU CRA (Cyber Resilience Act, Regulation (EU) 2024/2847), Saudi Arabia GRC (NCA ECC, Saudi PDPL, SAMA, CST), and UAE GRC (Federal PDPL, DIFC, ADGM, CBUAE, ICT Health Law) — powered by Claude Skills. **Updated Monthly.**
 
-Benchmarked across 150 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (752 assertions in total). Skills scored **93%** vs a baseline of **79%**.
+Benchmarked across 160 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (802 assertions in total). Skills scored **93%** vs a baseline of **76%**.
 
 [![Release: v1.7.1](https://img.shields.io/badge/Release-v1.7.1-brightgreen.svg)](../../releases/tag/v1.7.1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills: 30](https://img.shields.io/badge/Skills-30-green.svg)](#the-skills)
+[![Skills: 32](https://img.shields.io/badge/Skills-32-green.svg)](#the-skills)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)](https://claude.ai)
 [![GitHub Stars](https://img.shields.io/github/stars/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance?style=flat&label=Stars&color=gold)](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance)
 
@@ -46,6 +46,8 @@ Benchmarked across 150 test cases using the eval framework — each graded again
   - [NZISM — New Zealand Information Security Manual](#-nzism--new-zealand-information-security-manual)
   - [Vietnam PDPL — Law on Personal Data Protection](#-vietnam-pdpl--law-on-personal-data-protection)
   - [EU CRA — Cyber Resilience Act](#-eu-cra--cyber-resilience-act)
+  - [Saudi Arabia GRC — Country Compliance Advisor](#-saudi-arabia-grc--country-compliance-advisor)
+  - [UAE GRC — Country Compliance Advisor](#-uae-grc--country-compliance-advisor)
 - [Potential Use Cases](#potential-use-cases)
 - [How to Install a Skill](#how-to-install-a-skill)
 - [Install via Claude Code Marketplace](#install-via-claude-code-marketplace)
@@ -676,6 +678,38 @@ The EU CRA skill turns Claude into an expert advisor on **Regulation (EU) 2024/2
 
 ---
 
+### 31. 🇸🇦 Saudi Arabia GRC — Country Compliance Advisor
+
+**File:** `Saudi Arabia GRC - Claude Skill/saudi-arabia-grc.skill`
+
+The Saudi Arabia GRC skill turns Claude into a **country-level compliance router and advisor** for the Kingdom. Saudi compliance is fragmented across NCA (cybersecurity), SDAIA (personal data), SAMA (financial sector), and CST (telecom/cloud) — so the skill first establishes organization type, sector, data, and cloud posture, then delivers an applicability matrix before any framework detail.
+
+**What it does:**
+- Routes across **NCA ECC-2:2024** (4 domains / 28 subdomains / 108 controls; mandatory for government entities and CNI), **Saudi PDPL** (fully enforced since September 14, 2024 — SDAIA registration, 72-hour breach notification, SCC transfer modules, ~48 first-wave enforcement decisions), **NCA CCC + CST cloud rules** (CSP classes, Level 3–4 and government-data in-Kingdom residency), and **SAMA CSF** (4 domains, minimum maturity level 3)
+- Runs per-framework **gap assessments** with evidence columns, **breach response**, and **market-entry roadmaps**
+- **Maps Saudi requirements to ISO 27001:2022, NIST CSF 2.0, and SOC 2** for evidence reuse
+- Router coverage of DCC, OTCC, TCC, CSCC, and CMA guidelines
+
+**Trigger phrases:** `Saudi Arabia compliance`, `KSA`, `NCA ECC`, `SDAIA`, `Saudi PDPL`, `SAMA CSF`, `CST cloud`, `Saudi data residency`, `expanding to Saudi Arabia`
+
+---
+
+### 32. 🇦🇪 UAE GRC — Country Compliance Advisor
+
+**File:** `UAE GRC - Claude Skill/uae-grc.skill`
+
+The UAE GRC skill turns Claude into a **jurisdiction-first compliance router**: in the UAE, where an organization sits determines its law. The skill establishes mainland vs DIFC vs ADGM vs other free zones, license type, and data categories before advising.
+
+**What it does:**
+- Routes across the **Federal PDPL** (Decree-Law 45/2021 — in force since 2022, executive regulations still pending as of August 2026, with dated-status guidance), **DIFC DP Law No. 5 of 2020 as amended by Amendment Law No. 1 of 2025** (private right of action, transfer adequacy assessments, higher fine tiers), **ADGM DP Regulations 2021** (72-hour breach notification), **CBUAE rules** (consumer-data residency, outsourcing/cloud approvals), and the **ICT Health Law** (health-data localization across all zones, fines AED 500k–700k)
+- Applies the routing rules that decide cases: DIFC/ADGM displace the federal PDPL; health data is jurisdiction-proof; DFSA/FSRA vs CBUAE regulator boundaries
+- Runs **multi-clock breach response**, **market-entry and zone-selection framing**, and CBUAE cloud approval workflows
+- **Maps UAE requirements to ISO 27001:2022, NIST CSF 2.0, and SOC 2**
+
+**Trigger phrases:** `UAE compliance`, `DIFC data protection`, `ADGM data protection`, `UAE PDPL`, `CBUAE outsourcing`, `UAE health data residency`, `Dubai ISR`, `ADHICS`, `expanding to the UAE`
+
+---
+
 ## Potential Use Cases
 
 | Scenario | Relevant Skill(s) |
@@ -923,13 +957,13 @@ Teams can pre-wire the marketplace in `.claude/settings.json` so every developer
 
 ## Skill Evaluation
 
-These skills were benchmarked using the [Claude Skill Creator](https://claude.ai) eval framework. **150 realistic test cases** were run across all 30 skills — 5 per framework — with **Claude Sonnet as both the skill-assisted and baseline model** (same model on both sides, so the delta measures the skills, not model strength) — covering gap analysis, policy drafting, control deep-dives, edge cases, and compliance advice scenarios. Each test case was evaluated against at least 5 objectively verifiable assertions (752 in total) by independent grader agents comparing skill-assisted vs. baseline Claude responses.
+These skills were benchmarked using the [Claude Skill Creator](https://claude.ai) eval framework. **160 realistic test cases** were run across all 32 skills — 5 per framework — with **Claude Sonnet as both the skill-assisted and baseline model** (same model on both sides, so the delta measures the skills, not model strength) — covering gap analysis, policy drafting, control deep-dives, edge cases, and compliance advice scenarios. Each test case was evaluated against at least 5 objectively verifiable assertions (802 in total) by independent grader agents comparing skill-assisted vs. baseline Claude responses.
 
 | Configuration | Pass Rate | Assertions Passed |
 |---------------|-----------|-------------------|
-| **With GRC Skills installed** | **93%** | **703 / 752** |
-| Without skills (baseline Claude) | 79% | 596 / 752 |
-| **Delta** | **+14 points** | **+107 assertions** |
+| **With GRC Skills installed** | **93%** | **748 / 802** |
+| Without skills (baseline Claude) | 76% | 610 / 802 |
+| **Delta** | **+17 points** | **+138 assertions** |
 
 ### Per-Skill Results
 
@@ -965,6 +999,8 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | NZISM [New Zealand] | 5 | **96%** | 64% | +32% | Restricted system C&A gap analysis; AWS Sydney offshore hosting obligations; Access Control Policy with NZISM control IDs; Ransomware supplier incident response; SaaS vendor due diligence and contractual requirements |
 | VN-PDPL [Vietnam] | 5 | **68%** | 60% | +8% | Gap analysis for SaaS company with Vietnamese customers; Fintech breach notification 72-hour workflow; Micro-enterprise exemptions; Consent mechanism design; Consent withdrawal timeframes under Decree 356 |
 | EU CRA [EU] | 5 | **80%** | 80% | +0% | PDE scope and classification (Default/Class I/Class II); Annex I gap assessment for consumer IoT router; Vulnerability and ENISA reporting timelines; SBOM programme design; Manufacturer vs importer/distributor obligations |
+| Saudi Arabia GRC | 5 | **96%** | 28% | +68% | Market-entry applicability routing; SAMA vs NCA stacking; cloud-for-government residency (CST/CCC); PDPL breach response; ISO 27001 to ECC-2:2024 mapping |
+| UAE GRC | 5 | **84%** | 28% | +56% | DIFC routing + 2025 amendment; health-data localization vs US cloud; mainland PDPL status; ADGM breach clock; CBUAE cloud offshoring constraints |
 
 📊 **[View the full eval results →](grc-skills-eval-results.html)**
 

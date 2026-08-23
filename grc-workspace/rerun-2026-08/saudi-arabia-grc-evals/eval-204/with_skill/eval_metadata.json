@@ -1,0 +1,13 @@
+{
+  "eval_id": 204,
+  "eval_name": "pdpl-breach-response",
+  "run_type": "with_skill",
+  "prompt": "A marketing employee at our Riyadh company emailed a spreadsheet of 40,000 customer records including national IDs to an external vendor without authorization. Walk us through our obligations under Saudi law.",
+  "assertions": [
+    "States the core clock correctly: notify SDAIA within 72 hours of becoming aware, via the National Data Governance Platform, and notify affected data subjects where the breach risks harm to them",
+    "Frames the incident correctly as a PDPL personal-data breach / unauthorized disclosure (national IDs + customer records), engaging containment (recall/delete demands to the vendor, access revocation) and evidence preservation before/alongside notification",
+    "Covers the vendor dimension: whether the vendor is an authorized processor under a compliant processing arrangement matters; unauthorized disclosure to a third party is itself a violation category SDAIA has enforced against",
+    "States realistic consequences: administrative fines up to SAR 5M (doubling on repeat), SDAIA's active enforcement posture (first-wave decisions 2025-26), and criminal exposure reserved for sensitive-data disclosure (and correctly does NOT claim national IDs alone are 'sensitive data' under the PDPL's sensitive categories)",
+    "Includes accountability follow-through: document the incident, root-cause and remediate (DLP/training/access), update RoPA and vendor contracts"
+  ]
+}

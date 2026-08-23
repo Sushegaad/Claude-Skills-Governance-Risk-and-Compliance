@@ -1,0 +1,33 @@
+{
+  "eval_id": 215,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Leads with the residency constraint: under the CBUAE Consumer Protection Regulation (Circular 8/2020) and Standards, consumer/transaction data must be stored and processed WITHIN the UAE — Bahrain-hosted consumer data conflicts with this baseline",
+      "passed": true,
+      "evidence": "\"CBUAE Consumer Protection Regulation (Circular 8/2020) + Standards | CBUAE | Yes — governs data residency for this move\"; \"Bahrain is not the UAE. CBUAE's Consumer Protection Regulation requires that consumer and transaction data be stored and processed within the UAE.\""
+    },
+    {
+      "text": "States the transfer gate correctly: sharing/transferring confidential consumer data outside the UAE requires CBUAE approval AND prior written customer consent — not merely contractual safeguards",
+      "passed": true,
+      "evidence": "\"Confidential consumer data may be shared/transferred outside the UAE only with CBUAE approval AND prior written customer consent — but this is designed for specific data-sharing scenarios, not as a blanket mechanism to relocate your core banking hosting. Don't treat it as a workaround.\""
+    },
+    {
+      "text": "Applies the Outsourcing Regulation (Circular 14/2021): material outsourcing (core banking to cloud qualifies) needs CBUAE approval before implementation, with a Master System of Record maintained in the UAE, retained data ownership, and mandatory audit/on-site inspection rights (bank and CBUAE) plus breach-notification and exit clauses",
+      "passed": true,
+      "evidence": "\"CBUAE Outsourcing Regulation for Banks (Circular 14/2021)... Yes\"; \"CBUAE approval before implementation\"; \"Master System of Record (MSoR) must be maintained in the UAE, with the bank retaining ownership and control\"; \"audit and on-site inspection rights for both the bank and CBUAE, breach/incident notification obligations... and exit/termination provisions\"."
+    },
+    {
+      "text": "Gives the realistic architecture conclusion: in-UAE hosting (e.g., UAE regions/data centers) for consumer data with any offshore elements limited to non-consumer data or explicitly approved arrangements — an answer waving Bahrain hosting through FAILS",
+      "passed": true,
+      "evidence": "\"deploy the core banking system and all consumer/transaction data in the UAE region, and reserve the Bahrain region (if used at all) for non-regulated workloads, DR test environments without live customer data\"; explicitly frames Bahrain hosting as a residency violation as currently scoped, not a mere approval issue."
+    },
+    {
+      "text": "Adds the parallel tracks: federal PDPL readiness posture (banking-data carve-out notwithstanding) and operational-resilience/security expectations, with early CBUAE engagement advised on timeline",
+      "passed": true,
+      "evidence": "\"Federal PDPL | Applies as a general readiness posture (banking-data carve-out notwithstanding...)\"; \"open the CBUAE approval conversation early — this is a long-lead item, not something to sequence after the technical build.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

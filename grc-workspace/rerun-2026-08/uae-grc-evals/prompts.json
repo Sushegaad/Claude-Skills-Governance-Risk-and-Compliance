@@ -1,0 +1,25 @@
+{
+  "skill": "uae-grc",
+  "prompts": [
+    {
+      "id": 211,
+      "prompt": "We are a fintech licensed in the DIFC. Which data protection law applies to us — the UAE federal PDPL or something else? What changed in 2025 that we should worry about?"
+    },
+    {
+      "id": 212,
+      "prompt": "We are a US healthtech SaaS selling to a private hospital in Dubai. Can the hospital's patient data live in our US-hosted cloud? What UAE rules govern this?"
+    },
+    {
+      "id": 213,
+      "prompt": "Our mainland Dubai retail company wants to get ahead of UAE privacy law. What is actually enforceable today, and what should we build now?"
+    },
+    {
+      "id": 214,
+      "prompt": "We are an ADGM-based asset manager. A laptop with client personal data was stolen. What are our notification obligations and deadlines?"
+    },
+    {
+      "id": 215,
+      "prompt": "Our CBUAE-licensed bank wants to move its core banking system and customer data to a cloud provider whose regional data centers are in Bahrain. What approvals and constraints apply?"
+    }
+  ]
+}

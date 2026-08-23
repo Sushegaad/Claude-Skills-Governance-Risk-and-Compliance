@@ -650,6 +650,54 @@
         "compliance",
         "grc"
       ]
+    },
+    {
+      "name": "saudi-arabia-grc",
+      "source": "./plugins/saudi-arabia-grc",
+      "description": "Saudi Arabia GRC advisor — a compliance router across NCA ECC-2:2024, Saudi PDPL (SDAIA), NCA Cloud Cybersecurity Controls, SAMA Cyber Security Framework, and CST cloud rules. Determines what applies first, then guides gap assessments, breach response, market entry, and ISO 27001/NIST/SOC 2 mapping.",
+      "version": "1.7.1",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "saudi-arabia",
+        "ksa",
+        "nca",
+        "ecc",
+        "sdaia",
+        "pdpl",
+        "sama",
+        "cst",
+        "cloud-residency",
+        "grc"
+      ]
+    },
+    {
+      "name": "uae-grc",
+      "source": "./plugins/uae-grc",
+      "description": "UAE GRC advisor — a jurisdiction-first compliance router across the Federal PDPL, DIFC DP Law (as amended 2025), ADGM DP Regulations, CBUAE data and outsourcing rules, the ICT Health Law, and UAE IA/ISR/ADHICS cyber baselines. Determines mainland vs free-zone vs sector obligations first, then guides compliance.",
+      "version": "1.7.1",
+      "author": {
+        "name": "Hemant Naik",
+        "email": "hemant.naik@gmail.com"
+      },
+      "homepage": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+      "category": "compliance",
+      "keywords": [
+        "uae",
+        "dubai",
+        "abu-dhabi",
+        "difc",
+        "adgm",
+        "pdpl",
+        "cbuae",
+        "data-residency",
+        "health-data",
+        "grc"
+      ]
     }
   ]
 }

@@ -1,0 +1,30 @@
+# NCA ECC vs. SAMA Cybersecurity Framework for a SAMA-Licensed Fintech
+
+*Disclaimer: General guidance based on publicly known regulatory structures, not legal or regulatory advice. Confirm your exact scope directly with SAMA and, where relevant, the National Cybersecurity Authority (NCA).*
+
+## Short Answer
+
+As a SAMA-licensed fintech, your **primary and mandatory cybersecurity framework is the SAMA Cybersecurity Framework (SAMA CSF)**, not a direct standalone obligation to the NCA Essential Cybersecurity Controls (ECC). SAMA is your sector regulator and the NCA has historically deferred day-to-day supervision of financial-sector entities to SAMA, since SAMA CSF was built to be broadly consistent with (and in many places more prescriptive than) the NCA's national baseline controls. That said, the NCA ECC still matters to you in three ways:
+
+1. **SAMA CSF was designed with strong alignment to NCA ECC and international standards (NIST CSF, ISO 27001, PCI DSS)** — most ECC control objectives are already embedded in SAMA CSF, so compliance work overlaps heavily rather than being duplicative.
+2. **If any part of your operations is classified as Critical National Infrastructure (CNI)** — for example, if you operate payment-switching or settlement infrastructure deemed systemically important — the NCA can assert direct oversight or require ECC compliance in coordination with SAMA.
+3. **NCA periodically updates the national baseline (e.g., ECC-2:2024)**, and SAMA typically updates SAMA CSF to stay harmonized; you should track both publications and re-run your control mapping whenever either is revised, since gaps can open up between updates.
+
+**Practical guidance:** treat SAMA CSF as your governing framework and audit target, but maintain a control-mapping matrix between SAMA CSF and the current NCA ECC version so you can demonstrate coverage of both if either SAMA or NCA asks, and so you catch any ECC-specific control that SAMA CSF hasn't yet absorbed.
+
+## Maturity Level Expected
+
+SAMA CSF uses a maturity model (similar in structure to COBIT/CMM-style scales, roughly: 0 – Non-Existent, 1 – Ad-hoc, 2 – Repeatable but Informal, 3 – Structured/Defined, 4 – Managed and Measurable, 5 – Adaptive/Optimized).
+
+- **Baseline expectation for regulated financial institutions, including licensed fintechs:** Maturity Level 3 ("Defined/Structured") across the SAMA CSF domains at minimum. This means controls are formally documented, approved, communicated, and consistently applied — not just performed ad hoc.
+- **Higher expectation for systemically important or higher-risk institutions** (larger banks, payment infrastructure providers, or fintechs handling large transaction volumes/customer funds at scale): SAMA generally expects progression toward **Level 4 ("Managed and Measurable")**, where controls are actively monitored with metrics, and effectiveness is regularly reviewed by management.
+- **New/smaller licensed fintechs** are typically expected to reach Level 3 within a defined ramp-up period after licensing (SAMA usually sets an implementation timeline in the license conditions or supervisory letters), with an expectation of continuous improvement toward Level 4 over subsequent assessment cycles.
+
+Your actual target should be confirmed against your specific license type and any maturity target communicated in your SAMA license conditions or supervisory correspondence, since SAMA can set entity-specific expectations that differ from the general baseline (e.g., higher targets for institutions handling larger transaction volumes or holding customer funds directly).
+
+## Recommended Next Steps
+1. Obtain the current SAMA CSF version and confirm your assigned maturity target with your SAMA relationship/supervisory contact.
+2. Build (or update) a control-mapping matrix: SAMA CSF domains ↔ current NCA ECC version ↔ ISO 27001/NIST CSF if you hold or reference those certifications.
+3. Run a formal self-assessment against SAMA CSF maturity levels per domain (not just a binary compliant/non-compliant check), and prioritize remediation for any domain scoring below your target level.
+4. Establish a recurring review cadence (at least annual, ideally aligned with SAMA's supervisory review cycle) to re-baseline against updates to both SAMA CSF and NCA ECC.
+5. If you operate or plan to operate payment infrastructure that could be deemed critical infrastructure, proactively confirm with SAMA/NCA whether direct ECC obligations attach to that specific system.

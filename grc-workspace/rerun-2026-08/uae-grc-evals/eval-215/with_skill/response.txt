@@ -1,0 +1,42 @@
+# CBUAE-Licensed Bank — Core Banking to Cloud with Bahrain Data Centers
+
+## Quick intake (stating assumptions — correct me if off)
+- **Jurisdiction/org type:** CBUAE-licensed bank (as stated) — assuming a mainland UAE-incorporated licensed bank, not a DIFC/ADGM-based entity with a separate DFSA/FSRA license (if you have DIFC or ADGM branches, their zone DP law applies to privacy there in parallel to CBUAE rules for the CBUAE-licensed entity).
+- **Cloud posture:** the provider's *regional* data centers are in Bahrain — I'm reading this as: the specific infrastructure region you're being offered for this deployment is Bahrain, not a UAE region. This is the crux of the problem below. Confirm whether the same provider also offers a UAE region, because that changes the whole analysis.
+- **Data in scope:** "core banking system and customer data" — I'm treating this as consumer and transaction data, which is exactly what CBUAE's residency rule targets.
+
+## Applicability matrix
+
+| Instrument | Regulator | Applies here? |
+|---|---|---|
+| **CBUAE Consumer Protection Regulation (Circular 8/2020) + Standards** | CBUAE | **Yes — governs data residency for this move** |
+| **CBUAE Outsourcing Regulation for Banks (Circular 14/2021) + Standards** | CBUAE | **Yes — governs the approval process for this move** |
+| Federal PDPL | UAE Data Office | Applies as a general readiness posture (banking-data carve-out notwithstanding, group-wide privacy programs should still align); not the primary blocker here |
+| DIFC/ADGM DP law | DIFC Commissioner / ADGM ODP | Only if you have entities/branches in those zones — not applicable to the CBUAE-licensed banking entity itself |
+
+## The core problem, stated plainly
+
+**Bahrain is not the UAE.** CBUAE's Consumer Protection Regulation requires that **consumer and transaction data be stored and processed within the UAE**. Moving your core banking system and customer data to a cloud region physically located in Bahrain — as currently framed — puts you in direct tension with that residency requirement, regardless of the outsourcing approval process below. This isn't a "get consent and proceed" situation for the primary hosting location; residency is a location requirement on storage/processing, not merely a data-sharing-abroad consent mechanic (that consent mechanic is a separate, narrower exception — see below).
+
+## What approvals and constraints actually apply
+
+1. **Data classification first.** Confirm exactly what will live in the Bahrain region: is it the full core banking system and all customer/transaction data, or only non-regulated workloads (e.g., internal tooling, non-customer analytics)? The residency rule is specific to consumer and transaction data — everything else has more flexibility.
+2. **Residency requirement.** Consumer and transaction data must be stored and processed **within the UAE**. If the Bahrain region is where this data would live, that's a residency violation as currently scoped — not a "needs approval" issue but a "needs a different architecture" issue.
+3. **The narrow exception path.** Confidential consumer data may be shared/transferred outside the UAE **only with CBUAE approval AND prior written customer consent** — but this is designed for specific data-sharing scenarios, not as a blanket mechanism to relocate your core banking hosting. Don't treat it as a workaround for choosing an out-of-UAE primary region.
+4. **Materiality assessment and prior approval.** Moving your **core banking system** to any cloud provider is almost certainly **material outsourcing** under Circular 14/2021 — this requires **CBUAE approval before implementation**, not after the fact. Start this process in parallel with, not after, your architecture decision.
+5. **Master System of Record (MSoR) must be maintained in the UAE**, with the bank retaining ownership and control of bank and customer data at all times — this is a distinct requirement from general residency and applies specifically to the outsourcing arrangement.
+6. **Mandatory contract terms** for the outsourcing agreement: audit and on-site inspection rights for both the bank and CBUAE, breach/incident notification obligations, security requirements, and exit/termination provisions including data-return mechanics.
+
+## Practical path forward
+
+1. **Check if the provider has a UAE region.** Most major hyperscalers and regional cloud/sovereign providers now offer UAE-based regions. The straightforward fix is very often: deploy the core banking system and all consumer/transaction data in the UAE region, and reserve the Bahrain region (if used at all) for non-regulated workloads, DR test environments without live customer data, or similar out-of-scope use cases.
+2. **Run the materiality assessment now** and open the CBUAE approval conversation early — this is a long-lead item, not something to sequence after the technical build.
+3. **Build the contract package** around the MSoR, audit rights, notification, and exit terms above before finalizing the vendor agreement.
+4. **Run the parallel privacy analysis**: federal PDPL readiness posture for your broader data program (even though banking data itself is carved out of PDPL, group-wide programs should still align with GDPR-family practice), and any DIFC/ADGM zone DP law obligations if you have entities there.
+5. **Verify current CBUAE expectations directly.** CBUAE's cyber/IT and outsourcing rulebook items evolve — confirm the current requirements on rulebook.centralbank.ae or with CBUAE directly rather than relying solely on this summary for your approval submission.
+
+## Bottom line
+As framed, hosting core banking and customer data in a Bahrain region is a residency problem, not just an approval-process problem. The fix is almost always architectural (use a UAE region for the in-scope data) combined with the standard CBUAE material-outsourcing approval — not reliance on the consumer-consent exception, which is meant for narrower data-sharing scenarios.
+
+---
+*This is general compliance information, not legal advice. CBUAE outsourcing and residency rules carry real regulatory approval timelines — engage CBUAE-experienced counsel and confirm current rulebook requirements before committing to the Bahrain-region architecture.*

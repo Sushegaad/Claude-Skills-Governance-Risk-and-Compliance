@@ -1,0 +1,13 @@
+{
+  "eval_id": 212,
+  "eval_name": "health-data-us-cloud",
+  "run_type": "without_skill",
+  "prompt": "We are a US healthtech SaaS selling to a private hospital in Dubai. Can the hospital's patient data live in our US-hosted cloud? What UAE rules govern this?",
+  "assertions": [
+    "Leads with the decisive rule: the ICT Health Law (Federal Law 2/2019) generally PROHIBITS storing/processing/transferring UAE health data outside the UAE — default answer: patient data cannot live in a US-hosted cloud",
+    "States the exception pathway correctly: exceptions require authorization via the relevant health authority and MOHAP (Cabinet Decision 32/2020; Ministerial Resolution 51/2021 covers approved cases such as specified telemedicine) — not fixable by contracts alone",
+    "Quantifies exposure: localization violations carry fines of AED 500,000-700,000",
+    "Routes to the right authority for a Dubai private hospital (DHA, with MOHAP at federal level) and notes the law prevails over the federal PDPL via the health-data carve-out",
+    "Gives the practical architecture answer: in-UAE hosting (or an authorized exception) for patient data, with a split analysis for non-health personal data (federal PDPL readiness posture) — and advises the vendor to verify current authority guidance before promising any exception"
+  ]
+}

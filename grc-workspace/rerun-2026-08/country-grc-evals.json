@@ -1,0 +1,95 @@
+{
+  "description": "First eval sets for saudi-arabia-grc and uae-grc (August 2026). Assertions authored from the Phase-0 primary-source facts sheets (NCA ECC-2:2024, SDAIA PDPL + regulations, CST framework, SAMA CSF; UAE PDPL status, DIFC Amendment Law 1/2025, ADGM DPR, CBUAE circulars, ICT Health Law). Post-cutoff ground truths embedded for graders. Prompts exercise the ROUTER (jurisdiction/sector applicability), not framework recall.",
+  "evals": [
+    {"id": 201, "skill": "saudi-arabia-grc", "eval_name": "market-entry-retailer",
+     "prompt": "We are a European e-commerce retailer opening a Saudi entity and an online store for Saudi customers. No government contracts. What Saudi regulations apply to us, and what should our first 90 days of compliance work look like?",
+     "assertions": [
+       "Delivers an applicability determination BEFORE detail: Saudi PDPL applies (personal data of Saudi residents); NCA ECC-2:2024 is NOT mandatory for a private non-CNI retailer (recommended best practice only); SAMA and CST licensing regimes do not apply to a plain retailer — each conclusion tied to the right regulator (SDAIA / NCA / SAMA / CST)",
+       "States the PDPL enforcement reality: Royal Decree M/19 as amended by M/148, fully enforced since September 14, 2024, with SDAIA actively enforcing (first-wave violation decisions issued in 2025-26)",
+       "Names concrete PDPL first-90-days actions: controller registration on SDAIA's National Data Governance Platform, RoPA, lawful bases (including the M/148 legitimate-interest basis for non-sensitive data), privacy notices, and a transfer mechanism for EU-KSA data flows (SDAIA SCC modules / adequacy / BCRs)",
+       "States the breach-notification rule correctly: 72 hours to SDAIA (via the platform), with data-subject notification where they are at risk",
+       "States penalty exposure correctly: fines up to SAR 5M per violation (doubling for repeat), with criminal exposure for unlawful disclosure of sensitive data — without inventing enacted amendments (the 2025 graduated-penalty proposals are not enacted as of August 2026; a compliant answer either omits them or flags them as pending)"
+     ]},
+    {"id": 202, "skill": "saudi-arabia-grc", "eval_name": "sama-vs-nca-stacking",
+     "prompt": "We are a fintech licensed by SAMA. Do the NCA Essential Cybersecurity Controls also apply to us, or only the SAMA framework? What maturity level do we need?",
+     "assertions": [
+       "Answers the stacking question correctly: SAMA CSF applies to all SAMA-regulated entities (including licensed fintechs); NCA ECC additionally applies only if the entity owns/operates/hosts Critical National Infrastructure — the regimes stack rather than displace, and the answer must not claim ECC is mandatory for every fintech",
+       "States the SAMA CSF structure accurately: 4 domains (Leadership & Governance; Risk Management & Compliance; Operations & Technology; Third-Party Cyber Security)",
+       "States the maturity expectation correctly: 6-level maturity model (0-5) with SAMA expecting minimum maturity level 3",
+       "Notes that PDPL applies in parallel for customer personal data (SDAIA, distinct from SAMA)",
+       "Gives practical unify-and-map advice: maintain one internal control set mapped to both SAMA CSF and ECC (if CNI) rather than duplicate programmes, and confirm CNI designation status rather than assuming"
+     ]},
+    {"id": 203, "skill": "saudi-arabia-grc", "eval_name": "cloud-for-government",
+     "prompt": "We are a global SaaS provider planning to host workloads for a Saudi government ministry on our cloud. What must we comply with, and where must the data live?",
+     "assertions": [
+       "Identifies the full stack for a CSP serving government: CST Cloud Computing Regulatory Framework registration (class determines permissible data levels), NCA CCC provider-side controls (as the ministry is ECC-covered), and PDPL for any personal data — all three named with their regulators",
+       "States the residency rule decisively: government data must remain in-Kingdom (localization is exclusive, narrow exceptions) — an answer suggesting offshore hosting of ministry workloads with contractual fixes FAILS this assertion",
+       "Explains the classification-driven model: cloud levels tied to data classification (Top Secret/Secret/Confidential/Public) and CST customer-data Levels with Levels 3-4 requiring in-Kingdom hosting",
+       "Reflects the CCC's role-split design: provider-side vs tenant-side controls (e.g., P vs T control markers), with the ministry remaining accountable as tenant — no invented control IDs",
+       "Gives a realistic sequencing: CST registration/class, in-Kingdom infrastructure or partnership, CCC control implementation with evidence, then contract with the ministry — including Arabic-language/local-presence practicalities where relevant"
+     ]},
+    {"id": 204, "skill": "saudi-arabia-grc", "eval_name": "pdpl-breach-response",
+     "prompt": "A marketing employee at our Riyadh company emailed a spreadsheet of 40,000 customer records including national IDs to an external vendor without authorization. Walk us through our obligations under Saudi law.",
+     "assertions": [
+       "States the core clock correctly: notify SDAIA within 72 hours of becoming aware, via the National Data Governance Platform, and notify affected data subjects where the breach risks harm to them",
+       "Frames the incident correctly as a PDPL personal-data breach / unauthorized disclosure (national IDs + customer records), engaging containment (recall/delete demands to the vendor, access revocation) and evidence preservation before/alongside notification",
+       "Covers the vendor dimension: whether the vendor is an authorized processor under a compliant processing arrangement matters; unauthorized disclosure to a third party is itself a violation category SDAIA has enforced against",
+       "States realistic consequences: administrative fines up to SAR 5M (doubling on repeat), SDAIA's active enforcement posture (first-wave decisions 2025-26), and criminal exposure reserved for sensitive-data disclosure (and correctly does NOT claim national IDs alone are 'sensitive data' under the PDPL's sensitive categories)",
+       "Includes accountability follow-through: document the incident, root-cause and remediate (DLP/training/access), update RoPA and vendor contracts"
+     ]},
+    {"id": 205, "skill": "saudi-arabia-grc", "eval_name": "iso27001-to-ecc-mapping",
+     "prompt": "We already hold ISO 27001:2022. How much of NCA ECC-2:2024 does that cover, and what specifically remains for a Saudi government subsidiary?",
+     "assertions": [
+       "States ECC applicability correctly for this entity: as a government subsidiary, ECC-2:2024 is MANDATORY (not merely recommended)",
+       "Describes ECC-2:2024's structure accurately: 4 domains (Governance; Defense; Resilience; Third-Party & Cloud), 28 subdomains, 108 main controls (+92 subcontrols), control IDs in domain-subdomain-control format — and does not invent specific control IDs",
+       "Gives a credible ISO mapping: ISO 27001:2022 Annex A covers much of Governance/Defense/Third-Party thematically, and certification evidence can be reused — but ISO certification does NOT constitute ECC compliance",
+       "Names Saudi-specific deltas ISO does not satisfy: NCA compliance-tool reporting/self-assessment mechanics and NCA audits, Arabic-language governance artifacts where required, KSA residency/cloud rules for government data (CCC/CST), and OT/telework/data siblings (OTCC/TCC/DCC) where in scope",
+       "Recommends the right process: map Annex A controls to ECC domains, gap-assess the uncovered ECC controls, and prepare NCA-facing evidence — structured as a gap table with evidence columns"
+     ]},
+    {"id": 211, "skill": "uae-grc", "eval_name": "difc-fintech-routing",
+     "prompt": "We are a fintech licensed in the DIFC. Which data protection law applies to us — the UAE federal PDPL or something else? What changed in 2025 that we should worry about?",
+     "assertions": [
+       "Routes correctly: DIFC entities are excluded from the federal PDPL — the DIFC Data Protection Law No. 5 of 2020 applies, overseen by the DIFC Commissioner of Data Protection",
+       "States the 2025 change accurately: Amendment Law No. 1 of 2025, in force July 15, 2025 — the biggest update since 2020",
+       "Names the amendment's key risk shift: a statutory PRIVATE RIGHT OF ACTION for data subjects (GDPR-style claims exposure), plus documented transfer-adequacy assessments and Commissioner power to review/withdraw adequacy decisions",
+       "Mentions the raised fine tiers accurately (e.g., new USD 25,000-50,000 tiers for failure to notify processing or conduct required DPIAs) and ongoing duties: annual notification/registration with the Commissioner, DPO for high-risk processing, breach notification",
+       "Keeps regulators straight: prudential/conduct supervision for a DIFC fintech sits with the DFSA — the answer must not cite CBUAE rules unless the firm is separately CBUAE-licensed"
+     ]},
+    {"id": 212, "skill": "uae-grc", "eval_name": "health-data-us-cloud",
+     "prompt": "We are a US healthtech SaaS selling to a private hospital in Dubai. Can the hospital's patient data live in our US-hosted cloud? What UAE rules govern this?",
+     "assertions": [
+       "Leads with the decisive rule: the ICT Health Law (Federal Law 2/2019) generally PROHIBITS storing/processing/transferring UAE health data outside the UAE — default answer: patient data cannot live in a US-hosted cloud",
+       "States the exception pathway correctly: exceptions require authorization via the relevant health authority and MOHAP (Cabinet Decision 32/2020; Ministerial Resolution 51/2021 covers approved cases such as specified telemedicine) — not fixable by contracts alone",
+       "Quantifies exposure: localization violations carry fines of AED 500,000-700,000",
+       "Routes to the right authority for a Dubai private hospital (DHA, with MOHAP at federal level) and notes the law prevails over the federal PDPL via the health-data carve-out",
+       "Gives the practical architecture answer: in-UAE hosting (or an authorized exception) for patient data, with a split analysis for non-health personal data (federal PDPL readiness posture) — and advises the vendor to verify current authority guidance before promising any exception"
+     ]},
+    {"id": 213, "skill": "uae-grc", "eval_name": "mainland-pdpl-status",
+     "prompt": "Our mainland Dubai retail company wants to get ahead of UAE privacy law. What is actually enforceable today, and what should we build now?",
+     "assertions": [
+       "States the pivotal status fact accurately and with a date: the federal PDPL (Decree-Law 45/2021) has been in force since January 2, 2022, but its EXECUTIVE REGULATIONS remain unissued as of August 2026 — penalties and operational detail await them, and enforcement is effectively dormant. FAIL any answer asserting the regulations are issued or citing enacted PDPL fine amounts",
+       "States the grace mechanism: organizations get a 6-month compliance period from the regulations' issuance — which is exactly why readiness work should start now",
+       "Correctly scopes what DOES bite a mainland retailer today: the cybercrime law (Federal Decree-Law 34/2021), sector rules if applicable, and contractual/counterparty expectations — not zone DP laws (DIFC/ADGM excluded and irrelevant to a mainland retailer)",
+       "Prescribes a sensible GDPR-family readiness build: data inventory/RoPA, lawful-basis and consent design, privacy notices, DPO assessment, breach-response playbook, transfer mapping — framed as preparation for the regulations",
+       "Notes the carve-outs correctly (government data, health data under the ICT Health Law, banking/credit data under CBUAE rules, DIFC/ADGM) when describing the PDPL's scope"
+     ]},
+    {"id": 214, "skill": "uae-grc", "eval_name": "adgm-breach-clock",
+     "prompt": "We are an ADGM-based asset manager. A laptop with client personal data was stolen. What are our notification obligations and deadlines?",
+     "assertions": [
+       "Applies the right law: ADGM Data Protection Regulations 2021 (not the federal PDPL, not DIFC law), overseen by the ADGM Office of Data Protection / Commissioner",
+       "States the deadline correctly: notify the Commissioner within 72 HOURS of becoming aware of the breach, and notify affected data subjects where there is high risk to them",
+       "Covers incident mechanics: assess scope (encryption status of the laptop matters to risk), contain (remote wipe, credential rotation), preserve evidence, and document the incident and decision-making even if notification is judged unnecessary",
+       "Notes the parallel regulator: as an FSRA-regulated asset manager, operational-incident expectations to FSRA run alongside the DP notification — and the answer must not cite CBUAE",
+       "Includes follow-through: root-cause remediation (encryption, MDM), RoPA/security-policy updates, and annual-notification standing with the ODP"
+     ]},
+    {"id": 215, "skill": "uae-grc", "eval_name": "cbuae-cloud-offshoring",
+     "prompt": "Our CBUAE-licensed bank wants to move its core banking system and customer data to a cloud provider whose regional data centers are in Bahrain. What approvals and constraints apply?",
+     "assertions": [
+       "Leads with the residency constraint: under the CBUAE Consumer Protection Regulation (Circular 8/2020) and Standards, consumer/transaction data must be stored and processed WITHIN the UAE — Bahrain-hosted consumer data conflicts with this baseline",
+       "States the transfer gate correctly: sharing/transferring confidential consumer data outside the UAE requires CBUAE approval AND prior written customer consent — not merely contractual safeguards",
+       "Applies the Outsourcing Regulation (Circular 14/2021): material outsourcing (core banking to cloud qualifies) needs CBUAE approval before implementation, with a Master System of Record maintained in the UAE, retained data ownership, and mandatory audit/on-site inspection rights (bank and CBUAE) plus breach-notification and exit clauses",
+       "Gives the realistic architecture conclusion: in-UAE hosting (e.g., UAE regions/data centers) for consumer data with any offshore elements limited to non-consumer data or explicitly approved arrangements — an answer waving Bahrain hosting through FAILS",
+       "Adds the parallel tracks: federal PDPL readiness posture (banking-data carve-out notwithstanding) and operational-resilience/security expectations, with early CBUAE engagement advised on timeline"
+     ]}
+  ]
+}
