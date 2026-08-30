@@ -1110,34 +1110,58 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 
 ## Customer Testimonials
 
-> *"This is awesome, thank you!"*
-> — Reddit u/ThePsychicCEO
+Feedback from the GRC and Claude AI community on [LinkedIn](https://www.linkedin.com/posts/jaanametsamaa_an-open-source-repository-of-grc-claude-skills-share-7449381233484034048-xBAf), Reddit ([r/claudeskills](https://www.reddit.com/r/claudeskills/comments/1tvbhp4/claude_skills_for_governance_risk_compliance/) · [r/grc](https://www.reddit.com/r/grc/comments/1rwp2x4/using_claude_ai_skills_to_act_as_a_dedicated_grc/) · [r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1s6r359/comment/od4k30y/)), and beyond.
 
-> *"This is awesome! Any chance you can build one for ISO 42001?"*
-> — Reddit u/ComparisonThink7683
+> *"An open-source repository of GRC Claude skills that are pretty good! It has ISO 27001, ISO 42001, SOC 2, FedRAMP, GDPR, and others. I checked them out and tested a few. It looks like the skills are at different levels but definitely a very good starting point if your AI assistant doesn't have any GRC skills installed yet."*
+> — [Jaana Metsamaa, Co-Founder at Kontion.app (LinkedIn)](https://www.linkedin.com/posts/jaanametsamaa_an-open-source-repository-of-grc-claude-skills-share-7449381233484034048-xBAf)
 
-> *"As a rather new Claude Code user, I'm both impressed and thankful. It's really helpful that you release it publicly. I am at the stage where I understand the need for a well-written CLAUDE.md and skills. This will help me a lot."*
-> — Reddit u/bloulboi
+> *"This open-source project by Hemant Naik transforms Claude into a compliance co-pilot using installable 'Skills' covering 9+ major GRC frameworks. The benchmark shows a 94% pass rate vs 72% for baseline Claude — a solid +22 point lift, especially on accurate citations. Practical for audit preparation, gap assessments, control mapping, and policy drafting. This represents genuine progress toward interactive, intelligence-driven compliance."*
+> — [Shubham Mishra, Security Engineering @ Juniper Networks (LinkedIn)](https://www.linkedin.com/posts/mishra321shu_claude-skills-for-governance-risk-compliance-share-7448652308340686848-q6gN/)
+
+> *"The structure is the most useful part. It gives Claude a good lane to stay in for gap assessments, SSP narratives, POA&M work, RMF steps, and control-family walkthroughs. That's a real improvement over asking a general model compliance questions and getting vague output back... this is pretty amazing and could be disruptive to high cost automated compliance tools."*
+> — Reddit u/Rockos-Modern-Fife (r/claudeskills)
 
 > *"The skills approach is a good entry point — getting Claude to reason about specific frameworks is exactly the right instinct. The gap I kept hitting was that Claude could describe the compliance picture but couldn't act on it... this is a great start."*
 > — Reddit u/sensationweb
 
-> *"Fantastic work. Going to follow this and test it out myself."*
-> — Reddit u/Efficient_Bus_923
+> *"Very valuable, seriously. Compliance can sometimes make processes a bit longer, but the upside is much better quality, security, and future readiness. As regulations keep evolving, having structured frameworks in place is becoming more important than ever."*
+> — Reddit u/innovation_traits (r/claudeskills)
+
+> *"This is a fantastic initiative! The ability to tailor Claude for specific GRC frameworks is a game-changer for audit preparedness. Huge potential here."*
+> — Reddit u/Xin_est (r/claudeskills)
 
 > *"I've been doing something similar for the CIS controls and it's been brilliant so far. I'll be using this for ISO and SOC 2. Thanks!"*
 > — Reddit u/gpldn
 
+> *"As a rather new Claude Code user, I'm both impressed and thankful. It's really helpful that you release it publicly. I am at the stage where I understand the need for a well-written CLAUDE.md and skills. This will help me a lot."*
+> — Reddit u/bloulboi
+
 > *"Hell ya. We just approved Claude for enterprise so I'll go check it out."*
 > — Reddit u/AcrobaticWatercress7
+
+> *"This is brilliant — the frameworks are read by the AI before it produces an answer, which should reduce hallucination and give a tailored, useful output."*
+> — Reddit u/Franz99999999 (r/claudeskills)
+
+> *"I work in AI Governance from a risk management background and this is great. I'll check it out, thanks for sharing!"*
+> — Reddit u/HousingAppropriate80 (r/claudeskills)
 
 > *"I'll definitely check this out. I have a skill for threat modeling and am working on some other ones, this is super helpful."*
 > — Reddit u/lilgreenbite
 
+> *"Pretty cool man, star earned and I will follow closely as a fellow GRC colleague. Power to you!"*
+> — Reddit u/daddyicebee (r/claudeskills)
+
+> *"Fantastic work. Going to follow this and test it out myself."*
+> — Reddit u/Efficient_Bus_923
+
+> *"This is awesome! Any chance you can build one for ISO 42001?"*
+> — Reddit u/ComparisonThink7683
+
 > *"Awesome, thanks for sharing. I'm going to play around with this."*
 > — Reddit u/DeliciousNet593
 
-Additional feedback from the Reddit community: [r/grc](https://www.reddit.com/r/grc/comments/1rwp2x4/using_claude_ai_skills_to_act_as_a_dedicated_grc/) · [r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1s6r359/comment/od4k30y/)
+> *"This is awesome, thank you!"*
+> — Reddit u/ThePsychicCEO
 
 ---
 
