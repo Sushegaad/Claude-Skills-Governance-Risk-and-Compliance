@@ -98,7 +98,13 @@ def render_eval_table(skills, stats):
 
 
 def render_readme_eval_table(skills, stats):
-    rows = []
+    # NOTE: the full table (header + separator + rows) lives inside the GEN
+    # block. An HTML comment between a markdown table's separator and its data
+    # rows splits the table on GitHub — markers must never sit mid-table.
+    rows = [
+        "| Skill | Test Cases | With Skill | Baseline | Delta | What Was Tested |",
+        "|-------|-----------|-----------|---------|-------|-----------------|",
+    ]
     for s in skills:
         st = stats[s["plugin"]]
         rows.append(
@@ -107,6 +113,32 @@ def render_readme_eval_table(skills, stats):
             f'| {s["eval"]["readme_tested"]} |'
         )
     return "\n".join(rows)
+
+
+def render_readme_download_table(skills):
+    rows = [
+        "   | Framework | Download |",
+        "   |-----------|----------|",
+    ]
+    for s in skills:
+        href = RAW + quote(s["standalone_dir"]) + "/" + quote(s["skill_file"])
+        rows.append(
+            f'   | {s["readme_download_html"]} | [{s["skill_file"]}]({href}) |'
+        )
+    return "\n".join(rows)
+
+
+def render_readme_install_all(skills):
+    names = " ".join(
+        f'{s["plugin"]}@grc-skills'
+        for cat in _categories_in_order(skills)
+        for s in skills
+        if s["category"] == cat
+    )
+    return ("```shell\n"
+            "/plugin marketplace add Sushegaad/Claude-Skills-Governance-Risk-and-Compliance\n"
+            f"/plugin install {names}\n"
+            "```")
 
 
 def _categories_in_order(skills):
@@ -178,6 +210,8 @@ def main():
         },
         REPO / "README.md": {
             "readme-eval-table": render_readme_eval_table(skills, stats),
+            "readme-download-table": render_readme_download_table(skills),
+            "readme-install-all": render_readme_install_all(skills),
         },
         REPO / "INSTALLATION.md": {
             "install-commands": render_install_commands(skills),

@@ -23,7 +23,8 @@
         "readme_tested": "Gap assessment; Policy drafting; 2013→2022 transition; Risk assessment; Management review CAP"
       },
       "install_framework": "ISO 27001:2022",
-      "install_desc": "Gap analysis, policy writing, Annex A control guidance, SoA generation, risk registers"
+      "install_desc": "Gap analysis, policy writing, Annex A control guidance, SoA generation, risk registers",
+      "readme_download_html": "<img src=\"assets/Logos/iso27001.jpg\" alt=\"ISO 27001\" height=\"20\" style=\"vertical-align:middle;object-fit:contain;\"> ISO 27001"
     },
     {
       "num": 2,
@@ -47,7 +48,8 @@
         "readme_tested": "Type 1 vs 2; CC controls checklist; Availability criteria; Access control policy; Audit exception response"
       },
       "install_framework": "SOC 2",
-      "install_desc": "TSC gap analysis, policy drafting, control documentation, audit evidence, vendor risk"
+      "install_desc": "TSC gap analysis, policy drafting, control documentation, audit evidence, vendor risk",
+      "readme_download_html": "<img src=\"assets/Logos/soc2.jpeg\" alt=\"SOC 2\" height=\"20\" style=\"vertical-align:middle;object-fit:contain;\"> SOC 2"
     },
     {
       "num": 3,
@@ -71,7 +73,8 @@
         "readme_tested": "Authorization pathways; CR26 Certification Classes A-D; FedRAMP 20x (primary pathway); OSCAL mandate Sep 2026; POA&M remediation timelines"
       },
       "install_framework": "FedRAMP (CR26)",
-      "install_desc": "Readiness under CR26 (final; Classes A–D, pipelines open Aug 2026), FedRAMP 20x primary pathway, Legacy Ready conversion, SSP narratives, POA&M SLAs, OSCAL mandate Sep 30 2026, ConMon"
+      "install_desc": "Readiness under CR26 (final; Classes A–D, pipelines open Aug 2026), FedRAMP 20x primary pathway, Legacy Ready conversion, SSP narratives, POA&M SLAs, OSCAL mandate Sep 30 2026, ConMon",
+      "readme_download_html": "<img src=\"assets/Logos/fedramp.svg\" alt=\"FedRAMP\" height=\"20\" style=\"vertical-align:middle;object-fit:contain;\"> FedRAMP [US]"
     },
     {
       "num": 4,
@@ -95,7 +98,8 @@
         "readme_tested": "US company checklist; Article 28 DPA; Subject access request; Cookie consent; 72-hour breach notification"
       },
       "install_framework": "GDPR / UK GDPR",
-      "install_desc": "Code audits, privacy notices, DPAs, DPIAs, data flow reviews, article-cited Q&A"
+      "install_desc": "Code audits, privacy notices, DPAs, DPIAs, data flow reviews, article-cited Q&A",
+      "readme_download_html": "🇪🇺 GDPR [EU]"
     },
     {
       "num": 5,
@@ -119,7 +123,8 @@
         "readme_tested": "Covered entity analysis; BAA template; Encryption (addressable vs required); Risk analysis; Workforce violation"
       },
       "install_framework": "HIPAA",
-      "install_desc": "Document generation, technical safeguards for cloud, breach response guidance"
+      "install_desc": "Document generation, technical safeguards for cloud, breach response guidance",
+      "readme_download_html": "<img src=\"assets/Logos/hipaa.png\" alt=\"HIPAA\" height=\"20\" style=\"vertical-align:middle;object-fit:contain;\"> HIPAA [US]"
     },
     {
       "num": 6,
@@ -143,7 +148,8 @@
         "readme_tested": "CSF 2.0 overview; Ransomware recovery plan; Profile creation; Control mapping; Board reporting"
       },
       "install_framework": "NIST CSF 2.0 / 1.1",
-      "install_desc": "Gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping"
+      "install_desc": "Gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping",
+      "readme_download_html": "<img src=\"assets/Logos/nist-csf.jpeg\" alt=\"NIST CSF\" height=\"20\" style=\"vertical-align:middle;object-fit:contain;\"> NIST CSF"
     },
     {
       "num": 7,
@@ -167,7 +173,8 @@
         "readme_tested": "SAQ type selection; Req 3 stored data (v4.0); Breach obligations; Penetration testing; Tokenization scope"
       },
       "install_framework": "PCI DSS v4.0.1",
-      "install_desc": "CDE scoping, SAQ selection, gap assessments, control guidance, QSA audit prep"
+      "install_desc": "CDE scoping, SAQ selection, gap assessments, control guidance, QSA audit prep",
+      "readme_download_html": "<img src=\"assets/Logos/pci-dss.png\" alt=\"PCI DSS\" height=\"20\" style=\"vertical-align:middle;object-fit:contain;\"> PCI DSS"
     },
     {
       "num": 8,
@@ -191,7 +198,8 @@
         "readme_tested": "Pipeline directive requirements; CIRP elements; OT/IT segmentation; Airport applicability; TSA vs CIRCIA"
       },
       "install_framework": "TSA Security Directives",
-      "install_desc": "Pipeline, freight rail, and transit OT/ICS cybersecurity — CIP/COIP, IRP, ADR, CAP"
+      "install_desc": "Pipeline, freight rail, and transit OT/ICS cybersecurity — CIP/COIP, IRP, ADR, CAP",
+      "readme_download_html": "🚨 TSA Cybersecurity [US]"
     },
     {
       "num": 9,
@@ -215,7 +223,8 @@
         "readme_tested": "AIMS applicability; Key requirements; AI-specific risks; Third-party LLM management; AI ethics controls"
       },
       "install_framework": "ISO/IEC 42001:2023",
-      "install_desc": "AI Management System gap analysis, AISIA, AI risk assessment, SoA, certification readiness"
+      "install_desc": "AI Management System gap analysis, AISIA, AI risk assessment, SoA, certification readiness",
+      "readme_download_html": "🤖 ISO 42001 AI Management System"
     },
     {
       "num": 10,
@@ -239,7 +248,8 @@
         "readme_tested": "Extension to ISO 27001; GDPR mapping; Processor controls; PIA methodology; Certification as GDPR evidence"
       },
       "install_framework": "ISO 27701:2025",
-      "install_desc": "Standalone-PIMS gap analysis, 2019→2025 transition (deadline Oct 2028), PII controller/processor mapping, GDPR alignment"
+      "install_desc": "Standalone-PIMS gap analysis, 2019→2025 transition (deadline Oct 2028), PII controller/processor mapping, GDPR alignment",
+      "readme_download_html": "🔒 ISO 27701 Privacy Information Management"
     },
     {
       "num": 11,
@@ -263,7 +273,8 @@
         "readme_tested": "Five pillars; ICT incident reporting timelines; TLPT requirements; Third-party contracts; DORA vs EBA"
       },
       "install_framework": "DORA (EU)",
-      "install_desc": "ICT risk management, TLPT, register of information, incident classification, third-party oversight"
+      "install_desc": "ICT risk management, TLPT, register of information, incident classification, third-party oversight",
+      "readme_download_html": "🏦 DORA Digital Operational Resilience"
     },
     {
       "num": 12,
@@ -287,7 +298,8 @@
         "readme_tested": "Applicability to foreign entities; Consent vs GDPR; Children's data (18-year threshold); Cross-border transfers; SDF obligations"
       },
       "install_framework": "India DPDPA 2023",
-      "install_desc": "Data principal rights, consent management, DPDPB registration, breach notification"
+      "install_desc": "Data principal rights, consent management, DPDPB registration, breach notification",
+      "readme_download_html": "🇮🇳 DPDPA [India] — Digital Personal Data Protection Act"
     },
     {
       "num": 13,
@@ -311,7 +323,8 @@
         "readme_tested": "Level determination; SPRS scoring; CUI scoping; SSP structure; C3PAO assessment readiness"
       },
       "install_framework": "CMMC 2.0",
-      "install_desc": "Level 1/2/3 gap analysis, SPRS scoring, POA&M, CUI scoping, assessment prep — incl. the Jul 13 2026 Phase 2 suspension interim guidance"
+      "install_desc": "Level 1/2/3 gap analysis, SPRS scoring, POA&M, CUI scoping, assessment prep — incl. the Jul 13 2026 Phase 2 suspension interim guidance",
+      "readme_download_html": "🛡️ CMMC 2.0 Cybersecurity Maturity Model Certification"
     },
     {
       "num": 14,
@@ -335,7 +348,8 @@
         "readme_tested": "Four functions overview; Hiring AI risk assessment; Credit scoring risk register; EU AI Act mapping; GOVERN gap assessment"
       },
       "install_framework": "NIST AI RMF 1.0",
-      "install_desc": "GOVERN/MAP/MEASURE/MANAGE function guidance, AI risk registers, organisational profiles"
+      "install_desc": "GOVERN/MAP/MEASURE/MANAGE function guidance, AI risk registers, organisational profiles",
+      "readme_download_html": "🤖 NIST AI Risk Management Framework"
     },
     {
       "num": 15,
@@ -359,7 +373,8 @@
         "readme_tested": "Architecture scoping (A1/A2/A3/A4/B); MFA hardware token requirement; CSCF v2026 gap assessment; Control 2.4 now mandatory; KYC-SA attestation; Incident response obligations"
       },
       "install_framework": "SWIFT CSP 2026",
-      "install_desc": "CSCF v2026 (32 controls: 25 mandatory + 7 advisory), Control 2.4 back-office data flow now mandatory, architecture scoping (A1/A2/A3/A4/B), independent assessment prep, KYC-SA attestation"
+      "install_desc": "CSCF v2026 (32 controls: 25 mandatory + 7 advisory), Control 2.4 back-office data flow now mandatory, architecture scoping (A1/A2/A3/A4/B), independent assessment prep, KYC-SA attestation",
+      "readme_download_html": "🏦 SWIFT Customer Security Programme (CSP)"
     },
     {
       "num": 16,
@@ -383,7 +398,8 @@
         "readme_tested": "OS control scoping and authorisation; IRAP assessment preparation; Chapter 13 system hardening; Essential Eight to ISM mapping; Supply chain cloud provider obligations"
       },
       "install_framework": "Australian ISM (ASD)",
-      "install_desc": "ISM control assessment (June 2026 release incl. AI controls), Essential Eight maturity, system authorisation, IRAP prep"
+      "install_desc": "ISM control assessment (June 2026 release incl. AI controls), Essential Eight maturity, system authorisation, IRAP prep",
+      "readme_download_html": "🇦🇺 ISM [Australia] — Australian Information Security Manual"
     },
     {
       "num": 17,
@@ -407,7 +423,8 @@
         "readme_tested": "Energy company EE/IE classification; SaaS provider Art. 21 obligations; Ransomware Art. 23 reporting workflow; ISO 27001 vs NIS2 gap analysis; DORA lex specialis interaction"
       },
       "install_framework": "NIS2 Directive (EU)",
-      "install_desc": "Essential/important entity scoping, Art. 21 technical measures, 24h/72h incident reporting"
+      "install_desc": "Essential/important entity scoping, Art. 21 technical measures, 24h/72h incident reporting",
+      "readme_download_html": "🇪🇺 NIS2 [EU] Directive"
     },
     {
       "num": 18,
@@ -431,7 +448,8 @@
         "readme_tested": "E-commerce threshold analysis; Combined right-to-know and delete workflow; Ad tech sale vs sharing classification; GDPR-to-CCPA gap analysis; SPI classification for mobile app"
       },
       "install_framework": "CCPA / CPRA",
-      "install_desc": "Consumer rights workflows, ADMT opt-out (regulations effective Jan 2026, deadline Jan 2027), cybersecurity audit/risk assessment obligations, 2026 enforcement precedents (Disney $2.75M, PlayOn $1.1M)"
+      "install_desc": "Consumer rights workflows, ADMT opt-out (regulations effective Jan 2026, deadline Jan 2027), cybersecurity audit/risk assessment obligations, 2026 enforcement precedents (Disney $2.75M, PlayOn $1.1M)",
+      "readme_download_html": "<img src=\"https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg\" alt=\"CA\" height=\"16\" style=\"vertical-align:middle;\"> CCPA/CPRA [California] Privacy"
     },
     {
       "num": 19,
@@ -455,7 +473,8 @@
         "readme_tested": "USML jurisdiction analysis for military laptops; Deemed export for German engineer; DSP-73 temporary export for trade show; Violation and VSD process; TAA mandatory clauses for India"
       },
       "install_framework": "ITAR (22 CFR 120–130)",
-      "install_desc": "USML classification, DSP-5/73/85 licence workflows, TAA/MLA drafting, deemed export, DDTC"
+      "install_desc": "USML classification, DSP-5/73/85 licence workflows, TAA/MLA drafting, deemed export, DDTC",
+      "readme_download_html": "<img src=\"assets/Logos/itar.jpg\" alt=\"ITAR\" height=\"20\" style=\"vertical-align:middle;object-fit:contain;\"> ITAR [US] — International Traffic in Arms Regulations"
     },
     {
       "num": 20,
@@ -479,7 +498,8 @@
         "readme_tested": "Extraterritorial scope for US SaaS with Brazilian customers; Brazil-EU mutual adequacy (Jan 2026 — no SCCs needed); Data deletion request across CRM/email/analytics; Sensitive health data marketing restrictions; International transfer mechanisms"
       },
       "install_framework": "Brazil LGPD",
-      "install_desc": "All 10 legal bases, Brazil-EU mutual adequacy (Jan 2026 — SCCs no longer needed for Brazil↔EU transfers), data subject rights, ANPD enforcement, breach notification"
+      "install_desc": "All 10 legal bases, Brazil-EU mutual adequacy (Jan 2026 — SCCs no longer needed for Brazil↔EU transfers), data subject rights, ANPD enforcement, breach notification",
+      "readme_download_html": "<img src=\"assets/Logos/lgpd-brazil.svg\" alt=\"Brazil\" height=\"20\" style=\"vertical-align:middle;object-fit:contain;\"> LGPD [Brazil] — General Data Protection Law"
     },
     {
       "num": 21,
@@ -503,7 +523,8 @@
         "readme_tested": "CSRD scope analysis for German listed manufacturer (PIE Wave 1); Double materiality vs GRI/TCFD; Post-DMA disclosure requirements for E1/S1/G1; GRI+TCFD to ESRS gap assessment; Non-EU company (US parent, €200M EU revenue) obligations"
       },
       "install_framework": "CSRD / ESRS",
-      "install_desc": "2026 Omnibus scoping (1,000+ employees & €450M), revised ESRS (Jul 2026), double materiality, GRI/TCFD gap analysis"
+      "install_desc": "2026 Omnibus scoping (1,000+ employees & €450M), revised ESRS (Jul 2026), double materiality, GRI/TCFD gap analysis",
+      "readme_download_html": "<img src=\"assets/Logos/csrd-eu.svg\" alt=\"EU\" height=\"20\" style=\"vertical-align:middle;object-fit:contain;\"> CSRD [EU] — Corporate Sustainability Reporting Directive"
     },
     {
       "num": 22,
@@ -527,7 +548,8 @@
         "readme_tested": "Implementation Group determination; Gap assessment for SaaS startup; MFA safeguard scoping (IG2); CIS v8 to NIST CSF 2.0 mapping; Vulnerability management programme with remediation SLAs"
       },
       "install_framework": "CIS Controls v8",
-      "install_desc": "IG selection, all 153 safeguards, gap assessment, SIEM/log design, cross-framework mapping"
+      "install_desc": "IG selection, all 153 safeguards, gap assessment, SIEM/log design, cross-framework mapping",
+      "readme_download_html": "🛡️ CIS Controls v8 — CIS Top 18 Cyber Hygiene"
     },
     {
       "num": 23,
@@ -551,7 +573,8 @@
         "readme_tested": "RF amplifier ECCN classification for Germany export; Deemed export for Chinese/Australian dual national on 5D002; Entity List re-export violation and VSD process; AES-256 software ENC exception for France/India/Brazil; ECP design for semiconductor equipment company"
       },
       "install_framework": "EAR (15 CFR 730–774)",
-      "install_desc": "ECCN classification, licence requirements, Entity List screening, licence exceptions"
+      "install_desc": "ECCN classification, licence requirements, Entity List screening, licence exceptions",
+      "readme_download_html": "📦 EAR [US] — Export Administration Regulations"
     },
     {
       "num": 24,
@@ -575,7 +598,8 @@
         "readme_tested": "FIPS 199 categorization for federal HR system; AC-2(3) OTS finding and POA&M documentation; MFA controls and EO 14028 phishing-resistant MFA; SSP narrative for SC-8(1) Transmission Confidentiality; ISO 27001 to FedRAMP gap analysis and RMF steps"
       },
       "install_framework": "NIST SP 800-53 Rev 5",
-      "install_desc": "All 20 control families, FIPS 199/200 categorisation, baseline selection, SSP narratives, RMF"
+      "install_desc": "All 20 control families, FIPS 199/200 categorisation, baseline selection, SSP narratives, RMF",
+      "readme_download_html": "🏛️ NIST SP 800-53 — Security and Privacy Controls for Federal Systems"
     },
     {
       "num": 25,
@@ -599,7 +623,8 @@
         "readme_tested": "CV screening high-risk + Annex III Area 4 + Digital Omnibus Dec 2027 deadline; Predictive policing Art. 5 prohibition; Open-source GPAI CoP + 3×10²⁴ FLOPs exception; MDR+AI Act interaction + Aug 2028 Annex I deadline; E-commerce chatbot Art. 50 disclosure"
       },
       "install_framework": "EU AI Act 2024/1689",
-      "install_desc": "Risk classification (9 prohibited practices, high-risk/limited/minimal), Digital Omnibus (Reg. (EU) 2026/1744, in force Jul 27 2026) extended deadlines (Annex III Dec 2027, Annex I Aug 2028), GPAI enforcement active Aug 2, 2026"
+      "install_desc": "Risk classification (9 prohibited practices, high-risk/limited/minimal), Digital Omnibus (Reg. (EU) 2026/1744, in force Jul 27 2026) extended deadlines (Annex III Dec 2027, Annex I Aug 2028), GPAI enforcement active Aug 2, 2026",
+      "readme_download_html": "🤖 EU AI Act — Regulation (EU) 2024/1689"
     },
     {
       "num": 26,
@@ -623,7 +648,8 @@
         "readme_tested": "VPAT 2.x ACR completion and testing methodology; Keyboard-only navigation failures and WCAG remediation; PDF forms accessibility remediation (200 PDFs); Federal procurement RFP requirements and VPAT evaluation; Undue burden exception process and alternative access obligations"
       },
       "install_framework": "Section 508 (US)",
-      "install_desc": "VPAT 2.x ACR completion, procurement language (FAR 52.239-2), AT testing, undue burden exceptions"
+      "install_desc": "VPAT 2.x ACR completion, procurement language (FAR 52.239-2), AT testing, undue burden exceptions",
+      "readme_download_html": "♿ Section 508 [US] — Federal ICT Accessibility"
     },
     {
       "num": 27,
@@ -647,7 +673,8 @@
         "readme_tested": "Colour contrast audit (SC 1.4.3) with replacement suggestions; WCAG 2.2 upgrade criteria from 2.1 AA; React modal ARIA code review with corrected implementation; Legal compliance mapping across US/EU/UK; Accessibility statement for e-commerce site"
       },
       "install_framework": "WCAG 2.0/2.1/2.2",
-      "install_desc": "POUR audit, SC-level gap analysis, ARIA patterns, screen reader testing, legal compliance mapping"
+      "install_desc": "POUR audit, SC-level gap analysis, ARIA patterns, screen reader testing, legal compliance mapping",
+      "readme_download_html": "♿ WCAG — Web Content Accessibility Guidelines"
     },
     {
       "num": 28,
@@ -671,7 +698,8 @@
         "readme_tested": "Restricted system C&A gap analysis; AWS Sydney offshore hosting obligations; Access Control Policy with NZISM control IDs; Ransomware supplier incident response; SaaS vendor due diligence and contractual requirements"
       },
       "install_framework": "NZISM (GCSB/NCSC NZ)",
-      "install_desc": "NZISM gap analysis, C&A for Restricted+ systems, NZ classification framework, SSP preparation"
+      "install_desc": "NZISM gap analysis, C&A for Restricted+ systems, NZ classification framework, SSP preparation",
+      "readme_download_html": "🇳🇿 NZISM [New Zealand] — Information Security Manual"
     },
     {
       "num": 29,
@@ -695,7 +723,8 @@
         "readme_tested": "Gap analysis for SaaS company with Vietnamese customers; Fintech breach notification 72-hour workflow; Micro-enterprise exemptions; Consent mechanism design; Consent withdrawal timeframes under Decree 356"
       },
       "install_framework": "Vietnam PDPL 2026",
-      "install_desc": "Gap analysis, cross-border transfer impact assessments, DPIAs, breach notification (72h)"
+      "install_desc": "Gap analysis, cross-border transfer impact assessments, DPIAs, breach notification (72h)",
+      "readme_download_html": "🇻🇳 Vietnam PDPL — Law on Personal Data Protection"
     },
     {
       "num": 30,
@@ -719,7 +748,8 @@
         "readme_tested": "PDE scope and classification (Default/Class I/Class II); Annex I gap assessment for consumer IoT router; Vulnerability and ENISA reporting timelines; SBOM programme design; Manufacturer vs importer/distributor obligations"
       },
       "install_framework": "EU CRA 2024/2847",
-      "install_desc": "PDE classification (Default/Class I/Class II), Annex I gap analysis, SBOM, 24/72h ENISA reporting"
+      "install_desc": "PDE classification (Default/Class I/Class II), Annex I gap analysis, SBOM, 24/72h ENISA reporting",
+      "readme_download_html": "🇪🇺 EU CRA — Cyber Resilience Act"
     },
     {
       "num": 31,
@@ -743,7 +773,8 @@
         "readme_tested": "Market-entry applicability routing; SAMA vs NCA stacking; cloud-for-government residency (CST/CCC); PDPL breach response; ISO 27001 to ECC-2:2024 mapping"
       },
       "install_framework": "Saudi Arabia (NCA/SDAIA/SAMA/CST)",
-      "install_desc": "Applicability routing, ECC-2:2024 & PDPL gap assessments, cloud residency, SAMA CSF, ISO/NIST/SOC 2 mapping"
+      "install_desc": "Applicability routing, ECC-2:2024 & PDPL gap assessments, cloud residency, SAMA CSF, ISO/NIST/SOC 2 mapping",
+      "readme_download_html": "🇸🇦 Saudi Arabia GRC — Country Compliance Advisor"
     },
     {
       "num": 32,
@@ -767,7 +798,8 @@
         "readme_tested": "DIFC routing + 2025 amendment; health-data localization vs US cloud; mainland PDPL status; ADGM breach clock; CBUAE cloud offshoring constraints"
       },
       "install_framework": "UAE (PDPL/DIFC/ADGM/CBUAE/Health)",
-      "install_desc": "Jurisdiction-first routing, zone DP laws, health-data localization, CBUAE cloud approvals, ISO/NIST/SOC 2 mapping"
+      "install_desc": "Jurisdiction-first routing, zone DP laws, health-data localization, CBUAE cloud approvals, ISO/NIST/SOC 2 mapping",
+      "readme_download_html": "🇦🇪 UAE GRC — Country Compliance Advisor"
     },
     {
       "num": 33,
@@ -791,7 +823,8 @@
         "readme_tested": "First-timer BMW Confidential label; ISO 27001 to TISAX delta; corrective action 9-month window; prototype labels and AL3; ISA2027 transition"
       },
       "install_framework": "TISAX (VDA ISA / ENX)",
-      "install_desc": "ISA 6 + ISA2027 transition, labels & AL1-AL3, maturity scoring with cutback, ENX process, ISO 27001 mapping"
+      "install_desc": "ISA 6 + ISA2027 transition, labels & AL1-AL3, maturity scoring with cutback, ENX process, ISO 27001 mapping",
+      "readme_download_html": "<img src=\"assets/Logos/TISAX.svg\" alt=\"TISAX\" height=\"20\" style=\"vertical-align:middle;object-fit:contain;\"> TISAX — Trusted Information Security Assessment Exchange"
     }
   ]
 }

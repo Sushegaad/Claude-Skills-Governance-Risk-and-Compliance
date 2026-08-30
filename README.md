@@ -99,6 +99,8 @@ These skills are designed for professionals who work on information security, pr
 
 ## The Skills
 
+<a id="-iso-27001"></a>
+
 ### 1. <img src="assets/Logos/iso27001.jpg" alt="ISO 27001" height="20" style="vertical-align:middle;object-fit:contain;"> ISO 27001
 
 **File:** `ISO 27001 - Claude Skill/iso27001.skill`
@@ -116,6 +118,8 @@ The ISO 27001 skill turns Claude into an expert ISO 27001 Lead Auditor and ISMS 
 **Trigger phrases:** `ISO 27001`, `ISMS`, `Annex A`, `Statement of Applicability`, `SoA`, `gap analysis`, `risk register`, `certification readiness`, `internal audit`
 
 ---
+
+<a id="-soc-2"></a>
 
 ### 2. <img src="assets/Logos/soc2.jpeg" alt="SOC 2" height="20" style="vertical-align:middle;object-fit:contain;"> SOC 2
 
@@ -135,6 +139,8 @@ The SOC 2 skill turns Claude into an expert SOC 2 compliance advisor grounded in
 
 ---
 
+<a id="-fedramp"></a>
+
 ### 3. <img src="assets/Logos/fedramp.svg" alt="FedRAMP" height="20" style="vertical-align:middle;object-fit:contain;"> FedRAMP [US]
 
 **File:** `FedRamp - Claude Skill/fedramp.skill`
@@ -153,6 +159,8 @@ The FedRAMP skill turns Claude into a knowledgeable FedRAMP advisor covering the
 
 ---
 
+<a id="-gdpr"></a>
+
 ### 4. 🇪🇺 GDPR [EU]
 
 **File:** `GDPR - Claude Skill/gdpr-compliance.skill`
@@ -170,6 +178,8 @@ The GDPR skill turns Claude into an expert GDPR compliance assistant that bridge
 
 ---
 
+<a id="-hipaa"></a>
+
 ### 5. <img src="assets/Logos/hipaa.png" alt="HIPAA" height="20" style="vertical-align:middle;object-fit:contain;"> HIPAA [US]
 
 **File:** `HIPAA - Claude Skill/hipaa-compliance.skill`
@@ -186,6 +196,8 @@ The HIPAA skill turns Claude into a knowledgeable HIPAA compliance advisor cover
 **Trigger phrases:** `HIPAA`, `PHI`, `ePHI`, `covered entity`, `business associate`, `BAA`, `NPP`, `breach notification`, `minimum necessary`, `Privacy Rule`, `Security Rule`
 
 ---
+
+<a id="-nist-csf"></a>
 
 ### 6. <img src="assets/Logos/nist-csf.jpeg" alt="NIST CSF" height="20" style="vertical-align:middle;object-fit:contain;"> NIST CSF
 
@@ -206,6 +218,8 @@ The NIST CSF skill turns Claude into an expert NIST Cybersecurity Framework advi
 
 ---
 
+<a id="-pci-dss"></a>
+
 ### 7. <img src="assets/Logos/pci-dss.png" alt="PCI DSS" height="20" style="vertical-align:middle;object-fit:contain;"> PCI DSS
 
 **File:** `PCI Compliance - Claude Skill/PCI-Compliance.skill`
@@ -224,6 +238,8 @@ The PCI DSS skill turns Claude into an expert PCI DSS compliance advisor coverin
 **Trigger phrases:** `PCI DSS`, `PCI compliance`, `cardholder data`, `CDE`, `SAQ`, `ROC`, `QSA`, `ASV scan`, `PAN`, `tokenisation`, `P2PE`, `merchant level`, `payment page`, `Req 8.4.2`, `Req 6.4.3`
 
 ---
+
+<a id="-tsa-cybersecurity"></a>
 
 ### 8. 🚨 TSA Cybersecurity [US]
 
@@ -246,6 +262,8 @@ The TSA Cybersecurity skill turns Claude into an expert TSA cybersecurity direct
 
 ---
 
+<a id="-iso-42001-ai-management-system"></a>
+
 ### 9. <img src="assets/Logos/iso42001.webp" alt="ISO 42001" height="20" style="vertical-align:middle;object-fit:contain;"> ISO 42001 AI Management System
 
 **File:** `ISO 42001 - Claude Skill/ISO-42001.skill`
@@ -266,6 +284,8 @@ The ISO 42001 skill turns Claude into an expert **ISO/IEC 42001:2023** AI Manage
 
 ---
 
+<a id="-iso-27701-privacy-information-management"></a>
+
 ### 10. <img src="assets/Logos/iso27701.png" alt="ISO 27701" height="20" style="vertical-align:middle;object-fit:contain;"> ISO 27701 Privacy Information Management
 
 **File:** `ISO 27701 - Claude Skill/iso27701.skill`
@@ -284,6 +304,8 @@ The ISO 27701 skill turns Claude into an expert **ISO/IEC 27701:2025** Privacy I
 **Trigger phrases:** `ISO 27701`, `PIMS`, `privacy information management`, `PII controller`, `PII processor`, `privacy risk assessment`, `DPIA`, `data subject rights`, `records of processing activities`, `RoPA`, `privacy by design`, `data processing agreement`, `DPA`, `GDPR alignment ISO 27701`, `ISO 27701:2025`, `ISO 27701:2019`, `27701 transition`, `standalone PIMS`, `Annex A controller controls`, `Annex A processor controls`
 
 ---
+
+<a id="-dora-digital-operational-resilience"></a>
 
 ### 11. <img src="assets/Logos/dora.png" alt="DORA" height="20" style="vertical-align:middle;object-fit:contain;"> DORA [EU] — Digital Operational Resilience
 
@@ -307,6 +329,8 @@ The DORA skill turns Claude into an expert advisor on **Regulation (EU) 2022/255
 
 ---
 
+<a id="-dpdpa-india-digital-personal-data-protection"></a>
+
 ### 12. 🇮🇳 DPDPA [India] — Digital Personal Data Protection Act
 
 **File:** `DPDPA - Claude Skill/dpdpa.skill`
@@ -329,6 +353,8 @@ The DPDPA skill turns Claude into an expert advisor on India's **Digital Persona
 
 ---
 
+<a id="-cmmc-20-cybersecurity-maturity-model-certification"></a>
+
 ### 13. <img src="assets/Logos/cmmc.png" alt="CMMC" height="20" style="vertical-align:middle;object-fit:contain;"> CMMC 2.0 [US] — Cybersecurity Maturity Model Certification
 
 **File:** `CMMC - Claude Skill/cmmc.skill`
@@ -349,6 +375,8 @@ The CMMC 2.0 skill turns Claude into an expert CMMC compliance advisor for US de
 
 ---
 
+<a id="-nist-ai-risk-management-framework"></a>
+
 ### 14. 🤖 NIST AI Risk Management Framework
 
 **File:** `NIST AI RMF - Claude Skill/nist-ai-rmf.skill`
@@ -367,6 +395,8 @@ The NIST AI RMF skill turns Claude into an expert advisor on the **NIST AI Risk 
 **Trigger phrases:** `NIST AI RMF`, `AI RMF`, `NIST AI 100-1`, `AI Risk Management Framework`, `GOVERN function`, `MAP function`, `MEASURE function`, `MANAGE function`, `AI RMF Playbook`, `AI risk profile`, `AI trustworthiness`, `AI bias assessment`, `AI explainability`, `MEASURE 2.2`, `AI risk register`, `AI organizational profile`, `responsible AI framework`, `AI governance framework`, `AI incident response`, `AI RMF gap assessment`
 
 ---
+
+<a id="-swift-customer-security-programme-csp"></a>
 
 ### 15. 🏦 SWIFT Customer Security Programme (CSP)
 
@@ -388,6 +418,8 @@ The SWIFT CSP skill turns Claude into an expert advisor on the **SWIFT Customer 
 
 ---
 
+<a id="-australian-information-security-manual-ism"></a>
+
 ### 16. 🇦🇺 ISM [Australia] — Australian Information Security Manual
 
 **File:** `ISM - Claude Skill/ism.skill`
@@ -407,6 +439,8 @@ The ISM skill turns Claude into an expert advisor on the **Australian Informatio
 **Trigger phrases:** `ISM`, `Information Security Manual`, `ASD cybersecurity`, `IRAP assessment`, `IRAP assessor`, `system authorisation`, `ATO Australia`, `PROTECTED system`, `OFFICIAL Sensitive`, `NC OS PROTECTED`, `Essential Eight`, `ASD compliance`, `Australian government cybersecurity`, `ISM controls`, `ISM gap analysis`, `ISM chapter`, `ISM hardening`, `ISM OSCAL`, `cyber.gov.au`, `ASD IRAP`
 
 ---
+
+<a id="-eu-nis2-directive"></a>
 
 ### 17. 🇪🇺 NIS2 [EU] Directive
 
@@ -428,6 +462,8 @@ The NIS2 skill turns Claude into an expert advisor on the **EU NIS2 Directive (D
 
 ---
 
+<a id="-ccpacpra-california-privacy"></a>
+
 ### 18. <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg" alt="CA" height="16" style="vertical-align:middle;"> CCPA/CPRA [California] Privacy
 
 **File:** `CCPA - Claude Skill/ccpa.skill`
@@ -447,6 +483,8 @@ The CCPA/CPRA skill turns Claude into an expert advisor on **California's compre
 
 ---
 
+<a id="-itar--international-traffic-in-arms-regulations"></a>
+
 ### 19. <img src="assets/Logos/itar.jpg" alt="ITAR" height="20" style="vertical-align:middle;object-fit:contain;"> ITAR [US] — International Traffic in Arms Regulations
 
 **File:** `ITAR - Claude Skill/itar.skill`
@@ -465,6 +503,8 @@ The ITAR skill turns Claude into an expert advisor on **US defense export contro
 **Trigger phrases:** `ITAR`, `International Traffic in Arms Regulations`, `USML`, `United States Munitions List`, `DDTC`, `defense export`, `deemed export`, `TAA`, `technical assistance agreement`, `MLA`, `manufacturing license agreement`, `DSP-5`, `DSP-73`, `ITAR registration`, `ITAR violation`, `voluntary disclosure ITAR`, `ITAR vs EAR`, `commodity jurisdiction`, `defense article`, `defense service`, `ITAR compliance`, `technology control plan`, `Empowered Official`
 
 ---
+
+<a id="-lgpd--brazils-general-data-protection-law"></a>
 
 ### 20. <img src="assets/Logos/lgpd-brazil.svg" alt="Brazil" height="20" style="vertical-align:middle;object-fit:contain;"> LGPD [Brazil] — General Data Protection Law
 
@@ -486,6 +526,8 @@ The LGPD skill turns Claude into an expert advisor on **Brazil's Lei Geral de Pr
 **Trigger phrases:** `LGPD`, `Brazil data protection`, `Lei Geral de Proteção de Dados`, `ANPD`, `Brazilian privacy law`, `LGPD compliance`, `LGPD gap assessment`, `Encarregado`, `RIPD`, `LGPD legal basis`, `LGPD data subject rights`, `Brazil data breach`, `ANPD notification`, `LGPD vs GDPR`, `Brazil personal data`, `LGPD penalty`, `Brazil privacy policy`
 
 ---
+
+<a id="-csrd--eu-corporate-sustainability-reporting-directive"></a>
 
 ### 21. <img src="assets/Logos/csrd-eu.svg" alt="EU" height="20" style="vertical-align:middle;object-fit:contain;"> CSRD [EU] — Corporate Sustainability Reporting Directive
 
@@ -509,6 +551,8 @@ The CSRD skill turns Claude into an expert advisor on **EU Directive 2022/2464 (
 
 ---
 
+<a id="-cis-controls-v8--cis-top-18-cyber-hygiene"></a>
+
 ### 22. 🛡️ CIS Controls v8 — CIS Top 18 Cyber Hygiene
 
 **File:** `CIS Controls - Claude Skill/cis-controls.skill`
@@ -528,6 +572,8 @@ The CIS Controls v8 skill turns Claude into an expert CIS Controls advisor cover
 **Trigger phrases:** `CIS Controls`, `CIS Top 18`, `CIS v8`, `CIS Controls v8`, `Implementation Group`, `IG1`, `IG2`, `IG3`, `CIS safeguards`, `cyber hygiene controls`, `CIS gap assessment`, `CIS Controls NIST mapping`, `CIS Benchmarks`, `CIS CSAT`, `asset inventory CIS`, `vulnerability management CIS`, `CIS Controls ISO 27001`, `CIS Controls SOC 2`, `CIS Controls PCI DSS`, `CIS Controls CMMC`, `CIS Controls NIST CSF`
 
 ---
+
+<a id="-ear--export-administration-regulations"></a>
 
 ### 23. 📦 EAR — Export Administration Regulations
 
@@ -549,6 +595,8 @@ The EAR skill turns Claude into an expert Export Administration Regulations advi
 
 ---
 
+<a id="-nist-sp-800-53--security-and-privacy-controls-for-federal-systems"></a>
+
 ### 24. 🏛️ NIST SP 800-53 — Security and Privacy Controls for Federal Systems
 
 **File:** `NIST 800-53 - Claude Skill/nist-800-53.skill`
@@ -568,6 +616,8 @@ The NIST SP 800-53 skill turns Claude into an expert federal security and privac
 **Trigger phrases:** `NIST SP 800-53`, `SP 800-53`, `NIST 800-53`, `federal security controls`, `RMF`, `Risk Management Framework`, `FISMA`, `ATO`, `Authority to Operate`, `FIPS 199`, `FIPS 200`, `FIPS 140`, `SP 800-53B`, `control baseline`, `Low baseline`, `Moderate baseline`, `High baseline`, `SSP narrative`, `System Security Plan`, `POA&M`, `Plan of Action`, `ConMon`, `continuous monitoring`, `SP 800-53A`, `security assessment`, `ODV`, `organization-defined value`, `control tailoring`, `common controls`, `inherited controls`, `AC-2`, `IA-2`, `SC-8`, `SI-2`, `SR family`, `PT family`, `supply chain risk`, `OSCAL`, `3PAO`, `FedRAMP controls`, `ISSO`, `system owner`, `authorizing official`
 
 ---
+
+<a id="-eu-ai-act--regulation-eu-20241689"></a>
 
 ### 25. 🤖 EU AI Act — Regulation (EU) 2024/1689
 
@@ -591,6 +641,8 @@ The EU AI Act skill turns Claude into an expert EU AI Act compliance advisor cov
 
 ---
 
+<a id="-section-508--us-federal-ict-accessibility"></a>
+
 ### 26. ♿ Section 508 — US Federal ICT Accessibility
 
 **File:** `Section 508 - Claude Skill/section-508.skill`
@@ -607,6 +659,8 @@ The Section 508 skill turns Claude into an expert **US federal ICT accessibility
 
 **Trigger phrases:** `Section 508`, `508 compliance`, `WCAG federal`, `VPAT`, `ACR accessibility`, `accessibility conformance report`, `ICT accessibility`, `federal accessibility`, `POUR principles`, `web accessibility 508`, `keyboard accessibility audit`, `screen reader testing`, `PDF accessibility`, `accessible federal website`, `undue burden 508`, `assistive technology testing`, `FAR 52.239-2`, `508 procurement`, `JAWS testing`, `VoiceOver compliance`, `axe accessibility`, `colour contrast 508`, `focus visible 508`, `alt text federal`
 
+<a id="-wcag--web-content-accessibility-guidelines"></a>
+
 ### 27. ♿ WCAG — Web Content Accessibility Guidelines
 
 **File:** `WCAG - Claude Skill/wcag.skill`
@@ -621,6 +675,8 @@ The WCAG skill turns Claude into an expert advisor on **WCAG 2.0, 2.1, and 2.2**
 - **Legal framework mapping** — maps WCAG to EN 301 549, EU EAA (June 2025), EU Web Accessibility Directive, US Section 508, ADA Title III, UK PSBAR 2018, UK Equality Act, AODA, and Australia DDA with jurisdiction-specific version requirements
 
 **Trigger phrases:** `WCAG`, `WCAG 2.1`, `WCAG 2.2`, `web accessibility`, `POUR principles`, `accessibility audit`, `colour contrast`, `screen reader`, `keyboard accessibility`, `ARIA`, `focus visible`, `reflow`, `accessibility statement`, `EN 301 549`, `European Accessibility Act`, `WCAG conformance`, `success criteria`, `alt text`, `captions accessibility`, `SC 1.4.3`, `SC 4.1.2`, `NVDA`, `VoiceOver`, `JAWS screen reader`, `WCAG 2.2 upgrade`
+
+<a id="-nzism--new-zealand-information-security-manual"></a>
 
 ### 28. 🇳🇿 NZISM — New Zealand Information Security Manual
 
@@ -642,6 +698,8 @@ The NZISM skill turns Claude into an expert advisor on the **New Zealand Informa
 
 ---
 
+<a id="-vietnam-pdpl--law-on-personal-data-protection"></a>
+
 ### 29. 🇻🇳 Vietnam PDPL — Law on Personal Data Protection
 
 **File:** `Vietnam PDPL - Claude Skill/vn-pdpl.skill`
@@ -661,6 +719,8 @@ The Vietnam PDPL skill turns Claude into an expert advisor on **Vietnam's Law on
 
 ---
 
+<a id="-eu-cra--cyber-resilience-act"></a>
+
 ### 30. 🇪🇺 EU CRA — Cyber Resilience Act
 
 **File:** `EU CRA - Claude Skill/eu-cra.skill`
@@ -679,6 +739,8 @@ The EU CRA skill turns Claude into an expert advisor on **Regulation (EU) 2024/2
 
 ---
 
+<a id="-saudi-arabia-grc--country-compliance-advisor"></a>
+
 ### 31. 🇸🇦 Saudi Arabia GRC — Country Compliance Advisor
 
 **File:** `Saudi Arabia GRC - Claude Skill/saudi-arabia-grc.skill`
@@ -695,6 +757,8 @@ The Saudi Arabia GRC skill turns Claude into a **country-level compliance router
 
 ---
 
+<a id="-uae-grc--country-compliance-advisor"></a>
+
 ### 32. 🇦🇪 UAE GRC — Country Compliance Advisor
 
 **File:** `UAE GRC - Claude Skill/uae-grc.skill`
@@ -710,6 +774,8 @@ The UAE GRC skill turns Claude into a **jurisdiction-first compliance router**: 
 **Trigger phrases:** `UAE compliance`, `DIFC data protection`, `ADGM data protection`, `UAE PDPL`, `CBUAE outsourcing`, `UAE health data residency`, `Dubai ISR`, `ADHICS`, `expanding to the UAE`
 
 ---
+
+<a id="-tisax--trusted-information-security-assessment-exchange"></a>
 
 ### 33. <img src="assets/Logos/TISAX.svg" alt="TISAX" height="20" style="vertical-align:middle;object-fit:contain;"> TISAX — Trusted Information Security Assessment Exchange
 
@@ -905,6 +971,15 @@ The TISAX skill turns Claude into an expert advisor on the **automotive industry
 | Building a CRA-compliant vulnerability disclosure programme with coordinated disclosure, 24h/72h ENISA reporting, and CSIRT notification | EU CRA |
 | Preparing technical documentation per Annex VII for a Class I product mandatory Notified Body conformity assessment | EU CRA |
 | Implementing an SBOM programme in SPDX or CycloneDX format meeting EU CRA minimum content requirements and CI/CD integration | EU CRA |
+| Determining which Saudi frameworks apply when expanding into the Kingdom — NCA ECC, PDPL, SAMA CSF, CST | Saudi Arabia GRC |
+| Running an NCA ECC-2:2024 gap assessment for a supplier to Saudi government entities | Saudi Arabia GRC |
+| Advising on Saudi PDPL cross-border transfer rules and SAMA CSF obligations for a fintech entering KSA | Saudi Arabia GRC |
+| Routing UAE compliance across federal PDPL, DIFC, and ADGM for a free-zone financial services firm | UAE GRC |
+| Building a CBUAE-compliant outsourcing and data-residency plan for a UAE bank | UAE GRC |
+| Handling a breach affecting both DIFC and mainland UAE customers — which regulators, which deadlines | UAE GRC |
+| Preparing an automotive supplier for a first TISAX AL2 assessment (Confidential label) | TISAX |
+| Mapping an existing ISO 27001 ISMS to VDA ISA 6 and closing automotive-specific gaps | TISAX |
+| Deciding whether to order a TISAX assessment on ISA 6 in 2026 or ISA2027 from January 2027 | TISAX |
 
 ---
 
@@ -912,6 +987,7 @@ The TISAX skill turns Claude into an expert advisor on the **automotive industry
 
 1. Download the `.skill` file for the framework you need:
 
+<!-- GEN:readme-download-table -->
    | Framework | Download |
    |-----------|----------|
    | <img src="assets/Logos/iso27001.jpg" alt="ISO 27001" height="20" style="vertical-align:middle;object-fit:contain;"> ISO 27001 | [iso27001.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2027001%20-%20Claude%20Skill/iso27001.skill) |
@@ -944,6 +1020,10 @@ The TISAX skill turns Claude into an expert advisor on the **automotive industry
    | 🇳🇿 NZISM [New Zealand] — Information Security Manual | [nzism.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NZISM%20-%20Claude%20Skill/nzism.skill) |
    | 🇻🇳 Vietnam PDPL — Law on Personal Data Protection | [vn-pdpl.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Vietnam%20PDPL%20-%20Claude%20Skill/vn-pdpl.skill) |
    | 🇪🇺 EU CRA — Cyber Resilience Act | [eu-cra.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EU%20CRA%20-%20Claude%20Skill/eu-cra.skill) |
+   | 🇸🇦 Saudi Arabia GRC — Country Compliance Advisor | [saudi-arabia-grc.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Saudi%20Arabia%20GRC%20-%20Claude%20Skill/saudi-arabia-grc.skill) |
+   | 🇦🇪 UAE GRC — Country Compliance Advisor | [uae-grc.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/UAE%20GRC%20-%20Claude%20Skill/uae-grc.skill) |
+   | <img src="assets/Logos/TISAX.svg" alt="TISAX" height="20" style="vertical-align:middle;object-fit:contain;"> TISAX — Trusted Information Security Assessment Exchange | [tisax.skill](https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TISAX%20-%20Claude%20Skill/tisax.skill) |
+<!-- /GEN:readme-download-table -->
 
 2. Open Claude and navigate to **Customize → Skills**.
 3. Click **Upload Skill** and select the `.skill` file.
@@ -961,10 +1041,12 @@ If you use Claude Code — the AI-powered CLI for developers — these skills ar
 
 Add the marketplace and install the skills you need directly from the terminal:
 
+<!-- GEN:readme-install-all -->
 ```shell
 /plugin marketplace add Sushegaad/Claude-Skills-Governance-Risk-and-Compliance
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills nist-csf@grc-skills pci-compliance@grc-skills tsa-compliance@grc-skills iso42001@grc-skills iso27701@grc-skills dora@grc-skills dpdpa@grc-skills cmmc@grc-skills nist-ai-rmf@grc-skills swift-csp@grc-skills ism@grc-skills nis2@grc-skills ccpa@grc-skills itar@grc-skills lgpd@grc-skills csrd@grc-skills cis-controls@grc-skills ear@grc-skills nist-800-53@grc-skills eu-ai-act@grc-skills section-508@grc-skills wcag@grc-skills nzism@grc-skills vn-pdpl@grc-skills eu-cra@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills nist-csf@grc-skills cmmc@grc-skills swift-csp@grc-skills ism@grc-skills cis-controls@grc-skills nist-800-53@grc-skills nzism@grc-skills tisax@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills pci-compliance@grc-skills iso27701@grc-skills dpdpa@grc-skills ccpa@grc-skills lgpd@grc-skills vn-pdpl@grc-skills tsa-compliance@grc-skills dora@grc-skills nis2@grc-skills eu-cra@grc-skills iso42001@grc-skills nist-ai-rmf@grc-skills eu-ai-act@grc-skills itar@grc-skills csrd@grc-skills ear@grc-skills section-508@grc-skills wcag@grc-skills saudi-arabia-grc@grc-skills uae-grc@grc-skills
 ```
+<!-- /GEN:readme-install-all -->
 
 Teams can pre-wire the marketplace in `.claude/settings.json` so every developer gets the skills automatically when they open the project — no manual install required.
 
@@ -984,9 +1066,9 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 
 ### Per-Skill Results
 
+<!-- GEN:readme-eval-table -->
 | Skill | Test Cases | With Skill | Baseline | Delta | What Was Tested |
 |-------|-----------|-----------|---------|-------|-----------------|
-<!-- GEN:readme-eval-table -->
 | ISO 27001 | 5 | **100%** | 84% | +16% | Gap assessment; Policy drafting; 2013→2022 transition; Risk assessment; Management review CAP |
 | SOC 2 | 5 | **100%** | 84% | +16% | Type 1 vs 2; CC controls checklist; Availability criteria; Access control policy; Audit exception response |
 | FedRAMP [US] | 5 | **96%** | 72% | +24% | Authorization pathways; CR26 Certification Classes A-D; FedRAMP 20x (primary pathway); OSCAL mandate Sep 2026; POA&M remediation timelines |
