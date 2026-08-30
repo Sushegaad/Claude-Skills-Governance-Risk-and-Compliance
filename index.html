@@ -474,6 +474,72 @@ layout: null
       .skills-category-grid { grid-template-columns: 1fr 1fr; }
     }
 
+
+    /* ── SKILL SEARCH & FILTER ── */
+    .skill-filter {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1rem 1.1rem 0.9rem;
+      margin: 1.2rem 0 1.5rem;
+    }
+    .sf-search-row { display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+    #sf-search {
+      flex: 1 1 260px;
+      font: inherit;
+      font-size: 0.95rem;
+      padding: 0.55rem 0.9rem;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      background: #fafcfe;
+    }
+    #sf-search:focus { outline: none; border-color: #4fa3f7; background: #fff; box-shadow: 0 0 0 3px rgba(79,163,247,0.15); }
+    .sf-count { font-size: 0.82rem; color: #5b7591; white-space: nowrap; }
+    .sf-clear {
+      font: inherit; font-size: 0.8rem; font-weight: 600;
+      color: #10365e; background: none; border: none; cursor: pointer;
+      text-decoration: underline; padding: 0.2rem 0.3rem;
+    }
+    .sf-row { display: flex; align-items: baseline; gap: 0.7rem; margin-bottom: 0.55rem; }
+    .sf-label {
+      flex: 0 0 4.6rem;
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.07em; color: rgba(16,54,94,0.55);
+    }
+    .sf-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .sf-pill {
+      font: inherit; font-size: 0.8rem;
+      padding: 0.28rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: #fff; color: #2c4a68;
+      cursor: pointer;
+      transition: background 0.12s, color 0.12s, border-color 0.12s;
+    }
+    .sf-pill:hover { border-color: #4fa3f7; color: #10365e; }
+    .sf-pill[aria-pressed="true"] { background: #10365e; border-color: #10365e; color: #fff; }
+    .sf-pill:focus-visible, .sf-clear:focus-visible, #sf-search:focus-visible { outline: 2px solid #10365e; outline-offset: 2px; }
+    .sf-domains { margin-top: 0.15rem; }
+    .sf-domains summary {
+      font-size: 0.78rem; font-weight: 600; color: #2c4a68;
+      cursor: pointer; user-select: none; padding: 0.15rem 0; list-style-position: inside;
+    }
+    .sf-domains[open] summary { margin-bottom: 0.5rem; }
+    .sf-empty {
+      text-align: center; padding: 2.2rem 1rem; color: #5b7591;
+      border: 1px dashed var(--border); border-radius: var(--radius); margin-bottom: 1.5rem;
+    }
+    .sf-empty button { font: inherit; font-weight: 600; color: #10365e; background: none; border: none; cursor: pointer; text-decoration: underline; }
+    .sc-hidden { display: none !important; }
+    .logo-md { height: 1.25em; width: auto; vertical-align: middle; object-fit: contain; }
+    .logo-sm { height: 1.1em; width: auto; vertical-align: middle; object-fit: contain; }
+    @media (max-width: 600px) {
+      .sf-row { flex-direction: column; gap: 0.25rem; }
+      .sf-label { flex: none; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+
     /* ── FEEDBACK FORM ── */
     .form-card {
       background: var(--white);
@@ -835,11 +901,11 @@ layout: null
 <div class="skill-cat-label">Privacy &amp; Data Protection</div>
 <div class="skill-cat-chips">
 <span>🇪🇺 GDPR [EU]</span>
-<span><img alt="HIPAA" src="assets/Logos/hipaa.png" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> HIPAA [US]</span>
-<span><img alt="ISO 27701" src="assets/Logos/iso27701.png" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> ISO 27701</span>
+<span><img alt="HIPAA" src="assets/Logos/hipaa.png" class="logo-sm"/> HIPAA [US]</span>
+<span><img alt="ISO 27701" src="assets/Logos/iso27701.png" class="logo-sm"/> ISO 27701</span>
 <span>🇮🇳 DPDPA [India]</span>
 <span><img alt="CA" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg" style="height:0.95em;width:auto;vertical-align:middle;border-radius:1px;"/> CCPA/CPRA [CA]</span>
-<span><img alt="Brazil" src="assets/Logos/lgpd-brazil.svg" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> LGPD [Brazil]</span>
+<span><img alt="Brazil" src="assets/Logos/lgpd-brazil.svg" class="logo-sm"/> LGPD [Brazil]</span>
 <span>🇻🇳 VN-PDPL [Vietnam]</span>
 </div>
 </div>
@@ -847,24 +913,24 @@ layout: null
 <div class="skill-cat">
 <div class="skill-cat-label">Information Security</div>
 <div class="skill-cat-chips">
-<span><img alt="ISO 27001" src="assets/Logos/iso27001.jpg" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> ISO 27001</span>
-<span><img alt="SOC 2" src="assets/Logos/soc2.jpeg" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> SOC 2</span>
-<span><img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> NIST CSF</span>
+<span><img alt="ISO 27001" src="assets/Logos/iso27001.jpg" class="logo-sm"/> ISO 27001</span>
+<span><img alt="SOC 2" src="assets/Logos/soc2.jpeg" class="logo-sm"/> SOC 2</span>
+<span><img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" class="logo-sm"/> NIST CSF</span>
 <span>🇦🇺 ISM [Australia]</span>
 <span>🇳🇿 NZISM [New Zealand]</span>
-<span><img alt="CIS" src="assets/Logos/CIS logo.png" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> CIS Controls v8</span>
-<span><img alt="TISAX" src="assets/Logos/TISAX.svg" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> TISAX</span>
+<span><img alt="CIS" src="assets/Logos/CIS logo.png" class="logo-sm"/> CIS Controls v8</span>
+<span><img alt="TISAX" src="assets/Logos/TISAX.svg" class="logo-sm"/> TISAX</span>
 </div>
 </div>
 <!-- Cybersecurity Regulation -->
 <div class="skill-cat">
 <div class="skill-cat-label">Cybersecurity Regulation</div>
 <div class="skill-cat-chips">
-<span><img alt="FedRAMP" src="assets/Logos/fedramp.svg" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> FedRAMP [US]</span>
-<span><img alt="CMMC" src="assets/Logos/cmmc.png" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> CMMC 2.0 [US]</span>
+<span><img alt="FedRAMP" src="assets/Logos/fedramp.svg" class="logo-sm"/> FedRAMP [US]</span>
+<span><img alt="CMMC" src="assets/Logos/cmmc.png" class="logo-sm"/> CMMC 2.0 [US]</span>
 <span>🇪🇺 NIS2 [EU]</span>
 <span>🚨 TSA [US]</span>
-<span><img alt="NIST SP 800-53" src="assets/Logos/NIST SP 800-53 logo.webp" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> NIST SP 800-53 [US]</span>
+<span><img alt="NIST SP 800-53" src="assets/Logos/NIST SP 800-53 logo.webp" class="logo-sm"/> NIST SP 800-53 [US]</span>
 <span>🇪🇺 EU CRA [EU]</span>
 </div>
 </div>
@@ -880,26 +946,26 @@ layout: null
 <div class="skill-cat">
 <div class="skill-cat-label">Financial Services</div>
 <div class="skill-cat-chips">
-<span><img alt="PCI DSS" src="assets/Logos/pci-dss.png" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> PCI DSS</span>
-<span><img alt="DORA" src="assets/Logos/dora.png" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> DORA [EU]</span>
-<span><img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> SWIFT CSP</span>
+<span><img alt="PCI DSS" src="assets/Logos/pci-dss.png" class="logo-sm"/> PCI DSS</span>
+<span><img alt="DORA" src="assets/Logos/dora.png" class="logo-sm"/> DORA [EU]</span>
+<span><img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" class="logo-sm"/> SWIFT CSP</span>
 </div>
 </div>
 <!-- AI & Governance -->
 <div class="skill-cat">
 <div class="skill-cat-label">AI &amp; Governance</div>
 <div class="skill-cat-chips">
-<span><img alt="ISO 42001" src="assets/Logos/iso42001.webp" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> ISO 42001</span>
-<span><img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> NIST AI RMF</span>
-<span><img alt="EU AI Act" src="assets/Logos/Euro AI act logo.jpg" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> EU AI Act [EU]</span>
+<span><img alt="ISO 42001" src="assets/Logos/iso42001.webp" class="logo-sm"/> ISO 42001</span>
+<span><img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" class="logo-sm"/> NIST AI RMF</span>
+<span><img alt="EU AI Act" src="assets/Logos/Euro AI act logo.jpg" class="logo-sm"/> EU AI Act [EU]</span>
 </div>
 </div>
 <!-- Export & Defense -->
 <div class="skill-cat">
 <div class="skill-cat-label">Export &amp; Defense</div>
 <div class="skill-cat-chips">
-<span><img alt="ITAR" src="assets/Logos/itar.jpg" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> ITAR [US]</span>
-<span><img alt="EAR" src="assets/Logos/EAR logo.webp" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> EAR [US]</span>
+<span><img alt="ITAR" src="assets/Logos/itar.jpg" class="logo-sm"/> ITAR [US]</span>
+<span><img alt="EAR" src="assets/Logos/EAR logo.webp" class="logo-sm"/> EAR [US]</span>
 </div>
 </div>
 <!-- Country GRC -->
@@ -914,7 +980,7 @@ layout: null
 <div class="skill-cat">
 <div class="skill-cat-label">ESG &amp; Sustainability</div>
 <div class="skill-cat-chips">
-<span><img alt="EU" src="assets/Logos/csrd-eu.svg" style="height:1.1em;width:auto;vertical-align:middle;object-fit:contain;"/> CSRD [EU]</span>
+<span><img alt="EU" src="assets/Logos/csrd-eu.svg" class="logo-sm"/> CSRD [EU]</span>
 </div>
 </div>
 </div>
@@ -1026,8 +1092,20 @@ layout: null
 </div>
 <hr/>
 <h2 id="section-skills">The Skills</h2>
-<div class="skill-card">
-<h3>1. <img alt="ISO 27001" src="assets/Logos/iso27001.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> ISO 27001</h3>
+<div class="skill-filter" id="skill-filter" hidden>
+<div class="sf-search-row">
+<input aria-label="Search skills" id="sf-search" placeholder="Search 33 skills — name, topic, or trigger phrase…" type="search"/>
+<span aria-live="polite" class="sf-count" id="sf-count" role="status">Showing all 33 skills</span>
+<button class="sf-clear" id="sf-clear" hidden="" type="button">Clear all ✕</button>
+</div>
+<div class="sf-row"><span class="sf-label" id="sf-lbl-region">Region</span><div aria-labelledby="sf-lbl-region" class="sf-pills" role="group"><button type="button" class="sf-pill" data-group="region" data-value="us" aria-pressed="false">US</button><button type="button" class="sf-pill" data-group="region" data-value="eu" aria-pressed="false">EU</button><button type="button" class="sf-pill" data-group="region" data-value="apac" aria-pressed="false">APAC</button><button type="button" class="sf-pill" data-group="region" data-value="middle-east" aria-pressed="false">Middle East</button><button type="button" class="sf-pill" data-group="region" data-value="latam" aria-pressed="false">LatAm</button><button type="button" class="sf-pill" data-group="region" data-value="global" aria-pressed="false">Global</button></div></div>
+<div class="sf-row"><span class="sf-label" id="sf-lbl-cat">Category</span><div aria-labelledby="sf-lbl-cat" class="sf-pills" role="group"><button type="button" class="sf-pill" data-group="cat" data-value="privacy" aria-pressed="false">Privacy & Data Protection</button><button type="button" class="sf-pill" data-group="cat" data-value="infosec" aria-pressed="false">Information Security</button><button type="button" class="sf-pill" data-group="cat" data-value="cyber-reg" aria-pressed="false">Cyber & Resilience Regulation</button><button type="button" class="sf-pill" data-group="cat" data-value="ai-gov" aria-pressed="false">AI Governance</button><button type="button" class="sf-pill" data-group="cat" data-value="export-sustain" aria-pressed="false">Export & Sustainability</button><button type="button" class="sf-pill" data-group="cat" data-value="accessibility" aria-pressed="false">Accessibility</button><button type="button" class="sf-pill" data-group="cat" data-value="country-grc" aria-pressed="false">Country GRC</button></div></div>
+<details class="sf-domains"><summary>Control domains</summary><div class="sf-pills" role="group"><button type="button" class="sf-pill" data-group="domain" data-value="access-control" aria-pressed="false">Access Control</button><button type="button" class="sf-pill" data-group="domain" data-value="incident-response" aria-pressed="false">Incident Response</button><button type="button" class="sf-pill" data-group="domain" data-value="risk-assessment" aria-pressed="false">Risk Assessment</button><button type="button" class="sf-pill" data-group="domain" data-value="audit" aria-pressed="false">Audit & Certification</button><button type="button" class="sf-pill" data-group="domain" data-value="data-protection" aria-pressed="false">Data Protection</button><button type="button" class="sf-pill" data-group="domain" data-value="vendor" aria-pressed="false">Supply Chain & Vendor</button><button type="button" class="sf-pill" data-group="domain" data-value="bcm" aria-pressed="false">Resilience & BCM</button><button type="button" class="sf-pill" data-group="domain" data-value="cloud" aria-pressed="false">Cloud Security</button><button type="button" class="sf-pill" data-group="domain" data-value="ai" aria-pressed="false">AI Governance</button><button type="button" class="sf-pill" data-group="domain" data-value="reporting" aria-pressed="false">Reporting & Disclosure</button><button type="button" class="sf-pill" data-group="domain" data-value="export-controls" aria-pressed="false">Export Controls</button></div></details>
+</div>
+<div class="sf-empty" hidden="" id="sf-empty">No skills match your search or filters. <button id="sf-empty-clear" type="button">Clear filters</button></div>
+
+<div class="skill-card" id="iso27001" data-region="global" data-category="infosec" data-domains="risk-assessment audit access-control incident-response bcm">
+<h3>1. <img alt="ISO 27001" src="assets/Logos/iso27001.jpg" class="logo-md"/> ISO 27001</h3>
 
 <p>Turns Claude into an expert ISO 27001 Lead Auditor and ISMS implementation consultant. Covers both <strong>ISO 27001:2013</strong> (114 controls, 14 domains) and <strong>ISO 27001:2022</strong> (93 controls, 4 themes), defaulting to 2022.</p>
 <ul>
@@ -1040,8 +1118,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>ISO 27001</code> <code>ISMS</code> <code>Annex A</code> <code>SoA</code> <code>gap analysis</code> <code>risk register</code> <code>certification readiness</code> <code>internal audit</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Preparing for an ISO 27001:2022 Stage 2 certification audit with gap analysis across all Annex A controls</li><li>Writing an Information Security Policy and Statement of Applicability (SoA) mapped to all 93 controls</li><li>Building a risk register and risk treatment plan using the likelihood × impact scoring method</li><li>Guiding a 2013 → 2022 transition, including the 11 new controls and mapping changes</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2027001%20-%20Claude%20Skill/iso27001.skill" title="ISO 27001 - Claude Skill/iso27001.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/ISO%2027001%20-%20Claude%20Skill/ISO27001-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>2. <img alt="SOC 2" src="assets/Logos/soc2.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> SOC 2</h3>
+<div class="skill-card" id="soc2" data-region="global" data-category="infosec" data-domains="audit access-control vendor">
+<h3>2. <img alt="SOC 2" src="assets/Logos/soc2.jpeg" class="logo-md"/> SOC 2</h3>
 
 <p>Turns Claude into an expert SOC 2 compliance advisor grounded in the <strong>AICPA 2017 Trust Services Criteria (TSC) with 2022 Revised Points of Focus</strong>. Covers all five TSC: Security (CC1–CC9), Availability (A1), Confidentiality (C1), Processing Integrity (PI1), and Privacy (P1–P8).</p>
 <ul>
@@ -1053,8 +1131,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>SOC 2</code> <code>Trust Services Criteria</code> <code>TSC</code> <code>CC6</code> <code>Type 1</code> <code>Type 2</code> <code>AICPA</code> <code>audit readiness</code> <code>control statement</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Running a SOC 2 readiness assessment before engaging an external auditor</li><li>Documenting controls for a SOC 2 Type 2 report with auditor-ready evidence tables</li><li>Reviewing a vendor’s SOC 2 report and tracking Customer User Entity Controls (CUECs)</li><li>Responding to a customer security questionnaire spanning multiple frameworks</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SOC%202%20-%20Claude%20Skill/soc2.skill" title="SOC 2 - Claude Skill/soc2.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/SOC%202%20-%20Claude%20Skill/SOC%202%20README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>3. <img alt="FedRAMP" src="assets/Logos/fedramp.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> FedRAMP [US]</h3>
+<div class="skill-card" id="fedramp" data-region="us" data-category="infosec" data-domains="cloud audit access-control incident-response risk-assessment">
+<h3>3. <img alt="FedRAMP" src="assets/Logos/fedramp.svg" class="logo-md"/> FedRAMP [US]</h3>
 
 <p>Turns Claude into a knowledgeable FedRAMP advisor covering the full authorization lifecycle for Cloud Service Providers under <strong>NIST SP 800-53 Rev 5</strong> and <strong>CR26 (FedRAMP Consolidated Rules for 2026)</strong>. Current as of August 2026 — CR26 final (mandatory January 1, 2027) with Certification Classes A–D (A = pilot/transitional, B = LI-SaaS/Low, C = Moderate, D = High), Class pipelines opening August 2026, FedRAMP 20x as the primary pathway, Ready retired July 28, 2026 (Legacy), and the September 30, 2026 OSCAL mandate for new authorizations.</p>
 <ul>
@@ -1067,7 +1145,7 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>FedRAMP</code> <code>ATO</code> <code>SSP</code> <code>POA&amp;M</code> <code>3PAO</code> <code>NIST 800-53</code> <code>ConMon</code> <code>AWS GovCloud</code> <code>impact level</code> <code>OSCAL</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Scoping a FedRAMP Moderate authorisation on AWS GovCloud or Azure Government</li><li>Writing SSP control narratives for all 20 NIST SP 800-53 control families</li><li>Preparing a POA&amp;M with FedRAMP-compliant remediation timelines</li><li>Navigating the FedRAMP 20x pathway and the September 2026 OSCAL mandate</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/FedRamp%20-%20Claude%20Skill/fedramp.skill" title="FedRamp - Claude Skill/fedramp.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/FedRamp%20-%20Claude%20Skill/FedRamp-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
+<div class="skill-card" id="gdpr" data-region="eu" data-category="privacy" data-domains="data-protection incident-response reporting">
 <h3>4. 🇪🇺 GDPR [EU]</h3>
 
 <p>Turns Claude into an expert GDPR compliance assistant bridging technical and legal perspectives. Covers full <strong>EU GDPR</strong> with notes on <strong>UK GDPR (DPA 2018)</strong> where rules differ.</p>
@@ -1080,8 +1158,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>GDPR</code> <code>data protection</code> <code>privacy</code> <code>personal data</code> <code>DPA</code> <code>DPIA</code> <code>lawful basis</code> <code>data subject rights</code> <code>consent</code> <code>RoPA</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Auditing an API or database schema for GDPR compliance before product launch</li><li>Drafting a DPIA for a new AI feature that processes personal data</li><li>Preparing an Article 28 Data Processing Agreement for a third-party vendor relationship</li><li>Managing a 72-hour breach notification to a national supervisory authority</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/GDPR%20-%20Claude%20Skill/gdpr-compliance.skill" title="GDPR - Claude Skill/gdpr-compliance.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/GDPR%20-%20Claude%20Skill/GDPR-compliance-readme.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>5. <img alt="HIPAA" src="assets/Logos/hipaa.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> HIPAA [US]</h3>
+<div class="skill-card" id="hipaa" data-region="us" data-category="privacy" data-domains="data-protection access-control incident-response risk-assessment">
+<h3>5. <img alt="HIPAA" src="assets/Logos/hipaa.png" class="logo-md"/> HIPAA [US]</h3>
 
 <p>Turns Claude into a knowledgeable HIPAA compliance advisor covering the <strong>Privacy Rule, Security Rule, and Breach Notification Rule</strong> (45 CFR Parts 160 and 164, as amended by HITECH).</p>
 <ul>
@@ -1093,8 +1171,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>HIPAA</code> <code>PHI</code> <code>ePHI</code> <code>covered entity</code> <code>business associate</code> <code>BAA</code> <code>NPP</code> <code>breach notification</code> <code>Privacy Rule</code> <code>Security Rule</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Generating a Business Associate Agreement (BAA) for a healthcare SaaS vendor relationship</li><li>Assessing whether a data incident constitutes a reportable HIPAA breach using the 4-factor risk assessment</li><li>Advising on technical safeguards for AWS, Azure, or GCP healthcare cloud deployments</li><li>Completing an HIPAA Security Rule risk analysis for a new healthcare application</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/HIPAA%20-%20Claude%20Skill/hipaa-compliance.skill" title="HIPAA - Claude Skill/hipaa-compliance.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/HIPAA%20-%20Claude%20Skill/HIPAA-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>6. <img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> NIST CSF</h3>
+<div class="skill-card" id="nist-csf" data-region="us global" data-category="infosec" data-domains="risk-assessment incident-response">
+<h3>6. <img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" class="logo-md"/> NIST CSF</h3>
 
 <p>Turns Claude into an expert NIST Cybersecurity Framework advisor covering both <strong>CSF 2.0</strong> (February 2024) and <strong>CSF 1.1</strong> (April 2018), defaulting to CSF 2.0. Covers all six functions — <strong>Govern, Identify, Protect, Detect, Respond, Recover</strong> — including the new Govern function in CSF 2.0.</p>
 <ul>
@@ -1107,8 +1185,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>NIST CSF</code> <code>Cybersecurity Framework</code> <code>CSF 2.0</code> <code>Govern function</code> <code>GV.SC</code> <code>ID.AM</code> <code>PR.AA</code> <code>cybersecurity profile</code> <code>implementation tiers</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Assessing current cybersecurity posture using NIST CSF 2.0 across all six functions</li><li>Building an Organisational Profile with Current and Target states for board reporting</li><li>Guiding a CSF 1.1 → CSF 2.0 migration with subcategory mapping and a migration checklist</li><li>Mapping CSF 2.0 subcategories to ISO 27001:2022, NIST SP 800-53, and CIS Controls v8</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20Cybersecurity%20framework%20-%20Claude%20Skill/NIST%20Cybersecurity.skill" title="NIST Cybersecurity framework - Claude Skill/NIST Cybersecurity.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/NIST%20Cybersecurity%20framework%20-%20Claude%20Skill/NIST-Cybersecurity-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>7. <img alt="PCI DSS" src="assets/Logos/pci-dss.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> PCI DSS</h3>
+<div class="skill-card" id="pci-dss" data-region="global" data-category="infosec" data-domains="data-protection access-control audit">
+<h3>7. <img alt="PCI DSS" src="assets/Logos/pci-dss.png" class="logo-md"/> PCI DSS</h3>
 
 <p>Turns Claude into an expert PCI DSS compliance advisor covering <strong>PCI DSS v4.0.1</strong> (June 2024 — current), including all requirements that became mandatory on March 31, 2025. Covers all 12 requirements, all 8 SAQ types, merchant and service provider levels, and v4.0 changes from v3.2.1.</p>
 <ul>
@@ -1120,7 +1198,7 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>PCI DSS</code> <code>PCI compliance</code> <code>cardholder data</code> <code>CDE</code> <code>SAQ</code> <code>ROC</code> <code>QSA</code> <code>PAN</code> <code>tokenisation</code> <code>merchant level</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Scoping a PCI DSS Cardholder Data Environment for a cloud-hosted e-commerce platform</li><li>Selecting the right SAQ type for a merchant using a hosted or redirect payment page</li><li>Guiding a v3.2.1 → v4.0.1 migration including all requirements that became mandatory March 2025</li><li>Assessing scope-reduction options via tokenisation or P2PE to shrink the CDE</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/PCI%20Compliance%20-%20Claude%20Skill/PCI-Compliance.skill" title="PCI Compliance - Claude Skill/PCI-Compliance.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/PCI%20Compliance%20-%20Claude%20Skill/PCI-Compliance-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
+<div class="skill-card" id="tsa-compliance" data-region="us" data-category="cyber-reg" data-domains="incident-response bcm reporting">
 <h3>8. 🚨 TSA Cybersecurity [US]</h3>
 
 <p>Turns Claude into an expert TSA cybersecurity directive advisor for <strong>critical transportation infrastructure</strong>. Covers all current TSA Security Directive series — SD Pipeline-2021-01G, SD Pipeline-2021-02F, SD 1580-21-01E (freight rail), and SD 1582-21-01E (transit/passenger rail) — plus the <strong>November 2024 NPRM</strong>.</p>
@@ -1134,8 +1212,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>TSA Security Directive</code> <code>SD Pipeline-2021</code> <code>TSA cybersecurity</code> <code>Critical Cyber Systems</code> <code>CCS</code> <code>CRMP</code> <code>IRP testing</code> <code>OT segmentation TSA</code> <code>pipeline cybersecurity</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Determining whether a pipeline or rail operation is a TSA covered entity and which directive applies</li><li>Drafting a Cybersecurity Implementation Plan (CIP) for pipeline OT/SCADA environments</li><li>Aligning a TSA Cyber Risk Management Plan (CRMP) to NIST CSF 2.0 and CISA Cross-Sector CPGs</li><li>Guiding OT/ICS segmentation using data diodes, jump servers, and passive monitoring tools</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TSA%20Compliance%20-%20Claude%20Skill/TSA-Compliance.skill" title="TSA Compliance - Claude Skill/TSA-Compliance.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/TSA%20Compliance%20-%20Claude%20Skill/TSA-Compliance-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>9. <img alt="ISO 42001" src="assets/Logos/iso42001.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> ISO 42001 AI Management System</h3>
+<div class="skill-card" id="iso42001" data-region="global" data-category="ai-gov" data-domains="ai risk-assessment audit">
+<h3>9. <img alt="ISO 42001" src="assets/Logos/iso42001.webp" class="logo-md"/> ISO 42001 AI Management System</h3>
 
 <p>Turns Claude into an expert <strong>ISO/IEC 42001:2023</strong> AI Management System (AIMS) advisor — the world's first international standard for AI governance. Serves both <strong>AI providers</strong> (organisations developing or deploying AI) and <strong>AI users</strong> (organisations integrating third-party AI).</p>
 <ul>
@@ -1148,8 +1226,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>ISO 42001</code> <code>ISO/IEC 42001</code> <code>AI Management System</code> <code>AIMS</code> <code>AISIA</code> <code>AI governance standard</code> <code>Annex A AI controls</code> <code>AI certification</code> <code>EU AI Act management system</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Running an ISO 42001 gap assessment for an AI provider with multiple ML models in production</li><li>Completing an AI System Impact Assessment (AISIA) for an automated hiring or credit-scoring tool</li><li>Integrating an ISO 42001 AIMS with an existing ISO 27001:2022 ISMS to avoid duplicating controls</li><li>Generating a Statement of Applicability (SoA) covering all 38 Annex A controls</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2042001%20-%20Claude%20Skill/ISO-42001.skill" title="ISO 42001 - Claude Skill/ISO-42001.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/ISO%2042001%20-%20Claude%20Skill/ISO-42001-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>10. <img alt="ISO 27701" src="assets/Logos/iso27701.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> ISO 27701 Privacy Information Management</h3>
+<div class="skill-card" id="iso27701" data-region="global" data-category="privacy" data-domains="data-protection audit">
+<h3>10. <img alt="ISO 27701" src="assets/Logos/iso27701.png" class="logo-md"/> ISO 27701 Privacy Information Management</h3>
 
 <p>Turns Claude into an expert <strong>ISO/IEC 27701:2025</strong> Privacy Information Management System (PIMS) advisor. Covers the full lifecycle from gap assessment through certification for both <strong>PII controllers</strong> and <strong>PII processors</strong>, and handles both the new standalone 2025 edition and the legacy 2019 extension edition.</p>
 <ul>
@@ -1163,8 +1241,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>ISO 27701</code> <code>PIMS</code> <code>privacy information management</code> <code>PII controller</code> <code>PII processor</code> <code>DPIA</code> <code>RoPA</code> <code>data subject rights</code> <code>privacy by design</code> <code>data processing agreement</code> <code>GDPR alignment ISO 27701</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Running an ISO 27701:2025 gap assessment for a SaaS company acting as both PII controller and processor</li><li>Drafting a GDPR-aligned Data Processing Agreement with all Article 28 mandatory clauses</li><li>Completing a DPIA for a new AI feature that profiles users for targeted advertising</li><li>Mapping ISO 27701:2025 controls to GDPR articles to use as certification evidence</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2027701%20-%20Claude%20Skill/iso27701.skill" title="ISO 27701 - Claude Skill/iso27701.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/ISO%2027701%20-%20Claude%20Skill/ISO27701-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>11. <img alt="DORA" src="assets/Logos/dora.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> DORA [EU] — Digital Operational Resilience</h3>
+<div class="skill-card" id="dora" data-region="eu" data-category="cyber-reg" data-domains="bcm incident-response vendor reporting">
+<h3>11. <img alt="DORA" src="assets/Logos/dora.png" class="logo-md"/> DORA [EU] — Digital Operational Resilience</h3>
 
 <p>Turns Claude into an expert advisor on <strong>Regulation (EU) 2022/2554</strong> (DORA) — the anchoring ICT regulation for EU financial entities since 17 January 2025. Encodes all 64 DORA articles, all 12 adopted RTS/ITS, and provides precise article-level guidance. Explicitly separates DORA from NIS2, legacy EBA ICT guidelines, and ISO 27001.</p>
 <ul>
@@ -1178,7 +1256,7 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>DORA</code> <code>Regulation (EU) 2022/2554</code> <code>digital operational resilience</code> <code>ICT risk management framework</code> <code>Art. 18 classification</code> <code>Art. 19 incident reporting</code> <code>Art. 26 TLPT</code> <code>Art. 30 contractual provisions</code> <code>Register of Information</code> <code>ICT concentration risk</code> <code>DORA vs NIS2</code> <code>Chapter II DORA</code> <code>Chapter III DORA</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Running a DORA gap analysis for an EU credit institution ahead of a supervisory review</li><li>Building a three-stage ICT incident reporting procedure (4h / 72h / 1 month) per Art. 19</li><li>Reviewing ICT third-party contracts against all Art. 30(2)(a)–(i) mandatory provisions</li><li>Advising on the DORA vs. NIS2 lex specialis interaction and residual obligations for a European bank</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DORA%20-%20Claude%20Skill/dora.skill" title="DORA - Claude Skill/dora.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/DORA%20-%20Claude%20Skill/DORA-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
+<div class="skill-card" id="dpdpa" data-region="apac" data-category="privacy" data-domains="data-protection reporting">
 <h3>12. 🇮🇳 DPDPA [India] — Digital Personal Data Protection Act</h3>
 
 <p>Turns Claude into an expert advisor on India's <strong>Digital Personal Data Protection Act, 2023</strong> and the finalized <strong>DPDP Rules, 2025</strong> (notified 13 November 2025, effective 13 May 2027). Covers all 44 sections and 23 Rules with section-level citations, GDPR-alignment mapping, and guidance for both Indian companies and global organizations with Indian data subjects.</p>
@@ -1193,8 +1271,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>DPDPA</code> <code>Digital Personal Data Protection Act</code> <code>India data protection</code> <code>Data Fiduciary</code> <code>Data Principal</code> <code>Significant Data Fiduciary</code> <code>DPDP Rules 2025</code> <code>Rule 6 DPDP breach</code> <code>Rule 12 parental consent</code> <code>India privacy law</code> <code>DPDPA vs GDPR</code> <code>DigiLocker consent</code> <code>India children data</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Running a DPDPA gap analysis for an Indian SaaS company ahead of the May 2027 deadline</li><li>Designing a Rule 3-compliant privacy notice with multi-language and layered disclosure obligations</li><li>Implementing a children’s data programme with Rule 12 parental verification (DigiLocker, virtual tokens)</li><li>Advising on India cross-border transfer obligations — blacklist approach and contractual safeguards</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DPDPA%20-%20Claude%20Skill/dpdpa.skill" title="DPDPA - Claude Skill/dpdpa.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/DPDPA%20-%20Claude%20Skill/DPDPA-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>13. <img alt="CMMC" src="assets/Logos/cmmc.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> CMMC 2.0 [US] — Cybersecurity Maturity Model Certification</h3>
+<div class="skill-card" id="cmmc" data-region="us" data-category="infosec" data-domains="access-control audit risk-assessment">
+<h3>13. <img alt="CMMC" src="assets/Logos/cmmc.png" class="logo-md"/> CMMC 2.0 [US] — Cybersecurity Maturity Model Certification</h3>
 
 <p>Turns Claude into an expert CMMC compliance advisor for US defense contractors. Covers all three CMMC levels — <strong>Level 1</strong> (17 FAR 52.204-21 practices), <strong>Level 2</strong> (110 NIST SP 800-171 Rev 2 practices/C3PAO), and <strong>Level 3</strong> (110+ NIST SP 800-172/DIBCAC) — under the final <strong>32 CFR Part 170</strong> rule effective December 16, 2024.</p>
 <ul>
@@ -1206,8 +1284,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>CMMC</code> <code>CMMC 2.0</code> <code>CMMC Level 2</code> <code>CUI</code> <code>NIST 800-171</code> <code>DFARS 7021</code> <code>C3PAO</code> <code>SPRS score</code> <code>defense contractor</code> <code>DIB</code> <code>DoD contractor</code> <code>FCI</code> <code>SSP CMMC</code> <code>POA&amp;M CMMC</code> <code>DIBCAC</code> <code>CUI scoping</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Determining your CMMC level based on DFARS clauses (7012, 7019, 7020, 7021) and CUI handling scope</li><li>Running a CMMC Level 2 gap assessment across all 110 NIST SP 800-171 practices</li><li>Calculating your SPRS score and prioritising the highest-impact gap remediations</li><li>Preparing evidence packages and POA&amp;M documentation for a C3PAO assessment</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CMMC%20-%20Claude%20Skill/cmmc.skill" title="CMMC - Claude Skill/cmmc.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/CMMC%20-%20Claude%20Skill/CMMC-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>14. <img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> NIST AI Risk Management Framework</h3>
+<div class="skill-card" id="nist-ai-rmf" data-region="us global" data-category="ai-gov" data-domains="ai risk-assessment">
+<h3>14. <img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" class="logo-md"/> NIST AI Risk Management Framework</h3>
 
 <p>Turns Claude into an expert advisor on the <strong>NIST AI Risk Management Framework (AI RMF 1.0)</strong>, published January 2023 as NIST AI 100-1. Covers all four core functions — GOVERN, MAP, MEASURE, MANAGE — their 19 categories and subcategories, the AI RMF Playbook's suggested actions, and deep guidance on AI trustworthiness evaluation.</p>
 <ul>
@@ -1221,8 +1299,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>NIST AI RMF</code> <code>AI RMF</code> <code>NIST AI 100-1</code> <code>AI Risk Management Framework</code> <code>GOVERN function</code> <code>MAP function</code> <code>MEASURE function</code> <code>MANAGE function</code> <code>AI RMF Playbook</code> <code>AI risk profile</code> <code>AI trustworthiness</code> <code>AI bias assessment</code> <code>MEASURE 2.2</code> <code>AI risk register</code> <code>responsible AI framework</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Building an AI organisational profile using Current and Target states across all 19 categories</li><li>Running a GOVERN gap assessment for an organisation starting its AI risk programme</li><li>Evaluating a credit scoring or hiring AI model against MEASURE 2.x trustworthiness criteria before deployment</li><li>Mapping NIST AI RMF categories to EU AI Act Art. 9 and ISO 42001 requirements</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20AI%20RMF%20-%20Claude%20Skill/nist-ai-rmf.skill" title="NIST AI RMF - Claude Skill/nist-ai-rmf.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/NIST%20AI%20RMF%20-%20Claude%20Skill/NIST-AI-RMF-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>15. <img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> SWIFT Customer Security Programme (CSP)</h3>
+<div class="skill-card" id="swift-csp" data-region="global" data-category="infosec" data-domains="access-control audit vendor">
+<h3>15. <img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" class="logo-md"/> SWIFT Customer Security Programme (CSP)</h3>
 
 <p>Turns Claude into an expert advisor on the <strong>SWIFT Customer Security Controls Framework (CSCF) v2026</strong> — the mandatory cybersecurity programme for all SWIFT network participants. Covers all 32 controls (<strong>25 mandatory + 7 advisory</strong> — Control 2.4 Back-Office Data Flow Security promoted to mandatory in v2026), all five architecture types (A1/A2/A3/A4/B), the KYC-SA attestation process (window July 1–December 31, 2026), and cross-framework mapping to ISO 27001:2022, PCI DSS v4.0.1, and NIST CSF 2.0.</p>
 <ul>
@@ -1236,7 +1314,7 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>SWIFT CSP</code> <code>CSCF</code> <code>KYC-SA</code> <code>SWIFT security attestation</code> <code>Alliance Access</code> <code>SWIFT operator MFA</code> <code>SWIFT secure zone</code> <code>CSCF v2026</code> <code>Control 4.2 SWIFT</code> <code>Control 6.4 SWIFT</code> <code>Control 7.1 SWIFT</code> <code>SWIFT architecture A1</code> <code>SWIFT service bureau</code> <code>SWIFT gap assessment</code> <code>SWIFT hardware token</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Determining your SWIFT architecture type (A1/A2/A3/A4/B) and scoping the full CSCF control matrix</li><li>Running a CSCF v2026 gap assessment for an Alliance Access on-premises deployment (including Control 2.4 back-office data flow)</li><li>Preparing evidence and completing the annual KYC-SA attestation via swift.com/myswift</li><li>Mapping existing ISO 27001 or PCI DSS controls to CSCF requirements to identify SWIFT-specific gaps</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SWIFT%20CSP%20-%20Claude%20Skill/swift-csp.skill" title="SWIFT CSP - Claude Skill/swift-csp.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/SWIFT%20CSP%20-%20Claude%20Skill/SWIFT-CSP-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
+<div class="skill-card" id="ism" data-region="apac" data-category="infosec" data-domains="access-control cloud audit risk-assessment">
 <h3>16. 🇦🇺 ISM [Australia] — Australian Information Security Manual</h3>
 
 <p>Turns Claude into an expert advisor on the <strong>Australian Information Security Manual (ISM)</strong> — the whole-of-government cybersecurity framework published by the Australian Signals Directorate (ASD) for federal and state government entities and their supply chains. Covers all 22 guideline chapters, control applicability markings (OFFICIAL through TOP SECRET) — current as of the June 2026 ISM release with its 49 restructured principles and first-of-kind AI application controls (ISM-2112/2113/2114), the IRAP assessment programme, system authorisation, and the Essential Eight relationship.</p>
@@ -1251,7 +1329,7 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>ISM</code> <code>Information Security Manual</code> <code>ASD cybersecurity</code> <code>IRAP assessment</code> <code>system authorisation</code> <code>ATO Australia</code> <code>PROTECTED system</code> <code>OFFICIAL Sensitive</code> <code>Essential Eight</code> <code>ASD compliance</code> <code>ISM controls</code> <code>ISM gap analysis</code> <code>ISM hardening</code> <code>cyber.gov.au</code> <code>NC OS PROTECTED</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Understanding ISM control applicability markings (NC/OS/PROTECTED) for an Australian government cloud system</li><li>Preparing all artefacts for an IRAP assessment of a PROTECTED-level system — SSP, risk register, evidence</li><li>Mapping Essential Eight Maturity Level requirements to their ISM guideline chapters</li><li>Drafting a System Security Plan (SSP) for ATO sign-off on an OFFICIAL: Sensitive case management system</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISM%20-%20Claude%20Skill/ism.skill" title="ISM - Claude Skill/ism.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/ISM%20-%20Claude%20Skill/ISM-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
+<div class="skill-card" id="nis2" data-region="eu" data-category="cyber-reg" data-domains="incident-response risk-assessment vendor reporting bcm">
 <h3>17. 🇪🇺 NIS2 [EU] Directive</h3>
 
 <p>Turns Claude into an expert advisor on the <strong>EU NIS2 Directive (Directive (EU) 2022/2555)</strong> — the EU's overarching cybersecurity framework for essential and important entities, in force since 27 December 2022 (transposition deadline 17 October 2024). Replaces NIS1 with expanded scope, stronger incident reporting, management body accountability, and penalties up to €10M or 2% of global turnover.</p>
@@ -1266,7 +1344,7 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>NIS2</code> <code>NIS 2</code> <code>Directive EU 2022/2555</code> <code>essential entity</code> <code>important entity</code> <code>NIS2 compliance</code> <code>Article 21 NIS2</code> <code>Article 23 NIS2</code> <code>NIS2 incident reporting</code> <code>NIS2 gap analysis</code> <code>NIS2 supply chain</code> <code>NIS2 governance</code> <code>NIS2 penalties</code> <code>NIS2 and DORA</code> <code>NIS2 and ISO 27001</code> <code>ENISA NIS2</code> <code>network information security directive</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Determining whether a European company is an Essential or Important Entity under NIS2</li><li>Walking through the NIS2 Art. 23 incident reporting workflow (24h / 72h / 1 month) after a ransomware attack</li><li>Drafting an NIS2-compliant incident response policy covering all 10 Art. 21 security measures</li><li>Explaining the DORA lex specialis relationship and residual NIS2 obligations for a European financial entity</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIS2%20-%20Claude%20Skill/nis2.skill" title="NIS2 - Claude Skill/nis2.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/NIS2%20-%20Claude%20Skill/NIS2-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
+<div class="skill-card" id="ccpa" data-region="us" data-category="privacy" data-domains="data-protection reporting">
 <h3>18. <img alt="CA" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg" style="height:1em;width:auto;vertical-align:middle;border-radius:2px;"/> CCPA/CPRA [California] Privacy</h3>
 
 <p>Turns Claude into an expert advisor on <strong>California's comprehensive privacy laws</strong> — the California Consumer Privacy Act (CCPA, effective Jan 1, 2020) and the California Privacy Rights Act (CPRA/Proposition 24, effective Jan 1, 2023). CPRA created the California Privacy Protection Agency (CPPA), introduced Sensitive Personal Information (SPI), and added rights to correct PI, limit SPI use, and require data retention disclosures.</p>
@@ -1281,8 +1359,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>CCPA</code> <code>CPRA</code> <code>California Consumer Privacy Act</code> <code>California Privacy Rights Act</code> <code>Do Not Sell or Share</code> <code>sensitive personal information California</code> <code>CPPA</code> <code>California privacy compliance</code> <code>right to know California</code> <code>right to delete California</code> <code>California opt-out</code> <code>GPC signal</code> <code>Global Privacy Control</code> <code>ad tech CCPA</code> <code>CCPA vs GDPR</code> <code>CCPA service provider</code> <code>CCPA penalty</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Determining whether your business meets any CCPA/CPRA threshold ($25M revenue, 100K+ consumers, or 50%+ revenue from PI sale)</li><li>Building a combined right-to-know and right-to-delete response workflow meeting the 45-day deadline</li><li>Classifying ad tech activities (cookie sync, RTB) as sale vs. CPRA sharing vs. service provider processing</li><li>Performing a GDPR-to-CCPA/CPRA gap analysis to identify California-specific requirements</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CCPA%20-%20Claude%20Skill/ccpa.skill" title="CCPA - Claude Skill/ccpa.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/CCPA%20-%20Claude%20Skill/CCPA-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>19. <img alt="ITAR" src="assets/Logos/itar.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> ITAR [US] — International Traffic in Arms Regulations</h3>
+<div class="skill-card" id="itar" data-region="us" data-category="export-sustain" data-domains="export-controls access-control">
+<h3>19. <img alt="ITAR" src="assets/Logos/itar.jpg" class="logo-md"/> ITAR [US] — International Traffic in Arms Regulations</h3>
 
 <p>Turns Claude into an expert advisor on <strong>US defense export controls under 22 CFR Parts 120–130</strong>, administered by the Directorate of Defense Trade Controls (DDTC). ITAR controls the export, re-export, and transfer of defense articles, defense services, and technical data on the United States Munitions List (USML) — covering 21 categories from firearms to spacecraft.</p>
 <ul>
@@ -1296,8 +1374,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>ITAR</code> <code>International Traffic in Arms Regulations</code> <code>USML</code> <code>United States Munitions List</code> <code>DDTC</code> <code>defense export</code> <code>deemed export</code> <code>TAA</code> <code>technical assistance agreement</code> <code>MLA</code> <code>DSP-5</code> <code>DSP-73</code> <code>ITAR registration</code> <code>ITAR violation</code> <code>voluntary disclosure ITAR</code> <code>ITAR vs EAR</code> <code>commodity jurisdiction</code> <code>technology control plan</code> <code>Empowered Official</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Performing USML jurisdiction analysis for a defense article to determine ITAR vs. EAR applicability</li><li>Guiding DSP-5 and DSP-73 export licence applications and drafting TAAs and MLAs</li><li>Managing deemed export obligations for foreign national employees accessing ITAR-controlled technical data</li><li>Advising on voluntary self-disclosure (VSD) after an ITAR violation and structuring penalty mitigation</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ITAR%20-%20Claude%20Skill/itar.skill" title="ITAR - Claude Skill/itar.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/ITAR%20-%20Claude%20Skill/ITAR-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>20. <img alt="Brazil" src="assets/Logos/lgpd-brazil.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> LGPD [Brazil] — General Data Protection Law</h3>
+<div class="skill-card" id="lgpd" data-region="latam" data-category="privacy" data-domains="data-protection incident-response reporting">
+<h3>20. <img alt="Brazil" src="assets/Logos/lgpd-brazil.svg" class="logo-md"/> LGPD [Brazil] — General Data Protection Law</h3>
 
 <p>Turns Claude into an expert advisor on <strong>Brazil's Lei Geral de Proteção de Dados Pessoais (Law 13,709/2018)</strong>, enforced by the <strong>ANPD (Autoridade Nacional de Proteção de Dados)</strong>. LGPD applies extraterritorially to any organisation processing personal data of individuals located in Brazil — covering SaaS companies, fintechs, healthcare, e-commerce, and any business with Brazilian users.</p>
 <ul>
@@ -1309,8 +1387,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>LGPD</code> <code>Brazil data protection</code> <code>Lei Geral de Proteção de Dados</code> <code>ANPD</code> <code>Brazilian privacy law</code> <code>LGPD compliance</code> <code>LGPD gap assessment</code> <code>Encarregado</code> <code>RIPD</code> <code>LGPD legal basis</code> <code>Brazil data breach</code> <code>ANPD notification</code> <code>LGPD vs GDPR</code> <code>Brazil personal data</code> <code>LGPD penalty</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Assessing extraterritorial LGPD applicability for a US or EU company with Brazilian users</li><li>Completing a RIPD (Data Processing Impact Report) for high-risk sensitive data processing activities</li><li>Managing a breach notification within the 3-working-day ANPD deadline</li><li>Mapping LGPD legal bases for processing to equivalent GDPR bases and identifying gaps</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/LGPD%20-%20Claude%20Skill/lgpd.skill" title="LGPD - Claude Skill/lgpd.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/LGPD%20-%20Claude%20Skill/LGPD-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card">
-<h3>21. <img alt="EU" src="assets/Logos/csrd-eu.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> CSRD [EU] — Corporate Sustainability Reporting Directive</h3>
+<div class="skill-card" id="csrd" data-region="eu" data-category="export-sustain" data-domains="reporting audit">
+<h3>21. <img alt="EU" src="assets/Logos/csrd-eu.svg" class="logo-md"/> CSRD [EU] — Corporate Sustainability Reporting Directive</h3>
 
 <p>Turns Claude into an expert advisor on <strong>EU Directive 2022/2464 (CSRD)</strong>, which requires approximately 50,000 companies to disclose detailed ESG information under the <strong>European Sustainability Reporting Standards (ESRS)</strong>. CSRD came into force on 5 January 2023 and replaces the Non-Financial Reporting Directive (NFRD), extending mandatory sustainability reporting from ~11,000 to ~50,000 companies across the EU.</p>
 <ul>
@@ -1322,8 +1400,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>CSRD</code> <code>Corporate Sustainability Reporting Directive</code> <code>ESRS</code> <code>double materiality</code> <code>double materiality assessment</code> <code>DMA</code> <code>ESG reporting Europe</code> <code>sustainability disclosure EU</code> <code>non-financial reporting</code> <code>ESRS E1</code> <code>ESRS S1</code> <code>ESRS G1</code> <code>Scope 3 CSRD</code> <code>transition plan ESRS</code> <code>CSRD gap assessment</code> <code>CSRD scope</code> <code>EU sustainability reporting</code> <code>ESRS assurance</code> <code>XBRL sustainability</code> <code>CSRD vs GRI</code> <code>EU Taxonomy CSRD</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Determining whether your company falls under CSRD and identifying your first mandatory reporting year</li><li>Conducting a Double Materiality Assessment (DMA) covering all material ESRS topical standards</li><li>Building a Scope 3 GHG emissions programme covering all 15 categories required under ESRS E1</li><li>Performing a GRI / TCFD to ESRS gap analysis for companies transitioning to mandatory reporting</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CSRD%20-%20Claude%20Skill/csrd.skill" title="CSRD - Claude Skill/csrd.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/CSRD%20-%20Claude%20Skill/CSRD-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card" id="cis-controls">
-<h3>22. <img alt="CIS" src="assets/Logos/CIS logo.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> CIS Controls v8 — CIS Top 18 Cyber Hygiene</h3>
+<div class="skill-card" id="cis-controls" data-region="global" data-category="infosec" data-domains="access-control incident-response cloud vendor">
+<h3>22. <img alt="CIS" src="assets/Logos/CIS logo.png" class="logo-md"/> CIS Controls v8 — CIS Top 18 Cyber Hygiene</h3>
 
 <p>Turns Claude into an expert <strong>CIS Controls v8</strong> advisor covering all 18 controls and 153 safeguards from the May 2021 release. Applies the <strong>Implementation Group (IG) framework</strong> to scope guidance to your organisation's risk profile: IG1 (56 safeguards — essential cyber hygiene for all orgs), IG2 (130 safeguards — dedicated IT, sensitive data), and IG3 (153 safeguards — large enterprise with security team). Includes complete cross-framework mapping to NIST CSF 2.0, ISO 27001:2022, CMMC 2.0, SOC 2, and PCI DSS v4.0.</p>
 <ul>
@@ -1335,8 +1413,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>CIS Controls</code> <code>CIS Top 18</code> <code>CIS v8</code> <code>CIS Controls v8</code> <code>Implementation Group</code> <code>IG1</code> <code>IG2</code> <code>IG3</code> <code>CIS safeguards</code> <code>cyber hygiene controls</code> <code>CIS gap assessment</code> <code>CIS Controls NIST mapping</code> <code>CIS Benchmarks</code> <code>CIS CSAT</code> <code>asset inventory CIS</code> <code>vulnerability management CIS</code> <code>CIS Controls ISO 27001</code> <code>CIS Controls SOC 2</code> <code>CIS Controls PCI DSS</code> <code>CIS Controls CMMC</code> <code>CIS Controls NIST CSF</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Determining whether your organisation needs IG1, IG2, or IG3 controls with a scoped 12-week quick-start plan</li><li>Running a CIS Controls v8 gap assessment with 🔴/🟡/🟢 status across all 18 controls and applicable safeguards</li><li>Building a vulnerability management programme with CVSS-based remediation SLAs (Control 7)</li><li>Mapping CIS Controls v8 to NIST CSF 2.0 for a unified cross-framework compliance programme</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CIS%20Controls%20-%20Claude%20Skill/cis-controls.skill" title="CIS Controls - Claude Skill/cis-controls.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/CIS%20Controls%20-%20Claude%20Skill/CIS-Controls-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card" id="ear">
-<h3>23. <img alt="EAR" src="assets/Logos/EAR logo.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> EAR [US] — Export Administration Regulations</h3>
+<div class="skill-card" id="ear" data-region="us" data-category="export-sustain" data-domains="export-controls vendor">
+<h3>23. <img alt="EAR" src="assets/Logos/EAR logo.webp" class="logo-md"/> EAR [US] — Export Administration Regulations</h3>
 
 <p>Turns Claude into an expert <strong>Export Administration Regulations (EAR)</strong> advisor with deep knowledge of all 15 CFR Parts 730–774, administered by the Bureau of Industry and Security (BIS). Covers the full dual-use export control lifecycle — ECCN classification, licence analysis, restricted party screening, deemed exports, FDPR, and enforcement response.</p>
 <ul>
@@ -1348,8 +1426,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>EAR</code> <code>Export Administration Regulations</code> <code>ECCN</code> <code>EAR99</code> <code>BIS</code> <code>export control</code> <code>Commerce Control List</code> <code>CCL</code> <code>dual-use export</code> <code>export licence</code> <code>Entity List</code> <code>Denied Persons List</code> <code>deemed export</code> <code>FDPR</code> <code>Foreign Direct Product Rule</code> <code>licence exception</code> <code>ENC exception</code> <code>voluntary self-disclosure</code> <code>VSD</code> <code>SNAP-R</code> <code>export compliance programme</code> <code>ECP</code> <code>restricted party screening</code> <code>export to China</code> <code>export to Russia</code> <code>de minimis rule</code> <code>CCATS</code> <code>EAR vs ITAR</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Classifying an item under the EAR — ECCN determination and licence requirement analysis for specific destinations</li><li>Assessing deemed export obligations for foreign national employees accessing controlled encryption technology</li><li>Determining whether AES-256 cybersecurity software qualifies for the ENC licence exception for France, India, or Brazil</li><li>Designing a 7-element Export Compliance Programme for a dual-use technology or semiconductor company</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EAR%20-%20Claude%20Skill/ear.skill" title="EAR - Claude Skill/ear.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/EAR%20-%20Claude%20Skill/EAR-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card" id="nist-800-53">
-<h3>24. <img alt="NIST SP 800-53" src="assets/Logos/NIST SP 800-53 logo.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> NIST SP 800-53 — Security and Privacy Controls for Federal Systems</h3>
+<div class="skill-card" id="nist-800-53" data-region="us" data-category="infosec" data-domains="access-control audit risk-assessment incident-response">
+<h3>24. <img alt="NIST SP 800-53" src="assets/Logos/NIST SP 800-53 logo.webp" class="logo-md"/> NIST SP 800-53 — Security and Privacy Controls for Federal Systems</h3>
 
 <p>Turns Claude into an expert <strong>NIST SP 800-53 Rev 5</strong> federal security and privacy controls advisor covering the full catalog (September 2020) and its companion publications — SP 800-53B baselines, SP 800-53A assessment procedures, and SP 800-37 Rev 2 Risk Management Framework. Serves federal agency teams, cloud service providers pursuing FedRAMP, system owners, ISSOs, and GRC professionals implementing FISMA-mandated controls.</p>
 <ul>
@@ -1361,8 +1439,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>NIST SP 800-53</code> <code>SP 800-53</code> <code>NIST 800-53</code> <code>federal security controls</code> <code>RMF</code> <code>Risk Management Framework</code> <code>FISMA</code> <code>ATO</code> <code>Authority to Operate</code> <code>FIPS 199</code> <code>FIPS 200</code> <code>FIPS 140</code> <code>SP 800-53B</code> <code>control baseline</code> <code>Low baseline</code> <code>Moderate baseline</code> <code>High baseline</code> <code>SSP narrative</code> <code>System Security Plan</code> <code>POA&amp;M</code> <code>Plan of Action</code> <code>ConMon</code> <code>SP 800-53A</code> <code>security assessment</code> <code>ODV</code> <code>control tailoring</code> <code>common controls</code> <code>AC-2</code> <code>IA-2</code> <code>SC-8</code> <code>SI-2</code> <code>SR family</code> <code>PT family</code> <code>OSCAL</code> <code>3PAO</code> <code>FedRAMP controls</code> <code>ISSO</code> <code>authorizing official</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Categorising a federal system under FIPS 199/200 and selecting the correct Low, Moderate, or High SP 800-53B baseline</li><li>Implementing phishing-resistant MFA under IA-2(1) and IA-2(2) to satisfy EO 14028 and OMB M-22-09</li><li>Writing SSP control narratives in the standard federal format for any of the 20 control families</li><li>Building a ConMon strategy with monthly vulnerability scan frequencies, annual pen-testing, and POA&amp;M cadence</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20800-53%20-%20Claude%20Skill/nist-800-53.skill" title="NIST 800-53 - Claude Skill/nist-800-53.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/NIST%20800-53%20-%20Claude%20Skill/NIST-800-53-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card" id="eu-ai-act">
-<h3>25. <img alt="EU AI Act" src="assets/Logos/Euro AI act logo.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> EU AI Act — Regulation (EU) 2024/1689</h3>
+<div class="skill-card" id="eu-ai-act" data-region="eu" data-category="ai-gov" data-domains="ai risk-assessment reporting">
+<h3>25. <img alt="EU AI Act" src="assets/Logos/Euro AI act logo.jpg" class="logo-md"/> EU AI Act — Regulation (EU) 2024/1689</h3>
 
 <p>Turns Claude into an expert <strong>EU AI Act</strong> compliance advisor covering the full <strong>Regulation (EU) 2024/1689</strong> — the world's first comprehensive horizontal AI regulation, in force from 1 August 2024 and amended by the Digital Omnibus (Regulation (EU) 2026/1744, in force July 27, 2026; GPAI enforcement active since August 2, 2026). Serves AI providers, deployers, importers, and authorised representatives operating in or placing AI systems on the EU market.</p>
 <ul>
@@ -1374,7 +1452,7 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>EU AI Act</code> <code>AI Act</code> <code>Regulation 2024/1689</code> <code>high-risk AI</code> <code>prohibited AI</code> <code>GPAI model</code> <code>general-purpose AI</code> <code>AI system classification</code> <code>AI conformity assessment</code> <code>CE marking AI</code> <code>EU AI database</code> <code>AI Office</code> <code>AI Board</code> <code>systemic risk AI</code> <code>Art. 5 AI</code> <code>Annex III AI</code> <code>AI provider obligations</code> <code>AI deployer obligations</code> <code>human oversight AI</code> <code>AI risk management</code> <code>Art. 50 transparency</code> <code>chatbot disclosure AI</code> <code>AI Act compliance</code> <code>GPAI obligations</code> <code>open-source AI Act</code> <code>AI Act penalty</code> <code>AI Act timeline</code> <code>AI Act GDPR</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Classifying an AI system across all four risk tiers and understanding provider obligations under Arts. 9–17</li><li>Assessing whether an AI use case triggers an Art. 5 prohibited practice prohibition (in force from 2 February 2025)</li><li>Determining GPAI model obligations and whether the 10²⁵ FLOPs systemic risk threshold applies</li><li>Navigating dual EU MDR / EU AI Act regulation for an AI-powered medical diagnostic imaging tool</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EU%20AI%20Act%20-%20Claude%20Skill/eu-ai-act.skill" title="EU AI Act - Claude Skill/eu-ai-act.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/EU%20AI%20Act%20-%20Claude%20Skill/EU-AI-Act-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card" id="section-508">
+<div class="skill-card" id="section-508" data-region="us" data-category="accessibility" data-domains="audit reporting">
 <h3>26. ♿ Section 508 — US Federal ICT Accessibility</h3>
 
 <p>Turns Claude into an expert <strong>Section 508</strong> compliance advisor for US federal agencies, contractors, and ICT vendors. Covers the <strong>Revised Section 508 Standards (2018)</strong> — 36 CFR Part 1194 — which incorporate WCAG 2.0 Level A and AA as the technical standard for all federal web content, software, documents, and hardware.</p>
@@ -1386,7 +1464,7 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>Section 508</code> <code>508 compliance</code> <code>federal accessibility</code> <code>VPAT</code> <code>ACR</code> <code>Accessibility Conformance Report</code> <code>ICT accessibility</code> <code>36 CFR Part 1194</code> <code>Revised 508 Standards</code> <code>undue burden</code> <code>FAR 52.239-2</code> <code>JAWS screen reader</code> <code>keyboard accessibility federal</code> <code>PDF accessibility 508</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Completing a VPAT 2.x Accessibility Conformance Report (ACR) for a federal agency SaaS procurement</li><li>Auditing a federal web portal for WCAG 2.0 AA compliance with JAWS, NVDA, and keyboard-only testing</li><li>Drafting RFP procurement language with Section 508 accessibility requirements under FAR 52.239-2</li><li>Documenting an undue burden determination (E202.5) for a legacy ICT system with an alternative access plan</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Section%20508%20-%20Claude%20Skill/section-508.skill" title="Section 508 - Claude Skill/section-508.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/Section%20508%20-%20Claude%20Skill/Section-508-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card" id="wcag">
+<div class="skill-card" id="wcag" data-region="global" data-category="accessibility" data-domains="audit reporting">
 <h3>27. ♿ WCAG — Web Content Accessibility Guidelines</h3>
 
 <p>Turns Claude into an expert advisor on <strong>WCAG 2.0, 2.1, and 2.2</strong> — the W3C international standard for digital accessibility, developed by the Web Accessibility Initiative (WAI). WCAG is the technical foundation for accessibility laws worldwide: EU EAA (EN 301 549), US Section 508 and ADA, UK Equality Act, and Australia's DDA all reference WCAG conformance.</p>
@@ -1398,7 +1476,7 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>WCAG</code> <code>WCAG 2.1</code> <code>WCAG 2.2</code> <code>web accessibility</code> <code>POUR principles</code> <code>accessibility audit</code> <code>colour contrast</code> <code>screen reader</code> <code>keyboard accessibility</code> <code>ARIA</code> <code>focus visible</code> <code>reflow</code> <code>accessibility statement</code> <code>EN 301 549</code> <code>European Accessibility Act</code> <code>WCAG conformance</code> <code>success criteria</code> <code>alt text</code> <code>captions accessibility</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Auditing a web or React application for WCAG 2.1 AA compliance across all POUR principles</li><li>Upgrading a WCAG 2.1 conformance claim to WCAG 2.2 AA and identifying the 6 new required criteria</li><li>Reviewing ARIA patterns, keyboard focus management, and live region announcements for interactive components</li><li>Determining WCAG version and conformance level required under US, EU, and UK accessibility laws</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/WCAG%20-%20Claude%20Skill/wcag.skill" title="WCAG - Claude Skill/wcag.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/WCAG%20-%20Claude%20Skill/WCAG-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card" id="nzism">
+<div class="skill-card" id="nzism" data-region="apac" data-category="infosec" data-domains="access-control audit cloud">
 <h3>28. 🇳🇿 NZISM — New Zealand Information Security Manual</h3>
 
 <p>Turns Claude into an expert advisor on the <strong>New Zealand Information Security Manual (NZISM)</strong> — the mandatory cybersecurity framework published by the <strong>GCSB / NCSC NZ</strong> for NZ government agencies and their supply chains. Covers the NZ Government Information Classification System (ISCS) from Unclassified through Top Secret, all 18+ control sections, and the full Certification &amp; Accreditation (C&amp;A) lifecycle.</p>
@@ -1410,7 +1488,7 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>NZISM</code> <code>NZ government security</code> <code>GCSB compliance</code> <code>NCSC NZ</code> <code>Restricted system NZ</code> <code>NZ classification</code> <code>agency security NZ</code> <code>system certification NZ</code> <code>C&amp;A NZ</code> <code>NZISM gap analysis</code> <code>NZISM controls</code> <code>NZ ISCS</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Gap analysis of a NZ government system against NZISM for Restricted classification — with C&amp;A roadmap</li><li>NZISM guidance for moving Restricted government data to offshore cloud — approvals and data residency requirements</li><li>Generating NZISM-compliant security policies (Access Control, Incident Response) with classification markings</li><li>Reviewing supplier contractual security obligations for NZ government In-Confidence data</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NZISM%20-%20Claude%20Skill/nzism.skill" title="NZISM - Claude Skill/nzism.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/NZISM%20-%20Claude%20Skill/NZISM-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card" id="vn-pdpl">
+<div class="skill-card" id="vn-pdpl" data-region="apac" data-category="privacy" data-domains="data-protection incident-response">
 <h3>29. 🇻🇳 Vietnam PDPL — Law on Personal Data Protection</h3>
 
 <p>Turns Claude into an expert advisor on <strong>Vietnam's Law on Personal Data Protection No. 91/2025/QH15</strong> (effective 1 January 2026) and implementing <strong>Decree 356/2025/ND-CP</strong>, administered by the Ministry of Public Security. Applies to Vietnamese entities and foreign organisations processing data of Vietnamese citizens (extraterritorial reach). Vietnam's first comprehensive personal data protection law.</p>
@@ -1422,7 +1500,7 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>Vietnam data privacy</code> <code>VN-PDPL</code> <code>Law 91/2025</code> <code>Nghị định 356</code> <code>Vietnamese personal data</code> <code>Vietnam PDPL</code> <code>cross-border transfer Vietnam</code> <code>Vietnam breach notification</code> <code>Vietnam data protection</code> <code>Vietnamese data subjects</code></div>
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>VN-PDPL gap analysis for a foreign company processing Vietnamese citizen data — extraterritorial scope and obligations</li><li>72-hour breach notification response for a Vietnamese fintech company with dual authority and data subject notification</li><li>DPIA for an AI-powered telemedicine platform processing health records, biometrics, and behavioural data</li><li>Assessing SME exemptions — which VN-PDPL obligations are deferred for 5 years and which apply from day one</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Vietnam%20PDPL%20-%20Claude%20Skill/vn-pdpl.skill" title="Vietnam PDPL - Claude Skill/vn-pdpl.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/Vietnam%20PDPL%20-%20Claude%20Skill/VN-PDPL-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
-<div class="skill-card" id="eu-cra">
+<div class="skill-card" id="eu-cra" data-region="eu" data-category="cyber-reg" data-domains="vendor incident-response reporting">
 <h3>30. 🇪🇺 EU CRA — Cyber Resilience Act</h3>
 
 <p>Turns Claude into an expert advisor on <strong>Regulation (EU) 2024/2847 — the EU Cyber Resilience Act</strong>, which mandates cybersecurity requirements for all <strong>Products with Digital Elements (PDEs)</strong> sold in the EU (full application: 11 December 2027). Covers connected hardware, software, IoT devices, industrial systems — any product with a network interface.</p>
@@ -1435,7 +1513,7 @@ layout: null
 <details class="use-cases"><summary>Potential Use Cases</summary><ul><li>Classifying a connected product as Default, Class I, or Class II and selecting the correct conformity route</li><li>Conducting an Annex I gap analysis across 10 Part I security properties and 9 Part II vulnerability handling obligations</li><li>Implementing a 24-hour ENISA early warning + 72-hour full notification programme for actively exploited vulnerabilities</li><li>Building an SBOM programme (SPDX/CycloneDX) and meeting the 5-year support period and end-of-life notification obligations</li></ul></details>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EU%20CRA%20-%20Claude%20Skill/eu-cra.skill" title="EU CRA - Claude Skill/eu-cra.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/EU%20CRA%20-%20Claude%20Skill/EU-CRA-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
 
-<div class="skill-card" id="saudi-arabia-grc">
+<div class="skill-card" id="saudi-arabia-grc" data-region="middle-east" data-category="country-grc" data-domains="data-protection cloud access-control incident-response">
 <h3>31. 🇸🇦 Saudi Arabia GRC — Country Compliance Advisor</h3>
 
 <p>Turns Claude into a <strong>Saudi Arabia GRC advisor</strong> — a compliance router that first determines which Saudi regulations apply (NCA ECC-2:2024, Saudi PDPL, NCA Cloud Cybersecurity Controls, SAMA Cyber Security Framework, CST cloud rules), then guides framework-specific compliance. Saudi compliance is fragmented across NCA, SDAIA, SAMA, and CST — this skill establishes organization type, sector, data, and cloud posture before advising.</p>
@@ -1447,7 +1525,7 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>Saudi Arabia compliance</code> <code>KSA</code> <code>NCA ECC</code> <code>SDAIA</code> <code>Saudi PDPL</code> <code>SAMA CSF</code> <code>CST cloud</code> <code>Saudi data residency</code> <code>expanding to Saudi Arabia</code></div>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Saudi%20Arabia%20GRC%20-%20Claude%20Skill/saudi-arabia-grc.skill" title="Saudi Arabia GRC - Claude Skill/saudi-arabia-grc.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/Saudi%20Arabia%20GRC%20-%20Claude%20Skill/Saudi-Arabia-GRC-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
 
-<div class="skill-card" id="uae-grc">
+<div class="skill-card" id="uae-grc" data-region="middle-east" data-category="country-grc" data-domains="data-protection cloud incident-response">
 <h3>32. 🇦🇪 UAE GRC — Country Compliance Advisor</h3>
 
 <p>Turns Claude into a <strong>UAE GRC advisor</strong> — a jurisdiction-first compliance router. In the UAE, <em>where</em> an organization sits determines its law: mainland (Federal PDPL — executive regulations still pending as of Aug 2026), DIFC (DP Law No. 5 of 2020 as amended 2025, with a private right of action), ADGM (DP Regulations 2021), CBUAE-licensed financial institutions, healthcare (ICT Health Law data localization), and government/CNI cyber baselines.</p>
@@ -1459,8 +1537,8 @@ layout: null
 <div class="trigger-tags"><strong>Trigger phrases:</strong> <code>UAE compliance</code> <code>DIFC data protection</code> <code>ADGM data protection</code> <code>UAE PDPL</code> <code>CBUAE outsourcing</code> <code>UAE health data residency</code> <code>Dubai ISR</code> <code>ADHICS</code> <code>expanding to the UAE</code></div>
 <div class="skill-card-actions"><a class="skill-download-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/UAE%20GRC%20-%20Claude%20Skill/uae-grc.skill" title="UAE GRC - Claude Skill/uae-grc.skill"><span class="dl-icon">⬇️</span> Download .skill File</a><a class="skill-docs-btn" href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/blob/main/UAE%20GRC%20-%20Claude%20Skill/UAE-GRC-README.md" rel="noopener noreferrer" target="_blank" title="View skill documentation on GitHub">📖 Documentation</a></div></div>
 
-<div class="skill-card" id="tisax">
-<h3>33. <img alt="TISAX" src="assets/Logos/TISAX.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> TISAX — Trusted Information Security Assessment Exchange</h3>
+<div class="skill-card" id="tisax" data-region="eu global" data-category="infosec" data-domains="access-control audit vendor data-protection">
+<h3>33. <img alt="TISAX" src="assets/Logos/TISAX.svg" class="logo-md"/> TISAX — Trusted Information Security Assessment Exchange</h3>
 
 <p>Turns Claude into an expert <strong>TISAX</strong> advisor for the automotive supply chain — the ENX/VDA assessment regime OEMs (VW, BMW, Mercedes-Benz, Audi) require from suppliers. Covers <strong>VDA ISA 6</strong> (current through 2026) and the <strong>ISA2027 transition</strong> (published July 1, 2026; mandatory for assessments ordered from January 1, 2027).</p>
 <ul>
@@ -1487,27 +1565,27 @@ layout: null
 <table class="install-table">
 <thead><tr><th>Framework</th><th>Download</th></tr></thead>
 <tbody>
-<tr><td>1. <img alt="ISO 27001" src="assets/Logos/iso27001.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> ISO 27001</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2027001%20-%20Claude%20Skill/iso27001.skill">iso27001.skill</a></td></tr>
-<tr><td>2. <img alt="SOC 2" src="assets/Logos/soc2.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> SOC 2</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SOC%202%20-%20Claude%20Skill/soc2.skill">soc2.skill</a></td></tr>
-<tr><td>3. <img alt="FedRAMP" src="assets/Logos/fedramp.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> FedRAMP</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/FedRamp%20-%20Claude%20Skill/fedramp.skill">fedramp.skill</a></td></tr>
+<tr><td>1. <img alt="ISO 27001" src="assets/Logos/iso27001.jpg" class="logo-md"/> ISO 27001</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2027001%20-%20Claude%20Skill/iso27001.skill">iso27001.skill</a></td></tr>
+<tr><td>2. <img alt="SOC 2" src="assets/Logos/soc2.jpeg" class="logo-md"/> SOC 2</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SOC%202%20-%20Claude%20Skill/soc2.skill">soc2.skill</a></td></tr>
+<tr><td>3. <img alt="FedRAMP" src="assets/Logos/fedramp.svg" class="logo-md"/> FedRAMP</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/FedRamp%20-%20Claude%20Skill/fedramp.skill">fedramp.skill</a></td></tr>
 <tr><td>4. 🇪🇺 GDPR</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/GDPR%20-%20Claude%20Skill/gdpr-compliance.skill">gdpr-compliance.skill</a></td></tr>
-<tr><td>5. <img alt="HIPAA" src="assets/Logos/hipaa.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> HIPAA</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/HIPAA%20-%20Claude%20Skill/hipaa-compliance.skill">hipaa-compliance.skill</a></td></tr>
-<tr><td>6. <img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> NIST CSF</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20Cybersecurity%20framework%20-%20Claude%20Skill/NIST%20Cybersecurity.skill">NIST Cybersecurity.skill</a></td></tr>
-<tr><td>7. <img alt="PCI DSS" src="assets/Logos/pci-dss.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> PCI DSS</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/PCI%20Compliance%20-%20Claude%20Skill/PCI-Compliance.skill">PCI-Compliance.skill</a></td></tr>
+<tr><td>5. <img alt="HIPAA" src="assets/Logos/hipaa.png" class="logo-md"/> HIPAA</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/HIPAA%20-%20Claude%20Skill/hipaa-compliance.skill">hipaa-compliance.skill</a></td></tr>
+<tr><td>6. <img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" class="logo-md"/> NIST CSF</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20Cybersecurity%20framework%20-%20Claude%20Skill/NIST%20Cybersecurity.skill">NIST Cybersecurity.skill</a></td></tr>
+<tr><td>7. <img alt="PCI DSS" src="assets/Logos/pci-dss.png" class="logo-md"/> PCI DSS</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/PCI%20Compliance%20-%20Claude%20Skill/PCI-Compliance.skill">PCI-Compliance.skill</a></td></tr>
 <tr><td>8. 🚨 TSA Cybersecurity</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TSA%20Compliance%20-%20Claude%20Skill/TSA-Compliance.skill">TSA-Compliance.skill</a></td></tr>
-<tr><td>9. <img alt="ISO 42001" src="assets/Logos/iso42001.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> ISO 42001 AI Management System</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2042001%20-%20Claude%20Skill/ISO-42001.skill">ISO-42001.skill</a></td></tr>
-<tr><td>10. <img alt="ISO 27701" src="assets/Logos/iso27701.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> ISO 27701 Privacy Information Management</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2027701%20-%20Claude%20Skill/iso27701.skill">iso27701.skill</a></td></tr>
-<tr><td>11. <img alt="DORA" src="assets/Logos/dora.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> DORA [EU] — Digital Operational Resilience</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DORA%20-%20Claude%20Skill/dora.skill">dora.skill</a></td></tr>
+<tr><td>9. <img alt="ISO 42001" src="assets/Logos/iso42001.webp" class="logo-md"/> ISO 42001 AI Management System</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2042001%20-%20Claude%20Skill/ISO-42001.skill">ISO-42001.skill</a></td></tr>
+<tr><td>10. <img alt="ISO 27701" src="assets/Logos/iso27701.png" class="logo-md"/> ISO 27701 Privacy Information Management</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2027701%20-%20Claude%20Skill/iso27701.skill">iso27701.skill</a></td></tr>
+<tr><td>11. <img alt="DORA" src="assets/Logos/dora.png" class="logo-md"/> DORA [EU] — Digital Operational Resilience</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DORA%20-%20Claude%20Skill/dora.skill">dora.skill</a></td></tr>
 <tr><td>12. 🇮🇳 DPDPA [India] — Digital Personal Data Protection Act</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DPDPA%20-%20Claude%20Skill/dpdpa.skill">dpdpa.skill</a></td></tr>
-<tr><td>13. <img alt="CMMC" src="assets/Logos/cmmc.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> CMMC 2.0 [US] — Cybersecurity Maturity Model Certification</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CMMC%20-%20Claude%20Skill/cmmc.skill">cmmc.skill</a></td></tr>
-<tr><td>14. <img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> NIST AI Risk Management Framework</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20AI%20RMF%20-%20Claude%20Skill/nist-ai-rmf.skill">nist-ai-rmf.skill</a></td></tr>
-<tr><td>15. <img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> SWIFT Customer Security Programme (CSP)</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SWIFT%20CSP%20-%20Claude%20Skill/swift-csp.skill">swift-csp.skill</a></td></tr>
+<tr><td>13. <img alt="CMMC" src="assets/Logos/cmmc.png" class="logo-md"/> CMMC 2.0 [US] — Cybersecurity Maturity Model Certification</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CMMC%20-%20Claude%20Skill/cmmc.skill">cmmc.skill</a></td></tr>
+<tr><td>14. <img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" class="logo-md"/> NIST AI Risk Management Framework</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20AI%20RMF%20-%20Claude%20Skill/nist-ai-rmf.skill">nist-ai-rmf.skill</a></td></tr>
+<tr><td>15. <img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" class="logo-md"/> SWIFT Customer Security Programme (CSP)</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SWIFT%20CSP%20-%20Claude%20Skill/swift-csp.skill">swift-csp.skill</a></td></tr>
 <tr><td>16. 🇦🇺 ISM [Australia] — Australian Information Security Manual</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISM%20-%20Claude%20Skill/ism.skill">ism.skill</a></td></tr>
 <tr><td>17. 🇪🇺 NIS2 [EU] Directive</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIS2%20-%20Claude%20Skill/nis2.skill">nis2.skill</a></td></tr>
 <tr><td>18. <img alt="CA" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg" style="height:1em;width:auto;vertical-align:middle;border-radius:2px;"/> CCPA/CPRA [California] Privacy</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CCPA%20-%20Claude%20Skill/ccpa.skill">ccpa.skill</a></td></tr>
-<tr><td>19. <img alt="ITAR" src="assets/Logos/itar.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> ITAR [US] — International Traffic in Arms Regulations</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ITAR%20-%20Claude%20Skill/itar.skill">itar.skill</a></td></tr>
-<tr><td>20. <img alt="Brazil" src="assets/Logos/lgpd-brazil.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> LGPD [Brazil] — General Data Protection Law</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/LGPD%20-%20Claude%20Skill/lgpd.skill">lgpd.skill</a></td></tr>
-<tr><td>21. <img alt="EU" src="assets/Logos/csrd-eu.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> CSRD [EU] — Corporate Sustainability Reporting Directive</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CSRD%20-%20Claude%20Skill/csrd.skill">csrd.skill</a></td></tr>
+<tr><td>19. <img alt="ITAR" src="assets/Logos/itar.jpg" class="logo-md"/> ITAR [US] — International Traffic in Arms Regulations</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ITAR%20-%20Claude%20Skill/itar.skill">itar.skill</a></td></tr>
+<tr><td>20. <img alt="Brazil" src="assets/Logos/lgpd-brazil.svg" class="logo-md"/> LGPD [Brazil] — General Data Protection Law</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/LGPD%20-%20Claude%20Skill/lgpd.skill">lgpd.skill</a></td></tr>
+<tr><td>21. <img alt="EU" src="assets/Logos/csrd-eu.svg" class="logo-md"/> CSRD [EU] — Corporate Sustainability Reporting Directive</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CSRD%20-%20Claude%20Skill/csrd.skill">csrd.skill</a></td></tr>
 <tr><td>22. 🛡️ CIS Controls v8 — CIS Top 18 Cyber Hygiene</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CIS%20Controls%20-%20Claude%20Skill/cis-controls.skill">cis-controls.skill</a></td></tr>
 <tr><td>23. 📦 EAR [US] — Export Administration Regulations</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EAR%20-%20Claude%20Skill/ear.skill">ear.skill</a></td></tr>
 <tr><td>24. 🏛️ NIST SP 800-53 — Security and Privacy Controls for Federal Systems</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20800-53%20-%20Claude%20Skill/nist-800-53.skill">nist-800-53.skill</a></td></tr>
@@ -1519,7 +1597,7 @@ layout: null
 <tr><td>30. 🇪🇺 EU CRA — Cyber Resilience Act</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EU%20CRA%20-%20Claude%20Skill/eu-cra.skill">eu-cra.skill</a></td></tr>
 <tr><td>31. 🇸🇦 Saudi Arabia GRC</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Saudi%20Arabia%20GRC%20-%20Claude%20Skill/saudi-arabia-grc.skill">saudi-arabia-grc.skill</a></td></tr>
 <tr><td>32. 🇦🇪 UAE GRC</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/UAE%20GRC%20-%20Claude%20Skill/uae-grc.skill">uae-grc.skill</a></td></tr>
-<tr><td>33. <img alt="TISAX" src="assets/Logos/TISAX.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> TISAX</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TISAX%20-%20Claude%20Skill/tisax.skill">tisax.skill</a></td></tr>
+<tr><td>33. <img alt="TISAX" src="assets/Logos/TISAX.svg" class="logo-md"/> TISAX</td><td><a href="https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TISAX%20-%20Claude%20Skill/tisax.skill">tisax.skill</a></td></tr>
 </tbody>
 </table>
 </div>
@@ -1556,27 +1634,27 @@ layout: null
 <table>
 <thead><tr><th style="width:2.5rem;text-align:center">#</th><th>Skill</th><th>Cases</th><th>With Skill</th><th>Baseline</th><th>Delta</th><th>Last Updated</th><th>What Was Tested</th></tr></thead>
 <tbody>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">1</td><td><img alt="ISO 27001" src="assets/Logos/iso27001.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> ISO 27001</td><td>5</td><td><strong>100%</strong></td><td>84%</td><td>+16%</td><td style="white-space:nowrap">16 May 2026</td><td>Gap assessment; Policy drafting; 2013→2022 transition; Risk assessment; Management review CAP</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">2</td><td><img alt="SOC 2" src="assets/Logos/soc2.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> SOC 2</td><td>5</td><td><strong>100%</strong></td><td>84%</td><td>+16%</td><td style="white-space:nowrap">16 May 2026</td><td>Type 1 vs 2; CC controls checklist; Availability criteria; Access control policy; Audit exception response</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">3</td><td><img alt="FedRAMP" src="assets/Logos/fedramp.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> FedRAMP [US]</td><td>5</td><td><strong>96%</strong></td><td>72%</td><td>+24%</td><td style="white-space:nowrap">15 Aug 2026</td><td>Authorization pathways; CR26 Certification Classes A-D; FedRAMP 20x (primary pathway); OSCAL mandate; POA&amp;M remediation timelines</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">1</td><td><img alt="ISO 27001" src="assets/Logos/iso27001.jpg" class="logo-md"/> ISO 27001</td><td>5</td><td><strong>100%</strong></td><td>84%</td><td>+16%</td><td style="white-space:nowrap">16 May 2026</td><td>Gap assessment; Policy drafting; 2013→2022 transition; Risk assessment; Management review CAP</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">2</td><td><img alt="SOC 2" src="assets/Logos/soc2.jpeg" class="logo-md"/> SOC 2</td><td>5</td><td><strong>100%</strong></td><td>84%</td><td>+16%</td><td style="white-space:nowrap">16 May 2026</td><td>Type 1 vs 2; CC controls checklist; Availability criteria; Access control policy; Audit exception response</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">3</td><td><img alt="FedRAMP" src="assets/Logos/fedramp.svg" class="logo-md"/> FedRAMP [US]</td><td>5</td><td><strong>96%</strong></td><td>72%</td><td>+24%</td><td style="white-space:nowrap">15 Aug 2026</td><td>Authorization pathways; CR26 Certification Classes A-D; FedRAMP 20x (primary pathway); OSCAL mandate; POA&amp;M remediation timelines</td></tr>
 <tr><td style="text-align:center;font-weight:600;color:#64748b">4</td><td>🇪🇺 GDPR</td><td>5</td><td><strong>88%</strong></td><td>88%</td><td>+0%</td><td style="white-space:nowrap">31 May 2026</td><td>US SaaS GDPR obligations + DPF transfer mechanisms; Art. 28 DPA with DPF/SCCs; SAR response + exemptions; Cookie consent + tracking pixels ePrivacy; 72-hour breach notification workflow</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">5</td><td><img alt="HIPAA" src="assets/Logos/hipaa.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> HIPAA [US]</td><td>5</td><td><strong>92%</strong></td><td>88%</td><td>+4%</td><td style="white-space:nowrap">16 May 2026</td><td>Covered entity analysis; BAA template; Encryption (addressable vs required); Risk analysis; Workforce violation</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">6</td><td><img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> NIST CSF</td><td>5</td><td><strong>96%</strong></td><td>84%</td><td>+12%</td><td style="white-space:nowrap">16 May 2026</td><td>CSF 2.0 overview; Ransomware recovery plan; Profile creation; Control mapping; Board reporting</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">7</td><td><img alt="PCI DSS" src="assets/Logos/pci-dss.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> PCI DSS</td><td>5</td><td><strong>92%</strong></td><td>88%</td><td>+4%</td><td style="white-space:nowrap">16 May 2026</td><td>SAQ type selection; Req 3 stored data (v4.0); Breach obligations; Penetration testing; Tokenization scope</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">5</td><td><img alt="HIPAA" src="assets/Logos/hipaa.png" class="logo-md"/> HIPAA [US]</td><td>5</td><td><strong>92%</strong></td><td>88%</td><td>+4%</td><td style="white-space:nowrap">16 May 2026</td><td>Covered entity analysis; BAA template; Encryption (addressable vs required); Risk analysis; Workforce violation</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">6</td><td><img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" class="logo-md"/> NIST CSF</td><td>5</td><td><strong>96%</strong></td><td>84%</td><td>+12%</td><td style="white-space:nowrap">16 May 2026</td><td>CSF 2.0 overview; Ransomware recovery plan; Profile creation; Control mapping; Board reporting</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">7</td><td><img alt="PCI DSS" src="assets/Logos/pci-dss.png" class="logo-md"/> PCI DSS</td><td>5</td><td><strong>92%</strong></td><td>88%</td><td>+4%</td><td style="white-space:nowrap">16 May 2026</td><td>SAQ type selection; Req 3 stored data (v4.0); Breach obligations; Penetration testing; Tokenization scope</td></tr>
 <tr><td style="text-align:center;font-weight:600;color:#64748b">8</td><td>🚨 TSA Cybersecurity</td><td>5</td><td><strong>100%</strong></td><td>96%</td><td>+4%</td><td style="white-space:nowrap">16 May 2026</td><td>Pipeline directive requirements; CIRP elements; OT/IT segmentation; Airport applicability; TSA vs CIRCIA</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">9</td><td><img alt="ISO 42001" src="assets/Logos/iso42001.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> ISO 42001</td><td>5</td><td><strong>92%</strong></td><td>80%</td><td>+12%</td><td style="white-space:nowrap">16 May 2026</td><td>AIMS applicability; Key requirements; AI-specific risks; Third-party LLM management; AI ethics controls</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">10</td><td><img alt="ISO 27701" src="assets/Logos/iso27701.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> ISO 27701</td><td>5</td><td><strong>100%</strong></td><td>100%</td><td>+0%</td><td style="white-space:nowrap">16 May 2026</td><td>Extension to ISO 27001; GDPR mapping; Processor controls; PIA methodology; Certification as GDPR evidence</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">11</td><td><img alt="DORA" src="assets/Logos/dora.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> DORA [EU]</td><td>5</td><td><strong>88%</strong></td><td>72%</td><td>+16%</td><td style="white-space:nowrap">16 May 2026</td><td>Five pillars; ICT incident reporting timelines; TLPT requirements; Third-party contracts; DORA vs EBA</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">9</td><td><img alt="ISO 42001" src="assets/Logos/iso42001.webp" class="logo-md"/> ISO 42001</td><td>5</td><td><strong>92%</strong></td><td>80%</td><td>+12%</td><td style="white-space:nowrap">16 May 2026</td><td>AIMS applicability; Key requirements; AI-specific risks; Third-party LLM management; AI ethics controls</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">10</td><td><img alt="ISO 27701" src="assets/Logos/iso27701.png" class="logo-md"/> ISO 27701</td><td>5</td><td><strong>100%</strong></td><td>100%</td><td>+0%</td><td style="white-space:nowrap">16 May 2026</td><td>Extension to ISO 27001; GDPR mapping; Processor controls; PIA methodology; Certification as GDPR evidence</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">11</td><td><img alt="DORA" src="assets/Logos/dora.png" class="logo-md"/> DORA [EU]</td><td>5</td><td><strong>88%</strong></td><td>72%</td><td>+16%</td><td style="white-space:nowrap">16 May 2026</td><td>Five pillars; ICT incident reporting timelines; TLPT requirements; Third-party contracts; DORA vs EBA</td></tr>
 <tr><td style="text-align:center;font-weight:600;color:#64748b">12</td><td>🇮🇳 DPDPA [India]</td><td>5</td><td><strong>96%</strong></td><td>80%</td><td>+16%</td><td style="white-space:nowrap">16 May 2026</td><td>Applicability to foreign entities; Consent vs GDPR; Children's data (18-year threshold); Cross-border transfers; SDF obligations</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">13</td><td><img alt="CMMC" src="assets/Logos/cmmc.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> CMMC 2.0 [US]</td><td>5</td><td><strong>100%</strong></td><td>44%</td><td>+56%</td><td style="white-space:nowrap">15 Aug 2026</td><td>Level determination; SPRS scoring; CUI scoping; SSP structure; C3PAO assessment readiness</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">14</td><td><img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> NIST AI RMF</td><td>5</td><td><strong>92%</strong></td><td>84%</td><td>+8%</td><td style="white-space:nowrap">03 Jul 2026</td><td>Four functions overview; Hiring AI risk assessment; Credit scoring risk register; EU AI Act mapping; GOVERN gap assessment</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">15</td><td><img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> SWIFT CSP</td><td>5</td><td><strong>96%</strong></td><td>72%</td><td>+24%</td><td style="white-space:nowrap">02 Jul 2026</td><td>Architecture scoping (A1/A2/A3/A4/B); MFA hardware token requirement (Control 4.2); CSCF v2026 gap assessment; KYC-SA attestation process; Control 2.4 now mandatory</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">13</td><td><img alt="CMMC" src="assets/Logos/cmmc.png" class="logo-md"/> CMMC 2.0 [US]</td><td>5</td><td><strong>100%</strong></td><td>44%</td><td>+56%</td><td style="white-space:nowrap">15 Aug 2026</td><td>Level determination; SPRS scoring; CUI scoping; SSP structure; C3PAO assessment readiness</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">14</td><td><img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" class="logo-md"/> NIST AI RMF</td><td>5</td><td><strong>92%</strong></td><td>84%</td><td>+8%</td><td style="white-space:nowrap">03 Jul 2026</td><td>Four functions overview; Hiring AI risk assessment; Credit scoring risk register; EU AI Act mapping; GOVERN gap assessment</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">15</td><td><img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" class="logo-md"/> SWIFT CSP</td><td>5</td><td><strong>96%</strong></td><td>72%</td><td>+24%</td><td style="white-space:nowrap">02 Jul 2026</td><td>Architecture scoping (A1/A2/A3/A4/B); MFA hardware token requirement (Control 4.2); CSCF v2026 gap assessment; KYC-SA attestation process; Control 2.4 now mandatory</td></tr>
 <tr><td style="text-align:center;font-weight:600;color:#64748b">16</td><td>🇦🇺 ISM [Australia]</td><td>5</td><td><strong>92%</strong></td><td>84%</td><td>+8%</td><td style="white-space:nowrap">15 Aug 2026</td><td>OS control scoping and authorisation pathway; IRAP assessment preparation; Chapter 13 system hardening evidence; Essential Eight to ISM chapter mapping; Supply chain cloud provider obligations</td></tr>
 <tr><td style="text-align:center;font-weight:600;color:#64748b">17</td><td>🇪🇺 NIS2 [EU]</td><td>5</td><td><strong>100%</strong></td><td>84%</td><td>+16%</td><td style="white-space:nowrap">03 Jul 2026</td><td>Energy company EE/IE classification; SaaS provider Art. 21 obligations; Ransomware Art. 23 reporting workflow; ISO 27001 vs NIS2 gap analysis; DORA lex specialis interaction</td></tr>
 <tr><td style="text-align:center;font-weight:600;color:#64748b">18</td><td><img alt="CA" src="https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg" style="height:1em;width:auto;vertical-align:middle;border-radius:2px;"/> CCPA/CPRA [California]</td><td>5</td><td><strong>100%</strong></td><td>80%</td><td>+20%</td><td style="white-space:nowrap">03 Jul 2026</td><td>E-commerce threshold analysis and applicability; Combined right-to-know and delete workflow; Ad tech sale vs sharing classification; GDPR-to-CCPA/CPRA gap analysis; SPI classification for mobile app</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">19</td><td><img alt="ITAR" src="assets/Logos/itar.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> ITAR [US]</td><td>5</td><td><strong>100%</strong></td><td>100%</td><td>0%</td><td style="white-space:nowrap">16 May 2026</td><td>USML jurisdiction analysis for military laptops; Deemed export for German engineer; DSP-73 temporary export for trade show; Violation and VSD process; TAA mandatory clauses for India transfer</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">20</td><td><img alt="Brazil" src="assets/Logos/lgpd-brazil.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> LGPD [Brazil]</td><td>5</td><td><strong>76%</strong></td><td>76%</td><td>+0%</td><td style="white-space:nowrap">02 Jul 2026</td><td>Extraterritorial scope for US SaaS with Brazilian customers; Brazil-EU mutual adequacy (Jan 2026); Data deletion across CRM/email/analytics; Sensitive health data marketing restrictions; International transfer mechanisms</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">21</td><td><img alt="EU" src="assets/Logos/csrd-eu.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> CSRD [EU]</td><td>5</td><td><strong>88%</strong></td><td>32%</td><td>+56%</td><td style="white-space:nowrap">15 Aug 2026</td><td>CSRD scope analysis for German listed manufacturer (PIE Wave 1); Double materiality vs GRI/TCFD; Post-DMA disclosure requirements for E1/S1/G1; GRI+TCFD to ESRS gap assessment; Non-EU company (US parent, €200M EU revenue) obligations</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">19</td><td><img alt="ITAR" src="assets/Logos/itar.jpg" class="logo-md"/> ITAR [US]</td><td>5</td><td><strong>100%</strong></td><td>100%</td><td>0%</td><td style="white-space:nowrap">16 May 2026</td><td>USML jurisdiction analysis for military laptops; Deemed export for German engineer; DSP-73 temporary export for trade show; Violation and VSD process; TAA mandatory clauses for India transfer</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">20</td><td><img alt="Brazil" src="assets/Logos/lgpd-brazil.svg" class="logo-md"/> LGPD [Brazil]</td><td>5</td><td><strong>76%</strong></td><td>76%</td><td>+0%</td><td style="white-space:nowrap">02 Jul 2026</td><td>Extraterritorial scope for US SaaS with Brazilian customers; Brazil-EU mutual adequacy (Jan 2026); Data deletion across CRM/email/analytics; Sensitive health data marketing restrictions; International transfer mechanisms</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">21</td><td><img alt="EU" src="assets/Logos/csrd-eu.svg" class="logo-md"/> CSRD [EU]</td><td>5</td><td><strong>88%</strong></td><td>32%</td><td>+56%</td><td style="white-space:nowrap">15 Aug 2026</td><td>CSRD scope analysis for German listed manufacturer (PIE Wave 1); Double materiality vs GRI/TCFD; Post-DMA disclosure requirements for E1/S1/G1; GRI+TCFD to ESRS gap assessment; Non-EU company (US parent, €200M EU revenue) obligations</td></tr>
 <tr><td style="text-align:center;font-weight:600;color:#64748b">22</td><td>🛡️ CIS Controls v8</td><td>5</td><td><strong>100%</strong></td><td>80%</td><td>+20%</td><td style="white-space:nowrap">16 May 2026</td><td>Implementation Group determination; Gap assessment for SaaS startup; MFA safeguard scoping (IG2); CIS v8 to NIST CSF 2.0 mapping; Vulnerability management programme with CVSS-based remediation SLAs</td></tr>
 <tr><td style="text-align:center;font-weight:600;color:#64748b">23</td><td>📦 EAR [US]</td><td>5</td><td><strong>100%</strong></td><td>88%</td><td>+12%</td><td style="white-space:nowrap">16 May 2026</td><td>RF amplifier ECCN classification for Germany export; Deemed export for Chinese/Australian dual national on 5D002; Entity List re-export violation and VSD process; AES-256 software ENC exception for France/India/Brazil; ECP design for semiconductor equipment company</td></tr>
 <tr><td style="text-align:center;font-weight:600;color:#64748b">24</td><td>🏛️ NIST SP 800-53 [US]</td><td>5</td><td><strong>92%</strong></td><td>84%</td><td>+8%</td><td style="white-space:nowrap">16 May 2026</td><td>FIPS 199 categorization for federal HR system; AC-2(3) OTS finding and POA&amp;M documentation; MFA controls and EO 14028 phishing-resistant MFA; SSP narrative for SC-8(1) Transmission Confidentiality; ISO 27001 to FedRAMP gap analysis and RMF steps</td></tr>
@@ -1588,7 +1666,7 @@ layout: null
 <tr><td style="text-align:center;font-weight:600;color:#64748b">30</td><td>🇪🇺 EU CRA [EU]</td><td>5</td><td><strong>80%</strong></td><td>80%</td><td>+0%</td><td style="white-space:nowrap">03 Jul 2026</td><td>Password manager Class I classification and conformity route; Industrial PLC Class II mandatory Notified Body assessment; 24/72-hour ENISA vulnerability reporting; SBOM format and maintenance obligations; Importer Annex I violations for default credentials and open ports</td></tr>
 <tr><td style="text-align:center;font-weight:600;color:#64748b">31</td><td>🇸🇦 Saudi Arabia GRC</td><td>5</td><td><strong>96%</strong></td><td>28%</td><td>+68%</td><td style="white-space:nowrap">23 Aug 2026</td><td>Market-entry applicability routing; SAMA vs NCA stacking; cloud-for-government residency (CST/CCC); PDPL breach response; ISO 27001 to ECC-2:2024 mapping</td></tr>
 <tr><td style="text-align:center;font-weight:600;color:#64748b">32</td><td>🇦🇪 UAE GRC</td><td>5</td><td><strong>84%</strong></td><td>28%</td><td>+56%</td><td style="white-space:nowrap">23 Aug 2026</td><td>DIFC routing + 2025 amendment; health-data localization vs US cloud; mainland PDPL status; ADGM breach clock; CBUAE cloud offshoring constraints</td></tr>
-<tr><td style="text-align:center;font-weight:600;color:#64748b">33</td><td><img alt="TISAX" src="assets/Logos/TISAX.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/> TISAX</td><td>5</td><td><strong>96%</strong></td><td>16%</td><td>+80%</td><td style="white-space:nowrap">23 Aug 2026</td><td>First-timer BMW Confidential label; ISO 27001 to TISAX delta; corrective action 9-month window; prototype labels and AL3; ISA2027 transition</td></tr>
+<tr><td style="text-align:center;font-weight:600;color:#64748b">33</td><td><img alt="TISAX" src="assets/Logos/TISAX.svg" class="logo-md"/> TISAX</td><td>5</td><td><strong>96%</strong></td><td>16%</td><td>+80%</td><td style="white-space:nowrap">23 Aug 2026</td><td>First-timer BMW Confidential label; ISO 27001 to TISAX delta; corrective action 9-month window; prototype labels and AL3; ISA2027 transition</td></tr>
 </tbody>
 </table>
 </div>
@@ -1769,7 +1847,7 @@ layout: null
 <div class="whats-new-grid">
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="iso27001" src="assets/Logos/iso27001.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="iso27001" src="assets/Logos/iso27001.jpg" class="logo-md"/></span>
 <h4>ISO 27001 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -1778,7 +1856,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="soc2" src="assets/Logos/soc2.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="soc2" src="assets/Logos/soc2.jpeg" class="logo-md"/></span>
 <h4>SOC 2 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -1787,7 +1865,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="fedramp" src="assets/Logos/fedramp.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="fedramp" src="assets/Logos/fedramp.svg" class="logo-md"/></span>
 <h4>FedRAMP 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -1805,7 +1883,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="hipaa" src="assets/Logos/hipaa.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="hipaa" src="assets/Logos/hipaa.png" class="logo-md"/></span>
 <h4>HIPAA 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -1814,7 +1892,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="nist csf" src="assets/Logos/nist-csf.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="nist csf" src="assets/Logos/nist-csf.jpeg" class="logo-md"/></span>
 <h4>NIST CSF 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -1823,7 +1901,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="pci dss" src="assets/Logos/pci-dss.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="pci dss" src="assets/Logos/pci-dss.png" class="logo-md"/></span>
 <h4>PCI DSS 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -1841,7 +1919,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="iso42001" src="assets/Logos/iso42001.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="iso42001" src="assets/Logos/iso42001.webp" class="logo-md"/></span>
 <h4>ISO 42001 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -1850,7 +1928,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="iso27701" src="assets/Logos/iso27701.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="iso27701" src="assets/Logos/iso27701.png" class="logo-md"/></span>
 <h4>ISO 27701 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -1859,7 +1937,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="dora" src="assets/Logos/dora.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="dora" src="assets/Logos/dora.png" class="logo-md"/></span>
 <h4>DORA 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -1877,7 +1955,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="cmmc" src="assets/Logos/cmmc.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="cmmc" src="assets/Logos/cmmc.png" class="logo-md"/></span>
 <h4>CMMC 2.0 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -1886,7 +1964,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="nist ai rmf" src="assets/Logos/nist-ai-rmf.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="nist ai rmf" src="assets/Logos/nist-ai-rmf.svg" class="logo-md"/></span>
 <h4>NIST AI RMF 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -1895,7 +1973,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="swift csp" src="assets/Logos/swift-csp.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="swift csp" src="assets/Logos/swift-csp.png" class="logo-md"/></span>
 <h4>SWIFT CSP 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -1931,7 +2009,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="itar" src="assets/Logos/itar.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="itar" src="assets/Logos/itar.jpg" class="logo-md"/></span>
 <h4>ITAR 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -1940,7 +2018,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="lgpd brazil" src="assets/Logos/lgpd-brazil.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="lgpd brazil" src="assets/Logos/lgpd-brazil.svg" class="logo-md"/></span>
 <h4>LGPD (Brazil) 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -1949,7 +2027,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="csrd eu" src="assets/Logos/csrd-eu.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="csrd eu" src="assets/Logos/csrd-eu.svg" class="logo-md"/></span>
 <h4>CSRD 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -1958,7 +2036,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="CIS logo" src="assets/Logos/CIS logo.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="CIS logo" src="assets/Logos/CIS logo.png" class="logo-md"/></span>
 <h4>CIS Controls v8 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -1967,7 +2045,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="EAR logo" src="assets/Logos/EAR logo.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="EAR logo" src="assets/Logos/EAR logo.webp" class="logo-md"/></span>
 <h4>EAR 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -1976,7 +2054,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="NIST SP 800 53 logo" src="assets/Logos/NIST SP 800-53 logo.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="NIST SP 800 53 logo" src="assets/Logos/NIST SP 800-53 logo.webp" class="logo-md"/></span>
 <h4>NIST SP 800-53 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -1985,7 +2063,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="Euro AI act logo" src="assets/Logos/Euro AI act logo.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="Euro AI act logo" src="assets/Logos/Euro AI act logo.jpg" class="logo-md"/></span>
 <h4>EU AI Act 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2060,7 +2138,7 @@ layout: null
 <div class="whats-new-grid">
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="iso27001" src="assets/Logos/iso27001.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="iso27001" src="assets/Logos/iso27001.jpg" class="logo-md"/></span>
 <h4>ISO 27001 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -2069,7 +2147,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="soc2" src="assets/Logos/soc2.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="soc2" src="assets/Logos/soc2.jpeg" class="logo-md"/></span>
 <h4>SOC 2 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -2078,7 +2156,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="fedramp" src="assets/Logos/fedramp.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="fedramp" src="assets/Logos/fedramp.svg" class="logo-md"/></span>
 <h4>FedRAMP 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2096,7 +2174,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="hipaa" src="assets/Logos/hipaa.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="hipaa" src="assets/Logos/hipaa.png" class="logo-md"/></span>
 <h4>HIPAA 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2105,7 +2183,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="nist csf" src="assets/Logos/nist-csf.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="nist csf" src="assets/Logos/nist-csf.jpeg" class="logo-md"/></span>
 <h4>NIST CSF 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2114,7 +2192,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="pci dss" src="assets/Logos/pci-dss.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="pci dss" src="assets/Logos/pci-dss.png" class="logo-md"/></span>
 <h4>PCI DSS 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -2132,7 +2210,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="iso42001" src="assets/Logos/iso42001.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="iso42001" src="assets/Logos/iso42001.webp" class="logo-md"/></span>
 <h4>ISO 42001 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2141,7 +2219,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="iso27701" src="assets/Logos/iso27701.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="iso27701" src="assets/Logos/iso27701.png" class="logo-md"/></span>
 <h4>ISO 27701 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2150,7 +2228,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="dora" src="assets/Logos/dora.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="dora" src="assets/Logos/dora.png" class="logo-md"/></span>
 <h4>DORA 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2168,7 +2246,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="cmmc" src="assets/Logos/cmmc.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="cmmc" src="assets/Logos/cmmc.png" class="logo-md"/></span>
 <h4>CMMC 2.0 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2177,7 +2255,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="nist ai rmf" src="assets/Logos/nist-ai-rmf.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="nist ai rmf" src="assets/Logos/nist-ai-rmf.svg" class="logo-md"/></span>
 <h4>NIST AI RMF 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2186,7 +2264,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="swift csp" src="assets/Logos/swift-csp.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="swift csp" src="assets/Logos/swift-csp.png" class="logo-md"/></span>
 <h4>SWIFT CSP 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2222,7 +2300,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="itar" src="assets/Logos/itar.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="itar" src="assets/Logos/itar.jpg" class="logo-md"/></span>
 <h4>ITAR 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2231,7 +2309,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="lgpd brazil" src="assets/Logos/lgpd-brazil.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="lgpd brazil" src="assets/Logos/lgpd-brazil.svg" class="logo-md"/></span>
 <h4>LGPD (Brazil) 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2240,7 +2318,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="csrd eu" src="assets/Logos/csrd-eu.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="csrd eu" src="assets/Logos/csrd-eu.svg" class="logo-md"/></span>
 <h4>CSRD 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2249,7 +2327,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="CIS logo" src="assets/Logos/CIS logo.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="CIS logo" src="assets/Logos/CIS logo.png" class="logo-md"/></span>
 <h4>CIS Controls v8 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -2258,7 +2336,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="EAR logo" src="assets/Logos/EAR logo.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="EAR logo" src="assets/Logos/EAR logo.webp" class="logo-md"/></span>
 <h4>EAR 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2267,7 +2345,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="NIST SP 800 53 logo" src="assets/Logos/NIST SP 800-53 logo.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="NIST SP 800 53 logo" src="assets/Logos/NIST SP 800-53 logo.webp" class="logo-md"/></span>
 <h4>NIST SP 800-53 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2276,7 +2354,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="Euro AI act logo" src="assets/Logos/Euro AI act logo.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="Euro AI act logo" src="assets/Logos/Euro AI act logo.jpg" class="logo-md"/></span>
 <h4>EU AI Act 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2342,7 +2420,7 @@ layout: null
 <div class="whats-new-grid">
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="ISO 27001" src="assets/Logos/iso27001.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="ISO 27001" src="assets/Logos/iso27001.jpg" class="logo-md"/></span>
 <h4>ISO 27001 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -2351,7 +2429,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="SOC 2" src="assets/Logos/soc2.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="SOC 2" src="assets/Logos/soc2.jpeg" class="logo-md"/></span>
 <h4>SOC 2 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -2360,7 +2438,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="FedRAMP" src="assets/Logos/fedramp.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="FedRAMP" src="assets/Logos/fedramp.svg" class="logo-md"/></span>
 <h4>FedRAMP 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2378,7 +2456,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="HIPAA" src="assets/Logos/hipaa.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="HIPAA" src="assets/Logos/hipaa.png" class="logo-md"/></span>
 <h4>HIPAA 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2387,7 +2465,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" class="logo-md"/></span>
 <h4>NIST CSF 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2396,7 +2474,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="PCI DSS" src="assets/Logos/pci-dss.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="PCI DSS" src="assets/Logos/pci-dss.png" class="logo-md"/></span>
 <h4>PCI DSS 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -2414,7 +2492,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="ISO 42001" src="assets/Logos/iso42001.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="ISO 42001" src="assets/Logos/iso42001.webp" class="logo-md"/></span>
 <h4>ISO 42001 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2423,7 +2501,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="ISO 27701" src="assets/Logos/iso27701.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="ISO 27701" src="assets/Logos/iso27701.png" class="logo-md"/></span>
 <h4>ISO 27701 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2432,7 +2510,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="DORA" src="assets/Logos/dora.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="DORA" src="assets/Logos/dora.png" class="logo-md"/></span>
 <h4>DORA 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2450,7 +2528,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="CMMC" src="assets/Logos/cmmc.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="CMMC" src="assets/Logos/cmmc.png" class="logo-md"/></span>
 <h4>CMMC 2.0 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2459,7 +2537,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" class="logo-md"/></span>
 <h4>NIST AI RMF 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -2468,7 +2546,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" class="logo-md"/></span>
 <h4>SWIFT CSP 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2504,7 +2582,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="ITAR" src="assets/Logos/itar.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="ITAR" src="assets/Logos/itar.jpg" class="logo-md"/></span>
 <h4>ITAR 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -2513,7 +2591,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="LGPD" src="assets/Logos/lgpd-brazil.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="LGPD" src="assets/Logos/lgpd-brazil.svg" class="logo-md"/></span>
 <h4>LGPD (Brazil) 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -2522,7 +2600,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="CSRD" src="assets/Logos/csrd-eu.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="CSRD" src="assets/Logos/csrd-eu.svg" class="logo-md"/></span>
 <h4>CSRD 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2531,7 +2609,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="CIS Controls" src="assets/Logos/CIS logo.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="CIS Controls" src="assets/Logos/CIS logo.png" class="logo-md"/></span>
 <h4>CIS Controls v8 🟢</h4>
 </div>
 <div class="wnf-card-body">
@@ -2540,7 +2618,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="EAR" src="assets/Logos/EAR logo.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="EAR" src="assets/Logos/EAR logo.webp" class="logo-md"/></span>
 <h4>EAR 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2549,7 +2627,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="NIST SP 800-53" src="assets/Logos/NIST SP 800-53 logo.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="NIST SP 800-53" src="assets/Logos/NIST SP 800-53 logo.webp" class="logo-md"/></span>
 <h4>NIST SP 800-53 🟡</h4>
 </div>
 <div class="wnf-card-body">
@@ -2558,7 +2636,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="EU AI Act" src="assets/Logos/Euro AI act logo.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="EU AI Act" src="assets/Logos/Euro AI act logo.jpg" class="logo-md"/></span>
 <h4>EU AI Act 🔴</h4>
 </div>
 <div class="wnf-card-body">
@@ -2621,7 +2699,7 @@ layout: null
 <div class="whats-new-grid">
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="ISO 27001" src="assets/Logos/iso27001.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="ISO 27001" src="assets/Logos/iso27001.jpg" class="logo-md"/></span>
 <h4>ISO 27001</h4>
 </div>
 <div class="wnf-card-body">
@@ -2630,7 +2708,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="SOC 2" src="assets/Logos/soc2.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="SOC 2" src="assets/Logos/soc2.jpeg" class="logo-md"/></span>
 <h4>SOC 2</h4>
 </div>
 <div class="wnf-card-body">
@@ -2639,7 +2717,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="HIPAA" src="assets/Logos/hipaa.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="HIPAA" src="assets/Logos/hipaa.png" class="logo-md"/></span>
 <h4>HIPAA</h4>
 </div>
 <div class="wnf-card-body">
@@ -2657,7 +2735,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="FedRAMP" src="assets/Logos/fedramp.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="FedRAMP" src="assets/Logos/fedramp.svg" class="logo-md"/></span>
 <h4>FedRAMP</h4>
 </div>
 <div class="wnf-card-body">
@@ -2666,7 +2744,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" class="logo-md"/></span>
 <h4>NIST CSF</h4>
 </div>
 <div class="wnf-card-body">
@@ -2675,7 +2753,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="PCI DSS" src="assets/Logos/pci-dss.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="PCI DSS" src="assets/Logos/pci-dss.png" class="logo-md"/></span>
 <h4>PCI DSS</h4>
 </div>
 <div class="wnf-card-body">
@@ -2684,7 +2762,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="ISO 27701" src="assets/Logos/iso27701.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="ISO 27701" src="assets/Logos/iso27701.png" class="logo-md"/></span>
 <h4>ISO 27701</h4>
 </div>
 <div class="wnf-card-body">
@@ -2693,7 +2771,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="ISO 42001" src="assets/Logos/iso42001.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="ISO 42001" src="assets/Logos/iso42001.webp" class="logo-md"/></span>
 <h4>ISO 42001</h4>
 </div>
 <div class="wnf-card-body">
@@ -2702,7 +2780,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="DORA" src="assets/Logos/dora.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="DORA" src="assets/Logos/dora.png" class="logo-md"/></span>
 <h4>DORA</h4>
 </div>
 <div class="wnf-card-body">
@@ -2729,7 +2807,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="CMMC" src="assets/Logos/cmmc.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="CMMC" src="assets/Logos/cmmc.png" class="logo-md"/></span>
 <h4>CMMC 2.0</h4>
 </div>
 <div class="wnf-card-body">
@@ -2738,7 +2816,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" class="logo-md"/></span>
 <h4>NIST AI RMF</h4>
 </div>
 <div class="wnf-card-body">
@@ -2747,7 +2825,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" class="logo-md"/></span>
 <h4>SWIFT CSP</h4>
 </div>
 <div class="wnf-card-body">
@@ -2792,7 +2870,7 @@ layout: null
 <div class="whats-new-grid">
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="ISO 27001" src="assets/Logos/iso27001.jpg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="ISO 27001" src="assets/Logos/iso27001.jpg" class="logo-md"/></span>
 <h4>ISO 27001</h4>
 </div>
 <div class="wnf-card-body">
@@ -2801,7 +2879,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="SOC 2" src="assets/Logos/soc2.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="SOC 2" src="assets/Logos/soc2.jpeg" class="logo-md"/></span>
 <h4>SOC 2</h4>
 </div>
 <div class="wnf-card-body">
@@ -2810,7 +2888,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="HIPAA" src="assets/Logos/hipaa.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="HIPAA" src="assets/Logos/hipaa.png" class="logo-md"/></span>
 <h4>HIPAA</h4>
 </div>
 <div class="wnf-card-body">
@@ -2828,7 +2906,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="FedRAMP" src="assets/Logos/fedramp.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="FedRAMP" src="assets/Logos/fedramp.svg" class="logo-md"/></span>
 <h4>FedRAMP</h4>
 </div>
 <div class="wnf-card-body">
@@ -2837,7 +2915,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="NIST CSF" src="assets/Logos/nist-csf.jpeg" class="logo-md"/></span>
 <h4>NIST CSF</h4>
 </div>
 <div class="wnf-card-body">
@@ -2846,7 +2924,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="PCI DSS" src="assets/Logos/pci-dss.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="PCI DSS" src="assets/Logos/pci-dss.png" class="logo-md"/></span>
 <h4>PCI DSS</h4>
 </div>
 <div class="wnf-card-body">
@@ -2855,7 +2933,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="ISO 27701" src="assets/Logos/iso27701.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="ISO 27701" src="assets/Logos/iso27701.png" class="logo-md"/></span>
 <h4>ISO 27701</h4>
 </div>
 <div class="wnf-card-body">
@@ -2864,7 +2942,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="ISO 42001" src="assets/Logos/iso42001.webp" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="ISO 42001" src="assets/Logos/iso42001.webp" class="logo-md"/></span>
 <h4>ISO 42001</h4>
 </div>
 <div class="wnf-card-body">
@@ -2873,7 +2951,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="DORA" src="assets/Logos/dora.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="DORA" src="assets/Logos/dora.png" class="logo-md"/></span>
 <h4>DORA</h4>
 </div>
 <div class="wnf-card-body">
@@ -2900,7 +2978,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="CMMC" src="assets/Logos/cmmc.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="CMMC" src="assets/Logos/cmmc.png" class="logo-md"/></span>
 <h4>CMMC 2.0</h4>
 </div>
 <div class="wnf-card-body">
@@ -2909,7 +2987,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="NIST AI RMF" src="assets/Logos/nist-ai-rmf.svg" class="logo-md"/></span>
 <h4>NIST AI RMF</h4>
 </div>
 <div class="wnf-card-body">
@@ -2918,7 +2996,7 @@ layout: null
 </div>
 <div class="wnf-card">
 <div class="wnf-card-header">
-<span class="wnf-icon"><img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" style="height:1.25em;width:auto;vertical-align:middle;object-fit:contain;"/></span>
+<span class="wnf-icon"><img alt="SWIFT CSP" src="assets/Logos/swift-csp.png" class="logo-md"/></span>
 <h4>SWIFT CSP</h4>
 </div>
 <div class="wnf-card-body">
@@ -3542,6 +3620,112 @@ layout: null
       });
     });
   })();
+</script>
+<script>
+(function () {
+  'use strict';
+  var bar = document.getElementById('skill-filter');
+  if (!bar) return;
+  bar.hidden = false;
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#tab-skills .skill-card'));
+  var searchEl = document.getElementById('sf-search');
+  var countEl = document.getElementById('sf-count');
+  var clearEl = document.getElementById('sf-clear');
+  var emptyEl = document.getElementById('sf-empty');
+  var pills = Array.prototype.slice.call(bar.querySelectorAll('.sf-pill'));
+  var TOTAL = cards.length;
+
+  cards.forEach(function (card) {
+    card._search = (card.textContent || '').toLowerCase().replace(/\s+/g, ' ');
+  });
+
+  var state = { q: '', region: [], cat: [], domain: [] };
+
+  function cardMatches(card) {
+    if (state.q && card._search.indexOf(state.q) === -1) return false;
+    function hit(group, attr) {
+      if (!state[group].length) return true;
+      var vals = (card.getAttribute(attr) || '').split(/\s+/);
+      return state[group].some(function (v) { return vals.indexOf(v) !== -1; });
+    }
+    return hit('region', 'data-region') && hit('cat', 'data-category') && hit('domain', 'data-domains');
+  }
+
+  function anyActive() {
+    return !!(state.q || state.region.length || state.cat.length || state.domain.length);
+  }
+
+  function apply(pushUrl) {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var ok = cardMatches(card);
+      card.classList.toggle('sc-hidden', !ok);
+      if (ok) shown++;
+    });
+    countEl.textContent = shown === TOTAL ? 'Showing all ' + TOTAL + ' skills' : 'Showing ' + shown + ' of ' + TOTAL + ' skills';
+    clearEl.hidden = !anyActive();
+    emptyEl.hidden = shown !== 0;
+    if (pushUrl !== false) syncUrl();
+  }
+
+  function syncUrl() {
+    var p = new URLSearchParams();
+    if (state.q) p.set('q', state.q);
+    ['region', 'cat', 'domain'].forEach(function (g) {
+      if (state[g].length) p.set(g, state[g].join(','));
+    });
+    var qs = p.toString();
+    history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
+  }
+
+  function clearAll() {
+    state.q = ''; state.region = []; state.cat = []; state.domain = [];
+    searchEl.value = '';
+    pills.forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+    apply();
+  }
+
+  var t;
+  searchEl.addEventListener('input', function () {
+    clearTimeout(t);
+    t = setTimeout(function () {
+      state.q = searchEl.value.trim().toLowerCase();
+      apply();
+    }, 150);
+  });
+
+  pills.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var g = btn.getAttribute('data-group'), v = btn.getAttribute('data-value');
+      var i = state[g].indexOf(v);
+      if (i === -1) state[g].push(v); else state[g].splice(i, 1);
+      btn.setAttribute('aria-pressed', i === -1 ? 'true' : 'false');
+      apply();
+    });
+  });
+
+  clearEl.addEventListener('click', clearAll);
+  document.getElementById('sf-empty-clear').addEventListener('click', clearAll);
+
+  // Restore from URL (?q=…&region=us,eu&cat=…&domain=…)
+  var params = new URLSearchParams(location.search);
+  var had = false;
+  if (params.get('q')) { state.q = params.get('q').toLowerCase(); searchEl.value = params.get('q'); had = true; }
+  ['region', 'cat', 'domain'].forEach(function (g) {
+    var raw = params.get(g);
+    if (!raw) return;
+    raw.split(',').forEach(function (v) {
+      var btn = bar.querySelector('.sf-pill[data-group="' + g + '"][data-value="' + v + '"]');
+      if (btn) { state[g].push(v); btn.setAttribute('aria-pressed', 'true'); had = true; }
+    });
+  });
+  if (state.domain.length) bar.querySelector('.sf-domains').open = true;
+  if (had) {
+    var skillsBtn = document.querySelector('.tab-btn[data-tab="skills"]');
+    if (skillsBtn && !skillsBtn.classList.contains('active')) skillsBtn.click();
+    apply(false);
+  }
+})();
 </script>
 </body>
 </html>
