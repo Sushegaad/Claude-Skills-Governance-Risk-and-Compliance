@@ -39,40 +39,10 @@ PLUGIN_DIRS = sorted([p for p in PLUGINS_DIR.iterdir() if p.is_dir()])
 # marketplace.json at test time (see test_marketplace_lists_all_plugins).
 # Hardcoded set is used only as a cross-check — update this list whenever
 # a new skill is added.
+# Derived from skills.json — the single source of truth for the inventory.
 EXPECTED_PLUGINS = {
-    "ccpa",
-    "cis-controls",
-    "eu-cra",
-    "cmmc",
-    "csrd",
-    "dora",
-    "dpdpa",
-    "ear",
-    "eu-ai-act",
-    "fedramp",
-    "gdpr-compliance",
-    "hipaa-compliance",
-    "ism",
-    "iso27001",
-    "iso27701",
-    "iso42001",
-    "itar",
-    "lgpd",
-    "nis2",
-    "nist-800-53",
-    "nist-ai-rmf",
-    "nist-csf",
-    "nzism",
-    "pci-compliance",
-    "vn-pdpl",
-    "section-508",
-    "soc2",
-    "swift-csp",
-    "tsa-compliance",
-    "wcag",
-    "saudi-arabia-grc",
-    "tisax",
-    "uae-grc",
+    s["plugin"]
+    for s in json.loads((REPO_ROOT / "skills.json").read_text(encoding="utf-8"))["skills"]
 }
 
 REQUIRED_PLUGIN_JSON_FIELDS = {"name", "version", "description"}

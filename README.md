@@ -986,16 +986,17 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 
 | Skill | Test Cases | With Skill | Baseline | Delta | What Was Tested |
 |-------|-----------|-----------|---------|-------|-----------------|
+<!-- GEN:readme-eval-table -->
 | ISO 27001 | 5 | **100%** | 84% | +16% | Gap assessment; Policy drafting; 2013→2022 transition; Risk assessment; Management review CAP |
 | SOC 2 | 5 | **100%** | 84% | +16% | Type 1 vs 2; CC controls checklist; Availability criteria; Access control policy; Audit exception response |
 | FedRAMP [US] | 5 | **96%** | 72% | +24% | Authorization pathways; CR26 Certification Classes A-D; FedRAMP 20x (primary pathway); OSCAL mandate Sep 2026; POA&M remediation timelines |
-| GDPR [EU] | 5 | **88%** | 88% | +0% | US company checklist; Article 28 DPA; Subject access request; Cookie consent; 72-hour breach notification |
+| GDPR [EU] | 5 | **88%** | 88% | ±0% | US company checklist; Article 28 DPA; Subject access request; Cookie consent; 72-hour breach notification |
 | HIPAA [US] | 5 | **92%** | 88% | +4% | Covered entity analysis; BAA template; Encryption (addressable vs required); Risk analysis; Workforce violation |
 | NIST CSF | 5 | **96%** | 84% | +12% | CSF 2.0 overview; Ransomware recovery plan; Profile creation; Control mapping; Board reporting |
 | PCI DSS | 5 | **92%** | 88% | +4% | SAQ type selection; Req 3 stored data (v4.0); Breach obligations; Penetration testing; Tokenization scope |
 | TSA Cybersecurity [US] | 5 | **100%** | 96% | +4% | Pipeline directive requirements; CIRP elements; OT/IT segmentation; Airport applicability; TSA vs CIRCIA |
 | ISO 42001 | 5 | **92%** | 80% | +12% | AIMS applicability; Key requirements; AI-specific risks; Third-party LLM management; AI ethics controls |
-| ISO 27701 | 5 | **100%** | 100% | +0% | Extension to ISO 27001; GDPR mapping; Processor controls; PIA methodology; Certification as GDPR evidence |
+| ISO 27701 | 5 | **100%** | 100% | ±0% | Extension to ISO 27001; GDPR mapping; Processor controls; PIA methodology; Certification as GDPR evidence |
 | DORA [EU] | 5 | **88%** | 72% | +16% | Five pillars; ICT incident reporting timelines; TLPT requirements; Third-party contracts; DORA vs EBA |
 | DPDPA [India] | 5 | **96%** | 80% | +16% | Applicability to foreign entities; Consent vs GDPR; Children's data (18-year threshold); Cross-border transfers; SDF obligations |
 | CMMC 2.0 [US] | 5 | **100%** | 44% | +56% | Level determination; SPRS scoring; CUI scoping; SSP structure; C3PAO assessment readiness |
@@ -1004,21 +1005,22 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | ISM [Australia] | 5 | **92%** | 84% | +8% | OS control scoping and authorisation; IRAP assessment preparation; Chapter 13 system hardening; Essential Eight to ISM mapping; Supply chain cloud provider obligations |
 | NIS2 [EU] | 5 | **100%** | 84% | +16% | Energy company EE/IE classification; SaaS provider Art. 21 obligations; Ransomware Art. 23 reporting workflow; ISO 27001 vs NIS2 gap analysis; DORA lex specialis interaction |
 | CCPA/CPRA [California] | 5 | **100%** | 80% | +20% | E-commerce threshold analysis; Combined right-to-know and delete workflow; Ad tech sale vs sharing classification; GDPR-to-CCPA gap analysis; SPI classification for mobile app |
-| ITAR [US] | 5 | **100%** | 100% | 0% | USML jurisdiction analysis for military laptops; Deemed export for German engineer; DSP-73 temporary export for trade show; Violation and VSD process; TAA mandatory clauses for India |
-| LGPD [Brazil] | 5 | **76%** | 76% | +0% | Extraterritorial scope for US SaaS with Brazilian customers; Brazil-EU mutual adequacy (Jan 2026 — no SCCs needed); Data deletion request across CRM/email/analytics; Sensitive health data marketing restrictions; International transfer mechanisms |
+| ITAR [US] | 5 | **100%** | 100% | ±0% | USML jurisdiction analysis for military laptops; Deemed export for German engineer; DSP-73 temporary export for trade show; Violation and VSD process; TAA mandatory clauses for India |
+| LGPD [Brazil] | 5 | **76%** | 76% | ±0% | Extraterritorial scope for US SaaS with Brazilian customers; Brazil-EU mutual adequacy (Jan 2026 — no SCCs needed); Data deletion request across CRM/email/analytics; Sensitive health data marketing restrictions; International transfer mechanisms |
 | CSRD [EU] | 5 | **88%** | 32% | +56% | CSRD scope analysis for German listed manufacturer (PIE Wave 1); Double materiality vs GRI/TCFD; Post-DMA disclosure requirements for E1/S1/G1; GRI+TCFD to ESRS gap assessment; Non-EU company (US parent, €200M EU revenue) obligations |
 | CIS Controls v8 | 5 | **100%** | 80% | +20% | Implementation Group determination; Gap assessment for SaaS startup; MFA safeguard scoping (IG2); CIS v8 to NIST CSF 2.0 mapping; Vulnerability management programme with remediation SLAs |
 | EAR [US] | 5 | **100%** | 88% | +12% | RF amplifier ECCN classification for Germany export; Deemed export for Chinese/Australian dual national on 5D002; Entity List re-export violation and VSD process; AES-256 software ENC exception for France/India/Brazil; ECP design for semiconductor equipment company |
 | NIST SP 800-53 | 5 | **92%** | 84% | +8% | FIPS 199 categorization for federal HR system; AC-2(3) OTS finding and POA&M documentation; MFA controls and EO 14028 phishing-resistant MFA; SSP narrative for SC-8(1) Transmission Confidentiality; ISO 27001 to FedRAMP gap analysis and RMF steps |
 | EU AI Act | 5 | **84%** | 64% | +20% | CV screening high-risk + Annex III Area 4 + Digital Omnibus Dec 2027 deadline; Predictive policing Art. 5 prohibition; Open-source GPAI CoP + 3×10²⁴ FLOPs exception; MDR+AI Act interaction + Aug 2028 Annex I deadline; E-commerce chatbot Art. 50 disclosure |
-| Section 508 [US] | 5 | **100%** | 100% | 0% | VPAT 2.x ACR completion and testing methodology; Keyboard-only navigation failures and WCAG remediation; PDF forms accessibility remediation (200 PDFs); Federal procurement RFP requirements and VPAT evaluation; Undue burden exception process and alternative access obligations |
+| Section 508 [US] | 5 | **100%** | 100% | ±0% | VPAT 2.x ACR completion and testing methodology; Keyboard-only navigation failures and WCAG remediation; PDF forms accessibility remediation (200 PDFs); Federal procurement RFP requirements and VPAT evaluation; Undue burden exception process and alternative access obligations |
 | WCAG [International] | 5 | **100%** | 85% | +15% | Colour contrast audit (SC 1.4.3) with replacement suggestions; WCAG 2.2 upgrade criteria from 2.1 AA; React modal ARIA code review with corrected implementation; Legal compliance mapping across US/EU/UK; Accessibility statement for e-commerce site |
 | NZISM [New Zealand] | 5 | **96%** | 64% | +32% | Restricted system C&A gap analysis; AWS Sydney offshore hosting obligations; Access Control Policy with NZISM control IDs; Ransomware supplier incident response; SaaS vendor due diligence and contractual requirements |
 | VN-PDPL [Vietnam] | 5 | **68%** | 60% | +8% | Gap analysis for SaaS company with Vietnamese customers; Fintech breach notification 72-hour workflow; Micro-enterprise exemptions; Consent mechanism design; Consent withdrawal timeframes under Decree 356 |
-| EU CRA [EU] | 5 | **80%** | 80% | +0% | PDE scope and classification (Default/Class I/Class II); Annex I gap assessment for consumer IoT router; Vulnerability and ENISA reporting timelines; SBOM programme design; Manufacturer vs importer/distributor obligations |
+| EU CRA [EU] | 5 | **80%** | 80% | ±0% | PDE scope and classification (Default/Class I/Class II); Annex I gap assessment for consumer IoT router; Vulnerability and ENISA reporting timelines; SBOM programme design; Manufacturer vs importer/distributor obligations |
 | Saudi Arabia GRC | 5 | **96%** | 28% | +68% | Market-entry applicability routing; SAMA vs NCA stacking; cloud-for-government residency (CST/CCC); PDPL breach response; ISO 27001 to ECC-2:2024 mapping |
 | UAE GRC | 5 | **84%** | 28% | +56% | DIFC routing + 2025 amendment; health-data localization vs US cloud; mainland PDPL status; ADGM breach clock; CBUAE cloud offshoring constraints |
 | TISAX | 5 | **96%** | 16% | +80% | First-timer BMW Confidential label; ISO 27001 to TISAX delta; corrective action 9-month window; prototype labels and AL3; ISA2027 transition |
+<!-- /GEN:readme-eval-table -->
 
 📊 **[View the full eval results →](grc-skills-eval-results.html)**
 

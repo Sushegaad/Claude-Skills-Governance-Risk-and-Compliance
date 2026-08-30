@@ -52,7 +52,9 @@ EVAL_PAGE  = REPO_ROOT / "grc-skills-eval-results.html"
 INDEX_HTML = REPO_ROOT / "index.html"
 README     = REPO_ROOT / "README.md"
 
-EXPECTED_SKILL_COUNT = 33   # update this constant when a new skill is added
+# The manifest (skills.json) is the single source of truth for the inventory.
+_MANIFEST = json.loads((REPO_ROOT / "skills.json").read_text(encoding="utf-8"))
+EXPECTED_SKILL_COUNT = len(_MANIFEST["skills"])
 
 
 # ---------------------------------------------------------------------------
@@ -455,44 +457,7 @@ class TestEvalConsistency:
 _WS = REPO_ROOT / "grc-workspace"
 
 _SKILL_GRADING_DIR: dict[str, Path] = {
-    # ── July 2026 re-run with primary-source assertions (most recent) ────────
-    "fedramp":          _WS / "rerun-2026-08" / "fedramp-evals",
-    "swift-csp":        _WS / "rerun-2026-07" / "swift-csp-evals",
-    "nis2":             _WS / "rerun-2026-07b" / "nis2-evals",
-    "lgpd":             _WS / "rerun-2026-07" / "lgpd-evals",
-    # ── iteration-2 (previous run) ───────────────────────────────────────────
-    "ccpa":             _WS / "rerun-2026-07c" / "ccpa-evals-iter2",
-    "eu-ai-act":        _WS / "rerun-2026-08" / "eu-ai-act-evals",
-    "iso27701":         _WS / "iteration-2" / "iso27701",
-    # ── iteration-1 (skill-specific subdirectory) ────────────────────────────
-    "gdpr-compliance":  _WS / "iteration-1" / "gdpr-compliance",
-    "iso27001":         _WS / "iteration-1" / "iso27001",
-    "soc2":             _WS / "iteration-1" / "soc2",
-    "hipaa-compliance": _WS / "iteration-1" / "hipaa-compliance",
-    "nist-csf":         _WS / "iteration-1" / "nist-csf",
-    "pci-compliance":   _WS / "iteration-1" / "pci-compliance",
-    "tsa-compliance":   _WS / "iteration-1" / "tsa-compliance",
-    "iso42001":         _WS / "iteration-1" / "iso42001",
-    "dora":             _WS / "iteration-1" / "dora",
-    "dpdpa":            _WS / "iteration-1" / "dpdpa",
-    "cmmc":             _WS / "rerun-2026-08" / "cmmc-evals",
-    "nist-ai-rmf":      _WS / "rerun-2026-07c" / "nist-ai-rmf-evals",
-    "ism":              _WS / "rerun-2026-08" / "ism-evals-iter2",
-    # ── flat eval directories in iteration-1 root (identified by prefix) ─────
-    "itar":             _WS / "iteration-1",   # eval-91..95
-    "csrd":             _WS / "rerun-2026-08" / "csrd-evals",
-    "cis-controls":     _WS / "iteration-1",   # eval-106..110
-    # ── separate named eval directories ──────────────────────────────────────
-    "ear":              _WS / "ear-evals",
-    "nist-800-53":      _WS / "nist-800-53-evals",
-    "section-508":      _WS / "section-508-evals",
-    "wcag":             _WS / "wcag-evals",
-    "nzism":            _WS / "rerun-2026-07c" / "nzism-evals",
-    "vn-pdpl":          _WS / "rerun-2026-07b" / "vn-pdpl-evals",
-    "eu-cra":           _WS / "rerun-2026-07b" / "eu-cra-evals",
-    "saudi-arabia-grc": _WS / "rerun-2026-08" / "saudi-arabia-grc-evals",
-    "uae-grc":          _WS / "rerun-2026-08" / "uae-grc-evals",
-    "tisax":            _WS / "rerun-2026-08" / "tisax-evals",
+    s["plugin"]: REPO_ROOT / s["grading_dir"] for s in _MANIFEST["skills"]
 }
 
 # Flat-eval skills that share the iteration-1 root; restrict search by prefix.
@@ -516,39 +481,7 @@ _TOLERANCE_PP = 1
 # This is necessary because display names are abbreviated (e.g., "GDPR" for
 # the gdpr-compliance plugin) and don't map mechanically from the skill ID.
 _SKILL_ID_TO_NORM_KEY: dict[str, str] = {
-    "iso27001":         "iso 27001",
-    "soc2":             "soc 2",
-    "fedramp":          "fedramp",
-    "gdpr-compliance":  "gdpr",
-    "hipaa-compliance": "hipaa",
-    "nist-csf":         "nist csf",
-    "pci-compliance":   "pci dss",
-    "tsa-compliance":   "tsa cybersecurity",
-    "iso42001":         "iso 42001",
-    "iso27701":         "iso 27701",
-    "dora":             "dora",
-    "dpdpa":            "dpdpa",
-    "cmmc":             "cmmc 2.0",
-    "nist-ai-rmf":      "nist ai rmf",
-    "swift-csp":        "swift csp",
-    "ism":              "ism",
-    "nis2":             "nis2",
-    "ccpa":             "ccpa/cpra",
-    "itar":             "itar",
-    "lgpd":             "lgpd",
-    "csrd":             "csrd",
-    "cis-controls":     "cis controls v8",
-    "ear":              "ear",
-    "nist-800-53":      "nist sp 800-53",
-    "eu-ai-act":        "eu ai act",
-    "section-508":      "section 508",
-    "wcag":             "wcag",
-    "nzism":            "nzism",
-    "vn-pdpl":          "vn-pdpl",
-    "eu-cra":           "eu cra",
-    "saudi-arabia-grc": "saudi arabia grc",
-    "uae-grc":          "uae grc",
-    "tisax":            "tisax",
+    s["plugin"]: s["norm_key"] for s in _MANIFEST["skills"]
 }
 
 

@@ -4,11 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "README.md"
-      - "_config.yml"
-      - "*.png"
-      - "*.html"
   workflow_dispatch:
 
 permissions:
@@ -21,8 +16,28 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Deploy gate: the site only ships if the full suite is green.
+  # Freshness tests are excluded here (wall-clock dependent — a stale
+  # Last-verified date should trigger a content refresh, not block an
+  # unrelated deploy); they run and report in tests.yml instead.
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Run test suite (deploy gate)
+        run: pytest tests/ --ignore=tests/test_skill_freshness.py --tb=short -q
+      - name: Docs generator drift check
+        run: |
+          if [ -f scripts/build_docs.py ]; then python scripts/build_docs.py --check; fi
+
   build:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

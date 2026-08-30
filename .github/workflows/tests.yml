@@ -1,0 +1,55 @@
+name: Tests
+
+# Full quality gate on every push and PR — all six test files, ~1,700 checks:
+#
+#   • test_eval_consistency.py    — three published stat surfaces must agree with
+#                                   each other AND with grc-workspace grading.json
+#   • test_plugin_structure.py    — plugins/ ↔ marketplace.json integrity
+#   • test_skill_installability.py— every .skill ZIP mirrors the real installer's
+#                                   constraints; bundled SKILL.md AND references/
+#                                   must be byte-identical to source
+#   • test_version_consistency.py — one canonical version everywhere
+#   • test_skill_disclaimer.py    — disclaimer travels inside every SKILL.md
+#   • test_skill_freshness.py     — runs as its own job below: it is wall-clock
+#                                   dependent (Last-verified ≤ 120 days), so a red
+#                                   "content-freshness" job means skills need
+#                                   re-verification, not that the code is broken
+#
+# The docs-generator check fails the build if a generated table block in
+# README.md / index.html / INSTALLATION.md drifts from skills.json + grading data.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Full test suite (except freshness)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Run test suite
+        run: pytest tests/ --ignore=tests/test_skill_freshness.py --tb=short -q
+      - name: Docs generator drift check
+        run: |
+          if [ -f scripts/build_docs.py ]; then python scripts/build_docs.py --check; fi
+
+  content-freshness:
+    name: Content freshness (Last-verified ≤ 120 days)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Run freshness checks
+        run: pytest tests/test_skill_freshness.py --tb=short -q

@@ -1,68 +1,22 @@
-name: Eval Results Consistency
-
-# Prevents the three locations that publish per-skill eval stats from
-# diverging from each other OR from the grading.json artifacts on disk:
-#
-#   • grc-skills-eval-results.html  (summary table + accordion headers)
-#   • index.html                     (#evaluation Per-Skill Results table)
-#   • README.md                      (#skill-evaluation markdown table)
-#   • grc-workspace/**/grading.json  (ground truth — actual eval artifacts)
-#
-# TestEvalConsistency (original) — cross-file consistency
-#   Ensures the three HTML/MD locations agree with each other on every
-#   skill's with-skill %, baseline %, and delta %. Also validates delta
-#   arithmetic and that no skill scores lower with the skill than without.
-#
-# TestGradingFileConsistency (new) — deep audit layer
-#   Reads the actual grading.json artifacts in grc-workspace/ and verifies
-#   that every published per-skill stat is backed by those files (within ±1 pp
-#   to allow for rounding). Also verifies that the total assertion count
-#   headline in all three files matches the sum of assertions across all
-#   grading files. Skills without committed grading data (nzism, vn-pdpl,
-#   eu-cra) are skipped with pytest.skip, not failed.
-#
-# Why the original tests could NOT catch inflated/wrong published stats
-# -------------------------------------------------------------------
-# TestEvalConsistency designates grc-skills-eval-results.html as "ground
-# truth" and checks that index.html and README.md agree with it. If all
-# three files are updated with the same wrong number (e.g., GDPR published
-# as 100%/96% when grading says 88%/88%), every cross-file test passes.
-# The deep audit layer was added to catch exactly this failure mode.
+# SUPERSEDED by tests.yml, which runs the full test suite (including the
+# eval-consistency + grading-file audit that used to run here) on every push
+# and PR, and gates the Pages deploy. This file is kept only as a manual
+# escape hatch; feel free to delete it.
+name: Eval Results Consistency (superseded)
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "grc-skills-eval-results.html"
-      - "index.html"
-      - "README.md"
-      - "grc-workspace/**"
-      - "tests/test_eval_consistency.py"
-  pull_request:
-    paths:
-      - "grc-skills-eval-results.html"
-      - "index.html"
-      - "README.md"
-      - "grc-workspace/**"
-      - "tests/test_eval_consistency.py"
-  workflow_dispatch:   # allow manual runs from the GitHub UI
+  workflow_dispatch:
 
 jobs:
   eval-consistency:
-    name: Cross-file + grading-file eval audit
+    name: Cross-file + grading-file eval audit (manual)
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
-      - name: Install pytest
-        run: pip install pytest
-
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
       - name: Run eval consistency + grading-file audit
         run: pytest tests/test_eval_consistency.py -v --tb=short

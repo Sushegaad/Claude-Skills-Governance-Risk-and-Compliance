@@ -40,6 +40,7 @@ Claude Code will clone the repository, read the `.claude-plugin/marketplace.json
 
 Once the marketplace is registered, install only the frameworks you need.
 
+<!-- GEN:install-commands -->
 ### Information Security & Risk
 
 ```shell
@@ -47,12 +48,12 @@ Once the marketplace is registered, install only the frameworks you need.
 /plugin install soc2@grc-skills
 /plugin install fedramp@grc-skills
 /plugin install nist-csf@grc-skills
-/plugin install nist-800-53@grc-skills
 /plugin install cmmc@grc-skills
 /plugin install swift-csp@grc-skills
 /plugin install ism@grc-skills
-/plugin install nzism@grc-skills
 /plugin install cis-controls@grc-skills
+/plugin install nist-800-53@grc-skills
+/plugin install nzism@grc-skills
 /plugin install tisax@grc-skills
 ```
 
@@ -62,19 +63,19 @@ Once the marketplace is registered, install only the frameworks you need.
 /plugin install gdpr-compliance@grc-skills
 /plugin install hipaa-compliance@grc-skills
 /plugin install pci-compliance@grc-skills
+/plugin install iso27701@grc-skills
 /plugin install dpdpa@grc-skills
 /plugin install ccpa@grc-skills
 /plugin install lgpd@grc-skills
 /plugin install vn-pdpl@grc-skills
-/plugin install iso27701@grc-skills
 ```
 
 ### Cyber & Resilience Regulation
 
 ```shell
-/plugin install nis2@grc-skills
-/plugin install dora@grc-skills
 /plugin install tsa-compliance@grc-skills
+/plugin install dora@grc-skills
+/plugin install nis2@grc-skills
 /plugin install eu-cra@grc-skills
 ```
 
@@ -90,8 +91,8 @@ Once the marketplace is registered, install only the frameworks you need.
 
 ```shell
 /plugin install itar@grc-skills
-/plugin install ear@grc-skills
 /plugin install csrd@grc-skills
+/plugin install ear@grc-skills
 ```
 
 ### Accessibility
@@ -107,6 +108,7 @@ Once the marketplace is registered, install only the frameworks you need.
 /plugin install saudi-arabia-grc@grc-skills
 /plugin install uae-grc@grc-skills
 ```
+<!-- /GEN:install-commands -->
 
 Each plugin is installed to a local cache (`~/.claude/plugins/cache`) and activates immediately in new Claude sessions.
 
@@ -116,9 +118,11 @@ Each plugin is installed to a local cache (`~/.claude/plugins/cache`) and activa
 
 To install the full GRC suite in a single command:
 
+<!-- GEN:install-all -->
 ```shell
-/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills nist-csf@grc-skills nist-800-53@grc-skills cmmc@grc-skills swift-csp@grc-skills ism@grc-skills nzism@grc-skills cis-controls@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills pci-compliance@grc-skills dpdpa@grc-skills ccpa@grc-skills lgpd@grc-skills vn-pdpl@grc-skills iso27701@grc-skills nis2@grc-skills dora@grc-skills tsa-compliance@grc-skills eu-cra@grc-skills iso42001@grc-skills nist-ai-rmf@grc-skills eu-ai-act@grc-skills itar@grc-skills ear@grc-skills csrd@grc-skills section-508@grc-skills wcag@grc-skills saudi-arabia-grc@grc-skills uae-grc@grc-skills tisax@grc-skills
+/plugin install iso27001@grc-skills soc2@grc-skills fedramp@grc-skills nist-csf@grc-skills cmmc@grc-skills swift-csp@grc-skills ism@grc-skills cis-controls@grc-skills nist-800-53@grc-skills nzism@grc-skills tisax@grc-skills gdpr-compliance@grc-skills hipaa-compliance@grc-skills pci-compliance@grc-skills iso27701@grc-skills dpdpa@grc-skills ccpa@grc-skills lgpd@grc-skills vn-pdpl@grc-skills tsa-compliance@grc-skills dora@grc-skills nis2@grc-skills eu-cra@grc-skills iso42001@grc-skills nist-ai-rmf@grc-skills eu-ai-act@grc-skills itar@grc-skills csrd@grc-skills ear@grc-skills section-508@grc-skills wcag@grc-skills saudi-arabia-grc@grc-skills uae-grc@grc-skills
 ```
+<!-- /GEN:install-all -->
 
 ---
 
@@ -186,6 +190,7 @@ To remove the marketplace entirely:
 
 ## Available Skills
 
+<!-- GEN:plugin-tables -->
 ### Information Security & Risk Management
 
 | Plugin name | Framework | What it does |
@@ -194,12 +199,12 @@ To remove the marketplace entirely:
 | `soc2` | SOC 2 | TSC gap analysis, policy drafting, control documentation, audit evidence, vendor risk |
 | `fedramp` | FedRAMP (CR26) | Readiness under CR26 (final; Classes A–D, pipelines open Aug 2026), FedRAMP 20x primary pathway, Legacy Ready conversion, SSP narratives, POA&M SLAs, OSCAL mandate Sep 30 2026, ConMon |
 | `nist-csf` | NIST CSF 2.0 / 1.1 | Gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping |
-| `nist-800-53` | NIST SP 800-53 Rev 5 | All 20 control families, FIPS 199/200 categorisation, baseline selection, SSP narratives, RMF |
 | `cmmc` | CMMC 2.0 | Level 1/2/3 gap analysis, SPRS scoring, POA&M, CUI scoping, assessment prep — incl. the Jul 13 2026 Phase 2 suspension interim guidance |
 | `swift-csp` | SWIFT CSP 2026 | CSCF v2026 (32 controls: 25 mandatory + 7 advisory), Control 2.4 back-office data flow now mandatory, architecture scoping (A1/A2/A3/A4/B), independent assessment prep, KYC-SA attestation |
 | `ism` | Australian ISM (ASD) | ISM control assessment (June 2026 release incl. AI controls), Essential Eight maturity, system authorisation, IRAP prep |
-| `nzism` | NZISM (GCSB/NCSC NZ) | NZISM gap analysis, C&A for Restricted+ systems, NZ classification framework, SSP preparation |
 | `cis-controls` | CIS Controls v8 | IG selection, all 153 safeguards, gap assessment, SIEM/log design, cross-framework mapping |
+| `nist-800-53` | NIST SP 800-53 Rev 5 | All 20 control families, FIPS 199/200 categorisation, baseline selection, SSP narratives, RMF |
+| `nzism` | NZISM (GCSB/NCSC NZ) | NZISM gap analysis, C&A for Restricted+ systems, NZ classification framework, SSP preparation |
 | `tisax` | TISAX (VDA ISA / ENX) | ISA 6 + ISA2027 transition, labels & AL1-AL3, maturity scoring with cutback, ENX process, ISO 27001 mapping |
 
 ### Data Privacy & Protection
@@ -209,19 +214,19 @@ To remove the marketplace entirely:
 | `gdpr-compliance` | GDPR / UK GDPR | Code audits, privacy notices, DPAs, DPIAs, data flow reviews, article-cited Q&A |
 | `hipaa-compliance` | HIPAA | Document generation, technical safeguards for cloud, breach response guidance |
 | `pci-compliance` | PCI DSS v4.0.1 | CDE scoping, SAQ selection, gap assessments, control guidance, QSA audit prep |
+| `iso27701` | ISO 27701:2025 | Standalone-PIMS gap analysis, 2019→2025 transition (deadline Oct 2028), PII controller/processor mapping, GDPR alignment |
 | `dpdpa` | India DPDPA 2023 | Data principal rights, consent management, DPDPB registration, breach notification |
 | `ccpa` | CCPA / CPRA | Consumer rights workflows, ADMT opt-out (regulations effective Jan 2026, deadline Jan 2027), cybersecurity audit/risk assessment obligations, 2026 enforcement precedents (Disney $2.75M, PlayOn $1.1M) |
 | `lgpd` | Brazil LGPD | All 10 legal bases, Brazil-EU mutual adequacy (Jan 2026 — SCCs no longer needed for Brazil↔EU transfers), data subject rights, ANPD enforcement, breach notification |
 | `vn-pdpl` | Vietnam PDPL 2026 | Gap analysis, cross-border transfer impact assessments, DPIAs, breach notification (72h) |
-| `iso27701` | ISO 27701:2025 | Standalone-PIMS gap analysis, 2019→2025 transition (deadline Oct 2028), PII controller/processor mapping, GDPR alignment |
 
 ### Cyber & Resilience Regulation
 
 | Plugin name | Framework | What it does |
 |---|---|---|
-| `nis2` | NIS2 Directive (EU) | Essential/important entity scoping, Art. 21 technical measures, 24h/72h incident reporting |
-| `dora` | DORA (EU) | ICT risk management, TLPT, register of information, incident classification, third-party oversight |
 | `tsa-compliance` | TSA Security Directives | Pipeline, freight rail, and transit OT/ICS cybersecurity — CIP/COIP, IRP, ADR, CAP |
+| `dora` | DORA (EU) | ICT risk management, TLPT, register of information, incident classification, third-party oversight |
+| `nis2` | NIS2 Directive (EU) | Essential/important entity scoping, Art. 21 technical measures, 24h/72h incident reporting |
 | `eu-cra` | EU CRA 2024/2847 | PDE classification (Default/Class I/Class II), Annex I gap analysis, SBOM, 24/72h ENISA reporting |
 
 ### AI Governance
@@ -237,8 +242,8 @@ To remove the marketplace entirely:
 | Plugin name | Framework | What it does |
 |---|---|---|
 | `itar` | ITAR (22 CFR 120–130) | USML classification, DSP-5/73/85 licence workflows, TAA/MLA drafting, deemed export, DDTC |
-| `ear` | EAR (15 CFR 730–774) | ECCN classification, licence requirements, Entity List screening, licence exceptions |
 | `csrd` | CSRD / ESRS | 2026 Omnibus scoping (1,000+ employees & €450M), revised ESRS (Jul 2026), double materiality, GRI/TCFD gap analysis |
+| `ear` | EAR (15 CFR 730–774) | ECCN classification, licence requirements, Entity List screening, licence exceptions |
 
 ### Accessibility
 
@@ -253,6 +258,7 @@ To remove the marketplace entirely:
 |---|---|---|
 | `saudi-arabia-grc` | Saudi Arabia (NCA/SDAIA/SAMA/CST) | Applicability routing, ECC-2:2024 & PDPL gap assessments, cloud residency, SAMA CSF, ISO/NIST/SOC 2 mapping |
 | `uae-grc` | UAE (PDPL/DIFC/ADGM/CBUAE/Health) | Jurisdiction-first routing, zone DP laws, health-data localization, CBUAE cloud approvals, ISO/NIST/SOC 2 mapping |
+<!-- /GEN:plugin-tables -->
 
 ---
 

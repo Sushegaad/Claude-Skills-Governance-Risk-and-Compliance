@@ -1,0 +1,3 @@
+# Test / build dependencies (CI installs exactly these)
+pytest~=8.3
+PyYAML~=6.0

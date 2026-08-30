@@ -26,6 +26,7 @@ Run with:
     pytest tests/test_skill_installability.py -v
 """
 
+import json
 import zipfile
 from pathlib import Path
 import pytest
@@ -55,75 +56,12 @@ ALL_SKILL_FILES = sorted(set(STANDALONE_SKILL_FILES) | set(PLUGIN_SKILL_FILES))
 # Expected inventory — update when adding a new skill
 # ---------------------------------------------------------------------------
 
-# Canonical lowercase kebab-case names for all 28 skills
-EXPECTED_SKILL_NAMES = {
-    "ccpa",
-    "cis-controls",
-    "cmmc",
-    "eu-cra",
-    "csrd",
-    "dora",
-    "dpdpa",
-    "ear",
-    "eu-ai-act",
-    "fedramp",
-    "gdpr-compliance",
-    "hipaa-compliance",
-    "ism",
-    "iso27001",
-    "iso27701",
-    "iso42001",
-    "itar",
-    "lgpd",
-    "nis2",
-    "nist-800-53",
-    "nist-ai-rmf",
-    "nist-csf",
-    "nzism",
-    "pci-compliance",
-    "section-508",
-    "soc2",
-    "swift-csp",
-    "tsa-compliance",
-    "vn-pdpl",
-    "wcag",
-}
 
 # Standalone filenames as they actually appear on disk (some legacy names differ)
+# Derived from skills.json — the single source of truth for the inventory.
 EXPECTED_STANDALONE_FILENAMES = {
-    "ccpa.skill",
-    "saudi-arabia-grc.skill",
-    "tisax.skill",
-    "uae-grc.skill",
-    "cis-controls.skill",
-    "cmmc.skill",
-    "eu-cra.skill",
-    "csrd.skill",
-    "dora.skill",
-    "dpdpa.skill",
-    "ear.skill",
-    "eu-ai-act.skill",
-    "fedramp.skill",
-    "gdpr-compliance.skill",
-    "hipaa-compliance.skill",
-    "ism.skill",
-    "iso27001.skill",
-    "iso27701.skill",
-    "ISO-42001.skill",
-    "itar.skill",
-    "lgpd.skill",
-    "nis2.skill",
-    "nist-800-53.skill",
-    "nist-ai-rmf.skill",
-    "NIST Cybersecurity.skill",
-    "nzism.skill",
-    "PCI-Compliance.skill",
-    "vn-pdpl.skill",
-    "section-508.skill",
-    "soc2.skill",
-    "swift-csp.skill",
-    "TSA-Compliance.skill",
-    "wcag.skill",
+    s["skill_file"]
+    for s in json.loads((REPO_ROOT / "skills.json").read_text(encoding="utf-8"))["skills"]
 }
 
 
@@ -388,6 +326,7 @@ def test_plugin_skill_names_match_canonical():
 # installation.
 # ---------------------------------------------------------------------------
 
+import json
 import re as _re
 
 try:
@@ -471,4 +410,37 @@ class TestInstallerConstraints:
         assert source.exists(), f"{zip_path.name}: no source at {source}"
         assert bundled == source.read_bytes(), (
             f"{zip_path.name}: bundled SKILL.md differs from source — rebuild the ZIP"
+        )
+
+    @pytest.mark.parametrize("zip_path", _all_skill_zips(), ids=lambda p: p.name)
+    def test_zip_reference_files_match_source(self, zip_path):
+        """Every references/*.md bundled in the ZIP must be byte-identical to the
+        source tree, and every source reference file must be bundled. SKILL.md
+        alone being checked left a silent-staleness channel for reference docs."""
+        import zipfile
+        with zipfile.ZipFile(zip_path) as zf:
+            inner_skill = [n for n in zf.namelist()
+                           if n.endswith("SKILL.md") and n.count("/") == 1][0]
+            name = inner_skill.split("/")[0]
+            bundled_refs = {
+                n.split("/", 1)[1]: zf.read(n)
+                for n in zf.namelist()
+                if n.startswith(f"{name}/references/") and n.endswith(".md")
+            }
+        src_dir = REPO_ROOT / "plugins" / name / "skills" / name
+        source_refs = {
+            f"references/{p.name}": p.read_bytes()
+            for p in sorted((src_dir / "references").glob("*.md"))
+        } if (src_dir / "references").exists() else {}
+        missing = sorted(set(source_refs) - set(bundled_refs))
+        extra = sorted(set(bundled_refs) - set(source_refs))
+        assert not missing, (
+            f"{zip_path.name}: source reference files not bundled: {missing} — rebuild the ZIP"
+        )
+        assert not extra, (
+            f"{zip_path.name}: ZIP bundles reference files with no source: {extra}"
+        )
+        stale = sorted(k for k in source_refs if bundled_refs[k] != source_refs[k])
+        assert not stale, (
+            f"{zip_path.name}: bundled reference files differ from source: {stale} — rebuild the ZIP"
         )
