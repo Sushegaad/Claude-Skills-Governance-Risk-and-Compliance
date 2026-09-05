@@ -186,6 +186,54 @@ def render_plugin_tables(skills):
     return "\n".join(out).rstrip()
 
 
+def render_ai_catalog(skills, stats):
+    """ARD capability manifest (ai-catalog spec v1.0 / ARD v0.9).
+
+    Served at <site>/ai-catalog.json and advertised via
+    <link rel="ai-catalog"> in index.html — see §6.1 of the ARD spec.
+    Deterministic output (no build timestamps) so --check stays meaningful.
+    """
+    version = json.loads(
+        (REPO / ".claude-plugin" / "marketplace.json").read_text(encoding="utf-8")
+    )["plugins"][0]["version"]
+    months = {m: i + 1 for i, m in enumerate(
+        "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split())}
+
+    entries = []
+    for s in skills:
+        st = stats[s["plugin"]]
+        d, mon, y = s["eval"]["last_updated"].split()
+        entries.append({
+            "identifier": f'urn:ai:sushegaad.github.io:grc:{s["plugin"]}',
+            "displayName": s["readme_name"].strip(),
+            "type": "application/ai-skill+md",
+            "url": f'{RAW}plugins/{s["plugin"]}/skills/{s["plugin"]}/SKILL.md',
+            "description": s["description"],
+            "tags": sorted(set(
+                ["grc", "compliance", s["category_key"]]
+                + s["region"].split() + s["domains"].split())),
+            "representativeQueries": s["ard_queries"],
+            "version": version,
+            "updatedAt": f"{y}-{months[mon]:02d}-{int(d):02d}T00:00:00Z",
+            "metadata": {
+                "category": s["category"],
+                "license": "MIT",
+                "evalPassRate": f'{st["with"]}%',
+                "evalBaselinePassRate": f'{st["base"]}%',
+                "installUrl": RAW + quote(s["standalone_dir"]) + "/" + quote(s["skill_file"]),
+            },
+        })
+    return json.dumps({
+        "specVersion": "1.0",
+        "host": {
+            "displayName": "Claude Skills for Governance, Risk & Compliance",
+            "identifier": "https://sushegaad.github.io",
+            "documentationUrl": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/",
+        },
+        "entries": entries,
+    }, indent=2, ensure_ascii=False) + "\n"
+
+
 # ── Block replacement ────────────────────────────────────────────────────────
 
 def replace_block(content: str, name: str, body: str, path: Path):
@@ -220,7 +268,19 @@ def main():
         },
     }
 
+    # Whole-file target: the ARD capability manifest
+    full_files = {REPO / "ai-catalog.json": render_ai_catalog(skills, stats)}
+
     stale = []
+    for path, body in full_files.items():
+        current = path.read_text(encoding="utf-8") if path.exists() else None
+        if current != body:
+            if check:
+                stale.append(path.name)
+            else:
+                path.write_text(body, encoding="utf-8")
+                print(f"regenerated {path.name}")
+
     for path, blocks in targets.items():
         original = path.read_text(encoding="utf-8")
         updated = original

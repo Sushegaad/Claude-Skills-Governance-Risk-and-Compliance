@@ -1,0 +1,1005 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Claude Skills for Governance, Risk & Compliance",
+    "identifier": "https://sushegaad.github.io",
+    "documentationUrl": "https://sushegaad.github.io/Claude-Skills-Governance-Risk-and-Compliance/"
+  },
+  "entries": [
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:iso27001",
+      "displayName": "ISO 27001",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/iso27001/skills/iso27001/SKILL.md",
+      "description": "Expert ISO 27001 gap analysis, policy writing, Annex A control guidance, SoA generation, and risk register creation for both 2013 and 2022 versions.",
+      "tags": [
+        "access-control",
+        "audit",
+        "bcm",
+        "compliance",
+        "global",
+        "grc",
+        "incident-response",
+        "infosec",
+        "risk-assessment"
+      ],
+      "representativeQueries": [
+        "run an ISO 27001:2022 gap assessment for my company",
+        "write an information security policy mapped to Annex A controls",
+        "help me transition from ISO 27001:2013 to the 2022 version"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Information Security & Risk Management",
+        "license": "MIT",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "84%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2027001%20-%20Claude%20Skill/iso27001.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:soc2",
+      "displayName": "SOC 2",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/soc2/skills/soc2/SKILL.md",
+      "description": "Expert SOC 2 compliance advisor covering all Trust Services Criteria — gap analysis, policy drafting, control documentation, audit evidence, and vendor risk.",
+      "tags": [
+        "access-control",
+        "audit",
+        "compliance",
+        "global",
+        "grc",
+        "infosec",
+        "vendor"
+      ],
+      "representativeQueries": [
+        "get my startup ready for a SOC 2 Type 2 audit",
+        "draft SOC 2 control documentation and evidence tables",
+        "review a vendor's SOC 2 report for red flags"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Information Security & Risk Management",
+        "license": "MIT",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "84%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SOC%202%20-%20Claude%20Skill/soc2.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:fedramp",
+      "displayName": "FedRAMP [US]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/fedramp/skills/fedramp/SKILL.md",
+      "description": "End-to-end FedRAMP authorization guidance — readiness assessments, SSP narratives, POA&M management, NIST 800-53 Rev 5 control mapping, and ConMon support.",
+      "tags": [
+        "access-control",
+        "audit",
+        "cloud",
+        "compliance",
+        "grc",
+        "incident-response",
+        "infosec",
+        "risk-assessment",
+        "us"
+      ],
+      "representativeQueries": [
+        "scope a FedRAMP Moderate authorization for our SaaS",
+        "explain FedRAMP 20x and the CR26 certification classes",
+        "write SSP control narratives for a federal cloud system"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-08-15T00:00:00Z",
+      "metadata": {
+        "category": "Information Security & Risk Management",
+        "license": "MIT",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "72%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/FedRamp%20-%20Claude%20Skill/fedramp.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:gdpr-compliance",
+      "displayName": "GDPR [EU]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/gdpr-compliance/skills/gdpr-compliance/SKILL.md",
+      "description": "GDPR compliance assistant — code and system audits, privacy notice drafting, DPAs, DPIAs, data flow reviews, and authoritative article-cited Q&A.",
+      "tags": [
+        "compliance",
+        "data-protection",
+        "eu",
+        "grc",
+        "incident-response",
+        "privacy",
+        "reporting"
+      ],
+      "representativeQueries": [
+        "audit my application for GDPR compliance",
+        "draft an Article 28 data processing agreement",
+        "handle a 72-hour GDPR breach notification"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-31T00:00:00Z",
+      "metadata": {
+        "category": "Data Privacy & Protection",
+        "license": "MIT",
+        "evalPassRate": "88%",
+        "evalBaselinePassRate": "88%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/GDPR%20-%20Claude%20Skill/gdpr-compliance.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:hipaa-compliance",
+      "displayName": "HIPAA [US]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/hipaa-compliance/skills/hipaa-compliance/SKILL.md",
+      "description": "HIPAA compliance advisor covering Privacy Rule, Security Rule, and Breach Notification — document generation, technical safeguards for cloud, and breach response.",
+      "tags": [
+        "access-control",
+        "compliance",
+        "data-protection",
+        "grc",
+        "incident-response",
+        "privacy",
+        "risk-assessment",
+        "us"
+      ],
+      "representativeQueries": [
+        "check if my healthcare app is HIPAA compliant",
+        "generate a business associate agreement",
+        "run a HIPAA security risk analysis"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Data Privacy & Protection",
+        "license": "MIT",
+        "evalPassRate": "92%",
+        "evalBaselinePassRate": "88%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/HIPAA%20-%20Claude%20Skill/hipaa-compliance.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:nist-csf",
+      "displayName": "NIST CSF",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/nist-csf/skills/nist-csf/SKILL.md",
+      "description": "NIST Cybersecurity Framework (CSF 2.0 and 1.1) advisor — gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping, and cybersecurity policy generation.",
+      "tags": [
+        "compliance",
+        "global",
+        "grc",
+        "incident-response",
+        "infosec",
+        "risk-assessment",
+        "us"
+      ],
+      "representativeQueries": [
+        "assess our cybersecurity posture against NIST CSF 2.0",
+        "build a CSF organizational profile for board reporting",
+        "map our controls to NIST CSF subcategories"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Information Security & Risk Management",
+        "license": "MIT",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "84%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20Cybersecurity%20framework%20-%20Claude%20Skill/NIST%20Cybersecurity.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:pci-compliance",
+      "displayName": "PCI DSS",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/pci-compliance/skills/pci-compliance/SKILL.md",
+      "description": "PCI DSS v4.0.1 compliance advisor — CDE scoping, SAQ selection, gap assessments, control implementation guidance, QSA audit preparation, and remediation planning.",
+      "tags": [
+        "access-control",
+        "audit",
+        "compliance",
+        "data-protection",
+        "global",
+        "grc",
+        "infosec"
+      ],
+      "representativeQueries": [
+        "scope our cardholder data environment for PCI DSS v4",
+        "choose the right PCI SAQ type for our payment setup",
+        "plan a PCI DSS v4.0.1 migration"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Data Privacy & Protection",
+        "license": "MIT",
+        "evalPassRate": "92%",
+        "evalBaselinePassRate": "88%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/PCI%20Compliance%20-%20Claude%20Skill/PCI-Compliance.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:tsa-compliance",
+      "displayName": "TSA Cybersecurity [US]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/tsa-compliance/skills/tsa-compliance/SKILL.md",
+      "description": "TSA cybersecurity compliance advisor for critical infrastructure — pipeline, freight rail, and transit Security Directive requirements including CIP/COIP, IRP, ADR, CAP, incident reporting, and OT/ICS security.",
+      "tags": [
+        "bcm",
+        "compliance",
+        "cyber-reg",
+        "grc",
+        "incident-response",
+        "reporting",
+        "us"
+      ],
+      "representativeQueries": [
+        "determine if TSA security directives apply to our pipeline",
+        "draft a cybersecurity implementation plan for OT systems",
+        "align our TSA CRMP with NIST CSF"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Cyber & Resilience Regulation",
+        "license": "MIT",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "96%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TSA%20Compliance%20-%20Claude%20Skill/TSA-Compliance.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:iso42001",
+      "displayName": "ISO 42001",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/iso42001/skills/iso42001/SKILL.md",
+      "description": "ISO 42001 AI Management System (AIMS) advisor — gap analysis, AI risk assessment, AI system impact assessment (AISIA), Annex A control guidance, SoA generation, policy writing, and certification readiness for ISO/IEC 42001:2023.",
+      "tags": [
+        "ai",
+        "ai-gov",
+        "audit",
+        "compliance",
+        "global",
+        "grc",
+        "risk-assessment"
+      ],
+      "representativeQueries": [
+        "run an ISO 42001 gap assessment for our AI products",
+        "complete an AI system impact assessment",
+        "integrate an AI management system with our ISO 27001 ISMS"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "AI Governance",
+        "license": "MIT",
+        "evalPassRate": "92%",
+        "evalBaselinePassRate": "80%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2042001%20-%20Claude%20Skill/ISO-42001.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:iso27701",
+      "displayName": "ISO 27701",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/iso27701/skills/iso27701/SKILL.md",
+      "description": "ISO 27701 Privacy Information Management System (PIMS) advisor — gap analysis, PIMS implementation, Annex A control guidance (A.1 controller, A.2 processor, A.3 security), SoA generation, privacy risk assessment, GDPR alignment, 2019→2025 transition, and certification readiness.",
+      "tags": [
+        "audit",
+        "compliance",
+        "data-protection",
+        "global",
+        "grc",
+        "privacy"
+      ],
+      "representativeQueries": [
+        "run an ISO 27701 privacy gap assessment",
+        "build a records of processing activities",
+        "map ISO 27701 controls to GDPR articles"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Data Privacy & Protection",
+        "license": "MIT",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "100%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2027701%20-%20Claude%20Skill/iso27701.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:dora",
+      "displayName": "DORA [EU]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/dora/skills/dora/SKILL.md",
+      "description": "DORA (Regulation (EU) 2022/2554) compliance advisor for EU financial entities — ICT risk management framework, incident classification and reporting, TLPT, ICT third-party risk, Register of Information, and all adopted RTS/ITS with article-level citations.",
+      "tags": [
+        "bcm",
+        "compliance",
+        "cyber-reg",
+        "eu",
+        "grc",
+        "incident-response",
+        "reporting",
+        "vendor"
+      ],
+      "representativeQueries": [
+        "run a DORA gap analysis for our EU financial entity",
+        "classify an ICT incident under DORA reporting thresholds",
+        "review ICT third-party contracts for DORA Article 30"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Cyber & Resilience Regulation",
+        "license": "MIT",
+        "evalPassRate": "88%",
+        "evalBaselinePassRate": "72%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DORA%20-%20Claude%20Skill/dora.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:dpdpa",
+      "displayName": "DPDPA [India]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/dpdpa/skills/dpdpa/SKILL.md",
+      "description": "India's Digital Personal Data Protection Act, 2023 (DPDPA) and DPDP Rules, 2025 compliance advisor — gap analysis, notice and consent requirements, Data Principal rights, breach notification, children’s data, Significant Data Fiduciary obligations, cross-border transfers, Data Protection Board proceedings, and GDPR alignment for global organisations.",
+      "tags": [
+        "apac",
+        "compliance",
+        "data-protection",
+        "grc",
+        "privacy",
+        "reporting"
+      ],
+      "representativeQueries": [
+        "prepare our Indian SaaS for DPDPA compliance",
+        "design consent notices under the DPDP Rules",
+        "handle children's data verification under DPDPA"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Data Privacy & Protection",
+        "license": "MIT",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "80%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DPDPA%20-%20Claude%20Skill/dpdpa.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:cmmc",
+      "displayName": "CMMC 2.0 [US]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/cmmc/skills/cmmc/SKILL.md",
+      "description": "Expert CMMC 2.0 compliance advisor for US defense contractors — gap analysis, SSP drafting, POA&M management, SPRS scoring, CUI scoping, and C3PAO assessment readiness for Level 1, 2, and 3.",
+      "tags": [
+        "access-control",
+        "audit",
+        "compliance",
+        "grc",
+        "infosec",
+        "risk-assessment",
+        "us"
+      ],
+      "representativeQueries": [
+        "figure out what CMMC level our defense contracts require",
+        "run a CMMC Level 2 gap assessment against NIST 800-171",
+        "calculate our SPRS score"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-08-15T00:00:00Z",
+      "metadata": {
+        "category": "Information Security & Risk Management",
+        "license": "MIT",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "44%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CMMC%20-%20Claude%20Skill/cmmc.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:nist-ai-rmf",
+      "displayName": "NIST AI RMF",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/nist-ai-rmf/skills/nist-ai-rmf/SKILL.md",
+      "description": "Expert NIST AI Risk Management Framework (AI RMF 1.0) advisor — gap assessments, organizational profiles, GOVERN/MAP/MEASURE/MANAGE function guidance, AI risk registers, trustworthiness evaluation, and cross-framework mapping to ISO 42001, EU AI Act, and NIST CSF.",
+      "tags": [
+        "ai",
+        "ai-gov",
+        "compliance",
+        "global",
+        "grc",
+        "risk-assessment",
+        "us"
+      ],
+      "representativeQueries": [
+        "apply the NIST AI Risk Management Framework to our models",
+        "run a GOVERN function gap assessment for AI risk",
+        "evaluate an AI model against MEASURE trustworthiness criteria"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-07-03T00:00:00Z",
+      "metadata": {
+        "category": "AI Governance",
+        "license": "MIT",
+        "evalPassRate": "92%",
+        "evalBaselinePassRate": "84%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20AI%20RMF%20-%20Claude%20Skill/nist-ai-rmf.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:swift-csp",
+      "displayName": "SWIFT CSP",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/swift-csp/skills/swift-csp/SKILL.md",
+      "description": "Expert SWIFT Customer Security Programme (CSP) advisor — CSCF v2026 gap assessments, mandatory vs advisory controls, architecture type scoping (A1/A2/A3/A4/B), KYC-SA attestation, MFA and access control implementation, log monitoring, and incident response for the global banking network.",
+      "tags": [
+        "access-control",
+        "audit",
+        "compliance",
+        "global",
+        "grc",
+        "infosec",
+        "vendor"
+      ],
+      "representativeQueries": [
+        "determine our SWIFT CSP architecture type and scope",
+        "prepare the annual SWIFT KYC-SA attestation",
+        "run a CSCF v2026 gap assessment"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-07-02T00:00:00Z",
+      "metadata": {
+        "category": "Information Security & Risk Management",
+        "license": "MIT",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "72%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SWIFT%20CSP%20-%20Claude%20Skill/swift-csp.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:ism",
+      "displayName": "ISM [Australia]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/ism/skills/ism/SKILL.md",
+      "description": "Expert Australian Information Security Manual (ISM) advisor for Australian government entities, contractors and supply chains. Gap analysis, system authorisation, IRAP preparation, control scoping, and ASD compliance guidance.",
+      "tags": [
+        "access-control",
+        "apac",
+        "audit",
+        "cloud",
+        "compliance",
+        "grc",
+        "infosec",
+        "risk-assessment"
+      ],
+      "representativeQueries": [
+        "assess our system against the Australian ISM",
+        "prepare for an IRAP assessment",
+        "map Essential Eight maturity levels to ISM controls"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-08-15T00:00:00Z",
+      "metadata": {
+        "category": "Information Security & Risk Management",
+        "license": "MIT",
+        "evalPassRate": "92%",
+        "evalBaselinePassRate": "84%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISM%20-%20Claude%20Skill/ism.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:nis2",
+      "displayName": "NIS2 [EU]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/nis2/skills/nis2/SKILL.md",
+      "description": "EU NIS2 Directive (Directive (EU) 2022/2555) compliance advisor for essential and important entities — entity classification, Art. 21 risk management measures, Art. 23 incident reporting timelines (24h/72h/1 month), Art. 20 governance obligations, supply chain security (Art. 26), gap assessments, policy drafting, ISO 27001 alignment, and penalty exposure analysis.",
+      "tags": [
+        "bcm",
+        "compliance",
+        "cyber-reg",
+        "eu",
+        "grc",
+        "incident-response",
+        "reporting",
+        "risk-assessment",
+        "vendor"
+      ],
+      "representativeQueries": [
+        "determine if we're an essential or important entity under NIS2",
+        "walk through NIS2 24-hour and 72-hour incident reporting",
+        "draft NIS2 Article 21 security measures"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-07-03T00:00:00Z",
+      "metadata": {
+        "category": "Cyber & Resilience Regulation",
+        "license": "MIT",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "84%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIS2%20-%20Claude%20Skill/nis2.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:ccpa",
+      "displayName": "CCPA/CPRA [California]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/ccpa/skills/ccpa/SKILL.md",
+      "description": "California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) compliance advisor — business threshold analysis, consumer rights fulfillment, privacy notice drafting, service provider classification, sensitive personal information (SPI) handling, opt-out mechanisms (including GPC), CPPA enforcement, penalty exposure, and GDPR alignment.",
+      "tags": [
+        "compliance",
+        "data-protection",
+        "grc",
+        "privacy",
+        "reporting",
+        "us"
+      ],
+      "representativeQueries": [
+        "check if the CCPA applies to my business",
+        "build a right-to-delete workflow meeting the 45-day deadline",
+        "classify ad tech data flows as sale or sharing under CPRA"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-07-03T00:00:00Z",
+      "metadata": {
+        "category": "Data Privacy & Protection",
+        "license": "MIT",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "80%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CCPA%20-%20Claude%20Skill/ccpa.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:itar",
+      "displayName": "ITAR [US]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/itar/skills/itar/SKILL.md",
+      "description": "Expert ITAR compliance advisor for US defense contractors, exporters, and manufacturers — USML classification, DDTC registration, export license applications (DSP-5/73/94), Technical Assistance Agreements (TAA), Manufacturing License Agreements (MLA), brokering regulations (Part 129), deemed export rules for foreign nationals, technology control plans, voluntary disclosures, violation mitigation, and Blue Lantern end-use checks. Use for any question about 22 CFR Parts 120-130, defense article/service classification, jurisdiction determination (ITAR vs EAR), or US Munitions List category scoping.",
+      "tags": [
+        "access-control",
+        "compliance",
+        "export-controls",
+        "export-sustain",
+        "grc",
+        "us"
+      ],
+      "representativeQueries": [
+        "determine if our product falls under ITAR or EAR",
+        "manage deemed export rules for foreign national employees",
+        "prepare a voluntary self-disclosure after an ITAR violation"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Export Controls & Sustainability",
+        "license": "MIT",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "100%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ITAR%20-%20Claude%20Skill/itar.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:lgpd",
+      "displayName": "LGPD [Brazil]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/lgpd/skills/lgpd/SKILL.md",
+      "description": "Brazil LGPD (Lei Geral de Proteção de Dados, Law 13,709/2018) compliance advisor — legal basis analysis (Arts. 7 & 11), data subject rights fulfilment (Art. 18), DPO/Encarregado appointment, ANPD breach notification (3-day preliminary / 20-day full report), DPIA/RIPD drafting, international transfer mechanisms, gap assessments, privacy notice drafting, consent management, penalty exposure analysis (fines up to 2% revenue / R$50M), and LGPD vs. GDPR comparison. Use for any Brazilian data protection or privacy compliance question.",
+      "tags": [
+        "compliance",
+        "data-protection",
+        "grc",
+        "incident-response",
+        "latam",
+        "privacy",
+        "reporting"
+      ],
+      "representativeQueries": [
+        "assess LGPD applicability for our Brazilian users",
+        "complete a RIPD data protection impact report",
+        "handle an ANPD breach notification"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-07-02T00:00:00Z",
+      "metadata": {
+        "category": "Data Privacy & Protection",
+        "license": "MIT",
+        "evalPassRate": "76%",
+        "evalBaselinePassRate": "76%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/LGPD%20-%20Claude%20Skill/lgpd.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:csrd",
+      "displayName": "CSRD [EU]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/csrd/skills/csrd/SKILL.md",
+      "description": "EU CSRD (Corporate Sustainability Reporting Directive, EU 2022/2464) compliance advisor — scope & threshold analysis (large PIEs, other large, listed SMEs, non-EU), double materiality assessment (DMA), ESRS gap assessment, ESRS E1–E5 environmental disclosures, ESRS S1–S4 social disclosures, ESRS G1 governance, Scope 1/2/3 GHG emissions, transition plan drafting, assurance readiness, XBRL tagging, value chain reporting, and CSRD vs GRI/TCFD/SASB comparison.",
+      "tags": [
+        "audit",
+        "compliance",
+        "eu",
+        "export-sustain",
+        "grc",
+        "reporting"
+      ],
+      "representativeQueries": [
+        "determine if CSRD applies to our company after the Omnibus",
+        "run a double materiality assessment under revised ESRS",
+        "build a Scope 3 emissions reporting programme"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-08-15T00:00:00Z",
+      "metadata": {
+        "category": "Export Controls & Sustainability",
+        "license": "MIT",
+        "evalPassRate": "88%",
+        "evalBaselinePassRate": "32%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CSRD%20-%20Claude%20Skill/csrd.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:cis-controls",
+      "displayName": "CIS Controls v8",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/cis-controls/skills/cis-controls/SKILL.md",
+      "description": "CIS Controls v8 (CIS Top 18) advisor — Implementation Group scoping (IG1/IG2/IG3), gap assessments across all 153 safeguards, asset/software inventory, data protection, secure configuration, MFA and access control, vulnerability management, audit log management, malware defenses, incident response, penetration testing, and CIS Controls mapping to NIST CSF 2.0, ISO 27001:2022, SOC 2, PCI DSS, and CMMC 2.0. Use for any CIS Controls, CIS Benchmarks, or prioritized cyber hygiene question.",
+      "tags": [
+        "access-control",
+        "cloud",
+        "compliance",
+        "global",
+        "grc",
+        "incident-response",
+        "infosec",
+        "vendor"
+      ],
+      "representativeQueries": [
+        "pick the right CIS Controls implementation group for us",
+        "run a CIS Controls v8 gap assessment",
+        "map CIS safeguards to NIST CSF"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Information Security & Risk Management",
+        "license": "MIT",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "80%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CIS%20Controls%20-%20Claude%20Skill/cis-controls.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:ear",
+      "displayName": "EAR [US]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/ear/skills/ear/SKILL.md",
+      "description": "EAR (Export Administration Regulations) compliance advisor — ECCN classification across all 10 CCL categories, EAR99 determination, EAR vs ITAR jurisdiction via Order of Review, licence requirement analysis using the Commerce Country Chart, all 14 licence exceptions (LVS, GBS, CIV, ENC, TMP, GOV, TSU, and more), restricted party screening (Entity List, Denied Persons, Unverified List, OFAC SDN), deemed exports, FDPR, VSD process, and 7-element Export Compliance Programme design. Use for any dual-use export control or BIS compliance question.",
+      "tags": [
+        "compliance",
+        "export-controls",
+        "export-sustain",
+        "grc",
+        "us",
+        "vendor"
+      ],
+      "representativeQueries": [
+        "classify our product under an EAR ECCN",
+        "check encryption export license exceptions",
+        "design an export compliance programme"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Export Controls & Sustainability",
+        "license": "MIT",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "88%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EAR%20-%20Claude%20Skill/ear.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:nist-800-53",
+      "displayName": "NIST SP 800-53",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/nist-800-53/skills/nist-800-53/SKILL.md",
+      "description": "NIST SP 800-53 Rev 5 compliance advisor — all 20 control families, Low/Moderate/High baseline selection, FIPS 199/200 categorization, control tailoring, ODVs, overlays, privacy controls (PT family), supply chain (SR family), SSP narrative writing, assessment procedures (SP 800-53A), POA&M management, RMF steps (SP 800-37), continuous monitoring, OSCAL, and mapping to FedRAMP, FISMA, CMMC 2.0, and ISO 27001.",
+      "tags": [
+        "access-control",
+        "audit",
+        "compliance",
+        "grc",
+        "incident-response",
+        "infosec",
+        "risk-assessment",
+        "us"
+      ],
+      "representativeQueries": [
+        "select a NIST 800-53 baseline from FIPS 199 categorization",
+        "write federal SSP control narratives",
+        "build a continuous monitoring strategy"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Information Security & Risk Management",
+        "license": "MIT",
+        "evalPassRate": "92%",
+        "evalBaselinePassRate": "84%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20800-53%20-%20Claude%20Skill/nist-800-53.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:eu-ai-act",
+      "displayName": "EU AI Act",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/eu-ai-act/skills/eu-ai-act/SKILL.md",
+      "description": "EU AI Act (Regulation (EU) 2024/1689) compliance advisor — risk classification across all four tiers, all 8 prohibited practices (Art. 5), all 8 Annex III high-risk use case areas, provider and deployer obligations (Arts. 9–17, 26), GPAI model obligations and systemic risk (Arts. 51–55), conformity assessment and CE marking (Arts. 43–48), EU AI database registration, limited-risk transparency (Art. 50), governance (AI Office, AI Board), penalties (Art. 99), phase-in timeline, and cross-framework mapping to ISO 42001, NIST AI RMF, and GDPR.",
+      "tags": [
+        "ai",
+        "ai-gov",
+        "compliance",
+        "eu",
+        "grc",
+        "reporting",
+        "risk-assessment"
+      ],
+      "representativeQueries": [
+        "classify our AI system's risk tier under the EU AI Act",
+        "check if our use case is a prohibited AI practice",
+        "determine GPAI model obligations"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-08-15T00:00:00Z",
+      "metadata": {
+        "category": "AI Governance",
+        "license": "MIT",
+        "evalPassRate": "84%",
+        "evalBaselinePassRate": "64%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EU%20AI%20Act%20-%20Claude%20Skill/eu-ai-act.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:section-508",
+      "displayName": "Section 508 [US]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/section-508/skills/section-508/SKILL.md",
+      "description": "Expert Section 508 compliance advisor for US federal ICT accessibility — VPAT/ACR completion, WCAG 2.0 AA audits, remediation planning, PDF accessibility, procurement language, keyboard and screen reader testing, undue burden assessments, and agency compliance workflows.",
+      "tags": [
+        "accessibility",
+        "audit",
+        "compliance",
+        "grc",
+        "reporting",
+        "us"
+      ],
+      "representativeQueries": [
+        "complete a VPAT for federal procurement",
+        "audit our website for Section 508 compliance",
+        "remediate PDFs for accessibility"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Accessibility",
+        "license": "MIT",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "100%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Section%20508%20-%20Claude%20Skill/section-508.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:wcag",
+      "displayName": "WCAG [International]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/wcag/skills/wcag/SKILL.md",
+      "description": "Expert WCAG (Web Content Accessibility Guidelines) advisor covering WCAG 2.0, 2.1, and 2.2 — all POUR principles, success criteria, conformance levels (A/AA/AAA), accessibility audits, ARIA patterns, colour contrast, keyboard accessibility, screen reader compatibility, mobile accessibility, cognitive accessibility, and global legal mappings (EN 301 549, EAA, ADA, Section 508).",
+      "tags": [
+        "accessibility",
+        "audit",
+        "compliance",
+        "global",
+        "grc",
+        "reporting"
+      ],
+      "representativeQueries": [
+        "audit our web app for WCAG 2.2 AA compliance",
+        "check color contrast and keyboard navigation issues",
+        "write an accessibility conformance statement"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-05-16T00:00:00Z",
+      "metadata": {
+        "category": "Accessibility",
+        "license": "MIT",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "85%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/WCAG%20-%20Claude%20Skill/wcag.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:nzism",
+      "displayName": "NZISM [New Zealand]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/nzism/skills/nzism/SKILL.md",
+      "description": "Expert New Zealand Information Security Manual (NZISM) advisor for NZ government agencies. Gap analysis, system certification & accreditation, classification framework guidance, control implementation, and GCSB/NCSC NZ compliance.",
+      "tags": [
+        "access-control",
+        "apac",
+        "audit",
+        "cloud",
+        "compliance",
+        "grc",
+        "infosec"
+      ],
+      "representativeQueries": [
+        "run an NZISM gap assessment for a Restricted system",
+        "prepare a certification and accreditation submission in New Zealand",
+        "check NZISM cloud hosting requirements"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-07-03T00:00:00Z",
+      "metadata": {
+        "category": "Information Security & Risk Management",
+        "license": "MIT",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "64%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NZISM%20-%20Claude%20Skill/nzism.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:vn-pdpl",
+      "displayName": "VN-PDPL [Vietnam]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/vn-pdpl/skills/vn-pdpl/SKILL.md",
+      "description": "Expert Vietnam Personal Data Protection Law (PDPL) compliance advisor for Law No. 91/2025/QH15 and Decree 356/2025/ND-CP. Covers gap analysis, data subject rights, cross-border transfer impact assessments, DPIA, breach notification, and sector-specific rules.",
+      "tags": [
+        "apac",
+        "compliance",
+        "data-protection",
+        "grc",
+        "incident-response",
+        "privacy"
+      ],
+      "representativeQueries": [
+        "prepare for Vietnam's personal data protection law",
+        "design consent mechanisms under Vietnam Law 91/2025",
+        "assess Vietnamese cross-border data transfer obligations"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-07-03T00:00:00Z",
+      "metadata": {
+        "category": "Data Privacy & Protection",
+        "license": "MIT",
+        "evalPassRate": "68%",
+        "evalBaselinePassRate": "60%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Vietnam%20PDPL%20-%20Claude%20Skill/vn-pdpl.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:eu-cra",
+      "displayName": "EU CRA [EU]",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/eu-cra/skills/eu-cra/SKILL.md",
+      "description": "Expert EU Cyber Resilience Act (CRA) advisor for Regulation (EU) 2024/2847. Covers product classification, Annex I essential requirements, conformity assessment, CE marking, SBOM, vulnerability handling, ENISA reporting, and support period obligations.",
+      "tags": [
+        "compliance",
+        "cyber-reg",
+        "eu",
+        "grc",
+        "incident-response",
+        "reporting",
+        "vendor"
+      ],
+      "representativeQueries": [
+        "classify our product under the EU Cyber Resilience Act",
+        "run an Annex I security requirements gap assessment",
+        "set up CRA vulnerability disclosure and ENISA reporting"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-07-03T00:00:00Z",
+      "metadata": {
+        "category": "Cyber & Resilience Regulation",
+        "license": "MIT",
+        "evalPassRate": "80%",
+        "evalBaselinePassRate": "80%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EU%20CRA%20-%20Claude%20Skill/eu-cra.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:saudi-arabia-grc",
+      "displayName": "Saudi Arabia GRC",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/saudi-arabia-grc/skills/saudi-arabia-grc/SKILL.md",
+      "description": "Saudi Arabia GRC advisor — a compliance router across NCA ECC-2:2024, Saudi PDPL (SDAIA), NCA Cloud Cybersecurity Controls, SAMA Cyber Security Framework, and CST cloud rules. Determines what applies first, then guides gap assessments, breach response, market entry, and ISO 27001/NIST/SOC 2 mapping.",
+      "tags": [
+        "access-control",
+        "cloud",
+        "compliance",
+        "country-grc",
+        "data-protection",
+        "grc",
+        "incident-response",
+        "middle-east"
+      ],
+      "representativeQueries": [
+        "what compliance frameworks apply when expanding to Saudi Arabia",
+        "run an NCA Essential Cybersecurity Controls gap assessment",
+        "navigate Saudi PDPL and SAMA cybersecurity requirements"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-08-23T00:00:00Z",
+      "metadata": {
+        "category": "Country GRC",
+        "license": "MIT",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "28%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Saudi%20Arabia%20GRC%20-%20Claude%20Skill/saudi-arabia-grc.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:uae-grc",
+      "displayName": "UAE GRC",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/uae-grc/skills/uae-grc/SKILL.md",
+      "description": "UAE GRC advisor — a jurisdiction-first compliance router across the Federal PDPL, DIFC DP Law (as amended 2025), ADGM DP Regulations, CBUAE data and outsourcing rules, the ICT Health Law, and UAE IA/ISR/ADHICS cyber baselines. Determines mainland vs free-zone vs sector obligations first, then guides compliance.",
+      "tags": [
+        "cloud",
+        "compliance",
+        "country-grc",
+        "data-protection",
+        "grc",
+        "incident-response",
+        "middle-east"
+      ],
+      "representativeQueries": [
+        "what UAE regulations apply to our free-zone company",
+        "navigate UAE PDPL, DIFC and ADGM data protection rules",
+        "meet CBUAE outsourcing and data residency requirements"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-08-23T00:00:00Z",
+      "metadata": {
+        "category": "Country GRC",
+        "license": "MIT",
+        "evalPassRate": "84%",
+        "evalBaselinePassRate": "28%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/UAE%20GRC%20-%20Claude%20Skill/uae-grc.skill"
+      }
+    },
+    {
+      "identifier": "urn:ai:sushegaad.github.io:grc:tisax",
+      "displayName": "TISAX",
+      "type": "application/ai-skill+md",
+      "url": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/plugins/tisax/skills/tisax/SKILL.md",
+      "description": "TISAX advisor for the automotive supply chain — VDA ISA 6 and the ISA2027 transition, assessment levels AL1-AL3, all 12 labels, maturity scoring with cutback, ENX portal process, corrective windows, and ISO 27001 mapping.",
+      "tags": [
+        "access-control",
+        "audit",
+        "compliance",
+        "data-protection",
+        "eu",
+        "global",
+        "grc",
+        "infosec",
+        "vendor"
+      ],
+      "representativeQueries": [
+        "prepare my automotive company for a first TISAX assessment",
+        "map our ISO 27001 ISMS to VDA ISA requirements",
+        "understand TISAX labels and assessment levels"
+      ],
+      "version": "1.8.0",
+      "updatedAt": "2026-08-23T00:00:00Z",
+      "metadata": {
+        "category": "Information Security & Risk Management",
+        "license": "MIT",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "16%",
+        "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TISAX%20-%20Claude%20Skill/tisax.skill"
+      }
+    }
+  ]
+}
