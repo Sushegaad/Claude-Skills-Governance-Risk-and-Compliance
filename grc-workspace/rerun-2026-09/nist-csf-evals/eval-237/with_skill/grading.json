@@ -1,0 +1,33 @@
+{
+  "eval_id": 237,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Points to draft NIST SP 1353 (initial public draft, August 2026): Quick-Start Guide for Using AI for CSF 2.0 Analysis and Reporting",
+      "passed": true,
+      "evidence": "NIST SP 1353, released as an initial public draft on August 19, 2026... quick-start guide specifically on using generative AI for CSF analysis, planning, and reporting"
+    },
+    {
+      "text": "Correctly flags it as a DRAFT with public comments open until October 15, 2026 \u2014 not final guidance",
+      "passed": true,
+      "evidence": "public comment period open through October 15, 2026. Because it's still in draft/comment status, treat its guidance as provisional"
+    },
+    {
+      "text": "Describes its use cases: AI-assisted governance/policy review, drafting a Current State Profile, and drafting a Target State Profile",
+      "passed": true,
+      "evidence": "Governance and policy review... Current State Profile drafting... Target State Profile drafting"
+    },
+    {
+      "text": "States the guide is illustrative, not a prescriptive assessment methodology, and includes cautions/precautions on AI use",
+      "passed": true,
+      "evidence": "NIST frames these as illustrative use cases, not a prescriptive or certified assessment methodology; plus cautions e.g. 'Watch for hallucinated specificity'"
+    },
+    {
+      "text": "Adds appropriate practitioner caution: human validation of AI outputs and care with sensitive organisational data in prompts",
+      "passed": true,
+      "evidence": "a qualified human assessor must validate against real evidence... don't paste sensitive risk data into a public-facing AI tool"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

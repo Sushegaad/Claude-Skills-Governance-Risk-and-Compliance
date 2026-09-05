@@ -1,0 +1,53 @@
+All PCI DSS v4.0 "future-dated" requirements — items published in March 2022 as best practice, with a grace period — became fully mandatory on March 31, 2025. If your last assessment predates that date, or if your compliance program hasn't been explicitly re-tested against these, treat this as an active gap-assessment priority. Here is the complete list, organised by requirement, with the ones that bite hardest called out.
+
+Requirement 3 — Stored Account Data
+- 3.3.2 / 3.3.3: SAD stored prior to authorization must be encrypted, with formal key management (applies mainly to issuers/issuing-support entities).
+
+Requirement 4 — Transmission
+- 4.2.1.1: Inventory of trusted keys and certificates must be maintained.
+
+Requirement 5 — Anti-Malware
+- 5.3.3: Anti-malware must scan removable electronic media.
+- 5.4.1: Automated technical solution to detect and protect against phishing (new concept entirely — email gateway filtering, DNS filtering, or DMARC/DKIM/SPF enforcement).
+
+Requirement 6 — Secure Development
+- 6.3.2: Software inventory (effectively an SBOM) for bespoke/custom software.
+- 6.4.3: All payment page scripts inventoried, authorized, and integrity-protected.
+
+Requirement 7 — Access Control
+- 7.2.4 / 7.2.5 / 7.2.5.1: Access privilege reviews every 6 months; formal management of application/system accounts.
+- 7.3.2: Access control system configured to enforce least privilege.
+
+Requirement 8 — Authentication
+- 8.3.6: Passwords for non-MFA users changed at least every 90 days.
+- 8.4.2: MFA required for ALL access into the CDE.
+- 8.6.1 / 8.6.2: Interactive system/application account management; no hardcoded credentials in scripts or source code.
+
+Requirement 10 — Logging
+- 10.4.1.1: Automated log review (manual-only review no longer sufficient).
+- 10.7.2 / 10.7.3: Failures of critical security controls (firewalls, AV, IDS/IPS, FIM) must be detected and responded to within defined timeframes.
+
+Requirement 11 — Testing
+- 11.4.7: Multi-tenant service providers must support customer penetration testing requests.
+- 11.6.1: Change/tamper detection mechanism for HTTP headers and scripts on payment pages.
+
+Requirement 12 — Policy and Programs
+- 12.3.2: Targeted Risk Analysis (TRA) for each requirement using the Customised Approach.
+- 12.3.3 / 12.3.4: Annual review of crypto cipher suites/protocols and of hardware/software technology lifecycle.
+- 12.5.2.1: Multi-tenant service providers verify PCI DSS scope at least every 6 months.
+- 12.8.4: TPSP compliance status monitored at least annually.
+- 12.9.2: TPSPs must support customer requests confirming PCI DSS responsibility.
+- 12.10.4.1: IR personnel trained at least every 12 months.
+- 12.10.7: IR procedure for discovery of stored PAN in an unexpected location.
+
+Which ones bite hardest, and why:
+
+1. 8.4.2 (MFA for ALL CDE access) — the single biggest operational lift for most organisations. Previously MFA was only required for remote access and non-console admin access; now it's required for every user, every access path into the CDE, including from the internal network. Organisations that relied on "we're inside the firewall, so no MFA needed" now have a hard gap. Expect real project cost here: MFA rollout across internal jump hosts, database access tools, and legacy applications that don't natively support MFA.
+
+2. 6.4.3 and 11.6.1 (payment page script inventory + tamper detection) — these target web-skimming/Magecart-style attacks and require e-commerce merchants (especially SAQ A-EP and larger) to inventory every script running on the payment page, justify its presence, and deploy CSP/SRI or equivalent integrity monitoring, checked at least every 7 days. Most organisations have never inventoried third-party JS on checkout pages (analytics, chat widgets, ad pixels) and this becomes a significant discovery-and-remediation exercise.
+
+3. 10.4.1.1 (automated log review) — manual daily log walkthroughs no longer satisfy the requirement; this typically forces a SIEM purchase or reconfiguration project for organisations that were doing manual review.
+
+4. 5.4.1 (anti-phishing) — a brand-new control category with no prior equivalent; many organisations have some ad hoc email filtering but nothing formally documented as meeting this requirement.
+
+Recommendation: run a targeted gap assessment against 8.4.2, 6.4.3/11.6.1, and 10.4.1.1 first, since these tend to require the longest lead time (tooling procurement, MFA integration work, script remediation). This is general guidance based on the publicly available PCI DSS v4.0.1 standard — verify your specific gaps with your QSA/ISA.

@@ -1,0 +1,13 @@
+{
+  "eval_id": 251,
+  "eval_name": "penalty-exposure",
+  "run_type": "without_skill",
+  "prompt": "What penalties do we actually face for personal data violations in Vietnam as of late 2026?",
+  "assertions": [
+    "Cites Decree No. 330/2026/ND-CP, issued and effective August 19, 2026, as the operative sanctions regime (82 articles, 33 on personal data protection)",
+    "States the serious cross-border penalty structure correctly: percentage-of-revenue fines on prior-year VIETNAM-market revenue in bands — 1–2% (10k–<100k data subjects), 2–3% (100k–<1M), 3–5% (≥1M subjects or national defence/security impact)",
+    "States the fixed-fine fallback: VND tiers up to 3 billion where there is no Vietnam revenue or the percentage falls below the fixed tier",
+    "Covers unlawful data trading: 2×–10× unlawful proceeds, with fixed fines up to VND 3 billion where proceeds are indeterminable",
+    "Notes organisational fines are double individual fines, and remedial measures beyond fines: suspension of processing/transfers, compulsory data destruction, disgorgement, confiscation"
+  ]
+}

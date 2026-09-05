@@ -1,0 +1,19 @@
+Short answer: don't cancel outright — pause, verify, and re-scope the decision rather than walking away from the engagement entirely. Here's why, and how to think it through.
+
+Program status as of today (September 5, 2026): On July 13, 2026, the DoD suspended CMMC Phase 2 — which includes the C3PAO third-party assessment requirement that was set to become mandatory in new contracts starting November 10, 2026 — via two policy memoranda (DoW CIO and USD(A&S)). This placed pending CMMC milestones in abeyance pending a 60-day CMMC Reform Task Force review. That review's report is due to the DoW CIO around September 13, 2026 (the public RFI that fed it closed August 14). As of today, the task force's recommendations have not been published. You should verify current status again before making a final call, ideally right around or after September 13.
+
+What hasn't changed: 32 CFR Part 170 and the DFARS clause family (252.204-7012, 7019, 7020, 7021) remain in force. NIST SP 800-171 obligations for any contract handling CUI did not move. Under the interim posture, requiring activities may only designate Level 1 (Self) or Level 2 (Self) in new/modified solicitations — not Level 2 (C3PAO) or Level 3 (DIBCAC) — and DoD is directing that C3PAO/DIBCAC requirements be stripped from solicitations and existing contracts at the next option or modification.
+
+Given that, here's the practical read on your December C3PAO assessment:
+
+1. Check whether your specific contract has already been modified to remove the DFARS 7021 C3PAO requirement, or whether your contracting officer has signaled a change. If the requiring activity has downgraded you to Level 2 (Self), a paid third-party assessment may no longer be the vehicle your contract requires — that changes the calculus considerably.
+
+2. Don't treat "suspended" as "cancelled forever." The reform task force's signaled direction (per unconfirmed reporting) leans toward expanded self-attestation with False Claims Act exposure as the enforcement backstop, plus streamlining for small businesses — but this is not confirmed, and the task force could just as easily recommend restoring third-party assessment with modifications. A December assessment that gets deferred is very different from one that becomes structurally unnecessary.
+
+3. Consider deferring rather than cancelling if your C3PAO contract allows a no-cost or low-cost postponement. This preserves your place in the assessment pipeline (C3PAO capacity is constrained and demand will spike if Phase 2 resumes) without spending six figures on an assessment against a requirement that may be in flux for another few weeks.
+
+4. Regardless of the assessment track, keep remediating. Your SPRS Basic Assessment, self-assessment currency under DFARS 7019, SPRS score posting under 7020, and annual senior-official affirmation are all still legally required and unaffected by the Phase 2 suspension. If you pause remediation because "CMMC is on hold," you create real risk under the DFARS clauses that never moved.
+
+Recommended near-term action: hold a decision until after the task force report lands (~Sept 13), confirm with your contracting officer whether your contract's Section L/M requirement has been or will be modified, and ask your C3PAO whether the December slot can be deferred rather than cancelled outright. Continue your NIST SP 800-171 remediation on the existing timeline regardless of the outcome — that work is not wasted under any plausible reform scenario.
+
+This is general compliance guidance, not legal advice — confirm your specific contract's clause status with your contracting officer and consult counsel on any False Claims Act exposure questions.

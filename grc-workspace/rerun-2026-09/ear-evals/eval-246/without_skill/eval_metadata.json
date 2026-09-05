@@ -1,0 +1,13 @@
+{
+  "eval_id": 246,
+  "eval_name": "sub3hr-drone-export",
+  "run_type": "without_skill",
+  "prompt": "Our commercial surveillance drone has 2.5 hours max endurance. What are the export requirements for selling it to a distributor in Brazil?",
+  "assertions": [
+    "Applies the August 2026 final rule (91 FR 52501, effective August 13, 2026): sub-3-hour UAVs classify under 9A012.a.1, now controlled for AT reasons only (NS removed)",
+    "Concludes no license is required for Brazil under AT-only control (Brazil is not an AT-controlled destination), absent end-user/end-use red flags",
+    "Checks the sensor exception: the UAV stays NS-controlled regardless of endurance if it incorporates controlled 6A003 imaging, 6A005 laser, or 7A001–7A005 navigation items",
+    "Notes the new military end-use/end-user restriction: 9A012 was added to §744.21 controls — screen the Brazilian distributor and end use",
+    "Mentions that related software/technology (9D001/9D002/9D004/9E001) also lost NS control for sub-3-hour UAVs, and the old wind-gust-tolerance parameter is eliminated"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+ "skill": "hipaa-compliance",
+ "prompts": [
+  {
+   "id": 231,
+   "prompt": "I read that HIPAA now requires MFA and encryption under a new Security Rule. Is that in effect — do we need to comply now?"
+  },
+  {
+   "id": 232,
+   "prompt": "We're an employer sponsoring a self-funded group health plan. Does OCR actually enforce HIPAA against plans like ours, or only against hospitals and insurers?"
+  },
+  {
+   "id": 233,
+   "prompt": "A patient requested their full medical records eight months ago and we still haven't produced them. What's our exposure?"
+  },
+  {
+   "id": 234,
+   "prompt": "What does a HIPAA-compliant security risk analysis actually require? Ours is a filled-in checklist from a vendor."
+  },
+  {
+   "id": 235,
+   "prompt": "A cloud vendor will host our EHR. What must our Business Associate Agreement contain?"
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 228,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "References the EDPB's draft Guidelines 03/2026 on web scraping in the context of generative AI, adopted July 2026 (consultation until October 30, 2026)",
+      "passed": true,
+      "evidence": "\"EDPB Guidelines 03/2026 on web scraping for generative AI (adopted for consultation 7 July 2026, consultation open until 30 October 2026)\""
+    },
+    {
+      "text": "States that consent is generally not viable as a lawful basis at scraping scale, making legitimate interest (Art. 6(1)(f)) the realistic basis",
+      "passed": true,
+      "evidence": "\"Consent is generally not viable at scale for scraping the open web... Legitimate interest is treated as the realistic lawful basis\""
+    },
+    {
+      "text": "Explains that legitimate interest requires a strict three-part balancing test with concrete mitigations/safeguards (e.g., excluding sensitive sources, respecting robots/opt-out signals, data minimisation)",
+      "passed": true,
+      "evidence": "\"full three-step LIA: legitimate interest → necessity → balancing\" plus concrete mitigations: filter special-category/children's data, opt-out signals, DPIA, provenance diligence"
+    },
+    {
+      "text": "States that controllers are expected to publish detailed public privacy notices about the scraping (Art. 14 transparency)",
+      "passed": true,
+      "evidence": "\"Controllers are expected to publish detailed, specific public notices describing the scraping and training activity (transparency - Art. 13/14...)\""
+    },
+    {
+      "text": "Mentions facilitating data subject rights including pre-collection opt-out mechanisms, and that the guidance covers first-party scraping, contracted scraping, and purchased broker datasets",
+      "passed": true,
+      "evidence": "\"a pre-collection opt-out mechanism (e.g., robots.txt-style signals, do-not-train headers...)\"; \"Coverage extends beyond your own first-party scraping to contracted scraping... and purchased broker/aggregator datasets\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

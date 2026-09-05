@@ -250,3 +250,22 @@ The EDPB ruled that facial recognition for passenger flow management at airports
 **Consent validity note:** Consent cannot be considered freely given where the alternative to biometric processing (traditional document check) is made materially less convenient or accessible. If biometric processing is optional, the non-biometric option must be genuinely equivalent.
 
 **Scope beyond airports:** The same principles apply to biometric authentication at any venue or premises — gym entry, workplace access, events — where the data subject's alternative (physical key, card, pin, document) must remain genuinely accessible without detriment.
+
+---
+
+## August–September 2026 additions (verified 2026-09-05)
+
+### Uber Art. 22 fine — €824,990,000 (Dutch AP, August 21, 2026)
+The Autoriteit Persoonsgegevens fined Uber B.V. and Uber Technologies Inc. €824,990,000 — the second-largest GDPR fine ever (behind Meta's €1.2bn, 2023) and the AP's fourth against Uber (2018: €600K; 2023: €10M; 2024: €290M). Findings: between 2018 and 2022 Uber fully automatically deactivated driver accounts (temporarily on fraud suspicion or low ratings; permanently on persistent low ratings) with no human assessment, breaching the GDPR prohibition on solely automated decision-making with significant effects (Art. 22), and gave drivers insufficient information about the automated decisions. One-stop-shop mechanics: 171 French drivers complained via Ligue des droits de l'Homme to CNIL; the AP led as Uber's EU-HQ authority and aligned the decision with other supervisors. Uber has filed an appeal. AP deputy chair Monique Verdier: "A computer should not make decisions on its own that have major consequences for you. These decisions should have been looked at first by a human being."
+
+**Advisory implications:** treat driver/worker deactivation, account termination, fraud-flagging and similar platform decisions as Art. 22 territory; require documented meaningful human review (not rubber-stamping), Art. 13/14 disclosure of the logic and consequences, and a contestation channel (Art. 22(3)).
+
+### EDPB Guidelines 02/2026 on anonymisation (draft, July 7, 2026)
+Version 1.0 adopted for consultation (open until October 30, 2026); once final it replaces WP29 Opinion 05/2014. Key positions: a relative approach to identifiability following CJEU EDPS v SRB — the same dataset can be personal data for one holder and anonymous for another; anonymisation is assessed against means reasonably likely to be used; the singling-out / linkability / inference criteria framework is retained.
+
+### EDPB Guidelines 03/2026 on web scraping in the context of generative AI (draft, July 7, 2026)
+Adopted the same plenary; consultation until October 30, 2026. Positions: consent is generally not viable at scale, making legitimate interest the realistic basis subject to strict balancing and mitigations; controllers should publish detailed public privacy notices and facilitate rights including pre-collection opt-out mechanisms; coverage extends to first-party scraping, contracted scraping, and purchased broker datasets.
+
+### Breach-notification template status
+The EDPB's draft common Art. 33 notification template (adopted June 8, 2026) closed consultation on August 5, 2026; no final version has been adopted yet — do not present it as operative.
+

@@ -1,0 +1,25 @@
+{
+ "skill": "gdpr-compliance",
+ "prompts": [
+  {
+   "id": 226,
+   "prompt": "Our rideshare platform automatically deactivates driver accounts when our fraud-detection model flags them — no human looks at individual cases. Is this legal under GDPR?"
+  },
+  {
+   "id": 227,
+   "prompt": "We want to anonymise our customer dataset so we can share it with a business partner outside any data-processing agreement. What's the current standard for what counts as anonymous under GDPR?"
+  },
+  {
+   "id": 228,
+   "prompt": "Can we scrape publicly available web data to train our generative AI model, and stay GDPR-compliant?"
+  },
+  {
+   "id": 229,
+   "prompt": "We're signing up a new hosting provider that will store EU customer data. Draft the key clauses our data processing agreement must contain."
+  },
+  {
+   "id": 230,
+   "prompt": "Ransomware hit our systems last night and personal data of about 40,000 EU customers may have been exfiltrated. Walk me through our GDPR obligations step by step."
+  }
+ ]
+}

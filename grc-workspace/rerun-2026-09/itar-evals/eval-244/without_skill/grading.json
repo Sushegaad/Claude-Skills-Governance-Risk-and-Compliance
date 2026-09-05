@@ -1,0 +1,33 @@
+{
+  "eval_id": 244,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Defines the deemed export rule: releasing ITAR technical data to a foreign person in the US is an export to their country/countries of nationality",
+      "passed": true,
+      "evidence": "\"releasing technical data to a foreign person... is treated as an export to that person's country of nationality (or countries of nationality, if dual national), even if the release happens entirely inside the United States\"."
+    },
+    {
+      "text": "States a license/authorization (e.g., DSP-5) is required unless an exemption applies, judged as if exporting to that nationality",
+      "passed": true,
+      "evidence": "\"you have committed an unauthorized export unless an exemption applies\"; authorization paths: \"A DDTC export license or agreement (e.g., a Technical Assistance Agreement)\"; \"exemptions under 22 CFR 126.18\"."
+    },
+    {
+      "text": "Covers what counts as release: visual access, oral disclosure, physical access to hardware revealing technical data, IT system access",
+      "passed": true,
+      "evidence": "\"whether by showing a document, verbal briefing, granting system/network access, allowing them to observe a controlled process\"; \"Granting network/file-share access... CAD/PLM system access\"."
+    },
+    {
+      "text": "Recommends a Technology Control Plan: access controls, segregated systems, badging/escort, training, screening of nationalities against §126.1",
+      "passed": true,
+      "evidence": "\"Implement a Technology Control Plan... physical and IT access segmentation (badge access, network permissions...)\"; \"Train program managers\"; \"employee isn't from a proscribed country (126.1 list)\"; \"Screen for 126.18 disqualifiers\"."
+    },
+    {
+      "text": "Notes dual/third nationalities considerations and that US persons include green-card holders (foreign person = not US citizen/permanent resident/protected person)",
+      "passed": true,
+      "evidence": "\"foreign person... includes anyone who is not a U.S. citizen, U.S. lawful permanent resident (green card holder), or a protected individual under 8 U.S.C. 1324b(a)(3)\"; dual nationals noted (\"countries of nationality, if dual national\")."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

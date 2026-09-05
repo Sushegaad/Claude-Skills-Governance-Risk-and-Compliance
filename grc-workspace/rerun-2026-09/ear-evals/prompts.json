@@ -1,0 +1,25 @@
+{
+ "skill": "ear",
+ "prompts": [
+  {
+   "id": 246,
+   "prompt": "Our commercial surveillance drone has 2.5 hours max endurance. What are the export requirements for selling it to a distributor in Brazil?"
+  },
+  {
+   "id": 247,
+   "prompt": "Same question, but this drone flies 5 hours with a 400 km range."
+  },
+  {
+   "id": 248,
+   "prompt": "Where does a military-purposed UAV that isn't described on the USML classify now?"
+  },
+  {
+   "id": 249,
+   "prompt": "What's the current state of the AI chip 'diffusion rule'? Do we structure exports around it?"
+  },
+  {
+   "id": 250,
+   "prompt": "We sell lab neuroscience equipment. A Chinese university research institute wants to buy. What screening lessons apply?"
+  }
+ ]
+}

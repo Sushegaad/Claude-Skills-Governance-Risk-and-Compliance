@@ -1,0 +1,29 @@
+Here is the NIS2 (Directive (EU) 2022/2555) Art. 23 reporting workflow applied to a ransomware event that has taken down production systems, with every deadline computed from the moment your organisation becomes **aware** of the incident — not from when it started.
+
+**Step 0 — Establish "significant incident" status (Art. 23(3)).** Ransomware taking down production systems will almost always qualify: it satisfies limb (a) — severe operational disruption of services or financial loss to the entity — on its face. If you are a DNS, cloud, data centre, CDN, MSP/MSSP, trust service provider, TLD registry, or online marketplace/search/social platform, don't rely on judgment alone: check Commission Implementing Regulation (EU) 2024/2690, which sets quantitative thresholds for these entity types (e.g., a horizontal baseline of direct financial loss above €500,000 or 5% of annual turnover, whichever is lower, plus entity-specific triggers). For other sectors, the operational-disruption test governs.
+
+**The timeline, using your scenario (production encrypted Monday 09:00, discovered/confirmed same time):**
+
+| Deadline | Report | What to include | Where it goes |
+|---|---|---|---|
+| **By Tuesday 09:00 (≤24h from awareness)** | Early warning | Whether you suspect unlawful/malicious action; whether cross-border impact is possible | Your national CSIRT or competent authority (single entry point per your Member State's transposition) |
+| **By Thursday 09:00 (≤72h from awareness)** | Incident notification | Update to the early warning; initial severity/impact assessment; indicators of compromise (ransomware variant, ransom note, C2 infrastructure, affected system count) | Same recipient |
+| **On request during handling** | Intermediate report | Status updates while the incident is still being handled | Same recipient |
+| **Within 1 month of the 72h notification** | Final report | Detailed description including severity/impact; threat type and root cause; mitigation applied and ongoing; cross-border impact | Same recipient |
+| **If still unresolved at 1 month** | Progress report, then a final report within 1 month of actual handling completion | Same required fields | Same recipient |
+
+**Parallel obligations that ransomware specifically triggers:**
+
+- **Art. 23(1)–(2): notify affected service recipients.** If the ransomware event is likely to adversely affect your customers' or users' service delivery, you must inform them of the significant incident, and — separately — inform them of significant cyber threats together with any remedies they can apply (e.g., "watch for phishing exploiting this incident").
+- **Art. 23(7): public disclosure.** The competent authority (or CSIRT) can require or itself issue public disclosure where informing the public is necessary to prevent or manage the incident — expect this conversation with the authority during your 72h notification if the incident is customer-visible.
+- **GDPR Art. 33, run on its own clock in parallel.** If the ransomware actors accessed, exfiltrated, or encrypted personal data, you separately owe your Data Protection Authority a breach notification within 72 clock-hours of your awareness of the *personal-data* breach specifically — this is a different report, different recipient, and a different trigger condition than the NIS2 notification, so don't conflate the two or assume one filing satisfies both.
+- **DORA carve-out, if relevant.** If you are a financial entity under Regulation (EU) 2022/2554, DORA's incident-reporting regime applies instead of NIS2 Art. 23 as lex specialis (Art. 4) — your reports go to your financial supervisor, not the CSIRT, even though you remain registered under NIS2.
+
+**Operational recommendations to execute now, not after the next incident:**
+1. Pre-draft your early-warning and 72h-notification templates so the clock doesn't eat your response time; a live ransomware incident is the worst moment to be drafting a report from scratch.
+2. Define "awareness" internally in your IR plan — is it detection by your SOC, confirmation by an incident commander, or executive notification? Ambiguity here creates real dispute risk with regulators about whether you met the 24h deadline.
+3. Build the ransomware-specific IoC fields (variant, ransom demand, initial access vector, lateral movement path) directly into your incident-notification template so the 72h report is a fill-in-the-blanks exercise.
+4. Run a joint tabletop at least annually that exercises the NIS2 clock alongside GDPR Art. 33 and, if applicable, DORA reporting, so your legal, security, and comms teams aren't reconciling three regimes for the first time mid-incident.
+5. Confirm your reporting channel and current national CSIRT contact details are correct and tested — especially if your Member State's NIS2 transposition changed recently (several states updated national CSIRT/authority designations through 2025–2026).
+
+This is general compliance guidance, not legal advice; confirm your specific national reporting channel and any sector-specific overlay (financial services, healthcare, energy) with your national competent authority or counsel before an incident occurs.

@@ -13,7 +13,7 @@ description: >
 
 # NIST Cybersecurity Framework (CSF) Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-09-05
 
 You are an expert NIST CSF advisor and cybersecurity risk management consultant assisting **security, risk, and compliance teams**. You have deep knowledge of both **NIST CSF 2.0** (February 2024) and **NIST CSF 1.1** (April 2018), and can help with gap assessments, profile creation, implementation planning, tier advancement, and cross-framework mapping.
 
@@ -197,6 +197,14 @@ Different sectors have developed **Community Profiles** built on CSF. When the u
 | Federal government | Map to NIST SP 800-53 Rev 5; note FedRAMP control baseline alignment |
 | Manufacturing | Emphasise OT/IT convergence, PR.PS (platform security), and supply chain (GV.SC) |
 | SMB | Use NIST CSF 2.0 Small Business Quick Start Guide; focus on Tier 1→2 advancement |
+
+---
+
+## Recent NIST Companion Publications (August 2026 — cite when relevant)
+
+- **NIST IR 8576** (final, Aug 5, 2026): **Transit Cybersecurity Framework Community Profile** — CSF 2.0 community profile for US transit agencies (bus/subway/commuter rail) with OT/cyber-physical emphasis; complements rather than replaces agency programmes.
+- **NIST SP 1353** (initial public draft, Aug 19, 2026; comments due Oct 15): quick-start guide on **using generative AI for CSF analysis, planning and reporting** — three notional use cases (governance/policy review, Current State Profile drafting, Target State Profile drafting); illustrative, not a prescriptive assessment methodology.
+- **NIST SP 1347** (final, Aug 25, 2026): **Informative References quick-start** — how CSF 2.0 crosswalks work and the tools for using them (CSF 2.0 Reference Tool, OLIR programme).
 
 ---
 

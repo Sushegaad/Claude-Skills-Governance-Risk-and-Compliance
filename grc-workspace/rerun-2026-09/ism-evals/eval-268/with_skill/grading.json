@@ -1,0 +1,33 @@
+{
+  "eval_id": 268,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "End users prevented from granting consent to third-party OAuth applications — consent by an authorised administrator only (ISM-2137)",
+      "passed": true,
+      "evidence": "\"End users prevented from consenting to third-party OAuth apps (admin-only) — ISM-2137... Only administrators may grant consent\""
+    },
+    {
+      "text": "OAuth application consents reviewed at least every six months, revoking unused apps and excessive permissions (ISM-2138)",
+      "passed": true,
+      "evidence": "\"Consents reviewed 6-monthly — ISM-2138... recurring 6-monthly cycle... Revoke grants for apps that fail the review\" including scope-vs-justification checks"
+    },
+    {
+      "text": "Central logging of consent grants, token issuance and token use (ISM-2139)",
+      "passed": true,
+      "evidence": "\"Consent/token events centrally logged — ISM-2139... consent grant events and OAuth token issuance/refresh events must flow to central, tamper-evident logging\""
+    },
+    {
+      "text": "OAuth device code flow disabled unless required; where required, restricted to authorised accounts and managed devices (ISM-2140)",
+      "passed": true,
+      "evidence": "\"Device code flow disabled unless required — ISM-2140... disabled tenant-wide unless there is a documented business need... narrowly scoped exceptions... individually risk-assessed\""
+    },
+    {
+      "text": "Frames why: consent phishing and token theft are current attack paths; ties to session/token binding and revocation controls in the same release",
+      "passed": false,
+      "evidence": "Frames consent phishing (\"known phishing/consent-grant-attack vector\") and token misuse alerting, but does not tie to the session/token binding and revocation controls (ISM-2141–2148) of the same release"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 229,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Processing only on the controller's documented instructions (Art. 28(3)(a)), including for transfers",
+      "passed": true,
+      "evidence": "Clause 3: \"only on your documented instructions, including regarding international transfers\""
+    },
+    {
+      "text": "Confidentiality commitments for persons authorised to process (Art. 28(3)(b)) and Art. 32 security measures (Art. 28(3)(c))",
+      "passed": true,
+      "evidence": "Clause 4: confidentiality obligations for all authorized persons; Clause 5: Art. 32 measures - encryption, access controls, logging, testing"
+    },
+    {
+      "text": "Sub-processor rules: prior specific or general written authorisation, notification of changes, and flow-down of equivalent obligations (Art. 28(2), (4))",
+      "passed": true,
+      "evidence": "Clause 6: \"General or specific prior written authorization... notification mechanism... right to object... flow-down obligation... processor remains fully liable\""
+    },
+    {
+      "text": "Assistance obligations: data subject rights requests and Arts. 32–36 (security, breach notification, DPIA) assistance (Art. 28(3)(e), (f)), with processor breach notification to the controller without undue delay (Art. 33(2))",
+      "passed": true,
+      "evidence": "Clauses 7-9: assistance with data subject requests and Art. 32-36; \"notification to you without undue delay\" with 24-72h outer limit and Art. 33(3)-style content"
+    },
+    {
+      "text": "End-of-contract deletion or return of data, and audit/inspection rights including information necessary to demonstrate compliance (Art. 28(3)(g), (h))",
+      "passed": true,
+      "evidence": "Clause 10: delete or return at your choice incl. backups; Clause 11: \"make available all information necessary to demonstrate compliance and allow for/contribute to audits, including inspections\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,7 +1,7 @@
 {
   "name": "swift-csp",
   "description": "SWIFT CSP / CSCF v2026 expert covering all 32 controls (25 mandatory + 7 advisory), including Control 2.4 now mandatory (back-office data flow security). Architecture types A1–A4/B, KYC-SA attestation (window July 1–Dec 31, 2026), independent assessment, gap analysis, fraud prevention, and cross-framework mapping.",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

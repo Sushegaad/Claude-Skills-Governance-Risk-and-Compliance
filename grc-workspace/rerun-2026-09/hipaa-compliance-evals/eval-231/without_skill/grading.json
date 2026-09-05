@@ -1,0 +1,33 @@
+{
+  "eval_id": 231,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Correctly states this is a proposed rule (NPRM, published January 2025) that would remove 'addressable' designations and mandate MFA/encryption \u2014 it is NOT final and NOT in effect",
+      "passed": true,
+      "evidence": "\"OCR published a Notice of Proposed Rulemaking (NPRM) in early January 2025... eliminate the long-standing distinction between 'required' and 'addressable'... a proposed rule is not law... no new enforceable MFA/encryption mandate in effect\""
+    },
+    {
+      "text": "States the current status: the August 2026 Unified Agenda moved the rule to Long-Term Actions with final action anticipated around July 2027",
+      "passed": false,
+      "evidence": "No mention of the August 2026 Unified Agenda, Long-Term Actions, or July 2027 timing; only \"As of now, no final rule has been published\""
+    },
+    {
+      "text": "States that the existing Security Rule (with required vs addressable implementation specifications) remains the operative law to comply with today",
+      "passed": true,
+      "evidence": "\"The current Security Rule (45 CFR \u00a7164.312) already lists encryption... as an 'addressable' implementation specification... Addressable does not mean optional\" \u2014 current rule presented as operative law"
+    },
+    {
+      "text": "Mentions the industry pushback: 100+ hospital systems / provider associations (AHA-led) have urged HHS to withdraw or substantially revise the proposal",
+      "passed": false,
+      "evidence": "No mention of AHA-led industry pushback or 100+ hospital systems urging withdrawal; response even says rulemaking \"rarely gets weaker between proposal and final rule\""
+    },
+    {
+      "text": "Gives the right advice: build against the current Security Rule now, track the proposal, and do not treat NPRM provisions as current legal requirements \u2014 while noting MFA/encryption are best practice regardless",
+      "passed": true,
+      "evidence": "\"don't tell stakeholders you are legally required to comply with the NPRM today \u2014 you're not... start or continue a project to implement encryption... and MFA... good security hygiene regardless; monitor the Federal Register\""
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

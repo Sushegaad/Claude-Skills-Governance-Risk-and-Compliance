@@ -1,0 +1,32 @@
+Short answer: no — the "new Security Rule" you're describing is a **proposed** rule (an NPRM), not a final, effective regulation. You are not yet required to comply with MFA/encryption mandates under it, but you should be preparing for it and should not treat your current program as fully future-proof.
+
+**What's actually happening**
+
+In January 2025, HHS's Office for Civil Rights published a Notice of Proposed Rulemaking (RIN 0945-AA22) to substantially overhaul the HIPAA Security Rule. The proposal's headline changes would:
+- Eliminate the "required" vs. "addressable" distinction entirely — every implementation specification would become mandatory, with narrow, documented exceptions only.
+- Explicitly mandate multi-factor authentication for access to systems containing ePHI.
+- Mandate encryption of ePHI at rest and in transit, with very limited exceptions.
+- Require a current technology asset inventory and network map.
+- Add explicit vulnerability scanning, penetration testing, and incident response testing requirements.
+
+The public comment period closed in March 2025 with roughly 4,745 comments, and industry pushback has been substantial — more than 100 hospital systems, led by the American Hospital Association, have formally urged HHS to withdraw or significantly narrow the proposal, citing cost and operational burden concerns, particularly for smaller providers.
+
+**Where it stands today (September 2026)**
+
+The rule has not been finalized. HHS's Unified Agenda published August 14, 2026 moved this rulemaking to the "Long-Term Actions" category, with final action now anticipated no earlier than July 2027 — and that date could slip further given the volume of comments and the withdrawal pressure. That means:
+- There is currently **no legal obligation** to implement MFA or encryption because this NPRM exists.
+- The **current** Security Rule (45 CFR §§164.308, 164.310, 164.312) remains the operative standard, and under it encryption is still formally "addressable" — meaning you must assess whether it's reasonable and appropriate for your environment, and if you decide not to implement it, document a legitimate reason and an equivalent alternative safeguard.
+
+**What I'd actually recommend regardless of the rule's status**
+
+Don't confuse "not yet required" with "not a good idea." In practice:
+- MFA and encryption (AES-256 at rest, TLS 1.2+ in transit) are already the de facto industry standard, and OCR's enforcement pattern under the *current* rule treats their absence as strong evidence of an inadequate risk analysis or risk management program — which *is* independently enforceable today.
+- If you don't have MFA and full encryption in place, I would not wait for the rule to finalize. Build your program as if the "addressable" carve-out doesn't exist, because OCR's actual enforcement priorities (see below) already penalize the absence of these controls, and the direction of travel is unambiguous even if the timeline is not.
+
+**Enforcement context worth knowing**
+
+OCR's current enforcement focus — the Risk Analysis Initiative — has resulted in recent settlements against organizations for failing to conduct an accurate and thorough risk analysis after ransomware incidents, including actions against self-funded group health plan sponsors (previously an under-enforced category). This tells you where OCR's attention is right now, independent of the NPRM.
+
+**Bottom line:** Track the NPRM (it may still be finalized, revised, or withdrawn), but don't present its provisions to your organization as current legal requirements — that would overstate your obligations. Build toward MFA and encryption now as a risk-management best practice and to defend against the "did you conduct an adequate risk analysis" question OCR is actually asking today.
+
+*This guidance is for informational purposes only and does not constitute legal advice. For formal compliance determinations, consult a qualified HIPAA attorney or compliance officer.*

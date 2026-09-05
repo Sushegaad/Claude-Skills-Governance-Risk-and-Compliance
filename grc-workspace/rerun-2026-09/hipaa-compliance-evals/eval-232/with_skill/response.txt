@@ -1,0 +1,33 @@
+Yes — OCR does enforce HIPAA against self-funded group health plans, and this is not a theoretical risk. It has become an active enforcement category, so I'd treat your plan as squarely in scope rather than assume enforcement is reserved for hospitals and insurers.
+
+**Why you're a Covered Entity**
+
+A self-funded group health plan is itself a "health plan" under 45 CFR §160.103, and health plans are one of the three categories of HIPAA Covered Entities (alongside healthcare providers who transmit electronically and healthcare clearinghouses). It doesn't matter that the employer isn't a hospital or a traditional insurance carrier — the *plan* is the covered entity, separate and apart from the employer's role as an employer. This is a common point of confusion: HIPAA does not apply to the employer acting in its employer capacity (e.g., HR records, disability accommodation files kept outside the plan), but it does apply to the plan itself, including PHI the plan receives from claims administrators, pharmacy benefit managers, or stop-loss carriers.
+
+**Recent enforcement — this is happening now**
+
+OCR has explicitly begun targeting self-funded group health plan sponsors as part of its Risk Analysis Initiative, which focuses on organizations that suffered a breach (often ransomware) and, on investigation, are found never to have conducted an accurate and thorough risk analysis. Two examples from 2026:
+- **Star Group L.P.** — a $245,000 settlement (April 2026) tied to a ransomware incident, where OCR's investigation found the plan sponsor had not conducted an adequate risk analysis.
+- **Spencer Gifts' self-funded plan** — a $450,000 settlement plus a Corrective Action Plan (June 2026), again following a ransomware event and a finding of an inadequate risk analysis.
+
+Both cases follow the same pattern: a security incident (usually ransomware) triggers an OCR investigation, and the investigation exposes that the plan sponsor never did the foundational work — a documented, comprehensive risk analysis covering all systems that touch ePHI. This is consistently OCR's most-cited deficiency across all covered entity types, and plan sponsors are not being given a pass.
+
+**Practical exposure for a plan sponsor**
+
+Because you're self-funded, your obligations run deeper than a fully-insured employer's would (a fully-insured plan typically has minimal PHI exposure and correspondingly lighter HIPAA obligations). As a self-funded plan, you likely need:
+- A designated Privacy Official and Security Official for the plan
+- Plan document amendments requiring the plan sponsor to safeguard ePHI, restrict use to plan administration purposes, and report security incidents (45 CFR §164.314(b))
+- A firewall between plan administration functions and the employer's other HR/business functions if plan sponsor employees have access to PHI
+- BAAs with your third-party administrator, PBM, and any other vendor that creates, receives, maintains, or transmits PHI on the plan's behalf
+- A current, documented Security Rule risk analysis covering all ePHI systems (this is exactly what OCR found missing in both recent cases)
+
+**Action items I'd prioritize**
+
+1. Confirm you have a documented, current risk analysis — not a vendor checklist, but one that actually maps threats/vulnerabilities/likelihood/impact across every system touching ePHI (see my risk analysis guidance if you want detail on that distinction).
+2. Verify your plan documents contain the required §164.314(b) certifications for HIPAA compliance by the plan sponsor.
+3. Confirm BAAs are in place and current with your TPA/PBM/any vendor.
+4. Make sure incident response and breach notification procedures name the plan (not just the employer) as the entity with reporting obligations.
+
+**Bottom line:** Assume you are enforceable, and prioritize the risk analysis — that's the single control both recent settlements turned on.
+
+*This guidance is for informational purposes only and does not constitute legal advice. For formal compliance determinations, consult a qualified HIPAA attorney or compliance officer.*

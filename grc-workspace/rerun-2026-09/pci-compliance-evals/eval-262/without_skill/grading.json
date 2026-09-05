@@ -1,0 +1,33 @@
+{
+  "eval_id": 262,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies SAQ A for card-not-present merchants with all cardholder data functions fully outsourced to PCI-compliant third parties (redirect or compliant iframe)",
+      "passed": true,
+      "evidence": "\"you are most likely eligible for SAQ A\"; \"fully outsourced all cardholder data functions... to PCI DSS validated third-party service provider(s)\" (redirect or provider-hosted iframe)"
+    },
+    {
+      "text": "States the merchant's site must not receive/transmit/store cardholder data — only pointing to the payment processor",
+      "passed": true,
+      "evidence": "\"no cardholder data touches merchant infrastructure at all, not even in logs or memory\""
+    },
+    {
+      "text": "Notes SAQ A now includes requirements addressing e-commerce skimming risk (script management 6.4.3 and change/tamper detection 11.6.1 style controls)",
+      "passed": true,
+      "evidence": "\"Requirement 6.4.3... Requirement 11.6.1... These two apply even to SAQ A merchants\" targeting Magecart-style skimming"
+    },
+    {
+      "text": "Distinguishes SAQ A-EP: merchants whose site affects the security of the payment redirect (e.g., JavaScript-created payment form) face the much larger SAQ A-EP",
+      "passed": true,
+      "evidence": "\"you likely fall into SAQ A-EP instead, which has significantly more requirements (roughly 40+)... because your web server is considered to influence the security of the payment process\""
+    },
+    {
+      "text": "Advises confirming SAQ eligibility with the acquirer, which determines validation requirements",
+      "passed": true,
+      "evidence": "\"walk through the current SAQ A and A-EP eligibility criteria... with your team (and ideally your acquirer or a QSA)\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

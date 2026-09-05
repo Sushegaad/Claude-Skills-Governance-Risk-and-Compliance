@@ -1,0 +1,13 @@
+{
+  "eval_id": 256,
+  "eval_name": "netherlands-cbw",
+  "run_type": "without_skill",
+  "prompt": "We operate critical logistics infrastructure in the Netherlands. What changed for us in August 2026?",
+  "assertions": [
+    "States the Cyberbeveiligingswet (Cbw) entered into force August 15, 2026, transposing NIS2 and replacing the Wbni",
+    "Gives the scale: over 8,000 organisations across 18 sectors in scope",
+    "States the registration duty: register in the entity register via NCSC (MijnNCSC) — mandatory as of entry into force",
+    "States there is no transition/grace period: duty of care (risk-management measures) and incident reporting apply immediately",
+    "Mentions board-level accountability: management ultimately responsible, with knowledge/training obligations"
+  ]
+}

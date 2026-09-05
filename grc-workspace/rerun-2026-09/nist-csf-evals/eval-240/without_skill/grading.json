@@ -1,0 +1,33 @@
+{
+  "eval_id": 240,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "GOVERN function added (elevating governance/supply-chain risk strategy), reorganizing former ID categories",
+      "passed": true,
+      "evidence": "CSF 2.0 adds Govern as a sixth... Much of Govern's content existed in 1.1 but was scattered - parts lived under Identify (ID.GV, ID.RM, ID.SC in 1.1)"
+    },
+    {
+      "text": "Scope broadened: from critical infrastructure to all organizations",
+      "passed": true,
+      "evidence": "CSF 1.1 was explicitly framed around critical infrastructure. CSF 2.0 drops that framing and positions itself as applicable to any organization, regardless of sector or size"
+    },
+    {
+      "text": "Structural changes: categories/subcategories reorganized and renumbered \u2014 requires subcategory-level remapping, not a rename",
+      "passed": true,
+      "evidence": "Subcategory reorganization and renumbering... You cannot assume a simple ID-to-ID renumbering; you need to actually re-read the new subcategory language"
+    },
+    {
+      "text": "Mentions new support resources: implementation examples, quick-start guides, reference tool, community profiles",
+      "passed": true,
+      "evidence": "Introduces 'Community Profiles', 'Implementation Examples', and the 'online Cybersecurity and Privacy Reference Tool (CPRT)'"
+    },
+    {
+      "text": "Gives a sane migration path: map existing 1.1 profile to 2.0 subcategories, stand up GOVERN outcomes, refresh target profile and roadmap",
+      "passed": true,
+      "evidence": "Step 1 - Map your existing 1.1 profile... using NIST's published 1.1-to-2.0 crosswalk. Step 2 - Stand up Govern... Step 4 - Rebuild your Current Profile... Step 5 - Reset your Target Profile"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

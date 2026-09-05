@@ -1,0 +1,33 @@
+{
+  "eval_id": 258,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Early warning within 24 hours of awareness (indicating suspected unlawful/malicious cause or cross-border impact)",
+      "passed": true,
+      "evidence": "Early warning... \u226424h from awareness: 'Whether you suspect unlawful/malicious action; whether cross-border impact is possible'"
+    },
+    {
+      "text": "Incident notification within 72 hours with initial assessment of severity/impact and indicators of compromise",
+      "passed": true,
+      "evidence": "\u226472h from awareness: Incident notification... 'initial severity/impact assessment; indicators of compromise (ransomware variant, ransom note, C2 infrastructure...)'"
+    },
+    {
+      "text": "Final report within one month (or progress report if ongoing) with root cause, mitigation, and cross-border impact",
+      "passed": true,
+      "evidence": "Within 1 month of the 72h notification: Final report... 'threat type and root cause; mitigation applied and ongoing; cross-border impact'; 'If still unresolved at 1 month: Progress report'"
+    },
+    {
+      "text": "Correct recipients: the CSIRT or competent authority (member-state specific), plus recipients-of-services notification where relevant",
+      "passed": true,
+      "evidence": "Your national CSIRT or competent authority (single entry point per your Member State's transposition)... 'Art. 23(1)-(2): notify affected service recipients'"
+    },
+    {
+      "text": "Applies the significance threshold: severe operational disruption/financial loss or considerable damage to others \u2014 ransomware downtime plainly qualifies",
+      "passed": true,
+      "evidence": "Ransomware taking down production systems will almost always qualify: it satisfies limb (a) \u2014 severe operational disruption of services or financial loss"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

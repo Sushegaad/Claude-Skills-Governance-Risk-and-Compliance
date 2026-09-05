@@ -1,0 +1,33 @@
+{
+  "eval_id": 264,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Defines the CDE and 'connected-to' systems as in scope — scope is where CHD is stored/processed/transmitted plus systems that can impact its security",
+      "passed": true,
+      "evidence": "\"systems that don't store, process, or transmit CDE data but are connected to the CDE... are still in scope as 'connected-to' or 'security-impacting' systems\""
+    },
+    {
+      "text": "Recommends network segmentation with (at least annual; 6-monthly for service providers) segmentation testing to verify isolation",
+      "passed": true,
+      "evidence": "\"Segmentation must be validated through penetration testing (PCI DSS Requirement 11.4.5/11.4.6) at least annually and after significant changes\""
+    },
+    {
+      "text": "Explains tokenization: reduces scope but the tokenization system/vault and de-tokenization capability remain in scope",
+      "passed": false,
+      "evidence": "Describes tokenization (\"replace PAN with a non-sensitive token immediately after authorization\") but omits that the tokenization system/vault and de-tokenization capability remain in scope"
+    },
+    {
+      "text": "Explains validated P2PE: encrypting at the point of interaction can reduce merchant validation to SAQ P2PE-level scope",
+      "passed": true,
+      "evidence": "\"Point-to-point encryption (P2PE): validated P2PE solutions... can shrink certain merchant environments down to the smallest applicable SAQ (e.g., SAQ P2PE)\""
+    },
+    {
+      "text": "Recommends outsourcing to PCI-compliant providers with responsibility matrices, and dataflow mapping/CHD discovery to prove scope",
+      "passed": true,
+      "evidence": "\"Outsource acceptance/processing to validated third parties\"; \"rigorous data discovery and flow-mapping exercise\" including accidental storage locations"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

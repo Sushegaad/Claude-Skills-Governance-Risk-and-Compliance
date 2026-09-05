@@ -1,0 +1,33 @@
+{
+  "eval_id": 257,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies Ireland, Spain and France as the member states still lacking in-force transposition laws as of early September 2026",
+      "passed": true,
+      "evidence": "That leaves Ireland, Spain, and France \u2014 the three jurisdictions where you have subsidiaries \u2014 as still lacking in-force national transposition"
+    },
+    {
+      "text": "Cites the July 9, 2026 Commission referral to the CJEU for failure to notify transposition \u2014 which originally also included the Netherlands",
+      "passed": true,
+      "evidence": "on 9 July 2026 the European Commission referred Ireland, Spain, France, and the Netherlands to the CJEU for failing to notify transposition of NIS2"
+    },
+    {
+      "text": "Notes the Commission requested financial penalties: a lump sum plus daily penalty payments",
+      "passed": true,
+      "evidence": "seeking a lump-sum penalty plus daily fines"
+    },
+    {
+      "text": "Notes the Netherlands has since transposed (Cbw in force August 15, 2026) and should no longer be listed as a laggard",
+      "passed": true,
+      "evidence": "the Netherlands has since transposed \u2014 its Cyberbeveiligingswet (Cbw)... entered into force on 15 August 2026, replacing the prior Wbni"
+    },
+    {
+      "text": "Gives the right advice: prepare subsidiaries against the directive text now \u2014 authorities have applied short compliance windows once national law lands",
+      "passed": true,
+      "evidence": "Build to the directive text now... historical practice... has been to apply short or no compliance windows \u2014 the Netherlands' Cbw is the most recent example, with zero transition period"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,23 @@
+Short answer: There is no bright-line technical test for "anonymous" under GDPR — the current standard is a relative, recipient-specific, risk-based assessment, and given the facts you describe (sharing with an external business partner with no DPA), you should assume real re-identification risk and not treat the shared dataset as automatically anonymous just because you removed direct identifiers.
+
+The legal framework
+Anonymous data falls outside GDPR entirely (Recital 26) — it is data from which "the data subject is not or no longer identifiable." Pseudonymised data, by contrast, remains personal data (Art. 4(5)) because a key or additional information could re-identify individuals. Getting this classification wrong is consequential: if what you send your partner is still personal data, the transfer needs a lawful basis (Art. 6), and — if your partner is a separate controller/processor — a contract is generally required (Art. 28 if processor; a controller-to-controller arrangement still needs an Art. 6 basis and Art. 13/14 transparency, though not necessarily a "DPA" in the Art. 28 sense).
+
+The current standard: the "relative approach"
+The CJEU's SRB v EDPS ruling (Case C-413/23 P, 4 September 2025) is now the controlling authority: whether data is "personal data" is assessed relative to the specific recipient, not in the abstract. Pseudonymised data may be personal data in the hands of the original controller (who holds or can obtain the re-identification key) but non-personal in the hands of a recipient who has no reasonably available means to re-identify. The test is whether re-identification is "reasonably likely" for that specific holder — not whether it is theoretically possible for someone, somewhere, with unlimited resources.
+
+The EDPB has now operationalized this in draft Guidelines 02/2026 on Anonymisation (adopted for consultation 7 July 2026, open until 30 October 2026; will replace the old WP29 Opinion 05/2014 once finalized). Key positions to apply today, while flagging that this guidance is still in draft:
+- Relative identifiability, following EDPS v SRB — the same dataset can be anonymous for one holder and personal data for another.
+- The "means reasonably likely to be used" test — assess cost, time, expertise, and available auxiliary data realistically available to the recipient, not a worst-case adversary.
+- The three classic re-identification criteria are retained: singling-out (isolating an individual record), linkability (connecting records about the same person), and inference (deducing attributes with reasonable confidence).
+
+Practical implication for your situation
+Because you're proposing to send data to a business partner "outside any data-processing agreement," you have no contractual control over what auxiliary data or re-identification capability that partner holds — which cuts directly against the "reasonably likely means" analysis in the recipient's favor. To rely on the anonymisation exemption you would need to demonstrate, and document:
+1. Direct and indirect identifiers removed or generalized sufficiently to defeat singling-out (e.g., k-anonymity/l-diversity techniques, not just stripping names/emails).
+2. No retained key or crosswalk that you or the partner could use to relink records.
+3. An assessment of what auxiliary datasets the partner (or anyone they might share with) could plausibly combine with your data to re-identify — this is where most "anonymisation" claims fail in practice.
+4. A written anonymisation assessment tested against known re-identification techniques, reviewed by your DPO, retained as evidence.
+
+If you cannot clear that bar — and sharing outside a DPA with a partner whose data environment you don't control makes it hard to clear — treat the dataset as pseudonymised personal data, not anonymous, and put in place either an Art. 28 DPA (if the partner processes on your instructions) or a separate lawful basis, transparency notice, and appropriate safeguards for a controller-to-controller disclosure (Art. 5(1)(b), (c); Art. 6; Art. 13/14).
+
+⚠️ Legal Advice Disclaimer: This guidance is informational, reflects both binding CJEU case law and non-final EDPB draft guidance (consultation open through October 30, 2026), and does not constitute legal advice. Given the stakes of an incorrect anonymisation determination and the absence of a governing contract with your partner, consult a qualified data protection lawyer or your DPO before proceeding with the transfer.

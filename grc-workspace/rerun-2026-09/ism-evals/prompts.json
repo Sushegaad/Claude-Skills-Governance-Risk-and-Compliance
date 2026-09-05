@@ -1,0 +1,25 @@
+{
+ "skill": "ism",
+ "prompts": [
+  {
+   "id": 266,
+   "prompt": "What changed in the September 2026 Australian ISM release? Give us the highlights for our security team."
+  },
+  {
+   "id": 267,
+   "prompt": "We're deploying an AI agent that can execute tools against our systems. What does the ISM now require?"
+  },
+  {
+   "id": 268,
+   "prompt": "How should we handle third-party OAuth application consent in our Microsoft 365 tenant under the current ISM?"
+  },
+  {
+   "id": 269,
+   "prompt": "Is the Essential Eight being replaced? What should we assess against right now?"
+  },
+  {
+   "id": 270,
+   "prompt": "What operational cadences changed in the ISM recently, and what's new for managed service provider access?"
+  }
+ ]
+}

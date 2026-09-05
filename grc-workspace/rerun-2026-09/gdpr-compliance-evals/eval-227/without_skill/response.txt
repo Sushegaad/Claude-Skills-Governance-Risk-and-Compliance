@@ -1,0 +1,32 @@
+The bar for "anonymous" under GDPR is much higher than most organizations assume, and getting it wrong doesn't just create risk — it means the sharing you're describing is actually an unlawful disclosure of personal data, since anonymization is the only thing that takes data outside the scope of the GDPR entirely (Recital 26).
+
+The governing standard:
+
+Recital 26 says data is anonymous, and therefore outside GDPR's scope, only if the data subject is not or no longer identifiable, taking into account "all the means reasonably likely to be used" by the controller or any other person to identify the individual, directly or indirectly. Crucially, this test is not limited to what your organization intends to do with the data — it asks whether re-identification is reasonably possible by anyone, including the recipient, considering:
+- the cost and time required for re-identification,
+- the available technology at the time of processing and expected technological development,
+- and, critically here, what other data sets or auxiliary information a recipient might combine with yours.
+
+This is why sharing "anonymised" data with an external partner is particularly risky: the reasonableness test has to account for whatever data the partner already holds or could plausibly obtain. If the partner has other datasets that could be linked to yours (e.g., other customer records, browsing data, location history), true anonymization becomes very difficult to achieve and demonstrate.
+
+Regulatory and expert guidance (the Article 29 Working Party's Opinion 05/2014 on Anonymisation Techniques remains the most cited framework, later reinforced by EDPB and national DPA guidance) evaluates anonymization against three re-identification risks:
+1. Singling out — can you isolate some or all records identifying an individual?
+2. Linkability — can you link two records about the same individual (even without naming them)?
+3. Inference — can you deduce, with significant probability, the value of an attribute from other attributes?
+
+A dataset is only robustly anonymous if all three risks are mitigated. Simply removing direct identifiers (names, emails, ID numbers) is not enough — this is "pseudonymisation," not anonymization, and pseudonymised data remains personal data under GDPR (Article 4(5) and Recital 26 explicitly say so) because the data can be attributed to a natural person with the use of additional information (e.g., a key you or someone else holds).
+
+Common techniques and their limits:
+- Removing/masking direct identifiers: insufficient alone — indirect identifiers (postcode, birth date, device ID, purchase patterns) can still re-identify people, especially in combination (the classic finding is that ZIP code + birth date + gender uniquely identifies most US individuals; similar quasi-identifier combinations exist in EU datasets).
+- k-anonymity, l-diversity, t-closeness: improve resistance to singling out/inference but are vulnerable when combined with external data and don't eliminate linkability risk on their own.
+- Differential privacy: currently the strongest, most defensible technical approach because it provides a mathematical, provable bound on the probability that any individual's data affects the output, regardless of auxiliary information an attacker might have. Regulators increasingly view differential privacy (with meaningfully small epsilon values) as the gold standard for defensible anonymization claims, though it typically requires some accuracy trade-off.
+- Aggregation/statistical summarization at sufficiently large group sizes can also qualify, provided small-cell suppression prevents singling out.
+
+For your specific scenario, sharing with a partner outside a data-processing agreement:
+
+- If you're relying on "this is anonymous so GDPR doesn't apply," the burden of proof is on you, and regulators will scrutinize claims skeptically, especially post-transfer where you lose control over what the recipient combines the data with.
+- Document your anonymization methodology, the re-identification risk assessment (considering what the specific partner is reasonably likely to hold or obtain), and revisit it periodically as techniques and available auxiliary data evolve — anonymization is not a one-time determination, it can degrade over time ("anonymisation is not necessarily a permanent state").
+- If there's genuine doubt about whether the output is robustly anonymous, treat it as pseudonymised personal data, which means you need a lawful basis for the disclosure and — since this is a transfer to a separate organization acting as controller of the data it receives — a legally appropriate instrument. That could be a DPA if the partner is acting as your processor, or more likely here, a controller-to-controller data sharing agreement covering purpose limitation, security, and onward transfer restrictions.
+- Consider a Data Protection Impact Assessment if the anonymization/sharing is systematic or involves special category or sensitive-adjacent data.
+
+Bottom line: don't rely on de-identification alone. Get an independent, documented, risk-based assessment (ideally with statistical/technical sign-off) that accounts for the specific recipient's plausible auxiliary data, and if there's any meaningful residual re-identification risk, put a proper data-sharing agreement in place rather than relying on an anonymization claim.

@@ -1,0 +1,13 @@
+{
+  "eval_id": 226,
+  "eval_name": "automated-driver-deactivation",
+  "run_type": "without_skill",
+  "prompt": "Our rideshare platform automatically deactivates driver accounts when our fraud-detection model flags them — no human looks at individual cases. Is this legal under GDPR?",
+  "assertions": [
+    "Identifies Article 22 GDPR: solely automated decisions with legal or similarly significant effects (such as account deactivation affecting livelihood) are prohibited unless an exception applies, and safeguards are required",
+    "Cites the August 2026 enforcement precedent: the Dutch DPA (Autoriteit Persoonsgegevens) fined Uber approximately €825 million (€824,990,000) for fully automated driver-account deactivations without human assessment — the second-largest GDPR fine ever",
+    "Requires meaningful human review before deactivation decisions take effect — a human who can influence the outcome, not a rubber-stamp of the model output",
+    "Identifies the transparency duty: drivers must be informed about the existence and logic of the automated decision-making and its consequences (Arts. 13/14/15(1)(h))",
+    "Mentions the data subject's right to contest the decision, obtain human intervention, and express their point of view (Art. 22(3))"
+  ]
+}

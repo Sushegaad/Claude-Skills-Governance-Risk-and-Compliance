@@ -1,0 +1,13 @@
+{
+  "eval_id": 261,
+  "eval_name": "faq-1331-roc-scoping",
+  "run_type": "with_skill",
+  "prompt": "We're a Level 1 e-commerce merchant preparing our ROC. Our QSA agreed we can use SAQ A eligibility criteria to mark most requirements not applicable. Is that still acceptable?",
+  "assertions": [
+    "States the change: PCI SSC updated FAQ 1331 on August 31, 2026, restricting this practice",
+    "States the new rule: SAQ eligibility criteria may not be used as a guide for ROC requirement applicability unless explicitly reviewed, discussed and agreed with the merchant's compliance accepting entity (payment brands and/or acquirer)",
+    "Makes the key point: QSA agreement alone no longer suffices — acquirer/brand approval is needed",
+    "Identifies who is affected: merchants undergoing ROC assessments (mandatory Level 1 or voluntary), notably e-commerce scoping under requirements like 6.4.3/11.6.1",
+    "Gives the right advice: obtain and document the acquirer/payment-brand agreement in writing before relying on SAQ-based scope reduction"
+  ]
+}

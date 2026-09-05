@@ -16,4 +16,4 @@ Gap assessments in maturity terms · label/objective selection walk-throughs · 
 **Trigger phrases:** `TISAX`, `VDA ISA`, `ENX`, `TISAX label`, `AL2 assessment`, `AL3 assessment`, `prototype protection`, `automotive supplier security`, `ISA2027`, `TISAX vs ISO 27001`
 
 ---
-Skill version: 1.8.0 — August 2026
+Skill version: 1.9.0 — September 2026

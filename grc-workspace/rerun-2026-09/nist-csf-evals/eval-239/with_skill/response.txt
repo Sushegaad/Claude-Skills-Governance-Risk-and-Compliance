@@ -1,0 +1,56 @@
+Here is a structured approach for building your CSF 2.0 Organizational Profile as a mid-size manufacturer. Manufacturing has a distinctive risk profile — IT/OT convergence, industrial control systems (ICS/SCADA) on plant floors, third-party equipment vendors with remote access, and supply chain dependencies that are often deeper and less visible than in pure IT environments — so the profile approach below is tailored accordingly, not generic.
+
+**Step 1: Establish Business Context**
+
+Before rating any subcategory, document:
+- **Industry/mission**: production lines, product types, safety-critical processes (if any), regulatory exposure (e.g., CMMC/DFARS if you're a defense supplier, customer contractual security requirements, state privacy law if you handle employee/customer PII).
+- **Legal/regulatory/contractual obligations**: customer security addenda are often the biggest driver of "must-have" target states in manufacturing — map these explicitly to GV.OC-03.
+- **Key assets and Crown Jewels**: this should explicitly include OT/ICS assets (PLCs, HMIs, SCADA historians, robotics controllers) alongside traditional IT — these often carry safety and production-continuity risk that IT-only asset lists miss.
+- **Risk tolerance statement**: for manufacturers, this typically centers on production uptime and safety, not just data confidentiality — your risk appetite framing (GV.RM-02) should say so explicitly, since it will drive different priorities than a typical office-based enterprise.
+
+**Step 2: Build the Current Profile**
+
+Assess your actual state today across all six functions using this rating scale: Not Implemented / Partially Implemented / Largely Implemented / Fully Implemented. For a mid-size manufacturer, pay particular attention to these commonly-weak areas during current-state assessment:
+- ID.AM-01/02 — do you have a complete asset inventory that includes OT/plant-floor systems, not just corporate IT?
+- GV.SC-04/07 — are equipment vendors and their remote-access arrangements tracked and risk-assessed?
+- PR.AA-06 — physical access control at plant facilities (often stronger than logical access control in manufacturing, worth confirming rather than assuming).
+- PR.PS-01/02 — configuration and patch management for OT systems, which often lag IT patch cycles due to uptime requirements.
+- DE.CM-01/09 — monitoring coverage on OT networks (frequently a blind spot — many manufacturers only monitor corporate IT).
+
+**Step 3: Build the Target Profile**
+
+Define target states informed by:
+- Customer contractual security requirements (often the fastest-moving driver — new customer contracts frequently mandate specific controls)
+- Insurance/cyber-insurance underwriting requirements
+- Safety and production-continuity risk tolerance
+- Any applicable regulatory baseline (CMMC/NIST 800-171 if defense-adjacent, state breach-notification laws, etc.)
+
+Highlight subcategories where regulatory/contractual obligations create a **mandatory** (not discretionary) target state — these should be flagged distinctly in your profile table since they can't be deprioritized regardless of resource constraints.
+
+**Step 4: Profile Table Format**
+
+| Function | Category | Subcategory | Current | Target | Notes |
+|----------|----------|-------------|---------|--------|-------|
+| GV | Organizational Context (GV.OC) | GV.OC-03 | Partial | Full | Customer security addenda not yet fully catalogued against controls |
+| GV | Supply Chain Risk (GV.SC) | GV.SC-04 | Partial | Full | Equipment/OT vendors not yet inventoried by criticality |
+| ID | Asset Management (ID.AM) | ID.AM-01 | Partial | Full | OT/plant-floor asset inventory incomplete |
+| PR | Platform Security (PR.PS) | PR.PS-02 | Not Implemented | Largely Implemented | No formal OT patch/replacement cadence |
+| DE | Continuous Monitoring (DE.CM) | DE.CM-01 | Not Implemented | Partial | OT network monitoring not yet deployed |
+| PR | Technology Resilience (PR.IR) | PR.IR-03 | Partial | Full | Production-line failover/resilience not formally tested |
+
+(This is illustrative — a full profile should cover all six functions with every relevant subcategory rated, not just the manufacturing hot spots above.)
+
+**Step 5: Prioritize and Sequence**
+
+The gap between Current and Target drives your action plan. Sequencing logic that applies well to manufacturing:
+1. **Phase 1 (prerequisites)**: GV.OC and GV.RM to lock in risk tolerance framed around production/safety; ID.AM to build a *combined* IT+OT asset inventory (this is foundational — nothing else in Protect/Detect is meaningful without knowing what OT assets exist).
+2. **Phase 2**: PR controls prioritized by what protects production continuity and safety first — PR.AA for both plant and office access, PR.PS for configuration/patch management adapted to OT constraints (can't always patch live production systems — document compensating controls where true patching isn't feasible).
+3. **Phase 3**: DE.CM extended to OT networks (often a net-new capability, frequently requires OT-specific monitoring tooling since IT tools don't always parse ICS protocols) and DE.AE.
+4. **Phase 4**: RS and RC — incident response and recovery plans that explicitly cover production-line/safety scenarios, not just IT data breach scenarios, plus the ID.IM feedback loop back into GV.
+
+**Next steps I can help with**:
+- A full gap assessment table across all six functions if you share your current control implementation status
+- An implementation roadmap with 30/60/90-day and 6/12-month phases once the Current/Target Profile is drafted
+- A crosswalk to any specific framework you're also subject to (NIST SP 800-171/CMMC if defense-related, ISO 27001, etc.)
+
+This is general informational guidance based on NIST CSF 2.0, not legal or professional compliance advice. For OT/ICS-specific technical safeguards and any regulatory certification (e.g., CMMC), engage a qualified cybersecurity professional or accredited assessor.

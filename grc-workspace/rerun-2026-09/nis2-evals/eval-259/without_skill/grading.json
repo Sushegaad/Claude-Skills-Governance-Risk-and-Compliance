@@ -1,0 +1,33 @@
+{
+  "eval_id": 259,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Applies the two-step test: Annex I (high criticality) vs Annex II sectors, then size thresholds (generally 250+/\u20ac50M for essential in Annex I; medium-size entities typically important)",
+      "passed": false,
+      "evidence": "Misstates the size step: 'Within Annex I sectors, medium and large entities (50+ employees or \u20ac10M+...) are essential entities' \u2014 contradicts ground truth that medium-size Annex I entities are typically important (250+/\u20ac50M for essential)"
+    },
+    {
+      "text": "States the supervision difference: essential = ex-ante AND ex-post (inspections, audits); important = ex-post only, triggered by evidence",
+      "passed": true,
+      "evidence": "Essential entities are subject to proactive, ex-ante supervision... Important entities are subject to reactive, ex-post supervision only \u2014 the authority generally only investigates after evidence"
+    },
+    {
+      "text": "States the fine floors: \u2265\u20ac10M or 2% worldwide turnover (essential) vs \u2265\u20ac7M or 1.4% (important)",
+      "passed": true,
+      "evidence": "fines up to \u20ac10,000,000 or 2% of total global annual turnover... important entities face up to \u20ac7,000,000 or 1.4%"
+    },
+    {
+      "text": "Mentions management liability including potential temporary bans from managerial functions (essential entities)",
+      "passed": false,
+      "evidence": "No mention of management/board personal liability or temporary bans from managerial functions anywhere in the response"
+    },
+    {
+      "text": "Notes special designations: CER-designated critical entities are automatically essential regardless of size; some sectors (e.g., qualified trust/DNS/TLD) essential regardless of size",
+      "passed": true,
+      "evidence": "Regardless of size, an entity is automatically essential if it is... identified as critical under the separate CER Directive... qualified trust service provider or TLD registry/DNS provider (these are essential regardless of size)"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 252,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the mechanism: a cross-border transfer impact assessment (CPDTIA/CTIA) dossier submitted to A05/MPS within 60 days of first transfer (per Decree 356/2025)",
+      "passed": true,
+      "evidence": "\"submitted to the Ministry of Public Security... within 60 days of the first transfer\"; CPDTIA dossier described; cites \"Decree 356 Article 12\""
+    },
+    {
+      "text": "Mentions ongoing duties: periodic updates (6-monthly) and updates on material changes",
+      "passed": true,
+      "evidence": "\"refreshed every six months, or immediately whenever there is a material change\""
+    },
+    {
+      "text": "States the enforcement risk under Decree 330/2026: concealment/misdeclaration or assessment failures combined with breach/loss of citizens' data trigger the revenue-based fine bands (up to 3–5% of Vietnam-market revenue)",
+      "passed": true,
+      "evidence": "\"under the now-operative Decree 330/2026/ND-CP... CPDTIA failure, concealment, or misdeclaration that results in an actual breach or loss of Vietnamese citizens' data is penalized as a percentage of your prior-year Vietnam-market revenue... 3–5%\""
+    },
+    {
+      "text": "Distinguishes the lesser offence: plain failure to file/update the dossier carries fixed fines around VND 30–50M",
+      "passed": true,
+      "evidence": "\"Simply failing to file the CPDTIA on time, or filing late updates, is treated as a plain procedural violation: VND 30–50 million\""
+    },
+    {
+      "text": "Notes suspension of cross-border transfers as an available remedial measure",
+      "passed": true,
+      "evidence": "\"the Ministry can order suspension of the cross-border transfer itself\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

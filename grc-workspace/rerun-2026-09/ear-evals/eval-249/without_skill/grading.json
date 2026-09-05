@@ -1,0 +1,33 @@
+{
+  "eval_id": 249,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the January 2025 AI Diffusion IFR was never formally rescinded in the Federal Register",
+      "passed": false,
+      "evidence": "Admits ignorance of disposition: \"get current... confirmation of its status \u2014 including whether it has been rescinded, replaced, or is in effect\"; never states it was not rescinded"
+    },
+    {
+      "text": "Notes BIS announced non-enforcement/intent to rescind in May 2025",
+      "passed": false,
+      "evidence": "No mention of the May 2025 non-enforcement announcement; only \"effective date was pushed out at least once\" and \"public discussion of it being replaced\""
+    },
+    {
+      "text": "Cites GAO decision B-337935: the non-enforcement announcement is itself a CRA 'rule' that was not submitted to Congress",
+      "passed": false,
+      "evidence": "No mention of GAO B-337935 or the CRA finding"
+    },
+    {
+      "text": "States the operative successor approach: country-specific rules (e.g., the July 2026 UAE advanced-chip rule, 91 FR 43034) rather than a global framework",
+      "passed": false,
+      "evidence": "No mention of the country-specific successor approach or the July 2026 UAE rule 91 FR 43034"
+    },
+    {
+      "text": "Advises: do not structure around a 'replacement diffusion framework' that does not exist; apply current ECCN 3A090/4A090-family controls, license policies, and end-user rules, and monitor BIS",
+      "passed": true,
+      "evidence": "\"Classify your specific chip/accelerator SKUs against the current 3A090 performance thresholds (and check 4A090...)\"; builds around durable China/D:5/Entity List controls and re-checking status rather than the diffusion overlay"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

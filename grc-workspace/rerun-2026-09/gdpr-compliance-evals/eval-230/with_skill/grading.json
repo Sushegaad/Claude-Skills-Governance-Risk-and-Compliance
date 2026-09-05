@@ -1,0 +1,33 @@
+{
+  "eval_id": 230,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Notification to the competent supervisory authority without undue delay and where feasible within 72 hours of becoming aware (Art. 33(1)), with phased notification permitted if information is incomplete",
+      "passed": true,
+      "evidence": "Step 3: \"Notify the supervisory authority within 72 hours (Art. 33)\"; clock starts at awareness; \"Art. 33(1) explicitly permits phased/staggered reporting\""
+    },
+    {
+      "text": "Applies the risk threshold correctly: notification required unless the breach is unlikely to result in a risk to individuals; exfiltration of customer data plainly meets the threshold",
+      "passed": false,
+      "evidence": "Concludes notification is required but never states the Art. 33(1) threshold rule (notification required unless the breach is unlikely to result in a risk to individuals)"
+    },
+    {
+      "text": "Communication to affected data subjects without undue delay when the breach is likely to result in a high risk (Art. 34), with the exceptions (e.g., effective encryption, subsequent measures)",
+      "passed": true,
+      "evidence": "Step 4: Art. 34 \"likely to result in a high risk\" triggers communication \"without undue delay\"; Art. 34(3) exemptions (encryption, subsequent measures, disproportionate effort/public communication) covered"
+    },
+    {
+      "text": "Internal documentation duty for all breaches regardless of notification (Art. 33(5))",
+      "passed": true,
+      "evidence": "Step 6: \"Maintain an internal breach register covering all breaches, even those not requiring SA notification (Art. 33(5))\""
+    },
+    {
+      "text": "Correct role handling: if acting as processor, notify the controller without undue delay (Art. 33(2)); mentions notification content elements (nature, categories/approximate numbers, DPO contact, likely consequences, measures)",
+      "passed": false,
+      "evidence": "Notification content elements (nature, numbers, DPO contact, consequences, measures) are given, but the processor role - Art. 33(2) duty to notify the controller without undue delay - is never mentioned"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 232,
+  "eval_name": "self-funded-plan-enforcement",
+  "run_type": "with_skill",
+  "prompt": "We're an employer sponsoring a self-funded group health plan. Does OCR actually enforce HIPAA against plans like ours, or only against hospitals and insurers?",
+  "assertions": [
+    "States clearly that self-funded group health plans are covered entities and OCR now enforces against them directly",
+    "Cites 2026 precedent: OCR's settlements with self-funded plans — Star Group L.P. Health Benefits Plan (~$245,000, April 2026) and/or Spencer Gifts plans (~$450,000 plus corrective action plan, June 2026)",
+    "Notes both actions followed ransomware breaches",
+    "Identifies the central cited failure: no accurate and thorough risk analysis (45 CFR 164.308(a)(1)(ii)(A)) — OCR's Risk Analysis Initiative theme",
+    "Explains plan-sponsor obligations: plan document amendments/firewall between plan and employer functions, BAAs with TPAs/vendors, and safeguards for ePHI held by the sponsor"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 272,
+  "eval_name": "task-force-outlook",
+  "run_type": "with_skill",
+  "prompt": "What is the CMMC Reform Task Force actually considering, and when will we know?",
+  "assertions": [
+    "States the process facts: established with the July 13, 2026 suspension; public RFI responses closed August 14, 2026; recommendations due to the DoW CIO at the end of a 60-day review (~September 13, 2026)",
+    "States that no recommendations had been published as of early September 2026",
+    "Presents direction signals with correct epistemic status (unconfirmed reporting, not announced policy): expanded self-attestation with False Claims Act liability as the enforcement backstop, leveraging commercial cybersecurity capabilities, and streamlining for small/non-traditional businesses",
+    "Notes the suspension is a pause, not a cancellation — the 48 CFR rule and program structure remain, and outcomes could range from restructuring to redesign",
+    "Advises contractors to continue 800-171 implementation regardless — it remains contractually required and any successor regime builds on it"
+  ]
+}

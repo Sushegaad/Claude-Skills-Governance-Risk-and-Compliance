@@ -1,0 +1,33 @@
+{
+  "eval_id": 245,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Describes the §127.12 VSD process: prompt initial notification to DDTC, thorough internal investigation, then a full report with facts, causes, remediation",
+      "passed": true,
+      "evidence": "\"DDTC's Voluntary Self-Disclosure (VSD) process\" / \"(22 CFR 127.12)\": initial notification letter, \"internal investigation to scope\", full report with \"detailed narrative... root cause analysis... remediation plan\"."
+    },
+    {
+      "text": "States VSD is a significant mitigating factor and can result in no penalty, warning letter, or reduced civil penalty",
+      "passed": true,
+      "evidence": "\"generally treated as a strong mitigating factor\"; response range \"from a closing letter with no further action, to negotiated administrative penalties\" with favorable treatment for voluntary disclosure."
+    },
+    {
+      "text": "Cites current penalty exposure: civil penalties up to ~$1.37M per violation (annually adjusted) and criminal exposure up to $1M/20 years per violation",
+      "passed": false,
+      "evidence": "No civil (~$1.37M per violation) or criminal ($1M/20 years) penalty figures cited."
+    },
+    {
+      "text": "Advises immediate steps: stop the violating activity, preserve records, consider disclosure counsel, review for related EAR/OFAC issues",
+      "passed": true,
+      "evidence": "\"halt any further unauthorized transfers, shipments, technical data disclosures\"; \"Issue a litigation/compliance hold\"; \"legal counsel (ideally outside export control counsel)\"; \"assess potential overlap with Commerce/BIS (EAR) jurisdiction\"."
+    },
+    {
+      "text": "Mentions submissions run through DDTC's DECCS platform (which deployed its Data Collection Modernization release in September 2026)",
+      "passed": false,
+      "evidence": "Only \"per current DDTC electronic filing guidance\" — DECCS and the September 2026 Data Collection Modernization release never mentioned."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

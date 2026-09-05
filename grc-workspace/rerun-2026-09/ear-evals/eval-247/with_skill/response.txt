@@ -1,0 +1,23 @@
+Classification and Export Path — Commercial Surveillance Drone (5-Hour Endurance, 400 km Range) to Brazil
+
+This is a materially different case from the sub-3-hour platform, and the outcome is not a "no license required" determination.
+
+**Step 1 — ECCN classification.** Under the August 2026 UAV rule (91 FR 52501), endurance ≥ 3 hours places the airframe in **9A012.a.2** rather than 9A012.a.1. This classification carries **NS Column 1 + AT Column 1**, and because your stated range is 400 km — above the 300 km threshold — **MT Column 1 (Missile Technology)** also applies. This is a fundamentally different risk profile than the 2.5-hour platform: NS1/AT1/MT1 is one of the most restrictive combinations on the CCL short of Category 0/1 WMD-precursor items.
+
+Associated software and technology (9D001, 9D002, 9D004, 9E001) retain full NS/MT control for platforms in this endurance/range band — the software carve-out in the 2026 rule applies only below the 3-hour line.
+
+**Step 2 — Country Chart analysis.** Check Brazil against all three applicable columns: NS Column 1, AT Column 1, and MT Column 1. A license is required if *any* applicable column shows "X" for Brazil unless an exception covers that specific reason for control. Brazil is an MTCR adherent (Country Group A:3) and generally a cooperative destination, but MT Column 1 restrictions apply broadly — MTCR membership affects licensing policy (presumption of approval/denial) far more than it affects the *requirement* to obtain a license. Expect the Country Chart to show a license requirement for at least the MT and likely the NS column for this performance tier.
+
+**Step 3 — License exceptions are effectively unavailable.** This is the critical difference from the sub-3-hour case. Missile-technology-controlled items receive almost no license exception relief:
+- **GBS/CIV/TSR** are unavailable because the item is not NS-only — MT is also a reason for control, which disqualifies these NS-only exceptions.
+- **GOV** may apply only if the actual end-user is the Brazilian government (military or civil aviation authority) with proper verification — not applicable to a commercial distributor selling to unknown downstream buyers.
+- **STA (Strategic Trade Authorization)** does not apply here — it is available for certain 600-series military items to Country Group A:5, not for this dual-use 9A012.a.2 civil/dual-use classification, and in any event MT-controlled items generally fall outside STA's payload/range eligibility.
+- No exception overrides the MT control for a distributor sale with unverified downstream end-use.
+
+**Practical conclusion: a BIS export license is very likely required** for this transaction. File via SNAP-R (Form BIS-748P), and expect the application to include: detailed technical specifications (endurance, range, payload capability, whether it could be modified to exceed MTCR Category I thresholds of 500 kg payload to 300 km range — note your platform's stated range already meets the range prong, so payload capacity is the key remaining data point BIS will scrutinize), an end-user statement from the Brazilian distributor identifying the actual end-users, and confirmation that no re-export to a third country is contemplated. Because MT items commonly draw interagency referral (State Department, sometimes DoD), build in lead time beyond the standard 90-day BIS review window.
+
+**Step 4 — Screening and § 744.21.** Military end-use/end-user controls under § 744.21 explicitly reach 9A012 and its software/technology ECCNs — screen the distributor and all identifiable end-users against the Entity List, MEU List, Unverified List, and Denied Persons List before submitting the license application; a match may result in outright denial rather than a mitigable license condition.
+
+**Recommendation:** Do not ship under a "no license required" assumption. Submit a CCATS request or license application confirming the 9A012.a.2/MT classification, and treat this as a licensed transaction with full documentation, distributor end-use certification, and 5-year recordkeeping (§ 762.6).
+
+*General compliance guidance, not legal advice — confirm current Country Chart entries for Brazil and consult export counsel given the missile-technology exposure.*

@@ -1,0 +1,33 @@
+{
+  "eval_id": 235,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Establishes permitted and required uses/disclosures of PHI and prohibits use beyond the contract or as required by law",
+      "passed": true,
+      "evidence": "\"The BAA must specify exactly what the vendor is allowed to do with the PHI... explicitly prohibit any use or disclosure beyond what the underlying services agreement requires\" plus required-by-law carve-outs"
+    },
+    {
+      "text": "Requires appropriate safeguards and compliance with the Security Rule for ePHI",
+      "passed": true,
+      "evidence": "\"the BAA should explicitly incorporate compliance with the Security Rule's safeguards (access controls, audit controls, integrity controls, transmission security, encryption where appropriate)\""
+    },
+    {
+      "text": "Requires reporting to the covered entity: breaches of unsecured PHI and security incidents (with breach notification timing support for the 60-day clock)",
+      "passed": true,
+      "evidence": "\"report to you any use or disclosure not permitted... any security incident... and any breach of unsecured PHI... you as the covered entity have your own 60-day breach notification clock... negotiate 24-72 hours\""
+    },
+    {
+      "text": "Requires subcontractor flow-down: BAs must obtain the same assurances from subcontractors handling PHI",
+      "passed": true,
+      "evidence": "\"the BAA must require the vendor to ensure those subcontractors agree to the same restrictions and conditions via their own BAA-equivalent agreements\""
+    },
+    {
+      "text": "Return or destruction of PHI at termination where feasible, plus assistance duties (access, amendment, accounting) and termination rights for violations",
+      "passed": true,
+      "evidence": "\"return or destroy all PHI it holds, if feasible; if return/destruction isn't feasible... extend the same protections... make PHI available... to support patient access requests, and to make amendments... and to provide an accounting of disclosures... right to terminate the agreement if the vendor materially violates\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

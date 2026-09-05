@@ -1,0 +1,33 @@
+{
+  "eval_id": 229,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Processing only on the controller's documented instructions (Art. 28(3)(a)), including for transfers",
+      "passed": true,
+      "evidence": "Clause 3: \"process personal data only on documented instructions from Controller, including regarding international transfers\""
+    },
+    {
+      "text": "Confidentiality commitments for persons authorised to process (Art. 28(3)(b)) and Art. 32 security measures (Art. 28(3)(c))",
+      "passed": true,
+      "evidence": "Clause 4 confidentiality for authorized personnel; Clause 5 Art. 32 security: encryption, access controls, restore availability, regular testing"
+    },
+    {
+      "text": "Sub-processor rules: prior specific or general written authorisation, notification of changes, and flow-down of equivalent obligations (Art. 28(2), (4))",
+      "passed": true,
+      "evidence": "Clause 6: \"prior specific or general written authorisation... right to object to new sub-processors, a current sub-processor list... flow-down of equivalent obligations\""
+    },
+    {
+      "text": "Assistance obligations: data subject rights requests and Arts. 32–36 (security, breach notification, DPIA) assistance (Art. 28(3)(e), (f)), with processor breach notification to the controller without undue delay (Art. 33(2))",
+      "passed": true,
+      "evidence": "Clauses 7-8: assistance with Art. 15-22 requests and Art. 32-36 (security, breach, DPIA); Clause 11: breach notification \"without undue delay\" within 24-48h"
+    },
+    {
+      "text": "End-of-contract deletion or return of data, and audit/inspection rights including information necessary to demonstrate compliance (Art. 28(3)(g), (h))",
+      "passed": true,
+      "evidence": "Clause 9: delete or return all data at termination incl. backups; Clause 10: \"Right to audit or inspect the provider's compliance\" or accept certifications/reports demonstrating compliance"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

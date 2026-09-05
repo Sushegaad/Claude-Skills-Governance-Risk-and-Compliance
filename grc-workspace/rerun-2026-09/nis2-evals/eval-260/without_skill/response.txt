@@ -1,0 +1,34 @@
+Article 21 of NIS2 sets out the substantive cybersecurity risk-management obligation that applies equally to essential and important entities. It's written as a principles-based, "appropriate and proportionate" requirement rather than a prescriptive technical checklist, but it does enumerate ten specific domains that your measures must cover at minimum. Here's a practical walkthrough of each.
+
+Overarching standard first: Article 21(1) requires entities to take "appropriate and proportionate technical, operational and organisational measures" to manage risks to the security of network and information systems, based on an "all-hazards approach" (meaning you must address not just cyberattacks but also natural disasters, human error, hardware/environmental failures, and third-party/supply chain issues). Proportionality is assessed against your degree of risk exposure, size, likelihood/severity of incidents, and cost of implementation — so this is not a one-size-fits-all technical spec, and a small important entity is not expected to implement the same controls as a large essential entity.
+
+The ten Article 21(2) domains:
+
+1. Risk analysis and information system security policies. You need a documented risk assessment methodology and formal security policies covering your network and information systems — not a one-time exercise but an ongoing process feeding into your other controls.
+
+2. Incident handling. Processes for detecting, analyzing, containing, and responding to incidents — this is what feeds your Article 23 reporting obligations (24h/72h/1-month clocks), so your incident handling procedure and your regulatory reporting procedure need to be integrated, not separate documents.
+
+3. Business continuity and crisis management, including backup management and disaster recovery. Tested backup regimes, recovery time/point objectives, and a crisis management plan — directly relevant to ransomware scenarios where production systems go down.
+
+4. Supply chain security, including security-related aspects concerning relationships between each entity and its direct suppliers or service providers. This extends your obligation beyond your own perimeter — you're expected to assess and manage risk from vendors, especially ICT/managed service providers, and NIS2 explicitly flags that entities should account for vulnerabilities specific to each supplier and the overall quality of products/practices, including secure development procedures of suppliers.
+
+5. Security in network and information systems acquisition, development, and maintenance, including vulnerability handling and disclosure. Secure SDLC practices, patch management, and a vulnerability disclosure process.
+
+6. Policies and procedures to assess the effectiveness of cybersecurity risk-management measures. This means you need to actually test and measure whether your controls work — audits, penetration testing, metrics/KPIs — not just have policies on paper.
+
+7. Basic cyber hygiene practices and cybersecurity training. Includes things like patching, password policies, network segmentation, and — importantly — training obligations that extend to management bodies specifically (tying back to Article 20's requirement that management approve and be trained on risk-management measures, with personal accountability for non-compliance).
+
+8. Policies and procedures regarding the use of cryptography and, where appropriate, encryption. Encryption at rest/in transit where risk-appropriate, and key management practices.
+
+9. Human resources security, access control policies, and asset management. Includes onboarding/offboarding procedures, least-privilege access, role-based access control, and maintaining an accurate asset inventory (you can't secure what you don't know you have).
+
+10. The use of multi-factor authentication or continuous authentication solutions, secured voice/video/text communications, and secured emergency communication systems within the entity where appropriate. MFA is called out explicitly and is one of the more concrete, auditable items — regulators are likely to treat "no MFA on privileged/remote access" as a clear gap.
+
+Practical implementation notes:
+
+- Governance link (Article 20): management bodies must approve the risk-management measures under Article 21 and oversee their implementation, and must undergo training. This creates a direct line of accountability from the board/exec team down to these ten domains — you can't delegate Article 21 entirely to IT/security without documented management approval and oversight.
+- Mapping to existing frameworks: Article 21's ten domains map reasonably well to ISO/IEC 27001 Annex A controls, NIST CSF functions, and CIS Controls — if you already have a mature ISMS, you likely have most of the substance in place and this becomes a gap-mapping and documentation exercise rather than a build-from-scratch effort. ENISA and national CSIRTs have published (or are expected to publish) more detailed technical implementing guidance/harmonized standards to reduce ambiguity on "appropriate and proportionate."
+- Supply chain is the domain most organizations underestimate — Article 21(2)(d) means you need vendor risk assessments, security clauses in contracts, and visibility into subcontractor practices, not just your own controls.
+- Documentation matters as much as implementation, since supervisory authorities (especially for essential entities, which face proactive audits) will expect to see evidence: policies, risk assessments, training records, test results, and incident logs, not just an assertion that controls exist.
+
+Recommended next step: Run a structured gap assessment mapping your current controls (e.g., against ISO 27001 or NIST CSF if you have one) to these ten Article 21(2) domains, prioritize supply chain security and MFA/access control if those are commonly weak spots, and make sure Article 20 governance evidence (board approval, management training records) exists alongside the technical controls, since auditors will look for both.

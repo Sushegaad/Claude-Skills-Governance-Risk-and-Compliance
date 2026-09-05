@@ -1,0 +1,13 @@
+{
+  "eval_id": 235,
+  "eval_name": "cloud-baa-contents",
+  "run_type": "with_skill",
+  "prompt": "A cloud vendor will host our EHR. What must our Business Associate Agreement contain?",
+  "assertions": [
+    "Establishes permitted and required uses/disclosures of PHI and prohibits use beyond the contract or as required by law",
+    "Requires appropriate safeguards and compliance with the Security Rule for ePHI",
+    "Requires reporting to the covered entity: breaches of unsecured PHI and security incidents (with breach notification timing support for the 60-day clock)",
+    "Requires subcontractor flow-down: BAs must obtain the same assurances from subcontractors handling PHI",
+    "Return or destruction of PHI at termination where feasible, plus assistance duties (access, amendment, accounting) and termination rights for violations"
+  ]
+}

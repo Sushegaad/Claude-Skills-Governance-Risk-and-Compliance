@@ -1,0 +1,33 @@
+{
+  "eval_id": 244,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Defines the deemed export rule: releasing ITAR technical data to a foreign person in the US is an export to their country/countries of nationality",
+      "passed": true,
+      "evidence": "\"A 'deemed export' occurs the moment ITAR-controlled technical data... is released to a foreign national... treated as an export to that person's country of citizenship (or countries, if dual national)\", even \"entirely inside the United States\"."
+    },
+    {
+      "text": "States a license/authorization (e.g., DSP-5) is required unless an exemption applies, judged as if exporting to that nationality",
+      "passed": true,
+      "evidence": "\"any ITAR technical data disclosure to them is a deemed export unless authorized\"; \"determine whether their country of citizenship requires a license/TAA\"; \"obtain the TAA (22 CFR § 124.1) or individual license before granting any access\"."
+    },
+    {
+      "text": "Covers what counts as release: visual access, oral disclosure, physical access to hardware revealing technical data, IT system access",
+      "passed": true,
+      "evidence": "\"blueprints, drawings, specifications, source code, test reports, or oral/visual disclosure\"; \"even verbal walkthroughs in a design review\"; \"IT access controls\"; \"controlled physical areas\"."
+    },
+    {
+      "text": "Recommends a Technology Control Plan: access controls, segregated systems, badging/escort, training, screening of nationalities against §126.1",
+      "passed": true,
+      "evidence": "\"Stand up a Technology Control Plan (TCP): physical segregation... IT access controls... visitor/escort procedures... annual ITAR training\"; \"§ 126.1 proscribed/embargoed countries (Belarus, Cuba, Iran, North Korea, Russia, Syria, Venezuela)\" screening."
+    },
+    {
+      "text": "Notes dual/third nationalities considerations and that US persons include green-card holders (foreign person = not US citizen/permanent resident/protected person)",
+      "passed": true,
+      "evidence": "\"countries, if dual national\"; \"capture citizenship (all citizenships if dual)\"; \"A green card holder (lawful permanent resident) is a 'US person' under 22 CFR § 120.62\"; \"Protected persons under 8 USC § 1324b... treated as US persons\"."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

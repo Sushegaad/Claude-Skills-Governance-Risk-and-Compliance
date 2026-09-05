@@ -1,0 +1,25 @@
+{
+ "skill": "pci-compliance",
+ "prompts": [
+  {
+   "id": 261,
+   "prompt": "We're a Level 1 e-commerce merchant preparing our ROC. Our QSA agreed we can use SAQ A eligibility criteria to mark most requirements not applicable. Is that still acceptable?"
+  },
+  {
+   "id": 262,
+   "prompt": "Our web shop redirects customers to a hosted payment page. Which SAQ applies and what are the eligibility conditions?"
+  },
+  {
+   "id": 263,
+   "prompt": "Which PCI DSS v4 requirements that used to be 'future-dated' are mandatory now, and which bite hardest?"
+  },
+  {
+   "id": 264,
+   "prompt": "How do we shrink our PCI scope? We currently have card data flowing through half our network."
+  },
+  {
+   "id": 265,
+   "prompt": "We can't meet a requirement as written. Compensating control or customized approach — what's the difference?"
+  }
+ ]
+}

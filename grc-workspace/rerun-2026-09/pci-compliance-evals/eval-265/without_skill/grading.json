@@ -1,0 +1,33 @@
+{
+  "eval_id": 265,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Compensating controls: require a legitimate documented technical/business constraint, must meet the intent and be 'above and beyond' other requirements, documented in a compensating controls worksheet, reviewed by the assessor annually",
+      "passed": true,
+      "evidence": "\"documented, legitimate technical or business constraints\"; \"meeting the intent and rigor of the original requirement\"; \"Compensating Controls Worksheet\"; \"re-evaluated and re-documented at every assessment cycle\" (above-and-beyond not verbatim but validity criteria substantively covered)"
+    },
+    {
+      "text": "Customized approach: the v4 formal alternative — meets the stated Customized Approach Objective a different way, requires a documented targeted risk analysis (12.3.2) and assessor-designed testing",
+      "passed": true,
+      "evidence": "\"design and implement your own control that meets the stated 'Customized Approach Objective'\"; \"Requires a formal, documented risk analysis for each customized control\"; \"the assessor has to develop testing procedures specific to your custom control\""
+    },
+    {
+      "text": "States the customized approach requires a full assessment (ROC with a qualified assessor) — not available via most SAQs",
+      "passed": false,
+      "evidence": "Never states the customized approach requires a full ROC assessment / is unavailable via most SAQs; only implies QSA involvement (\"engage your QSA early\") without stating self-assessment ineligibility"
+    },
+    {
+      "text": "Notes some requirements are ineligible for the customized approach where explicitly stated",
+      "passed": true,
+      "evidence": "\"Only certain requirements are eligible for customized approach (some are marked as not eligible in the standard)\""
+    },
+    {
+      "text": "Advises choosing based on whether the constraint is temporary (compensating) vs a deliberate long-term alternative design (customized)",
+      "passed": true,
+      "evidence": "\"If it's a temporary or system-specific limitation, go the compensating controls route... If it's a mature, intentional alternative control design you want to standardize, engage your QSA early about customized approach\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

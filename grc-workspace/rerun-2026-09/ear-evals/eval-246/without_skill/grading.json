@@ -1,0 +1,33 @@
+{
+  "eval_id": 246,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Applies the August 2026 final rule (91 FR 52501, effective August 13, 2026): sub-3-hour UAVs classify under 9A012.a.1, now controlled for AT reasons only (NS removed)",
+      "passed": false,
+      "evidence": "No mention of 91 FR 52501; contradicts ground truth: \"very unlikely to meet the 9A012 control parameters... would typically fall to ECCN 9A991... or... EAR99\""
+    },
+    {
+      "text": "Concludes no license is required for Brazil under AT-only control (Brazil is not an AT-controlled destination), absent end-user/end-use red flags",
+      "passed": false,
+      "evidence": "Concludes no license (\"no BIS export license is generally required to Brazil\") but on an EAR99/9A991 basis, not the 9A012.a.1 AT-only control required by the rule"
+    },
+    {
+      "text": "Checks the sensor exception: the UAV stays NS-controlled regardless of endurance if it incorporates controlled 6A003 imaging, 6A005 laser, or 7A001\u20137A005 navigation items",
+      "passed": false,
+      "evidence": "Only says optics \"could push the classification elsewhere (e.g... 6A003)\"; no statement that the UAV stays NS-controlled with 6A003/6A005/7A001-7A005 payloads"
+    },
+    {
+      "text": "Notes the new military end-use/end-user restriction: 9A012 was added to \u00a7744.21 controls \u2014 screen the Brazilian distributor and end use",
+      "passed": false,
+      "evidence": "Generic catch-all mention (\"military intelligence end use in some countries \u2014 less relevant for Brazil\"); no \u00a7744.21 addition of 9A012 or mandatory screening on that basis"
+    },
+    {
+      "text": "Mentions that related software/technology (9D001/9D002/9D004/9E001) also lost NS control for sub-3-hour UAVs, and the old wind-gust-tolerance parameter is eliminated",
+      "passed": false,
+      "evidence": "No mention of NS removal from 9D001/9D002/9D004/9E001 or elimination of the wind-gust-tolerance parameter"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

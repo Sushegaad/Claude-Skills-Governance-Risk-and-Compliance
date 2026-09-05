@@ -1,0 +1,25 @@
+Scope reduction is one of the highest-ROI PCI DSS initiatives available — every system you remove from the CDE is one fewer system subject to all 12 requirements, ongoing evidence collection, and audit testing. With cardholder data (CHD) flowing through half your network today, you likely have a flat or under-segmented architecture, which is itself a finding. Here's a structured approach.
+
+Step 1: Map the actual data flow before designing anything
+You can't reduce what you haven't measured. Build (or update) data-flow diagrams (DFDs) showing every system that stores, processes, or transmits PAN or SAD — point of capture (POS, e-commerce, MOTO), transmission paths, processing systems, storage locations, and every connected system (backups, monitoring tools, jump hosts, AD/directory services, log aggregators) that could impact CDE security even if it never touches CHD directly. Under the PCI DSS scoping rule, "connected without adequate segmentation" is enough to pull a system into scope — this is usually the real reason organizations find CHD sprawling across half the network: nothing was ever actually isolating it.
+
+Step 2: Segment the network to shrink scope (the foundational move)
+Network segmentation isn't strictly required by PCI DSS, but it is the primary lever for reducing scope, and it's how you turn "half the network" into a small, defensible CDE:
+- Deploy network security controls (firewalls, security groups, VLANs with ACLs) between the CDE and all other network zones, with a default-deny posture (Req 1.2–1.4).
+- Validate segmentation is actually effective — a firewall rule that "should" block traffic isn't enough; PCI DSS requires penetration testing to verify segmentation effectiveness at least every 6 months (Req 11.4.5).
+- Isolate any system that doesn't need CHD access: HR systems, general corporate IT, marketing, and non-payment applications should have zero network path to the CDE.
+- Watch for "scope creep" connections — a domain controller, backup server, or SIEM that touches both CDE and non-CDE systems pulls itself (and potentially the systems on the other side) into scope.
+
+Step 3: Reduce what's actually in the CDE via architecture, not just network controls
+- Tokenization: Replace stored/processed PAN with a token immediately after authorization wherever possible. Systems that only ever see tokens (not the PAN) can be removed from CDE scope. This is usually the single biggest scope-reduction win for back-office, reporting, and CRM systems that only need "reference" to a card, not the number itself.
+- Point-to-Point Encryption (P2PE): For card-present channels, adopt a PCI SSC-validated P2PE solution so that PAN is encrypted at the point of capture (hardware terminal) and never appears in clear text on your network. A validated P2PE deployment can shrink card-present scope down to roughly the SAQ P2PE control set (~33 controls) — physical terminal security plus minimal policy requirements.
+- Full outsourcing for e-commerce: If you have a web channel, move to a fully hosted payment page or redirect model (SAQ A-eligible) rather than capturing card data on your own infrastructure — this removes your web/app servers from CDE-adjacent scope entirely, provided the redirect can't be tampered with.
+- Eliminate unnecessary CHD storage: Enforce a strict data retention and disposal policy (Req 3.2) — many organizations store PAN "just in case" in logs, backups, or spreadsheets with no defined business need. Purge these and add detection routines (Req 12.10.7) to catch stored PAN turning up in unexpected places going forward.
+
+Step 4: Manage third parties correctly
+Any service provider or processor you route CHD through must be independently PCI DSS-compliant (maintain a TPSP register per Req 12.8, verify their AOC annually). Choosing the right processor relationship (fully outsourced vs. partially) directly determines your own SAQ eligibility and scope size.
+
+Step 5: Re-verify scope at least annually and after any change
+Once reduced, formally document and re-validate your CDE boundary at least every 12 months and after any significant architecture change (Req 12.5.2), and reconcile your system inventory against your DFDs.
+
+Suggested sequencing: (1) complete accurate data-flow mapping now, (2) segment aggressively to isolate the CDE from the other half of the network, (3) layer in tokenization/P2PE/outsourcing to shrink what's inside that boundary further, (4) validate with a segmentation penetration test before you rely on the new boundary for scope reduction claims. This is general guidance — have your QSA/ISA validate the final scope determination before it's used for SAQ/ROC purposes.

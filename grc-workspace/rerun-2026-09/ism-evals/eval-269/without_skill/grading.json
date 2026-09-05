@@ -1,0 +1,33 @@
+{
+  "eval_id": 269,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the 'Essentials' consultation (evolution/expansion of the Essential Eight) closed July 12, 2026",
+      "passed": false,
+      "evidence": "The 'Essentials' consultation and its July 12, 2026 close date are never mentioned; only \"sector chatter\" about a possible ninth strategy"
+    },
+    {
+      "text": "States that no outcome had been announced as of early September 2026 — the consultation proposed Essentials for enterprise IT as a first chapter with E8 deprecation ~12 months and retirement ~24 months after finalisation",
+      "passed": false,
+      "evidence": "No statement about the consultation or its proposed enterprise-IT chapter and deprecation/retirement timelines; response disclaims post-cutoff knowledge"
+    },
+    {
+      "text": "Concludes the Essential Eight and its Maturity Model remain the operative assessment standard today",
+      "passed": true,
+      "evidence": "\"the Essential Eight was not being retired or replaced — it remained ASD/ACSC's baseline mitigation strategy framework\"; advises assessing against it as baseline"
+    },
+    {
+      "text": "Advises continuing E8 maturity assessments while tracking ASD announcements",
+      "passed": true,
+      "evidence": "\"Assess against Essential Eight maturity levels as your baseline\" and \"Re-run your gap assessment whenever ACSC issues an update\""
+    },
+    {
+      "text": "Notes ISM quarterly releases are separate from E8 maturity workstreams (September controls carry no E8 mappings claim, or equivalent separation point)",
+      "passed": false,
+      "evidence": "No separation point between ISM quarterly releases and E8 maturity workstreams; instead says ISM guidelines \"explicitly map back to Essential Eight maturity levels\""
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

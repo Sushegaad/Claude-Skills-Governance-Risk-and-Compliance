@@ -1,0 +1,13 @@
+{
+  "eval_id": 233,
+  "eval_name": "right-of-access-exposure",
+  "run_type": "with_skill",
+  "prompt": "A patient requested their full medical records eight months ago and we still haven't produced them. What's our exposure?",
+  "assertions": [
+    "States the deadline: 30 days from receipt, with one 30-day extension with written notice (45 CFR 164.524(b)) — eight months is a clear violation",
+    "Cites the Right of Access Initiative enforcement track record — dozens of settlements (55 actions through August 2026), including the Azul Vision settlement ($50,000, August 2026, ~2-year delay)",
+    "Describes exposure: civil monetary penalties or resolution amount plus a corrective action plan (policy revisions, training, monitoring)",
+    "States the substantive duties: provide access in the form and format requested if readily producible, including electronic copies",
+    "Notes fee limits: only a reasonable, cost-based fee (labor/supplies/postage) is permitted"
+  ]
+}

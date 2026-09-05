@@ -1,0 +1,33 @@
+{
+  "eval_id": 267,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Unique identity for each AI agent, distinct from personnel accounts and other agents (ISM-2133)",
+      "passed": true,
+      "evidence": "\"give the agent a unique identity distinct from any personnel account\" (ISM-2133–2135)"
+    },
+    {
+      "text": "An AI agent register — maintained and regularly verified — recording identifier, owner/purpose, identities, credentials, and tools/permissions/data accessible (ISM-2134/2135)",
+      "passed": true,
+      "evidence": "\"maintain an AI agent register recording identifier, owner/purpose, associated identities/credentials, and the specific tools, permissions, and data the agent can access. Review this register regularly\""
+    },
+    {
+      "text": "Restriction to minimum tools, functions and permissions for the intended purpose (ISM-2156), with tool invocations subject to BOTH the invoking user's access controls AND agent-specific task-scoped authorisation (ISM-2157)",
+      "passed": true,
+      "evidence": "\"scoped to only the tools and functions its task requires\" and \"checked against BOTH the invoking user's own access controls AND a separate, task-scoped authorisation issued to the agent itself\" (ISM-2156–2159)"
+    },
+    {
+      "text": "External content treated as untrusted throughout processing: delimited from system instructions, validated/sanitised, and prevented from overriding instructions, security policies, access controls or human-approval requirements (ISM-2158)",
+      "passed": true,
+      "evidence": "\"treated as untrusted data throughout, kept delimited from system/developer instructions, and structurally prevented from overriding security policy or triggering bypass of human-approval gates\""
+    },
+    {
+      "text": "Central logging of all tool invocations, external requests and outputs (ISM-2159), plus human approval before sensitive/high-impact actions (ISM-2113 as amended)",
+      "passed": true,
+      "evidence": "\"all tool invocations, external requests, and outputs must be logged centrally\" plus \"carried over from ISM-2113 (June 2026, wording amended in September)... human sign-off before executing sensitive or high-impact actions\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

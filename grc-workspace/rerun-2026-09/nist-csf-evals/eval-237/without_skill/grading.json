@@ -1,0 +1,33 @@
+{
+  "eval_id": 237,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Points to draft NIST SP 1353 (initial public draft, August 2026): Quick-Start Guide for Using AI for CSF 2.0 Analysis and Reporting",
+      "passed": false,
+      "evidence": "Never mentions SP 1353; claims NIST 'has published relevant guidance - though not a single document titled how to use GenAI for CSF assessments', pointing to AI RMF/AI 600-1 instead"
+    },
+    {
+      "text": "Correctly flags it as a DRAFT with public comments open until October 15, 2026 \u2014 not final guidance",
+      "passed": false,
+      "evidence": "No mention of the draft SP 1353 or its October 15, 2026 comment deadline"
+    },
+    {
+      "text": "Describes its use cases: AI-assisted governance/policy review, drafting a Current State Profile, and drafting a Target State Profile",
+      "passed": false,
+      "evidence": "Describes generic GenAI helps (drafting narrative, crosswalks) but not attributed to SP 1353's use cases; states 'none of this constitutes a certified... methodology' for other docs"
+    },
+    {
+      "text": "States the guide is illustrative, not a prescriptive assessment methodology, and includes cautions/precautions on AI use",
+      "passed": false,
+      "evidence": "Cannot characterize SP 1353 as illustrative/non-prescriptive since the guide is never identified"
+    },
+    {
+      "text": "Adds appropriate practitioner caution: human validation of AI outputs and care with sensitive organisational data in prompts",
+      "passed": true,
+      "evidence": "Keep a human-in-the-loop review step for every subcategory... [do not feed] sensitive data (asset inventories, vulnerability scan results...) into a public/consumer GenAI tool"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

@@ -1,0 +1,25 @@
+{
+ "skill": "nist-csf",
+ "prompts": [
+  {
+   "id": 236,
+   "prompt": "We're a city transit agency (bus and light rail). Is there NIST CSF guidance specific to our sector we should use?"
+  },
+  {
+   "id": 237,
+   "prompt": "Can we use generative AI to help run our CSF assessment and write our profiles? Is there NIST guidance?"
+  },
+  {
+   "id": 238,
+   "prompt": "How do CSF 2.0 informative references work, and how do we map our ISO 27001 controls to CSF?"
+  },
+  {
+   "id": 239,
+   "prompt": "Build us an organizational profile approach for adopting CSF 2.0 — we're a mid-size manufacturer."
+  },
+  {
+   "id": 240,
+   "prompt": "We built our program on CSF 1.1. What actually changed in 2.0 and how do we migrate?"
+  }
+ ]
+}

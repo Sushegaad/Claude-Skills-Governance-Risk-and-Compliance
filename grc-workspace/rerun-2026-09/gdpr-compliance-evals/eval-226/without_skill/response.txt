@@ -1,0 +1,24 @@
+Short answer: as currently designed, this is very likely non-compliant, and you should treat it as a high-priority legal risk.
+
+The relevant provision is Article 22 of the GDPR, which gives data subjects the right "not to be subject to a decision based solely on automated processing, including profiling, which produces legal effects concerning him or her or similarly significantly affects him or her." Deactivating a driver's account is a textbook example of a decision with legal or similarly significant effect — it cuts off the person's ability to earn income on your platform, and courts and regulators (including the CJEU in the SCHUFA case, and multiple national DPAs in gig-economy driver cases against Ola, Uber, and others) have already found that automated account deactivation/deactivation-adjacent decisions fall within Article 22's scope.
+
+Key points to work through:
+
+1. Is this "solely automated"? You describe no human review of individual cases, which is exactly the fact pattern Article 22 targets. If a human merely rubber-stamps the model's output without genuinely reviewing the underlying data and being empowered to overturn it, regulators will still treat this as solely automated. The human involvement has to be meaningful — someone with the authority, competence, and time to actually change the outcome.
+
+2. Do you have a valid exception? Article 22(2) allows solely automated decisions with significant effect only if: (a) it's necessary for entering into or performing a contract, (b) it's authorized by EU or member state law with suitable safeguards, or (c) it's based on explicit consent. Fraud prevention on a platform doesn't automatically qualify as "necessary for performance of a contract" — regulators read this narrowly, and it's doubtful that automatically terminating access is "necessary" for the contract's performance when a human-in-the-loop alternative exists. Consent is unlikely to be valid here given the power imbalance between platform and driver (consent must be freely given, and freely given is hard to establish where refusing consent could cost someone their livelihood).
+
+3. If you rely on an exception, Article 22(3) requires you to implement suitable measures to safeguard the data subject's rights, including at minimum the right to obtain human intervention, to express their point of view, and to contest the decision. A drivers' union case against Uber in the Netherlands and the Amsterdam Court of Appeal ruling specifically found deactivation-by-algorithm without meaningful contestation rights to be unlawful.
+
+4. Transparency obligations. Articles 13(2)(f) and 14(2)(g) require you to give data subjects meaningful information about the logic involved, the significance, and the envisaged consequences of such processing — at the point data is collected, not just after a dispute arises.
+
+5. DPIA. Given the scale (a rideshare platform presumably processes many drivers) and the significant effect on livelihood, this processing almost certainly requires a Data Protection Impact Assessment under Article 35, including a specific assessment of the automated decision-making and consultation with your DPO.
+
+Practical recommendations:
+- Build in a genuine human review step before any deactivation is finalized, or at minimum, a fast, accessible appeal channel where a human with real authority reviews flagged cases within a short SLA.
+- Log the specific factors/features that triggered the flag, so a human reviewer can meaningfully evaluate it and so you can respond to data subject access requests about the logic involved.
+- Update your privacy notice to describe the existence of this automated decision-making, the logic involved (at a meaningful level, not just "we use an algorithm"), and its significance/consequences.
+- Conduct or update a DPIA covering the fraud-detection model specifically.
+- Consider whether local employment/gig-worker law also applies (many jurisdictions are adding specific protections for platform workers around algorithmic management, e.g., the EU Platform Work Directive).
+
+This is a case where regulatory and litigation risk is concrete and precedent already exists against similar platforms, so I'd treat remediation as urgent rather than aspirational.

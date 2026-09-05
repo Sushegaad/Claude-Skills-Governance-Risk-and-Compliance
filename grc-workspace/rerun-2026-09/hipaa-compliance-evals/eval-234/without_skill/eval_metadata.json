@@ -1,0 +1,13 @@
+{
+  "eval_id": 234,
+  "eval_name": "risk-analysis-requirements",
+  "run_type": "without_skill",
+  "prompt": "What does a HIPAA-compliant security risk analysis actually require? Ours is a filled-in checklist from a vendor.",
+  "assertions": [
+    "Scope: all ePHI the organisation creates, receives, maintains, or transmits — across all systems, locations, and media, based on an asset/data inventory",
+    "Process: identify threats and vulnerabilities, assess current safeguards, and rate likelihood and impact to derive risk levels",
+    "Documentation and maintenance: the analysis must be documented and periodically reviewed/updated (after incidents, new systems, organisational change)",
+    "Distinguishes a true risk analysis from a compliance checklist or gap assessment — a vendor checklist alone does not satisfy 164.308(a)(1)(ii)(A)",
+    "Notes that a missing/inadequate risk analysis is OCR's most-cited failure in ransomware-related enforcement (Risk Analysis Initiative; 2026 self-funded plan settlements)"
+  ]
+}

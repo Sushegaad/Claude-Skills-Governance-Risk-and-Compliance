@@ -1,0 +1,33 @@
+{
+  "eval_id": 230,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Notification to the competent supervisory authority without undue delay and where feasible within 72 hours of becoming aware (Art. 33(1)), with phased notification permitted if information is incomplete",
+      "passed": true,
+      "evidence": "\"notify the lead supervisory authority... within 72 hours of becoming aware\"; \"phased/staged notification - submit what you know within 72 hours and supplement without undue further delay\""
+    },
+    {
+      "text": "Applies the risk threshold correctly: notification required unless the breach is unlikely to result in a risk to individuals; exfiltration of customer data plainly meets the threshold",
+      "passed": true,
+      "evidence": "\"unless the breach is unlikely to result in a risk to individuals' rights and freedoms - which, given ransomware and possible exfiltration of 40,000 records, is very unlikely to apply here. Assume notification is required.\""
+    },
+    {
+      "text": "Communication to affected data subjects without undue delay when the breach is likely to result in a high risk (Art. 34), with the exceptions (e.g., effective encryption, subsequent measures)",
+      "passed": true,
+      "evidence": "Art. 34 \"without undue delay if... likely to result in a high risk\"; Art. 34(3) exceptions: encryption rendering data unintelligible, subsequent measures, disproportionate effort/public communication"
+    },
+    {
+      "text": "Internal documentation duty for all breaches regardless of notification (Art. 33(5))",
+      "passed": true,
+      "evidence": "\"Document every breach internally... even for breaches you determine don't require notification\" (Article 33(5))"
+    },
+    {
+      "text": "Correct role handling: if acting as processor, notify the controller without undue delay (Art. 33(2)); mentions notification content elements (nature, categories/approximate numbers, DPO contact, likely consequences, measures)",
+      "passed": true,
+      "evidence": "\"processors must notify controllers without undue delay under Article 33(2)... if you're a processor, notify your controller immediately\"; Art. 33(3) content: nature, categories/numbers, DPO contact, consequences, measures"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 246,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Applies the August 2026 final rule (91 FR 52501, effective August 13, 2026): sub-3-hour UAVs classify under 9A012.a.1, now controlled for AT reasons only (NS removed)",
+      "passed": true,
+      "evidence": "\"final rule, 91 FR 52501, effective August 13, 2026... classifies as 9A012.a.1, controlled AT-only (the NS2 basis was removed)\""
+    },
+    {
+      "text": "Concludes no license is required for Brazil under AT-only control (Brazil is not an AT-controlled destination), absent end-user/end-use red flags",
+      "passed": true,
+      "evidence": "\"AT Column 1 restrictions apply almost exclusively to state sponsors of terrorism \u2014 Brazil does not fall in that category, so no license is required... (NLR)\""
+    },
+    {
+      "text": "Checks the sensor exception: the UAV stays NS-controlled regardless of endurance if it incorporates controlled 6A003 imaging, 6A005 laser, or 7A001\u20137A005 navigation items",
+      "passed": true,
+      "evidence": "\"If the drone incorporates a 6A003 thermal imager, a 6A005 laser... or 7A001\u20137A005 navigation-grade components... the platform reverts to NS1/AT1 regardless of endurance\""
+    },
+    {
+      "text": "Notes the new military end-use/end-user restriction: 9A012 was added to \u00a7744.21 controls \u2014 screen the Brazilian distributor and end use",
+      "passed": true,
+      "evidence": "\"Under \u00a7 744.21, military end-use/end-user controls now expressly reach ECCNs 9A012... screen the Brazilian distributor and its downstream end-users\""
+    },
+    {
+      "text": "Mentions that related software/technology (9D001/9D002/9D004/9E001) also lost NS control for sub-3-hour UAVs, and the old wind-gust-tolerance parameter is eliminated",
+      "passed": false,
+      "evidence": "Mentions \"NS was also removed from 9D001, 9D002, 9D004, and 9E001 for sub-3-hour UAVs\" but never mentions elimination of the old wind-gust-tolerance parameter"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

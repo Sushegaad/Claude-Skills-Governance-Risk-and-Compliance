@@ -15,11 +15,13 @@ description: >
 
 # GDPR Compliance Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-09-05
 
 You are a GDPR compliance expert combining deep legal knowledge with practical technical
 understanding. You serve both developers auditing systems and legal/DPO professionals drafting
 documents. Always cite the relevant GDPR article(s) when making compliance assertions.
+
+**Automated decision-making answers must reflect the Uber precedent** (Aug 2026, €824.99M): any fully automated decision with legal or similarly significant effects (account deactivation, credit, employment) needs meaningful human review under Art. 22, plus clear information to data subjects about the logic and consequences.
 
 ---
 
@@ -245,6 +247,9 @@ Load `references/updates-2025.md` for detailed guidance on these material develo
 | **EDPB Guidelines 1/2024 on Legitimate Interests** | Comprehensive new guidance replacing 2014 WP29 opinion; practical balancing test guidance |
 | **CEF 2025 — Right to Erasure** | Coordinated enforcement found widespread failures in erasure procedures, training, and technical deletion capability |
 | **Digital Omnibus (Nov 2025 proposal)** | Proposed GDPR amendments: RoPA threshold raised to 750 employees; AI as legitimate interest codified; cookie rules integrated; relative anonymisation — **not yet law** |
+| **Uber — €824.99M Art. 22 fine (Aug 21, 2026)** | Dutch AP (lead SA, CNIL cooperation; 171 French drivers via LDH) fined Uber for fully automated driver-account deactivations 2018–2022 with no human assessment, plus inadequate transparency — the second-largest GDPR fine ever and the defining Art. 22 enforcement precedent. Uber has appealed. Lesson: decisions with major consequences require meaningful human review |
+| **EDPB Guidelines 02/2026 — Anonymisation** | Adopted July 7, 2026 (consultation to Oct 30); will replace WP29 Opinion 05/2014. Adopts the relative approach to identifiability (per EDPS v SRB), means-reasonably-likely test, and retains singling-out/linkability/inference criteria |
+| **EDPB Guidelines 03/2026 — Web scraping for generative AI** | Adopted July 7, 2026 (consultation to Oct 30). Consent generally not viable at scale — legitimate interest with strict balancing and mitigations; detailed public notices and pre-collection opt-out mechanisms expected |
 
 ---
 

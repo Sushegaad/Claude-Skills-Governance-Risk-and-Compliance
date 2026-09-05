@@ -1,0 +1,23 @@
+Short answer: yes, almost all of the PDPL's core obligations apply to you regardless of being a 30-person company, but the intensity of a few specific obligations does scale with your size, data volume, and data sensitivity — so you're not exempt, but you're not necessarily subject to the heaviest tier either.
+
+Why the law applies to you at all: Decree 13/2023 and the Personal Data Protection Law that has been rolling out around 2026 apply to any organization that processes personal data of individuals in Vietnam, regardless of company size, sector, or whether you're a domestic or foreign-invested entity. There is no small-business carve-out or headcount/revenue threshold that exempts a company from the law's applicability the way, say, some U.S. state privacy laws use revenue/record-count thresholds to exempt small businesses. If you have Vietnamese employees, customers, or users whose data you collect (even just names, emails, and phone numbers in a CRM), you are a data controller under the law.
+
+What genuinely does NOT scale down for small companies:
+- Consent requirements — you must still obtain valid, specific, evidenced consent (or another recognized legal basis) for processing, regardless of your size.
+- Data subject rights — access, correction, deletion, and withdrawal-of-consent requests must be honored the same way whether you have 30 or 30,000 employees; there's no "too small to comply" defense.
+- Breach notification — if you have a data breach affecting Vietnamese personal data, the notification obligation to authorities and affected individuals applies the same way.
+- Basic contractual requirements with vendors/processors (data processing agreements with your payroll provider, cloud host, HR software, CRM, etc.) — this is often the first gap for small companies, since many have never formalized DPAs with their SaaS vendors.
+
+What does scale with size/risk, and where you likely have a lighter (but not zero) burden:
+- Appointment of a dedicated data protection officer/department — Decree 13 and the PDPL generally reserve mandatory DPO appointment and more elaborate internal data protection organizational structures for larger processors or those handling large volumes/sensitive categories of data. A 30-person startup processing ordinary customer contact data is unlikely to need a full-time DPO or department — you likely can designate a responsible individual (often the founder, ops lead, or a fractional/outsourced privacy contact) rather than build a compliance department.
+- DPIA/TIA dossier complexity — you still need a Data Processing Impact Assessment and, if you transfer data abroad (e.g., using a foreign-hosted SaaS stack, which most startups do), a Cross-Border Transfer Impact Assessment. But the depth and formality expected of a 30-person startup's dossier is proportionate to your actual processing — it doesn't need to look like a bank's 100-page assessment. A right-sized, honest 5–10 page dossier covering your actual data flows is a reasonable and defensible starting point.
+- Enforcement targeting — regulators have, in practice, focused scrutiny on large platforms, data brokers, fintechs, and repeat/egregious violators rather than small startups with clean, minimal footprints. That's a practical risk-prioritization reality, not a legal exemption — but it does mean your realistic near-term audit/enforcement risk is lower than a large e-commerce platform's.
+
+What you should actually do at your size, pragmatically:
+1. Inventory what personal data you collect and where it flows (including every SaaS vendor — this alone often reveals unaddressed cross-border transfers).
+2. Update your privacy notice and consent flows to be specific and evidenced, not just a blanket "by signing up you agree" clause.
+3. Put basic data processing agreements in place with key vendors (payroll, cloud hosting, analytics, CRM).
+4. Draft lightweight DPIA and (if applicable) TIA dossiers proportionate to your actual data — this is inexpensive insurance and the single most commonly missing artifact regulators check for first.
+5. Designate one person as the internal point of contact for data protection, even if not a formal statutory DPO.
+
+Bottom line: you don't get to skip the PDPL because you're small, but you are allowed — and expected — to implement it proportionately. The obligations that can't be skipped (consent, rights, breach notice, basic vendor agreements, minimal DPIA/TIA documentation) are the ones worth prioritizing now; the heavier structural obligations (formal DPO offices, elaborate internal audit programs) are the ones that scale in with your growth, not something a 30-person company needs to build on day one.

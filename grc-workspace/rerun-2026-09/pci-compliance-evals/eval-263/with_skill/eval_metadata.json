@@ -1,0 +1,13 @@
+{
+  "eval_id": 263,
+  "eval_name": "v401-mandatory-requirements",
+  "run_type": "with_skill",
+  "prompt": "Which PCI DSS v4 requirements that used to be 'future-dated' are mandatory now, and which bite hardest?",
+  "assertions": [
+    "States all future-dated v4.x requirements became mandatory March 31, 2025 (v4.0.1 is the current standard)",
+    "Cites password/authentication changes: 12-character minimum passwords and MFA for ALL access into the CDE (8.3.6, 8.4.2)",
+    "Cites e-commerce controls: payment page script inventory/authorization/integrity (6.4.3) and change-and-tamper detection (11.6.1)",
+    "Mentions others such as automated log review mechanisms, authenticated internal vulnerability scans, and phishing protections",
+    "Advises a gap re-check for any assessment performed against pre-2025 practices"
+  ]
+}

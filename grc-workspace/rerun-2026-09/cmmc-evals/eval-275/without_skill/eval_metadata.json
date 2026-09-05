@@ -1,0 +1,13 @@
+{
+  "eval_id": 275,
+  "eval_name": "poam-rules",
+  "run_type": "without_skill",
+  "prompt": "Which gaps can go on a POA&M for our CMMC Level 2 self-assessment, and for how long?",
+  "assertions": [
+    "States the two-part conditional-status gate: minimum score (≥88 of 110, i.e., ≥0.8×110) AND only specific practices eligible",
+    "States eligibility: only 1-point weighted practices may be on the POA&M — no 5-point (and highest-weight) items",
+    "States the closeout window: 180 days to remediate and close the POA&M or conditional status lapses",
+    "Notes the affirmation mechanics: senior official affirms at conditional status and again at final status after POA&M closeout",
+    "Distinguishes POA&M-eligible gaps from DFARS 7012 baseline duties that cannot be deferred (e.g., incident reporting), and notes suspension-era caveat: these rules govern the self-assessment tracks currently in force"
+  ]
+}

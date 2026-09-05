@@ -1,0 +1,33 @@
+{
+  "eval_id": 254,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Consent must be explicit, informed and demonstrable — silence or inactivity does NOT constitute consent (and treating it as such is now a fineable violation under Decree 330)",
+      "passed": false,
+      "evidence": "Consent granularity/evidencing covered but silence/inactivity not addressed and no Decree 330 fineability"
+    },
+    {
+      "text": "Processing after consent withdrawal is prohibited and now carries specific fines (~VND 50–70M for organisations)",
+      "passed": false,
+      "evidence": "Withdrawal discussed (\"upon withdrawal, controllers must delete the data\") but no fines, no VND 50–70M, no Decree 330"
+    },
+    {
+      "text": "Breach notification: 72 hours to the authority (MPS), stricter/faster in structure than GDPR's risk-conditioned regime",
+      "passed": false,
+      "evidence": "No 72-hour breach notification to MPS mentioned anywhere"
+    },
+    {
+      "text": "States VN-PDPL grants a narrower rights catalogue than GDPR (6 rights; no portability right)",
+      "passed": false,
+      "evidence": "Claims rights include \"a form of data portability\" — contradicts the no-portability ground truth; no six-rights count"
+    },
+    {
+      "text": "Notes sensitive personal data triggers heightened duties (e.g., DPO/notification obligations)",
+      "passed": false,
+      "evidence": "Sensitive data discussed only as a broader definition (\"includes items GDPR does not explicitly single out\"); no heightened duties (DPO/notification) stated"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

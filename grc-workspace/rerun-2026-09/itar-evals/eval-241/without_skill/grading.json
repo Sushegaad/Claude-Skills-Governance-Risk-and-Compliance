@@ -1,0 +1,33 @@
+{
+  "eval_id": 241,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies the interim final rule (91 FR 55457) revising USML Category VIII(a)(8), effective October 13, 2026",
+      "passed": false,
+      "evidence": "Admits ignorance: \"I don't have visibility into the specific 'new State Department rule'... I can't confirm its exact text, effective date, or scope.\" No 91 FR 55457 or Oct 13, 2026."
+    },
+    {
+      "text": "States the effect: qualifying civil aircraft (FAA transport/commuter category) modified with 'secured ASE' are excluded from the USML — the aircraft itself moves to EAR jurisdiction",
+      "passed": false,
+      "evidence": "No carve-out stated; instead asserts the opposite baseline: \"the integrated aircraft... can themselves become ITAR-controlled\". No EAR-jurisdiction effect for qualifying aircraft."
+    },
+    {
+      "text": "Defines secured ASE correctly: DIRCM systems (or IR/UV missile-warning systems necessary for DIRCM operation) incorporated with anti-tamper measures, per new §121.0 definitions",
+      "passed": false,
+      "evidence": "\"Secured ASE\" and §121.0 definitions never mentioned; only generic DIRCM description."
+    },
+    {
+      "text": "States the critical nuance: the ASE equipment itself REMAINS on the USML in Category XI, and related technical data/defense services remain ITAR-controlled (XI(d))",
+      "passed": false,
+      "evidence": "No statement that ASE stays in Category XI while the aircraft moves; only speculative \"most likely under Category XI... and/or Category IV\"."
+    },
+    {
+      "text": "Mentions the new §120.54 carve-outs: temporary import of secured ASE and country-to-country movement of previously authorized installed ASE no longer require separate authorization",
+      "passed": false,
+      "evidence": "§120.54 carve-outs (temporary import / country-to-country movement) never mentioned."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 255,
+  "eval_name": "sme-exemptions",
+  "run_type": "with_skill",
+  "prompt": "We're a 30-person Vietnamese startup. Do the PDPL's heavy obligations really apply to us?",
+  "assertions": [
+    "States the SME exemption: small and micro enterprises may opt out of specified obligations (impact assessments, certain security/processor duties) for 5 years from January 1, 2026",
+    "Notes the carve-outs: the exemption does NOT apply if processing sensitive personal data or processing at large scale",
+    "Notes micro-enterprises get the fullest relief, subject to the same carve-outs",
+    "Warns that core duties still apply: lawful basis/consent, data subject rights, breach notification, and the penalty regime (Decree 330) applies to violations of applicable duties",
+    "Advises documenting the exemption reliance and re-checking on growth/scale changes"
+  ]
+}

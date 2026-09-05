@@ -1,0 +1,33 @@
+{
+  "eval_id": 266,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the September 2026 ISM release (published September 3, 2026) added 44 new controls, ISM-2124 through ISM-2167",
+      "passed": false,
+      "evidence": "\"I can't give you a guaranteed-accurate change log for that exact release\" — no 44 controls, no ISM-2124–2167, no publication date"
+    },
+    {
+      "text": "Highlights the agentic AI controls (ISM-2156–2159): minimum tools/permissions, dual authorisation, untrusted external content handling, and central logging",
+      "passed": false,
+      "evidence": "No mention of ISM-2156–2159 or their specific agentic AI requirements; only speculation that AI guidance \"plausibly expands\""
+    },
+    {
+      "text": "Mentions AI agent identity and register controls (ISM-2133–2135)",
+      "passed": false,
+      "evidence": "No mention of ISM-2133–2135 or an AI agent identity/register"
+    },
+    {
+      "text": "Notes the single rescission: ISM-0521, the recommendation to disable IPv6 in dual-stack devices",
+      "passed": false,
+      "evidence": "No mention of ISM-0521 or the IPv6 rescission"
+    },
+    {
+      "text": "Mentions at least two other themes accurately: MACsec approval + MACsec controls, OAuth/third-party app consent controls, workload credential management, immutable backups, RMM allowlisting, synthetic impersonation verification, or the 6-monthly cadence tightening (KRBTGT/DCSync/pen tests)",
+      "passed": false,
+      "evidence": "Only generic thematic speculation (\"plausibly continue these trends\"); no MACsec approval, OAuth controls, cadence changes or other September themes stated as fact"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

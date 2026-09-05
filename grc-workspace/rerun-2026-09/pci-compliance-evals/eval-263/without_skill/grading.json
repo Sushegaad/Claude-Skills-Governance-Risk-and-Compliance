@@ -1,0 +1,33 @@
+{
+  "eval_id": 263,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States all future-dated v4.x requirements became mandatory March 31, 2025 (v4.0.1 is the current standard)",
+      "passed": true,
+      "evidence": "\"best practice until 31 March 2025... all of those previously future-dated requirements are fully in effect and must be assessed as mandatory\" (refers to standard as v4.0, not contradicting v4.0.1)"
+    },
+    {
+      "text": "Cites password/authentication changes: 12-character minimum passwords and MFA for ALL access into the CDE (8.3.6, 8.4.2)",
+      "passed": true,
+      "evidence": "\"Minimum password length increased to 12 characters (up from 7)\" (8.3.6); \"8.4.2 — multi-factor authentication (MFA) for all access into the CDE... including from within the corporate network\""
+    },
+    {
+      "text": "Cites e-commerce controls: payment page script inventory/authorization/integrity (6.4.3) and change-and-tamper detection (11.6.1)",
+      "passed": true,
+      "evidence": "\"Requirement 6.4.3 — formal inventory of all scripts loaded on the payment page... Requirement 11.6.1 — change- and tamper-detection mechanism\""
+    },
+    {
+      "text": "Mentions others such as automated log review mechanisms, authenticated internal vulnerability scans, and phishing protections",
+      "passed": true,
+      "evidence": "Mentions others: \"5.4.1 — anti-phishing mechanisms\", 10.7.x security-control-failure detection, 7.2.4 access reviews, targeted risk analysis 12.3.x"
+    },
+    {
+      "text": "Advises a gap re-check for any assessment performed against pre-2025 practices",
+      "passed": true,
+      "evidence": "\"if you haven't already done a gap assessment specifically against these formerly future-dated requirements, that should be the immediate priority\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

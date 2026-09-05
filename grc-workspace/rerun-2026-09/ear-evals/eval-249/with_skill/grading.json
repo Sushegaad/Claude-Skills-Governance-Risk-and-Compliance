@@ -1,0 +1,33 @@
+{
+  "eval_id": 249,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the January 2025 AI Diffusion IFR was never formally rescinded in the Federal Register",
+      "passed": true,
+      "evidence": "\"the rule was never repealed on the books... the January 2025 IFR remains technically in effect\""
+    },
+    {
+      "text": "Notes BIS announced non-enforcement/intent to rescind in May 2025",
+      "passed": true,
+      "evidence": "\"May 2025 \u2014 non-enforcement announcement... BIS announced it would not enforce the rule\""
+    },
+    {
+      "text": "Cites GAO decision B-337935: the non-enforcement announcement is itself a CRA 'rule' that was not submitted to Congress",
+      "passed": true,
+      "evidence": "\"GAO decision (B-337935)... held that the May 2025 non-enforcement announcement itself constituted a 'rule' for purposes of the Congressional Review Act... BIS had not submitted it to Congress\""
+    },
+    {
+      "text": "States the operative successor approach: country-specific rules (e.g., the July 2026 UAE advanced-chip rule, 91 FR 43034) rather than a global framework",
+      "passed": true,
+      "evidence": "\"BIS has moved to country-specific rulemaking... The clearest example is the UAE rule (91 FR 43034)\""
+    },
+    {
+      "text": "Advises: do not structure around a 'replacement diffusion framework' that does not exist; apply current ECCN 3A090/4A090-family controls, license policies, and end-user rules, and monitor BIS",
+      "passed": true,
+      "evidence": "\"Do not build licensing workflows... around the January 2025 diffusion tiers... Continue to apply... 3A090/4A090 classification... Monitor the Federal Register\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

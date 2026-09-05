@@ -1,0 +1,33 @@
+{
+  "eval_id": 232,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States clearly that self-funded group health plans are covered entities and OCR now enforces against them directly",
+      "passed": true,
+      "evidence": "\"A self-funded group health plan is itself a 'health plan' under 45 CFR \u00a7160.103... OCR does enforce HIPAA against self-funded group health plans... an active enforcement category\""
+    },
+    {
+      "text": "Cites 2026 precedent: OCR's settlements with self-funded plans \u2014 Star Group L.P. Health Benefits Plan (~$245,000, April 2026) and/or Spencer Gifts plans (~$450,000 plus corrective action plan, June 2026)",
+      "passed": true,
+      "evidence": "\"Star Group L.P. \u2014 a $245,000 settlement (April 2026)... Spencer Gifts' self-funded plan \u2014 a $450,000 settlement plus a Corrective Action Plan (June 2026)\""
+    },
+    {
+      "text": "Notes both actions followed ransomware breaches",
+      "passed": true,
+      "evidence": "\"a $245,000 settlement (April 2026) tied to a ransomware incident... (June 2026), again following a ransomware event\""
+    },
+    {
+      "text": "Identifies the central cited failure: no accurate and thorough risk analysis (45 CFR 164.308(a)(1)(ii)(A)) \u2014 OCR's Risk Analysis Initiative theme",
+      "passed": true,
+      "evidence": "\"part of its Risk Analysis Initiative... found the plan sponsor had not conducted an adequate risk analysis... consistently OCR's most-cited deficiency\""
+    },
+    {
+      "text": "Explains plan-sponsor obligations: plan document amendments/firewall between plan and employer functions, BAAs with TPAs/vendors, and safeguards for ePHI held by the sponsor",
+      "passed": true,
+      "evidence": "\"Plan document amendments... (45 CFR \u00a7164.314(b))... firewall between plan administration functions and the employer's other HR/business functions... BAAs with your third-party administrator, PBM... documented Security Rule risk analysis covering all ePHI systems\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

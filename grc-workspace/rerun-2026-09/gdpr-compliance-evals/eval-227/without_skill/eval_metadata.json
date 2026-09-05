@@ -1,0 +1,13 @@
+{
+  "eval_id": 227,
+  "eval_name": "anonymisation-standard-2026",
+  "run_type": "without_skill",
+  "prompt": "We want to anonymise our customer dataset so we can share it with a business partner outside any data-processing agreement. What's the current standard for what counts as anonymous under GDPR?",
+  "assertions": [
+    "References the EDPB's draft Guidelines 02/2026 on anonymisation, adopted July 2026 (public consultation open until October 30, 2026), which will replace the 2014 WP29 Opinion 05/2014 on anonymisation techniques",
+    "States the relative approach to identifiability: following the CJEU's EDPS v SRB ruling, the same dataset can be personal data in one party's hands and anonymous in another's, depending on the means available to each",
+    "Applies the 'means reasonably likely to be used' test for re-identification, rather than requiring absolute impossibility",
+    "Uses the three re-identification criteria: singling out, linkability, and inference",
+    "Distinguishes pseudonymisation (still personal data under GDPR) from anonymisation (outside GDPR), and warns that key-holding or auxiliary data defeats anonymity claims"
+  ]
+}

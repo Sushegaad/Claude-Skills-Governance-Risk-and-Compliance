@@ -1,0 +1,23 @@
+Informative references in CSF 2.0 are pointers, not requirements — they tell you which sections of other standards and frameworks (ISO/IEC 27001, NIST SP 800-53, COBIT, CIS Critical Security Controls, etc.) are relevant to a given CSF subcategory, so you don't have to invent your own control language from scratch. NIST maintains these mappings in the CSF Reference Tool / NIST Cybersecurity and Privacy Reference Tool (CPRT), an online, machine-readable repository rather than a static appendix in the framework document itself. This is a deliberate change from CSF 1.1, where informative references were embedded directly in the framework core spreadsheet.
+
+How they work mechanically:
+1. CSF 2.0 core structure: Function (e.g., Protect) > Category (e.g., PR.AA — Identity Management, Authentication, and Access Control) > Subcategory (e.g., PR.AA-01 — Identities and credentials for authorized users, services, and hardware are managed).
+2. Each subcategory can have one or more informative references, which are specific clauses/controls from other standards that are considered analogous or supportive of that subcategory's intent. For PR.AA-01, you'd typically see references into ISO/IEC 27001:2022 Annex A (e.g., A.5.16, A.8.5), NIST SP 800-53 Rev 5 (e.g., IA-2, IA-4, IA-5), and possibly CIS Controls v8 (Control 5/6).
+3. NIST does not claim these mappings are one-to-one equivalences — a single ISO control might map to several CSF subcategories and vice versa, because the frameworks organize the same underlying security concepts differently. Treat mappings as "related to" rather than "identical to."
+4. The CPRT is updated periodically as NIST and other standards bodies revise their publications, so a mapping done in 2024 against ISO 27001:2013 Annex A numbering will be stale against the 2022 revision's renumbered/consolidated controls (2013 had 114 controls across 14 domains; 2022 consolidated to 93 controls across 4 themes).
+
+How to map your ISO 27001 controls to CSF 2.0 practically:
+
+Step 1 — Inventory your ISO controls as actually implemented. Don't just use the generic Annex A control list; use your Statement of Applicability (SoA), since that reflects what you actually claim to do, with justifications for exclusions.
+
+Step 2 — Use NIST's CPRT mapping as your starting crosswalk, but validate it against the specific ISO 27001:2022 revision, since older public crosswalks may still reference 2013 numbering.
+
+Step 3 — Build a bidirectional crosswalk table: for each CSF subcategory, list the ISO Annex A controls that support it; for each ISO Annex A control, list the CSF subcategories it feeds into. This surfaces gaps in both directions — CSF subcategories with no corresponding ISO control (rare, but possible in areas like supply chain risk under Govern) and ISO controls that don't map cleanly to any CSF subcategory (also useful to know, since it may indicate ISO covers something CSF treats as out of scope, like some physical security or HR clauses).
+
+Step 4 — Assess maturity/implementation status per subcategory, not just presence/absence. A control can technically "exist" in ISO documentation (policy exists) but not be operating effectively (no evidence of enforcement) — CSF profiles are strongest when they reflect actual implementation status, tied to evidence, not paperwork.
+
+Step 5 — Watch for the biggest structural gap: CSF 2.0's new Govern (GV) function has much heavier emphasis on organizational context, risk management strategy, supply chain risk management, and roles/responsibilities than earlier CSF versions did — and while ISO 27001 Clause 4-10 (the management system requirements, as opposed to Annex A controls) covers a lot of this, many crosswalks only map Annex A controls and miss the ISO management-system clauses (context of the organization, leadership, planning, support, operation, performance evaluation, improvement). Make sure your ISO-to-CSF mapping includes ISO's main clauses, not just Annex A, when populating your Govern function subcategories.
+
+Step 6 — Document assumptions. Since mappings are not one-to-one, record your organization's specific rationale for each mapping decision so future auditors or assessors (and your future self) can follow the logic, especially where you've made a judgment call that a partial ISO control satisfies a CSF subcategory.
+
+Bottom line: use NIST's CPRT/Reference Tool as your starting crosswalk, verify it against your current ISO 27001:2022 SoA (not just the generic Annex A list), explicitly include ISO's management-system clauses when mapping to CSF's Govern function, and document your own judgment calls since NIST's mappings are indicative, not authoritative one-to-one equivalences.

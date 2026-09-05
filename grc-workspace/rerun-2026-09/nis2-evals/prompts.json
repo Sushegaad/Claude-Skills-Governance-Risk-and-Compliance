@@ -1,0 +1,25 @@
+{
+ "skill": "nis2",
+ "prompts": [
+  {
+   "id": 256,
+   "prompt": "We operate critical logistics infrastructure in the Netherlands. What changed for us in August 2026?"
+  },
+  {
+   "id": 257,
+   "prompt": "Which EU member states still haven't transposed NIS2 as of September 2026? We have subsidiaries in Ireland, Spain and France."
+  },
+  {
+   "id": 258,
+   "prompt": "Walk us through NIS2 incident reporting if ransomware takes down our production systems."
+  },
+  {
+   "id": 259,
+   "prompt": "Are we an essential or important entity, and what difference does it make?"
+  },
+  {
+   "id": 260,
+   "prompt": "What security measures does NIS2 Article 21 actually require us to implement?"
+  }
+ ]
+}

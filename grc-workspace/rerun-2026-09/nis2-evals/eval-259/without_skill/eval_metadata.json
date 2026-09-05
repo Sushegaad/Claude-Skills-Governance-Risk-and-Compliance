@@ -1,0 +1,13 @@
+{
+  "eval_id": 259,
+  "eval_name": "essential-vs-important",
+  "run_type": "without_skill",
+  "prompt": "Are we an essential or important entity, and what difference does it make?",
+  "assertions": [
+    "Applies the two-step test: Annex I (high criticality) vs Annex II sectors, then size thresholds (generally 250+/€50M for essential in Annex I; medium-size entities typically important)",
+    "States the supervision difference: essential = ex-ante AND ex-post (inspections, audits); important = ex-post only, triggered by evidence",
+    "States the fine floors: ≥€10M or 2% worldwide turnover (essential) vs ≥€7M or 1.4% (important)",
+    "Mentions management liability including potential temporary bans from managerial functions (essential entities)",
+    "Notes special designations: CER-designated critical entities are automatically essential regardless of size; some sectors (e.g., qualified trust/DNS/TLD) essential regardless of size"
+  ]
+}

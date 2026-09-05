@@ -1,0 +1,33 @@
+{
+  "eval_id": 231,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Correctly states this is a proposed rule (NPRM, published January 2025) that would remove 'addressable' designations and mandate MFA/encryption \u2014 it is NOT final and NOT in effect",
+      "passed": true,
+      "evidence": "\"a **proposed** rule (an NPRM)... In January 2025... Eliminate the 'required' vs. 'addressable' distinction entirely... Explicitly mandate multi-factor authentication... Mandate encryption\""
+    },
+    {
+      "text": "States the current status: the August 2026 Unified Agenda moved the rule to Long-Term Actions with final action anticipated around July 2027",
+      "passed": true,
+      "evidence": "\"Unified Agenda published August 14, 2026 moved this rulemaking to the 'Long-Term Actions' category, with final action now anticipated no earlier than July 2027\""
+    },
+    {
+      "text": "States that the existing Security Rule (with required vs addressable implementation specifications) remains the operative law to comply with today",
+      "passed": true,
+      "evidence": "\"The **current** Security Rule (45 CFR \u00a7\u00a7164.308, 164.310, 164.312) remains the operative standard\" with addressable-vs-required explained"
+    },
+    {
+      "text": "Mentions the industry pushback: 100+ hospital systems / provider associations (AHA-led) have urged HHS to withdraw or substantially revise the proposal",
+      "passed": true,
+      "evidence": "\"more than 100 hospital systems, led by the American Hospital Association, have formally urged HHS to withdraw or significantly narrow the proposal\""
+    },
+    {
+      "text": "Gives the right advice: build against the current Security Rule now, track the proposal, and do not treat NPRM provisions as current legal requirements \u2014 while noting MFA/encryption are best practice regardless",
+      "passed": true,
+      "evidence": "\"Track the NPRM... don't present its provisions to your organization as current legal requirements... Build toward MFA and encryption now as a risk-management best practice\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

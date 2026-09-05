@@ -1,0 +1,13 @@
+{
+  "eval_id": 267,
+  "eval_name": "agentic-ai-controls",
+  "run_type": "with_skill",
+  "prompt": "We're deploying an AI agent that can execute tools against our systems. What does the ISM now require?",
+  "assertions": [
+    "Unique identity for each AI agent, distinct from personnel accounts and other agents (ISM-2133)",
+    "An AI agent register — maintained and regularly verified — recording identifier, owner/purpose, identities, credentials, and tools/permissions/data accessible (ISM-2134/2135)",
+    "Restriction to minimum tools, functions and permissions for the intended purpose (ISM-2156), with tool invocations subject to BOTH the invoking user's access controls AND agent-specific task-scoped authorisation (ISM-2157)",
+    "External content treated as untrusted throughout processing: delimited from system instructions, validated/sanitised, and prevented from overriding instructions, security policies, access controls or human-approval requirements (ISM-2158)",
+    "Central logging of all tool invocations, external requests and outputs (ISM-2159), plus human approval before sensitive/high-impact actions (ISM-2113 as amended)"
+  ]
+}

@@ -192,4 +192,4 @@ The skill was built based on the following requirements provided during design:
 
 ---
 
-*Skill version: 1.8.0 — August 2026*
+*Skill version: 1.9.0 — September 2026*

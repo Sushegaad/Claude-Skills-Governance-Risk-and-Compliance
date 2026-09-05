@@ -1,0 +1,19 @@
+Background: On July 13, 2026, the Department of War (formerly DoD) suspended CMMC Phase 2 — the rollout of mandatory C3PAO third-party assessments and DIBCAC Level 3 assessments — via two policy memoranda from the DoW CIO and USD(A&S). This put pending CMMC milestones, including the November 10, 2026 date on which C3PAO assessment requirements were set to become mandatory in new contracts, into abeyance. The suspension memoranda simultaneously stood up a CMMC Reform Task Force with a 60-day review clock.
+
+What the task force is reviewing: Based on the scope of the RFI (Request for Information) that closed August 14, 2026, and the mandate described in the suspension memoranda, the task force is examining the C3PAO third-party assessment model itself — cost, timeline burden, assessor capacity constraints, and whether third-party certification is the right enforcement mechanism, particularly for small and mid-sized DIB suppliers who make up the bulk of the subcontractor base. It is not reviewing the underlying NIST SP 800-171 control set or the DFARS clause family (7012/7019/7020/7021), which remain in force independent of the task force's outcome.
+
+What is being reported (unconfirmed): Public reporting and industry commentary suggest the task force is leaning toward two directions, but I want to be clear these are signals, not settled outcomes:
+1. Expanded reliance on self-attestation (Level 1 Self and Level 2 Self) in place of mandatory C3PAO assessment, with False Claims Act liability serving as the primary enforcement backstop for false or inflated SPRS submissions rather than third-party verification.
+2. Streamlining or tiering requirements for small businesses, potentially reducing the assessment burden or extending timelines for smaller subcontractors who have historically struggled to fund C3PAO assessments.
+
+Treat both of these as unconfirmed reporting, not confirmed policy — the task force's actual recommendations have not been published as of today.
+
+When you'll know: The task force's report is due to the DoW CIO on approximately September 13, 2026 — about a week from today. That date is when the review is complete, not necessarily when the DoW publicly announces a decision or issues implementing guidance; there is typically a lag between an internal report landing and a public rule change, interim guidance memo, or Federal Register action. Realistically, expect the first public signal (a DoW CIO memo, a DFARS case update, or public testimony) sometime in the weeks following September 13, with formal rule or contract-clause changes likely taking longer.
+
+What to do in the meantime:
+- Do not assume Phase 2 is permanently gone. The suspension is explicitly framed as a pause pending review, not a repeal, and the task force could recommend restoring a modified third-party assessment model.
+- Continue all NIST SP 800-171 remediation work on your existing timeline. Nothing in the suspension touches your underlying safeguarding obligations under DFARS 7012, your self-assessment currency under 7019, or your SPRS posting obligation under 7020.
+- Note the interim designation rule already in effect: requiring activities may currently only specify Level 1 (Self) or Level 2 (Self) in solicitations — not Level 2 (C3PAO) or Level 3 (DIBCAC) — and existing contracts are having C3PAO/DIBCAC requirements stripped at the next option or modification.
+- Re-check this status close to and after September 13, 2026, before making assessment-scheduling or budget decisions tied to a specific certification track.
+
+This is general compliance information, not legal advice. Given the fluid regulatory posture, I'd recommend confirming any assessment-track decisions with your contracting officer and monitoring the DoW CIO and Cyber AB channels directly for the task force's published outcome.

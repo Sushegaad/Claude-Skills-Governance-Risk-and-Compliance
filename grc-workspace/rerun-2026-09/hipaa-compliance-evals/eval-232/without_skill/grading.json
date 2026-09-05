@@ -1,0 +1,33 @@
+{
+  "eval_id": 232,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States clearly that self-funded group health plans are covered entities and OCR now enforces against them directly",
+      "passed": true,
+      "evidence": "\"OCR does enforce HIPAA against self-funded, employer-sponsored group health plans... The plan itself is a 'covered entity'... squarely within OCR's jurisdiction\""
+    },
+    {
+      "text": "Cites 2026 precedent: OCR's settlements with self-funded plans \u2014 Star Group L.P. Health Benefits Plan (~$245,000, April 2026) and/or Spencer Gifts plans (~$450,000 plus corrective action plan, June 2026)",
+      "passed": false,
+      "evidence": "No mention of the 2026 Star Group ($245K) or Spencer Gifts ($450K) settlements; only generic \"OCR's enforcement database and resolution agreements include self-funded plan sponsors\""
+    },
+    {
+      "text": "Notes both actions followed ransomware breaches",
+      "passed": false,
+      "evidence": "Ransomware is never mentioned; the 2026 enforcement actions and their ransomware trigger are absent"
+    },
+    {
+      "text": "Identifies the central cited failure: no accurate and thorough risk analysis (45 CFR 164.308(a)(1)(ii)(A)) \u2014 OCR's Risk Analysis Initiative theme",
+      "passed": true,
+      "evidence": "\"If you haven't done a HIPAA risk analysis specific to the plan's data flows... that's usually the biggest gap I see in self-funded employer plans, and it's exactly the kind of gap that surfaces during an OCR investigation after a breach\" \u2014 substance present though the Risk Analysis Initiative is not named"
+    },
+    {
+      "text": "Explains plan-sponsor obligations: plan document amendments/firewall between plan and employer functions, BAAs with TPAs/vendors, and safeguards for ePHI held by the sponsor",
+      "passed": true,
+      "evidence": "\"the plan document must contain specific HIPAA 'plan sponsor' provisions... requiring a firewall between employees who touch PHI and those who make employment decisions... confirm BAAs exist with your TPA/ASO, PBM, stop-loss carrier\""
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

@@ -1,0 +1,30 @@
+An enclave approach is the right instinct for Level 2 scoping — it shrinks the assessment boundary, reduces the number of in-scope assets, and cuts both remediation cost and ongoing assessment burden. Here's how to build it out properly.
+
+Step 1 — Identify your CUI. Before touching architecture, nail down exactly which CUI categories you receive or generate under the contract (reference the DoD CUI Registry). This isn't optional groundwork — everything downstream depends on knowing precisely what data you're protecting and where it's allowed to flow.
+
+Step 2 — Map CUI flows. Trace where CUI enters your environment (email, portal, physical media, contract deliverables), where it's processed (engineering workstations, PLM systems, email), where it's stored (file shares, databases, backups), and where it exits (deliverables back to the government, subcontractor flow-down). This flow map is what your enclave boundary gets drawn around.
+
+Step 3 — Classify every asset into one of five categories:
+- CUI Assets — systems that store, process, or transmit CUI directly. Fully assessed against all 110 practices.
+- Security Protection Assets (SPA) — firewalls, SIEM, identity provider, PAM — assets that don't handle CUI directly but provide security functions for the CUI environment. Assessed for the security capability they provide.
+- Contractor Risk Managed Assets (CRMA) — assets that could touch CUI but aren't intended to, managed under your own risk-based policy. Documented in the SSP, assessed at reduced depth with policy justification.
+- Specialized Assets — IoT, OT, government-furnished equipment, test equipment. Documented with compensating controls, not assessed like standard IT.
+- Out-of-Scope Assets — no CUI processing/storage/transmission and no security-relevant connection to CUI assets. Excluded entirely, but you must document the rationale (segmentation, physical isolation).
+
+Step 4 — Define the CUI Asset Boundary. This is the enclave itself: a dedicated network segment (separate VLAN or domain) containing your CUI Assets and the SPAs that directly support them. Design it deliberately small — every asset you can legitimately exclude reduces your practice-implementation burden and your C3PAO evidence-collection scope.
+
+Step 5 — Build the enclave with these practical moves:
+- Dedicate endpoints for CUI work (engineering workstations, specific email accounts) rather than allowing CUI to touch general-purpose corporate IT.
+- Segment at the network layer — a separate VLAN or domain with managed access control points (this directly supports AC.L2-3.1.14, routing remote access via managed access control points, and SC.L2-3.13.1, boundary protection).
+- Route all remote access to the enclave through MFA-gated, monitored access points (IA.L2-3.5.3 and AC.L2-3.1.12).
+- Encrypt CUI at rest and in transit inside and across the enclave boundary using FIPS 140-2/3 validated modules — not just "AES-256" labeled products (SC.L2-3.13.11, SC.L2-3.13.16).
+- If any part of your enclave uses cloud services (email, file storage, collaboration tools) to handle CUI, that cloud service must be FedRAMP Authorized at Moderate or equivalent — this is a DFARS 7012 requirement, not optional guidance.
+- Keep corporate IT (HR systems, general email, marketing, guest Wi-Fi) genuinely segmented and unable to reach the enclave — that's what earns Out-of-Scope status for the rest of your enterprise.
+
+Step 6 — Document it all in the SSP. Your system boundary section needs network diagrams, the CUI Asset Boundary definition, and the full asset-category inventory (CUI/SPA/CRMA/Specialized/Out-of-Scope) with rationale for every exclusion. This documentation is exactly what a C3PAO reviews first in Phase 1 (documentation review), so incomplete scoping rationale is a common early friction point.
+
+Common pitfall to avoid: scope creep from convenience. If engineers occasionally email CUI attachments from personal or general corporate accounts "just this once," that pulls corporate IT back into scope and defeats the enclave's purpose. Enforce the boundary with technical controls (DLP, egress filtering) not just policy.
+
+One more thing worth flagging given where the program stands: regardless of whether your eventual assessment is a C3PAO engagement or a self-assessment (the interim posture since July 13, 2026 permits only Level 1/Level 2 Self designations while CMMC Phase 2 is under Reform Task Force review), the scoping work is identical and not wasted effort — a well-scoped enclave reduces your assessment burden under either track.
+
+This is general guidance; validate your specific enclave architecture against the DoD CUI Registry and NIST SP 800-171A assessment objectives before finalizing.

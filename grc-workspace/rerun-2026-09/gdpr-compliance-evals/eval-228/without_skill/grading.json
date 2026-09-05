@@ -1,0 +1,33 @@
+{
+  "eval_id": 228,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "References the EDPB's draft Guidelines 03/2026 on web scraping in the context of generative AI, adopted July 2026 (consultation until October 30, 2026)",
+      "passed": false,
+      "evidence": "No reference to draft Guidelines 03/2026 (July 2026); only \"ongoing EDPB and CNIL guidance\" and Opinion 28/2024"
+    },
+    {
+      "text": "States that consent is generally not viable as a lawful basis at scraping scale, making legitimate interest (Art. 6(1)(f)) the realistic basis",
+      "passed": true,
+      "evidence": "\"Consent is rarely feasible at web-scraping scale\"; legitimate interests (Article 6(1)(f)) \"the most commonly invoked basis for AI training\""
+    },
+    {
+      "text": "Explains that legitimate interest requires a strict three-part balancing test with concrete mitigations/safeguards (e.g., excluding sensitive sources, respecting robots/opt-out signals, data minimisation)",
+      "passed": true,
+      "evidence": "\"structured three-step test: (a) identify a legitimate interest, (b)... necessary, (c) balance\"; mitigations incl. excluding sensitive sites, robots.txt, opt-out signals, minimisation"
+    },
+    {
+      "text": "States that controllers are expected to publish detailed public privacy notices about the scraping (Art. 14 transparency)",
+      "passed": true,
+      "evidence": "Art. 14 discussed: \"publish clear, accessible information about training data sources and purposes\""
+    },
+    {
+      "text": "Mentions facilitating data subject rights including pre-collection opt-out mechanisms, and that the guidance covers first-party scraping, contracted scraping, and purchased broker datasets",
+      "passed": false,
+      "evidence": "Mentions rights mechanisms and opt-out signals ('noai' tags, Do Not Train registries) but never covers the guidance applying to contracted scraping and purchased broker datasets"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

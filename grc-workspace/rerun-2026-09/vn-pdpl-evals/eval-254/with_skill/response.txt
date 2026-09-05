@@ -1,0 +1,25 @@
+Vietnam's PDPL (Law No. 91/2025/QH15, effective 1 January 2026) is broadly GDPR-inspired, and on paper the consent standard is comparably strict — arguably stricter in a few respects — while the data subject rights catalogue is narrower. Here's the comparison in detail.
+
+Consent: comparable strictness, some sharper edges
+
+Both regimes require consent to be freely given, specific, informed, and unambiguous. VN-PDPL (Article 9, elaborated by Decree 356 Article 6) tracks this closely: consent must be voluntary, explicit, specific to each purpose, informed, and recorded by the controller. Where VN-PDPL is arguably stricter in practice is its exhaustive, prescriptive list of valid consent channels — written/signed documents, recorded phone calls with timestamp and metadata, SMS with specific syntax, email from a registered address, or verifiable digital form flows — and an explicit list of invalid methods: silence, pre-ticked boxes, bundled consent covering unrelated purposes, and consent obtained through deception or coercion. GDPR states similar principles but leaves the operational mechanics to guidance and case law rather than decree-level specification.
+
+For sensitive personal data, VN-PDPL requires explicit, separate consent for each of the 13 sensitive categories (Article 10) — a category list that is notably broader than GDPR's "special category" data, extending to banking/financial/credit data, location and movement data, and social media behavioral tracking data as sensitive by default. GDPR's special categories (race, religion, health, sexual orientation, biometric/genetic data, etc.) don't automatically include financial or location data — those are typically handled as regular personal data requiring a lawful basis but not automatically triggering the heightened "special category" consent bar. In this respect, VN-PDPL casts a wider net for what counts as sensitive.
+
+Legal bases: narrower under VN-PDPL
+
+This is where VN-PDPL is meaningfully stricter than GDPR. GDPR offers six lawful bases, including "legitimate interests," which many controllers rely on for a broad range of processing without needing consent. VN-PDPL (Article 19) permits processing without consent only in five narrow cases: emergencies protecting life/health, national/public security requests from state agencies, state agencies' own statutory functions, contract performance, and other cases specifically prescribed by law. There is no "legitimate interests" equivalent — meaning many processing activities that a GDPR-compliant company handles today under legitimate interests will require affirmative consent under VN-PDPL.
+
+Data subject rights: narrower catalogue
+
+VN-PDPL provides six rights (Article 4): to be informed, to consent/withdraw, to access and rectify, to delete/restrict/object, to complain/sue/seek compensation, and to request protection measures from authorities. GDPR provides eight, including two VN-PDPL omits entirely: the right to data portability and the right to not be subject to a decision based solely on automated processing (the "right to human review"). Decree 356 Article 10 partially compensates for the latter by requiring an opt-out mechanism for AI/automated decision-making that significantly affects the data subject, but this is narrower than GDPR's automated-decision-making right.
+
+Response timelines: broadly comparable, some faster
+
+VN-PDPL timelines (Decree 356 Article 5) are competitive with or faster than GDPR's one-month standard: 2 working days just to acknowledge any request, 10 working days for access/correction, 15 working days for withdrawal/restriction/objection, and 20 working days for deletion. GDPR's default is one calendar month (extendable by two more for complex requests), so VN-PDPL's acknowledgement requirement in particular is tighter.
+
+Breach notification: same headline number, broader scope
+
+Both regimes use 72 hours as the notification trigger to the authority. VN-PDPL additionally requires notifying affected data subjects "simultaneously with or as soon as practicable after" the authority notification — GDPR only requires data subject notification when the breach poses a high risk to their rights and freedoms, making VN-PDPL's default closer to a blanket dual-notification approach in practice.
+
+Net assessment: consent formality and breach/response speed are comparably strict or stricter under VN-PDPL; but the absence of a legitimate-interests basis, the broader sensitive-data category list, and the lack of portability/automated-decision rights mean VN-PDPL pushes controllers toward consent-heavy compliance models even more than GDPR does, while offering data subjects a narrower toolkit of individual rights. This is general compliance guidance, not legal advice — a side-by-side gap analysis against your specific processing activities is recommended before relying on either regime's mechanisms interchangeably.

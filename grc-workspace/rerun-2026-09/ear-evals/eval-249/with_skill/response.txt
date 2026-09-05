@@ -1,0 +1,33 @@
+Current Status of the AI Chip "Diffusion Rule" — Do Not Structure Exports Around It
+
+**Short answer: no, do not build your export structure around the diffusion framework.** Its legal status is genuinely unsettled, and relying on it — in either direction — creates compliance risk.
+
+**What happened, in sequence:**
+
+1. **January 2025 — the Interim Final Rule (IFR).** BIS published the AI diffusion rule, which would have created a three-tiered country classification system governing exports of advanced AI chips and related model weights, with differentiated license requirements based on destination country tier.
+
+2. **May 2025 — non-enforcement announcement.** Rather than formally rescinding the IFR through the standard Federal Register rulemaking process, BIS announced it would **not enforce** the rule. This is a critical distinction: the rule was never repealed on the books. As a matter of the actual text of the CFR, the January 2025 IFR remains technically in effect — BIS simply committed, via public announcement rather than rulemaking, not to act on it.
+
+3. **GAO decision (B-337935).** The Government Accountability Office subsequently held that the May 2025 non-enforcement announcement itself constituted a "rule" for purposes of the Congressional Review Act (CRA), and that BIS had not submitted it to Congress as the CRA requires for agency rules. This creates an unusual legal posture: the announcement that was supposed to resolve the IFR's status is itself procedurally irregular, meaning neither the original IFR nor its suspension sits on entirely solid procedural ground.
+
+**Net effect:** there is no clean, stable "diffusion rule" framework you can point to and design a compliance program around. Treat the diffusion tiering system as **non-operative in practice but not legally dead** — a state that could change with a future Federal Register action, a court challenge, or congressional action on the CRA issue.
+
+**What replaced it, and what you should actually plan around:**
+
+BIS has moved to **country-specific rulemaking** instead of a general tiered framework. The clearest example is the UAE rule (91 FR 43034), which addresses AI chip exports to that specific destination through ordinary notice-and-comment or interim final rulemaking rather than the abandoned tiering structure. Expect BIS to continue issuing similar country-specific or transaction-specific rules rather than reviving a general diffusion tier system in the near term.
+
+**What remains fully in force regardless of the diffusion rule's status:**
+
+- **ECCNs 3A090 and 4A090** (advanced computing ICs and computer systems, from the October 2022/2023 rules) continue to control the underlying chips and require licenses to China, Macau, and D:1/D:5 destinations per the standing Country Chart and end-use rules — this is independent of the diffusion framework's fate.
+- **Entity List restrictions** on Huawei, SMIC-affiliated entities, and other semiconductor-related listed parties remain in full effect.
+- **The Foreign Direct Product Rule (Entity List FDPR and Advanced Computing FDPR)** continues to capture foreign-made chips produced with US wafer-fab equipment destined for restricted Chinese entities.
+- **§ 744.21 military end-use/end-user controls** and standard restricted-party screening obligations are unaffected by the diffusion rule's status.
+
+**Recommendation for your compliance structure:**
+
+1. Do not build licensing workflows, customer tiering, or contractual representations around the January 2025 diffusion tiers — they may never be formally revived, and doing so risks basing decisions on a framework BIS has publicly said it won't enforce.
+2. Continue to apply the pre-existing, unambiguous controls: 3A090/4A090 classification, Country Chart lookups, Entity List/MEU screening, and FDPR analysis for foreign-made chips built with US tooling.
+3. Monitor the Federal Register specifically for (a) a formal rescission or replacement of the January 2025 IFR, and (b) additional country-specific rules following the UAE model — build a rule-tracking process rather than a static tier table.
+4. Flag this issue to export counsel given the GAO CRA finding — there is some possibility that a future administration or a CRA disapproval resolution could reactivate enforcement of the original IFR with retroactive-feeling effect on transactions structured during the non-enforcement window.
+
+*General compliance guidance, not legal advice. This area is unusually fluid — verify the current Federal Register status before finalizing any AI chip export decision.*

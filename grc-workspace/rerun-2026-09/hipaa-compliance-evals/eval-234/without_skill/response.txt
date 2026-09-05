@@ -1,0 +1,25 @@
+A filled-in checklist is not a HIPAA-compliant security risk analysis, and this is one of the most common — and most heavily penalized — gaps OCR finds. It's worth understanding why a checklist fails the standard, and what an actual risk analysis needs to contain.
+
+The requirement comes from the Security Rule's Administrative Safeguards at 45 CFR §164.308(a)(1)(ii)(A), which requires covered entities and business associates to "conduct an accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of electronic protected health information held by the covered entity." NIST SP 800-30 and HHS's own guidance on this provision (HHS publishes a specific guidance document, "Guidance on Risk Analysis Requirements under the HIPAA Security Rule") flesh out what "accurate and thorough" actually means, and a generic yes/no checklist almost never meets it. This has been one of the single most frequently cited failures in OCR resolution agreements over the last 15 years — organizations that had "done a risk assessment" in the sense of buying a template, filling in checkboxes, and filing it away, only to have OCR determine post-breach that no real risk analysis had occurred.
+
+A checklist typically fails because it asks "do you have policy X? yes/no" rather than analyzing your actual environment. A real risk analysis needs to include, at minimum:
+
+1. Scope: every system, application, and location where ePHI is created, received, maintained, or transmitted — not just your EHR, but email, backup systems, cloud storage, mobile devices, fax/e-fax, medical devices, third-party portals, and business associate systems that touch your data.
+
+2. Data flow mapping: where ePHI actually moves — inbound from referrals, outbound to labs/pharmacies/payers, internal transfers between departments, remote access paths, backup and disaster recovery flows. You can't assess risk to data you haven't located.
+
+3. Threat and vulnerability identification specific to your environment: not generic "hackers exist" language, but actual identified threats (e.g., unpatched legacy systems, unencrypted laptops, shared login credentials, lack of network segmentation, vendor access without monitoring, ransomware exposure via RDP) mapped against actual vulnerabilities discovered in your systems.
+
+4. Current control assessment: what safeguards are actually in place today (technical, administrative, physical) and whether they adequately address the identified threats/vulnerabilities.
+
+5. Likelihood and impact analysis: for each identified risk, an actual assessment of the probability it materializes and the magnitude of harm if it does — this is the "risk" part of risk analysis, and it's exactly the part a checklist skips, since checklists document presence/absence of controls but not the resulting risk level.
+
+6. A risk rating and prioritized remediation plan: outputs need to translate into a documented risk level (e.g., high/medium/low) per finding, tied to a remediation roadmap with owners and target dates. This feeds directly into the required risk management process under §164.308(a)(1)(ii)(B).
+
+7. It needs to be organization-specific and current: a generic template that could apply to any healthcare entity, filled in by a vendor who never actually reviewed your network diagram, asset inventory, or system configurations, is a strong signal to an investigator that the "assessment" was a paperwork exercise. OCR guidance explicitly calls for periodic review/updates — after any material change (new systems, EHR migration, cloud move) and generally at least annually.
+
+Practical red flags that your vendor's checklist is not sufficient: no asset inventory attached, no network diagram, no evidence anyone reviewed actual configurations (firewall rules, encryption status, access control lists), no likelihood/impact scoring, generic findings that would read identically for any client, and no resulting remediation plan with dates and owners.
+
+What I'd recommend: treat the vendor checklist as one input, not the deliverable. Commission (or perform internally, with executive sponsorship) an actual risk analysis that starts with an asset and data-flow inventory, involves IT/security staff who know your actual environment, produces documented likelihood/impact ratings per risk, and results in a remediation plan that feeds your risk management process. Keep the checklist, the new analysis, and your remediation tracking as a package — OCR investigators and auditors want to see the full lifecycle (identify risk, prioritize, remediate, re-assess), not a single static document.
+
+This is compliance guidance, not legal advice; if you're remediating this ahead of a known audit or after a breach, it's worth having HIPAA counsel review the final work product before you rely on it as your defensible risk analysis.

@@ -1,0 +1,37 @@
+A filled-in vendor checklist is almost certainly **not** a compliant risk analysis, and this is worth fixing before it becomes a problem — it is the single most commonly cited deficiency in OCR enforcement actions, including two 2026 settlements against self-funded group health plan sponsors (Star Group L.P., $245K, and Spencer Gifts, $450K + Corrective Action Plan) that both turned on exactly this gap: no accurate, thorough risk analysis, discovered only after a ransomware incident.
+
+**Why a checklist usually fails the standard**
+
+The Security Rule (§164.308(a)(1)(ii)(A)) requires an "accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of ePHI." A generic checklist typically fails because it:
+- Asks yes/no questions about controls rather than analyzing threats against vulnerabilities for *your specific* environment
+- Doesn't scope all ePHI — most checklists focus only on the EHR and miss email, mobile devices, backups, cloud storage, and printers/copiers with hard drives
+- Assigns no real methodology for likelihood and impact, so "risk levels" are essentially guesses rather than a defensible calculation
+- Is done once and never updated, when it needs to be a living process tied to system and threat changes
+- Produces no risk management plan — a list of gaps isn't a risk analysis if it doesn't translate into prioritized remediation with dates and owners
+
+HHS has been explicit that these are the recurring findings in OCR investigations, and "we bought a checklist tool" is not a defense OCR accepts.
+
+**What an actual compliant risk analysis requires**
+
+1. **Scope** — every system, application, and location that creates, receives, maintains, or transmits ePHI: EHR, practice management, billing, email, laptops/mobile devices, backups/DR systems, cloud services, physical servers — not just the "big" system.
+2. **Threat identification** — natural, human (malicious and accidental), and environmental threats relevant to each asset.
+3. **Vulnerability identification** — specific weaknesses (e.g., no MFA, unpatched software, no offsite backup, shared logins).
+4. **Likelihood assessment** — a documented judgment (not arbitrary) of how probable each threat/vulnerability pairing is.
+5. **Impact assessment** — the potential harm if it occurs (breach scope, operational disruption, financial/legal exposure).
+6. **Risk level determination** — combine likelihood and impact using a stated, consistent methodology (HHS points to NIST SP 800-30 for methodology and NIST SP 800-66 for HIPAA-specific guidance).
+7. **Current controls inventory** — what's already mitigating each risk, and how effective it actually is.
+8. **A resulting Risk Management Plan** — prioritized remediation actions tied to the risk levels, with owners and target dates; this is a separate required activity (§164.308(a)(1)(ii)(B)), not just the analysis itself.
+
+**How to fix what you have**
+
+Don't necessarily throw away the vendor checklist — it may be useful raw input — but it needs to become the front end of a real analysis:
+1. Inventory every ePHI-touching system/asset (the checklist may have missed several categories above).
+2. For each asset, walk through threat/vulnerability/likelihood/impact deliberately, with your own team's knowledge of your actual environment, not generic industry answers.
+3. Assign risk levels using a stated methodology, applied consistently.
+4. Turn the findings into a written Risk Management Plan with prioritized action items — this is what OCR looks for as evidence the analysis was actually used, not just filed away.
+5. Date it, version it, and set a review cadence (annually, and after any material system change, incident, or expansion).
+6. Retain documentation for 6 years (§164.316(b)).
+
+**Bottom line:** a checklist tells you what to think about; a risk analysis tells you, in your own documented judgment, how likely and how bad each specific risk is in your environment, and what you're doing about it in priority order. If your current document can't answer "why is this risk rated High and what are we doing about it, by when, and who owns it," it isn't there yet.
+
+*This guidance is for informational purposes only and does not constitute legal advice. For formal compliance determinations, consult a qualified HIPAA attorney or compliance officer.*

@@ -1,0 +1,27 @@
+Short answer: as of my last confirmed knowledge, the Essential Eight was not being retired or replaced — it remained ASD/ACSC's baseline mitigation strategy framework for Australian organizations, with the ISM serving as the more granular, comprehensive control catalog that sits alongside it. I don't have verified visibility into any announcement after that point (including anything specific to your September 2026 timeframe) that would change this, so please confirm current status directly with ACSC guidance before finalizing your assessment plan — but I can walk you through how the two frameworks relate and what a sensible assessment approach looks like either way.
+
+How the Essential Eight and the ISM relate (they're not competitors)
+These two things are often confused, but they serve different purposes and neither has historically been on a path to replace the other:
+
+- The Essential Eight is a small, prioritized set of eight mitigation strategies (application control, patch applications, configure Microsoft Office macro settings, user application hardening, restrict administrative privileges, patch operating systems, multi-factor authentication, regular backups) designed to be a practical, high-impact starting point — especially for organizations without mature security programs. It has a four-level maturity model (Maturity Level 0 through 3) that measures how rigorously each strategy is implemented.
+- The ISM is the full control catalog — hundreds of controls across governance, physical security, personnel security, and the full technical stack — intended primarily for Australian government systems and increasingly referenced by industry, particularly regulated sectors and government suppliers. The Essential Eight's eight strategies are actually a subset drawn from, and cross-referenced against, ISM controls; the ISM's guidelines sections explicitly map back to Essential Eight maturity levels.
+
+So the relationship has generally been: Essential Eight = a prioritized "top 8" on-ramp; ISM = the comprehensive framework it's drawn from. An organization maturing its security program typically starts with Essential Eight uplift and, if it's a government entity, government supplier, or otherwise needs full ISM compliance (e.g., for an IRAP assessment or PSPF requirements), expands into the full ISM control set over time. This is additive, not a replacement relationship.
+
+What's plausible to have changed recently
+Both frameworks get revised periodically:
+- The Essential Eight maturity model and technical guidance get periodic refreshes (there have been updates roughly annually to reflect new threats, e.g., adjustments to MFA guidance to favor phishing-resistant methods, or updates addressing cloud environments and SaaS applications, which the original 2017-era Essential Eight wasn't designed around).
+- ACSC has discussed expanding guidance for cloud-native and SaaS-heavy environments, since the original Essential Eight strategies assume more of a traditional on-premises Windows environment.
+- There has been ongoing industry discussion (not confirmed as formal ACSC policy in what I can verify) about whether the Essential Eight needs a more explicit "ninth" or supplementary strategy for cloud/identity-centric environments, but I'm not treating that as fact — flagging it only as sector chatter you may have heard, which is plausibly what's prompting your question.
+
+What to assess against right now
+Given the uncertainty, I'd recommend a pragmatic, layered approach rather than betting your assessment program on rumors of a framework being replaced:
+
+1. Confirm current guidance directly at cyber.gov.au (Essential Eight and ISM pages) before finalizing scope — five minutes of verification avoids building your program on stale information.
+2. Assess against Essential Eight maturity levels as your baseline if you haven't already — it's fast to operationalize and widely understood by boards and auditors.
+3. Layer in relevant ISM controls beyond the Essential Eight if you're a government entity, supplier, or in a regulated sector requiring broader ISM compliance — don't treat Essential Eight alone as sufficient for those obligations.
+4. Set your target maturity level deliberately — Maturity Level 2 is a common target for most organizations; Maturity Level 3 is typically reserved for organizations facing sophisticated, targeted adversaries.
+5. Re-run your gap assessment whenever ACSC issues an update to either framework, since scoring criteria for individual strategies do shift over time even without a wholesale framework change.
+6. Treat any "Essential Eight is being replaced" claim you've heard as needing primary-source verification — I'd want to see it directly from ACSC before it changes your roadmap.
+
+If you can share where you saw the "replacement" claim (an article, vendor blog, etc.), I'm happy to help you evaluate its credibility, but I won't speculate further on unconfirmed framework changes.

@@ -1,0 +1,13 @@
+{
+  "eval_id": 269,
+  "eval_name": "essential-eight-status",
+  "run_type": "without_skill",
+  "prompt": "Is the Essential Eight being replaced? What should we assess against right now?",
+  "assertions": [
+    "States the 'Essentials' consultation (evolution/expansion of the Essential Eight) closed July 12, 2026",
+    "States that no outcome had been announced as of early September 2026 — the consultation proposed Essentials for enterprise IT as a first chapter with E8 deprecation ~12 months and retirement ~24 months after finalisation",
+    "Concludes the Essential Eight and its Maturity Model remain the operative assessment standard today",
+    "Advises continuing E8 maturity assessments while tracking ASD announcements",
+    "Notes ISM quarterly releases are separate from E8 maturity workstreams (September controls carry no E8 mappings claim, or equivalent separation point)"
+  ]
+}

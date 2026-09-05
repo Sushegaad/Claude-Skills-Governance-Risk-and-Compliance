@@ -1,0 +1,33 @@
+{
+  "eval_id": 272,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the process facts: established with the July 13, 2026 suspension; public RFI responses closed August 14, 2026; recommendations due to the DoW CIO at the end of a 60-day review (~September 13, 2026)",
+      "passed": true,
+      "evidence": "suspended CMMC Phase 2... July 13, 2026... stood up a CMMC Reform Task Force with a 60-day review clock... RFI... closed August 14, 2026... report is due to the DoW CIO on approximately September 13, 2026"
+    },
+    {
+      "text": "States that no recommendations had been published as of early September 2026",
+      "passed": true,
+      "evidence": "the task force's actual recommendations have not been published as of today"
+    },
+    {
+      "text": "Presents direction signals with correct epistemic status (unconfirmed reporting, not announced policy): expanded self-attestation with False Claims Act liability as the enforcement backstop, leveraging commercial cybersecurity capabilities, and streamlining for small/non-traditional businesses",
+      "passed": false,
+      "evidence": "Presents self-attestation/FCA backstop and small-business streamlining as 'unconfirmed reporting', but omits the third signal: leveraging commercial cybersecurity capabilities"
+    },
+    {
+      "text": "Notes the suspension is a pause, not a cancellation \u2014 the 48 CFR rule and program structure remain, and outcomes could range from restructuring to redesign",
+      "passed": true,
+      "evidence": "The suspension is explicitly framed as a pause pending review, not a repeal... could recommend restoring a modified third-party assessment model; DFARS clause family (7012/7019/7020/7021)... remain in force"
+    },
+    {
+      "text": "Advises contractors to continue 800-171 implementation regardless \u2014 it remains contractually required and any successor regime builds on it",
+      "passed": true,
+      "evidence": "Continue all NIST SP 800-171 remediation work on your existing timeline. Nothing in the suspension touches your underlying safeguarding obligations under DFARS 7012"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

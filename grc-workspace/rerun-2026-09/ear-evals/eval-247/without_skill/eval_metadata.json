@@ -1,0 +1,13 @@
+{
+  "eval_id": 247,
+  "eval_name": "long-endurance-drone",
+  "run_type": "without_skill",
+  "prompt": "Same question, but this drone flies 5 hours with a 400 km range.",
+  "assertions": [
+    "Classifies it under 9A012.a.2 (endurance ≥3 hours): NS Column 1 + AT controls apply",
+    "Adds MT controls: range ≥300 km triggers MT1 for the ≥3-hour UAV",
+    "Concludes a license is required for most destinations under NS1 (worldwide except Canada), plus MT review policy",
+    "Notes software/technology under 9D001/9D002/9E001 retain NS/MT controls for this class",
+    "Flags the alternative: if 'specially designed' for military use and not USML-described, classification shifts to 9A610.a under the 2026 rule"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 230,
+  "eval_name": "ransomware-breach-workflow",
+  "run_type": "with_skill",
+  "prompt": "Ransomware hit our systems last night and personal data of about 40,000 EU customers may have been exfiltrated. Walk me through our GDPR obligations step by step.",
+  "assertions": [
+    "Notification to the competent supervisory authority without undue delay and where feasible within 72 hours of becoming aware (Art. 33(1)), with phased notification permitted if information is incomplete",
+    "Applies the risk threshold correctly: notification required unless the breach is unlikely to result in a risk to individuals; exfiltration of customer data plainly meets the threshold",
+    "Communication to affected data subjects without undue delay when the breach is likely to result in a high risk (Art. 34), with the exceptions (e.g., effective encryption, subsequent measures)",
+    "Internal documentation duty for all breaches regardless of notification (Art. 33(5))",
+    "Correct role handling: if acting as processor, notify the controller without undue delay (Art. 33(2)); mentions notification content elements (nature, categories/approximate numbers, DPO contact, likely consequences, measures)"
+  ]
+}

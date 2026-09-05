@@ -1,0 +1,33 @@
+{
+  "eval_id": 227,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "References the EDPB's draft Guidelines 02/2026 on anonymisation, adopted July 2026 (public consultation open until October 30, 2026), which will replace the 2014 WP29 Opinion 05/2014 on anonymisation techniques",
+      "passed": true,
+      "evidence": "\"draft Guidelines 02/2026 on Anonymisation (adopted for consultation 7 July 2026, open until 30 October 2026; will replace the old WP29 Opinion 05/2014 once finalized)\""
+    },
+    {
+      "text": "States the relative approach to identifiability: following the CJEU's EDPS v SRB ruling, the same dataset can be personal data in one party's hands and anonymous in another's, depending on the means available to each",
+      "passed": true,
+      "evidence": "\"SRB v EDPS ruling (Case C-413/23 P)... assessed relative to the specific recipient\"; \"the same dataset can be anonymous for one holder and personal data for another\""
+    },
+    {
+      "text": "Applies the 'means reasonably likely to be used' test for re-identification, rather than requiring absolute impossibility",
+      "passed": true,
+      "evidence": "\"whether re-identification is 'reasonably likely' for that specific holder - not whether it is theoretically possible for someone, somewhere, with unlimited resources\""
+    },
+    {
+      "text": "Uses the three re-identification criteria: singling out, linkability, and inference",
+      "passed": true,
+      "evidence": "\"singling-out (isolating an individual record), linkability (connecting records about the same person), and inference (deducing attributes...)\""
+    },
+    {
+      "text": "Distinguishes pseudonymisation (still personal data under GDPR) from anonymisation (outside GDPR), and warns that key-holding or auxiliary data defeats anonymity claims",
+      "passed": true,
+      "evidence": "\"Pseudonymised data... remains personal data (Art. 4(5))\"; anonymous data outside GDPR (Recital 26); \"No retained key or crosswalk\"; auxiliary-data assessment \"where most anonymisation claims fail\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

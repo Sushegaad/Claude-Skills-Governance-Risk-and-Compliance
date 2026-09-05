@@ -1,0 +1,33 @@
+{
+  "eval_id": 253,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Law No. 91/2025/QH15 (PDPL) — the substantive law, in force January 1, 2026",
+      "passed": true,
+      "evidence": "\"Law No. 91/2025/QH15 on Personal Data Protection\"; \"1 January 2026: Both the Law and Decree 356 took effect\""
+    },
+    {
+      "text": "Decree 356/2025/ND-CP (Dec 31, 2025) — implementing detail: PDPIA/CTIA dossier forms, DPO criteria, submission timelines",
+      "passed": true,
+      "evidence": "\"31 December 2025: The Government issued Decree No. 356/2025/ND-CP\"; details DPO qualifications, \"cross-border transfer impact assessment mechanics (60-day filing... six-monthly updates)\" and response deadlines"
+    },
+    {
+      "text": "Decree 330/2026/ND-CP (August 19, 2026, effective immediately) — the administrative sanctions layer completing the enforcement mechanism",
+      "passed": true,
+      "evidence": "\"19 August 2026: The Government issued Decree No. 330/2026/ND-CP, which took effect the same day... operationalizes the penalty framework... 82 articles total, 33 specific to personal data protection sanctions\""
+    },
+    {
+      "text": "Transition rule: violations before August 19, 2026 are judged under the law in force at the time unless Decree 330 is more lenient",
+      "passed": false,
+      "evidence": "No statement of the transition rule for pre-19-Aug-2026 violations (law in force at the time unless Decree 330 more lenient)"
+    },
+    {
+      "text": "Identifies MPS/A05 (Department of Cyber Security and High-Tech Crime Prevention) as the enforcement authority",
+      "passed": true,
+      "evidence": "\"administered by the Ministry of Public Security (which acts as the specialized personal data protection authority)\"; \"Chapter VIII — State Management... Ministry of Public Security's regulatory role\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

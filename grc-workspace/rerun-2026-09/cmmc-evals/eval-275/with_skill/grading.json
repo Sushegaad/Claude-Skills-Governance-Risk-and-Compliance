@@ -1,0 +1,33 @@
+{
+  "eval_id": 275,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the two-part conditional-status gate: minimum score (\u226588 of 110, i.e., \u22650.8\u00d7110) AND only specific practices eligible",
+      "passed": true,
+      "evidence": "Two gates govern... both must be satisfied simultaneously... your calculated SPRS score... must be at least 88 (0.8 \u00d7 110)... only practices with a point value of 1 may remain open"
+    },
+    {
+      "text": "States eligibility: only 1-point weighted practices may be on the POA&M \u2014 no 5-point (and highest-weight) items",
+      "passed": true,
+      "evidence": "only practices with a point value of 1 may remain open in a POA&M... No 5-point practice may ever sit on a POA&M, full stop"
+    },
+    {
+      "text": "States the closeout window: 180 days to remediate and close the POA&M or conditional status lapses",
+      "passed": true,
+      "evidence": "every open item must be remediated within 180 days of the certification/affirmation date. Miss that window and the consequence is certification revocation"
+    },
+    {
+      "text": "Notes the affirmation mechanics: senior official affirms at conditional status and again at final status after POA&M closeout",
+      "passed": false,
+      "evidence": "Only describes the annual affirmation ('a senior company official must affirm... every year'); never states the conditional-status affirmation followed by a second affirmation at final status after POA&M closeout"
+    },
+    {
+      "text": "Distinguishes POA&M-eligible gaps from DFARS 7012 baseline duties that cannot be deferred (e.g., incident reporting), and notes suspension-era caveat: these rules govern the self-assessment tracks currently in force",
+      "passed": false,
+      "evidence": "No distinction from non-deferrable DFARS 7012 baseline duties (incident reporting under 7012 never mentioned) and no suspension-era caveat \u2014 the July 2026 suspension is absent from this response"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

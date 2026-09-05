@@ -1,0 +1,13 @@
+{
+  "eval_id": 244,
+  "eval_name": "deemed-export-basics",
+  "run_type": "without_skill",
+  "prompt": "Our engineering team includes foreign national employees. When does showing them ITAR technical data become a problem?",
+  "assertions": [
+    "Defines the deemed export rule: releasing ITAR technical data to a foreign person in the US is an export to their country/countries of nationality",
+    "States a license/authorization (e.g., DSP-5) is required unless an exemption applies, judged as if exporting to that nationality",
+    "Covers what counts as release: visual access, oral disclosure, physical access to hardware revealing technical data, IT system access",
+    "Recommends a Technology Control Plan: access controls, segregated systems, badging/escort, training, screening of nationalities against §126.1",
+    "Notes dual/third nationalities considerations and that US persons include green-card holders (foreign person = not US citizen/permanent resident/protected person)"
+  ]
+}

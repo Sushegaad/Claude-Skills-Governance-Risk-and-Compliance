@@ -1,0 +1,33 @@
+{
+  "eval_id": 270,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "KRBTGT account credential changes now at least every six months (ISM-1847, was annual)",
+      "passed": true,
+      "evidence": "\"KRBTGT credential changes (ISM-1847): annual → 6-monthly\""
+    },
+    {
+      "text": "DCSync-permission account reviews now at least every six months (ISM-1934, was annual)",
+      "passed": true,
+      "evidence": "\"DCSync-permission reviews (ISM-1934): annual → 6-monthly\""
+    },
+    {
+      "text": "Post-deployment vulnerability assessments/penetration tests now at least every six months (ISM-2118, was annual)",
+      "passed": true,
+      "evidence": "\"Post-deployment vulnerability assessments and penetration tests (ISM-2118): annual → 6-monthly\""
+    },
+    {
+      "text": "Service provider access restricted to explicitly approved remote management tools, source addresses and time windows (ISM-2124), with organisation-controlled logging the provider cannot modify or delete (ISM-2125)",
+      "passed": true,
+      "evidence": "\"approved remote-management tools, specific source IP ranges/addresses, and specific time windows (ISM-2124)\" and \"logging of MSP activity must be under your organisation's control... which the provider could alter or fail to retain\" (ISM-2125)"
+    },
+    {
+      "text": "Unauthorised service-provider access or administration is to be treated as a cyber security incident (ISM-1576 amendment)",
+      "passed": true,
+      "evidence": "\"ISM-1576 amended — unauthorised provider access is now explicitly a cyber security incident\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,30 @@
+Here's a practical organizational profile approach for a mid-size manufacturer adopting CSF 2.0. CSF 2.0 formalizes "organizational profiles" as the core mechanism for applying the framework to your specific business — you'll build a Current Profile (where you are today) and a Target Profile (where you want to be), then use the gap between them to drive your roadmap.
+
+1. Scope and business context (feeds Govern function, GV.OC)
+Start by defining organizational context: what you make, your supply chain structure (tier 1/2/3 suppliers, OEM relationships), regulatory drivers (e.g., CMMC/DFARS if you're a defense subcontractor, ITAR, state privacy laws, customer security requirements in contracts), and your risk tolerance. Manufacturers typically have a bimodal environment: corporate IT (ERP, email, engineering CAD/PLM systems) and OT/ICS on the plant floor (PLCs, HMIs, SCADA, MES). Your profile should explicitly note this split because Protect/Detect/Respond controls differ substantially between the two (e.g., patching a PLC isn't the same cadence as patching a laptop, and safety systems may have hard real-time constraints that limit certain security controls).
+
+2. Select a scoping unit
+Decide whether your profile covers the whole enterprise or is built per-plant/per-business-unit. For a mid-size manufacturer with a handful of plants, I'd recommend one enterprise-level profile for corporate IT and shared services, plus either a single OT profile that covers common plant-floor risk themes, or per-plant OT profiles if your plants have meaningfully different technology stacks or risk exposure (e.g., one plant handles export-controlled products, another doesn't).
+
+3. Build the Current Profile
+- For each of the six functions (Govern, Identify, Protect, Detect, Respond, Recover), and each subcategory within, assess current state: implemented / partially implemented / not implemented / not applicable.
+- Gather evidence from existing documentation: IT security policies, OT network diagrams, vendor risk questionnaires you've already answered for customers, past audit/pen-test results, incident history, insurance questionnaires (cyber insurance applications are a surprisingly good existing gap-analysis input).
+- Interview control owners: IT security lead, plant/OT engineering lead, HR (for insider risk/onboarding-offboarding), procurement (supply chain risk), and a business continuity/safety lead (Recover function, tied into existing business continuity/disaster recovery plans you likely already have for safety/operations reasons).
+- Score using CSF Tiers (1–4: Partial, Risk Informed, Repeatable, Adaptive) at the organizational level, and implementation status at the subcategory level. Don't conflate the two — tiers describe how mature and integrated your risk management practices are overall, not a per-subcategory status.
+
+4. Build the Target Profile
+- Prioritize based on actual business drivers: customer contractual requirements (increasingly common for manufacturers supplying to larger OEMs or the defense industrial base), insurance requirements, known incident history, and realistic budget/headcount.
+- Be selective. A common mistake is targeting Tier 4/"fully implemented" across the board — that's rarely necessary or affordable. Set differentiated targets: e.g., higher rigor for Identify/Protect subcategories touching OT and safety systems or IP-sensitive engineering data, moderate rigor for general corporate IT, lower rigor for low-risk peripheral systems.
+- Pay special attention to Govern (new emphasis area in 2.0): supply chain risk management (GV.SC) is particularly relevant for manufacturers given third-party component risk, contract manufacturers, and software supply chain (PLC firmware, MES software vendors).
+
+5. Gap analysis and roadmap
+- For each subcategory where Current < Target, document the specific gap, the remediation action, an owner, and a realistic timeline (quarters, not just "someday").
+- Group gap-closure actions into a 12–24 month roadmap, sequencing quick wins (policy documentation, MFA rollout on remaining accounts) ahead of larger capital/OT projects (network segmentation between IT and OT, SCADA monitoring tooling), since OT changes often require plant downtime windows.
+- Tie budget requests to specific target profile gaps — this framing (funded gap-to-target vs. abstract "cybersecurity spend") tends to work well with manufacturing leadership focused on capital planning cycles.
+
+6. Governance and maintenance
+- Assign an executive sponsor and a cross-functional review (IT security + OT/engineering + safety + legal/compliance) at least annually, or after significant events (new plant, acquisition, major incident, new customer contract with security requirements).
+- Re-baseline the Current Profile periodically (annually is typical) and track Tier progression as a leadership-reportable metric.
+- Use community/sector profiles where available as accelerators — NIST has published example profiles for some sectors, and manufacturing-specific resources (e.g., NIST's manufacturing profile work under the earlier CSF 1.1 era, and CISA/ISA guidance for ICS security) can inform your OT-specific target subcategory choices, even though you'll still need to tailor them.
+
+Bottom line: build one enterprise Current/Target profile pair, explicitly split IT vs. OT considerations within it, prioritize targets by real business drivers rather than blanket maturity goals, and turn the gap into a funded, owned, dated roadmap reviewed at least annually.

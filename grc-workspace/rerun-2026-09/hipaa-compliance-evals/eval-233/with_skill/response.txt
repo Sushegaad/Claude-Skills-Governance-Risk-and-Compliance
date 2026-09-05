@@ -1,0 +1,28 @@
+This is a clear Right of Access violation, and eight months is well past the point where I'd call this low risk. Here's the exposure and what to do right now.
+
+**The rule you've violated**
+
+Under 45 CFR §164.524, a patient has the right to inspect and obtain a copy of their PHI in a designated record set. You must provide access **within 30 days** of the request, with a single 30-day extension permitted if you provide the patient written notice of the delay and the reason within the initial 30-day window. Even with the maximum extension taken and documented, the outer limit is 60 days. At eight months (roughly 240 days), you are approximately six months past even the most generous permissible timeline — and that's assuming an extension notice was sent, which it doesn't sound like it was.
+
+**Your specific exposure**
+
+1. **OCR enforcement — this is an active priority, not a hypothetical.** OCR's Right of Access Initiative has now resulted in 55 enforcement actions. The most recent, against Azul Vision ($50,000 settlement, August 27, 2026), involved records delivered roughly two years late — a stark reminder that OCR treats access delays as an independently enforceable violation, not a paperwork technicality. Settlements in this initiative have generally ranged from $5,000 to low six figures depending on delay length, number of affected patients, and whether it's a pattern versus an isolated incident. An eight-month delay puts you toward the more serious end of that range if it becomes a pattern rather than a one-off.
+
+2. **Civil monetary penalty exposure.** Independent of a negotiated settlement, HIPAA's tiered CMP structure applies: even in the lowest tier ("did not know, with reasonable diligence"), penalties run from roughly $137 to $68,928 per violation, capped at about $2,067,813 per year per violation category. A single unreasonably delayed access request is unlikely to trigger the top of that range on its own, but it establishes a documented violation that increases scrutiny if there's any pattern across other patients.
+
+3. **State law exposure.** Many states have their own patient access laws with independent penalties and, in some states, private rights of action — check your state's requirements, since HIPAA is a floor, not a ceiling.
+
+4. **Reputational and complaint risk.** Patients whose access requests are ignored frequently escalate directly to OCR by filing a complaint, which is very likely how these Right of Access cases originate. A frustrated patient at eight months has every reason to do so.
+
+**What to do immediately**
+
+1. **Produce the records now**, in the format requested if reasonably producible, without further delay. Stopping the bleeding is the single highest-value action — OCR's Right of Access resolutions consistently credit prompt corrective action once discovered.
+2. **Document why the delay happened** — was it a system limitation, a staffing gap, an actual dispute about the designated record set, or was the request simply lost? You need an honest root-cause record, not just for OCR but for your own risk management process.
+3. **Do not charge more than a cost-based fee** (labor, supplies, postage) — no retrieval fees — and don't let a fee dispute become the vehicle for further delay.
+4. **Check for a pattern.** Is this a one-off dropped request, or a symptom of a broken request-intake process? OCR's investigations often expand once one complaint surfaces a systemic gap.
+5. **Update your policies and train staff** on the request intake path, the 30/60-day clock, and required extension notices, and document that training.
+6. **Consider self-reporting or at least preparing your response** if the patient files an OCR complaint — a demonstrated corrective action plan meaningfully affects how OCR resolves these cases.
+
+**Bottom line:** you have a real, documented violation with real financial exposure, but the fastest way to reduce it is immediate production of the records plus a documented corrective action — not waiting to see if the patient complains.
+
+*This guidance is for informational purposes only and does not constitute legal advice. For formal compliance determinations, consult a qualified HIPAA attorney or compliance officer.*

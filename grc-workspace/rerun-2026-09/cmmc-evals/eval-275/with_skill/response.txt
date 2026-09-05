@@ -1,0 +1,26 @@
+Two gates govern what can sit on a POA&M for a Level 2 self-assessment, and both must be satisfied simultaneously.
+
+Gate 1 — Point value of the open practice. Under the DoD Assessment Methodology, only practices with a point value of 1 may remain open in a POA&M at the time you affirm/certify. Practices weighted at 3 points are only POA&M-eligible in the narrow partial-credit cases the methodology carves out — treat 3-point items as presumptively not eligible unless you've confirmed the specific exception applies. No 5-point practice may ever sit on a POA&M, full stop.
+
+Gate 2 — Overall score threshold. Your calculated SPRS score, after all deductions for open items, must be at least 88 (0.8 × 110) for a POA&M-based path to be viable at all. If your score is below 88, POA&M eligibility for individual items becomes moot — you don't have a certifiable position yet regardless of which practices are open.
+
+Critical practices — never POA&M-eligible, regardless of point value or score: The following must be fully MET before you can self-assess as compliant or accept certification:
+- AC.L2-3.1.3 — CUI flow control
+- IA.L2-3.5.3 — Multifactor authentication
+- SC.L2-3.13.8 — Encryption in transit
+- SC.L2-3.13.11 — FIPS-validated cryptography
+- SI.L2-3.14.6 — Attack monitoring
+- AU.L2-3.3.1 — Audit logging
+- IR.L2-3.6.1 — Incident response capability
+
+If any of these seven are open, they cannot be deferred to a POA&M no matter how good your overall score looks. Remediate and reassess before affirming.
+
+Worked logic: Say your gap assessment turns up 8 open practices. Conditional certification (or, on the self-assessment track, an affirmable score) is only viable if BOTH conditions hold — the post-deduction score is ≥88, AND every one of the 8 open items is a 1-point practice. Eight 1-point misses would land you at 102, which clears the threshold. But if even one of the 8 is a 3-point item outside the narrow exception, or a 5-point item, or appears on the critical-practice list above, there is no POA&M path for that item — it has to be closed first.
+
+How long items can stay open — the 180-day rule: Once you're operating under a POA&M (most directly relevant to conditional C3PAO certification, but the same discipline applies to self-assessment), every open item must be remediated within 180 days of the certification/affirmation date. Miss that window and the consequence is certification revocation — for the self-assessment track, an unremediated POA&M item past its scheduled completion date similarly undermines your annual affirmation and creates exposure if DoD exercises its audit rights.
+
+Ongoing management: Update your POA&M monthly regardless of the 180-day clock — stale, unchanged entries are a red flag to any reviewer (C3PAO or DoD audit) and suggest the remediation isn't actually progressing. Each entry should carry Practice ID, Weakness Description, Remediation Steps, Milestones with dates, Scheduled Completion, Resources Required, Status, and Evidence of Closure — and should document root cause, not just the symptom, since a superficial fix that doesn't address why the practice was unmet tends to resurface at the next assessment cycle.
+
+Affirmation reminder: Don't lose sight of the annual senior-official affirmation requirement that runs independently of your POA&M timeline — a senior company official must affirm the accuracy of your submitted SPRS score/assessment every year, even in years without a full reassessment, and knowingly affirming compliance while critical practices sit unremediated creates direct False Claims Act exposure.
+
+Bottom line: 1-point practices (with a narrow carve-out for some 3-point items) are your POA&M candidates, your total score has to clear 88, the seven critical practices are never eligible no matter what, and the clock on any open item is 180 days. This is general compliance guidance — confirm specific point-value assignments and partial-credit exceptions against the current DoD Assessment Methodology document, and consult your assessor or counsel before finalizing an affirmation.

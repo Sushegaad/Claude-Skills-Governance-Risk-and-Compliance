@@ -1,0 +1,33 @@
+{
+  "eval_id": 264,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Defines the CDE and 'connected-to' systems as in scope — scope is where CHD is stored/processed/transmitted plus systems that can impact its security",
+      "passed": true,
+      "evidence": "\"every system that stores, processes, or transmits PAN or SAD... and every connected system... that could impact CDE security\"; \"'connected without adequate segmentation' is enough to pull a system into scope\""
+    },
+    {
+      "text": "Recommends network segmentation with (at least annual; 6-monthly for service providers) segmentation testing to verify isolation",
+      "passed": true,
+      "evidence": "\"Segment the network to shrink scope\"; \"PCI DSS requires penetration testing to verify segmentation effectiveness at least every 6 months\" — segmentation with verification testing recommended"
+    },
+    {
+      "text": "Explains tokenization: reduces scope but the tokenization system/vault and de-tokenization capability remain in scope",
+      "passed": false,
+      "evidence": "Recommends tokenization (\"single biggest scope-reduction win\") but omits that the tokenization system/vault and de-tokenization capability remain in scope"
+    },
+    {
+      "text": "Explains validated P2PE: encrypting at the point of interaction can reduce merchant validation to SAQ P2PE-level scope",
+      "passed": true,
+      "evidence": "\"adopt a PCI SSC-validated P2PE solution... can shrink card-present scope down to roughly the SAQ P2PE control set (~33 controls)\""
+    },
+    {
+      "text": "Recommends outsourcing to PCI-compliant providers with responsibility matrices, and dataflow mapping/CHD discovery to prove scope",
+      "passed": true,
+      "evidence": "\"maintain a TPSP register per Req 12.8, verify their AOC annually\"; Step 1 data-flow mapping/DFDs; purge stored PAN and detection routines for unexpected PAN"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 252,
+  "eval_name": "cross-border-transfer",
+  "run_type": "without_skill",
+  "prompt": "We transfer Vietnamese customer data to our Singapore data center. What are the requirements and what happens if we get it wrong?",
+  "assertions": [
+    "States the mechanism: a cross-border transfer impact assessment (CPDTIA/CTIA) dossier submitted to A05/MPS within 60 days of first transfer (per Decree 356/2025)",
+    "Mentions ongoing duties: periodic updates (6-monthly) and updates on material changes",
+    "States the enforcement risk under Decree 330/2026: concealment/misdeclaration or assessment failures combined with breach/loss of citizens' data trigger the revenue-based fine bands (up to 3–5% of Vietnam-market revenue)",
+    "Distinguishes the lesser offence: plain failure to file/update the dossier carries fixed fines around VND 30–50M",
+    "Notes suspension of cross-border transfers as an available remedial measure"
+  ]
+}

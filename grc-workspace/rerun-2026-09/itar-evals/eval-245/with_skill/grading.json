@@ -1,0 +1,33 @@
+{
+  "eval_id": 245,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Describes the §127.12 VSD process: prompt initial notification to DDTC, thorough internal investigation, then a full report with facts, causes, remediation",
+      "passed": true,
+      "evidence": "\"Voluntary Self-Disclosure (VSD) under 22 CFR § 127.12\": Step 1 initial notification to DDTC, Step 2 internal investigation, Step 3 final report with \"factual narrative... root-cause analysis... corrective actions\"."
+    },
+    {
+      "text": "States VSD is a significant mitigating factor and can result in no penalty, warning letter, or reduced civil penalty",
+      "passed": true,
+      "evidence": "\"it is the strongest mitigating factor available\"; outcome \"ranging from no action or a warning letter up to a civil penalty (typically reduced given VSD credit)\"."
+    },
+    {
+      "text": "Cites current penalty exposure: civil penalties up to ~$1.37M per violation (annually adjusted) and criminal exposure up to $1M/20 years per violation",
+      "passed": false,
+      "evidence": "No penalty figures anywhere — neither the ~$1.37M civil per-violation maximum nor the $1M/20-year criminal exposure is cited."
+    },
+    {
+      "text": "Advises immediate steps: stop the violating activity, preserve records, consider disclosure counsel, review for related EAR/OFAC issues",
+      "passed": false,
+      "evidence": "Preserve records (\"litigation hold\") and counsel are advised, but never says to STOP the violating activity, and no review for related EAR/OFAC exposure."
+    },
+    {
+      "text": "Mentions submissions run through DDTC's DECCS platform (which deployed its Data Collection Modernization release in September 2026)",
+      "passed": false,
+      "evidence": "DECCS platform and the September 2026 Data Collection Modernization release are never mentioned."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

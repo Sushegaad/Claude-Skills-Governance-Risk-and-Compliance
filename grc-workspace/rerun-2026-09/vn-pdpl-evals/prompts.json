@@ -1,0 +1,25 @@
+{
+ "skill": "vn-pdpl",
+ "prompts": [
+  {
+   "id": 251,
+   "prompt": "What penalties do we actually face for personal data violations in Vietnam as of late 2026?"
+  },
+  {
+   "id": 252,
+   "prompt": "We transfer Vietnamese customer data to our Singapore data center. What are the requirements and what happens if we get it wrong?"
+  },
+  {
+   "id": 253,
+   "prompt": "Give me the timeline and structure of Vietnam's current personal data protection legal framework."
+  },
+  {
+   "id": 254,
+   "prompt": "How strict are Vietnam's consent and data subject rights rules compared to GDPR?"
+  },
+  {
+   "id": 255,
+   "prompt": "We're a 30-person Vietnamese startup. Do the PDPL's heavy obligations really apply to us?"
+  }
+ ]
+}

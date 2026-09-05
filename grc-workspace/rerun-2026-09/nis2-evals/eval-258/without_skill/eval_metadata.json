@@ -1,0 +1,13 @@
+{
+  "eval_id": 258,
+  "eval_name": "incident-reporting",
+  "run_type": "without_skill",
+  "prompt": "Walk us through NIS2 incident reporting if ransomware takes down our production systems.",
+  "assertions": [
+    "Early warning within 24 hours of awareness (indicating suspected unlawful/malicious cause or cross-border impact)",
+    "Incident notification within 72 hours with initial assessment of severity/impact and indicators of compromise",
+    "Final report within one month (or progress report if ongoing) with root cause, mitigation, and cross-border impact",
+    "Correct recipients: the CSIRT or competent authority (member-state specific), plus recipients-of-services notification where relevant",
+    "Applies the significance threshold: severe operational disruption/financial loss or considerable damage to others — ransomware downtime plainly qualifies"
+  ]
+}

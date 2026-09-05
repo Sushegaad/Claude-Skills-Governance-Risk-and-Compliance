@@ -1,0 +1,24 @@
+I don't have confirmed visibility into the exact current wording of ISM controls specifically targeting autonomous AI agents that execute tools against production systems — this is a fast-moving area and I'd rather be upfront about that than invent control numbers. What I can offer is a synthesis of where ISM-aligned guidance has been heading and the general security principles ASD/ACSC consistently applies, which you can use to build a defensible control set while your compliance team confirms exact citations against the current ISM text.
+
+How the ISM tends to treat new technology classes
+The ISM doesn't usually create an entirely separate control family for each new technology; instead, it extends existing principles (access control, logging/audit, data classification, system hardening, incident response) to cover the new use case, and the accompanying ACSC guidance publications (separate from the ISM proper) fill in scenario-specific detail. For AI, ACSC and its Five Eyes partners (CISA, NCSC-UK, etc.) have published joint guidance on "Engaging with Artificial Intelligence" and secure AI system deployment. I'd expect ISM treatment of agentic AI to follow that same pattern: apply the existing control baseline rigorously, plus targeted guidance on the AI-specific risks.
+
+Where an AI agent that executes tools intersects the ISM's existing structure, the following areas are the ones your team should treat as in-scope:
+
+1. Identity and authentication for the agent itself. Treat the agent as a system identity/service account, not a human user. That means: unique, attributable credentials (no shared or embedded secrets), phishing-resistant authentication where the agent is initiating human-adjacent actions, and no standing high-privilege credentials — favor short-lived, scoped tokens issued per task.
+
+2. Least privilege and access control. The ISM's access control principles require accounts to be provisioned with the minimum privilege necessary. For a tool-executing agent, this means scoping each tool/function the agent can call to the narrowest permission set possible, and treating "the agent can call this API" as equivalent to "a user has this access" for authorization review purposes.
+
+3. Logging and auditability. ISM logging requirements (event logging standard) require that security-relevant events be logged, protected from tampering, and retained per your system's classification. Every tool call an agent makes — inputs, outputs, and the identity/context that triggered it — should be logged with enough fidelity to reconstruct "what did the agent do and why" during an incident investigation. This is likely to be one of the most scrutinized areas: auditors will ask whether you can produce a full action trail for an autonomous agent the same way you would for a privileged human operator.
+
+4. Change and configuration management. If the agent can modify system configuration, treat those changes like any other privileged change — subject to change control, testing, and rollback capability, even if the "change" was agent-initiated rather than human-initiated.
+
+5. Segregation of duties and human oversight. Where the agent's actions could affect the confidentiality, integrity, or availability of data at a given classification level, expect a requirement (explicit or by extension of existing principles) for human review/approval gates before irreversible or high-impact actions — deletions, financial transactions, privilege grants, production deployments.
+
+6. Data handling and classification boundaries. If the agent has access to information at multiple classification/sensitivity levels, you need controls preventing it from moving or exposing data outside its authorized boundary (e.g., an agent scoped to OFFICIAL data must not have a path to access or exfiltrate PROTECTED data through a connected tool).
+
+7. Supply chain assurance for the agent/model itself. Where the agent runs on a third-party model or platform, ISM supply chain risk management principles apply: vet the vendor, understand data residency and retention by the provider, and ensure contractual assurance around model training use of your data.
+
+8. Incident response readiness. Your IR plan should explicitly cover "AI agent compromised or acting anomalously" as a scenario, with a documented kill-switch/credential revocation process.
+
+Practical next step: rather than relying on my general synthesis, have your GRC or security architecture team pull the current ISM guidelines on system hardening, ICT equipment/system access, event logging, and system security plans, plus the ACSC's dedicated AI security publications, and map each of the eight areas above to the specific control IDs in force today. I can help you build that control-to-ISM-ID mapping table once you have the current text in front of us.

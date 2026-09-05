@@ -1,0 +1,33 @@
+An enclave (or "CUI enclave") approach is one of the most common and cost-effective scoping strategies for CMMC Level 2, so this is a good instinct. Let's walk through how to actually build it out.
+
+Core concept: instead of certifying your entire corporate IT environment against NIST SP 800-171/CMMC Level 2, you isolate the systems, users, and network segments that actually create, store, process, or transmit Controlled Unclassified Information (CUI) into a bounded enclave, and you apply the full control set only to that enclave. Everything genuinely outside the enclave's boundary — with no CUI flow in or out — is out of scope for the assessment.
+
+Step 1: Data flow mapping (do this before any network design).
+Identify every place CUI enters your organization: contract deliverables, technical data packages, drawings, DoD-furnished specs, emails from government customers, etc. Trace where that data is stored, who touches it, what systems process it (engineering tools, ERP, email, file shares, backup systems), and where it exits (deliverables back to the government, subcontractor flow-down). This data flow diagram is the foundation of your scoping decision and is something assessors will expect to see documented in your SSP.
+
+Step 2: Define the enclave boundary around actual CUI touchpoints.
+Common enclave patterns:
+- A dedicated virtual desktop infrastructure (VDI) environment where users who need to touch CUI log into a locked-down virtual desktop; CUI never lands on the physical endpoint, only pixels are transmitted to the local device.
+- A segmented VLAN/subnet with its own firewall rules, dedicated to CUI-handling systems, isolated from general corporate IT via strict network ACLs (no lateral movement into/out of the enclave except through controlled, logged paths).
+- A separate cloud tenant or dedicated GCC High (Microsoft) / equivalent FedRAMP Moderate-or-higher tenant, walled off from your commercial O365/Google Workspace tenant, used only for CUI-related email, storage, and collaboration.
+
+Step 3: Minimize what's in scope.
+Only include in the enclave systems that truly need to be there. Keep general corporate functions — HR systems, marketing, non-CUI engineering work, general email — outside the boundary entirely, provided you can demonstrate no CUI flows into them. This is the main cost-saving lever of the enclave approach: your Level 2 assessment scope (and the bulk of your remediation spend) only needs to cover the enclave, not your whole enterprise.
+
+Step 4: Address the "connected" and "security protection" asset categories.
+CMMC scoping guidance (the DoD's CMMC Scoping Guidance for Level 2) defines several asset categories you need to account for even if they're technically outside the enclave:
+- CUI Assets: process, store, or transmit CUI — fully in scope, fully assessed.
+- Security Protection Assets: provide security functions for the CUI environment (e.g., your SIEM, identity provider/MFA solution, endpoint protection console, patch management server) — these are in scope even if they sit outside the enclave network segment, because they enforce or monitor the enclave's controls.
+- Contractor Risk Managed Assets: can potentially process/store/transmit CUI but are managed via policy/process to not do so (e.g., a laptop with CUI blocked via DLP) — these get a reduced assessment scope but must be documented and risk-managed.
+- Specialized Assets (IoT, OT, GFE, test equipment) and Out-of-Scope Assets: assets with no CUI touchpoint and no security function for the CUI environment — genuinely excluded, but you must be able to justify why in your SSP.
+
+Step 5: Harden the boundary controls specifically.
+Because the whole enclave strategy depends on CUI not leaking outside the boundary, put extra rigor into: network segmentation/firewall rules preventing unauthorized flow out of the enclave, DLP tooling to catch accidental CUI movement to non-enclave systems, strict identity and access management (ideally with conditional access policies tied to enclave membership), and logging/monitoring at the boundary (this satisfies several Audit and Accountability, and System and Communications Protection requirements simultaneously).
+
+Step 6: Document it thoroughly in your SSP.
+Assessors will scrutinize your boundary justification hardest of anything in an enclave-based Level 2 assessment. Your SSP needs: the data flow diagram, network diagrams showing the boundary, a list of all assets by category (CUI, Security Protection, Contractor Risk Managed, Specialized, Out-of-Scope) with justification for each categorization, and evidence that boundary controls (firewalls, DLP, access controls) are actually implemented and tested — not just described on paper.
+
+Step 7: Validate before the assessment.
+Run an internal or third-party readiness/gap assessment specifically probing whether CUI can leak outside your defined boundary (test file transfers, check email routing rules, check endpoint DLP alerts). Assessors will often specifically test boundary integrity, and a failure there can call your entire scoping rationale into question, potentially expanding the assessment scope back to your full environment.
+
+One caution: enclaves reduce cost and complexity, but they also concentrate risk and assessor scrutiny on a smaller set of controls, so under-resourcing the boundary hardening (network segmentation, DLP, identity) is the most common way enclave scoping strategies fail during assessment. I'd recommend engaging a CMMC Registered Practitioner (RP) or RPO early to review your proposed boundary before you invest in the underlying architecture, since a boundary that looks reasonable internally sometimes doesn't hold up to C3PAO scrutiny.

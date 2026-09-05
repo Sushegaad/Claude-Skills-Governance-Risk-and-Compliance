@@ -1,0 +1,39 @@
+I don't have verified visibility into the specific recent ISM revisions you're referring to, so I can't cite exact control changes or dates with confidence. What I can give you is a grounded picture of the operational cadences the ISM has historically defined, and where MSP access requirements have generally been heading, so your team has a framework to check against once you pull the current document.
+
+Operational cadences the ISM typically defines
+The ISM sets recurring, time-bound obligations across several domains rather than one-off requirements. The main categories your team should map against the current text are:
+
+1. Patching timeframes. The ISM has long specified patch/update timeframes tied to severity and exploitability — historically categories like "patch within 48 hours for internet-facing services with a working exploit," extending out to routine cycles (e.g., monthly) for lower-severity issues on internal systems. These timeframes get periodically tightened as exploit weaponization speeds up; confirm the current bands, since they are one of the more frequently revised numeric thresholds in the ISM.
+
+2. Vulnerability scanning frequency. Expect defined minimum cadences for vulnerability scanning of internet-facing services versus internal systems (internet-facing typically scanned more frequently, e.g., weekly or more, versus internal systems on a longer cycle).
+
+3. Backup testing and restoration drills. The ISM requires not just backups but periodic testing of restoration processes — typically annually at minimum, sometimes more frequently for higher-criticality systems, to confirm backups are actually recoverable.
+
+4. Access and privilege recertification. Periodic review of user accounts, privileged accounts, and third-party access grants — commonly on a quarterly or annual cadence — to confirm continued business need and remove stale access.
+
+5. Security risk assessments and system security plan reviews. The ISM requires SSPs and associated risk assessments to be reviewed and updated on a defined cycle (commonly annually, or whenever a significant change occurs to the system).
+
+6. Event log review and retention. Defined minimum retention periods (commonly measured in months to years depending on classification) and expectations around active monitoring/alerting cadence, not just passive log storage.
+
+7. Penetration testing cycles. Periodic (often annual) penetration testing requirements for systems above a certain sensitivity/criticality threshold.
+
+If your team has noticed a "cadence" change recently, it's most likely to be one of: a tightened patch timeframe, an added/adjusted scanning frequency, or a new/adjusted review cycle for access or risk assessments — confirm which by diffing the current ISM's "Changes to the ISM" summary page against your last-assessed baseline.
+
+Managed service provider (MSP) access — what's generally new in this space
+This is an area that has received sustained attention across Australian government guidance following several high-profile incidents where compromised MSP credentials or remote access tooling were used as a path into customer environments. Even without confirming the exact ISM control text for your release, the direction of travel across ACSC guidance has been consistent, and I'd expect any recent ISM update in this space to reinforce these themes:
+
+1. No standing/persistent privileged access for MSPs by default. Increasing expectation that MSP access be just-in-time, time-boxed, and re-authorized per engagement rather than always-on.
+
+2. Dedicated, attributable MSP accounts. MSP technicians should not share generic/service accounts; each individual should have a uniquely attributable identity, ideally federated from the MSP's own identity provider with your organization able to independently disable access.
+
+3. MFA and phishing-resistant authentication mandatory for all MSP remote access, no exceptions for "trusted" third parties.
+
+4. Full logging of MSP activity, retained and reviewable by the customer organization independently of the MSP's own logs — so you're not solely reliant on the MSP to self-report what they did in your environment.
+
+5. Network segmentation and least-privilege scoping for MSP tooling (e.g., RMM/remote monitoring and management platforms), limiting blast radius if the MSP itself is compromised.
+
+6. Contractual and assurance requirements — expect stronger expectations that MSP contracts explicitly address incident notification timeframes, right-to-audit clauses, and security control obligations flowing down to any subcontractors the MSP uses.
+
+7. Immediate access revocation capability — the customer organization should be able to independently and immediately revoke an MSP's access (not dependent on the MSP's own offboarding process) in the event of a suspected compromise or contract termination.
+
+Recommended next step: have your team pull the current ISM's "Changes to the ISM" summary and specifically check the guidelines on cyber security incidents, outsourcing and procurement, and system monitoring, since MSP-specific requirements are typically distributed across those sections rather than consolidated in one place. Once you share the actual current text or the specific controls you're trying to reconcile, I can help you build a gap assessment against your existing MSP contracts and access architecture.

@@ -1,0 +1,33 @@
+CSF 2.0 (published February 2024) is an evolution, not a rewrite — your CSF 1.1 program is a solid foundation, and migration is more about reorganizing/extending than starting over. Here's what actually changed and how to approach migration.
+
+What changed:
+
+1. New "Govern" function (the headline change). CSF 1.1 had five functions: Identify, Protect, Detect, Respond, Recover. CSF 2.0 adds Govern as a sixth, and it's placed conceptually "above" the other five, since governance decisions (risk management strategy, roles and responsibilities, policy, oversight, supply chain risk management) inform how you execute the other five. Much of Govern's content existed in 1.1 but was scattered — parts lived under Identify (ID.GV, ID.RM, ID.SC in 1.1). CSF 2.0 pulls governance, risk management strategy, and supply chain risk management out into their own dedicated function with expanded subcategories, especially around cybersecurity supply chain risk management (GV.SC), which got significantly more detailed than 1.1's ID.SC.
+
+2. Scope expansion beyond critical infrastructure. CSF 1.1 was explicitly framed around critical infrastructure. CSF 2.0 drops that framing and positions itself as applicable to any organization, regardless of sector or size — reflecting how broadly CSF 1.1 was actually being used in practice (small businesses, schools, nonprofits, not just critical infrastructure operators).
+
+3. Formalized "Organizational Profiles" and "Community Profiles." CSF 1.1 had "profiles" as a looser concept (current/target). CSF 2.0 gives much more structured guidance on building organizational profiles, plus introduces "Community Profiles" — shared profiles developed by a sector, interest group, or coalition (e.g., a Community Profile for a specific industry or a specific threat like ransomware) that member organizations can start from rather than building entirely from scratch.
+
+4. New CSF Reference Tool / CPRT for informative references. In 1.1, informative references (mappings to ISO 27001, SP 800-53, COBIT, etc.) were static content embedded in the framework documentation. In 2.0, NIST moved this to the online Cybersecurity and Privacy Reference Tool (CPRT), which is updated independently of the framework document, so mappings can be refreshed as underlying standards change without waiting for a full CSF revision.
+
+5. Subcategory reorganization and renumbering. Several 1.1 subcategories were consolidated, reworded, split, or moved between categories/functions as part of the Govern reorganization and general cleanup. This means your old subcategory IDs (e.g., ID.GV-1) don't map one-to-one to new IDs — some content moved to GV.OV, GV.RM, GV.PO, etc. You cannot assume a simple ID-to-ID renumbering; you need to actually re-read the new subcategory language.
+
+6. Expanded guidance on implementation examples. CSF 2.0 introduces "Implementation Examples" for many subcategories — concrete, illustrative actions an organization might take — which 1.1 didn't have. These aren't mandatory, but they're useful drafting aids for your own profile language.
+
+7. Increased emphasis on cybersecurity supply chain risk management (C-SCRM), measurement/improvement, and continuous improvement culture, reflecting lessons learned since 1.1 (2018) around ransomware, software supply chain attacks (SolarWinds-era), and general maturity of enterprise risk practice.
+
+How to migrate:
+
+Step 1 — Map your existing 1.1 profile/control set against the new CSF 2.0 core structure using NIST's published 1.1-to-2.0 crosswalk (NIST released a mapping document alongside CSF 2.0). Don't assume subcategory numbers carry over; validate each mapping.
+
+Step 2 — Stand up Govern as a distinct section of your program, even if much of its substance already exists elsewhere in your documentation (risk management policy, roles/responsibilities charter, supply chain risk policy). Consolidate it so leadership and auditors can see governance addressed explicitly and holistically, not scattered.
+
+Step 3 — Expand your supply chain risk management practices to match GV.SC's increased depth — this is the area most 1.1 programs will find genuinely under-built relative to 2.0 expectations (third-party risk assessment cadence, contractual security requirements, software bill of materials practices).
+
+Step 4 — Rebuild your Current Profile against the new subcategory set rather than trying to patch your old 1.1 profile; use the crosswalk to carry over evidence and status where subcategories map cleanly, and do fresh assessment work where they don't.
+
+Step 5 — Reset your Target Profile and tier targets with current leadership, since risk appetite and regulatory landscape have likely shifted since your original 1.1 profile was set.
+
+Step 6 — Update any internal documentation, control mappings, audit templates, and board reporting materials that reference 1.1 function/category codes, since some of these codes changed meaning or location.
+
+Bottom line: the core five functions and their spirit carry forward largely intact; the main work is building out Govern as a first-class function (especially supply chain risk), re-validating subcategory mappings rather than assuming a clean renumbering, and refreshing your profiles and reference-standard crosswalks against the new CPRT-based mappings.

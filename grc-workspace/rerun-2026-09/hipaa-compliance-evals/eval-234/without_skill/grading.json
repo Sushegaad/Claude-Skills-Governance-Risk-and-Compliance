@@ -1,0 +1,33 @@
+{
+  "eval_id": 234,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Scope: all ePHI the organisation creates, receives, maintains, or transmits \u2014 across all systems, locations, and media, based on an asset/data inventory",
+      "passed": true,
+      "evidence": "\"Scope: every system, application, and location where ePHI is created, received, maintained, or transmitted... Data flow mapping... You can't assess risk to data you haven't located\""
+    },
+    {
+      "text": "Process: identify threats and vulnerabilities, assess current safeguards, and rate likelihood and impact to derive risk levels",
+      "passed": true,
+      "evidence": "\"Threat and vulnerability identification specific to your environment... Current control assessment: what safeguards are actually in place today... Likelihood and impact analysis... a documented risk level (e.g., high/medium/low)\""
+    },
+    {
+      "text": "Documentation and maintenance: the analysis must be documented and periodically reviewed/updated (after incidents, new systems, organisational change)",
+      "passed": true,
+      "evidence": "\"OCR guidance explicitly calls for periodic review/updates \u2014 after any material change (new systems, EHR migration, cloud move) and generally at least annually\" plus documented outputs"
+    },
+    {
+      "text": "Distinguishes a true risk analysis from a compliance checklist or gap assessment \u2014 a vendor checklist alone does not satisfy 164.308(a)(1)(ii)(A)",
+      "passed": true,
+      "evidence": "\"A filled-in checklist is not a HIPAA-compliant security risk analysis... a generic yes/no checklist almost never meets it\" against 45 CFR \u00a7164.308(a)(1)(ii)(A)"
+    },
+    {
+      "text": "Notes that a missing/inadequate risk analysis is OCR's most-cited failure in ransomware-related enforcement (Risk Analysis Initiative; 2026 self-funded plan settlements)",
+      "passed": false,
+      "evidence": "Says \"one of the single most frequently cited failures in OCR resolution agreements\" but never mentions ransomware enforcement, the Risk Analysis Initiative, or the 2026 self-funded plan settlements"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

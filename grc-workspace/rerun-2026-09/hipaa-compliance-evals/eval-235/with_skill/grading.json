@@ -1,0 +1,33 @@
+{
+  "eval_id": 235,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Establishes permitted and required uses/disclosures of PHI and prohibits use beyond the contract or as required by law",
+      "passed": true,
+      "evidence": "\"The BAA must specifically describe how the vendor may use/disclose PHI... It may not use PHI for any purpose beyond what the agreement authorizes... will not use or disclose PHI other than as permitted by the agreement or required by law\""
+    },
+    {
+      "text": "Requires appropriate safeguards and compliance with the Security Rule for ePHI",
+      "passed": true,
+      "evidence": "\"implementing appropriate administrative, physical, and technical safeguards consistent with the Security Rule (\u00a7\u00a7164.308, 164.310, 164.312) to protect... ePHI\""
+    },
+    {
+      "text": "Requires reporting to the covered entity: breaches of unsecured PHI and security incidents (with breach notification timing support for the 60-day clock)",
+      "passed": true,
+      "evidence": "\"report to you: (a) any breach of unsecured PHI without unreasonable delay and within 60 days of discovery, and (b) any security incident... Your own 60-day clock... negotiate for the vendor's reporting window to be materially shorter\""
+    },
+    {
+      "text": "Requires subcontractor flow-down: BAs must obtain the same assurances from subcontractors handling PHI",
+      "passed": true,
+      "evidence": "\"require any of its own subcontractors that will touch your PHI... to agree in writing to the same restrictions and conditions that apply to the vendor\""
+    },
+    {
+      "text": "Return or destruction of PHI at termination where feasible, plus assistance duties (access, amendment, accounting) and termination rights for violations",
+      "passed": true,
+      "evidence": "\"Upon contract termination, the vendor must return or destroy all PHI if feasible... make PHI available to you... to respond to a patient's right of access request (\u00a7164.524)... accounting-of-disclosures requests (\u00a7164.528)... Either party may terminate... if the other has materially violated a term\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,29 @@
+This answer assumes the ISM September 2026 release (published 3 September 2026), which is where most of the recent cadence changes and the new managed service provider (MSP) access controls were introduced.
+
+**Part 1 — Operational cadences that changed**
+
+Several existing controls kept the same intent but had their required frequency tightened. This matters operationally because it changes your recurring compliance calendar, not just a one-off implementation task:
+
+1. **DCSync-permission reviews (ISM-1934)**: annual → **6-monthly**. If you have Active Directory in scope, your process for reviewing which accounts hold Replicating Directory Changes / Replicating Directory Changes All permissions (the permissions that enable DCSync-style credential extraction) now needs to run twice a year. Update your IAM review runbook and calendar accordingly, and make sure the review output (who has DCSync rights, why, and any remediation) is retained as assessment evidence.
+
+2. **KRBTGT credential changes (ISM-1847)**: annual → **6-monthly**. The KRBTGT account password (and its associated key material) must now be rotated twice yearly rather than once. Note the operational nuance: KRBTGT rotation must be done twice in sequence with an appropriate interval between rotations to fully invalidate old Kerberos tickets — factor this into your change-management scheduling, not just a single password reset.
+
+3. **Post-deployment vulnerability assessments and penetration tests (ISM-2118)**: annual → **6-monthly**. Systems now require a vulnerability assessment/pen test cadence of twice yearly after go-live. This has budget and vendor-scheduling implications if you're using external testers — line up your testing contracts now rather than waiting for the next renewal cycle.
+
+4. Also relevant to cadence (introduced alongside, not a frequency change but new recurring obligations): **third-party OAuth consent reviews (ISM-2138)** at 6-monthly, and **quarterly CTI-informed threat hunting (ISM-2153)** as a brand-new recurring activity — your threat-hunting function now needs a defined quarterly cycle informed by current cyber threat intelligence, not ad hoc hunts.
+
+**Recommendation**: consolidate these into a single compliance calendar (DCSync review, KRBTGT rotation, pen test, OAuth consent review — all 6-monthly; CTI-informed hunting — quarterly) so your team isn't tracking four separate half-yearly cycles on different clocks. Where feasible, align them to the same review windows to reduce operational overhead.
+
+**Part 2 — What's new for managed service provider (MSP) access**
+
+The September 2026 release introduced a dedicated MSP/service-provider control pair (ISM-2124–2125) plus an important amendment to an existing incident-classification control (ISM-1576):
+
+1. **Provider access restricted to approved tools, source addresses, and time windows (ISM-2124)**: MSP access to your environment must be scoped — not standing, unrestricted access, but access limited to specific approved remote-management tools, specific source IP ranges/addresses, and specific time windows (e.g., scheduled maintenance windows or ticket-driven access sessions). If your MSP currently has always-on VPN or RDP access with no time-boxing, this is now a compliance gap.
+
+2. **Organisation-controlled, tamper-proof logging (ISM-2125)**: critically, the logging of MSP activity must be under **your organisation's control**, not solely the provider's own logging (which the provider could alter or fail to retain). Ensure MSP sessions are captured in your own SIEM/log pipeline — e.g., via jump-host/PAM session recording that you own, not just the vendor's ticketing or RMM tool logs.
+
+3. **ISM-1576 amended — unauthorised provider access is now explicitly a cyber security incident**: this closes a gap where out-of-scope or after-hours provider access might previously have been treated as a process exception rather than a security event. Any MSP access outside the approved tools/addresses/time windows must now trigger your Chapter 2 incident response process, including any applicable ASD notification obligations for systems handling PROTECTED and above.
+
+4. **Related control worth flagging in the same review**: **authorised RMM tool allow-listing with gateway blocking (ISM-2149–2150)** — pair this with your MSP access controls, since MSPs commonly rely on remote monitoring and management tooling. Only approved RMM tools should be permitted through your gateway; unauthorised RMM traffic should be blocked and alerted on, which also helps detect an MSP (or an attacker impersonating one) using unapproved tooling.
+
+**Practical next step**: review your current MSP/vendor contracts and technical access configuration against ISM-2124–2125 specifically — confirm access is tool/address/time-scoped, confirm your organisation (not the provider) owns the audit trail, and update your incident response plan and MSP contract clauses to reflect that unauthorised access is now a reportable incident under ISM-1576. I can help draft the updated contractual clauses or a gap-analysis table against these controls if useful.

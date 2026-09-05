@@ -1,0 +1,29 @@
+Partly, but not entirely — and the details matter more than "yes/no." A 30-person Vietnamese startup is almost certainly a small enterprise (possibly micro, depending on exact headcount/revenue thresholds under Vietnamese SME classification law), which gives you meaningful but conditional relief under VN-PDPL's SME exemption.
+
+What you're exempt from
+
+Law No. 91/2025/QH15, Article 38, together with Decree 356, gives small and micro enterprises a five-year opt-out (from 1 January 2026 to 31 December 2030) from three specific obligations:
+- Article 21 — mandatory domestic DPIA (impact assessment) filing within 60 days of first processing
+- Article 22 — certain security measures requirements
+- Article 33(2) — certain processor-specific obligations
+
+Micro-enterprises are fully exempt from these unless they process sensitive personal data or process at large scale. Small enterprises get the same exemption under the same conditions. So if your 30-person startup fits Vietnam's small-enterprise definition and doesn't process sensitive data or operate at large scale, you do not need to file a domestic PDPIA dossier with the Ministry of Public Security right now, and some of the more elaborate security-control documentation requirements are relaxed.
+
+What is NOT exempt — and this is the important part
+
+The exemption is narrow and conditional. It does not touch:
+- Consent requirements (Article 9/10) — you still need voluntary, explicit, specific, informed, recorded consent for every processing purpose, and separate explicit consent for any sensitive data category you touch.
+- Data subject rights fulfilment (Article 4, Decree 356 Article 5) — you still must respond to access, correction, deletion, and withdrawal requests within the same deadlines as a large enterprise (2 working days to acknowledge; 10/15/20 working days to fulfil depending on request type).
+- Breach notification (Article 23) — the 72-hour notification rule to the Ministry of Public Security applies regardless of company size.
+- Cross-border transfer impact assessments (Article 20) — if you use any foreign-hosted cloud services, SaaS tools, or send data to an overseas parent/affiliate, the 60-day CPDTIA filing and six-monthly update obligations are NOT part of the SME exemption list (only Articles 21, 22, 33(2) are exempted) — this is a common blind spot for startups who assume "SME exemption" covers everything.
+- The exemption evaporates the moment you process sensitive personal data (any of the 13 categories — which notably includes financial/banking data, so if you're a fintech or handle payments data, you likely lose the exemption immediately) or process "at large scale" (a threshold not numerically fixed in the materials I have, so err on the side of caution as you scale user numbers).
+
+Practical read for a 30-person startup
+
+1. Confirm your SME classification under Vietnamese law (typically based on registered capital and average employee headcount/sector) — don't assume; document the basis for claiming the exemption, since Decree 356 requires the exemption election itself to be documented.
+2. Map your data: if you process any sensitive category (health, biometric, financial/banking, location tracking, etc.) or expect to cross the "large scale" threshold as you grow, plan for DPIA compliance now rather than waiting for the exemption to lapse or be disqualified.
+3. Do not defer consent mechanics, rights-fulfilment processes, or breach response planning — these apply from day one regardless of size, and Decree 330/2026/ND-CP's penalty framework (effective August 2026) applies the same fines to small companies as large ones for consent violations (VND 30–70 million) and non-filing (VND 30–50 million) — these are not scaled down for company size.
+4. If you use any cross-border cloud infrastructure (AWS Singapore, Google Cloud, a US-based SaaS vendor, etc.), treat the Article 20 cross-border transfer impact assessment as a live obligation — it is outside the exemption.
+5. A DPO appointment is only required for organisations at large scale or processing sensitive data — at 30 people with no sensitive data and no large-scale processing, you likely don't need one yet, but assign someone as the accountable point of contact for data subject requests regardless.
+
+Bottom line: the SME exemption gives you real relief on the DPIA paperwork and some security documentation, but it does not touch consent, rights fulfilment, breach notification, or cross-border transfers — and it disappears the moment sensitive data or scale enters the picture. This is general compliance guidance, not legal advice; confirm your specific SME classification and exemption eligibility with Vietnamese counsel.

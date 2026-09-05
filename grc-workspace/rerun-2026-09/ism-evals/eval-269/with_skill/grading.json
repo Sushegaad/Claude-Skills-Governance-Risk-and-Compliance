@@ -1,0 +1,33 @@
+{
+  "eval_id": 269,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the 'Essentials' consultation (evolution/expansion of the Essential Eight) closed July 12, 2026",
+      "passed": true,
+      "evidence": "\"a consultation on a proposed successor/extension (informally referred to as 'Essentials') that closed on 12 July 2026\""
+    },
+    {
+      "text": "States that no outcome had been announced as of early September 2026 — the consultation proposed Essentials for enterprise IT as a first chapter with E8 deprecation ~12 months and retirement ~24 months after finalisation",
+      "passed": false,
+      "evidence": "States \"no announced outcome\" as of September 2026, but omits the consultation's proposed content — Essentials for enterprise IT as a first chapter with E8 deprecation ~12 months and retirement ~24 months after finalisation"
+    },
+    {
+      "text": "Concludes the Essential Eight and its Maturity Model remain the operative assessment standard today",
+      "passed": true,
+      "evidence": "\"the Essential Eight and its existing Maturity Model (ML0–ML3) remain the operative, ASD-mandated baseline\""
+    },
+    {
+      "text": "Advises continuing E8 maturity assessments while tracking ASD announcements",
+      "passed": true,
+      "evidence": "\"Run your Essential Eight self-assessment... as normal\" and \"Monitor the 'Essentials' consultation outcome... the moment ASD publishes a determination\""
+    },
+    {
+      "text": "Notes ISM quarterly releases are separate from E8 maturity workstreams (September controls carry no E8 mappings claim, or equivalent separation point)",
+      "passed": true,
+      "evidence": "\"None of the June or September 2026 ISM additions carry an Essential Eight mapping — they are ISM-only obligations... genuinely separate workstreams\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

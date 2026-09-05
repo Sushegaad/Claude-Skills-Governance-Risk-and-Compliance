@@ -1,0 +1,33 @@
+{
+  "eval_id": 261,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the change: PCI SSC updated FAQ 1331 on August 31, 2026, restricting this practice",
+      "passed": true,
+      "evidence": "\"FAQ 1331 (updated August 31, 2026)\" — states the update and restriction explicitly"
+    },
+    {
+      "text": "States the new rule: SAQ eligibility criteria may not be used as a guide for ROC requirement applicability unless explicitly reviewed, discussed and agreed with the merchant's compliance accepting entity (payment brands and/or acquirer)",
+      "passed": true,
+      "evidence": "quotes rule: SAQ criteria may not guide ROC applicability \"unless explicitly reviewed, discussed and agreed upon with the merchant's compliance accepting entity\" — \"your acquiring bank and/or the relevant card brand(s), not just your QSA\""
+    },
+    {
+      "text": "Makes the key point: QSA agreement alone no longer suffices — acquirer/brand approval is needed",
+      "passed": true,
+      "evidence": "\"QSA agreement alone is no longer sufficient evidence... You need it 'explicitly reviewed, discussed and agreed upon' with your acquirer and/or card brand\""
+    },
+    {
+      "text": "Identifies who is affected: merchants undergoing ROC assessments (mandatory Level 1 or voluntary), notably e-commerce scoping under requirements like 6.4.3/11.6.1",
+      "passed": true,
+      "evidence": "Level 1 merchant \"required to complete a full Report on Compliance (ROC)\"; \"particularly around Req 6.4.3 and 11.6.1\" e-commerce scoping"
+    },
+    {
+      "text": "Gives the right advice: obtain and document the acquirer/payment-brand agreement in writing before relying on SAQ-based scope reduction",
+      "passed": true,
+      "evidence": "\"Get it in writing... obtain documented approval from your acquiring bank... Keep this correspondence as part of your assessment evidence file\" before ROC finalization"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

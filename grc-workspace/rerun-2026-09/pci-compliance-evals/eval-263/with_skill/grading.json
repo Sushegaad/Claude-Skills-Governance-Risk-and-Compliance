@@ -1,0 +1,33 @@
+{
+  "eval_id": 263,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States all future-dated v4.x requirements became mandatory March 31, 2025 (v4.0.1 is the current standard)",
+      "passed": true,
+      "evidence": "\"All PCI DSS v4.0 'future-dated' requirements... became fully mandatory on March 31, 2025\"; cites \"PCI DSS v4.0.1\" as current"
+    },
+    {
+      "text": "Cites password/authentication changes: 12-character minimum passwords and MFA for ALL access into the CDE (8.3.6, 8.4.2)",
+      "passed": false,
+      "evidence": "Misdescribes 8.3.6 as \"Passwords for non-MFA users changed at least every 90 days\"; never mentions the 12-character minimum password length. 8.4.2 MFA for all CDE access is covered, but the 12-char fact is omitted/contradicted"
+    },
+    {
+      "text": "Cites e-commerce controls: payment page script inventory/authorization/integrity (6.4.3) and change-and-tamper detection (11.6.1)",
+      "passed": true,
+      "evidence": "\"6.4.3: All payment page scripts inventoried, authorized, and integrity-protected\"; \"11.6.1: Change/tamper detection mechanism for HTTP headers and scripts on payment pages\""
+    },
+    {
+      "text": "Mentions others such as automated log review mechanisms, authenticated internal vulnerability scans, and phishing protections",
+      "passed": true,
+      "evidence": "\"10.4.1.1: Automated log review (manual-only review no longer sufficient)\"; \"5.4.1: Automated technical solution to detect and protect against phishing\""
+    },
+    {
+      "text": "Advises a gap re-check for any assessment performed against pre-2025 practices",
+      "passed": true,
+      "evidence": "\"If your last assessment predates that date... treat this as an active gap-assessment priority\"; \"run a targeted gap assessment against 8.4.2, 6.4.3/11.6.1, and 10.4.1.1 first\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

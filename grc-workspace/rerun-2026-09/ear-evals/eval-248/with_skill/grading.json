@@ -1,0 +1,33 @@
+{
+  "eval_id": 248,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the August 2026 change: BIS reversed its 2013 ECR position \u2014 such UAVs now classify in 9A610.a (with MT language mirroring 9A012)",
+      "passed": false,
+      "evidence": "Contradicts ground truth: \"military UAVs not described on the USML classify in the 600-series as 9A012.a\" \u2014 the 2026 rule places them in 9A610.a, not 9A012.a"
+    },
+    {
+      "text": "Notes less-sensitive parts/components/accessories go to new 9A610.y.33",
+      "passed": true,
+      "evidence": "\"Parts, components, and accessories... classify separately under the newly created 9A610.y.33\""
+    },
+    {
+      "text": "Mentions license exception STA availability to Country Group A:5 where the UAV cannot deliver \u2265500 kg payload to \u2265300 km (\u00a7740.20(g) conditions)",
+      "passed": true,
+      "evidence": "\"STA... may be available for shipments to Country Group A:5... only where the UAV cannot deliver at least 500 kg of payload to at least 300 km range\""
+    },
+    {
+      "text": "Applies the order of review: USML Category VIII first (CJ if unclear), then CCL",
+      "passed": true,
+      "evidence": "\"The Order of Review (\u00a7 732.3) requires checking the USML first... the safer move... is a Commodity Jurisdiction (CJ) request to DDTC\""
+    },
+    {
+      "text": "Notes 3A611.a no longer applies to these UAVs after the rule",
+      "passed": false,
+      "evidence": "No mention that 3A611.a no longer applies to these UAVs after the rule"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

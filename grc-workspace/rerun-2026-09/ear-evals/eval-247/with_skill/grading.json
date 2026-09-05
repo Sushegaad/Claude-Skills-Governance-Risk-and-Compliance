@@ -1,0 +1,33 @@
+{
+  "eval_id": 247,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Classifies it under 9A012.a.2 (endurance \u22653 hours): NS Column 1 + AT controls apply",
+      "passed": true,
+      "evidence": "\"endurance \u2265 3 hours places the airframe in 9A012.a.2... carries NS Column 1 + AT Column 1\""
+    },
+    {
+      "text": "Adds MT controls: range \u2265300 km triggers MT1 for the \u22653-hour UAV",
+      "passed": true,
+      "evidence": "\"because your stated range is 400 km \u2014 above the 300 km threshold \u2014 MT Column 1 (Missile Technology) also applies\""
+    },
+    {
+      "text": "Concludes a license is required for most destinations under NS1 (worldwide except Canada), plus MT review policy",
+      "passed": true,
+      "evidence": "\"a BIS export license is very likely required\"; \"Expect the Country Chart to show a license requirement for at least the MT and likely the NS column\"; MT interagency review flagged"
+    },
+    {
+      "text": "Notes software/technology under 9D001/9D002/9E001 retain NS/MT controls for this class",
+      "passed": true,
+      "evidence": "\"Associated software and technology (9D001, 9D002, 9D004, 9E001) retain full NS/MT control for platforms in this endurance/range band\""
+    },
+    {
+      "text": "Flags the alternative: if 'specially designed' for military use and not USML-described, classification shifts to 9A610.a under the 2026 rule",
+      "passed": false,
+      "evidence": "No mention that a 'specially designed' military non-USML UAV would shift to 9A610.a under the 2026 rule; USML/9A610 alternative absent"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

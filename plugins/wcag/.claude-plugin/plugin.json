@@ -1,7 +1,7 @@
 {
   "name": "wcag",
   "description": "Expert WCAG (Web Content Accessibility Guidelines) advisor covering WCAG 2.0, 2.1, and 2.2 \u2014 the W3C international accessibility standards. Covers all POUR principles, success criteria, conformance levels, accessibility audits, ARIA patterns, colour contrast, keyboard accessibility, screen reader compatibility, mobile accessibility, cognitive accessibility, legal mappings (EN 301 549, EAA, ADA, Section 508), and accessibility statements.",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

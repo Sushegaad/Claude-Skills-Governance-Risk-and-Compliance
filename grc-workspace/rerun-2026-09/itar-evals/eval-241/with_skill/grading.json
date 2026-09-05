@@ -1,0 +1,33 @@
+{
+  "eval_id": 241,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies the interim final rule (91 FR 55457) revising USML Category VIII(a)(8), effective October 13, 2026",
+      "passed": true,
+      "evidence": "\"The October 13, 2026 rule (91 FR 55457) revises VIII(a)(8)\"; comment period noted (\"comments on the rule were due September 28, 2026\"), consistent with an IFR."
+    },
+    {
+      "text": "States the effect: qualifying civil aircraft (FAA transport/commuter category) modified with 'secured ASE' are excluded from the USML — the aircraft itself moves to EAR jurisdiction",
+      "passed": true,
+      "evidence": "\"carve out civil FAA transport/commuter category aircraft equipped with 'secured ASE'... the aircraft itself is excluded from Category VIII(a)(8)\"; \"potentially EAR/FAA export process for the airframe\"."
+    },
+    {
+      "text": "Defines secured ASE correctly: DIRCM systems (or IR/UV missile-warning systems necessary for DIRCM operation) incorporated with anti-tamper measures, per new §121.0 definitions",
+      "passed": true,
+      "evidence": "\"defined in new § 121.0 as DIRCM systems, or the IR/UV missile-warning sensors needed to cue DIRCM, provided the installation incorporates anti-tamper protection\"."
+    },
+    {
+      "text": "States the critical nuance: the ASE equipment itself REMAINS on the USML in Category XI, and related technical data/defense services remain ITAR-controlled (XI(d))",
+      "passed": true,
+      "evidence": "\"the DIRCM turret, sensor suite... remains separately controlled under Category XI(d)... All technical data and defense services tied to that ASE... stay ITAR-controlled under Category XI(d)\"."
+    },
+    {
+      "text": "Mentions the new §120.54 carve-outs: temporary import of secured ASE and country-to-country movement of previously authorized installed ASE no longer require separate authorization",
+      "passed": true,
+      "evidence": "\"§ 120.54(a)(8) exempts temporary imports of secured ASE... § 120.54(a)(9) exempts country-to-country movement of previously licensed, installed secured ASE\"."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

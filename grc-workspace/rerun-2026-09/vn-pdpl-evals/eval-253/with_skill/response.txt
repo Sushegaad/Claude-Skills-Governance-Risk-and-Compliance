@@ -1,0 +1,30 @@
+Vietnam's personal data protection framework is now a three-instrument stack, built up over roughly 14 months. Here is the timeline and how the pieces fit together.
+
+Timeline
+
+- 26 June 2025: The National Assembly passed Law No. 91/2025/QH15 on Personal Data Protection — Vietnam's first comprehensive personal data protection law, administered by the Ministry of Public Security (which acts as the specialized personal data protection authority).
+- 31 December 2025: The Government issued Decree No. 356/2025/ND-CP, the implementing decree elaborating specific articles of the Law — consent mechanics, sector rules, response timeframes, and DPO qualifications.
+- 1 January 2026: Both the Law and Decree 356 took effect simultaneously. This is the operative date for the substantive obligations: consent requirements, data subject rights, impact assessment duties, and the 72-hour breach notification rule.
+- 19 August 2026: The Government issued Decree No. 330/2026/ND-CP, which took effect the same day. This decree operationalizes the penalty framework mandated by Article 8 of Law 91/2025 — 82 articles total, 33 specific to personal data protection sanctions.
+- Ongoing: A five-year SME exemption window (Articles 21, 22, 33(2)) runs from 1 January 2026 to 31 December 2030 for small and micro enterprises that don't process sensitive data or process at large scale.
+
+Structure
+
+The Law itself (91/2025/QH15) is organized into nine chapters:
+- Chapter I — General Provisions (Articles 1–7): scope, definitions, principles
+- Chapter II — Consent and Legal Bases (Articles 8–19): the consent regime and the five permitted bases for processing without consent
+- Chapter III — Cross-Border Transfer (Article 20)
+- Chapter IV — Impact Assessments (Articles 21–22): domestic DPIA and related security obligations
+- Chapter V — Security and Breach (Articles 23–25): the 72-hour breach notification rule
+- Chapter VI — Rights of Data Subjects (Articles 26–32): the six data subject rights
+- Chapter VII — Obligations of Parties (Articles 33–35): controller/processor duties
+- Chapter VIII — State Management (Articles 36–37): Ministry of Public Security's regulatory role
+- Chapter IX — Transitional and Final Provisions (Articles 38–39): effective date and SME transition
+
+Decree 356/2025/ND-CP fills in the operational detail the Law leaves to secondary legislation: the exhaustive lists of 11 basic and 13 sensitive personal data categories, the specific response deadlines for data subject requests (2 working days to acknowledge; 10 working days for access/correction; 15 working days for withdrawal/objection; 20 working days for deletion), valid and invalid consent methods, and sector-specific overlays for finance/banking, big data, AI/automated processing, blockchain, and cloud computing. It also sets out DPO qualification requirements (minimum 2 years' relevant experience plus a degree) and the cross-border transfer impact assessment mechanics (60-day filing to the Ministry, six-monthly updates).
+
+Decree 330/2026/ND-CP is the newest layer, adding teeth to the framework via a tiered penalty structure — percentage-of-revenue fines for serious cross-border violations (up to 3–5% of prior-year Vietnam revenue for the largest breaches), multiples-of-proceeds fines for unlawful data trading, and fixed VND fines for procedural and consent violations, plus remedial powers like suspension of processing or cross-border transfers.
+
+How to think about it: Law 91/2025 is the constitution — principles, rights, and high-level obligations. Decree 356/2025 is the operating manual — how to actually comply (deadlines, forms, sector rules). Decree 330/2026 is the enforcement mechanism — what happens when you don't. All three interact: for example, a cross-border transfer that isn't filed as required under Decree 356 within 60 days becomes an enforceable violation under Decree 330 once discovered.
+
+Vietnam's approach is broadly GDPR-inspired but distinctly its own — narrower lawful-basis grounds (no "legitimate interests"), an impact-assessment-based cross-border transfer mechanism rather than adequacy decisions or SCCs, and a single administering authority (Ministry of Public Security) rather than an independent data protection regulator. The Cybersecurity Law 2018 continues to apply alongside VN-PDPL for broader data localization and system security matters — VN-PDPL is lex specialis for personal data specifically. This is general regulatory information; for a specific compliance program, verify current requirements against official Vietnamese government sources.

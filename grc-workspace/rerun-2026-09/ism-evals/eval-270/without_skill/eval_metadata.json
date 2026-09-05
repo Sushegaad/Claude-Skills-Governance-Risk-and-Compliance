@@ -1,0 +1,13 @@
+{
+  "eval_id": 270,
+  "eval_name": "cadence-and-providers",
+  "run_type": "without_skill",
+  "prompt": "What operational cadences changed in the ISM recently, and what's new for managed service provider access?",
+  "assertions": [
+    "KRBTGT account credential changes now at least every six months (ISM-1847, was annual)",
+    "DCSync-permission account reviews now at least every six months (ISM-1934, was annual)",
+    "Post-deployment vulnerability assessments/penetration tests now at least every six months (ISM-2118, was annual)",
+    "Service provider access restricted to explicitly approved remote management tools, source addresses and time windows (ISM-2124), with organisation-controlled logging the provider cannot modify or delete (ISM-2125)",
+    "Unauthorised service-provider access or administration is to be treated as a cyber security incident (ISM-1576 amendment)"
+  ]
+}

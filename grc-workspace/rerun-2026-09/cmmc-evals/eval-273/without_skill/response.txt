@@ -1,0 +1,29 @@
+Let's walk through the SPRS (Supplier Performance Risk System) score methodology step by step, since it's a well-defined formula, not a judgment call.
+
+Background: The SPRS score is calculated using the DoD Assessment Methodology described in NIST SP 800-171 DoD Assessment Methodology guidance, which assigns a weighted point value to each of the 110 security requirements in NIST SP 800-171 (Rev 2, historically; Rev 3 alignment is evolving). You start from a maximum possible score of 110 and subtract points for each requirement that is NOT fully implemented.
+
+Step 1: Understand the point weighting.
+Not all 110 requirements are weighted equally. They're grouped roughly as:
+- 1-point requirements: the majority of controls, treated as standard weight.
+- 3-point requirements: a smaller set of higher-impact requirements (roughly a few dozen) whose absence has an outsized effect on security posture — for example, certain access control, multifactor authentication, and boundary protection requirements.
+- 5-point requirements: a small handful of the most critical requirements (things like multifactor authentication for privileged/remote access, and boundary/network protections) where deficiencies are considered especially serious.
+
+The exact weight of each requirement is published in the DoD Assessment Methodology scoring template (a spreadsheet DoD has published listing each of the 110 requirements and its associated point value). You should pull that reference table directly rather than estimating, because the weight per practice is fixed and specific — not evenly distributed.
+
+Step 2: Identify your 12 open (not-yet-implemented) practices.
+For each of your 12 gaps, look up its assigned point value in the scoring methodology (1, 3, or 5). Also note: for a requirement that's partially implemented, DoD guidance says you generally still treat it as not-yet-implemented for scoring purposes unless it meets the "fully implemented" bar — partial credit generally isn't given per-practice (the exceptions being a few specific requirements where partial implementation guidance has been issued, like the password complexity/length requirement, which can subtract a lesser amount if partially met). Confirm this against the current scoring guidance since DoD has occasionally refined how partial implementation of specific controls is treated.
+
+Step 3: Sum the deductions.
+Add up the point values of your 12 open practices. For example, if your 12 gaps break down as: 7 requirements worth 1 point each (7 points), 4 requirements worth 3 points each (12 points), and 1 requirement worth 5 points (5 points), your total deduction is 7 + 12 + 5 = 24 points.
+
+Step 4: Calculate the score.
+SPRS score = 110 - total deduction. Using the example above: 110 - 24 = 86.
+Your actual number depends entirely on which specific 12 practices are open — the same "12 open practices" could produce very different scores depending on whether those 12 happen to be low-weight or high-weight items. A company with 12 open 1-point practices scores 98; a company with 12 open 5-point practices would score a very low 50. So the practical first step for you is not the arithmetic — it's identifying exactly which 12 requirements are open and pulling their specific weights from the DoD scoring table.
+
+Step 5: Apply score floor/negative handling.
+Scores can theoretically go negative if enough high-weight requirements are unmet, though DoD's methodology and SPRS submission process account for this. Report the number as calculated; don't artificially floor it at zero unless the specific guidance you're using says to.
+
+Step 6: Document and submit.
+Your score, along with the date you expect to reach 110 (full implementation), gets entered into SPRS, tied to your assessment methodology (Basic self-assessment, Medium, or High assessment depending on who conducted it and how). You'll also need a System Security Plan (SSP) and a Plan of Action and Milestones (POA&M) for each open item, because SPRS scoring and CMMC Level 2 conditional certification both expect the open items to be tracked with remediation dates, not just reflected as a numeric deficit.
+
+Practical next step: get the official DoD NIST SP 800-171 Assessment Methodology scoring spreadsheet (this is a controlled/published DoD reference, not something to reconstruct from memory), map each of your 12 open practices against it, sum the deductions, and subtract from 110. I'd also recommend prioritizing remediation of any of the 5-point and 3-point items first, since they have outsized influence on the score and are often the same controls (MFA, boundary protection, access control) that assessors scrutinize most closely during a Level 2 assessment — closing those first improves both your score and your actual risk posture the most per unit of effort.

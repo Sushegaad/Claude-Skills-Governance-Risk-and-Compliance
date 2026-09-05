@@ -1,0 +1,13 @@
+{
+  "eval_id": 231,
+  "eval_name": "security-rule-nprm-status",
+  "run_type": "with_skill",
+  "prompt": "I read that HIPAA now requires MFA and encryption under a new Security Rule. Is that in effect — do we need to comply now?",
+  "assertions": [
+    "Correctly states this is a proposed rule (NPRM, published January 2025) that would remove 'addressable' designations and mandate MFA/encryption — it is NOT final and NOT in effect",
+    "States the current status: the August 2026 Unified Agenda moved the rule to Long-Term Actions with final action anticipated around July 2027",
+    "States that the existing Security Rule (with required vs addressable implementation specifications) remains the operative law to comply with today",
+    "Mentions the industry pushback: 100+ hospital systems / provider associations (AHA-led) have urged HHS to withdraw or substantially revise the proposal",
+    "Gives the right advice: build against the current Security Rule now, track the proposal, and do not treat NPRM provisions as current legal requirements — while noting MFA/encryption are best practice regardless"
+  ]
+}

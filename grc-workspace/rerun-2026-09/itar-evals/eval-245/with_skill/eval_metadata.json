@@ -1,0 +1,13 @@
+{
+  "eval_id": 245,
+  "eval_name": "vsd-process",
+  "run_type": "with_skill",
+  "prompt": "We just discovered unauthorized ITAR exports going back two years. Walk us through voluntary disclosure.",
+  "assertions": [
+    "Describes the §127.12 VSD process: prompt initial notification to DDTC, thorough internal investigation, then a full report with facts, causes, remediation",
+    "States VSD is a significant mitigating factor and can result in no penalty, warning letter, or reduced civil penalty",
+    "Cites current penalty exposure: civil penalties up to ~$1.37M per violation (annually adjusted) and criminal exposure up to $1M/20 years per violation",
+    "Advises immediate steps: stop the violating activity, preserve records, consider disclosure counsel, review for related EAR/OFAC issues",
+    "Mentions submissions run through DDTC's DECCS platform (which deployed its Data Collection Modernization release in September 2026)"
+  ]
+}

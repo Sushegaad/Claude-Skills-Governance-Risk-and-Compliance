@@ -1,0 +1,33 @@
+{
+  "eval_id": 247,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Classifies it under 9A012.a.2 (endurance \u22653 hours): NS Column 1 + AT controls apply",
+      "passed": false,
+      "evidence": "Never classifies under 9A012.a.2 or the 3-hour endurance test; hedges \"If the UAV meets the 9A012 control parameters\" using old MTCR-derived criteria"
+    },
+    {
+      "text": "Adds MT controls: range \u2265300 km triggers MT1 for the \u22653-hour UAV",
+      "passed": false,
+      "evidence": "MT treated as conditional on legacy range/payload combos (\"traditionally 300 km / 500 kg\"); does not state range \u2265300 km alone triggers MT1 for a \u22653-hour UAV"
+    },
+    {
+      "text": "Concludes a license is required for most destinations under NS1 (worldwide except Canada), plus MT review policy",
+      "passed": false,
+      "evidence": "Only a conditional \"likely license requirement to Brazil\" if MT triggers; says Brazil \"treated favorably under NS-column licensing\" \u2014 no NS1 worldwide-except-Canada conclusion"
+    },
+    {
+      "text": "Notes software/technology under 9D001/9D002/9E001 retain NS/MT controls for this class",
+      "passed": false,
+      "evidence": "Only generic \"related software and technology in 9A012 and the corresponding 'D'/'E' entries\"; 9D001/9D002/9E001 NS/MT retention not stated"
+    },
+    {
+      "text": "Flags the alternative: if 'specially designed' for military use and not USML-described, classification shifts to 9A610.a under the 2026 rule",
+      "passed": false,
+      "evidence": "Mentions possible USML Category VIII reversion, but no 9A610.a classification shift under the 2026 rule"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

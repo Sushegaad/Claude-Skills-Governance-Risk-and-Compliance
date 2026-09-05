@@ -1,0 +1,33 @@
+{
+  "eval_id": 259,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Applies the two-step test: Annex I (high criticality) vs Annex II sectors, then size thresholds (generally 250+/\u20ac50M for essential in Annex I; medium-size entities typically important)",
+      "passed": true,
+      "evidence": "Annex I vs. Annex II sector step, then size: 'Essential Entity if you're in an Annex I sector AND... \u2265250 employees, OR turnover >\u20ac50M'; worked example defaults medium Annex I entity to Important"
+    },
+    {
+      "text": "States the supervision difference: essential = ex-ante AND ex-post (inspections, audits); important = ex-post only, triggered by evidence",
+      "passed": true,
+      "evidence": "Essential: 'Ex-ante *and* ex-post: proactive on-site inspections, regular... audits'; Important: 'Ex-post only: triggered by evidence or indication of non-compliance'"
+    },
+    {
+      "text": "States the fine floors: \u2265\u20ac10M or 2% worldwide turnover (essential) vs \u2265\u20ac7M or 1.4% (important)",
+      "passed": true,
+      "evidence": "Higher of \u20ac10,000,000 or 2% of total worldwide annual turnover [essential] vs Higher of \u20ac7,000,000 or 1.4% [important]"
+    },
+    {
+      "text": "Mentions management liability including potential temporary bans from managerial functions (essential entities)",
+      "passed": true,
+      "evidence": "Personal liability, with possible temporary ban from managerial functions [essential]"
+    },
+    {
+      "text": "Notes special designations: CER-designated critical entities are automatically essential regardless of size; some sectors (e.g., qualified trust/DNS/TLD) essential regardless of size",
+      "passed": true,
+      "evidence": "an entity designated critical under the CER Directive (EU) 2022/2557 (CER designation flows automatically into essential-entity status)... qualified trust service provider, TLD registry, DNS provider... automatically essential regardless of size"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

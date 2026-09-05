@@ -1,0 +1,25 @@
+{
+ "skill": "itar",
+ "prompts": [
+  {
+   "id": 241,
+   "prompt": "We modify Boeing 737s with DIRCM missile-protection systems for VIP/head-of-state customers. How does the new State Department rule change our ITAR posture after October 2026?"
+  },
+  {
+   "id": 242,
+   "prompt": "What does the 2026 BAE Systems settlement teach us about ITAR compliance program design?"
+  },
+  {
+   "id": 243,
+   "prompt": "Is intelligence-analytics software still USML Category XI(b)? I heard the control was only temporary."
+  },
+  {
+   "id": 244,
+   "prompt": "Our engineering team includes foreign national employees. When does showing them ITAR technical data become a problem?"
+  },
+  {
+   "id": 245,
+   "prompt": "We just discovered unauthorized ITAR exports going back two years. Walk us through voluntary disclosure."
+  }
+ ]
+}

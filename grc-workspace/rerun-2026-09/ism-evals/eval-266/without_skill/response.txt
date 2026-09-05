@@ -1,0 +1,26 @@
+I don't have verified, up-to-date access to the specific September 2026 edition of the Australian Government Information Security Manual (ISM), so I can't give you a guaranteed-accurate change log for that exact release. What I can do is tell you how the ISM update process typically works, what kinds of changes tend to show up in each quarterly release, and how your team should approach verifying and acting on the actual publication.
+
+Context on the ISM release cadence
+The Australian Cyber Security Centre (ACSC), part of the Australian Signals Directorate (ASD), updates the ISM on a regular cycle — historically quarterly, sometimes with additional out-of-cycle updates when a significant threat or guidance change warrants it. Each release typically includes a "Changes to the ISM" or "Changes for [Month] [Year]" summary page at the start of the document that lists every control ID that was added, amended, removed, or renumbered since the previous version. That page is the authoritative source of truth — it's the first thing your team should pull.
+
+What categories of change usually appear
+Based on the pattern of recent ISM updates (2023–2025), releases tend to cluster around a few recurring themes, and a September 2026 release would plausibly continue these trends:
+
+1. Cloud and SaaS security — refinements to guidance on cloud service provider (CSP) responsibilities, multi-tenancy, and shared responsibility models, often tightening expectations around configuration baselines and logging.
+2. Identity and access management — updates to multi-factor authentication (MFA) requirements, privileged access management, and phishing-resistant authentication (e.g., FIDO2/passkeys) as the preferred MFA method for higher-sensitivity systems.
+3. Artificial intelligence and emerging technology — as AI tooling becomes embedded in enterprise environments, recent ISM cycles have started addressing AI system risk, data handling for AI/ML workloads, and secure use of AI-assisted development or agents. A September 2026 update plausibly expands this guidance further given how fast agentic AI adoption has moved.
+4. Supply chain and third-party/MSP risk — ongoing tightening of requirements around managed service providers, remote access, and vendor assurance, in line with broader government direction (e.g., following high-profile MSP-related incidents).
+5. Cryptography — periodic updates to approved cryptographic protocols and algorithms as NIST and ASD guidance evolves, including post-quantum cryptography transition planning.
+6. Essential Eight alignment — the ISM's guidelines sections are periodically re-synced with Essential Eight maturity model updates.
+
+Recommended actions for your security team
+Regardless of the exact contents of the September 2026 release, here's the standard operating procedure I'd recommend:
+
+- Pull the ISM directly from cyber.gov.au and read the "Changes to the ISM" summary at the front of the document — do not rely on secondary summaries.
+- Diff the control IDs against your last assessed baseline (most organizations track this in a GRC tool or spreadsheet mapped to their System Security Plan).
+- Prioritize triage: separate changes into (a) new mandatory controls affecting your ISM compliance/attestation position, (b) clarifications/rewording with no practical impact, and (c) guidance-only additions (non-mandatory but good practice).
+- Map each changed control to affected systems and owners, and open remediation tickets for anything with a compliance deadline.
+- Brief leadership on any change that affects your organization's security classification posture, PSPF/ISM compliance reporting, or Essential Eight maturity level scoring, since these often roll up into annual attestations.
+- If your organization is subject to specific determinations (PSPF, IRAP assessment, or a regulator like APRA/ACSC), check whether the specific control changes affect your certification or assessment cycle timing.
+
+Bottom line: I'd rather flag the limits of my knowledge than guess at specific control numbers or wording changes that I can't verify. Have your team pull the actual September 2026 ISM PDF/HTML release and the change summary page, and I'm happy to help you interpret specific controls, map them to your environment, or draft remediation plans once you share the actual text.

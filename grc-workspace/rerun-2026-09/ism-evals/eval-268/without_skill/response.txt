@@ -1,0 +1,28 @@
+I don't have verified access to the exact current ISM control wording on third-party OAuth app consent, so treat the specifics below as general security guidance informed by how the ISM typically approaches identity, access control, and supply-chain risk — confirm exact control IDs with your compliance team against the current published ISM.
+
+Why this matters under an ISM-aligned posture
+Third-party OAuth apps requesting delegated permissions into a Microsoft 365 tenant (Graph API scopes covering mail, files, Teams, directory data, etc.) are, from a risk perspective, a supply-chain and access-control issue simultaneously. A user clicking "Accept" on a consent prompt can grant an external, unvetted application standing access to sensitive tenant data — often broader access than the user realizes, and without going through your normal vendor risk assessment or change control process. This is one of the more common real-world initial-access and data-exfiltration vectors in Microsoft 365 environments, so it maps directly onto ISM principles around access control, restricting administrative/privileged access, and supply chain risk management, even where a specific ISM control doesn't name "OAuth consent" verbatim.
+
+Recommended control approach
+1. Disable user consent by default. Configure Entra ID (Azure AD) so end users cannot consent to third-party app permissions themselves. This is the single highest-leverage change: it forces every new integration through a governed approval path rather than ad hoc individual clicks.
+
+2. Stand up an admin consent workflow. Rather than a flat "no self-service ever," use Entra ID's admin consent request workflow so users can request access to a legitimate business app, and a designated approver (security or IT admin) reviews and grants it. This preserves usability while restoring an approval gate — consistent with ISM's emphasis on privileged/administrative actions requiring appropriate authorization.
+
+3. Tier your review criteria by permission scope and risk. Not all OAuth requests are equal:
+ - Low risk: sign-in only (openid, profile, email) — often safe to allow broadly.
+ - Medium risk: read-only access to a user's own mailbox/calendar/files.
+ - High risk: broad Mail.ReadWrite, Files.ReadWrite.All, Directory.Read.All, or any application-level (not delegated) permission, especially Application permissions that don't require a signed-in user — these should always require formal security review, similar to how you'd review a new vendor with system-wide access.
+
+4. Restrict or ban application-permission (app-only) consent entirely for non-Microsoft, non-vetted publishers unless there's a documented, approved business case, since app-only permissions bypass per-user scoping and effectively grant tenant-wide access.
+
+5. Enforce publisher verification. Require that any app requesting consent be a Microsoft-verified publisher, and treat unverified-publisher apps as an automatic escalation/deny pending review — unverified publisher status is one of the strongest, easiest-to-check signals of an unvetted or malicious app.
+
+6. Maintain a living inventory and periodic recertification. Enterprise applications and their granted permissions should be reviewed on a defined cadence (e.g., quarterly) — remove permissions/apps no longer in active use, and recertify that business owners still need what's been granted. This mirrors ISM expectations around periodic access reviews for any privileged or standing access.
+
+7. Log and alert on consent events. Ensure Entra ID sign-in and audit logs capturing OAuth consent grants flow into your SIEM, with alerting on: consent grants to unverified publishers, high-privilege scope grants, and any grant occurring outside the approved workflow (which would indicate a misconfiguration or policy bypass).
+
+8. Apply conditional access and risk-based controls around consent-adjacent activity, e.g., requiring MFA and a compliant device before a user can even initiate a consent request, reducing the chance of a compromised account approving a malicious app on someone else's behalf (illicit consent grant attacks / "consent phishing").
+
+9. Document this as a formal policy artifact. Given this is a recurring audit and Essential Eight/ISM assessment topic, capture the OAuth app governance process (who approves, what criteria, review cadence, logging requirements) as a written procedure so it's evidence-ready for assessors, rather than tribal knowledge in the identity team.
+
+Practical next step: I'd recommend having your identity/security architecture team confirm this approach against the specific ISM controls currently in force for access control, identification and authentication, and system hardening, and against your organization's Essential Eight maturity target (application control and restricting admin privileges both touch this area). Happy to help draft the actual tenant policy document or the Entra ID configuration checklist once you confirm your target maturity level and current baseline.

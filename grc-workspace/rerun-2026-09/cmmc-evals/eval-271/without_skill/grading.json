@@ -1,0 +1,33 @@
+{
+  "eval_id": 271,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the suspension: DoD/DoW suspended CMMC Phase 2 (third-party assessment requirements) on July 13, 2026 \u2014 C3PAO assessments are not currently required for new contract awards",
+      "passed": false,
+      "evidence": "No mention of the July 13, 2026 suspension; instead treats C3PAO as potentially required: 'third-party certification... becomes a condition of award or of exercising an option period'"
+    },
+    {
+      "text": "States the Task Force status accurately: the Reform Task Force's recommendations (due to the DoW CIO around September 13, 2026) had NOT been published as of early September \u2014 advise verifying current status before deciding",
+      "passed": false,
+      "evidence": "No mention of the Reform Task Force, the Aug 14 RFI, or the ~Sept 13 recommendations deadline anywhere in the response"
+    },
+    {
+      "text": "Notes underlying obligations continue unchanged: NIST SP 800-171 Rev 2 implementation, DFARS 252.204-7012 safeguarding/reporting",
+      "passed": false,
+      "evidence": "Mentions 800-171 only re FCA suits ('misrepresenting their NIST 800-171 compliance posture'); never states DFARS 252.204-7012 obligations continue unchanged"
+    },
+    {
+      "text": "Notes SPRS obligations continue: Basic (self) Assessment posting and annual affirmations (DFARS 7019/7020)",
+      "passed": false,
+      "evidence": "Mentions 'current SPRS score' only as a readiness item; no DFARS 7019/7020 Basic Assessment posting or annual affirmation duties"
+    },
+    {
+      "text": "Gives balanced advice: a voluntary assessment may retain value (marketability, readiness, possible credit under a future regime), but contractual necessity is currently suspended \u2014 decision should follow the Task Force outcome",
+      "passed": false,
+      "evidence": "Advice ('cancelling a scheduled assessment risks being unable to bid') is premised on C3PAO still being contractually required, contradicting the suspension; no Task Force-contingent framing"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

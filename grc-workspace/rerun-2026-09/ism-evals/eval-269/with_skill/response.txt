@@ -1,0 +1,29 @@
+Short answer: **no, the Essential Eight is not being replaced right now** — assess against it as-is. This answer reflects the ISM September 2026 release status.
+
+**Current status of the "Essentials" consultation**: ASD ran a consultation on a proposed successor/extension (informally referred to as "Essentials") that closed on 12 July 2026. As of the September 2026 ISM release, there is **no announced outcome** from that consultation — no replacement framework, no revised maturity model, no transition timeline has been published. Until ASD formally announces a change, the Essential Eight and its existing Maturity Model (ML0–ML3) remain the operative, ASD-mandated baseline for Australian government entities, and you should continue reporting against it in your normal cyber security posture reporting cycle.
+
+**What to assess against right now:**
+
+1. **Essential Eight Maturity Model (ML0–ML3)** across all eight strategies:
+ - Application control (allow-listing)
+ - Patch applications
+ - Configure Microsoft Office macro settings
+ - User application hardening
+ - Restrict administrative privileges
+ - Patch operating systems
+ - Multi-factor authentication
+ - Regular backups
+
+ ASD's recommended baseline target for 2026 for most government entities is **ML2** ("mostly aligned; addresses sophisticated threats"), with **ML3** required for critical infrastructure operators and high-risk sectors. Confirm your entity's mandated target tier with your portfolio's cyber security policy — this can vary by agency risk profile.
+
+2. **The full ISM control set in parallel** — this is the point most teams get wrong: Essential Eight compliance is a subset of ISM compliance, not a substitute for it. The Essential Eight maps to only three ISM chapters at meaningful depth (Ch. 13 System Hardening, Ch. 14 System Management, and pieces of Ch. 6/9/19 for MFA), out of 22 chapters total. Being ML2 across the Essential Eight tells you nothing about your posture on incident response (Ch. 2), physical security (Ch. 5), cryptography (Ch. 20), gateways (Ch. 21), or the newer September 2026 control areas — agentic AI (ISM-2156–2159), AI agent identity (ISM-2133–2135), third-party OAuth (ISM-2137–2140), workload credentials (ISM-2141–2148), and service provider access (ISM-2124–2125). None of the June or September 2026 ISM additions carry an Essential Eight mapping — they are ISM-only obligations, so Essential Eight maturity work and current ISM compliance are genuinely separate workstreams that both need active tracking.
+
+3. **Essential Eight to ISM mapping document** (published by ASD) — use this to confirm which specific ISM control IDs each Essential Eight strategy satisfies, and don't assume coverage extends beyond what's explicitly mapped.
+
+**Practical recommendation for your assessment cycle:**
+- Run your Essential Eight self-assessment against ML0–ML3 as normal, targeting your entity's mandated maturity level.
+- Separately, run (or request from us) a full ISM gap analysis covering all 22 chapters for your system's classification level, with particular attention to the September 2026 additions if you have any agentic AI, MSP relationships, or third-party OAuth integrations in scope — these are new obligations with no Essential Eight equivalent and are the areas most likely to be missed if a team assumes "we're ML2, so we're covered."
+- Monitor the "Essentials" consultation outcome and flag it for reassessment the moment ASD publishes a determination — a genuine replacement would require updating your SSP's control-selection rationale and your recurring posture-reporting templates.
+- Document in your SSP explicitly which ISM release your control selection assumes (September 2026) and note the open consultation as a tracked risk item with a review trigger tied to ASD's announcement.
+
+If you'd like, I can produce a combined Essential Eight maturity scorecard plus full ISM gap-analysis table for your system's classification level as a next step.

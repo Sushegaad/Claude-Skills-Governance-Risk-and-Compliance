@@ -1,0 +1,26 @@
+Direct answer: Yes, this is almost certainly a notifiable personal data breach under Art. 4(12) — ransomware with suspected exfiltration of ~40,000 EU customers' personal data triggers both your 72-hour supervisory authority notification duty (Art. 33) and, very likely, an obligation to notify the affected individuals directly (Art. 34). Here is the sequence, in order, starting now.
+
+Step 1 — Contain and establish facts (immediate, parallel to everything else)
+Isolate affected systems, engage incident response/forensics, and preserve evidence (including logs — do not let ransomware cleanup destroy the evidence trail you'll need for Art. 33(3) reporting and eventual regulatory scrutiny). Determine, to the extent currently knowable: what categories of personal data were on the affected systems, whether exfiltration is confirmed or merely suspected, and whether backups are intact and uncompromised.
+
+Step 2 — Assess "awareness" and start the 72-hour clock (Art. 33(1))
+The clock starts when you become "aware" of the breach — generally when you have a reasonable degree of certainty a breach has occurred, not full certainty about scope. Discovering ransomware activity overnight with signs of exfiltration is very likely sufficient awareness to start the clock now, even if forensics are incomplete. Note: 40,000 EU customers across multiple Member States may implicate more than one national authority — identify your lead supervisory authority (typically where your main EU establishment is) under the one-stop-shop mechanism, and be prepared for cooperation with other affected DPAs.
+
+Step 3 — Notify the supervisory authority within 72 hours (Art. 33)
+Your notification must include, to the extent available (Art. 33(3)): nature of the breach and approximate number of data subjects/records affected; DPO or other contact point; likely consequences of the breach; and measures taken or proposed to address it and mitigate harm. If you cannot provide all information within 72 hours, Art. 33(1) explicitly permits phased/staggered reporting — submit what you have and supplement "without undue further delay." Document the reasons for any delay if you notify late (Art. 33(1) proviso).
+
+Note on template: The EDPB's draft common Art. 33 notification template was adopted for consultation on 8 June 2026 and closed consultation on 5 August 2026 — it is not yet finalized or operative, so use your supervisory authority's current national notification form/portal, not the draft template.
+
+Step 4 — Assess whether you must notify the affected individuals (Art. 34)
+Required "without undue delay" where the breach is "likely to result in a high risk to the rights and freedoms of natural persons." Ransomware with suspected exfiltration of customer personal data is a strong candidate for high risk — factors pointing toward notification include: sensitivity of the data (payment details, ID numbers, health data would make this near-certain), risk of identity theft or fraud, and inability to rule out exfiltration. The Art. 34(3) exemptions (data was encrypted/unintelligible to the attacker, or you've taken measures eliminating the high risk, or individual notification would involve disproportionate effort — in which case a public communication may substitute) rarely apply cleanly to confirmed or suspected exfiltration scenarios; document your reasoning either way.
+
+Step 5 — Draft and send individual notifications (if required)
+Must describe, in clear plain language (Art. 34(2), referencing Art. 33(3)(b)–(d)): nature of the breach, likely consequences, and measures taken/recommended (e.g., password resets, fraud monitoring, watch for phishing). Coordinate timing with the SA notification and with any parallel obligations (e.g., NIS2/national cybersecurity incident reporting, breach notification laws in non-EU jurisdictions if customers are global).
+
+Step 6 — Investigate root cause, remediate, and document everything (Art. 5(2) accountability)
+Maintain an internal breach register covering all breaches, even those not requiring SA notification (Art. 33(5)). Post-incident, review whether Art. 32 security measures (encryption, access controls, backup integrity, network segmentation) were adequate, and whether a DPIA (Art. 35) is now warranted for the affected processing given the demonstrated risk.
+
+Step 7 — Anticipate regulatory follow-up
+Ransomware breaches of this scale routinely trigger regulator inquiries into whether Art. 32 security measures were "appropriate to the risk" before the incident — be ready to demonstrate pre-incident encryption, patching cadence, access controls, and monitoring capability, not just your post-incident response.
+
+⚠️ Legal Advice Disclaimer: This is a high-stakes, time-critical matter involving a confirmed security incident, likely regulatory notification duties, and potential fines under Art. 83. This guidance is informational only. Engage your DPO and outside counsel immediately — ideally within hours, not days — to manage notification timing, privilege over the forensic investigation, and coordination across any additional jurisdictions or sectoral regulators involved.

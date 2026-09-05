@@ -1,0 +1,13 @@
+{
+  "eval_id": 268,
+  "eval_name": "oauth-consent-hardening",
+  "run_type": "without_skill",
+  "prompt": "How should we handle third-party OAuth application consent in our Microsoft 365 tenant under the current ISM?",
+  "assertions": [
+    "End users prevented from granting consent to third-party OAuth applications — consent by an authorised administrator only (ISM-2137)",
+    "OAuth application consents reviewed at least every six months, revoking unused apps and excessive permissions (ISM-2138)",
+    "Central logging of consent grants, token issuance and token use (ISM-2139)",
+    "OAuth device code flow disabled unless required; where required, restricted to authorised accounts and managed devices (ISM-2140)",
+    "Frames why: consent phishing and token theft are current attack paths; ties to session/token binding and revocation controls in the same release"
+  ]
+}

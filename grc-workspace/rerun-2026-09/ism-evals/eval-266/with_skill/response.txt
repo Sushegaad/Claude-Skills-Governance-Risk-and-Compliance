@@ -1,0 +1,25 @@
+This answer assumes the ISM September 2026 release (published 3 September 2026), the current edition at time of writing. It is a major quarterly update, so treat this as a required briefing item for your next security committee meeting, not an optional read.
+
+**Headline numbers**: 44 new controls (ISM-2124 through ISM-2167), one rescission (ISM-0521, the recommendation to disable IPv6 in dual-stack devices), and one cryptographic protocol addition — MACsec is now ASD-approved. This follows the March 2026 release (18 principles added, 3 removed, expanding the Cybersecurity Principles from 34 to 49) and the June 2026 release (20 new controls, including the first AI application controls, ISM-2112–2114). September's release is squarely focused on agentic AI, identity, and third-party access risk — reflecting how quickly ASD's threat model has moved since June.
+
+**Key themes to brief your team on:**
+
+1. **Agentic AI (ISM-2156–2159)** — This is the biggest new area. Agentic AI applications must be restricted to the minimum tools, functions, and permissions needed for their task. Critically, tool invocations are now governed by a dual-authorisation model: the invoking user's own access controls AND agent-specific, task-scoped authorisation both apply, and effective permissions are the minimum of the two — not the union. External content (web pages, documents, tool outputs) must be treated as untrusted throughout processing, delimited from system instructions, and prevented from overriding security policies or human-approval requirements. All tool invocations, external requests, and outputs must be centrally logged.
+
+2. **AI agent identity (ISM-2133–2135)** — Every AI agent needs a unique identity distinct from any personnel account it acts on behalf of. Agencies must stand up and regularly verify an AI agent register capturing identifier, owner/purpose, associated identities, credentials, and the tools/permissions/data each agent can access. If you're deploying any agentic AI, this register is now a baseline control-evidence artefact, not a nice-to-have.
+
+3. **Third-party OAuth (ISM-2137–2140)** — End users are no longer permitted to consent to third-party OAuth applications; consent becomes admin-only. Existing consents must be reviewed on a 6-monthly cycle, consent/token events must be centrally logged, and device code flow must be disabled unless there is a documented requirement for it.
+
+4. **Workload credentials & sessions (ISM-2141–2148)** — Preference shifts to short-lived, dynamic credentials over static secrets; where static credentials remain, a secrets management solution is required, credentials must be unique per application and per environment, and tokens/cookies must be cryptographically bound to the issuing device. Sessions must be revoked on password reset, suspected compromise, policy non-compliance, or high-risk sign-in signals.
+
+5. **Service provider access (ISM-2124–2125)** — Provider access must be restricted to approved tools, source addresses, and time windows, with organisation-controlled, tamper-proof logging (not logging solely under the provider's control). ISM-1576 has been amended: unauthorised service-provider access is now explicitly classified as a cyber security incident, triggering your incident response and notification obligations.
+
+6. **Synthetic impersonation (ISM-2126)** — Before actioning any account-detail, banking-detail, or financial-transaction request, identity must be verified via a pre-established method or an independent trusted channel. This is a direct response to deepfake voice/video impersonation of executives and finance staff.
+
+7. **Other additions worth flagging**: immutable backups with segregated backup infrastructure (ISM-2151–2152); allow-listing of authorised RMM tools with gateway blocking of unauthorised ones (ISM-2149–2150); quarterly CTI-informed threat hunting (ISM-2153); dependency pinning and reproducible builds (ISM-2154–2155); driver-signature/kernel-mode-code restrictions and WMI/AD CS logging (ISM-2127–2132); and dedicated management networks, monthly device integrity verification, and MACsec configuration parameters (ISM-2160–2167).
+
+8. **Cadence tightening**: DCSync-permission reviews (ISM-1934) and KRBTGT credential rotation (ISM-1847) move from annual to 6-monthly; post-deployment vulnerability assessments and penetration tests (ISM-2118) move to 6-monthly.
+
+**Essential Eight note**: the "Essentials" consultation closed 12 July with no announced outcome yet — treat Essential Eight and its Maturity Model as still fully operative alongside these changes.
+
+**Recommended next step**: run a September 2026 delta check against your current SSP and control set — particularly if you have any agentic AI, MSP relationships, or OAuth-integrated SaaS in scope — and I can produce a gap-analysis table against these new controls if you confirm your system's classification level.

@@ -1,0 +1,33 @@
+{
+  "eval_id": 255,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the SME exemption: small and micro enterprises may opt out of specified obligations (impact assessments, certain security/processor duties) for 5 years from January 1, 2026",
+      "passed": false,
+      "evidence": "Contradicts the exemption: \"There is no small-business carve-out or headcount/revenue threshold that exempts a company\""
+    },
+    {
+      "text": "Notes the carve-outs: the exemption does NOT apply if processing sensitive personal data or processing at large scale",
+      "passed": false,
+      "evidence": "No exemption acknowledged, so no sensitive-data/large-scale carve-outs to it are stated"
+    },
+    {
+      "text": "Notes micro-enterprises get the fullest relief, subject to the same carve-outs",
+      "passed": false,
+      "evidence": "No micro-enterprise relief mentioned; \"you're not exempt\""
+    },
+    {
+      "text": "Warns that core duties still apply: lawful basis/consent, data subject rights, breach notification, and the penalty regime (Decree 330) applies to violations of applicable duties",
+      "passed": false,
+      "evidence": "Core duties (consent, rights, breach notification) said to apply, but no mention of the Decree 330 penalty regime at all"
+    },
+    {
+      "text": "Advises documenting the exemption reliance and re-checking on growth/scale changes",
+      "passed": false,
+      "evidence": "No advice to document exemption reliance (exemption denied); only generic proportional-compliance guidance"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

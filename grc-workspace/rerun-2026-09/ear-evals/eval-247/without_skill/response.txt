@@ -1,0 +1,27 @@
+This variant changes the analysis meaningfully because the performance envelope now approaches the thresholds that the Commerce Control List uses to identify more sensitive unmanned aerial systems, so the classification exercise needs to be redone rather than assumed to carry over from the shorter-endurance version.
+
+1. Re-run the classification against ECCN 9A012
+ECCN 9A012 controls UAVs (and specially designed parts/components/related software and technology in 9A012 and the corresponding "D"/"E" entries) that meet specific range, altitude, and other performance criteria drawn from the Missile Technology Control Regime (MTCR) Category I framework and related Wassenaar/EAR thresholds. A 400 km range and 5-hour endurance is squarely in the zone where you must check:
+- Whether the aircraft can operate at a range/endurance combination associated with "beyond line of sight" or autonomous long-range operation.
+- Whether it has an autopilot/autonomous flight-control capability (rather than being purely remotely piloted with continuous operator control).
+- Payload capability, since MTCR Category I-type controls have historically hinged on range plus payload combinations (traditionally 300 km / 500 kg for missiles, with UAV-specific parameters set out separately in 9A012).
+
+If the UAV meets the 9A012 control parameters, it becomes subject to National Security (NS), Missile Technology (MT), and Anti-Terrorism (AT) reasons for control, which is a materially different — and much stricter — licensing posture than 9A991 or EAR99.
+
+2. Licensing impact for Brazil specifically
+Brazil is generally treated favorably under NS-column licensing (it is not in the most restrictive country groups), but Missile Technology (MT) controls are essentially global in scope: an MT license requirement is not waived simply because the destination is a friendly, non-embargoed country. If the drone's range/payload combination triggers MT controls under 9A012, you should expect:
+- A likely license requirement to Brazil (MT licenses are reviewed under a strong presumption of denial policy globally, including for MTCR partner countries, unless the transaction fits an established exception).
+- Extended review timelines, since MT-controlled license applications typically get interagency review (State, Defense, sometimes NASA/NSC input via the Commerce process).
+- The likely need for a specific end-use statement, non-transfer and end-use assurances from the Brazilian distributor and the actual government/commercial end user, and possibly a post-shipment verification commitment.
+
+3. Confirm no ITAR overlap
+Given the increased range/endurance, double-check that the airframe, autopilot, or any component was not originally designed or modified for a military application, which could push all or part of the system back to USML Category VIII jurisdiction. If any component was sourced from a defense contractor lineage or shares design lineage with a military UAV, a jurisdiction/classification request (commodity jurisdiction determination) to DDTC may be warranted before relying on an EAR-only theory.
+
+4. Distributor and end-use diligence
+Because MT-controlled items draw heightened scrutiny, your due diligence on the Brazilian distributor should go beyond standard restricted-party list screening:
+- Identify and document the specific commercial end use (e.g., agricultural monitoring, infrastructure inspection, pipeline surveillance) and the named end user, not just "distributor for resale."
+- Obtain an end-user statement/certificate and consider requiring pre-approval rights over any resale.
+- Watch for red flags common to MT-sensitive UAV sales: unusual payload modification requests, interest in extending range/endurance further, requests to remove telemetry/geofencing, or reluctance to identify the true end user.
+
+5. Practical recommendation
+Do not assume the same "likely EAR99/9A991, no license" conclusion carries over from the shorter-endurance version. Run the actual technical parameters (400 km range, 5-hour endurance, payload, autopilot autonomy) against the current 9A012 text, and if there's any ambiguity, submit a formal classification request (CCATS) to BIS given the significant compliance and criminal-liability exposure of misclassifying an MT-controlled item as EAR99. If 9A012/MT control is confirmed, plan for a license application with realistic expectations about approval likelihood and timeline, rather than assuming Brazil's generally favorable country-group status will carry the day.

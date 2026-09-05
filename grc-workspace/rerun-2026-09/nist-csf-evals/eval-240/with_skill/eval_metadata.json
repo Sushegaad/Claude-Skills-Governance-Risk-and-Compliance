@@ -1,0 +1,13 @@
+{
+  "eval_id": 240,
+  "eval_name": "csf-11-to-20-migration",
+  "run_type": "with_skill",
+  "prompt": "We built our program on CSF 1.1. What actually changed in 2.0 and how do we migrate?",
+  "assertions": [
+    "GOVERN function added (elevating governance/supply-chain risk strategy), reorganizing former ID categories",
+    "Scope broadened: from critical infrastructure to all organizations",
+    "Structural changes: categories/subcategories reorganized and renumbered — requires subcategory-level remapping, not a rename",
+    "Mentions new support resources: implementation examples, quick-start guides, reference tool, community profiles",
+    "Gives a sane migration path: map existing 1.1 profile to 2.0 subcategories, stand up GOVERN outcomes, refresh target profile and roadmap"
+  ]
+}

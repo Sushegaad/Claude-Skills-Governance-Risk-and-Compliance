@@ -1,0 +1,33 @@
+{
+  "eval_id": 260,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Lists the all-hazards, 10-measure minimum set \u2014 policies on risk analysis, incident handling, business continuity/backup/DR/crisis management, supply chain security, secure development/vulnerability handling, effectiveness testing, cyber hygiene/training, cryptography policies, HR/access control/asset management, and MFA/secured communications",
+      "passed": true,
+      "evidence": "based on an 'all-hazards approach'... enumerates all ten Article 21(2) domains from risk analysis through MFA/secured communications"
+    },
+    {
+      "text": "Emphasises supply chain security including direct supplier relationships as an explicit measure",
+      "passed": true,
+      "evidence": "Supply chain security, including security-related aspects concerning relationships between each entity and its direct suppliers or service providers"
+    },
+    {
+      "text": "Notes proportionality: measures appropriate to the risks, entity size, and societal impact",
+      "passed": true,
+      "evidence": "Proportionality is assessed against your degree of risk exposure, size, likelihood/severity of incidents, and cost of implementation"
+    },
+    {
+      "text": "Mentions the effectiveness-assessment obligation (policies and procedures to assess whether measures work)",
+      "passed": true,
+      "evidence": "Policies and procedures to assess the effectiveness of cybersecurity risk-management measures... actually test and measure whether your controls work"
+    },
+    {
+      "text": "Frames ISO 27001 correctly if raised: strong implementation vehicle but not a safe harbor (registration, reporting timelines, governance duties sit outside certification)",
+      "passed": true,
+      "evidence": "this becomes a gap-mapping and documentation exercise... make sure Article 20 governance evidence (board approval, management training records) exists alongside \u2014 ISO framed as vehicle requiring gap work, not automatic compliance"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

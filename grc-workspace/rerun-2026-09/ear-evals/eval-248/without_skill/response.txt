@@ -1,0 +1,22 @@
+This is a jurisdiction-and-classification question that comes up often for UAVs with military design lineage that don't cleanly match an enumerated USML Category VIII entry. Here is how the analysis generally works.
+
+1. Start with the USML itself
+Category VIII of the U.S. Munitions List (USML) covers aircraft and related articles, including "unmanned aerial vehicles ... specially designed, modified, or configured for a military application." If a UAV is genuinely military-purposed (designed for combat, ISR in a military context, weapons delivery, or built to military specifications) but doesn't fit neatly into an enumerated Category VIII subparagraph, the first step is not to assume it defaults to the EAR — you need to check whether it's still captured by USML Category VIII's general "specially designed" language or the catch-all paragraph within that category before concluding it falls outside ITAR jurisdiction.
+
+2. If it truly isn't captured by the USML, it lands in the EAR "600 series"
+The State Department and Commerce Department jointly executed "Export Control Reform," which moved many military items that are less sensitive (or that the U.S. government decided didn't warrant USML control) from the USML to the EAR's "600 series" ECCNs. For aircraft-related military items, the relevant entry is typically ECCN 9A610 (military aircraft and related commodities), which includes a 9A610.x catch-all paragraph for "specially designed" parts, components, accessories, and attachments for military aircraft/UAVs that are not elsewhere specified. A military-purposed UAV that is not on the USML would generally be evaluated first against 9A610 (and its "y" paragraph, which is a lower-control-level catch-all also worth checking), rather than falling through to EAR99, because "specially designed for a military application" is precisely the kind of item the 600 series was built to catch.
+
+3. Confirm through a formal jurisdiction/classification determination — don't self-classify by assumption
+Because the line between "still on the USML," "600 series," and "EAR99 with military end-use catch-all controls" is genuinely ambiguous for many UAVs, the standard, defensible practice is:
+- Submit a Commodity Jurisdiction (CJ) request to the Directorate of Defense Trade Controls (DDTC) if there's real doubt about whether the item remains ITAR-controlled, or
+- If jurisdiction is settled as EAR, submit a classification request to BIS (a CCATS) to confirm whether 9A610 or another 600-series entry applies, versus 9A991/9A012, versus EAR99.
+Self-classifying a military UAV as EAR99 without going through this process is a common enforcement trap — BIS and DDTC have both pursued penalties in cases where companies assumed non-enumerated military items fell outside ITAR/600-series control.
+
+4. Licensing consequences of a 600-series classification
+If the UAV is confirmed as 9A610-controlled, the licensing posture differs sharply from EAR99/9A991 commercial items:
+- 600-series items are subject to National Security, Regional Stability, and often United Nations/other reasons for control, with a much broader set of destinations requiring a license than commercial ECCNs.
+- License Exception STA (Strategic Trade Authorization) may be available for exports to close allies (Country Group A:5/A:6) but is unavailable for many destinations and is subject to its own eligibility and notification requirements.
+- Exports, re-exports, or even technology transfers/technical assistance involving a 9A610 item to most other countries will require a BIS license, and applications are typically routed through interagency review given the military nature of the item.
+
+5. Practical recommendation
+Treat "not described on the USML" as the start of the analysis, not the end. Work through: (a) is it really outside USML Category VIII's "specially designed" and catch-all language; (b) if so, does it fit 9A610 (or another 600-series aircraft-related ECCN); (c) if genuinely outside both, is it 9A991/9A012 or EAR99, keeping in mind that "military end use/end user" catch-all controls (currently significant for certain destinations) can still reach an EAR99 item if you have knowledge of a military end use in a controlled country. Given the compliance and enforcement risk, I'd strongly recommend a formal CJ or CCATS determination rather than an internal self-classification for an item this sensitive.

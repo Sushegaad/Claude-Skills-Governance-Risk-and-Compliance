@@ -1,0 +1,33 @@
+{
+  "eval_id": 274,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Uses the CMMC scoping categories: CUI assets, Security Protection Assets, Contractor Risk Managed Assets, Specialized Assets, and out-of-scope assets \u2014 with the required treatment of each",
+      "passed": false,
+      "evidence": "Lists the categories but mis-treats Specialized Assets, lumping them with out-of-scope: 'Specialized Assets (IoT, OT, GFE...) and Out-of-Scope Assets: assets with no CUI touchpoint... genuinely excluded' \u2014 Specialized Assets are in scope and must be documented"
+    },
+    {
+      "text": "Endorses the enclave strategy: concentrate CUI processing/storage/transmission into a bounded environment to shrink the assessment boundary",
+      "passed": true,
+      "evidence": "you isolate the systems, users, and network segments that actually create, store, process, or transmit... CUI into a bounded enclave... your Level 2 assessment scope... only needs to cover the enclave"
+    },
+    {
+      "text": "Requires dataflow mapping: where CUI enters, moves, is stored, and exits (email, file shares, endpoints, cloud)",
+      "passed": true,
+      "evidence": "Identify every place CUI enters... Trace where that data is stored, who touches it, what systems process it (engineering tools, ERP, email, file shares, backup systems), and where it exits"
+    },
+    {
+      "text": "Covers external service providers: CSPs handling CUI need FedRAMP Moderate (or equivalency); ESPs/MSPs are in scope via Security Protection Asset treatment",
+      "passed": false,
+      "evidence": "Mentions 'GCC High... / equivalent FedRAMP Moderate-or-higher tenant' only as an architecture option; no stated CSP FedRAMP Moderate requirement for CUI, and no ESP/MSP-as-Security-Protection-Asset coverage"
+    },
+    {
+      "text": "Covers flow-down: subcontractors receiving CUI need Level 2; FCI-only subs need Level 1 \u2014 with the DFARS 7012 clause flowing down",
+      "passed": false,
+      "evidence": "Mentions 'subcontractor flow-down' only as a data exit; no Level 2/Level 1 subcontractor requirements and no DFARS 7012 clause flow-down"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 273,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Starts at 110 and deducts per unimplemented practice using the DoD Assessment Methodology weights (5, 3, or 1 points)",
+      "passed": true,
+      "evidence": "You start at 110 points... Every practice found NOT MET deducts its assigned point value... pre-assigned a weight of 5, 3, or 1 points"
+    },
+    {
+      "text": "States the score range: +110 down to -203",
+      "passed": true,
+      "evidence": "The score range runs from +110 (nothing open) down to \u2212203 (nothing implemented at all)"
+    },
+    {
+      "text": "States prerequisites: a complete SSP is required; the Basic Assessment (self) is posted to SPRS with assessment date and scope",
+      "passed": false,
+      "evidence": "Says 'Submit the current score to SPRS' and 'update your POA&M and SSP', but never states a complete SSP is a prerequisite, nor that the Basic Assessment is posted with assessment date and scope"
+    },
+    {
+      "text": "Notes specific weighting rules: MFA (3.5.3) and FIPS-validated encryption (3.13.11) carry special treatment (5/3-point nuances), or accurately describes the 1/3/5 weighting logic with examples",
+      "passed": true,
+      "evidence": "IA.L2-3.5.3 (multifactor authentication) \u2014 5 pts... SC.L2-3.13.11 (FIPS-validated cryptography) \u2014 5 pts; describes 1/3/5 weighting with worked example (2\u00d75)+(4\u00d73)+(6\u00d71)=28"
+    },
+    {
+      "text": "Mentions the annual affirmation duty and that misrepresentation carries False Claims Act risk",
+      "passed": true,
+      "evidence": "have a senior company official affirm its accuracy \u2014 this affirmation is required annually... a false affirmation carries False Claims Act exposure"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

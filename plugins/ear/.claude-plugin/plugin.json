@@ -1,7 +1,7 @@
 {
   "name": "ear",
   "description": "EAR compliance advisor \u2014 ECCN classification, EAR99 determination, EAR vs ITAR jurisdiction, license requirement analysis, all 14 license exceptions, restricted party screening, deemed exports, FDPR, de minimis, 10 General Prohibitions, SNAP-R licensing, VSD, civil/criminal penalties, and Export Compliance Programme (ECP) design.",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

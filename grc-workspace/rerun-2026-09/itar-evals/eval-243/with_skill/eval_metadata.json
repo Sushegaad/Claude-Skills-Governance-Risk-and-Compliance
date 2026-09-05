@@ -1,0 +1,13 @@
+{
+  "eval_id": 243,
+  "eval_name": "xib-software-status",
+  "run_type": "with_skill",
+  "prompt": "Is intelligence-analytics software still USML Category XI(b)? I heard the control was only temporary.",
+  "assertions": [
+    "Explains the temporary modification of Category XI(b) retains 'analyze and produce information from' and 'software' within the control text",
+    "States it was extended through August 30, 2028 (final rule, 91 FR 55461, August 2026)",
+    "Gives the origin: the 2014 Category XI rewrite created ambiguity that could exclude certain intelligence-analytics software; the temporary modification preserves the pre-2015 scope",
+    "Advises classifying against the current (modified) XI(b) text today — the software remains ITAR-controlled if described",
+    "Recommends monitoring for the permanent resolution and considering a Commodity Jurisdiction request where edge-case"
+  ]
+}

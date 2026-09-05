@@ -1,0 +1,13 @@
+{
+  "eval_id": 257,
+  "eval_name": "transposition-laggards",
+  "run_type": "with_skill",
+  "prompt": "Which EU member states still haven't transposed NIS2 as of September 2026? We have subsidiaries in Ireland, Spain and France.",
+  "assertions": [
+    "Identifies Ireland, Spain and France as the member states still lacking in-force transposition laws as of early September 2026",
+    "Cites the July 9, 2026 Commission referral to the CJEU for failure to notify transposition — which originally also included the Netherlands",
+    "Notes the Commission requested financial penalties: a lump sum plus daily penalty payments",
+    "Notes the Netherlands has since transposed (Cbw in force August 15, 2026) and should no longer be listed as a laggard",
+    "Gives the right advice: prepare subsidiaries against the directive text now — authorities have applied short compliance windows once national law lands"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 271,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the suspension: DoD/DoW suspended CMMC Phase 2 (third-party assessment requirements) on July 13, 2026 \u2014 C3PAO assessments are not currently required for new contract awards",
+      "passed": true,
+      "evidence": "On July 13, 2026, the DoD suspended CMMC Phase 2 \u2014 which includes the C3PAO third-party assessment requirement... may only designate Level 1 (Self) or Level 2 (Self)"
+    },
+    {
+      "text": "States the Task Force status accurately: the Reform Task Force's recommendations (due to the DoW CIO around September 13, 2026) had NOT been published as of early September \u2014 advise verifying current status before deciding",
+      "passed": true,
+      "evidence": "report is due to the DoW CIO around September 13, 2026... the task force's recommendations have not been published. You should verify current status again before making a final call"
+    },
+    {
+      "text": "Notes underlying obligations continue unchanged: NIST SP 800-171 Rev 2 implementation, DFARS 252.204-7012 safeguarding/reporting",
+      "passed": true,
+      "evidence": "the DFARS clause family (252.204-7012...) remain in force. NIST SP 800-171 obligations for any contract handling CUI did not move"
+    },
+    {
+      "text": "Notes SPRS obligations continue: Basic (self) Assessment posting and annual affirmations (DFARS 7019/7020)",
+      "passed": true,
+      "evidence": "Your SPRS Basic Assessment, self-assessment currency under DFARS 7019, SPRS score posting under 7020, and annual senior-official affirmation are all still legally required"
+    },
+    {
+      "text": "Gives balanced advice: a voluntary assessment may retain value (marketability, readiness, possible credit under a future regime), but contractual necessity is currently suspended \u2014 decision should follow the Task Force outcome",
+      "passed": true,
+      "evidence": "Consider deferring rather than cancelling... preserves your place in the assessment pipeline... hold a decision until after the task force report lands (~Sept 13)"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

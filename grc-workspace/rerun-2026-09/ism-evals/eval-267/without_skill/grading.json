@@ -1,0 +1,33 @@
+{
+  "eval_id": 267,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Unique identity for each AI agent, distinct from personnel accounts and other agents (ISM-2133)",
+      "passed": true,
+      "evidence": "\"Treat the agent as a system identity/service account, not a human user... unique, attributable credentials\" — substance of unique identity distinct from personnel accounts (though ISM-2133 not cited)"
+    },
+    {
+      "text": "An AI agent register — maintained and regularly verified — recording identifier, owner/purpose, identities, credentials, and tools/permissions/data accessible (ISM-2134/2135)",
+      "passed": false,
+      "evidence": "No AI agent register requirement (identifier, owner/purpose, credentials, tools/permissions) mentioned anywhere"
+    },
+    {
+      "text": "Restriction to minimum tools, functions and permissions for the intended purpose (ISM-2156), with tool invocations subject to BOTH the invoking user's access controls AND agent-specific task-scoped authorisation (ISM-2157)",
+      "passed": false,
+      "evidence": "Least privilege covered, but no dual-authorisation requirement combining invoking user's access controls AND agent-specific task-scoped authorisation (ISM-2157)"
+    },
+    {
+      "text": "External content treated as untrusted throughout processing: delimited from system instructions, validated/sanitised, and prevented from overriding instructions, security policies, access controls or human-approval requirements (ISM-2158)",
+      "passed": false,
+      "evidence": "No requirement to treat external content as untrusted, delimit it from system instructions, or prevent instruction override; prompt injection not addressed"
+    },
+    {
+      "text": "Central logging of all tool invocations, external requests and outputs (ISM-2159), plus human approval before sensitive/high-impact actions (ISM-2113 as amended)",
+      "passed": false,
+      "evidence": "Logging of tool calls and human approval gates suggested as general principles (\"expect a requirement\"), but no central logging of external requests/outputs stated as an ISM requirement; no ISM-2159/ISM-2113"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 236,
+  "eval_name": "transit-profile",
+  "run_type": "without_skill",
+  "prompt": "We're a city transit agency (bus and light rail). Is there NIST CSF guidance specific to our sector we should use?",
+  "assertions": [
+    "Points to NIST IR 8576, the Transit Cybersecurity Framework Community Profile, finalized August 2026",
+    "Describes it as a CSF 2.0 Community Profile for US transit agencies (bus, subway, commuter rail)",
+    "Notes its operational technology / cyber-physical systems emphasis",
+    "States it complements rather than replaces the agency's existing cybersecurity program",
+    "Explains what a Community Profile is: a sector-tailored baseline of CSF outcomes/priorities usable as a starting point or prioritization aid"
+  ]
+}

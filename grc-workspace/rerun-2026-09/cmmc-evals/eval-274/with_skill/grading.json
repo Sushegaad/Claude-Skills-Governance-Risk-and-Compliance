@@ -1,0 +1,33 @@
+{
+  "eval_id": 274,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Uses the CMMC scoping categories: CUI assets, Security Protection Assets, Contractor Risk Managed Assets, Specialized Assets, and out-of-scope assets \u2014 with the required treatment of each",
+      "passed": true,
+      "evidence": "CUI Assets \u2014 fully assessed against all 110... Security Protection Assets... assessed for the security capability... CRMA... assessed at reduced depth... Specialized Assets... documented with compensating controls... Out-of-Scope Assets... excluded entirely, but you must document the rationale"
+    },
+    {
+      "text": "Endorses the enclave strategy: concentrate CUI processing/storage/transmission into a bounded environment to shrink the assessment boundary",
+      "passed": true,
+      "evidence": "An enclave approach is the right instinct... it shrinks the assessment boundary, reduces the number of in-scope assets"
+    },
+    {
+      "text": "Requires dataflow mapping: where CUI enters, moves, is stored, and exits (email, file shares, endpoints, cloud)",
+      "passed": true,
+      "evidence": "Trace where CUI enters your environment (email, portal, physical media...), where it's processed... where it's stored (file shares, databases, backups), and where it exits"
+    },
+    {
+      "text": "Covers external service providers: CSPs handling CUI need FedRAMP Moderate (or equivalency); ESPs/MSPs are in scope via Security Protection Asset treatment",
+      "passed": false,
+      "evidence": "Covers CSPs ('must be FedRAMP Authorized at Moderate or equivalent \u2014 this is a DFARS 7012 requirement') but never addresses ESPs/MSPs being in scope via Security Protection Asset treatment"
+    },
+    {
+      "text": "Covers flow-down: subcontractors receiving CUI need Level 2; FCI-only subs need Level 1 \u2014 with the DFARS 7012 clause flowing down",
+      "passed": false,
+      "evidence": "Mentions 'subcontractor flow-down' only as a CUI exit path; never states Level 2 for CUI subs, Level 1 for FCI-only subs, or DFARS 7012 clause flow-down"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

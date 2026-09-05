@@ -1,0 +1,13 @@
+{
+  "eval_id": 274,
+  "eval_name": "cui-scoping",
+  "run_type": "with_skill",
+  "prompt": "How do we scope our environment for CMMC Level 2? We want an enclave approach.",
+  "assertions": [
+    "Uses the CMMC scoping categories: CUI assets, Security Protection Assets, Contractor Risk Managed Assets, Specialized Assets, and out-of-scope assets — with the required treatment of each",
+    "Endorses the enclave strategy: concentrate CUI processing/storage/transmission into a bounded environment to shrink the assessment boundary",
+    "Requires dataflow mapping: where CUI enters, moves, is stored, and exits (email, file shares, endpoints, cloud)",
+    "Covers external service providers: CSPs handling CUI need FedRAMP Moderate (or equivalency); ESPs/MSPs are in scope via Security Protection Asset treatment",
+    "Covers flow-down: subcontractors receiving CUI need Level 2; FCI-only subs need Level 1 — with the DFARS 7012 clause flowing down"
+  ]
+}

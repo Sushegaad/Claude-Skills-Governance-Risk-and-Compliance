@@ -1,0 +1,13 @@
+{
+  "eval_id": 250,
+  "eval_name": "entity-list-research-sale",
+  "run_type": "with_skill",
+  "prompt": "We sell lab neuroscience equipment. A Chinese university research institute wants to buy. What screening lessons apply?",
+  "assertions": [
+    "Cites the August 2026 Plexon settlement: 8 unlicensed exports of neural-recording systems (~$179K) to China's Academy of Military Medical Sciences, an Entity-Listed institution",
+    "Notes the penalty structure: $1.7M suspended for 5 years conditioned on an external compliance audit and no further violations — suspended denial order included",
+    "Draws the lesson: research/medical/lab equipment is NOT exempt — Entity List license requirements attach regardless of item sensitivity (even EAR99)",
+    "Requires screening all parties against the Consolidated Screening List, and resolving affiliate/alias ambiguity (universities' military-linked institutes)",
+    "Explains Entity List mechanics: supplemental license requirements per the entity's entry with presumption/policy of denial, no license exceptions in most cases"
+  ]
+}

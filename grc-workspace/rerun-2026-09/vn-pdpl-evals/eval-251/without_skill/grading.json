@@ -1,0 +1,33 @@
+{
+  "eval_id": 251,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Cites Decree No. 330/2026/ND-CP, issued and effective August 19, 2026, as the operative sanctions regime (82 articles, 33 on personal data protection)",
+      "passed": false,
+      "evidence": "No mention of Decree 330/2026; relies on \"Decree 13/2023/ND-CP\" and says fine schedules \"were still being finalized through 2025–2026\""
+    },
+    {
+      "text": "States the serious cross-border penalty structure correctly: percentage-of-revenue fines on prior-year VIETNAM-market revenue in bands — 1–2% (10k–<100k data subjects), 2–3% (100k–<1M), 3–5% (≥1M subjects or national defence/security impact)",
+      "passed": false,
+      "evidence": "Only \"potentially up to 5% of a violating company's total revenue in the preceding fiscal year in Vietnam\" as a draft-era shift; no 1–2%/2–3%/3–5% data-subject bands"
+    },
+    {
+      "text": "States the fixed-fine fallback: VND tiers up to 3 billion where there is no Vietnam revenue or the percentage falls below the fixed tier",
+      "passed": false,
+      "evidence": "No fixed-fine fallback tiers up to VND 3 billion; cites obsolete caps \"roughly 100 million–500 million VND\""
+    },
+    {
+      "text": "Covers unlawful data trading: 2×–10× unlawful proceeds, with fixed fines up to VND 3 billion where proceeds are indeterminable",
+      "passed": false,
+      "evidence": "Data trading addressed only as Penal Code criminal exposure (\"imprisonment terms... up to 7 years\"); no 2×–10× unlawful proceeds administrative fine"
+    },
+    {
+      "text": "Notes organisational fines are double individual fines, and remedial measures beyond fines: suspension of processing/transfers, compulsory data destruction, disgorgement, confiscation",
+      "passed": false,
+      "evidence": "Mentions \"suspension of data processing activities\" and \"confiscation of profits\" but omits the organisational-fines-double-individual rule and compulsory data destruction"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 239,
+  "eval_name": "org-profile-build",
+  "run_type": "with_skill",
+  "prompt": "Build us an organizational profile approach for adopting CSF 2.0 — we're a mid-size manufacturer.",
+  "assertions": [
+    "Uses all six CSF 2.0 functions including GOVERN (GV) — not the five-function 1.1 model",
+    "Distinguishes Current Profile vs Target Profile and gap analysis between them",
+    "References Implementation Tiers (1–4) as characterizing rigor of governance/risk practices, informing (not equaling) the target",
+    "Produces a prioritized action plan from the gaps (quick wins vs longer-term; owners/timelines)",
+    "Mentions using Community Profiles or Quick-Start Guides as accelerators where applicable"
+  ]
+}

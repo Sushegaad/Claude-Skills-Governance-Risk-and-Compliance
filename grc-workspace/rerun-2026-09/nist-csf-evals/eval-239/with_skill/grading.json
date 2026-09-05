@@ -1,0 +1,33 @@
+{
+  "eval_id": 239,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Uses all six CSF 2.0 functions including GOVERN (GV) \u2014 not the five-function 1.1 model",
+      "passed": true,
+      "evidence": "Uses six functions with GV categories throughout: 'across all six functions'; GV.OC, GV.RM, GV.SC in Step 1/2 and Phase 1 covers 'GV.OC and GV.RM'"
+    },
+    {
+      "text": "Distinguishes Current Profile vs Target Profile and gap analysis between them",
+      "passed": true,
+      "evidence": "Step 2: Build the Current Profile... Step 3: Build the Target Profile... 'The gap between Current and Target drives your action plan'"
+    },
+    {
+      "text": "References Implementation Tiers (1\u20134) as characterizing rigor of governance/risk practices, informing (not equaling) the target",
+      "passed": false,
+      "evidence": "Implementation Tiers (1-4) are never mentioned; only a Not/Partially/Largely/Fully Implemented rating scale is used"
+    },
+    {
+      "text": "Produces a prioritized action plan from the gaps (quick wins vs longer-term; owners/timelines)",
+      "passed": true,
+      "evidence": "Phased prioritized plan from gaps: 'Phase 1 (prerequisites): GV.OC and GV.RM... Phase 2: PR controls... Phase 3: DE.CM... Phase 4: RS and RC'"
+    },
+    {
+      "text": "Mentions using Community Profiles or Quick-Start Guides as accelerators where applicable",
+      "passed": false,
+      "evidence": "No mention of Community Profiles or Quick-Start Guides as accelerators anywhere in the response"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

@@ -1,0 +1,24 @@
+Yes — there is a NIST publication specifically for transit agencies, and it's very recent.
+
+**NIST IR 8576 — Transit Cybersecurity Framework Community Profile** was finalized on August 5, 2026. It's a CSF 2.0 Community Profile built specifically for U.S. transit agencies operating bus, subway/rail, and commuter rail systems — which matches your organization directly. A "Community Profile" in NIST CSF terms is a pre-built Target Profile developed by and for a specific sector, so that individual organizations don't have to build a target state from scratch. It reflects the shared risk priorities, threat landscape, and operational-technology (OT) realities common to transit operators — think fare collection systems, positive train control / signaling, SCADA for traction power, CCTV and access control at stations and yards, and the IT/OT convergence that comes with connected fleet and infrastructure.
+
+A few important framing points:
+
+1. **It complements, not replaces, your existing program.** NIST IR 8576 is explicitly designed to sit alongside whatever cybersecurity program you already run — it is not a compliance mandate and does not override FTA, TSA Security Directives, or other regulatory obligations you may have. Treat it as a sector-tuned starting point for your CSF 2.0 Target Profile, not a checklist to certify against.
+
+2. **How to use it practically**: Start by comparing the subcategories the Community Profile emphasizes against your Current Profile (your actual state today). Because transit is OT-heavy, expect the profile to weight several categories more heavily than a generic enterprise target would:
+   - **GV.SC** (Cybersecurity Supply Chain Risk Management) — vendor-supplied signaling, fare, and SCADA systems carry outsized risk and are hard to patch or replace on short notice.
+   - **PR.IR** (Technology Infrastructure Resilience) — redundancy and resilience for OT/ICS environments controlling rail and bus operations.
+   - **PR.AA** (Identity Management, Authentication, and Access Control) — especially physical access control at stations, yards, and control centers (PR.AA-06).
+   - **DE.CM** (Continuous Monitoring) — OT environments often have limited native logging, so monitoring coverage tends to be a real gap.
+   - **RS.MA / RC.RP** — incident and recovery plans need to explicitly account for safety-of-life and service-continuity implications unique to transit (a "recovery" isn't done until trains/buses are safely running again, not just when IT systems are restored).
+
+3. **Sequencing**: As with any CSF adoption, don't jump straight into PR/DE/RS work. Establish GV.OC (organizational context — safety mission, regulatory obligations under FTA/TSA) and GV.RM (risk tolerance) first, then build/validate your asset inventory (ID.AM) covering both IT and OT assets, before layering in the transit-specific Community Profile priorities.
+
+4. **Two other recent NIST companion publications are worth knowing about, though they're general-purpose rather than transit-specific**:
+   - **NIST SP 1353** (initial public draft, Aug 19, 2026, comments due Oct 15, 2026) — a quick-start guide on using generative AI to support CSF analysis, planning, and profile drafting. If you're considering AI-assisted tooling to accelerate your gap assessment or profile-building work, this is the relevant guidance (illustrative use cases, not a certified methodology).
+   - **NIST SP 1347** (final, Aug 25, 2026) — explains how CSF 2.0 Informative References and crosswalks work, useful if you need to map your transit profile back to NIST SP 800-53, TSA requirements, or other frameworks your agency is already subject to.
+
+**Recommended next step**: I can help you build a gap assessment or Target Profile using NIST IR 8576 as the baseline, layered against your current cybersecurity state and any FTA/TSA-mandated controls. If you share your current maturity (e.g., do you have documented asset inventories for OT systems, an existing incident response plan, etc.), I can produce a Function-by-Function gap table with priorities.
+
+This is general informational guidance based on publicly available NIST publications, not legal or audit advice — for a transit-specific security directive or certification determination, involve qualified counsel or an accredited assessor, and confirm details against the primary NIST IR 8576 document and any applicable TSA Security Directives.

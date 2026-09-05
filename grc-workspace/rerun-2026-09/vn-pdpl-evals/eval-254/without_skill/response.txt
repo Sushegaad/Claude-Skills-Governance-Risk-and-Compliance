@@ -1,0 +1,25 @@
+Vietnam's PDPL/Decree 13 framework is modeled substantially on GDPR, but it is stricter in some specific respects and looser or differently structured in others. It is not simply "GDPR-lite" — in a few areas it goes further than GDPR, which surprises companies that assume Vietnam compliance is a subset of their EU program.
+
+Where Vietnam is stricter than GDPR:
+
+1. Consent as the dominant legal basis. GDPR gives six equally valid legal bases (consent, contract, legal obligation, vital interests, public task, legitimate interest). Vietnam's regime is far more consent-centric — "legitimate interest" as a freestanding basis is not clearly recognized the way GDPR recognizes it, so in practice most processing needs to trace back to consent, a contract with the data subject, or a specific legal/state obligation. This means marketing, analytics, and even some fraud-prevention processing that EU companies justify under "legitimate interest" often cannot be justified the same way in Vietnam without explicit consent.
+
+2. Consent must be granular, freely given, and separately evidenced. Decree 13 requires (and PDPL maintains) that consent be given "clearly, explicitly, and voluntarily," and it must be capable of being demonstrated (recorded) by the controller. Bundled consent, pre-ticked boxes, or "by using this app you agree" clickwrap-style language are considered non-compliant, similar to GDPR's own standard — but enforcement expectations in Vietnam have tended to scrutinize the actual consent record (timestamp, version of notice, scope) more literally.
+
+3. Withdrawal of consent is treated as close to unconditional and must be easy — and critically, Vietnamese guidance has suggested that upon withdrawal, controllers must delete the data (not just stop using it) unless another legal basis independently applies, which is a stricter default than GDPR's more flexible approach to retention post-withdrawal.
+
+4. Cross-border transfer compliance is procedurally stricter. GDPR relies on adequacy decisions, Standard Contractual Clauses, or Binding Corporate Rules, largely self-assessed by the exporter. Vietnam requires a documented Transfer Impact Assessment dossier and, in many cases, a filing/notification to the Ministry of Public Security — creating a regulator-facing paperwork step that GDPR generally does not require for routine transfers.
+
+5. DPIA-type dossiers are required more broadly and must be prepared before processing begins in many cases (not risk-triggered the way GDPR's DPIA is limited to "high risk" processing) — Vietnam requires both a data processing impact assessment and a separate cross-border transfer impact assessment as standing documentation, retained and producible on demand, essentially for most organized data processing activity, not just high-risk cases.
+
+6. Broader definition of "personal data" and "sensitive personal data." Vietnam's sensitive data category includes items GDPR does not explicitly single out with the same weight, such as location data, financial account/asset information, and biometric-adjacent identifiers tied to national ID systems, reflecting the country's parallel National ID/biometric database rollout.
+
+Where Vietnam is comparatively less developed than GDPR:
+
+1. Data subject rights are present (access, rectification, erasure, restriction of processing, objection, and a form of data portability) but enforcement precedent and procedural detail (response timeframes, appeal mechanisms, an independent supervisory authority equivalent to an EU DPA with adjudicative power) are less mature. There is no standalone independent regulator like a national DPA; enforcement sits within the Ministry of Public Security, which also has broader state-security functions — raising different institutional dynamics than GDPR's independent supervisory authorities.
+
+2. No established case law or regulatory guidance body comparable to the European Data Protection Board's opinions, so interpretive certainty on gray areas (legitimate interest-like arguments, anonymization thresholds, cookie/tracking specifics) is lower — companies often have less predictable guidance to rely on.
+
+3. Fewer harmonized cross-border mechanisms. GDPR's SCCs/BCRs/adequacy framework, built over a decade, gives multinational companies a menu of standardized options; Vietnam's TIA/filing approach is comparatively bespoke and case-by-case.
+
+Bottom line for a compliance program: if you already run a mature GDPR program, most of your existing controls (privacy notices, DPIAs, breach procedures, vendor DPAs) transfer conceptually, but you cannot simply "extend" your GDPR legitimate-interest processing activities to Vietnam — you need a consent-first review of every processing activity, plus a dedicated cross-border transfer dossier and MPS-facing filing process that GDPR compliance alone does not produce.

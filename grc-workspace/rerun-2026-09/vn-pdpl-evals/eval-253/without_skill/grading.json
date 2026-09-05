@@ -1,0 +1,33 @@
+{
+  "eval_id": 253,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Law No. 91/2025/QH15 (PDPL) — the substantive law, in force January 1, 2026",
+      "passed": false,
+      "evidence": "No Law No. 91/2025/QH15 or 1 Jan 2026 date; only \"The National Assembly passed the PDPL, with an effective date generally reported as taking hold in 2026\""
+    },
+    {
+      "text": "Decree 356/2025/ND-CP (Dec 31, 2025) — implementing detail: PDPIA/CTIA dossier forms, DPO criteria, submission timelines",
+      "passed": false,
+      "evidence": "No Decree 356/2025; says only \"Implementing decrees/circulars to operationalize the PDPL are expected\""
+    },
+    {
+      "text": "Decree 330/2026/ND-CP (August 19, 2026, effective immediately) — the administrative sanctions layer completing the enforcement mechanism",
+      "passed": false,
+      "evidence": "No Decree 330/2026; sanctions layer absent (\"the new fine structure\" left unspecified)"
+    },
+    {
+      "text": "Transition rule: violations before August 19, 2026 are judged under the law in force at the time unless Decree 330 is more lenient",
+      "passed": false,
+      "evidence": "No transition rule mentioned"
+    },
+    {
+      "text": "Identifies MPS/A05 (Department of Cyber Security and High-Tech Crime Prevention) as the enforcement authority",
+      "passed": true,
+      "evidence": "\"primarily the Ministry of Public Security's cybersecurity and data protection department (successor to/aligned with A05/A06)\""
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

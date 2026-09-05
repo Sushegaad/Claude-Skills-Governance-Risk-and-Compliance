@@ -1,0 +1,26 @@
+Transferring Vietnamese customer data to a Singapore data center is a cross-border transfer under Article 20 of Law No. 91/2025/QH15, and it triggers a specific compliance workflow rather than an outright prohibition. Here is what applies and what is at stake if it is handled incorrectly.
+
+Requirements
+
+1. Impact assessment dossier: Before or promptly after you begin transferring data abroad, you must prepare a cross-border transfer impact assessment (CPDTIA) describing the data being transferred, the recipient (your Singapore entity or data center operator), the recipient's country, the purpose of the transfer, the security measures in place, and your risk mitigation approach.
+
+2. 60-day filing: This dossier must be submitted to the Ministry of Public Security (the specialized personal data protection authority) within 60 days of the first transfer. If you have already been transferring data to Singapore, you should treat this as urgent — the clock is likely already running or has run out.
+
+3. Six-monthly updates: The impact assessment must be refreshed every six months, or immediately whenever there is a material change — a new purpose, new categories of data, a new recipient, or a change in security measures (e.g., switching cloud providers or changing encryption key management).
+
+4. Authority oversight: The Ministry retains the power to suspend or terminate the transfer if it determines there is a national security, public interest, or other significant risk. This means the arrangement is not "approve once and forget" — continued operation is conditional on the authority not intervening.
+
+5. Possible exemption: If the Singapore transfer is solely for employee HR data in a cloud HR system, it may qualify for the Article 20 exemption (along with transfers by state agencies performing statutory functions, or transfers initiated directly by the data subject). Customer data transfers for general business/service purposes do not qualify for this exemption — you would need the full impact assessment.
+
+6. Underlying data obligations still apply: Regardless of the transfer mechanism, you still need a valid legal basis for processing the underlying customer data (typically consent or contract performance), and if the Singapore data center is a processor, a written data processing agreement establishing that it processes only on your documented instructions, applies equivalent security measures, and deletes or returns data at the end of the relationship. If any of the transferred data falls into the 13 categories of sensitive personal data (e.g., financial/transaction data, biometric data), separate explicit consent for that category is required before transfer.
+
+7. Cloud-specific controls: Because this is a cloud data center, Decree 356 Article 12 also applies — encrypt data at rest and in transit, limit the cloud provider's access to what's technically necessary, and conduct due diligence/security assessments of the provider (ISO 27001, SOC 2 certifications are good evidence).
+
+What happens if you get it wrong
+
+The consequences scale with the nature and impact of the failure, under the now-operative Decree 330/2026/ND-CP penalty framework:
+- Simply failing to file the CPDTIA on time, or filing late updates, is treated as a plain procedural violation: VND 30–50 million.
+- A serious violation — CPDTIA failure, concealment, or misdeclaration that results in an actual breach or loss of Vietnamese citizens' data — is penalized as a percentage of your prior-year Vietnam-market revenue: 1–2% for 10,000–100,000 affected data subjects, 2–3% for 100,000–1 million, and 3–5% for over 1 million or where there's a national security dimension. If you have no Vietnam revenue or the calculation falls below a floor, fixed fines of VND 200 million to 3 billion apply depending on scale.
+- Beyond fines, the Ministry can order suspension of the cross-border transfer itself — meaning your Singapore data center arrangement could be forced to stop operating for Vietnamese customer data, which is often more disruptive than the fine.
+
+My recommendation: treat the 60-day CPDTIA filing as the top priority action item, confirm whether any sensitive data categories are in scope (which changes your consent obligations), and formalize a data processing agreement with the Singapore provider if one isn't already in place. This is general compliance guidance, not legal advice — given the revenue-percentage exposure, I'd suggest validating your specific transfer facts with Vietnamese counsel before or shortly after filing.

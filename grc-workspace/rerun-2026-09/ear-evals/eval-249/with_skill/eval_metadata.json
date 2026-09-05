@@ -1,0 +1,13 @@
+{
+  "eval_id": 249,
+  "eval_name": "ai-chip-diffusion-status",
+  "run_type": "with_skill",
+  "prompt": "What's the current state of the AI chip 'diffusion rule'? Do we structure exports around it?",
+  "assertions": [
+    "States the January 2025 AI Diffusion IFR was never formally rescinded in the Federal Register",
+    "Notes BIS announced non-enforcement/intent to rescind in May 2025",
+    "Cites GAO decision B-337935: the non-enforcement announcement is itself a CRA 'rule' that was not submitted to Congress",
+    "States the operative successor approach: country-specific rules (e.g., the July 2026 UAE advanced-chip rule, 91 FR 43034) rather than a global framework",
+    "Advises: do not structure around a 'replacement diffusion framework' that does not exist; apply current ECCN 3A090/4A090-family controls, license policies, and end-user rules, and monitor BIS"
+  ]
+}

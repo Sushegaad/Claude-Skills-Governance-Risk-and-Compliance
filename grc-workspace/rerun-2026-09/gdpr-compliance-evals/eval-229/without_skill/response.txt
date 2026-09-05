@@ -1,0 +1,48 @@
+Here are the key clauses your Data Processing Agreement (DPA) with the hosting provider needs to include, mapped to the mandatory content requirements of Article 28(3) GDPR, plus a few practical additions worth negotiating.
+
+1. Subject matter, duration, nature, and purpose of processing
+State precisely what is being processed (EU customer personal data — specify categories: e.g., names, contact details, account data, any special categories if applicable), the duration of the agreement, and the specific purpose (hosting infrastructure/storage services for [Company]'s platform). Vague or boilerplate descriptions are a common audit finding — be specific.
+
+2. Types of personal data and categories of data subjects
+List them explicitly (e.g., customer names, email addresses, IP addresses, transaction data; data subjects = your customers/end users). This should be maintained as a living annex/schedule so it can be updated without renegotiating the whole agreement.
+
+3. Processing only on documented instructions (Article 28(3)(a))
+The processor must process personal data only on your documented instructions, including regarding international transfers, unless required by EU/member state law — in which case it must inform you before processing (unless prohibited from doing so on public interest grounds).
+
+4. Confidentiality commitment (Article 28(3)(b))
+All persons authorized to process the data must be bound by confidentiality obligations (contractual or statutory).
+
+5. Security measures (Article 28(3)(c), tied to Article 32)
+Require appropriate technical and organizational measures reflecting the state of the art, costs, and risk — specifically: encryption at rest and in transit, access controls and authentication, logging/monitoring, regular testing/evaluation of measures, and resilience/backup and disaster recovery capability. Attach a security annex with concrete specifics (not just "industry standard security") since hosting providers in particular should commit to specifics like data center physical security, patching cadence, and incident detection capability.
+
+6. Sub-processor provisions (Article 28(2) and 28(3)(d))
+- General or specific prior written authorization for engaging sub-processors (cloud infrastructure providers commonly use general authorization with a notification mechanism).
+- A right for you to object to new sub-processors within a defined notice period (commonly 15-30 days), with a clear consequence if you object (e.g., right to terminate the affected service or the agreement).
+- A flow-down obligation: the same data protection obligations must be imposed on sub-processors via contract, and the processor remains fully liable to you for sub-processor failures.
+- A current, accessible list of sub-processors (often maintained as a public or portal-based register).
+
+7. Assistance with data subject rights (Article 28(3)(e))
+The processor must assist you, taking into account the nature of processing, in responding to data subject requests (access, rectification, erasure, restriction, portability, objection) — typically via technical/organizational measures and defined response timeframes (e.g., processor notifies you within 48-72 hours of receiving a request directly).
+
+8. Assistance with Article 32-36 compliance (Article 28(3)(f))
+Processor must help you meet obligations around security, breach notification, DPIAs, and prior consultation with supervisory authorities, taking into account the information available to the processor.
+
+9. Personal data breach notification (feeds Article 33/34)
+This is critical for a hosting provider specifically — require notification to you without undue delay, and specify a firm outer limit (commonly 24-72 hours from becoming aware), including what information must be provided (nature of breach, categories/approximate number of data subjects and records affected, likely consequences, measures taken/proposed). Since your ultimate 72-hour clock to the supervisory authority starts when you become aware, the processor's notification speed is your critical path — negotiate the shortest commercially reasonable window.
+
+10. End-of-contract data return/deletion (Article 28(3)(g))
+Processor must, at your choice, delete or return all personal data at the end of the provision of services, and delete existing copies unless EU/member state law requires storage — including from backups, on a defined schedule.
+
+11. Audit and inspection rights (Article 28(3)(h))
+Processor must make available all information necessary to demonstrate compliance and allow for/contribute to audits, including inspections, conducted by you or an auditor you mandate. Hosting providers often substitute independent third-party audit reports/certifications (SOC 2 Type II, ISO 27001) for direct audits — acceptable, but negotiate a fallback right to a full audit for cause (e.g., after a breach).
+
+12. International transfers
+If the hosting provider processes or stores data outside the EEA/adequate countries (common with global hosting infrastructure — check specific data center locations, not just company HQ), include Standard Contractual Clauses (2021 EU Commission modules, processor-to-processor or controller-to-processor as applicable), plus require a Transfer Impact Assessment (TIA) addressing government access risks in the destination country (post-Schrems II requirement), supplementary measures (encryption with keys held by you, not the processor), and a commitment to notify you of government access requests where legally permitted.
+
+13. Liability and indemnification
+Allocate liability for GDPR fines and third-party claims arising from processor non-compliance; ensure this isn't capped below a level that reflects realistic GDPR exposure (fines up to 4% of global turnover).
+
+14. Data localization/segregation options
+Consider requiring EU-only data residency for EU customer data specifically, and clarify whether data is logically or physically segregated from other tenants.
+
+Practical tip: don't just accept the hosting provider's standard "Data Processing Addendum" — many are drafted processor-favorably (e.g., broad general sub-processor authorization with weak objection rights, breach notification "without undue delay" with no outer time limit, liability caps that don't cover regulatory fines). Redline these specific points before signing.

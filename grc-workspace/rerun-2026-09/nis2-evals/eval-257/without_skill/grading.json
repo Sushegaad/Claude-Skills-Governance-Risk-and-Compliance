@@ -1,0 +1,33 @@
+{
+  "eval_id": 257,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies Ireland, Spain and France as the member states still lacking in-force transposition laws as of early September 2026",
+      "passed": false,
+      "evidence": "I can't give you a definitive, current-as-of-September-2026 list... 'I cannot confirm whether this bill had been enacted' \u2014 never identifies IE/ES/FR as the remaining laggards"
+    },
+    {
+      "text": "Cites the July 9, 2026 Commission referral to the CJEU for failure to notify transposition \u2014 which originally also included the Netherlands",
+      "passed": false,
+      "evidence": "No mention of the July 9, 2026 Commission referral to the CJEU; only cites 2024-2025 formal notices under Article 258 TFEU"
+    },
+    {
+      "text": "Notes the Commission requested financial penalties: a lump sum plus daily penalty payments",
+      "passed": false,
+      "evidence": "No mention of the Commission requesting a lump sum plus daily penalty payments"
+    },
+    {
+      "text": "Notes the Netherlands has since transposed (Cbw in force August 15, 2026) and should no longer be listed as a laggard",
+      "passed": false,
+      "evidence": "No mention of the Dutch Cbw or the Netherlands' August 15, 2026 transposition"
+    },
+    {
+      "text": "Gives the right advice: prepare subsidiaries against the directive text now \u2014 authorities have applied short compliance windows once national law lands",
+      "passed": false,
+      "evidence": "Advice is only to 'have local counsel or a compliance tracker... confirm current status'; no advice to build to the directive text now or warning of short compliance windows"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

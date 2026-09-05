@@ -1,0 +1,33 @@
+{
+  "eval_id": 238,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Explains informative references as crosswalks mapping CSF 2.0 outcomes (functions/categories/subcategories) to other standards and resources",
+      "passed": true,
+      "evidence": "Informative References (mappings to other frameworks and standards)... query the Reference Tool by CSF subcategory... or by source framework"
+    },
+    {
+      "text": "Points to NIST SP 1347, the CSF 2.0 Informative References Quick-Start Guide, finalized August 2026",
+      "passed": true,
+      "evidence": "NIST also published SP 1347 (final, August 25, 2026) as a quick-start guide specifically explaining how these crosswalks work"
+    },
+    {
+      "text": "Mentions the CSF 2.0 Reference Tool for browsing/exporting reference data",
+      "passed": true,
+      "evidence": "CSF 2.0 moved them entirely online into the NIST CSF 2.0 Reference Tool... lets NIST... keep mappings current"
+    },
+    {
+      "text": "Mentions the OLIR (Online Informative References) program as the mechanism behind the mappings",
+      "passed": true,
+      "evidence": "The mechanism behind this is the Online Informative References (OLIR) Program"
+    },
+    {
+      "text": "Demonstrates a concrete mapping use: e.g., ISO 27001/SP 800-53/CIS Controls mapped against CSF subcategories for gap or evidence reuse",
+      "passed": true,
+      "evidence": "Concrete ISO 27001:2022 Annex A to CSF crosswalk table (e.g., PR.AA mapped to A.5.15-5.18, A.8.2-8.5) plus SoA-driven gap process"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

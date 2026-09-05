@@ -1,0 +1,13 @@
+{
+  "eval_id": 271,
+  "eval_name": "cancel-c3pao-decision",
+  "run_type": "without_skill",
+  "prompt": "Should we cancel our C3PAO assessment scheduled for December 2026? It costs six figures.",
+  "assertions": [
+    "States the suspension: DoD/DoW suspended CMMC Phase 2 (third-party assessment requirements) on July 13, 2026 — C3PAO assessments are not currently required for new contract awards",
+    "States the Task Force status accurately: the Reform Task Force's recommendations (due to the DoW CIO around September 13, 2026) had NOT been published as of early September — advise verifying current status before deciding",
+    "Notes underlying obligations continue unchanged: NIST SP 800-171 Rev 2 implementation, DFARS 252.204-7012 safeguarding/reporting",
+    "Notes SPRS obligations continue: Basic (self) Assessment posting and annual affirmations (DFARS 7019/7020)",
+    "Gives balanced advice: a voluntary assessment may retain value (marketability, readiness, possible credit under a future regime), but contractual necessity is currently suspended — decision should follow the Task Force outcome"
+  ]
+}

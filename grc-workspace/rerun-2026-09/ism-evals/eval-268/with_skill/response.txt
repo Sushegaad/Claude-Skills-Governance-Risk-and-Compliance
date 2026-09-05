@@ -1,0 +1,27 @@
+This answer assumes the ISM September 2026 release, which introduced a dedicated third-party OAuth control set (ISM-2137–2140). It applies directly to Microsoft 365 / Entra ID tenants, where third-party app consent has historically been a common initial-access and data-exfiltration vector (malicious or over-permissioned apps requesting Mail.Read, Files.ReadWrite.All, offline_access, etc.).
+
+**Requirement → Implementation mapping:**
+
+**1. End users prevented from consenting to third-party OAuth apps (admin-only) — ISM-2137**
+- *Requirement*: Only administrators may grant consent to third-party (non-Microsoft-published, non-verified-publisher) applications requesting delegated or application permissions.
+- *Implementation in Entra ID*: Set "Users can consent to apps from verified publishers, for selected permissions" to disabled, or move to "Do not allow user consent" entirely, depending on your risk appetite. Configure the **admin consent workflow** (Enterprise Applications → User settings → Admin consent requests) so that when a user hits a blocked consent prompt, a request is routed to designated reviewers rather than silently failing. Assign the **Application Administrator** or a scoped custom role (not Global Admin) to the individuals who will action these requests, consistent with Chapter 13 least-privilege and Chapter 6 personnel security requirements.
+- *Audit evidence*: Entra ID conditional access / consent policy export showing user consent disabled; admin consent workflow configuration; role assignment list for consent reviewers.
+
+**2. Consents reviewed 6-monthly — ISM-2138**
+- *Requirement*: Existing OAuth grants (including ones consented before this control existed) must be reviewed on a recurring 6-monthly cycle, not just at initial grant.
+- *Implementation*: Use **Entra ID Access Reviews** scoped to enterprise applications, or run a scheduled export via Microsoft Graph (`/servicePrincipals`, `/oauth2PermissionGrants`) into your GRC tooling. Review should assess: is the app still in use, does its permission scope still match its business justification, is the publisher still verified/trustworthy, and has it requested new/expanded permissions since last review. Revoke grants for apps that fail the review.
+- *Audit evidence*: Access review completion records (reviewer, date, decisions); revocation log for any grants removed.
+
+**3. Consent/token events centrally logged — ISM-2139**
+- *Requirement*: All consent grant events and OAuth token issuance/refresh events must flow to central, tamper-evident logging under your Chapter 15 System Monitoring program.
+- *Implementation*: Ensure Entra ID **Audit logs** (consent-to-application events) and **Sign-in logs** (including non-interactive/token refresh sign-ins) are streamed via Azure Monitor / Log Analytics or Microsoft Sentinel into your central SIEM, not left in the 30/90-day Entra ID native retention window. Set alerting rules for anomalous consent grants (e.g., high-privilege scopes, unfamiliar publishers, consent from atypical geographies) and for unusual token refresh patterns (e.g., long-lived offline_access tokens being used from new IPs).
+- *Audit evidence*: SIEM ingestion configuration for Entra ID audit/sign-in logs; retention period matching your classification (18 months minimum for OFFICIAL: Sensitive and PROTECTED under Chapter 15); sample alert rules and recent triage records.
+
+**4. Device code flow disabled unless required — ISM-2140**
+- *Requirement*: OAuth device authorisation grant (device code flow) must be disabled tenant-wide unless there is a documented business need, since it is a known phishing/consent-grant-attack vector (used to trick users into approving attacker-controlled sign-ins on unmanaged devices).
+- *Implementation*: Configure a **Conditional Access policy blocking the device code authentication flow**, with narrowly scoped exceptions (specific app registrations, specific device categories, e.g. shared meeting-room hardware) that are individually risk-assessed and documented.
+- *Audit evidence*: Conditional Access policy export showing device code flow blocked by default; documented exception list with business justification and approval.
+
+**Practical rollout sequence**: (1) inventory current third-party app consents and their permission scopes today — you cannot review what you haven't catalogued; (2) turn on the admin consent workflow and disable user consent; (3) stand up the 6-monthly access review cadence in your compliance calendar alongside your existing DCSync/KRBTGT review cycles; (4) wire consent and token event logs into your SIEM with alerting; (5) block device code flow and document exceptions.
+
+**Documentation**: record this control set in your SSP under Chapter 3 (Procurement & Outsourcing, for third-party app risk) and Chapter 9/19 (identity and remote access), citing ISM-2137–2140 explicitly, with the M365 tenant configuration screenshots and access-review records as your evidence package for IRAP or internal assessment.

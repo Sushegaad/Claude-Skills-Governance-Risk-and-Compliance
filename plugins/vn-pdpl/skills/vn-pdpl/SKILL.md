@@ -5,7 +5,7 @@ description: "Expert Vietnam Personal Data Protection Law (PDPL) compliance advi
 
 # Vietnam Personal Data Protection Law (PDPL) Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-09-05
 
 ## Overview
 
@@ -163,14 +163,20 @@ The law applies to:
 
 ---
 
-## Penalties Quick Reference (Article 8)
+## Penalties — Decree 330/2026/ND-CP (effective August 19, 2026)
 
-| Violation | Maximum Penalty |
+**The sanctions regime is now operative.** Decree No. 330/2026/ND-CP (issued and effective **August 19, 2026**; 82 articles, 33 on personal data protection) implements the penalty framework of Law 91/2025 (Article 8) and Decree 356/2025. State this decree in every penalties answer.
+
+| Violation | Penalty (organisations; individuals = half) |
 |---|---|
-| Buying or selling personal data | 10× the proceeds of the violation |
-| Cross-border transfer violations (organisations) | 5% of preceding year's revenue in Vietnam |
-| Other violations (organisations) | VND 3 billion (~USD 120,000) |
-| Other violations (individuals) | VND 1.5 billion (~USD 60,000) |
+| Serious cross-border violations — CPDTIA failure/concealment/misdeclaration with breach or loss of citizens' data | **% of prior-year Vietnam-market revenue**: 1–2% (10k–<100k data subjects), 2–3% (100k–<1M), **3–5% (≥1M subjects or national defence/security impact)**. Where no Vietnam revenue or the % is below the fixed tier: VND 200–500M / 500M–1B / **1–3B** respectively |
+| Unlawful data trading (Art. 53) | **2×–10× unlawful proceeds**; where indeterminable: VND 500M–1B (basic data ≥10k people or sensitive data ≥2k), **VND 1–3B** where seriously affecting national security, public order, macroeconomy, or life/health/dignity |
+| Plain CPDTIA non-filing / late updates | VND 30–50M |
+| Consent violations | VND 30–50M; silence-as-consent or processing after withdrawal: VND 50–70M |
+| PDPIA falsification / non-cooperation | VND 50–100M |
+| DPO / appointment failures | VND 10–30M |
+
+**Remedial measures** beyond fines: suspension of processing or cross-border transfers, compulsory data destruction, disgorgement of unlawful proceeds, confiscation. **Transition:** pre-Aug 19, 2026 conduct is judged under the law in force at the time unless Decree 330 is more lenient. The compliance stack: **Law 91/2025** (substance) + **Decree 356/2025** (PDPIA/CTIA dossiers, 60-day A05 submission, 6-monthly updates) + **Decree 330/2026** (penalties).
 
 ---
 

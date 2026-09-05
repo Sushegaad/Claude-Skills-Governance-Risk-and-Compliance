@@ -1,0 +1,22 @@
+Modifying Boeing 737 airframes to integrate a Directed Infrared Countermeasures (DIRCM) system for VIP/head-of-state customers puts you squarely inside a defense-article activity under the International Traffic in Arms Regulations (ITAR), 22 CFR Parts 120-130. DIRCM systems—laser-based missile countermeasure suites—are almost certainly controlled on the United States Munitions List (USML), most likely under Category XI (Military Electronics) and/or Category IV (Launch Vehicles, Guided Missiles, related articles) depending on how the specific system is classified, with the integration work itself potentially triggering Category VIII (Aircraft) coverage because you are modifying a military-configured aircraft platform. Even though the 737 airframe is civil in origin, once it is modified with a specially designed defense article and configured for a military/VIP self-protection mission, the integrated aircraft and the technical data associated with the integration can themselves become ITAR-controlled hardware and technical data.
+
+Because I don't have visibility into the specific "new State Department rule" you're referencing that takes effect after October 2026, I can't confirm its exact text, effective date, or scope—the details of any 2026 Directorate of Defense Trade Controls (DDTC) rule would need to be verified against the Federal Register notice and the final rule language. That said, based on general patterns in how DDTC has approached similar reforms in past years, here is what I'd expect you to evaluate and the general categories of change that tend to matter for a program like yours:
+
+1. Commodity jurisdiction and classification shifts. Periodic USML revisions move items between USML categories, decontrol certain subcomponents to the Commerce Control List (CCL) under EAR, or tighten definitions of "specially designed." If DIRCM-related hardware or software gets reclassified, your export authorization strategy (licenses vs. exemptions vs. EAR license exceptions) could change materially.
+
+2. Country/end-user eligibility changes. Rules affecting VIP/head-of-state government end users, especially foreign governments, sometimes adjust license exception availability (e.g., changes to license exemptions for NATO/major non-NATO allies) or impose new end-use certification and retransfer requirements.
+
+3. Technical data and defense services controls. Any new rule may adjust what counts as a "defense service" when your engineers train foreign customer maintenance crews, or when you disclose integration technical data to a foreign prime contractor or foreign national employees—this is often the area with the biggest operational impact for modification/integration shops.
+
+4. Registration, licensing, and recordkeeping updates. DDTC periodically updates registration fee schedules, license application (DSP-5) documentation standards, and Automated Export System (AES) reporting triggers.
+
+Regardless of the specific rule content, here's what I'd recommend doing now, as a compliance program matter:
+
+- Pull the actual Federal Register rule and DDTC's implementation guidance the moment it's published, and have export control counsel confirm effective date, transition/grandfathering provisions, and whether your existing licenses/TAAs need amendment.
+- Re-run commodity jurisdiction/classification on the DIRCM system and the modified aircraft configuration—don't assume prior classifications survive a USML update unchanged.
+- Audit existing Technical Assistance Agreements (TAAs) and Manufacturing License Agreements (MLAs) tied to this program for any new provisos the rule may require.
+- Review your Denied Party/end-use screening for the specific VIP/head-of-state customers, since political sensitivities around these customers often draw extra scrutiny.
+- Confirm whether foreign national employees or subcontractors involved in the integration require updated Technology Control Plan coverage.
+- Update your internal classification and jurisdiction determinations in writing and retain them for audit purposes—DDTC compliance reviews focus heavily on documented rationale, not just outcomes.
+
+I'd strongly recommend having your export control attorney or a licensed compliance consultant confirm the actual rule text before making operational changes, since acting on an unconfirmed rule summary risks either over- or under-restricting your program.

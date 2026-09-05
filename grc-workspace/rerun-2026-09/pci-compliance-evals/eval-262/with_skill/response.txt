@@ -1,0 +1,26 @@
+Based on the description — a web shop that redirects customers to a hosted payment page — the applicable SAQ is most likely SAQ A, provided your setup meets the full eligibility criteria below. Let's walk through the decision logic and what to verify before you commit to that SAQ type.
+
+SAQ A vs. SAQ A-EP: the key distinction
+
+Both SAQ A and SAQ A-EP apply to e-commerce merchants with no card-present transactions who outsource cardholder data (CHD) handling to a third party. The distinction is about how much control your own website exercises over the payment process:
+
+- SAQ A applies when the redirect is a full, clean handoff — the customer leaves your page entirely and lands on the third party's hosted payment page (e.g., a PayPal, Stripe Checkout, or Square hosted page) to enter card details. Your servers never receive, transmit, or influence the collection of cardholder data in any way.
+- SAQ A-EP applies when your site retains some influence over the payment page even though data capture is outsourced — for example, if you embed the payment form via an iframe or JavaScript widget on your own page, or if your web server that serves the checkout page could be tampered with to redirect the customer elsewhere. If your page "directs" the browser to the payment processor via script you control (rather than a straightforward server-side redirect/link), you may actually be closer to A-EP.
+
+SAQ A eligibility criteria you need to confirm:
+
+1. All payment processing and cardholder data handling is fully outsourced to PCI DSS-validated third-party service provider(s).
+2. Your e-commerce site does not itself receive, transmit, process, or store cardholder data — the customer's browser is redirected away from your domain (or to a fully separate, provider-controlled page/subdomain) to complete payment.
+3. There is no card-present acceptance channel at all.
+4. Your website does not affect the security of the payment transaction (i.e., it isn't serving the JavaScript or iframe content that actually captures card data — that's fully hosted and controlled by the third party).
+5. You have confirmed the payment service provider's own PCI DSS compliance (their AOC) since their compliance underpins your reduced scope.
+
+If all five hold, SAQ A is appropriate — it covers roughly 22 controls, a subset of Requirements 2, 6, 8, 9, 10, 11, and 12, focused on basic security hygiene rather than cardholder data protection controls (since you never touch CHD).
+
+What's excluded from your scope under SAQ A: the bulk of Requirements 1, 3, 4, 5, and 7 (network segmentation of a CDE, PAN storage/encryption, transmission encryption, anti-malware, and CHD-specific access controls) do not apply to your merchant environment because you never store, process, or transmit CHD — the risk sits entirely with your payment service provider.
+
+What you still must do under SAQ A: maintain basic security policies, ensure any personnel with access to your web-hosting environment have unique IDs, apply patches, and — critically for redirect-based e-commerce — confirm your web server and any redirect logic can't be manipulated to send customers to a malicious page (this is where a lot of merchants get tripped up: a compromised web server that alters the redirect URL is a genuine skimming risk even under SAQ A).
+
+One flag to check now: if your redirect mechanism involves any client-side script that constructs or manipulates the payment page URL, or if the payment fields appear inside your own page via an embedded frame rather than a full page redirect, re-examine whether SAQ A-EP (with its added script-integrity controls under Req 6.4.3 and change/tamper detection under 11.6.1) is the more accurate fit — misclassifying A-EP scenarios as SAQ A is a common and consequential error, since it omits payment-page script inventory and monitoring controls designed specifically to catch web-skimming (Magecart-style) attacks.
+
+Recommendation: document your actual data/redirect flow in a simple diagram, confirm your payment provider's compliance status and AOC, and have your acquirer or a QSA/ISA validate the SAQ A vs. A-EP determination before you sign the Attestation of Compliance. This guidance is informational; final SAQ selection should be confirmed with your acquirer, who is the ultimate authority on which SAQ they will accept.

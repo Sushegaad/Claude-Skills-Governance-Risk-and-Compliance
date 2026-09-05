@@ -1,0 +1,33 @@
+{
+  "eval_id": 250,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Cites the August 2026 Plexon settlement: 8 unlicensed exports of neural-recording systems (~$179K) to China's Academy of Military Medical Sciences, an Entity-Listed institution",
+      "passed": true,
+      "evidence": "\"BIS settled with Plexon, Inc.... over eight unlicensed exports (~$179K total value) of neural-recording systems to China's Academy of Military Medical Sciences \u2014 an entity that had been on the Entity List since 2021\""
+    },
+    {
+      "text": "Notes the penalty structure: $1.7M suspended for 5 years conditioned on an external compliance audit and no further violations \u2014 suspended denial order included",
+      "passed": false,
+      "evidence": "States \"$1.7M (fully suspended over a 5-year probationary period, waived on completion of an external audit and a clean compliance record)\" but omits the suspended denial order"
+    },
+    {
+      "text": "Draws the lesson: research/medical/lab equipment is NOT exempt \u2014 Entity List license requirements attach regardless of item sensitivity (even EAR99)",
+      "passed": true,
+      "evidence": "\"research and medical technology is not inherently exempt from Entity List screening... the violation was the end-user\"; \"Even EAR99 equipment requires a license if...\""
+    },
+    {
+      "text": "Requires screening all parties against the Consolidated Screening List, and resolving affiliate/alias ambiguity (universities' military-linked institutes)",
+      "passed": true,
+      "evidence": "\"Run the specific institute's legal name, known aliases, and any parent/affiliate entities through the Consolidated Screening List... Check for shared addresses, shared leadership, or subsidiary relationships\""
+    },
+    {
+      "text": "Explains Entity List mechanics: supplemental license requirements per the entity's entry with presumption/policy of denial, no license exceptions in most cases",
+      "passed": false,
+      "evidence": "Does not explain Entity List mechanics \u2014 no supplemental license requirement per the entity's entry, no presumption/policy of denial, no unavailability of license exceptions"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

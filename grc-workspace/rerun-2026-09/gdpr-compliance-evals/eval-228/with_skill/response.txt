@@ -1,0 +1,26 @@
+Short answer: Yes, it can be done GDPR-compliantly, but not on a consent basis at any meaningful scale — you will need to rely on legitimate interests (Art. 6(1)(f)), conduct a rigorous documented balancing assessment, and build in specific mitigations the EDPB now expects for generative-AI scraping.
+
+Governing framework
+Two EDPB instruments define current expectations here, and both should be read together:
+
+1. EDPB Opinion 28/2024 (adopted 17 December 2024) — the foundational guidance on AI models and GDPR, answering three questions from the Irish DPC:
+   - AI models trained on personal data are not automatically anonymous. A model only qualifies as anonymous if it is "very unlikely" that (a) individuals in the training data can be re-identified from outputs/architecture, and (b) personal data can be extracted from the model via queries. This is a high, evidence-based bar you must actively test, not assume.
+   - Legitimate interests can be used as the lawful basis for AI training, including commercial development interests, but only after a full three-step LIA: legitimate interest → necessity → balancing. The balancing step must specifically weigh scale and sensitivity of the scraped data, whether data subjects had any reasonable expectation their data would be used this way, and whether training is a materially different purpose than the data's original context.
+   - If training data was processed unlawfully, downstream use/deployment is tainted unless the resulting model clears the anonymity bar above — meaning even a licensed foundation model built on scraped data carries risk you should diligence, not just take on faith from the vendor.
+
+2. EDPB Guidelines 03/2026 on web scraping for generative AI (adopted for consultation 7 July 2026, consultation open until 30 October 2026 — still a draft, but the direction of travel is clear and should inform your design now):
+   - Consent is generally not viable at scale for scraping the open web — you cannot meaningfully obtain informed, specific consent from the millions of individuals whose data may appear in scraped pages. Legitimate interest is treated as the realistic lawful basis, subject to strict balancing and mitigations.
+   - Controllers are expected to publish detailed, specific public notices describing the scraping and training activity (transparency — Art. 13/14 obligations still apply even to indirectly-collected data, with the Art. 14(5) "disproportionate effort" exemption interpreted narrowly here).
+   - Facilitate data subject rights, including a pre-collection opt-out mechanism (e.g., robots.txt-style signals, do-not-train headers, or a dedicated opt-out registry) that data subjects and website operators can use before scraping occurs.
+   - Coverage extends beyond your own first-party scraping to contracted scraping (vendors scraping on your behalf) and purchased broker/aggregator datasets — due diligence on provenance is expected in all three cases.
+
+What this means practically for you
+- Do not rely on consent as your lawful basis for the scraping or training step.
+- Conduct and document a formal LIA before scraping begins: articulate the legitimate interest precisely (not "AI development" in the abstract), confirm scraping is necessary (could a smaller, licensed, or synthetic dataset serve the purpose with less risk?), and perform the balancing test — special-category or sensitive personal data, children's data, and content posted in contexts implying no future AI use should weigh heavily against inclusion or should be filtered out.
+- Exclude or filter special category data (Art. 9) discovered during scraping — this remains prohibited for training absent an Art. 9(2) condition, regardless of scale.
+- Publish a clear, specific public notice about the scraping/training activity and stand up a pre-collection opt-out mechanism.
+- Test whether your resulting model meets the Opinion 28/2024 anonymity bar; if it doesn't, maintain the legitimate-interest basis and transparency obligations through deployment, not just training.
+- Run a DPIA (Art. 35) — large-scale scraping of public data for AI training, potentially capturing special categories or children's data, is a strong candidate for mandatory DPIA under Art. 35(3) criteria.
+- If you're contracting a third party to do the scraping, or buying a scraped dataset, diligence their lawful basis and provenance — you inherit their compliance failures as a controller relying on that data.
+
+⚠️ Legal Advice Disclaimer: This guidance is informational, combines binding EDPB Opinion 28/2024 with still-draft Guidelines 03/2026 (consultation open through October 30, 2026), and does not constitute legal advice. Given the scale, novelty, and enforcement attention on AI training practices, consult a qualified data protection lawyer or your DPO before finalizing your scraping and training pipeline.

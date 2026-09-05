@@ -1,0 +1,13 @@
+{
+  "eval_id": 264,
+  "eval_name": "scope-reduction",
+  "run_type": "with_skill",
+  "prompt": "How do we shrink our PCI scope? We currently have card data flowing through half our network.",
+  "assertions": [
+    "Defines the CDE and 'connected-to' systems as in scope — scope is where CHD is stored/processed/transmitted plus systems that can impact its security",
+    "Recommends network segmentation with (at least annual; 6-monthly for service providers) segmentation testing to verify isolation",
+    "Explains tokenization: reduces scope but the tokenization system/vault and de-tokenization capability remain in scope",
+    "Explains validated P2PE: encrypting at the point of interaction can reduce merchant validation to SAQ P2PE-level scope",
+    "Recommends outsourcing to PCI-compliant providers with responsibility matrices, and dataflow mapping/CHD discovery to prove scope"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "name": "section-508",
   "description": "Expert Section 508 compliance advisor for US federal ICT accessibility \u2014 VPAT/ACR completion, WCAG 2.0 AA audits, remediation planning, PDF accessibility, procurement language, keyboard and screen reader testing, undue burden assessments, and agency compliance workflows.",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "author": {
     "name": "Hemant Naik",
     "email": "hemant.naik@gmail.com"

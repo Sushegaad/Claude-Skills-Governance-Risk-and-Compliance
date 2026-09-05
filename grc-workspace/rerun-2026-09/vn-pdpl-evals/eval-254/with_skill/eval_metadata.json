@@ -1,0 +1,13 @@
+{
+  "eval_id": 254,
+  "eval_name": "consent-and-rights",
+  "run_type": "with_skill",
+  "prompt": "How strict are Vietnam's consent and data subject rights rules compared to GDPR?",
+  "assertions": [
+    "Consent must be explicit, informed and demonstrable — silence or inactivity does NOT constitute consent (and treating it as such is now a fineable violation under Decree 330)",
+    "Processing after consent withdrawal is prohibited and now carries specific fines (~VND 50–70M for organisations)",
+    "Breach notification: 72 hours to the authority (MPS), stricter/faster in structure than GDPR's risk-conditioned regime",
+    "States VN-PDPL grants a narrower rights catalogue than GDPR (6 rights; no portability right)",
+    "Notes sensitive personal data triggers heightened duties (e.g., DPO/notification obligations)"
+  ]
+}

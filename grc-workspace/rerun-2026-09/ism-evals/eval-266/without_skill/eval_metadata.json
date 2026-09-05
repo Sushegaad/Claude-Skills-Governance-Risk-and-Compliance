@@ -1,0 +1,13 @@
+{
+  "eval_id": 266,
+  "eval_name": "september-release-summary",
+  "run_type": "without_skill",
+  "prompt": "What changed in the September 2026 Australian ISM release? Give us the highlights for our security team.",
+  "assertions": [
+    "States the September 2026 ISM release (published September 3, 2026) added 44 new controls, ISM-2124 through ISM-2167",
+    "Highlights the agentic AI controls (ISM-2156–2159): minimum tools/permissions, dual authorisation, untrusted external content handling, and central logging",
+    "Mentions AI agent identity and register controls (ISM-2133–2135)",
+    "Notes the single rescission: ISM-0521, the recommendation to disable IPv6 in dual-stack devices",
+    "Mentions at least two other themes accurately: MACsec approval + MACsec controls, OAuth/third-party app consent controls, workload credential management, immutable backups, RMM allowlisting, synthetic impersonation verification, or the 6-monthly cadence tightening (KRBTGT/DCSync/pen tests)"
+  ]
+}

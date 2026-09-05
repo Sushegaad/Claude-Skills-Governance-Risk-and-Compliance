@@ -1,0 +1,33 @@
+{
+  "eval_id": 242,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the case: ~$36 million consent agreement with DDTC (August 2026) resolving 104 AECA/ITAR violations from 2019–2025, voluntarily disclosed",
+      "passed": false,
+      "evidence": "Disclaims the case: \"I don't have reliable, verified details of a specific '2026 BAE Systems settlement'... I can't confirm the consent agreement's exact terms, penalty amount\". No $36M/104/Aug 2026 facts."
+    },
+    {
+      "text": "Notes terms: $18M suspended for approved remedial compliance spending, ~3-year consent agreement, Special Compliance Officer, and external audit — with no debarment (VSD/cooperation credit)",
+      "passed": false,
+      "evidence": "No $18M suspended, no 3-year term, no Special Compliance Officer for this case, no VSD-based no-debarment outcome; only generic historical patterns."
+    },
+    {
+      "text": "Identifies violation themes: unauthorized technical-data exports including to China (a §126.1 proscribed destination), unauthorized defense services in multiple countries, and unauthorized retransfers",
+      "passed": false,
+      "evidence": "No China/§126.1 technical-data exports, defense services in specific countries, or retransfers identified for this case."
+    },
+    {
+      "text": "Extracts the root causes DDTC cited: insufficient written procedures, inexperienced compliance staff, inadequate management of agreements (TAA/MLA), and lack of systems to track authorizations",
+      "passed": false,
+      "evidence": "DDTC's cited root causes (written procedures, inexperienced staff, TAA/MLA management, authorization tracking) not extracted; generic lessons about classification, M&A, third parties instead."
+    },
+    {
+      "text": "Draws the right program lessons: authorization tracking systems, agreement lifecycle management, staffing/experience, and the mitigation value of voluntary self-disclosure",
+      "passed": false,
+      "evidence": "Generic principles offered but no authorization-tracking-system or agreement-lifecycle lessons tied to this case; explicitly tells reader to \"pull the actual 2026 BAE settlement documents\" instead."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

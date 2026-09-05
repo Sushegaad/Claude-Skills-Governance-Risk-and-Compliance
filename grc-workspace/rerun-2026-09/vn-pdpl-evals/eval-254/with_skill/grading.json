@@ -1,0 +1,33 @@
+{
+  "eval_id": 254,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Consent must be explicit, informed and demonstrable — silence or inactivity does NOT constitute consent (and treating it as such is now a fineable violation under Decree 330)",
+      "passed": false,
+      "evidence": "States consent must be \"voluntary, explicit, specific... informed, and recorded\" and lists \"silence, pre-ticked boxes\" as invalid, but never mentions Decree 330 or that treating silence as consent is now a fineable violation"
+    },
+    {
+      "text": "Processing after consent withdrawal is prohibited and now carries specific fines (~VND 50–70M for organisations)",
+      "passed": false,
+      "evidence": "Withdrawal listed only as a right (\"to consent/withdraw\"); no statement that post-withdrawal processing is prohibited or carries ~VND 50–70M fines"
+    },
+    {
+      "text": "Breach notification: 72 hours to the authority (MPS), stricter/faster in structure than GDPR's risk-conditioned regime",
+      "passed": true,
+      "evidence": "\"Both regimes use 72 hours as the notification trigger to the authority\"; VN requires data-subject notice by default while \"GDPR only requires data subject notification when the breach poses a high risk\""
+    },
+    {
+      "text": "States VN-PDPL grants a narrower rights catalogue than GDPR (6 rights; no portability right)",
+      "passed": true,
+      "evidence": "\"VN-PDPL provides six rights (Article 4)... GDPR provides eight, including two VN-PDPL omits entirely: the right to data portability and...\""
+    },
+    {
+      "text": "Notes sensitive personal data triggers heightened duties (e.g., DPO/notification obligations)",
+      "passed": true,
+      "evidence": "\"VN-PDPL requires explicit, separate consent for each of the 13 sensitive categories (Article 10)\" — heightened duties for sensitive data noted"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

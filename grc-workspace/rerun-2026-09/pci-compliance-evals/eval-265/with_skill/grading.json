@@ -1,0 +1,33 @@
+{
+  "eval_id": 265,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Compensating controls: require a legitimate documented technical/business constraint, must meet the intent and be 'above and beyond' other requirements, documented in a compensating controls worksheet, reviewed by the assessor annually",
+      "passed": true,
+      "evidence": "\"a specific technical or documented business constraint\"; \"Meet the intent and rigor\"; \"Go above and beyond other PCI DSS requirements\"; \"Compensating Control Worksheet (CCW), reassessed at every annual assessment\""
+    },
+    {
+      "text": "Customized approach: the v4 formal alternative — meets the stated Customized Approach Objective a different way, requires a documented targeted risk analysis (12.3.2) and assessor-designed testing",
+      "passed": true,
+      "evidence": "\"design your own control... that achieves the stated Objective of the requirement\"; \"Perform and document a Targeted Risk Analysis (TRA)\"; QSA assesses via a \"Customised Approach Test Plan (CATP) they develop specifically for your implementation\""
+    },
+    {
+      "text": "States the customized approach requires a full assessment (ROC with a qualified assessor) — not available via most SAQs",
+      "passed": true,
+      "evidence": "\"Not available for SAQ A or SAQ B; generally used in ROC/QSA-assessed environments\"; \"requires QSA involvement to build a bespoke test plan\""
+    },
+    {
+      "text": "Notes some requirements are ineligible for the customized approach where explicitly stated",
+      "passed": false,
+      "evidence": "Never notes that some individual requirements are explicitly ineligible for the customized approach; only mentions SAQ A/B unavailability"
+    },
+    {
+      "text": "Advises choosing based on whether the constraint is temporary (compensating) vs a deliberate long-term alternative design (customized)",
+      "passed": true,
+      "evidence": "\"hard constraint on a specific system (legacy app, vendor limitation)... points to a compensating control\" vs \"architecture is genuinely different... mature, risk-based way... points to the Customised Approach\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

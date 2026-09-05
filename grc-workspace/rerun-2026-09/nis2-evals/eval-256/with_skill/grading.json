@@ -1,0 +1,33 @@
+{
+  "eval_id": 256,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the Cyberbeveiligingswet (Cbw) entered into force August 15, 2026, transposing NIS2 and replacing the Wbni",
+      "passed": true,
+      "evidence": "on 15 August 2026 the Cyberbeveiligingswet (Cbw) entered into force... replacing the previous Wet beveiliging netwerk- en informatiesystemen (Wbni)"
+    },
+    {
+      "text": "Gives the scale: over 8,000 organisations across 18 sectors in scope",
+      "passed": true,
+      "evidence": "Roughly 8,000 organisations across 18 sectors fall in scope"
+    },
+    {
+      "text": "States the registration duty: register in the entity register via NCSC (MijnNCSC) \u2014 mandatory as of entry into force",
+      "passed": true,
+      "evidence": "In-scope entities must register with the national authority via MijnNCSC... this is the most urgent action item"
+    },
+    {
+      "text": "States there is no transition/grace period: duty of care (risk-management measures) and incident reporting apply immediately",
+      "passed": true,
+      "evidence": "it applies immediately \u2014 there is no transition period... 'Duty of care (zorgplicht) applies now'... 'Incident reporting obligations apply now'"
+    },
+    {
+      "text": "Mentions board-level accountability: management ultimately responsible, with knowledge/training obligations",
+      "passed": true,
+      "evidence": "your management body must approve the risk-management measures... and undergo cybersecurity training itself... Management can face personal liability"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

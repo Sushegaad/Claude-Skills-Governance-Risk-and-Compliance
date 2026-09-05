@@ -1,0 +1,33 @@
+{
+  "eval_id": 240,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "GOVERN function added (elevating governance/supply-chain risk strategy), reorganizing former ID categories",
+      "passed": true,
+      "evidence": "A sixth function: Govern (GV)... CSF 1.1 embedded governance activities across the Identify and Protect functions (mainly ID.GV and ID.RM). CSF 2.0 pulls governance out; ID.SC moved into GV.SC and expanded"
+    },
+    {
+      "text": "Scope broadened: from critical infrastructure to all organizations",
+      "passed": true,
+      "evidence": "CSF 1.1 was written with a critical-infrastructure lens; CSF 2.0 explicitly targets organizations of all sizes and sectors"
+    },
+    {
+      "text": "Structural changes: categories/subcategories reorganized and renumbered \u2014 requires subcategory-level remapping, not a rename",
+      "passed": true,
+      "evidence": "Subcategory-level remap shown: 108 in CSF 1.1 down to 106 in 2.0; mapping table (ID.GV-01 -> GV.PO-01 etc.); 'Validate specific subcategory mappings'"
+    },
+    {
+      "text": "Mentions new support resources: implementation examples, quick-start guides, reference tool, community profiles",
+      "passed": true,
+      "evidence": "New resources named: 'searchable NIST CSF 2.0 Reference Tool, updated via the OLIR program' and 'added Quick Start Guides for SMBs, enterprise risk managers, and government'"
+    },
+    {
+      "text": "Gives a sane migration path: map existing 1.1 profile to 2.0 subcategories, stand up GOVERN outcomes, refresh target profile and roadmap",
+      "passed": true,
+      "evidence": "Migration checklist maps 1.1 practices to new GV homes ('map your existing ID.GV/ID.RM practices to their new GV homes'), stands up GOVERN first, then supply chain and additive changes into the improvement cycle"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

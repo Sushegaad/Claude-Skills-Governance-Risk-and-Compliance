@@ -1,0 +1,32 @@
+A cloud vendor hosting your EHR will create, receive, maintain, and transmit ePHI on your behalf, which makes it a Business Associate under HIPAA — a BAA is mandatory before any PHI touches their systems, including during migration/testing. Here's what the agreement must contain (45 CFR §164.504(e), §164.314(a)).
+
+**Required substantive provisions**
+
+1. **Permitted uses and disclosures** — The BAA must specifically describe how the vendor may use/disclose PHI: to perform the hosting services, for its own proper management and administration (if it obtains reasonable assurances of confidentiality and breach notification), and as required by law. It may not use PHI for any purpose beyond what the agreement authorizes.
+
+2. **Prohibition on unauthorized use/disclosure** — An explicit statement that the vendor will not use or disclose PHI other than as permitted by the agreement or required by law.
+
+3. **Safeguards requirement** — The vendor must commit to implementing appropriate administrative, physical, and technical safeguards consistent with the Security Rule (§§164.308, 164.310, 164.312) to protect the confidentiality, integrity, and availability of ePHI it hosts. For an EHR specifically, I'd push for the BAA (or an attached security addendum) to specify encryption at rest (AES-256) and in transit (TLS 1.2+), MFA for administrative access, and audit logging — these aren't automatically baked into a generic BAA template and are worth naming explicitly given what's actually being hosted.
+
+4. **Subcontractor flow-down** — The vendor must require any of its own subcontractors that will touch your PHI (e.g., a sub-processor providing backup, monitoring, or support services) to agree in writing to the same restrictions and conditions that apply to the vendor. This is critical for cloud hosting because most cloud vendors rely on underlying infrastructure providers (AWS, Azure, GCP) — confirm the chain of BAAs actually extends all the way down.
+
+5. **Breach and security incident reporting** — The vendor must report to you: (a) any breach of unsecured PHI without unreasonable delay and within 60 days of discovery, and (b) any security incident, including unsuccessful attempts, per the timeline you negotiate. Your own 60-day clock for notifying patients and HHS runs from whichever is earlier — your discovery or the vendor's notification — so I'd negotiate for the vendor's reporting window to be materially shorter than 60 days (many hosting BAAs commit to 5-10 business days) so you retain enough runway to meet your own downstream deadlines.
+
+6. **Access for patient rights** — The vendor must make PHI available to you as needed so you can respond to a patient's right of access request (§164.524) within your own 30-day (+30) statutory window, and must support your ability to respond to accounting-of-disclosures requests (§164.528). For an EHR vendor specifically, confirm the platform actually supports timely export in the format patients may request — this is a functional requirement, not just a contractual one.
+
+7. **HHS audit access** — The vendor must make its internal practices, books, and records relating to PHI available to HHS for compliance investigations.
+
+8. **Return or destruction of PHI at termination** — Upon contract termination, the vendor must return or destroy all PHI if feasible; if not feasible (common with backups), the agreement must state that protections continue to apply to any PHI retained. For an EHR specifically, negotiate the mechanics up front: data export format, timeline, and whether you retain read access during a transition period to a new vendor.
+9. **Termination rights** — Either party may terminate the underlying agreement if the other has materially violated a term and failed to cure it, and the agreement should state this triggers return/destruction obligations.
+
+**Practical additions I'd insist on for an EHR cloud host specifically**
+
+- Data residency/location commitments (which region(s) host your data)
+- Named subcontractors/sub-processors disclosed and kept current
+- Right to audit or receive third-party audit reports (SOC 2 Type II, HITRUST) annually
+- Defined uptime/availability SLA tied to your contingency plan obligations, since an EHR outage is a patient-safety issue, not just a compliance one
+- Explicit encryption key management terms — who holds the keys, and whether they're customer-managed
+
+**Bottom line:** the BAA has mandatory legal content (permitted uses, safeguards, subcontractor flow-down, breach reporting, HHS access, patient-rights support, and termination/return-of-data terms), but for an EHR host specifically, don't stop at the boilerplate — negotiate concrete security and breach-notification-timeline specifics, because the generic template language leaves too much ambiguity for a system this central to your ePHI.
+
+*This guidance is for informational purposes only and does not constitute legal advice. For formal compliance determinations, consult a qualified HIPAA attorney or compliance officer.*

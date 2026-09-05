@@ -1,0 +1,33 @@
+{
+  "eval_id": 270,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "KRBTGT account credential changes now at least every six months (ISM-1847, was annual)",
+      "passed": false,
+      "evidence": "No ISM-1847/KRBTGT change mentioned; KRBTGT never appears"
+    },
+    {
+      "text": "DCSync-permission account reviews now at least every six months (ISM-1934, was annual)",
+      "passed": false,
+      "evidence": "No ISM-1934/DCSync change mentioned; only generic \"quarterly or annual\" access recertification"
+    },
+    {
+      "text": "Post-deployment vulnerability assessments/penetration tests now at least every six months (ISM-2118, was annual)",
+      "passed": false,
+      "evidence": "Pen testing described as \"often annual\" — omits (and effectively contradicts) the new 6-monthly ISM-2118 requirement"
+    },
+    {
+      "text": "Service provider access restricted to explicitly approved remote management tools, source addresses and time windows (ISM-2124), with organisation-controlled logging the provider cannot modify or delete (ISM-2125)",
+      "passed": false,
+      "evidence": "Mentions JIT/time-boxed access and customer-retained logging as expected \"direction of travel,\" but not the actual ISM-2124/2125 requirements (approved tools/source addresses/time windows; provider-unmodifiable organisation-controlled logging)"
+    },
+    {
+      "text": "Unauthorised service-provider access or administration is to be treated as a cyber security incident (ISM-1576 amendment)",
+      "passed": false,
+      "evidence": "No statement that unauthorised service-provider access is to be treated as a cyber security incident (ISM-1576 amendment); only contractual incident-notification clauses"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

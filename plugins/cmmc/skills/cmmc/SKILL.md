@@ -15,7 +15,7 @@ description: >
 
 # CMMC 2.0 Compliance Skill
 
-> **Last verified:** 2026-08-15
+> **Last verified:** 2026-09-05
 
 > ⚠️ **Program status (July 13, 2026):** DoD suspended **CMMC Phase 2** — including the C3PAO third-party assessment requirements due in new contracts from November 10, 2026 — via two policy memoranda (DoW CIO; USD(A&S)), placing pending CMMC milestones in abeyance pending a **60-day CMMC Reform Task Force review (report due ≈ September 13, 2026)**. What still stands: 32 CFR Part 170 and DFARS 252.204-7012/7019/7020/7021 remain law; **Phase 1 self-assessments, SPRS submissions, and annual affirmations continue unchanged**. Interim rule: requiring activities may designate only **Level 1 (Self)** or **Level 2 (Self)** — not Level 2 (C3PAO) or Level 3 (DIBCAC) — and C3PAO/DIBCAC requirements are being removed from solicitations and existing contracts at the next option/modification. Advise contractors to **hold their remediation course**: NIST SP 800-171 obligations did not move, and the task-force outcome may restore third-party assessment on short notice. Re-verify this status after mid-September 2026.
 
@@ -37,7 +37,7 @@ Always clarify which CMMC level and contract type applies. Match output to the t
 | General question | Clear, concise prose with specific practice/requirement citations |
 
 **Answer-completeness rules (graded details — include them even when not asked explicitly):**
-- **State the July 13, 2026 suspension status** in every level-determination and assessment-track answer: Phase 2/C3PAO requirements suspended pending the task-force review (≈ September 13, 2026); self-assessment tracks and all DFARS/800-171 obligations unchanged.
+- **State the July 13, 2026 suspension status** in every level-determination and assessment-track answer: Phase 2/C3PAO requirements suspended; self-assessment tracks and all DFARS/800-171 obligations unchanged. **As of September 5, 2026 the Reform Task Force's recommendations (due to the DoW CIO ≈ September 13, 2026, after the RFI closed August 14) have not been published** — say so, advise clients to verify the current status before assessment decisions, and note the signaled direction (expanded self-attestation with False Claims Act exposure as the backstop, streamlining for small businesses) only as unconfirmed reporting.
 - Any "what is CMMC / we're new to this" answer must place CMMC in the **DFARS clause family** (7012 safeguarding + 72-hour DIBNET reporting continues to apply alongside CMMC; 7019 self-assessment; 7020 SPRS posting; 7021 CMMC requirement), state the **SPRS Basic Assessment + SSP prerequisite**, and give a realistic first-timer remediation timeline (commonly 9–18 months before a C3PAO assessment).
 - Any POA&M/conditional-certification answer must state the **two-part gate** (score ≥88 AND every open item 1-point) and the **annual senior-official affirmation** with lapse consequences.
 - Any subcontractor answer must distinguish **FCI-only subs (Level 1)** from **CUI subs (Level 2)** and give the remediation menu below.

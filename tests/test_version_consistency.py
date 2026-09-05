@@ -25,7 +25,7 @@ import pytest
 # ---------------------------------------------------------------------------
 # Ground truth — bump this when cutting a new release
 # ---------------------------------------------------------------------------
-CANONICAL_VERSION = "1.8.0"
+CANONICAL_VERSION = "1.9.0"
 
 REPO = Path(__file__).parent.parent
 
@@ -144,7 +144,7 @@ class TestRepositoryVersion:
 class TestVersionUniqueness:
     """No old version strings should appear in plugin manifests or the catalog."""
 
-    KNOWN_OLD_VERSIONS = {"0.8.0", "1.0.0", "1.1.0", "1.2.0", "1.3.0", "1.4.0", "1.5.0", "1.6.0", "1.6.1", "1.6.2", "1.7.1"}
+    KNOWN_OLD_VERSIONS = {"0.8.0", "1.0.0", "1.1.0", "1.2.0", "1.3.0", "1.4.0", "1.5.0", "1.6.0", "1.6.1", "1.6.2", "1.7.1", "1.8.0"}
 
     @pytest.mark.parametrize("plugin_dir", _plugin_dirs(), ids=lambda p: p.name)
     def test_no_stale_version_in_plugin_json(self, plugin_dir: Path):

@@ -1,0 +1,29 @@
+If your e-commerce site redirects the customer's browser fully away to a third-party hosted payment page (or embeds it via an inline frame that is entirely served and controlled by the payment processor) and your own web servers never receive, process, or store cardholder data, you are most likely eligible for SAQ A — the shortest and least burdensome of the merchant self-assessment questionnaires, roughly 20-plus requirements depending on the DSS version.
+
+SAQ A eligibility conditions (PCI DSS v4.0 era) generally require that the merchant:
+
+1. Handles only card-not-present (e-commerce or mail/telephone order) transactions.
+2. Has fully outsourced all cardholder data functions — capture, transmission, processing, storage — to PCI DSS validated third-party service provider(s). All payment pages/iframes must be provided directly by the third party, and the payment page must not be capable of being loaded within the merchant's own controlled iframe wrapper in a way that gives the merchant script-level control over the payment fields.
+3. Retains no electronic storage, processing, or transmission of any cardholder data on the merchant's own systems or premises — no cardholder data touches merchant infrastructure at all, not even in logs or memory.
+4. Confirms that any paper reports or receipts with cardholder data are not stored electronically.
+5. Has confirmed, via the third-party's PCI attestation of compliance (AOC), that the service provider is itself validated compliant.
+
+Important nuance introduced in v3.2.1 and carried into v4.0: there are effectively two flavors of "redirect/hosted" eligibility.
+
+- If the payment page is a true full-page redirect (the customer's browser navigates away from your domain entirely to the processor's domain, completes payment, then redirects back) — that is classic SAQ A territory, assuming the other conditions above hold.
+- If the payment collection happens via an iframe or embedded JavaScript hosted by the processor but displayed within your page (so the customer never leaves your page visually), you may still qualify for SAQ A, but only if your page itself does not have the ability to control, manipulate, or receive the content of that iframe — i.e., you have no script on the page that could alter, inject into, or intercept the payment iframe. If your page includes any script capability that could affect the security of that payment page (even if unused), or if you serve the iframe wrapper page dynamically from your own infrastructure using code you control, you likely fall into SAQ A-EP instead, which has significantly more requirements (roughly 40+, including many Requirement 6, 9, 11, and 12 controls) because your web server is considered to influence the security of the payment process even though it never touches card data directly.
+
+A key regulatory point that matters a lot right now: PCI DSS v4.0 added two requirements that apply to SAQ A merchants specifically because "fully outsourced" merchants have been a major target of digital skimming (Magecart-style attacks):
+
+- Requirement 6.4.3 — every script that executes in the consumer's payment page must be authorized, its integrity must be verified (e.g., via subresource integrity or an inventory/monitoring mechanism), and there must be a documented inventory of all scripts and justification for each.
+- Requirement 11.6.1 — a change- and tamper-detection mechanism must be deployed to alert on unauthorized modification of the HTTP headers and page contents of payment pages, checked at least weekly (or per a defined frequency based on a targeted risk analysis).
+
+These two apply even to SAQ A merchants because the redirect page itself — the page the customer sees just before or after being sent to the processor — is often on merchant-controlled infrastructure and has been the injection point for skimmers in real breaches. So "SAQ A" does not mean "no security work"; it means a narrower scope, but script/header integrity monitoring on your own checkout-adjacent pages is now mandatory.
+
+Other things to verify before claiming SAQ A:
+- Get and review the payment processor's current AOC and confirm it's not expired.
+- Make sure no cardholder data ever appears in server logs, error logs, session replay tools, analytics tags, or customer support tooling on your side.
+- Confirm your web application firewall or CDN configuration doesn't cache or log full PANs.
+- Check that your incident response and vulnerability scanning practices still cover your outsourced flow. Some Requirement 12 items (security policy, incident response plan, service provider due diligence) still apply under SAQ A.
+
+If any of the above conditions aren't met — for example, if your servers ever see the full PAN even momentarily, or you tokenize on your own infrastructure — you'd need to move up to SAQ A-EP or a broader SAQ (C, D) depending on your actual architecture. I'd recommend walking through the current SAQ A and A-EP eligibility criteria documents from the PCI SSC line by line with your team (and ideally your acquirer or a QSA) to confirm exactly which bucket your specific checkout flow falls into, since the iframe-control nuance is where merchants most often misclassify themselves.

@@ -1,0 +1,33 @@
+{
+  "eval_id": 252,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the mechanism: a cross-border transfer impact assessment (CPDTIA/CTIA) dossier submitted to A05/MPS within 60 days of first transfer (per Decree 356/2025)",
+      "passed": false,
+      "evidence": "TIA dossier and MPS filing mentioned but attributed to \"Decree 13 originally set a 60-day post-transfer filing\" with PDPL requirements framed as \"later drafts\"; no Decree 356/2025"
+    },
+    {
+      "text": "Mentions ongoing duties: periodic updates (6-monthly) and updates on material changes",
+      "passed": false,
+      "evidence": "Only \"keep the TIA dossier updated if the nature, volume, or recipient of the transfer changes\"; no 6-monthly periodic update duty"
+    },
+    {
+      "text": "States the enforcement risk under Decree 330/2026: concealment/misdeclaration or assessment failures combined with breach/loss of citizens' data trigger the revenue-based fine bands (up to 3–5% of Vietnam-market revenue)",
+      "passed": false,
+      "evidence": "Hedged \"potential revenue-based fines (reportedly up to ~5% of Vietnam-derived revenue)\"; no Decree 330, no concealment/misdeclaration-plus-breach trigger, no bands"
+    },
+    {
+      "text": "Distinguishes the lesser offence: plain failure to file/update the dossier carries fixed fines around VND 30–50M",
+      "passed": false,
+      "evidence": "States \"fines... from roughly 100 million to 500 million VND per violation\"; does not identify the VND 30–50M fixed fine for plain failure to file/update"
+    },
+    {
+      "text": "Notes suspension of cross-border transfers as an available remedial measure",
+      "passed": true,
+      "evidence": "\"Regulators can also order suspension of the transfer\""
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

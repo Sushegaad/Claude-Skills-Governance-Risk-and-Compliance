@@ -1,0 +1,13 @@
+{
+  "eval_id": 273,
+  "eval_name": "sprs-scoring",
+  "run_type": "without_skill",
+  "prompt": "Walk me through calculating our SPRS score. We have 12 open NIST 800-171 practices.",
+  "assertions": [
+    "Starts at 110 and deducts per unimplemented practice using the DoD Assessment Methodology weights (5, 3, or 1 points)",
+    "States the score range: +110 down to -203",
+    "States prerequisites: a complete SSP is required; the Basic Assessment (self) is posted to SPRS with assessment date and scope",
+    "Notes specific weighting rules: MFA (3.5.3) and FIPS-validated encryption (3.13.11) carry special treatment (5/3-point nuances), or accurately describes the 1/3/5 weighting logic with examples",
+    "Mentions the annual affirmation duty and that misrepresentation carries False Claims Act risk"
+  ]
+}

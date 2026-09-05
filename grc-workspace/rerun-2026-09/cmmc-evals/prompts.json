@@ -1,0 +1,25 @@
+{
+ "skill": "cmmc",
+ "prompts": [
+  {
+   "id": 271,
+   "prompt": "Should we cancel our C3PAO assessment scheduled for December 2026? It costs six figures."
+  },
+  {
+   "id": 272,
+   "prompt": "What is the CMMC Reform Task Force actually considering, and when will we know?"
+  },
+  {
+   "id": 273,
+   "prompt": "Walk me through calculating our SPRS score. We have 12 open NIST 800-171 practices."
+  },
+  {
+   "id": 274,
+   "prompt": "How do we scope our environment for CMMC Level 2? We want an enclave approach."
+  },
+  {
+   "id": 275,
+   "prompt": "Which gaps can go on a POA&M for our CMMC Level 2 self-assessment, and for how long?"
+  }
+ ]
+}

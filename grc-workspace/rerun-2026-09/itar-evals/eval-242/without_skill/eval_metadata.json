@@ -1,0 +1,13 @@
+{
+  "eval_id": 242,
+  "eval_name": "bae-compliance-lessons",
+  "run_type": "without_skill",
+  "prompt": "What does the 2026 BAE Systems settlement teach us about ITAR compliance program design?",
+  "assertions": [
+    "States the case: ~$36 million consent agreement with DDTC (August 2026) resolving 104 AECA/ITAR violations from 2019–2025, voluntarily disclosed",
+    "Notes terms: $18M suspended for approved remedial compliance spending, ~3-year consent agreement, Special Compliance Officer, and external audit — with no debarment (VSD/cooperation credit)",
+    "Identifies violation themes: unauthorized technical-data exports including to China (a §126.1 proscribed destination), unauthorized defense services in multiple countries, and unauthorized retransfers",
+    "Extracts the root causes DDTC cited: insufficient written procedures, inexperienced compliance staff, inadequate management of agreements (TAA/MLA), and lack of systems to track authorizations",
+    "Draws the right program lessons: authorization tracking systems, agreement lifecycle management, staffing/experience, and the mitigation value of voluntary self-disclosure"
+  ]
+}

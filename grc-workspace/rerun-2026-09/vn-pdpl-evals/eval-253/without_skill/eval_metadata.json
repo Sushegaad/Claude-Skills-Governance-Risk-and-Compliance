@@ -1,0 +1,13 @@
+{
+  "eval_id": 253,
+  "eval_name": "law-stack-timeline",
+  "run_type": "without_skill",
+  "prompt": "Give me the timeline and structure of Vietnam's current personal data protection legal framework.",
+  "assertions": [
+    "Law No. 91/2025/QH15 (PDPL) — the substantive law, in force January 1, 2026",
+    "Decree 356/2025/ND-CP (Dec 31, 2025) — implementing detail: PDPIA/CTIA dossier forms, DPO criteria, submission timelines",
+    "Decree 330/2026/ND-CP (August 19, 2026, effective immediately) — the administrative sanctions layer completing the enforcement mechanism",
+    "Transition rule: violations before August 19, 2026 are judged under the law in force at the time unless Decree 330 is more lenient",
+    "Identifies MPS/A05 (Department of Cyber Security and High-Tech Crime Prevention) as the enforcement authority"
+  ]
+}

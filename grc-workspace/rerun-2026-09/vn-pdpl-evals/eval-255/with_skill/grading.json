@@ -1,0 +1,33 @@
+{
+  "eval_id": 255,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the SME exemption: small and micro enterprises may opt out of specified obligations (impact assessments, certain security/processor duties) for 5 years from January 1, 2026",
+      "passed": true,
+      "evidence": "\"Article 38, together with Decree 356, gives small and micro enterprises a five-year opt-out (from 1 January 2026 to 31 December 2030)\" from \"Article 21 — mandatory domestic DPIA... Article 22 — certain security measures... Article 33(2) — certain processor-specific obligations\""
+    },
+    {
+      "text": "Notes the carve-outs: the exemption does NOT apply if processing sensitive personal data or processing at large scale",
+      "passed": true,
+      "evidence": "\"unless they process sensitive personal data or process at large scale\"; \"The exemption evaporates the moment you process sensitive personal data... or process 'at large scale'\""
+    },
+    {
+      "text": "Notes micro-enterprises get the fullest relief, subject to the same carve-outs",
+      "passed": true,
+      "evidence": "\"Micro-enterprises are fully exempt from these unless they process sensitive personal data or process at large scale\""
+    },
+    {
+      "text": "Warns that core duties still apply: lawful basis/consent, data subject rights, breach notification, and the penalty regime (Decree 330) applies to violations of applicable duties",
+      "passed": true,
+      "evidence": "\"Do not defer consent mechanics, rights-fulfilment processes, or breach response planning... Decree 330/2026/ND-CP's penalty framework (effective August 2026) applies the same fines to small companies\""
+    },
+    {
+      "text": "Advises documenting the exemption reliance and re-checking on growth/scale changes",
+      "passed": true,
+      "evidence": "\"document the basis for claiming the exemption\"; \"expect to cross the 'large scale' threshold as you grow, plan for DPIA compliance now\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

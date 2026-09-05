@@ -1,0 +1,43 @@
+Both mechanisms exist to handle the same problem — you can't meet a PCI DSS requirement exactly as written — but they work in fundamentally different ways, apply to different situations, and carry different documentation and assessment burdens. Here's the distinction and how to decide which one fits your case.
+
+Compensating Control (Defined Approach only)
+
+A compensating control is used when you're following the Defined Approach (the traditional, prescriptive PCI DSS path) but a specific technical or documented business constraint prevents you from implementing a requirement exactly as stated. Instead of an alternative way to meet the objective, a compensating control is an additional set of controls that offsets the risk of not meeting the literal requirement.
+
+To be valid, a compensating control must:
+1. Meet the intent and rigor of the original requirement.
+2. Go above and beyond other PCI DSS requirements (it can't just be a control you'd need to have anyway).
+3. Be commensurate with the additional risk created by not meeting the requirement as written.
+4. Be documented in the ROC/SAQ using a Compensating Control Worksheet (CCW), reassessed at every annual assessment.
+
+Typical use case: A legacy application can't support the 12-character minimum password length. As a compensating control, you might implement a shorter password combined with mandatory MFA, tighter account lockout thresholds, and enhanced logging/monitoring on that specific system — controls that collectively offset the weaker password policy.
+
+Customised Approach (New in v4.0)
+
+The Customised Approach is a formal alternative validation path introduced in PCI DSS v4.0. Rather than reacting to a constraint with an add-on control, you design your own control from the ground up that achieves the stated Objective of the requirement — the Objective is published by PCI SSC for each applicable requirement. This is meant for mature organizations with innovative or non-traditional architectures (cloud-native, zero-trust, microservices) where the prescriptive Defined Approach control doesn't map cleanly onto your technology.
+
+To use the Customised Approach, you must:
+1. Perform and document a Targeted Risk Analysis (TRA) for that specific control — including risk description, how the objective is achieved, and evidence of effectiveness.
+2. Obtain senior management approval and sign-off on the TRA.
+3. Have your QSA assess the control using a Customised Approach Test Plan (CATP) they develop specifically for your implementation (rather than applying PCI SSC's standard testing procedure).
+4. Review and revalidate the control at least annually.
+
+Typical use case: Instead of implementing a specific password-based authentication scheme, an organization with a mature zero-trust architecture might use continuous device-and-identity risk scoring plus short-lived cryptographic certificates to achieve the same authentication-assurance objective — an approach that doesn't map to any single Defined Approach control but still satisfies the underlying security intent.
+
+Key differences at a glance:
+
+- Available under: Compensating Control -> Defined Approach only. Customised Approach -> Customised Approach only.
+- Trigger: Compensating Control -> Can't meet requirement due to technical/business constraint. Customised Approach -> Choose to meet the requirement's Objective differently.
+- Nature: Compensating Control -> Additional controls that offset risk. Customised Approach -> Alternative control replacing the prescriptive one.
+- Documentation: Compensating Control -> Compensating Control Worksheet (CCW). Customised Approach -> Targeted Risk Analysis (TRA) + Customised Approach Test Plan (CATP).
+- Assessment: Compensating Control -> QSA reviews CCW annually. Customised Approach -> QSA develops and applies a bespoke test plan.
+- Eligibility: Compensating Control -> Available for most requirements. Customised Approach -> Not available for SAQ A or SAQ B; generally used in ROC/QSA-assessed environments.
+- Management sign-off: Compensating Control -> Not formally required (though good practice). Customised Approach -> Required — senior management must approve the TRA.
+
+Which one fits your situation?
+
+Ask: is the issue a hard constraint on a specific system (legacy app, vendor limitation) where you'd otherwise stay on the standard Defined Approach for everything else? That points to a compensating control — it's faster to document and doesn't require redesigning your assessment methodology.
+
+Is the issue that your overall architecture is genuinely different from what the Defined Approach assumes, and you have (or can build) a mature, risk-based way of meeting the requirement's actual security objective, with the internal capability to run and defend a TRA? That points to the Customised Approach — but be aware it's a heavier lift: it requires QSA involvement to build a bespoke test plan, formal management approval, and annual revalidation, and it isn't available at all if you're validating via SAQ A or SAQ B.
+
+Recommendation: Bring the specific requirement and constraint to your QSA or ISA early — they can confirm whether a CCW is sufficient or whether the requirement genuinely needs a TRA-backed Customised Approach, and can help scope the documentation burden accordingly before your assessment window closes.

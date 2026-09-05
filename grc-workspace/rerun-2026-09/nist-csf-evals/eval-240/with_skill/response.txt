@@ -1,0 +1,43 @@
+Good news: CSF 2.0 (published February 2024) is designed to be backward-compatible in intent with CSF 1.1 (April 2018) — you don't need to rip out your existing program. But there are real structural changes worth understanding before you migrate. Here's what changed and how to approach the transition.
+
+**What actually changed**
+
+1. **A sixth function: Govern (GV).** This is the headline change. CSF 1.1 embedded governance activities across the Identify and Protect functions (mainly ID.GV and ID.RM). CSF 2.0 pulls governance out into its own standalone function with 6 categories and 23 subcategories: GV.OC (Organizational Context), GV.RM (Risk Management Strategy), GV.RR (Roles, Responsibilities, and Authorities), GV.PO (Policy), GV.OV (Oversight), and GV.SC (Cybersecurity Supply Chain Risk Management). The intent is to put governance at the center — literally depicted at the center of the CSF wheel diagram — rather than treating it as a subset of "Identify."
+
+2. **Supply chain risk management expanded significantly.** CSF 1.1 had a single category, ID.SC, with 5 subcategories. CSF 2.0 moved this into GV.SC and expanded it to 10 subcategories — covering supplier criticality prioritization (GV.SC-04), pre-relationship due diligence (GV.SC-06), lifecycle monitoring (GV.SC-09), and post-relationship provisions (GV.SC-10), none of which existed in 1.1.
+
+3. **A new Improvement category (ID.IM).** CSF 1.1 had no formal mechanism for capturing lessons learned across functions. CSF 2.0 adds ID.IM (4 subcategories) to structure how improvements are identified from evaluations, tests/exercises, operational execution, and communicated to stakeholders — this absorbed what used to be scattered informally across RC.IM (Recovery Improvements) in 1.1, which no longer exists as a separate category.
+
+4. **Net subcategory count**: 108 in CSF 1.1 down to 106 in CSF 2.0 — despite adding an entire new function, NIST consolidated and removed redundant subcategories elsewhere (e.g., PR.IP's 12 subcategories were split/absorbed into PR.PS and PR.IR; several RS.AN and RC.CO subcategories were consolidated).
+
+5. **Informative References moved online.** In 1.1 these were embedded in the framework document; in 2.0 they live in the searchable NIST CSF 2.0 Reference Tool, updated via the OLIR program independently of the core framework text.
+
+6. **Audience broadened explicitly.** CSF 1.1 was written with a critical-infrastructure lens; CSF 2.0 explicitly targets organizations of all sizes and sectors, and added Quick Start Guides for SMBs, enterprise risk managers, and government.
+
+7. **Tiers are structurally the same** (4 tiers, same three dimensions: Risk Management Process, Integrated Risk Management Program, External Participation) but the descriptions were refined for clarity — no material change to how you'd assess your tier.
+
+**Where your CSF 1.1 subcategories land in 2.0** (partial map — the full mapping is more extensive):
+
+| CSF 1.1 | CSF 2.0 | Topic |
+|---|---|---|
+| ID.GV-01 | GV.PO-01 | Cybersecurity policy |
+| ID.GV-02 | GV.RR-02 | Roles and responsibilities |
+| ID.GV-03 | GV.OC-03 | Legal/regulatory requirements |
+| ID.GV-04 | GV.OV-01 | Governance/risk strategy review |
+| ID.RM-01/02/03 | GV.RM-01/02/06 | Risk objectives, tolerance, methodology |
+| ID.SC-01 to 05 | GV.SC-01, 04, 05, 07, 08 | Supply chain (now expanded to 10 subcategories total) |
+
+**Migration checklist**
+
+- **Governance**: Formally document risk tolerance (GV.RM-01/02), assign explicit accountable roles to leadership (GV.RR-01/02), establish a policy review cycle (GV.PO-01/02), stand up an oversight mechanism (GV.OV-01 to 03), and expand your supply chain program from ID.SC's 5 subcategories to the full GV.SC-01 through GV.SC-10.
+- **Identify**: Add data/metadata inventories (ID.AM-07) and asset lifecycle management (ID.AM-08) if not already covered; establish a vulnerability disclosure process (ID.RA-08); assess hardware/software authenticity before acquisition (ID.RA-09); stand up the new ID.IM improvement-tracking category.
+- **Protect**: Add data-in-use protection (PR.DS-10) and secure software development practices (PR.PS-06).
+- **Detect**: Integrate threat intelligence into event analysis (DE.AE-07) and define incident declaration criteria (DE.AE-08).
+- **Respond**: Formalize incident triage, categorization, and escalation (RS.MA-02 to 04) — 1.1's RS.RP and RS.CO-01 collapsed into RS.MA-01.
+- **Recover**: Add post-incident operational norms (RC.RP-04), incident recovery end criteria (RC.RP-06), and a public communications process (RC.CO-04).
+
+**Practical sequencing advice**: Since Govern is not optional in 2.0, start there — map your existing ID.GV/ID.RM practices to their new GV homes explicitly, even if the underlying practice doesn't change, so your documentation reflects the current framework. Then tackle the supply chain expansion (GV.SC), since that's the single largest scope increase. The remaining changes (ID.IM, PR.DS-10, DE.AE-07/08, etc.) are additive and can be worked into your existing continuous-improvement cycle rather than requiring a wholesale program rebuild.
+
+I can help you produce a full subcategory-by-subcategory crosswalk of your current 1.1-based program into 2.0, or build a prioritized migration roadmap with effort/impact ratings if you share your current program documentation.
+
+This is general informational guidance based on the publicly available NIST CSF 1.1 and 2.0 documents, not legal or audit advice. Validate specific subcategory mappings against the official NIST CSF 2.0 Reference Tool and consult a qualified cybersecurity professional for your organization's specific migration plan.

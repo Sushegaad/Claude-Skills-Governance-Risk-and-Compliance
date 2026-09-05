@@ -1,0 +1,13 @@
+{
+  "eval_id": 265,
+  "eval_name": "compensating-vs-customized",
+  "run_type": "without_skill",
+  "prompt": "We can't meet a requirement as written. Compensating control or customized approach — what's the difference?",
+  "assertions": [
+    "Compensating controls: require a legitimate documented technical/business constraint, must meet the intent and be 'above and beyond' other requirements, documented in a compensating controls worksheet, reviewed by the assessor annually",
+    "Customized approach: the v4 formal alternative — meets the stated Customized Approach Objective a different way, requires a documented targeted risk analysis (12.3.2) and assessor-designed testing",
+    "States the customized approach requires a full assessment (ROC with a qualified assessor) — not available via most SAQs",
+    "Notes some requirements are ineligible for the customized approach where explicitly stated",
+    "Advises choosing based on whether the constraint is temporary (compensating) vs a deliberate long-term alternative design (customized)"
+  ]
+}

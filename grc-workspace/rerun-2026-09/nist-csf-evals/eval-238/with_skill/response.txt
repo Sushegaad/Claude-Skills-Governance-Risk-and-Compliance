@@ -1,0 +1,43 @@
+**How CSF 2.0 Informative References work**
+
+Unlike CSF 1.1, where Informative References (mappings to other frameworks and standards) were embedded directly in the framework document, CSF 2.0 moved them entirely online into the **NIST CSF 2.0 Reference Tool** (https://csrc.nist.gov/Projects/cybersecurity-framework/Filters#/csf/filters). This was a deliberate design change: informative references need to be updated far more often than the core framework itself (standards get revised, new frameworks emerge), so decoupling them from the static CSF document lets NIST — and the community — keep mappings current without re-publishing the whole framework.
+
+The mechanism behind this is the **Online Informative References (OLIR) Program**. Organizations and framework owners (including NIST itself, but also third parties) can submit a formal mapping between their framework's controls and CSF subcategories, following NIST's OLIR submission specification. NIST reviews and publishes accepted mappings in the Reference Tool. This means:
+
+- Informative references are **crowdsourced and versioned**, not fixed in the CSF text.
+- You can query the Reference Tool by CSF subcategory (e.g., "what maps to PR.AA-05?") or by source framework (e.g., "show me all ISO 27001:2022 mappings to CSF").
+- Reference mappings exist for major frameworks: NIST SP 800-53 Rev 5, ISO/IEC 27001:2022, CIS Controls v8, COBIT, and others — coverage varies by framework and is added over time.
+
+NIST also published **SP 1347** (final, August 25, 2026) as a quick-start guide specifically explaining how these crosswalks work and how to use the Reference Tool and OLIR program effectively — worth consulting directly if your team will be doing this mapping work regularly, since it covers submission mechanics and interpretation guidance beyond what I can summarize here.
+
+**One important caution**: Informative References/crosswalks are **not one-to-one equivalences**. A mapping between an ISO 27001 control and a CSF subcategory typically means "related to" or "supports," not "is identical to." Scope, rigor, and evidentiary expectations often differ between the two controls even when mapped together. Treat mappings as a starting point for cross-referencing your compliance work, not as proof that satisfying one automatically satisfies the other.
+
+**Mapping your ISO 27001 controls to CSF 2.0**
+
+Here is a starting crosswalk covering the most common ISO 27001:2022 Annex A control areas against CSF 2.0 subcategories/categories. Use this as a first pass, then validate specific control language in the NIST Reference Tool since ISO mappings are periodically refined:
+
+| CSF Subcategory Area | ISO 27001:2022 Annex A | Notes |
+|---|---|---|
+| GV.OC (Organizational Context) | A.4.1, A.4.2 | Context of the organization, interested parties |
+| GV.SC (Supply Chain Risk) | A.5.19–5.22 | Supplier relationships, ICT supply chain |
+| ID.AM (Asset Management) | A.5.9, A.5.10 | Inventory of assets, acceptable use |
+| ID.RA (Risk Assessment) | Clause 6.1.2, A.5.7 (threat intelligence) | ISO risk assessment process; note ISO handles this partly in the management-system clauses, not just Annex A |
+| PR.AA (Access Control) | A.5.15–5.18, A.8.2–8.5 | Access control policy, identity/authentication management |
+| PR.AT (Awareness & Training) | A.6.3 | Information security awareness, education, and training |
+| PR.DS (Data Security) | A.5.33, A.5.34, A.8.24 | Protection of records, PII, use of cryptography |
+| PR.PS (Platform Security) | A.8.9, A.8.19, A.8.25–8.32 | Configuration management, secure development lifecycle |
+| PR.IR (Technology Resilience) | A.8.6, A.5.29, A.5.30 | Capacity management, ICT readiness for business continuity |
+| DE.CM (Continuous Monitoring) | A.8.15, A.8.16 | Logging, monitoring activities |
+| DE.AE (Adverse Event Analysis) | A.5.25 | Assessment and decision on information security events |
+| RS.MA / RS.AN / RS.CO (Respond) | A.5.24–5.28 | Incident management planning, response, learning, evidence collection |
+| RC.RP / RC.CO (Recover) | A.5.29, A.5.30 | ICT readiness for business continuity |
+
+**Recommended process for your organization**:
+1. Pull your current ISO 27001 Statement of Applicability (SoA) and control implementation evidence.
+2. For each CSF 2.0 subcategory, identify the corresponding ISO control(s) using the table above as a starting draft, then confirm/refine against the live NIST Reference Tool (mappings are updated more often than static references like this one).
+3. Where a CSF subcategory has no clean ISO equivalent (common in GV.RM strategic-risk areas, GV.RR HR-related subcategories, and ID.IM improvement tracking), flag it as a gap specific to CSF that your ISO program doesn't currently cover — these are useful additions even if you stay ISO-certified as your primary framework.
+4. Where an ISO control maps to a CSF subcategory but the rigor differs (e.g., your ISO evidence supports "partially implemented" against the CSF definition), record that explicitly rather than assuming a match is a match.
+
+I can build you a full subcategory-by-subcategory crosswalk table (all 6 functions) mapped to your specific ISO 27001 SoA if you share which Annex A controls you have implemented and their current status.
+
+This is general informational guidance, not legal or audit advice — validate specific mappings against the live NIST CSF 2.0 Reference Tool and consult a qualified ISO 27001 lead auditor or accredited assessor before relying on this crosswalk for certification or regulatory purposes.

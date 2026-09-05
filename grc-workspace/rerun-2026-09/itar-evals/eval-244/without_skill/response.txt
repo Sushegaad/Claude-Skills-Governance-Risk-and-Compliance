@@ -1,0 +1,24 @@
+This is one of the most common and highest-risk compliance questions in export controls, because the trigger isn't nationality or immigration status per se—it's a legal event called a "deemed export." Under ITAR (22 CFR 120.17 and related provisions), releasing technical data to a foreign person—whether by showing a document, verbal briefing, granting system/network access, allowing them to observe a controlled process, or even letting them work on ITAR-controlled source code or design files—is treated as an export to that person's country of nationality (or countries of nationality, if dual national), even if the release happens entirely inside the United States and the person never leaves the building.
+
+Key concept: "foreign person" is defined broadly. It includes anyone who is not a U.S. citizen, U.S. lawful permanent resident (green card holder), or a protected individual under 8 U.S.C. 1324b(a)(3) (e.g., certain asylees/refugees). Visa status matters: H-1B, L-1, TN, F-1 OPT, and similar nonimmigrant visa holders are all "foreign persons" for ITAR purposes regardless of how senior, trusted, or long-tenured they are. Green card status is the bright line that removes deemed-export risk for that individual (subject to the person actually holding LPR status, not just having applied).
+
+When does showing technical data become a problem? The moment you disclose ITAR-controlled technical data (22 CFR 120.10—this includes design data, engineering prints, source code, test data, technical specifications, and know-how "required" for the design, development, production, manufacture, assembly, operation, repair, testing, maintenance, or modification of a defense article) to a foreign national employee without an approved authorization, you have committed an unauthorized export unless an exemption applies. This is true even for:
+
+- A hallway conversation describing how a controlled subsystem works
+- Granting network/file-share access to a folder containing ITAR drawings
+- CAD/PLM system access where the foreign national employee's login can view controlled files, even if they never open them
+- Including a foreign national on an email thread with attached technical data
+- Verbal instruction, mentoring, or training on a controlled process (this counts as a "defense service" as well as a technical data release)
+
+What doesn't automatically trigger it: general engineering knowledge, publicly available information (properly determined public domain per 120.11), basic marketing data, and information that qualifies as "fundamental research" (22 CFR 120.34) performed at an accredited institution intended for publication—though fundamental research has narrow, specific conditions and doesn't apply to most commercial defense contractor engineering work.
+
+Authorization paths if you need to proceed: (1) A DDTC export license or agreement (e.g., a Technical Assistance Agreement) naming the specific foreign national and country, which can be slow and doesn't scale well for routine internal staffing; (2) exemptions under 22 CFR 126.18, which allow disclosure to certain bona fide regular employees who are foreign nationals without a specific license, provided the company has a Technology Control Plan (TCP) in place, screens for substantive contacts with restrictive countries, and the employee isn't from a proscribed country (126.1 list) or subject to other disqualifiers; (3) NATO/certain allied country provisions in limited circumstances.
+
+Practical program design recommendations:
+- Implement a Technology Control Plan before foreign nationals touch any ITAR-controlled program, with physical and IT access segmentation (badge access, network permissions, PLM/CAD role-based access) mapped to each individual's authorization status.
+- Maintain an accurate roster of employee citizenship/immigration status tied to project assignments, refreshed regularly since visa status changes.
+- Train program managers and engineering leads to recognize that hallway conversations and informal mentoring are just as much an "export" as emailing a drawing.
+- Screen for 126.18 disqualifiers (e.g., substantive contacts with restricted countries) before relying on the exemption.
+- Document every technical data access decision so you can demonstrate a defensible, good-faith compliance process if DDTC ever asks.
+
+Given how fact-specific and high-stakes deemed export determinations are, I'd strongly recommend looping in export control counsel or your empowered official to review your current foreign-national staffing against active ITAR programs before any new technical data sharing occurs.

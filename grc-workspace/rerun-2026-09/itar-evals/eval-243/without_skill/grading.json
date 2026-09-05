@@ -1,0 +1,33 @@
+{
+  "eval_id": 243,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Explains the temporary modification of Category XI(b) retains 'analyze and produce information from' and 'software' within the control text",
+      "passed": false,
+      "evidence": "Never states the retained \"analyze and produce information from\" and \"software\" text; opens with \"I can't confirm the current status of USML Category XI(b)\"."
+    },
+    {
+      "text": "States it was extended through August 30, 2028 (final rule, 91 FR 55461, August 2026)",
+      "passed": false,
+      "evidence": "No August 30, 2028 extension or 91 FR 55461; instead speculates the temporary designation \"has since lapsed\" as one possibility."
+    },
+    {
+      "text": "Gives the origin: the 2014 Category XI rewrite created ambiguity that could exclude certain intelligence-analytics software; the temporary modification preserves the pre-2015 scope",
+      "passed": false,
+      "evidence": "Attributes history to ECR \"roughly 2013-2020\" generically; no 2014 rewrite ambiguity or pre-2015 scope preservation."
+    },
+    {
+      "text": "Advises classifying against the current (modified) XI(b) text today — the software remains ITAR-controlled if described",
+      "passed": false,
+      "evidence": "Refuses to affirm control: \"rather than a definitive 'yes it's still controlled' or 'no it's been removed' answer\"; tells user to pull current text rather than classifying against the modified XI(b)."
+    },
+    {
+      "text": "Recommends monitoring for the permanent resolution and considering a Commodity Jurisdiction request where edge-case",
+      "passed": true,
+      "evidence": "\"cross-check against... any recent Federal Register notices amending Category XI\"; \"submit a Commodity Jurisdiction (CJ) request to DDTC to get an authoritative determination\"."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

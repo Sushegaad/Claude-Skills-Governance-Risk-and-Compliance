@@ -1,0 +1,13 @@
+{
+  "eval_id": 237,
+  "eval_name": "ai-for-csf-work",
+  "run_type": "with_skill",
+  "prompt": "Can we use generative AI to help run our CSF assessment and write our profiles? Is there NIST guidance?",
+  "assertions": [
+    "Points to draft NIST SP 1353 (initial public draft, August 2026): Quick-Start Guide for Using AI for CSF 2.0 Analysis and Reporting",
+    "Correctly flags it as a DRAFT with public comments open until October 15, 2026 — not final guidance",
+    "Describes its use cases: AI-assisted governance/policy review, drafting a Current State Profile, and drafting a Target State Profile",
+    "States the guide is illustrative, not a prescriptive assessment methodology, and includes cautions/precautions on AI use",
+    "Adds appropriate practitioner caution: human validation of AI outputs and care with sensitive organisational data in prompts"
+  ]
+}

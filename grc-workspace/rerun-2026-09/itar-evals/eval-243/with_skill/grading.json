@@ -1,0 +1,33 @@
+{
+  "eval_id": 243,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Explains the temporary modification of Category XI(b) retains 'analyze and produce information from' and 'software' within the control text",
+      "passed": true,
+      "evidence": "\"a temporary rule retained specific language — 'analyze and produce information from' and 'software' — within XI(b)'s scope\"."
+    },
+    {
+      "text": "States it was extended through August 30, 2028 (final rule, 91 FR 55461, August 2026)",
+      "passed": true,
+      "evidence": "\"the XI(b) temporary modification... has been extended through August 30, 2028 (91 FR 55461)\"."
+    },
+    {
+      "text": "Gives the origin: the 2014 Category XI rewrite created ambiguity that could exclude certain intelligence-analytics software; the temporary modification preserves the pre-2015 scope",
+      "passed": false,
+      "evidence": "Origin vague: \"rather than letting export-control-reform-era narrowing remove it\" — never identifies the 2014 Category XI rewrite ambiguity or preservation of the pre-2015 scope."
+    },
+    {
+      "text": "Advises classifying against the current (modified) XI(b) text today — the software remains ITAR-controlled if described",
+      "passed": true,
+      "evidence": "\"Does the software... 'analyze and produce information from'... If yes, it is enumerated under the current (extended) XI(b) text\"; \"treat XI(b) intelligence-analytics software exactly as ITAR-controlled through at least August 30, 2028\"."
+    },
+    {
+      "text": "Recommends monitoring for the permanent resolution and considering a Commodity Jurisdiction request where edge-case",
+      "passed": true,
+      "evidence": "\"revisit before that date since further extension, permanent codification, or lapse are all still possible\"; \"strong candidate for a formal Commodity Jurisdiction (CJ) determination (22 CFR § 120.4)\"."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

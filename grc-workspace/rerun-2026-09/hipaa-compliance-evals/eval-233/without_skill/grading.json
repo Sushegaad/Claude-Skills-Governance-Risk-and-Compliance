@@ -1,0 +1,33 @@
+{
+  "eval_id": 233,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the deadline: 30 days from receipt, with one 30-day extension with written notice (45 CFR 164.524(b)) \u2014 eight months is a clear violation",
+      "passed": true,
+      "evidence": "\"(45 CFR \u00a7164.524)... act on a request... within 30 calendar days... a single allowable 30-day extension, but only if you notify the individual in writing... at eight months... 180 and 210 days past even the most generous legitimate deadline\""
+    },
+    {
+      "text": "Cites the Right of Access Initiative enforcement track record \u2014 dozens of settlements (55 actions through August 2026), including the Azul Vision settlement ($50,000, August 2026, ~2-year delay)",
+      "passed": false,
+      "evidence": "Cites the \"Right of Access Initiative since 2019... dozens of settlements\" but omits the 55-action count and the August 2026 Azul Vision $50,000 settlement entirely"
+    },
+    {
+      "text": "Describes exposure: civil monetary penalties or resolution amount plus a corrective action plan (policy revisions, training, monitoring)",
+      "passed": true,
+      "evidence": "\"penalties ranging from roughly $15,000 up to $200,000+ per case, plus corrective action plans with... mandatory policy revisions, staff retraining, and 1-3 years of self-reporting to OCR\""
+    },
+    {
+      "text": "States the substantive duties: provide access in the form and format requested if readily producible, including electronic copies",
+      "passed": false,
+      "evidence": "Says only \"produce the records to the patient immediately\"; never states the duty to provide access in the form and format requested or electronic copies"
+    },
+    {
+      "text": "Notes fee limits: only a reasonable, cost-based fee (labor/supplies/postage) is permitted",
+      "passed": false,
+      "evidence": "Fee limits are never mentioned \u2014 no reference to reasonable, cost-based fees"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 234,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Scope: all ePHI the organisation creates, receives, maintains, or transmits \u2014 across all systems, locations, and media, based on an asset/data inventory",
+      "passed": true,
+      "evidence": "\"every system, application, and location that creates, receives, maintains, or transmits ePHI: EHR... email, laptops/mobile devices, backups/DR systems, cloud services... Inventory every ePHI-touching system/asset\""
+    },
+    {
+      "text": "Process: identify threats and vulnerabilities, assess current safeguards, and rate likelihood and impact to derive risk levels",
+      "passed": true,
+      "evidence": "\"Threat identification... Vulnerability identification... Likelihood assessment... Impact assessment... Risk level determination... Current controls inventory \u2014 what's already mitigating each risk\""
+    },
+    {
+      "text": "Documentation and maintenance: the analysis must be documented and periodically reviewed/updated (after incidents, new systems, organisational change)",
+      "passed": true,
+      "evidence": "\"Date it, version it, and set a review cadence (annually, and after any material system change, incident, or expansion). Retain documentation for 6 years (\u00a7164.316(b))\""
+    },
+    {
+      "text": "Distinguishes a true risk analysis from a compliance checklist or gap assessment \u2014 a vendor checklist alone does not satisfy 164.308(a)(1)(ii)(A)",
+      "passed": true,
+      "evidence": "\"A filled-in vendor checklist is almost certainly **not** a compliant risk analysis... 'we bought a checklist tool' is not a defense OCR accepts\" vs \u00a7164.308(a)(1)(ii)(A) standard"
+    },
+    {
+      "text": "Notes that a missing/inadequate risk analysis is OCR's most-cited failure in ransomware-related enforcement (Risk Analysis Initiative; 2026 self-funded plan settlements)",
+      "passed": true,
+      "evidence": "\"the single most commonly cited deficiency in OCR enforcement actions, including two 2026 settlements against self-funded group health plan sponsors (Star Group L.P., $245K, and Spencer Gifts, $450K...)... discovered only after a ransomware incident\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

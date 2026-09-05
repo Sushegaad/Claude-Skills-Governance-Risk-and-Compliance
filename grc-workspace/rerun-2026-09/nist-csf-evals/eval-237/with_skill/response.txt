@@ -1,0 +1,26 @@
+Yes, there is NIST guidance on this, and yes, generative AI can support your CSF assessment work — with important caveats on scope and reliability.
+
+**The relevant publication**: NIST SP 1353, released as an initial public draft on August 19, 2026 (public comment period open through October 15, 2026). It's a quick-start guide specifically on using generative AI for CSF analysis, planning, and reporting. Because it's still in draft/comment status, treat its guidance as provisional — it may change before finalization, and you should revisit it once the final version is published.
+
+**What SP 1353 covers**: The draft lays out three notional use cases where generative AI can meaningfully accelerate CSF work:
+
+1. **Governance and policy review** — using AI to review existing cybersecurity policies against GV function subcategories (e.g., GV.PO-01, GV.PO-02), flag gaps in language, or draft/redline policy sections faster than manual review alone.
+2. **Current State Profile drafting** — using AI to help synthesize existing documentation, control evidence, interview notes, or audit findings into a structured Current Profile (subcategory-by-subcategory current-state ratings), which is normally one of the more labor-intensive parts of a gap assessment.
+3. **Target State Profile drafting** — using AI to help translate business requirements, risk appetite statements, and regulatory obligations into a draft Target Profile, which a human reviewer then validates and adjusts.
+
+Critically, NIST frames these as **illustrative use cases, not a prescriptive or certified assessment methodology**. That distinction matters for how you should actually use this in practice:
+
+- **AI can accelerate drafting and synthesis, but it cannot perform the assessment itself.** A gap assessment's Current State ratings must be grounded in actual evidence (interviews, control testing, log review, documentation) — an AI model does not have visibility into your environment and cannot independently verify whether a control is "Fully Implemented" versus "Partially Implemented." Any AI-drafted profile is a starting hypothesis that a qualified human assessor must validate against real evidence.
+- **Human review and sign-off remain mandatory.** Given that CSF profiles often feed into audit, regulatory, or board-level risk reporting, AI-drafted content should be clearly marked as a draft pending review, with a named human owner accountable for the final version.
+- **Watch for hallucinated specificity.** Generative AI is prone to fabricating plausible-sounding subcategory mappings, control citations, or maturity justifications. Anyone using AI output in a formal profile should independently verify every subcategory ID and every specific claim about control implementation against the actual NIST CSF 2.0 text and your organization's real evidence — do not take AI-generated citations at face value.
+- **Confidentiality and data handling matter.** If you're feeding internal risk assessments, control gaps, or incident history into a generative AI tool to help draft profiles, make sure that's consistent with your data classification and vendor risk policies (this itself is a PR.DS / GV.SC consideration) — don't paste sensitive risk data into a public-facing AI tool without going through your normal data-handling approval process.
+
+**Practical way to apply this to your program**:
+- Use AI (including a tool like this one, equipped with the CSF skill) to help draft your subcategory-by-subcategory Current Profile table from existing documentation you provide, and to draft a proposed Target Profile from your stated risk tolerance and regulatory obligations.
+- Have your risk/security team validate every Current State rating against actual evidence before it's finalized.
+- Use AI to help draft the narrative sections of your gap assessment report and implementation roadmap — this is lower-risk since it's not asserting factual control status.
+- Keep a human owner of record for the final profile and gap assessment; the AI-assisted draft should never be the artifact that goes to auditors or the board without a documented human review step.
+
+Since SP 1353 is still an initial public draft with comments due October 15, 2026, I'd also recommend checking whether your organization wants to submit feedback, and revisiting your approach once NIST finalizes the guide — the final version may narrow or expand the recommended use cases.
+
+This is general informational guidance based on a NIST draft publication, not legal or audit advice. Verify current requirements against the official NIST SP 1353 draft (and its eventual final version), and consult qualified compliance counsel before relying on AI-assisted assessments for regulatory or audit purposes.

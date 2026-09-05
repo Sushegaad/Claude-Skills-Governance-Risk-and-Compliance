@@ -1,0 +1,31 @@
+This answer assumes the ISM September 2026 release, which introduced the first dedicated agentic AI control set (ISM-2156–2159), building on the June 2026 AI application controls (ISM-2112–2114). Before going further: confirm your system's classification level (defaulting to OFFICIAL: Sensitive if unstated) and whether the agent will touch PROTECTED-or-above data, since that changes which chapters stack in.
+
+**Purpose**: Agentic AI that can invoke tools against production systems introduces a new class of risk — an AI making autonomous, tool-mediated changes with a blast radius that can exceed what any single human operator would normally have standing access to. The September 2026 controls exist specifically to bound that risk.
+
+**Requirements — what ISM-2156–2159 mandate:**
+
+1. **Minimum necessary tools, functions, and permissions** — the agent must be scoped to only the tools and functions its task requires, not given broad standing access "in case it's needed." This is least privilege applied to an autonomous actor, not just a human account.
+
+2. **Dual authorisation on every tool invocation** — this is the control most teams miss. Each tool call must be checked against BOTH the invoking user's own access controls AND a separate, task-scoped authorisation issued to the agent itself. The effective permission for any action is the minimum of the two — the agent can never exceed what the human user could do, and the human user's broad access doesn't automatically flow through to the agent. Your authorisation layer needs to enforce this intersection, not just delegate the user's token to the agent.
+
+3. **External content treated as untrusted** — any content the agent ingests during processing (web pages, retrieved documents, API responses, other tools' outputs) must be treated as untrusted data throughout, kept delimited from system/developer instructions, and structurally prevented from overriding security policy or triggering bypass of human-approval gates. This is a direct control against prompt-injection-style attacks where malicious content instructs the agent to escalate or exfiltrate.
+
+4. **Human approval for sensitive/high-impact actions** — carried over from ISM-2113 (June 2026, wording amended in September), the agent must require human sign-off before executing sensitive or high-impact actions. Define "high-impact" explicitly for your environment (e.g., production writes, financial transactions, privilege changes, data deletion) rather than leaving it to the agent's judgement.
+
+5. **Centralised, comprehensive logging** — all tool invocations, external requests, and outputs must be logged centrally (not just agent-side), feeding your SIEM/event-logging pipeline under Chapter 15 System Monitoring requirements and the applicable log-retention period for your classification.
+
+**Adjacent controls that also apply to your deployment:**
+
+- **AI agent identity (ISM-2133–2135)**: give the agent a unique identity distinct from any personnel account, and maintain an AI agent register recording identifier, owner/purpose, associated identities/credentials, and the specific tools, permissions, and data the agent can access. Review this register regularly.
+- **AI application baseline controls (ISM-2112–2114, June 2026)**: if the agent processes classified data, disable its ability to directly reach external public data sources (ISM-2112); establish behavioural/performance baselines and monitor for deviation (ISM-2114).
+- **Workload credentials (ISM-2141–2148)**: the agent's own credentials to backend systems should be short-lived and dynamic where possible, managed through a secrets manager if static, unique per application/environment, and revocable on compromise or anomalous behaviour.
+
+**Evidence to prepare for assessment/authorisation:**
+- Documented tool/permission scope per agent and per task type
+- Authorisation logic showing the dual-check (user ∩ agent) enforcement
+- The AI agent register (current and version-controlled)
+- Logging configuration showing tool invocations, external requests, and outputs are centrally captured
+- A defined list of "sensitive/high-impact actions" requiring human approval, with the approval workflow evidenced
+- Test results showing external/untrusted content cannot override system instructions (adversarial/prompt-injection test cases)
+
+**Recommendation**: given the number of new controls involved, treat this as a discrete control set in your SSP (a dedicated "Agentic AI" section referencing ISM-2133–2135 and ISM-2156–2159) rather than folding it into general application controls, and schedule an IRAP or internal assessment pass specifically against this control set before production go-live. I can produce a gap-analysis table against these controls if you share your current architecture and permission model.

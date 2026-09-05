@@ -1,0 +1,33 @@
+{
+  "eval_id": 250,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Cites the August 2026 Plexon settlement: 8 unlicensed exports of neural-recording systems (~$179K) to China's Academy of Military Medical Sciences, an Entity-Listed institution",
+      "passed": false,
+      "evidence": "No mention of the Plexon settlement, AMMS, or the eight unlicensed neural-recording exports"
+    },
+    {
+      "text": "Notes the penalty structure: $1.7M suspended for 5 years conditioned on an external compliance audit and no further violations \u2014 suspended denial order included",
+      "passed": false,
+      "evidence": "No mention of the $1.7M suspended penalty, audit condition, or suspended denial order"
+    },
+    {
+      "text": "Draws the lesson: research/medical/lab equipment is NOT exempt \u2014 Entity List license requirements attach regardless of item sensitivity (even EAR99)",
+      "passed": true,
+      "evidence": "\"equipment marketed as 'lab' or 'research' grade is not automatically uncontrolled\"; \"Even for EAR99 or low-level ECCN items, BIS maintains catch-all rules\"; \"rather than relying on 'it's just lab equipment'\""
+    },
+    {
+      "text": "Requires screening all parties against the Consolidated Screening List, and resolving affiliate/alias ambiguity (universities' military-linked institutes)",
+      "passed": true,
+      "evidence": "\"Screen the named institute, and don't stop there \u2014 check for known affiliated entities, associated labs... has a name very similar to (but not exactly matching) a listed entity\"; screens Entity List, SDN, UVL"
+    },
+    {
+      "text": "Explains Entity List mechanics: supplemental license requirements per the entity's entry with presumption/policy of denial, no license exceptions in most cases",
+      "passed": false,
+      "evidence": "No explanation of Entity List mechanics \u2014 supplemental license requirements per entry, presumption of denial, or general unavailability of license exceptions"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

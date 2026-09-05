@@ -1,0 +1,33 @@
+{
+  "eval_id": 239,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Uses all six CSF 2.0 functions including GOVERN (GV) \u2014 not the five-function 1.1 model",
+      "passed": true,
+      "evidence": "For each of the six functions (Govern, Identify, Protect, Detect, Respond, Recover)... feeds Govern function, GV.OC"
+    },
+    {
+      "text": "Distinguishes Current Profile vs Target Profile and gap analysis between them",
+      "passed": true,
+      "evidence": "you'll build a Current Profile (where you are today) and a Target Profile (where you want to be), then use the gap between them to drive your roadmap"
+    },
+    {
+      "text": "References Implementation Tiers (1\u20134) as characterizing rigor of governance/risk practices, informing (not equaling) the target",
+      "passed": true,
+      "evidence": "Score using CSF Tiers (1-4: Partial, Risk Informed, Repeatable, Adaptive)... tiers describe how mature and integrated your risk management practices are... A common mistake is targeting Tier 4... across the board"
+    },
+    {
+      "text": "Produces a prioritized action plan from the gaps (quick wins vs longer-term; owners/timelines)",
+      "passed": true,
+      "evidence": "document the specific gap, the remediation action, an owner, and a realistic timeline... sequencing quick wins (policy documentation, MFA rollout) ahead of larger capital/OT projects"
+    },
+    {
+      "text": "Mentions using Community Profiles or Quick-Start Guides as accelerators where applicable",
+      "passed": true,
+      "evidence": "Use community/sector profiles where available as accelerators - NIST has published example profiles for some sectors"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

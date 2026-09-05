@@ -1,0 +1,13 @@
+{
+  "eval_id": 248,
+  "eval_name": "military-uav-classification",
+  "run_type": "with_skill",
+  "prompt": "Where does a military-purposed UAV that isn't described on the USML classify now?",
+  "assertions": [
+    "States the August 2026 change: BIS reversed its 2013 ECR position — such UAVs now classify in 9A610.a (with MT language mirroring 9A012)",
+    "Notes less-sensitive parts/components/accessories go to new 9A610.y.33",
+    "Mentions license exception STA availability to Country Group A:5 where the UAV cannot deliver ≥500 kg payload to ≥300 km (§740.20(g) conditions)",
+    "Applies the order of review: USML Category VIII first (CJ if unclear), then CCL",
+    "Notes 3A611.a no longer applies to these UAVs after the rule"
+  ]
+}

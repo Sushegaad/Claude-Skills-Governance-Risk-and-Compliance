@@ -108,12 +108,12 @@
       "category_key": "privacy",
       "region": "eu",
       "domains": "data-protection incident-response reporting",
-      "grading_dir": "grc-workspace/iteration-1/gdpr-compliance",
+      "grading_dir": "grc-workspace/rerun-2026-09/gdpr-compliance-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "31 May 2026",
-        "tested": "US SaaS GDPR obligations + DPF transfer mechanisms; Art. 28 DPA with DPF/SCCs; SAR response + exemptions; Cookie consent + tracking pixels ePrivacy; 72-hour breach notification workflow",
-        "readme_tested": "US company checklist; Article 28 DPA; Subject access request; Cookie consent; 72-hour breach notification"
+        "last_updated": "05 Sep 2026",
+        "tested": "Automated driver deactivation (Uber Art. 22 fine); 2026 anonymisation standard (EDPB 02/2026); genAI web scraping (03/2026); Art. 28 DPA clauses; ransomware breach workflow",
+        "readme_tested": "Automated driver deactivation (Uber Art. 22 fine); 2026 anonymisation standard (EDPB 02/2026); genAI web scraping (03/2026); Art. 28 DPA clauses; ransomware breach workflow"
       },
       "install_framework": "GDPR / UK GDPR",
       "install_desc": "Code audits, privacy notices, DPAs, DPIAs, data flow reviews, article-cited Q&A",
@@ -139,12 +139,12 @@
       "category_key": "privacy",
       "region": "us",
       "domains": "data-protection access-control incident-response risk-assessment",
-      "grading_dir": "grc-workspace/iteration-1/hipaa-compliance",
+      "grading_dir": "grc-workspace/rerun-2026-09/hipaa-compliance-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "16 May 2026",
-        "tested": "Covered entity analysis; BAA template; Encryption (addressable vs required); Risk analysis; Workforce violation",
-        "readme_tested": "Covered entity analysis; BAA template; Encryption (addressable vs required); Risk analysis; Workforce violation"
+        "last_updated": "05 Sep 2026",
+        "tested": "Security Rule NPRM status (July 2027); self-funded plan enforcement; right-of-access exposure; risk analysis requirements; cloud BAA contents",
+        "readme_tested": "Security Rule NPRM status (July 2027); self-funded plan enforcement; right-of-access exposure; risk analysis requirements; cloud BAA contents"
       },
       "install_framework": "HIPAA",
       "install_desc": "Document generation, technical safeguards for cloud, breach response guidance",
@@ -170,12 +170,12 @@
       "category_key": "infosec",
       "region": "us global",
       "domains": "risk-assessment incident-response",
-      "grading_dir": "grc-workspace/iteration-1/nist-csf",
+      "grading_dir": "grc-workspace/rerun-2026-09/nist-csf-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "16 May 2026",
-        "tested": "CSF 2.0 overview; Ransomware recovery plan; Profile creation; Control mapping; Board reporting",
-        "readme_tested": "CSF 2.0 overview; Ransomware recovery plan; Profile creation; Control mapping; Board reporting"
+        "last_updated": "05 Sep 2026",
+        "tested": "Transit community profile (IR 8576); AI for CSF work (draft SP 1353); informative references (SP 1347); organizational profile build; 1.1 to 2.0 migration",
+        "readme_tested": "Transit community profile (IR 8576); AI for CSF work (draft SP 1353); informative references (SP 1347); organizational profile build; 1.1 to 2.0 migration"
       },
       "install_framework": "NIST CSF 2.0 / 1.1",
       "install_desc": "Gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping",
@@ -201,12 +201,12 @@
       "category_key": "infosec",
       "region": "global",
       "domains": "data-protection access-control audit",
-      "grading_dir": "grc-workspace/iteration-1/pci-compliance",
+      "grading_dir": "grc-workspace/rerun-2026-09/pci-compliance-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "16 May 2026",
-        "tested": "SAQ type selection; Req 3 stored data (v4.0); Breach obligations; Penetration testing; Tokenization scope",
-        "readme_tested": "SAQ type selection; Req 3 stored data (v4.0); Breach obligations; Penetration testing; Tokenization scope"
+        "last_updated": "05 Sep 2026",
+        "tested": "FAQ 1331 ROC scoping change; SAQ A eligibility; v4.0.1 mandatory requirements; scope reduction; compensating vs customized approach",
+        "readme_tested": "FAQ 1331 ROC scoping change; SAQ A eligibility; v4.0.1 mandatory requirements; scope reduction; compensating vs customized approach"
       },
       "install_framework": "PCI DSS v4.0.1",
       "install_desc": "CDE scoping, SAQ selection, gap assessments, control guidance, QSA audit prep",
@@ -387,12 +387,12 @@
       "category_key": "infosec",
       "region": "us",
       "domains": "access-control audit risk-assessment",
-      "grading_dir": "grc-workspace/rerun-2026-08/cmmc-evals",
+      "grading_dir": "grc-workspace/rerun-2026-09/cmmc-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "15 Aug 2026",
-        "tested": "Level determination; SPRS scoring; CUI scoping; SSP structure; C3PAO assessment readiness",
-        "readme_tested": "Level determination; SPRS scoring; CUI scoping; SSP structure; C3PAO assessment readiness"
+        "last_updated": "05 Sep 2026",
+        "tested": "C3PAO cancellation decision; Task Force outlook; SPRS scoring; CUI scoping; POA&M rules",
+        "readme_tested": "C3PAO cancellation decision; Task Force outlook; SPRS scoring; CUI scoping; POA&M rules"
       },
       "install_framework": "CMMC 2.0",
       "install_desc": "Level 1/2/3 gap analysis, SPRS scoring, POA&M, CUI scoping, assessment prep — incl. the Jul 13 2026 Phase 2 suspension interim guidance",
@@ -480,12 +480,12 @@
       "category_key": "infosec",
       "region": "apac",
       "domains": "access-control cloud audit risk-assessment",
-      "grading_dir": "grc-workspace/rerun-2026-08/ism-evals-iter2",
+      "grading_dir": "grc-workspace/rerun-2026-09/ism-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "15 Aug 2026",
-        "tested": "OS control scoping and authorisation pathway; IRAP assessment preparation; Chapter 13 system hardening evidence; Essential Eight to ISM chapter mapping; Supply chain cloud provider obligations",
-        "readme_tested": "OS control scoping and authorisation; IRAP assessment preparation; Chapter 13 system hardening; Essential Eight to ISM mapping; Supply chain cloud provider obligations"
+        "last_updated": "05 Sep 2026",
+        "tested": "September 2026 release (44 new controls); agentic AI controls; OAuth consent hardening; Essential Eight status; cadences and provider access",
+        "readme_tested": "September 2026 release (44 new controls); agentic AI controls; OAuth consent hardening; Essential Eight status; cadences and provider access"
       },
       "install_framework": "Australian ISM (ASD)",
       "install_desc": "ISM control assessment (June 2026 release incl. AI controls), Essential Eight maturity, system authorisation, IRAP prep",
@@ -511,12 +511,12 @@
       "category_key": "cyber-reg",
       "region": "eu",
       "domains": "incident-response risk-assessment vendor reporting bcm",
-      "grading_dir": "grc-workspace/rerun-2026-07b/nis2-evals",
+      "grading_dir": "grc-workspace/rerun-2026-09/nis2-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "03 Jul 2026",
-        "tested": "Energy company EE/IE classification; SaaS provider Art. 21 obligations; Ransomware Art. 23 reporting workflow; ISO 27001 vs NIS2 gap analysis; DORA lex specialis interaction",
-        "readme_tested": "Energy company EE/IE classification; SaaS provider Art. 21 obligations; Ransomware Art. 23 reporting workflow; ISO 27001 vs NIS2 gap analysis; DORA lex specialis interaction"
+        "last_updated": "05 Sep 2026",
+        "tested": "Netherlands Cbw entry into force; transposition laggards and CJEU referrals; incident reporting; essential vs important; Art. 21 measures",
+        "readme_tested": "Netherlands Cbw entry into force; transposition laggards and CJEU referrals; incident reporting; essential vs important; Art. 21 measures"
       },
       "install_framework": "NIS2 Directive (EU)",
       "install_desc": "Essential/important entity scoping, Art. 21 technical measures, 24h/72h incident reporting",
@@ -573,12 +573,12 @@
       "category_key": "export-sustain",
       "region": "us",
       "domains": "export-controls access-control",
-      "grading_dir": "grc-workspace/iteration-1",
+      "grading_dir": "grc-workspace/rerun-2026-09/itar-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "16 May 2026",
-        "tested": "USML jurisdiction analysis for military laptops; Deemed export for German engineer; DSP-73 temporary export for trade show; Violation and VSD process; TAA mandatory clauses for India transfer",
-        "readme_tested": "USML jurisdiction analysis for military laptops; Deemed export for German engineer; DSP-73 temporary export for trade show; Violation and VSD process; TAA mandatory clauses for India"
+        "last_updated": "05 Sep 2026",
+        "tested": "DIRCM civil aircraft rule (USML VIII(a)(8), Oct 13 2026); BAE settlement compliance lessons; Cat XI(b) software status; deemed exports; VSD process",
+        "readme_tested": "DIRCM civil aircraft rule (USML VIII(a)(8), Oct 13 2026); BAE settlement compliance lessons; Cat XI(b) software status; deemed exports; VSD process"
       },
       "install_framework": "ITAR (22 CFR 120–130)",
       "install_desc": "USML classification, DSP-5/73/85 licence workflows, TAA/MLA drafting, deemed export, DDTC",
@@ -697,12 +697,12 @@
       "category_key": "export-sustain",
       "region": "us",
       "domains": "export-controls vendor",
-      "grading_dir": "grc-workspace/ear-evals",
+      "grading_dir": "grc-workspace/rerun-2026-09/ear-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "16 May 2026",
-        "tested": "RF amplifier ECCN classification for Germany export; Deemed export for Chinese/Australian dual national on 5D002; Entity List re-export violation and VSD process; AES-256 software ENC exception for France/India/Brazil; ECP design for semiconductor equipment company",
-        "readme_tested": "RF amplifier ECCN classification for Germany export; Deemed export for Chinese/Australian dual national on 5D002; Entity List re-export violation and VSD process; AES-256 software ENC exception for France/India/Brazil; ECP design for semiconductor equipment company"
+        "last_updated": "05 Sep 2026",
+        "tested": "Sub-3-hour drone exports (rewritten 9A012); long-endurance drone; military UAV classification (9A610.a); AI-chip diffusion status; Entity List research sale",
+        "readme_tested": "Sub-3-hour drone exports (rewritten 9A012); long-endurance drone; military UAV classification (9A610.a); AI-chip diffusion status; Entity List research sale"
       },
       "install_framework": "EAR (15 CFR 730–774)",
       "install_desc": "ECCN classification, licence requirements, Entity List screening, licence exceptions",
@@ -883,12 +883,12 @@
       "category_key": "privacy",
       "region": "apac",
       "domains": "data-protection incident-response",
-      "grading_dir": "grc-workspace/rerun-2026-07b/vn-pdpl-evals",
+      "grading_dir": "grc-workspace/rerun-2026-09/vn-pdpl-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "03 Jul 2026",
-        "tested": "SaaS extraterritorial scope and cross-border transfer obligations; Fintech breach notification (72-hour dual notification); Telemedicine DPIA with AI opt-out obligations; Micro-enterprise SME exemptions; Consent validity review and 15-day withdrawal deadline",
-        "readme_tested": "Gap analysis for SaaS company with Vietnamese customers; Fintech breach notification 72-hour workflow; Micro-enterprise exemptions; Consent mechanism design; Consent withdrawal timeframes under Decree 356"
+        "last_updated": "05 Sep 2026",
+        "tested": "Decree 330/2026 penalty exposure; cross-border transfer duties; law-stack timeline; consent and rights; SME exemptions",
+        "readme_tested": "Decree 330/2026 penalty exposure; cross-border transfer duties; law-stack timeline; consent and rights; SME exemptions"
       },
       "install_framework": "Vietnam PDPL 2026",
       "install_desc": "Gap analysis, cross-border transfer impact assessments, DPIAs, breach notification (72h)",

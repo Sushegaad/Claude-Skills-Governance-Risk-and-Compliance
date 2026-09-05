@@ -1,0 +1,33 @@
+{
+  "eval_id": 242,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the case: ~$36 million consent agreement with DDTC (August 2026) resolving 104 AECA/ITAR violations from 2019–2025, voluntarily disclosed",
+      "passed": true,
+      "evidence": "\"consent agreement (announced August 2026, $36M...)... 104 AECA/ITAR violations spanning May 2019 to March 2025\"; \"it is a voluntary-disclosure case\"."
+    },
+    {
+      "text": "Notes terms: $18M suspended for approved remedial compliance spending, ~3-year consent agreement, Special Compliance Officer, and external audit — with no debarment (VSD/cooperation credit)",
+      "passed": true,
+      "evidence": "\"$36M total, $18M suspended for remedial compliance investment, a 3-year agreement term, a Special Compliance Officer, an external audit requirement, and — notably — no debarment\" via \"voluntary self-disclosure... and cooperation\"."
+    },
+    {
+      "text": "Identifies violation themes: unauthorized technical-data exports including to China (a §126.1 proscribed destination), unauthorized defense services in multiple countries, and unauthorized retransfers",
+      "passed": false,
+      "evidence": "Covers \"38 unauthorized technical-data exports to China (a § 126.1 issue...)\" and \"unauthorized exports and defense services across six additional countries\", but unauthorized RETRANSFERS are never identified."
+    },
+    {
+      "text": "Extracts the root causes DDTC cited: insufficient written procedures, inexperienced compliance staff, inadequate management of agreements (TAA/MLA), and lack of systems to track authorizations",
+      "passed": true,
+      "evidence": "All four cited: \"Weak written procedures... Inexperienced staff... Poor agreement management — TAA/MLA... No authorization-tracking system\"."
+    },
+    {
+      "text": "Draws the right program lessons: authorization tracking systems, agreement lifecycle management, staffing/experience, and the mitigation value of voluntary self-disclosure",
+      "passed": true,
+      "evidence": "\"Centralize authorization tracking... agreement management... Invest in staff experience/training... Build your VSD muscle now... disclosure plus cooperation can be worth the difference\"."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

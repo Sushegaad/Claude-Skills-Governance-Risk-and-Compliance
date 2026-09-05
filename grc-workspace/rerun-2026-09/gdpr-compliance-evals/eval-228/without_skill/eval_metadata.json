@@ -1,0 +1,13 @@
+{
+  "eval_id": 228,
+  "eval_name": "genai-web-scraping",
+  "run_type": "without_skill",
+  "prompt": "Can we scrape publicly available web data to train our generative AI model, and stay GDPR-compliant?",
+  "assertions": [
+    "References the EDPB's draft Guidelines 03/2026 on web scraping in the context of generative AI, adopted July 2026 (consultation until October 30, 2026)",
+    "States that consent is generally not viable as a lawful basis at scraping scale, making legitimate interest (Art. 6(1)(f)) the realistic basis",
+    "Explains that legitimate interest requires a strict three-part balancing test with concrete mitigations/safeguards (e.g., excluding sensitive sources, respecting robots/opt-out signals, data minimisation)",
+    "States that controllers are expected to publish detailed public privacy notices about the scraping (Art. 14 transparency)",
+    "Mentions facilitating data subject rights including pre-collection opt-out mechanisms, and that the guidance covers first-party scraping, contracted scraping, and purchased broker datasets"
+  ]
+}

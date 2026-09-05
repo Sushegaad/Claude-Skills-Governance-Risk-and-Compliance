@@ -1,0 +1,13 @@
+{
+  "eval_id": 229,
+  "eval_name": "art28-dpa-clauses",
+  "run_type": "with_skill",
+  "prompt": "We're signing up a new hosting provider that will store EU customer data. Draft the key clauses our data processing agreement must contain.",
+  "assertions": [
+    "Processing only on the controller's documented instructions (Art. 28(3)(a)), including for transfers",
+    "Confidentiality commitments for persons authorised to process (Art. 28(3)(b)) and Art. 32 security measures (Art. 28(3)(c))",
+    "Sub-processor rules: prior specific or general written authorisation, notification of changes, and flow-down of equivalent obligations (Art. 28(2), (4))",
+    "Assistance obligations: data subject rights requests and Arts. 32–36 (security, breach notification, DPIA) assistance (Art. 28(3)(e), (f)), with processor breach notification to the controller without undue delay (Art. 33(2))",
+    "End-of-contract deletion or return of data, and audit/inspection rights including information necessary to demonstrate compliance (Art. 28(3)(g), (h))"
+  ]
+}

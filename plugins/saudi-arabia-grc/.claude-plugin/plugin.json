@@ -1,6 +1,6 @@
 {
   "name": "saudi-arabia-grc",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "Saudi Arabia GRC advisor — a compliance router across NCA ECC-2:2024, Saudi PDPL (SDAIA), NCA Cloud Cybersecurity Controls, SAMA Cyber Security Framework, and CST cloud rules. Determines what applies first, then guides gap assessments, breach response, market entry, and ISO 27001/NIST/SOC 2 mapping.",
   "author": {
     "name": "Hemant Naik",

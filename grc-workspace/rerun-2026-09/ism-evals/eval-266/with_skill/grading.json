@@ -1,0 +1,33 @@
+{
+  "eval_id": 266,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the September 2026 ISM release (published September 3, 2026) added 44 new controls, ISM-2124 through ISM-2167",
+      "passed": true,
+      "evidence": "\"44 new controls (ISM-2124 through ISM-2167)\" and \"published 3 September 2026\""
+    },
+    {
+      "text": "Highlights the agentic AI controls (ISM-2156–2159): minimum tools/permissions, dual authorisation, untrusted external content handling, and central logging",
+      "passed": true,
+      "evidence": "\"Agentic AI (ISM-2156–2159)... minimum tools, functions, and permissions... dual-authorisation model... External content... treated as untrusted... All tool invocations, external requests, and outputs must be centrally logged\""
+    },
+    {
+      "text": "Mentions AI agent identity and register controls (ISM-2133–2135)",
+      "passed": true,
+      "evidence": "\"AI agent identity (ISM-2133–2135)... unique identity... AI agent register\""
+    },
+    {
+      "text": "Notes the single rescission: ISM-0521, the recommendation to disable IPv6 in dual-stack devices",
+      "passed": true,
+      "evidence": "\"one rescission (ISM-0521, the recommendation to disable IPv6 in dual-stack devices)\""
+    },
+    {
+      "text": "Mentions at least two other themes accurately: MACsec approval + MACsec controls, OAuth/third-party app consent controls, workload credential management, immutable backups, RMM allowlisting, synthetic impersonation verification, or the 6-monthly cadence tightening (KRBTGT/DCSync/pen tests)",
+      "passed": true,
+      "evidence": "\"MACsec is now ASD-approved\"; \"Third-party OAuth (ISM-2137–2140)\"; \"DCSync... and KRBTGT... move from annual to 6-monthly\"; immutable backups ISM-2151–2152; RMM allow-listing ISM-2149–2150"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

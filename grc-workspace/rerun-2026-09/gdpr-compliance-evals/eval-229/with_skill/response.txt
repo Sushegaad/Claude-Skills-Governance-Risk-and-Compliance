@@ -1,0 +1,39 @@
+Direct answer: Under Article 28(3) GDPR, any contract with a processor handling personal data on your behalf must contain a specific, mandatory set of clauses — a hosting provider storing EU customer data is a textbook processor relationship, and missing any of these terms is itself a compliance violation exposed to Art. 83(4) fines (up to €10M or 2% of global turnover). Below are the key clauses to include, gathered before drafting: your organisation's role (controller), the processor's identity, the categories of data/data subjects, and — critically — where the hosting infrastructure is physically located, since that determines whether you also need an international transfer clause.
+
+1. Subject Matter, Duration, Nature and Purpose (Art. 28(3))
+State precisely what the processor does: "[Processor] shall process personal data solely for the purpose of providing hosting and infrastructure services for [Controller]'s application, for the duration of the underlying services agreement dated [DATE]." Vague or open-ended purpose language is a common audit finding.
+
+2. Categories of Data and Data Subjects (Art. 28(3))
+List explicitly: e.g., contact data (name, email), account credentials, usage/log data (IP addresses, session identifiers), and confirm whether any special category data (Art. 9) is in scope — hosting providers often handle this without either party flagging it.
+
+3. Processing Only on Documented Instructions (Art. 28(3)(a))
+"Processor shall process personal data only on documented instructions from Controller, including regarding international transfers, unless required by applicable law — in which case Processor shall inform Controller before processing, unless legally prohibited from doing so."
+
+4. Confidentiality (Art. 28(3)(b))
+Personnel authorized to access the data must be bound by confidentiality obligations, contractual or statutory.
+
+5. Security Measures (Art. 28(3)(c); Art. 32)
+Specify concrete technical and organisational measures: encryption at rest and in transit, access controls, ability to restore availability/access after an incident, and regular testing/evaluation of security measures. For a hosting provider specifically, insist on details of physical security, network segmentation, and backup encryption — generic "industry standard security" language is insufficient for audit purposes.
+
+6. Sub-processors (Art. 28(2), (3)(d), (4))
+Require prior specific or general written authorisation before engaging sub-processors (e.g., a CDN, backup provider, or cloud region operator the hosting provider itself relies on), with a right to object to new sub-processors, a current sub-processor list (as a schedule), and flow-down of equivalent obligations — the hosting provider remains liable to you for its sub-processors' failures.
+
+7. Assistance with Data Subject Rights (Art. 28(3)(e))
+The provider must assist you, via appropriate technical/organisational measures, in responding to access, erasure, rectification, and other Art. 15–22 requests — important for hosting since backups and infrastructure-level deletion capability are frequent gaps (flagged as a top failure mode in the EDPB's 2025 erasure enforcement sweep).
+
+8. Assistance with Controller Obligations (Art. 28(3)(f))
+Assistance with Art. 32 security, Art. 33–34 breach notification, and Art. 35–36 DPIAs, proportionate to the nature of processing and information available to the provider.
+
+9. Deletion or Return of Data (Art. 28(3)(g))
+On termination, the provider must delete or return all personal data (your choice) and delete existing copies, including backups, unless law requires retention — specify a concrete deletion timeline (e.g., 30/60 days) rather than leaving it open-ended.
+
+10. Audit Rights (Art. 28(3)(h))
+Right to audit or inspect the provider's compliance, or accept independent certifications/reports (e.g., SOC 2, ISO 27001) in lieu of a full audit, with a defined notice period.
+
+11. Breach Notification Timeline (Art. 33)
+Require notification "without undue delay" and within a specific window (commonly 24–48 hours) of the provider becoming aware of a breach, so you retain enough runway to meet your own 72-hour Art. 33 deadline to the supervisory authority.
+
+12. International Transfers (Art. 44–49) — confirm before finalizing
+If the hosting infrastructure or any sub-processor/backup region is outside the EEA/UK, you need a transfer mechanism clause: an adequacy decision (Art. 45 — e.g., UK adequacy renewed through 27 December 2031), 2021 Standard Contractual Clauses (Art. 46(2)(c) — still the current version), or Binding Corporate Rules (Art. 47). For US-based hosting relying on the EU–US Data Privacy Framework, note it remains valid but is under CJEU appeal (Case C-703/25 P) with PCLOB oversight currently suspended — build in SCCs as a contractual fallback rather than relying on DPF alone.
+
+⚠️ Legal Advice Disclaimer: This guidance is informational and does not constitute legal advice. Have final contract language reviewed by a qualified data protection lawyer or your DPO, particularly the security specifications, sub-processor authorisation mechanism, and international transfer clause once the provider's actual data locations and sub-processors are confirmed.

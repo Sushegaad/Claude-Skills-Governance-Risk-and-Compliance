@@ -1,6 +1,6 @@
 {
   "name": "uae-grc",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "description": "UAE GRC advisor — a jurisdiction-first compliance router across the Federal PDPL, DIFC DP Law (as amended 2025), ADGM DP Regulations, CBUAE data and outsourcing rules, the ICT Health Law, and UAE IA/ISR/ADHICS cyber baselines. Determines mainland vs free-zone vs sector obligations first, then guides compliance.",
   "author": {
     "name": "Hemant Naik",

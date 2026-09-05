@@ -1,0 +1,33 @@
+{
+  "eval_id": 236,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Points to NIST IR 8576, the Transit Cybersecurity Framework Community Profile, finalized August 2026",
+      "passed": true,
+      "evidence": "NIST IR 8576 - Transit Cybersecurity Framework Community Profile was finalized on August 5, 2026"
+    },
+    {
+      "text": "Describes it as a CSF 2.0 Community Profile for US transit agencies (bus, subway, commuter rail)",
+      "passed": true,
+      "evidence": "a CSF 2.0 Community Profile built specifically for U.S. transit agencies operating bus, subway/rail, and commuter rail systems"
+    },
+    {
+      "text": "Notes its operational technology / cyber-physical systems emphasis",
+      "passed": true,
+      "evidence": "operational-technology (OT) realities common to transit operators - think fare collection systems, positive train control / signaling, SCADA"
+    },
+    {
+      "text": "States it complements rather than replaces the agency's existing cybersecurity program",
+      "passed": true,
+      "evidence": "It complements, not replaces, your existing program."
+    },
+    {
+      "text": "Explains what a Community Profile is: a sector-tailored baseline of CSF outcomes/priorities usable as a starting point or prioritization aid",
+      "passed": true,
+      "evidence": "a pre-built Target Profile developed by and for a specific sector, so that individual organizations don't have to build a target state from scratch"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

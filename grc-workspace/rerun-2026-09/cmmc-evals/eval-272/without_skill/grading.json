@@ -1,0 +1,33 @@
+{
+  "eval_id": 272,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the process facts: established with the July 13, 2026 suspension; public RFI responses closed August 14, 2026; recommendations due to the DoW CIO at the end of a 60-day review (~September 13, 2026)",
+      "passed": false,
+      "evidence": "Does not know the Task Force: 'Any subsequent reform or task force effort you're hearing about is most likely one of a few things'; no July 13 suspension, Aug 14 RFI, or Sept 13 deadline"
+    },
+    {
+      "text": "States that no recommendations had been published as of early September 2026",
+      "passed": false,
+      "evidence": "Never states that recommendations are unpublished; instead asks 'If you can share where you saw the Task Force reference'"
+    },
+    {
+      "text": "Presents direction signals with correct epistemic status (unconfirmed reporting, not announced policy): expanded self-attestation with False Claims Act liability as the enforcement backstop, leveraging commercial cybersecurity capabilities, and streamlining for small/non-traditional businesses",
+      "passed": false,
+      "evidence": "Generic speculation on themes (cost relief, C3PAO capacity, reciprocity); no self-attestation-with-FCA-backstop, commercial-capabilities, or small-business signals from actual reporting"
+    },
+    {
+      "text": "Notes the suspension is a pause, not a cancellation \u2014 the 48 CFR rule and program structure remain, and outcomes could range from restructuring to redesign",
+      "passed": false,
+      "evidence": "No mention of the suspension at all, so cannot note it is a pause not a cancellation; treats CMMC 2.0 rollout as fully in force"
+    },
+    {
+      "text": "Advises contractors to continue 800-171 implementation regardless \u2014 it remains contractually required and any successor regime builds on it",
+      "passed": true,
+      "evidence": "don't let 'reform is coming' become a reason to pause your compliance program... reforms have generally... [not eliminated] the underlying NIST 800-171 control requirements... keep executing"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

@@ -1,0 +1,25 @@
+Selling a commercial surveillance drone with 2.5 hours max endurance to a distributor in Brazil raises a standard EAR export-compliance workflow: classification, licensing determination, and party/end-use screening. Here is how I would walk through it.
+
+1. Jurisdiction and classification
+First confirm the item is subject to the EAR rather than the ITAR. Pure commercial surveillance drones without military-specific design features (armor, weapons integration, military avionics, etc.) are almost always EAR-jurisdiction, not USML Category VIII(a) items. Within the EAR, the Commerce Control List (CCL) entry most relevant to unmanned aerial vehicles is ECCN 9A012, which controls UAVs meeting certain performance parameters (notably those tied to MTCR Category I/II thresholds — range/endurance combined with payload and autonomous flight capability). A drone with only 2.5 hours of endurance and no unusual range, altitude, autonomous navigation, or payload capacity is very unlikely to meet the 9A012 control parameters. In that case, the item would typically fall to ECCN 9A991 (a " non-9A012" catch-all for aircraft/UAV parts and equipment) or, if it has no specific control parameters at all, EAR99.
+
+You should still walk through the 9A012 technical parameters line by line (including any autopilot, camera/sensor payload, and ground control station capabilities) before settling on 9A991 or EAR99, since the encryption or optics package could push the classification elsewhere (e.g., 5A992 for certain encryption, or 6A003 for optical sensors).
+
+2. Country-based licensing analysis
+Brazil is in EAR Country Group B and is not subject to a comprehensive embargo, and it is a Missile Technology Control Regime (MTCR) partner and Wassenaar Arrangement participant — both favorable factors. For EAR99 items, no BIS export license is generally required to Brazil. For 9A991-classified items, license requirements depend on the applicable reason for control (typically Anti-Terrorism (AT) only for this ECCN), and AT controls to Brazil for this class of item generally do not require a license, though you must check the Commerce Country Chart for the specific reasons for control and confirm no license exception carve-outs are needed.
+
+3. Party and end-use screening
+Regardless of classification, before finalizing the distributor relationship you must:
+- Screen the distributor, its officers, and the ultimate end users against the BIS Entity List, Denied Persons List, Unverified List, OFAC SDN List, and the Brazilian equivalent restricted-party considerations.
+- Obtain end-use/end-user information — surveillance drones attract heightened scrutiny for potential government security, law enforcement, or military end use, which can trigger "catch-all" controls even for EAR99/9A991 items if you have "knowledge" the item is destined for a prohibited end use (e.g., certain human-rights-related end uses, military intelligence end use in some countries — less relevant for Brazil, but still part of the standard "red flags" check).
+- Execute a distribution agreement that includes an EAR compliance clause, requiring the distributor to obtain your consent before re-export or resale to any third country, and prohibiting resale to countries subject to Group D:1 or comprehensive sanctions.
+
+4. Documentation
+- Issue a Destination Control Statement on your commercial invoice.
+- Retain the ECCN self-classification determination and supporting technical analysis for at least five years.
+- Consider requesting a BIS classification ruling (formal CCATS request) if the drone's specs are close to the 9A012 thresholds, to have documented certainty.
+
+5. Practical recommendation
+Given the modest 2.5-hour endurance, this drone most likely qualifies for EAR99 or 9A991 treatment with no license required to Brazil, but you should not rely on that informally — run the actual technical specifications (endurance, range, altitude ceiling, autopilot autonomy, payload, any encrypted datalink) against the 9A012 parameters, screen the distributor and end users, and put the resale/re-export restriction language in your distribution contract. If the drone incorporates encryption for its command-and-control link, a separate 5A992/5D992 encryption registration or self-classification report may also be needed.
+
+Because EAR thresholds and the Commerce Country Chart are updated periodically, I'd recommend validating the current parameters against the latest CCL entry text and BIS country chart before finalizing the transaction.

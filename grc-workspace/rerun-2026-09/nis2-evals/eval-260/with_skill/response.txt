@@ -1,0 +1,29 @@
+NIS2 (Directive (EU) 2022/2555) Art. 21(2) requires essential and important entities to implement ten categories of "appropriate and proportionate technical, operational and organisational measures" (Art. 21(1)) to manage cybersecurity risk. Proportionality is assessed against your size, risk exposure, likelihood/severity of incidents, and cost of implementation — a 50-person important entity and a 3,000-person essential entity both must cover all ten, but the depth and tooling expected differ. The ten measures, Art. 21(2)(a) through (j):
+
+**(a) Risk analysis and information security policies.** Adopt a formal methodology (ISO 27005, NIST RMF, or equivalent), maintain an asset inventory of in-scope systems, define risk-acceptance criteria, and review at least annually and after major incidents or changes. The management body must approve this policy (links to Art. 20).
+
+**(b) Incident handling.** A written Incident Response Plan covering detection, analysis, containment, eradication, and recovery, with defined "significant incident" thresholds (Art. 23(3)), pre-drafted CSIRT notification templates, post-incident reviews, and at least annual tabletop testing.
+
+**(c) Business continuity, backup, and disaster recovery.** Defined RTO/RPO per critical service, automated encrypted offsite backups tested (ideally quarterly), DR runbooks and failover playbooks, and a crisis management structure with clear roles and escalation — tested at least annually with management body involvement.
+
+**(d) Supply chain security.** A register of critical ICT suppliers, pre-onboarding security assessments, contractual security obligations (right-to-audit, incident-notification SLAs, minimum baselines), supply chain risk folded into your annual risk assessment, and monitoring of the EU-level coordinated risk assessments run under Art. 22 (Cooperation Group, Commission, ENISA) for high-risk vendor categories.
+
+**(e) Secure acquisition, development, and maintenance.** Secure SDLC practices (threat modelling, code review, SAST/DAST, pentesting), a vulnerability management programme with severity-based patch SLAs, a coordinated vulnerability disclosure policy aligned to ENISA guidelines, and CVE tracking for in-scope systems.
+
+**(f) Effectiveness assessment.** KPIs/KRIs per measure (mean time to detect, patch compliance, training completion), at least annual internal audits or management reviews, independent third-party assessment where appropriate, and a feedback loop from findings into the risk register.
+
+**(g) Basic cyber hygiene and training.** Mandatory annual security awareness training for all staff (phishing, social engineering, password hygiene, incident reporting, remote work), role-based training for administrators and responders, and — critically — training extended to the management body itself, since that's an explicit Art. 20 requirement, not optional.
+
+**(h) Cryptography.** A policy defining approved algorithms (e.g., AES-256 at rest, TLS 1.2+ in transit, SHA-256/384 for hashing), a key management lifecycle (generation, storage — HSM for critical keys — rotation, destruction), mandatory encryption for sensitive cloud data and portable media, and periodic review given evolving threats including post-quantum planning.
+
+**(i) Human resources security, access control, and asset management.** Least-privilege/need-to-know access, RBAC reviewed quarterly, background screening for privileged roles (subject to local employment law), an authoritative asset inventory, a joiners/movers/leavers process with same-day revocation on exit, and dormant-account disablement after 30–90 days.
+
+**(j) MFA, secured communications, and emergency systems.** MFA (or continuous authentication) required for all remote access, privileged accounts, and cloud management consoles, phishing-resistant MFA (FIDO2/hardware tokens) for your highest-privilege accounts, end-to-end encrypted channels for sensitive internal communications, and a documented emergency communication plan with out-of-band channels for use if primary systems are compromised.
+
+**Two things to layer on top of the ten measures:**
+
+First, if you're a DNS provider, TLD registry, cloud/data centre/CDN provider, MSP/MSSP, trust service provider, or an online marketplace/search/social platform, Commission Implementing Regulation (EU) 2024/2690 makes these ten measures binding and audit-level: it decomposes them into 13 Annex sections with granular sub-requirements (e.g., splitting measure (i) across HR security, access control, and asset management sections, and adding a physical/environmental security section) and defines quantitative significant-incident thresholds. For every other sector, that regulation is persuasive best practice and the de-facto technical benchmark, but not directly binding — don't treat it as a legal requirement if you're outside that entity list.
+
+Second, if you're already ISO 27001:2022 certified, you have strong evidence for measures (a), (b), (c), (e), (f), and (i), but certification is not a safe harbor: it does not by itself satisfy the Art. 23 reporting timelines, the Art. 20 personal-accountability and training obligations, Art. 27 registration, or the explicit MFA/cryptography language in (h) and (j) — ISO 27001's Annex A.8.5 covers authentication generally but doesn't mandate MFA. Map your certification evidence against the ten measures specifically and close those four gaps rather than assuming the certificate covers you.
+
+Recommended next step: run a gap assessment rating each of the ten measures (at the 2024/2690 sub-point level if you're a relevant digital entity) as Compliant / Partial / Gap, prioritizing quick wins (MFA rollout, board training records) within 30 days and structural work (SDLC overhaul, supplier contract renegotiation) within six months.
