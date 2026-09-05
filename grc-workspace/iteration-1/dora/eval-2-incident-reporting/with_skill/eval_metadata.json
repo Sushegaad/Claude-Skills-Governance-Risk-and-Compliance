@@ -1,0 +1,14 @@
+{
+  "eval_id": 2,
+  "eval_name": "incident-reporting",
+  "run_type": "with_skill",
+  "prompt": "Under DORA, what are our obligations when a critical ICT third-party service provider (like our cloud provider AWS) suffers an outage? What are the incident classification and reporting requirements?",
+  "assertions": [
+    "Distinguishes major ICT incidents from non-major incidents under DORA",
+    "States the initial notification timeline (4 hours for major incidents)",
+    "States the intermediate report timeline (72 hours)",
+    "States the final report timeline (1 month)",
+    "Addresses notification to competent national authority"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

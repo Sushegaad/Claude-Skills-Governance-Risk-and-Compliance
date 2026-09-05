@@ -1,0 +1,14 @@
+{
+  "eval_id": 3,
+  "eval_name": "availability-criteria",
+  "run_type": "with_skill",
+  "prompt": "A customer wants us to include the Availability criteria in our SOC 2 report in addition to Security. What additional controls and commitments does this require? How does it differ from just having Security?",
+  "assertions": [
+    "Identifies Availability as one of the 5 Trust Services Criteria",
+    "Mentions uptime/availability commitments and SLAs",
+    "Covers disaster recovery and business continuity requirements",
+    "Explains backup and recovery testing requirements",
+    "Distinguishes A-series controls from CC-series controls"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

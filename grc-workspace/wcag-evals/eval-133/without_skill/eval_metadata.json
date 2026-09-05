@@ -1,0 +1,15 @@
+{
+  "eval_id": 133,
+  "eval_name": "react-modal-aria-code-review",
+  "run_type": "without_skill",
+  "prompt": "Our React app has a custom modal dialog. Review the code and identify all WCAG accessibility issues (missing role=dialog, no focus management, span used as label, no Escape key handler, etc.)",
+  "assertions": [
+    "Identifies missing role=dialog and aria-modal (SC 4.1.2)",
+    "Identifies missing focus management — focus not moved into modal on open (SC 2.4.3)",
+    "Identifies no focus trap / keyboard users can Tab outside modal (SC 2.1.2)",
+    "Identifies span used instead of label for form inputs (SC 1.3.1)",
+    "Identifies missing Escape key handler (SC 2.1.1)",
+    "Provides corrected code with proper ARIA attributes"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

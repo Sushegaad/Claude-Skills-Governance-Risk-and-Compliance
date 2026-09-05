@@ -1,0 +1,14 @@
+{
+  "eval_id": 1,
+  "eval_name": "dora-pillars",
+  "run_type": "without_skill",
+  "prompt": "We are an EU bank. Explain the key pillars of DORA (Digital Operational Resilience Act) and our main compliance obligations. What is the compliance deadline?",
+  "assertions": [
+    "Lists all 5 DORA pillars/chapters correctly",
+    "States the DORA compliance deadline (January 17, 2025)",
+    "Explains DORA applies to a wide range of financial entities including banks",
+    "Addresses the ICT third-party risk management requirements",
+    "Mentions the ICT incident reporting requirements"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

@@ -1,0 +1,14 @@
+{
+  "eval_id": 5,
+  "eval_name": "tsa-vs-circia",
+  "run_type": "with_skill",
+  "prompt": "What is the difference between TSA cybersecurity requirements and CISA CIRCIA requirements? We have heard about CIRCIA — do pipeline operators need to comply with both?",
+  "assertions": [
+    "Explains that TSA SDs are sector-specific to transportation/pipeline operators",
+    "Explains CIRCIA as a cross-sector cyber incident reporting law",
+    "Addresses the different reporting timelines",
+    "Clarifies that pipeline operators may need to comply with both",
+    "Mentions CISA as the primary CIRCIA implementing agency"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

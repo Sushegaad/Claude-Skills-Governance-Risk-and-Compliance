@@ -186,6 +186,138 @@ def render_plugin_tables(skills):
     return "\n".join(out).rstrip()
 
 
+# ── Eval page (grc-skills-eval-results.html) ────────────────────────────────
+# The entire stat-card block, summary table body, and all 33 accordions are
+# rendered from the grading artifacts in grc-workspace/ — the page is output,
+# never edited by hand. Eval discovery and grading parsing are delegated to
+# tests/test_eval_consistency.py so renderer and tests cannot disagree.
+
+import html as _html
+import json as _json
+
+
+def _delta_cell(w, b):
+    d = w - b
+    if d == 0:
+        return '<td class="stat-cell delta-neutral">±0%</td>'
+    cls = "delta-positive" if d > 0 else "delta-negative"
+    return f'<td class="stat-cell {cls}">{"+" if d > 0 else ""}{d}%</td>'
+
+
+def _read_response(arm_dir):
+    for cand in (arm_dir / "response.txt", arm_dir / "outputs" / "response.md"):
+        if cand.exists():
+            return cand.read_text(encoding="utf-8")
+    return "(response not archived)"
+
+
+def render_eval_stat_cards(totals):
+    tw, twt, tb = totals
+    wp, bp = round(100 * tw / twt), round(100 * tb / twt)
+    return f'''<div class="stat-cards">
+  <div class="stat-card">
+    <div class="stat-value">{wp}%</div>
+    <div class="stat-label">With Skill</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value neutral">{bp}%</div>
+    <div class="stat-label">Baseline (No Skill)</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value positive">+{wp - bp}%</div>
+    <div class="stat-label">Improvement</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">{twt}</div>
+    <div class="stat-label">Total Assertions</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value positive">+{tw - tb}</div>
+    <div class="stat-label">Extra Assertions Passed</div>
+  </div>
+</div>'''
+
+
+def render_eval_summary_rows(skills, agg):
+    rows = []
+    for s in skills:
+        wp, wt, bp, bt = agg[s["plugin"]]
+        w, b = round(100 * wp / wt), round(100 * bp / bt)
+        key, name = s["eval_page_key"], _html.escape(s["eval_page_name"])
+        rows.append(f'''        <tr>
+          <td style="text-align:center;font-weight:600;color:var(--muted)">{s["num"]}</td>
+          <td><a href="#skill-{key}" onclick="openSkill('{key}'); return false;" class="skill-link">{name}</a></td>
+          <td class="stat-cell">{w}%</td>
+          <td class="stat-cell">{b}%</td>
+          {_delta_cell(w, b)}
+          <td class="stat-cell">{wp}/{wt}</td>
+        </tr>''')
+    return "\n".join(rows)
+
+
+def render_eval_accordions(skills, agg, tec):
+    out = []
+    for s in skills:
+        wp, wt, bp, bt = agg[s["plugin"]]
+        w, b = round(100 * wp / wt), round(100 * bp / bt)
+        d = w - b
+        dspan = (f'<span class="delta-positive">+{d}%</span>' if d > 0 else
+                 f'<span class="delta-neutral">±0%</span>' if d == 0 else
+                 f'<span class="delta-negative">{d}%</span>')
+        key, name = s["eval_page_key"], _html.escape(s["eval_page_name"])
+        items = []
+        for n, ed in enumerate(tec._eval_dirs_for_skill(s["plugin"])):
+            meta_f = ed / "with_skill" / "eval_metadata.json"
+            meta = _json.loads(meta_f.read_text(encoding="utf-8")) if meta_f.exists() else {}
+            title = str(meta.get("eval_name", ed.name)).replace("-", " ").title()
+            prompt = _html.escape(meta.get("prompt", "(prompt not archived)"))
+            panels = []
+            for arm, label, cls in (("with_skill", "With Skill", "with-header"),
+                                    ("without_skill", "Without Skill (Baseline)", "without-header")):
+                arm_dir = ed / arm
+                if not (arm_dir / "grading.json").exists():
+                    continue
+                g = _json.loads((arm_dir / "grading.json").read_text(encoding="utf-8"))
+                exps = g["expectations"]
+                passed = sum(1 for e in exps if e["passed"])
+                color = "#22c55e" if passed >= 4 else ("#eab308" if passed >= 3 else "#ef4444")
+                asserts = "".join(
+                    f'<div class="assertion"><span class="assertion-icon">{"✅" if e["passed"] else "❌"}</span>'
+                    f'<span class="assertion-text">{_html.escape(e["text"])}</span></div>'
+                    for e in exps)
+                panels.append(f'''<div class="output-panel">
+                  <div class="output-header {cls}">{label}</div>
+                  <div class="output-grading"><div class="grade-summary" style="color:{color};font-weight:600;margin-bottom:8px">{"⭐" * passed} {passed}/{len(exps)} assertions passed ({round(100 * passed / len(exps))}%)</div><div class="assertions">{asserts}</div></div>
+                  <div class="output-text"><pre>{_html.escape(_read_response(arm_dir))}</pre></div>
+                </div>''')
+            items.append(f'''<div class="eval-item" id="eval-{key}-{n}">
+            <button class="eval-toggle" onclick="toggleEval('{key}-{n}')">
+              <span class="eval-label">Test {n + 1}: {_html.escape(title)}</span>
+              <span class="eval-chevron">▼</span>
+            </button>
+            <div class="eval-content" style="display:none">
+              <div class="eval-prompt">
+                <strong>Prompt:</strong> {prompt}
+              </div>
+              <div class="eval-outputs">
+                {"".join(panels)}</div>
+            </div>
+          </div>''')
+        out.append(f'''<div class="skill-accordion" id="skill-{key}">
+        <button class="skill-toggle" onclick="toggleSkill('{key}')">
+          <div class="skill-toggle-left">
+            <span class="skill-toggle-name">{name}</span>
+            <span class="skill-toggle-stats">{w}% with skill · {b}% baseline · {dspan}</span>
+          </div>
+          <span class="skill-chevron">▼</span>
+        </button>
+        <div class="skill-content" style="display:none">
+          {"".join(items)}
+        </div>
+      </div>''')
+    return "\n      ".join(out)
+
+
 def render_ai_catalog(skills, stats):
     """ARD capability manifest (ai-catalog spec v1.0 / ARD v0.9).
 
@@ -251,7 +383,17 @@ def main():
     tec = _load_eval_module()
     stats = compute_stats(skills, tec)
 
+    agg = {s["plugin"]: tec._aggregate_skill_grading(s["plugin"]) for s in skills}
+    totals = (sum(a[0] for a in agg.values()),
+              sum(a[1] for a in agg.values()),
+              sum(a[2] for a in agg.values()))
+
     targets = {
+        REPO / "grc-skills-eval-results.html": {
+            "eval-stat-cards": render_eval_stat_cards(totals),
+            "eval-summary-rows": render_eval_summary_rows(skills, agg),
+            "eval-accordions": render_eval_accordions(skills, agg, tec),
+        },
         REPO / "index.html": {
             "install-table": render_install_table(skills),
             "eval-table": render_eval_table(skills, stats),

@@ -1,0 +1,14 @@
+{
+  "eval_id": 5,
+  "eval_name": "ai-ethics",
+  "run_type": "without_skill",
+  "prompt": "How does ISO 42001 address the ethical dimensions of AI? What specific requirements exist around fairness, human oversight, and accountability?",
+  "assertions": [
+    "Addresses human oversight requirements in ISO 42001",
+    "Covers accountability and responsibility structures for AI decisions",
+    "Mentions fairness and non-discrimination as ISO 42001 objectives",
+    "Addresses explainability for individuals affected by AI decisions",
+    "Connects ethical requirements to specific ISO 42001 clauses or controls"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

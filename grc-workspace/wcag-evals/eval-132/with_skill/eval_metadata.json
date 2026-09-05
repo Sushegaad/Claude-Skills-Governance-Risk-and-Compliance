@@ -1,0 +1,14 @@
+{
+  "eval_id": 132,
+  "eval_name": "wcag-2-2-upgrade-criteria",
+  "run_type": "with_skill",
+  "prompt": "We are currently conforming to WCAG 2.1 AA. What new success criteria do we need to meet to upgrade our conformance claim to WCAG 2.2 AA? For each new criterion, explain what it requires and give a concrete example of what might fail.",
+  "assertions": [
+    "Lists all 4 new AA-level criteria added in WCAG 2.2 (2.4.11, 2.5.7, 2.5.8, 3.3.8)",
+    "Lists new Level A criteria in 2.2 (3.2.6 and 3.3.7) that also apply for AA conformance",
+    "Mentions SC 4.1.1 Parsing was removed in WCAG 2.2",
+    "Provides a concrete failure example for each new AA criterion",
+    "Notes AAA-level criteria added in 2.2 as optional (2.4.12, 2.4.13)"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

@@ -1,0 +1,14 @@
+{
+  "eval_id": 4,
+  "eval_name": "cross-border-transfers",
+  "run_type": "without_skill",
+  "prompt": "What are the DPDPA requirements for cross-border data transfers? We currently transfer Indian user data to our US servers. Is this permissible?",
+  "assertions": [
+    "Explains DPDPA's blacklist approach vs GDPR's whitelist approach",
+    "States that as of current date, no countries are restricted for data transfers",
+    "Clarifies that transfers to US are currently permissible",
+    "Notes that no SCC-equivalent mechanism is required",
+    "Recommends maintaining contractual safeguards as a best practice"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

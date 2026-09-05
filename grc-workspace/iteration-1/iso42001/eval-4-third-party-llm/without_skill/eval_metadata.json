@@ -1,0 +1,14 @@
+{
+  "eval_id": 4,
+  "eval_name": "third-party-llm",
+  "run_type": "without_skill",
+  "prompt": "We use a third-party LLM API (like OpenAI or Anthropic) as a component in our AI product. What supplier management obligations does ISO 42001 place on us regarding this third-party AI?",
+  "assertions": [
+    "Addresses supplier/third-party due diligence requirements for AI components",
+    "Covers contractual requirements with AI providers",
+    "Mentions the need to document and understand third-party model characteristics",
+    "Addresses monitoring for supplier changes",
+    "Covers residual risk and how to document accepted risks from third-party AI"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

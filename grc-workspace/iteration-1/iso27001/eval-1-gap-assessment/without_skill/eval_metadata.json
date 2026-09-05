@@ -1,0 +1,14 @@
+{
+  "eval_id": 1,
+  "eval_name": "gap-assessment",
+  "run_type": "without_skill",
+  "prompt": "We are a 120-person SaaS company that has never had any formal information security certification. We store customer PII and financial data in AWS. Our CEO wants ISO 27001 certification within 18 months. Give us a realistic gap assessment of what we are likely missing and a phased roadmap to achieve certification.",
+  "assertions": [
+    "References ISO 27001:2022 (not just 2013) and mentions Annex A controls",
+    "Identifies at least 5 distinct gap areas",
+    "Provides a phased roadmap with at least 3 phases or time-based milestones",
+    "Mentions the mandatory clauses 4-10",
+    "Includes practical action items, not just abstract principles"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

@@ -1,0 +1,14 @@
+{
+  "eval_id": 120,
+  "eval_name": "eval-120",
+  "run_type": "with_skill",
+  "prompt": "We are preparing for our first FedRAMP Moderate authorization. We currently have ISO 27001:2022 certification. What is the relationship between SP 800-53 Moderate controls and ISO 27001:2022 Annex A, what gaps will we likely have, and how does the RMF process work for FedRAMP?",
+  "assertions": [
+    "Describes the ISO 27001 to SP 800-53 relationship including approximate control overlap",
+    "Identifies FIPS 140-2/3 cryptography as a gap (not covered by ISO 27001)",
+    "Identifies 3PAO requirement and US-CERT incident reporting as FedRAMP-specific gaps",
+    "Describes all 7 RMF steps (Prepare, Categorize, Select, Implement, Assess, Authorize, Monitor) in context of FedRAMP",
+    "Distinguishes between Agency ATO and JAB P-ATO authorization paths"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

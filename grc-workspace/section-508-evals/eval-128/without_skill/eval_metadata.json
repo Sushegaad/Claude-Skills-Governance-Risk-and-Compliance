@@ -1,0 +1,14 @@
+{
+  "eval_id": 128,
+  "eval_name": "eval-128",
+  "run_type": "without_skill",
+  "prompt": "We have 200 existing PDF forms on our agency website that are not accessible to screen reader users. We need to remediate them for Section 508 compliance. What are the specific requirements for PDF accessibility and what is the remediation process?",
+  "assertions": [
+    "States PDFs must be Tagged PDFs with a correct tag hierarchy (Document, headings, paragraphs, tables, lists)",
+    "Mentions form fields must have accessible names (Tooltip/name field in Acrobat Pro form editor)",
+    "States all images in PDFs must have Alt text set in the tag properties",
+    "Mentions document language must be set in Document Properties",
+    "References a verification/testing step using Acrobat Pro's Full Accessibility Check or equivalent"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

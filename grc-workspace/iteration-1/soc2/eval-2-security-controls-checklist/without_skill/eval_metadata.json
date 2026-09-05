@@ -1,0 +1,14 @@
+{
+  "eval_id": 2,
+  "eval_name": "security-controls-checklist",
+  "run_type": "without_skill",
+  "prompt": "List the key controls we need for SOC 2 Security (CC) criteria. We are a cloud-native company using AWS, GitHub, and Okta. Give us a practical control checklist.",
+  "assertions": [
+    "Covers logical and physical access controls (CC6 series)",
+    "Mentions change management controls (CC8)",
+    "Addresses incident response and monitoring (CC7)",
+    "Includes vendor/third-party risk management (CC9)",
+    "References at least 5 of the CC control category series"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

@@ -1,0 +1,14 @@
+{
+  "eval_id": 5,
+  "eval_name": "audit-exception-response",
+  "run_type": "without_skill",
+  "prompt": "Our SOC 2 audit found an exception: we had a former employee whose access was not revoked for 45 days after termination. How serious is this? What control failures does it represent and how should we write the management response?",
+  "assertions": [
+    "References the relevant CC control relating to logical access termination",
+    "Assesses the risk/severity of the exception accurately",
+    "Provides a management response with root cause analysis",
+    "Describes specific remediation steps",
+    "Explains impact on the overall audit opinion"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

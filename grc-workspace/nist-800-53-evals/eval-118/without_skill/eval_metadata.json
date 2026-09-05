@@ -1,0 +1,14 @@
+{
+  "eval_id": 118,
+  "eval_name": "eval-118",
+  "run_type": "without_skill",
+  "prompt": "We need to implement multi-factor authentication for our federal system. Which specific SP 800-53 Rev 5 controls require MFA, what baselines do they appear in, and what does Executive Order 14028 (Improving the Nation's Cybersecurity) require regarding phishing-resistant MFA?",
+  "assertions": [
+    "Identifies IA-2(1) as MFA for privileged accounts and states it appears in Low/Moderate/High baselines",
+    "Identifies IA-2(2) for non-privileged accounts with correct baseline assignment",
+    "References EO 14028 or OMB M-22-09 phishing-resistant MFA requirement",
+    "Explains phishing-resistant MFA (PIV/FIDO2) vs phishing-susceptible (SMS/TOTP) distinction",
+    "Mentions SP 800-63B or identity assurance levels (AAL) in context of MFA requirements"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

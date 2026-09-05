@@ -1,0 +1,14 @@
+{
+  "eval_id": 4,
+  "eval_name": "airport-applicability",
+  "run_type": "without_skill",
+  "prompt": "We are a small regional airport. Do TSA cybersecurity regulations apply to us? What category of aviation security does our airport fall under?",
+  "assertions": [
+    "Explains that TSA cybersecurity requirements for aviation are tiered by facility category",
+    "Addresses the different obligations for airports vs airlines",
+    "Clarifies how facility categorization is determined",
+    "Identifies what a small/regional airport's likely obligations are",
+    "Mentions coordination with airport security programs and TSA Security Programs"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

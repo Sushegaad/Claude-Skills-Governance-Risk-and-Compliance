@@ -8,7 +8,7 @@ the review window (120 days ≈ one quarter + buffer) is presumed stale and
 must be re-checked against primary sources before release.
 
 The quarterly review process and per-framework source list live in
-METHODOLOGY.md.
+the maintainer review cadence (monthly whats-new cycle; content re-verification at most every 120 days).
 
 Run with:
     pytest tests/test_skill_freshness.py -v
@@ -51,7 +51,7 @@ def test_last_verified_is_fresh(skill_md: Path):
     assert age <= MAX_AGE_DAYS, (
         f"{skill_md.parent.name}: last verified {verified} ({age} days ago, "
         f"limit {MAX_AGE_DAYS}). Re-verify the skill against primary sources "
-        "(see METHODOLOGY.md quarterly review checklist) and update the date."
+        "(re-verify the skill content against primary sources) and update the date."
     )
     assert age >= 0, (
         f"{skill_md.parent.name}: last-verified date {verified} is in the future"

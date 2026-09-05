@@ -1,0 +1,14 @@
+{
+  "eval_id": 117,
+  "eval_name": "eval-117",
+  "run_type": "without_skill",
+  "prompt": "Our federal system SSP has a finding from the security assessor: AC-2(3) is 'Other Than Satisfied' because inactive accounts are not disabled within our stated ODV of 90 days. The assessor found 120 accounts inactive for over 120 days. Walk me through how to remediate this finding and what we need to document in the POA&M.",
+  "assertions": [
+    "Identifies AC-2(3) as the Automated/Disable Accounts control and explains what it requires",
+    "Recommends immediately disabling the 120 identified inactive accounts",
+    "Provides POA&M required fields including control ID, risk level, milestone steps, and completion date",
+    "Advises fixing the automated account review/enforcement process",
+    "Notes that OTS findings must be tracked until closure and mentions ISSO/System Owner accountability"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

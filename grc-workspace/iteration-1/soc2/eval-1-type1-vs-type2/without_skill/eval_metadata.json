@@ -1,0 +1,14 @@
+{
+  "eval_id": 1,
+  "eval_name": "type1-vs-type2",
+  "run_type": "without_skill",
+  "prompt": "We are a B2B SaaS startup and our first enterprise customer is asking for a SOC 2 Type 2 report. We have never done any SOC 2 work. Explain the difference between Type 1 and Type 2, which one we should pursue, and what the typical timeline looks like.",
+  "assertions": [
+    "Clearly distinguishes Type 1 from Type 2",
+    "Mentions the typical observation period for Type 2",
+    "Recommends or explains the option to start with Type 1",
+    "Mentions the 5 Trust Services Criteria categories",
+    "Addresses the need for a licensed CPA firm to conduct the audit"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

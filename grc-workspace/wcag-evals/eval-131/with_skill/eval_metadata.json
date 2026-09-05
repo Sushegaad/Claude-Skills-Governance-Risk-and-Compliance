@@ -1,0 +1,15 @@
+{
+  "eval_id": 131,
+  "eval_name": "colour-contrast-audit-sc-1-4-3",
+  "run_type": "with_skill",
+  "prompt": "Our website uses the following colour combinations. Which ones fail WCAG 2.1 AA contrast requirements and what should we replace them with? Body text #767676/#FFFFFF, Nav links #0066CC/#FFFFFF, Button text #FFFFFF/#3D9970, Placeholder #AAAAAA/#FFFFFF, Error messages #CC0000/#FFFFFF, Disabled button #999999/#CCCCCC.",
+  "assertions": [
+    "Correctly identifies SC 1.4.3 as the applicable criterion with level AA",
+    "Correctly flags button text (#FFFFFF on #3D9970) as failing",
+    "Correctly flags placeholder text (#AAAAAA on #FFFFFF) as failing",
+    "Correctly identifies disabled button as exempt from contrast requirements",
+    "Provides specific replacement colour suggestions for failures",
+    "Correctly identifies all passing combinations"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

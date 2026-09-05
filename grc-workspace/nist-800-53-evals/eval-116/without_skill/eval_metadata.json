@@ -1,0 +1,14 @@
+{
+  "eval_id": 116,
+  "eval_name": "eval-116",
+  "run_type": "without_skill",
+  "prompt": "We are a federal agency developing a new HR system that will store employee PII, salary data, and performance reviews for 5,000 staff. It will be hosted on an internal data center. How do we categorize this system under FIPS 199, and which NIST SP 800-53 baseline should we select?",
+  "assertions": [
+    "Correctly identifies High as the overall impact level (high-water mark from High Confidentiality)",
+    "Selects the High baseline from SP 800-53B",
+    "Applies FIPS 199 framework to assess CIA objectives individually",
+    "Notes PT family (privacy controls) apply due to PII processing",
+    "References SP 800-60 for information type categorization guidance"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

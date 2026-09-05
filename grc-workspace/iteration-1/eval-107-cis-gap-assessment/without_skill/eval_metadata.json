@@ -1,0 +1,14 @@
+{
+  "eval_id": 107,
+  "eval_name": "cis-gap-assessment",
+  "run_type": "without_skill",
+  "prompt": "Our manufacturing company (350 employees...",
+  "assertions": [
+    "Correctly identifies the organization as IG2",
+    "Identifies MFA on VPN as a critical gap with safeguard ID 6.4",
+    "Identifies missing vulnerability scanner as a critical gap (safeguards 7.5/7.6)",
+    "Identifies centralized log management gap (safeguard 8.9) as critical",
+    "Provides structured gap table covering multiple CIS Controls with priority ratings"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

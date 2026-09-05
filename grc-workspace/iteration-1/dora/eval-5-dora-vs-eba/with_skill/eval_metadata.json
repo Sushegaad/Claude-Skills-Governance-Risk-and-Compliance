@@ -1,0 +1,14 @@
+{
+  "eval_id": 5,
+  "eval_name": "dora-vs-eba",
+  "run_type": "with_skill",
+  "prompt": "How does DORA's ICT risk management framework differ from what we already have under the EBA Guidelines on ICT and Security Risk Management? We are already compliant with the EBA guidelines.",
+  "assertions": [
+    "Clarifies that DORA is a regulation (directly applicable) vs EBA guidelines (soft law)",
+    "Identifies new DORA requirements beyond EBA guidelines",
+    "Acknowledges that EBA compliance provides a good foundation for DORA",
+    "Lists key gaps between EBA guidelines and DORA requirements",
+    "Addresses the timeline for upgrading from EBA to DORA compliance"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

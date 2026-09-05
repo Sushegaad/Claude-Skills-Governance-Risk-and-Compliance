@@ -1,0 +1,14 @@
+{
+  "eval_id": 5,
+  "eval_name": "gdpr-safe-harbor",
+  "run_type": "without_skill",
+  "prompt": "Can ISO 27701 certification be used as evidence of GDPR compliance in the event of a regulatory investigation? What are its limitations as a compliance demonstration tool?",
+  "assertions": [
+    "Explicitly states ISO 27701 is not a GDPR safe harbor",
+    "Acknowledges that ISO 27701 can serve as positive evidence of compliance efforts",
+    "Identifies specific GDPR obligations not fully covered by ISO 27701",
+    "Addresses how supervisory authorities view ISO 27701 certification",
+    "Explains it is not an approved Article 42 GDPR certification scheme"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

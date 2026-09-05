@@ -1,0 +1,14 @@
+{
+  "eval_id": 1,
+  "eval_name": "applicability-eu-ai",
+  "run_type": "without_skill",
+  "prompt": "We are a technology company deploying AI systems in healthcare decision support. What is ISO 42001 and do we need to comply with it? How does it relate to EU AI Act requirements?",
+  "assertions": [
+    "Explains ISO 42001 as an AI management system (AIMS) standard",
+    "Addresses the voluntary nature of ISO 42001",
+    "Covers the relationship to EU AI Act compliance",
+    "Mentions AI risk assessment and AI impact assessment requirements",
+    "Addresses healthcare AI specific considerations"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

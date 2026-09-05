@@ -1,0 +1,14 @@
+{
+  "eval_id": 127,
+  "eval_name": "eval-127",
+  "run_type": "without_skill",
+  "prompt": "Our federal agency's internal web application fails Section 508 because users report they cannot navigate it using only a keyboard — focus disappears and some dropdown menus can't be opened without a mouse. What specific WCAG 2.0 success criteria are violated, and give us a concrete remediation plan?",
+  "assertions": [
+    "Identifies SC 2.1.1 Keyboard (Level A) as the primary violated criterion",
+    "Identifies SC 2.4.7 Focus Visible (Level AA) for the disappearing focus issue",
+    "Identifies SC 2.1.2 No Keyboard Trap as applicable if focus is trapped or lost",
+    "Provides specific remediation guidance — e.g., use native HTML controls, implement ARIA keyboard patterns, never use CSS outline:none without replacement",
+    "Recommends a specific testing approach: keyboard-only tab-through test covering all interactive elements"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

@@ -1,0 +1,14 @@
+{
+  "eval_id": 3,
+  "eval_name": "tlpt-testing",
+  "run_type": "without_skill",
+  "prompt": "DORA requires digital operational resilience testing. What types of testing are required, how often, and what is TLPT (Threat-Led Penetration Testing)?",
+  "assertions": [
+    "Distinguishes basic digital resilience testing from advanced TLPT",
+    "States TLPT frequency (at least every 3 years)",
+    "Explains TLPT as threat intelligence-led red team exercises",
+    "Addresses which financial entities are required to perform TLPT",
+    "Mentions the role of competent authorities in TLPT oversight"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

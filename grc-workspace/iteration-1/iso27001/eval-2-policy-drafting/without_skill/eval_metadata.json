@@ -1,0 +1,14 @@
+{
+  "eval_id": 2,
+  "eval_name": "policy-drafting",
+  "run_type": "without_skill",
+  "prompt": "Draft an Information Security Policy for our company. We are a fintech startup with 80 employees. Keep it concise and suitable for ISO 27001 certification.",
+  "assertions": [
+    "Policy document has a clear title, scope, and purpose section",
+    "Mentions top management commitment (aligns with clause 5.1)",
+    "Includes roles and responsibilities section",
+    "States review frequency (at least annually)",
+    "References or aligns with ISO 27001:2022 requirements"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

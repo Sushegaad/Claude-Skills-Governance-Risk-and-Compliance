@@ -1,0 +1,14 @@
+{
+  "eval_id": 109,
+  "eval_name": "cis-nist-csf-mapping",
+  "run_type": "with_skill",
+  "prompt": "We are building a security program and want to use CIS Controls v8...",
+  "assertions": [
+    "Maps CIS Controls 1-8 to NIST CSF 2.0 functions with category identifiers",
+    "Correctly identifies Control 8 as the primary Detect function coverage in Controls 1-8",
+    "States that Controls 1-2 map to the Identify function (ID.AM)",
+    "States that Controls 3-6 map primarily to the Protect function (PR.DS, PR.AA)",
+    "Recommends Control 13 for fuller NIST CSF Detect coverage"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

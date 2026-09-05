@@ -1,0 +1,14 @@
+{
+  "eval_id": 2,
+  "eval_name": "gdpr-mapping",
+  "run_type": "without_skill",
+  "prompt": "Map ISO 27701 requirements to GDPR obligations. We want to understand how achieving ISO 27701 certification helps with GDPR compliance.",
+  "assertions": [
+    "References the ISO 27701 Annex D GDPR mapping",
+    "Maps PII controller requirements to GDPR Articles 5-22",
+    "Maps PII processor requirements to GDPR Article 28",
+    "Identifies gaps where GDPR goes beyond ISO 27701",
+    "Addresses how ISO 27701 certification can serve as a GDPR compliance tool"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

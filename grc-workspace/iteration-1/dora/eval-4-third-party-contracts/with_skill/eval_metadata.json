@@ -1,0 +1,14 @@
+{
+  "eval_id": 4,
+  "eval_name": "third-party-contracts",
+  "run_type": "with_skill",
+  "prompt": "We use 15 different cloud and SaaS providers for critical functions. Under DORA, what contracts must we have in place with them and what due diligence is required?",
+  "assertions": [
+    "Addresses the Register of ICT Third-Party Providers requirement",
+    "Lists the mandatory contractual clauses under DORA Article 30",
+    "Distinguishes critical from non-critical ICT third-party providers",
+    "Mentions Critical Third-Party Providers (CTPPs) under EU oversight",
+    "Covers exit strategy and concentration risk requirements"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

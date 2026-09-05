@@ -1,0 +1,14 @@
+{
+  "eval_id": 3,
+  "eval_name": "2013-vs-2022",
+  "run_type": "with_skill",
+  "prompt": "What are the key differences between ISO 27001:2013 and ISO 27001:2022? We are currently certified under the 2013 version and need to transition. What controls were added, changed, or removed?",
+  "assertions": [
+    "States the number of controls changed (93 in 2022 vs 114 in 2013)",
+    "Mentions the 4 new control themes/categories in 2022",
+    "Lists at least 3 specific new controls added in 2022",
+    "Mentions transition deadline or certification validity period",
+    "Explains the Annex A restructuring from 14 domains to 4 themes"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

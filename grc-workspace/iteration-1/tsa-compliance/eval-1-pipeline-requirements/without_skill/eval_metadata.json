@@ -1,0 +1,14 @@
+{
+  "eval_id": 1,
+  "eval_name": "pipeline-requirements",
+  "run_type": "without_skill",
+  "prompt": "We operate a natural gas pipeline that falls under TSA jurisdiction. What are our current TSA cybersecurity requirements? We have heard about the security directives — summarize what they require.",
+  "assertions": [
+    "References TSA Pipeline Security Directives and the current requirement framework",
+    "Mentions the 24-hour cyber incident reporting requirement to CISA",
+    "Addresses cybersecurity coordinator designation requirement",
+    "Covers the four required cybersecurity measures",
+    "Mentions annual cybersecurity assessment or review requirements"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

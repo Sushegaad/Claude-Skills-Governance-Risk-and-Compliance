@@ -1,0 +1,14 @@
+{
+  "eval_id": 5,
+  "eval_name": "significant-data-fiduciary",
+  "run_type": "without_skill",
+  "prompt": "What is a Significant Data Fiduciary (SDF) under DPDPA? What additional obligations do SDFs have? How would a company know if they are designated as an SDF?",
+  "assertions": [
+    "Lists the SDF designation criteria under Section 10",
+    "Covers India-resident DPO requirement for SDFs",
+    "Addresses annual DPIA requirement for SDFs",
+    "Covers annual independent data audit requirement for SDFs",
+    "Explains that SDF designation is by Central Government notification"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

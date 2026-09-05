@@ -1,0 +1,14 @@
+{
+  "eval_id": 4,
+  "eval_name": "risk-assessment",
+  "run_type": "without_skill",
+  "prompt": "Explain how to conduct an ISO 27001 risk assessment. We have no prior experience with formal risk assessments. Walk us through the methodology, what we need to document, and how to determine which risks need treatment.",
+  "assertions": [
+    "Explains the four risk treatment options",
+    "Mentions the Statement of Applicability (SoA)",
+    "Describes risk scoring/evaluation methodology",
+    "References clause 6.1 of ISO 27001",
+    "Explains risk acceptance criteria concept"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

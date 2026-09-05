@@ -1,0 +1,14 @@
+{
+  "eval_id": 3,
+  "eval_name": "processor-controls",
+  "run_type": "without_skill",
+  "prompt": "What specific privacy controls does ISO 27701 require for data processors? We act as a data processor for our B2B customers.",
+  "assertions": [
+    "Covers the instruction-based processing requirement",
+    "Addresses sub-processor management requirements",
+    "Covers PII subject rights assistance obligations",
+    "Addresses breach notification to controller requirements",
+    "Mentions privacy by design and default requirements"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

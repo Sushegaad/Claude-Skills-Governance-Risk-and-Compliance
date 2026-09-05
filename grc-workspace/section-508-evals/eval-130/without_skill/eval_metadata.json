@@ -1,0 +1,14 @@
+{
+  "eval_id": 130,
+  "eval_name": "eval-130",
+  "run_type": "without_skill",
+  "prompt": "Our small federal agency has a 15-year-old legacy grants management system that would cost approximately $3.5M to fully remediate for Section 508 compliance, which exceeds our entire IT budget. Can we claim an undue burden exception? What is the legal basis, the process we must follow, and what alternative access must we provide?",
+  "assertions": [
+    "Correctly states the legal basis: E202.5 of the Revised Section 508 Standards (36 CFR Part 1194) and/or 29 U.S.C. § 794d",
+    "States that undue burden means 'significant difficulty or expense' and lists factors to consider (agency resources, size, cost of compliance)",
+    "Requires a written determination signed by the agency head (or delegated official) documenting the undue burden finding",
+    "States that an alternative means of access must still be provided to people with disabilities — not a full exemption from accessibility obligations",
+    "Notes that the exception must be re-evaluated if the ICT is altered or replaced"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

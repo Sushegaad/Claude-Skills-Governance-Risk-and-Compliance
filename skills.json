@@ -30,7 +30,9 @@
         "write an information security policy mapped to Annex A controls",
         "help me transition from ISO 27001:2013 to the 2022 version"
       ],
-      "description": "Expert ISO 27001 gap analysis, policy writing, Annex A control guidance, SoA generation, and risk register creation for both 2013 and 2022 versions."
+      "description": "Expert ISO 27001 gap analysis, policy writing, Annex A control guidance, SoA generation, and risk register creation for both 2013 and 2022 versions.",
+      "eval_page_key": "iso27001",
+      "eval_page_name": "ISO 27001"
     },
     {
       "num": 2,
@@ -61,7 +63,9 @@
         "draft SOC 2 control documentation and evidence tables",
         "review a vendor's SOC 2 report for red flags"
       ],
-      "description": "Expert SOC 2 compliance advisor covering all Trust Services Criteria — gap analysis, policy drafting, control documentation, audit evidence, and vendor risk."
+      "description": "Expert SOC 2 compliance advisor covering all Trust Services Criteria — gap analysis, policy drafting, control documentation, audit evidence, and vendor risk.",
+      "eval_page_key": "soc2",
+      "eval_page_name": "SOC 2"
     },
     {
       "num": 3,
@@ -92,7 +96,9 @@
         "explain FedRAMP 20x and the CR26 certification classes",
         "write SSP control narratives for a federal cloud system"
       ],
-      "description": "End-to-end FedRAMP authorization guidance — readiness assessments, SSP narratives, POA&M management, NIST 800-53 Rev 5 control mapping, and ConMon support."
+      "description": "End-to-end FedRAMP authorization guidance — readiness assessments, SSP narratives, POA&M management, NIST 800-53 Rev 5 control mapping, and ConMon support.",
+      "eval_page_key": "fedramp",
+      "eval_page_name": "FedRAMP"
     },
     {
       "num": 4,
@@ -123,7 +129,9 @@
         "draft an Article 28 data processing agreement",
         "handle a 72-hour GDPR breach notification"
       ],
-      "description": "GDPR compliance assistant — code and system audits, privacy notice drafting, DPAs, DPIAs, data flow reviews, and authoritative article-cited Q&A."
+      "description": "GDPR compliance assistant — code and system audits, privacy notice drafting, DPAs, DPIAs, data flow reviews, and authoritative article-cited Q&A.",
+      "eval_page_key": "gdpr-compliance",
+      "eval_page_name": "GDPR"
     },
     {
       "num": 5,
@@ -154,7 +162,9 @@
         "generate a business associate agreement",
         "run a HIPAA security risk analysis"
       ],
-      "description": "HIPAA compliance advisor covering Privacy Rule, Security Rule, and Breach Notification — document generation, technical safeguards for cloud, and breach response."
+      "description": "HIPAA compliance advisor covering Privacy Rule, Security Rule, and Breach Notification — document generation, technical safeguards for cloud, and breach response.",
+      "eval_page_key": "hipaa-compliance",
+      "eval_page_name": "HIPAA"
     },
     {
       "num": 6,
@@ -185,7 +195,9 @@
         "build a CSF organizational profile for board reporting",
         "map our controls to NIST CSF subcategories"
       ],
-      "description": "NIST Cybersecurity Framework (CSF 2.0 and 1.1) advisor — gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping, and cybersecurity policy generation."
+      "description": "NIST Cybersecurity Framework (CSF 2.0 and 1.1) advisor — gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping, and cybersecurity policy generation.",
+      "eval_page_key": "nist-csf",
+      "eval_page_name": "NIST CSF"
     },
     {
       "num": 7,
@@ -216,7 +228,9 @@
         "choose the right PCI SAQ type for our payment setup",
         "plan a PCI DSS v4.0.1 migration"
       ],
-      "description": "PCI DSS v4.0.1 compliance advisor — CDE scoping, SAQ selection, gap assessments, control implementation guidance, QSA audit preparation, and remediation planning."
+      "description": "PCI DSS v4.0.1 compliance advisor — CDE scoping, SAQ selection, gap assessments, control implementation guidance, QSA audit preparation, and remediation planning.",
+      "eval_page_key": "pci-compliance",
+      "eval_page_name": "PCI DSS"
     },
     {
       "num": 8,
@@ -247,7 +261,9 @@
         "draft a cybersecurity implementation plan for OT systems",
         "align our TSA CRMP with NIST CSF"
       ],
-      "description": "TSA cybersecurity compliance advisor for critical infrastructure — pipeline, freight rail, and transit Security Directive requirements including CIP/COIP, IRP, ADR, CAP, incident reporting, and OT/ICS security."
+      "description": "TSA cybersecurity compliance advisor for critical infrastructure — pipeline, freight rail, and transit Security Directive requirements including CIP/COIP, IRP, ADR, CAP, incident reporting, and OT/ICS security.",
+      "eval_page_key": "tsa-compliance",
+      "eval_page_name": "TSA Cybersecurity"
     },
     {
       "num": 9,
@@ -278,7 +294,9 @@
         "complete an AI system impact assessment",
         "integrate an AI management system with our ISO 27001 ISMS"
       ],
-      "description": "ISO 42001 AI Management System (AIMS) advisor — gap analysis, AI risk assessment, AI system impact assessment (AISIA), Annex A control guidance, SoA generation, policy writing, and certification readiness for ISO/IEC 42001:2023."
+      "description": "ISO 42001 AI Management System (AIMS) advisor — gap analysis, AI risk assessment, AI system impact assessment (AISIA), Annex A control guidance, SoA generation, policy writing, and certification readiness for ISO/IEC 42001:2023.",
+      "eval_page_key": "iso42001",
+      "eval_page_name": "ISO 42001"
     },
     {
       "num": 10,
@@ -309,7 +327,9 @@
         "build a records of processing activities",
         "map ISO 27701 controls to GDPR articles"
       ],
-      "description": "ISO 27701 Privacy Information Management System (PIMS) advisor — gap analysis, PIMS implementation, Annex A control guidance (A.1 controller, A.2 processor, A.3 security), SoA generation, privacy risk assessment, GDPR alignment, 2019→2025 transition, and certification readiness."
+      "description": "ISO 27701 Privacy Information Management System (PIMS) advisor — gap analysis, PIMS implementation, Annex A control guidance (A.1 controller, A.2 processor, A.3 security), SoA generation, privacy risk assessment, GDPR alignment, 2019→2025 transition, and certification readiness.",
+      "eval_page_key": "iso27701",
+      "eval_page_name": "ISO 27701"
     },
     {
       "num": 11,
@@ -340,7 +360,9 @@
         "classify an ICT incident under DORA reporting thresholds",
         "review ICT third-party contracts for DORA Article 30"
       ],
-      "description": "DORA (Regulation (EU) 2022/2554) compliance advisor for EU financial entities — ICT risk management framework, incident classification and reporting, TLPT, ICT third-party risk, Register of Information, and all adopted RTS/ITS with article-level citations."
+      "description": "DORA (Regulation (EU) 2022/2554) compliance advisor for EU financial entities — ICT risk management framework, incident classification and reporting, TLPT, ICT third-party risk, Register of Information, and all adopted RTS/ITS with article-level citations.",
+      "eval_page_key": "dora",
+      "eval_page_name": "DORA"
     },
     {
       "num": 12,
@@ -371,7 +393,9 @@
         "design consent notices under the DPDP Rules",
         "handle children's data verification under DPDPA"
       ],
-      "description": "India's Digital Personal Data Protection Act, 2023 (DPDPA) and DPDP Rules, 2025 compliance advisor — gap analysis, notice and consent requirements, Data Principal rights, breach notification, children’s data, Significant Data Fiduciary obligations, cross-border transfers, Data Protection Board proceedings, and GDPR alignment for global organisations."
+      "description": "India's Digital Personal Data Protection Act, 2023 (DPDPA) and DPDP Rules, 2025 compliance advisor — gap analysis, notice and consent requirements, Data Principal rights, breach notification, children’s data, Significant Data Fiduciary obligations, cross-border transfers, Data Protection Board proceedings, and GDPR alignment for global organisations.",
+      "eval_page_key": "dpdpa",
+      "eval_page_name": "DPDPA"
     },
     {
       "num": 13,
@@ -402,7 +426,9 @@
         "run a CMMC Level 2 gap assessment against NIST 800-171",
         "calculate our SPRS score"
       ],
-      "description": "Expert CMMC 2.0 compliance advisor for US defense contractors — gap analysis, SSP drafting, POA&M management, SPRS scoring, CUI scoping, and C3PAO assessment readiness for Level 1, 2, and 3."
+      "description": "Expert CMMC 2.0 compliance advisor for US defense contractors — gap analysis, SSP drafting, POA&M management, SPRS scoring, CUI scoping, and C3PAO assessment readiness for Level 1, 2, and 3.",
+      "eval_page_key": "cmmc",
+      "eval_page_name": "CMMC 2.0"
     },
     {
       "num": 14,
@@ -433,7 +459,9 @@
         "run a GOVERN function gap assessment for AI risk",
         "evaluate an AI model against MEASURE trustworthiness criteria"
       ],
-      "description": "Expert NIST AI Risk Management Framework (AI RMF 1.0) advisor — gap assessments, organizational profiles, GOVERN/MAP/MEASURE/MANAGE function guidance, AI risk registers, trustworthiness evaluation, and cross-framework mapping to ISO 42001, EU AI Act, and NIST CSF."
+      "description": "Expert NIST AI Risk Management Framework (AI RMF 1.0) advisor — gap assessments, organizational profiles, GOVERN/MAP/MEASURE/MANAGE function guidance, AI risk registers, trustworthiness evaluation, and cross-framework mapping to ISO 42001, EU AI Act, and NIST CSF.",
+      "eval_page_key": "nist-ai-rmf",
+      "eval_page_name": "NIST AI RMF"
     },
     {
       "num": 15,
@@ -464,7 +492,9 @@
         "prepare the annual SWIFT KYC-SA attestation",
         "run a CSCF v2026 gap assessment"
       ],
-      "description": "Expert SWIFT Customer Security Programme (CSP) advisor — CSCF v2026 gap assessments, mandatory vs advisory controls, architecture type scoping (A1/A2/A3/A4/B), KYC-SA attestation, MFA and access control implementation, log monitoring, and incident response for the global banking network."
+      "description": "Expert SWIFT Customer Security Programme (CSP) advisor — CSCF v2026 gap assessments, mandatory vs advisory controls, architecture type scoping (A1/A2/A3/A4/B), KYC-SA attestation, MFA and access control implementation, log monitoring, and incident response for the global banking network.",
+      "eval_page_key": "swift-csp",
+      "eval_page_name": "SWIFT CSP"
     },
     {
       "num": 16,
@@ -495,7 +525,9 @@
         "prepare for an IRAP assessment",
         "map Essential Eight maturity levels to ISM controls"
       ],
-      "description": "Expert Australian Information Security Manual (ISM) advisor for Australian government entities, contractors and supply chains. Gap analysis, system authorisation, IRAP preparation, control scoping, and ASD compliance guidance."
+      "description": "Expert Australian Information Security Manual (ISM) advisor for Australian government entities, contractors and supply chains. Gap analysis, system authorisation, IRAP preparation, control scoping, and ASD compliance guidance.",
+      "eval_page_key": "ism",
+      "eval_page_name": "ISM"
     },
     {
       "num": 17,
@@ -526,7 +558,9 @@
         "walk through NIS2 24-hour and 72-hour incident reporting",
         "draft NIS2 Article 21 security measures"
       ],
-      "description": "EU NIS2 Directive (Directive (EU) 2022/2555) compliance advisor for essential and important entities — entity classification, Art. 21 risk management measures, Art. 23 incident reporting timelines (24h/72h/1 month), Art. 20 governance obligations, supply chain security (Art. 26), gap assessments, policy drafting, ISO 27001 alignment, and penalty exposure analysis."
+      "description": "EU NIS2 Directive (Directive (EU) 2022/2555) compliance advisor for essential and important entities — entity classification, Art. 21 risk management measures, Art. 23 incident reporting timelines (24h/72h/1 month), Art. 20 governance obligations, supply chain security (Art. 26), gap assessments, policy drafting, ISO 27001 alignment, and penalty exposure analysis.",
+      "eval_page_key": "nis2",
+      "eval_page_name": "NIS2"
     },
     {
       "num": 18,
@@ -557,7 +591,9 @@
         "build a right-to-delete workflow meeting the 45-day deadline",
         "classify ad tech data flows as sale or sharing under CPRA"
       ],
-      "description": "California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) compliance advisor — business threshold analysis, consumer rights fulfillment, privacy notice drafting, service provider classification, sensitive personal information (SPI) handling, opt-out mechanisms (including GPC), CPPA enforcement, penalty exposure, and GDPR alignment."
+      "description": "California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA) compliance advisor — business threshold analysis, consumer rights fulfillment, privacy notice drafting, service provider classification, sensitive personal information (SPI) handling, opt-out mechanisms (including GPC), CPPA enforcement, penalty exposure, and GDPR alignment.",
+      "eval_page_key": "ccpa",
+      "eval_page_name": "CCPA/CPRA"
     },
     {
       "num": 19,
@@ -588,7 +624,9 @@
         "manage deemed export rules for foreign national employees",
         "prepare a voluntary self-disclosure after an ITAR violation"
       ],
-      "description": "Expert ITAR compliance advisor for US defense contractors, exporters, and manufacturers — USML classification, DDTC registration, export license applications (DSP-5/73/94), Technical Assistance Agreements (TAA), Manufacturing License Agreements (MLA), brokering regulations (Part 129), deemed export rules for foreign nationals, technology control plans, voluntary disclosures, violation mitigation, and Blue Lantern end-use checks. Use for any question about 22 CFR Parts 120-130, defense article/service classification, jurisdiction determination (ITAR vs EAR), or US Munitions List category scoping."
+      "description": "Expert ITAR compliance advisor for US defense contractors, exporters, and manufacturers — USML classification, DDTC registration, export license applications (DSP-5/73/94), Technical Assistance Agreements (TAA), Manufacturing License Agreements (MLA), brokering regulations (Part 129), deemed export rules for foreign nationals, technology control plans, voluntary disclosures, violation mitigation, and Blue Lantern end-use checks. Use for any question about 22 CFR Parts 120-130, defense article/service classification, jurisdiction determination (ITAR vs EAR), or US Munitions List category scoping.",
+      "eval_page_key": "itar",
+      "eval_page_name": "ITAR"
     },
     {
       "num": 20,
@@ -619,7 +657,9 @@
         "complete a RIPD data protection impact report",
         "handle an ANPD breach notification"
       ],
-      "description": "Brazil LGPD (Lei Geral de Proteção de Dados, Law 13,709/2018) compliance advisor — legal basis analysis (Arts. 7 & 11), data subject rights fulfilment (Art. 18), DPO/Encarregado appointment, ANPD breach notification (3-day preliminary / 20-day full report), DPIA/RIPD drafting, international transfer mechanisms, gap assessments, privacy notice drafting, consent management, penalty exposure analysis (fines up to 2% revenue / R$50M), and LGPD vs. GDPR comparison. Use for any Brazilian data protection or privacy compliance question."
+      "description": "Brazil LGPD (Lei Geral de Proteção de Dados, Law 13,709/2018) compliance advisor — legal basis analysis (Arts. 7 & 11), data subject rights fulfilment (Art. 18), DPO/Encarregado appointment, ANPD breach notification (3-day preliminary / 20-day full report), DPIA/RIPD drafting, international transfer mechanisms, gap assessments, privacy notice drafting, consent management, penalty exposure analysis (fines up to 2% revenue / R$50M), and LGPD vs. GDPR comparison. Use for any Brazilian data protection or privacy compliance question.",
+      "eval_page_key": "lgpd",
+      "eval_page_name": "LGPD"
     },
     {
       "num": 21,
@@ -650,7 +690,9 @@
         "run a double materiality assessment under revised ESRS",
         "build a Scope 3 emissions reporting programme"
       ],
-      "description": "EU CSRD (Corporate Sustainability Reporting Directive, EU 2022/2464) compliance advisor — scope & threshold analysis (large PIEs, other large, listed SMEs, non-EU), double materiality assessment (DMA), ESRS gap assessment, ESRS E1–E5 environmental disclosures, ESRS S1–S4 social disclosures, ESRS G1 governance, Scope 1/2/3 GHG emissions, transition plan drafting, assurance readiness, XBRL tagging, value chain reporting, and CSRD vs GRI/TCFD/SASB comparison."
+      "description": "EU CSRD (Corporate Sustainability Reporting Directive, EU 2022/2464) compliance advisor — scope & threshold analysis (large PIEs, other large, listed SMEs, non-EU), double materiality assessment (DMA), ESRS gap assessment, ESRS E1–E5 environmental disclosures, ESRS S1–S4 social disclosures, ESRS G1 governance, Scope 1/2/3 GHG emissions, transition plan drafting, assurance readiness, XBRL tagging, value chain reporting, and CSRD vs GRI/TCFD/SASB comparison.",
+      "eval_page_key": "csrd",
+      "eval_page_name": "CSRD"
     },
     {
       "num": 22,
@@ -681,7 +723,9 @@
         "run a CIS Controls v8 gap assessment",
         "map CIS safeguards to NIST CSF"
       ],
-      "description": "CIS Controls v8 (CIS Top 18) advisor — Implementation Group scoping (IG1/IG2/IG3), gap assessments across all 153 safeguards, asset/software inventory, data protection, secure configuration, MFA and access control, vulnerability management, audit log management, malware defenses, incident response, penetration testing, and CIS Controls mapping to NIST CSF 2.0, ISO 27001:2022, SOC 2, PCI DSS, and CMMC 2.0. Use for any CIS Controls, CIS Benchmarks, or prioritized cyber hygiene question."
+      "description": "CIS Controls v8 (CIS Top 18) advisor — Implementation Group scoping (IG1/IG2/IG3), gap assessments across all 153 safeguards, asset/software inventory, data protection, secure configuration, MFA and access control, vulnerability management, audit log management, malware defenses, incident response, penetration testing, and CIS Controls mapping to NIST CSF 2.0, ISO 27001:2022, SOC 2, PCI DSS, and CMMC 2.0. Use for any CIS Controls, CIS Benchmarks, or prioritized cyber hygiene question.",
+      "eval_page_key": "cis-controls",
+      "eval_page_name": "CIS Controls v8"
     },
     {
       "num": 23,
@@ -712,7 +756,9 @@
         "check encryption export license exceptions",
         "design an export compliance programme"
       ],
-      "description": "EAR (Export Administration Regulations) compliance advisor — ECCN classification across all 10 CCL categories, EAR99 determination, EAR vs ITAR jurisdiction via Order of Review, licence requirement analysis using the Commerce Country Chart, all 14 licence exceptions (LVS, GBS, CIV, ENC, TMP, GOV, TSU, and more), restricted party screening (Entity List, Denied Persons, Unverified List, OFAC SDN), deemed exports, FDPR, VSD process, and 7-element Export Compliance Programme design. Use for any dual-use export control or BIS compliance question."
+      "description": "EAR (Export Administration Regulations) compliance advisor — ECCN classification across all 10 CCL categories, EAR99 determination, EAR vs ITAR jurisdiction via Order of Review, licence requirement analysis using the Commerce Country Chart, all 14 licence exceptions (LVS, GBS, CIV, ENC, TMP, GOV, TSU, and more), restricted party screening (Entity List, Denied Persons, Unverified List, OFAC SDN), deemed exports, FDPR, VSD process, and 7-element Export Compliance Programme design. Use for any dual-use export control or BIS compliance question.",
+      "eval_page_key": "ear",
+      "eval_page_name": "EAR"
     },
     {
       "num": 24,
@@ -743,7 +789,9 @@
         "write federal SSP control narratives",
         "build a continuous monitoring strategy"
       ],
-      "description": "NIST SP 800-53 Rev 5 compliance advisor — all 20 control families, Low/Moderate/High baseline selection, FIPS 199/200 categorization, control tailoring, ODVs, overlays, privacy controls (PT family), supply chain (SR family), SSP narrative writing, assessment procedures (SP 800-53A), POA&M management, RMF steps (SP 800-37), continuous monitoring, OSCAL, and mapping to FedRAMP, FISMA, CMMC 2.0, and ISO 27001."
+      "description": "NIST SP 800-53 Rev 5 compliance advisor — all 20 control families, Low/Moderate/High baseline selection, FIPS 199/200 categorization, control tailoring, ODVs, overlays, privacy controls (PT family), supply chain (SR family), SSP narrative writing, assessment procedures (SP 800-53A), POA&M management, RMF steps (SP 800-37), continuous monitoring, OSCAL, and mapping to FedRAMP, FISMA, CMMC 2.0, and ISO 27001.",
+      "eval_page_key": "nist-800-53",
+      "eval_page_name": "NIST SP 800-53"
     },
     {
       "num": 25,
@@ -774,7 +822,9 @@
         "check if our use case is a prohibited AI practice",
         "determine GPAI model obligations"
       ],
-      "description": "EU AI Act (Regulation (EU) 2024/1689) compliance advisor — risk classification across all four tiers, all 8 prohibited practices (Art. 5), all 8 Annex III high-risk use case areas, provider and deployer obligations (Arts. 9–17, 26), GPAI model obligations and systemic risk (Arts. 51–55), conformity assessment and CE marking (Arts. 43–48), EU AI database registration, limited-risk transparency (Art. 50), governance (AI Office, AI Board), penalties (Art. 99), phase-in timeline, and cross-framework mapping to ISO 42001, NIST AI RMF, and GDPR."
+      "description": "EU AI Act (Regulation (EU) 2024/1689) compliance advisor — risk classification across all four tiers, all 8 prohibited practices (Art. 5), all 8 Annex III high-risk use case areas, provider and deployer obligations (Arts. 9–17, 26), GPAI model obligations and systemic risk (Arts. 51–55), conformity assessment and CE marking (Arts. 43–48), EU AI database registration, limited-risk transparency (Art. 50), governance (AI Office, AI Board), penalties (Art. 99), phase-in timeline, and cross-framework mapping to ISO 42001, NIST AI RMF, and GDPR.",
+      "eval_page_key": "eu-ai-act",
+      "eval_page_name": "EU AI Act"
     },
     {
       "num": 26,
@@ -805,7 +855,9 @@
         "audit our website for Section 508 compliance",
         "remediate PDFs for accessibility"
       ],
-      "description": "Expert Section 508 compliance advisor for US federal ICT accessibility — VPAT/ACR completion, WCAG 2.0 AA audits, remediation planning, PDF accessibility, procurement language, keyboard and screen reader testing, undue burden assessments, and agency compliance workflows."
+      "description": "Expert Section 508 compliance advisor for US federal ICT accessibility — VPAT/ACR completion, WCAG 2.0 AA audits, remediation planning, PDF accessibility, procurement language, keyboard and screen reader testing, undue burden assessments, and agency compliance workflows.",
+      "eval_page_key": "section-508",
+      "eval_page_name": "Section 508"
     },
     {
       "num": 27,
@@ -836,7 +888,9 @@
         "check color contrast and keyboard navigation issues",
         "write an accessibility conformance statement"
       ],
-      "description": "Expert WCAG (Web Content Accessibility Guidelines) advisor covering WCAG 2.0, 2.1, and 2.2 — all POUR principles, success criteria, conformance levels (A/AA/AAA), accessibility audits, ARIA patterns, colour contrast, keyboard accessibility, screen reader compatibility, mobile accessibility, cognitive accessibility, and global legal mappings (EN 301 549, EAA, ADA, Section 508)."
+      "description": "Expert WCAG (Web Content Accessibility Guidelines) advisor covering WCAG 2.0, 2.1, and 2.2 — all POUR principles, success criteria, conformance levels (A/AA/AAA), accessibility audits, ARIA patterns, colour contrast, keyboard accessibility, screen reader compatibility, mobile accessibility, cognitive accessibility, and global legal mappings (EN 301 549, EAA, ADA, Section 508).",
+      "eval_page_key": "wcag",
+      "eval_page_name": "WCAG"
     },
     {
       "num": 28,
@@ -867,7 +921,9 @@
         "prepare a certification and accreditation submission in New Zealand",
         "check NZISM cloud hosting requirements"
       ],
-      "description": "Expert New Zealand Information Security Manual (NZISM) advisor for NZ government agencies. Gap analysis, system certification & accreditation, classification framework guidance, control implementation, and GCSB/NCSC NZ compliance."
+      "description": "Expert New Zealand Information Security Manual (NZISM) advisor for NZ government agencies. Gap analysis, system certification & accreditation, classification framework guidance, control implementation, and GCSB/NCSC NZ compliance.",
+      "eval_page_key": "nzism",
+      "eval_page_name": "NZISM"
     },
     {
       "num": 29,
@@ -898,7 +954,9 @@
         "design consent mechanisms under Vietnam Law 91/2025",
         "assess Vietnamese cross-border data transfer obligations"
       ],
-      "description": "Expert Vietnam Personal Data Protection Law (PDPL) compliance advisor for Law No. 91/2025/QH15 and Decree 356/2025/ND-CP. Covers gap analysis, data subject rights, cross-border transfer impact assessments, DPIA, breach notification, and sector-specific rules."
+      "description": "Expert Vietnam Personal Data Protection Law (PDPL) compliance advisor for Law No. 91/2025/QH15 and Decree 356/2025/ND-CP. Covers gap analysis, data subject rights, cross-border transfer impact assessments, DPIA, breach notification, and sector-specific rules.",
+      "eval_page_key": "vn-pdpl",
+      "eval_page_name": "VN-PDPL"
     },
     {
       "num": 30,
@@ -929,7 +987,9 @@
         "run an Annex I security requirements gap assessment",
         "set up CRA vulnerability disclosure and ENISA reporting"
       ],
-      "description": "Expert EU Cyber Resilience Act (CRA) advisor for Regulation (EU) 2024/2847. Covers product classification, Annex I essential requirements, conformity assessment, CE marking, SBOM, vulnerability handling, ENISA reporting, and support period obligations."
+      "description": "Expert EU Cyber Resilience Act (CRA) advisor for Regulation (EU) 2024/2847. Covers product classification, Annex I essential requirements, conformity assessment, CE marking, SBOM, vulnerability handling, ENISA reporting, and support period obligations.",
+      "eval_page_key": "eu-cra",
+      "eval_page_name": "EU CRA"
     },
     {
       "num": 31,
@@ -960,7 +1020,9 @@
         "run an NCA Essential Cybersecurity Controls gap assessment",
         "navigate Saudi PDPL and SAMA cybersecurity requirements"
       ],
-      "description": "Saudi Arabia GRC advisor — a compliance router across NCA ECC-2:2024, Saudi PDPL (SDAIA), NCA Cloud Cybersecurity Controls, SAMA Cyber Security Framework, and CST cloud rules. Determines what applies first, then guides gap assessments, breach response, market entry, and ISO 27001/NIST/SOC 2 mapping."
+      "description": "Saudi Arabia GRC advisor — a compliance router across NCA ECC-2:2024, Saudi PDPL (SDAIA), NCA Cloud Cybersecurity Controls, SAMA Cyber Security Framework, and CST cloud rules. Determines what applies first, then guides gap assessments, breach response, market entry, and ISO 27001/NIST/SOC 2 mapping.",
+      "eval_page_key": "saudi-arabia-grc",
+      "eval_page_name": "Saudi Arabia GRC"
     },
     {
       "num": 32,
@@ -991,7 +1053,9 @@
         "navigate UAE PDPL, DIFC and ADGM data protection rules",
         "meet CBUAE outsourcing and data residency requirements"
       ],
-      "description": "UAE GRC advisor — a jurisdiction-first compliance router across the Federal PDPL, DIFC DP Law (as amended 2025), ADGM DP Regulations, CBUAE data and outsourcing rules, the ICT Health Law, and UAE IA/ISR/ADHICS cyber baselines. Determines mainland vs free-zone vs sector obligations first, then guides compliance."
+      "description": "UAE GRC advisor — a jurisdiction-first compliance router across the Federal PDPL, DIFC DP Law (as amended 2025), ADGM DP Regulations, CBUAE data and outsourcing rules, the ICT Health Law, and UAE IA/ISR/ADHICS cyber baselines. Determines mainland vs free-zone vs sector obligations first, then guides compliance.",
+      "eval_page_key": "uae-grc",
+      "eval_page_name": "UAE GRC"
     },
     {
       "num": 33,
@@ -1022,7 +1086,9 @@
         "map our ISO 27001 ISMS to VDA ISA requirements",
         "understand TISAX labels and assessment levels"
       ],
-      "description": "TISAX advisor for the automotive supply chain — VDA ISA 6 and the ISA2027 transition, assessment levels AL1-AL3, all 12 labels, maturity scoring with cutback, ENX portal process, corrective windows, and ISO 27001 mapping."
+      "description": "TISAX advisor for the automotive supply chain — VDA ISA 6 and the ISA2027 transition, assessment levels AL1-AL3, all 12 labels, maturity scoring with cutback, ENX portal process, corrective windows, and ISO 27001 mapping.",
+      "eval_page_key": "tisax",
+      "eval_page_name": "TISAX"
     }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "eval_id": 3,
+  "eval_name": "ot-segmentation",
+  "run_type": "with_skill",
+  "prompt": "The TSA security directives require network segmentation between OT and IT networks. We have legacy SCADA systems that were never designed to be on a segmented network. What is the practical approach to implementing segmentation for legacy OT environments?",
+  "assertions": [
+    "Addresses the specific challenge of legacy SCADA systems",
+    "Explains DMZ or boundary network approach",
+    "Mentions unidirectional security gateways or data diodes",
+    "Addresses compensating controls",
+    "References TSA requirements for OT environment protection"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

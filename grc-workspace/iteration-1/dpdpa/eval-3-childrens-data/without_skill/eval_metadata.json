@@ -1,0 +1,14 @@
+{
+  "eval_id": 3,
+  "eval_name": "childrens-data",
+  "run_type": "without_skill",
+  "prompt": "Our platform is used by users of all ages in India, including minors. What does DPDPA require for processing children's data? How does this compare to GDPR's requirements?",
+  "assertions": [
+    "States DPDPA age threshold of 18 years",
+    "Covers the requirement for verifiable parental/guardian consent",
+    "Lists prohibited processing categories",
+    "Addresses verification mechanisms prescribed by rules",
+    "States the penalty for children's data violations"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

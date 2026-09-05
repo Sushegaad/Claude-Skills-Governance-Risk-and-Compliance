@@ -1,0 +1,14 @@
+{
+  "eval_id": 106,
+  "eval_name": "cis-ig-determination",
+  "run_type": "with_skill",
+  "prompt": "We are a 75-person accounting firm...",
+  "assertions": [
+    "Correctly identifies IG2 (not just IG1) for the accounting firm",
+    "Explains the three IG criteria used to determine the Implementation Group",
+    "Recommends starting with Controls 1-2 (asset and software inventory)",
+    "Identifies MFA on Microsoft 365 as an immediate priority action",
+    "Mentions regulatory exposure (FTC Safeguards Rule or equivalent) driving security requirements"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

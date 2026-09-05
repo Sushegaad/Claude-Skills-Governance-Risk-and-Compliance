@@ -1,0 +1,14 @@
+{
+  "eval_id": 1,
+  "eval_name": "extension-to-27001",
+  "run_type": "with_skill",
+  "prompt": "What is ISO 27701 and how does it extend ISO 27001? We are already ISO 27001 certified. What additional work is needed to achieve ISO 27701 certification?",
+  "assertions": [
+    "Explains ISO 27701 as a privacy extension (PIMS) to ISO 27001",
+    "Distinguishes requirements for PII controllers vs PII processors",
+    "Describes what additional controls are required beyond ISO 27001",
+    "Explains that ISO 27701 cannot be certified standalone (2019) / requires ISO 27001 as prerequisite",
+    "Mentions the relationship to GDPR and other privacy regulations"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

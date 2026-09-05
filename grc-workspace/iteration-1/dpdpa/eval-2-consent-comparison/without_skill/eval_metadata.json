@@ -1,0 +1,14 @@
+{
+  "eval_id": 2,
+  "eval_name": "consent-comparison",
+  "run_type": "without_skill",
+  "prompt": "Compare DPDPA consent requirements with GDPR consent requirements. What are the key differences our compliance team needs to know?",
+  "assertions": [
+    "Identifies 'unconditional' as a DPDPA consent requirement not explicitly in GDPR",
+    "Explains that bundled consent is explicitly prohibited under DPDPA",
+    "Highlights the absence of legitimate interests basis under DPDPA",
+    "Mentions the Consent Manager mechanism unique to DPDPA",
+    "Addresses the withdrawal of consent requirements in both frameworks"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

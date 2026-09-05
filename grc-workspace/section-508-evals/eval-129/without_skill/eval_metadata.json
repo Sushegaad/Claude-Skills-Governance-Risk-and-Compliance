@@ -1,0 +1,14 @@
+{
+  "eval_id": 129,
+  "eval_name": "eval-129",
+  "run_type": "without_skill",
+  "prompt": "Our agency is procuring a new case management system. What Section 508 requirements do we need to include in our RFP, how should we evaluate the vendor's VPAT responses, and what are the most common VPAT deficiencies we should watch for?",
+  "assertions": [
+    "References FAR clause 52.239-2 or FAR Subpart 39.2 as the procurement mandate",
+    "Specifies requiring a VPAT 2.x (WCAG Edition) from vendors — not an older template version",
+    "Lists at least 3 common VPAT deficiencies (e.g., outdated template, unsupported Supports claims without evidence, overuse of Not Applicable, missing testing methodology)",
+    "Recommends including remediation SLAs in the contract (e.g., timeline for fixing critical vs. moderate issues post-award)",
+    "States that the VPAT must match the exact product version being procured"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

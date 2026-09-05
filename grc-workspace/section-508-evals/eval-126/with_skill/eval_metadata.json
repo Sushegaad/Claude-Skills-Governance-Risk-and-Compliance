@@ -1,0 +1,14 @@
+{
+  "eval_id": 126,
+  "eval_name": "eval-126",
+  "run_type": "with_skill",
+  "prompt": "We are a SaaS vendor preparing to respond to a federal agency RFP that requires a VPAT. Our product is a web-based project management tool. Walk us through how to complete an Accessibility Conformance Report (ACR) using the VPAT 2.x WCAG Edition template, what conformance levels mean, and what testing we need to do first.",
+  "assertions": [
+    "Explains the four conformance levels: Supports, Partially Supports, Does Not Support, Not Applicable",
+    "References the VPAT 2.x WCAG Edition (not an older version) and mentions the ITI template",
+    "Explains the three main VPAT tables: Level A success criteria, Level AA success criteria, and Functional Performance Criteria",
+    "Specifies at least two assistive technology + browser combinations required for testing (e.g., JAWS + Chrome, NVDA + Firefox, VoiceOver + Safari)",
+    "Mentions automated testing tools (e.g., axe, WAVE, Lighthouse) as a first step, noting they catch only a portion of issues"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

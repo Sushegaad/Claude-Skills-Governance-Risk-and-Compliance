@@ -1,0 +1,14 @@
+{
+  "eval_id": 110,
+  "eval_name": "cis-vuln-mgmt",
+  "run_type": "with_skill",
+  "prompt": "Walk me through CIS Control 7 (Continuous Vulnerability Management)...",
+  "assertions": [
+    "Lists all 7 safeguards (7.1–7.7) with their titles",
+    "Correctly assigns safeguards 7.1–7.4 to IG1 and 7.5–7.7 to IG2",
+    "States Critical CVSS SLA of 15 days and High CVSS SLA of 30 days",
+    "States quarterly scans are insufficient for IG2",
+    "Explains that 15-day Critical SLA cannot be met with quarterly scanning"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

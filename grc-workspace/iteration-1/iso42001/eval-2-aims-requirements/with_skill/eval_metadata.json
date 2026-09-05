@@ -1,0 +1,14 @@
+{
+  "eval_id": 2,
+  "eval_name": "aims-requirements",
+  "run_type": "with_skill",
+  "prompt": "Walk us through the key requirements of ISO 42001 for an organization that develops AI products. What policies, processes, and documentation do we need?",
+  "assertions": [
+    "Covers the AI policy requirement as a foundational element",
+    "Addresses AI risk assessment methodology requirements",
+    "Mentions AI impact assessment (AIIA) requirements",
+    "Covers data quality and data governance requirements",
+    "Addresses transparency and explainability as ISO 42001 objectives"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

@@ -1,0 +1,14 @@
+{
+  "eval_id": 1,
+  "eval_name": "us-company-applicability",
+  "run_type": "with_skill",
+  "prompt": "We are a US technology company that has just acquired Indian customers. Does India's Digital Personal Data Protection Act (DPDPA) apply to us? What are our key obligations as a Data Fiduciary?",
+  "assertions": [
+    "Confirms DPDPA applies to foreign entities offering goods/services to India-based individuals",
+    "Explains the two grounds for processing (consent + 8 legitimate uses under Section 7)",
+    "Covers the notice requirement under Section 5",
+    "Addresses data breach notification obligation (72 hours to DPBI)",
+    "Explains Data Principal rights (Sections 11-14)"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

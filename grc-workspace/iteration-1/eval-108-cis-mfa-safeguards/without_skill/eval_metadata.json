@@ -1,0 +1,14 @@
+{
+  "eval_id": 108,
+  "eval_name": "cis-mfa-safeguards",
+  "run_type": "without_skill",
+  "prompt": "Which specific CIS Controls v8 safeguards require MFA...",
+  "assertions": [
+    "Identifies exactly 3 MFA safeguards: 6.3, 6.4, and 6.5",
+    "Correctly assigns all 3 MFA safeguards to IG2",
+    "Explains phishing-resistant MFA (FIDO2/passkeys/hardware keys)",
+    "Explains SMS OTP vulnerabilities (SIM swap, AiTM/real-time phishing)",
+    "Notes CIS flags SMS OTP for privileged access as an explicit pitfall"
+  ],
+  "_backfilled": "2026-09-05 from published eval page / grading.json (legacy artifacts lacked metadata)"
+}

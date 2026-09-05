@@ -1,0 +1,14 @@
+{
+  "eval_id": 5,
+  "eval_name": "management-review",
+  "run_type": "with_skill",
+  "prompt": "We received a major nonconformity during our ISO 27001 audit for 'insufficient evidence of management review.' What exactly does management review require, what evidence should we have documented, and how do we write a corrective action plan to close this nonconformity?",
+  "assertions": [
+    "References clause 9.3 of ISO 27001 for management review",
+    "Lists required management review inputs",
+    "Lists required management review outputs",
+    "Provides corrective action plan structure with root cause analysis",
+    "Mentions evidence/records that satisfy the requirement"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

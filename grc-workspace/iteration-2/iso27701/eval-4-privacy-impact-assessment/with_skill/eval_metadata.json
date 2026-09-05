@@ -1,0 +1,14 @@
+{
+  "eval_id": 4,
+  "eval_name": "privacy-impact-assessment",
+  "run_type": "with_skill",
+  "prompt": "We are conducting a Privacy Impact Assessment (PIA) as required by ISO 27701. What is the methodology? What triggers a PIA and what must it include?",
+  "assertions": [
+    "Identifies triggers for when a PIA is required",
+    "Lists required elements of a PIA under ISO 27701",
+    "Addresses risk assessment methodology within PIA",
+    "Explains the relationship between ISO 27701 PIA and GDPR DPIA",
+    "Covers documentation and sign-off requirements"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}

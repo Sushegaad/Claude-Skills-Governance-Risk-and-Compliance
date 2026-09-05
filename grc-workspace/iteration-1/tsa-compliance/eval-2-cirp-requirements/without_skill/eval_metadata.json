@@ -1,0 +1,14 @@
+{
+  "eval_id": 2,
+  "eval_name": "cirp-requirements",
+  "run_type": "without_skill",
+  "prompt": "What is a Cybersecurity Incident Response Plan (CIRP) for TSA purposes? What must it include and how often must it be tested?",
+  "assertions": [
+    "Lists the required elements of a TSA-compliant CIRP",
+    "Addresses roles and responsibilities for incident response",
+    "Covers coordination with government agencies in incident response",
+    "States the annual testing/exercise requirement",
+    "Mentions plan review and update requirements"
+  ],
+  "_backfilled": "2026-09-05 from published eval page (legacy artifacts lacked metadata)"
+}
