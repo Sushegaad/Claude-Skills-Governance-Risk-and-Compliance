@@ -29,9 +29,10 @@ nav.nav a:hover{color:var(--color-accent-800);text-decoration-color:var(--color-
 nav.nav > span:last-child{color:var(--color-neutral-600) !important}
 a[href^="#section-"]{text-decoration:underline !important;text-decoration-color:var(--color-accent-300);text-underline-offset:4px}
 a[href^="#section-"]:hover{color:var(--color-accent-800) !important;text-decoration-color:var(--color-accent-700)}
-/* Tab hover: bold + underlined. Bold is simulated with a text-shadow so the
-   tab's width does not change and the row does not jitter on hover. */
-[data-tab]:hover{color:var(--color-text) !important;border-bottom-color:var(--color-accent) !important;text-shadow:0.4px 0 0 currentColor,-0.4px 0 0 currentColor}
+/* Tabs: bold and dark at rest so they read as menu options;
+   full accent underline on hover (selected tab is underlined already). */
+[data-tab]{color:var(--color-text) !important;font-weight:600 !important}
+[data-tab]:hover{border-bottom-color:var(--color-accent) !important}
 </style>
 <script src="./support.js"></script>
 </head>
