@@ -29,12 +29,13 @@ nav.nav a:hover{color:var(--color-accent-800);text-decoration-color:var(--color-
 nav.nav > span:last-child{color:var(--color-neutral-600) !important}
 a[href^="#section-"]{text-decoration:underline !important;text-decoration-color:var(--color-accent-300);text-underline-offset:4px}
 a[href^="#section-"]:hover{color:var(--color-accent-800) !important;text-decoration-color:var(--color-accent-700)}
-/* Tabs as pills: bold dark labels at rest, selected tab is a solid accent
-   pill with white text, hover is a cream pill with an accent outline. */
-[role="tablist"] > div{gap:8px !important;padding-top:8px;padding-bottom:8px}
-[data-tab]{color:var(--color-text) !important;font-weight:600 !important;font-size:16px !important;border:1px solid transparent !important;border-radius:999px !important;padding:7px 14px !important;margin-bottom:0 !important}
+/* Menu: dark band with large pill tabs. Selected tab is a solid accent pill
+   with white text; hover is a translucent pill with an accent outline. */
+[role="tablist"]{background:#2b2620 !important;border-bottom:0 !important;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+[role="tablist"] > div{gap:10px !important;padding-top:10px;padding-bottom:10px}
+[data-tab]{color:#f5efe2 !important;font-weight:600 !important;font-size:17px !important;border:1px solid transparent !important;border-radius:999px !important;padding:9px 18px !important;margin-bottom:0 !important}
 [data-tab][aria-selected="true"]{background:var(--color-accent) !important;color:#fff !important}
-[data-tab]:hover:not([aria-selected="true"]){background:var(--color-accent-100) !important;border-color:var(--color-accent) !important}
+[data-tab]:hover:not([aria-selected="true"]){background:rgba(255,255,255,.12) !important;border-color:var(--color-accent-300) !important;color:#fff !important}
 </style>
 <script src="./support.js"></script>
 </head>
