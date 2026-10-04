@@ -13,6 +13,10 @@ Generated blocks (between  <!-- GEN:<name> -->  /  <!-- /GEN:<name> -->  markers
   README.md        readme-eval-table
   INSTALLATION.md  install-commands, install-all, plugin-tables
 
+Generated whole files:
+  ai-catalog.json    ARD capability manifest
+  skills-index.json  client-side search index fetched by index.html
+
 Usage:
   python scripts/build_docs.py          # regenerate blocks in place
   python scripts/build_docs.py --check  # exit 1 if any generated block is stale
@@ -87,7 +91,7 @@ def render_eval_table(skills, stats):
     for s in skills:
         st = stats[s["plugin"]]
         rows.append(
-            '<tr><td style="text-align:center;font-weight:600;color:#64748b">'
+            '<tr><td style="text-align:center;font-weight:600;color:var(--color-neutral-600)">'
             f'{s["num"]}</td><td>{s["eval_html"]}</td><td>{s["eval"]["cases"]}</td>'
             f'<td><strong>{st["with"]}%</strong></td><td>{st["base"]}%</td>'
             f'<td>{_delta_disp(st["with"], st["base"])}</td>'
@@ -318,6 +322,47 @@ def render_eval_accordions(skills, agg, tec):
     return "\n      ".join(out)
 
 
+def render_skills_index(skills, index_html):
+    """Client-side search index (skills-index.json), fetched by index.html.
+
+    One entry per skill card: {id, region[], category, domains[], text}.
+    Filter facets come from skills.json; the searchable text blob is the
+    card's own rendered text extracted from index.html, so the index can
+    never disagree with what the visitor sees on the card.
+    """
+    import html as _html
+
+    entries = []
+    for s in skills:
+        m = re.search(
+            r'<div id="%s" data-region="([^"]*)" data-category="([^"]*)" '
+            r'data-domains="([^"]*)"' % re.escape(s["id"]),
+            index_html,
+        )
+        if not m:
+            raise SystemExit(f'ERROR: no card div with id="{s["id"]}" in index.html')
+        region, category, domains = m.group(1).split(), m.group(2), m.group(3).split()
+        # Cross-check the card's facet attributes against the manifest.
+        if (region != s["region"].split() or category != s["category_key"]
+                or domains != s["domains"].split()):
+            raise SystemExit(f'ERROR: card facets for "{s["id"]}" disagree with skills.json')
+        # Balanced-div scan: card text = everything inside the card div.
+        start = index_html.find(">", m.start()) + 1
+        depth, end = 1, None
+        for t in re.finditer(r"<div\b|</div>", index_html[start:]):
+            depth += 1 if t.group(0) == "<div" else -1
+            if depth == 0:
+                end = start + t.start()
+                break
+        if end is None:
+            raise SystemExit(f'ERROR: unbalanced card div for "{s["id"]}" in index.html')
+        text = _html.unescape(re.sub(r"<[^>]+>", " ", index_html[m.start():end]))
+        text = re.sub(r"\s+", " ", text).lower()
+        entries.append({"id": s["id"], "region": region, "category": category,
+                        "domains": domains, "text": text})
+    return json.dumps(entries, ensure_ascii=False, separators=(",", ":"))
+
+
 def render_ai_catalog(skills, stats):
     """ARD capability manifest (ai-catalog spec v1.0 / ARD v0.9).
 
@@ -410,10 +455,29 @@ def main():
         },
     }
 
-    # Whole-file target: the ARD capability manifest
-    full_files = {REPO / "ai-catalog.json": render_ai_catalog(skills, stats)}
-
     stale = []
+    index_html_final = None
+    for path, blocks in targets.items():
+        original = path.read_text(encoding="utf-8")
+        updated = original
+        for name, body in blocks.items():
+            updated = replace_block(updated, name, body, path)
+        if path.name == "index.html":
+            index_html_final = updated
+        if updated != original:
+            if check:
+                stale.append(path.name)
+            else:
+                path.write_text(updated, encoding="utf-8")
+                print(f"regenerated blocks in {path.name}")
+
+    # Whole-file targets: the ARD capability manifest and the client-side
+    # search index. skills-index.json is derived from the (post-block-update)
+    # index.html card markup, so it is computed after the block pass.
+    full_files = {
+        REPO / "ai-catalog.json": render_ai_catalog(skills, stats),
+        REPO / "skills-index.json": render_skills_index(skills, index_html_final),
+    }
     for path, body in full_files.items():
         current = path.read_text(encoding="utf-8") if path.exists() else None
         if current != body:
@@ -422,18 +486,6 @@ def main():
             else:
                 path.write_text(body, encoding="utf-8")
                 print(f"regenerated {path.name}")
-
-    for path, blocks in targets.items():
-        original = path.read_text(encoding="utf-8")
-        updated = original
-        for name, body in blocks.items():
-            updated = replace_block(updated, name, body, path)
-        if updated != original:
-            if check:
-                stale.append(path.name)
-            else:
-                path.write_text(updated, encoding="utf-8")
-                print(f"regenerated blocks in {path.name}")
 
     if check:
         if stale:

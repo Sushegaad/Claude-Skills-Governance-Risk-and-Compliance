@@ -819,10 +819,15 @@ def _parse_readme_summary(content: str) -> dict:
 
 
 def _parse_index_summary(content: str) -> dict:
-    """Extract the overall summary from index.html's stat-grid."""
-    w = re.search(r'<div class="value">(\d+)%</div>\s*<div class="label">With GRC Skills installed<br\s*/?><small>(\d+)\s*/\s*(\d+) assertions passed</small>', content)
-    b = re.search(r'<div class="value">(\d+)%</div>\s*<div class="label">Baseline Claude \(no skills\)<br\s*/?><small>(\d+)\s*/\s*(\d+) assertions passed</small>', content)
-    d = re.search(r'<div class="value">\+(\d+)</div>\s*<div class="label">Point improvement<br\s*/?><small>\+(\d+) additional assertions passed</small>', content)
+    """Extract the overall summary from index.html's stat cards.
+
+    Markup-tolerant: matches the value div followed by the labelled small
+    text, whether the divs carry classes (old design) or inline styles
+    (Classical design system).
+    """
+    w = re.search(r'>(\d+)%</div>\s*<div[^>]*>With GRC Skills installed<br\s*/?><small[^>]*>(\d+)\s*/\s*(\d+) assertions passed</small>', content)
+    b = re.search(r'>(\d+)%</div>\s*<div[^>]*>Baseline Claude \(no skills\)<br\s*/?><small[^>]*>(\d+)\s*/\s*(\d+) assertions passed</small>', content)
+    d = re.search(r'>\+(\d+)</div>\s*<div[^>]*>Point improvement<br\s*/?><small[^>]*>\+(\d+) additional assertions passed</small>', content)
     assert w and b and d, "index.html stat-grid entries not found"
     return {
         "with_pct": int(w.group(1)), "with_passed": int(w.group(2)), "total": int(w.group(3)),
