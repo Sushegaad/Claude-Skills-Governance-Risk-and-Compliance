@@ -23,6 +23,13 @@
   nav.nav > span:last-child{display:none}
   nav.nav .nav-brand{white-space:nowrap;font-size:16px}
 }
+/* Link affordance: make clickable things look clickable. */
+nav.nav a{text-decoration:underline !important;text-decoration-color:var(--color-accent-300);text-underline-offset:3px}
+nav.nav a:hover{color:var(--color-accent-800);text-decoration-color:var(--color-accent-700)}
+nav.nav > span:last-child{color:var(--color-neutral-600) !important}
+a[href^="#section-"]{text-decoration:underline !important;text-decoration-color:var(--color-accent-300);text-underline-offset:4px}
+a[href^="#section-"]:hover{color:var(--color-accent-800) !important;text-decoration-color:var(--color-accent-700)}
+[data-tab]:hover{color:var(--color-text) !important;border-bottom-color:var(--color-accent-300) !important}
 </style>
 <script src="./support.js"></script>
 </head>
