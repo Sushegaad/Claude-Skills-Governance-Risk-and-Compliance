@@ -3560,7 +3560,13 @@ class Component extends DCLogic {
     if (!bar) return;
     const nav = document.querySelector('nav.nav');
     const navH = nav ? nav.offsetHeight : 0;
-    const top = bar.getBoundingClientRect().top + window.scrollY - navH;
+    // The bar is position:sticky, so both its rect and offsetTop report the
+    // stuck position while scrolled. Its natural flow position is the bottom
+    // of the (non-sticky) element right before it.
+    const ref = bar.previousElementSibling;
+    const barTop = (ref ? ref.getBoundingClientRect().bottom
+                        : bar.getBoundingClientRect().top) + window.scrollY;
+    const top = barTop - navH;
     if (window.scrollY > top) window.scrollTo({ top });
   }
   toggle(group, v) { this.setState(s => { const n = new Set(s[group]); n.has(v) ? n.delete(v) : n.add(v); return { [group]: n }; }); }
