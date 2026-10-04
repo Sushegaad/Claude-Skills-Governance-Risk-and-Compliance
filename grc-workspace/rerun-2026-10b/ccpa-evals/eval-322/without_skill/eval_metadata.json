@@ -1,0 +1,13 @@
+{
+  "eval_id": 322,
+  "eval_name": "kids-2026-session",
+  "run_type": "without_skill",
+  "prompt": "We build consumer apps used by teenagers. What did California's 2026 legislative session change for us?",
+  "assertions": [
+    "Covers AB 2246: repeals/replaces the Age-Appropriate Design Code with a reasonable-steps framework — default ban on profiling minors, opt-in consent structure, dark-pattern prohibitions",
+    "Covers AB 1709: bans addictive features (personalized algorithmic feeds, autoplay, push notifications) for users under 16, with penalties up to $50,000 per affected minor",
+    "Covers the chatbot pair: SB 1119 (companion-chatbot child-safety duties — risk assessments, crisis protocols; core obligations July 1, 2027) and SB 867 (ban on companion-chatbot toys, sunsetting 2031)",
+    "Gets effective dates right: January 1, 2027 default for the package (signed September 10, 2026), with SB 1119's later core date",
+    "Gives compliance advice: age-assurance posture (AB 1856 OS signals), feature audits for under-16 experiences, profiling defaults"
+  ]
+}

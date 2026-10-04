@@ -1,0 +1,33 @@
+{
+  "eval_id": 324,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Cites the registration blitz: SalesIntel Research fined $36,400 (September 1, 2026) for failing to register while selling Californians' PI",
+      "passed": true,
+      "evidence": "\"The CPPA fined SalesIntel Research $36,400 on September 1, 2026 for failing to register as a data broker.\""
+    },
+    {
+      "text": "Cites Enforcement Advisory 2026-01 (September 3, 2026): registration-information ACCURACY, with $200/day exposure for incorrect registry entries",
+      "passed": true,
+      "evidence": "\"Enforcement Advisory 2026-01 (September 3). It targets the accuracy of registration information, not only the fact of registration. Exposure is $200 per day.\""
+    },
+    {
+      "text": "States DROP mechanics: deletion-request processing went live August 1, 2026, and brokers must process DROP requests",
+      "passed": true,
+      "evidence": "\"DROP is live. The Delete Request and Opt-out Platform has been processing consumer deletion requests since August 1, 2026. As a registered broker, you must retrieve and process DROP deletion requests on the required cycle.\""
+    },
+    {
+      "text": "Mentions AB 883 (signed September 27): broker DSR response deadline cut from 45 to 30 days plus DROP notice duties",
+      "passed": true,
+      "evidence": "\"AB 883 cuts the data-broker consumer-request deadline from 45 days to 30 days and adds DROP notice requirements.\" (Signing date not stated but nothing contradicts it.)"
+    },
+    {
+      "text": "Gives a compliance checklist: registration accuracy review, DROP integration, metrics disclosures, deletion workflows",
+      "passed": false,
+      "evidence": "Checklist covers registration accuracy (\"Audit your registration entry against reality\"), DROP integration (\"Confirm that you pull and process DROP files on schedule\") and deletion workflows (\"Rebuild the request workflow to the 30-day standard\"), but metrics disclosures are never mentioned. Compound assertion not fully met."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

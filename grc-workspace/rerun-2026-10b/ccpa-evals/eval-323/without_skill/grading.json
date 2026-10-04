@@ -1,0 +1,33 @@
+{
+  "eval_id": 323,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States yes, with the statutory mechanism: consumers hold the right to LIMIT use/disclosure of sensitive PI — there is no categorical ban",
+      "passed": true,
+      "evidence": "\"Short answer: yes, in most cases you can\"; \"The CCPA does not ban selling or sharing SPI\"; \"Right to limit use and disclosure of SPI... you must offer a 'Limit the Use of My Sensitive Personal Information' link.\""
+    },
+    {
+      "text": "Reports the veto correctly: AB 1542, which would have categorically banned selling/sharing sensitive PI, was vetoed September 27, 2026 ('a step too far')",
+      "passed": false,
+      "evidence": "AB 1542 and the September 27, 2026 veto are never mentioned; closest is \"bills such as AB 1355 have sought tighter limits. Check whether a 2026 bill passed.\""
+    },
+    {
+      "text": "Does NOT claim SB 435 was vetoed — it died in Assembly Appropriations in August 2026 (a response attributing the veto to SB 435 fails)",
+      "passed": true,
+      "evidence": "SB 435 is never mentioned, so no veto is misattributed to it. Negative assertion satisfied."
+    },
+    {
+      "text": "Covers the operative sensitive-PI duties: notice, purpose limitation, the Limit link/signal honoring",
+      "passed": true,
+      "evidence": "\"Notice at collection must list SPI categories, purposes, whether sold or shared, and retention periods\"; \"beyond a narrow list of permitted purposes\"; \"you must offer a 'Limit the Use of My Sensitive Personal Information' link\" and \"honor opt-out preference signals such as Global Privacy Control.\""
+    },
+    {
+      "text": "Flags trajectory: legislative pressure on sensitive-data sales continues — design for restriction",
+      "passed": true,
+      "evidence": "\"bills such as AB 1355 have sought tighter limits\"; \"consider whether you really need to sell SPI. Many companies decide that the legal and reputational cost justifies not selling it at all.\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

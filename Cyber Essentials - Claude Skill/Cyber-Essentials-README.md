@@ -17,4 +17,4 @@ Readiness gap assessments with auto-fail flags · scope statements · question-s
 **Trigger phrases:** `Cyber Essentials`, `Cyber Essentials Plus`, `CE+`, `IASME`, `Danzell`, `NCSC certification`, `PPN 014`, `MoD supply chain`, `UK government contract security`
 
 ---
-Skill version: 2.0.0 — September 2026
+Skill version: 2.1.0 — October 2026

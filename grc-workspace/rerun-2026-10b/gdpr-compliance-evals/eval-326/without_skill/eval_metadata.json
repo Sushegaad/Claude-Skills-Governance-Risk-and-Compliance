@@ -1,0 +1,13 @@
+{
+  "eval_id": 326,
+  "eval_name": "google-fine-lessons",
+  "run_type": "without_skill",
+  "prompt": "We run a consumer app with several location-related settings. What does the September 2026 Google decision mean for how we design them?",
+  "assertions": [
+    "Cites the decision: the Irish DPC fined Google Ireland €403,000,000 (final September 21, 2026) as lead supervisory authority",
+    "Identifies the processing: location data across Web & App Activity, Location History and Location Accuracy",
+    "States the findings across the ladder: unlawful/unfair processing, transparency failures (Arts. 12/13), accountability gaps, and retention longer than necessary — Arts. 5, 6, 12, 13",
+    "Mentions the 6-month compliance order (and treats any appeal as reported, not confirmed)",
+    "Draws design lessons: each location feature needs its own lawful basis, specific transparency and retention limits — bundled 'improve your experience' framing across settings is the failure pattern"
+  ]
+}

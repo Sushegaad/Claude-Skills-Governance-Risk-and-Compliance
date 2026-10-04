@@ -1,6 +1,6 @@
 {
   "name": "sox-itgc",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "SOX ITGC advisor — the four IT general control domains auditors test for SOX 404 (access, change management, operations, development), system scoping, risk-and-control matrices, control narratives and test scripts, deficiency evaluation (AS 2201 / Reg S-X ladder), remediation planning, filer-status and IPO timelines, COSO 2013 alignment.",
   "author": {
     "name": "Hemant Naik",

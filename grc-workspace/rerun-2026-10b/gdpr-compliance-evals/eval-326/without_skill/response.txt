@@ -1,0 +1,36 @@
+A caveat first: I can't verify the details of a September 2026 decision involving Google, and I don't want to invent its holding. Please send me the decision (court, authority, case number) and I can map it precisely. What follows is how I would approach location-setting design under GDPR and ePrivacy, based on the established law and guidance that any such decision would sit within. Treat it as a design framework, not an analysis of that ruling.
+
+1. Location data is personal data, and often sensitive in effect
+Precise location (GPS, Wi-Fi, Bluetooth beacons) is personal data under Art. 4(1). It is not a special category by default, but regulators treat it as high-risk. It can reveal religion (place of worship), health (clinics), sexual orientation or political views, and the EDPB and CJEU (Meta v Bundeskartellamt, C-252/21) accept that inferences from data can bring Art. 9 into play. Location history also feeds DPIA triggers (large-scale tracking, vulnerable users, innovative tech).
+
+2. Consent under ePrivacy and GDPR
+- Accessing the device's location, or storing or reading information on the terminal, engages Art. 5(3) ePrivacy Directive, which requires consent in most cases. Where location comes from a telecom operator, Art. 9 ePrivacy also requires consent.
+- Consent must meet GDPR standards (Arts. 4(11), 7): freely given, specific, informed, unambiguous, as easy to withdraw as to give.
+- The OS permission prompt is not enough on its own. It does not tell users who processes the data, for what purposes, or for how long. Pair it with an in-app explanation before the prompt.
+
+3. Design implications for multiple location settings
+- Granularity: separate settings for precise, approximate and none. Default to the least invasive that delivers the feature. Many features (weather, local content) work with city-level data.
+- Purpose separation: "location for the core feature", "location for personalisation", "location for ads or analytics" and "location for product improvement" should be separate, unbundled choices. Consent for one purpose cannot be assumed for another.
+- No dark patterns: equal prominence for accept and decline, no pre-ticked boxes, no repeated nagging after refusal, no degraded service where location is not necessary (Art. 7(4), EDPB guidelines on deceptive design patterns).
+- Background versus foreground: "while using" and "always" are materially different. Require a separate, specific opt-in for background collection and remind users periodically that it is on.
+- Consistency across surfaces: if a user turns off location in one account setting but a different setting (ad personalisation, "web and app activity", history) still lets inferred or IP-derived location be used, regulators will see that as misleading. The settings must map to actual data flows. Check that IP-based, Wi-Fi-based and inferred location are all covered by what you tell users.
+- Withdrawal and deletion: turning a setting off should stop collection immediately, and you need a way to delete stored history. Auto-delete defaults (for example 3 months) support storage limitation under Art. 5(1)(e).
+- Transparency: explain in plain language what each setting does, who receives the data (including ad partners and SDKs), and retention. Layer notices and just-in-time prompts (Arts. 12-14).
+- Children: if minors use the app, apply Art. 8, default off, and heightened scrutiny.
+
+4. Governance steps
+- Do a DPIA on location features.
+- Map every SDK and third party that receives location, and set data processing agreements or joint-controller arrangements.
+- Keep consent records (what was shown, when, which version).
+- Apply data minimisation and privacy by default (Art. 25). The default state of every location setting should be the most protective one.
+- Audit whether settings labels match behaviour. In practice, the major enforcement risk is a gap between what the UI says and what systems do.
+- Check international transfers if location data leaves the EEA.
+
+5. Practical next steps
+1. Inventory every location signal and purpose.
+2. Rebuild settings around purpose-specific, granular, default-off choices.
+3. Test the UI for dark patterns with a user-research review.
+4. Update the privacy notice and the record of processing.
+5. Review the actual decision when you share it, and adjust for any specific holding on consent granularity, default states, or how settings must reflect data flows.
+
+If you send the decision text, I will give you a specific gap analysis.

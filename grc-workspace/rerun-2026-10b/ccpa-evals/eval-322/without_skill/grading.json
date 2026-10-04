@@ -1,0 +1,33 @@
+{
+  "eval_id": 322,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Covers AB 2246: repeals/replaces the Age-Appropriate Design Code with a reasonable-steps framework — default ban on profiling minors, opt-in consent structure, dark-pattern prohibitions",
+      "passed": false,
+      "evidence": "AB 2246 never appears. The AADC is described as still on the books (\"AB 2273: largely enjoined in NetChoice litigation, so enforcement is uncertain\") with no mention of its repeal/replacement."
+    },
+    {
+      "text": "Covers AB 1709: bans addictive features (personalized algorithmic feeds, autoplay, push notifications) for users under 16, with penalties up to $50,000 per affected minor",
+      "passed": false,
+      "evidence": "AB 1709 never appears; the response discusses the older SB 976 (\"restricts addictive feeds for minors without parental consent\") and admits \"I cannot confirm which passed\" for 2026 bills. No $50,000-per-minor penalty."
+    },
+    {
+      "text": "Covers the chatbot pair: SB 1119 (companion-chatbot child-safety duties — risk assessments, crisis protocols; core obligations July 1, 2027) and SB 867 (ban on companion-chatbot toys, sunsetting 2031)",
+      "passed": false,
+      "evidence": "Neither SB 1119 nor SB 867 appears; only the 2025 law SB 243 (\"companion chatbots, effective January 1, 2026\") is covered."
+    },
+    {
+      "text": "Gets effective dates right: January 1, 2027 default for the package (signed September 10, 2026), with SB 1119's later core date",
+      "passed": false,
+      "evidence": "No September 10, 2026 package, no January 1, 2027 package default, no July 1, 2027 SB 1119 date; the response states \"my knowledge of the 2026 session is incomplete.\""
+    },
+    {
+      "text": "Gives compliance advice: age-assurance posture (AB 1856 OS signals), feature audits for under-16 experiences, profiling defaults",
+      "passed": false,
+      "evidence": "Age-assurance advice keys off AB 1043 (\"Design for receiving age signals under AB 1043 from January 1, 2027\"), not AB 1856; no feature audit of under-16 engagement features (only \"Audit ad and analytics SDKs\"). Compound elements not met."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

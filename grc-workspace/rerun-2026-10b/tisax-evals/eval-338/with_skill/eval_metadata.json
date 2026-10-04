@@ -1,0 +1,13 @@
+{
+  "eval_id": 338,
+  "eval_name": "prototype-labels",
+  "run_type": "with_skill",
+  "prompt": "We handle prototype vehicle testing for OEMs. Which labels and assessment level do we need going into 2027?",
+  "assertions": [
+    "Explains the ISA2027 PTS structure: Prototype Protection Basic (assessed at AL2) vs Prototype Protection Facilities (AL3), with Facilities including Basic's scope",
+    "Maps the need: physical test facilities/vehicles imply the Facilities label at AL3 (on-site assessment)",
+    "Describes the restructured prototype module content: two domains (organizational; physical & environmental) incl. new traceability/lifecycle and disposal/return-of-vehicle controls",
+    "Handles the transition: ISA-6-era prototype labels remain valid; new orders from 2027 use the PTS structure",
+    "Covers practical preparation: facility security evidence, camera/visitor regimes, lifecycle tracking of parts, disposal procedures"
+  ]
+}

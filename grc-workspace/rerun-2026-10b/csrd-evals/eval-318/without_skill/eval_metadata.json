@@ -1,0 +1,13 @@
+{
+  "eval_id": 318,
+  "eval_name": "assurance-status",
+  "run_type": "without_skill",
+  "prompt": "What's the current state of sustainability assurance under CSRD — who audits our report and against what standard?",
+  "assertions": [
+    "States the regime: limited assurance is required on CSRD sustainability reporting (the empowerment for reasonable-assurance standards was REMOVED by the Omnibus, so limited assurance remains the regime)",
+    "Reports the September milestone: CEAOB delivered its technical advice on an EU limited-assurance standard on September 25, 2026",
+    "Describes the mandate accurately without inventing content: the advice addresses EU-specific add-ons and potential carve-outs to ISSA 5000",
+    "States the timeline: the Commission's limited-assurance delegated act is due by July 1, 2027",
+    "Explains current practice until then: assurance under national standards/member-state arrangements, with statutory auditors or (where allowed) independent assurance providers"
+  ]
+}

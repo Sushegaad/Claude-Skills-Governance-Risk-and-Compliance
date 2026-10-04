@@ -1,0 +1,33 @@
+{
+  "eval_id": 339,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Frames TISAX correctly: ENX-governed assessment-and-label-exchange regime on the VDA ISA — an assessment with shareable labels, not a certification",
+      "passed": true,
+      "evidence": "\"TISAX is an assessment with shareable labels, not a certification. It is run by the ENX Association on behalf of the VDA\" against the ISA catalogue."
+    },
+    {
+      "text": "Describes the process: ENX portal registration → scope definition (standard scope recommended) → accredited audit provider → assessment at the level your objectives require (AL2 plausibility check vs AL3 on-site) → labels shared via the platform",
+      "passed": true,
+      "evidence": "\"Register on the ENX portal... Use the standard scope, which is strongly recommended... Select an ENX-accredited audit provider... AL2 (audit provider plausibility check, usually remote)... AL3 (comprehensive on-site)... share results with customers on the ENX platform.\""
+    },
+    {
+      "text": "States fees accurately: ~€405 net per location and scope (assessment-based) or the €5,000/year participation option, plus audit-provider costs",
+      "passed": true,
+      "evidence": "\"€405 net per location and scope (one-time...), or €5,000 per year for Participation Based Charges\"; \"Audit provider fees: these are separate... usually the largest external cost.\""
+    },
+    {
+      "text": "Covers the corrective mechanics: nonconformities → corrective action plan, temporary labels, follow-up within the 9-month window; labels valid 3 years",
+      "passed": true,
+      "evidence": "\"you submit a corrective action plan, may receive temporary labels, and have a follow-up assessment within the 9-month corrective window\"; \"Labels are valid for 3 years.\""
+    },
+    {
+      "text": "Flags the version decision for a first-timer NOW: order by December 31 for ISA 6 (open by March 2027) or plan directly against ISA2027",
+      "passed": true,
+      "evidence": "\"ISA 6... ordered through December 31, 2026. ISA2027 applies to orders from January 1, 2027. An initial ISA-6 assessment must open by March 2027... build your gap assessment against ISA2027.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

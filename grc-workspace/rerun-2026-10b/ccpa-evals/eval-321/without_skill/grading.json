@@ -1,0 +1,33 @@
+{
+  "eval_id": 321,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States current law accurately: the CCPA deletion right as enacted reaches PI the business collected FROM the consumer, with broker-held data addressed via the Delete Act/DROP mechanism",
+      "passed": false,
+      "evidence": "Misstates current law: \"you must honor the deletion request across everything you hold about the consumer, including data you bought from a broker\" and calls the collected-from-the-consumer reading \"an aggressive reading\" — the enacted statute reaches PI collected from the consumer, which is exactly why SB 923 was needed."
+    },
+    {
+      "text": "States the change: SB 923 (Expanding Privacy Rights Act, signed September 27, 2026, effective January 1, 2027) extends deletion to PI collected 'from or about' the consumer — including third-party and data-broker-sourced data",
+      "passed": false,
+      "evidence": "SB 923 never appears. The response instead says \"the individual-request right itself does not change\" on January 1, 2027, attributing the change to the Delete Act/DROP, AB 566 and ADMT rules — directly contrary to the ground truth."
+    },
+    {
+      "text": "Mentions the suppression-list permission so deleted consumers stay deleted as new third-party data arrives",
+      "passed": true,
+      "evidence": "\"you may keep a minimal suppression record so that purchased data does not re-enter your systems\" and \"build a suppression list\" — the suppression concept so deleted data stays deleted is present."
+    },
+    {
+      "text": "Notes the online-submission requirement for exclusively-online businesses",
+      "passed": false,
+      "evidence": "Only restates the pre-existing two-methods rule (\"a toll-free number unless you are online only, plus a web form or email for online-only businesses\"); the new SB 923 online-method requirement is never noted."
+    },
+    {
+      "text": "Gives operational advice: inventory third-party data sources now and build deletion plumbing before January 1, 2027",
+      "passed": true,
+      "evidence": "\"Recommended steps now: confirm your purchased-data inventory is mapped to individuals so you can find it, add deletion-propagation clauses to broker contracts, build a suppression list.\""
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

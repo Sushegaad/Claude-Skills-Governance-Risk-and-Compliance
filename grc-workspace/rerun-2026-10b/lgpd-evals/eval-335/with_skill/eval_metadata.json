@@ -1,0 +1,13 @@
+{
+  "eval_id": 335,
+  "eval_name": "breach-response",
+  "run_type": "with_skill",
+  "prompt": "We just detected unauthorized access to customer data in our Brazilian operation. Walk us through the response.",
+  "assertions": [
+    "States the notification duty: communicate to the ANPD and affected data subjects within the regulated timeframe (ANPD regulation: 3 working days) when risk or relevant damage is involved",
+    "Covers content: nature of data, affected subjects, technical measures, risks, mitigation — and documentation even where notification isn't required",
+    "Connects to security duties (Arts. 46–48) and the incident-response governance expectations",
+    "Flags the enforcement context: ANPD's active sanctioning posture (TikTok fine; expanded proceedings) raises the cost of mishandling",
+    "Actionable sequence: contain → assess risk → notify ANPD/subjects → document → remediate, with evidence preservation"
+  ]
+}

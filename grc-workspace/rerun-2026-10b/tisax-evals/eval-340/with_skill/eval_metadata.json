@@ -1,0 +1,13 @@
+{
+  "eval_id": 340,
+  "eval_name": "iso27001-vs-tisax",
+  "run_type": "with_skill",
+  "prompt": "We're ISO 27001:2022 certified. How much extra work is TISAX, really?",
+  "assertions": [
+    "States the overlap honestly: substantial (~70-80% of controls map) — ISO certification is the best starting point but does NOT substitute for TISAX",
+    "Explains the structural differences: fixed maturity targets (0-5, target 3) with cutback rules instead of SoA flexibility; over-performance can't offset weak areas",
+    "Identifies the automotive-specific deltas: prototype protection, OEM data-classification expectations, label/exchange mechanics via ENX",
+    "Notes ISA2027 refined the ISO 27001:2022 mapping (and removed 2013 references) — map existing evidence first, then close automotive gaps",
+    "Gives a realistic effort estimate for a certified org (evidence re-expression in maturity terms, prototype/physical additions where relevant)"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "tprm",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Third-party risk management advisor — vendor tiering, due-diligence questionnaires, SOC 2 Type II report review (exceptions, CUECs, carve-outs, bridge letters), DPA/sub-processor review, contract security addenda, ongoing monitoring and offboarding, mapped to ISO 27001, SOC 2, DORA, NIS2, HIPAA and GDPR.",
   "author": {
     "name": "Hemant Naik",

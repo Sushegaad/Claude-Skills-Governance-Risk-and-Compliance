@@ -1,0 +1,32 @@
+Short answer: the main thing that can change is which version of the ISA catalogue your assessment is run against, and therefore which requirements you are measured on. The assessment process itself (ENX registration, scope, audit provider, initial assessment, results, label) does not change with the date. I cannot confirm the exact cut-over date from memory, so verify the transition rules on the ENX portal and with your audit provider before you commit.
+
+How the catalogue version works
+- TISAX assessments are performed against the VDA ISA catalogue. VDA publishes a new major version every few years (ISA 5 then ISA 6, which aligned the information security section with ISO/IEC 27001:2022 Annex A). ENX sets a date after which new assessments must use the new version. Before that date, providers may use either the current or the new version, and after it only the new one.
+- If a new catalogue becomes mandatory between November 2026 and February 2027, ordering in November lets you be assessed against the version you have prepared for. Ordering in February may force you onto the new version, with changed or reworded controls, new or merged requirements, and possibly changed maturity expectations.
+- The date that matters is usually when the assessment is performed or the report is submitted, not only when you ordered. Orders placed early do not always lock in the old catalogue. Ask your audit provider explicitly what version they will use and by when the audit must be completed.
+
+Practical consequences of each choice
+Ordering in November 2026:
+- You stay on the catalogue your gap analysis and documentation are mapped to, which usually means less rework.
+- You get a result and label earlier, which matters if an OEM or customer has a deadline or a contract condition.
+- Audit providers often have capacity pressure in Q4 and before year-end, so scheduling can slip. Ordering does not equal audit date.
+- Your label runs for three years from the assessment, so a December 2026 audit expires in December 2029. A later audit moves your renewal cycle, and you will then be on the new catalogue at renewal anyway.
+
+Ordering in February 2027:
+- You gain a few months to close gaps, which is useful if you are not ready. A failed or heavily nonconforming initial assessment leads to corrective action plans and follow-up, which costs time and money.
+- You carry the risk of being assessed on the newer catalogue, so your preparation should be based on it. If you prepared on the older version, you need a delta analysis.
+- Fee and ENX pricing can change at year-start. Check the current ENX participation and scope fees and your provider's day rates.
+- Providers' calendars tend to open up in Q1, so actual audit dates might not differ much from November orders.
+
+Things that do not change
+- Scope definition, assessment objectives (for example Info high, Info very high, prototype protection, data protection), and the assessment level (AL2 or AL3) logic.
+- ENX registration, the participant fee, and the exchange of results through the ENX portal.
+- Maturity-level scoring: you need a minimum average maturity of 3 and no individual control below the required level, with the specific must-requirements met.
+
+Recommendation
+1. If you are close to ready and a customer is waiting, order now (November) and pin the audit date and catalogue version in writing with the provider.
+2. If your gap analysis shows major gaps, use the extra time, but build against the newest catalogue so you do not redo the work.
+3. Either way, ask the provider three questions: which ISA version applies to my audit, what is the last date a pre-cut-over order is honored, and what happens if the audit slips past that date.
+4. Check the current TISAX release notes on the ENX and VDA sites. Do not rely on my recollection for the exact transition date.
+
+Bottom line: the date shifts the catalogue version, the renewal cycle, and your preparation workload. It does not change the basic process. If you have a business deadline, earlier is safer. If you need time, take it, but prepare for the newer catalogue.

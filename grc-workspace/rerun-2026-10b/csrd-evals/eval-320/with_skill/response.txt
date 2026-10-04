@@ -1,0 +1,56 @@
+Short answer: it depends on your size. If you have 1,000 employees or fewer, your customers' demands are legally capped by the EU voluntary standard. If you are above 1,000 employees and meet the turnover test, you are a CSRD reporter yourself and must produce your own ESRS disclosures. Either way, you do not owe customers an open-ended "full Scope 3 and supplier ESG" dataset.
+
+**1. Step one: where do you sit?**
+
+Under Directive (EU) 2026/470 (OJ 26 February 2026, in force March 2026), mandatory CSRD reporting applies to large undertakings with more than 1,000 employees and net turnover above EUR 450 million. Transposition is due around 19 March 2027.
+
+- **Above both thresholds:** you are in scope. You must report under the ESRS yourself.
+- **At or below 1,000 employees (or EUR 450M turnover or less):** you are out of mandatory scope and you are protected by the value-chain cap.
+
+**2. What customers can require if you are a 1,000-employee-or-below partner**
+
+The voluntary standard, Commission Delegated Regulation (EU) 2026/1560 (in force 24 September 2026), is the cap. Reporters may not demand more from value-chain partners with 1,000 employees or fewer than its content. So:
+
+- You can point customers to a voluntary-standard report as the full answer to their CSRD-driven requests.
+- Requests for a complete Scope 3 inventory, detailed supplier-tier ESG questionnaires or topic-by-topic ESRS datapoints go beyond the cap and can be declined.
+- Customers remain free to ask for more as a commercial matter, such as a tender criterion, and you can decide whether to agree. The cap restricts what reporters may require under the CSRD framework. I would not assume it overrides contract terms you have already signed, so have counsel review any existing flow-down clauses.
+
+**3. What you must produce yourself if you are in scope**
+
+You report on your own operations and your upstream and downstream value chain where material (ESRS 1, value chain, paras. 62 to 68). Whether that includes full Scope 3 depends on your DMA:
+
+- ESRS E1-6 requires gross Scope 1, 2 (location-based and market-based) and Scope 3, where climate is material. Climate is presumed material for most large companies.
+- Scope 3 is determined by the DMA and category relevance. Scope 3 is required if material. A practical phasing suggested in the reference material is Year 1 categories 1, 3, 6, 7 and 11, then adding 2, 4, 5 and 12, then full coverage.
+- Disclose a transition plan (E1-1), targets (E1-4) and energy (E1-5) where applicable.
+- Value-chain workers (S2) and business conduct and supplier relationships (G1-2) if material.
+
+The revised ESRS (Delegated Regulation (EU) 2026/1563, in force 10 November 2026, mandatory for financial years beginning 1 January 2027, optional for FY2026) cut mandatory datapoints from over 1,000 to roughly 320. I would not assert exactly how Scope 3 appears in the revised text without checking the published regulation, so verify the Scope 3 requirement in the revised E1 before finalising your plan.
+
+**4. Where value-chain data is not available**
+
+You do not have to obtain primary data from every supplier. You may use proxy data, sector averages and reasonable estimates, provided you disclose which datapoints are estimated, the methodology, accuracy and uncertainty, and the steps to improve it (ESRS 1, para. 64 per the reference). The reference approach, from least to most effort:
+
+| Method | Best for | Data quality |
+|---|---|---|
+| Spend-based emission factors (EEIO) | Long-tail suppliers | Low to medium |
+| Industry sector averages | Where direct data is unavailable | Low |
+| Supplier questionnaires (EcoVadis, custom) | Tier-1 suppliers | Medium to high |
+| CDP Supply Chain | Large, listed suppliers | High |
+| Site audits | High-risk suppliers | Very high |
+
+Prioritise suppliers by spend share, sector and geographic risk, and strategic or sole-source relationships.
+
+**5. If you are the one sending requests down your own supply chain**
+
+The cap works in both directions. As a reporter, you may not ask your own suppliers with 1,000 employees or fewer for more than the voluntary standard. Redesign your supplier questionnaires to match it, and use estimates for the rest.
+
+**6. Recommended actions**
+
+1. Confirm your scope status (headcount, turnover, group structure).
+2. Prepare a voluntary-standard report once and reuse it.
+3. Draft a standard customer response citing Delegated Regulation 2026/1560 and the cap.
+4. Log each request, mark what is in or beyond the voluntary standard, and escalate commercially important exceptions.
+5. If you are in scope, run the DMA, then build the E1-6 and value-chain data plan with proxies where needed.
+6. Review contracts with counsel.
+
+This is general compliance information, not legal advice. Verify the final text of Delegated Regulations 2026/1560 and 2026/1563 and your national transposition.

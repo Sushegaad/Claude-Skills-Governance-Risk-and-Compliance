@@ -1,0 +1,33 @@
+{
+  "eval_id": 327,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Cites EDPB Guidelines 04/2026 on administrative fines in relation to other corrective powers (adopted at the September 2026 plenary; consultation open to November 13)",
+      "passed": true,
+      "evidence": "\"EDPB Guidelines 04/2026 (adopted at the September 2026 plenary, consultation open until 13 November) set out a five-step methodology for deciding whether to fine at all.\""
+    },
+    {
+      "text": "Describes the five-step methodology for deciding whether a fine is appropriate at all",
+      "passed": true,
+      "evidence": "\"a five-step methodology for deciding whether to fine at all\" \u2014 the methodology and its whether-to-fine purpose are stated (steps not enumerated, but the assertion's core claim is present)."
+    },
+    {
+      "text": "States that fines are not automatic: the guidelines map the full Art. 58(2) corrective toolbox (warnings, reprimands, compliance orders, bans, certification withdrawal) and when each applies alone or with a fine",
+      "passed": true,
+      "evidence": "\"A supervisory authority (SA) is not required to fine you\"; full Art. 58(2) list including \"warning... reprimand... Order you to bring processing into compliance... temporary or definitive limitation or ban... Withdraw certifications (Art. 58(2)(h))... fine, in addition to or instead of the above\"."
+    },
+    {
+      "text": "Mentions the harmonisation intent (14 practical examples; consistent DPA practice across the EEA)",
+      "passed": false,
+      "evidence": "No mention of the 14 practical examples or the harmonisation/consistent-DPA-practice aim of the guidelines."
+    },
+    {
+      "text": "Connects to the existing fining-calculation guidelines (04/2022 methodology) as the separate quantum step",
+      "passed": false,
+      "evidence": "Guidelines 04/2022 on fine calculation are never mentioned; no separate quantum step is identified."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

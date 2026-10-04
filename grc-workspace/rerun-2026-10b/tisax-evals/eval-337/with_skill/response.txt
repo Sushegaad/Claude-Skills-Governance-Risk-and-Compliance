@@ -1,0 +1,51 @@
+ISA2027 was published in full on July 1, 2026. It is mandatory for assessments ordered from January 1, 2027, while ISA 6 (rev. 6.0.3) remains in force for orders placed through December 31, 2026. A redline against ISA 6.0.1 and a webinar series followed on August 7, 2026, and ISA2027.1 is the current minor revision (German edition October 1). Counts below come from ENX and consultancy analyses of the workbook, so treat them as approximate.
+
+**1. Naming and cadence**
+- Year-based naming replaces version numbers (ISA2027, then ISA2028 expected summer 2027).
+- Annual release cycle: published each summer, effective January 1 of the following year.
+
+**2. Information Security module**
+- Still 46 controls.
+- About 44 of 46 were edited or clarified, with substantive requirement changes in roughly 25. Many edits are clarifications, but you cannot assume your ISA 6 evidence carries over unchanged.
+- "The following aspects are considered" is now formalized: each listed aspect must be consciously considered and explainable. It is not a checklist of mandatory items, but you must be able to show you looked at each one.
+- Broader definition of "Project".
+- Clearer distinction between an event and an incident.
+- Managers and leaders are named as an explicit audience for awareness training.
+
+**3. Supply chain strengthened**
+- High protection need: documented supplier monitoring.
+- Very high protection need: supplier assurance through a TISAX label, an equivalent third-party assessment, or a supplier audit.
+- This is the change most likely to need new process and evidence if you have many sub-suppliers.
+
+**4. Prototype Protection restructured**
+- Reduced from 22 to 20 controls.
+- Five control groups become two domains: Organizational Requirements, and Physical & Environmental Security.
+- New controls for traceability and lifecycle, and for disposal, recycling and return.
+- New PTS label structure: Prototype Protection Basic (AL2) and Prototype Protection Facilities (AL3), with Facilities encompassing Basic. This replaces the ISA 6 labels (Proto Parts, Proto Vehicles, Test Vehicles, Proto Events) for 2027 orders. Confirm with your OEM how they will map or accept the new labels.
+
+**5. Mappings**
+- Updated to NIST CSF 2.0 and refined ISO/IEC 27001:2022.
+- All ISO 27001:2013 references removed.
+
+**What did not change**
+- Three catalogue families (Information Security, Prototype Protection, Data Protection, the last still 4 controls).
+- Assessment levels AL1/AL2/AL3 and the objective-to-level logic.
+- Maturity scoring 0-5, target maturity 3, with cutback rules.
+- Label validity of 3 years, the 9-month corrective window, and ENX portal sharing.
+- Existing labels keep their full validity. ISA2027 does not increase reassessment frequency.
+
+**Transition rules**
+- The catalogue is fixed by the order date. An order from January 1, 2027 means ISA2027.
+- An initial ISA-6 assessment must open by March 2027 at the latest.
+- Renewal of a current label is a full re-assessment against the then-current catalogue.
+
+**What this means for you**
+1. **Gap-assess against the right catalogue.** If you will order in 2027, use the ISA2027 redline and not your old ISA 6 spreadsheet.
+2. **Prioritise by impact.** Supplier management (if you have high or very-high objectives), prototype scope (if relevant), and any control where the "aspects considered" language will force you to document your reasoning.
+3. **Refresh awareness training** to include managers and leaders explicitly.
+4. **Revisit event versus incident definitions** in your incident process.
+5. **Re-express ISO mappings.** If you maintain an ISO 27001 crosswalk, update it to the 2022-only references.
+
+I have not listed individual control numbers. I cite control numbers only where I am sure of them in the official document, so please check specifics against the VDA ISA2027 download at vda.de or enx.com and the redline.
+
+This is general compliance information, not legal advice. Your accredited audit provider can confirm how ISA2027 will be applied to your assessment.

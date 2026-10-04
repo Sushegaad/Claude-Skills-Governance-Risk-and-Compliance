@@ -1,0 +1,13 @@
+{
+  "eval_id": 332,
+  "eval_name": "anpd-new-status",
+  "run_type": "with_skill",
+  "prompt": "What's the ANPD's institutional status now, and what's this consultation we keep hearing about?",
+  "assertions": [
+    "States the conversion: Lei 15.352/2026 (DOU February 25, 2026, converting MP 1.317/2025) made the ANPD a special-regime regulatory agency with functional, decision-making and financial autonomy (name unchanged, ~200 new positions)",
+    "Notes the same law fixed the Digital ECA's effectiveness at March 17, 2026",
+    "Describes Consulta Pública 1/2026 (September 9 – October 26, 2026): a draft replacement for Resolution 1/2021 extending supervision to Digital ECA duties and internet application providers",
+    "Highlights the sharpest proposals: interim measures adoptable WITHOUT prior hearing of the regulated party, and daily fines capped at R$50 million total",
+    "Advises participation: comment via Brasil Participativo before October 26 if operating in Brazil"
+  ]
+}

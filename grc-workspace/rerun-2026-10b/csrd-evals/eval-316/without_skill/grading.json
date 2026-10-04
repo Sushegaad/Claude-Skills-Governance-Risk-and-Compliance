@@ -1,0 +1,33 @@
+{
+  "eval_id": 316,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the revised ESRS are now LAW: Commission Delegated Regulation (EU) 2026/1563, published in the Official Journal September 21, 2026, entering into force November 10, 2026",
+      "passed": false,
+      "evidence": "Calls revised ESRS draft: \"the revised ESRS are currently a draft and carry no legal force\"; no Reg 2026/1563, OJ or in-force dates"
+    },
+    {
+      "text": "States application correctly: revised ESRS mandatory for financial years beginning on or after January 1, 2027",
+      "passed": true,
+      "evidence": "\"revised ESRS delegated act is intended to apply for financial years starting 1 January 2027\" / \"FY2027... revised (simplified) ESRS... binding standard\""
+    },
+    {
+      "text": "States the FY2026 choice: undertakings may apply EITHER the 2023 ESRS (as amended) OR the revised ESRS for financial years starting in 2026",
+      "passed": false,
+      "evidence": "Denies the enacted choice: \"Unless and until the delegated act is adopted... Set 1 remains the legally binding standard for FY2026\"; early use framed as mere expectation"
+    },
+    {
+      "text": "Quantifies the simplification with the final-act figures: mandatory datapoints cut from over 1,000 to roughly 320 (>60% reduction in mandatory datapoints; >70% total), with former voluntary datapoints removed to EFRAG non-mandatory guidance — not the draft-stage 57-61% figures",
+      "passed": false,
+      "evidence": "Uses draft-stage figure only: \"on the order of 60 percent or more cut in the headline figures cited\"; no ~320, no >70% total, no EFRAG guidance move"
+    },
+    {
+      "text": "Gives practical basis-decision advice (e.g., early-adopting the revised ESRS for FY2026 avoids a one-year-only report on the old standards)",
+      "passed": true,
+      "evidence": "\"Run a gap analysis between Set 1 and the EFRAG simplified draft so that a switch... is cheap\"; \"Make a board-level decision on early adoption for FY2026\""
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

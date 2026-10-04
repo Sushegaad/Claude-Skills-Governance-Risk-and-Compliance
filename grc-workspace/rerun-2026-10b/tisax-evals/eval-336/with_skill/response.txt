@@ -1,0 +1,44 @@
+Short answer: the order date, not the assessment date, decides which catalogue you are assessed against. An order placed in November 2026 runs on VDA ISA 6 (rev. 6.0.3). An order placed in February 2027 runs on ISA2027, which became mandatory for assessments ordered from January 1, 2027. Everything else (levels, labels, 3-year validity, process) stays the same.
+
+**Version status (as of October 2026)**
+- ISA 6 is current through the end of 2026.
+- ISA2027 was published in full on July 1, 2026. The redline and webinar series followed on August 7, and ISA2027.1 is the current minor revision.
+- The transition rule is by order date. Orders placed by December 31, 2026 run on ISA 6. Orders from January 1, 2027 run on ISA2027.
+
+**Side-by-side**
+
+| Aspect | Order November 2026 (ISA 6) | Order February 2027 (ISA2027) |
+|---|---|---|
+| Catalogue | ISA 6.0.3 | ISA2027 (ISA2027.1 minor revision) |
+| Information Security module | 46 controls | 46 controls, about 44 edited, with substantive requirement changes in about 25 (consultancy counts) |
+| Prototype Protection | 22 controls, five control groups | 20 controls in two domains (Organizational Requirements; Physical & Environmental Security), with new traceability/lifecycle and disposal/return controls |
+| Prototype labels | Proto Parts / Proto Vehicles / Test Vehicles / Proto Events | New PTS structure: Prototype Protection Basic (AL2) and Prototype Protection Facilities (AL3, encompasses Basic) |
+| Supplier requirements | ISA 6 wording | Stronger: high protection need needs documented supplier monitoring. Very high needs supplier assurance through a TISAX label, an equivalent assessment, or a supplier audit |
+| Mappings | Earlier mappings | Updated to NIST CSF 2.0 and refined ISO 27001:2022; all 27001:2013 references removed |
+| Label validity | 3 years | 3 years |
+
+**Important timing catch.** Ordering in 2026 does not mean you can take your time. An initial ISA-6 assessment must open by March 2027 (ENX rule). With a November order you need to book the audit provider early. Provider capacity is the real constraint, and a year-end rush is likely because many suppliers will try to lock in ISA 6.
+
+**Things that do not change**
+- Existing labels keep their full validity, with no increased reassessment frequency.
+- Assessment levels still follow objectives. AL2 is the plausibility check, usually remote. AL3 is on-site.
+- Scoring is still maturity 0-5 with target 3 and cutback rules.
+- The 9-month corrective window after the initial assessment's closing meeting still applies.
+- TISAX is an assessment with shareable labels, not a certification.
+- ENX fees are the same (see below).
+
+**How to decide**
+1. **Is a customer deadline forcing you?** If an OEM needs a label by a certain date, choose the order date that meets it and ignore elegance.
+2. **How ready are you?** If you are already near maturity 3 against ISA 6, ordering in November avoids re-baselining. If you are early in your ISMS build, you will be doing most of the work against whichever catalogue exists when you finish. Building directly to ISA2027 avoids rework, and your first label would then renew on ISA2027-era requirements.
+3. **Prototype scope?** If you handle prototypes, the label structure changes (PTS Basic/Facilities), so confirm with your OEM which label name they will accept.
+4. **Supplier-heavy or very-high scope?** ISA2027's stronger supply-chain requirements may need new evidence, such as supplier monitoring records or supplier assurance.
+5. **Renewal cycle.** A label from a 2026 order is valid for 3 years and renews against the then-current catalogue. A 2027 order would reset your cycle one year later.
+
+**Practical recommendation**
+- If you have a hard OEM deadline or are near-ready: order in November 2026 (ISA 6), book the provider now, and make sure the assessment opens before the March 2027 cutoff.
+- If you are not ready: do not rush a 2026 order just to avoid ISA2027. A failed or partial assessment costs more time than the catalogue change does. Run the gap assessment against ISA2027, which is the version you will face.
+- Either way, decide the order date deliberately and gap-assess against the catalogue you will actually be assessed on.
+
+**Cost note.** ENX registration is €405 net per location and scope (one-time) or €5,000 per year for the participation-based flat fee covering unlimited locations and scopes, plus VAT. Audit provider fees are separate and negotiated. Neither timing option changes the ENX fee structure.
+
+Verify the current transition details on enx.com and the VDA ISA download before committing. This is general compliance information, not legal advice. Your accredited audit provider can confirm which catalogue version applies to your order.

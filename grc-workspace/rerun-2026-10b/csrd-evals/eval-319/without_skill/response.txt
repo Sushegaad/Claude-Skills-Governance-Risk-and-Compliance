@@ -1,0 +1,52 @@
+Below is a practical walkthrough of a double materiality assessment (DMA) under ESRS 1 Chapter 3 and IG 1 (the EFRAG implementation guidance), with notes on how the revised, simplified ESRS are expected to change the process. The revised standards are still draft in my knowledge, so I describe the process in terms that survive the changes.
+
+Core idea
+A topic is material if it is material from an impact perspective (your actual or potential, positive or negative impacts on people and environment), a financial perspective (sustainability matters that create risks or opportunities affecting your cash flows, access to finance or cost of capital in the short, medium or long term), or both. Either is enough to report.
+
+Step 1: Plan and govern
+- Set the scope: the consolidated group, plus the upstream and downstream value chain.
+- Appoint an owner and a cross-functional team (sustainability, risk, finance, legal, operations, procurement, HR).
+- Get governance sign-off: define who approves the result (board or audit committee) and how the work will be documented for assurance.
+- Align with enterprise risk management so that financial materiality uses your existing risk framework.
+
+Step 2: Understand context and map the value chain
+- Document business model, activities, geographies, products, business relationships and sectors.
+- Map the value chain: raw materials, suppliers, own operations, distribution, customers, end of life.
+- Identify the stakeholders: affected stakeholders (workers, communities, consumers, ecosystems) and users of the report (investors, banks, regulators). Plan engagement, including proxies where nature cannot speak for itself.
+
+Step 3: Identify impacts, risks and opportunities (IROs)
+- Start from the ESRS list of sustainability matters in AR 16 of ESRS 1 (topics, sub-topics and sub-sub-topics across E1 to E5, S1 to S4, G1) as a long list, then add entity-specific topics.
+- Use inputs: due diligence results, supplier audits, incident logs, grievance data, risk register, scenario analysis, industry studies, stakeholder consultations, and sector references.
+- Describe each IRO precisely: what, where in the value chain, actual or potential, positive or negative, short/medium/long-term horizon, and for negatives whether it is connected to your business relationships.
+
+Step 4: Assess materiality
+Impact materiality:
+- Negative impacts: severity (scale, scope, irremediable character) and likelihood for potential impacts. For human rights impacts, severity takes priority over likelihood.
+- Positive impacts: scale and scope, and likelihood for potential impacts.
+Financial materiality:
+- Magnitude of potential financial effects and likelihood of occurrence, using the same scales as enterprise risk management where possible. Consider dependencies on natural, human and social resources.
+Set scoring scales (for example 1 to 5), define thresholds and justify them. Thresholds are a judgement; document the rationale and test sensitivity. Avoid netting off or averaging that hides serious impacts. Note that the simplified ESRS direction is to let companies take a top-down, proportionate, "reasonable and supportable" approach, avoid exhaustive bottom-up listing, and drop a requirement to report on the detail of the process beyond what is needed.
+
+Step 5: Validate and decide
+- Review the results with management and, if possible, stakeholders; reconcile with risk and strategy.
+- Make the final determination for each topic and datapoint. Remember that if a topic is not material, you need not report its disclosure requirements, but climate (E1) requires an explicit conclusion and explanation if you conclude it is not material. Also, ESRS 2 general disclosures are always required.
+- Within each material topic, apply information materiality at the datapoint level: omit datapoints not material, but apply the "mandatory datapoints" derived from other EU law (SFDR, Pillar 3, Benchmark Regulation, Climate Law) as ESRS 2 Appendix B lists, unless you state not material.
+
+Step 6: Document and disclose
+- Disclose the process (IRO-1), the results (SBM-3), and how the IROs connect to strategy and business model. List the disclosure requirements covered (IRO-2).
+- Keep evidence: workshop minutes, scoring, data sources, decisions. The assurer will test the DMA process.
+
+Step 7: Keep it alive
+- Repeat annually at light touch with a full review at least every few years or on significant change (new acquisitions, new products, regulation, incidents).
+- Link the DMA to risk management, strategy, targets, and controls.
+
+Common pitfalls
+- Treating DMA as a survey of stakeholders only.
+- Blurring impact and financial perspectives.
+- Not covering the value chain.
+- Over-reliance on consultants without internal ownership.
+- Weak documentation of thresholds.
+- Concluding too many or too few topics are material without evidence.
+- Ignoring the interplay with the EU taxonomy and the CSDDD.
+
+Timeline: expect 3 to 6 months for a first full DMA at a mid-size group, less for a refresh. Plan for the revised ESRS by running a light gap check of your DMA against the simplified guidance when it is final.

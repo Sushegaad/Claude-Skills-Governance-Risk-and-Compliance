@@ -1,0 +1,49 @@
+Here is the timeline as of October 3, 2026. The regulations were finalized in 2025 and took effect January 1, 2026, but several obligations phase in later.
+
+**Timeline at a glance**
+
+| Date | Milestone |
+|---|---|
+| Jan 1, 2026 | ADMT, risk-assessment, and cybersecurity-audit regulations are effective. Risk assessments are required for new significant-risk processing from this date. |
+| Jan 1, 2027 | Compliance deadline for ADMT used to make significant decisions: pre-use notice, opt-out, and access rights. |
+| Dec 31, 2027 | Deadline to complete risk assessments for processing that was already ongoing as of Jan 1, 2026. |
+| Apr 1, 2028 | First risk-assessment submissions to the CPPA. First cybersecurity-audit certification tier due. |
+| Apr 2029 and Apr 2030 | Later cybersecurity-audit certification tiers, by revenue band. |
+
+**1. Risk assessments (live since January 1, 2026)**
+
+- Before you begin processing that presents significant risk to consumers, you must conduct and document a risk assessment. Typical triggers are selling or sharing PI, processing sensitive PI, and using ADMT for significant decisions.
+- Assessments weigh benefits against risks to consumers and identify safeguards. The CPPA can request them at any time.
+- For processing already underway on January 1, 2026, you have until **December 31, 2027** to complete the assessment. Submissions to the CPPA begin by **April 1, 2028**.
+- Practical point: new projects launched now need the assessment before launch. Do not assume the 2027 date protects them.
+
+**2. ADMT (deadline January 1, 2027)**
+
+- ADMT regulations cover technology used to make or substantially drive decisions with legal or similarly significant effects, such as employment, credit, housing, insurance, and education.
+- By **January 1, 2027** you must provide:
+  - a **pre-use notice** explaining the use and purpose,
+  - an **opt-out mechanism**, or a qualifying human-review alternative,
+  - **access rights**, meaning information about the logic and how outputs were used, and a path to human review.
+- Mind the sequencing: the ADMT rules apply to significant decisions from January 1, 2027, but the risk assessment for that ADMT use is a separate duty with its own date above.
+
+**3. Cybersecurity audits (phased)**
+
+- Businesses whose processing presents significant security risk must conduct **annual cybersecurity audits**. The regulations took effect January 1, 2026.
+- Certification of completion is due to the CPPA on a revenue-tiered schedule: **April 2028, April 2029, and April 2030**. The largest businesses go first.
+- Audits must be performed by a qualified, objective reviewer and cover the controls the regulations list. Retain the work papers.
+
+**Related 2026 context**
+
+- Consumer-request deadlines in the broker context are tightening (AB 883), and SB 923 takes effect January 1, 2027. Both interact with your ADMT and data inventory work.
+- Enforcement is active. Disney ($2.75M), GM ($12.75M), PlayOn ($1.1M), and Ford ($375K) show systematic and deadline failures draw penalties of up to $2,500 per unintentional and $7,500 per intentional violation.
+
+**Recommended workplan**
+
+1. **Now to Q4 2026:** inventory every automated system that influences decisions about employment, credit, housing, insurance, or education. Classify which are in scope for ADMT.
+2. **Q4 2026:** draft the pre-use notice, the opt-out and human-review workflow, and the access-response template. Test the intake channel and its 15-business-day and 45-day clocks.
+3. **Now onward:** gate new significant-risk projects behind a documented risk assessment.
+4. **During 2027:** complete assessments for legacy processing before December 31, 2027, and prepare the submission package.
+5. **Plan for audits:** pick an auditor and a control framework, and set the first certification date from your revenue tier.
+6. **Governance:** assign owners, keep records (24 months is the minimum if you handle PI of 10 million or more consumers), and brief your board.
+
+Check the final regulation text and the CPPA's current guidance for exact scoping and the revenue tiers before committing to a date. This is general compliance information, not legal advice.

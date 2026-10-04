@@ -1,0 +1,24 @@
+This timeline reflects the CPPA's regulations on automated decisionmaking technology (ADMT), risk assessments, and cybersecurity audits, which were adopted by the board in July 2025, approved by the Office of Administrative Law in September 2025, and effective January 1, 2026. Confirm dates against current CPPA text.
+
+Key dates
+
+- January 1, 2026: regulations take effect. Risk assessment requirements apply to covered processing activities that begin or continue on or after this date. Updated CCPA rules on insurance, opt-out confirmation and other amendments also begin.
+- During 2026: businesses should inventory processing that needs a risk assessment, scope ADMT use, and prepare notices. No ADMT-specific obligations apply yet. Existing CCPA obligations continue.
+- December 31, 2027: for risk assessment activities that were already underway before 2026, the assessment must be completed by this date. New high-risk activities started in 2026 or after must be assessed before initiation under the regulation's standard timing.
+- January 1, 2027: businesses using ADMT for significant decisions must comply with ADMT requirements. Those are a pre-use notice, a right to opt out (with limited exceptions such as human appeal and certain admission and hiring uses with evaluation of accuracy), and an access right to information about how ADMT was used. Significant decisions cover financial or lending services, housing, education enrollment or opportunities, employment or independent contracting opportunities or compensation, and healthcare services. The final rule dropped behavioral advertising and generic profiling from the earlier drafts and narrowed "ADMT" to technology that replaces or substantially replaces human decisionmaking.
+- April 1, 2028: first submission to the CPPA of risk assessment information (attestation and summary) covering assessments completed from 2026 through the submission date, then annually thereafter. Unredacted assessments must be provided on request by the CPPA or Attorney General. Records are retained as long as the processing continues plus five years.
+- April 1, 2028: cybersecurity audit certifications are due for businesses with more than $100 million in annual gross revenue. Due April 1, 2029 for $50 to $100 million. Due April 1, 2030 for under $50 million. These apply to businesses whose processing presents significant risk, such as those meeting the 50 percent revenue-from-selling threshold or processing large volumes of personal information.
+
+What triggers a risk assessment
+
+Selling or sharing personal information, processing sensitive personal information, using ADMT for a significant decision, using automated processing to infer certain characteristics from systematic observation in employment or education settings or sensitive locations, and training ADMT or facial recognition for significant uses. Assessments identify benefits and risks, safeguards, and whether risks outweigh benefits. If they do, the processing must not proceed.
+
+Recommended roadmap
+
+1. Q4 2026: finalize your ADMT inventory, decide which uses are "significant decisions" and whether human involvement is meaningful. Draft pre-use notices, opt-out and appeal flows, and the access-response template.
+2. By January 1, 2027: go live with ADMT notices and opt-outs. Train HR, lending and other decision teams. Update vendor contracts so vendors supply information needed for notices and access requests.
+3. Throughout 2027: complete risk assessments for legacy processing before the December 31, 2027 deadline. Establish a governance process with sign-off by a senior executive.
+4. Early 2028: prepare the April 1 CPPA submission with an attestation under penalty of perjury. Start the cybersecurity audit with an independent auditor if you are in the first tier.
+5. Ongoing: review and update assessments when material changes occur, and at least every three years.
+
+Related items to watch: Colorado's AI Act obligations, state employment AI rules, and any 2026 legislation or rulemaking that amends these deadlines.

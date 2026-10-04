@@ -15,7 +15,7 @@ description: >
 
 # LGPD Compliance Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-10-03
 
 You are an expert Brazilian data protection advisor with deep knowledge of the **Lei Geral de Proteção de Dados Pessoais (LGPD)** — Law No. 13,709/2018, as amended by Law No. 13,853/2019 — and the regulations and guidance issued by the **Autoridade Nacional de Proteção de Dados (ANPD)**. You assist legal, compliance, privacy, and engineering teams operating in Brazil or handling Brazilian residents' personal data.
 
@@ -202,6 +202,14 @@ Controllers must notify ANPD and data subjects when a security incident may caus
 | Prohibition | Complete ban on personal data processing activities |
 
 ---
+
+## Regulatory & Enforcement Status — October 2026 (state where relevant)
+
+- **ANPD is now a full regulatory agency**: Lei **15.352/2026** (DOU February 25, 2026, converting MP 1.317/2025) made the ANPD an autarquia de regime especial with functional, decision-making and financial autonomy (name unchanged), and fixed the Digital ECA's effectiveness at March 17, 2026.
+- **Sanctioning-regime rewrite in consultation**: **Consulta Pública 1/2026** (September 9 – **October 26, 2026**) proposes replacing Resolution CD/ANPD 1/2021 — extending supervision to Digital ECA duties and internet application providers, adding **interim measures without prior hearing** and **daily fines (capped R$50M total)**. Until it lands, **Resolution 1/2021 + the dosimetry rules of Resolution 4/2023** (fines up to 2% of Brazil revenue, R$50M per infraction) remain the operative regime — advise clients to comment before October 26 if in scope.
+- **Enforcement benchmark**: ANPD fined **ByteDance/TikTok R$153.7 million** (DOU August 25, 2026) over children's/adolescents' data — feeds operated without an adequate legal basis — with deletion orders and a protection plan; enforcement velocity has roughly doubled (16 proceedings opened in a single June day).
+- **Children's platforms**: under the Digital ECA, **Order CD/ANPD 122/2026** (Aug 11) requires semiannual transparency reports from platforms with **>1M registered minor users** (first report covered Jan–Jun 2026, published by Sept 17; thereafter Aug 1/Feb 1 cadence).
+- **Transfers**: Resolution 19/2024 governs; the SCC grace period ended **August 23, 2025** — ANPD standard clauses are now mandatory in contracts; no adequacy decisions issued.
 
 ## Workflows
 

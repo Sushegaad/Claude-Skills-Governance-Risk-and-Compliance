@@ -1,0 +1,25 @@
+{
+ "skill": "lgpd",
+ "prompts": [
+  {
+   "id": 331,
+   "prompt": "What penalties do we realistically face for LGPD violations in late 2026?"
+  },
+  {
+   "id": 332,
+   "prompt": "What's the ANPD's institutional status now, and what's this consultation we keep hearing about?"
+  },
+  {
+   "id": 333,
+   "prompt": "We operate a social platform popular with Brazilian teenagers. What are our current obligations?"
+  },
+  {
+   "id": 334,
+   "prompt": "How do we lawfully transfer personal data from Brazil to our US parent company?"
+  },
+  {
+   "id": 335,
+   "prompt": "We just detected unauthorized access to customer data in our Brazilian operation. Walk us through the response."
+  }
+ ]
+}

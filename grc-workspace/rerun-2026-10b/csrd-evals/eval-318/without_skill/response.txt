@@ -1,0 +1,32 @@
+Short answer: sustainability reports under CSRD must be assured. Currently that means limited assurance, by a statutory auditor or (where the member state allows) an independent assurance services provider. The Omnibus I amendments removed the planned move to reasonable assurance and replaced it with Commission guidelines. The assurance standard is, for now, whatever your member state has prescribed, with ISSA 5000 as the dominant international benchmark.
+
+1. Legal basis
+CSRD amended the Audit Directive and the Accounting Directive. Article 34 of the Accounting Directive requires the sustainability reporting (including the Article 8 taxonomy information and the digital tagging) to be assured. Originally, the Directive called for limited assurance initially, moving to reasonable assurance by October 2028, with the Commission to adopt assurance standards by October 2026. Omnibus I changed this: the move to reasonable assurance has been removed, and the Commission's obligation to adopt binding assurance standards has been replaced with an obligation to issue targeted, non-binding assurance guidelines (expected around 2026) so that limited assurance is delivered consistently.
+
+2. Who can provide it
+- The statutory auditor or audit firm that audits your financial statements.
+- Member states may allow other statutory auditors or audit firms approved in that state, or an independent assurance services provider (IASP) accredited under conditions equivalent to those for statutory auditors on competence, independence, quality control and oversight. The member state choice matters: some (for example Germany initially) have been restrictive, and some have opened the market to IASPs. If you are multinational, check each state.
+- For groups, the group auditor must handle consolidated reporting; component work needs coordination.
+- Independence rules apply: the prohibited non-audit services, fee caps and rotation rules for PIEs bite in different ways, so avoid using the same provider for consulting on your sustainability systems and assurance.
+
+3. Against what standard
+The Commission has not adopted EU assurance standards. In the meantime, member states apply their own standards or give auditors the choice. In practice:
+- ISSA 5000 (General Requirements for Sustainability Assurance Engagements), issued by the IAASB in November 2024, is the global baseline and the most likely template for EU practice. The IAASB standard is effective for periods beginning on or after mid-December 2026 and early adoption is allowed.
+- Existing standards such as ISAE 3000 (Revised) and ISAE 3410 (GHG statements) are widely used.
+- National standards: Germany's IDW draft standards, France's CNCC/H2A guidance, Netherlands NBA. The Commission's guidelines will aim to converge.
+- CEAOB guidelines have been issued as supervisory expectations.
+
+4. What limited assurance covers
+The conclusion addresses whether anything has come to the assurer's attention indicating that the sustainability statement does not comply with the Directive's requirements, including: compliance with ESRS (including the process to identify the information reported, the double materiality assessment), compliance with the tagging requirement, and compliance with taxonomy reporting. Limited assurance is a negative-form conclusion with less evidence than reasonable assurance; it is still demanding, especially on the materiality process and the value chain data.
+
+5. Practical consequences for you
+- Treat the report as assurance-ready from day one: documented methodology, data owners, controls, and evidence retention. Pursue "internal control over sustainability reporting".
+- Run a dry run or readiness review before the first assured cycle.
+- Appoint your assurer early: scope, materiality, timing of work on the DMA, and access to value chain evidence should be agreed.
+- Audit committee oversight is expected: the committee must monitor the reporting process and the assurance.
+- Expect questions on estimates and on the use of phase-ins; make sure the statement explains basis of preparation.
+- Budget: assurance fees are a material cost; fee levels vary by provider.
+- Wave status: for wave-one companies, FY2024 reports were first assured under national rules; for FY2025 onward, the process continues.
+
+6. What is uncertain
+Reasonable assurance is no longer a mandated step, but the Directive allows the Commission to review the issue later. The Commission's guidelines are non-binding, and national divergence persists. Check your state's transposition and the final text of the guidelines.

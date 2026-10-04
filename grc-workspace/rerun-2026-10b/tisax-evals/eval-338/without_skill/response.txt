@@ -1,0 +1,42 @@
+Short answer: for prototype vehicle testing you should plan on the Prototype Protection labels, assessed at Assessment Level 3 (AL3), plus the Information Security label at AL2 or AL3 depending on what OEM information you handle, and Data Protection if you process personal data on behalf of the OEM. Confirm the exact set with each OEM, because the OEM defines what it requires.
+
+How TISAX labels work
+TISAX labels are tied to assessment objectives. The main ones are:
+- Information with high protection needs (AL2)
+- Information with very high protection needs (AL3)
+- Prototype protection modules (always AL3 because physical protection must be verified on site)
+- Data protection (processing on behalf, GDPR Article 28 based, AL2)
+- Optional or special: connection to third parties, and a handful of others.
+
+The prototype protection labels
+Prototype protection sits in a separate module of the ISA catalogue and has several parts. Which apply depends on your activity:
+1. Physical and environmental security: site security, perimeter, access control, zoning, protection against viewing, alarm and monitoring, visitor management.
+2. Organizational requirements: roles, vetting, NDAs, awareness, security for third parties and subcontractors.
+3. Handling of vehicles, components and parts requiring protection: transport, storage, camouflage, labeling, logistics and disposal.
+4. Requirements for trial vehicles: test drives on public roads, camouflage, parking and overnight rules, protection on test grounds.
+5. Requirements for events, film and photo shoots: if you host or support them, a separate assessment objective applies.
+
+For a test service provider, you would typically need the physical/environmental and organizational module, the handling of vehicles, components and parts, and the trial vehicles module. Add the events and shoots module only if you actually do that work. Scope each label to the sites and activities involved. Test tracks, workshops, garages, and transport operations each need to be included in the scope if prototypes physically reside there or move through them.
+
+Information Security label
+If you receive confidential data such as CAD, test specifications, telemetry, or software builds, you also need Information Security. Choose:
+- AL2 for high protection needs.
+- AL3 for very high protection needs, which includes on-site verification and interviews. OEMs commonly require AL3 where prototypes or pre-series data are involved.
+The prototype modules require AL3, and many providers find it simpler to combine information security AL3 into the same assessment to share the audit effort.
+
+Data protection
+If you process personal data for the OEM (for example driver data, camera and telemetry recordings that identify people, or test driver details), the Data Protection label may be requested. It is separate and AL2.
+
+Going into 2027
+- Check which ISA catalogue version will apply for an assessment in 2027, since a catalogue change can affect control wording and scoring.
+- Check the OEM's own requirements. Some OEMs have stricter supplier rules than TISAX, for example for test drives or camouflage.
+- Existing labels remain valid for three years from the assessment date, but you must reassess before expiry.
+
+Practical plan
+1. Ask the OEM in writing which assessment objectives and levels they expect, and for what scope.
+2. Map your sites, test routes, storage areas and transport. Define scope per site.
+3. Run a gap analysis against the prototype protection requirements. Physical measures such as fencing, shielding from view, and zoning often need capital works with lead times of months.
+4. Register with ENX, set scope, and choose an accredited audit provider that has prototype protection experience. Not every provider does AL3 prototype audits.
+5. Book the assessment early because on-site AL3 audits at several sites take time to schedule.
+
+Expect AL3 prototype audits to take several days on site per location and to cost more than AL2 remote assessments.

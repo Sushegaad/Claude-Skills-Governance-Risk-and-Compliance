@@ -1,0 +1,33 @@
+{
+  "eval_id": 320,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Distinguishes the asker's own reporting duties (if in scope) from data requests cascading down the value chain",
+      "passed": true,
+      "evidence": "\"What you must produce depends on whether you are in scope of CSRD yourself\"; separate sections for in-scope duties vs customer/value-chain requests"
+    },
+    {
+      "text": "Applies the value-chain cap: requests to ≤1,000-employee partners are capped at the voluntary standard's (Reg. 2026/1560) content",
+      "passed": false,
+      "evidence": "States the cap but misidentifies the instrument as non-law: \"VSME, endorsed in a Commission Recommendation in July 2025\"; no Reg (EU) 2026/1560"
+    },
+    {
+      "text": "Covers Scope 3 reporting expectations under the revised ESRS for in-scope reporters (GHG categories, estimation/proxies where primary data is unavailable)",
+      "passed": true,
+      "evidence": "\"Scope 3 has 15 categories... Only categories that are material need to be disclosed under ESRS\"; \"estimates and sector averages where primary data is unavailable\""
+    },
+    {
+      "text": "Advises practical responses: voluntary-standard-aligned data package, estimation methodologies, phased supplier engagement",
+      "passed": true,
+      "evidence": "\"Standardise using VSME. Offer it as the default response\"; \"Use spend-based factors first, then move to activity data\"; \"Request data from your own suppliers proportionately, prioritising hotspots\""
+    },
+    {
+      "text": "Mentions transition reliefs/phase-ins where relevant rather than asserting maximal obligations",
+      "passed": true,
+      "evidence": "\"phase-ins and estimation help\"; materiality-limited disclosure rather than maximal obligations; cap shields small partners"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

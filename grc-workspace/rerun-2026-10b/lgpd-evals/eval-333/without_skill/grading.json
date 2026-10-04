@@ -1,0 +1,33 @@
+{
+  "eval_id": 333,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Applies the Digital ECA (Lei 15.211/2025, effective March 17, 2026) to child/adolescent-accessible services",
+      "passed": true,
+      "evidence": "\"The ECA Digital (Law 15.211/2025, in force from March 2026...): a statute applying to digital products and services directed at, or likely to be accessed by, children and adolescents... squarely in scope\""
+    },
+    {
+      "text": "Cites Order CD/ANPD 122/2026 (August 11): platforms with >1 million registered users under 18 in Brazil must publish SEMIANNUAL transparency reports (first covered Jan–Jun 2026, published by Sept 17; thereafter Aug 1/Feb 1 cadence)",
+      "passed": false,
+      "evidence": "Order 122/2026 never mentioned; only generic \"periodic reports on moderation and risk mitigation for larger services\""
+    },
+    {
+      "text": "Uses the TikTok precedent: R$153.7M for feeds processing minors' data without an adequate legal basis — profiling/recommendation engines need a defensible basis and best-interests analysis",
+      "passed": false,
+      "evidence": "No TikTok/ByteDance fine anywhere in the response"
+    },
+    {
+      "text": "Covers LGPD Art. 14 fundamentals: processing in the child's best interest; specific consent requirements for children's data",
+      "passed": true,
+      "evidence": "\"processing of children's (under 12) and adolescents' (12 to 17) personal data must be in their 'best interest'. For children, specific and prominent consent from at least one parent or guardian is required.\""
+    },
+    {
+      "text": "Gives an action list: minor-user counting, legal-basis review of feeds/profiling, transparency-report pipeline, deletion readiness",
+      "passed": false,
+      "evidence": "Roadmap has \"identify teen cohort sizes\" and recommender gap assessment, but no transparency-report pipeline and no deletion readiness"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

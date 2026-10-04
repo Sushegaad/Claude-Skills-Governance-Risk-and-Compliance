@@ -1,0 +1,47 @@
+For prototype vehicle testing, you will need prototype labels at AL3 (on-site assessment), typically alongside an Information Security objective. Which exact labels depend on whether your order date falls under ISA 6 or ISA2027.
+
+**Step 1: What do you touch?**
+Start from the customer relationship, since objectives determine the level (not the other way round).
+- Do you hold prototype parts or components? That points to Proto Parts.
+- Do you hold or operate complete prototype vehicles on your premises? Proto Vehicles.
+- Do you run test drives on public roads or test grounds? Test Vehicles.
+- Do you host events or presentations where prototypes are shown? Proto Events.
+- Do you also receive confidential design data, test data or CAD from the OEM? Add Confidential or Strictly Confidential (see below).
+- Do you process personal data on the OEM's behalf (for example, driver or test-participant data)? Add Data (GDPR Art. 28, AL2). Special-category data (Art. 9) means Special Data, AL3.
+
+**Step 2: Labels and level**
+
+| Situation | Label (ISA 6 name) | Level |
+|---|---|---|
+| Prototype parts | Proto Parts | AL3 |
+| Prototype vehicles in your facility | Proto Vehicles | AL3 |
+| Test drives and test-vehicle operation | Test Vehicles | AL3 |
+| Prototype events or shows | Proto Events | AL3 |
+| High-confidentiality design or test data | Confidential | AL2 |
+| Very-high-confidentiality data | Strictly Confidential | AL3 |
+| High / very-high availability needs | High Availability / Very High Availability | AL2 / AL3 |
+| Processor for OEM personal data | Data | AL2 |
+
+The physical prototype labels are AL3, which means a comprehensive on-site assessment with evidence, interviews and physical inspection. If you combine several objectives, the highest level required drives the on-site rigour. Note that the older names "Info High" and "Info Very High" are legacy; they were split into Confidential / Strictly Confidential and the availability labels in ISA 6.
+
+**Step 3: Going into 2027 (the version split)**
+- **Order by December 31, 2026:** ISA 6, using the Proto Parts / Proto Vehicles / Test Vehicles / Proto Events labels and the 22-control prototype catalogue. The initial assessment must open by March 2027.
+- **Order from January 1, 2027:** ISA2027. The prototype module is restructured into 20 controls in two domains (Organizational Requirements; Physical & Environmental Security), with new traceability/lifecycle and disposal/return controls. The label structure becomes PTS: **Prototype Protection Basic (AL2)** and **Prototype Protection Facilities (AL3)**, where Facilities encompasses Basic.
+
+Because your work involves vehicle testing and on-site prototypes, you will almost certainly need the AL3 route in either case. Under ISA2027 that means Prototype Protection Facilities. Ask each OEM which label names and levels their supplier requirements specify, since they will state what they accept, and mapping between ISA 6 labels and PTS labels should be confirmed with them. Existing labels keep their full validity.
+
+**Step 4: Catalogue modules in scope**
+- Information Security (46 controls), always included
+- Prototype Protection (22 under ISA 6, 20 under ISA2027)
+- Data Protection (4 controls), only if Data or Special Data objectives apply
+
+**Practical points for AL3 prototype scope**
+- Expect physical inspection: perimeter and zone security, access control, camouflage and transport rules, test-drive protections, photo and film controls, and personnel commitments.
+- Scope matters. Use the standard scope where possible, and define each site separately, because ENX fees are €405 net per location and scope or €5,000 per year flat for unlimited locations and scopes (plus VAT).
+- Book an ENX-accredited audit provider early. AL3 on-site capacity is limited.
+- Labels are valid 3 years, then need a full re-assessment. Remember the 9-month corrective window if nonconformities arise.
+- Targets are maturity 3 across the board, with cutback rules so strengths do not offset weak areas.
+
+**Recommendation:** Confirm objectives with each OEM, then choose your order date deliberately. If you are going into 2027 without a hard deadline, scope your gap assessment to ISA2027 and the PTS Facilities structure.
+
+This is general compliance information, not legal advice. Verify with ENX and your accredited audit provider.

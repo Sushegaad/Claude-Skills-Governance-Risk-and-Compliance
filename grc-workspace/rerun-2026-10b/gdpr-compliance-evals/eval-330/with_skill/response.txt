@@ -1,0 +1,34 @@
+**Direct answer:** Data is anonymous only if the individual is not identifiable by any means reasonably likely to be used (Recital 26). The bar is high and context-dependent, and the standard is moving towards a "relative" approach. Until the EDPB finalises its new guidance, treat the old WP29 Opinion 05/2014 as still the formal reference but read it through the CJEU's 2025 ruling.
+
+**Rule -> Article -> Exception -> Practical implication**
+
+**1. The legal rule**
+- Anonymous information falls outside the GDPR (Recital 26). Pseudonymised data remains personal data where additional information could re-identify people (Art. 4(5); Recital 26).
+- Identifiability is judged by "all the means reasonably likely to be used", taking into account cost, time, available technology and technological developments.
+- Anonymisation is itself processing of personal data, so it needs a lawful basis and compatibility with the original purpose (Art. 5(1)(b), Art. 6(4)).
+
+**2. The 2025-2026 developments**
+- **CJEU, EDPS v SRB (C-413/23 P, 4 September 2025).** Whether data is personal is a relative, recipient-specific assessment. Pseudonymised data may not be personal data in the hands of a recipient that has no reasonably available means to re-identify. The controller that holds the key still processes personal data, and its transparency duties don't disappear.
+- **EDPB Guidelines 02/2026 on anonymisation** (adopted 7 July 2026 as version 1.0 for consultation, open until 30 October 2026). Once final, they replace WP29 Opinion 05/2014. The draft adopts the relative approach following SRB. It keeps the means-reasonably-likely test and the three WP29 risk criteria: singling out, linkability and inference. These are draft positions and could change, so check the final text.
+- **EDPB Opinion 28/2024 (AI models).** A model trained on personal data is not automatically anonymous. It must be very unlikely that individuals can be identified from the model, and very unlikely that personal data can be extracted through queries. You should document the assessment and test against known extraction attacks. If the model fails this test, unlawful training can taint downstream deployment.
+- **Digital Omnibus (November 2025 proposal).** It proposes codifying relative anonymisation. It is not law, and formal adoption is unlikely before 2027. Do not build compliance on it.
+
+**3. What a defensible anonymity claim looks like**
+1. **Define the recipient and the context.** State who holds the data, what other datasets they can access, and who could realistically attempt re-identification. Under the relative approach, an anonymity claim for a dataset in one party's hands may not hold for the party that holds the key or the source data.
+2. **Run the three-criteria test.** Can a record be singled out? Can records be linked across datasets? Can attributes be inferred? Failing any one generally means the data isn't anonymous.
+3. **Do a motivated-intruder or re-identification test.** Include auxiliary data that is publicly or commercially available, and test small cells and outliers.
+4. **Apply robust techniques properly.** Aggregation with adequate thresholds, generalisation and k-anonymity, differential privacy with a stated budget, noise addition and removal of unique records. Hashing or tokenising identifiers is pseudonymisation, not anonymisation, particularly where the input space is small (emails, phone numbers).
+5. **Control the environment.** Contractual prohibitions on re-identification, access restrictions and no sharing of keys. These support the "reasonably likely" analysis but don't replace technical robustness.
+6. **Re-assess over time.** New data releases and technology can reverse a prior conclusion. Set a review cycle and document it as part of accountability (Art. 5(2)).
+7. **Record the reasoning** in a written anonymisation assessment, kept with the RoPA (Art. 30). Consider a DPIA (Art. 35) where the data is sensitive or the release is large.
+
+**4. Practical implications**
+- Don't label a dataset "anonymous" because names were removed. Regulators and courts treat that as pseudonymised data.
+- If you deleted the re-identification key and genuinely cannot reconstruct individuals, the SRB reasoning may support arguing that erasure (Art. 17) has been satisfied for that data, but the threshold remains demanding. Get legal review before relying on it.
+- If you share pseudonymised data with a third party, don't assume it is non-personal for them without assessing their means. Your own obligations (including transparency about the sharing) continue.
+- If anonymisation fails, the full GDPR applies, including rights, breach duties (Arts. 33-34) and transfer rules (Arts. 44-49).
+- For special category data (Art. 9), be especially conservative.
+
+**Caveat:** The guidelines are in consultation, and the relative approach is contested among regulators and in national practice. If your business model depends on the anonymity claim, such as data monetisation, analytics sharing or AI training, get specialist advice and monitor the final version of Guidelines 02/2026.
+
+> **Legal Advice Disclaimer**: This guidance is informational and based on the GDPR text and established regulatory guidance. It does not constitute legal advice. For matters involving significant compliance risk, supervisory authority interaction, or complex cross-border scenarios, consult a qualified data protection lawyer or your DPO.

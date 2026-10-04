@@ -1,0 +1,31 @@
+ANPD institutional status and the consultation
+
+Caveat first: this area moved quickly through 2025 and 2026, and my knowledge of late-2026 developments is incomplete. What follows is my best understanding, with the points to verify flagged.
+
+1. Where the ANPD came from
+The Autoridade Nacional de Proteção de Dados was created by the 2018 LGPD amendments and started life in 2020 as a federal body linked to the Presidency (later the Ministry of Justice), with a transitional legal nature. The LGPD itself (Art. 55-A) said that nature could be transformed into an indirect federal public administration entity (an autarchy, "autarquia de natureza especial") by the Executive, within two years of the structure being set up. That transformation was formalised in 2022 (Provisional Measure 1,124/2022, converted into Law 14.460/2022), making the ANPD an autarquia especial with technical, decision-making and administrative autonomy, linked to the Ministry of Justice and Public Security.
+
+2. The more recent change: regulatory agency
+In 2025 the government moved to reshape the ANPD again. Provisional Measure 1,317/2025, issued in September 2025 alongside the passage of the child digital protection statute (Law 15.211/2025, the "ECA Digital"), converted the ANPD into a regulatory agency, renamed in some texts as the Agência Nacional de Proteção de Dados, with a broader mandate that includes overseeing and sanctioning compliance with the ECA Digital for digital services directed to or likely used by children and adolescents. The restructuring brought new positions, a regulatory-agency career framework and more budget. Please verify whether the provisional measure was converted into law in full, amended, or lapsed, and what its current official name and organisational structure are, as that is the point most likely to have changed.
+
+3. Governance
+The ANPD is led by a Board of Directors (Conselho Diretor) of five directors appointed by the President and approved by the Senate, with fixed terms. It has a National Council for Personal Data and Privacy Protection (CNPD) with multistakeholder membership, an internal Ombudsman and a Corregedoria. Its operational areas include the General Coordination of Inspection (Fiscalização), Regulation, and Technology and Research. It is also the Brazilian counterpart in the Global Privacy Assembly and cooperation networks, and it has an adequacy-related track with the EU. The European Commission adopted an adequacy decision for Brazil's regime in early 2026 (verify); that is relevant to your EU-Brazil flows, and it complements Brazil's own international transfer rules.
+
+4. What is "the consultation"?
+Without knowing which one you heard about, there are a few candidates and I do not want to guess confidently:
+- ANPD public consultations (consulta pública) and "tomada de subsídios" (calls for input) are a routine part of its regulatory agenda. Recent ones have covered topics such as the DPO (encarregado) role, international data transfers, security incident reporting, high-risk processing and DPIAs (RIPD), artificial intelligence, data subject rights, anonymisation, and children's data.
+- Implementation of the ECA Digital: the ANPD has run consultations on technical standards, age assurance and parental supervision, and on how the new statute interacts with LGPD Art. 14.
+- The Regulatory Agenda for 2025-2026: the ANPD consults on its priorities, which include AI, biometric data, and children and adolescent protection.
+- A possible legislative consultation or public hearing in Congress on the Brazilian AI bill (PL 2338/2023) or on the ANPD's expanded role.
+If you can tell me the topic or paste the notice, I can be specific. The right place to check is the gov.br/anpd site (section "Participação social") and the Participa + Brasil platform where consultations are published with dates, documents and submission forms.
+
+5. Why it matters to you
+- Consultations are your chance to shape binding rules. ANPD resolutions (such as Res. CD/ANPD 2/2022 for small agents, 4/2023 on sanctions, 15/2024 on incident reporting, 18/2024 on the DPO, 19/2024 on international transfers) came out of this process.
+- Submissions are generally public, and industry associations (Câmara-e.net, ABES, Brasscom, FEBRABAN and others) file joint positions that you can join.
+- Final texts usually lag consultations by several months, so use the consultation draft as a reliable preview and begin compliance planning.
+
+6. Recommended actions
+- Subscribe to ANPD newsletters and monitor the Diário Oficial da União.
+- Map which open consultations affect your processing (children, transfers, AI, biometrics).
+- Prepare a short, evidence-based submission through your trade association or counsel.
+- Confirm the current legal status (agency, name, directors) before citing it in any contract or regulatory filing.

@@ -1,0 +1,33 @@
+{
+  "eval_id": 326,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Cites the decision: the Irish DPC fined Google Ireland \u20ac403,000,000 (final September 21, 2026) as lead supervisory authority",
+      "passed": true,
+      "evidence": "\"The Irish DPC's decision against Google Ireland (21 September 2026, EUR 403,000,000)\" ... \"The DPC acted as lead supervisory authority under Art. 60\""
+    },
+    {
+      "text": "Identifies the processing: location data across Web & App Activity, Location History and Location Accuracy",
+      "passed": true,
+      "evidence": "\"It examined three settings: Web & App Activity, Location History and Location Accuracy.\""
+    },
+    {
+      "text": "States the findings across the ladder: unlawful/unfair processing, transparency failures (Arts. 12/13), accountability gaps, and retention longer than necessary \u2014 Arts. 5, 6, 12, 13",
+      "passed": true,
+      "evidence": "\"Unlawful and unfair processing... (Arts. 5(1)(a), 6)... Insufficient transparency for all three (Arts. 5(1)(a), 12, 13)... accountability gap... (Art. 5(2))... Retention longer than necessary... (Art. 5(1)(e))\""
+    },
+    {
+      "text": "Mentions the 6-month compliance order (and treats any appeal as reported, not confirmed)",
+      "passed": true,
+      "evidence": "\"It ordered compliance within six months. Google is reported to be appealing, but I can't confirm that\""
+    },
+    {
+      "text": "Draws design lessons: each location feature needs its own lawful basis, specific transparency and retention limits \u2014 bundled 'improve your experience' framing across settings is the failure pattern",
+      "passed": true,
+      "evidence": "\"treat every location-related setting as its own processing operation, each needing its own lawful basis, its own specific transparency and its own retention limit. Bundled, vague 'improve your experience' framing across several toggles is the failure pattern.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

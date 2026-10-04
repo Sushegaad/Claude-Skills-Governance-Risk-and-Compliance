@@ -1,0 +1,33 @@
+{
+  "eval_id": 334,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the governing instrument: ANPD Resolution 19/2024 (the international transfer regulation)",
+      "passed": true,
+      "evidence": "\"the practical route is the ANPD standard contractual clauses (Resolution CD/ANPD 19/2024), adopted without modification\""
+    },
+    {
+      "text": "Lists the mechanisms: adequacy decisions (none issued to date), ANPD standard contractual clauses, binding corporate rules, specific guarantees",
+      "passed": false,
+      "evidence": "Lists mechanisms but contradicts the no-adequacy ground truth: \"The EU/EEA is treated as adequate from January 2026\" / \"the January 2026 Brazil-EU mutual adequacy\" — asserts an adequacy decision exists, conflicting with \"none issued to date\""
+    },
+    {
+      "text": "States the SCC deadline reality: the 12-month grace period ended August 23, 2025 — ANPD SCCs must now be incorporated in transfer contracts (old DPA language doesn't suffice)",
+      "passed": true,
+      "evidence": "\"The grace period ended 23 August 2025. Adopt without modification\"; pitfall: \"Relying on a modified or custom DPA instead of the unmodified ANPD SCCs\""
+    },
+    {
+      "text": "Notes transparency/documentation duties around transfers (RoPA, notice to data subjects)",
+      "passed": true,
+      "evidence": "\"Transparency (Art. 9): tell data subjects that data goes to the US parent... Records: reflect the transfer and mechanism in your RoPA\""
+    },
+    {
+      "text": "Practical advice: audit existing intercompany agreements for ANPD SCC incorporation; don't rely on consent as a transfer workhorse",
+      "passed": true,
+      "evidence": "\"Inventory the data flows... Execute the ANPD SCCs\"; consent is \"Fallback only... Fragile and revocable, so not suitable for routine HR or customer data\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

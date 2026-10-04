@@ -1,0 +1,47 @@
+Short answer: TISAX is an assessment of your information security against the VDA ISA catalogue, performed by an accredited audit provider, and the result is shared with customers through the ENX portal. For a first-timer, plan on three to nine months and a total cost in the low to mid five-figure euro range for a small to mid-sized organization, more if you have multiple sites or AL3.
+
+Step 1: Find out exactly what the customer wants
+Ask your customer which assessment objectives and assessment level they need. Typical options are:
+- Info high (AL2) or very high protection (AL3)
+- Prototype protection (AL3)
+- Data protection (AL2)
+Most suppliers start with Information with high protection needs at AL2. Also ask for the deadline and whether the customer accepts an interim status.
+
+Step 2: Define your scope
+Decide which legal entity, sites, and processes are in scope. Use a single scope ID where possible. A narrower scope is cheaper, but it must cover the work you do for the customer. Each location in scope is listed on the label.
+
+Step 3: Register with ENX
+Register your company on the ENX portal, create your scope, and select assessment objectives. The ENX participant fee is paid per participant and per scope. Check current ENX fees directly. Expect a few hundred to roughly a thousand or more euros per year depending on the structure.
+
+Step 4: Gap analysis and remediation
+Download the ISA catalogue (free Excel from VDA/ENX). Perform a self-assessment of each control with a maturity rating from 0 to 5. The target is a maturity level of 3 (established process) on average, and no must-requirement can be missed. Typical gaps for first-timers:
+- Documented ISMS: policies, risk management, roles
+- Asset and information classification
+- Access management reviews
+- Supplier and third-party controls
+- Incident management and business continuity
+- Logging, patching, and physical security
+- Evidence: records that show processes actually run
+This is the biggest part of your effort. Expect 2 to 6 months, depending on maturity. An ISO 27001 certification helps a lot.
+
+Step 5: Choose an audit provider and book the assessment
+Select an audit provider from the ENX list of accredited providers. Get two or three quotes and ask about experience in your sector. Then place the order in the ENX portal. The provider performs the assessment: AL2 is a document review plus a remote interview (plausibility check), and AL3 includes on-site verification and interviews.
+
+Step 6: Assessment, findings, and report
+The provider produces a report with findings (major and minor nonconformities, observations). You get a defined period to submit a corrective action plan, and for major nonconformities, a follow-up assessment may be needed. The results are uploaded to ENX and you receive the label, valid for three years.
+
+Step 7: Share and maintain
+Release the label to the requesting customer in the portal. Keep the ISMS running, because the next assessment is in three years, and customers may ask for ongoing assurance.
+
+Cost overview (indicative)
+- ENX registration/participation fee: hundreds to low thousands euros.
+- Audit provider fees: AL2 for a small organization commonly lands around 4,000 to 12,000 euros; larger or multi-site organizations 15,000 to 40,000 euros or more. AL3 and prototype protection are higher because of on-site days and travel.
+- Internal effort: often the biggest cost. Count 50 to 200 person-days for a first-timer.
+- Consultancy: optional, perhaps 5,000 to 30,000 euros, plus tooling.
+- Technical remediation: for example endpoint management, MFA, logging, physical security upgrades.
+These are rough ranges. Get quotes.
+
+Tips
+- Do not wait. Start the gap analysis now, and register on ENX only when you are close to ready.
+- Reuse existing certifications (ISO 27001) where possible.
+- Make sure a named person owns the process.

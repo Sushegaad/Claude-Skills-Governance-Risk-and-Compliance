@@ -1,0 +1,33 @@
+{
+  "eval_id": 318,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the regime: limited assurance is required on CSRD sustainability reporting (the empowerment for reasonable-assurance standards was REMOVED by the Omnibus, so limited assurance remains the regime)",
+      "passed": true,
+      "evidence": "\"Currently that means limited assurance\"; \"the move to reasonable assurance has been removed\" by Omnibus I"
+    },
+    {
+      "text": "Reports the September milestone: CEAOB delivered its technical advice on an EU limited-assurance standard on September 25, 2026",
+      "passed": false,
+      "evidence": "No September 25, 2026 CEAOB technical advice; only \"CEAOB guidelines have been issued as supervisory expectations\""
+    },
+    {
+      "text": "Describes the mandate accurately without inventing content: the advice addresses EU-specific add-ons and potential carve-outs to ISSA 5000",
+      "passed": false,
+      "evidence": "Does not describe the advice's ISSA 5000 add-ons/carve-outs mandate; instead invents \"non-binding assurance guidelines (expected around 2026)\""
+    },
+    {
+      "text": "States the timeline: the Commission's limited-assurance delegated act is due by July 1, 2027",
+      "passed": false,
+      "evidence": "No July 1, 2027 delegated act; contradicts it: binding standards obligation \"replaced with an obligation to issue targeted, non-binding assurance guidelines\""
+    },
+    {
+      "text": "Explains current practice until then: assurance under national standards/member-state arrangements, with statutory auditors or (where allowed) independent assurance providers",
+      "passed": true,
+      "evidence": "\"member states apply their own standards or give auditors the choice\"; statutory auditor or \"independent assurance services provider (IASP)\" where member state allows"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

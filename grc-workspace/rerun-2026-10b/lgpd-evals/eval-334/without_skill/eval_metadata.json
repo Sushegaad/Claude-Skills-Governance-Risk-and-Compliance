@@ -1,0 +1,13 @@
+{
+  "eval_id": 334,
+  "eval_name": "brazil-us-transfers",
+  "run_type": "without_skill",
+  "prompt": "How do we lawfully transfer personal data from Brazil to our US parent company?",
+  "assertions": [
+    "States the governing instrument: ANPD Resolution 19/2024 (the international transfer regulation)",
+    "Lists the mechanisms: adequacy decisions (none issued to date), ANPD standard contractual clauses, binding corporate rules, specific guarantees",
+    "States the SCC deadline reality: the 12-month grace period ended August 23, 2025 — ANPD SCCs must now be incorporated in transfer contracts (old DPA language doesn't suffice)",
+    "Notes transparency/documentation duties around transfers (RoPA, notice to data subjects)",
+    "Practical advice: audit existing intercompany agreements for ANPD SCC incorporation; don't rely on consent as a transfer workhorse"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 317,
+  "eval_name": "below-threshold-vsme",
+  "run_type": "with_skill",
+  "prompt": "We have 800 employees and €600M turnover in the EU. Do we have to report under CSRD, and what should we do when big customers ask for sustainability data?",
+  "assertions": [
+    "Applies the Omnibus scope correctly: mandatory CSRD now covers large undertakings with MORE THAN 1,000 employees AND turnover above €450M (Directive (EU) 2026/470) — 800 employees means out of mandatory scope regardless of turnover",
+    "Points to the voluntary standard as law: Delegated Regulation (EU) 2026/1560 (OJ September 21, in force September 24, 2026), VSME-based with Basic/Comprehensive modules",
+    "Explains the value-chain cap: in-scope CSRD reporters may not demand more from ≤1,000-employee value-chain partners than the voluntary standard's content — the shield against over-broad customer questionnaires",
+    "Notes member-state transposition of the Omnibus scope changes is due March 19, 2027 (with major states like Germany still pending)",
+    "Gives practical advice: adopt the voluntary standard once, reuse it across customer requests"
+  ]
+}

@@ -1,0 +1,53 @@
+Short answer: for FY2026 you may choose between the 2023 ESRS (as amended) and the revised, simplified ESRS; for FY2027 the revised ESRS are mandatory. The revised standards are no longer a proposal. They are adopted and published, but they are not yet in force as of today (3 October 2026).
+
+**1. Legal status of the revised ESRS (as of 3 October 2026)**
+
+- Instrument: Commission Delegated Regulation (EU) 2026/1563, adopted 3 July 2026.
+- Published in the Official Journal on 21 September 2026.
+- Enters into force on 10 November 2026. Until then the 2023 ESRS (Delegated Regulation (EU) 2023/2772, as amended) remain the operative text.
+- Content: mandatory datapoints are cut from over 1,000 to roughly 320, which is more than 60% fewer mandatory datapoints and more than 70% fewer in total. Former voluntary datapoints have moved to EFRAG's non-mandatory guidance.
+- Application: the revised ESRS apply to financial years beginning on or after 1 January 2027.
+
+Do not describe these as "draft" or "proposed" any more. The Omnibus content has been enacted. Scope sits in Directive (EU) 2026/470, which entered into force in March 2026. Content sits in Delegated Regulation 2026/1563, and the voluntary standard sits in Delegated Regulation (EU) 2026/1560.
+
+**2. Which ESRS you apply**
+
+| Reporting year | Basis | Notes |
+|---|---|---|
+| FY2026 (report published 2027) | Your choice: 2023 ESRS (as amended) or revised ESRS | The choice is yours as an in-scope undertaking. Because the revised text only enters into force on 10 November 2026, confirm with your assurance provider and legal counsel how early adoption is documented and presented. |
+| FY2027 (report published 2028) | Revised ESRS (mandatory) | Applies to financial years beginning 1 January 2027. |
+
+I won't state a precise date by which you must declare your FY2026 choice. I'd treat that as something to confirm against the national transposition and your auditor's expectations.
+
+**3. How to choose for FY2026**
+
+Arguments for the revised ESRS in FY2026:
+- Lower datapoint burden, since roughly 320 mandatory datapoints replace more than 1,000.
+- No double build. You would otherwise do a 2023-basis report in FY2026 and then rebuild for FY2027.
+- Your FY2026 baseline would be comparable with FY2027.
+
+Arguments for staying on the 2023 ESRS for FY2026:
+- Your FY2024 and FY2025 reports (wave-one reporters have already published) were built on the 2023 ESRS. Staying put gives continuity of prior-year comparatives (ESRS 1 requires comparatives for quantitative disclosures).
+- Your data processes, XBRL tagging and assurance work are already calibrated to that structure.
+- The revised standards are not yet in force, so the risk of an early-adoption interpretive question is higher.
+
+My practical suggestion is to run a short mapping exercise before deciding. Take your FY2025 report, map it to the revised mandatory datapoints, and see how much you would drop, what must change, and how comparatives would be handled. Then decide.
+
+**4. Two things to check before you rely on this**
+
+1. **Confirm you are still in mandatory scope.** The wave-one label is not enough. Under Directive (EU) 2026/470, mandatory reporting applies to large undertakings with more than 1,000 employees and net turnover above EUR 450 million. NFRD-era wave-one reporters continue to report, but "others report per the amended timeline as transposed." Member-State transposition is due around 19 March 2027, and Germany is still pending. Check your own Member State's position.
+2. **Your DMA stays the anchor.** The revised ESRS keep double materiality. The DMA should be re-run or re-validated at least annually (ESRS 1 / IRO-1). If you move to the revised ESRS, re-check how your existing material-topic conclusions map to the streamlined disclosure requirements.
+
+**5. Related timeline items**
+
+- Assurance: limited assurance remains the regime. The empowerment for reasonable-assurance standards was removed by the Omnibus. CEAOB delivered its technical advice on an EU limited-assurance standard (EU add-ons to ISSA 5000) on 25 September 2026, and the Commission's delegated act is due by 1 July 2027.
+- Value chain: the voluntary standard (Delegated Regulation (EU) 2026/1560, in force 24 September 2026) caps what you may demand from value-chain partners with 1,000 employees or fewer.
+
+**6. Next steps**
+
+1. Verify scope status under 2026/470 and your national transposition.
+2. Run the FY2025-to-revised-ESRS datapoint mapping.
+3. Decide the FY2026 basis, document the rationale, and agree it with the board or audit committee and the assurance provider.
+4. Plan the FY2027 data and controls build on the revised ESRS.
+
+This is general compliance information and not legal advice. Verify against EUR-Lex and your national transposition law before committing.

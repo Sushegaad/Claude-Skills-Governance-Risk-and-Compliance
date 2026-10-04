@@ -18,4 +18,4 @@ Jurisdiction & applicability matrices before detail · per-regime gap assessment
 **Trigger phrases:** `UAE compliance`, `DIFC data protection`, `ADGM data protection`, `UAE PDPL`, `CBUAE outsourcing`, `UAE health data residency`, `Dubai ISR`, `ADHICS`, `expanding to the UAE`
 
 ---
-Skill version: 2.0.0 — September 2026
+Skill version: 2.1.0 — October 2026

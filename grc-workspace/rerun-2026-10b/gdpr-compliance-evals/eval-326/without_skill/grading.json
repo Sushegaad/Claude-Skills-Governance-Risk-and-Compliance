@@ -1,0 +1,33 @@
+{
+  "eval_id": 326,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Cites the decision: the Irish DPC fined Google Ireland \u20ac403,000,000 (final September 21, 2026) as lead supervisory authority",
+      "passed": false,
+      "evidence": "Declines to cite: \"I can't verify the details of a September 2026 decision involving Google, and I don't want to invent its holding.\" No DPC, no \u20ac403M, no date, no lead-SA role."
+    },
+    {
+      "text": "Identifies the processing: location data across Web & App Activity, Location History and Location Accuracy",
+      "passed": false,
+      "evidence": "Never identifies the decision's processing; 'web and app activity' appears only as a hypothetical settings example and Location Accuracy is never mentioned."
+    },
+    {
+      "text": "States the findings across the ladder: unlawful/unfair processing, transparency failures (Arts. 12/13), accountability gaps, and retention longer than necessary \u2014 Arts. 5, 6, 12, 13",
+      "passed": false,
+      "evidence": "No findings stated \u2014 explicitly \"Treat it as a design framework, not an analysis of that ruling.\""
+    },
+    {
+      "text": "Mentions the 6-month compliance order (and treats any appeal as reported, not confirmed)",
+      "passed": false,
+      "evidence": "No mention of a 6-month compliance order or any appeal."
+    },
+    {
+      "text": "Draws design lessons: each location feature needs its own lawful basis, specific transparency and retention limits \u2014 bundled 'improve your experience' framing across settings is the failure pattern",
+      "passed": true,
+      "evidence": "\"'location for the core feature', 'location for personalisation'... should be separate, unbundled choices. Consent for one purpose cannot be assumed for another\"; \"explain... what each setting does, who receives the data... and retention\"; auto-delete defaults under Art. 5(1)(e)."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

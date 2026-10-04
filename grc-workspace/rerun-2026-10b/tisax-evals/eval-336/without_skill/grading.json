@@ -1,0 +1,33 @@
+{
+  "eval_id": 336,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the rule: assessments ordered through December 31, 2026 run on ISA 6; orders from January 1, 2027 run on ISA2027",
+      "passed": false,
+      "evidence": "\"I cannot confirm the exact cut-over date from memory\" — never states the Dec 31, 2026 / Jan 1, 2027 order-date rule; even claims \"Orders placed early do not always lock in the old catalogue.\""
+    },
+    {
+      "text": "Adds the ENX nuance: an ISA-6 initial assessment must OPEN by March 2027 — a late-2026 order can't sit indefinitely",
+      "passed": false,
+      "evidence": "No mention of the March 2027 opening deadline for ISA-6 initial assessments."
+    },
+    {
+      "text": "Gets the publication history right: ISA2027 was published in full on July 1, 2026 (redline and webinars August 7; ISA2027.1 is the current minor revision) — a response dating the catalogue's publication to mid-September fails",
+      "passed": false,
+      "evidence": "No publication history at all — ISA2027, July 1, 2026, redline/webinars and ISA2027.1 never mentioned."
+    },
+    {
+      "text": "Notes labels keep their full (up to 3-year) validity — the annual release cycle does not increase reassessment frequency",
+      "passed": false,
+      "evidence": "Says \"Your label runs for three years from the assessment\" but never notes the annual release cycle or that it does not increase reassessment frequency (compound element missing)."
+    },
+    {
+      "text": "Advises the decision: gap-assess against the catalogue you'll actually be assessed under; late-2026 orders buy ISA-6 continuity, 2027 orders start clean on ISA2027",
+      "passed": false,
+      "evidence": "Advises \"build against the newest catalogue\" but never names ISA2027 and denies the order-date lock-in (\"do not always lock in the old catalogue\"), so the ISA-6-continuity/ISA2027 decision is not given."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

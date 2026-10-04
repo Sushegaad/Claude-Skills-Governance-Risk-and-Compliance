@@ -1,0 +1,49 @@
+**Direct answer:** The Irish DPC's decision against Google Ireland (21 September 2026, EUR 403,000,000) tells you to treat every location-related setting as its own processing operation, each needing its own lawful basis, its own specific transparency and its own retention limit. Bundled, vague "improve your experience" framing across several toggles is the failure pattern.
+
+**What the DPC found (verify against the published decision before relying on detail)**
+The DPC acted as lead supervisory authority under Art. 60, following an own-volition inquiry opened in February 2020 after BEUC-coordinated complaints. It examined three settings: Web & App Activity, Location History and Location Accuracy. It found:
+- Unlawful and unfair processing for Web & App Activity and Location History (Arts. 5(1)(a), 6).
+- Insufficient transparency for all three (Arts. 5(1)(a), 12, 13).
+- An accountability gap for Location Accuracy (Art. 5(2)).
+- Retention longer than necessary for Web & App Activity and Location History (Art. 5(1)(e)).
+It ordered compliance within six months. Google is reported to be appealing, but I can't confirm that, so treat the decision as not yet final.
+
+**Design implications for your app**
+
+1. **Map each setting to a distinct purpose and lawful basis (Arts. 5(1)(b), 6).**
+   - Do not let one consent or one "location on" switch cover several purposes such as navigation, personalisation, analytics and advertising.
+   - If you rely on consent, it must be specific, informed, unambiguous and as easy to withdraw as to give (Art. 7; Recital 32). Granularity matters. Where separate purposes are bundled, consent is unlikely to be valid.
+   - If you rely on contract (Art. 6(1)(b)), it only covers location processing that is objectively necessary for the service the user asked for. Personalisation and ad profiling rarely meet that test.
+   - If you rely on legitimate interests, you need a documented LIA. Under EDPB Guidelines 1/2024 the interest must be real and present, the processing necessary, and the balancing honest. Precise or historical location is sensitive in practice because it reveals home, work, health-related visits and religious or political attendance. That weighs heavily against you and can bring Art. 9 into play through inference.
+
+2. **Make transparency setting-specific (Arts. 12, 13).**
+   - The notice, and the in-product text at the toggle, should say what each setting collects (GPS, Wi-Fi, cell, IP-derived), what it is used for, who receives it and how long it is kept.
+   - Explain what actually changes if the user turns it off.
+   - Do not describe two settings that behave differently in one sentence.
+
+3. **Set and enforce retention per setting (Art. 5(1)(e)).**
+   - Define a period for each location data type and implement automatic deletion or aggregation. Include backups and analytics copies.
+   - Document the rationale for each period. "Until the user deletes it" is hard to defend as a default.
+
+4. **Show accountability (Art. 5(2), Art. 24).**
+   - Keep records of consent (Art. 7(1)), the LIA and the RoPA entry (Art. 30) for each setting.
+   - Maintain a data-flow map that shows where each location signal goes. The Location Accuracy finding suggests regulators will ask you to prove how a setting works, not just describe it.
+
+5. **Apply privacy by default and design (Art. 25).**
+   - Default to off for non-essential location collection.
+   - Offer a coarse-location option where it serves the feature.
+   - Don't use dark patterns. Equal prominence for accept and reject is a standing enforcement priority.
+
+6. **Check the device layer.** If you read location from the device, the ePrivacy Directive Art. 5(3) as transposed nationally may require consent for accessing information on the terminal, in addition to GDPR. The ePrivacy Regulation was withdrawn in February 2025, and the Digital Omnibus proposal to fold these rules into GDPR is not yet law.
+
+7. **Run a DPIA (Art. 35)** if you track location systematically at scale or combine it with other data. Location tracking is a recognised high-risk indicator in regulator DPIA lists. Children's data raises the bar further (Art. 8).
+
+**Practical audit steps**
+- List every location-related toggle and every internal use of location data.
+- For each, record the purpose, lawful basis, notice text, retention period and downstream recipients.
+- Remove or merge settings you can't justify separately.
+- Test whether the user-visible description matches what the code does.
+
+**Caveats:** Whether a given setting needs consent or can rest on another basis depends on your facts and Member State law, and you should confirm that with counsel.
+
+> **Legal Advice Disclaimer**: This guidance is informational and based on the GDPR text and established regulatory guidance. It does not constitute legal advice. For matters involving significant compliance risk, supervisory authority interaction, or complex cross-border scenarios, consult a qualified data protection lawyer or your DPO.

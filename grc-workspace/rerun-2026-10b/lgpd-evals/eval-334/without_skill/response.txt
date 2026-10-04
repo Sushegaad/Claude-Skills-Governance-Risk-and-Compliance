@@ -1,0 +1,43 @@
+Lawful transfer of personal data from Brazil to a US parent company
+
+1. The framework
+Chapter V of the LGPD (Arts. 33-36) regulates international transfers, and ANPD Resolution CD/ANPD No. 19/2024 (August 2024) operationalised it. Any transfer, including remote access from the US to data stored in Brazil, counts as an international transfer. Intra-group transfers get no exemption. A transfer must satisfy two things: (1) an LGPD legal basis for the underlying processing, and (2) one of the Art. 33 transfer mechanisms.
+
+2. The available transfer mechanisms (Art. 33)
+- Adequacy decision by the ANPD. As of my knowledge, the ANPD has not recognised the US as adequate. Brazil has been working on adequacy with the EU in the other direction. Do not rely on adequacy for the US unless an ANPD decision is published.
+- Standard contractual clauses (SCCs, "cláusulas-padrão contratuais"). The most practical option for a parent-subsidiary arrangement. Annex II of Res. 19/2024 contains the mandatory text, which must be adopted in full and without alteration, and filled in with the transfer details (parties, purposes, categories, security measures, onward transfers, liability). The deadline to migrate existing contracts to the ANPD SCCs was 23 August 2025.
+- Specific contractual clauses, which require prior ANPD approval. Slow and rarely used.
+- Binding corporate rules (BCRs, "normas corporativas globais"), which suit multinational groups with many flows but require ANPD approval. Worth considering if you have many Brazilian-US-global flows.
+- Seals, certificates and codes of conduct (also subject to ANPD approval).
+- Art. 33 exceptions: data subject's specific and highlighted consent with prior information on the international nature of the transfer; performance of a contract at the data subject's request; legal or regulatory obligation; exercise of rights in legal proceedings; protection of life; international legal cooperation; public policy authorisation. These are interpreted narrowly and are poor fits for routine intra-group flows. Consent is fragile because it can be revoked.
+
+3. The recommended route for you: SCCs
+Steps:
+1. Map the flows. Identify categories of data (employees, customers, marketing, sensitive data), purposes, recipients in the US, onward transfers, retention, and systems.
+2. Determine roles. The Brazilian entity is typically the exporter (controller). The US parent may be a controller or an operator. The SCCs have modules for controller-to-controller and controller-to-operator (Section II vs the optional modules); choose the correct one. The parent may be a joint or independent controller if it uses data for its own purposes.
+3. Confirm the legal basis for the underlying processing and for sharing with the parent: legitimate interest, contract, legal obligation, or consent. Perform and document a legitimate interest assessment where relevant.
+4. Execute the SCCs verbatim, completing the annexes. Choose the governing details the template leaves open (such as dispute resolution, the option for a security-incident notification period, and onward transfer conditions). Add a commercial agreement around them without conflicting with the SCCs. In case of conflict the SCCs prevail.
+5. Publish information to data subjects: privacy notice should disclose the international transfer, the countries, the mechanism, and give access to a summary of the SCC terms. Provide the full text on request (Res. 19/2024 requires making SCC text or a summary available in Portuguese).
+6. Perform a transfer risk assessment. The Resolution requires the exporter to ensure the SCCs can be honoured, including consideration of destination-country laws and practices such as government access. Document it.
+7. Security and governance: encryption in transit and at rest, access controls, minimisation, retention limits and logging for access from the US.
+8. Sensitive data, children's data, and employee data call for extra care (RIPD/DPIA).
+9. Keep records: ROPA with the transfer entries, signed SCCs, TRA, notices; be ready to produce them to the ANPD on request.
+
+4. Note on the EU-US Data Privacy Framework
+The EU-US DPF has no bearing on Brazil-US transfers. Certifying the US parent does not itself satisfy the LGPD, though it can support the risk assessment about US safeguards.
+
+5. Data subject rights and incident duties
+Data subjects can still exercise their rights against the Brazilian controller, and the SCCs oblige the importer to assist. Incident notification (Res. CD/ANPD 15/2024) runs on a 3-business-day clock for incidents posing relevant risk, so the SCCs and your internal escalation need to ensure the US parent notifies the Brazilian entity fast enough.
+
+6. Common pitfalls
+- Modifying the SCC text: invalid, and a breach of the Resolution.
+- Treating cloud storage in the US or support access as not a transfer.
+- Relying on consent for HR data in an employment relationship.
+- Failing to update existing intra-group agreements by the deadline.
+- Not capturing onward transfers by the parent to its processors.
+- Ignoring the requirement that the importer be bound by the Brazilian law rights.
+
+7. Timeline
+SCC execution and TRA: 4 to 8 weeks for a typical group. BCRs: many months.
+
+Bottom line: sign the ANPD standard clauses unaltered between the Brazilian entity and the US parent, back them with a documented legal basis, transparency and risk assessment, and keep records. Confirm any adequacy or regulatory update with Brazilian counsel.

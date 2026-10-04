@@ -17,4 +17,4 @@ Tier models with per-tier due-diligence depth · framework-cited questionnaire g
 **Trigger phrases:** `vendor risk`, `third-party risk`, `TPRM`, `security questionnaire`, `review this SOC 2`, `sub-processors`, `vendor due diligence`, `supply chain security`, `DORA third party`, `vendor offboarding`
 
 ---
-Skill version: 2.0.0 — September 2026
+Skill version: 2.1.0 — October 2026

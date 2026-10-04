@@ -1,0 +1,33 @@
+{
+  "eval_id": 319,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Defines both lenses: impact materiality (inside-out) and financial materiality (outside-in), with a topic material if it meets either",
+      "passed": true,
+      "evidence": "\"material from an impact perspective... a financial perspective... or both. Either is enough to report\""
+    },
+    {
+      "text": "Describes the process: context/stakeholder mapping, identification of impacts/risks/opportunities, scoring with defined thresholds, validation and documentation",
+      "passed": true,
+      "evidence": "Steps 1-7: context and value-chain mapping, stakeholder identification, IRO identification, \"Set scoring scales (for example 1 to 5), define thresholds and justify them\", validate, document"
+    },
+    {
+      "text": "Connects DMA output to disclosure scope: material topics drive which topical standards and datapoints apply (ESRS 2 general disclosures always apply)",
+      "passed": true,
+      "evidence": "\"if a topic is not material, you need not report its disclosure requirements... ESRS 2 general disclosures are always required\""
+    },
+    {
+      "text": "Reflects the revised-ESRS simplification accurately (fewer mandatory datapoints; relief provisions) without claiming the DMA itself was abolished",
+      "passed": false,
+      "evidence": "Treats revision as unenacted and vague: \"The revised standards are still draft in my knowledge\"; no fewer-mandatory-datapoint substance from the final act"
+    },
+    {
+      "text": "Output is actionable: stepwise plan or table, with governance/audit-trail expectations for assurance readiness",
+      "passed": true,
+      "evidence": "Actionable 7-step walkthrough; \"Keep evidence: workshop minutes, scoring, data sources, decisions. The assurer will test the DMA process\"; board sign-off"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

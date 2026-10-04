@@ -1,0 +1,13 @@
+{
+  "eval_id": 324,
+  "eval_name": "data-broker-climate",
+  "run_type": "without_skill",
+  "prompt": "We're a registered data broker. What's the CPPA enforcement climate right now?",
+  "assertions": [
+    "Cites the registration blitz: SalesIntel Research fined $36,400 (September 1, 2026) for failing to register while selling Californians' PI",
+    "Cites Enforcement Advisory 2026-01 (September 3, 2026): registration-information ACCURACY, with $200/day exposure for incorrect registry entries",
+    "States DROP mechanics: deletion-request processing went live August 1, 2026, and brokers must process DROP requests",
+    "Mentions AB 883 (signed September 27): broker DSR response deadline cut from 45 to 30 days plus DROP notice duties",
+    "Gives a compliance checklist: registration accuracy review, DROP integration, metrics disclosures, deletion workflows"
+  ]
+}

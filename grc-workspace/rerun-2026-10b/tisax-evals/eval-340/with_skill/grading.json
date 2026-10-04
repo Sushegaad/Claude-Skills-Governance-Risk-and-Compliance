@@ -1,0 +1,33 @@
+{
+  "eval_id": 340,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the overlap honestly: substantial (~70-80% of controls map) — ISO certification is the best starting point but does NOT substitute for TISAX",
+      "passed": true,
+      "evidence": "\"About 70 to 80% of the ISA Information Security controls map to ISO 27001:2022\"; \"an ISO 27001 certificate does not substitute for it\"; \"best starting point you could have\"."
+    },
+    {
+      "text": "Explains the structural differences: fixed maturity targets (0-5, target 3) with cutback rules instead of SoA flexibility; over-performance can't offset weak areas",
+      "passed": true,
+      "evidence": "\"There is no SoA-style tailoring. Every applicable question must reach target maturity 3... cutback rules mean strong areas cannot offset weak ones.\""
+    },
+    {
+      "text": "Identifies the automotive-specific deltas: prototype protection, OEM data-classification expectations, label/exchange mechanics via ENX",
+      "passed": true,
+      "evidence": "Table rows: \"Prototype Protection module\", \"Handling of data classified under OEM terms\", \"Labels and ENX mechanics: Registration, scoping... label sharing, temporary labels and the 9-month corrective window.\""
+    },
+    {
+      "text": "Notes ISA2027 refined the ISO 27001:2022 mapping (and removed 2013 references) — map existing evidence first, then close automotive gaps",
+      "passed": true,
+      "evidence": "\"Both ship with ISO 27001:2022 mappings (ISA2027 also adds NIST CSF 2.0 and drops all 2013 references)\"; \"Map your ISO evidence to the ISA control areas... Gap-assess what does not map.\""
+    },
+    {
+      "text": "Gives a realistic effort estimate for a certified org (evidence re-expression in maturity terms, prototype/physical additions where relevant)",
+      "passed": true,
+      "evidence": "\"typically months, not a year\"; effort tiers Light/Moderate/Heavier — \"Re-expressing evidence in maturity terms (0-5)\", \"Prototype protection (if in scope) and AL3 on-site readiness\" heavier."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -20,3 +20,9 @@
 
 ## Citation discipline
 Cite ISA control numbers only when confident of the specific control in the official ISA document; otherwise cite the control area by name and direct users to the current VDA ISA download (vda.de / enx.com). Never invent control numbers.
+
+---
+
+## ISA2027 Detail (published in full July 1, 2026; ISA2027.1 current)
+Redline vs ISA 6.0.1 and webinar series available from ENX since August 7, 2026. Key changes: annual year-based release cycle (summer publication, January 1 effectiveness); IS module stays at 46 controls with ~44 edited and substantive requirement changes in ~25 (counts per consultancy analyses of the workbook); formalized "the following aspects are considered" semantics (each aspect consciously considered and explainable); broader Project definition; clearer event-vs-incident distinction; supply-chain strengthening (high: documented supplier monitoring; very high: TISAX label / equivalent third-party assessment / supplier audit); prototype module 22→20 controls in two domains (Organizational Requirements; Physical & Environmental Security) with new traceability/lifecycle and disposal/recycling/return controls; PTS labels Prototype Protection Basic (AL2) / Facilities (AL3); mappings to NIST CSF 2.0 and refined ISO/IEC 27001:2022 (all 2013 references removed). Transition: mandatory for orders from January 1, 2027; final date to OPEN an initial ISA-6 assessment is March 2027; labels keep validity.
+

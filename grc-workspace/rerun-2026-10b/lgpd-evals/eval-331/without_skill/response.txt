@@ -1,0 +1,45 @@
+Realistic LGPD penalty exposure in late 2026
+
+Short answer: the statutory ceiling is modest compared with the GDPR, but in practice your exposure is a mix of administrative sanctions from the ANPD, private and collective litigation, and consumer-protection or public-prosecutor action. For most companies the non-fine consequences are more disruptive than the fine itself.
+
+1. Administrative sanctions (LGPD Art. 52)
+The ANPD can impose, in escalating fashion:
+- Warning, with a deadline for corrective measures.
+- Simple fine of up to 2% of the company's (or group's) revenue in Brazil in the prior fiscal year, excluding taxes, capped at R$50 million per infraction.
+- Daily fine, subject to the same overall cap.
+- Publicization of the infraction once it is established, which is often the most damaging for reputation.
+- Blocking of the personal data involved until regularization.
+- Deletion of the personal data involved.
+- Partial suspension of the database operation for up to 6 months, extendable once.
+- Suspension of the data processing activity for up to 6 months, extendable once.
+- Partial or total prohibition of data-processing activities.
+The last three were added in force in August 2021 and are the real teeth: a suspension order against a core processing activity can be commercially worse than any fine.
+
+2. How fines are actually calculated
+The ANPD's Dosimetry Regulation (Resolution CD/ANPD No. 4/2023) classifies infractions as light, medium or grave and sets fine ranges by severity, adjusting for aggravating factors (recidivism, obstruction, damage to data subjects, sensitive data, large scale, children) and mitigating factors (cooperation, prompt remediation, good-faith adoption of a governance programme, ISO or similar certifications, demonstrated compliance policies). Fines are applied only after due process: a monitoring phase, a preparatory phase, and a sanctioning process with a right of defence and appeal.
+
+3. What enforcement has looked like
+Expect the following realism check. The ANPD has a small staff relative to the market. Its first sanctions came in 2023 and were small (for example, fines on a small municipal-sector entity and a health-sector company for failing to respond to ANPD requests and for not appointing a DPO or reporting an incident). It has prioritised guidance, regulatory sandboxes, and cooperative "responsive regulation" over maximum penalties. Large multi-million-real LGPD fines have been rare. Still, the ANPD has acted forcefully on high-profile matters through preventive measures and orders (such as the Meta AI training and other large-platform proceedings), which shows it will use injunction-style tools against big players. Check the ANPD's published sanctions list and current enforcement priorities before relying on any of this; my knowledge of 2026 specifics is limited.
+
+4. Where the real money is: parallel exposure
+- Civil liability (Art. 42): compensation for material, moral, individual or collective damages. Brazilian courts have awarded moral damages in individual data cases, and class-style claims by consumer associations or the Ministério Público can aggregate them. Liability is joint between controller and operator in defined cases, and may be strict-leaning when the data was handled unlawfully or with inadequate security.
+- Consumer law (CDC): Procon agencies, Senacon and the Ministério Público can fine and sue under consumer law on overlapping facts. CDC fines are not capped the same way.
+- Public prosecutors and courts: injunctions, collective moral damages (dano moral coletivo) actions.
+- Sector regulators: Banco Central, SUSEP, ANS and others impose their own data-security and breach rules.
+- Contractual exposure: customers and partners will push indemnities and audit rights down to you.
+
+5. Risk drivers that raise realistic exposure
+- Failure to notify the ANPD and data subjects of a security incident in the required time (Resolution CD/ANPD 15/2024 sets 3 business days for notifying where the incident may cause relevant risk).
+- Processing of children's and teenagers' data, sensitive data, or large-scale profiling. Brazil's new digital child-protection statute (ECA Digital, Law 15.211/2025) adds its own sanctions layer for services aimed at or likely accessed by minors, with fines of up to R$50 million or 10% of Brazilian revenue; confirm current details.
+- Non-response to ANPD information requests, which has been the basis of several early sanctions.
+- No DPO (encarregado) published, no ROPA, no legal basis documented.
+- International transfers outside the standard contractual clauses regime (Resolution CD/ANPD 19/2024).
+
+6. Practical advice
+- Treat the 2% / R$50 million per infraction cap as a per-violation ceiling: several distinct infractions can stack.
+- Build a mitigation file now: DPO, ROPA, incident response plan, DPIA/RIPD for high-risk processing, training records, and evidence of governance. These feed directly into the dosimetry reductions.
+- Respond to every ANPD contact on time and completely.
+- Quantify litigation exposure separately: number of data subjects times plausible moral damages per head, plus collective claims.
+- Prioritise: breach notification readiness, transfer mechanisms, minors' data, and DSAR handling.
+
+Bottom line: a catastrophic ANPD fine is unlikely for a diligent company, but operational orders, publicization, and Brazilian civil and consumer litigation are realistic. Verify against current ANPD enforcement reports and consult Brazilian counsel for a company-specific figure.

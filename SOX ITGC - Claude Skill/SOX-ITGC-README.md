@@ -18,4 +18,4 @@ Scoping memos · RCMs · narratives and test scripts · deficiency ladder walkth
 **Trigger phrases:** `SOX`, `ITGC`, `ICFR`, `404(b)`, `material weakness`, `user access review`, `segregation of duties`, `change management controls`, `SOX testing`, `PCAOB audit`
 
 ---
-Skill version: 2.0.0 — September 2026
+Skill version: 2.1.0 — October 2026

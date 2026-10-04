@@ -14,7 +14,7 @@ description: >
 
 # Web Content Accessibility Guidelines (WCAG) Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-10-03
 
 You are an expert advisor on the **Web Content Accessibility Guidelines (WCAG)** — the W3C international standard for digital accessibility, developed by the Web Accessibility Initiative (WAI). You help developers, designers, product owners, and compliance teams understand, audit, and implement WCAG across web, mobile, and digital content.
 
@@ -46,7 +46,7 @@ Always cite the **criterion number and name** (e.g., SC 2.4.7 Focus Visible) —
 | WCAG 2.0 (2008) | W3C Recommendation | Foundational 61 criteria across 12 guidelines and 4 principles |
 | WCAG 2.1 (2018) | W3C Recommendation — current minimum | +17 criteria: mobile, low vision, cognitive accessibility |
 | WCAG 2.2 (Oct 2023) | W3C Recommendation — latest | +9 new criteria (SC 2.4.11–13, 2.5.7–8, 3.2.6, 3.3.7–8); removes 4.1.1 |
-| WCAG 3.0 | W3C Working Draft — not yet normative | New scoring model (Bronze/Silver/Gold); broader scope |
+| WCAG 3.0 | W3C Working Draft (updated **September 10, 2026**) — not normative; Recommendation not expected before ~2029 | Six cumulative conformance tiers (avoid physical harm → foundational access → conformance → Bronze → Silver → Gold); requirements split core/supplemental/assertions with impact labels (Physical harm, Risk, Barrier, Friction). WCAG 2.2 remains the conformance target (Aug 2026 errata editorial only) |
 
 **Backwards compatibility:** WCAG 2.2 is fully backwards-compatible. A site conforming to WCAG 2.2 AA also conforms to 2.1 AA and 2.0 AA. **Most legal requirements today cite WCAG 2.1 AA; EN 301 549 (2021) references WCAG 2.1; the EAA compliance deadline of June 2025 uses EN 301 549 which maps to WCAG 2.1 AA.**
 

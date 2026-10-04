@@ -1,0 +1,13 @@
+{
+  "eval_id": 325,
+  "eval_name": "admt-countdown",
+  "run_type": "with_skill",
+  "prompt": "Give us the compliance timeline for California's ADMT and risk-assessment regulations.",
+  "assertions": [
+    "States the ADMT date: compliance for significant decisions begins January 1, 2027 (pre-use notice, opt-out, access rights)",
+    "States risk assessments: processing ongoing as of January 1, 2026 must have assessments completed by December 31, 2027",
+    "States first submissions: risk-assessment materials/attestations to the CPPA by April 1, 2028",
+    "States cybersecurity-audit phase-in: certifications due April 1, 2028 (>$100M revenue), 2029 ($50–100M), 2030 (<$50M)",
+    "Scopes ADMT correctly: covered 'significant decisions' (employment, finance, housing, etc.) and what counts as ADMT, with practical first steps (inventory automated decisions now)"
+  ]
+}

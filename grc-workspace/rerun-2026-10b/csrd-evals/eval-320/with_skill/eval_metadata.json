@@ -1,0 +1,13 @@
+{
+  "eval_id": 320,
+  "eval_name": "value-chain-scope3",
+  "run_type": "with_skill",
+  "prompt": "Our customers are demanding full Scope 3 and supplier ESG data. What can they actually require from us, and what must we produce ourselves?",
+  "assertions": [
+    "Distinguishes the asker's own reporting duties (if in scope) from data requests cascading down the value chain",
+    "Applies the value-chain cap: requests to ≤1,000-employee partners are capped at the voluntary standard's (Reg. 2026/1560) content",
+    "Covers Scope 3 reporting expectations under the revised ESRS for in-scope reporters (GHG categories, estimation/proxies where primary data is unavailable)",
+    "Advises practical responses: voluntary-standard-aligned data package, estimation methodologies, phased supplier engagement",
+    "Mentions transition reliefs/phase-ins where relevant rather than asserting maximal obligations"
+  ]
+}

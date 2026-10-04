@@ -1,0 +1,47 @@
+Obligations for a social platform popular with Brazilian teenagers
+
+Caveat: Brazil's child-protection rules changed substantially in 2025-2026, and I may be missing late-2026 implementing details. Verify specifics with Brazilian counsel and the ANPD's published guidance.
+
+1. Two overlapping regimes
+(a) LGPD Art. 14: processing of children's (under 12) and adolescents' (12 to 17) personal data must be in their "best interest". For children, specific and prominent consent from at least one parent or guardian is required. ANPD Statement/Enunciado CD/ANPD 1/2023 clarified that adolescents' data can rest on any LGPD legal basis (Arts. 7 or 11) provided the best-interest principle is observed, so you are not forced into consent for teens, but legitimate interest and contract must be defended with the best-interest lens.
+(b) The ECA Digital (Law 15.211/2025, in force from March 2026, subject to verification): a statute applying to digital products and services directed at, or likely to be accessed by, children and adolescents, regardless of where the provider is located. A teen-popular social platform is squarely in scope.
+
+2. Core ECA Digital-type duties (verify against current text and regulations)
+- Best interest and integral protection by design and by default: risk assessment and mitigation for content, contact, conduct and commercial risks, with the highest privacy settings by default.
+- Age assurance: reliable mechanisms to verify or estimate age, going beyond self-declaration, while respecting data minimisation. Do not collect more data than needed to determine age, and avoid reusing age-check data.
+- Parental supervision: for accounts of users under 16, linkage to a parent or guardian account is generally required, with parental tools for time limits, spending, contacts, and privacy settings.
+- Restrictions on profiling and targeted advertising to minors: the statute prohibits profiling-based targeted advertising directed at children and adolescents and the use of manipulative design.
+- Loot boxes in games for minors are banned; dark patterns and engagement-maximising features (autoplay, infinite scroll where harmful) are restricted.
+- Content duties: prompt removal of content that violates minors' rights, such as sexual exploitation and abuse, on notice and in some cases proactively; reporting channels; cooperation with authorities and mandatory notification of serious child abuse content.
+- Transparency: periodic reports on moderation and risk mitigation for larger services, accessible, age-appropriate terms and privacy notices.
+- A legal representative in Brazil for foreign providers is a recurring requirement; confirm.
+- Sanctions: warnings, fines of up to R$50 million or 10% of Brazilian revenue (whichever is lower per the text as I recall it), suspension and prohibition of activities.
+- Regulator: the ANPD, restructured as a regulatory agency, is the supervising authority for ECA Digital compliance.
+
+3. LGPD obligations that apply on top
+- Legal basis and purposes documented for each processing activity involving teens; avoid reliance on consent where the teen cannot freely give it.
+- Transparency: privacy notice written in simple, clear, age-appropriate language, with visual and audiovisual aids (LGPD Art. 14, para. 6).
+- Data minimisation: do not condition participation on providing more data than strictly necessary (Art. 14, para. 4).
+- DPIA/RIPD: processing of minors' data at scale and any profiling or recommendation systems will almost certainly be "high risk" under ANPD criteria (Res. CD/ANPD 2/2022 notion of high-risk processing), so prepare and maintain a Relatório de Impacto.
+- Data subject rights (Art. 18): operational channels exercisable by teens or through parents.
+- DPO (encarregado): appointed and publicly identified (Res. CD/ANPD 18/2024).
+- Security and incident reporting: 3 business days to notify ANPD and affected data subjects of incidents posing relevant risk (Res. CD/ANPD 15/2024); incidents involving minors are a risk aggravator.
+- International transfers: standard contractual clauses under Res. CD/ANPD 19/2024 for any offshore hosting or parent-company access.
+- Records of processing (ROPA).
+
+4. Other relevant Brazilian rules
+- ECA (Law 8.069/1990) and the Marco Civil da Internet (Law 12.965/2014), including its notice-and-takedown regime and the Supreme Court's 2025 ruling expanding platform liability under Art. 19.
+- Consumer Code (CDC) on abusive and manipulative practices.
+- Advertising self-regulation (CONAR) guidance on child-directed advertising, and the Brazilian Constitution's principle of absolute priority for children.
+
+5. Practical roadmap
+1. Scope and classify: confirm that the ECA Digital and LGPD Art. 14 apply, and identify teen cohort sizes by age band.
+2. Gap assessment against safety-by-design: default settings, recommender systems, DMs from strangers, geolocation, live features, in-app purchases.
+3. Age assurance design: pick a proportionate method, DPIA it, and avoid retaining age-verification evidence.
+4. Parental tooling and under-16 account linking.
+5. Advertising: switch off behavioural advertising to known minors, and exclude likely-minor segments.
+6. Governance: DPO, ROPA, RIPD, a child-safety risk assessment, a moderation and takedown SLA, reporting channels, Brazilian legal representative.
+7. Documentation: keep evidence to qualify for mitigating factors in the ANPD's dosimetry framework.
+8. Monitor ANPD regulations, guides and consultations on age assurance and parental supervision.
+
+Bottom line: treat teen users as the highest-risk cohort. Build high-privacy defaults, real age assurance, no behavioural ads to minors, strong takedown processes and a documented best-interest assessment.

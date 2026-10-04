@@ -1,0 +1,40 @@
+Short answer: fines are discretionary and depend on the facts, but there are consistent patterns. Under Art. 58(2) GDPR, a supervisory authority (SA) has a toolbox: warnings, reprimands, orders to comply, orders to bring processing into line, bans on processing, and administrative fines (Art. 83). Fines can be imposed "in addition to, or instead of" the other measures. Art. 83(2) lists the factors, and the EDPB Guidelines 04/2022 on fine calculation explain the method.
+
+What pushes towards a fine
+
+1. Nature, gravity and duration (Art. 83(2)(a)). Long-running, systemic or large-scale infringements, many data subjects affected, high damage, sensitive data, children, or core principles breached (lawfulness, transparency, security) are the typical fine cases. Breaches of basic principles, data subject rights and international-transfer rules fall under the higher tier (up to EUR 20m or 4% of worldwide turnover). Processor/controller obligations, DPOs, records, DPIAs and security fall in the lower tier (EUR 10m or 2%).
+
+2. Intent or negligence (b). Knowing violations, ignoring prior advice, or business models built on non-compliance are aggravating. Mere negligence still counts, but a good-faith error reduces the likelihood.
+
+3. Prior infringements (e) and previous orders (i). Repeat offenders, or anyone who ignored an earlier reprimand or order, are far more likely to be fined. Non-compliance with an order is itself a high-tier infringement.
+
+4. Lack of cooperation (f). Obstructing an investigation, delayed or misleading answers, or refusing access are heavily penalised.
+
+5. How the SA learned of it (h). Self-reported breaches in good time get leniency. Breaches discovered through complaints or media attention, or concealed, do not.
+
+6. Mitigation (c). Prompt action to limit harm helps, but does not erase the infringement.
+
+7. Financial benefit (k). Where you profited from the violation (for example, ad revenue from unlawful tracking), SAs want the penalty to remove that incentive.
+
+8. Categories of data and controller size. Health, biometric, location and children's data are treated seriously. Large organisations are expected to meet higher standards, and fines must be "effective, proportionate and dissuasive".
+
+What leads to orders or reprimands only
+
+- First-time, isolated or minor infringements with limited impact.
+- Prompt, voluntary remediation, full cooperation and a documented compliance programme.
+- Small organisations or individuals where a fine would be disproportionate (Recital 148 expressly contemplates a reprimand instead of a fine for minor infringements or when the fine would be a disproportionate burden on a natural person).
+- Cases where the legal question was genuinely unclear and the controller acted on a reasonable interpretation.
+- Public bodies in some Member States, where national law limits fines.
+
+Practice varies by country. The French CNIL, Italian Garante, Spanish AEPD and Dutch AP fine frequently. Others, such as some Nordic and German state authorities, lean more on reprimands and orders, though that is changing. Cross-border cases go through the one-stop-shop and, if there is disagreement, the EDPB's Art. 65 dispute resolution, which has pushed lead authorities to increase fines (the Irish DPC decisions on Meta and TikTok are examples).
+
+Factors you can control
+
+- Keep records of compliance (Art. 5(2) accountability): RoPA, DPIAs, LIAs, policies, training.
+- Act on complaints and DSARs fast. Many fines start with an ignored data subject.
+- Notify breaches within 72 hours where required, and communicate openly with the SA.
+- Respond to SA inquiries on time and fully.
+- If an SA issues an order or reprimand, comply and document it. Failing to do so is the quickest route to a fine.
+- Fix systemic problems when found, not only the individual case.
+
+Practical rule of thumb: expect a fine where there is a serious or sustained violation, a clear commercial motive, harm to many people, bad cooperation or a repeat. Expect an order or reprimand where the issue is minor, isolated, fixed fast and well documented. Note that fines can be appealed in national courts, and national procedural rules differ. For a specific situation, ask counsel to assess it against the SA's own published enforcement guidance and case history.

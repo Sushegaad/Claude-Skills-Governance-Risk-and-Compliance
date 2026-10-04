@@ -1,0 +1,33 @@
+{
+  "eval_id": 316,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the revised ESRS are now LAW: Commission Delegated Regulation (EU) 2026/1563, published in the Official Journal September 21, 2026, entering into force November 10, 2026",
+      "passed": true,
+      "evidence": "\"Commission Delegated Regulation (EU) 2026/1563... Published in the Official Journal on 21 September 2026. Enters into force on 10 November 2026\""
+    },
+    {
+      "text": "States application correctly: revised ESRS mandatory for financial years beginning on or after January 1, 2027",
+      "passed": true,
+      "evidence": "\"the revised ESRS apply to financial years beginning on or after 1 January 2027\" / \"FY2027... Revised ESRS (mandatory)\""
+    },
+    {
+      "text": "States the FY2026 choice: undertakings may apply EITHER the 2023 ESRS (as amended) OR the revised ESRS for financial years starting in 2026",
+      "passed": true,
+      "evidence": "\"for FY2026 you may choose between the 2023 ESRS (as amended) and the revised, simplified ESRS\""
+    },
+    {
+      "text": "Quantifies the simplification with the final-act figures: mandatory datapoints cut from over 1,000 to roughly 320 (>60% reduction in mandatory datapoints; >70% total), with former voluntary datapoints removed to EFRAG non-mandatory guidance — not the draft-stage 57-61% figures",
+      "passed": true,
+      "evidence": "\"mandatory datapoints are cut from over 1,000 to roughly 320, which is more than 60% fewer mandatory datapoints and more than 70% fewer in total. Former voluntary datapoints have moved to EFRAG's non-mandatory guidance\""
+    },
+    {
+      "text": "Gives practical basis-decision advice (e.g., early-adopting the revised ESRS for FY2026 avoids a one-year-only report on the old standards)",
+      "passed": true,
+      "evidence": "\"No double build. You would otherwise do a 2023-basis report in FY2026 and then rebuild for FY2027\" plus mapping-exercise advice"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

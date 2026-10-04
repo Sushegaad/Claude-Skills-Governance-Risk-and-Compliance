@@ -1,0 +1,33 @@
+{
+  "eval_id": 318,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the regime: limited assurance is required on CSRD sustainability reporting (the empowerment for reasonable-assurance standards was REMOVED by the Omnibus, so limited assurance remains the regime)",
+      "passed": true,
+      "evidence": "\"The Omnibus removed the empowerment for reasonable-assurance standards, so limited assurance remains the regime\""
+    },
+    {
+      "text": "Reports the September milestone: CEAOB delivered its technical advice on an EU limited-assurance standard on September 25, 2026",
+      "passed": true,
+      "evidence": "\"CEAOB delivered its technical advice to the Commission on 25 September 2026\""
+    },
+    {
+      "text": "Describes the mandate accurately without inventing content: the advice addresses EU-specific add-ons and potential carve-outs to ISSA 5000",
+      "passed": true,
+      "evidence": "\"The advice proposes an EU limited-assurance standard built on ISSA 5000, with EU add-ons and carve-outs\""
+    },
+    {
+      "text": "States the timeline: the Commission's limited-assurance delegated act is due by July 1, 2027",
+      "passed": true,
+      "evidence": "\"The Commission's limited-assurance delegated act is due by 1 July 2027\""
+    },
+    {
+      "text": "Explains current practice until then: assurance under national standards/member-state arrangements, with statutory auditors or (where allowed) independent assurance providers",
+      "passed": true,
+      "evidence": "\"practitioners use national standards or international ones such as ISAE 3000 (Revised) and ISSA 5000, depending on the Member State's rules\"; statutory auditor or IASP where Member State permits"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

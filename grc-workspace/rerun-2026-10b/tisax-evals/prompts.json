@@ -1,0 +1,25 @@
+{
+ "skill": "tisax",
+ "prompts": [
+  {
+   "id": 336,
+   "prompt": "If we order our TISAX assessment in November 2026 versus February 2027, what changes?"
+  },
+  {
+   "id": 337,
+   "prompt": "What actually changed in ISA2027 versus ISA 6?"
+  },
+  {
+   "id": 338,
+   "prompt": "We handle prototype vehicle testing for OEMs. Which labels and assessment level do we need going into 2027?"
+  },
+  {
+   "id": 339,
+   "prompt": "We're a supplier that just got asked for a TISAX label. Never done it. What's the process and cost?"
+  },
+  {
+   "id": 340,
+   "prompt": "We're ISO 27001:2022 certified. How much extra work is TISAX, really?"
+  }
+ ]
+}

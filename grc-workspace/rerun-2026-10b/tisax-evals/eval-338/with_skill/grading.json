@@ -1,0 +1,33 @@
+{
+  "eval_id": 338,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Explains the ISA2027 PTS structure: Prototype Protection Basic (assessed at AL2) vs Prototype Protection Facilities (AL3), with Facilities including Basic's scope",
+      "passed": true,
+      "evidence": "\"The label structure becomes PTS: Prototype Protection Basic (AL2) and Prototype Protection Facilities (AL3), where Facilities encompasses Basic.\""
+    },
+    {
+      "text": "Maps the need: physical test facilities/vehicles imply the Facilities label at AL3 (on-site assessment)",
+      "passed": true,
+      "evidence": "\"Because your work involves vehicle testing and on-site prototypes, you will almost certainly need the AL3 route... Under ISA2027 that means Prototype Protection Facilities\"; AL3 = \"comprehensive on-site assessment\"."
+    },
+    {
+      "text": "Describes the restructured prototype module content: two domains (organizational; physical & environmental) incl. new traceability/lifecycle and disposal/return-of-vehicle controls",
+      "passed": true,
+      "evidence": "\"restructured into 20 controls in two domains (Organizational Requirements; Physical & Environmental Security), with new traceability/lifecycle and disposal/return controls.\""
+    },
+    {
+      "text": "Handles the transition: ISA-6-era prototype labels remain valid; new orders from 2027 use the PTS structure",
+      "passed": true,
+      "evidence": "\"Order by December 31, 2026: ISA 6... Order from January 1, 2027: ISA2027 [PTS]... Existing labels keep their full validity.\""
+    },
+    {
+      "text": "Covers practical preparation: facility security evidence, camera/visitor regimes, lifecycle tracking of parts, disposal procedures",
+      "passed": true,
+      "evidence": "\"Expect physical inspection: perimeter and zone security, access control, camouflage and transport rules, test-drive protections, photo and film controls\"; plus traceability/lifecycle and disposal/return controls."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,65 @@
+Responding to unauthorised access to customer data in your Brazilian operation
+
+The key facts: LGPD Art. 48 and Resolution CD/ANPD 15/2024 require notification to ANPD and affected data subjects if the incident may cause relevant risk or harm. The preliminary ANPD notification is due within 3 working days of when you become aware of it. The full report is due within 20 working days of confirmation. Start the clock from awareness, not from the end of your investigation.
+
+Incident timeline
+
+Hour 0 to 24: detect and contain
+- Activate the incident response team: security, legal, the encarregado (DPO), communications, and the business owner.
+- Contain the access: revoke credentials and tokens, isolate affected systems, block the attack path. Do not wipe systems, because evidence matters.
+- Preserve logs, images, and timestamps. Start an incident log recording who knew what and when. Note the exact time of awareness, since it sets your deadline.
+- Involve your processors and cloud vendors. Under Art. 39 and Art. 46 they must support you, and you remain responsible for their security.
+- Use privileged channels for legal analysis. Keep forensic facts separate from legal conclusions.
+
+Day 1 to 2: assess
+Determine:
+- What data: identification, CPF, contact, financial, credentials, and above all sensitive data (Art. 11) or children's data, which raise risk.
+- How many data subjects, and in which countries (Brazilian residents bring LGPD in under Art. 3).
+- Nature of the incident: confidentiality, integrity, or availability. Was data exfiltrated, encrypted, or only viewed?
+- Likelihood and severity of harm: fraud, identity theft, discrimination, reputational damage, physical risk.
+- Whether data was encrypted or pseudonymised, which can reduce risk.
+Record the risk conclusion and reasoning. If you decide not to notify, document why, because ANPD can ask.
+
+Within 3 working days: preliminary ANPD notification
+Submit through ANPD's incident channel. Cover what you know, under the Art. 48 content list:
+- Nature of the affected personal data
+- Information on the data subjects involved
+- Technical and security measures used to protect the data
+- Risks related to the incident
+- Reasons for any delay
+- Measures adopted or planned to reverse or mitigate the effects
+Where facts are incomplete, say so and commit to a supplementary submission. A partial, timely notice is better than a late complete one.
+
+Notify data subjects
+Where the incident may entail relevant risk or harm, notify affected individuals, in clear Portuguese and without undue delay. Say what happened, what data, the likely consequences, what you are doing, what they can do (for example password resets, watching for phishing, credit monitoring), and how to reach the encarregado. Coordinate timing with ANPD, since it may direct you on communications.
+
+Within 20 working days of confirmation: full report to ANPD
+Provide the complete account: root cause, final scope, timeline, data categories and counts, mitigation, communications to data subjects, and corrective actions.
+
+Parallel workstreams
+- Other regulators and contracts: check sectoral rules (for example Banco Central for financial entities, ANS or ANVISA for health), customer contracts with notification clauses, cyber-insurance notice requirements, and, if you are in a group, parent-level reporting.
+- If the data also covers EU residents, GDPR's 72-hour clock to the supervisory authority may apply separately. Run the two assessments in parallel.
+- Law enforcement: consider a police report (boletim de ocorrência) and engaging the specialised cybercrime units.
+- Communications: a single consistent holding statement. Avoid statements you cannot support.
+
+Remediation and accountability
+- Fix the root cause, then review access controls, MFA, logging, vendor oversight, and encryption (Art. 46).
+- Update the RIPD, RoPA, and risk register.
+- Lessons-learned review, and test the playbook again.
+- Keep a complete incident file. Under the accountability principle (Art. 6, X), your documentation is your main mitigating evidence.
+
+Exposure
+Failure to notify, late notice, or weak security can lead to warnings, fines up to 2% of Brazilian revenue (R$50M per infraction cap), publicisation, blocking or deletion orders, and civil damages claims under Art. 42. ANPD is now an autonomous agency (Lei 15.352/2026) and has stepped up enforcement, so good cooperation, prompt corrective action, and demonstrable controls (Art. 52, section 1) count in your favour. Large-scale breaches are an ANPD priority.
+
+Immediate checklist
+1. Record the awareness timestamp and calendar the 3-working-day deadline.
+2. Contain and preserve evidence.
+3. Scope the data and the people affected.
+4. Decide on notification and document the decision.
+5. File the preliminary ANPD notice.
+6. Notify data subjects if risk warrants.
+7. Prepare the 20-working-day report.
+
+Tell me the data types and approximate numbers involved and I can help draft the ANPD notice and the customer message.
+
+This is general compliance information, not legal advice. Confirm the current Resolution 15/2024 forms and deadlines with counsel.

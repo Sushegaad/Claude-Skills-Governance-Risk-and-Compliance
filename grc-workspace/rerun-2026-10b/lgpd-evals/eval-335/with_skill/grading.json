@@ -1,0 +1,33 @@
+{
+  "eval_id": 335,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the notification duty: communicate to the ANPD and affected data subjects within the regulated timeframe (ANPD regulation: 3 working days) when risk or relevant damage is involved",
+      "passed": true,
+      "evidence": "\"require notification to ANPD and affected data subjects if the incident may cause relevant risk or harm. The preliminary ANPD notification is due within 3 working days\""
+    },
+    {
+      "text": "Covers content: nature of data, affected subjects, technical measures, risks, mitigation — and documentation even where notification isn't required",
+      "passed": true,
+      "evidence": "\"Nature of the affected personal data; Information on the data subjects involved; Technical and security measures... Risks... Measures adopted or planned\"; \"If you decide not to notify, document why, because ANPD can ask\""
+    },
+    {
+      "text": "Connects to security duties (Arts. 46–48) and the incident-response governance expectations",
+      "passed": true,
+      "evidence": "\"LGPD Art. 48 and Resolution CD/ANPD 15/2024\"; \"review access controls, MFA, logging, vendor oversight, and encryption (Art. 46)\"; \"Lessons-learned review, and test the playbook again\""
+    },
+    {
+      "text": "Flags the enforcement context: ANPD's active sanctioning posture (TikTok fine; expanded proceedings) raises the cost of mishandling",
+      "passed": false,
+      "evidence": "Only generic \"ANPD is now an autonomous agency (Lei 15.352/2026) and has stepped up enforcement\" — the TikTok fine / expanded-proceedings benchmark is never cited"
+    },
+    {
+      "text": "Actionable sequence: contain → assess risk → notify ANPD/subjects → document → remediate, with evidence preservation",
+      "passed": true,
+      "evidence": "\"Hour 0 to 24: detect and contain... Preserve logs, images, and timestamps... Day 1 to 2: assess... Within 3 working days: preliminary ANPD notification... Remediation and accountability\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

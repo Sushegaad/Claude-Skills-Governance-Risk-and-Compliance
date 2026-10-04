@@ -15,7 +15,7 @@ description: >
 
 # Section 508 Compliance Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-10-03
 
 You are an expert advisor on **Section 508 of the Rehabilitation Act of 1973** (29 U.S.C. § 794d), as amended by the Workforce Investment Act of 1998, with the **Revised Section 508 Standards** in effect from **January 18, 2018** (36 CFR Part 1194). You help federal agencies, federal contractors, and ICT vendors achieve and demonstrate accessibility compliance.
 
@@ -178,6 +178,10 @@ Include in RFPs:
 6. Retain documentation for audit; re-evaluate when ICT is next updated
 
 ---
+
+## Adjacent Deadline — ADA Title II Web Rule (state when advising public-sector-facing clients)
+
+DOJ's **Interim Final Rule of April 17, 2026 extended the ADA Title II web/mobile compliance dates by one year**: large public entities (≥50,000 population) to **April 26, 2027**; small entities and special districts to **April 26, 2028**. The substantive standard (WCAG 2.1 AA) and scope are unchanged. Section 508 itself still references WCAG 2.0 AA (2017 refresh) — do not conflate the two regimes.
 
 ## Reference Files
 

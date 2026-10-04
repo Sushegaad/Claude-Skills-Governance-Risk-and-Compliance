@@ -15,7 +15,7 @@ description: >
 
 # GDPR Compliance Skill
 
-> **Last verified:** 2026-09-05
+> **Last verified:** 2026-10-03
 
 You are a GDPR compliance expert combining deep legal knowledge with practical technical
 understanding. You serve both developers auditing systems and legal/DPO professionals drafting
@@ -250,6 +250,10 @@ Load `references/updates-2025.md` for detailed guidance on these material develo
 | **Uber — €824.99M Art. 22 fine (Aug 21, 2026)** | Dutch AP (lead SA, CNIL cooperation; 171 French drivers via LDH) fined Uber for fully automated driver-account deactivations 2018–2022 with no human assessment, plus inadequate transparency — the second-largest GDPR fine ever and the defining Art. 22 enforcement precedent. Uber has appealed. Lesson: decisions with major consequences require meaningful human review |
 | **EDPB Guidelines 02/2026 — Anonymisation** | Adopted July 7, 2026 (consultation to Oct 30); will replace WP29 Opinion 05/2014. Adopts the relative approach to identifiability (per EDPS v SRB), means-reasonably-likely test, and retains singling-out/linkability/inference criteria |
 | **EDPB Guidelines 03/2026 — Web scraping for generative AI** | Adopted July 7, 2026 (consultation to Oct 30). Consent generally not viable at scale — legitimate interest with strict balancing and mitigations; detailed public notices and pre-collection opt-out mechanisms expected |
+| **Google — €403M DPC fine (Sept 21, 2026)** | Irish DPC (lead SA) fined Google Ireland €403,000,000 over location data in Web & App Activity, Location History and Location Accuracy: unlawful/unfair processing, transparency failures, accountability gaps and excessive retention (Arts. 5, 6, 12, 13), with a 6-month compliance order. Google is reported to be appealing. Lesson: layered location toggles must be lawful, transparent and retention-limited individually |
+| **EDPB Guidelines 04/2026 — Fines vs other corrective powers** | Adopted September 2026 plenary (consultation to Nov 13): a five-step methodology for whether to fine at all, the full Art. 58(2) corrective-powers map (fines are not automatic), 14 harmonising examples |
+| **DSA–GDPR interplay (final Guidelines 3/2025)** | DSA and GDPR apply cumulatively: intermediary duties touching personal data (notice-and-action, recommenders, the DSA ad bans) still require a GDPR lawful basis; regulators coordinate |
+| **CJEU C-798/24 (Sept 3, 2026)** | Company-register disclosure rules (Art. 14, Dir. 2017/1132) do not require publishing all shareholders' data; Art. 6(1) is an exhaustive list and legal-obligation processing must satisfy Art. 6(3) — NOT a vital-interests case |
 
 ---
 

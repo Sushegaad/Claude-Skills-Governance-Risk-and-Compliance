@@ -1,0 +1,37 @@
+Short version: the bar is high and a context-specific one. Data is anonymous under GDPR only if individuals are not identifiable by any means reasonably likely to be used, by the controller or anyone else. If that threshold is met, GDPR does not apply (Recital 26). If not, the data is pseudonymised and remains fully in scope.
+
+The legal test
+- Art. 4(1) defines personal data as relating to an identified or identifiable person. Recital 26 says that to decide whether a person is identifiable, you take account of all the means reasonably likely to be used, such as singling out, either by the controller or by another person, considering cost, time required, available technology and technological developments.
+- Anonymisation must be effectively irreversible. Recital 26 excludes data rendered anonymous such that the data subject is "not or no longer identifiable".
+
+The WP29 Opinion 05/2014 criteria
+The Article 29 Working Party opinion on anonymisation techniques is still the main reference. A dataset is robustly anonymous only if three risks are addressed:
+1. Singling out: isolating an individual's record.
+2. Linkability: linking records about the same person across datasets.
+3. Inference: deducing information about a person with significant probability.
+Techniques such as randomisation (noise, permutation, differential privacy) and generalisation (k-anonymity, l-diversity, t-closeness) have strengths and weaknesses, and none is sufficient in all cases. Removing names or direct identifiers is pseudonymisation, not anonymisation.
+
+Key developments
+- Breyer (C-582/14): identifiability is assessed by whether means are reasonably likely to be used, and the possibility of obtaining additional information from a third party through legal channels can make data personal.
+- SRB v EDPS (CJEU, C-413/23 P, September 2025): the Court endorsed a relative approach. Pseudonymised data may not be personal data for a recipient who cannot reasonably re-identify it, but the assessment is from the recipient's perspective and the original controller's duties (such as transparency about disclosure) continue. This reduces the force of the "absolute" approach, but it does not allow casual claims of anonymity. If the recipient has or can reasonably obtain the key, the data stays personal.
+- EDPB work: the EDPB has been preparing guidelines on anonymisation and pseudonymisation (Guidelines 01/2025 on pseudonymisation were adopted for consultation in January 2025). Check the final status of anonymisation guidance, since it was expected to follow.
+- EDPB Opinion 28/2024 on AI models: a model trained on personal data can be considered anonymous only if the likelihood of extracting personal data directly or through queries is insignificant, assessed case by case.
+- Regulator positions: the ICO's anonymisation guidance (UK) frames the test as "motivated intruder" and a risk assessed in context. The CNIL, AEPD and others have published similar guidance, and the AEPD/EDPS joint note stresses that hashing is not anonymisation.
+
+Practical standard to apply
+1. Define the release context: who receives the data, what other data they hold or can access, and the environment (public release versus controlled environment).
+2. Run a documented re-identification risk assessment, covering singling out, linkability and inference, with a "motivated intruder" or penetration test.
+3. Use appropriate techniques, and quantify residual risk (for example k-anonymity thresholds, differential privacy epsilon).
+4. Treat high-dimensional, behavioural, location, genomic, free text and small-population data as very hard to anonymise.
+5. Control the environment: contractual bans on re-identification, access controls, and limiting use. These do not by themselves create anonymity, but they affect the "reasonably likely" assessment.
+6. Re-assess periodically as technology and available datasets change. Anonymity can decay.
+7. Keep records (accountability) showing why you concluded the data is anonymous.
+8. Remember that the process of anonymising is itself processing of personal data, which needs a lawful basis and compatibility analysis.
+
+Common mistakes
+- Hashing identifiers and calling it anonymous (hashed email addresses are identifiable and widely matched).
+- Aggregating at too fine a level, giving small cells.
+- Ignoring the controller's own ability to re-link, since you keep the original data.
+- Claiming anonymity for marketing "audiences" or device IDs.
+
+If you cannot meet the standard, treat the data as pseudonymised personal data and apply GDPR in full, while using pseudonymisation as a security measure (Art. 32). Please confirm the current status of EDPB guidance and recent CJEU decisions with counsel before relying on any claim.

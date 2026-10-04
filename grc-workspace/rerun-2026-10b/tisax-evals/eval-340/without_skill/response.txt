@@ -1,0 +1,37 @@
+Short answer: if you hold a genuine ISO 27001:2022 certificate with a scope that matches your TISAX scope, TISAX is a moderate add-on, not a new program. Typical additional effort is roughly 20 to 40 percent of what a first ISO 27001 took, often a few weeks of focused work. The surprises are in the places where TISAX is stricter, more prescriptive, or different in kind.
+
+Why it overlaps so much
+The ISA catalogue's information security section is mapped to ISO/IEC 27001 and 27002, and the current catalogue aligns with the 2022 revision of Annex A. If you run a working ISMS with risk assessment, a statement of applicability, internal audits, management review, and a control set, a large share of the controls will already be in place.
+
+Important: ISO 27001 certification does not replace a TISAX assessment. TISAX is a separate assessment by an ENX-accredited provider. Some providers can reduce effort when you provide your certificate and reports, but the assessment itself still happens.
+
+Where the extra work usually is
+1. Scope fit. ISO scope statements are often broad or vague. TISAX scope is defined per site, legal entity, and assessment objective, and the label lists locations. Align the two or document the differences.
+2. Maturity scoring. ISO 27001 is pass or fail on conformity. TISAX rates every control from 0 to 5, and you need an average of at least 3 with no must-requirement missed. You have to show processes are defined, documented, implemented, and evidenced for every control, not just the ones you chose in your SoA. The ISA does not let you exclude controls as easily as an SoA does.
+3. Specific automotive requirements. Examples are stricter expectations on classification of information, handling of OEM information and its protection levels, and the interface to OEM requirements. The catalogue also has questions on supplier and third-party management that go further than many ISO implementations.
+4. Assessment objectives beyond information security. Prototype protection (physical, organizational, trial vehicle, events) is a big step, with AL3 on-site audits. Data protection (GDPR Article 28 style) is another module. If you only need Info high, this is not a factor.
+5. Evidence and sampling. TISAX assessors look for operational records such as access reviews, patching reports, incident tickets, and test results. ISO surveillance audits often sample less deeply.
+6. Assessment level. AL2 is a documentation review with a plausibility check, often remote. AL3 includes on-site verification and interviews, which feels more intrusive.
+7. Mapping and self-assessment. You must complete the ISA Excel self-assessment, which is long, and justify scores with evidence references.
+
+Where you get a free ride
+- Policies, risk management, internal audit, management review, ISMS governance.
+- Most Annex A technical and organizational controls.
+- Awareness training, HR security, asset management.
+- Familiarity with auditors and evidence preparation.
+
+A realistic estimate
+- Mapping ISO controls to ISA controls and doing the self-assessment: 1 to 3 weeks.
+- Closing gaps, typically supplier management, classification, evidence, and physical security: 2 to 8 weeks.
+- Assessment preparation and support during the audit: 1 to 2 weeks.
+- Total: about 20 to 60 person-days for a mid-sized organization, more for AL3 or prototype protection.
+Costs: ENX fees (hundreds to low thousands of euros) plus audit provider fees, commonly several thousand to tens of thousands depending on size and AL level.
+
+Advice
+1. Do a mapping of your SoA to the ISA, and a quick maturity self-assessment, before you order. That tells you where the gaps are.
+2. Check that the ISO scope covers the TISAX scope.
+3. Ask for the customer's required assessment objectives and level.
+4. Ask your provider whether they can leverage your ISO certification and audit reports.
+5. Check which ISA version applies to the audit date.
+
+Bottom line: the foundations are there. Budget for maturity-based evidence, scope alignment, supplier controls, and, if relevant, prototype protection.

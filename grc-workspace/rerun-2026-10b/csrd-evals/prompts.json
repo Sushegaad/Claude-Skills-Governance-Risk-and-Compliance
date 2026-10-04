@@ -1,0 +1,25 @@
+{
+ "skill": "csrd",
+ "prompts": [
+  {
+   "id": 316,
+   "prompt": "We're a wave-one CSRD reporter. Which ESRS do we apply for FY2026 and FY2027, and what's the current legal status of the revised standards?"
+  },
+  {
+   "id": 317,
+   "prompt": "We have 800 employees and €600M turnover in the EU. Do we have to report under CSRD, and what should we do when big customers ask for sustainability data?"
+  },
+  {
+   "id": 318,
+   "prompt": "What's the current state of sustainability assurance under CSRD — who audits our report and against what standard?"
+  },
+  {
+   "id": 319,
+   "prompt": "Walk us through running a double materiality assessment under the revised ESRS."
+  },
+  {
+   "id": 320,
+   "prompt": "Our customers are demanding full Scope 3 and supplier ESG data. What can they actually require from us, and what must we produce ourselves?"
+  }
+ ]
+}

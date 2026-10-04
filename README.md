@@ -1,9 +1,9 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
 Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, DORA Digital Operational Resilience, India's Digital Personal Data Protection Act (DPDPA), CMMC 2.0 Cybersecurity Maturity Model Certification, NIST AI Risk Management Framework, SWIFT Customer Security Programme (CSP), Australian Information Security Manual (ISM), EU NIS2 Directive, CCPA/CPRA California Privacy, ITAR (International Traffic in Arms Regulations), Brazil's LGPD (Lei Geral de Proteção de Dados), EU CSRD (Corporate Sustainability Reporting Directive), CIS Controls v8 (CIS Top 18), EAR (Export Administration Regulations), NIST SP 800-53 (Security and Privacy Controls for Federal Systems), EU AI Act (Regulation (EU) 2024/1689), Section 508 (US Federal ICT Accessibility), WCAG (Web Content Accessibility Guidelines), NZISM (New Zealand Information Security Manual), Vietnam PDPL (Law on Personal Data Protection No. 91/2025/QH15), EU CRA (Cyber Resilience Act, Regulation (EU) 2024/2847), Saudi Arabia GRC (NCA ECC, Saudi PDPL, SAMA, CST), UAE GRC (Federal PDPL, DIFC, ADGM, CBUAE, ICT Health Law), TISAX (VDA ISA / ENX automotive supplier security), TPRM (third-party/vendor risk), UK Cyber Essentials, and SOX ITGC — powered by Claude Skills. **Updated Monthly.**
 
-Benchmarked across 180 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (902 assertions in total). Skills scored **89%** vs a baseline of **57%**.
+Benchmarked across 180 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (902 assertions in total). Skills scored **89%** vs a baseline of **55%**.
 
-[![Release: v2.0.0](https://img.shields.io/badge/Release-v2.0.0-brightgreen.svg)](../../releases/tag/v2.0.0)
+[![Release: v2.1.0](https://img.shields.io/badge/Release-v2.1.0-brightgreen.svg)](../../releases/tag/v2.1.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Skills: 36](https://img.shields.io/badge/Skills-36-green.svg)](#the-skills)
 [![Built with Claude](https://img.shields.io/badge/Built%20with-Claude-orange.svg)](https://claude.ai)
@@ -1122,9 +1122,9 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 
 | Configuration | Pass Rate | Assertions Passed |
 |---------------|-----------|-------------------|
-| **With GRC Skills installed** | **89%** | **801 / 902** |
-| Without skills (baseline Claude) | 57% | 517 / 902 |
-| **Delta** | **+32 points** | **+284 assertions** |
+| **With GRC Skills installed** | **89%** | **804 / 902** |
+| Without skills (baseline Claude) | 55% | 500 / 902 |
+| **Delta** | **+34 points** | **+304 assertions** |
 
 ### Per-Skill Results
 
@@ -1134,7 +1134,7 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | ISO 27001 | 5 | **100%** | 84% | +16% | Gap assessment; Policy drafting; 2013→2022 transition; Risk assessment; Management review CAP |
 | SOC 2 | 5 | **100%** | 84% | +16% | Type 1 vs 2; CC controls checklist; Availability criteria; Access control policy; Audit exception response |
 | FedRAMP [US] | 5 | **64%** | 24% | +40% | Machine-readable intake cutoff for In-Process Rev5 packages; existing-provider conversion trigger; 20x classes and pipelines; pathway choice; POA&M/ConMon |
-| GDPR [EU] | 5 | **92%** | 80% | +12% | Automated driver deactivation (Uber Art. 22 fine); 2026 anonymisation standard (EDPB 02/2026); genAI web scraping (03/2026); Art. 28 DPA clauses; ransomware breach workflow |
+| GDPR [EU] | 5 | **92%** | 48% | +44% | Google €403M location-data lessons; fine-vs-order methodology (04/2026); DSA-GDPR interplay; lawful-basis rigor (C-798/24); anonymisation standard |
 | HIPAA [US] | 5 | **100%** | 68% | +32% | Security Rule NPRM status (July 2027); self-funded plan enforcement; right-of-access exposure; risk analysis requirements; cloud BAA contents |
 | NIST CSF | 5 | **92%** | 56% | +36% | Transit community profile (IR 8576); AI for CSF work (draft SP 1353); informative references (SP 1347); organizational profile build; 1.1 to 2.0 migration |
 | PCI DSS | 5 | **84%** | 80% | +4% | FAQ 1331 ROC scoping change; SAQ A eligibility; v4.0.1 mandatory requirements; scope reduction; compensating vs customized approach |
@@ -1148,10 +1148,10 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | SWIFT CSP | 5 | **56%** | 12% | +44% | v2026 control counts (26+6) and changes; v2027 status honesty; missed-attestation consequences; architecture typing; independent assessment prep |
 | ISM [Australia] | 5 | **92%** | 16% | +76% | September 2026 release (44 new controls); agentic AI controls; OAuth consent hardening; Essential Eight status; cadences and provider access |
 | NIS2 [EU] | 5 | **100%** | 56% | +44% | Netherlands Cbw entry into force; transposition laggards and CJEU referrals; incident reporting; essential vs important; Art. 21 measures |
-| CCPA/CPRA [California] | 5 | **100%** | 80% | +20% | E-commerce threshold analysis; Combined right-to-know and delete workflow; Ad tech sale vs sharing classification; GDPR-to-CCPA gap analysis; SPI classification for mobile app |
+| CCPA/CPRA [California] | 5 | **88%** | 48% | +40% | Broker-data deletion (SB 923); 2026 children's package; sensitive-PI status (AB 1542 veto); data-broker enforcement climate; ADMT countdown |
 | ITAR [US] | 5 | **80%** | 36% | +44% | DIRCM civil aircraft rule (USML VIII(a)(8), Oct 13 2026); BAE settlement compliance lessons; Cat XI(b) software status; deemed exports; VSD process |
-| LGPD [Brazil] | 5 | **76%** | 76% | ±0% | Extraterritorial scope for US SaaS with Brazilian customers; Brazil-EU mutual adequacy (Jan 2026 — no SCCs needed); Data deletion request across CRM/email/analytics; Sensitive health data marketing restrictions; International transfer mechanisms |
-| CSRD [EU] | 5 | **88%** | 32% | +56% | CSRD scope analysis for German listed manufacturer (PIE Wave 1); Double materiality vs GRI/TCFD; Post-DMA disclosure requirements for E1/S1/G1; GRI+TCFD to ESRS gap assessment; Non-EU company (US parent, €200M EU revenue) obligations |
+| LGPD [Brazil] | 5 | **84%** | 44% | +40% | Penalty reality (TikTok R$153.7M); ANPD agency status + CP 1/2026; teen-platform obligations (Digital ECA); Brazil-US transfers; breach response |
+| CSRD [EU] | 5 | **100%** | 60% | +40% | FY2026/FY2027 ESRS basis (Reg. 2026/1563 in the OJ); below-threshold + voluntary standard; assurance status (CEAOB); double materiality; value-chain cap and Scope 3 |
 | CIS Controls v8 | 5 | **100%** | 80% | +20% | Implementation Group determination; Gap assessment for SaaS startup; MFA safeguard scoping (IG2); CIS v8 to NIST CSF 2.0 mapping; Vulnerability management programme with remediation SLAs |
 | EAR [US] | 5 | **76%** | 16% | +60% | Sub-3-hour drone exports (rewritten 9A012); long-endurance drone; military UAV classification (9A610.a); AI-chip diffusion status; Entity List research sale |
 | NIST SP 800-53 | 5 | **92%** | 84% | +8% | FIPS 199 categorization for federal HR system; AC-2(3) OTS finding and POA&M documentation; MFA controls and EO 14028 phishing-resistant MFA; SSP narrative for SC-8(1) Transmission Confidentiality; ISO 27001 to FedRAMP gap analysis and RMF steps |
@@ -1163,7 +1163,7 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | EU CRA [EU] | 5 | **76%** | 48% | +28% | Live Art. 14 filing (exploited vulnerability); severe-incident reporting; firewall classification and conformity; what-applies-when timeline; SRP onboarding and fallback |
 | Saudi Arabia GRC | 5 | **96%** | 28% | +68% | Market-entry applicability routing; SAMA vs NCA stacking; cloud-for-government residency (CST/CCC); PDPL breach response; ISO 27001 to ECC-2:2024 mapping |
 | UAE GRC | 5 | **84%** | 28% | +56% | DIFC routing + 2025 amendment; health-data localization vs US cloud; mainland PDPL status; ADGM breach clock; CBUAE cloud offshoring constraints |
-| TISAX | 5 | **96%** | 16% | +80% | First-timer BMW Confidential label; ISO 27001 to TISAX delta; corrective action 9-month window; prototype labels and AL3; ISA2027 transition |
+| TISAX | 5 | **100%** | 16% | +84% | Order-date decision (ISA 6 vs ISA2027); ISA2027 changes; prototype labels (PTS Basic/Facilities); first-timer process; ISO 27001 vs TISAX |
 | TPRM | 5 | **96%** | 64% | +32% | Stale SOC 2 report review (carve-outs, CUECs, bridge letters); tiering programme design; DPA and sub-processor review; DORA contract addendum; OAuth-aware offboarding |
 | Cyber Essentials | 5 | **80%** | 16% | +64% | First certification for a government bid; BYOD/cloud/home-working scope; 14-day rule and unsupported software; CE Plus audit prep; insurance and MoD supply chain |
 | SOX ITGC | 5 | **92%** | 52% | +40% | Post-IPO 404 applicability and EGC status; system scoping; terminated-admin deficiency evaluation; change-management RCM; annual ITGC calendar |

@@ -1,0 +1,33 @@
+{
+  "eval_id": 338,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Explains the ISA2027 PTS structure: Prototype Protection Basic (assessed at AL2) vs Prototype Protection Facilities (AL3), with Facilities including Basic's scope",
+      "passed": false,
+      "evidence": "Describes only ISA-6-era prototype module parts; Prototype Protection Basic/Facilities PTS structure never mentioned."
+    },
+    {
+      "text": "Maps the need: physical test facilities/vehicles imply the Facilities label at AL3 (on-site assessment)",
+      "passed": false,
+      "evidence": "Says \"Prototype protection modules (always AL3)\" but never maps to the Facilities label — PTS labels absent."
+    },
+    {
+      "text": "Describes the restructured prototype module content: two domains (organizational; physical & environmental) incl. new traceability/lifecycle and disposal/return-of-vehicle controls",
+      "passed": false,
+      "evidence": "Lists five module parts (\"physical and environmental... organizational... handling of vehicles... trial vehicles... events\"), not the two-domain 20-control restructure."
+    },
+    {
+      "text": "Handles the transition: ISA-6-era prototype labels remain valid; new orders from 2027 use the PTS structure",
+      "passed": false,
+      "evidence": "Says \"Existing labels remain valid for three years\" and \"check which ISA catalogue version will apply\" but never states that 2027 orders use the new PTS structure (compound element missing)."
+    },
+    {
+      "text": "Covers practical preparation: facility security evidence, camera/visitor regimes, lifecycle tracking of parts, disposal procedures",
+      "passed": true,
+      "evidence": "\"fencing, shielding from view, and zoning often need capital works\"; \"visitor management\", \"alarm and monitoring\", \"transport, storage, camouflage, labeling, logistics and disposal\"."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 328,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Cites the EDPB's FINAL Guidelines on the DSA\u2013GDPR interplay (Guidelines 3/2025, finalised September 2026)",
+      "passed": true,
+      "evidence": "\"This is the position in the EDPB's final Guidelines 3/2025 on the DSA-GDPR interplay\" (also \"Check the final text of Guidelines 3/2025\")."
+    },
+    {
+      "text": "States the core principle: cumulative, coherent application \u2014 DSA compliance does not displace GDPR duties",
+      "passed": true,
+      "evidence": "\"The DSA and GDPR apply cumulatively. The DSA does not create a GDPR lawful basis, and it does not displace GDPR.\""
+    },
+    {
+      "text": "Gives concrete touchpoints: notice-and-action, recommender-system transparency/options, and the DSA advertising bans (profiling with special-category data; ads targeted at minors) all involve personal data and need a GDPR lawful basis",
+      "passed": true,
+      "evidence": "Notice-and-action: \"Notices contain personal data... (DSA Arts. 16-17, 20)\"; recommenders: \"transparency about recommender parameters and the option for a non-profiling feed... Profiling for recommendations needs a lawful basis\"; \"The DSA bans ads based on profiling of minors, and bans ad profiling that uses special category data (Art. 9).\""
+    },
+    {
+      "text": "Notes regulator coordination: Digital Services Coordinators/Commission and DPAs are steered toward consistent enforcement",
+      "passed": true,
+      "evidence": "\"Regulators are expected to coordinate\"; \"Prepare for cooperation between DSA Digital Services Coordinators or the Commission and data protection authorities.\""
+    },
+    {
+      "text": "Gives practical advice: map each DSA-driven processing operation into the RoPA with its own basis and transparency",
+      "passed": true,
+      "evidence": "\"for each DSA workflow, record whether the processing is mandated or voluntary, and record the basis in your RoPA (Art. 30)\"; action list: \"Align notices (Arts. 13-14)... Update the RoPA.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

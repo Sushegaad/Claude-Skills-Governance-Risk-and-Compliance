@@ -269,3 +269,6 @@ Adopted the same plenary; consultation until October 30, 2026. Positions: consen
 ### Breach-notification template status
 The EDPB's draft common Art. 33 notification template (adopted June 8, 2026) closed consultation on August 5, 2026; no final version has been adopted yet — do not present it as operative.
 
+### Google — €403,000,000 (Irish DPC, September 21, 2026)
+The DPC (lead SA under Art. 60; own-volition inquiry opened February 2020 after BEUC-coordinated complaints) found Google Ireland's processing of location data across **Web & App Activity, Location History and Location Accuracy** unlawful and unfair (WAA/LH), insufficiently transparent (all three), unaccountable (Location Accuracy) and retained longer than necessary (WAA/LH) — Arts. 5, 6, 12, 13 — ordering compliance within **6 months**. Reported as the second-largest DPC fine; Google is expected to appeal (unconfirmed). Advisory implications: each location-adjacent setting needs its own lawful basis, specific transparency, and retention limits; bundled "improve your experience" framing across features is the failure pattern.
+

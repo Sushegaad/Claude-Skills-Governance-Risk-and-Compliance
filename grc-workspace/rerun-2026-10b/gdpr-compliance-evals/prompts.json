@@ -1,0 +1,25 @@
+{
+ "skill": "gdpr-compliance",
+ "prompts": [
+  {
+   "id": 326,
+   "prompt": "We run a consumer app with several location-related settings. What does the September 2026 Google decision mean for how we design them?"
+  },
+  {
+   "id": 327,
+   "prompt": "Under what circumstances will a supervisory authority actually fine us versus just ordering us to fix things?"
+  },
+  {
+   "id": 328,
+   "prompt": "We're an online platform subject to the DSA. How do our DSA obligations interact with GDPR?"
+  },
+  {
+   "id": 329,
+   "prompt": "Our legal team says 'we're required by law' covers most of our processing. How rigorous is the legal-obligation basis really?"
+  },
+  {
+   "id": 330,
+   "prompt": "What's the current standard for claiming data is anonymous under GDPR?"
+  }
+ ]
+}

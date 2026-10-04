@@ -1,0 +1,29 @@
+I need to be upfront: I cannot reliably describe the final content of a catalogue called ISA2027 from general knowledge. I am not confident the final text and its release notes were part of what I know, and making up a clause-by-clause diff would be worse than useless. Below is what I know firmly about ISA 6, the likely direction of change, and how to get a trustworthy comparison.
+
+What ISA 6 changed versus ISA 5 (baseline)
+- The information security section was remapped to ISO/IEC 27001:2022 and ISO 27002:2022 instead of the 2013 structure. That added controls such as threat intelligence, cloud services security, ICT readiness for business continuity, data leakage prevention, secure coding, and configuration management.
+- Control wording was refined and some requirements were consolidated or split. The structure of the information security, prototype protection, and data protection modules was kept, and the maturity model (0 to 5) and the "must / should / high / very high" requirement categories remained.
+- Terminology and examples were updated for modern topics (cloud, remote work, supply chain).
+- ISA 6 was phased in with a transition period, after which new assessments had to use it. Several minor releases (6.0.x) followed, mostly clarifications, corrected references, and translations.
+
+What a successor catalogue typically changes
+Based on how VDA has evolved the catalogue, expect changes in these areas, to be verified:
+1. Alignment to newer standards and regulation: NIS2, the EU Cyber Resilience Act, UNECE R155/R156 and ISO/SAE 21434 for product cybersecurity, EU AI Act themes, and the EU Data Act. Interfaces to TISAX through the data protection module and the GDPR are also commonly updated.
+2. Supply chain and third-party management: stronger requirements for service providers and subcontractors, including flow-down and evidence expectations.
+3. Cloud and outsourced IT: more explicit requirements for cloud governance, shared responsibility, and exit strategies.
+4. Clarified assessment rules: how scope, sites, remote audits, sampling, and multi-site setups are treated. This is the part that usually changes the audit effort more than control text does.
+5. Prototype protection: refreshed physical and organizational requirements for trial vehicles, test grounds, events and photo/film shoots, possibly with updated expectations for digital capture and drones.
+6. Editorial changes: renumbering, deleted duplicate controls, and clearer maturity-level examples. These are annoying for mapping documents but rarely change substance.
+
+What this means for you
+- If you hold an ISA 6 label, it stays valid until its expiry (three years). The new version applies at your next initial or renewal assessment, subject to ENX transition rules.
+- Expect a delta exercise: map your existing control set (typically your ISO 27001:2022 ISMS) to the new requirements, identify new or reworded controls, and update the SoA, policies, and evidence.
+- If your ISMS is already ISO 27001:2022 based, most of the delta should be modest. Prototype protection and data protection scopes may be affected differently.
+
+How to get a reliable diff
+1. Download the new catalogue and the previous one from the VDA and ENX sites. They publish an Excel catalogue plus a change list or release notes.
+2. Use the Excel files: compare control IDs, titles, objectives, must/should requirements, and maturity examples. A simple diff in a spreadsheet takes a few hours.
+3. Ask your TISAX audit provider for their delta briefing. Most publish one.
+4. Check the ENX participant notices for transition dates and assessment-rule changes.
+
+If you tell me which sections matter to you (information security, prototype protection, data protection) and paste the relevant control text from both versions, I can do a line-by-line comparison and tell you what to change in your documentation.

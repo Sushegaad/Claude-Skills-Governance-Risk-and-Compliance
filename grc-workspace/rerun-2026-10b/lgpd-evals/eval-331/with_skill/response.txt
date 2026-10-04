@@ -1,0 +1,63 @@
+Realistic LGPD penalty exposure, as of October 2026
+
+Short answer: the statutory ceiling is modest compared with GDPR, but the enforcement picture has changed. ANPD is now a fully autonomous agency, it is opening proceedings faster, and its largest fine to date is far above anything seen before. Plan for real exposure, mainly on children's data, breaches, and missing legal bases.
+
+1. The statutory framework (Art. 52)
+
+| Sanction | Detail | Realistic risk |
+|---|---|---|
+| Warning (Art. 52, I) | Comes with a deadline to remedy | Common first step for good-faith, cooperative controllers |
+| Simple fine (Art. 52, II) | Up to 2% of Brazilian revenue (prior financial year, group or conglomerate), capped at R$50M per infraction | Real, and the cap applies per infraction, so several violations can stack |
+| Daily fine (Art. 52, III) | Same R$50M cap, used to compel compliance | Used when a controller ignores orders |
+| Publicisation (IV) | Public disclosure of the infraction | Often more damaging commercially than the fine |
+| Blocking / deletion (V, VI) | Of the data tied to the violation | Operationally severe for data-driven products |
+| Partial suspension / prohibition (X-XII) | Suspension of processing for up to 6 months, extendable, or a ban | Reserved for serious or repeat non-compliance |
+
+Unlike GDPR (the higher of EUR 20M or 4% of global turnover), the LGPD base is Brazilian revenue only. For a company with modest Brazilian revenue, 2% can be well below R$50M. For a large platform, the R$50M per-infraction cap is the operative number.
+
+2. How ANPD calculates fines
+
+The operative rules are Resolution CD/ANPD 1/2021 and the dosimetry rules in Resolution 4/2023. The Art. 52, section 1 factors apply:
+- Gravity and nature of the infraction, and the degree of damage
+- Good faith of the infringer
+- Advantage obtained
+- Economic condition
+- Recidivism
+- Cooperation
+- Internal mitigation and good-governance controls
+- Speed of corrective action
+- Proportionality
+
+Practical consequence: a documented compliance programme (RoPA, RIPD, DPO, incident drills) and prompt cooperation are your main levers for moving from a fine to a warning, or from a high fine to a low one.
+
+3. What has changed in 2026
+
+- Institutional status. Lei 15.352/2026 (DOU, 25 February 2026) made ANPD an autarquia de regime especial with functional, decision-making and financial autonomy. Expect more resourcing and more confidence in enforcement.
+- Benchmark fine. On 25 August 2026 ANPD fined ByteDance/TikTok R$153.7 million over children's and adolescents' data, because feeds ran without an adequate legal basis. The decision also imposed deletion orders and a protection plan. The total is above R$50M, which suggests multiple infractions were counted separately. That is the practical answer to "does the cap really limit us?". Not if there are several infractions.
+- Speed. Enforcement velocity has roughly doubled. For example, 16 proceedings were opened on a single day in June.
+- Rule rewrite pending. Consulta Pública 1/2026 (9 September to 26 October 2026) proposes replacing Resolution 1/2021. It would add interim measures without prior hearing and daily fines capped at R$50M in total, and extend supervision to Digital ECA duties and internet application providers. It is not yet in force. Until it lands, Resolution 1/2021 and Resolution 4/2023 govern. If you are in scope, consider filing comments before 26 October.
+
+4. Where exposure is concentrated
+
+Based on ANPD priorities and the TikTok decision:
+1. Children's and adolescents' data (Art. 14, Digital ECA), including processing without an adequate legal basis.
+2. Large-scale security incidents, and late or missing Art. 48 notification (3 working days preliminary, 20 working days full report).
+3. Sensitive data without an Art. 11 basis.
+4. International transfers without the mandatory Resolution 19/2024 standard clauses (the grace period ended 23 August 2025).
+5. Unanswered data subject requests, and no published encarregado where one is required.
+
+5. Exposure beyond ANPD
+
+The fine is not the whole bill. LGPD civil liability (Art. 42) allows individual and collective damages claims. Consumer authorities (SENACON, Procons) and the Public Prosecutor can act under the Consumer Defence Code. Remember that an ANPD blocking or suspension order can cost more than the fine.
+
+6. What I would do now
+
+- Rank your processing activities by the high-risk list above and check each has a documented Art. 7 or 11 basis.
+- Confirm your incident playbook meets the 3-working-day clock.
+- Check that transfer contracts use the unmodified ANPD standard clauses.
+- Keep evidence of your controls, since it is the main mitigating factor.
+- Decide whether to comment on Consulta Pública 1/2026.
+
+If you share your Brazilian revenue band, sector, and whether you process minors' or sensitive data, I can build a scenario-based exposure table.
+
+This is general compliance information, not legal advice. Verify against current ANPD publications and consult Brazilian counsel for decisions.

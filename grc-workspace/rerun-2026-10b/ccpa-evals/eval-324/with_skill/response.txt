@@ -1,0 +1,35 @@
+The climate is aggressive and still intensifying. In 2026 the CPPA has moved from guidance to fines against data brokers, and registration accuracy is the current focus. Because you are already registered, your exposure is mostly accuracy, timely deletion processing, and your own consumer-rights handling.
+
+**Recent enforcement and guidance**
+
+- **Registration blitz.** The CPPA fined **SalesIntel Research $36,400** on September 1, 2026 for failing to register as a data broker. That is a small amount, but it shows the agency is sweeping the market with automated checks and does not need a complaint to act.
+- **Enforcement Advisory 2026-01 (September 3).** It targets the **accuracy of registration** information, not only the fact of registration. Exposure is **$200 per day**, which accumulates quickly if your listing is wrong or out of date. Review your registered business details, contact points, and required disclosures now.
+- **DROP is live.** The Delete Request and Opt-out Platform has been processing consumer deletion requests since **August 1, 2026**. As a registered broker, you must retrieve and process DROP deletion requests on the required cycle, and keep proof that you did.
+- **Wider CCPA actions this year:** GM at $12.75M (connected-car data), Disney at $2.75M (the largest to date, involving children's data, opt-out deficiencies, and ad tech sharing), PlayOn Sports at $1.1M (unauthorized sharing and weak rights processes), and Ford at $375K (late handling of deletion and access requests). The Ford case shows that missing the 45-day deadline is an actionable violation by itself.
+
+**Legislation that lands on you**
+
+- **AB 883** cuts the data-broker consumer-request deadline from **45 days to 30 days** and adds DROP notice requirements. Check the effective date and build your queue to the 30-day standard now.
+- **SB 923 (effective January 1, 2027)** extends the right to delete to PI collected "from or about" a consumer, including data acquired from other brokers. Suppression lists are expressly permitted so deleted consumers stay deleted. A broker that buys and resells data is squarely in scope.
+- **AB 1542 was vetoed.** The categorical ban on selling or sharing sensitive PI did not become law, but the right to limit and the opt-out still apply.
+
+**Baseline CCPA duties for a broker**
+
+- **Selling is your business model**, so the "Do Not Sell or Share" link and **GPC** handling must work. Opt-outs must be effectuated within 15 business days and passed to downstream recipients.
+- **Thresholds.** You almost certainly qualify under the 50%-of-revenue-from-selling-PI test, or the 100,000-consumer test.
+- **Notice and transparency.** Maintain an accurate privacy policy and notice at collection, including PI categories, sources, retention periods, and recipients.
+- **Minors.** Selling data of consumers under 16 requires opt-in, and violations involving minors are up to $7,500 each.
+- **Penalties.** $2,500 per unintentional and $7,500 per intentional violation (1798.155), counted per consumer, so volume matters. The 30-day cure period applies to AG actions, and CPPA administrative actions may not offer it.
+- **Security.** A breach triggers a private right of action of $100-$750 per consumer per incident. Cybersecurity audits and risk assessments have applied since January 1, 2026, with phased certification dates from April 2028.
+
+**Recommended actions now**
+
+1. Audit your **registration entry** against reality and correct anything stale. At $200 per day, this is the cheapest fix you have.
+2. Confirm that you **pull and process DROP files** on schedule, with logging that proves each batch was handled.
+3. Rebuild the request workflow to the **30-day** standard and ensure that **verification failure** rules (deny deletion, treat as opt-out) are coded.
+4. Stand up **suppression lists** and make ingestion jobs check them, ahead of SB 923.
+5. Check **source provenance**: you should be able to say where each record came from, to answer access requests and to delete upstream-sourced data.
+6. Review **customer contracts**: buyers who are third parties need contract terms that honor opt-outs and deletions flowing down from you.
+7. Prepare an **investigation response plan** (document custodian, privilege, quick-turn evidence of compliance) since sweeps often start with an inquiry letter.
+
+Dates and amounts above reflect the 2026 actions as of October 3, 2026. Verify against CPPA notices before relying on them. This is general compliance information, not legal advice.

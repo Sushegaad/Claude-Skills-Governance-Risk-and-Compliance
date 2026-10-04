@@ -1,0 +1,45 @@
+Good news: TISAX is a well-defined process, and a first-timer typically needs about 6 to 12 months to reach consistent maturity 3, depending on the ISMS baseline. First, the framing: TISAX is an assessment with shareable labels, not a certification. It is run by the ENX Association on behalf of the VDA, and one assessment can be shared with many OEM customers ("assess once, share with many").
+
+**Step 0: Ask your customer exactly what they need**
+Get the required assessment objectives (labels) in writing, plus the deadline. The objectives set the level:
+- Confidential, High Availability, Data: AL2 (audit provider plausibility check, usually remote).
+- Strictly Confidential, Very High Availability, prototype labels, Special Data: AL3 (comprehensive on-site assessment).
+- AL1 is self-assessment only. It gives no labels and no ENX visibility, so it is useful internally but will not satisfy your customer.
+Use current label names. "Info High" and "Info Very High" are legacy names, replaced under ISA 6 by Confidential/Strictly Confidential plus the availability labels.
+
+**Step 1: Version decision**
+ISA 6 (rev. 6.0.3) applies to assessments ordered through December 31, 2026. ISA2027 applies to orders from January 1, 2027. An initial ISA-6 assessment must open by March 2027. Since you are starting from zero, you will probably be ready after the changeover, so build your gap assessment against ISA2027.
+
+**Step 2: Register on the ENX portal and define scope**
+- Register your legal entity and location(s).
+- Use the standard scope, which is strongly recommended. Custom scopes are less widely accepted.
+
+**Step 3: Gap assessment and remediation**
+Run a self-assessment against the ISA catalogue (Information Security, 46 controls; plus Prototype Protection or Data Protection if your objectives include them). Score each question on the 0-5 maturity scale. The target is maturity 3 ("Established"). Cutback rules trim scores above target, so weak areas drag the result down and strengths elsewhere do not offset them. Aim for a consistent 3 before chasing 4 or 5 anywhere. Sequence the work as must requirements, then should requirements, then the additional requirements for high and very-high protection needs.
+
+Typical first-timer gaps: ISMS governance and documented policies, asset classification, access reviews, logging and vulnerability management, supplier management, incident process, and evidence that processes actually operate.
+
+**Step 4: Select an ENX-accredited audit provider**
+Book early, since provider capacity drives timelines. Agree objectives and level.
+
+**Step 5: Assessment**
+Kick-off, self-assessment submission, then the initial assessment (remote for AL2, on-site for AL3). If there are nonconformities, you submit a corrective action plan, may receive temporary labels, and have a follow-up assessment within the 9-month corrective window (counted from the initial assessment's closing meeting). Miss that window and the assessment restarts.
+
+**Step 6: Labels and sharing**
+Labels are valid for 3 years. You share results with customers on the ENX platform and choose the disclosure detail (label only, summary, or full report). Results are never public by default. Renewal is a full re-assessment against the then-current catalogue.
+
+**Cost**
+1. **ENX fees (plus VAT):** €405 net per location and scope (one-time, Assessment Based Charges), or €5,000 per year for Participation Based Charges covering unlimited locations and scopes. For one or two sites the per-scope option is cheaper. The flat fee suits many sites.
+2. **Audit provider fees:** these are separate, set by the provider, and usually the largest external cost. They depend on level (AL3 on-site costs more than AL2), number of locations, and company size. Get quotes from several accredited providers; I will not quote a figure because it varies widely.
+3. **Internal and consulting cost:** time for remediation, tooling (for example logging, MDM, vulnerability scanning) and optional consulting. For a first-timer this is often the largest total.
+
+**Next steps**
+1. Confirm objectives, level and deadline with your customer.
+2. Decide the ISA 6 versus ISA2027 order date.
+3. Register on ENX and fix the scope.
+4. Run the gap assessment and build a remediation roadmap.
+5. Request quotes from accredited providers.
+
+If you tell me your objectives, headcount and number of sites, I can build the gap table and roadmap.
+
+This is general compliance information, not legal advice. Verify current fees and rules on enx.com.

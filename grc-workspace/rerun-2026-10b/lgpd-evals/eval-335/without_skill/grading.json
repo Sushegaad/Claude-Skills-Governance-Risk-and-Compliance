@@ -1,0 +1,33 @@
+{
+  "eval_id": 335,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the notification duty: communicate to the ANPD and affected data subjects within the regulated timeframe (ANPD regulation: 3 working days) when risk or relevant damage is involved",
+      "passed": true,
+      "evidence": "\"set a 3-business-day deadline... to notify both the ANPD and affected data subjects\""
+    },
+    {
+      "text": "Covers content: nature of data, affected subjects, technical measures, risks, mitigation — and documentation even where notification isn't required",
+      "passed": true,
+      "evidence": "\"description of the nature and category of data affected; number of data subjects; technical and security measures used; risks;... measures taken or planned\"; \"incident register kept for at least five years\""
+    },
+    {
+      "text": "Connects to security duties (Arts. 46–48) and the incident-response governance expectations",
+      "passed": true,
+      "evidence": "\"Art. 48 of the LGPD\"; remediation \"patching, MFA, segmentation, monitoring, vendor controls\"; \"existing governance and security programme... Documented incident response plan, training, and ROPA all help\""
+    },
+    {
+      "text": "Flags the enforcement context: ANPD's active sanctioning posture (TikTok fine; expanded proceedings) raises the cost of mishandling",
+      "passed": false,
+      "evidence": "Only \"non-response has been a source of early sanctions\" — no TikTok fine, no 2026 enforcement escalation"
+    },
+    {
+      "text": "Actionable sequence: contain → assess risk → notify ANPD/subjects → document → remediate, with evidence preservation",
+      "passed": true,
+      "evidence": "\"Hour 0-24: contain and organise... Preserve evidence: take forensic images and logs... Day 1-2: assess scope and risk... Within 3 business days: notify... Days 3-30: investigate, remediate, document\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

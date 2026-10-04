@@ -1,0 +1,39 @@
+ISO 27001:2022 is the best starting point you could have, but TISAX is not a rubber stamp on top of it. Expect the work to be meaningfully smaller than a from-scratch effort (typically months, not a year), with real effort concentrated in a few places. TISAX is an assessment with labels shared on the ENX platform, not a certification, and an ISO 27001 certificate does not substitute for it.
+
+**Overlap: roughly 70 to 80%**
+About 70 to 80% of the ISA Information Security controls map to ISO 27001:2022 Annex A and ISMS clauses: policies, organization, HR security, physical security, access control, cryptography, operations security, supplier management, incident management and continuity. You can reuse your policies, risk register, Statement of Applicability evidence and audit artifacts.
+
+**What ISO 27001 does not give you**
+
+| TISAX-specific element | Why it is extra work |
+|---|---|
+| Fixed maturity targets with cutback scoring | There is no SoA-style tailoring. Every applicable question must reach target maturity 3 ("Established"), and cutback rules mean strong areas cannot offset weak ones. ISO "implemented" equals maturity 3 only when it is established, documented and demonstrably operating. |
+| Additional requirements for High and Very High protection needs | Layered requirements beyond the ISO baseline, driven by your objectives (Confidential, Strictly Confidential, availability labels). |
+| Prototype Protection module | Physical and organizational prototype security has no ISO equivalent. It applies only if your objectives include Proto Parts, Proto Vehicles, Test Vehicles or Proto Events. |
+| Data Protection module | GDPR Art. 28 processor posture (Data), plus Art. 9 handling for Special Data. |
+| OEM expectations | Handling of data classified under OEM terms is expected, and TISAX is a de facto contractual mandate from VW, BMW, Mercedes-Benz, Audi and others. |
+| Labels and ENX mechanics | Registration, scoping, an ENX-accredited audit provider, label sharing, temporary labels and the 9-month corrective window are all new to you. |
+| Assessment cycle | No ISO-style surveillance audits, but a full re-assessment every 3 years. |
+
+**Where your effort will go (rough sizing)**
+- **Light:** ISMS governance, policies, risk management, internal audit and management review. You mostly re-map evidence.
+- **Moderate:** Re-expressing evidence in maturity terms (0-5), tightening any control that is "certified but thin" in operation, and High/Very-High additional requirements. Customer data classification handling per OEM terms.
+- **Heavier:** Prototype protection (if in scope) and AL3 on-site readiness. Also supplier management, which is stricter under ISA2027.
+- **Administrative:** ENX registration, scope definition (use the standard scope), audit provider selection and the label-sharing setup.
+
+**Version note**
+ISA 6 (rev. 6.0.3) applies to assessments ordered through December 31, 2026. ISA2027, published July 1, 2026, is mandatory for orders from January 1, 2027. Both ship with ISO 27001:2022 mappings (ISA2027 also adds NIST CSF 2.0 and drops all 2013 references), which helps you because you are on the 2022 version. Under ISA2027, supply-chain requirements are stronger: documented supplier monitoring at high protection need, and supplier assurance (a TISAX label, equivalent assessment or supplier audit) at very high. If your supplier management is only ISO-level, plan for this. An assessment ordered by December 31, 2026 must still open by March 2027.
+
+**Recommended approach**
+1. **Confirm objectives and level with your OEM customer.** AL2 is a remote plausibility check; AL3 is on-site and covers very-high objectives, prototype labels and Special Data.
+2. **Map your ISO evidence to the ISA control areas.** Use the ISA2027 or ISA 6 mapping tables, depending on your order date.
+3. **Gap-assess what does not map:** prototype and data modules, additional High/Very-High requirements, and availability objectives.
+4. **Score yourself honestly on maturity,** and aim for a consistent 3 everywhere.
+5. **Keep one ISMS.** Run TISAX as a scope extension of your ISO programme, not a parallel one.
+
+**Cost**
+ENX fees are €405 net per location and scope (one-time) or €5,000 per year for unlimited locations and scopes, plus VAT. Audit provider fees are separate and depend on level and sites. Your ISO background should reduce remediation and consulting spend more than it reduces the audit fee.
+
+**Bottom line:** if you are scoped to Confidential or Data at AL2, think of it as a focused gap-closure project on top of ISO. If prototypes or AL3 are involved, budget substantially more.
+
+This is general compliance information, not legal advice. Verify with ENX and an accredited audit provider.

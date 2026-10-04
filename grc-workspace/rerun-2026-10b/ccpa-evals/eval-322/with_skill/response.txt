@@ -1,0 +1,43 @@
+California's September 2026 children's package changes the baseline for any app used by teenagers. Most of it takes effect January 1, 2027 unless noted. Several of these duties apply even if you are not the "business" that crosses the CCPA thresholds, so check each law's own scope.
+
+**The package (signed September 10)**
+
+1. **AB 2246: replaces the Age-Appropriate Design Code** with a "reasonable steps" framework.
+   - Profiling of minors is banned by default.
+   - Dark patterns aimed at minors are banned.
+   - Expect to document the reasonable steps you take, including age-appropriate defaults and data minimization for teens.
+
+2. **AB 1709: bans addictive features for under-16s.** Personalized feeds, autoplay, and push notifications are the named features. Penalties reach $50,000 per minor, so exposure scales with your user base. If your engagement model depends on those features, a redesign for under-16s is the main product change in this package.
+
+3. **AB 1856: fixes the Digital Age Assurance Act's operating-system age signal scope.** Plan to consume the OS-level age signal rather than building your own age gate from scratch. Confirm which platforms and apps are in scope.
+
+4. **SB 1119: companion-chatbot child-safety duties.** The core obligations begin July 1, 2027. If your app includes an AI companion or chat character, start the design work now.
+
+5. **SB 867: bans companion-chatbot toys.** It sunsets in 2031. This is relevant only if you ship connected toys.
+
+**Other 2026 bills that touch you**
+
+- **AB 2561:** no silent reversion of privacy settings after updates. If a teen sets a restrictive privacy setting, an app update cannot reset it.
+- **AB 1609:** chatbot disclosure duties for businesses above $500M. Check whether it reaches you.
+- **SB 923:** broadens the right to delete to data acquired from third parties. Teen-targeted data you buy or enrich is now deletable.
+
+**What already applies under CCPA/CPRA**
+
+- **Opt-in for sale/sharing of minors' PI.** Consumers under 16 must opt in. For under 13, parental consent is required. This covers the SDKs and ad tech in your app. Sharing cookie IDs, device IDs, or hashed emails for cross-context behavioral advertising with a third party is "sharing" even without payment.
+- **Penalties.** Violations involving minors' PI carry up to $7,500 per violation and are treated as intentional.
+- **Enforcement precedent.** Disney paid $2.75M, the largest CCPA enforcement to date, partly for children's data handling failures, opt-out mechanism deficiencies, and third-party ad tech sharing. The CPPA is targeting systematic issues in big consumer products.
+- **Opt-out mechanics.** Honor Global Privacy Control as a valid opt-out. After an opt-out you must wait 12 months before asking the consumer to reconsider.
+- **ADMT.** If you use automated systems for decisions with significant effects, ADMT duties start January 1, 2027. That is unlikely for most teen apps, but check recommendation systems that gate education or similar services.
+
+**What to do now**
+
+1. **Segment your users by age band** (under 13, 13-15, 16-17) and map every data flow, SDK, and ad partner for each band.
+2. **Turn off sale/sharing and behavioral advertising by default** for under-16s unless you hold opt-in consent. Treat 16-17 conservatively as well.
+3. **Audit engagement features.** List personalized feeds, autoplay, and push notifications, and plan under-16 variants that are off by default.
+4. **Stop profiling minors** by default. Document any exception under AB 2246 and the reasonable steps behind it.
+5. **Review dark patterns** in consent flows, settings, and cancellation.
+6. **Lock settings across updates** (AB 2561) and add regression tests.
+7. **Update notice at collection** and the privacy policy with the PI categories, retention periods, and sale/sharing status for minors.
+8. **Calendar the dates:** January 1, 2027 for most provisions, July 1, 2027 for companion-chatbot duties.
+
+The key drafting questions on scope (who is a "covered" operator, what counts as "reasonable steps", how age signals are consumed) depend on final statutory text and any implementing guidance. Have counsel confirm before finalizing. This is general compliance information, not legal advice.

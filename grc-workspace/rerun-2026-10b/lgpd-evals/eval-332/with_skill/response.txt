@@ -1,0 +1,57 @@
+ANPD's institutional status and Consulta Pública 1/2026
+
+1. Where ANPD stands now
+
+Lei 15.352/2026, published in the DOU on 25 February 2026, converted Provisional Measure 1.317/2025 into law. It turned ANPD into an autarquia de regime especial, a full regulatory agency with functional, decision-making and financial autonomy. The name is unchanged.
+
+Why this matters:
+- Before, ANPD was created under Law 13.853/2019 as a federal body with technical autonomy, but it sat inside the federal administration structure. Its budget and independence were regular criticisms.
+- Now it has an independent footing comparable to other Brazilian regulators. Expect stronger resourcing, more consistent enforcement, and more assertive rule-making.
+- The same law fixed the effectiveness date of the Digital ECA (the children's online protection statute) at 17 March 2026, which brought ANPD into supervision of children's online services.
+
+Alongside the institutional change, enforcement has picked up. ANPD fined ByteDance/TikTok R$153.7 million (DOU, 25 August 2026) over children's and adolescents' data, and opened 16 proceedings on a single day in June. Treat the era of slow, warning-first enforcement as over.
+
+2. The consultation you keep hearing about
+
+Consulta Pública 1/2026 runs from 9 September to 26 October 2026. It proposes to replace Resolution CD/ANPD 1/2021, the current sanctioning-procedure regulation. Key proposals:
+
+| Proposal | What it would mean |
+|---|---|
+| Extending supervision to Digital ECA duties | Children's-protection obligations fall within the same sanctioning procedure |
+| Covering internet application providers | Platforms and apps are explicitly in the supervised population |
+| Interim measures without prior hearing | ANPD could order a stop, block, or other measure before you have been heard, which is a significant due-process change |
+| Daily fines capped at R$50M in total | Formalises coercive daily fines, with a total ceiling |
+
+3. What is and is not in force
+
+This is the point most often misunderstood. The consultation is a proposal, not a rule. Until ANPD adopts the replacement:
+- Resolution CD/ANPD 1/2021 remains the operative sanctioning regime.
+- Resolution CD/ANPD 4/2023 (dosimetry) governs how fines are calculated.
+- Art. 52 LGPD still sets the ceiling: up to 2% of Brazilian revenue, maximum R$50M per infraction.
+- The existing process stays: preliminary investigation, a sanctioning proceeding with a 15-business-day defence period, a board decision, and an internal appeal within 10 business days.
+
+4. Should you comment?
+
+If you are an internet application provider, a platform with minors among your users, or a business that could be hit by an interim measure, yes. File before 26 October. Useful topics:
+- Safeguards for interim measures without hearing (criteria, duration, review, proportionality)
+- Clarity on how Digital ECA duties interact with Art. 14 LGPD
+- How the R$50M daily-fine total interacts with the per-infraction cap in Art. 52
+- Transition rules for open proceedings
+
+Trade associations often file collectively. Check whether yours is doing so.
+
+5. Related deadlines
+
+- Order CD/ANPD 122/2026 (11 August) requires semiannual transparency reports from platforms with more than 1 million registered minor users. The first covered January to June 2026 and was due by 17 September. Later reports follow an 1 August / 1 February cadence.
+- Resolution 19/2024: the grace period for ANPD standard contractual clauses ended 23 August 2025.
+
+6. Next steps
+
+1. Confirm whether you are in the consultation's scope (platform, app provider, minors).
+2. Decide on a response by around 19 October to leave time for sign-off.
+3. Review your incident and cooperation procedures, since faster proceedings mean shorter lead times.
+4. Watch the final text for transition provisions.
+
+I can draft a consultation response outline if you tell me your sector.
+
+This is general compliance information, not legal advice. Verify against the DOU and ANPD website before acting.

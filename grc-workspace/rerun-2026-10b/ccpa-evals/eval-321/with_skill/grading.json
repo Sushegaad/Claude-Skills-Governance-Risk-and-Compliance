@@ -1,0 +1,33 @@
+{
+  "eval_id": 321,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States current law accurately: the CCPA deletion right as enacted reaches PI the business collected FROM the consumer, with broker-held data addressed via the Delete Act/DROP mechanism",
+      "passed": true,
+      "evidence": "\"The statute as it stood only required deletion of PI 'collected from the consumer.'\" and \"the consumer can use the Delete Act / DROP platform, which has been processing deletions since August 1, 2026\""
+    },
+    {
+      "text": "States the change: SB 923 (Expanding Privacy Rights Act, signed September 27, 2026, effective January 1, 2027) extends deletion to PI collected 'from or about' the consumer — including third-party and data-broker-sourced data",
+      "passed": true,
+      "evidence": "\"What changes January 1, 2027: SB 923 (Expanding Privacy Rights Act)... The right to delete reaches PI collected 'from or about' the consumer. That includes data acquired from third parties and data brokers.\" Bill, name, effective date, scope and quote all correct; signing date not stated but nothing contradicts it."
+    },
+    {
+      "text": "Mentions the suppression-list permission so deleted consumers stay deleted as new third-party data arrives",
+      "passed": true,
+      "evidence": "\"You may maintain suppression lists so a deleted consumer stays deleted. Without one, re-ingesting the next broker file would restore the data you just deleted.\""
+    },
+    {
+      "text": "Notes the online-submission requirement for exclusively-online businesses",
+      "passed": true,
+      "evidence": "\"Exclusively online businesses must offer an online method for submitting requests.\" (listed under the SB 923 changes)"
+    },
+    {
+      "text": "Gives operational advice: inventory third-party data sources now and build deletion plumbing before January 1, 2027",
+      "passed": true,
+      "evidence": "\"What to do before year-end... Inventory every third-party-sourced dataset... Update the deletion runbook so it searches purchased data... Build the suppression list and make ingestion jobs check it.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

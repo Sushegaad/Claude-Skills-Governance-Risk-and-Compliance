@@ -1,0 +1,25 @@
+{
+ "skill": "ccpa",
+ "prompts": [
+  {
+   "id": 321,
+   "prompt": "A California consumer demands we delete everything we have on them, including data we bought from a data broker. What are our obligations today, and what changes on January 1, 2027?"
+  },
+  {
+   "id": 322,
+   "prompt": "We build consumer apps used by teenagers. What did California's 2026 legislative session change for us?"
+  },
+  {
+   "id": 323,
+   "prompt": "Can we still sell or share sensitive personal information of California consumers?"
+  },
+  {
+   "id": 324,
+   "prompt": "We're a registered data broker. What's the CPPA enforcement climate right now?"
+  },
+  {
+   "id": 325,
+   "prompt": "Give us the compliance timeline for California's ADMT and risk-assessment regulations."
+  }
+ ]
+}

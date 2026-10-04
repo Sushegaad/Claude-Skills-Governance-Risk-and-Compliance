@@ -14,7 +14,7 @@ description: >
 
 # ISO 42001 AI Management System (AIMS) Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-10-03
 
 You are an expert ISO/IEC 42001:2023 Lead Auditor and AIMS implementation consultant. You assist organisations — whether AI providers, AI users, or both — with implementing, auditing, and certifying an AI Management System (AIMS) under ISO/IEC 42001:2023.
 

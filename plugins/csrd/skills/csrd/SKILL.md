@@ -15,9 +15,9 @@ description: >
 
 # CSRD Compliance Skill
 
-> **Last verified:** 2026-08-15
+> **Last verified:** 2026-10-03
 
-> ⚠️ **The Omnibus changed this framework materially in 2026.** Scope is now governed by **Directive (EU) 2026/470** (OJ February 26, 2026; in force March 2026): mandatory CSRD reporting applies to large undertakings with **more than 1,000 employees AND net turnover above €450 million**. Companies below that line are out of mandatory scope (the VSME-based voluntary standard is available instead). On **July 3, 2026** the Commission adopted the delegated acts with the **revised, simplified ESRS** (mandatory datapoints cut by roughly 61%) — currently in the Parliament/Council scrutiny period (2 months, extendable by 2), with entry into force expected Q4 2026. Revised ESRS apply for financial years beginning **January 1, 2027**; **FY2026 early adoption is permitted only once the delegated act enters into force**. Member-State transposition of the scope changes is due by ≈ March 19, 2027. **Before any gap assessment, ask: current ESRS (2023) basis or revised ESRS (2026) basis?**
+> ⚠️ **The Omnibus changed this framework materially in 2026.** Scope is now governed by **Directive (EU) 2026/470** (OJ February 26, 2026; in force March 2026): mandatory CSRD reporting applies to large undertakings with **more than 1,000 employees AND net turnover above €450 million**. Companies below that line are out of mandatory scope (the VSME-based voluntary standard is available instead). The **revised, simplified ESRS are now law**: Commission Delegated Regulation **(EU) 2026/1563** (adopted July 3, 2026; published in the Official Journal **September 21, 2026**) enters into force **November 10, 2026** — mandatory datapoints cut from over 1,000 to roughly 320 (**>60% fewer mandatory datapoints, >70% fewer total**; former voluntary datapoints moved to EFRAG's non-mandatory guidance). Revised ESRS apply for financial years beginning **January 1, 2027**; for **FY2026**, in-scope undertakings may choose either the 2023 ESRS (as amended) or the revised ESRS. The **voluntary standard** is also law: Delegated Regulation **(EU) 2026/1560** (OJ September 21, in force September 24) — and it operates as the **value-chain cap**: reporters may not demand more from ≤1,000-employee value-chain partners than its content. Member-State transposition of the scope changes is due by ≈ March 19, 2027. **Before any gap assessment, ask: current ESRS (2023) basis or revised ESRS (2026) basis?**
 
 You are an expert EU sustainability reporting advisor with deep knowledge of the **Corporate Sustainability Reporting Directive (CSRD)** — Directive (EU) 2022/2464 — and the **European Sustainability Reporting Standards (ESRS)** issued by EFRAG under Commission Delegated Regulation (EU) 2023/2772. You assist finance, legal, sustainability, and compliance teams preparing for CSRD obligations.
 
@@ -64,7 +64,7 @@ Post-Omnibus scope (Directive (EU) 2026/470 — supersedes the original wave str
 | Category | Criteria | Status |
 |----------|----------|--------|
 | **In mandatory scope** | Large undertakings with **>1,000 employees AND net turnover >€450M** | Wave-one NFRD-era reporters continue; others report per the amended timeline as transposed |
-| **Below the threshold (≤1,000 employees or ≤€450M)** | Formerly wave 2/3 companies and listed SMEs | **Out of mandatory scope** — the VSME-based voluntary standard (adopted July 3, 2026 alongside the revised ESRS) is the reporting vehicle if stakeholders request data |
+| **Below the threshold (≤1,000 employees or ≤€450M)** | Formerly wave 2/3 companies and listed SMEs | **Out of mandatory scope** — the VSME-based voluntary standard — now Delegated Regulation (EU) 2026/1560, in force September 24, 2026 — is the reporting vehicle if stakeholders request data, and caps what in-scope reporters may demand of ≤1,000-employee value-chain partners |
 | **Non-EU companies** | Thresholds under review in the Omnibus package | Confirm current Art. 40a status before advising — do not rely on the pre-2026 €150M construct without checking |
 
 **Stop-the-clock (Directive (EU) 2025/794, April 2025):** wave 2/3 reporting was deferred two years before the scope cut landed; companies that relied on it and are now under the 1,000-employee line simply exit mandatory scope.
@@ -205,7 +205,7 @@ Where value chain data is unavailable, companies may use:
 | Listed SMEs first report | FY 2026 → published 2027 |
 | Non-EU companies first report | FY 2028 → published 2029 |
 
-**Omnibus status (August 2026):** the February 2025 proposals are now law or near-law — scope: **Directive (EU) 2026/470** in force (see callout above); content: **revised ESRS delegated acts adopted July 3, 2026** (~61% fewer mandatory datapoints; VSME voluntary standard), in scrutiny with entry into force expected Q4 2026. Revised ESRS mandatory for FYs beginning **January 1, 2027**; FY2026 early adoption available only after entry into force. Wave-one reporters should decide their FY2026 basis now: final year on ESRS (2023), or early-adopt the revised ESRS if the scrutiny period completes in time.
+**Omnibus status (October 2026):** everything is now law — scope: **Directive (EU) 2026/470** in force (transposition due March 19, 2027; Germany still pending); content: **Delegated Regulations (EU) 2026/1563** (revised ESRS, OJ Sept 21, in force Nov 10, 2026) and **(EU) 2026/1560** (voluntary standard, in force Sept 24). Revised ESRS mandatory for FYs beginning **January 1, 2027**; FY2026 reporters choose their basis (2023 ESRS or revised). **Assurance track**: CEAOB delivered its technical advice on an EU limited-assurance standard (EU add-ons/carve-outs to ISSA 5000) on **September 25, 2026**; the Commission's limited-assurance delegated act is due by **July 1, 2027** — the empowerment for reasonable-assurance standards was removed by the Omnibus, so limited assurance remains the regime.
 
 ---
 

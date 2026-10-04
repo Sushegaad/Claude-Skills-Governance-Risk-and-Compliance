@@ -1,0 +1,35 @@
+Short answer: customers cannot lawfully require everything they ask for under the CSRD. What you must produce depends on whether you are in scope of CSRD yourself. In any case, the commercial reality is that large customers will ask for Scope 1, 2 and the most relevant Scope 3 data, and your response should be organised and standardised.
+
+1. What customers can require legally
+- CSRD does not give a reporting company direct power to compel suppliers to disclose. It requires the reporting company to report on its own value chain using ESRS, which allows estimates and sector averages where primary data is unavailable (ESRS 1 section 5.2 and the value chain provisions). The company must still disclose efforts to obtain the data.
+- The Omnibus I amendments introduced a "value chain cap": an in-scope company may not require, via ESRS or via its requests, information from value-chain companies with up to 1,000 employees that goes beyond the voluntary standard for SMEs (VSME, endorsed in a Commission Recommendation in July 2025), where the information is not otherwise available. The cap shields you if you are below 1,000 employees. If you are above it, it does not apply, but a customer still cannot demand data beyond ESRS-driven needs.
+- CSDDD: due diligence obligations are being reduced. Companies need to focus on their own operations, subsidiaries and direct business partners (tier one), and information requests to indirect partners should be limited to cases of plausible information about adverse impacts. Customers should limit blanket questionnaires.
+- Contractual power: separate from the law, customers may include sustainability clauses in contracts (supplier codes, audit rights, KPIs, termination triggers). This is a negotiation, not a legal entitlement, and you can negotiate scope, frequency, confidentiality, and cost sharing.
+- Other regimes may apply: EU Deforestation Regulation, Forced Labour Regulation, CBAM, batteries regulation, Ecodesign and the digital product passport impose specific data duties along the chain for certain products, and those are real legal demands irrespective of CSRD.
+
+2. What you must produce yourself
+If you are in scope of CSRD (more than 1,000 employees and EUR 450M turnover):
+- A sustainability statement per ESRS covering your material topics, including your own Scope 1, 2 and where material Scope 3 GHG emissions (E1-6), transition plan, targets and policies.
+- Value chain information that is material, with reasonable estimates where data is unavailable and explanation of the efforts to obtain it. You are not required to produce primary supplier data for everything.
+- Assured, digitally tagged reporting.
+If you are out of scope:
+- No statutory obligation under CSRD. Your obligations come from other laws (above), contracts, and lenders.
+- Voluntary VSME reporting is the recommended route.
+
+3. Scope 3 specifically
+Scope 3 has 15 categories under the GHG Protocol. Only categories that are material need to be disclosed under ESRS, and phase-ins and estimation help. Practical tips:
+- Screen the 15 categories and prioritise the ones that are large: purchased goods and services, use of sold products, capital goods, transport.
+- Use spend-based factors first, then move to activity data and supplier-specific data for the hotspots.
+- Avoid expecting accurate supplier-specific data from small suppliers: that is the reason for the cap.
+- Product-level carbon footprints (ISO 14067, PEF) may be requested by customers; they are separate from corporate reporting.
+
+4. Practical response strategy
+1. Know your legal position: are you in scope; are you below the 1,000 employee cap?
+2. Build a data pack: corporate GHG inventory (Scope 1 and 2, location and market based), key Scope 3 categories, energy, workforce and governance data, certifications.
+3. Standardise using VSME. Offer it as the default response to every customer, and ask them to justify requests beyond it.
+4. Differentiate: share more with strategic customers where you will gain business, while protecting confidential information with NDAs and aggregated numbers.
+5. Request data from your own suppliers proportionately, prioritising hotspots, and use the same VSME template for your suppliers.
+6. Governance: keep controls, ownership, evidence and version control; customers may eventually ask for assurance.
+7. Use contract language: align on frequency (annual), format, confidentiality, no uncapped audit rights, and reasonable timelines.
+
+Caveat: this reflects my understanding of recent developments, which continue to change. Verify against the final texts and your national transposition.

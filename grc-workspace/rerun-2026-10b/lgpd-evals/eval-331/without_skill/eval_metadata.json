@@ -1,0 +1,13 @@
+{
+  "eval_id": 331,
+  "eval_name": "penalty-reality",
+  "run_type": "without_skill",
+  "prompt": "What penalties do we realistically face for LGPD violations in late 2026?",
+  "assertions": [
+    "States the operative regime: Resolution CD/ANPD 1/2021 (process) plus Resolution 4/2023 dosimetry — fines up to 2% of Brazil-sourced revenue capped at R$50 million per infraction, plus warnings, blocking/deletion orders, publicization",
+    "Cites the enforcement benchmark: ANPD fined ByteDance/TikTok R$153.7 million (published August 25, 2026) over children's/adolescents' data processed without an adequate legal basis, with deletion orders and a mandated protection plan",
+    "Notes enforcement velocity has jumped (e.g., 16 sanctioning proceedings opened in a single day in June 2026)",
+    "Flags the pending rewrite: Consulta Pública 1/2026 proposes replacing the sanctioning-process regulation — current rules apply until it lands",
+    "Mentions the new interim-measures/daily-fines proposal (cautelares without prior hearing; daily fines capped at R$50M total) as PROPOSED, not yet law"
+  ]
+}

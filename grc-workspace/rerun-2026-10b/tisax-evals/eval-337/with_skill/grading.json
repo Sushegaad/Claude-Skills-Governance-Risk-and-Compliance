@@ -1,0 +1,33 @@
+{
+  "eval_id": 337,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Describes the release model: year-based naming with an annual cycle (summer publication, effective January 1 following; ISA2028 expected summer 2027)",
+      "passed": true,
+      "evidence": "\"Year-based naming replaces version numbers (ISA2027, then ISA2028 expected summer 2027)... published each summer, effective January 1 of the following year.\""
+    },
+    {
+      "text": "IS module: 46 controls retained, with analyses counting ~44 edited and substantive requirement changes in ~25 (counts attributed to analyses, not ENX)",
+      "passed": true,
+      "evidence": "\"Still 46 controls... About 44 of 46 were edited or clarified, with substantive requirement changes in roughly 25\"; counts framed as approximate workbook analyses (\"consultancy analyses... treat them as approximate\")."
+    },
+    {
+      "text": "Prototype module: restructured from five control groups to TWO domains — Organizational Requirements and Physical & Environmental Security — at 20 controls, with new traceability/lifecycle and disposal/return controls",
+      "passed": true,
+      "evidence": "\"Reduced from 22 to 20 controls. Five control groups become two domains: Organizational Requirements, and Physical & Environmental Security... New controls for traceability and lifecycle, and for disposal, recycling and return.\""
+    },
+    {
+      "text": "New PTS label structure: Prototype Protection Basic (AL2) and Prototype Protection Facilities (AL3), Facilities encompassing Basic",
+      "passed": true,
+      "evidence": "\"Prototype Protection Basic (AL2) and Prototype Protection Facilities (AL3), with Facilities encompassing Basic.\""
+    },
+    {
+      "text": "Mentions supply-chain strengthening (high: documented supplier monitoring; very high: TISAX label, equivalent assessment or supplier audit) and updated mappings (NIST CSF 2.0, refined ISO 27001:2022, 2013 references removed)",
+      "passed": true,
+      "evidence": "\"High protection need: documented supplier monitoring... Very high... TISAX label, an equivalent third-party assessment, or a supplier audit\"; \"Updated to NIST CSF 2.0 and refined ISO/IEC 27001:2022. All ISO 27001:2013 references removed.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

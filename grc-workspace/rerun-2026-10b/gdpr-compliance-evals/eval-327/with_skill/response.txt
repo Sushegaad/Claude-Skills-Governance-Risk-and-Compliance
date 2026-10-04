@@ -1,0 +1,52 @@
+**Direct answer:** A supervisory authority (SA) is not required to fine you. Under Art. 58(2), a fine (Art. 83) is one corrective power among several, and the choice depends on the case. EDPB Guidelines 04/2026 (adopted at the September 2026 plenary, consultation open until 13 November) set out a five-step methodology for deciding whether to fine at all. The guidelines are still in draft, so treat the detail as provisional and check the published text.
+
+**The corrective-powers toolkit (Art. 58(2))**
+From lightest to heaviest, an SA can:
+- Issue a warning that intended processing is likely to infringe (Art. 58(2)(a)).
+- Issue a reprimand (Art. 58(2)(b)).
+- Order you to comply with data subject requests (Art. 58(2)(c)).
+- Order you to bring processing into compliance, in a specified way and period (Art. 58(2)(d)).
+- Order notification of a breach to data subjects (Art. 58(2)(e)).
+- Impose a temporary or definitive limitation or ban on processing (Art. 58(2)(f)).
+- Order rectification, erasure or restriction (Art. 58(2)(g)).
+- Withdraw certifications (Art. 58(2)(h)).
+- Impose an administrative fine, in addition to or instead of the above (Art. 58(2)(i); Art. 83).
+- Order suspension of data flows to a third country (Art. 58(2)(j)).
+
+Art. 83(2) says a fine can be imposed "in addition to, or instead of" other measures, and that it must be effective, proportionate and dissuasive in each case (Art. 83(1)).
+
+**Factors that push towards a fine (Art. 83(2))**
+- **Nature, gravity and duration** of the infringement, and the number of data subjects and damage suffered. Long-running, large-scale processing is the typical fine case.
+- **Intentional or negligent character.** Deliberate or reckless conduct, such as ignoring clear guidance or prior warnings, weighs heavily.
+- **Categories of data.** Special category data, children's data and location data raise gravity.
+- **Core obligations breached.** Lawfulness, transparency, consent, data subject rights and international transfers (the Art. 83(5) tier, up to EUR 20M or 4% of worldwide turnover) are fined more readily than procedural lapses (the Art. 83(4) tier, up to EUR 10M or 2%).
+- **Failure to mitigate** or to cooperate with the SA (Art. 83(2)(c), (f)).
+- **Previous infringements** and repeat behaviour. Uber has been fined four times by the Dutch AP.
+- **Late or poor breach notification** (Art. 83(2)(h)).
+- **Financial benefit gained** from the infringement (Art. 83(2)(k)).
+
+**Factors that favour an order or lesser measure**
+- A first-time, isolated or short-lived infringement with limited impact.
+- Prompt self-detection, notification and remediation.
+- Genuine cooperation with the SA.
+- Documented accountability: a DPO, a RoPA, a DPIA and training (Art. 83(2)(d)).
+- Adherence to approved codes of conduct or certifications (Art. 83(2)(j)).
+- Genuinely unclear legal questions where no clear guidance existed.
+- Small organisations for whom a fine would be disproportionate, where the SA judges an order sufficient. National practice varies.
+
+**Recent enforcement context**
+Fines in 2026 show the pattern for serious cases. The Dutch AP fined Uber EUR 824.99M (21 August 2026) for fully automated driver deactivations with no meaningful human review (Art. 22) and inadequate transparency. The Irish DPC fined Google EUR 403M (21 September 2026) over location data, finding unlawful processing, transparency failures, accountability gaps and excessive retention, with a six-month compliance order. Both involved large-scale, long-running, core-principle breaches. In each case the SA paired the fine with, or kept the option of, corrective orders, so a fine does not replace the duty to fix. Both are reported or expected to be appealed.
+
+At the other end, the CEF 2025 erasure action produced mostly guidance and follow-up orders, not fines. The CEF 2026 action will cover transparency (Arts. 13-14).
+
+**Practical implications**
+- Fixing quickly does not guarantee you avoid a fine, but it is one of the strongest mitigating factors.
+- Keep evidence of your accountability measures before an inquiry starts. An SA won't credit controls it cannot see.
+- Notify breaches on time (Art. 33) and cooperate (Art. 31).
+- Respond to SA information requests fully and promptly. Obstruction is itself an infringement and an aggravating factor.
+- Cross-border cases run through the one-stop-shop (Art. 60) and may involve the EDPB dispute mechanism (Art. 65), which tends to increase fine levels.
+- National procedural law and SA culture differ. Some SAs lean towards orders and reprimands, others towards fines.
+
+I can't predict a specific outcome. It turns on facts and on which authority handles the case.
+
+> **Legal Advice Disclaimer**: This guidance is informational and based on the GDPR text and established regulatory guidance. It does not constitute legal advice. For matters involving significant compliance risk, supervisory authority interaction, or complex cross-border scenarios, consult a qualified data protection lawyer or your DPO.

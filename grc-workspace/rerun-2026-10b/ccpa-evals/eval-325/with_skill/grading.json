@@ -1,0 +1,33 @@
+{
+  "eval_id": 325,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the ADMT date: compliance for significant decisions begins January 1, 2027 (pre-use notice, opt-out, access rights)",
+      "passed": true,
+      "evidence": "\"Compliance deadline for ADMT used to make significant decisions: pre-use notice, opt-out, and access rights\" at \"Jan 1, 2027\"; \"By January 1, 2027 you must provide: a pre-use notice... an opt-out mechanism... access rights.\""
+    },
+    {
+      "text": "States risk assessments: processing ongoing as of January 1, 2026 must have assessments completed by December 31, 2027",
+      "passed": true,
+      "evidence": "\"For processing already underway on January 1, 2026, you have until December 31, 2027 to complete the assessment.\""
+    },
+    {
+      "text": "States first submissions: risk-assessment materials/attestations to the CPPA by April 1, 2028",
+      "passed": true,
+      "evidence": "\"Submissions to the CPPA begin by April 1, 2028\" and timeline row \"Apr 1, 2028 | First risk-assessment submissions to the CPPA.\""
+    },
+    {
+      "text": "States cybersecurity-audit phase-in: certifications due April 1, 2028 (>$100M revenue), 2029 ($50–100M), 2030 (<$50M)",
+      "passed": false,
+      "evidence": "Gives the dates (\"Certification of completion is due to the CPPA on a revenue-tiered schedule: April 2028, April 2029, and April 2030. The largest businesses go first.\") but never states the revenue bands (>$100M, $50-100M, <$50M); it defers to \"the revenue tiers\" in the final caveat. Compound assertion not fully met."
+    },
+    {
+      "text": "Scopes ADMT correctly: covered 'significant decisions' (employment, finance, housing, etc.) and what counts as ADMT, with practical first steps (inventory automated decisions now)",
+      "passed": true,
+      "evidence": "\"technology used to make or substantially drive decisions with legal or similarly significant effects, such as employment, credit, housing, insurance, and education\" plus \"Now to Q4 2026: inventory every automated system that influences decisions.\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

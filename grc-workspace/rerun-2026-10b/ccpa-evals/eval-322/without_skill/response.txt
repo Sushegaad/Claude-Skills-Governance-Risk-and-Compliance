@@ -1,0 +1,27 @@
+Caveat first: my knowledge of the 2026 session is incomplete. California bills generally must pass by August 31 and be signed or vetoed by September 30, so confirm the final chaptered outcomes of any 2026 bill below. What I can describe confidently is the framework that applies to teen-focused apps, including 2025 laws that become operative in 2026 and 2027.
+
+Existing baseline you already must meet
+
+- CCPA/CPRA: businesses with actual knowledge that a consumer is under 16 cannot sell or share their personal information without opt-in consent (the teen's own consent for ages 13 to 15, parental consent under 13). Willful disregard of age counts as knowledge. Minors' data is a regulatory priority for the CPPA and the Attorney General.
+- COPPA applies federally to under-13s, and the FTC's amended COPPA rule has a compliance deadline in 2026.
+- California Age-Appropriate Design Code Act (AB 2273): largely enjoined in NetChoice litigation, so enforcement is uncertain, but its design expectations (high-privacy defaults, DPIAs) still influence regulators.
+- SB 976 (Protecting Our Kids from Social Media Addiction Act): restricts addictive feeds for minors without parental consent, limits notifications at night and during school hours, with age assurance provisions phasing in. Partly upheld on appeal and still being litigated.
+
+Recent laws most relevant to a consumer-app builder
+
+1. AB 1043, Digital Age Assurance Act (signed 2025, operative January 1, 2027). Operating system and app store providers must collect an age or birthdate at account setup and send a signal placing the user in an age bracket (under 13, 13 to under 16, 16 to under 18, 18 and over). Developers must request that signal when an app is downloaded and launched and treat it as their actual knowledge of age. This is important: once you receive the signal, you cannot claim ignorance of a user's age, so CCPA under-16 opt-in rules, COPPA, and any age-gated features must key off it.
+2. SB 243 (companion chatbots, effective January 1, 2026): disclosures that the user is talking to AI, protocols on self-harm and suicidal ideation, reminders to minors to take breaks, restrictions on sexual content for minors, and annual reporting to the Office of Suicide Prevention beginning in 2027. A private right of action exists.
+3. AB 56 (social media warning labels) requires mental health warning labels on social media platforms, operative 2027.
+4. AB 1064 (LEAD for Kids) was vetoed in 2025, and the sponsors were expected to return in 2026 with chatbot-for-minors legislation or a ballot measure. Watch for the final outcome.
+5. Bills in the 2026 cycle that I would verify: further limits on minors' data and targeted advertising, school-hour device and notification limits, expanded AI chatbot safeguards for minors, and location data restrictions (such as AB 1355). I cannot confirm which passed.
+
+Compliance implications
+
+- Age knowledge. Design for receiving age signals under AB 1043 from January 1, 2027. Build a flow that maps each bracket to features and data practices. Do not rely on self-declared age alone where the signal says otherwise.
+- Data minimization and defaults. Turn off sale, sharing, targeted ads and precise geolocation by default for under-18s. Even where not legally required, this aligns with CCPA purpose limitation rules and AG enforcement priorities.
+- Opt-in consent. Implement a documented consent mechanism for under-16 sale or sharing, with parental consent for under 13 and verifiable parental consent under COPPA.
+- Risk assessments. Under the CPPA's new regulations, selling or sharing personal information and processing sensitive data requires a risk assessment starting 2026, with submission to the CPPA beginning April 2028. Teen features such as profiling and engagement design warrant one.
+- Chatbot or AI features. If you have any conversational feature, apply SB 243 now.
+- Contracts and SDKs. Audit ad and analytics SDKs, since the AG has pursued apps for sharing minors' data.
+
+Next steps: inventory features touching minors, confirm the final status of any 2026 bills with the legislature's site, plan engineering for the 2027 age signal, and refresh your privacy notices, which should describe minors' rights separately.

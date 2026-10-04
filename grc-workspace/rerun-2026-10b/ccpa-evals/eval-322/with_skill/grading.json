@@ -1,0 +1,33 @@
+{
+  "eval_id": 322,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Covers AB 2246: repeals/replaces the Age-Appropriate Design Code with a reasonable-steps framework — default ban on profiling minors, opt-in consent structure, dark-pattern prohibitions",
+      "passed": true,
+      "evidence": "\"AB 2246: replaces the Age-Appropriate Design Code with a 'reasonable steps' framework. Profiling of minors is banned by default. Dark patterns aimed at minors are banned.\" The default-ban-unless-consent structure is reinforced in the action list (\"Stop profiling minors by default. Document any exception under AB 2246\"; \"unless you hold opt-in consent\")."
+    },
+    {
+      "text": "Covers AB 1709: bans addictive features (personalized algorithmic feeds, autoplay, push notifications) for users under 16, with penalties up to $50,000 per affected minor",
+      "passed": true,
+      "evidence": "\"AB 1709: bans addictive features for under-16s. Personalized feeds, autoplay, and push notifications are the named features. Penalties reach $50,000 per minor.\""
+    },
+    {
+      "text": "Covers the chatbot pair: SB 1119 (companion-chatbot child-safety duties — risk assessments, crisis protocols; core obligations July 1, 2027) and SB 867 (ban on companion-chatbot toys, sunsetting 2031)",
+      "passed": false,
+      "evidence": "Both bills are named with correct dates (\"SB 1119: companion-chatbot child-safety duties. The core obligations begin July 1, 2027\"; \"SB 867: bans companion-chatbot toys. It sunsets in 2031\"), but the SB 1119 substance — risk assessments and crisis protocols — is never mentioned. Compound assertion not fully met."
+    },
+    {
+      "text": "Gets effective dates right: January 1, 2027 default for the package (signed September 10, 2026), with SB 1119's later core date",
+      "passed": true,
+      "evidence": "\"California's September 2026 children's package... Most of it takes effect January 1, 2027\", \"The package (signed September 10)\", and \"July 1, 2027 for companion-chatbot duties.\""
+    },
+    {
+      "text": "Gives compliance advice: age-assurance posture (AB 1856 OS signals), feature audits for under-16 experiences, profiling defaults",
+      "passed": true,
+      "evidence": "\"AB 1856... Plan to consume the OS-level age signal\"; \"Audit engagement features. List personalized feeds, autoplay, and push notifications, and plan under-16 variants that are off by default\"; \"Stop profiling minors by default.\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

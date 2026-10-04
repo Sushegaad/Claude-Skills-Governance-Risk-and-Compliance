@@ -1,0 +1,39 @@
+Short answer: today you must delete what you collected directly from the consumer and push that deletion to your vendors. Starting January 1, 2027, under SB 923, the duty extends to data you bought from the broker. Plan for that now, because the broker-sourced data is the part you will have to build new processes for.
+
+**Obligations today (CCPA/CPRA, Civ. Code 1798.105)**
+
+1. **Log the request and start the clock.** Confirm receipt within 10 business days and describe your verification process (Regs 7021(a)). Give the substantive response within 45 calendar days. You may extend once by 45 more days if you notify the consumer within the original window. Missing the deadline is an enforcement basis on its own. Ford paid $375K in 2026 over request-handling failures.
+2. **Verify identity.** A "delete everything" request is a deletion request, and deleting sensitive data needs a higher standard. Match at least 3 data points plus a signed declaration under penalty of perjury (Regs 7060-7062). If you cannot verify, you must deny the deletion. You must then treat the request as an opt-out of sale/sharing where applicable (Regs 7022(f)).
+3. **Check the statutory exceptions and document your reasoning for each one you invoke.** The exceptions cover completing a transaction, security and fraud detection, fixing errors, legal obligations (1798.145(a)), compatible internal use, and research. Tax records and legal holds are typical retention reasons.
+4. **Execute, then confirm.**
+   - Delete from your own systems (CRM, analytics, data warehouse, backups on their normal cycle).
+   - Direct service providers and contractors to delete.
+   - Confirm to the consumer, or explain the exception you relied on, within 45 days.
+   - Keep the request record itself as proof of compliance. That is not a contradiction of the deletion.
+5. **Free of charge.** Handle the request at no cost, twice per 12 months.
+
+**The broker-sourced data today.** The statute as it stood only required deletion of PI "collected from the consumer." Many programs read that to exclude purchased data. That reading is a defensible position today, but not a safe one. Several practical points apply:
+- The consumer also has a right to know about categories of sources, so the broker data will surface in any access request.
+- The consumer can send a separate opt-out and a right-to-limit request about it.
+- If the data broker is registered, the consumer can use the Delete Act / DROP platform, which has been processing deletions since August 1, 2026, so this data may be deleted at the source anyway.
+- Deleting voluntarily now is cheaper than rebuilding a suppression process in December.
+
+**What changes January 1, 2027: SB 923 (Expanding Privacy Rights Act)**
+
+- The right to delete reaches PI collected "from or about" the consumer. That includes data acquired from third parties and data brokers, not just first-party collection.
+- You may maintain **suppression lists** so a deleted consumer stays deleted. Without one, re-ingesting the next broker file would restore the data you just deleted. Keep only the minimum identifiers needed to match and suppress.
+- Exclusively online businesses must offer an online method for submitting requests.
+- It complements the Delete Act and DROP. It does not replace them.
+
+**What to do before year-end**
+
+- **Inventory** every third-party-sourced dataset, including broker files, enrichment vendors, and lead lists. Tag each record with its source so it can be found by consumer.
+- **Update the deletion runbook** so it searches purchased data, and so it propagates to downstream service providers that received it.
+- **Build the suppression list** and make ingestion jobs check it before loading broker data.
+- **Amend broker contracts** so you can receive deletion and suppression notices and so they flow down to you.
+- **Review your privacy policy and notice at collection** to describe the sources of PI and the retention period for each category.
+- **Reassess whether you need the broker data at all.** Data minimization is a CPRA requirement, and every purchased dataset adds deletion cost.
+
+**Exposure.** Civil penalties are up to $2,500 per unintentional violation and $7,500 per intentional violation (1798.155), and each consumer request can be a separate violation. Systematic failures draw large fines. Disney's $2.75M penalty is the largest to date.
+
+This is general compliance information, not legal advice. Have counsel confirm how today's "collected from the consumer" language applies to your broker data and confirm the final SB 923 text and any CPPA implementing rules before relying on this.

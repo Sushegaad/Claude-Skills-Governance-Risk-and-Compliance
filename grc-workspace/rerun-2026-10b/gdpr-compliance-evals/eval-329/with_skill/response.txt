@@ -1,0 +1,41 @@
+**Direct answer:** Legal obligation (Art. 6(1)(c)) is considerably narrower than "we're required by law" suggests. A general sense that the law touches your activities is not enough. The CJEU's recent ruling in C-798/24 (3 September 2026) reinforces this: Art. 6(1) is an exhaustive list, and processing under legal obligation has to satisfy Art. 6(3). I'd challenge your legal team's framing before it goes into your RoPA or privacy notice.
+
+**Rule -> Article -> Exception -> Practical implication**
+
+**1. What Art. 6(1)(c) requires**
+- Processing must be "necessary for compliance with a legal obligation to which the controller is subject."
+- Art. 6(3) says the basis must be laid down by Union law or Member State law. That law must meet an objective of public interest and be proportionate to the legitimate aim. The law should specify the purpose, and may specify the types of data, the data subjects, the recipients, storage periods and the processing operations.
+- Recital 41 adds that the law should be clear, precise and foreseeable for those subject to it.
+
+**2. Tests you should apply to each processing activity**
+- **A real obligation, not an option.** A statute, regulation or binding order must actually require the controller to do something. Industry practice, contractual terms, a regulator's non-binding guidance or a foreign law don't qualify. Obligations under a non-EU/Member State law generally cannot found Art. 6(1)(c). That matters for US-style discovery or reporting duties, where you'd look instead at legitimate interests and Art. 48.
+- **Union or Member State law.** Identify the specific instrument and provision, such as tax record-keeping, AML/KYC, employment law or sector rules. Document it in your RoPA.
+- **Necessity and scope.** The processing must be needed to meet the obligation, not merely convenient. If the law requires you to keep invoices for seven years, that justifies keeping invoices, not the customer's browsing history. Collecting extra data "while we're at it" needs another basis.
+- **Little or no discretion.** Where the law leaves you a choice about how to comply, the Art. 6(1)(c) basis covers the necessary part only. Choices beyond that sit under another basis.
+- **Purpose limitation.** Data kept under a legal obligation can't be freely reused for marketing or analytics (Art. 5(1)(b), Art. 6(4)).
+
+**3. Consequences of choosing this basis**
+- **Rights change.** The right to erasure is subject to the exception for compliance with a legal obligation (Art. 17(3)(b)). The right to object (Art. 21) does not apply to Art. 6(1)(c), and neither does portability (Art. 20), which applies to consent and contract. This is why regulators scrutinise the basis: using it improperly removes rights from data subjects. A wrong basis can therefore be a transparency and fairness breach (Arts. 5(1)(a), 13(1)(c)).
+- **Retention.** The law sets or implies the period. When it ends, so does the basis, and the data must be deleted or restricted (Art. 5(1)(e)). Backups included.
+- **Transparency.** You must name the basis and the legal obligation in the notice (Arts. 13(1)(c), 14(1)(c)). "Required by law" without a citation is poor practice.
+
+**4. Common misuses to look for**
+- Claiming Art. 6(1)(c) for security logging, fraud prevention or analytics where the law only requires "appropriate measures" (Art. 32 is about outcomes, so many controllers use legitimate interests for specific logging).
+- Using it for employment monitoring where labour law only permits it conditionally.
+- Bundling optional marketing with mandatory regulatory data.
+- Treating a customer's contract-based data as legal-obligation data after the contract ends.
+- Relying on a foreign regulator's request.
+
+**5. The C-798/24 reminder**
+That case concerned company-register disclosure rules and whether they require publishing all shareholders' data. The Court held that they don't, because legal-obligation processing must meet Art. 6(3). It is not a vital-interests case, as some summaries suggest. The practical takeaway is that courts will test whether the law really demands the specific processing and whether it is proportionate. Check the judgment text before citing it for finer points.
+
+**6. A workable approach**
+1. List each processing activity currently labelled "legal obligation."
+2. For each, cite the exact provision and the data and retention it requires.
+3. Split what is mandated from what you do beyond it, and assign other bases, such as contract or legitimate interests with an LIA, to the rest.
+4. Update your RoPA (Art. 30), notices and retention schedule.
+5. Re-check rights handling for each split.
+
+Special category data (Art. 9) and employee data need a separate Art. 9(2) condition, such as 9(2)(b) for employment-law obligations, so flag those for specialist review. Member State law differs materially, so national counsel should confirm each citation.
+
+> **Legal Advice Disclaimer**: This guidance is informational and based on the GDPR text and established regulatory guidance. It does not constitute legal advice. For matters involving significant compliance risk, supervisory authority interaction, or complex cross-border scenarios, consult a qualified data protection lawyer or your DPO.

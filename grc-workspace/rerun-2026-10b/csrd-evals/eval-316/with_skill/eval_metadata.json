@@ -1,0 +1,13 @@
+{
+  "eval_id": 316,
+  "eval_name": "fy2026-fy2027-basis",
+  "run_type": "with_skill",
+  "prompt": "We're a wave-one CSRD reporter. Which ESRS do we apply for FY2026 and FY2027, and what's the current legal status of the revised standards?",
+  "assertions": [
+    "States the revised ESRS are now LAW: Commission Delegated Regulation (EU) 2026/1563, published in the Official Journal September 21, 2026, entering into force November 10, 2026",
+    "States application correctly: revised ESRS mandatory for financial years beginning on or after January 1, 2027",
+    "States the FY2026 choice: undertakings may apply EITHER the 2023 ESRS (as amended) OR the revised ESRS for financial years starting in 2026",
+    "Quantifies the simplification with the final-act figures: mandatory datapoints cut from over 1,000 to roughly 320 (>60% reduction in mandatory datapoints; >70% total), with former voluntary datapoints removed to EFRAG non-mandatory guidance — not the draft-stage 57-61% figures",
+    "Gives practical basis-decision advice (e.g., early-adopting the revised ESRS for FY2026 avoids a one-year-only report on the old standards)"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 329,
+  "eval_name": "lawful-basis-rigor",
+  "run_type": "without_skill",
+  "prompt": "Our legal team says 'we're required by law' covers most of our processing. How rigorous is the legal-obligation basis really?",
+  "assertions": [
+    "States the Art. 6(1) architecture: an exhaustive, restrictively interpreted list of six bases",
+    "Explains Art. 6(1)(c) discipline: the legal obligation must stem from EU or member-state law that meets Art. 6(3) requirements (clear, precise, foreseeable, proportionate public-interest objective)",
+    "Cites the fresh authority: CJEU C-798/24 (September 3, 2026) — company-register disclosure rules were held NOT to require publishing all shareholders' data (minority shareholders excluded), reaffirming the exhaustive-list and Art. 6(3) discipline (a response describing C-798/24 as a vital-interests case fails)",
+    "Warns against basis-stretching: 'required by law' fails where the law doesn't actually mandate the specific processing — distinguish legal obligation from legitimate interest",
+    "Advises documentation: per-processing basis mapping with the legal provision cited"
+  ]
+}

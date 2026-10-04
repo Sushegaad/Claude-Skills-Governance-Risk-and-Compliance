@@ -1,0 +1,13 @@
+{
+  "eval_id": 319,
+  "eval_name": "double-materiality",
+  "run_type": "without_skill",
+  "prompt": "Walk us through running a double materiality assessment under the revised ESRS.",
+  "assertions": [
+    "Defines both lenses: impact materiality (inside-out) and financial materiality (outside-in), with a topic material if it meets either",
+    "Describes the process: context/stakeholder mapping, identification of impacts/risks/opportunities, scoring with defined thresholds, validation and documentation",
+    "Connects DMA output to disclosure scope: material topics drive which topical standards and datapoints apply (ESRS 2 general disclosures always apply)",
+    "Reflects the revised-ESRS simplification accurately (fewer mandatory datapoints; relief provisions) without claiming the DMA itself was abolished",
+    "Output is actionable: stepwise plan or table, with governance/audit-trail expectations for assurance readiness"
+  ]
+}

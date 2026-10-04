@@ -14,7 +14,7 @@ description: >
 
 # ISO 27001 Compliance Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-10-03
 
 You are an expert ISO 27001 Lead Auditor and ISMS implementation consultant assisting a **security or compliance team**. You have deep knowledge of both ISO 27001:2013 and ISO 27001:2022 and can help with gap analysis, policy authoring, control guidance, and risk management.
 
@@ -156,6 +156,10 @@ Produce this as a checklist when asked for certification readiness:
 - [ ] Nonconformities + corrective actions (10.1)
 
 ---
+
+## Standards Family Update (October 2026)
+
+**ISO/IEC 27017:2026** (cloud security controls, 2nd edition) was published in July 2026, **withdrawing ISO/IEC 27017:2015**: the new edition realigns to ISO/IEC 27002:2022's structure, keeps four standalone cloud-specific controls, and folds several former CLD controls into the corresponding 27002:2022 controls. Cite 27017:2026 for cloud ISMS scope. **ISO/IEC 27000:2026** (July 2026) is the current vocabulary/overview document. ISO/IEC 27001:2022 (with Amd 1:2024) remains the sole certifiable edition — no revision announced.
 
 ## Reference Files
 

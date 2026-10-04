@@ -1,0 +1,33 @@
+{
+  "eval_id": 317,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Applies the Omnibus scope correctly: mandatory CSRD now covers large undertakings with MORE THAN 1,000 employees AND turnover above €450M (Directive (EU) 2026/470) — 800 employees means out of mandatory scope regardless of turnover",
+      "passed": true,
+      "evidence": "\"Directive (EU) 2026/470... more than 1,000 employees and net turnover above EUR 450 million. The conditions are cumulative... headcount test fails, so you fall outside\""
+    },
+    {
+      "text": "Points to the voluntary standard as law: Delegated Regulation (EU) 2026/1560 (OJ September 21, in force September 24, 2026), VSME-based with Basic/Comprehensive modules",
+      "passed": true,
+      "evidence": "\"the voluntary standard, Commission Delegated Regulation (EU) 2026/1560 (VSME-based; in force 24 September 2026), is the reference vehicle\" — stated as law in force"
+    },
+    {
+      "text": "Explains the value-chain cap: in-scope CSRD reporters may not demand more from ≤1,000-employee value-chain partners than the voluntary standard's content — the shield against over-broad customer questionnaires",
+      "passed": true,
+      "evidence": "\"It operates as the value-chain cap. Reporters may not demand more from value-chain partners with 1,000 employees or fewer than the content of this standard\""
+    },
+    {
+      "text": "Notes member-state transposition of the Omnibus scope changes is due March 19, 2027 (with major states like Germany still pending)",
+      "passed": true,
+      "evidence": "\"The scope change must be transposed by Member States by about 19 March 2027, and Germany is still pending\""
+    },
+    {
+      "text": "Gives practical advice: adopt the voluntary standard once, reuse it across customer requests",
+      "passed": true,
+      "evidence": "\"Prepare one voluntary-standard report... refresh it annually. Reuse it for every customer request\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

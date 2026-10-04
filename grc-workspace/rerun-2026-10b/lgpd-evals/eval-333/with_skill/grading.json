@@ -1,0 +1,33 @@
+{
+  "eval_id": 333,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Applies the Digital ECA (Lei 15.211/2025, effective March 17, 2026) to child/adolescent-accessible services",
+      "passed": true,
+      "evidence": "\"You are subject to LGPD..., the Digital ECA (in force since 17 March 2026), and ANPD's growing enforcement focus on minors\""
+    },
+    {
+      "text": "Cites Order CD/ANPD 122/2026 (August 11): platforms with >1 million registered users under 18 in Brazil must publish SEMIANNUAL transparency reports (first covered Jan–Jun 2026, published by Sept 17; thereafter Aug 1/Feb 1 cadence)",
+      "passed": true,
+      "evidence": "\"Order CD/ANPD 122/2026 (11 August) requires semiannual transparency reports from platforms with more than 1 million registered minor users. The first report covered January to June 2026 and was due by 17 September...\""
+    },
+    {
+      "text": "Uses the TikTok precedent: R$153.7M for feeds processing minors' data without an adequate legal basis — profiling/recommendation engines need a defensible basis and best-interests analysis",
+      "passed": true,
+      "evidence": "\"ByteDance/TikTok fine of R$153.7 million (DOU, 25 August 2026)... feeds operated without an adequate legal basis\"; \"For feeds, recommendation, profiling... ask whether the processing actually serves the adolescent's interest\""
+    },
+    {
+      "text": "Covers LGPD Art. 14 fundamentals: processing in the child's best interest; specific consent requirements for children's data",
+      "passed": true,
+      "evidence": "\"Crianças (under 12): specific, prominent consent from a parent or guardian is required (Art. 14, section 1)\"; \"processing must observe their best interest (Art. 14 caput)\""
+    },
+    {
+      "text": "Gives an action list: minor-user counting, legal-basis review of feeds/profiling, transparency-report pipeline, deletion readiness",
+      "passed": false,
+      "evidence": "90-day list covers mapping/basis, RIPD, Order 122/2026 position, reporting process — but no deletion-readiness action (deletion appears only as an exposure: \"You also face deletion orders\")"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

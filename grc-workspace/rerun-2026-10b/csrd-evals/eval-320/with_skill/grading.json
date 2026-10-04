@@ -1,0 +1,33 @@
+{
+  "eval_id": 320,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Distinguishes the asker's own reporting duties (if in scope) from data requests cascading down the value chain",
+      "passed": true,
+      "evidence": "\"If you are above 1,000 employees and meet the turnover test, you are a CSRD reporter yourself... If you have 1,000 employees or fewer, your customers' demands are legally capped\""
+    },
+    {
+      "text": "Applies the value-chain cap: requests to ≤1,000-employee partners are capped at the voluntary standard's (Reg. 2026/1560) content",
+      "passed": true,
+      "evidence": "\"Commission Delegated Regulation (EU) 2026/1560 (in force 24 September 2026), is the cap. Reporters may not demand more from value-chain partners with 1,000 employees or fewer than its content\""
+    },
+    {
+      "text": "Covers Scope 3 reporting expectations under the revised ESRS for in-scope reporters (GHG categories, estimation/proxies where primary data is unavailable)",
+      "passed": true,
+      "evidence": "\"ESRS E1-6 requires gross Scope 1, 2... and Scope 3, where climate is material\"; proxy data/sector averages with methodology disclosure (ESRS 1 para. 64); revised ESRS 2026/1563 flagged"
+    },
+    {
+      "text": "Advises practical responses: voluntary-standard-aligned data package, estimation methodologies, phased supplier engagement",
+      "passed": true,
+      "evidence": "\"Prepare a voluntary-standard report once and reuse it\"; estimation-method table (spend-based, sector averages, questionnaires); supplier prioritisation by spend/sector/risk"
+    },
+    {
+      "text": "Mentions transition reliefs/phase-ins where relevant rather than asserting maximal obligations",
+      "passed": true,
+      "evidence": "\"Scope 3 is required if material. A practical phasing... Year 1 categories 1, 3, 6, 7 and 11, then adding 2, 4, 5 and 12, then full coverage\"; FY2026 optional basis"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

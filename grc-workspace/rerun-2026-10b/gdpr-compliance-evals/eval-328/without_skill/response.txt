@@ -1,0 +1,45 @@
+The Digital Services Act (Regulation 2022/2065) and the GDPR are designed to apply together. The DSA states in Art. 2(4)(g) and Recital 10 that it is without prejudice to Union law on personal data protection, and where they conflict, the GDPR and ePrivacy rules prevail on data protection matters. In practice, the DSA creates duties that require you to process personal data, and the GDPR limits how you do it.
+
+Key interaction points
+
+1. Advertising and profiling (Arts. 26, 28, 38)
+- Art. 26(3) bans ads based on profiling using special category data (Art. 9 GDPR), and Art. 28(2) bans profiling-based ads to users the platform knows, with reasonable certainty, are minors.
+- These are additional prohibitions, not a lawful basis. Ads based on other profiling still need a GDPR basis (generally consent for tracking, given ePrivacy Art. 5(3)), and the CJEU's Meta v Bundeskartellamt ruling makes reliance on legitimate interest for behavioural ads difficult.
+- Art. 26(1) requires ad transparency (why a user sees an ad, main parameters). Make sure the explanation matches the actual profiling logic and your privacy notice.
+- Art. 28(3) says you are not obliged to collect extra data to determine age. That reflects data minimisation: do not build intrusive age verification just to comply.
+
+2. Recommender systems (Arts. 27, 38)
+- You must explain the main parameters, and Art. 38 requires VLOPs/VLOSEs to offer at least one option not based on profiling. This aligns with GDPR Art. 22 and transparency obligations. For all platforms, personalisation based on profiling still needs a valid GDPR basis.
+
+3. Dark patterns (Art. 25)
+- The DSA prohibits interface designs that deceive or manipulate, but states it does not apply to practices covered by the GDPR or the UCPD. Consent interfaces are therefore assessed under GDPR (and the EDPB's deceptive design guidelines), while other manipulative design falls under the DSA.
+
+4. Notice-and-action, content moderation and statements of reasons (Arts. 16, 17, 20)
+- You will process personal data of notifiers, uploaders and affected users. You need a lawful basis (usually legal obligation under Art. 6(1)(c) for DSA-mandated steps, and legitimate interests for voluntary moderation), transparency about it, and retention limits.
+- Automated moderation can engage Art. 22 GDPR if it produces legal or similarly significant effects. DSA Art. 20 requires human review of complaints.
+- Notifier identities should be disclosed to the notified party only as far as needed (Art. 16 and DSA guidance).
+
+5. Trader traceability (Art. 30, marketplaces)
+- Collecting trader identity and bank details is a legal obligation, but minimise, secure and retain only as the DSA permits (Art. 30 sets retention until six months after the relationship ends).
+
+6. Orders from authorities (Arts. 9, 10) and law enforcement referrals (Art. 18)
+- Responding to orders to act against illegal content or provide information is a legal obligation, but you must verify the order's validity and share only what is required.
+
+7. Transparency reporting and risk assessment (Arts. 15, 24, 34-35)
+- Reports must use aggregated data. For VLOPs, systemic risk assessments should include data protection and privacy risks, and these should be aligned with your DPIAs.
+- Data access for vetted researchers (Art. 40) requires a GDPR basis, safeguards and often anonymisation or pseudonymisation. Delegated Act rules cover this.
+
+8. Protection of minors (Art. 28)
+- Combine DSA guidelines under Art. 28 with GDPR Art. 8, Art. 25 (privacy by default) and the national age-of-consent rules.
+
+Regulatory structure
+- DSA enforcement: national Digital Services Coordinators and the Commission (for VLOPs). GDPR enforcement: data protection authorities. They are separate regimes with possible parallel proceedings, and the EDPB and the Commission have said they will coordinate (EDPB statement on DSA/GDPR interplay, and guidelines on the interplay under development). Expect two regulators with different perspectives on the same facts.
+- Penalties: DSA up to 6% of global turnover, GDPR up to 4%. Parallel fines for the same conduct are not excluded in principle, although ne bis in idem arguments may arise.
+
+Practical recommendations
+1. Build one integrated compliance map: DSA article, data processed, GDPR basis, retention, and recipients.
+2. Update DPIAs to cover DSA features (recommenders, moderation, ads).
+3. Update the privacy notice to describe DSA-driven processing.
+4. Do not treat DSA compliance as a lawful basis for broader data collection. It applies only to what the DSA specifically requires.
+5. Make privacy, trust and safety, and legal teams work together on ad, recommender and age-assurance design.
+6. Monitor EDPB/Commission guidance, as it is evolving.

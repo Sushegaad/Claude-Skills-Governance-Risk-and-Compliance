@@ -1,0 +1,41 @@
+**Direct answer:** The DSA and GDPR apply cumulatively. The DSA does not create a GDPR lawful basis, and it does not displace GDPR. Every DSA duty that involves personal data still needs its own Art. 6 basis, plus the usual principles, transparency and rights. This is the position in the EDPB's final Guidelines 3/2025 on the DSA-GDPR interplay (consultation draft published 12 September 2025). Regulators are expected to coordinate, so a DSA step that breaches GDPR won't be excused by the DSA.
+
+**Structure: Rule -> Article -> Exception -> Practical implication**
+
+**1. Lawful basis for DSA-driven processing (Art. 6)**
+- Rule: Art. 6(1) is an exhaustive list. A DSA obligation can support "legal obligation" (Art. 6(1)(c)) only where the DSA actually requires the processing and the basis is clear and proportionate under Art. 6(3). Voluntary measures you adopt beyond what the DSA requires need another basis, usually legitimate interests (Art. 6(1)(f)), which needs a documented LIA under EDPB Guidelines 1/2024.
+- Practical implication: for each DSA workflow, record whether the processing is mandated or voluntary, and record the basis in your RoPA (Art. 30).
+
+**2. Notice-and-action and content moderation (DSA Arts. 16-17, 20)**
+- Notices contain personal data about notifiers and about the people reported. Handle them under Art. 5 minimisation and purpose limitation, and retain them only as long as needed (Art. 5(1)(e)).
+- If you use automated moderation that produces significant effects, such as account suspension or removal, Art. 22 may apply alongside the DSA statement-of-reasons and internal complaint duties. The Uber decision (Dutch AP, EUR 824.99M, 21 August 2026) shows what happens when significant account-level decisions run with no meaningful human review and poor transparency. Build in documented human review, explain the logic and consequences (Arts. 13(2)(f), 14(2)(g)), and offer a way to contest (Art. 22(3)). Uber has appealed, so the decision isn't final.
+- If users post special category data about third parties, the CJEU's Russmedia ruling (C-492/23, 2 December 2025) treats marketplace operators as controllers for that content and expects proactive technical measures. That bears on hosting platforms.
+
+**3. Recommender systems and advertising**
+- DSA transparency about recommender parameters and the option for a non-profiling feed sit on top of GDPR. Profiling for recommendations needs a lawful basis, an Art. 13/14 explanation, and the right to object to profiling based on legitimate interests (Art. 21).
+- The DSA bans ads based on profiling of minors, and bans ad profiling that uses special category data (Art. 9). This means age assurance and switching off profiling-based targeting for under-18s. Age assurance itself must be proportionate and data-minimising (Art. 5(1)(c)). Don't collect more identity data than the check needs.
+- Dark patterns undermine valid consent (Art. 7), and the DSA addresses interface design as well.
+
+**4. Trader traceability, KYC and transparency reporting**
+- Collecting trader identity data, if you operate a marketplace, is DSA-mandated, but you still must limit use to the stated purpose, secure it (Art. 32) and set retention.
+- Data access for vetted researchers and authorities involves disclosures that need a GDPR basis and safeguards, and possibly transfer mechanisms (Arts. 44-49) if recipients are outside the EEA.
+
+**5. Roles, DPIA and governance**
+- Decide whether you act as controller or processor for each flow (Art. 4(7)-(8)). Large platforms are controllers for most moderation and recommender processing.
+- A DPIA (Art. 35) is likely for large-scale profiling, systematic monitoring or age assurance. Where your DSA risk assessment (for very large platforms) overlaps, align the documents, but a DSA risk assessment does not replace a DPIA.
+- Prepare for cooperation between DSA Digital Services Coordinators or the Commission and data protection authorities. One incident can trigger parallel proceedings.
+
+**6. Rights handling**
+- Users can exercise Arts. 15-22 rights over moderation and profiling data, in parallel with DSA complaint channels. Make sure the two procedures are consistent and that DSA statements of reasons contain what Art. 15 access would show about automated decisions.
+
+**Action list**
+1. Inventory DSA-related processing and tag each as mandated or voluntary.
+2. Record a lawful basis and LIA where needed.
+3. Review automated moderation for Art. 22 exposure and add meaningful human review.
+4. Audit recommender and ad profiling against GDPR and the DSA minor and special-category limits.
+5. Align notices (Arts. 13-14) with DSA transparency terms.
+6. Update the RoPA and DPIAs.
+
+**Caveats:** Some details depend on whether you are a very large online platform and on national DSA enforcement. Check the final text of Guidelines 3/2025 for specifics.
+
+> **Legal Advice Disclaimer**: This guidance is informational and based on the GDPR text and established regulatory guidance. It does not constitute legal advice. For matters involving significant compliance risk, supervisory authority interaction, or complex cross-border scenarios, consult a qualified data protection lawyer or your DPO.

@@ -217,4 +217,4 @@ plugins/nist-800-53/
 **Hemant Naik**
 [LinkedIn](https://www.linkedin.com/in/tanaji-naik/) · [hemant.naik@gmail.com](mailto:hemant.naik@gmail.com)
 
-Skill version: 2.0.0 — September 2026
+Skill version: 2.1.0 — October 2026

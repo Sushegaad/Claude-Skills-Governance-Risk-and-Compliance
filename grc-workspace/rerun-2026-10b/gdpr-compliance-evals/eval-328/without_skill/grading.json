@@ -1,0 +1,33 @@
+{
+  "eval_id": 328,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Cites the EDPB's FINAL Guidelines on the DSA\u2013GDPR interplay (Guidelines 3/2025, finalised September 2026)",
+      "passed": false,
+      "evidence": "Only \"guidelines on the interplay under development\" \u2014 the final Guidelines 3/2025 (finalised September 2026) are not cited."
+    },
+    {
+      "text": "States the core principle: cumulative, coherent application \u2014 DSA compliance does not displace GDPR duties",
+      "passed": true,
+      "evidence": "\"designed to apply together... without prejudice to Union law on personal data protection\"; \"Do not treat DSA compliance as a lawful basis for broader data collection.\""
+    },
+    {
+      "text": "Gives concrete touchpoints: notice-and-action, recommender-system transparency/options, and the DSA advertising bans (profiling with special-category data; ads targeted at minors) all involve personal data and need a GDPR lawful basis",
+      "passed": true,
+      "evidence": "\"Art. 26(3) bans ads based on profiling using special category data... Art. 28(2) bans profiling-based ads to... minors\"; recommenders \"Art. 38 requires... one option not based on profiling... personalisation based on profiling still needs a valid GDPR basis\"; notice-and-action \"You need a lawful basis (usually legal obligation under Art. 6(1)(c))\"."
+    },
+    {
+      "text": "Notes regulator coordination: Digital Services Coordinators/Commission and DPAs are steered toward consistent enforcement",
+      "passed": true,
+      "evidence": "\"national Digital Services Coordinators and the Commission... data protection authorities... the EDPB and the Commission have said they will coordinate.\""
+    },
+    {
+      "text": "Gives practical advice: map each DSA-driven processing operation into the RoPA with its own basis and transparency",
+      "passed": false,
+      "evidence": "Recommends an \"integrated compliance map: DSA article, data processed, GDPR basis, retention, and recipients\" but never maps DSA processing into the RoPA (Art. 30 records) as the assertion requires."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

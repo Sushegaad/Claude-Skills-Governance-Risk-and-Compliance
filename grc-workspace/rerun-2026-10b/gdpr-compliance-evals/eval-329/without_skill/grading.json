@@ -1,0 +1,33 @@
+{
+  "eval_id": 329,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the Art. 6(1) architecture: an exhaustive, restrictively interpreted list of six bases",
+      "passed": false,
+      "evidence": "Calls 6(1)(c) \"one of the narrower and more demanding bases\" but never states the Art. 6(1) exhaustive/restrictively-interpreted list of six bases."
+    },
+    {
+      "text": "Explains Art. 6(1)(c) discipline: the legal obligation must stem from EU or member-state law that meets Art. 6(3) requirements (clear, precise, foreseeable, proportionate public-interest objective)",
+      "passed": true,
+      "evidence": "\"laid down in Union or Member State law, and the law must be clear and precise, with its application foreseeable... It must meet an objective of public interest and be proportionate\" (Art. 6(3), Recital 41)."
+    },
+    {
+      "text": "Cites the fresh authority: CJEU C-798/24 (September 3, 2026) \u2014 company-register disclosure rules were held NOT to require publishing all shareholders' data (minority shareholders excluded), reaffirming the exhaustive-list and Art. 6(3) discipline (a response describing C-798/24 as a vital-interests case fails)",
+      "passed": false,
+      "evidence": "CJEU C-798/24 is never cited; relies on Breyer, Schrems, R\u012bgas satiksme, C-175/20 only."
+    },
+    {
+      "text": "Warns against basis-stretching: 'required by law' fails where the law doesn't actually mandate the specific processing \u2014 distinguish legal obligation from legitimate interest",
+      "passed": true,
+      "evidence": "\"An obligation, not a permission. The law must require you to do something\"; \"Where it fails, reassign to contract (6(1)(b)), legitimate interests (6(1)(f), with a documented balancing test).\""
+    },
+    {
+      "text": "Advises documentation: per-processing basis mapping with the legal provision cited",
+      "passed": true,
+      "evidence": "\"List each processing activity in the RoPA. For each one, identify the exact statute, article and Member State... Record the analysis (accountability, Art. 5(2)).\""
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

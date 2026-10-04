@@ -1,0 +1,47 @@
+Responding to unauthorized access to customer data in Brazil
+
+Treat this as a live incident. The key Brazilian rule is Art. 48 of the LGPD and ANPD Resolution CD/ANPD No. 15/2024, which set a 3-business-day deadline (from when the controller becomes aware that the incident may cause relevant risk or damage to data subjects) to notify both the ANPD and affected data subjects. The clock starts at awareness of the incident with relevant risk, not at completion of the investigation. Below is the sequence I would follow. This is general guidance, not legal advice.
+
+Hour 0-24: contain and organise
+1. Activate the incident response plan and convene a core team: security lead, DPO (encarregado), legal counsel (Brazilian), communications, executive sponsor, and HR or customer care as needed.
+2. Contain: isolate affected systems, revoke or rotate compromised credentials and keys, block the attacker's access paths, and disable exploited vulnerabilities. Preserve evidence: take forensic images and logs, and keep chain of custody. Do not wipe systems.
+3. Open an incident log with timestamps of detection, decisions, and actions. This record is mandatory under the Resolution (incident register kept for at least five years) and it is your main evidence of diligence.
+4. Engage an external forensic firm under legal privilege where appropriate, and notify your cyber insurer, since policies often require prompt notice and pre-approved vendors.
+5. Notify the US parent or global security team per intra-group procedure, since global obligations may also be triggered.
+
+Day 1-2: assess scope and risk
+- Determine what data, how many data subjects, which categories (identifiers, financial, sensitive, children, credentials), the time window, whether the data was exfiltrated, encrypted or only accessed, and whether it is still exposed.
+- Assess whether the incident presents relevant risk or damage to data subjects: Resolution 15/2024 considers it present when the incident involves sensitive data, data of children, adolescents or elderly people, financial data, authentication data, legally protected secrets, or large scale data. Weigh the likelihood of identity theft, fraud, discrimination or other harm.
+- Identify whether you are controller or operator. If you are an operator for a client, you must notify the controller immediately so they can meet their own deadlines, and follow the contract.
+- Decide on notification. If in doubt about relevance, the safer course is to notify, since late notification is itself a sanctionable infraction.
+
+Within 3 business days: notify
+A. ANPD: use the ANPD's electronic incident communication form (through the ANPD's online system). Content: description of the nature and category of data affected; number of data subjects; technical and security measures used; risks; reasons for delay if any; measures taken or planned to mitigate; DPO contact details. If you do not yet have all the facts, submit a preliminary notice and supplement it, as the Resolution allows a complementary communication within 20 business days.
+B. Data subjects: communicate directly in clear and simple Portuguese, covering the nature of the incident, the data affected, risks, measures taken, steps they can take to protect themselves (change passwords, monitor accounts), and DPO contact. Use direct channels (email, SMS, app notice). Public notice is acceptable only when direct contact is impossible.
+C. Others as applicable: Brazilian sector regulators (Banco Central, SUSEP, ANS, Anatel), the Federal Police or civil police for criminal complaint (boletim de ocorrência) if it is a crime; credit card brands and partners; the CERT.br or CTIR Gov for relevant incidents; your customers if you are a processor; and foreign regulators for non-Brazilian data subjects (GDPR 72-hour, US state laws), since a US parent will have its own deadlines. Align the timelines early.
+
+Days 3-30: investigate, remediate, document
+- Complete the root-cause analysis and remediation: patching, MFA, segmentation, monitoring, vendor controls.
+- Submit the complementary report to the ANPD if the initial one was partial.
+- Offer support to affected individuals where warranted, such as credit monitoring, helplines, and a dedicated FAQ.
+- Manage ANPD follow-up. The ANPD may open an inspection or sanctioning process, request information, or order measures including public disclosure. Respond completely and on time, since non-response has been a source of early sanctions.
+- Handle claims: expect individual complaints, Procon or consumer-association action, and possible litigation under Art. 42. Preserve documents and coordinate communications.
+
+Communications
+Prepare a consistent holding statement, FAQ for customer care, and internal messaging. Avoid speculation, and ensure what you tell customers matches the ANPD notification.
+
+Mitigating factors for sanctions
+The ANPD's dosimetry rules (Res. 4/2023) reward prompt notification, cooperation, quick mitigation, and an existing governance and security programme. Documented incident response plan, training, and ROPA all help.
+
+Post-incident lessons
+- Update the RIPD (DPIA) and ROPA, run a lessons-learned review, retest controls, and brief the board.
+- Test your incident plan annually.
+
+Common mistakes
+- Waiting for the full forensic picture before notifying.
+- Notifying only the ANPD and not data subjects.
+- Failing to retain records.
+- Inconsistent statements across jurisdictions.
+- Treating the US parent's investigation as a substitute for a Brazilian filing.
+
+Immediate checklist: stop the bleeding, preserve evidence, call counsel and the DPO, determine data and people affected, decide the relevant risk, start the 3-business-day clock, and prepare the ANPD form and the data subject message now.

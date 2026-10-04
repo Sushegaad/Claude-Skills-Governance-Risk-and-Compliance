@@ -1,0 +1,13 @@
+{
+  "eval_id": 328,
+  "eval_name": "dsa-gdpr-interplay",
+  "run_type": "without_skill",
+  "prompt": "We're an online platform subject to the DSA. How do our DSA obligations interact with GDPR?",
+  "assertions": [
+    "Cites the EDPB's FINAL Guidelines on the DSA–GDPR interplay (Guidelines 3/2025, finalised September 2026)",
+    "States the core principle: cumulative, coherent application — DSA compliance does not displace GDPR duties",
+    "Gives concrete touchpoints: notice-and-action, recommender-system transparency/options, and the DSA advertising bans (profiling with special-category data; ads targeted at minors) all involve personal data and need a GDPR lawful basis",
+    "Notes regulator coordination: Digital Services Coordinators/Commission and DPAs are steered toward consistent enforcement",
+    "Gives practical advice: map each DSA-driven processing operation into the RoPA with its own basis and transparency"
+  ]
+}

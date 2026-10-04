@@ -1,6 +1,6 @@
 {
   "name": "cyber-essentials",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "UK Cyber Essentials and Cyber Essentials Plus advisor — the current Danzell question set (v3.3, April 2026) and Willow transition, five control themes, cloud/BYOD/home-working scoping, the 14-day update rule and cloud MFA auto-fails, CE+ audits, pricing, bundled insurance, and PPN 014/MoD/NHS procurement mandates.",
   "author": {
     "name": "Hemant Naik",

@@ -462,8 +462,7 @@ _SKILL_GRADING_DIR: dict[str, Path] = {
 
 # Flat-eval skills that share the iteration-1 root; restrict search by prefix.
 _FLAT_EVAL_PREFIXES: dict[str, list[str]] = {
-    # itar moved to a dedicated rerun-2026-09 directory (no prefix filter needed)
-    "csrd":         ["eval-101", "eval-102", "eval-103", "eval-104", "eval-105"],
+    # itar (2026-09) and csrd (2026-10b) moved to dedicated rerun directories
     "cis-controls": ["eval-106", "eval-107", "eval-108", "eval-109", "eval-110"],
 }
 

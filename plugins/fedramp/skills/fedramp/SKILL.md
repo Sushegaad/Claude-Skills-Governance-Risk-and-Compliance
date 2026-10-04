@@ -17,7 +17,7 @@ description: >
 
 # FedRAMP Certification Skill
 
-> **Last verified:** 2026-09-14
+> **Last verified:** 2026-10-03
 
 A comprehensive guide for helping users navigate FedRAMP authorization — from initial
 readiness through ATO and ongoing continuous monitoring.
@@ -49,7 +49,7 @@ Identify the user's goal and jump to the appropriate section:
 - **Certification Class pipelines**: **Class A open since August 3, 2026**; Classes **B/C open August 31, 2026**; Class D pilot expected late 2026 with a formal option in early 2027.
 - **Rev5 wind-down**: new Rev5 applications are not accepted after **June 11, 2027**; Rev5 sunsets **December 31, 2028**.
 - **JAB P-ATO**: Fully suspended; FedRAMP PMO is the sole authorization body.
-- **Machine-readable mandate (RFC-0024/NOTICE-0009, operationalized in CR26)** — applies to the **Rev5 process only, explicitly NOT to FedRAMP 20x**: from **2PM ET September 30, 2026**, NEW Rev5 initial-certification packages must be machine-readable with **no grace period** (including packages already In Process for agency authorization) [LMR-GEN-ICR]; existing Rev5-certified providers must submit a full machine-readable package at **each annual assessment completed after that date** [LMR-GEN-OAR]. Approved formats: **NIST OSCAL, or any public-domain standardized format that 5+ certified CSPs agree to maintain** (FedRAMP-validated); CR26 JSON schemas and a validator are published. Human-readable versions must still be produced on request. Non-compliance: public notification until **2PM ET September 30, 2027**, then **certification revocation**.
+- **Machine-readable mandate (RFC-0024/NOTICE-0009, operationalized in CR26)** — applies to the **Rev5 process only, explicitly NOT to FedRAMP 20x**: **since 2PM ET September 30, 2026 (now in force)**, NEW Rev5 initial-certification packages must be machine-readable with **no grace period** (including packages already In Process for agency authorization) [LMR-GEN-ICR]; existing Rev5-certified providers must submit a full machine-readable package at **each annual assessment completed after that date** [LMR-GEN-OAR]. Approved formats: **NIST OSCAL, or any public-domain standardized format that 5+ certified CSPs agree to maintain** (FedRAMP-validated); CR26 JSON schemas and a validator are published. Human-readable versions must still be produced on request. Non-compliance: public notification until **2PM ET September 30, 2027**, then **certification revocation**.
 - **Security Inbox**: All authorized CSPs must maintain a dedicated Security Inbox (no CAPTCHAs or barriers) for urgent vulnerability directives — effective January 5, 2026.
 - **Key templates updated**: SSP, SAR, SAP, POA&M, CIS/CRM, IIW, ISCP — all updated to align with Rev 5 (Dec 2024 releases).
 

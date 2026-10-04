@@ -1,0 +1,33 @@
+{
+  "eval_id": 317,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Applies the Omnibus scope correctly: mandatory CSRD now covers large undertakings with MORE THAN 1,000 employees AND turnover above €450M (Directive (EU) 2026/470) — 800 employees means out of mandatory scope regardless of turnover",
+      "passed": true,
+      "evidence": "\"employees above 1,000 AND turnover above EUR 450M... At 800 employees you fail the employee limb... you are out of scope\""
+    },
+    {
+      "text": "Points to the voluntary standard as law: Delegated Regulation (EU) 2026/1560 (OJ September 21, in force September 24, 2026), VSME-based with Basic/Comprehensive modules",
+      "passed": false,
+      "evidence": "Misstates legal form: VSME \"endorsed... (Commission Recommendation of July 2025)\"; no Delegated Regulation (EU) 2026/1560 or Sept 2026 in-force status"
+    },
+    {
+      "text": "Explains the value-chain cap: in-scope CSRD reporters may not demand more from ≤1,000-employee value-chain partners than the voluntary standard's content — the shield against over-broad customer questionnaires",
+      "passed": true,
+      "evidence": "\"in-scope companies cannot require from value-chain partners with up to 1,000 employees more than what is in the voluntary standard for SMEs... you sit within this protection\""
+    },
+    {
+      "text": "Notes member-state transposition of the Omnibus scope changes is due March 19, 2027 (with major states like Germany still pending)",
+      "passed": false,
+      "evidence": "No March 19, 2027 transposition deadline and no Germany-pending note; only \"member states must transpose... there may be gaps\""
+    },
+    {
+      "text": "Gives practical advice: adopt the voluntary standard once, reuse it across customer requests",
+      "passed": true,
+      "evidence": "\"Create a single, standard response pack so that you answer all customers with the same data\" built on VSME Basic/Comprehensive"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

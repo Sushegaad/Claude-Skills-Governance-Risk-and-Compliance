@@ -1,0 +1,13 @@
+{
+  "eval_id": 323,
+  "eval_name": "sensitive-pi-status",
+  "run_type": "with_skill",
+  "prompt": "Can we still sell or share sensitive personal information of California consumers?",
+  "assertions": [
+    "States yes, with the statutory mechanism: consumers hold the right to LIMIT use/disclosure of sensitive PI — there is no categorical ban",
+    "Reports the veto correctly: AB 1542, which would have categorically banned selling/sharing sensitive PI, was vetoed September 27, 2026 ('a step too far')",
+    "Does NOT claim SB 435 was vetoed — it died in Assembly Appropriations in August 2026 (a response attributing the veto to SB 435 fails)",
+    "Covers the operative sensitive-PI duties: notice, purpose limitation, the Limit link/signal honoring",
+    "Flags trajectory: legislative pressure on sensitive-data sales continues — design for restriction"
+  ]
+}

@@ -1,0 +1,53 @@
+Obligations for a social platform popular with Brazilian teenagers (October 2026)
+
+You are subject to LGPD (Art. 3, offering services to people in Brazil, regardless of where you are established), the Digital ECA (in force since 17 March 2026), and ANPD's growing enforcement focus on minors. The ByteDance/TikTok fine of R$153.7 million (DOU, 25 August 2026) is the template for what ANPD treats as a serious failure: feeds operated without an adequate legal basis for children's and adolescents' data.
+
+1. Legal basis and the best-interest standard (Art. 14)
+
+- Crianças (under 12): specific, prominent consent from a parent or guardian is required (Art. 14, section 1). The controller must make reasonable efforts to verify it (section 5).
+- Adolescents (12 to 17): processing must observe their best interest (Art. 14 caput; ANPD Enunciado 1/2023). This is not a consent-only regime. Consent is not automatically the right basis, and any Art. 7 basis can be used if the best-interest test is met. Whichever basis you pick, document the reasoning.
+- Do not treat a teenager's tick-box as a safe harbour. For feeds, recommendation, profiling and advertising, ask whether the processing actually serves the adolescent's interest. The TikTok decision turned on the legal basis for feed operation, so that is where scrutiny lands.
+- Legitimate interest for engagement-maximising or ad-targeting uses of minors' data is hard to defend. Do a documented balancing test, and expect it to be tested.
+- Sensitive data inferred from behaviour (health, sexual life, religion, biometrics) needs an Art. 11 basis.
+
+2. Transparency (Art. 9, Art. 14, section 6)
+
+Notices must be clear, accessible and suited to the audience's age and understanding. That means plain language and layered or visual formats, in Portuguese, aimed at a teenager. Include controller identity, the encarregado's contact, purposes, bases, sharing, retention, rights, and profiling.
+
+3. Digital ECA and ANPD supervision
+
+- ANPD is now an autonomous agency (Lei 15.352/2026) and supervises Digital ECA duties.
+- Order CD/ANPD 122/2026 (11 August) requires semiannual transparency reports from platforms with more than 1 million registered minor users. The first report covered January to June 2026 and was due by 17 September. The next is due by 1 February 2027, then 1 August 2027, and so on. If you are above the threshold and did not file, treat it as a live compliance gap. If you are near it, build the reporting process now.
+- Consulta Pública 1/2026 (until 26 October 2026) proposes to extend the sanctioning regime to Digital ECA duties and internet application providers, with interim measures without prior hearing and daily fines capped at R$50M. This is a proposal. Until it is adopted, Resolution 1/2021 and Resolution 4/2023 apply. Consider filing comments.
+
+4. Operational controls
+
+| Area | What to have |
+|---|---|
+| Age assurance | Proportionate, privacy-preserving age checks, not data-hungry verification (necessity principle, Art. 6, III) |
+| Parental consent | For under-12s: verifiable, specific, withdrawable, logged |
+| Defaults | Privacy by design and default (Art. 46, section 2): private profiles, no public location, limited contact from strangers |
+| Profiling and ads | Strong limits on behavioural advertising to minors, human review for automated decisions (Art. 20) |
+| RIPD (Art. 38) | A documented impact assessment for recommendation systems, profiling and any sensitive inferences |
+| Data minimisation | Collect only what each feature needs, and set retention limits |
+| Rights | Channels usable by teens and by parents or guardians, with identity checks proportionate to risk |
+| Encarregado | Published contact (Art. 41), able to handle minors' issues |
+| Security (Art. 46) | Higher standard for minors' data. Art. 48 notification within 3 working days for relevant-risk incidents |
+| Transfers | If you send data to a US parent or vendors, ANPD standard clauses (Resolution 19/2024) are mandatory |
+
+5. Exposure
+
+Fines up to 2% of Brazilian revenue, capped at R$50M per infraction (Art. 52), though TikTok's R$153.7M shows several infractions can stack. You also face deletion orders, blocking, and possible suspension, plus civil claims and action from the Public Prosecutor or consumer bodies.
+
+6. Priorities for the next 90 days
+
+1. Map every processing activity touching under-18s and record its basis.
+2. Run an RIPD on feed ranking and ad targeting.
+3. Confirm your Order 122/2026 position.
+4. Review age-assurance and parental-consent flows.
+5. Rewrite notices for teen readability.
+6. Decide on a consultation response by 26 October.
+
+Which data do you currently collect from teens, and do you run personalised feeds or ads? With that I can produce a gap table.
+
+This is general compliance information, not legal advice. Consult Brazilian counsel on Digital ECA specifics.

@@ -16,7 +16,7 @@ description: >
 
 # TSA Cybersecurity Compliance Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-10-03
 
 You are an expert TSA cybersecurity compliance advisor assisting **critical infrastructure owners and operators** — pipeline companies, freight railroads, passenger rail and transit agencies, and bus operators — in understanding and implementing TSA Security Directive requirements. You have deep knowledge of the current TSA Security Directive series (SD Pipeline-2021-01G, SD Pipeline-2021-02F, SD 1580-21-01E, SD 1582-21-01E), the November 2024 Notice of Proposed Rulemaking (NPRM), and their relationship to NIST CSF 2.0 and CISA Cross-Sector Cybersecurity Performance Goals (CPGs).
 
@@ -351,6 +351,10 @@ In November 2024, TSA published a **Notice of Proposed Rulemaking (NPRM)** that 
 **CISA Cross-Sector CPGs**: TSA's NPRM aligns with CISA's Cybersecurity Performance Goals — a prioritised baseline of cybersecurity practices for critical infrastructure. CPGs map closely to NIST CSF subcategories and are grouped into IT/OT-specific goals.
 
 ---
+
+## Status Note — October 2026
+
+Directives **SD Pipeline-2021-01G** and the 1580/1582 rail series remain operative; the November 2024 surface cyber risk management **NPRM is still unfinalized**. September 2026 activity was procedural only: a revised information-collection request (OMB 1652-0074) covering coordinator designation, 72-hour CISA reporting, IR plans and assessments, with sharply reduced burden estimates.
 
 ## Reference Files
 

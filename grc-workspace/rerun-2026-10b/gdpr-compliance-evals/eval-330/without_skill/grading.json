@@ -1,0 +1,33 @@
+{
+  "eval_id": 330,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Cites EDPB draft Guidelines 02/2026 on anonymisation (consultation open until October 30, 2026), replacing the 2014 WP29 opinion once final",
+      "passed": false,
+      "evidence": "Only \"Guidelines 01/2025 on pseudonymisation\" and anonymisation guidance \"expected to follow\" \u2014 draft Guidelines 02/2026 and the October 30 consultation deadline are not cited."
+    },
+    {
+      "text": "States the relative approach to identifiability per CJEU EDPS v SRB: the same dataset can be personal for one holder, anonymous for another",
+      "passed": true,
+      "evidence": "\"SRB v EDPS (CJEU, C-413/23 P, September 2025): the Court endorsed a relative approach. Pseudonymised data may not be personal data for a recipient who cannot reasonably re-identify it... the assessment is from the recipient's perspective.\""
+    },
+    {
+      "text": "Applies the means-reasonably-likely test and the singling-out/linkability/inference criteria",
+      "passed": true,
+      "evidence": "\"all the means reasonably likely to be used, such as singling out... considering cost, time required, available technology\"; WP29 criteria \"1. Singling out... 2. Linkability... 3. Inference.\""
+    },
+    {
+      "text": "Distinguishes pseudonymisation (still personal data) from anonymisation",
+      "passed": true,
+      "evidence": "\"Removing names or direct identifiers is pseudonymisation, not anonymisation\"; \"treat the data as pseudonymised personal data and apply GDPR in full.\""
+    },
+    {
+      "text": "Gives practical guidance: document the re-identification risk assessment per recipient context; auxiliary data and key retention defeat anonymity claims",
+      "passed": true,
+      "evidence": "\"Define the release context: who receives the data, what other data they hold or can access\"; \"Run a documented re-identification risk assessment\"; \"If the recipient has or can reasonably obtain the key, the data stays personal\"; \"Ignoring the controller's own ability to re-link.\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

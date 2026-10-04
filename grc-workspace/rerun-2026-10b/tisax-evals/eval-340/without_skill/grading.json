@@ -1,0 +1,33 @@
+{
+  "eval_id": 340,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the overlap honestly: substantial (~70-80% of controls map) — ISO certification is the best starting point but does NOT substitute for TISAX",
+      "passed": false,
+      "evidence": "Says \"a large share of the controls will already be in place\" and \"ISO 27001 certification does not replace a TISAX assessment\" but gives no ~70-80% overlap figure (compound element missing)."
+    },
+    {
+      "text": "Explains the structural differences: fixed maturity targets (0-5, target 3) with cutback rules instead of SoA flexibility; over-performance can't offset weak areas",
+      "passed": false,
+      "evidence": "Describes 0-5 scoring but as \"an average of at least 3 with no must-requirement missed\" — no cutback rules, and \"average\" contradicts the no-offset principle."
+    },
+    {
+      "text": "Identifies the automotive-specific deltas: prototype protection, OEM data-classification expectations, label/exchange mechanics via ENX",
+      "passed": true,
+      "evidence": "\"Prototype protection (physical, organizational, trial vehicle, events)\"; \"stricter expectations on classification of information, handling of OEM information\"; \"separate assessment by an ENX-accredited provider... the label lists locations.\""
+    },
+    {
+      "text": "Notes ISA2027 refined the ISO 27001:2022 mapping (and removed 2013 references) — map existing evidence first, then close automotive gaps",
+      "passed": false,
+      "evidence": "No mention of ISA2027 or its refined ISO 27001:2022 mapping / removed 2013 references; only \"check which ISA version applies to the audit date.\""
+    },
+    {
+      "text": "Gives a realistic effort estimate for a certified org (evidence re-expression in maturity terms, prototype/physical additions where relevant)",
+      "passed": true,
+      "evidence": "\"Total: about 20 to 60 person-days for a mid-sized organization, more for AL3 or prototype protection\"; \"Budget for maturity-based evidence... and, if relevant, prototype protection.\""
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

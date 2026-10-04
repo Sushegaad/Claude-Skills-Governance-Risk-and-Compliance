@@ -1,0 +1,56 @@
+Before the walkthrough, one threshold question that the skill requires me to ask: are you reporting on the current 2023 ESRS basis or the revised ESRS basis? The answer changes some detail, though not the logic of the DMA.
+
+Status check: the revised ESRS are Commission Delegated Regulation (EU) 2026/1563, adopted 3 July 2026, published in the Official Journal on 21 September 2026 and in force from 10 November 2026. They apply to financial years beginning 1 January 2027, and for FY2026 in-scope undertakings can choose either basis. Mandatory datapoints fall from over 1,000 to roughly 320.
+
+Also confirm scope first. Under Directive (EU) 2026/470, only large undertakings with more than 1,000 employees and net turnover above EUR 450 million are in mandatory scope. If you are below that, the DMA is optional, and the voluntary standard (Delegated Regulation (EU) 2026/1560) is your vehicle.
+
+**What the revised ESRS change for the DMA**
+
+I am confident of the headline changes: far fewer mandatory datapoints, and former voluntary datapoints moved to EFRAG non-mandatory guidance. I would not claim detailed paragraph-level changes to the DMA methodology without checking the published text of 2026/1563. The skill's methodology below is anchored in ESRS 1 paras. 45 to 56 and ESRS 2 IRO-1 and SBM-3, so verify the paragraph numbers against the revised text before you cite them in a report.
+
+What stays constant: double materiality, impact materiality plus financial materiality, a topic is material if it meets either or both, and the DMA drives what you report.
+
+**The eight-step process**
+
+**Step 1. Understand the context.** Map business activities, business model, geographies and the full value chain (upstream and downstream). Use sector references such as SASB or GRI sector standards. Output: a context document and value-chain map.
+
+**Step 2. Identify actual and potential impacts.** Combine internal sources (operations review, incident data, management interviews) with external sources (stakeholder engagement, benchmarks, peers). Engage affected stakeholders, not only investors: workers, communities, customers, NGOs, financial institutions and regulators (ESRS 1, para. 22). Output: a long list of impacts by topic.
+
+**Step 3. Assess significance of impacts.**
+- Negative actual impacts: scale x scope x irremediability.
+- Negative potential impacts: add likelihood.
+- Positive impacts: scale x scope, with likelihood for potential ones.
+Use a consistent 1 to 5 scoring scale, and set and justify your thresholds. The reference example is severity at or above 27 for actual and 50 for potential impacts. That is illustrative only, as there is no prescribed numerical threshold.
+
+**Step 4. Identify financial risks and opportunities.** Physical risks (acute and chronic), transition risks (policy, technology, market, reputation) and opportunities. Consider effects on financial position, performance, cash flows, access to finance and cost of capital, across short (under 1 year), medium (1 to 5 years) and long (over 5 years) horizons.
+
+**Step 5. Assess financial significance.** Rate magnitude and likelihood. The template uses EBITDA bands (below 1%, 1 to 5%, above 5%) and likelihood bands. Again these are company-defined and must be disclosed.
+
+**Step 6. Determine materiality topic by topic.** Apply both lenses. Build a matrix: topic, impact material, financially material, overall, report. A topic that is material on either lens is reported in full. For non-material topics, give a brief justification.
+
+**Step 7. Document and disclose.** ESRS 2 IRO-1 covers the process: scope, methodology, criteria, thresholds, stakeholder engagement, frequency. ESRS 2 SBM-3 covers the output: the material IROs and their interaction with strategy and business model. Keep an impact register and a financial risk and opportunity register for the audit trail.
+
+**Step 8. Validate and update.** At least annually, and on triggers such as a business change, new regulation or an emerging risk. Disclose changes in conclusions.
+
+**Applying it under the revised ESRS: practical points**
+
+1. Run the DMA once and use it to select among the streamlined datapoints. Fewer mandatory datapoints means the DMA matters more as the filter for topical disclosures. ESRS 2 general disclosures remain mandatory regardless of outcome.
+2. If you have an existing 2023-basis DMA, do not discard it. Re-validate it, map each material topic and sub-topic to the revised standards, and document any changes in conclusions.
+3. Value chain: keep it in scope for impacts and risks. Note the cap, which says reporters cannot demand more from value-chain partners with 1,000 employees or fewer than the voluntary standard contains. That affects how you gather value-chain data after the DMA, not whether the DMA considers the value chain. Use proxies and sector averages where direct data is missing, and disclose the method.
+4. Climate (E1) is presumed material for most large companies. Excluding it needs strong evidence.
+
+**Common pitfalls**
+
+- Own operations only, with the value chain ignored.
+- Consulting only investors.
+- Financial materiality neglected.
+- Thresholds not justified.
+- DMA done after deciding what to report.
+- Over-excluding topics without a brief explanation.
+- A static one-off exercise.
+
+**Governance and assurance**
+
+The assurance provider covers the DMA process (limited assurance, Art. 26a), so keep decisions, scoring and stakeholder evidence traceable, and have the board or audit committee approve the outcome.
+
+This is general compliance information, not legal advice. Check the final text of Regulation 2026/1563 for revised paragraph references.

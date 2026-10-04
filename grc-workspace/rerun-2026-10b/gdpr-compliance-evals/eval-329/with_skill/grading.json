@@ -1,0 +1,33 @@
+{
+  "eval_id": 329,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the Art. 6(1) architecture: an exhaustive, restrictively interpreted list of six bases",
+      "passed": true,
+      "evidence": "\"Art. 6(1) is an exhaustive list\" with the narrow reading throughout (\"considerably narrower than 'we're required by law' suggests\")."
+    },
+    {
+      "text": "Explains Art. 6(1)(c) discipline: the legal obligation must stem from EU or member-state law that meets Art. 6(3) requirements (clear, precise, foreseeable, proportionate public-interest objective)",
+      "passed": true,
+      "evidence": "\"Art. 6(3) says the basis must be laid down by Union law or Member State law. That law must meet an objective of public interest and be proportionate... Recital 41 adds that the law should be clear, precise and foreseeable.\""
+    },
+    {
+      "text": "Cites the fresh authority: CJEU C-798/24 (September 3, 2026) \u2014 company-register disclosure rules were held NOT to require publishing all shareholders' data (minority shareholders excluded), reaffirming the exhaustive-list and Art. 6(3) discipline (a response describing C-798/24 as a vital-interests case fails)",
+      "passed": true,
+      "evidence": "\"C-798/24 (3 September 2026)... concerned company-register disclosure rules and whether they require publishing all shareholders' data. The Court held that they don't... It is not a vital-interests case, as some summaries suggest.\" Also \"Art. 6(1) is an exhaustive list.\""
+    },
+    {
+      "text": "Warns against basis-stretching: 'required by law' fails where the law doesn't actually mandate the specific processing \u2014 distinguish legal obligation from legitimate interest",
+      "passed": true,
+      "evidence": "\"A real obligation, not an option... Collecting extra data 'while we're at it' needs another basis\"; \"Split what is mandated from what you do beyond it, and assign other bases, such as contract or legitimate interests with an LIA.\""
+    },
+    {
+      "text": "Advises documentation: per-processing basis mapping with the legal provision cited",
+      "passed": true,
+      "evidence": "\"For each, cite the exact provision and the data and retention it requires... Update your RoPA (Art. 30)\"; \"'Required by law' without a citation is poor practice.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

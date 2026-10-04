@@ -1,0 +1,33 @@
+{
+  "eval_id": 332,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the conversion: Lei 15.352/2026 (DOU February 25, 2026, converting MP 1.317/2025) made the ANPD a special-regime regulatory agency with functional, decision-making and financial autonomy (name unchanged, ~200 new positions)",
+      "passed": false,
+      "evidence": "Knows only \"Provisional Measure 1,317/2025, issued in September 2025\" and says \"Please verify whether the provisional measure was converted into law\"; also wrongly cites \"Law 14.460/2022\""
+    },
+    {
+      "text": "Notes the same law fixed the Digital ECA's effectiveness at March 17, 2026",
+      "passed": false,
+      "evidence": "No March 17, 2026 effectiveness date; only cites \"Law 15.211/2025\" passage"
+    },
+    {
+      "text": "Describes Consulta Pública 1/2026 (September 9 – October 26, 2026): a draft replacement for Resolution 1/2021 extending supervision to Digital ECA duties and internet application providers",
+      "passed": false,
+      "evidence": "\"Without knowing which one you heard about, there are a few candidates and I do not want to guess\" — CP 1/2026 never identified"
+    },
+    {
+      "text": "Highlights the sharpest proposals: interim measures adoptable WITHOUT prior hearing of the regulated party, and daily fines capped at R$50 million total",
+      "passed": false,
+      "evidence": "No mention of either proposal"
+    },
+    {
+      "text": "Advises participation: comment via Brasil Participativo before October 26 if operating in Brazil",
+      "passed": false,
+      "evidence": "Generic advice to monitor \"Participa + Brasil\"; no October 26 deadline, no CP 1/2026"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

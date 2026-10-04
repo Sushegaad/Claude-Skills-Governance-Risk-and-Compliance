@@ -1,0 +1,62 @@
+Lawfully transferring personal data from Brazil to your US parent
+
+Short answer: for a US recipient, the practical route is the ANPD standard contractual clauses (Resolution CD/ANPD 19/2024), adopted without modification. There is no adequacy decision for the US, and the January 2026 Brazil-EU mutual adequacy does not help here.
+
+1. Why a transfer mechanism is needed
+
+Sending personal data to a US parent, or even giving it remote access, is an international transfer under Arts. 33 to 36. LGPD allows it only through one of the Art. 33 mechanisms. Being part of the same corporate group does not exempt the transfer.
+
+2. Your options
+
+| Mechanism | Fit for a US parent | Comment |
+|---|---|---|
+| Adequacy (Art. 33, I) | Not available | ANPD has issued no adequacy decisions. The EU/EEA is treated as adequate from January 2026, but that does not extend to the US |
+| ANPD standard contractual clauses (Art. 33, II(b); Res. 19/2024) | Best fit | Mandatory for contract-based transfers. The grace period ended 23 August 2025. Adopt without modification |
+| Specific contractual clauses (Art. 33, II(a)) | Possible | Needs ANPD approval, so slow, and rarely worth it |
+| Binding corporate rules / global corporate standards (Art. 33, II(c)) | Possible for intragroup flows | Require ANPD approval and a mature group programme. Good long-term if you have many group transfers |
+| Specific, highlighted consent (Art. 33, VIII) | Fallback only | Must be specific to the transfer, informed of its international nature and risks. Fragile and revocable, so not suitable for routine HR or customer data |
+| Other Art. 33 grounds | Narrow | Legal cooperation, vital interests, legal obligation, contract performance at the subject's request, or exercise of rights in proceedings. These cover specific cases, not a general parent-subsidiary flow |
+| ANPD authorisation (Art. 33, IX) | Case-by-case | Rarely used |
+
+Practical recommendation: sign the ANPD SCCs between the Brazilian entity and the US parent.
+
+3. Using the ANPD standard clauses
+
+- Take the text exactly as published. Resolution 19/2024 does not allow altering the clauses. You complete the annexes and options only.
+- Fill the annexes: parties, controller or processor roles, description of the transfer, purposes, data categories (flag sensitive and children's data), recipients and onward transfers, security measures, and retention.
+- Role mapping matters: if the parent processes as your processor, the clauses must fit that. If it is a controller in its own right, document that.
+- Keep it ready for ANPD. You may be asked to show the executed clauses, and the transfer must also comply with the rest of LGPD.
+- Add an Art. 38 RIPD where the data is high-risk, and keep a documented transfer-impact view of the destination's laws on government access.
+
+4. The rest of the transfer still has to be lawful
+
+The transfer mechanism covers only the transfer. You also need:
+- An Art. 7 or 11 basis for the underlying processing, and a purpose that covers sharing with the parent (purpose limitation, Art. 6, I).
+- Data minimisation: send only what the parent needs, and consider pseudonymisation or anonymisation.
+- Transparency (Art. 9): tell data subjects that data goes to the US parent, the purpose, and the mechanism used (ANPD SCCs for the US).
+- Records: reflect the transfer and mechanism in your RoPA.
+- Security (Art. 46) at both ends, plus onward-transfer controls for the parent's own vendors.
+- Rights: the parent must support Art. 18 requests routed through you.
+- Incident clause: parent must alert you promptly so you can meet the 3-working-day Art. 48 notification.
+
+5. Common errors to avoid
+
+- Relying on a modified or custom DPA instead of the unmodified ANPD SCCs.
+- Reusing EU SCCs. They are not accepted as a substitute for ANPD's clauses.
+- Assuming "EU adequacy" covers a US parent just because your group is EU-linked.
+- Relying on bundled consent in a privacy policy.
+- Forgetting remote access from the US, which also counts as a transfer.
+- Missing the SCC deadline. ANPD lists international transfers as an enforcement priority, and exposure is up to 2% of Brazilian revenue, capped at R$50M per infraction.
+
+6. Steps
+
+1. Inventory the data flows to the US (including support, analytics, HR, and cloud).
+2. Define the roles of each party.
+3. Execute the ANPD SCCs.
+4. Update the privacy notice and RoPA.
+5. Document your minimisation and risk reasoning.
+6. Review annually, and watch ANPD for any adequacy decisions.
+
+If you tell me the data categories and whether the parent acts as controller or processor, I can sketch the annex content.
+
+This is general compliance information, not legal advice. Confirm the current text of Resolution 19/2024 with Brazilian counsel.

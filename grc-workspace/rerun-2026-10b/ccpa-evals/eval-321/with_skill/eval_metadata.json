@@ -1,0 +1,13 @@
+{
+  "eval_id": 321,
+  "eval_name": "broker-data-deletion",
+  "run_type": "with_skill",
+  "prompt": "A California consumer demands we delete everything we have on them, including data we bought from a data broker. What are our obligations today, and what changes on January 1, 2027?",
+  "assertions": [
+    "States current law accurately: the CCPA deletion right as enacted reaches PI the business collected FROM the consumer, with broker-held data addressed via the Delete Act/DROP mechanism",
+    "States the change: SB 923 (Expanding Privacy Rights Act, signed September 27, 2026, effective January 1, 2027) extends deletion to PI collected 'from or about' the consumer — including third-party and data-broker-sourced data",
+    "Mentions the suppression-list permission so deleted consumers stay deleted as new third-party data arrives",
+    "Notes the online-submission requirement for exclusively-online businesses",
+    "Gives operational advice: inventory third-party data sources now and build deletion plumbing before January 1, 2027"
+  ]
+}

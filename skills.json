@@ -114,12 +114,12 @@
       "category_key": "privacy",
       "region": "eu",
       "domains": "data-protection incident-response reporting",
-      "grading_dir": "grc-workspace/rerun-2026-09/gdpr-compliance-evals",
+      "grading_dir": "grc-workspace/rerun-2026-10b/gdpr-compliance-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "05 Sep 2026",
-        "tested": "Automated driver deactivation (Uber Art. 22 fine); 2026 anonymisation standard (EDPB 02/2026); genAI web scraping (03/2026); Art. 28 DPA clauses; ransomware breach workflow",
-        "readme_tested": "Automated driver deactivation (Uber Art. 22 fine); 2026 anonymisation standard (EDPB 02/2026); genAI web scraping (03/2026); Art. 28 DPA clauses; ransomware breach workflow"
+        "last_updated": "03 Oct 2026",
+        "tested": "Google €403M location-data lessons; fine-vs-order methodology (04/2026); DSA-GDPR interplay; lawful-basis rigor (C-798/24); anonymisation standard",
+        "readme_tested": "Google €403M location-data lessons; fine-vs-order methodology (04/2026); DSA-GDPR interplay; lawful-basis rigor (C-798/24); anonymisation standard"
       },
       "install_framework": "GDPR / UK GDPR",
       "install_desc": "Code audits, privacy notices, DPAs, DPIAs, data flow reviews, article-cited Q&A",
@@ -576,12 +576,12 @@
       "category_key": "privacy",
       "region": "us",
       "domains": "data-protection reporting",
-      "grading_dir": "grc-workspace/rerun-2026-07c/ccpa-evals-iter2",
+      "grading_dir": "grc-workspace/rerun-2026-10b/ccpa-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "03 Jul 2026",
-        "tested": "E-commerce threshold analysis and applicability; Combined right-to-know and delete workflow; Ad tech sale vs sharing classification; GDPR-to-CCPA/CPRA gap analysis; SPI classification for mobile app",
-        "readme_tested": "E-commerce threshold analysis; Combined right-to-know and delete workflow; Ad tech sale vs sharing classification; GDPR-to-CCPA gap analysis; SPI classification for mobile app"
+        "last_updated": "03 Oct 2026",
+        "tested": "Broker-data deletion (SB 923); 2026 children's package; sensitive-PI status (AB 1542 veto); data-broker enforcement climate; ADMT countdown",
+        "readme_tested": "Broker-data deletion (SB 923); 2026 children's package; sensitive-PI status (AB 1542 veto); data-broker enforcement climate; ADMT countdown"
       },
       "install_framework": "CCPA / CPRA",
       "install_desc": "Consumer rights workflows, ADMT opt-out (regulations effective Jan 2026, deadline Jan 2027), cybersecurity audit/risk assessment obligations, 2026 enforcement precedents (Disney $2.75M, PlayOn $1.1M)",
@@ -642,12 +642,12 @@
       "category_key": "privacy",
       "region": "latam",
       "domains": "data-protection incident-response reporting",
-      "grading_dir": "grc-workspace/rerun-2026-07/lgpd-evals",
+      "grading_dir": "grc-workspace/rerun-2026-10b/lgpd-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "02 Jul 2026",
-        "tested": "Extraterritorial scope for US SaaS with Brazilian customers; Brazil-EU mutual adequacy (Jan 2026); Data deletion across CRM/email/analytics; Sensitive health data marketing restrictions; International transfer mechanisms",
-        "readme_tested": "Extraterritorial scope for US SaaS with Brazilian customers; Brazil-EU mutual adequacy (Jan 2026 — no SCCs needed); Data deletion request across CRM/email/analytics; Sensitive health data marketing restrictions; International transfer mechanisms"
+        "last_updated": "03 Oct 2026",
+        "tested": "Penalty reality (TikTok R$153.7M); ANPD agency status + CP 1/2026; teen-platform obligations (Digital ECA); Brazil-US transfers; breach response",
+        "readme_tested": "Penalty reality (TikTok R$153.7M); ANPD agency status + CP 1/2026; teen-platform obligations (Digital ECA); Brazil-US transfers; breach response"
       },
       "install_framework": "Brazil LGPD",
       "install_desc": "All 10 legal bases, Brazil-EU mutual adequacy (Jan 2026 — SCCs no longer needed for Brazil↔EU transfers), data subject rights, ANPD enforcement, breach notification",
@@ -675,12 +675,12 @@
       "category_key": "export-sustain",
       "region": "eu",
       "domains": "reporting audit",
-      "grading_dir": "grc-workspace/rerun-2026-08/csrd-evals",
+      "grading_dir": "grc-workspace/rerun-2026-10b/csrd-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "15 Aug 2026",
-        "tested": "CSRD scope analysis for German listed manufacturer (PIE Wave 1); Double materiality vs GRI/TCFD; Post-DMA disclosure requirements for E1/S1/G1; GRI+TCFD to ESRS gap assessment; Non-EU company (US parent, €200M EU revenue) obligations",
-        "readme_tested": "CSRD scope analysis for German listed manufacturer (PIE Wave 1); Double materiality vs GRI/TCFD; Post-DMA disclosure requirements for E1/S1/G1; GRI+TCFD to ESRS gap assessment; Non-EU company (US parent, €200M EU revenue) obligations"
+        "last_updated": "03 Oct 2026",
+        "tested": "FY2026/FY2027 ESRS basis (Reg. 2026/1563 in the OJ); below-threshold + voluntary standard; assurance status (CEAOB); double materiality; value-chain cap and Scope 3",
+        "readme_tested": "FY2026/FY2027 ESRS basis (Reg. 2026/1563 in the OJ); below-threshold + voluntary standard; assurance status (CEAOB); double materiality; value-chain cap and Scope 3"
       },
       "install_framework": "CSRD / ESRS",
       "install_desc": "2026 Omnibus scoping (1,000+ employees & €450M), revised ESRS (Jul 2026), double materiality, GRI/TCFD gap analysis",
@@ -1071,12 +1071,12 @@
       "category_key": "infosec",
       "region": "eu global",
       "domains": "access-control audit vendor data-protection",
-      "grading_dir": "grc-workspace/rerun-2026-08/tisax-evals",
+      "grading_dir": "grc-workspace/rerun-2026-10b/tisax-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "23 Aug 2026",
-        "tested": "First-timer BMW Confidential label; ISO 27001 to TISAX delta; corrective action 9-month window; prototype labels and AL3; ISA2027 transition",
-        "readme_tested": "First-timer BMW Confidential label; ISO 27001 to TISAX delta; corrective action 9-month window; prototype labels and AL3; ISA2027 transition"
+        "last_updated": "03 Oct 2026",
+        "tested": "Order-date decision (ISA 6 vs ISA2027); ISA2027 changes; prototype labels (PTS Basic/Facilities); first-timer process; ISO 27001 vs TISAX",
+        "readme_tested": "Order-date decision (ISA 6 vs ISA2027); ISA2027 changes; prototype labels (PTS Basic/Facilities); first-timer process; ISO 27001 vs TISAX"
       },
       "install_framework": "TISAX (VDA ISA / ENX)",
       "install_desc": "ISA 6 + ISA2027 transition, labels & AL1-AL3, maturity scoring with cutback, ENX process, ISO 27001 mapping",

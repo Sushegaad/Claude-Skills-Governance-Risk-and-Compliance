@@ -1,0 +1,26 @@
+Short answer: you must honor the deletion request across everything you hold about the consumer, including data you bought from a broker, subject to statutory exceptions. On January 1, 2027 the practical pressure rises mainly because of the Delete Act's DROP mechanism and related regulatory changes, though the individual-request right itself does not change.
+
+Obligations today (CCPA as amended by CPRA, Civ. Code 1798.105 and the CPPA regulations)
+
+1. Scope. The right to delete covers personal information "collected from the consumer" under the statutory text, but regulators and most counsel read the obligation practically: once you hold the data as a business, you should treat it as in scope. Data purchased from a broker is personal information you hold, and the CPPA's regulations on service providers, contractors and third parties assume downstream recipients must propagate deletion. A cautious position is to delete purchased data too, or at minimum suppress it. If you argue purchased data is out of scope, document that reasoning, because it is an aggressive reading.
+
+2. Verification and timing. Acknowledge within 10 business days and respond within 45 calendar days, extendable once by another 45 days with notice. Verify identity at a level proportionate to the sensitivity of the data. Deletion requests may be submitted through at least two methods (a toll-free number unless you are online only, plus a web form or email for online-only businesses).
+
+3. Propagation. You must delete from your systems (including backups, which may be deferred until the backup is next accessed or restored), and notify your service providers and contractors to delete. You must also notify third parties to whom you sold or shared the data, unless that proves impossible or involves disproportionate effort. Under the regulations, service providers must cooperate and pass requests down to sub-processors.
+
+4. Exceptions (1798.105(d)). You may retain data needed to complete the transaction, detect security incidents or fraud, debug, exercise free speech, comply with a legal obligation, support internal uses reasonably aligned with consumer expectations, and similar. You must tell the consumer which data you kept and why, and use it only for that purpose. Where you deny in part, say so.
+
+5. Opt-out and suppression. If you cannot delete, you may keep a minimal suppression record so that purchased data does not re-enter your systems. Tell the consumer about this.
+
+6. Records. Keep request records for 24 months.
+
+7. Data broker angle. The consumer may separately use the broker's channels. The broker has its own obligations as a registered data broker, but yours as a purchaser are independent. Also review your contract with the broker: CCPA requires third-party contracts to limit the purposes of use and to require notice of consumer rights, and you should check that the broker gave proper notice at collection.
+
+What changes on January 1, 2027
+
+- Delete Act (SB 362) and DROP. Registered data brokers had to begin processing consumer deletion requests submitted through the California Privacy Protection Agency's Delete Request and Opt-out Platform (DROP) starting August 1, 2026, retrieving requests at least every 45 days. A consumer can make one request that reaches all registered brokers. If you are a data broker, this changes your volume. If you are only a buyer, expect more consumers to arrive having already used DROP, and expect brokers to suppress data you rely on, which you should handle through your supply contracts.
+- Browser opt-out signals (AB 566, the Opt Me Out Act) require browsers to offer a built-in opt-out preference signal option, with a 2027 operative date. Expect more automated opt-out traffic to honor.
+- ADMT regulations. Compliance with the automated decisionmaking rules begins January 1, 2027, which matters if you use deleted or purchased data in significant decisions.
+- Data broker enforcement and audits. Broker independent audits begin in 2028, but expect active enforcement before then.
+
+Recommended steps now: confirm your purchased-data inventory is mapped to individuals so you can find it, add deletion-propagation clauses to broker contracts, build a suppression list, and document your exception analysis. I am working from general knowledge, so verify exact dates against current CPPA guidance before relying on them.

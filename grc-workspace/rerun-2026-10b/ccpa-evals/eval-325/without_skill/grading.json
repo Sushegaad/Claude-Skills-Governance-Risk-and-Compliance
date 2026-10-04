@@ -1,0 +1,33 @@
+{
+  "eval_id": 325,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the ADMT date: compliance for significant decisions begins January 1, 2027 (pre-use notice, opt-out, access rights)",
+      "passed": true,
+      "evidence": "\"January 1, 2027: businesses using ADMT for significant decisions must comply with ADMT requirements. Those are a pre-use notice, a right to opt out... and an access right.\""
+    },
+    {
+      "text": "States risk assessments: processing ongoing as of January 1, 2026 must have assessments completed by December 31, 2027",
+      "passed": true,
+      "evidence": "\"December 31, 2027: for risk assessment activities that were already underway before 2026, the assessment must be completed by this date.\""
+    },
+    {
+      "text": "States first submissions: risk-assessment materials/attestations to the CPPA by April 1, 2028",
+      "passed": true,
+      "evidence": "\"April 1, 2028: first submission to the CPPA of risk assessment information (attestation and summary).\""
+    },
+    {
+      "text": "States cybersecurity-audit phase-in: certifications due April 1, 2028 (>$100M revenue), 2029 ($50–100M), 2030 (<$50M)",
+      "passed": true,
+      "evidence": "\"April 1, 2028: cybersecurity audit certifications are due for businesses with more than $100 million in annual gross revenue. Due April 1, 2029 for $50 to $100 million. Due April 1, 2030 for under $50 million.\""
+    },
+    {
+      "text": "Scopes ADMT correctly: covered 'significant decisions' (employment, finance, housing, etc.) and what counts as ADMT, with practical first steps (inventory automated decisions now)",
+      "passed": true,
+      "evidence": "\"Significant decisions cover financial or lending services, housing, education..., employment...\"; \"narrowed 'ADMT' to technology that replaces or substantially replaces human decisionmaking\"; \"During 2026: businesses should inventory processing... scope ADMT use\" and \"Q4 2026: finalize your ADMT inventory.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

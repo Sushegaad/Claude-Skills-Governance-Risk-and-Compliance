@@ -15,7 +15,7 @@ description: >
 
 # CCPA/CPRA Compliance Advisor
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-10-03
 
 You are an expert on California's comprehensive privacy laws:
 - **CCPA**: California Consumer Privacy Act (Cal. Civ. Code §1798.100 et seq.), effective January 1, 2020
@@ -258,6 +258,18 @@ GDPR is generally the more demanding law. A GDPR-compliant program covers most C
 - **Remedies**: CCPA's **private right of action is limited to data breaches** (statutory damages **$100–$750 per consumer per incident**, §1798.150) — there is no general private action for privacy violations, unlike GDPR Art. 79/82
 
 Key enforcement contrast: GDPR penalties run up to €10M/2% or €20M/4% of global annual turnover with no formal cure period in most cases, versus CCPA/CPRA's per-violation civil penalties of $2,500 (unintentional) / $7,500 (intentional) with a 30-day AG cure period.
+
+## 2026 Legislation & Enforcement Update (state where relevant)
+
+**September 2026 signings (effective January 1, 2027 unless noted):**
+- **SB 923 (Expanding Privacy Rights Act)** — the right to delete now reaches PI collected **"from or about"** the consumer, including data acquired from third parties and data brokers (not just first-party collection); businesses may run suppression lists to keep deleted consumers deleted; exclusively-online businesses must offer an online request-submission method. Complements (does not replace) the Delete Act/DROP.
+- **Children's package (signed Sept 10)**: AB 2246 replaces the Age-Appropriate Design Code with a reasonable-steps framework (default ban on profiling minors, dark-pattern bans); AB 1709 bans addictive features (personalized feeds, autoplay, push) for under-16s with penalties to $50,000 per minor; AB 1856 fixes the Digital Age Assurance Act's OS age-signal scope; SB 1119 adds companion-chatbot child-safety duties (core obligations July 1, 2027); SB 867 bans companion-chatbot toys (sunset 2031).
+- Also: **AB 883** (data-broker DSR deadline cut 45→30 days + DROP notices), **AB 2561** (no silent reversion of privacy settings after updates), **AB 1609** (chatbot disclosure for >$500M businesses).
+- **Vetoed: AB 1542** — the categorical ban on selling/sharing sensitive PI ("a step too far"; the statutory limit-the-use right remains the mechanism). Note: SB 435 was NOT vetoed — it died in Assembly Appropriations in August.
+
+**Enforcement posture (CPPA):** data-broker registration blitz — **SalesIntel Research fined $36,400** (Sept 1) for failing to register; **Enforcement Advisory 2026-01** (Sept 3) targets registration accuracy with **$200/day** exposure; DROP deletion processing live since August 1, 2026. Earlier 2026: GM $12.75M (connected cars), PlayOn Sports $1.1M, Ford $375K (opt-out friction).
+
+**ADMT countdown (include in any automation/profiling answer):** compliance for significant decisions begins **January 1, 2027** (pre-use notice, opt-out, access); risk assessments for processing ongoing as of Jan 1, 2026 are due **December 31, 2027** with first CPPA submissions by **April 1, 2028**; cybersecurity-audit certifications phase in April 2028/2029/2030 by revenue tier.
 
 ## Reference Files
 

@@ -1,0 +1,28 @@
+Short version: the climate for data brokers is the most aggressive of any regulated group in California privacy. The CPPA (which began branding itself CalPrivacy) has prioritized brokers, and the Delete Act gives it new tools. This is based on general knowledge through mid-2026, so verify the latest actions.
+
+What changed structurally
+
+- The Delete Act (SB 362) transferred data broker registration from the Attorney General to the CPPA and mandated a single deletion mechanism. The Delete Request and Opt-out Platform (DROP) opened to consumers on January 1, 2026. From August 1, 2026, registered brokers must log in to DROP at least every 45 days, process all deletion requests, and delete matching records and those of their affiliates, then continue to suppress and not re-collect the data. Brokers must also tell the CPPA which request statuses they processed.
+- Brokers must report more detail in registration (SB 361 and related changes): whether they collect precise geolocation, reproductive health care data, or minors' data, and whether they shared data with foreign actors, federal or state governments, law enforcement, or generative AI developers.
+- Penalties: $200 per day for failure to register or file deletion reports and $200 per day for each deletion request not processed, plus administrative fines and costs. Starting January 1, 2028, brokers must undergo independent third-party audits every three years and file audit reports.
+- Registration is due each January 31. Fees fund DROP.
+
+Enforcement pattern
+
+- The CPPA's Enforcement Division launched a data broker registration sweep in 2024 and has since announced multiple settlements with unregistered brokers, typically in the five-figure range (examples include Background Alert, Accurate Append and others with fines per day of non-registration). Its agency messaging emphasizes that registration failures are easy cases and that deletion processing is next.
+- In 2025 and 2026 the CPPA announced settlements with consumer-facing businesses too (Honda, Todd Snyder, Tractor Supply at about $1.35 million, and others), showing growing fine sizes. The Attorney General also settled with Healthline, Sephora, DoorDash and others.
+- The CPPA board has been taking up investigative sweeps, including on location data and opt-out preference signal compliance, and has staff dedicated to broker audits. The agency has also referred conduct and used administrative enforcement without waiting for consumer complaints.
+- A new regulatory package effective January 1, 2026 (cybersecurity audits, risk assessments, ADMT) adds obligations for brokers that qualify as businesses.
+
+What registered brokers should do now
+
+1. Confirm registration is current, accurate and complete, including all required disclosures. Inaccurate registrations draw penalties.
+2. Operationalize DROP. Assign an owner, automate retrieval every 45 days, match using the hashed identifiers DROP provides (email, phone, name and others), and document match logic and false positives and negatives. Matching quality will be the key enforcement question.
+3. Build suppression so deleted individuals do not return via new data feeds. Delete from affiliates and tell downstream recipients where required.
+4. Review contracts with data sources and purchasers, including deletion propagation and purpose limitation.
+5. Prepare for audits now, including retaining logs of every DROP pull and action, because the independent audit starts in 2028 and regulators may request records earlier.
+6. Reassess high-risk data sets such as precise geolocation, reproductive health data, immigration status and minors' data, where public and legislative scrutiny is highest. Consider whether you must still hold them.
+7. Maintain your CCPA obligations as a business: notices, request handling, opt-outs, sensitive data limits, risk assessments.
+8. Align with other states: Texas, Oregon, Vermont and Nevada have broker laws or enforcement that are comparable.
+
+Expect first DROP-related enforcement in late 2026 and 2027. Brokers that missed the August 2026 start date are the most likely first targets.

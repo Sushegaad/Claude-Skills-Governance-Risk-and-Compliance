@@ -1,0 +1,13 @@
+{
+  "eval_id": 333,
+  "eval_name": "teen-platform-brazil",
+  "run_type": "without_skill",
+  "prompt": "We operate a social platform popular with Brazilian teenagers. What are our current obligations?",
+  "assertions": [
+    "Applies the Digital ECA (Lei 15.211/2025, effective March 17, 2026) to child/adolescent-accessible services",
+    "Cites Order CD/ANPD 122/2026 (August 11): platforms with >1 million registered users under 18 in Brazil must publish SEMIANNUAL transparency reports (first covered Jan–Jun 2026, published by Sept 17; thereafter Aug 1/Feb 1 cadence)",
+    "Uses the TikTok precedent: R$153.7M for feeds processing minors' data without an adequate legal basis — profiling/recommendation engines need a defensible basis and best-interests analysis",
+    "Covers LGPD Art. 14 fundamentals: processing in the child's best interest; specific consent requirements for children's data",
+    "Gives an action list: minor-user counting, legal-basis review of feeds/profiling, transparency-report pipeline, deletion readiness"
+  ]
+}

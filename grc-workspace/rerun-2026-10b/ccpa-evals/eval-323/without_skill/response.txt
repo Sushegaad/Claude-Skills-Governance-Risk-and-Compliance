@@ -1,0 +1,27 @@
+Short answer: yes, in most cases you can, but the CCPA places heavy conditions on it, and several other California and federal laws restrict specific categories outright.
+
+How the CCPA treats sensitive personal information (SPI)
+
+SPI under Civ. Code 1798.140(ae) includes government identifiers (SSN, driver's license, passport), account log-in or financial account credentials, precise geolocation (within a radius of about 1,850 feet), racial or ethnic origin, religious or philosophical beliefs, union membership, contents of mail, email and text messages (unless you are the intended recipient), genetic data, biometric information used to identify a person, health information, sex life or sexual orientation, and, following later amendments, neural data (SB 1223) and citizenship or immigration status (AB 947).
+
+The CCPA does not ban selling or sharing SPI. It is an opt-out regime for adults, with these requirements:
+
+1. Right to opt out of sale and sharing (cross-context behavioral advertising). You must provide a "Do Not Sell or Share My Personal Information" link or the alternative opt-out link and honor opt-out preference signals such as Global Privacy Control. The CPPA and Attorney General have enforced hard here (Sephora, Healthline, Honda, Todd Snyder, Tractor Supply and others).
+2. Right to limit use and disclosure of SPI. If you use SPI beyond a narrow list of permitted purposes (providing the service reasonably expected, security, short-term transient use, quality, and a few others), you must offer a "Limit the Use of My Sensitive Personal Information" link. Selling SPI is not a permitted purpose, so selling it triggers that link. SPI that you collect or process without inferring characteristics about a person is outside the limit right, but sale is not.
+3. Notice at collection must list SPI categories, purposes, whether sold or shared, and retention periods.
+4. Consent for minors. Under-16 consumers: opt-in required for sale or sharing, and the same applies to their SPI.
+5. Contracts. Any third party buying SPI must be bound by a CCPA-compliant contract limiting its use. Sold data cannot be used for unrelated purposes.
+6. Risk assessments. Under the CPPA's new regulations, selling or sharing personal information and processing SPI require a risk assessment, for activity beginning January 1, 2026, with a report to the CPPA due April 1, 2028 and documentation available on request. Dark patterns in opt-out flows are scrutinized.
+7. Data minimization. Collection and use must be reasonably necessary and proportionate to the disclosed purpose (1798.100(c)); selling SPI for an incompatible purpose fails that test.
+
+Where California sharply restricts or bans it
+
+- Health and reproductive data: the Confidentiality of Medical Information Act (CMIA) constrains disclosure of medical information, and AB 254 expanded it to reproductive and sexual health digital services. AB 45 bans geofencing around health care facilities for certain purposes and restricts sale of location data tied to health facilities. HIPAA applies to covered entities.
+- Precise geolocation: the Attorney General has pursued location sales, and bills such as AB 1355 have sought tighter limits. Check whether a 2026 bill passed.
+- Biometric and genetic data: the Genetic Information Privacy Act requires express consent for disclosure; CCPA exempts some regulated data but applies GIPA separately.
+- Financial data: GLBA and the California Financial Information Privacy Act (SB 1) require opt-in for sharing with nonaffiliated third parties and opt-out for affiliates.
+- Data brokers: the Delete Act requires broker registration and DROP deletion processing since August 2026. Data brokers selling SPI should expect heightened enforcement.
+- Immigration and citizenship status: recent law added it as SPI, and other statutes limit its disclosure.
+- Federal rules: the Department of Justice bulk data rule limits sale of sensitive data to countries of concern, and the Protecting Americans' Data from Foreign Adversaries Act also applies.
+
+Practical advice: map each SPI element to a legal basis and exception, offer both opt-out and limit links, honor GPC, update contracts, perform risk assessments, and consider whether you really need to sell SPI. Many companies decide that the legal and reputational cost justifies not selling it at all. Verify current statutory text before relying on this summary.

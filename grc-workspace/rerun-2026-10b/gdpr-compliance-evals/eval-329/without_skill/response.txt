@@ -1,0 +1,36 @@
+Not very forgiving. Art. 6(1)(c) (processing necessary for compliance with a legal obligation to which the controller is subject) is one of the narrower and more demanding bases, and "we're required by law" as a blanket statement will not survive scrutiny from a supervisory authority. My suggestion is to treat it as something to be proven processing activity by processing activity.
+
+What the law actually requires
+
+1. A specific legal obligation (Art. 6(3), Recital 41). The basis must be laid down in Union or Member State law, and the law must be clear and precise, with its application foreseeable to the people subject to it. Art. 6(3) says the purpose of processing must be determined in that legal basis. It must meet an objective of public interest and be proportionate.
+
+2. An obligation, not a permission. The law must require you to do something. Laws that merely allow, encourage or make something advisable do not suffice. Contractual obligations, industry standards, group policies, regulator "expectations" and foreign laws (for example US requirements) generally do not count, because the obligation must derive from EU or Member State law. Obligations under non-EU law are typically handled through legitimate interests, with transfer rules in mind.
+
+3. Necessity. The processing must be necessary for compliance, not just convenient. The CJEU applies necessity strictly and with data minimisation (for example the Schrems and Rīgas satiksme case law, and the principles in C-175/20 SS SIA). If you can comply with less data or a less intrusive method, you must.
+
+4. Obligation on the controller. The legal duty must apply to you as the controller. Obligations on your customers, partners or group entities do not automatically transfer to you.
+
+5. Scope. The basis covers only what the law requires: the data categories, purposes and retention periods the law demands. Processing beyond that (analytics on tax records, marketing using KYC data, repurposing HR data) needs its own basis. Reusing data collected for legal purposes for a new purpose also triggers Art. 6(4) compatibility analysis.
+
+Consequences of relying on 6(1)(c)
+- Data subjects lose the right to erasure (Art. 17(3)(b)) where retention is required, and the right to data portability and the right to object do not apply (Arts. 20, 21). That is a reason regulators insist on strictness: a controller shouldn't be able to remove rights by labelling processing "legal obligation".
+- You must still comply with transparency (Arts. 13-14, and you must say which legal obligation), minimisation, accuracy, security and storage limitation. Retention should be linked to the statutory period, then deletion.
+
+Typical genuine uses
+- Tax and accounting records, payroll and social security reporting, AML/KYC checks, employment law obligations, health and safety records, responding to court orders and lawful regulator requests, sanctions screening, and (in many cases) DSA or financial regulation duties.
+
+Common misuses
+- Using "legal obligation" for everything in HR or finance where a contract or legitimate interest would be the real basis.
+- Citing a general duty of care or security (for example NIS2 or the GDPR's own Art. 32). The GDPR itself generally cannot be the legal obligation for processing under Art. 6(1)(c) in a circular way. Security measures normally rest on legitimate interests or the underlying law.
+- Relying on contractual compliance clauses from customers.
+- Retaining data "in case of audit" beyond statutory limits.
+
+How to test your legal team's claim
+1. List each processing activity in the RoPA.
+2. For each one, identify the exact statute, article and Member State, and what it requires.
+3. Confirm it is an obligation on you, and check the data and retention are within what it demands.
+4. Record the analysis (accountability, Art. 5(2)).
+5. Where it fails, reassign to contract (6(1)(b)), legitimate interests (6(1)(f), with a documented balancing test) or consent.
+6. Align privacy notices and retention schedules with the results.
+
+Bottom line: legal obligation is a robust basis only where you can point to a specific, binding EU or Member State provision that requires exactly this processing. If counsel's claim is "most" of your processing, I would expect much of it to need reclassification, and that matters for notices, rights handling and regulatory exposure.

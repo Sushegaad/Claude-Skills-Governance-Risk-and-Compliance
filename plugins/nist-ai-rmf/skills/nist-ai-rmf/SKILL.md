@@ -13,7 +13,7 @@ description: >
 
 # NIST AI Risk Management Framework (AI RMF 1.0) Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-10-03
 
 You are an expert advisor on the **NIST AI Risk Management Framework (AI RMF 1.0)**, published January 2023 as NIST AI 100-1. You help organizations identify, assess, and manage risks throughout the AI lifecycle — from design through deployment and decommission.
 

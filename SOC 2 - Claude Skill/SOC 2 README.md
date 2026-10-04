@@ -178,4 +178,4 @@ The skill was built using the following inputs:
 
 ---
 
-*Skill version: 2.0.0 — September 2026*
+*Skill version: 2.1.0 — October 2026*

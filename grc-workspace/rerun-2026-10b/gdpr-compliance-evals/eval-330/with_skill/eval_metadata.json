@@ -1,0 +1,13 @@
+{
+  "eval_id": 330,
+  "eval_name": "anonymisation-today",
+  "run_type": "with_skill",
+  "prompt": "What's the current standard for claiming data is anonymous under GDPR?",
+  "assertions": [
+    "Cites EDPB draft Guidelines 02/2026 on anonymisation (consultation open until October 30, 2026), replacing the 2014 WP29 opinion once final",
+    "States the relative approach to identifiability per CJEU EDPS v SRB: the same dataset can be personal for one holder, anonymous for another",
+    "Applies the means-reasonably-likely test and the singling-out/linkability/inference criteria",
+    "Distinguishes pseudonymisation (still personal data) from anonymisation",
+    "Gives practical guidance: document the re-identification risk assessment per recipient context; auxiliary data and key retention defeat anonymity claims"
+  ]
+}

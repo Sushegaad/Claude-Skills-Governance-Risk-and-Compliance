@@ -1,0 +1,56 @@
+Short answer: CSRD sustainability reporting is subject to limited assurance, performed by your statutory auditor or an independent assurance services provider (IASP). The EU-specific limited-assurance standard is still being finalised, and reasonable assurance is no longer on the legislative path.
+
+**1. Who provides assurance (Art. 26a Accounting Directive as amended by the CSRD)**
+
+- Your statutory auditor, or
+- An independent assurance services provider (IASP), where the Member State permits this.
+
+The practical choice is often the financial statement auditor, because of the efficiency of working with the same team. Check the position in your Member State, because the national rules on who qualifies as an IASP differ.
+
+**2. What the assurance covers**
+
+- Compliance of the sustainability reporting with the ESRS.
+- The double materiality assessment process, including the process to identify material information.
+- The sustainability information itself, including the XBRL/iXBRL digital tagging requirement.
+- Connection of the sustainability information to the dedicated section of the management report (Art. 19a).
+
+**3. Level of assurance: limited**
+
+Limited assurance has applied from the first reporting year. The conclusion is in negative form ("nothing has come to our attention"), supported by inquiries and analytical procedures, with less extensive evidence than a financial audit.
+
+A change from earlier guidance: older material, including the original CSRD text, said reasonable assurance would be phased in later, with a Commission review by 2028. The Omnibus removed the empowerment for reasonable-assurance standards, so limited assurance remains the regime. If you have an internal roadmap that budgets for a move to reasonable assurance, you can drop that assumption.
+
+**4. Against what standard: current status as of 3 October 2026**
+
+- There is no finalised EU-wide limited-assurance standard yet. In the interim, practitioners use national standards or international ones such as ISAE 3000 (Revised) and ISSA 5000, depending on the Member State's rules. Confirm with your auditor which is being applied in your jurisdiction.
+- CEAOB delivered its technical advice to the Commission on 25 September 2026. The advice proposes an EU limited-assurance standard built on ISSA 5000, with EU add-ons and carve-outs.
+- The Commission's limited-assurance delegated act is due by 1 July 2027. Until it is adopted, this is advice, not law.
+
+So the honest answer on "against what standard" is: the EU standard is in the pipeline and your auditor will use the framework applicable in your Member State until then. Don't tell the board that the EU standard has been adopted.
+
+**5. Interaction with the Omnibus changes**
+
+- Check whether you are in mandatory scope (Directive (EU) 2026/470: more than 1,000 employees and more than EUR 450 million net turnover). If you are out of scope, assurance is not mandatory and any assurance on voluntary reporting is a commercial choice.
+- If you are in scope, what is assured depends on your ESRS basis. For FY2026 you may choose the 2023 ESRS (as amended) or the revised ESRS (Delegated Regulation (EU) 2026/1563, in force 10 November 2026). For financial years beginning 1 January 2027, the revised ESRS apply. The revised ESRS cut mandatory datapoints from over 1,000 to roughly 320, which narrows what the auditor must examine.
+
+**6. Readiness checklist**
+
+1. Named owners for each material ESRS topic and each datapoint.
+2. DMA documented: methodology, scoring, stakeholder input, thresholds (ESRS 2 IRO-1).
+3. Data lineage from source system to reported figure, with completeness checks.
+4. Internal controls over sustainability reporting (ESRS 2 GOV-5), with management review and sign-off.
+5. Estimation methods documented for value-chain gaps, including limitations (ESRS 1, para. 64).
+6. Prior-year comparatives reconciled, plus a restatement policy.
+7. Reporting boundary and any differences from the financial reporting boundary documented.
+8. Audit committee oversight.
+
+Engage the assurance provider early. The reference guidance recommends agreeing scope, approach and timeline during gap-assessment, not at the end. If you can, build documentation of high quality from the start, because rebuilding evidence trails retrospectively is hard.
+
+**7. What to ask your auditor**
+
+- Which standard are you applying for our FY2026 engagement, and in which Member State's framework?
+- How will you handle our choice between 2023 and revised ESRS?
+- Will you review the XBRL tagging, and when is the ESEF sustainability taxonomy expected?
+- What changes do you expect when the EU limited-assurance standard is adopted?
+
+This is general compliance information, not legal advice. Check your Member State's transposition and your auditor's current methodology.

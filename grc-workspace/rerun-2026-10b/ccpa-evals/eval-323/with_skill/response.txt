@@ -1,0 +1,45 @@
+Yes. The law as it stands lets you collect, use, and even sell or share sensitive personal information (SPI) of California consumers, but only with the controls described below. A proposal that would have banned it outright did not become law.
+
+**The ban was vetoed**
+
+AB 1542 would have categorically prohibited selling or sharing SPI. The Governor vetoed it in September 2026 as "a step too far." (SB 435, a related bill, was not vetoed. It died in Assembly Appropriations in August.) So no categorical ban exists today, and none takes effect January 1, 2027. The statutory mechanism that governs SPI is still the **right to limit** (Civ. Code 1798.121), together with the opt-out of sale/sharing (1798.120).
+
+**What counts as SPI**
+
+- SSN, driver's license, passport, or other government ID
+- Account login with security code or credentials
+- Precise geolocation (within a radius of 1,850 feet)
+- Racial or ethnic origin, religious or philosophical beliefs, union membership
+- Contents of mail, email, or texts (unless you are the intended recipient)
+- Genetic data
+- Biometric data used to identify a person
+- Health or medical data
+- Sexual orientation or sex life
+
+**What you must do if you sell or share SPI**
+
+1. **Opt-out of sale/sharing applies.** Provide a "Do Not Sell or Share My Personal Information" link. Honor Global Privacy Control signals as an equivalent opt-out. No identity verification is needed to act on an opt-out beyond fraud screening. Effectuate it within 15 business days, pass it to service providers and contractors, and do not ask the consumer to reconsider for 12 months.
+2. **Right to limit applies.** If you use SPI for anything beyond the permitted purposes, provide a "Limit the Use of My Sensitive Personal Information" link (it may be combined with the opt-out link). Process requests within 15 business days and push the limitation to service providers and contractors.
+3. **Permitted purposes where no limit right is triggered:** providing services the consumer reasonably expects, security and integrity, short-term transient use (such as a contextual ad), services performed on your behalf, quality verification, and the activity for which the SPI was provided. Selling SPI to a data broker or using it for behavioral advertising is outside these purposes.
+4. **Notice at collection** must list the SPI categories, the purposes, the retention period for each, and whether the SPI is sold or shared.
+5. **Minors.** Selling or sharing PI of consumers under 16 requires opt-in, and under 13 requires parental consent.
+
+**Ad tech trap.** Passing cookie IDs, device identifiers, or hashed emails alongside health, location, or other SPI signals to ad platforms is "sharing." A contract that calls the platform a "service provider" does not change that for cross-context behavioral advertising. Under Regs 7050(c), a vendor providing CCPA-defined cross-context behavioral advertising is a third party. Restrictive contract terms cannot convert it into service provider activity.
+
+**Enforcement and risk**
+
+- Penalties are up to $2,500 per unintentional violation and $7,500 per intentional violation (1798.155).
+- Disney ($2.75M) involved opt-out deficiencies and ad tech sharing. GM paid $12.75M over connected-car data. Both show that location and behavioral data flows to third parties draw the largest penalties.
+- A breach of SPI such as health or credentials also carries the private right of action of $100-$750 per consumer per incident if reasonable security was lacking (1798.150).
+- Risk assessments: processing SPI, and selling or sharing PI, are activities regulators treat as significant risk. Assessments are required from January 1, 2026, with the first CPPA submissions due April 1, 2028 for processing ongoing at the start of 2026.
+
+**Practical recommendation**
+
+Do not rely on the veto as a signal that regulators will tolerate SPI sales. Practical steps:
+1. Inventory every SPI element and every recipient.
+2. Cut SPI out of any ad tech or broker flow that is not essential.
+3. Where you keep it, make sure both links work, GPC is detected, and propagation to vendors is tested.
+4. Document the risk assessment and the necessity of the disclosure.
+5. Check other regimes (health privacy and consumer health data laws, geolocation rules in other states) that may bar the sale outright even where California does not.
+
+This is general compliance information, not legal advice. Confirm the veto status and your data flows with counsel.

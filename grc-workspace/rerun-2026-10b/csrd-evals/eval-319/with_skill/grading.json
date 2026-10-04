@@ -1,0 +1,33 @@
+{
+  "eval_id": 319,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Defines both lenses: impact materiality (inside-out) and financial materiality (outside-in), with a topic material if it meets either",
+      "passed": true,
+      "evidence": "\"impact materiality plus financial materiality, a topic is material if it meets either or both\" with inside-out/outside-in steps 2-5"
+    },
+    {
+      "text": "Describes the process: context/stakeholder mapping, identification of impacts/risks/opportunities, scoring with defined thresholds, validation and documentation",
+      "passed": true,
+      "evidence": "Eight-step process: \"Understand the context\" + value-chain map, stakeholder engagement, scoring \"1 to 5... set and justify your thresholds\", \"Validate and update\", \"Document and disclose\""
+    },
+    {
+      "text": "Connects DMA output to disclosure scope: material topics drive which topical standards and datapoints apply (ESRS 2 general disclosures always apply)",
+      "passed": true,
+      "evidence": "\"the DMA matters more as the filter for topical disclosures. ESRS 2 general disclosures remain mandatory regardless of outcome\""
+    },
+    {
+      "text": "Reflects the revised-ESRS simplification accurately (fewer mandatory datapoints; relief provisions) without claiming the DMA itself was abolished",
+      "passed": true,
+      "evidence": "\"Mandatory datapoints fall from over 1,000 to roughly 320\"; \"What stays constant: double materiality... the DMA drives what you report\""
+    },
+    {
+      "text": "Output is actionable: stepwise plan or table, with governance/audit-trail expectations for assurance readiness",
+      "passed": true,
+      "evidence": "Stepwise plan plus \"keep decisions, scoring and stakeholder evidence traceable, and have the board or audit committee approve the outcome\" (limited assurance, Art. 26a)"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

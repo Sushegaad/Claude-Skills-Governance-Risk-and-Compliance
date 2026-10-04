@@ -1,0 +1,33 @@
+{
+  "eval_id": 324,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Cites the registration blitz: SalesIntel Research fined $36,400 (September 1, 2026) for failing to register while selling Californians' PI",
+      "passed": false,
+      "evidence": "SalesIntel and the $36,400 fine never appear; only older sweep examples are cited (\"examples include Background Alert, Accurate Append and others\")."
+    },
+    {
+      "text": "Cites Enforcement Advisory 2026-01 (September 3, 2026): registration-information ACCURACY, with $200/day exposure for incorrect registry entries",
+      "passed": false,
+      "evidence": "Enforcement Advisory 2026-01 is never cited; the $200/day figure appears only for \"failure to register or file deletion reports\" and unprocessed deletion requests, not the registry-accuracy advisory."
+    },
+    {
+      "text": "States DROP mechanics: deletion-request processing went live August 1, 2026, and brokers must process DROP requests",
+      "passed": true,
+      "evidence": "\"From August 1, 2026, registered brokers must log in to DROP at least every 45 days, process all deletion requests, and delete matching records.\""
+    },
+    {
+      "text": "Mentions AB 883 (signed September 27): broker DSR response deadline cut from 45 to 30 days plus DROP notice duties",
+      "passed": false,
+      "evidence": "AB 883 and the 45-to-30-day change are never mentioned."
+    },
+    {
+      "text": "Gives a compliance checklist: registration accuracy review, DROP integration, metrics disclosures, deletion workflows",
+      "passed": false,
+      "evidence": "Checklist includes registration accuracy (\"Confirm registration is current, accurate and complete\"), DROP integration (\"Operationalize DROP\") and deletion/suppression workflows, but metrics disclosures are absent from the checklist. Compound assertion not fully met."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

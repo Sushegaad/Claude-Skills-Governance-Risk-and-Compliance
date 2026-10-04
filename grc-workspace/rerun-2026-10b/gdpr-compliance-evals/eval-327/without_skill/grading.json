@@ -1,0 +1,33 @@
+{
+  "eval_id": 327,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Cites EDPB Guidelines 04/2026 on administrative fines in relation to other corrective powers (adopted at the September 2026 plenary; consultation open to November 13)",
+      "passed": false,
+      "evidence": "Only \"EDPB Guidelines 04/2022 on fine calculation\" cited; Guidelines 04/2026 and the November 13 consultation are absent."
+    },
+    {
+      "text": "Describes the five-step methodology for deciding whether a fine is appropriate at all",
+      "passed": false,
+      "evidence": "No five-step methodology for deciding whether a fine is appropriate; only Art. 83(2) factors and patterns."
+    },
+    {
+      "text": "States that fines are not automatic: the guidelines map the full Art. 58(2) corrective toolbox (warnings, reprimands, compliance orders, bans, certification withdrawal) and when each applies alone or with a fine",
+      "passed": false,
+      "evidence": "\"warnings, reprimands, orders to comply, orders to bring processing into line, bans on processing, and administrative fines\" \u2014 certification withdrawal is missing from the toolbox, so the compound assertion fails."
+    },
+    {
+      "text": "Mentions the harmonisation intent (14 practical examples; consistent DPA practice across the EEA)",
+      "passed": false,
+      "evidence": "No mention of 14 examples or EEA harmonisation intent; instead notes \"Practice varies by country.\""
+    },
+    {
+      "text": "Connects to the existing fining-calculation guidelines (04/2022 methodology) as the separate quantum step",
+      "passed": true,
+      "evidence": "\"the EDPB Guidelines 04/2022 on fine calculation explain the method\" \u2014 the calculation guidelines are cited as the quantum methodology."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

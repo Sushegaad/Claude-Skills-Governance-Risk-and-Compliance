@@ -1,0 +1,27 @@
+Short answer: on the numbers you give, you are most likely not in scope of CSRD as amended by the Omnibus I content directive, because the employee threshold is now more than 1,000. You should still prepare for customer data requests, and the EU has deliberately created a ceiling on what they can ask for.
+
+1. The scope test after Omnibus I
+Under the amended Accounting Directive, a large undertaking is in CSRD scope if it has more than 1,000 employees on average and either more than EUR 450M net turnover (for EU companies). The old test (250 employees plus two of three size criteria: EUR 50M turnover, EUR 25M balance sheet) is no longer the gate. Both conditions must be met: employees above 1,000 AND turnover above EUR 450M.
+
+At 800 employees you fail the employee limb even though your EUR 600M turnover passes the turnover limb. So, as an EU company, you are out of scope. Points to verify:
+- Employee count: it is the average number of employees over the financial year, and the definition in the directive should be counted as full-time equivalents under the national transposition. Check whether group-level numbers (consolidated) push you above 1,000. If you are a subsidiary of a larger group, the group may report on a consolidated basis and you may get an exemption, but the group's own thresholds are what matter.
+- Non-EU parent: if you are the EU arm of a non-EU group, the third-country regime applies (EU net turnover above EUR 450M for two consecutive years, with an EU subsidiary or branch meeting thresholds). Reporting under that regime starts later. Your EUR 600M EU turnover may matter there, depending on your structure. You said "turnover in the EU", which suggests this may be relevant, so confirm what entity is the reporting group.
+- Listed SMEs: they were removed from scope entirely.
+- National transposition: member states must transpose the content directive; until they do, there may be gaps. Stop-the-clock means wave-two and wave-three entities do not report until FY2027 at the earliest anyway, so there is no immediate compliance obligation even in the uncertain cases.
+- If you reach 1,000 employees in future, you would come in. Monitor headcount trends.
+
+2. Customers will ask anyway
+Many in-scope customers need value chain data (Scope 3, supplier due diligence, social and human rights information). Even though you are not a CSRD reporter, you are in their value chain. Key points:
+- The Omnibus introduced a "value chain cap": in-scope companies cannot require from value-chain partners with up to 1,000 employees more than what is in the voluntary standard for SMEs. The Commission has recommended the VSME standard (Commission Recommendation of July 2025) as that benchmark. Since you have 800 employees, you sit within this protection. A customer should not demand more than VSME-level data in a formal request, and the ESRS are meant to reflect that cap.
+- In practice commercial pressure will go beyond law: contract clauses, supplier codes, and questionnaires (CDP, EcoVadis, customer portals). The cap is a legal limit on what reporting companies can require under CSRD, but contract negotiation remains commercial.
+
+3. What to do
+1. Build a baseline: use the VSME (Basic module, then Comprehensive if customers need governance and strategy detail). It covers GHG emissions Scope 1 and 2, energy, pollution, water, waste, workforce, health and safety, and business conduct.
+2. Calculate your GHG inventory (Scope 1 and 2 and, where practical, the main Scope 3 categories) using the GHG Protocol. Having it audited or independently reviewed raises trust.
+3. Create a single, standard response pack so that you answer all customers with the same data, rather than answering each questionnaire from scratch. Include a policy summary, targets, certifications (ISO 14001, 50001), and a contact point.
+4. Triage requests: for each, ask whether it fits within VSME; where it asks for more, negotiate, ask which legal basis they rely upon, and consider whether the commercial value justifies the effort. CSDDD obligations of customers (supply chain due diligence) are also reduced and delayed, so do not assume everything asked is legally mandated.
+5. Protect confidential data: do not hand over detailed commercial data without NDAs.
+6. Governance: assign an owner, document data sources, and keep an evidence trail.
+7. Consider voluntary reporting: it can be a competitive advantage with banks and customers, and gets you ready if you cross the threshold.
+
+Caveat: my knowledge of national transposition is limited. Check your member state's law and get legal advice on group structure and non-EU parent effects.

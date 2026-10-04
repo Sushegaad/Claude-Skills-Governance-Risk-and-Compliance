@@ -1,0 +1,24 @@
+Short answer: wave-one companies (large public-interest entities with 500+ employees, reporting on FY2024 in 2025) currently apply ESRS Set 1 (Delegated Regulation (EU) 2023/2772). A simplified, revised ESRS is in the pipeline, and the expectation is that it applies from FY2027, with possible optional early use for FY2026. Please verify the exact adoption status before you lock your plans, because this has been moving quickly.
+
+1. Background: why the standards are being revised
+The Omnibus I package (sustainability simplification), proposed in February 2025, did two things. First, the "stop-the-clock" directive (Directive (EU) 2025/794) postponed reporting for wave two and wave three companies by two years. It did not delay wave one. Second, the content directive amends CSRD and CSDDD: it raises the scope threshold to more than 1,000 employees and more than EUR 450M net turnover, removes the sector-specific standards, replaces reasonable assurance with limited assurance only, and requires the Commission to revise the ESRS to reduce datapoints and clarify the double materiality assessment. EFRAG was mandated to deliver simplified draft ESRS. Its technical advice went to the Commission at the end of 2025, with a substantial reduction in mandatory datapoints (on the order of 60 percent or more cut in the headline figures cited) and more phase-in relief and flexibility.
+
+2. What you apply, year by year
+- FY2025 (reported in 2026): ESRS Set 1 as it stands, together with the Commission's "quick fix" relief. Wave-one companies can continue to use the existing phase-ins (for example, for some Scope 3, biodiversity and own-workforce datapoints) and the extended phase-ins have been aligned with the simplification work. Practically, you continue with the Set 1 structure: ESRS 1, ESRS 2, the topical standards you find material.
+- FY2026 (reported in 2027): This is the transition year. The Commission's revised ESRS delegated act is intended to apply for financial years starting 1 January 2027, but the expectation is that companies could optionally apply the simplified standards earlier. Unless and until the delegated act is adopted and survives scrutiny, Set 1 remains the legally binding standard for FY2026. I would plan on Set 1 as the baseline with a documented decision on whether to adopt early.
+- FY2027 (reported in 2028): The revised (simplified) ESRS are expected to be the binding standard, provided the delegated act is adopted and passes the Parliament and Council scrutiny period.
+
+3. Legal status of the revised standards
+Revised ESRS are not law until the Commission adopts them as a delegated act under Article 29b of the Accounting Directive, and the Parliament and Council have not objected during the scrutiny period (typically four months, extendable by two). EFRAG's technical advice is just advice. The Commission may deviate from it. Consequently, the revised ESRS are currently a draft and carry no legal force. Companies should treat the EFRAG advice as a strong signal of direction, not as something to comply with.
+
+4. Do you remain in scope at all?
+Check this first. Under the Omnibus content directive, scope is limited to companies with more than 1,000 employees and more than EUR 450M turnover (for EU companies). Many wave-one companies that were in scope on the 500-employee test will drop out. The transposition rules matter: member states may allow wave-one companies that fall below the new thresholds to be exempted for FY2025 and FY2026, depending on national transposition. Transposition is required by early 2027 or thereabouts, so national law is uneven. If you are out of scope, consider the voluntary standard (VSME) as a way to answer customer and bank requests.
+
+5. Practical recommendations
+- Confirm in-scope status using the new thresholds and your member state's transposition position.
+- Keep your FY2025 reporting on Set 1; do not rebuild your whole system around draft text.
+- Run a gap analysis between Set 1 and the EFRAG simplified draft so that a switch for FY2026 or FY2027 is cheap. The core architecture (double materiality, ESRS 2 general disclosures, E1 climate) is retained, so your climate and workforce data collection investments carry over.
+- Make a board-level decision on early adoption for FY2026, and disclose the basis of preparation clearly.
+- Track: the Commission delegated act, the scrutiny period, national transposition, and the taxonomy simplification which runs in parallel.
+
+Caveat: dates and percentages above reflect my understanding of a fast-moving file. Please confirm against the Official Journal and the Commission's site before relying on them.

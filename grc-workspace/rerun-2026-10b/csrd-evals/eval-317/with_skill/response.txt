@@ -1,0 +1,48 @@
+Short answer: no. At 800 employees you are outside mandatory CSRD scope, whatever your turnover. Your response to customer requests should be the voluntary standard, not a bespoke questionnaire for each customer.
+
+**1. Scope analysis**
+
+| Criterion | Requirement under Directive (EU) 2026/470 | You | Met? |
+|---|---|---|---|
+| Employees | More than 1,000 | 800 | No |
+| Net turnover | More than EUR 450 million | EUR 600M | Yes |
+| Verdict | Both are required (AND) | | **Out of mandatory scope** |
+
+Directive (EU) 2026/470 was published in the Official Journal on 26 February 2026 and entered into force in March 2026. Mandatory CSRD reporting now applies only to large undertakings with more than 1,000 employees and net turnover above EUR 450 million. The conditions are cumulative. Your EUR 600M turnover clears the financial test, but the headcount test fails, so you fall outside.
+
+Points to check:
+- **Headcount basis.** Confirm how employees are counted (average over the year, full-time equivalents). Being near the line matters, and 800 gives you a comfortable margin, but verify the counting method and whether any group entities aggregate.
+- **Group structure.** If you are part of a larger group, scope may be assessed at parent or consolidated level, and a group report could cover you. If your parent is itself above 1,000 employees and EUR 450M, you may still be asked to feed data into its report.
+- **Transposition.** The scope change must be transposed by Member States by about 19 March 2027, and Germany is still pending. If you operate in a Member State that has not yet transposed, check the local position, though the EU-level direction is clear.
+- **Growth.** If you cross 1,000 employees later, you would re-enter scope, so monitor it.
+- **Stop-the-clock context.** Directive (EU) 2025/794 had deferred the wave 2 and 3 reporting by two years before the scope cut. Companies like you that were previously expecting to report simply exit mandatory scope.
+
+**2. What to do when large customers ask for data**
+
+Customers that are themselves in scope still need value-chain information for their own reporting. But there is now a legal ceiling on what they can demand from you.
+
+- The voluntary standard, Commission Delegated Regulation (EU) 2026/1560 (VSME-based; in force 24 September 2026), is the reference vehicle for you.
+- It operates as the value-chain cap. Reporters may not demand more from value-chain partners with 1,000 employees or fewer than the content of this standard.
+
+So when a customer sends a long ESG questionnaire, your position is: "Here is our report under the EU voluntary standard." That is a legitimate, EU-recognised response.
+
+**3. Practical steps**
+
+1. **Prepare one voluntary-standard report.** Build a single package aligned to Delegated Regulation 2026/1560 and refresh it annually. Reuse it for every customer request.
+2. **Prepare a standard reply.** A short note that you are outside mandatory CSRD scope under Directive (EU) 2026/470, that you report under the voluntary standard, and that under the cap the customer's requests should not go beyond it. Keep it polite and factual.
+3. **Triage requests.** For each request, check what is genuinely beyond the voluntary standard. Where it is, you can decline, or agree selectively as a commercial choice.
+4. **Review contracts.** Look for supplier clauses that contractually require ESG data. A legal cap on what a reporter can demand does not automatically void contract terms already agreed, so have counsel check any existing flow-down clauses. I would not assume the cap overrides signed contract language without legal review.
+5. **Know your own numbers.** Scope 1 and 2 emissions, energy, headcount and basic workforce data are the usual asks. Having them ready helps customers who must estimate their Scope 3 anyway. Customers may use proxy or sector-average data where yours is not available, and they must disclose that estimation approach (ESRS 1, para. 64 per the reference).
+6. **Commercial upside.** Good data can be a differentiator in tender processes, even where it is not legally required.
+
+**4. Optional extras**
+
+- Using GRI, CDP or EcoVadis is still fine as a voluntary choice if a customer relationship justifies it.
+- Assurance is not required for you. If a customer asks for verified data, that is a commercial decision.
+- Keep an eye on the revised ESRS (Delegated Regulation 2026/1563, in force 10 November 2026) in case a customer references them. They bind your customers, not you.
+
+**5. Bottom line**
+
+You are not a CSRD reporter. Verify headcount method and group structure, then centralise your response on the voluntary standard and rely on the value-chain cap when requests exceed it.
+
+This is general compliance information, not legal advice. Confirm with counsel, particularly on group structure and contract clauses.

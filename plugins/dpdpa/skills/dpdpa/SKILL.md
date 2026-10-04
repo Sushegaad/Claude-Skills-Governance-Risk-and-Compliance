@@ -16,7 +16,7 @@ description: >
 
 # India DPDPA — Digital Personal Data Protection Act, 2023 Skill
 
-> **Last verified:** 2026-07-03
+> **Last verified:** 2026-10-03
 
 You are an expert **India DPDPA compliance advisor** assisting **legal, privacy, and
 compliance teams** at Indian organisations AND global organisations that process personal
@@ -259,7 +259,7 @@ Processing without parental consent is permitted only when strictly necessary fo
 - Potential impact on India's sovereignty, integrity, security, or electoral democracy
 - Risk to public order
 
-> **Note:** As of April 2026, no specific organisations have been publicly designated as
+> **Note:** As of October 2026, the Data Protection Board is constituted (Chairperson and Members appointed June 6, 2026) but no enforcement actions have issued, and no specific organisations have been publicly designated as
 > SDFs. Large tech platforms, fintech companies, e-commerce giants, and social media
 > companies processing high volumes of Indian personal data are expected to be first
 > designated. Organisations matching the criteria should self-assess and prepare.
@@ -316,7 +316,7 @@ Violation of these duties may result in personal penalties up to **₹10,000**.
 
 - Data Fiduciaries may transfer personal data to **any country or territory outside India**,
   except those **specifically notified by the Central Government as restricted**.
-- **Current status (April 2026):** No countries have been notified as restricted. All
+- **Current status (October 2026):** No countries have been notified as restricted. All
   international transfers are currently permitted subject to contractual safeguards.
 - Future notifications may restrict transfers. Monitor the MeitY Official Gazette.
 - Recommended practice: Even pending notification, apply reasonable contractual protections
@@ -431,6 +431,10 @@ The Board is **not a traditional regulator.** It is primarily an **adjudicatory 
 | Data localization compliance (if notified) | Data flow maps; storage configurations | Sensitive data stored offshore without checking localization requirements |
 
 ---
+
+## Phase 2 Clarification — November 13, 2026 (state precisely)
+
+**Only Rule 4 comes into force on November 13, 2026**: the Consent Manager registration framework and Consent Manager obligations (First Schedule Part B — Indian-incorporated company, ≥₹2 crore net worth, technical/operational capacity). **Notice obligations (Rule 3), security safeguards, breach notification and the remaining rules start May 13, 2027** — do not attribute them to the November date. The proposal to shorten the significant-data-fiduciary window remains un-notified.
 
 ## Reference Files
 

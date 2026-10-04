@@ -1,0 +1,33 @@
+{
+  "eval_id": 323,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States yes, with the statutory mechanism: consumers hold the right to LIMIT use/disclosure of sensitive PI — there is no categorical ban",
+      "passed": true,
+      "evidence": "\"Yes. The law as it stands lets you... sell or share sensitive personal information\"; \"no categorical ban exists today... The statutory mechanism that governs SPI is still the right to limit (Civ. Code 1798.121).\""
+    },
+    {
+      "text": "Reports the veto correctly: AB 1542, which would have categorically banned selling/sharing sensitive PI, was vetoed September 27, 2026 ('a step too far')",
+      "passed": true,
+      "evidence": "\"AB 1542 would have categorically prohibited selling or sharing SPI. The Governor vetoed it in September 2026 as 'a step too far.'\" Correct bill, outcome and quoted veto rationale (exact day not given, but not contradicted)."
+    },
+    {
+      "text": "Does NOT claim SB 435 was vetoed — it died in Assembly Appropriations in August 2026 (a response attributing the veto to SB 435 fails)",
+      "passed": true,
+      "evidence": "\"(SB 435, a related bill, was not vetoed. It died in Assembly Appropriations in August.)\" — exactly matches ground truth."
+    },
+    {
+      "text": "Covers the operative sensitive-PI duties: notice, purpose limitation, the Limit link/signal honoring",
+      "passed": true,
+      "evidence": "\"Notice at collection must list the SPI categories, the purposes, the retention period\"; \"Permitted purposes where no limit right is triggered...\"; \"provide a 'Limit the Use of My Sensitive Personal Information' link\" and \"Honor Global Privacy Control signals.\""
+    },
+    {
+      "text": "Flags trajectory: legislative pressure on sensitive-data sales continues — design for restriction",
+      "passed": true,
+      "evidence": "\"Do not rely on the veto as a signal that regulators will tolerate SPI sales... Cut SPI out of any ad tech or broker flow that is not essential.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}
