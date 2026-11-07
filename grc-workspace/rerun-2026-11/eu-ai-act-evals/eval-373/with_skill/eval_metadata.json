@@ -1,0 +1,13 @@
+{
+  "eval_id": 373,
+  "eval_name": "harmonised-standards",
+  "run_type": "with_skill",
+  "prompt": "Where do AI Act harmonised standards stand as of November 2026, and what does that mean for conformity?",
+  "assertions": [
+    "States EN 18286:2026 (AI quality management, supporting Article 17) became the first AI Act harmonised standard cited in the OJEU, announced October 15, 2026",
+    "Explains citation in the OJEU gives a presumption of conformity for the covered requirements",
+    "Notes the broader standardisation request deadline was revised to February 2027",
+    "Mentions further standards (such as risk management) are still in the pipeline",
+    "States the high-risk application dates (December 2, 2027 for Annex III; August 2, 2028 for Annex I) run independently of standards progress"
+  ]
+}

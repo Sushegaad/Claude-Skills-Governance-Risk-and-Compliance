@@ -1,0 +1,17 @@
+I can't give you reliable "latest numbers" from memory, and I'd rather not invent statistics. Here is what I know, how to get the current figures, and how to read them.
+
+Where the data comes from
+- GSA's Government-wide Section 508 Assessment. GSA's Office of Government-wide Policy runs it under Section 508(a)(3). It is periodic (roughly every two years, with earlier reports for FY2018, FY2019, FY2021, FY2023 and later) and is published at section508.gov. Use the most recent report there for exact figures.
+- The assessment is built on agency self-reported data: agency surveys, plus a sample of web pages and documents tested with automated and manual methods. Agencies test their own sampled public web pages and electronic documents, and the data feeds the "Section 508 Maturity" or "Accessibility Program Maturity" analysis.
+- Other sources: agency Inspectors General and GAO reports, Agency 508 program pages and the annual Section 508 reports to the Department of Justice (DOJ reports under Section 508 were issued in 2012 and 2018, and I believe a later one followed).
+
+What the trend has looked like, in general terms (qualitative, verify the numbers)
+- Federal Section 508 compliance has been uneven. Public-facing websites generally do better than internal ones, and electronic documents (PDF, Office files) and internal enterprise systems do worse.
+- Agency program maturity (having a policy, a coordinator, training, procurement controls, testing processes) has improved over time but many agencies still lack mature processes for testing and for remediation.
+- Reports consistently find that agencies lack dedicated resources, that testing is inconsistent, and that procurement is a weak point because Accessibility Conformance Reports (VPATs) from vendors are often not validated.
+- GAO and IG reviews have repeatedly found gaps between what agencies assert and what testing shows.
+
+How to use this
+- Pull the most recent GSA assessment report and the agency-specific dashboard from section508.gov, and cite the report and fiscal year with each number.
+- Treat self-reported percentages as indicators, not audited results.
+- If you tell me which agency or which metric (web, documents, ICT procurement, maturity score) you care about, I can help structure a comparison, but I would still need you to supply the current figures.

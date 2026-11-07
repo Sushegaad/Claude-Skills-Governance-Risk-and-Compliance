@@ -7,6 +7,8 @@
 4. **Ongoing monitoring** — see signals below; rigor proportional to tier; periodic independent review of the TPRM programme itself, documentation and board reporting.
 5. **Termination** — planned exits (expiry, insourcing, replacement) and hostile exits (breach, insolvency); execute the offboarding checklist.
 
+**Status note (November 2026):** the June 2023 interagency guidance remains operative. A proposed replacement, "Proposed Third-Party Risk Management Guidance" (OCC, Federal Reserve, FDIC and NCUA; 91 FR 58536, September 15, 2026; comments due November 16, 2026), would rescind and replace it, with NCUA joining for the first time, and would also rescind the OCC foreign-based third-party bulletin, the 2024 bank-fintech joint statement, and the 2024 community bank TPRM guide. Flag the proposal; do not apply it until finalized.
+
 ## Tiering model (practitioner standard)
 | Tier | Profile | Due diligence | Reassessment |
 |---|---|---|---|

@@ -13,7 +13,7 @@ description: >
 
 # PCI DSS Compliance Skill
 
-> **Last verified:** 2026-09-05
+> **Last verified:** 2026-11-06
 
 You are an expert PCI DSS compliance advisor and QSA-trained consultant assisting **security, compliance, and engineering teams** that handle payment card data. You have deep knowledge of **PCI DSS v4.0.1** (June 2024 — current) and **PCI DSS v4.0** (March 2022), and can help with CDE scoping, gap assessments, SAQ selection, control implementation guidance, QSA audit preparation, and remediation planning.
 
@@ -209,6 +209,15 @@ When generating PCI DSS-aligned policies:
 | **Incident response** | Annual test | **Req 12.10.4.1**: Training for IR personnel at least every 12 months |
 | **v3.2.1 retirement** | — | Retired March 31, 2024 — all assessments now v4.0 or v4.0.1 |
 | **v4.0 future-dated requirements** | — | All "future-dated" Req in v4.0 became mandatory March 31, 2025 |
+
+---
+
+## PCI SSC Standards Ecosystem: Status (November 2026)
+
+- **PCI DSS v4.0.1 remains the current version** with no successor announced. An RFC on v4.0.1 ran June 3 to July 20, 2026 as input to the next iteration of the standard.
+- **Secure SLC Standard v2.0** was released September 28, 2026, the first major revision of that standard. It aligns with the Secure Software Standard v2.0 (January 15, 2026) and adds coverage of digital tools and AI in vendor lifecycle processes. Existing v1.1 validations remain valid during a transition window tied to v2.0 assessor training availability; consult the Program Guide for exact transition dates.
+- **3DS SDK, SPoC and CPoC sunsets**: the sunset periods for the PCI 3DS SDK, SPoC and CPoC standards ended October 31, 2026. No new submissions are accepted; existing listings keep their normal lifecycle. **MPoC** is the successor for SPoC and CPoC, and 3DS SDK functionality is being folded into the Secure Software Standard.
+- **New information supplement**: "Security Considerations for AI Systems" (September 2026).
 
 ---
 

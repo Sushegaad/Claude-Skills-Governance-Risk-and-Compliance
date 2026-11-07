@@ -1,0 +1,33 @@
+{
+  "eval_id": 346,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States 24 of 27 Member States have transposed; the outstanding ones are France and Ireland (draft laws pending) and Spain (bill stalled)",
+      "passed": true,
+      "evidence": "\"24 of the 27 EU Member States have now transposed... France: draft law still pending. Ireland: draft law still pending. Spain: the bill has stalled.\""
+    },
+    {
+      "text": "States the Commission referred Ireland, Spain, France and the Netherlands to the CJEU on July 8, 2026, seeking financial penalties (lump sums and daily payments)",
+      "passed": true,
+      "evidence": "\"8 July 2026: referral to the Court of Justice of the EU (IP/26/1499) of Ireland, Spain, France and the Netherlands... seeking lump-sum and daily penalty payments\""
+    },
+    {
+      "text": "Notes the Netherlands has since transposed: its Cyberbeveiligingswet entered into force August 15, 2026",
+      "passed": true,
+      "evidence": "\"The Cyberbeveiligingswet (Cbw)... entered into force on 15 August 2026... replacing the Wbni\""
+    },
+    {
+      "text": "References the earlier procedural steps: letters of formal notice November 2024 and reasoned opinions May 2025",
+      "passed": true,
+      "evidence": "\"28 November 2024: letters of formal notice... 7 May 2025: reasoned opinions\""
+    },
+    {
+      "text": "Advises companies in untransposed states to prepare against the directive text rather than wait",
+      "passed": true,
+      "evidence": "\"Do not treat that as a reason to wait... prepare against the directive text: Art. 20 governance, the Art. 21(2)(a)-(j) measures...\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

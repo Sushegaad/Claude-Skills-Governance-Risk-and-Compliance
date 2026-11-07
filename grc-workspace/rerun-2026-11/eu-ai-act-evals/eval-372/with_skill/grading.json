@@ -1,0 +1,33 @@
+{
+  "eval_id": 372,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Cites Implementing Regulation (EU) 2026/1755, published in the OJ July 21, 2026 and in force August 10, 2026",
+      "passed": true,
+      "evidence": "\"Commission Implementing Regulation (EU) 2026/1755. It was published in the Official Journal on 21 July 2026 and entered into force on 10 August 2026.\""
+    },
+    {
+      "text": "Covers model evaluations including API, source code and model access under Article 92(3)",
+      "passed": true,
+      "evidence": "\"Model evaluations (Art. 92). It sets how evaluations are run, including access through APIs, to source code, and to the model itself.\""
+    },
+    {
+      "text": "Covers the appointment and independence of external experts",
+      "passed": true,
+      "evidence": "\"It covers how independent experts are appointed to carry out evaluations and how their independence is ensured.\""
+    },
+    {
+      "text": "Covers fine proceedings: preliminary findings, the right to be heard, and access to the file",
+      "passed": true,
+      "evidence": "\"The Commission issues preliminary findings, the provider has a right to be heard\" plus \"Access to the file. The provider can see the evidence the Commission relies on\""
+    },
+    {
+      "text": "States the five-year limitation period for fines",
+      "passed": true,
+      "evidence": "\"There is a five-year limitation period for the Commission's power to impose penalties.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

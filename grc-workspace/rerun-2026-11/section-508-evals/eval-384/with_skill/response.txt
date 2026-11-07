@@ -1,0 +1,54 @@
+Here is what I'd require from vendors today, organized as draft RFP and contract language plus verification steps.
+
+**1. Standard and scope**
+
+- Require conformance with the Revised Section 508 Standards (36 CFR Part 1194), which incorporate **WCAG 2.0 Level A and AA**. That is the operative baseline. No refresh rulemaking is under way as of November 2026.
+- Name the applicable provisions:
+  - E205.2: web content
+  - E205.3: electronic documents
+  - E205.4: software user interfaces
+  - E204: authoring tools
+  - Chapter 3: functional performance criteria
+  - Chapter 4: hardware
+  - Chapter 6: support documentation and services
+- Include FAR clause 52.239-2 and follow FAR Subpart 39.2.
+- You may ask for WCAG 2.1 AA as a stretch goal. It is not required by Section 508. Don't confuse it with the DOJ ADA Title II and HHS Section 504 web rules, which use 2.1 AA but bind other entities.
+
+**2. Documentation from the vendor**
+
+- A current Accessibility Conformance Report (ACR) on the **VPAT 2.x WCAG Edition**, delivered with the proposal or within 30 days of award. Reject VPAT 1.x.
+- The ACR must cover the exact product and version you are buying.
+- It must state the evaluation methods: tools used (axe, WAVE), assistive technology and browser pairs (JAWS + Chrome, NVDA + Chrome or Firefox, VoiceOver + Safari), and test dates.
+- Each "Supports" claim needs remarks. Challenge blanket "Not Applicable" entries.
+- It must include Chapter 3 functional performance criteria, and Chapter 6 where applicable.
+- An updated ACR with each major release.
+
+**3. Remediation and support commitments**
+
+| Severity | Examples | Fix within |
+|---|---|---|
+| Critical | Keyboard trap, content a screen reader cannot reach | 30 days |
+| High | Missing form labels, contrast failures on key flows | 60 days |
+| Medium | Other nonconformances | 90 days |
+
+- Require a remediation roadmap for any stated gaps.
+- If a vendor invokes undue burden or fundamental alteration (E202), require a written determination and an alternative means of access, such as a phone hotline or accessible format on request. In practice that determination is the agency's.
+
+**4. Verification (this is where agencies fail)**
+
+The FY2025 Governmentwide Section 508 Assessment found that under 30 percent of agencies almost always verify ICT deliverables in acquisition. The average conformance score was 1.96 out of 5. So don't take the ACR at face value.
+
+- Run your own acceptance tests before you accept a deliverable: an automated scan (it catches only about 30 to 40 percent of issues), keyboard-only testing, screen reader testing, a contrast check, and 200 percent zoom.
+- Test documents too. For PDFs, check tagging, reading order, alt text, form field names, table headers, language and title.
+- Make acceptance and payment conditional on passing.
+- Consider requiring the right to have an independent tester check the product.
+
+**5. Common VPAT problems to screen for**
+
+Outdated template, "Supports" without evidence, "Not Applicable" overuse, a missing Chapter 3, no testing method disclosed, and a version mismatch.
+
+**6. Governance**
+
+Document your Section 508 determinations and keep records for audit. Reference OMB M-24-08 for agency management expectations, and use Section508.gov for templates and testing guidance. Check the current rule text and consult your agency's Section 508 program office and counsel before you finalize clauses.
+
+This is general compliance information, not legal advice.

@@ -1,0 +1,23 @@
+Short answer: SDAIA has the formal power to enforce the PDPL and has been active in guidance and regulatory steps, but as far as I know there is little or no publicly documented record of large, named penalties. I cannot verify anything after my knowledge cutoff, so treat this as a starting point and check SDAIA and the National Data Governance Platform for current information. This is not legal advice.
+
+1. Legal timeline
+- The PDPL was issued by Royal Decree M/19 in September 2021, amended in March 2023, and took effect on 14 September 2023.
+- A one-year grace period ended on 14 September 2024, which is when the Law and its Implementing Regulations (and the Regulation on Personal Data Transfer outside the Kingdom) became fully enforceable.
+- SDAIA is the competent authority. The National Data Management Office (NDMO) handles related regulatory work, and SDAIA was expected to hand supervision to a regulator eventually.
+
+2. Penalties on the books
+- Unlawful disclosure or publication of sensitive data with intent to harm or for personal benefit: criminal penalty of up to two years' imprisonment and a fine of up to SAR 3 million.
+- Other violations: warnings or fines of up to SAR 5 million, which can be doubled for repeat offences, plus possible confiscation of proceeds.
+- Complaints go through SDAIA, and violations are reviewed by a committee. Individuals may also claim compensation.
+
+3. Observable enforcement activity (as far as I know)
+- Publication of the implementing rules, the transfer regulation, guidance and templates, a controller registration regime on the National Data Governance Platform, and awareness campaigns.
+- Compliance outreach and information requests, including to government entities and large private organizations. SDAIA has published statements on compliance checks and on the registration of controllers and data protection officers.
+- Reports of SDAIA reviewing data incidents and issuing notices. I am not aware of well-documented public fines or named enforcement decisions comparable to the EU GDPR record. I would not rely on a claim that specific named companies have been fined unless it appears on an official SDAIA channel.
+
+4. How to treat this
+- Absence of public fines does not mean low risk. Enforcement is under-published, penalties are serious, and Saudi regulators often act through supervisory review rather than public decisions.
+- Practical steps: register as a controller where required, maintain a record of processing, a privacy notice, consent and lawful-basis records, breach notification to SDAIA (typically within 72 hours when harm is likely), DPIAs for high-risk processing, a transfer assessment for cross-border data, and a DPO where required.
+
+5. Verification
+- Check SDAIA's website, the National Data Governance Platform, the Official Gazette (Umm Al-Qura) and law-firm trackers for any 2025 to 2026 published decisions.

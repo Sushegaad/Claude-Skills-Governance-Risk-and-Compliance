@@ -1,0 +1,33 @@
+{
+  "eval_id": 385,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States WCAG 2.0 Level AA, incorporated by the 2017 Revised 508 Standards",
+      "passed": true,
+      "evidence": "\"The Revised Section 508 Standards... published by the US Access Board in January 2017... incorporate WCAG 2.0 Level A and Level AA by reference\""
+    },
+    {
+      "text": "States it is not changing soon: no rulemaking is under way as of November 2026",
+      "passed": false,
+      "evidence": "Hedged rather than stated: \"I can't confirm a pending proposed rule or its date from memory... my knowledge may be out of date\" \u2014 does not state no rulemaking is under way as of November 2026"
+    },
+    {
+      "text": "Notes the October 2026 refresh-NPRM reports are erroneous, tracing to the 2015 proposal",
+      "passed": false,
+      "evidence": "The October 2026 refresh-NPRM reports and their tracing to the 2015 proposal are never mentioned"
+    },
+    {
+      "text": "Notes agencies may voluntarily exceed the baseline (WCAG 2.1/2.2) but the legal floor remains 2.0 AA",
+      "passed": true,
+      "evidence": "\"Build and test to WCAG 2.1 AA, ideally 2.2 AA... It satisfies Section 508\" while \"Today the binding baseline is WCAG 2.0 AA\""
+    },
+    {
+      "text": "Distinguishes the adjacent DOJ and HHS rules that use WCAG 2.1 AA for different covered entities",
+      "passed": false,
+      "evidence": "Mentions the DOJ Title II rule (WCAG 2.1 AA) but never the HHS Section 504 web rule; assertion requires distinguishing both"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

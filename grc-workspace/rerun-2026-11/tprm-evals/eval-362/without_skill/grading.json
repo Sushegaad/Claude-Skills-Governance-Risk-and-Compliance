@@ -1,0 +1,33 @@
+{
+  "eval_id": 362,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the CBI published CP173 on October 8, 2026: a consultation on guidance for the sound management of third-party risks",
+      "passed": false,
+      "evidence": "\"I cannot confirm any specific change in October 2026\" - never states CP173 or its October 8, 2026 publication"
+    },
+    {
+      "text": "States the consultation closes December 3, 2026",
+      "passed": false,
+      "evidence": "No mention of a December 3, 2026 consultation close"
+    },
+    {
+      "text": "States the final guidance will replace the December 2021 Cross-Industry Guidance on Outsourcing",
+      "passed": false,
+      "evidence": "Only speculates about 'a CBI update, FAQ or consultation' as unverified possibilities; does not state the final guidance will replace the 2021 guidance"
+    },
+    {
+      "text": "Describes the shift to an outcomes-based, cross-industry approach and links it to the EBA's September 2026 final guidelines on third-party risk for non-ICT services",
+      "passed": false,
+      "evidence": "No mention of an outcomes-based cross-industry approach or the EBA September 2026 final guidelines on non-ICT third-party risk"
+    },
+    {
+      "text": "Keeps the 2021 guidance operative pending final guidance and does not assert a fixed publication date for it",
+      "passed": true,
+      "evidence": "Keeps the December 2021 Cross-Industry Guidance as the operative baseline, invents no publication dates, and explicitly refuses to fabricate an October 2026 change"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

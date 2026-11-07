@@ -1,0 +1,13 @@
+{
+  "eval_id": 354,
+  "eval_name": "attestation-vs-criteria",
+  "run_type": "with_skill",
+  "prompt": "Does the 2026 AT-C exposure draft change our SOC 2 criteria? Our compliance manager conflated two AICPA projects.",
+  "assertions": [
+    "States no: the February 2026 AT-C 105/205/210 exposure draft is a separate attestation-standards project",
+    "Gives its proposed effective date: June 15, 2029",
+    "Identifies the TSC refresh as the distinct October 2026 exposure draft",
+    "Confirms operative criteria remain the 2017 TSC with 2022 revised points of focus",
+    "Distinguishes who owns what: criteria come from ASEC, attestation standards from the Auditing Standards Board"
+  ]
+}

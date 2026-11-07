@@ -1,0 +1,33 @@
+Short answer: the change is an INTERIM FINAL RULE (not a final rule), it is already in effect, and it does not take your DIRCM work out of ITAR.
+
+Status
+- Rule: "Modification of Civil Aircraft To Incorporate Aircraft Survivability Equipment," 91 FR 55457, published August 28, 2026 (correction at 91 FR 58610).
+- Effective date: October 13, 2026. As of today (November 6, 2026) it is in force.
+- Because it is an interim final rule, DDTC can still revise it after reviewing public comments. Watch for a follow-on final rule or amendments. Check the Federal Register entry for the current comment status.
+
+What it does to VIII(a)(8)
+- In-production, manned civil aircraft holding an FAA transport or commuter type certificate (or the NATO/MNNA equivalent), previously classified 9A991.b, are now excluded from USML Category VIII(a)(8) as "survivability-enhanced aircraft" when they are modified to incorporate "secured ASE."
+- "Secured ASE" means DIRCM plus the associated IR/UV missile-warning system, with anti-tamper protection.
+- The rule adds new definitions to 22 CFR 121.0 and new 22 CFR 120.54(a)(8)-(9), which address secured ASE activities.
+- The rule does not state a destination ECCN for the excluded aircraft. Do not assign one on your own. Treat the ECCN as something to confirm with counsel or through a classification request before you rely on it.
+
+What it does not change (important for an MRO)
+- The ASE itself stays on USML Category XI(a)(4). The DIRCM turret, the missile-warning sensors, the processors and the associated technical data and software remain ITAR-controlled defense articles.
+- Installing, integrating, testing and maintaining that equipment for or with foreign persons can still be a defense service under 22 CFR 120.32. That includes foreign airline customers, foreign national employees and foreign subcontractors. Technical data release to those people still needs authorization (TAA, license or exemption) under Parts 124 and 125, including deemed-export controls under 22 CFR 120.50.
+- Export of the equipment itself (DSP-5, or DSP-73 for temporary export) still applies, and 22 CFR 126.1 country restrictions still apply.
+- Your DDTC registration, Empowered Official and TCP obligations are unchanged. The carve-out only affects how the modified aircraft is classified.
+
+Check these conditions before you rely on the carve-out
+1. The aircraft is in production. The carve-out is for in-production aircraft, so a retrofit of an out-of-production airframe may not qualify. Confirm this against the rule text.
+2. The aircraft is manned and holds an FAA transport or commuter type certificate, or the NATO/MNNA equivalent.
+3. The installed suite meets the "secured ASE" definition: DIRCM plus the IR/UV missile warning system, with anti-tamper. A partial or non-secured fit may not qualify.
+4. The aircraft was previously classified 9A991.b. A different prior classification could change the analysis.
+
+Practical steps
+- Document the classification for each aircraft configuration and keep the rationale on file. If any element is ambiguous, file a Commodity Jurisdiction request under 22 CFR 120.4.
+- Update your classification matrix, your TCP, and customer and supplier flow-down language. Separate the aircraft (potentially excluded) from the ASE and its data (still USML XI(a)(4)).
+- Re-check foreign national access to ASE data and installation areas, and screen foreign customers and airlines against the 126.1 list and the restricted-party lists.
+- Check whether any agreements or licenses you hold or applied for need amendment.
+- Remember that the October 2026 omnibus USML review is only a proposed rule (91 FR 62361, comments due November 30, 2026) and does not change this analysis.
+
+This is general compliance information, not legal advice. Confirm the details against the Federal Register text and consult export counsel before changing your classifications.

@@ -1,0 +1,13 @@
+{
+  "eval_id": 384,
+  "eval_name": "procurement-requirements",
+  "run_type": "with_skill",
+  "prompt": "As a federal procurement officer, what should I require from vendors for ICT accessibility today?",
+  "assertions": [
+    "Anchors requirements to the 2017 Revised 508 Standards with WCAG 2.0 Level AA as the binding baseline",
+    "Recommends verifying accessibility of ICT deliverables at acceptance, noting the FY2025 assessment found under 30 percent of agencies almost always do this",
+    "States there is no pending refresh rulemaking to wait for",
+    "Covers standard procurement artifacts such as ACRs/VPATs and testing evidence",
+    "Uses the FY2025 assessment (1.96 of 5 average) as context for why verification matters"
+  ]
+}

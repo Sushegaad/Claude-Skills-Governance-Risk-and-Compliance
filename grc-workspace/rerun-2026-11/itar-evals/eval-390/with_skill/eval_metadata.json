@@ -1,0 +1,13 @@
+{
+  "eval_id": 390,
+  "eval_name": "radar-altimeters",
+  "run_type": "with_skill",
+  "prompt": "We export civil radar altimeters currently caught by USML VIII(h)(10). What changes and when?",
+  "assertions": [
+    "States the October 1, 2026 omnibus proposed rule would remove and reserve VIII(h)(10)",
+    "Makes clear nothing has changed yet: the items remain ITAR-controlled while the rule is at proposal stage",
+    "States the comment deadline: November 30, 2026 (docket DOS-2026-0991)",
+    "Explains that if finalized, the items would transition out of the USML (to EAR jurisdiction) and the final rule's terms should be monitored",
+    "Advises maintaining ITAR compliance in the interim and considering a comment submission"
+  ]
+}

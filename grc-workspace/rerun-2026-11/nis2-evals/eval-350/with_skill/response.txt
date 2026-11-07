@@ -1,0 +1,48 @@
+NIS2 compliance rollout plan: Austria, Germany, Poland, Portugal
+
+1. Where each country stands (early November 2026)
+All four have transposed NIS2 (Directive (EU) 2022/2555), so national law applies now.
+- Germany: in force since 6 December 2025 (BSIG amendment via the NIS2 implementation act). Authority: BSI.
+- Poland: in force since 2 April 2026.
+- Portugal: effective April 2026.
+- Austria: NISG 2026 (BGBl. I Nr. 94/2025) in force since 1 October 2026. Authority: Bundesamt fuer Cybersicherheit (BCS). Register by 31 December 2026, then self-declare risk-management measures within a further 12 months.
+Verify each registration portal, reporting channel and deadline with the national authority, since mechanics differ. Germany and Poland are well into their regimes, so those are the likelier to be already overdue.
+
+2. Principle: one programme, built to the strictest variant
+Obligations are common across the Union: Art. 20 governance, the ten Art. 21(2)(a)-(j) measures, and Art. 23 reporting (24 hours early warning, 72 hours notification, one-month final report). Build one group control framework to the strictest national variant, with country overlays for registration, reporting channels, and supervisor expectations.
+
+3. Phase 0 (weeks 0-3): classification and registration triage
+For each legal entity, run all three tests.
+- Sector: Annex I or II. B2B SaaS and hosting usually count as cloud computing (Annex I). Manufacturing is in scope only for the Annex II categories.
+- Size: medium or larger (50 employees, or turnover and balance sheet both over EUR 10M). Check linked and partner enterprise rules for subsidiaries.
+- Essential or important: essential if Annex I and above the large ceiling (250 employees, or turnover over EUR 50M with balance sheet over EUR 43M). Otherwise important. Check Member State designations.
+Output: an entity register with Essential, Important or out of scope per country, plus the competent authority and registration status.
+Immediate action: Austria's registration by 31 December 2026 is the hard near-term date. Confirm Germany, Poland and Portugal registrations are done.
+Check jurisdiction under Art. 26: digital infrastructure entities (cloud, DNS, data centre, MSP and similar) are supervised in the Member State of main establishment, and non-EU entities need an EU representative. If any entity falls into Implementing Regulation (EU) 2024/2690, it is directly bound by its technical annex and incident thresholds (baseline EUR 500,000 or 5 percent of turnover, whichever is lower).
+
+4. Phase 1 (weeks 3-10): governance and gap assessment
+- Art. 20: board and management approval of the risk-management measures, standing oversight item, and management cybersecurity training. Record minutes and attendance. Personal liability exists in all four.
+- Gap assessment by Art. 21(2) measure: current state, gap, priority, action. Use the 2024/2690 annex sections as the benchmark for binding entities and as best practice for others. If ISO 27001 certified, use it as the base but fill the gaps it does not cover: Art. 23 timelines, Art. 20, registration, MFA and cryptography expectations.
+- Supply chain (Art. 21(2)(d)): supplier register, contractual incident-notice clauses, and monitoring of Art. 22 coordinated risk assessments.
+
+5. Phase 2 (weeks 6-16): incident reporting
+- One group playbook with country routing tables: the CSIRT or authority for Germany (BSI), Austria (BCS), Poland and Portugal, in each language, with pre-drafted templates.
+- Clock starts at awareness. Test with a tabletop exercise that includes the 24h and 72h deliverables.
+- Run GDPR Art. 33 in parallel (72 hours to the data protection authority).
+- If any entity is a financial entity, DORA applies instead of Art. 21 and Art. 23 (lex specialis, DORA Art. 4).
+
+6. Phase 3 (months 4-9): remediation
+- Quick wins (up to 30 days): management approval, MFA on admin and remote access, backup restore tests, incident contacts.
+- Structural (up to 6 months): asset inventory, vulnerability handling and disclosure, access reviews, crypto policy, effectiveness testing.
+
+7. Phase 4 (months 9-15): evidence and assurance
+- Austria's self-declaration of measures falls within 12 months after the registration obligation, so build evidence continuously.
+- Internal audit or independent assessment. Metrics to the board. Annual cycle.
+
+8. Exposure
+Essential entities: ex-ante and ex-post supervision, fines up to at least EUR 10M or 2 percent of worldwide turnover. Important entities: ex-post only, EUR 7M or 1.4 percent. Austria's law states these figures. Check the German, Polish and Portuguese figures, as Member States may set higher maxima. Apply the group's actual turnover to quantify.
+
+9. Governance of the programme
+Group CISO as owner, a country lead per Member State, a single register of entities and obligations, and quarterly board reporting. Re-verify national requirements every quarter, since guidance is still evolving.
+
+Caveat: this is general information, not legal advice. Confirm country-specific deadlines with BSI, BCS and the Polish and Portuguese authorities.

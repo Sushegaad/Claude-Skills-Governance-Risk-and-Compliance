@@ -1,0 +1,31 @@
+Short answer: yes. Enforcement has started, but it is at the information-gathering stage. I am not aware of any public fine or formal non-compliance decision against a GPAI provider as of 6 November 2026.
+
+Legal basis
+- The Commission's (AI Office) enforcement powers over GPAI model providers have applied since 2 August 2026. They cover information requests (Art. 91), model evaluations (Art. 92), requests for mitigation measures (Art. 93), and fines (Art. 101) of up to EUR 15M or 3% of worldwide annual turnover, whichever is higher.
+- The substantive GPAI obligations (Arts. 53-55) have applied since 2 August 2025. Between August 2025 and August 2026 the AI Office could supervise but could not use these coercive powers.
+
+What happened in 2026
+- 2 Aug 2026: enforcement powers switched on.
+- 10 Aug 2026: Implementing Regulation (EU) 2026/1755 entered into force. It sets the procedural rules for Commission proceedings against GPAI providers (published in the OJ on 21 July 2026).
+- Late August 2026: the first formal Art. 91 requests for information to GPAI providers were reported.
+- 12 Oct 2026: consultation opened on a further draft implementing act on procedural rules for penalty proceedings. It closes 9 November 2026.
+- 14 Oct 2026: the AI Office announced a further wave of Art. 91 requests. It covers security practices, external evaluation, and post-market monitoring.
+- 15 Oct 2026: EN 18286:2026 was cited in the OJEU. It is a quality-management standard and relates to high-risk systems (Art. 17), not directly to GPAI duties.
+
+Caveats
+- The recipients of the requests have not been officially named. Treat press attribution to specific companies as unconfirmed.
+- Reporting on the first wave comes from secondary sources. The public record does not show the full content of the requests.
+- The October wave topics (security, external evaluation, post-market monitoring) are most relevant to systemic-risk models, where Art. 55 requires evaluation and red-teaming, cybersecurity protection, and serious-incident tracking.
+- A request is not a finding of breach. Under Reg. 2026/1755 a fine would normally follow preliminary findings, a right to be heard, and access to the file, and there is a five-year limitation period. Fines are therefore unlikely to arrive quickly.
+
+What this means if you are a GPAI provider
+1. Assume your documentation will be inspected. Annex XI technical documentation, Annex XII downstream information, the copyright policy (Directive 2019/790 Art. 4(3) opt-outs), and the public training-content summary should be current and producible quickly.
+2. Systemic-risk models (presumed above 10^25 FLOPs, or designated by the Commission) must have their Safety and Security Framework in place, with red-teaming evidence, incident processes, and cybersecurity controls. Confirm that you notified the AI Office within 2 weeks of crossing the threshold.
+3. The Code of Practice is the main route to a presumption of compliance. There are 22 full signatories as of the Commission page updated 7 October 2026, and xAI signed only the Safety and Security chapter. Non-signatories need an equivalent, documented alternative demonstration.
+4. Legacy models (placed on the market before 2 Aug 2025) have until 2 August 2027 to comply fully. The Art. 50(2) machine-readable marking requirement for models placed before 2 Aug 2026 is due 2 December 2026.
+5. Set up a response procedure for Art. 91 requests: a named owner, a legal-privilege and trade-secret review, a fast evidence-retrieval path, and consistent answers across the whole organisation.
+6. Misleading or incomplete answers to authorities carry their own exposure, up to EUR 7.5M or 1% of turnover (Art. 99(5)).
+
+Bottom line: enforcement is real but still in the supervisory phase. The risk to manage now is being unable to respond credibly to an information request, not an imminent fine.
+
+This is general compliance information, not legal advice. Check the Commission and AI Office pages for any update after early November 2026.

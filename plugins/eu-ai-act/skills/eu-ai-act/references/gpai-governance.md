@@ -101,7 +101,7 @@ In addition to Art. 53 universal obligations, providers of systemic-risk GPAI mo
 
 **Compliance pathways for GPAI obligations:**
 1. **GPAI Code of Practice** (primary pathway) — Final CoP published 10 July 2025, endorsed by Commission and AI Board 1 August 2025. Operates from 2 August 2025. Three chapters: (i) Transparency, (ii) Copyright, (iii) Safety and Security (systemic risk only). Non-signatories must demonstrate compliance by alternative means and explain their approach to the AI Office.
-2. **Harmonised standards** — when published under Commission mandate; compliance gives presumption of conformity. prEN 18286 (QMS for AI Act) entered public enquiry October 2025; key standards expected Q4 2026.
+2. **Harmonised standards** — when published under Commission mandate; compliance gives presumption of conformity. **EN 18286:2026** (AI quality management, supporting Art. 17) became the first AI Act harmonised standard cited in the OJEU, announced October 15, 2026. The broader standardisation request deadline was revised to February 2027; prEN 18228 (risk management) is in final approval.
 3. **Alternative adequate means** — provider demonstrates compliance through other methods acceptable to Commission.
 
 **GPAI Code of Practice — Key obligations by chapter:**
@@ -111,7 +111,7 @@ In addition to Art. 53 universal obligations, providers of systemic-risk GPAI mo
 
 **Legacy GPAI models** (placed on market before 2 August 2025): deadline to comply is **2 August 2027**.
 
-**Confirmed CoP signatories (as of April 2026):** Aleph Alpha, Amazon, Anthropic, Black Forest Labs, Cohere, Google, IBM, Microsoft, Mistral AI, OpenAI, ServiceNow, WRITER, and others. Note: xAI signed only the Safety and Security chapter, committing to demonstrate compliance with Transparency and Copyright by alternative means.
+**Confirmed CoP signatories:** 22 full signatories per the Commission page updated October 7, 2026, including Amazon, Anthropic, Google, IBM, Microsoft, Mistral AI, and OpenAI. Note: xAI signed only the Safety and Security chapter, committing to demonstrate compliance with Transparency and Copyright by alternative means.
 
 A **Signatory Taskforce**, chaired by the AI Office, facilitates coherent CoP implementation.
 
@@ -129,7 +129,8 @@ A **Signatory Taskforce**, chaired by the AI Office, facilitates coherent CoP im
 - Provides secretariat support for the AI Board
 - Key contact point for: systemic risk notifications, Codes of Practice development, serious incident reports from GPAI providers
 - Issues non-binding guidance; makes recommendations to the Commission
-- Full enforcement powers over GPAI providers (information requests, model evaluations, fines) activate **2 August 2026**
+- Full enforcement powers over GPAI providers (information requests, model evaluations, fines) active since **2 August 2026**; procedural rules for Commission proceedings are set by **Implementing Regulation (EU) 2026/1755** (OJ July 21, 2026, in force August 10, 2026): model evaluations including API, source code, and model access; appointment and independence of experts; fine proceedings with preliminary findings and a right to be heard; access to file; five-year limitation period
+- Enforcement in practice: first formal Art. 91 requests for information to GPAI providers reported in late August 2026; a further wave was announced October 14, 2026 covering security practices, external evaluation, and post-market monitoring; recipients have not been officially named
 
 **Key guidance and actions published by the AI Office (chronological):**
 - **4 Feb 2025:** Guidelines on prohibited AI practices under Art. 5 — with practical examples for all 8 categories
@@ -140,6 +141,12 @@ A **Signatory Taskforce**, chaired by the AI Office, facilitates coherent CoP im
 - **5 March 2026:** Second draft of the AI-generated content marking CoP
 - **8 May 2026:** Draft guidelines on Art. 50 transparency obligations opened for consultation; three studies on Art. 5 prohibited practices published; three studies on technical marking/detection of AI-generated content published
 - **19 May 2026:** Draft guidelines on high-risk AI system classification opened for public consultation
+- **21 July 2026:** Implementing Regulation (EU) 2026/1755 published in the OJ (in force 10 August 2026): procedural rules for Commission proceedings against GPAI providers
+- **Late August 2026:** First formal Art. 91 requests for information to GPAI providers reported (recipients not officially named)
+- **12 October 2026:** Consultation opened on a draft implementing act for penalty-proceeding procedural rules (closing 9 November 2026)
+- **14 October 2026:** Further wave of Art. 91 information requests announced, covering security practices, external evaluation, and post-market monitoring
+- **15 October 2026:** EN 18286:2026 announced as the first AI Act harmonised standard cited in the OJEU (Art. 17 quality management)
+- Note: the Art. 73 serious-incident reporting guidance remains a DRAFT (September 2025); no final version as of November 2026
 
 ### European Artificial Intelligence Board — AI Board (Art. 65)
 

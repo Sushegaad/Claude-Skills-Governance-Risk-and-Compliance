@@ -1,0 +1,26 @@
+CJEU referrals over NIS2 and what happens next
+
+Who was referred
+On 8 July 2026 the European Commission referred four Member States to the Court of Justice of the EU (IP/26/1499): Ireland, Spain, France and the Netherlands. The ground is failure to notify the national measures transposing NIS2 (Directive (EU) 2022/2555), whose deadline was 17 October 2024. The Commission asked the Court to impose lump-sum payments and daily penalty payments.
+
+How we got here
+1. 28 November 2024: letters of formal notice.
+2. 7 May 2025: reasoned opinions.
+3. 8 July 2026: referral to the CJEU.
+
+Status update
+The Netherlands has since transposed. The Cyberbeveiligingswet and Cyberbeveiligingsbesluit entered into force on 15 August 2026. France and Ireland still have drafts pending and Spain's bill has stalled, so those three are the remaining laggards (24 of 27 Member States have transposed).
+
+What happens next (procedure)
+This is an Article 258 TFEU infringement action. Because the claim is for failure to notify transposition, the Commission can ask for financial penalties in the same action (Art. 260(3) TFEU), which is why it is seeking lump sums and daily payments.
+1. Written phase: the Member State files a defence, with a reply and rejoinder as needed. A hearing and an Advocate General opinion may follow. Cases usually take well over a year.
+2. Transposition during the case: if a Member State transposes and notifies, the Commission can withdraw or narrow the case. It may drop the daily penalty (which accrues until compliance) but can keep the lump sum for the period of delay. I would expect this for the Netherlands.
+3. Judgment: if the Court finds a breach, it can order a lump sum, a daily penalty or both. In setting these it considers the gravity, the duration and the Member State's ability to pay. Penalties for non-notification cases can be set at the judgment stage, running until compliance.
+4. Aftermath: payments go to the EU budget. A Member State that fails to comply can face a further Art. 260(2) procedure.
+
+Practical implications for companies
+- The case is against states, not entities. It does not create obligations for you, and it does not by itself create obligations in France, Ireland or Spain.
+- It is a strong signal that transposition is imminent in the remaining states. Authorities have applied short compliance windows once national law lands, so prepare against the directive text now.
+- Watch the national legislative calendars and the Court's docket (the case numbers are new and I cannot cite them here).
+
+Caveat: I have described the procedure from the treaty framework. Case outcomes and timing are for the Court. Check the Commission's infringement page and the Court's register. This is general information, not legal advice.

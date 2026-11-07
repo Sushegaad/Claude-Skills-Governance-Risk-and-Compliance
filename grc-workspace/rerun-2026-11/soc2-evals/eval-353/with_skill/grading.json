@@ -1,0 +1,33 @@
+{
+  "eval_id": 353,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the proposal adds AI-related points of focus rather than creating new AI-specific criteria",
+      "passed": true,
+      "evidence": "the proposed refresh adds AI-related points of focus to the existing criteria. It does not add new AI-specific criteria... There is no standalone \"AI criterion\" and no separate AI category."
+    },
+    {
+      "text": "Dates the exposure draft to late October 2026, issued by the AICPA's Assurance Services Executive Committee",
+      "passed": true,
+      "evidence": "On October 28, 2026, the AICPA's Assurance Services Executive Committee issued the exposure draft... (dated October 27, 2026)."
+    },
+    {
+      "text": "Explains points of focus are illustrative considerations, not mandatory requirements",
+      "passed": true,
+      "evidence": "AI appears as points of focus, which are guidance within criteria."
+    },
+    {
+      "text": "States today's audits evaluate AI systems under the existing 2017 criteria",
+      "passed": true,
+      "evidence": "Today your audit uses the 2017 Trust Services Criteria with the 2022 Revised Points of Focus, and your AI systems are examined through the existing criteria."
+    },
+    {
+      "text": "Notes the comment window is open until January 15, 2027 for AI-specific feedback",
+      "passed": true,
+      "evidence": "Comments are due January 15, 2027... Watch the exposure draft. Consider commenting by January 15, 2027."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,24 @@
+Netherlands: NIS2 position now
+
+Headline: the Wbni is no longer the operative regime. The Netherlands has transposed NIS2.
+
+What changed
+- The Cyberbeveiligingswet (Cbw) and the Cyberbeveiligingsbesluit (Stb. 2026, 187) entered into force on 15 August 2026, together with the Wwke. They replace the Wbni.
+- The regime covers more than 8,000 organisations in 18 sectors.
+- There is no transition period. Registration, the duty of care, incident reporting and board accountability all apply immediately.
+
+Background
+The Netherlands was among the four Member States (Ireland, Spain, France, Netherlands) that the Commission referred to the CJEU on 8 July 2026 (IP/26/1499) for failure to notify transposition. It has since transposed. The Dutch referral may therefore be narrowed or withdrawn, but check the Commission's infringement status.
+
+What your entity should do now
+Because there is no grace period, treat the following as overdue rather than upcoming.
+1. Reconfirm classification under the Cbw. Run the full test: sector (Annex I or II), size (medium or larger, or an exception such as a sole provider), then essential versus important (large-enterprise ceiling of 250 employees, or turnover over EUR 50M with balance sheet over EUR 43M). Do not assume your Wbni status carries over. Under the Wbni you may have been an operator of essential services; many Cbw entities are new, and some old ones fall away.
+2. Register through MijnNCSC. If you have not, do it now and document the date.
+3. Duty of care (Art. 21): measures must cover the ten areas of Art. 21(2)(a)-(j), proportionate to risk. Run a gap assessment against them, going beyond the Wbni baseline in supply chain security, vulnerability handling, cryptography, MFA, and effectiveness testing.
+4. Incident reporting (Art. 23): significant incidents need an early warning within 24 hours of awareness, a notification within 72 hours, and a final report within one month. Update your incident response plan and templates and confirm the recipient channel (the NCSC and sector supervisor under Dutch rules). Run GDPR Art. 33 in parallel for personal data, with the Autoriteit Persoonsgegevens as recipient.
+5. Board accountability (Art. 20): management must approve and oversee measures and receive training. Minutes and training records are the evidence. Management can be personally liable.
+6. Supervision and fines: essential entities face ex-ante and ex-post supervision, with fines of at least EUR 10M or 2 percent of worldwide turnover as the maximum. Important entities face ex-post supervision, with EUR 7M or 1.4 percent. Check the Dutch figures and the designated supervisor for your sector.
+
+If you are a digital entity (cloud, DNS, data centre, MSP and similar), Implementing Regulation (EU) 2024/2690 also applies directly, with its technical annex and significant-incident thresholds. If you are a group, check whether the Netherlands is your main establishment under Art. 26.
+
+Caveat: confirm the details with the NCSC and your sector supervisor. This is general information, not legal advice.

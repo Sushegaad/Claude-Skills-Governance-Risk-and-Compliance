@@ -1,0 +1,34 @@
+NIS2 transposition status: early November 2026
+
+Short answer
+24 of the 27 EU Member States have now transposed NIS2 (Directive (EU) 2022/2555). Three have not:
+- France: draft law still pending.
+- Ireland: draft law still pending.
+- Spain: the bill has stalled.
+
+The transposition deadline was 17 October 2024, so these three are roughly two years late.
+
+What the Commission has done
+The Commission has used the standard Article 258 TFEU infringement procedure:
+1. 28 November 2024: letters of formal notice to the Member States that had not notified transposition.
+2. 7 May 2025: reasoned opinions to those that still had not.
+3. 8 July 2026: referral to the Court of Justice of the EU (IP/26/1499) of Ireland, Spain, France and the Netherlands. The Commission is seeking lump-sum and daily penalty payments for failure to notify transposition measures.
+
+Important nuance on the Netherlands
+The Netherlands was referred in July 2026 but has since transposed. The Cyberbeveiligingswet (Cbw) and the Cyberbeveiligingsbesluit (Stb. 2026, 187) entered into force on 15 August 2026, together with the Wwke, replacing the Wbni. So the Netherlands is no longer a laggard, although it is still named in the referral. Expect the case against it to be narrowed or withdrawn, or to proceed only on the period of delay. I would confirm the current procedural status on the CJEU or Commission infringement pages.
+
+Recently transposed
+- Germany: in force since 6 December 2025.
+- Poland: in force 2 April 2026.
+- Portugal: effective April 2026.
+- Austria: NISG 2026 in force 1 October 2026. Registration is due by 31 December 2026.
+- Netherlands: in force 15 August 2026, with no transition period.
+
+What this means in practice
+- The directive does not bind entities directly. Obligations arise from national law, so in France, Ireland and Spain there is no enforceable national regime yet.
+- Do not treat that as a reason to wait. Authorities have applied short compliance windows once national law arrives, so prepare against the directive text: Art. 20 governance, the Art. 21(2)(a)-(j) measures, and the Art. 23 reporting timelines (24 hours, 72 hours, one month).
+- Groups with entities in these countries should still map their establishment and jurisdiction under Art. 26, since main-establishment rules apply to digital infrastructure and similar entities.
+- Early, voluntary readiness work is likely to be cheaper than a rushed programme.
+- For the outstanding countries, track the legislative progress with the national authorities: ANSSI (France), the Department of the Environment, Climate and Communications and the NCSC (Ireland), and the Spanish authorities.
+
+Caveat: this reflects the position as I understand it in early November 2026. Legislative status moves quickly, so verify with the national authority and the Commission's infringement database before relying on it. This is general information, not legal advice.

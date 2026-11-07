@@ -1,0 +1,39 @@
+Important limitation first: I do not have reliable, specific knowledge of the PCI Council's publications from Q3 and Q4 2026. I would rather tell you that than hand your QSA-facing team a fabricated list. Below are (1) what I can state with reasonable confidence, (2) a method for building the briefing accurately, and (3) a ready-to-fill briefing template.
+
+1. Things I can say with reasonable confidence (context, not 2026 news)
+- PCI DSS v4.0.1 is the active version. v4.0 was retired December 31, 2024, and all future-dated requirements became mandatory March 31, 2025.
+- PA-DSS was retired in 2022. The Software Security Framework (Secure Software and Secure SLC standards) is the replacement.
+- SPoC and CPoC are being replaced by MPoC. My understanding is that the SPoC and CPoC listings reach their sunset around October 31, 2026. Verify this.
+- The Council has published AI-related guidance, including how assessors should use AI in assessments. Verify any 2026 updates.
+- The Council usually publishes on a rolling basis: standards revisions, FAQs, guidelines, information supplements, assessor program updates (QSA Qualification Requirements and QSA program guide), forms and templates (ROC, AOC, SAQ), and lists of validated products and solutions.
+
+2. How to compile the accurate list (about half a day)
+- PCI SSC Press Releases and Blog (July to December 2026).
+- Document Library, filtered by "recently updated". Check the Standards, Supporting Documents, Programs, and Guidance categories.
+- FAQs (Knowledge Base), sorted by date. Check for new or revised FAQs.
+- Assessor-facing portal and QSA/ISA/AQSA updates and webinars: Assessor Quality Management (AQM) changes, QSA Program Guide, Qualification Requirements, and new templates and training.
+- Lists of Validated Products and Solutions, and any listing expiries and retirements (Secure SLC, Secure Software, SPoC/CPoC/MPoC, P2PE, PTS, PIN, 3DS).
+- Standard-specific pages: PCI DSS, PCI PIN, P2PE, 3DS Core and SDK, Card Production, Software Security Framework, MPoC.
+- Council's published dates for Global Community Meetings and webinars.
+- Acquirer and payment brand bulletins (Visa, Mastercard, etc.), which often act on the Council's changes.
+
+3. Briefing template for the QSA-facing team
+For each item record: Title | Date | Type (standard, FAQ, guidance, program, template, listing) | What changed | Effective date or sunset | Who is affected | Action | Owner | Source link.
+
+Section headers to use:
+A. Standards and versions (PCI DSS, PCI SSF, MPoC, PIN, P2PE, 3DS, PTS)
+B. Sunsets and retirements (SPoC/CPoC, older SSF versions, device listings)
+C. Guidance and supplements (AI, cloud, third-party, e-commerce, etc.)
+D. Assessor program changes (QSA qualification requirements, QA, templates, reporting instructions)
+E. FAQ changes that affect how we scope, test, or evidence
+F. Impact on our clients and our engagements (scoping questions, evidence requests, report wording)
+G. Open questions to confirm with the Council or our QSA company's PCI liaison
+H. Actions, owners, and dates
+
+4. Talking points that stay true regardless
+- Baseline is PCI DSS v4.0.1 unless a newer version is verified.
+- Validate any third-party listing (status and expiry) on the PCI SSC site before relying on it in a ROC.
+- Check effective dates for any new document: "published" is not "mandatory".
+- Cite the source document and version in your working papers.
+
+If you paste the Council's announcements, FAQ updates, or document titles from Q3 and Q4 2026 here, I'll turn them into a concise briefing with impact analysis and actions.

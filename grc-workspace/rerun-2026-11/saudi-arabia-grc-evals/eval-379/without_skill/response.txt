@@ -1,0 +1,24 @@
+Short answer: Saudi Arabia has AI governance instruments, mainly from SDAIA, and the NCA's general cybersecurity controls apply to AI systems in scope. I am not certain of any single binding, standalone "AI cybersecurity" regulation, and I cannot confirm developments after my knowledge cutoff, so verify current status with NCA and SDAIA. This is not legal advice.
+
+1. AI-specific instruments I am aware of
+- SDAIA AI Ethics Principles (2023): principles including privacy and security, reliability and safety, fairness, transparency, accountability and humanity. Mostly voluntary guidance, with some adoption expected for government and the AI sector.
+- SDAIA Generative AI Guidelines (for government and for the public, 2024): practical guidance on risk, data protection and appropriate use.
+- Draft or proposed AI-related regulatory frameworks (for example "Global AI Hub Law" proposals and consultations on AI governance). Check whether they have been finalized.
+- NCA has been active on AI security. I believe it has issued or been developing guidance on AI cybersecurity, and ran consultations. I cannot confirm exact titles, status (binding or guideline) or dates, so check NCA's publications page.
+
+2. Existing mandatory rules that already cover AI systems
+- NCA ECC-2:2024 (government and CNI), Cloud Cybersecurity Controls (CCC) for cloud-hosted AI, Data Cybersecurity Controls (DCC), and sector rules (SAMA, CST, health regulators) apply to AI systems as ordinary IT systems when you are in scope.
+- PDPL and its Implementing Regulations apply when AI processes personal data, including limits on automated decision-making, transparency and cross-border transfer.
+- NDMO data governance policies and the Data Classification policy.
+- Intellectual property and copyright rules for training data.
+
+3. What to do now
+- Establish whether you are in scope of ECC or a sector regulator.
+- Treat AI as a risk domain: inventory AI systems and models, classify the data they use, and assess the supply chain (model providers, hosting location, data residency).
+- Cover typical AI threats: prompt injection, data leakage, model poisoning, insecure plugins and agents, access control for model endpoints, logging and monitoring, and human oversight.
+- Use a recognized framework alongside Saudi requirements, such as NIST AI RMF, ISO/IEC 42001, and OWASP LLM Top 10.
+- Apply PDPL requirements for any personal data in prompts or training sets, and avoid sending sensitive or classified data to offshore public AI services.
+- Monitor NCA and SDAIA for new releases and consultations.
+
+4. Caveats
+- If a client asks whether a specific NCA AI cybersecurity standard is mandatory, I would say confirm the exact document, its legal status and applicability on NCA's site before committing.

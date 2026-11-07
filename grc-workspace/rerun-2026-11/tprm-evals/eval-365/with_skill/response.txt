@@ -1,0 +1,35 @@
+Late-2026 regulatory developments that should shape fourth-party and concentration risk work
+
+Status in brief: most of what is new is proposed or in consultation. Operative requirements are unchanged, but the direction of travel is clear.
+
+1. United States
+- Proposed Third-Party Risk Management Guidance (OCC, Federal Reserve, FDIC, NCUA), published September 15, 2026 (91 FR 58536). It would rescind and replace the June 2023 Interagency Guidance (OCC 2023-17), with NCUA joining for the first time. It would also rescind the OCC foreign-based third-party bulletin, the 2024 bank-fintech joint statement and the 2024 community bank TPRM guide. Comments are due November 16, 2026.
+- Joint Statement on Community Banks' Engagement with Core Service Providers. This is directly relevant to concentration where a bank depends on a single core provider.
+- Status: proposals only. The June 2023 guidance remains operative until a replacement is finalised. Track and consider commenting, but do not apply the proposal as if final.
+
+2. Ireland
+- The Central Bank of Ireland published CP173 on October 8, 2026. The consultation closes December 3, 2026. It would replace the December 2021 Cross-Industry Guidance on Outsourcing with an outcomes-based approach to third-party risks. The 2021 guidance applies until then.
+- It follows the EBA's September 2026 final guidelines on third-party risk for non-ICT services. That widens the lens beyond ICT and classic outsourcing.
+
+3. European Union, already in force
+- DORA (Reg. (EU) 2022/2554, applicable since January 17, 2025):
+  - Art. 28: Register of Information (first submissions April 2025), pre-contract assessment, exit strategies.
+  - Art. 29: concentration risk, including substitutability.
+  - Art. 30: contract provisions. The enhanced Art. 30(3) set applies to critical or important functions.
+  - The first CTPP list was published November 18, 2025, and major cloud providers were designated. Concentration on a designated provider is now explicit and visible to supervisors.
+- NIS2 Art. 21(2)(d) and 21(3): supply chain security, including supplier-specific vulnerabilities and secure development practices. ENISA's Technical Implementation Guidance v1.0 (June 2025) is the practical reference.
+
+4. What to do about fourth parties and concentration
+1. Map beyond the first tier. For each Tier 1 and 2 vendor, obtain a sub-processor and fourth-party list with locations. Record it in your register. Under DORA this feeds the Register of Information.
+2. Find the shared dependencies. Look for common hyperscalers, core processors, identity providers or data centres underneath multiple vendors. Those are the real concentration points, and they are often hidden at the fourth-party layer.
+3. Assess substitutability honestly. For each critical dependency, record time and cost to exit, alternatives, and data portability. Treat low substitutability as a tiering input.
+4. Use assurance reports properly. In SOC 2 reports check carve-outs and complementary subservice organisation controls. Ask whether the carved-out hosting layer has its own assurance, and ask how management monitors the subservice organisation. Request bridge letters for gaps over about three months, and remember that these are management representations, not auditor assurance.
+5. Fix contracts. Require current sub-processor lists, change notice (for example 30 days), objection rights, equivalent flow-down, retained liability, and termination assistance. For DORA critical or important functions, make sure the Art. 30(3) set is present.
+6. Monitor continuously. Watch sub-processor changes, breach disclosures, financial viability, and quarterly OAuth and API token scope reviews. Salesloft Drift (August 2025) showed stolen OAuth tokens exposing Salesforce data at 700+ organisations. The Shai-Hulud npm worm (September 2025) showed software supply chain exposure through CI/CD secrets.
+7. Test exits. Document and rehearse exit strategies for critical vendors, including a hostile-exit scenario such as breach or insolvency.
+8. Governance. Report concentration to the board with metrics, and calendar the consultation deadlines (November 16 US, December 3 Ireland).
+
+5. Priorities
+Run one programme with the strictest requirement as the baseline. Respond to the US and Irish consultations where relevant. Keep operating under the current instruments, and use the proposals as the planning horizon.
+
+Caveat: I have not detailed the specific wording of the proposals because it is outside what I can verify here. Read the primary texts. This is general compliance information, not legal advice.

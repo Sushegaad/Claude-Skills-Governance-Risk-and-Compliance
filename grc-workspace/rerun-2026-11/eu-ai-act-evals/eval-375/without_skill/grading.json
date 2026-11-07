@@ -1,0 +1,33 @@
+{
+  "eval_id": 375,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the Commission's signatory page (updated October 7, 2026) lists 22 full signatories",
+      "passed": false,
+      "evidence": "Says \"more than two dozen at last count I know of\" and \"I cannot confirm additions or withdrawals after mid-2026\"; never states 22 or the October 7, 2026 page."
+    },
+    {
+      "text": "Correctly names several signatories (for example Amazon, Anthropic, Google, IBM, Microsoft, Mistral AI, OpenAI)",
+      "passed": true,
+      "evidence": "\"Signed in full: a large group including Amazon, Anthropic, Google, IBM, Microsoft, Mistral AI, OpenAI, Aleph Alpha, Cohere, ServiceNow\""
+    },
+    {
+      "text": "Notes xAI signed the Safety and Security chapter only",
+      "passed": true,
+      "evidence": "\"xAI signed only the Safety and Security chapter.\""
+    },
+    {
+      "text": "Explains adherence is a recognised way to demonstrate GPAI obligation compliance",
+      "passed": true,
+      "evidence": "\"A recognised route to demonstrate compliance with Arts. 53 and 55... the Commission has said it will treat adherence as a basis for assuming compliance\""
+    },
+    {
+      "text": "Places the decision in the enforcement context: information requests have reportedly begun, so documentation should be inspection-ready",
+      "passed": false,
+      "evidence": "No mention that AI Office information requests have begun or of autumn 2026 enforcement activity; the decision is framed around supervision generally."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

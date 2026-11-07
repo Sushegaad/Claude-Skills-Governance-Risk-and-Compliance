@@ -1,0 +1,25 @@
+Two things land on or around 2 December 2026. Everything else people associate with 2026 has moved or already happened.
+
+1. New prohibited practice applies from 2 December 2026 (Art. 5, added by the Digital Omnibus, Reg. (EU) 2026/1744)
+- It bans AI systems capable of generating non-consensual sexually explicit or intimate imagery (including "nudification" apps) and child sexual abuse material (CSAM).
+- Safe harbour: a system is not caught if it has effective technical safeguards that reliably prevent such outputs, including against user attempts to bypass them. The safe harbour is lost if safeguards are bypassed or deactivated.
+- It targets the system's capability, not just a particular deployment. A system whose principal or evident purpose is to generate such content is prohibited regardless of intent.
+- Penalty tier: Art. 5 violations, up to EUR 35M or 7% of worldwide annual turnover, whichever is higher (lower of the two for SMEs).
+- Who is affected: any provider or deployer of image, video, or multimodal generation, including general-purpose generators and apps built on them. This is not limited to niche nudify tools.
+- Actions: red-team specifically for non-consensual intimate imagery and CSAM, including jailbreaks, image-editing and face-swap inputs, and minors. Document the safeguards and test results as your safe-harbour evidence. Add monitoring, abuse reporting, and account enforcement. Review model weights released openly, since safeguards that can be removed may not qualify. Check downstream contracts and acceptable use policies.
+
+2. Art. 50(2) machine-readable marking for models placed on the market before 2 August 2026 (grace period ends 2 December 2026)
+- Art. 50 transparency applied from 2 August 2026 for new systems. Systems and models already on the market before that date have until 2 December 2026 to meet the Art. 50(2) requirement.
+- Art. 50(2) is a provider duty: outputs of systems generating synthetic audio, image, video, or text must be marked in a machine-readable format and be detectable as artificially generated or manipulated. This is separate from the Art. 50(1) provider duty (telling people they are interacting with an AI system) and the Art. 50(4) deployer duty (disclosing deepfakes and AI-generated text published to inform the public). Do not merge the three.
+- Penalty tier: up to EUR 15M or 3% (Art. 99(4)).
+- Actions: implement watermarking or metadata plus detection (the AI Office's Code of Practice on marking and labelling of AI-generated content and the draft Art. 50 guidelines are the reference points; both were still in draft or consultation status as of mid-2026, so check their final status), test robustness, and tell downstream deployers.
+
+What does not land in December 2026
+- High-risk obligations for Annex III systems: now 2 December 2027. Annex I embedded systems: 2 August 2028.
+- GPAI obligations (Arts. 53-55) already apply, and AI Office enforcement powers have applied since 2 August 2026. Legacy GPAI models have until 2 August 2027.
+- Art. 73 serious-incident guidance is still a draft.
+- The consultation on penalty-proceeding rules closes 9 November 2026, which is before December and is not an obligation.
+
+Also watch: the original eight prohibitions have applied since 2 February 2025, so December adds to a live regime.
+
+This is general compliance information, not legal advice.

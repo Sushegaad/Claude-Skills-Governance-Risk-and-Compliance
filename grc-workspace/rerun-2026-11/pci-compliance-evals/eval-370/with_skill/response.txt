@@ -1,0 +1,52 @@
+QSA-facing team briefing: PCI SSC changes, mid to late 2026
+
+Bottom line first: the core standard did not change. PCI DSS v4.0.1 remains the current version, with no successor announced. What moved in the second half of 2026 was assessor guidance (an FAQ), the adjacent standards ecosystem, and one new information supplement. This brief covers what I can state with confidence. Please do not treat it as a complete list of every Council publication. Check the PCI SSC document library and QSA portal before you rely on it for client advice.
+
+1. PCI DSS v4.0.1: no new version
+- v4.0.1 (June 2024) is current. v3.2.1 was retired March 31, 2024, and all v4.0 future-dated requirements have been mandatory since March 31, 2025.
+- A Request for Comments on v4.0.1 ran from June 3 to July 20, 2026, as input to the next iteration. It is not a draft standard. Do not tell clients a v5 exists or give a date for a successor. Plan 2027 engagements against v4.0.1.
+
+2. FAQ 1331 updated (August 31, 2026): the change with the most assessment impact
+- SAQ eligibility criteria may no longer be used as a guide to which PCI DSS requirements apply in a ROC assessment, unless that use is explicitly reviewed, discussed and agreed with the merchant's compliance accepting entity, such as the payment brands and acquirers.
+- QSA agreement alone no longer suffices.
+- Where it bites: ROC merchants that mark requirements as not applicable using SAQ-A-style reasoning. The main example is e-commerce scoping of 6.4.3 and 11.6.1 (payment page scripts and tamper detection).
+- Actions for the team:
+  - Review open and planned ROC engagements for any not-applicable determinations that rest on SAQ criteria.
+  - Obtain the acquirer or brand agreement in writing and keep it in the work papers.
+  - If agreement is not available, assess the requirements as applicable.
+  - Tell clients early, because it can add scope late in an engagement.
+
+3. Secure SLC Standard v2.0 (September 28, 2026)
+- First major revision of the standard. It aligns with the Secure Software Standard v2.0, which was published January 15, 2026, so that part is earlier than the second half of 2026.
+- It adds coverage of digital tools and AI in vendor lifecycle processes.
+- Existing v1.1 validations remain valid during a transition window tied to v2.0 assessor training availability. The exact dates are in the Program Guide, so confirm them before quoting any date.
+- Impact for you: when clients rely on a vendor's Secure SLC validation under Req 12.8 or Req 6, record the version, listing status and expiry, and ask what the vendor's transition plan is. Assessors who perform these validations need v2.0 training.
+
+4. Sunsets effective October 31, 2026: 3DS SDK, SPoC and CPoC
+- The sunset periods for the PCI 3DS SDK, SPoC and CPoC standards ended on October 31, 2026.
+- No new submissions are accepted. Existing listings keep their normal lifecycle, so they are not invalidated.
+- MPoC is the successor for SPoC and CPoC. 3DS SDK functionality is being folded into the Secure Software Standard.
+- Impact: clients procuring COTS-based acceptance should look for MPoC. For clients on existing SPoC or CPoC listings, check expiry dates and ask vendors for MPoC plans.
+
+5. New information supplement: "Security Considerations for AI Systems" (September 2026)
+- This is an information supplement. It is guidance, not a requirement, and it adds no new AI control to PCI DSS v4.0.1.
+- Existing requirements already apply to AI use: scope (12.5.x), PAN and SAD handling (Req 3), third parties (12.8), access (Req 7 and 8), secure development (Req 6) and logging (Req 10).
+- Impact: expect clients to ask about it, and expect to ask them how AI tools are scoped and governed. Have your own team read the full document.
+
+Quick reference timeline
+| Date | Item | Type | Impact on QSA work |
+|------|------|------|-------------------|
+| June 3 to July 20, 2026 | RFC on PCI DSS v4.0.1 | Consultation | None yet. Monitor outputs. |
+| August 31, 2026 | FAQ 1331 update | Assessor guidance | High. Affects ROC scoping and N/A decisions. |
+| September 2026 | AI systems information supplement | Guidance | Low to moderate. Client questions likely. |
+| September 28, 2026 | Secure SLC Standard v2.0 | Standard | Moderate for vendor reliance. Transition window applies. |
+| October 31, 2026 | 3DS SDK, SPoC and CPoC sunsets | Program change | Moderate for COTS acceptance clients. MPoC is the successor. |
+
+Team actions
+1. Brief all QSAs on FAQ 1331 and update the ROC scoping checklist.
+2. Re-check open ROC work for SAQ-criteria N/A decisions.
+3. Add Secure SLC and POC listing version and expiry checks to the TPSP review step.
+4. Circulate the AI supplement and agree on standard client questions.
+5. Confirm all dates against official PCI SSC sources, including the QSA portal and the Program Guide, before client use.
+
+This is informational guidance and not a replacement for the official PCI SSC documents.

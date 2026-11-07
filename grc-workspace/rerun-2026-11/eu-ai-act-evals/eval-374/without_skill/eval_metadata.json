@@ -1,0 +1,13 @@
+{
+  "eval_id": 374,
+  "eval_name": "december-2026-deadlines",
+  "run_type": "without_skill",
+  "prompt": "What EU AI Act obligations actually land in December 2026?",
+  "assertions": [
+    "States the new prohibited-practice items added by the Digital Omnibus apply from December 2, 2026",
+    "States GPAI models placed on the market before August 2, 2026 must comply with Article 50(2) machine-readable marking by December 2, 2026",
+    "Identifies the Digital Omnibus as Regulation (EU) 2026/1744, in force July 27, 2026",
+    "Distinguishes these December 2026 items from the shifted high-risk dates (December 2, 2027 and August 2, 2028)",
+    "Gives practical steps for marking compliance (machine-readable disclosure of AI-generated content)"
+  ]
+}

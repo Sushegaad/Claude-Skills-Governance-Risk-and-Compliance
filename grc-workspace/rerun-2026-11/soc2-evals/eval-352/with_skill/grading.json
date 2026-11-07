@@ -1,0 +1,33 @@
+{
+  "eval_id": 352,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the 2017 TSC (with 2022 revised points of focus) apply, because the 2027 criteria are only a proposal",
+      "passed": true,
+      "evidence": "the 2017 Trust Services Criteria with the 2022 Revised Points of Focus apply to a Type 2 period starting January 2027... It is only a proposal."
+    },
+    {
+      "text": "Notes the proposed criteria would apply to engagements beginning on or after December 31, 2027 if adopted",
+      "passed": true,
+      "evidence": "It is proposed to take effect for engagements beginning on or after December 31, 2027"
+    },
+    {
+      "text": "Mentions early adoption would be permitted once the criteria are final",
+      "passed": true,
+      "evidence": "with early adoption permitted. ... Unless you and your auditor agree to early adoption after a final version exists"
+    },
+    {
+      "text": "Confirms the five categories (Security, Availability, Processing Integrity, Confidentiality, Privacy) are unchanged",
+      "passed": true,
+      "evidence": "It keeps the five categories, consolidates overlapping criteria and adds AI-related points of focus."
+    },
+    {
+      "text": "Recommends monitoring the exposure draft and commenting by January 15, 2027",
+      "passed": false,
+      "evidence": "States \"Comments are due January 15, 2027\" and advises \"watch the final criteria\", but never actually recommends commenting on the exposure draft."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

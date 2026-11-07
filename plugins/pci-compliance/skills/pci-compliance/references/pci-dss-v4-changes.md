@@ -16,6 +16,7 @@ Source: PCI DSS Summary of Changes v3.2.1 to v4.0 (PCI SSC); PCI DSS v4.0.1 (Jun
 - March 31, 2024: PCI DSS v3.2.1 retired — all assessments now use v4.0 or v4.0.1
 - March 31, 2025: All "future-dated" requirements from PCI DSS v4.0 became **mandatory** (previously best practice)
 - v4.0.1 corrects typographical errors and clarifications in v4.0; no new controls added
+- As of November 2026: v4.0.1 remains current with no successor announced; an RFC on v4.0.1 ran June 3 to July 20, 2026 as input to the next iteration
 
 ---
 

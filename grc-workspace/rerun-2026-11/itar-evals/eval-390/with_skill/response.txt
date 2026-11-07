@@ -1,0 +1,23 @@
+Short answer: nothing has changed yet. The removal of USML VIII(h)(10) is a PROPOSAL, not a final rule. Until a final rule issues, your civil radar altimeters caught by VIII(h)(10) stay ITAR-controlled.
+
+What is proposed
+- Rule: "Review of the U.S. Munitions List and Related Definitions and License Exemptions," 91 FR 62361, published October 1, 2026, docket DOS-2026-0991.
+- It proposes removing VIII(h)(10), which would move most radar altimeters off the USML. Presumably they would fall under Commerce (EAR) jurisdiction. The destination classification and any retained exceptions should be confirmed in the final text. Do not assume an ECCN. Altimeters outside the removed paragraph, or caught by another USML paragraph, would remain under ITAR.
+- It also proposes a new 22 CFR 120.35 for items excluded from the USML, and two new "specially designed" releases in 22 CFR 120.41. Those could affect related components.
+
+Timing
+- Comments are due November 30, 2026.
+- No effective date exists, because no final rule has issued. A final rule, with its effective date and any transition provisions, will follow only after DDTC reviews comments. I cannot give you a date, and anyone who does is speculating.
+
+What you must do now
+- Keep treating the altimeters, their technical data and software as ITAR-controlled. Continue to hold DDTC registration, obtain DSP-5/DSP-73 licenses or use valid exemptions, run 22 CFR 126.1 and restricted-party screening, control foreign national access (deemed exports, 22 CFR 120.50), and use TAAs for defense services and technical data.
+- Do not ship under the assumption that EAR applies. An export without authorization on that basis would be an ITAR violation if the rule is not yet final.
+- If you are uncertain about any model's current classification, file a Commodity Jurisdiction request (22 CFR 120.4).
+
+What to prepare
+- Inventory each altimeter model, with its performance parameters, and map it against VIII(h)(10) and any other USML paragraph. Find the models that would actually be released.
+- Plan the transition: EAR classification, license requirements to your markets, what happens to open DSP-5s and agreements, customer and distributor notices, TCP and registration changes.
+- Consider commenting by November 30, 2026 on the scope of the removal, the transition period and how existing authorizations will be handled.
+- Keep ITAR records for 5 years (22 CFR 122.5) even after any reclassification.
+
+This is general compliance information, not legal advice. Verify against the Federal Register notice and consult export counsel.

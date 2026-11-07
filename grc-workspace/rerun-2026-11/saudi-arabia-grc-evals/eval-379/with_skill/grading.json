@@ -1,0 +1,33 @@
+{
+  "eval_id": 379,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies the NCA's draft AI Cybersecurity Guidelines (AICG-1:2026)",
+      "passed": true,
+      "evidence": "\"The NCA's draft AI Cybersecurity Guidelines (AICG-1:2026)\""
+    },
+    {
+      "text": "States the public consultation ran July 5 to August 5, 2026",
+      "passed": true,
+      "evidence": "\"went through public consultation from 5 July to 5 August 2026\""
+    },
+    {
+      "text": "Describes the draft: 4 domains, roughly 42 guidelines, covering generative and agentic AI",
+      "passed": true,
+      "evidence": "\"The draft has 4 domains and about 42 guidelines and covers generative and agentic AI.\""
+    },
+    {
+      "text": "States the final version remains unpublished as of November 2026, so they are draft, not binding requirements",
+      "passed": true,
+      "evidence": "\"As of November 2026 the final version is unpublished. Do not cite it as binding.\""
+    },
+    {
+      "text": "Advises monitoring the NCA and preparing against the draft structure",
+      "passed": true,
+      "evidence": "\"Set up a watch on NCA and SDAIA publications, and plan a gap assessment once the AICG is final\" plus \"Treat the AICG draft as a design signal.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

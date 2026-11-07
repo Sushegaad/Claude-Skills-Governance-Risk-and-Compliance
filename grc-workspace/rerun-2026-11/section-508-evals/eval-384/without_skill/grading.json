@@ -1,0 +1,33 @@
+{
+  "eval_id": 384,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Anchors requirements to the 2017 Revised 508 Standards with WCAG 2.0 Level AA as the binding baseline",
+      "passed": true,
+      "evidence": "\"Revised 508 Standards (36 CFR Part 1194...)\"; \"The Section 508 standards currently incorporate WCAG 2.0 A and AA by reference\""
+    },
+    {
+      "text": "Recommends verifying accessibility of ICT deliverables at acceptance, noting the FY2025 assessment found under 30 percent of agencies almost always do this",
+      "passed": false,
+      "evidence": "Recommends \"Acceptance testing against the standards\" but never cites the FY2025 assessment's under-30-percent verification finding"
+    },
+    {
+      "text": "States there is no pending refresh rulemaking to wait for",
+      "passed": false,
+      "evidence": "Never states there is no pending refresh; instead advises to \"monitor the Access Board and FAR Council for changes\""
+    },
+    {
+      "text": "Covers standard procurement artifacts such as ACRs/VPATs and testing evidence",
+      "passed": true,
+      "evidence": "\"Require a current ACR based on the VPAT 2.x Revised Section 508 edition... Verify through your own testing (for example the DHS Trusted Tester process...)\""
+    },
+    {
+      "text": "Uses the FY2025 assessment (1.96 of 5 average) as context for why verification matters",
+      "passed": false,
+      "evidence": "The FY2025 assessment and its 1.96/5 average score are never mentioned"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

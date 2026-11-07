@@ -1,0 +1,33 @@
+{
+  "eval_id": 383,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies the conflation: Section 508 applies to federal agencies and incorporates WCAG 2.0 AA via the 2017 standards",
+      "passed": true,
+      "evidence": "\"Section 508... applies to federal agencies\"; \"incorporates WCAG 2.0 Level A and AA, not 2.1. The Revised Section 508 Standards (36 CFR Part 1194, 82 FR 5790, January 2017)\""
+    },
+    {
+      "text": "States state and local governments are covered by the DOJ ADA Title II web rule, which uses WCAG 2.1 AA",
+      "passed": true,
+      "evidence": "\"the DOJ ADA Title II web rule... requires WCAG 2.1 AA for state and local government web content and mobile apps\""
+    },
+    {
+      "text": "Notes DOJ extended the Title II compliance dates by one year in spring 2026 (91 FR 20902)",
+      "passed": true,
+      "evidence": "\"Its compliance dates were extended by one year in spring 2026 (91 FR 20902)\""
+    },
+    {
+      "text": "Notes HHS similarly extended its Section 504 web rule compliance dates (91 FR 25496)",
+      "passed": true,
+      "evidence": "\"the HHS Section 504 web rule... Its dates were extended by one year too (91 FR 25496)\""
+    },
+    {
+      "text": "Avoids asserting exact new per-entity deadlines and advises checking the extension rules directly",
+      "passed": true,
+      "evidence": "Gives no specific post-extension dates: \"Read the rule to find the date that applies\"; \"2027 may or may not be correct for your client, and I'd verify it against the rule text\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

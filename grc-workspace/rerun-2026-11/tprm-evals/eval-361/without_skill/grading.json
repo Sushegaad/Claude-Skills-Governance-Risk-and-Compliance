@@ -1,0 +1,33 @@
+{
+  "eval_id": 361,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the June 2023 Interagency Guidance on Third-Party Relationships remains the operative framework",
+      "passed": true,
+      "evidence": "\"as best I know, the June 2023 interagency guidance remains the controlling US banking TPRM standard\" - states it as operative, with verification caveat"
+    },
+    {
+      "text": "Describes the proposal published in the Federal Register September 15, 2026 (91 FR 58536) that would rescind and replace it",
+      "passed": false,
+      "evidence": "No mention of the September 15, 2026 proposal or 91 FR 58536; response says it is 'not aware of the 2023 guidance having been rescinded or formally replaced'"
+    },
+    {
+      "text": "States comments are due November 16, 2026",
+      "passed": false,
+      "evidence": "No mention of a November 16, 2026 comment deadline"
+    },
+    {
+      "text": "Notes the NCUA joins the proposal (it was not party to the 2023 guidance) and that the proposal would also rescind the OCC foreign-based third-party bulletin, the 2024 bank-fintech joint statement, and the 2024 community bank TPRM guide",
+      "passed": false,
+      "evidence": "No mention of NCUA joining a proposal or of rescinding the OCC foreign-based bulletin, 2024 bank-fintech joint statement, or 2024 community bank guide"
+    },
+    {
+      "text": "Advises against restructuring programs before a final document, while considering a comment submission",
+      "passed": false,
+      "evidence": "Advises keeping program mapped to 2023 guidance but never mentions the proposal or a comment submission opportunity"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

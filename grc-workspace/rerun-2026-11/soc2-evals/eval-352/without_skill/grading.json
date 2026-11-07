@@ -1,0 +1,33 @@
+{
+  "eval_id": 352,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the 2017 TSC (with 2022 revised points of focus) apply, because the 2027 criteria are only a proposal",
+      "passed": true,
+      "evidence": "the 2017 Trust Services Criteria (TSP Section 100) with the 2022 revised points of focus apply (stated as the answer, though it does not know of the 2027 proposal specifically)."
+    },
+    {
+      "text": "Notes the proposed criteria would apply to engagements beginning on or after December 31, 2027 if adopted",
+      "passed": false,
+      "evidence": "No December 31, 2027 effective date mentioned; only generic \"confirm the effective-date language\"."
+    },
+    {
+      "text": "Mentions early adoption would be permitted once the criteria are final",
+      "passed": false,
+      "evidence": "Early adoption is never mentioned."
+    },
+    {
+      "text": "Confirms the five categories (Security, Availability, Processing Integrity, Confidentiality, Privacy) are unchanged",
+      "passed": false,
+      "evidence": "Lists the five current categories but never addresses the proposed refresh keeping them unchanged."
+    },
+    {
+      "text": "Recommends monitoring the exposure draft and commenting by January 15, 2027",
+      "passed": false,
+      "evidence": "No mention of the exposure draft or the January 15, 2027 comment deadline."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

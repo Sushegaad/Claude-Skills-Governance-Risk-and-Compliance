@@ -1,0 +1,48 @@
+SHORT ANSWER
+The Affiliates Rule extends BIS Entity List and Military End-User (MEU) List license requirements, and certain SDN-related requirements, to entities that are 50 percent or more owned by listed parties. It is not in effect today (November 2026) because it is stayed, but it will snap back when the stay lapses on January 10, 2027. A screening tool that only matches names on the Entity List will miss the entities this rule targets. You should fix that before the stay ends.
+
+1. WHAT THE RULE IS
+- Title: "Expansion of End-User Controls To Cover Affiliates of Certain Listed Entities." Citation: 90 FR 47201. Published September 30, 2025, effective September 29, 2025.
+- Substance: Entity List and MEU List license requirements (Part 744, Supplements 4 and 7) now also apply to any entity that is 50 percent or more owned, directly or indirectly, individually or in the aggregate, by one or more listed parties. The ownership standard is OFAC-style.
+- Before this rule, BIS controls attached only to the specifically named entity. A subsidiary that was not itself listed could receive items without a license. The rule closes that gap.
+- Aggregation matters. Two or more listed parties holding, say, 30 percent each count together. A tool that checks one owner at a time will miss this.
+
+2. IS IT IN EFFECT TODAY?
+No. The rule is stayed.
+- 90 FR 50857 (effective November 10, 2025) suspended the rule for one year, through November 9, 2026.
+- FR Doc 2026-22793 (filed November 5, 2026, effective November 9, 2026) extends the suspension to January 10, 2027. There are no substantive changes to the rule.
+- Today, a customer that is not itself listed is not subject to the Entity List license requirement solely because of its ownership. Treat that as a temporary position. The rule is a stay of an existing rule, not a rescission. BIS has already extended the stay once. Do not plan on another extension.
+- Even while the stay is in force, the underlying obligations remain.
+  - Ownership by a listed party is a red flag under the "know or have reason to know" standard (§ 732.6 and Supplement 3 to Part 732). It is also relevant to the General Prohibition 10 knowledge standard (§ 736.2(b)(10)).
+  - Part 744 end-use controls apply regardless, for example the military end-use/end-user and WMD end-use rules (§§ 744.2-744.6).
+  - OFAC's separate 50 percent rule is a different regime and applies to SDNs now.
+
+3. WHAT TO DO BEFORE YEAR-END (AND BEFORE JANUARY 10, 2027)
+Priority 1: close the screening gap
+- Name-only matching against the Entity List is no longer adequate. Add ownership-based screening.
+- For each customer, distributor, end-user, consignee, freight forwarder, bank and broker, capture ownership data: direct and indirect owners, and percentage holdings.
+- Calculate aggregate ownership by listed parties. Roll up indirect holdings through intermediate entities.
+- Screen against the full set of lists (Entity List, MEU List, Unverified List, Denied Persons List, SDN and the Consolidated Screening List at trade.gov/consolidated-screening-list), applied to owners as well as to the counterparty.
+- Ask your screening vendor whether it supports ownership and affiliate data, and how it treats aggregation. If it does not, plan a supplement such as a corporate-family-tree data provider.
+
+Priority 2: re-screen the existing book
+- Run a one-time back-screen of all active customers, distributors and open orders against ownership data. Prioritize China and Hong Kong, Russia, and transshipment hubs, and any customer in a sector tied to listed entities.
+- Flag counterparties that are 25-49 percent owned by listed parties, and those with unknown or opaque ownership. They are near the threshold and may cross it through a small ownership change.
+
+Priority 3: update procedures and contracts
+- Add an ownership-certification step to onboarding and to periodic recertification. Require customers to notify you of ownership changes.
+- Add contract language: a representation that the customer is not 50 percent or more owned by any listed party, a notice obligation, and a termination or suspension right.
+- Write down how you treat unverifiable ownership. Escalate it, and do not ship until it is resolved.
+
+Priority 4: set a go-live and a hold protocol
+- Treat January 10, 2027 as a hard cutoff. Build and test the controls now, because late December has little capacity. Decide in advance how pending orders will be handled when the stay lapses.
+- Create a decision tree for hits: stop the shipment, escalate to the export control officer or counsel, assess whether a license is required and whether any exception is available, document the outcome, and consider applying for a license.
+- Ordering and licensing: licenses for newly captured parties will take time. BIS aims to decide most applications within 90 days, and a policy of denial is common for listed parties.
+
+Priority 5: governance
+- Brief management and document the decision. Record your risk assessment, the classification of open orders affected, and training for sales, logistics and customer-onboarding teams.
+- Keep screening records, including ownership evidence, for 5 years (§ 762.6).
+- If a review reveals past shipments that would have been prohibited had the rule been in effect, that is not a violation today. Shipments made after the stay lapses to affiliates you failed to identify would be. If you discover an actual apparent violation, consider a voluntary self-disclosure under § 764.5.
+
+4. CAVEATS
+This is general compliance information, not legal advice. Check the Federal Register and BIS notices for any further change to the stay. Work with counsel on borderline ownership calculations (for example, control without majority ownership, which the 50 percent test does not cover but which is still a red flag).

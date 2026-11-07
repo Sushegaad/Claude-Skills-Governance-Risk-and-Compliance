@@ -1,0 +1,18 @@
+I cannot give you a reliable list of DDTC rules from the second half of 2026. My knowledge of that period is limited, and I do not want to list rules that I may be inventing. I am also not able to confirm the "aircraft survivability change" you mention.
+
+What I can do
+- Tell you where to find the authoritative list:
+ 1. Federal Register: search agency "State Department" and the topic "International Traffic in Arms Regulations" with a publication date from July 1 to the present. Filter by type (Rule, Proposed Rule, Notice).
+ 2. DDTC website (pmddtc.state.gov): "Regulatory/Rulemaking" and "What's New" pages, which list final rules, interim final rules and notices.
+ 3. DTAG meeting notes and the Directorate's FAQs.
+ 4. Law-firm trade-compliance trackers (for example from firms that publish ITAR amendment summaries).
+- Tell you the types of DDTC rules that regularly appear, so you can check whether any occurred this period:
+ - USML category revisions in the multi-year review (the periodic rewrite of categories to positive-list parameters and the move of items to the 600 series), often coordinated with BIS rules.
+ - Amendments to Parts 120-130, such as definitions, exemptions (125.4, 126.4, 126.5, 126.18), the AUKUS exemption (126.7) and its follow-ups, and licensing process changes.
+ - Fee and registration changes under Part 122, including the fee schedule and registration-code updates.
+ - Policy changes under Section 126.1 (country policy), including additions, removals and amendments of the proscribed countries.
+ - Electronic filing changes (DECCS), forms and the voluntary-disclosure process (Part 127).
+ - Penalty inflation adjustments (annual civil monetary penalty adjustments in Part 127).
+ - Information collection notices (Paperwork Reduction Act) for forms DSP-5, DSP-73, DS-2032 and others.
+
+If you give me the rule titles or citations you have seen, I can discuss what each means for exporters. Please also verify each against the Federal Register before relying on it. I would rather flag the limits of my knowledge than give you an incomplete or fabricated list.

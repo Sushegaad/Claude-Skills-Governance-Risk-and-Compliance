@@ -1,0 +1,30 @@
+Will smaller companies be exempt from SOX 404(b) soon? Should we pause ICFR auditor-attestation prep?
+
+Short answer: do not pause. As far as I know, there is no enacted change that exempts you from SOX 404(b) auditor attestation. Proposals and discussions exist, but none that I can confirm is final. Verify the current status before making any decision, because I do not have live access to the SEC, Congress, or news sources.
+
+Current rules (as I understand them)
+- Section 404(b) requires an auditor attestation on ICFR for issuers that are accelerated filers or large accelerated filers. Non-accelerated filers are permanently exempt (Dodd-Frank section 989G).
+- Accelerated filer status depends on public float of at least $75 million but less than $700 million, plus annual revenue of $100 million or more for the 2020 amendments' revenue test. Smaller reporting companies with annual revenues below $100 million are not accelerated filers, so they are outside 404(b). Emerging growth companies are exempt for up to five years.
+- Large accelerated filers (public float of $700 million or more) are required regardless.
+- Section 404(a) management assessment applies to all non-EGC issuers, and it is not eliminated by any proposal I know of.
+
+What has been discussed
+- The SEC under current leadership has signaled interest in revisiting filer categories, scaled disclosure, and the cost-benefit of ICFR attestation. Possible approaches include increasing the public float thresholds for accelerated and large accelerated filer status or revising the SRC definition. Such a change would need an SEC rulemaking (proposal, comment period, adoption, effective date and transition rules).
+- Legislation has been introduced over the years (for example, bills to raise the thresholds for accelerated filers). A bill introduced is not a law.
+- A proposal published for comment does not change your obligations. Even after adoption, there is normally a transition and an effective date, and the status is generally determined as of the end of the second quarter of the fiscal year (the public float determination date) and measured at year-end for the filer-status transition.
+
+Why not to pause
+1. Timing. For a December 2026 year-end, the public float determination was as of June 30, 2026. Any rule adopted now is unlikely to apply retroactively to that determination, so your FY2026 status is almost certainly fixed. Please confirm with counsel.
+2. Management still owes the 404(a) assessment, which needs the same documentation, testing, and deficiency evaluation. Most of the 404(b) prep is the same work.
+3. Lenders, investors, the audit committee, and your auditor may expect attestation regardless.
+4. A pause would be hard to unwind and could cause an unprepared year-end, with the risk of a material weakness or late filing.
+5. Any relief, if it occurs, would probably apply prospectively and would save audit fees, not the control work.
+
+What to do
+- Confirm your FY2026 filer status with your securities counsel using the June 30, 2026 float and revenue figures.
+- Keep the ICFR program on schedule: scoping, risk assessment, ITGC and key control testing, deficiency evaluation, and remediation.
+- Track the SEC's regulatory agenda, any proposals, and legislation. Set a decision point for FY2027 planning.
+- Talk to your audit committee and auditor. Where you are near a threshold, model scenarios such as moving into or out of accelerated status.
+- If you are close to the threshold, consider optional scaled approaches for non-key areas, but keep key controls and ITGCs.
+
+Please verify the current thresholds and any recent SEC action on sec.gov before relying on this.

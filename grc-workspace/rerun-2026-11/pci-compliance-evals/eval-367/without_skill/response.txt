@@ -1,0 +1,26 @@
+Caveat first: I can't confirm from memory the exact details of what changed on October 31, 2026. Verify the dates and wording against the PCI SSC website. What follows is the background and the likely implications.
+
+Background
+- SPoC (Software-based PIN Entry on COTS) and CPoC (Contactless Payments on COTS) were standalone PCI standards. SPoC covers PIN entry on a merchant's COTS device (usually a phone or tablet) with a secure card reader. CPoC covers contactless acceptance on the COTS device itself (tap on phone).
+- The PCI Mobile Payments on COTS (MPoC) Standard (v1.0, 2023) was designed to supersede both. It covers a combination of PIN-on-COTS and card-data acceptance, and adds new architecture and attestation and monitoring requirements for solutions.
+- The Council set a sunset path. New SPoC and CPoC evaluations stopped after a cut-off, and existing SPoC and CPoC solutions stay on the list until their expiry. My understanding is that October 31, 2026 is the final date for those listings. After that, SPoC and CPoC listings move to "expired" and can't be used for new deployments.
+
+What this likely means for you
+1. If you operate an SPoC solution:
+   - Your listing is no longer valid for new merchant onboarding after the sunset. If the solution has not moved to MPoC, it is no longer an approved solution from the Council's perspective.
+   - Existing merchants will need to be migrated to an MPoC-validated solution or to a different compliant acceptance approach. Card brands and acquirers set their own rules for how long existing deployments can continue, so confirm with them.
+   - Merchants using that solution lose the reduced PCI DSS scope that comes from using a listed solution. They may need to assess against a larger set of PCI DSS requirements. Their SAQ type could change (for example from SAQ SPoC to another SAQ).
+2. If you were evaluating a CPoC product:
+   - A CPoC product can no longer be treated as a valid, listed option. Any CPoC product with an expired listing should be dropped from the shortlist, unless the provider has moved to MPoC and shows a current MPoC listing.
+   - Ask the provider for its MPoC listing reference, the MPoC version, and the expiry date.
+3. In both cases, MPoC is the path. Evaluate MPoC solutions that support PIN entry (and contactless, if that's what you need) in one listing. Check whether they are listed for your COTS platform (iOS, Android) and region.
+
+Actions
+- Confirm your solution's status on the PCI SSC list of PCI-listed solutions and check the expiry.
+- Talk to your acquirer, payment brands and solution provider about their transition timelines.
+- Inventory merchants and devices on the SPoC solution and plan migration waves.
+- Revisit your PCI scope documentation, SAQ selection and contracts.
+- Stop any new CPoC procurement. Reissue the RFP with MPoC as the requirement.
+- Update customer communications and your TPSP responsibility matrix (PCI DSS Req 12.8, 12.9).
+
+If you tell me which provider and which region you're in, I can help structure the migration plan.

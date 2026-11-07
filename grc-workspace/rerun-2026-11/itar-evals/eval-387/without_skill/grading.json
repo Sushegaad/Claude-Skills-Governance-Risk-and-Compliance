@@ -1,0 +1,33 @@
+{
+  "eval_id": 387,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Cites the proposed rule: 91 FR 62361, published October 1, 2026, docket DOS-2026-0991",
+      "passed": false,
+      "evidence": "\"I cannot verify a DDTC 'October 2026 omnibus proposed rule.'\" No citation, date, or docket given."
+    },
+    {
+      "text": "States it would remove and reserve USML Category VIII(h)(10), taking most radar altimeters off the Munitions List",
+      "passed": false,
+      "evidence": "Never states the VIII(h)(10) removal; only generic advice to \"Look at the parameters for radar altimeters.\""
+    },
+    {
+      "text": "Makes clear it is proposed only: current classifications remain in effect until a final rule",
+      "passed": true,
+      "evidence": "\"A proposed rule changes nothing legally until a final rule is published and takes effect. Until then, current 22 CFR 121.1 controls.\""
+    },
+    {
+      "text": "Mentions at least one other element (new 22 CFR 120.35 exclusions section, new 120.41 specially designed releases, or the new 123.26 OEM servicing exemption)",
+      "passed": false,
+      "evidence": "None of the new 120.35, new 120.41 releases, or 123.26 exemption is mentioned; only existing definitions and exemptions are referenced generically."
+    },
+    {
+      "text": "States comments are due November 30, 2026 and advises affected exporters to comment",
+      "passed": false,
+      "evidence": "Advises \"Submit comments by the deadline\" but never states the November 30, 2026 deadline."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

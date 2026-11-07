@@ -1,0 +1,67 @@
+Here is a 2027 SOC 2 readiness timeline. It is built on the 2017 Trust Services Criteria with the 2022 Revised Points of Focus, which remain the operative criteria. The proposed 2027 criteria are tracked as a watch item and do not drive the plan.
+
+CONTEXT THAT SHAPES THE PLAN
+
+- On October 28, 2026, the AICPA issued an exposure draft of the proposed 2027 TSC (draft dated October 27, 2026). It keeps the five categories, consolidates overlapping criteria and adds AI-related points of focus without new AI-specific criteria.
+- Comments are due January 15, 2027. Proposed effective date: engagements beginning on or after December 31, 2027, with early adoption permitted.
+- So a 2027 audit period is examined against the current criteria. Controls built to them should carry forward. Do not re-map to proposed criteria.
+- The separate February 2026 attestation standards draft (AT-C 105/205/210, proposed effective June 15, 2029) does not change the TSC.
+
+ASSUMPTIONS (adjust if wrong)
+
+- First SOC 2, with Type 1 optional, then a Type 2 with a 6-month observation window. If you already have a report, skip to the Type 2 steps.
+- Scope: Security (required) plus categories your customers need.
+- Audit firm is a licensed CPA firm engaged by end of Q1.
+
+TIMELINE
+
+Q4 2026 (now to December): decisions
+- Confirm report type, categories, system boundary and target report date with leadership. Name an executive sponsor and a compliance owner.
+- Shortlist and engage a CPA firm. Request their readiness approach and sample request list. Confirm they will examine against the 2017 TSC with 2022 points of focus.
+- Start a gap assessment against CC1-CC9 and any chosen categories, using RAG status and remediation entries (control area, gap, remediation, owner, date, evidence needed).
+
+January 2027
+- Finish gap assessment. Prioritize the commonly flagged gaps: undocumented or unreviewed policies, no formal risk assessment, no access reviews, untested incident response plan, inconsistent change management, no vendor program.
+- Kick off remediation with owners and dates.
+- Optional: decide whether to comment on the exposure draft by January 15, 2027.
+- Sign the audit engagement letter if not yet done.
+
+February to March 2027: build the foundation
+- Write and approve the core policy set (information security, access control, incident response, change management, risk assessment, vendor management, BC/DR, data classification, acceptable use, encryption, vulnerability management, plus privacy notice if in scope). Each one has an owner, version, approval and annual review date.
+- Run the first formal risk assessment and create the risk register with owners and treatment decisions.
+- Distribute policies and capture acknowledgments. Start security awareness training and background check evidence.
+- Build a vendor inventory with tiers. Collect SOC 2 reports for critical vendors and map CUECs.
+- Build the control matrix (ID, criterion, type, owner, frequency, evidence, test procedure).
+
+April to May 2027: implement and operate
+- Implement technical controls: MFA, SSO, endpoint protection, logging and alerting, vulnerability scanning, backup and restore tests, change approval in version control.
+- Run the first access review (all in-scope systems, with documented decisions and tickets for changes). Run a first vulnerability scan cycle. Run an incident response tabletop.
+- Set up automated, dated evidence exports so evidence is contemporaneous.
+- If AI systems are in scope, add them to inventory, change control, vendor review and risk register now. These are low-regret under both current and proposed criteria.
+
+June 2027: readiness and Type 1 (optional)
+- Auditor-led or internal readiness review. Fix remaining gaps. Freeze control design before the observation window begins.
+- Type 1 as of a date (design only), if customers need something early. Skip it if time is tight.
+
+July to December 2027: Type 2 observation window (6 months, example)
+- Monthly: evidence checks and a compliance review meeting.
+- Quarterly: access review (Q3 and Q4 evidence), risk register review, vulnerability and patch reports, vendor review progress.
+- Within the window: annual items (pen test, DR test, policy review, risk assessment refresh) must land inside the period.
+- Sample-based evidence: changes, terminations, incidents. Keep tickets complete.
+- Track and fix exceptions as they occur and document them.
+
+Watch items during 2027
+- AICPA final TSC publication: once published, ask your auditor how it affects any engagement spanning December 31, 2027 and whether early adoption is on offer. Do not adopt on your own.
+- If your period starts on or after December 31, 2027, expect the new criteria to be discussed. Ask the auditor in Q3.
+
+Q1 2028
+- Auditor fieldwork, then draft and final report. Management assertion and system description reviewed by you. Plan for exceptions and management responses.
+- Share the report under NDA with customers. Plan the next period to run continuously.
+
+KEY RISKS TO THE TIMELINE
+- Starting the observation window before controls have been operating long enough to be evidenced.
+- Audit firm availability in Q1 2028. Book early.
+- Controls on paper that do not match practice.
+- Late-finding gaps in vendor and access evidence.
+
+Only a licensed CPA firm can perform the examination or issue a readiness letter and report. This is general guidance, not legal advice. Share your report type, categories and start date and I can tighten these dates.

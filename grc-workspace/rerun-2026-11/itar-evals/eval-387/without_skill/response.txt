@@ -1,0 +1,22 @@
+I cannot verify a DDTC "October 2026 omnibus proposed rule." My knowledge of 2026 rulemaking is limited, and I have no reliable information about its contents. I will not invent provisions. Here is how to handle it.
+
+Check the premise first
+- Search the Federal Register (federalregister.gov) for DDTC / State Department ITAR rules published in October 2026, and check the DDTC website (pmddtc.state.gov) news section. Confirm that the document is a proposed rule (NPRM) and not an interim final or final rule. Confirm the comment deadline and any proposed effective date.
+- A proposed rule changes nothing legally until a final rule is published and takes effect. Until then, current 22 CFR 121.1 controls.
+
+What typically matters to avionics manufacturers in USML and ITAR revisions (so you know where to look)
+- USML Category VIII(h): parts and components for military aircraft. Look for changes to the "specially designed" catch-alls, to enumerated avionics items, and to the carve-outs for parts common to civil aircraft.
+- USML Category XI (military electronics): radar, electronic warfare, and countermeasures. Look at the parameters for radar altimeters, EW and mission systems.
+- USML Category XII (fire control, sensors, night vision, IR) for sensor and targeting equipment.
+- Paragraph (x) language that moves items to the EAR 600 series (ECCN 9A610.x, 9A610.y, 9E610 and others).
+- Definitions in 22 CFR Part 120, especially "specially designed", and any changes to the ITAR/EAR order of review.
+- Technical data and software provisions (Category VIII(i) and XI(d)), and any exemptions in Parts 125 and 126 for civil-aircraft airworthiness work.
+
+Questions to answer once you have the text
+1. Which USML paragraphs does the rule amend? Map each of your part numbers to the amended entries.
+2. Do any of your items move from the USML to the CCL (or the reverse)? If so, you will need new classifications, new licensing (BIS license or exception instead of DSP-5 or TAA), and updated marking and recordkeeping.
+3. Is there a transition period for existing licenses and agreements?
+4. Does your DDTC registration still apply to the items you make? If everything moves to the CCL you may no longer need registration, but you must still comply with the EAR.
+5. Submit comments by the deadline if the change creates problems. DDTC and DTAG welcome industry input.
+
+If you send me the Federal Register citation or the text, I can summarize the avionics-relevant changes. Without it, any specifics I gave you would be speculation.

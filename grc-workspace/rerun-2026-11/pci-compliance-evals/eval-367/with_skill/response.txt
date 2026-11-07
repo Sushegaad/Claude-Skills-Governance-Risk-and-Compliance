@@ -1,0 +1,30 @@
+Short answer: the sunset periods for the PCI SPoC and CPoC standards ended on October 31, 2026. No new submissions are accepted under either standard. MPoC is the successor to both, and any new COTS-based solution should be an MPoC solution.
+
+What the sunsets mean in practice
+- The sunset ended new submissions. It did not remove existing listings. Existing listings keep their normal lifecycle, so your current SPoC solution is not suddenly invalid.
+- Nothing new will be accepted under SPoC or CPoC. A vendor that has not already been through those programs cannot enter them now. It has to go through MPoC.
+- The same date applied to the PCI 3DS SDK standard. Its functionality is being folded into the Secure Software Standard. This is not relevant to your question unless you also build 3DS SDKs.
+
+Your SPoC solution
+- Keep using it under its existing listing, but treat the listing's expiry as a planning date. Check the listing on the PCI SSC website.
+- The vendor will have no renewal route under SPoC for new submissions. Ask them now for their MPoC plan: is it a transition or a re-assessment, and what are the dates?
+- Because you are a merchant using a listed solution, your validation burden depends on what the acquirer and card brands accept, and on how the solution is deployed. Keep in your records the listing reference, the date you checked it, and the vendor's responsibility statement.
+
+The CPoC product you were evaluating
+- Do not select a CPoC-only product for new procurement. It can no longer be newly submitted for listing, and there is no future for it beyond the existing lifecycle.
+- If the product is already listed under CPoC, ask the vendor about its MPoC timeline and what happens at expiry. If it is not yet listed, it is effectively a dead end.
+- Make MPoC listing a requirement in your RFP. Ask for the MPoC listing or a dated commitment, and confirm the acquirer or processor supports the solution.
+
+Compliance program points
+- Under Req 12.8, record the vendor as a third-party service provider, keep a written agreement, and monitor their compliance at least every 12 months. Document which requirements they cover and which remain yours (12.8.5).
+- Req 9.5 still applies to any POI hardware you use, including inspection for tampering and substitution. Whether it applies to a COTS device depends on your solution's design, so confirm with your QSA.
+- A SAQ type like P2PE applies to a validated P2PE solution, which is a different listing from SPoC, CPoC or MPoC. Do not assume the SAQ choice carries across. Confirm the correct SAQ with your acquirer and QSA.
+
+Recommended next steps
+1. Pull the vendor's current SPoC listing and note its expiry.
+2. Request their MPoC roadmap in writing.
+3. Pause or reshape the CPoC evaluation. Re-scope the RFP to MPoC.
+4. Update your TPSP register and the responsibility matrix.
+5. Confirm with your acquirer which solutions they accept for new deployments.
+
+This is informational guidance. Confirm listing status and dates with PCI SSC and your acquirer, and confirm SAQ or ROC treatment with your QSA.

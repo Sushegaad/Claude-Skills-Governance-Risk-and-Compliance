@@ -1,0 +1,33 @@
+{
+  "eval_id": 374,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the new prohibited-practice items added by the Digital Omnibus apply from December 2, 2026",
+      "passed": true,
+      "evidence": "\"a new prohibition on AI systems generating non-consensual sexual or intimate imagery... and child sexual abuse material, which I believe applies from 2 December 2026\""
+    },
+    {
+      "text": "States GPAI models placed on the market before August 2, 2026 must comply with Article 50(2) machine-readable marking by December 2, 2026",
+      "passed": true,
+      "evidence": "\"the grace period for the Art. 50(2) obligation to mark synthetic audio, image, video and text in machine-readable form, for systems placed on the market before 2 August 2026... shortened it to 2 December 2026\""
+    },
+    {
+      "text": "Identifies the Digital Omnibus as Regulation (EU) 2026/1744, in force July 27, 2026",
+      "passed": false,
+      "evidence": "Never cites Regulation (EU) 2026/1744 or its July 27, 2026 entry into force; says \"Confirm the Omnibus has been published in the Official Journal and in force\"."
+    },
+    {
+      "text": "Distinguishes these December 2026 items from the shifted high-risk dates (December 2, 2027 and August 2, 2028)",
+      "passed": true,
+      "evidence": "\"High-risk obligations did NOT land in December 2026: Annex III obligations were postponed to about 2 December 2027, and Annex I product-related ones to about 2 August 2028.\""
+    },
+    {
+      "text": "Gives practical steps for marking compliance (machine-readable disclosure of AI-generated content)",
+      "passed": true,
+      "evidence": "\"confirm machine-readable marking (watermark/metadata, detectable) is deployed for all systems, including legacy ones\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

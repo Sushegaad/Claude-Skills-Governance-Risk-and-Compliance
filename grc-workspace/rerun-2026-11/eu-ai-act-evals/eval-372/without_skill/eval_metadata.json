@@ -1,0 +1,13 @@
+{
+  "eval_id": 372,
+  "eval_name": "procedural-regulation",
+  "run_type": "without_skill",
+  "prompt": "What procedural rules govern Commission proceedings against GPAI providers under the AI Act?",
+  "assertions": [
+    "Cites Implementing Regulation (EU) 2026/1755, published in the OJ July 21, 2026 and in force August 10, 2026",
+    "Covers model evaluations including API, source code and model access under Article 92(3)",
+    "Covers the appointment and independence of external experts",
+    "Covers fine proceedings: preliminary findings, the right to be heard, and access to the file",
+    "States the five-year limitation period for fines"
+  ]
+}

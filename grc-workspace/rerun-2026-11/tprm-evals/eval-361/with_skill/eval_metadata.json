@@ -1,0 +1,13 @@
+{
+  "eval_id": 361,
+  "eval_name": "interagency-proposal-status",
+  "run_type": "with_skill",
+  "prompt": "What is the status of US banking third-party risk management guidance as of November 2026?",
+  "assertions": [
+    "States the June 2023 Interagency Guidance on Third-Party Relationships remains the operative framework",
+    "Describes the proposal published in the Federal Register September 15, 2026 (91 FR 58536) that would rescind and replace it",
+    "States comments are due November 16, 2026",
+    "Notes the NCUA joins the proposal (it was not party to the 2023 guidance) and that the proposal would also rescind the OCC foreign-based third-party bulletin, the 2024 bank-fintech joint statement, and the 2024 community bank TPRM guide",
+    "Advises against restructuring programs before a final document, while considering a comment submission"
+  ]
+}

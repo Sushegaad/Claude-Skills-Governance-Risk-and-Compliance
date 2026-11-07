@@ -1,0 +1,33 @@
+{
+  "eval_id": 344,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States survivability-enhanced aircraft moved off USML Category VIII(a)(8) effective October 13, 2026 (interim final rule, 91 FR 55457)",
+      "passed": false,
+      "evidence": "Opens with \"I cannot confirm the specific change you refer to (a rule taking effect in or after October 2026).\" No VIII(a)(8), effective date, or 91 FR 55457 citation."
+    },
+    {
+      "text": "States the modified aircraft are now subject to the EAR (Commerce jurisdiction)",
+      "passed": true,
+      "evidence": "\"the likely answer is that the protection equipment is ITAR (State Department, DDTC)... while the aircraft is EAR (Commerce, BIS)\" (offered as its conclusion, though not tied to the actual rule)."
+    },
+    {
+      "text": "States the secured aircraft survivability equipment itself (DIRCM plus associated IR/UV missile warning with anti-tamper) remains on the USML in Category XI(a)(4)",
+      "passed": true,
+      "evidence": "\"They are most often on the USML. The usual candidates are USML Category XI (Military Electronics), for example XI(a)(4) electronic combat equipment\" and concludes the equipment is \"ITAR... probably in Category XI and/or XII.\""
+    },
+    {
+      "text": "Mentions the conditions: in-production manned civil aircraft with FAA transport/commuter type certificate or NATO/MNNA equivalent, with definitions added at 22 CFR 121.0",
+      "passed": false,
+      "evidence": "Mentions FAA type certification and in-production status generically, but not the transport/commuter certificate condition, NATO/MNNA equivalents, or the definitions added at 22 CFR 121.0."
+    },
+    {
+      "text": "Does not assert that the rule assigned a specific destination ECCN (the rule names none)",
+      "passed": true,
+      "evidence": "Never claims the rule assigned an ECCN; 9A991/9A610.a are discussed only as candidate classifications to confirm (\"Check the current text of USML Category VIII and ECCN 9A610\")."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

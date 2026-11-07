@@ -1,0 +1,13 @@
+{
+  "eval_id": 380,
+  "eval_name": "sama-framework",
+  "run_type": "with_skill",
+  "prompt": "Our Saudi bank client asked whether SAMA updated its Cyber Security Framework in 2026.",
+  "assertions": [
+    "States no: the SAMA Cyber Security Framework remains version 1.0 from May 2017",
+    "Advises treating vendor claims of a newer version as unconfirmed",
+    "Confirms SAMA-regulated institutions continue under the existing framework and its maturity expectations",
+    "Distinguishes SAMA scope from NCNICC-1:2025, which covers non-CNI private sector entities",
+    "Does not invent a 2026 SAMA framework release"
+  ]
+}

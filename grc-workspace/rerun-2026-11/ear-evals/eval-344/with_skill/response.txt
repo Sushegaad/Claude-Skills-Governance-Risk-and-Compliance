@@ -1,0 +1,34 @@
+SHORT ANSWER
+I cannot confirm any specific October 2026 rule change that alters this analysis, so I answer under the current regime and flag what must be verified. In my analysis:
+- The DIRCM protection equipment is very likely a defense article on the USML (ITAR, DDTC), not an EAR item. Confirm the exact paragraph and the "specially designed" analysis, and consider a Commodity Jurisdiction (CJ) request if there is any doubt.
+- The airliner itself, as an FAA type-certificated civil aircraft, would normally remain under the EAR (civil aircraft in 9A991 or the Category 9 civil entries, and not under 9A610). Installing ITAR-controlled equipment does not by itself move the airframe to the ITAR, but the installed equipment, the integration technical data and the services stay under ITAR. The aircraft's own status and the modification package must be analyzed separately.
+
+1. START WITH THE ORDER OF REVIEW (§ 734.3, § 732.3)
+The USML comes first. Only if an item is not on the USML do you go to the CCL. Each item and each piece of technical data or service gets analyzed separately.
+
+2. THE DIRCM EQUIPMENT
+- Directed infrared countermeasure systems are military countermeasure systems for defeating man-portable air-defense systems (MANPADS). Systems of this type are enumerated on the USML (the electronic/countermeasure and related categories, for example Category XI and the aircraft category VIII for aircraft-specific parts and accessories, and Category XII for infrared and laser components). I am not certain which paragraph covers a given configuration, and I would not rely on my memory of the paragraph. Check the current USML text at 22 CFR Part 121 and the "specially designed" definition in § 120.41 (which is also in 22 CFR, after the ITAR reorganization).
+- If it is on the USML, then ITAR governs: DDTC registration (Part 122), licensing for hardware, technical data and defense services (Part 123, 124, 125), and the manufacturer/exporter obligations. The ITAR also governs foreign-person access to the technical data (a deemed export under ITAR, requiring a license or agreement), and brokering rules (Part 129).
+- If a particular DIRCM variant or component is not enumerated, then it may fall under the "600 series" on the CCL (for example 9A610 for military aircraft parts, 6A and 7A entries for IR/laser components), where license requirements are much stricter than for ordinary dual-use items, including for China, Russia and other D:5 destinations. Where jurisdiction is unclear, a CJ request to DDTC gives you an official determination. A CCATS from BIS does not decide ITAR versus EAR.
+
+3. THE MODIFIED AIRLINER
+- An in-production, FAA type-certificated civil aircraft is not a military aircraft and is not on the USML. Under the EAR it is typically classified in 9A991 (civil aircraft, AT-only) unless a specific ECCN applies. Its parts and components may be classified in 9A991, 9A610.y or other entries depending on design intent.
+- Installing a military-grade countermeasure system raises these issues:
+  a) The USML equipment retains its ITAR status. Exporting the aircraft with the system installed is an export of the defense article, so DDTC authorization is needed for the installed system, even if the airframe is EAR.
+  b) The "specially designed" and "catch-and-release" analysis applies to modifications and to parts, components and accessories made for the modified aircraft. Parts specifically designed for the modified (military-capable) configuration may be captured by the USML or by 9A610, rather than by 9A991.
+  c) Whether the modified aircraft as a whole becomes a "military aircraft" requires its own analysis, and I do not think a general answer is safe. If the integration makes it a platform that is specially designed for a military function, the classification of the whole could change, so an official determination (CJ) is prudent for a new configuration.
+  d) Technical data and services: integration data, installation drawings and interface control documents for the DIRCM are likely ITAR technical data. Installation support abroad is likely a defense service.
+
+4. THE "AFTER OCTOBER 2026" PREMISE
+My reference material does not include any October 2026 rule on aircraft or countermeasure jurisdiction. If you have a specific Federal Register citation or a DDTC/BIS notice in mind, send it and I'll analyze it. Otherwise, check the DDTC and BIS Federal Register notices before relying on any changed treatment. The most relevant recent change in my materials is the August 13, 2026 UAV rule (91 FR 52501), which moved some military "specially designed" UAVs to 9A610.a. It does not directly address manned airliners or DIRCM.
+
+5. RECOMMENDED ACTIONS FOR THE CLIENT
+1. Obtain the DIRCM manufacturer's jurisdiction and classification (and any existing CJ or CCATS) and its export authorizations. Do not rely on the supplier's classification without understanding the basis.
+2. Document the order-of-review analysis for the DIRCM, the mounting hardware, the aircraft modification kit, the software and the technical data.
+3. Decide whether to file a CJ request with DDTC for the integrated configuration (the statutory target is 45 days, though in practice it often takes longer).
+4. Register with DDTC if the client manufactures or exports defense articles or furnishes defense services, and check whether Part 129 brokering applies.
+5. Screen end-users and destinations for both regimes. Many destinations are barred or restricted for ITAR (Part 126 policy).
+6. Record-keeping: ITAR requires 5 years from expiration of the license or other approval (22 CFR 122.5), and the EAR 5 years from export (§ 762.6).
+7. Handle foreign-national employee and contractor access as an ITAR/EAR deemed export or release issue.
+
+This is general compliance information, not legal advice. Work with export counsel on jurisdiction before any export, and confirm USML and CCL text against the current CFR.

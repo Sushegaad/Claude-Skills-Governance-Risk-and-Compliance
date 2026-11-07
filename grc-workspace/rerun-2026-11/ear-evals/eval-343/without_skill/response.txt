@@ -1,0 +1,20 @@
+I cannot reliably answer this. My knowledge does not reach reliably into October 2026, and I do not want to invent rule titles, dates or citations. Please verify everything below against the Federal Register and the BIS website (bis.gov, "Federal Register notices" and "Recent updates").
+
+WHAT I CAN SAY WITH CONFIDENCE
+- I have no verified information about any specific BIS rule published in October 2026. I will not list rules I cannot confirm.
+- The most important EAR date I know of is tied to the BIS Affiliates (50%) Rule, issued September 29, 2025 and suspended for one year starting around November 10, 2025. That suspension was set to end around November 9-10, 2026. If the suspension has not been extended or changed, the rule comes back into effect right around the date of your question. That makes it the most important near-term date for most exporters, particularly those who sell to or through China-linked parties. Verify that this is still correct. A late extension, a new rule or a trade-deal term could have changed it.
+
+HOW TO CHECK QUICKLY (30 minutes)
+1. Federal Register: search "Bureau of Industry and Security", filter 10/01/2026 to 10/31/2026, document types Rule and Proposed Rule.
+2. BIS website: the "Press releases" and "Federal Register notices" pages, and the Entity List page (additions are typically published as final rules).
+3. eCFR: Title 15, Subtitle B, Chapter VII (Parts 730 to 774). The "recent changes" view shows amendments.
+4. Subscribe to BIS email alerts and the Update Conference materials. Check your law firm's client alerts.
+5. Check for items that BIS often changes: Entity List and MEU additions; advanced computing and semiconductor controls (ECCNs 3A090, 4A090, and the foundry due-diligence rules); Russia/Belarus sanctions; license exception changes; Wassenaar implementation; the civil aircraft/military aircraft (USML/CCL) changes; AI model and chip rules; penalties updates (annual inflation adjustment, usually in January).
+6. For each new rule, note the publication date, effective date, any delayed compliance date, and whether there is a transition or savings clause.
+
+NEAR-TERM PLANNING ITEMS REGARDLESS
+- Confirm the status of the Affiliates Rule and be ready to screen to a 50% aggregate ownership standard.
+- Confirm whether any October rule has an effective or compliance date in November 2026 to January 2027.
+- Annual civil penalty inflation adjustments and any recordkeeping or reporting deadlines (for example, annual SNAP-R or license-related deadlines) arrive in the new year.
+
+If you can paste the October Federal Register notices you have in mind, I can help analyse their effect.

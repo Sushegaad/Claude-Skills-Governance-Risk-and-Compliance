@@ -1,0 +1,44 @@
+Short answer: I can't support that claim, and I would not act on it. As of November 2026 I'm not aware of any Access Board NPRM to refresh the Section 508 standards, and the Federal Register record doesn't show one.
+
+**Where the report probably came from**
+
+The most likely source is the 2015 Access Board proposed rule (80 FR 10880) for the ICT refresh. That proposal led to the final rule, and reports in 2026 appear to have recycled it as if it were new. Please check the Federal Register and the Access Board's rulemaking page (access-board.gov) directly. If you can find a docket number or FR citation for an October 2026 notice, send it to me and I'll look at what it says. Without one, treat the report as unsupported. Don't cite a pending refresh in client advice, contract language, or internal policy.
+
+**What actually binds you today**
+
+- **Statute:** Section 508 of the Rehabilitation Act (29 U.S.C. 794d).
+- **Standards:** The Revised Section 508 Standards and Section 255 Guidelines, 36 CFR Part 1194. They were published at 82 FR 5790 (January 18, 2017). Compliance has been required since January 18, 2018.
+- **Technical baseline:** WCAG 2.0 Level A and AA, incorporated by reference. It applies to:
+  - web content (E205.2)
+  - electronic documents (E205.3)
+  - software user interfaces (E205.4)
+  - authoring tools (E204)
+- **Other chapters:**
+  - Chapter 3, Functional Performance Criteria (302.1 to 302.9)
+  - Chapter 4, hardware
+  - Chapter 6, support documentation and services
+- **Exceptions (E202):** undue burden, fundamental alteration, national security systems, and back-office equipment. Legacy ICT is covered by the safe harbor until it is altered or replaced.
+- **Contracts:** FAR Subpart 39.2 and the FAR 52.239-2 clause.
+- **Policy:** OMB M-24-08 (January 2024) on strengthening management of Section 508.
+
+**Who is bound**
+
+Section 508 applies to federal agencies and to contractors and vendors supplying ICT to them. It does not directly bind private companies that don't sell to the federal government.
+
+**Don't confuse it with other rules**
+
+Two separate rules do use WCAG 2.1 AA, and they are probably the source of some of the confusion:
+
+- the DOJ ADA Title II web rule, which binds state and local governments
+- the HHS Section 504 web rule, which binds HHS-funded entities
+
+Both had their compliance dates extended by one year in spring 2026 (91 FR 20902 and 91 FR 25496). Check each rule for the current per-entity dates. Neither changes Section 508, which still references WCAG 2.0 AA.
+
+**Practical advice**
+
+1. Keep building and procuring to WCAG 2.0 AA, plus the Chapter 3 functional performance criteria and the other applicable chapters.
+2. Many organizations also test to WCAG 2.1 AA as a good practice, and it is a sensible hedge. It is not a Section 508 mandate.
+3. If you are asked to cite a source, use 36 CFR Part 1194 and 82 FR 5790, not a news item about an NPRM.
+4. Watch the Federal Register and the Access Board's site, and re-check if a real notice appears.
+
+This is general compliance information, not legal advice. Please check the primary sources and consult counsel for decisions.

@@ -1,0 +1,30 @@
+NIS2 transposition status and Commission enforcement (as of November 2026)
+
+Caveat up front: my knowledge is reliable only up to roughly mid-2026, and I cannot browse. The transposition picture changed month by month. Treat the country list below as a starting point and check the Commission's national transposition database (EUR-Lex, "National transposition measures") and its infringement package pages before you rely on it.
+
+1. Baseline
+- Directive (EU) 2022/2555 had to be transposed by 17 October 2024, with application from 18 October 2024.
+- On 28 November 2024 the Commission opened infringement proceedings (letters of formal notice) against 23 Member States. Only Belgium, Croatia, Italy (and Lithuania, which had partial/complete measures) were not in that group.
+- On 7 May 2025 the Commission escalated to reasoned opinions against a large group (about 19 Member States). From memory this included Bulgaria, Czechia, Denmark, Estonia, Greece, Spain, Cyprus, Latvia, Luxembourg, Hungary, Malta, Netherlands, Austria, Poland, Portugal, Romania, Slovenia, Finland, Sweden, and some others. Germany, Ireland and France were in the earlier group but I am not sure of their exact treatment. Verify the list.
+
+2. Who had transposed (to my knowledge)
+- Early or complete: Belgium, Croatia, Italy, Lithuania, Hungary (partly), Latvia and Slovakia (later), Malta, Finland, Denmark, Cyprus, Greece and others adopted laws during 2025 and the first half of 2026.
+- Germany: the NIS2 Implementation Act (NIS2UmsuCG) passed the Bundestag in November 2025 and entered into force in December 2025.
+- Portugal: Decree-Law transposing NIS2 published in late 2025 with entry into force in 2026.
+- Austria: NIS-Gesetz 2026 adopted by Parliament in late 2025, with application in 2026.
+- Poland: the amendment to the National Cybersecurity System Act (KSC) was long delayed and I am not certain of its final status.
+- Netherlands: the Cyberbeveiligingswet had been repeatedly delayed. I cannot confirm that it was in force by November 2026.
+
+3. Likely laggards
+I cannot reliably name which states remained outstanding in November 2026. Candidates based on mid-2026 trajectory are the Netherlands, Poland, Ireland, Spain, Czechia (adopted a law in 2025, so probably done), Romania, Slovenia, Bulgaria, Luxembourg, Estonia and Sweden. Treat this as a hypothesis list, not a finding. Note also that "transposed" and "fully operational" differ: several states adopted a framework law but still lack secondary legislation, registers or competent authority designations.
+
+4. Enforcement tools the Commission uses (Article 258 TFEU)
+- Letter of formal notice, then reasoned opinion, then referral to the Court of Justice of the EU.
+- If a Member State fails to notify full transposition measures, the Commission can ask the CJEU under Article 260(3) TFEU to impose financial penalties (lump sum and/or daily penalty) already at the first judgment. Penalties are calculated from the seriousness, duration and ability to pay of the state.
+- The infringement packages are published roughly every two to three months, so a referral decision after the May 2025 reasoned opinions was expected from late 2025 onward. I believe referrals began in the first half of 2026, but I cannot give you reliable names or dates.
+
+5. Practical consequences for you
+- Infringement against a state does not suspend obligations that exist under national law already in force; and the Directive is not directly applicable to private entities, so an entity in a laggard state has no NIS2 national legal obligation until the law applies. However, sector rules, customer contracts and group-wide policy often push compliance anyway.
+- Plan on the basis that all states will land with slightly different thresholds, registration deadlines and reporting formats.
+
+Recommendation: confirm the current list through the Commission's transposition tracker and the latest infringement package, and treat any name I gave above as unverified.

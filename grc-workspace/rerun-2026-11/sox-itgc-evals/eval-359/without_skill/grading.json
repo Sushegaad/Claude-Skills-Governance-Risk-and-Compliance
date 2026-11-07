@@ -1,0 +1,33 @@
+{
+  "eval_id": 359,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Describes the SEC's May 19, 2026 proposal, which would limit 404(b) auditor attestation to large accelerated filers and raise the large accelerated filer threshold",
+      "passed": false,
+      "evidence": "The May 19, 2026 proposal is never identified; the response only says the SEC \"has signaled interest in revisiting filer categories\" and that no proposal it knows of is final."
+    },
+    {
+      "text": "States comments closed July 20, 2026 and there has been NO final action as of November 2026",
+      "passed": false,
+      "evidence": "No mention of the July 20, 2026 comment deadline or the proposal's status; the response says \"Verify the current status... I do not have live access.\""
+    },
+    {
+      "text": "Concludes current 404(b) thresholds remain operative law, so preparation should not pause",
+      "passed": true,
+      "evidence": "\"Short answer: do not pause. As far as I know, there is no enacted change that exempts you from SOX 404(b)\" plus the current accelerated/large accelerated thresholds stated as operative."
+    },
+    {
+      "text": "Frames the proposal as proposed only, to be flagged and monitored",
+      "passed": true,
+      "evidence": "\"A proposal published for comment does not change your obligations\" and \"Track the SEC's regulatory agenda, any proposals, and legislation. Set a decision point for FY2027 planning.\""
+    },
+    {
+      "text": "Notes management's 404(a) assessment obligation is unaffected either way",
+      "passed": true,
+      "evidence": "\"Section 404(a) management assessment applies to all non-EGC issuers, and it is not eliminated by any proposal I know of\" and \"Management still owes the 404(a) assessment.\""
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

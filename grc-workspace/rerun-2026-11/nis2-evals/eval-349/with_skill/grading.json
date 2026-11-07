@@ -1,0 +1,33 @@
+{
+  "eval_id": 349,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Names all four: Ireland, Spain, France and the Netherlands, referred July 8, 2026",
+      "passed": true,
+      "evidence": "\"On 8 July 2026 the European Commission referred four Member States to the Court of Justice of the EU (IP/26/1499): Ireland, Spain, France and the Netherlands.\""
+    },
+    {
+      "text": "States the Commission requested lump sums and daily penalty payments",
+      "passed": true,
+      "evidence": "\"The Commission asked the Court to impose lump-sum payments and daily penalty payments.\""
+    },
+    {
+      "text": "Gives the procedure history: letters of formal notice November 28, 2024, reasoned opinions May 7, 2025",
+      "passed": true,
+      "evidence": "\"28 November 2024: letters of formal notice. 7 May 2025: reasoned opinions.\""
+    },
+    {
+      "text": "Notes the Netherlands referral has been overtaken by its August 15, 2026 transposition",
+      "passed": true,
+      "evidence": "\"The Netherlands has since transposed. The Cyberbeveiligingswet... entered into force on 15 August 2026\"; expects the case to be withdrawn or narrowed."
+    },
+    {
+      "text": "Advises that entities in the remaining states should prepare against the directive text because short compliance windows have followed national enactments",
+      "passed": true,
+      "evidence": "\"Authorities have applied short compliance windows once national law lands, so prepare against the directive text now.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

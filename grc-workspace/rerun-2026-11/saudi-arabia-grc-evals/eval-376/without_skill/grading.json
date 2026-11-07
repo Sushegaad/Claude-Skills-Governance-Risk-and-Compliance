@@ -1,0 +1,33 @@
+{
+  "eval_id": 376,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies NCNICC-1:2025, the Non-CNI Private Sector Entities Cybersecurity Controls, adopted December 28, 2025",
+      "passed": false,
+      "evidence": "Never mentions NCNICC-1:2025; analyzes only ECC applicability and says ECC is \"not automatically legally binding\" on a non-CNI retailer."
+    },
+    {
+      "text": "Applies size-based applicability: over 250 employees (or over SAR 200M revenue) places the company in Category A",
+      "passed": false,
+      "evidence": "No size-based categorization; no mention of Category A, 250-employee or SAR 200M thresholds."
+    },
+    {
+      "text": "States Category A faces 3 main components, 22 sub-components and 65 mandatory controls",
+      "passed": false,
+      "evidence": "No such counts; explicitly says \"I cannot confirm from memory the exact control counts or any 2025 to 2026 amendments.\""
+    },
+    {
+      "text": "States no compliance deadline has been published and the NCA may assess compliance at any time without notice",
+      "passed": false,
+      "evidence": "No statement about a missing compliance deadline or NCA assessments without notice."
+    },
+    {
+      "text": "Describes the component coverage: cybersecurity governance, cybersecurity defence, and third-party and cloud computing",
+      "passed": false,
+      "evidence": "Describes the five ECC-2:2024 domains instead; does not describe the NCNICC three-component structure."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

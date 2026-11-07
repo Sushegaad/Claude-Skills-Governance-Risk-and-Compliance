@@ -1,0 +1,13 @@
+{
+  "eval_id": 360,
+  "eval_name": "year-end-checklist",
+  "run_type": "with_skill",
+  "prompt": "Give me the November-December 2026 checklist for SOX ITGC work heading into year-end.",
+  "assertions": [
+    "Includes QC 1000 awareness: effective December 15, 2026 for audit firms",
+    "Uses the October 22, 2026 PCAOB Spotlight on 2025 inspections to anticipate auditor focus areas",
+    "Covers the core ITGC domains (access, change management, IT operations)",
+    "States the current 404(b) framework applies because the SEC proposal has seen no final action",
+    "Ties recommendations to correct dates rather than invented deadlines"
+  ]
+}

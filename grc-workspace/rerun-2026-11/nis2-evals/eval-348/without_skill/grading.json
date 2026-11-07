@@ -1,0 +1,33 @@
+{
+  "eval_id": 348,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the Cyberbeveiligingswet (Cbw), with the Cyberbeveiligingsbesluit, entered into force August 15, 2026 (Stb. 2026, 187), replacing the Wbni",
+      "passed": false,
+      "evidence": "\"I cannot confirm that the Cbw was in force by November 2026\"; no August 15, 2026 date or Stb. 2026, 187 citation; Cbw described as a bill that \"will replace\" the Wbni."
+    },
+    {
+      "text": "Notes the Netherlands was among the four Member States referred to the CJEU on July 8, 2026, before completing transposition",
+      "passed": false,
+      "evidence": "Mentions only the November 2024 formal notice and May 2025 reasoned opinion; no CJEU referral of July 8, 2026."
+    },
+    {
+      "text": "Describes core obligations now applying: registration, duty of care, and incident reporting",
+      "passed": false,
+      "evidence": "Describes registration, duty of care and reporting only as prospective Cbw features (\"Plan for registration quickly after entry into force\"), not as obligations now applying."
+    },
+    {
+      "text": "Does not claim the Netherlands remains untransposed today",
+      "passed": true,
+      "evidence": "Hedges (\"I cannot confirm...\") but never affirmatively claims the Netherlands remains untransposed; passes the no-false-claim requirement."
+    },
+    {
+      "text": "Advises confirming registration and incident-reporting channels with the Dutch authorities",
+      "passed": true,
+      "evidence": "\"establish incident reporting (24h/72h/1 month) to NCSC and the sector regulator... Confirm entry-into-force date, the transition periods and the supervisor for your sector with Dutch counsel\"; registration mechanics flagged \"verify\"."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 379,
+  "eval_name": "ai-guidelines",
+  "run_type": "with_skill",
+  "prompt": "Has Saudi Arabia issued AI cybersecurity requirements we need to follow?",
+  "assertions": [
+    "Identifies the NCA's draft AI Cybersecurity Guidelines (AICG-1:2026)",
+    "States the public consultation ran July 5 to August 5, 2026",
+    "Describes the draft: 4 domains, roughly 42 guidelines, covering generative and agentic AI",
+    "States the final version remains unpublished as of November 2026, so they are draft, not binding requirements",
+    "Advises monitoring the NCA and preparing against the draft structure"
+  ]
+}

@@ -1,0 +1,24 @@
+Short answer: Secure SLC v2.0 was released on September 28, 2026, and your vendor's v1.1 validation is not invalidated by that release. Existing v1.1 validations stay valid during a transition window. That window is tied to the availability of v2.0 assessor training, so the exact end date is in the PCI SSC Program Guide, which you should check.
+
+What changed
+- Secure SLC Standard v2.0 is the first major revision of that standard.
+- It is aligned with the Secure Software Standard v2.0, which was published on January 15, 2026.
+- It adds coverage of digital tools and AI in vendor lifecycle processes. That means an assessor evaluating a vendor's secure software lifecycle will now look at how AI-assisted development tooling and other digital tools are governed, in addition to the traditional SDLC controls.
+
+Does the v1.1 validation still count?
+- Yes, for now. The Council did not retire v1.1 on release of v2.0. Existing v1.1 validations remain valid during a transition period.
+- The period is tied to when v2.0 assessor training becomes available, so the Council controls the clock, not the vendor. Two things I cannot give you from memory are the specific cut-off dates and whether new v1.1 assessments are still accepted. Both are in the Program Guide, and you should confirm them there or with the vendor's assessor.
+- Do not assume the validation lasts until its original expiry date. Transition windows often change when renewals and re-validations happen. Ask the vendor which standard version their next validation will use and when.
+
+How this affects your own PCI DSS compliance
+- A validated secure SLC or secure software listing helps you with the software you buy, but it does not replace your own PCI DSS obligations. Under Req 12.8 you must keep a list of third-party service providers and maintain written agreements. You must also monitor each provider's compliance status at least every 12 months (12.8.4) and document which requirements each provider covers and which you cover (12.8.5).
+- If the product is bespoke or custom software developed for you, your own Req 6.2 and 6.3 obligations still apply. These cover secure coding, code review, vulnerability ranking and the software inventory in 6.3.2.
+
+Recommended actions
+1. Ask the vendor in writing for their current validation scope, listing status and expiry, and their plan and timeline to move to v2.0.
+2. Update your TPSP register and the 12.8.5 responsibility matrix. Record the version they are validated against and the date you checked.
+3. Add a contract clause that requires the vendor to notify you of any change in validation status.
+4. Set a calendar reminder to re-check the Program Guide transition dates.
+5. Tell your QSA now. They will want to see how you rely on the vendor's validation, and the transition is an easy point to get wrong in an assessment.
+
+This is informational guidance. Confirm the transition dates against the PCI SSC Program Guide and have your QSA confirm how the validation counts toward your assessment.

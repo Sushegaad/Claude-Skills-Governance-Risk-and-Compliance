@@ -1,0 +1,33 @@
+{
+  "eval_id": 361,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the June 2023 Interagency Guidance on Third-Party Relationships remains the operative framework",
+      "passed": true,
+      "evidence": "\"the June 2023 Interagency Guidance on Third-Party Relationships (OCC Bulletin 2023-17) is still the operative framework\""
+    },
+    {
+      "text": "Describes the proposal published in the Federal Register September 15, 2026 (91 FR 58536) that would rescind and replace it",
+      "passed": true,
+      "evidence": "\"On September 15, 2026 the OCC, Federal Reserve, FDIC and NCUA published 'Proposed Third-Party Risk Management Guidance' in the Federal Register (91 FR 58536)... It would rescind and replace the June 2023 Interagency Guidance\""
+    },
+    {
+      "text": "States comments are due November 16, 2026",
+      "passed": true,
+      "evidence": "\"Comments are due November 16, 2026\""
+    },
+    {
+      "text": "Notes the NCUA joins the proposal (it was not party to the 2023 guidance) and that the proposal would also rescind the OCC foreign-based third-party bulletin, the 2024 bank-fintech joint statement, and the 2024 community bank TPRM guide",
+      "passed": true,
+      "evidence": "\"NCUA would join the interagency guidance for the first time... It would also rescind three other documents: the OCC's foreign-based third-party bulletin, the 2024 bank-fintech joint statement, and the 2024 community bank TPRM guide\""
+    },
+    {
+      "text": "Advises against restructuring programs before a final document, while considering a comment submission",
+      "passed": true,
+      "evidence": "\"Do not rebuild the programme around the proposed text\" and \"Decide whether to submit a comment by November 16, 2026\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

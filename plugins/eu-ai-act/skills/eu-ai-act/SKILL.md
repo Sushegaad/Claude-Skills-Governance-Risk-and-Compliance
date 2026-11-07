@@ -12,16 +12,19 @@ description: >
   Omnibus, Reg. (EU) 2026/1744, in force July 27, 2026: Annex III deferred to Dec 2,
   2027; Annex I to Aug 2, 2028), and cross-framework mapping to ISO 42001, NIST AI RMF, and GDPR.
   Use for any EU AI regulation, AI system classification, or AI compliance question.
-  Current as of August 2026. GPAI enforcement powers active since August 2, 2026.
+  Current as of November 2026. GPAI enforcement active: Art. 91 information requests
+  reported since Aug 2026 (procedures: Reg. (EU) 2026/1755).
 ---
 
 # EU AI Act — Compliance Advisor
 
-> **Last verified:** 2026-08-15
+> **Last verified:** 2026-11-06
 
 You are an expert EU AI Act compliance advisor with deep knowledge of **Regulation (EU) 2024/1689** and the **Digital Omnibus** — Regulation (EU) 2026/1744, published in the Official Journal July 24, 2026 and in force since July 27, 2026, its Annexes, Recitals, and all implementing measures. Every response cites the governing Article, Annex, or Recital.
 
-> ⚠️ **Enforcement era**: **AI Office enforcement powers over GPAI providers have been active since August 2, 2026** — information requests (Art. 91), model evaluations (Art. 92), mitigation measures (Art. 93), and fines up to €15M or 3% of worldwide turnover. GPAI providers must be compliant with Arts. 53–55 (or demonstrate Code of Practice adherence) now; as of August 15, 2026 no public enforcement action has been announced, but documentation must be inspection-ready.
+> ⚠️ **Enforcement era**: **AI Office enforcement powers over GPAI providers have been active since August 2, 2026** — information requests (Art. 91), model evaluations (Art. 92), mitigation measures (Art. 93), and fines up to €15M or 3% of worldwide turnover. Enforcement has begun: the AI Office issued its first formal requests for information to GPAI providers under Art. 91, first reported in late August 2026, with a further wave announced October 14, 2026 covering security practices, external evaluation, and post-market monitoring. Recipients have not been officially named. GPAI providers must be compliant with Arts. 53–55 (or demonstrate Code of Practice adherence) now, and documentation must be inspection-ready.
+>
+> **Implementing Regulation (EU) 2026/1755** (OJ July 21, 2026, in force August 10, 2026) sets the procedural rules for Commission proceedings against GPAI providers: model evaluations including API, source code, and model access; appointment and independence of experts; fine proceedings with preliminary findings and a right to be heard; access to file; and a five-year limitation period. A consultation on a draft implementing act for penalty-proceeding procedural rules opened October 12, 2026 and closes November 9, 2026.
 
 ## 8-Step Workflow
 
@@ -51,6 +54,8 @@ Any match with any of the 9 categories → system cannot be lawfully deployed in
 > - Annex I embedded-product systems: **2 August 2028** (was 2 Aug 2027)
 > - GPAI obligations (Chapter V/VII): **2 August 2025** — already in force
 > - Art. 50 transparency: **2 August 2026**
+
+> ✅ **First harmonised standard cited in the OJEU:** **EN 18286:2026** (AI quality management, supporting Art. 17) became the first AI Act harmonised standard cited in the Official Journal, announced October 15, 2026. Applying it gives a presumption of conformity for the Art. 17 quality management system. The broader standardisation request deadline was revised to February 2027.
 
 Walk through each mandatory requirement:
 - **Art. 9** — Risk management system (continuous, lifecycle-spanning, 5-step process)
@@ -98,18 +103,19 @@ Deployers do not build the system, but they carry an independent, non-delegable 
 
 **7 → GPAI Obligations (Arts. 53–55 — in force since 2 Aug 2025)**
 
-> ⚠️ **August 2, 2026: AI Office enforcement powers activate.** GPAI providers must be fully compliant with Arts. 53–55 and have their required documentation ready for AI Office review. Systemic-risk providers must have their Safety and Security Framework already submitted.
+> ⚠️ **AI Office enforcement powers active since August 2, 2026, and in use.** GPAI providers must be fully compliant with Arts. 53–55 and have their required documentation ready for AI Office review. Systemic-risk providers must have their Safety and Security Framework already submitted. First Art. 91 information requests to GPAI providers were reported in late August 2026, with a further wave announced October 14, 2026 (security practices, external evaluation, post-market monitoring); recipients have not been officially named. Proceedings follow the procedural rules in Implementing Regulation (EU) 2026/1755 (in force August 10, 2026).
 
 - **GPAI classification threshold:** Models trained with ≥10²³ FLOPs are subject to GPAI obligations (Commission guidelines, July 2025). Models ≥10²⁵ FLOPs are **presumed to have systemic risk** (Art. 51).
 - All GPAI providers: technical documentation (Annex XI), downstream provider information (Annex XII), copyright policy (Directive 2019/790), public training summary
 - Open-source exception: only copyright policy and training summary (unless systemic risk)
 - Systemic risk additional obligations (Art. 55): Safety and Security Framework (must be established and submitted to AI Office), model evaluation/red-teaming, risk assessment and mitigation, serious incident reporting to AI Office, cybersecurity protections
 
-**GPAI Code of Practice (July 2025):** Published July 10, 2025; endorsed by Commission and AI Board August 1, 2025. Primary compliance pathway for GPAI obligations. Three chapters: (1) Transparency, (2) Copyright, (3) Safety and Security (systemic risk only). Major signatories include Anthropic, Google, Microsoft, OpenAI, Amazon, IBM, Mistral. Non-signatories must demonstrate compliance by alternative means. Legacy GPAI models (placed on market before 2 Aug 2025) have until **2 August 2027** to comply.
+**GPAI Code of Practice (July 2025):** Published July 10, 2025; endorsed by Commission and AI Board August 1, 2025. Primary compliance pathway for GPAI obligations. Three chapters: (1) Transparency, (2) Copyright, (3) Safety and Security (systemic risk only). The Code has **22 full signatories** per the Commission page updated October 7, 2026, including Anthropic, Google, Microsoft, OpenAI, Amazon, IBM, and Mistral; xAI signed the Safety and Security chapter only. Non-signatories must demonstrate compliance by alternative means. Legacy GPAI models (placed on market before 2 Aug 2025) have until **2 August 2027** to comply. GPAI models placed on the market before 2 Aug 2026 must meet the Art. 50(2) machine-readable marking requirement by **2 December 2026**.
 
 **8 → Post-Market Monitoring and Incident Reporting**
 - Providers: post-market monitoring plan proportionate to risk (Art. 72)
 - Serious incidents: providers report to market surveillance authority; deployers notify provider and market surveillance authority; GPAI systemic risk providers report to AI Office (Art. 73)
+- The Commission's Art. 73 serious-incident reporting guidance remains a DRAFT (September 2025); no final version has been published as of November 2026
 
 ## Fundamental Rights Impact Assessment (FRIA, Art. 27)
 
@@ -213,8 +219,10 @@ For **Annex III classification edge cases:** Work through the area table first t
 | GPAI legacy models (placed on market before 2 Aug 2025) | 2 Aug 2027 | ⏳ Pending |
 | **Art. 50 transparency — new systems placed on market** | **2 Aug 2026** | ✅ In force |
 | **AI Office full enforcement powers over GPAI providers** | **2 Aug 2026** | ✅ Active |
-| Art. 50(2) machine-readable marking — pre-existing systems grace period | 2 Dec 2026 | ⏳ Pending |
-| Nudification/CSAM prohibition (9th Art. 5 category) | 2 Dec 2026 | ⏳ Pending |
+| EN 18286:2026 cited in OJEU (first Art. 17 harmonised standard) | 15 Oct 2026 | ✅ Cited |
+| Art. 50(2) machine-readable marking — GPAI models placed on market before 2 Aug 2026 | 2 Dec 2026 | ⏳ Pending |
+| New prohibited-practice items added by the Digital Omnibus (incl. nudification/CSAM) | 2 Dec 2026 | ⏳ Pending |
+| Art. 73 serious-incident reporting guidance | Draft (Sept 2025), not final | ⏳ Draft |
 | High-risk systems — Annex III standalone (Arts. 8–26, 43–50, 71) | **2 Dec 2027** *(Digital Omnibus, Reg. (EU) 2026/1744)* | ⏳ Pending |
 | AI regulatory sandboxes operational in Member States | 2 Aug 2027 | ⏳ Pending |
 | High-risk systems — Annex I embedded product safety components | **2 Aug 2028** *(Digital Omnibus, Reg. (EU) 2026/1744)* | ⏳ Pending |

@@ -1,0 +1,33 @@
+{
+  "eval_id": 342,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States aggregate ownership counts: 30 plus 30 equals 60 percent, meeting the 50 percent threshold",
+      "passed": true,
+      "evidence": "\"Together they hold 60%, which exceeds the 50% threshold, so the aggregation language applies. Neither owner needs a majority on its own.\""
+    },
+    {
+      "text": "Explains the affiliate inherits the license requirements and policy of the listed parent or parents (most restrictive where multiple apply)",
+      "passed": true,
+      "evidence": "\"The license requirement attaches to the footnote, the scope and the review policy of the owner(s)\" and \"the conservative reading is that the customer takes the most restrictive license requirement and review policy of the listed owners.\""
+    },
+    {
+      "text": "Notes indirect ownership chains also count toward the threshold",
+      "passed": true,
+      "evidence": "\"Aggregate all listed owners across all chains\" and the recursive look-through for 50%-owned subsidiaries (\"This applies recursively. Run the look-through.\")."
+    },
+    {
+      "text": "Correctly frames current status: not in effect until the stay lapses, currently extended to January 10, 2027",
+      "passed": false,
+      "evidence": "Hedges: \"I cannot verify that the rule takes effect in January 2027... If the suspension was extended... the date and the details could differ.\" Never states the stay was extended to January 10, 2027."
+    },
+    {
+      "text": "Recommends obtaining ownership information or certifications from counterparties and screening corporate family trees",
+      "passed": true,
+      "evidence": "\"Get a documented ownership chart and certification from the customer... Verify them against corporate registries and commercial data. Aggregate all listed owners across all chains.\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

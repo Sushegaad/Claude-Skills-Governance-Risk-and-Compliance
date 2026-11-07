@@ -1,0 +1,18 @@
+Not quite. The client has probably blended two different legal regimes.
+
+1. Section 508 does not itself require a state agency to meet WCAG 2.1 AA by 2027.
+- Section 508 of the Rehabilitation Act (29 U.S.C. 794d) applies to federal agencies. Its standards (36 CFR Part 1194) incorporate WCAG 2.0 A/AA, not 2.1, and have no 2027 date. The compliance date for the Revised 508 Standards was January 18, 2018.
+- State agencies are not directly bound by Section 508. The indirect link is the Assistive Technology Act: states that accept AT Act funding have historically committed to comply with the "508-like" standard. Many states adopted 508 or WCAG by state law, policy or procurement rules, so it can bind a given state agency through state law, but that is not federal Section 508 directly.
+
+2. The probable source of "WCAG 2.1 AA by 2027" is the DOJ ADA Title II web rule.
+- DOJ published the final rule on April 24, 2024 (28 CFR Part 35, Subpart H). It requires state and local government web content and mobile apps to conform to WCAG 2.1 Level AA.
+- Original compliance dates: April 24, 2026 for public entities serving a population of 50,000 or more, and April 26, 2027 for smaller entities (under 50,000) and special district governments.
+- So "2027" is right for smaller entities, and 2026 for larger ones. Note that DOJ has since been reported to be considering or issuing changes to the timing. I can't verify the current status from memory, so check the current Federal Register and ada.gov for any extension or revision before advising the client on a date.
+- The rule has exceptions (archived web content, pre-existing conventional electronic documents, third-party content not controlled by the entity, password-protected individual documents, and so on) and a "fundamental alteration / undue burden" defense, with narrow conditions.
+
+3. What to tell the client
+- Correct the attribution: the driver is ADA Title II (DOJ), plus any state accessibility law or policy, not Section 508.
+- Confirm which compliance date applies to them based on the population of the government entity (the state itself is treated as large for this purpose; a state agency is part of the state, so assume the April 2026 date unless counsel concludes otherwise).
+- Build to WCAG 2.1 AA at minimum (2.2 AA is a reasonable target), and cover web, mobile apps, PDFs, and vendor-provided content, including contracts that require vendor conformance.
+- Also check Section 504 of the Rehabilitation Act and state law, which may have their own requirements.
+- Have counsel confirm, since this is a legal question, and verify the current DOJ status.

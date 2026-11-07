@@ -1,0 +1,33 @@
+Short answer: Yes. In September 2026 the PCI Council published an information supplement titled "Security Considerations for AI Systems". It is an information supplement, so it is guidance and not a new PCI DSS requirement. It does not change your PCI DSS validation obligations, but it is worth factoring into your risk and compliance program.
+
+Status of the guidance
+- Information supplements are not part of the standard. You are not assessed against them as requirements, and no new AI-specific control was added to PCI DSS v4.0.1. v4.0.1 remains the current version.
+- A QSA can still reasonably ask how you manage AI-related risk to the CDE, because your existing requirements apply to AI tools just as they apply to any other system component or third party.
+- I have not reproduced the contents of the supplement here, so read it in full and map its recommendations to your own environment.
+
+Related updates
+- Secure SLC Standard v2.0 (September 28, 2026) adds coverage of digital tools and AI in vendor lifecycle processes. If you buy payment software from validated vendors, expect their assessments to address how AI tooling is governed in development.
+
+How existing PCI DSS v4.0.1 requirements already apply to AI
+| Area | Requirement | Application to AI systems |
+|------|-------------|---------------------------|
+| Scope | 12.5.1, 12.5.2 | If an AI system, assistant or model can store, process or transmit account data, or can affect the security of the CDE, it is in scope. Confirm scope at least every 12 months and after major changes. |
+| Data protection | 3.2, 3.3.1, 3.4.1, 12.10.7 | Do not let PAN or SAD flow into prompts, training data, logs, vector stores or chat transcripts. SAD must never be stored after authorization. Include AI data stores in PAN discovery. |
+| Third parties | 12.8.1 to 12.8.5 | An AI provider that touches account data or CDE security is a TPSP. You need a written agreement, annual compliance monitoring, and a responsibility matrix. |
+| Access | 7.2, 8.4.2, 8.6 | Apply least privilege and MFA to AI tooling that reaches the CDE. Treat AI agents and service identities as application and system accounts, with no hardcoded credentials (8.6.2). |
+| Secure development | 6.2, 6.3.2, 6.5.5 | Code from AI assistants goes through the same review, secure coding and testing. Keep live PANs out of test data. Include AI components in your software inventory. |
+| Logging | 10.2, 10.4.1.1 | Log access by AI systems to CDE data and review it automatically. |
+| Risk analysis | 12.3.1, 12.3.2 | Do a targeted risk analysis where you rely on one, and consider adding AI use to your formal risk process. |
+| Awareness | 12.6 | Train staff not to paste cardholder data into AI tools. |
+| Incident response | 12.10 | Update the plan for AI-related events such as data leakage through a prompt. |
+| Attack surface | 6.4.1, 6.4.3, 11.6.1 | If you add AI features to payment pages, those scripts fall under inventory, authorization and integrity requirements. |
+
+Practical steps
+1. Read the supplement and note which recommendations apply to you.
+2. Create an inventory of AI tools and use cases across the business, with a decision on whether each touches or could affect the CDE.
+3. Issue an acceptable use rule that bans entering PAN or SAD into AI tools that are not approved.
+4. Run vendor due diligence on AI providers that fall into scope, including their PCI status.
+5. Add AI to your annual scope review and risk assessment.
+6. Brief your QSA so there are no surprises at assessment.
+
+This is informational guidance. A supplement is not a requirement, so confirm with your QSA how they will treat AI-related controls in your assessment.

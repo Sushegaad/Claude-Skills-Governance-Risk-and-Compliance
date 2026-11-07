@@ -1,0 +1,25 @@
+Short answer: As far as I know, there is no PCI DSS v5. The current version is PCI DSS v4.0.1 (published June 2024). Target v4.0.1 for 2027 validation planning unless the Council has published something newer that you can verify.
+
+Version history
+- v4.0 was published in March 2022. v3.2.1 was retired on March 31, 2024.
+- v4.0.1 was published in June 2024. It is a limited revision with clarifications and typo fixes, with no new or changed requirements. v4.0 was retired on December 31, 2024. v4.0.1 is the only active version.
+- All the future-dated v4.0 requirements became mandatory on March 31, 2025. By 2027, they are all fully in force and assessors will test them.
+
+What to plan for in 2027
+1. Assess against v4.0.1, with all requirements treated as mandatory. Items to be sure about:
+   - 6.4.3 and 11.6.1 (payment page script inventory, authorization, integrity, and tamper detection)
+   - 5.4.1 (anti-phishing), 8.4.2 (MFA for all access into the CDE), 12.6.3.1/2 (security awareness covering phishing and social engineering)
+   - 12.5.2 (annual scope confirmation), 12.3.1 (targeted risk analyses), 10.4.1.1 (automated log review), 11.3.1.2 (authenticated internal scans), 3.3.2 and 3.5.1.1 (keyed hashing for stored PAN), and 12.10.5 (incident response monitoring of alerts)
+   - 8.3.6 (12-character passwords), 7.2.4/7.2.5 (user account reviews and application/system accounts), 8.6 (application and system account management), and 12.3.4 (technology review).
+2. Watch for new Council announcements. The Council historically gives 18 to 24 months or more between a new major version publication and its mandatory use, and a transition period when both versions are valid. If a new version appeared in 2026, check its effective date before you retarget. A minor or limited revision is more likely than a major rewrite. Check the Document Library and announcements on pcisecuritystandards.org.
+3. Check your reporting forms and supporting documents. Use the current ROC template, SAQs, and AOC for v4.0.1. Confirm with your acquirer or QSA which forms apply.
+4. Remember that program changes also matter: customized approach, targeted risk analyses, and the move from point-in-time testing to continuous compliance.
+5. Check adjacent standards you might be in scope for, such as PCI PIN, PCI P2PE, PCI 3DS, PCI SSF (Secure Software, Secure SLC), and MPoC. Each has its own versions and sunset dates.
+
+Recommended planning stance
+- Baseline: v4.0.1.
+- Run a gap assessment now against v4.0.1.
+- Set a quarterly check on PCI SSC announcements.
+- Keep your control mapping modular so a future version can be mapped quickly.
+
+Please note that I can't verify anything published after my knowledge cutoff. If you have seen a specific "v5" or "v4.x" announcement, send it to me and I'll analyze its impact.

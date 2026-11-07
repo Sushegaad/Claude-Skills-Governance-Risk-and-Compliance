@@ -1,0 +1,33 @@
+{
+  "eval_id": 374,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the new prohibited-practice items added by the Digital Omnibus apply from December 2, 2026",
+      "passed": true,
+      "evidence": "\"New prohibited practice applies from 2 December 2026 (Art. 5, added by the Digital Omnibus, Reg. (EU) 2026/1744)\" covering NCII/nudification and CSAM."
+    },
+    {
+      "text": "States GPAI models placed on the market before August 2, 2026 must comply with Article 50(2) machine-readable marking by December 2, 2026",
+      "passed": true,
+      "evidence": "\"Art. 50(2) machine-readable marking for models placed on the market before 2 August 2026 (grace period ends 2 December 2026)\""
+    },
+    {
+      "text": "Identifies the Digital Omnibus as Regulation (EU) 2026/1744, in force July 27, 2026",
+      "passed": false,
+      "evidence": "Identifies \"the Digital Omnibus, Reg. (EU) 2026/1744\" but never states its entry-into-force date of July 27, 2026."
+    },
+    {
+      "text": "Distinguishes these December 2026 items from the shifted high-risk dates (December 2, 2027 and August 2, 2028)",
+      "passed": true,
+      "evidence": "\"What does not land in December 2026 - High-risk obligations for Annex III systems: now 2 December 2027. Annex I embedded systems: 2 August 2028.\""
+    },
+    {
+      "text": "Gives practical steps for marking compliance (machine-readable disclosure of AI-generated content)",
+      "passed": true,
+      "evidence": "\"Actions: implement watermarking or metadata plus detection... test robustness, and tell downstream deployers.\""
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

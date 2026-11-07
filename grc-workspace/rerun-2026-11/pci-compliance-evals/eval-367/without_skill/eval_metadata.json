@@ -1,0 +1,13 @@
+{
+  "eval_id": 367,
+  "eval_name": "program-sunsets",
+  "run_type": "without_skill",
+  "prompt": "We operate an SPoC solution and were evaluating a CPoC product. What did the October 31, 2026 sunsets change for us?",
+  "assertions": [
+    "States the sunset periods for the 3DS SDK, SPoC and CPoC standards ended October 31, 2026",
+    "States no new submissions are accepted under those standards",
+    "States existing accepted or listed solutions keep their normal lifecycle treatment",
+    "Identifies MPoC as the successor for SPoC and CPoC",
+    "Notes 3DS SDK functionality is being folded into the Secure Software Standard"
+  ]
+}

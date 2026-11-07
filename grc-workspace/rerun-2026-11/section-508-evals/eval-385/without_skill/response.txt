@@ -1,0 +1,13 @@
+Which WCAG version does Section 508 incorporate?
+
+- The Revised Section 508 Standards (36 CFR Part 1194, Appendix A and C), published by the US Access Board in January 2017 with a compliance date of January 18, 2018, incorporate WCAG 2.0 Level A and Level AA by reference. They apply WCAG 2.0 to web content, and (through E205.4 and Chapter 5, with some word substitutions) to non-web documents and software and mobile apps. Success criteria that don't make sense for non-web software are handled with the stated substitutions.
+- They do not incorporate WCAG 2.1 or 2.2. Level AAA is not required.
+
+Is that changing soon?
+- As far as I know, there is no final rule that updates the Section 508 standards to WCAG 2.1 or 2.2. The Access Board has said it intends to look at updating the standards, and WCAG 2.1 and 2.2 are widely recognized as the direction of travel, but I can't confirm a pending proposed rule or its date from memory. Check the Federal Register and the Access Board's rulemaking page for anything current, since my knowledge may be out of date.
+- Even if an NPRM were issued, it would take a public comment period, a final rule, and then a compliance date, so any change would be well in the future. Today the binding baseline is WCAG 2.0 AA.
+- Note that other regimes are moving faster: the DOJ ADA Title II rule requires WCAG 2.1 AA for state and local governments (original dates April 2026 and April 2027, so verify any revision), and EN 301 549 v3.2.1 in the EU references WCAG 2.1 AA.
+
+Practical advice
+- Build and test to WCAG 2.1 AA, ideally 2.2 AA, because it is a superset of 2.0 AA. It satisfies Section 508 and prepares you for likely future updates and other regimes. WCAG 2.2 removes 4.1.1 Parsing, which is still in 2.0, so keep evaluating 4.1.1 for Section 508 reporting purposes.
+- State in your ACR/VPAT which versions you tested against.

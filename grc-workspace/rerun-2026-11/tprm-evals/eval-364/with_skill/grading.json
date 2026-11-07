@@ -1,0 +1,33 @@
+{
+  "eval_id": 364,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the ESAs designated the first critical ICT third-party providers on November 18, 2025 (19 CTPPs)",
+      "passed": true,
+      "evidence": "\"The first CTPP list was published on November 18, 2025, and major cloud providers were designated\" - correct date and event, though the count of 19 CTPPs is not given"
+    },
+    {
+      "text": "Explains direct oversight runs through Joint Examination Teams under the ESAs",
+      "passed": false,
+      "evidence": "Says oversight framework \"gives EU authorities direct oversight\" but never mentions Joint Examination Teams or the Lead Overseer structure"
+    },
+    {
+      "text": "Notes no major new CTPP designations or oversight publications in September or October 2026",
+      "passed": false,
+      "evidence": "Never notes the absence of new CTPP designations or oversight publications in September or October 2026; only says to check current ESA communications"
+    },
+    {
+      "text": "Makes clear the firm's own third-party risk obligations remain in place even when a provider is a designated CTPP",
+      "passed": true,
+      "evidence": "\"the EU oversight regime does not replace your TPRM obligations... You remain fully responsible for managing the risk of every ICT third-party arrangement, including those with designated providers\""
+    },
+    {
+      "text": "Does not invent new 2026 designation rounds or oversight decisions",
+      "passed": true,
+      "evidence": "References only the November 18, 2025 first designation list; no 2026 designation rounds or oversight decisions are invented"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

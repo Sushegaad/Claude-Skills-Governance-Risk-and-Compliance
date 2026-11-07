@@ -1,0 +1,28 @@
+Has AS 2201 changed in 2026, and what is on the PCAOB standard-setting agenda?
+
+Caveat first: I do not have live access to PCAOB sources and my knowledge of 2026 developments is incomplete. Please verify everything below on pcaobus.org (Standards, Rulemaking dockets, Standard-Setting Agenda) before relying on it.
+
+AS 2201
+- To my knowledge, AS 2201, "An Audit of Internal Control Over Financial Reporting That Is Integrated with An Audit of Financial Statements," has not been substantively amended in 2026. I am not aware of any adopted or SEC-approved change to its requirements. The core requirements are the same: top-down, risk-based approach, entity-level controls, significant accounts and relevant assertions, walkthroughs, testing design and operating effectiveness, evaluating deficiencies, and the integrated opinion on ICFR.
+- Be careful not to confuse AS 2201 with other changes. Conforming amendments that touch other standards (such as the QC 1000 package) do not alter your ICFR audit requirements.
+- Proposals sometimes get described loosely in the press. A proposal is not an adopted standard, and an adopted standard does not take effect until the SEC approves it and its effective date arrives.
+
+What I know about the standard-setting picture
+- Leadership change. The PCAOB had a significant change in board leadership in 2025 and into 2026 after the SEC removed the prior board and appointed new members. The new board has emphasized reprioritizing, reducing cost and burden, and stronger focus on inspections and enforcement over new rulemaking.
+- Items adopted earlier that still matter:
+  - QC 1000 (firm quality control), effective date extended to December 15, 2026.
+  - Amendments to AS 1105 and AS 2301 on technology-assisted analysis of information in electronic form, effective for fiscal years beginning on or after December 15, 2025.
+  - Amendments on the use of specialists/confirmation and the new standard on audit confirmation, and the AS 1000 general responsibilities standard (the recent reorganization). Verify details and effective dates.
+  - Amendments to AS 2201.... I am not aware of any beyond conforming changes.
+- Items that were on the prior agenda and have been paused, withdrawn, or deprioritized as I understand it: NOCLAR (noncompliance with laws and regulations), firm and engagement performance metrics, firm reporting, and some of the broader changes to the going-concern and fraud standards. I am not certain which formally remain open, so check the current agenda.
+- Possible live topics to check: going concern, risks involving fraud, substantive analytical procedures and AS 2305, use of technology and AI in audit, and the status of the "audit committee communication" standard. I cannot confirm what the current agenda says on any of these.
+
+What it means for you
+- Plan the year-end 2026 ICFR audit on the existing AS 2201. Do not expect a changed integrated-audit framework this year.
+- Watch for technology-related audit procedures. Your auditor may be using more data analytics, and the AS 1105 and AS 2301 amendments mean more attention to the reliability of information provided by you (IPE).
+- Management's own assessment under SEC rules (Item 308 of Regulation S-K, SEC 2007 interpretive guidance, COSO 2013) is independent of PCAOB standards.
+
+Next steps
+1. Open the PCAOB's "Standard-Setting Agenda" and rulemaking docket pages and check dates and status.
+2. Ask your audit firm whether it expects any change in approach.
+3. Subscribe to PCAOB updates for any proposals.

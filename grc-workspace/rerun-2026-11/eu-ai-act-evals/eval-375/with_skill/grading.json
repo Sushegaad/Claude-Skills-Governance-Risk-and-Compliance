@@ -1,0 +1,33 @@
+{
+  "eval_id": 375,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the Commission's signatory page (updated October 7, 2026) lists 22 full signatories",
+      "passed": true,
+      "evidence": "\"22 full signatories per the Commission page updated 7 October 2026.\""
+    },
+    {
+      "text": "Correctly names several signatories (for example Amazon, Anthropic, Google, IBM, Microsoft, Mistral AI, OpenAI)",
+      "passed": true,
+      "evidence": "\"They include Amazon, Anthropic, Google, IBM, Microsoft, Mistral AI, and OpenAI.\""
+    },
+    {
+      "text": "Notes xAI signed the Safety and Security chapter only",
+      "passed": true,
+      "evidence": "\"xAI signed only the Safety and Security chapter.\""
+    },
+    {
+      "text": "Explains adherence is a recognised way to demonstrate GPAI obligation compliance",
+      "passed": true,
+      "evidence": "\"A recognised way to demonstrate compliance with Arts. 53 and 55. The Commission treats adherence as a basis for assessing compliance.\""
+    },
+    {
+      "text": "Places the decision in the enforcement context: information requests have reportedly begun, so documentation should be inspection-ready",
+      "passed": true,
+      "evidence": "\"Art. 91 information requests have started (first reported late August 2026, with another wave announced 14 October 2026)\"; \"prepare for an Art. 91 request regardless of the decision.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

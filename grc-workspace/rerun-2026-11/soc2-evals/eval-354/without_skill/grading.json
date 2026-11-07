@@ -1,0 +1,33 @@
+{
+  "eval_id": 354,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States no: the February 2026 AT-C 105/205/210 exposure draft is a separate attestation-standards project",
+      "passed": true,
+      "evidence": "an AT-C exposure draft, by its nature, changes practitioner requirements. It does not change the Trust Services Criteria or the controls you must have. (Answers no and separates the projects, though it does not cite February 2026 or the 105/205/210 set specifically.)"
+    },
+    {
+      "text": "Gives its proposed effective date: June 15, 2029",
+      "passed": false,
+      "evidence": "No effective date given; only generic \"Exposure drafts are not effective until finalized.\""
+    },
+    {
+      "text": "Identifies the TSC refresh as the distinct October 2026 exposure draft",
+      "passed": false,
+      "evidence": "Does not identify the October 2026 TSC exposure draft: \"If a criteria refresh also exists, it is a separate project and its status should be verified independently.\""
+    },
+    {
+      "text": "Confirms operative criteria remain the 2017 TSC with 2022 revised points of focus",
+      "passed": true,
+      "evidence": "The current version is the 2017 criteria with the 2022 revised points of focus... Your control set stays mapped to the 2017 TSC."
+    },
+    {
+      "text": "Distinguishes who owns what: criteria come from ASEC, attestation standards from the Auditing Standards Board",
+      "passed": true,
+      "evidence": "They are developed by the AICPA Assurance Services Executive Committee (ASEC)... Attestation standards (AT-C sections...) are set by the Auditing Standards Board (ASB)."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

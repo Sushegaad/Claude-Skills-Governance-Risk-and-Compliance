@@ -1,0 +1,33 @@
+{
+  "eval_id": 373,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States EN 18286:2026 (AI quality management, supporting Article 17) became the first AI Act harmonised standard cited in the OJEU, announced October 15, 2026",
+      "passed": false,
+      "evidence": "States the opposite: \"None had been cited in the Official Journal as a harmonised standard as of my knowledge\"; only notes prEN 18286 reached public enquiry."
+    },
+    {
+      "text": "Explains citation in the OJEU gives a presumption of conformity for the covered requirements",
+      "passed": true,
+      "evidence": "\"Art. 40: compliance with harmonised standards cited in the OJ gives presumption of conformity with the corresponding requirements.\""
+    },
+    {
+      "text": "Notes the broader standardisation request deadline was revised to February 2027",
+      "passed": false,
+      "evidence": "Says the deadline \"was moved to roughly the end of 2025 and slipped further\"; the February 2027 revision is never stated."
+    },
+    {
+      "text": "Mentions further standards (such as risk management) are still in the pipeline",
+      "passed": true,
+      "evidence": "\"drafts on trustworthiness framework, risk management, and data/datasets work followed\"; \"several deliverables are expected in 2027\""
+    },
+    {
+      "text": "States the high-risk application dates (December 2, 2027 for Annex III; August 2, 2028 for Annex I) run independently of standards progress",
+      "passed": true,
+      "evidence": "\"The deal... fixed dates rather than a floating trigger: roughly 2 December 2027 for Annex III high-risk systems and 2 August 2028 for Annex I\""
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

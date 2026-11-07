@@ -18,7 +18,7 @@ Change from ECC-1:2018 (5 domains, 29 subdomains, 114 controls): the standalone 
 ## Applicability
 
 - **Mandatory**: government entities (ministries, authorities, establishments) and their companies/subsidiaries; private-sector entities that own, operate, or host **Critical National Infrastructure (CNI)**.
-- **Recommended**: all other entities in the Kingdom.
+- **Recommended**: all other entities in the Kingdom. Note: since December 28, 2025, non-CNI private-sector entities are separately covered by the mandatory, size-based **NCNICC-1:2025** (Non-CNI Private Sector Entities Cybersecurity Controls); see `sector-applicability.md`.
 - Entities remain accountable for ECC compliance of outsourced/cloud services (see CCC).
 
 ## Compliance mechanics

@@ -1,0 +1,13 @@
+{
+  "eval_id": 344,
+  "eval_name": "aircraft-jurisdiction-handoff",
+  "run_type": "without_skill",
+  "prompt": "A client installs DIRCM-based missile protection systems on in-production FAA type-certificated airliners. Which export control regime covers the modified aircraft after October 2026, and which covers the protection equipment?",
+  "assertions": [
+    "States survivability-enhanced aircraft moved off USML Category VIII(a)(8) effective October 13, 2026 (interim final rule, 91 FR 55457)",
+    "States the modified aircraft are now subject to the EAR (Commerce jurisdiction)",
+    "States the secured aircraft survivability equipment itself (DIRCM plus associated IR/UV missile warning with anti-tamper) remains on the USML in Category XI(a)(4)",
+    "Mentions the conditions: in-production manned civil aircraft with FAA transport/commuter type certificate or NATO/MNNA equivalent, with definitions added at 22 CFR 121.0",
+    "Does not assert that the rule assigned a specific destination ECCN (the rule names none)"
+  ]
+}

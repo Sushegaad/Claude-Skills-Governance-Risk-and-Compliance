@@ -1,0 +1,29 @@
+SOC 2 status as of November 2026: what I can and cannot tell you
+
+Caveat first: my knowledge of AICPA activity is limited and may lag the latest releases. Please verify the specifics below against the AICPA Assurance Services Executive Committee (ASEC) page and your auditor's written communication.
+
+What I am confident about
+- The operative criteria are still the 2017 Trust Services Criteria (TSP Section 100), with revised points of focus issued in 2022. The 2022 revision changed points of focus only. It did not change the criteria themselves, so no control changes were mandatory.
+- The five categories are Security (the Common Criteria, CC1-CC9), Availability, Confidentiality, Processing Integrity and Privacy. Security is the only mandatory category.
+- The SOC 2 attestation standard is AT-C 105 and AT-C 205, with the SOC 2 Guide as the main reference.
+
+What I cannot confirm
+- I cannot confirm that a new set of Trust Services Criteria has been finalized and made effective. Any change would normally go through an exposure draft, a comment period, a final issuance and then an effective date. AICPA has historically allowed a long transition. The 2017 criteria remained usable for periods ending on or before December 15, 2018, and the 2022 points of focus gave roughly a year of lead time.
+- If your auditor says there are "new Trust Services Criteria", ask which of these they mean:
+  1. A proposed or exposure-draft refresh of the TSC, which is not yet effective.
+  2. A finalized, issued revision with a stated effective date.
+  3. A separate AICPA project, for example changes to the attestation standards (AT-C) or to the SOC 2 Guide. These are easy to confuse with criteria changes.
+  4. Auditor firm methodology changes, such as new testing expectations around AI, cloud or vendor management, that are not changes to the criteria.
+- Default assumption until a final document and effective date exist: your report is evaluated against the 2017 TSC with the 2022 points of focus.
+
+What to do
+1. Get it in writing. Ask the auditor for the exact AICPA document name, status (draft or final), the effective date, and which of your report periods it would affect.
+2. Check the AICPA ASEC site for any exposure drafts, the comment deadline and the transition guidance.
+3. Do not rebuild your controls yet. Keep the current control set, which maps to the 2017 criteria. Any final change is likely to be incremental, and you will probably get a transition window.
+4. Do a light gap analysis against the draft if one exists. Focus on likely themes: AI and emerging technology governance, third-party and subservice organization oversight, data governance and privacy, and resilience.
+5. Confirm the report mechanics with your auditor: the system description criteria (DC 200), which criteria version will be cited in the report, and whether any period straddles a transition date.
+6. Tell customers and sales teams only what is certain. State that the report is against the 2017 TSC unless that changes.
+7. Consider commenting on the exposure draft if one is open, either directly or through an industry group.
+8. Keep a change log for the TSC so that if something does become effective you can map it to your controls quickly.
+
+Bottom line: treat the 2017 TSC (with 2022 points of focus) as the current standard until your auditor shows you a final AICPA document with an effective date. Prepare lightly, and do not over-invest in a draft.

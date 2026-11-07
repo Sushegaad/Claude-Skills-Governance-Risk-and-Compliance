@@ -1,0 +1,33 @@
+{
+  "eval_id": 387,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Cites the proposed rule: 91 FR 62361, published October 1, 2026, docket DOS-2026-0991",
+      "passed": true,
+      "evidence": "\"91 FR 62361, published October 1, 2026, docket DOS-2026-0991.\""
+    },
+    {
+      "text": "States it would remove and reserve USML Category VIII(h)(10), taking most radar altimeters off the Munitions List",
+      "passed": true,
+      "evidence": "\"Removal of USML VIII(h)(10). Most radar altimeters would move off the USML.\""
+    },
+    {
+      "text": "Makes clear it is proposed only: current classifications remain in effect until a final rule",
+      "passed": true,
+      "evidence": "\"the October 2026 omnibus is a PROPOSED rule only. Nothing has changed yet. Keep applying the current USML and 22 CFR rules until a final rule issues.\""
+    },
+    {
+      "text": "Mentions at least one other element (new 22 CFR 120.35 exclusions section, new 120.41 specially designed releases, or the new 123.26 OEM servicing exemption)",
+      "passed": true,
+      "evidence": "\"A new 22 CFR 120.35 ... Two new 'specially designed' releases in 22 CFR 120.41 ... A new 22 CFR 123.26 exemption for the temporary export of foreign defense articles for OEM servicing and repair.\""
+    },
+    {
+      "text": "States comments are due November 30, 2026 and advises affected exporters to comment",
+      "passed": true,
+      "evidence": "\"Comments are due November 30, 2026\" and \"Consider filing comments by November 30, 2026.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,26 @@
+The procedural rules are in Commission Implementing Regulation (EU) 2026/1755. It was published in the Official Journal on 21 July 2026 and entered into force on 10 August 2026. It implements the Commission's enforcement powers over GPAI model providers, which have applied since 2 August 2026 under the AI Act (Reg. (EU) 2024/1689, Chapter IX Section 5, Arts. 88-94 and Art. 101).
+
+What the Implementing Regulation covers
+1. Model evaluations (Art. 92). It sets how evaluations are run, including access through APIs, to source code, and to the model itself.
+2. Experts. It covers how independent experts are appointed to carry out evaluations and how their independence is ensured.
+3. Fine proceedings (Art. 101). The Commission issues preliminary findings, the provider has a right to be heard, and a decision follows. Fines are capped at EUR 15M or 3% of worldwide annual turnover, whichever is higher.
+4. Access to the file. The provider can see the evidence the Commission relies on, subject to protection of confidential information and business secrets.
+5. Limitation. There is a five-year limitation period for the Commission's power to impose penalties.
+
+How it fits with the substantive provisions
+- Art. 91: formal requests for information, which are the instrument used so far. The first requests were reported in late August 2026, and a further wave was announced on 14 October 2026.
+- Art. 92: model evaluations. The Commission can conduct them itself or through independent experts, in particular for systemic-risk models.
+- Art. 93: requests that providers take mitigation measures, and restrictions on or withdrawal of a model.
+- Art. 101: fines.
+- Art. 99(5): separate fines of up to EUR 7.5M or 1% of turnover for incorrect, incomplete, or misleading information to authorities.
+
+Pending item
+- A consultation on a draft implementing act with further procedural rules for penalty proceedings opened on 12 October 2026 and closes on 9 November 2026. It is not final, so treat the fine-procedure detail as likely to be supplemented. You can still submit comments if you are an affected provider.
+
+Practical implications
+- Providers get formal procedural protections: notice of preliminary findings, a right to be heard, and file access. Plan to use them with prepared evidence.
+- Evaluation access can reach model-level resources, so contracts, security arrangements, and trade-secret protocols need to anticipate regulator access.
+- Keep a clear audit trail, because the limitation period runs for five years.
+- Signing the GPAI Code of Practice does not remove these procedures. It is the route to demonstrating compliance with Arts. 53 and 55 within them.
+
+Caveat: I have described the regulation's structure at the level of its published scope. Check the specific article numbers and deadlines for responding to requests in the OJ text before relying on them in a live proceeding. This is general information, not legal advice.

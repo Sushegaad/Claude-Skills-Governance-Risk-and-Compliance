@@ -1,0 +1,13 @@
+{
+  "eval_id": 341,
+  "eval_name": "affiliates-rule-status",
+  "run_type": "with_skill",
+  "prompt": "Our restricted-party screening tool only checks named Entity List matches. Counsel mentioned the BIS Affiliates Rule. What is it, is it in effect today (November 2026), and what should we do before year-end?",
+  "assertions": [
+    "Explains the rule extends Entity List/MEU List license requirements to entities 50 percent or more owned, directly or indirectly, individually or in aggregate, by listed parties (OFAC-style ownership standard)",
+    "Cites the origin rule: BIS interim final rule published September 30, 2025 (90 FR 47201)",
+    "States the rule is NOT currently in effect: stayed since November 10, 2025 (90 FR 50857)",
+    "States the stay was extended to January 10, 2027 by a BIS rule effective November 9, 2026 (FR Doc 2026-22793), so it does not snap back on November 10, 2026",
+    "Advises completing ownership screening of counterparties tied to listed entities before January 10, 2027"
+  ]
+}

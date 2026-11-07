@@ -1,0 +1,30 @@
+Background
+The General-Purpose AI Code of Practice was published by the Commission on 10 July 2025 and endorsed as an adequacy tool by the Commission and AI Board on 1 August 2025. It has three chapters: Transparency, Copyright, and Safety and Security (the last only relevant to systemic-risk models, over 10^25 FLOP presumption). It is voluntary.
+
+Signatories (to my knowledge; the Commission maintains the authoritative list and it changes, so verify)
+- Signed in full: a large group including Amazon, Anthropic, Google, IBM, Microsoft, Mistral AI, OpenAI, Aleph Alpha, Cohere, ServiceNow and others (more than two dozen at last count I know of).
+- xAI signed only the Safety and Security chapter.
+- Meta publicly declined to sign.
+- I cannot confirm additions or withdrawals after mid-2026.
+
+What signing gets you
+1. A recognised route to demonstrate compliance with Arts. 53 and 55 until harmonised standards exist. It does not create a legal presumption identical to standards, but the Commission has said it will treat adherence as a basis for assuming compliance, and AI Office supervision is expected to be more streamlined and trust-based.
+2. Consideration in fines: Art. 101 requires the Commission to take commitments under approved codes into account.
+3. Reduced documentation burden through the Model Documentation Form and a common structure.
+4. Predictability and a channel to the AI Office, with signatories focusing on dialogue.
+5. Commercial and reputational signalling to customers and procurement.
+
+What it costs
+- Real commitments: keep documentation up to date, a copyright policy honouring robots.txt and other machine-readable opt-outs, no circumvention of paywalls, mitigation of infringing outputs, a complaints contact point, and, for systemic-risk models, a safety and security framework, systemic risk assessment, serious-incident reporting, security measures, and model reports.
+- Signing is not a safe harbour, and it exposes you to the Commission checking against the commitments you took on. Non-signatories must show equivalent compliance by other means, with more scrutiny.
+
+Decision guide
+- Are you a GPAI model provider at all? Downstream integrators and deployers generally are not and need not sign.
+- Systemic-risk provider: signing is strongly advisable unless you have a mature alternative framework.
+- Non-systemic provider: signing the Transparency and Copyright chapters is usually low-cost and efficient if you already do the work.
+- Open-source exemption (Art. 53(2)) covers some documentation duties but not copyright policy, training summary or systemic-risk duties.
+- Partial signing is allowed (xAI precedent).
+- Check that your internal capability matches the commitments, since they become the benchmark.
+- Legacy models have until 2 August 2027, but commitments apply to new models.
+
+Recommendation: for most credible GPAI providers, sign (at least Transparency and Copyright, plus Safety and Security if systemic-risk), after a gap analysis. Confirm the current signatory list on the Commission's website before deciding.

@@ -1,0 +1,28 @@
+What changed in October 2026 for Irish regulated entities on outsourcing and third-party risk
+
+Short answer: on October 8, 2026 the Central Bank of Ireland (CBI) published CP173, "Consultation on Guidance on Good Practices for the Sound Management of Third-Party Risks". It is a consultation, not final guidance. Your current obligations have not changed yet.
+
+Key facts
+- Published: October 8, 2026. The consultation closes December 3, 2026.
+- Purpose: the final guidance will replace the December 2021 Cross-Industry Guidance on Outsourcing. That 2021 guidance is still the reference point until the final version is issued.
+- Approach: outcomes-based. It covers "third-party risks" broadly, not only classic outsourcing.
+- Context: it follows the EBA's September 2026 final guidelines on third-party risk for non-ICT services. The CBI proposal appears to be part of the same move toward a broader third-party risk lens beyond ICT.
+
+What it means in practice
+1. Keep complying with the 2021 Cross-Industry Guidance on Outsourcing. Do not treat CP173 as in force.
+2. Use the consultation window. Read CP173 in full, map it against your outsourcing policy, register and contracts, and decide whether to respond before December 3, 2026.
+3. Prepare for scope widening. An outcomes-based, third-party-wide approach usually means that non-ICT and non-outsourcing arrangements will be pulled into your governance. Check whether your inventory and tiering cover all third-party arrangements, and not only formal outsourcing.
+4. Consider the EBA non-ICT guidelines if you are a credit institution or another entity in their scope. Check their scope and application date against your entity type.
+5. If you are a financial entity under DORA, that regime applies since January 17, 2025 and is separate from CP173. Chapter V remains in force:
+   - Art. 28: ICT third-party strategy and the Register of Information.
+   - Art. 29: concentration risk, including substitutability.
+   - Art. 30: mandatory contract provisions.
+   Run one programme with many citations. Apply the strictest requirement as the baseline.
+
+Suggested actions
+- Name an owner and put the CBI consultation, its response deadline and a re-baseline trigger in your regulatory change log.
+- Gap-assess your programme against CP173 once you have read it. Look at inventory completeness, criticality assessment, due diligence, contract content, ongoing monitoring, exit planning, fourth-party visibility and board oversight.
+- Brief your board and risk committee on the direction of travel.
+- Do not rewrite policies yet. Wait for the final text, and prepare a plan so that you can move quickly once it is published.
+
+Caveat: I have not reproduced detailed CP173 provisions because I cannot verify them here. Read the CBI paper itself for specifics such as proposed expectations, proportionality and transition. This is general compliance information, not legal advice.

@@ -1,0 +1,33 @@
+{
+  "eval_id": 348,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the Cyberbeveiligingswet (Cbw), with the Cyberbeveiligingsbesluit, entered into force August 15, 2026 (Stb. 2026, 187), replacing the Wbni",
+      "passed": true,
+      "evidence": "\"The Cyberbeveiligingswet (Cbw) and the Cyberbeveiligingsbesluit (Stb. 2026, 187) entered into force on 15 August 2026... They replace the Wbni.\""
+    },
+    {
+      "text": "Notes the Netherlands was among the four Member States referred to the CJEU on July 8, 2026, before completing transposition",
+      "passed": true,
+      "evidence": "\"The Netherlands was among the four Member States (Ireland, Spain, France, Netherlands) that the Commission referred to the CJEU on 8 July 2026\""
+    },
+    {
+      "text": "Describes core obligations now applying: registration, duty of care, and incident reporting",
+      "passed": true,
+      "evidence": "\"Registration, the duty of care, incident reporting and board accountability all apply immediately.\""
+    },
+    {
+      "text": "Does not claim the Netherlands remains untransposed today",
+      "passed": true,
+      "evidence": "States plainly \"the Netherlands has transposed NIS2\" and the Wbni is no longer operative."
+    },
+    {
+      "text": "Advises confirming registration and incident-reporting channels with the Dutch authorities",
+      "passed": true,
+      "evidence": "\"Register through MijnNCSC... confirm the recipient channel (the NCSC and sector supervisor under Dutch rules)... confirm the details with the NCSC and your sector supervisor\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

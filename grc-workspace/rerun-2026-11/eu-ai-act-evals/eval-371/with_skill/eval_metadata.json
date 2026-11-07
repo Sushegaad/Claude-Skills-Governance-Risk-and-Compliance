@@ -1,0 +1,13 @@
+{
+  "eval_id": 371,
+  "eval_name": "enforcement-begun",
+  "run_type": "with_skill",
+  "prompt": "Has the European Commission actually started enforcing GPAI obligations under the AI Act? What happened in autumn 2026?",
+  "assertions": [
+    "States enforcement has begun: the AI Office issued its first formal requests for information to GPAI providers under Article 91, first reported in late August 2026",
+    "Mentions the further wave announced October 14, 2026 covering security practices, external evaluation and post-market monitoring",
+    "Uses hedged language and does not name recipients, noting they have not been officially identified",
+    "References the procedural framework: Implementing Regulation (EU) 2026/1755, in force August 10, 2026",
+    "States the GPAI fine exposure correctly: up to EUR 15M or 3 percent of worldwide turnover"
+  ]
+}

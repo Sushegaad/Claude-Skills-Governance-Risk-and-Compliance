@@ -1,0 +1,36 @@
+Short answer: the proposed refresh adds AI-related points of focus to the existing criteria. It does not add new AI-specific criteria, and it is not in force. Today your audit uses the 2017 Trust Services Criteria with the 2022 Revised Points of Focus, and your AI systems are examined through the existing criteria.
+
+HOW THE PROPOSAL TREATS AI
+
+- On October 28, 2026, the AICPA's Assurance Services Executive Committee issued the exposure draft "Proposed 2027 SOC 2 Trust Services Criteria and Description Criteria" (dated October 27, 2026).
+- It keeps the five categories (Security, Availability, Processing Integrity, Confidentiality, Privacy) and consolidates overlapping criteria.
+- AI appears as points of focus, which are guidance within criteria. There is no standalone "AI criterion" and no separate AI category.
+- Comments are due January 15, 2027. It is proposed to apply to engagements beginning on or after December 31, 2027, with early adoption permitted. The wording can change before it is final, so do not build to the draft.
+
+WHAT APPLIES TO YOUR AUDIT TODAY
+
+Until the AICPA adopts a final version, the 2017 TSC with the 2022 points of focus are the operative criteria. Do not apply the proposed criteria to a current engagement. That does not mean AI is out of view. An auditor can test AI systems that are in scope under the existing criteria. Where they typically land:
+
+| Area | Criteria | What to be ready to show for AI systems |
+|---|---|---|
+| Governance and accountability | CC1, CC2, CC3 | Named owner for AI systems; AI use and acceptable-use policy; AI risks in the risk register (model failure, data leakage, misuse, bias or accuracy risks relevant to your commitments) |
+| Access | CC6 | Access to models, training data, prompts, logs and API keys limited and reviewed; MFA; secrets management |
+| Monitoring and incidents | CC7 | Logging of model and agent activity; alerting; AI-related incidents handled under the IR plan |
+| Change management | CC8 | Model, prompt and configuration changes ticketed, reviewed, tested and approved; rollback plan; retraining or model version changes treated as changes |
+| Third parties | CC9.2 | Model providers and AI APIs in the vendor inventory and tiered; SOC 2 reports and CUECs reviewed; contract terms on data use and retention |
+| Confidentiality | C1 | Customer data classification; whether customer data is sent to third-party models, used for training, or retained; disposal |
+| Processing integrity | PI1 | If outputs support commitments to customers, how accuracy, completeness and timeliness of AI-driven processing are checked (validation, reconciliation, human review, error handling) |
+| Privacy | P1-P8 | Notice and consent cover AI processing of personal information; retention and deletion apply to prompts and logs |
+
+Also make sure your system description accurately explains where AI sits in the service, which components are in scope and which subservice organizations (for example a model provider) are carved out or carved in.
+
+WHAT TO DO
+
+1. Confirm scope with your auditor: which AI components and providers are inside the boundary, and which categories you include (PI1 and C1 matter most if AI touches customer data or outputs).
+2. Build an AI inventory (systems, models, providers, data used, owner) and tie each item to controls above.
+3. Make sure AI changes pass through your normal change process. Gaps there are the most likely exception.
+4. Add AI providers to vendor management and complete the CUEC mapping.
+5. Document controls the way you would any other: owner, frequency, evidence, test procedure. Evidence must be generated during the period.
+6. Watch the exposure draft. Consider commenting by January 15, 2027. Controls above are low-regret, since they fit both the current and the proposed criteria.
+
+A licensed CPA firm decides how criteria apply to your report. This is general guidance, not legal advice.

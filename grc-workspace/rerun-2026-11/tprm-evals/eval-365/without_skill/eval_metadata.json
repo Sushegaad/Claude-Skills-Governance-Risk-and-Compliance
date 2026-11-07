@@ -1,0 +1,13 @@
+{
+  "eval_id": 365,
+  "eval_name": "fourth-party-trends",
+  "run_type": "without_skill",
+  "prompt": "What late-2026 regulatory developments should shape our fourth-party and concentration risk work?",
+  "assertions": [
+    "Cites the US interagency proposal (91 FR 58536, September 15, 2026) with comments due November 16, 2026",
+    "Cites CBI CP173 (October 8, 2026, closing December 3, 2026) and its cross-industry, outcomes-based scope",
+    "Mentions the EBA's September 2026 final guidelines extending third-party risk coverage to non-ICT services",
+    "References the DORA CTPP regime (19 providers designated November 2025) as the EU concentration-risk mechanism",
+    "Recommends mapping subcontractor chains and concentration exposure as a practical step"
+  ]
+}

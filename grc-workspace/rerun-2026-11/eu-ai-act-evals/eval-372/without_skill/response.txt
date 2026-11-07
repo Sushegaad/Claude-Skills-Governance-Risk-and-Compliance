@@ -1,0 +1,29 @@
+Overview of the framework
+The AI Act sets out the Commission's powers over GPAI providers in Chapter IX, Section 5 (Arts. 88-94) plus the penalty provision in Art. 101, with procedural detail left to implementing acts and general EU law principles. Powers became enforceable on 2 August 2026.
+
+Core provisions
+- Art. 88: the Commission (through the AI Office) supervises compliance and can monitor GPAI model obligations, including for models integrated into the same provider's AI systems.
+- Art. 89: monitoring actions; downstream providers may lodge complaints about infringements.
+- Art. 90: the scientific panel can issue a qualified alert where it suspects a systemic risk or a model poses a concrete identifiable risk at Union level.
+- Art. 91: power to request documentation and information from providers; requests must state the legal basis and purpose, set a deadline, and mention fines for incorrect, incomplete or misleading information.
+- Art. 92: power to conduct evaluations, including via independent experts, with access to the model through APIs or source code where necessary; the provider must cooperate.
+- Art. 93: power to request measures (to comply, to implement mitigation for systemic risk) and to restrict the making available, withdraw or recall the model. Before ordering, the Commission may seek commitments from the provider, which can be made binding.
+- Art. 94: procedural rights of economic operators, applying Art. 18 of Regulation (EU) 2019/1020 mutatis mutandis. This gives the right to be heard and defence rights.
+- Art. 101: fines for providers of up to 3% of annual worldwide turnover or EUR 15m, whichever is higher, for intentional or negligent infringement of the GPAI provisions, failure to comply with requests (Arts. 91-93), or failure to provide access for evaluation. Fines must consider gravity, duration, and the Code of Practice commitments; there is a right to be heard and the Court of Justice has unlimited jurisdiction to review (Art. 261 TFEU).
+- Art. 101 also requires the Commission to adopt implementing acts on detailed arrangements and procedural safeguards for fines; these were in development (consultation drafts in 2026) and I cannot confirm final adoption details.
+
+Typical sequence
+1. Trigger: own initiative, scientific panel alert, downstream complaint.
+2. Information request (Art. 91) with deadline.
+3. Possible evaluation (Art. 92).
+4. Commitments or request for measures (Art. 93), with opportunity to be heard.
+5. Decision on restriction/recall or fine (Art. 101) after the provider is given the chance to respond to preliminary findings.
+6. Judicial review before the General Court and Court of Justice.
+
+Other points
+- Confidentiality and trade secrets are protected by Art. 78; the Commission must treat information accordingly.
+- Limitation periods, access to file and detailed hearing rules are the details I would expect to be fixed in the implementing act; check the Official Journal for the final text, as I cannot verify the current form.
+- Compliance can be shown through Code of Practice adherence or other adequate means until harmonised standards exist (Art. 53(4), 55(2)).
+- Models placed on the market before 2 August 2025 have until 2 August 2027.
+
+Caveat: this reflects the text of the Regulation and my knowledge of the implementing work; verify any post-mid-2026 implementing act against the Official Journal.

@@ -1,0 +1,33 @@
+US banking TPRM guidance: status as of November 2026
+
+Short answer: the June 2023 Interagency Guidance on Third-Party Relationships (OCC Bulletin 2023-17) is still the operative framework. A proposed replacement is out for comment. It is a proposal only and should not be applied as if it were final.
+
+1. The proposal
+- On September 15, 2026 the OCC, Federal Reserve, FDIC and NCUA published "Proposed Third-Party Risk Management Guidance" in the Federal Register (91 FR 58536).
+- It would rescind and replace the June 2023 Interagency Guidance. NCUA would join the interagency guidance for the first time.
+- It would also rescind three other documents: the OCC's foreign-based third-party bulletin, the 2024 bank-fintech joint statement, and the 2024 community bank TPRM guide.
+- Comments are due November 16, 2026. That is about ten days from today (November 6), so if you want to influence the final text, act now.
+- The agencies also issued a Joint Statement on Community Banks' Engagement with Core Service Providers. Community banks and credit unions should read it, especially if they depend heavily on one core provider.
+
+2. What this means today
+- The June 2023 guidance stays in force until a final replacement is issued. Examiners will keep assessing you against it.
+- Do not rebuild the programme around the proposed text. It could change before it is finalised, and the effective date and transition terms are not yet known.
+- The 2023 lifecycle is still the structure to use: planning, due diligence and selection, contract negotiation, ongoing monitoring, termination. Rigor should be proportional to risk and criticality.
+- The documents the proposal would rescind (the foreign-based third-party bulletin, the bank-fintech statement, the community bank guide) are still current for now. If your programme relies on them, keep following them until rescission takes effect.
+
+3. Recommended actions
+1. Read the Federal Register text and compare it with your current policy. Do a gap analysis against the 2023 lifecycle stages, and mark which gaps are proposal-driven and which are existing exposures.
+2. Decide whether to submit a comment by November 16, 2026. Focus on points that affect your institution, such as proportionality for community banks, fintech arrangements, and critical activities.
+3. Open a tracking item in your regulatory change process. Name an owner, record the comment deadline, and set a trigger to re-baseline when a final rule or guidance is published.
+4. Keep strengthening the fundamentals that every version of the guidance is likely to expect:
+   - A current vendor inventory with risk tiers. Tier by data access, criticality and substitutability.
+   - Fourth-party and concentration visibility.
+   - Contracts that carry audit rights, incident notification, sub-processor flow-down and termination assistance.
+   - Documented ongoing monitoring, board reporting, and periodic independent review of the programme itself.
+   - Tested exit plans for critical vendors.
+5. If you have EU operations, DORA (Chapter V, Arts. 28-30) is a separate and already-applicable regime. Do not conflate it with the US proposal.
+
+4. Related note for Irish entities
+The Central Bank of Ireland has its own consultation, CP173, which closes December 3, 2026. It is separate from the US process.
+
+Caveat: this is general compliance information, not legal advice. Check the Federal Register notice and your primary regulator's communications. Confirm current status before relying on it, since a final action could be issued after my information was verified (November 6, 2026).

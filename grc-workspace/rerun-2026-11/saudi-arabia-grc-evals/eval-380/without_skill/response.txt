@@ -1,0 +1,18 @@
+Short answer: I cannot confirm that SAMA published an updated Cyber Security Framework in 2026. My knowledge does not include a verified 2026 release, so I would not tell your client "yes" or "no" without checking SAMA directly. This is general guidance, not legal advice.
+
+1. What I know
+- The SAMA Cyber Security Framework (CSF) v1.0 was issued in 2017 and is mandatory for SAMA-regulated financial institutions (banks, insurers, finance companies, payment providers). It is organized into four domains: Cybersecurity Leadership and Governance, Cybersecurity Risk Management and Compliance, Cybersecurity Operations and Technology, and Third Party Cybersecurity. There is a maturity model with levels 0 to 5, and a common target of level 3 or higher.
+- SAMA has also published related frameworks and instructions: the Business Continuity Management Framework, the Cyber Resilience Fair Practice Code, the Third Party Risk Management guidance, the Counter-Fraud Framework, the Open Banking framework, the Cloud Computing policy, and the Cyber Security Common Controls and Threat Intelligence Principles (FinCyber-related). The Financial Entities Ethical Red Teaming (FEER) framework supports threat-led testing.
+- Version 1.1 and subsequent updates have been referenced in the market, but I cannot cite their dates or content with confidence.
+- NCA's ECC also matters. SAMA entities should interpret SAMA CSF alongside NCA ECC, and SAMA expects alignment where applicable.
+
+2. How to answer your client
+- Say that you are checking SAMA's official site (the Rules and Regulations section) and the client's SAMA supervisory correspondence.
+- Ask the bank's compliance or CISO team whether SAMA circulated a revised CSF, a circular or an interim instruction. SAMA often distributes directly to regulated entities, and some documents are not widely published.
+- Compare any new version against the 2017 baseline with a gap analysis, focusing on governance changes, third-party and cloud, resilience and testing, AI, and any changed maturity expectations.
+
+3. If an update exists
+- Obtain the effective date and transition period, map changes to controls, update the client's policies and control library, plan evidence collection and a remediation roadmap, and brief the board, since SAMA assesses maturity.
+
+4. Caveats
+- Do not assert an update to the client without a primary source. If you cannot find one, report that you found no confirmed 2026 update and that the 2017 CSF remains the last version you can verify.

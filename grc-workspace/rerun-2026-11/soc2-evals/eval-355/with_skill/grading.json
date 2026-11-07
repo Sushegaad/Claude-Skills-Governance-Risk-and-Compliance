@@ -1,0 +1,33 @@
+{
+  "eval_id": 355,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Includes the January 15, 2027 comment deadline as a milestone",
+      "passed": true,
+      "evidence": "January 2027: \"Optional: decide whether to comment on the exposure draft by January 15, 2027.\""
+    },
+    {
+      "text": "Plans for the proposed effective date: engagements beginning on or after December 31, 2027 (if adopted)",
+      "passed": true,
+      "evidence": "Proposed effective date: engagements beginning on or after December 31, 2027... If your period starts on or after December 31, 2027, expect the new criteria to be discussed."
+    },
+    {
+      "text": "Covers the early-adoption option as a decision point",
+      "passed": true,
+      "evidence": "once published, ask your auditor how it affects any engagement spanning December 31, 2027 and whether early adoption is on offer. Do not adopt on your own."
+    },
+    {
+      "text": "Keeps 2027 engagements on the 2017 TSC with 2022 revised points of focus",
+      "passed": true,
+      "evidence": "It is built on the 2017 Trust Services Criteria with the 2022 Revised Points of Focus, which remain the operative criteria... a 2027 audit period is examined against the current criteria."
+    },
+    {
+      "text": "Includes a gap assessment against the final criteria once published, with attention to AI-related points of focus",
+      "passed": false,
+      "evidence": "Covers AI low-regret steps and a watch item to ask the auditor once the final TSC is published, but never plans a gap assessment against the final criteria (the gap assessment in the plan is against the current 2017 criteria)."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

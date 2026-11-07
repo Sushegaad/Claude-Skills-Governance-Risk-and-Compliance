@@ -1,0 +1,51 @@
+2027 SOC 2 readiness timeline with a proposed criteria refresh
+
+Assumptions (adjust to your situation)
+- Type 2 report, 12-month period (or a 6-month first period) beginning in early 2027.
+- Operative criteria are the 2017 TSC with 2022 points of focus. I can't confirm any refresh is final or effective, so the plan treats it as a watch item with a decision gate rather than a requirement.
+- Categories: Security plus whichever of Availability, Confidentiality, Processing Integrity and Privacy you elect.
+- Adjust the dates if your fiscal calendar or customer deadlines differ.
+
+Phase 0: Now to end of November 2026 (decide and baseline)
+- Confirm with the auditor in writing: criteria version for the period, status of any refresh, and whether the period would straddle a transition date.
+- Select categories and system boundary. Identify subservice organizations (cloud, AI, payments).
+- Appoint a control owner for each area and an executive sponsor.
+- Stand up a standards-watch tracker: TSC refresh, AT-C changes, SOC 2 Guide updates.
+
+Phase 1: December 2026 (gap assessment)
+- Map existing controls to CC1-CC9 plus selected categories.
+- Add a light overlay for likely refresh themes (AI governance, third-party risk, data governance, resilience) so that you are not rebuilt later. Mark these "advisory, not required".
+- Produce a gap list with owners and due dates.
+
+Phase 2: January to February 2027 (remediate and finish design)
+- Close design gaps: policies (information security, access, change, incident, vendor, BC/DR, data classification, AI use), risk assessment, and vendor reviews.
+- Implement tooling for evidence: ticketing, access reviews, vulnerability scanning, logging, MDM, background checks and training tracking.
+- Run a tabletop incident response exercise and a backup restore test.
+- Draft the DC 200 system description.
+
+Phase 3: End of February to March 2027 (readiness and observation start)
+- Run a readiness assessment or point-in-time review (a Type 1 if customers need an early report).
+- Lock the observation window start date. Controls must be operating from day one.
+- Decision gate: if a refresh has become final with an effective date, assess impact on the period and update the control mapping. If still draft, continue as planned.
+
+Phase 4: Observation period (roughly April to September 2027 for a 6-month period; through March 2028 for a 12-month period)
+- Monthly: access reviews for critical systems, vulnerability remediation tracking, change evidence sampling.
+- Quarterly: user access review, vendor review, risk assessment update, management review, internal control self-test.
+- Annual items within the window: policy review and acknowledgment, security training, penetration test, BC/DR test, risk assessment.
+- Mid-period checkpoint with the auditor to catch exceptions early.
+
+Phase 5: Fieldwork and report (October to December 2027 for a 6-month period)
+- Evidence requests, walkthroughs, sampling, and exception responses.
+- Review the draft report and management's assertion. Provide management responses to exceptions.
+- Report issuance and bridge letter planning.
+
+Standing governance throughout
+- Review the standards tracker monthly. Any final AICPA change triggers a 30-day impact assessment.
+- Keep a RACI and an evidence calendar.
+- Report progress to leadership quarterly.
+
+Key risks
+- Controls not operating from the first day of the period.
+- Scope creep after the period starts.
+- Treating a draft refresh as a requirement, or ignoring it after it becomes final.
+- Vendor reports (cloud, AI providers) being stale or having gaps.

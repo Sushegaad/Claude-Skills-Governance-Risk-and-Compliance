@@ -1,0 +1,33 @@
+{
+  "eval_id": 365,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Cites the US interagency proposal (91 FR 58536, September 15, 2026) with comments due November 16, 2026",
+      "passed": false,
+      "evidence": "States the June 2023 guidance and 2024 community bank guide \"remain the baseline\" and only to \"check for any amendment\"; the 91 FR 58536 proposal and November 16, 2026 deadline are never cited"
+    },
+    {
+      "text": "Cites CBI CP173 (October 8, 2026, closing December 3, 2026) and its cross-industry, outcomes-based scope",
+      "passed": false,
+      "evidence": "Only says \"Ireland: CBI outsourcing guidance in context of DORA\"; CP173, its October 8, 2026 date and December 3, 2026 close are never cited"
+    },
+    {
+      "text": "Mentions the EBA's September 2026 final guidelines extending third-party risk coverage to non-ICT services",
+      "passed": false,
+      "evidence": "No mention of the EBA September 2026 final guidelines extending third-party risk coverage to non-ICT services"
+    },
+    {
+      "text": "References the DORA CTPP regime (19 providers designated November 2025) as the EU concentration-risk mechanism",
+      "passed": true,
+      "evidence": "\"the ESAs published the first CTPP designation list in November 2025\" used as the EU concentration mechanism (\"designation is a signal of systemic concentration\" context in CTPP oversight discussion) - 19-provider count not given"
+    },
+    {
+      "text": "Recommends mapping subcontractor chains and concentration exposure as a practical step",
+      "passed": true,
+      "evidence": "\"Map the full supply chain: extend inventory to fourth parties for critical services... Identify 'nth-party' concentration\" and \"Concentration metrics at multiple levels\""
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

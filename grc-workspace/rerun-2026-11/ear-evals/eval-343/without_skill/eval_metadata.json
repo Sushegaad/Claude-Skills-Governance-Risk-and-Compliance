@@ -1,0 +1,13 @@
+{
+  "eval_id": 343,
+  "eval_name": "october-rule-activity",
+  "run_type": "without_skill",
+  "prompt": "Did BIS publish any new EAR rules in October 2026 that I should know about? And what is the most important near-term EAR compliance date?",
+  "assertions": [
+    "States that no EAR rules were published by BIS in October 2026 (no Entity List additions or chip-control rules that month)",
+    "Identifies the Affiliates Rule stay as the key near-term item",
+    "Gives the extension: the stay now runs to January 10, 2027 (BIS rule effective November 9, 2026)",
+    "References the original one-year stay window of November 10, 2025 through November 9, 2026",
+    "Does not invent fictitious October 2026 Entity List additions or other October rules"
+  ]
+}

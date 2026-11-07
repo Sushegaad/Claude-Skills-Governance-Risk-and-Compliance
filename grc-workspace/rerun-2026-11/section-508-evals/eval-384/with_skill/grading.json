@@ -1,0 +1,33 @@
+{
+  "eval_id": 384,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Anchors requirements to the 2017 Revised 508 Standards with WCAG 2.0 Level AA as the binding baseline",
+      "passed": true,
+      "evidence": "\"Require conformance with the Revised Section 508 Standards (36 CFR Part 1194), which incorporate WCAG 2.0 Level A and AA. That is the operative baseline.\""
+    },
+    {
+      "text": "Recommends verifying accessibility of ICT deliverables at acceptance, noting the FY2025 assessment found under 30 percent of agencies almost always do this",
+      "passed": true,
+      "evidence": "\"Run your own acceptance tests before you accept a deliverable\" and \"under 30 percent of agencies almost always verify ICT deliverables in acquisition\""
+    },
+    {
+      "text": "States there is no pending refresh rulemaking to wait for",
+      "passed": true,
+      "evidence": "\"No refresh rulemaking is under way as of November 2026\""
+    },
+    {
+      "text": "Covers standard procurement artifacts such as ACRs/VPATs and testing evidence",
+      "passed": true,
+      "evidence": "\"A current Accessibility Conformance Report (ACR) on the VPAT 2.x WCAG Edition\" plus required testing-method disclosure and agency acceptance testing"
+    },
+    {
+      "text": "Uses the FY2025 assessment (1.96 of 5 average) as context for why verification matters",
+      "passed": true,
+      "evidence": "\"The FY2025 Governmentwide Section 508 Assessment found... The average conformance score was 1.96 out of 5. So don't take the ACR at face value.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

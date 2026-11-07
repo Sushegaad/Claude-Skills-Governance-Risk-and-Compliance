@@ -1,0 +1,33 @@
+{
+  "eval_id": 359,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Describes the SEC's May 19, 2026 proposal, which would limit 404(b) auditor attestation to large accelerated filers and raise the large accelerated filer threshold",
+      "passed": true,
+      "evidence": "\"On May 19, 2026, the SEC proposed to raise the large accelerated filer threshold to $2B float, exempt all non-accelerated filers from 404(b), and add a roughly 5-year post-IPO on-ramp.\""
+    },
+    {
+      "text": "States comments closed July 20, 2026 and there has been NO final action as of November 2026",
+      "passed": true,
+      "evidence": "\"Comments closed July 20, 2026. As of November 6, 2026 there is no final action.\""
+    },
+    {
+      "text": "Concludes current 404(b) thresholds remain operative law, so preparation should not pause",
+      "passed": true,
+      "evidence": "\"Short answer: do not pause. The exemption is only a proposal. It is not law.\" plus \"The current rules govern.\""
+    },
+    {
+      "text": "Frames the proposal as proposed only, to be flagged and monitored",
+      "passed": true,
+      "evidence": "\"A proposal can be changed, delayed or withdrawn... Nothing in it applies to your fiscal 2026 year-end\" and advice to plan cost reduction \"only if the rule is finalized.\""
+    },
+    {
+      "text": "Notes management's 404(a) assessment obligation is unaffected either way",
+      "passed": true,
+      "evidence": "\"Even if the proposal is adopted, 404(a) stays. Management must still assess and conclude on ICFR.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

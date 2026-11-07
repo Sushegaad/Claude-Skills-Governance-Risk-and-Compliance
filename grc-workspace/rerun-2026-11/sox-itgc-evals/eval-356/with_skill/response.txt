@@ -1,0 +1,35 @@
+QC 1000 and your December 2026 integrated audit
+
+Short answer: QC 1000 is a quality-control standard for audit firms, not for your company. It does not add or change any control you have to operate, and it does not change what your ICFR audit tests. The practical effect on you is indirect, through how your audit firm runs its engagements.
+
+What it is
+- QC 1000, "A Firm's System of Quality Control," is the PCAOB standard that requires registered audit firms to design, implement and operate a risk-based system of quality control. Think of it as COSO-style risk assessment applied to the audit firm itself: the firm identifies quality risks and responds to them across governance, ethics and independence, client acceptance, engagement performance, resources, information and communication, and monitoring and remediation.
+- It takes effect December 15, 2026.
+- The PCAOB adopted targeted amendments on September 9, 2026. They rescind the design-only requirement and the External QC Function requirement, and they let firms choose their annual evaluation date. The SEC approved those amendments on November 2, 2026, and the effective date is unchanged.
+
+Does it affect your December 2026 year-end audit?
+1. Legal applicability: QC 1000 binds your auditor, not you. Management's 404(a) assessment, your RCM and your ITGCs are unaffected. AS 2201 (the integrated ICFR audit standard) has not been amended by QC 1000, and your COSO 2013 framework remains the framework you assess against.
+2. Timing: the effective date is December 15, 2026, which falls inside your fiscal year-end window. Whether it touches your specific audit depends on how the firm implements it for engagements and reports issued after that date. Ask your engagement partner how the firm is applying it. I would not assume a precise cutover treatment without asking.
+3. What you may notice (indirect, and firm-dependent, so treat these as likely rather than certain):
+   - More formal engagement-quality documentation and review, which can mean more PBC follow-ups and tighter sign-off timelines.
+   - Firm-level focus on resourcing, specialists and IT audit staffing. Your ITGC testing team may be asked for clearer evidence of IPE (information produced by the entity) validation.
+   - Closer monitoring of the firm's own deficiencies, and so possibly more conservative evidence standards around ITGC reliance.
+   None of these changes your obligations. They change how carefully your auditor documents their work.
+4. Your ITGC work does not change. You still need:
+   - Access: timely terminations, quarterly user access reviews, privileged access.
+   - Program changes: approval, testing, and developer/deployer segregation.
+   - Computer operations: backup and job monitoring.
+   - Program development, for any implementation.
+   The quarterly cadences and sample sizes (daily 25, weekly 5, monthly 2, quarterly 2, annual 1) are audit convention, not regulation. Agree the final numbers with your auditor.
+
+Filer status and 404(b)
+Whether your auditor attests to ICFR depends on your status, not on QC 1000. Under current law, 404(a) applies to all public companies. 404(b) applies to accelerated filers ($75M-$700M float with at least $100M revenue) and large accelerated filers (at least $700M float) that are not EGCs. Non-accelerated filers and EGCs are exempt. Flag: the SEC's May 19, 2026 proposal would raise the large accelerated threshold to $2B float, exempt all non-accelerated filers from 404(b), and add a roughly 5-year post-IPO on-ramp. Comments closed July 20, 2026, and there has been no final action as of November 6, 2026, so the current thresholds remain operative for this year-end.
+
+What I would do now
+- Ask the engagement partner in writing: how is the firm applying QC 1000 to this engagement, and have the timetable, PBC list or sample expectations changed?
+- Confirm the year-end timeline: interim testing results, roll-forward, remediation re-test cutoffs, and the report date.
+- Close open ITGC deficiencies and finish remediation validation now. A control fixed in December cannot show operation over a sufficient period, whatever the standards say.
+- Make sure IPE and key-report validations and SOC 1 coverage (period and bridge letters) are ready.
+- Do not pause any ICFR work on account of QC 1000.
+
+This is general compliance information, not legal advice. Confirm details with your auditor and counsel.

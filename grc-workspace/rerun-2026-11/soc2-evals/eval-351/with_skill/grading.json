@@ -1,0 +1,33 @@
+{
+  "eval_id": 351,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the AICPA issued an exposure draft on October 28, 2026 (draft dated October 27, 2026): the Proposed 2027 SOC 2 Trust Services Criteria and Description Criteria, the first major refresh since the 2017 TSC",
+      "passed": true,
+      "evidence": "On October 28, 2026, the AICPA's Assurance Services Executive Committee (ASEC) issued an exposure draft titled \"Proposed 2027 SOC 2 Trust Services Criteria and Description Criteria\" (draft dated October 27, 2026). This is the first major refresh..."
+    },
+    {
+      "text": "States comments are due January 15, 2027",
+      "passed": true,
+      "evidence": "Comments are due January 15, 2027."
+    },
+    {
+      "text": "States the proposed effective date: engagements beginning on or after December 31, 2027, with early adoption permitted",
+      "passed": true,
+      "evidence": "The proposed effective date is for engagements beginning on or after December 31, 2027. Early adoption would be permitted."
+    },
+    {
+      "text": "States current engagements are unaffected: the 2017 TSC with 2022 revised points of focus remain operative",
+      "passed": true,
+      "evidence": "Until the AICPA finalizes and adopts the new criteria, the 2017 TSC with 2022 Revised Points of Focus are the operative criteria... It does not change your current audit."
+    },
+    {
+      "text": "Describes the direction accurately: keeps the five trust services categories, consolidates overlapping criteria, adds AI-related points of focus without new AI-specific criteria, and does not assert specific criteria counts as fact",
+      "passed": true,
+      "evidence": "It keeps the five trust services categories... It consolidates overlapping criteria... It adds AI-related points of focus. It does not create new AI-specific criteria. No specific criteria counts asserted."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

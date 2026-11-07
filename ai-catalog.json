@@ -59,12 +59,12 @@
         "review a vendor's SOC 2 report for red flags"
       ],
       "version": "2.1.0",
-      "updatedAt": "2026-05-16T00:00:00Z",
+      "updatedAt": "2026-11-06T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
-        "evalPassRate": "100%",
-        "evalBaselinePassRate": "84%",
+        "evalPassRate": "88%",
+        "evalBaselinePassRate": "32%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SOC%202%20-%20Claude%20Skill/soc2.skill"
       }
     },
@@ -212,12 +212,12 @@
         "plan a PCI DSS v4.0.1 migration"
       ],
       "version": "2.1.0",
-      "updatedAt": "2026-09-05T00:00:00Z",
+      "updatedAt": "2026-11-06T00:00:00Z",
       "metadata": {
         "category": "Data Privacy & Protection",
         "license": "MIT",
-        "evalPassRate": "84%",
-        "evalBaselinePassRate": "80%",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "36%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/PCI%20Compliance%20-%20Claude%20Skill/PCI-Compliance.skill"
       }
     },
@@ -514,12 +514,12 @@
         "draft NIS2 Article 21 security measures"
       ],
       "version": "2.1.0",
-      "updatedAt": "2026-09-05T00:00:00Z",
+      "updatedAt": "2026-11-06T00:00:00Z",
       "metadata": {
         "category": "Cyber & Resilience Regulation",
         "license": "MIT",
         "evalPassRate": "100%",
-        "evalBaselinePassRate": "56%",
+        "evalBaselinePassRate": "32%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIS2%20-%20Claude%20Skill/nis2.skill"
       }
     },
@@ -572,12 +572,12 @@
         "prepare a voluntary self-disclosure after an ITAR violation"
       ],
       "version": "2.1.0",
-      "updatedAt": "2026-09-05T00:00:00Z",
+      "updatedAt": "2026-11-06T00:00:00Z",
       "metadata": {
         "category": "Export Controls & Sustainability",
         "license": "MIT",
-        "evalPassRate": "80%",
-        "evalBaselinePassRate": "36%",
+        "evalPassRate": "88%",
+        "evalBaselinePassRate": "12%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ITAR%20-%20Claude%20Skill/itar.skill"
       }
     },
@@ -691,12 +691,12 @@
         "design an export compliance programme"
       ],
       "version": "2.1.0",
-      "updatedAt": "2026-09-05T00:00:00Z",
+      "updatedAt": "2026-11-06T00:00:00Z",
       "metadata": {
         "category": "Export Controls & Sustainability",
         "license": "MIT",
-        "evalPassRate": "76%",
-        "evalBaselinePassRate": "16%",
+        "evalPassRate": "80%",
+        "evalBaselinePassRate": "56%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EAR%20-%20Claude%20Skill/ear.skill"
       }
     },
@@ -752,12 +752,12 @@
         "determine GPAI model obligations"
       ],
       "version": "2.1.0",
-      "updatedAt": "2026-08-15T00:00:00Z",
+      "updatedAt": "2026-11-06T00:00:00Z",
       "metadata": {
         "category": "AI Governance",
         "license": "MIT",
-        "evalPassRate": "84%",
-        "evalBaselinePassRate": "64%",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "56%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EU%20AI%20Act%20-%20Claude%20Skill/eu-ai-act.skill"
       }
     },
@@ -781,12 +781,12 @@
         "remediate PDFs for accessibility"
       ],
       "version": "2.1.0",
-      "updatedAt": "2026-05-16T00:00:00Z",
+      "updatedAt": "2026-11-06T00:00:00Z",
       "metadata": {
         "category": "Accessibility",
         "license": "MIT",
         "evalPassRate": "100%",
-        "evalBaselinePassRate": "100%",
+        "evalBaselinePassRate": "32%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Section%20508%20-%20Claude%20Skill/section-508.skill"
       }
     },
@@ -930,12 +930,12 @@
         "navigate Saudi PDPL and SAMA cybersecurity requirements"
       ],
       "version": "2.1.0",
-      "updatedAt": "2026-08-23T00:00:00Z",
+      "updatedAt": "2026-11-06T00:00:00Z",
       "metadata": {
         "category": "Country GRC",
         "license": "MIT",
-        "evalPassRate": "96%",
-        "evalBaselinePassRate": "28%",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "20%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Saudi%20Arabia%20GRC%20-%20Claude%20Skill/saudi-arabia-grc.skill"
       }
     },
@@ -1023,12 +1023,12 @@
         "draft a security addendum for a critical vendor contract"
       ],
       "version": "2.1.0",
-      "updatedAt": "2026-09-14T00:00:00Z",
+      "updatedAt": "2026-11-06T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
-        "evalPassRate": "96%",
-        "evalBaselinePassRate": "64%",
+        "evalPassRate": "92%",
+        "evalBaselinePassRate": "40%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/TPRM%20-%20Claude%20Skill/tprm.skill"
       }
     },
@@ -1084,12 +1084,12 @@
         "build a SOX ITGC risk and control matrix for change management"
       ],
       "version": "2.1.0",
-      "updatedAt": "2026-09-14T00:00:00Z",
+      "updatedAt": "2026-11-06T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
         "evalPassRate": "92%",
-        "evalBaselinePassRate": "52%",
+        "evalBaselinePassRate": "48%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/SOX%20ITGC%20-%20Claude%20Skill/sox-itgc.skill"
       }
     }

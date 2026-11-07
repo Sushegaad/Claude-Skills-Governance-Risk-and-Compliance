@@ -1,0 +1,13 @@
+{
+  "eval_id": 377,
+  "eval_name": "ncnicc-sme",
+  "run_type": "without_skill",
+  "prompt": "And what about our 40-person Saudi SME supplier? What do the NCA controls require of them?",
+  "assertions": [
+    "Places the supplier in Category B (6 to 249 employees or SAR 3M to 200M revenue) under NCNICC-1:2025",
+    "States Category B faces 13 sub-components and 26 mandatory controls, with the remainder recommended",
+    "Notes the instrument was published in Arabic only",
+    "States compliance is continuous with no published deadline",
+    "Distinguishes NCNICC applicability from the ECC, which targets critical national infrastructure"
+  ]
+}

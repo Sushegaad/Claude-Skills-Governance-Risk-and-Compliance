@@ -1,0 +1,13 @@
+{
+  "eval_id": 388,
+  "eval_name": "jurisdiction-walkthrough",
+  "run_type": "without_skill",
+  "prompt": "Walk me through the jurisdiction analysis for a modified civil aircraft with survivability equipment as of November 2026.",
+  "assertions": [
+    "Applies the order of review starting with the USML, noting the VIII(a)(8) exclusion for survivability-enhanced aircraft effective October 13, 2026",
+    "Checks the secured ASE definition elements: DIRCM, associated IR/UV missile warning, anti-tamper measures",
+    "Concludes the qualifying aircraft moves to EAR jurisdiction while the ASE stays in USML XI(a)(4)",
+    "Cites the new definitional provisions (22 CFR 121.0 and 120.54 additions)",
+    "Recommends re-running jurisdiction and classification analyses for affected product lines after October 13, 2026"
+  ]
+}

@@ -1,0 +1,29 @@
+Will smaller companies be exempt from 404(b) soon, and should you pause attestation prep?
+
+Short answer: do not pause. The exemption is only a proposal. It is not law.
+
+Current law (operative today)
+- 404(a), management's annual ICFR assessment, applies to all public companies.
+- 404(b), the auditor attestation, applies to accelerated filers ($75M-$700M public float and at least $100M revenues) and large accelerated filers (at least $700M float). It does not apply to non-accelerated filers (per the SEC's 2020 amendments) or to EGCs (JOBS Act section 103; under $1.235B revenue, up to 5 years after IPO).
+- SRC status: under $250M float, or under $100M revenues with under $700M float. SRC status alone does not exempt a company. The revenue test in the accelerated filer definition does the work.
+
+The pending proposal
+- On May 19, 2026, the SEC proposed to raise the large accelerated filer threshold to $2B float, exempt all non-accelerated filers from 404(b), and add a roughly 5-year post-IPO on-ramp.
+- Comments closed July 20, 2026. As of November 6, 2026 there is no final action.
+- A proposal can be changed, delayed or withdrawn, and an adopted rule would need an effective date and transition provisions. Nothing in it applies to your fiscal 2026 year-end.
+
+Why not to pause
+1. If you are an accelerated or large accelerated non-EGC filer today, your auditor will issue an ICFR opinion on this year-end. The current rules govern.
+2. Even if the proposal is adopted, 404(a) stays. Management must still assess and conclude on ICFR. The documentation, scoping, RCM, testing and deficiency evaluation largely overlap with what an auditor would test, so the work is not wasted.
+3. Remediation timing is the real constraint. A control fixed in December cannot show operation, so remediation must finish early enough for a sufficient operating window.
+4. Material weaknesses are a disclosure issue regardless of 404(b). About 8 percent of annual reports filed 2023-24 disclosed material weaknesses (KPMG / Audit Analytics, 279 of 3,502), and more than 60 percent of adverse assessments are repeat filers (Baker Tilly, through April 2025). Weak ICFR carries investor, financing and audit-fee consequences.
+5. Auditors, lenders and investors may still expect rigorous ICFR.
+
+What to do instead
+- Confirm your filer status (float measured at the end of Q2, and the revenue test) and EGC status.
+- Run two scenarios: attestation continues; attestation removed in a future year. Keep scoping and testing for the first, and plan any cost reduction for the second only if the rule is finalized.
+- Hold the year-end timetable: ITGC remediation validation, roll-forward testing, aggregation analysis, and management's 404(a) conclusion.
+- Re-check status before advising on future-year obligations. If you can reduce external cost later, you can do so then.
+- Consider whether a voluntary or reduced-scope auditor engagement still makes sense for financing or IPO-readiness reasons.
+
+This is general compliance information, not legal advice. Confirm with counsel and your auditor.

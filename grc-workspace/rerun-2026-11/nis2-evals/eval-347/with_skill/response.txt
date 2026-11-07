@@ -1,0 +1,32 @@
+Austrian subsidiary (120 employees, manufacturing): what the Austrian NIS2 law requires
+
+1. The law
+Austria's NISG 2026 (BGBl. I Nr. 94/2025, promulgated 23 December 2025) entered into force on 1 October 2026 and repealed the NISG 2018. The competent authority is the new Bundesamt fuer Cybersicherheit (BCS), under the Interior Ministry. It covers 18 sectors and applies to medium and large entities (50 or more employees, or over EUR 10M turnover).
+
+2. Are you in scope, and as what?
+Step 1, sector. Manufacturing is only in scope if you make products in the specific Annex II categories: medical devices and in vitro diagnostics, computers/electronic/optical products, electrical equipment, machinery, motor vehicles and trailers, and other transport equipment. A general manufacturer outside those categories (for example food-contact packaging or textiles) is not in scope on the manufacturing ground alone, although other sectors such as food or chemicals could apply. Check your NACE codes against the Annex and the Austrian implementation.
+Step 2, size. 120 employees puts you above the medium threshold (50 employees, or turnover and balance sheet both over EUR 10M), so you are not excluded as small.
+Step 3, essential or important. Annex II entities are Important Entities by default. Also, 120 employees is well below the large-enterprise ceiling (250 employees, or turnover over EUR 50M with balance sheet over EUR 43M). The likely result is Important Entity, unless Austria designates you as essential.
+Parent group note: check whether the group structure changes your size test, because Recommendation 2003/361 includes linked and partner enterprises. A subsidiary of a large group will often be measured on group figures. This could matter for your 120-employee headcount.
+
+3. What you must do and when
+- Register by 31 December 2026 with the BCS. This is the immediate deadline, less than two months away.
+- Self-declare your risk-management measures within a further 12 months of the registration obligation (so roughly by the end of 2027, subject to the exact BCS date).
+- Meet the Art. 21 risk-management duties (all ten measures in Art. 21(2)(a)-(j), proportionate to your size and risk). The law is already in force, so the duties are effectively live now.
+- Art. 23 incident reporting: early warning within 24 hours of awareness, incident notification within 72 hours, and a final report within one month of the 72-hour notification. Confirm the BCS reporting channel.
+- Art. 20 governance: management must approve and oversee the measures and take cybersecurity training. Management can be held personally liable.
+- Supply chain security (Art. 21(2)(d)) and securing procurement of ICT from vendors.
+
+4. Supervision and penalties
+Important entities are subject to ex-post supervision: the authority acts on evidence or indications of non-compliance. Penalties are up to EUR 7M or 1.4 percent of worldwide annual turnover, whichever is higher. For an essential entity the figures are EUR 10M or 2 percent.
+Note that Commission Implementing Regulation (EU) 2024/2690 binds only digital entities (DNS, cloud, MSP and similar). It is not directly binding on a manufacturer, though it is a useful benchmark for the technical controls.
+
+5. Suggested 60-day plan
+1. Confirm scope and classification (NACE and Annex II product check, group size test). Document the reasoning.
+2. Register with the BCS before 31 December 2026.
+3. Obtain management-body approval of the risk-management policy and schedule training.
+4. Run a gap assessment against the ten Art. 21(2) measures, with OT and production systems included for a manufacturer.
+5. Stand up the 24h/72h/1-month incident track, with templates, and align with GDPR Art. 33 (72 hours to the data protection authority) if personal data is involved.
+6. Build the self-declaration evidence over 2027.
+
+Caveat: verify the exact registration mechanics and the self-declaration date with the BCS, as I am summarising the law's structure. This is general information, not legal advice.

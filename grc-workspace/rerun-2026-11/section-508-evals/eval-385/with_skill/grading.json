@@ -1,0 +1,33 @@
+{
+  "eval_id": 385,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States WCAG 2.0 Level AA, incorporated by the 2017 Revised 508 Standards",
+      "passed": true,
+      "evidence": "\"Section 508 incorporates WCAG 2.0, Level A and AA\" via \"The Revised Section 508 Standards... (36 CFR Part 1194; 82 FR 5790, January 18, 2017)\""
+    },
+    {
+      "text": "States it is not changing soon: no rulemaking is under way as of November 2026",
+      "passed": true,
+      "evidence": "\"As of November 2026 that isn't changing soon\" and \"No refresh rulemaking is under way as of November 2026\""
+    },
+    {
+      "text": "Notes the October 2026 refresh-NPRM reports are erroneous, tracing to the 2015 proposal",
+      "passed": true,
+      "evidence": "\"reports in 2026 of a new Access Board ICT proposed rule. Those trace back to the 2015 proposed rule (80 FR 10880) and are not supported by the Federal Register record\""
+    },
+    {
+      "text": "Notes agencies may voluntarily exceed the baseline (WCAG 2.1/2.2) but the legal floor remains 2.0 AA",
+      "passed": true,
+      "evidence": "\"Many organizations test against 2.1 AA as well. That's a good hedge, but it is a best practice and not a 508 requirement\"; baseline stays WCAG 2.0 AA"
+    },
+    {
+      "text": "Distinguishes the adjacent DOJ and HHS rules that use WCAG 2.1 AA for different covered entities",
+      "passed": true,
+      "evidence": "\"the DOJ ADA Title II web rule, for state and local governments\" and \"the HHS Section 504 web rule, for HHS-funded entities\" \u2014 both use WCAG 2.1 AA, \"Neither changes Section 508\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

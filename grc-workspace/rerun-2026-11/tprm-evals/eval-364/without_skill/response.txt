@@ -1,0 +1,35 @@
+DORA Critical ICT Third-Party Provider Oversight and Your TPRM Program for EU Operations
+
+Short version: the CTPP oversight framework is a supervisory regime on top of providers. It does not replace, reduce or take over your own obligations. Your TPRM program remains fully responsible, and CTPP oversight is an input to it.
+
+1. How the regimes are structured
+- Financial entity obligations (DORA Chapter V, Section I, Articles 28-30): you must manage ICT third-party risk as an integral part of ICT risk management; keep a strategy and policy for ICT services supporting critical or important functions; maintain the Register of Information for all contractual arrangements; do pre-contract risk assessment (including concentration, subcontracting and exit feasibility); include mandatory contract provisions (Art. 30: service description, locations, data protection, access/recovery, SLAs, incident assistance, cooperation with authorities, termination rights, exit strategies, audit and access rights, participation in TLPT and security awareness; extra for critical or important functions); monitor continuously; and maintain tested exit plans. Article 28(1) states you remain fully responsible for compliance regardless of use of providers.
+- CTPP oversight (Articles 31-44): the ESAs (EBA, EIOPA, ESMA) designate critical ICT third-party service providers using criteria (systemic impact, substitutability, number of financial entities, dependence of globally systemic institutions, degree of subcontracting). The first designation list was published by the ESAs in November 2025 (covering major cloud, software and data providers). A Lead Overseer (one of the ESAs) per CTPP, supported by a Joint Examination Team and the Oversight Forum, conducts oversight: requests for information, general investigations, on-site inspections, issuing recommendations, with periodic penalty payments for non-compliance (up to 1% of average daily worldwide turnover). The Lead Overseer assesses whether the CTPP has comprehensive, sound and effective rules, procedures and mechanisms to manage ICT risks it poses to financial entities. Providers designated must have an EU subsidiary if serving EU entities from a third country.
+- Competent authorities (e.g., CBI, BaFin, ACPR, AFM, ECB for significant institutions) supervise your compliance and receive the Lead Overseer's recommendations. They may, as a last resort, require you to temporarily suspend or terminate the use of a service if a CTPP does not address recommendations (Art. 42), after notification, and they consider concentration risk.
+
+2. Key interactions with your program
+a) No safe harbor: using a designated CTPP does not satisfy your due diligence. Designation is not an endorsement or certification. You still perform risk assessment, negotiate contracts, monitor and test exit.
+b) Contracts: CTPPs must still agree Art. 30 terms with you. Oversight does not replace your audit rights, though pooled audits and reliance on lead overseer outputs are encouraged. Expect CTPPs to push standard DORA addenda; assess these carefully for gaps (audit rights limits, subcontracting notice, termination, data location).
+c) Information flow: you can use public information from oversight (designation lists, overseer-published recommendations once public) but individual oversight findings are generally confidential to the ESAs and the CTPP, with competent authorities informed. Your contractual right to information and incident notices remains your main source. Recommendations may be disclosed to your competent authority and affect their dialogue with you. Competent authorities can ask you for the actions taken to address risks identified in recommendations.
+d) Register of Information: you must flag whether providers are CTPPs/designated and map supply chains (ICT subcontractors supporting critical or important functions). The register feeds ESAs' designation and competent authorities' concentration analyses.
+e) Concentration and fourth-party risk: designation is a signal of systemic concentration. Your own program must assess concentration at entity level (single provider dependence, shared subcontractors, geographic) and consider alternatives and exit. RTS on subcontracting (Commission Delegated Regulation 2025/532) sets requirements for subcontractor chain oversight.
+f) TLPT and resilience testing: CTPPs may be included in threat-led testing (pooled TLPT is possible); coordinate with the CTPP's contractual duties.
+g) Incident reporting: your major incident reporting duties (Art. 17-23) are unaffected; CTPP-caused incidents must still be reported by you. Align provider notification timelines with your regulatory clocks (initial notification within 4 hours of classification, 24 hours from awareness).
+h) Exit: Art. 28(8) requires exit strategies for ICT services supporting critical or important functions regardless of the CTPP designation. Overseer concerns about substitutability do not reduce your responsibility.
+
+3. Integrating with your global TPRM program
+- Add a "DORA CTPP flag" to provider tiering, but do not let it reduce diligence scope.
+- Maintain one inventory to feed both global TPRM and the DORA register (consistent identifiers such as LEI, EUID).
+- Standardize a DORA contractual addendum and track remediation of legacy contracts (should have been aligned since January 2025).
+- Subscribe to ESA publications: CTPP list updates, Lead Overseer annual oversight plans, recommendations and Q&A.
+- Governance: management body must approve policy and strategy, review registers and receive reporting; assign accountability in line with Article 5.
+- Intragroup providers: group entities providing ICT services are also in scope as third parties.
+- Non-EU operations: align but keep EU-specific documentation, for example separating UK (PRA SS2/21, UK CTP regime under FSMA 2023) and US requirements.
+
+4. Gaps to check
+- Are you relying on CTPP status for assurance without independent testing?
+- Are exit plans for CTPP cloud services realistic (technical feasibility, data portability, alternatives)?
+- Does your sub-outsourcing monitoring reach ICT subcontractors for critical or important functions?
+- Are board materials tracking concentration and CTPP developments?
+
+Caveat: details such as the exact designation list and overseer activities after mid-2026 should be verified against ESA publications.

@@ -1,0 +1,19 @@
+Status of harmonised standards (as best I know; verify the latest CEN-CENELEC JTC 21 position)
+- The Commission's standardisation request (M/593, adopted May 2023, amended 2025) asked CEN and CENELEC for about 10 deliverables supporting Arts. 9-15 and 17, 15 (accuracy, robustness, cybersecurity), data governance and quality, record keeping, transparency, human oversight, risk management, quality management systems, and conformity assessment. The original deadline of April 2025 was missed; it was moved to roughly the end of 2025 and slipped further.
+- JTC 21 has had drafts in progress, with some at enquiry stage (for example, the quality management system draft prEN 18286 was the first to reach public enquiry, and drafts on trustworthiness framework, risk management, and data/datasets work followed). None had been cited in the Official Journal as a harmonised standard as of my knowledge. Publication and formal Commission assessment and citation typically follow adoption by months.
+- Realistically, a full set of cited harmonised standards is not available in November 2026, and several deliverables are expected in 2027. Please check the JTC 21 work programme and the Commission's OJ citations for what changed in late 2026.
+- ISO/IEC 42001 (AI management systems), ISO/IEC 23894 and others exist but are not harmonised standards under the AI Act and do not by themselves give presumption of conformity.
+
+Legislative context
+- The Digital Omnibus on AI (proposed November 2025) links application of high-risk obligations to the availability of standards and support tools, with a long-stop date. The deal reached in 2026 as I understand it fixed dates rather than a floating trigger: roughly 2 December 2027 for Annex III high-risk systems and 2 August 2028 for Annex I (product-embedded) systems. Confirm the final adopted text and its entry into force.
+- Art. 40: compliance with harmonised standards cited in the OJ gives presumption of conformity with the corresponding requirements. Art. 41: where standards are not available or insufficient, the Commission may adopt common specifications by implementing act (also giving presumption).
+
+What this means for conformity
+1. No presumption yet: you must demonstrate compliance with Arts. 9-15 directly, with documented reasoning, rather than relying on a cited standard.
+2. Use draft standards as state-of-the-art reference. Aligning to the JTC 21 drafts, ISO/IEC 42001, ISO/IEC 23894, and ISO/IEC 27001 reduces rework and is persuasive evidence to notified bodies, but is not a safe harbour.
+3. Most Annex III high-risk systems use internal control (Annex VI), so there is no notified body; the risk is mostly evidentiary, with market surveillance authorities judging you on technical documentation. Biometrics (Annex III point 1) may involve a notified body if standards are not applied.
+4. Plan for rework: when standards are cited, map gaps and update documentation; build traceable control-to-requirement matrices now.
+5. Watch for common specifications or Commission guidance on high-risk classification (Art. 6) and other guidance.
+6. Quality management (Art. 17) and post-market monitoring can be built now using ISO 42001 as scaffolding.
+
+Recommendation: treat standards as a moving target, build your own requirement-level evidence file, and check OJ citations before any conformity assessment.

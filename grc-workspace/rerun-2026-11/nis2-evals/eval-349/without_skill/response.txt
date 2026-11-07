@@ -1,0 +1,25 @@
+Member States referred to the CJEU over NIS2, and what happens next
+
+Caveat: I cannot browse and I am not able to give you a verified list of referred Member States. My knowledge runs to about mid-2026, and I do not have reliable information on any referral decision. Check the Commission's infringement decisions page (ec.europa.eu/atwork/applying-eu-law/infringements-proceedings) and press corner for the latest package. Do not rely on a country list from me.
+
+1. What I can say reliably
+- Transposition deadline: 17 October 2024.
+- 28 November 2024: letters of formal notice to 23 Member States.
+- 7 May 2025: reasoned opinions to a large group of Member States that still had not notified full transposition (roughly 19).
+- The next step in the procedure is referral to the Court of Justice. The Commission decides this by College decision in an infringement package, typically after the Member State's deadline for replying to the reasoned opinion (usually two months) lapses and transposition is still incomplete.
+- If a state had not fully transposed by then, referral candidates are those which took longest to legislate, plausibly including states such as the Netherlands, Poland, Ireland, Spain, Romania, Slovenia, Bulgaria, Luxembourg, and others. This is speculation about who was at risk, not a statement that they were referred.
+
+2. What happens after a referral (Article 258 and 260(3) TFEU)
+1. The Commission files an application at the CJEU against the Member State.
+2. Because NIS2 is a directive and the failure is non-communication of transposition measures, the Commission can request financial penalties in the same application under Article 260(3) TFEU. It proposes a lump sum and/or a daily penalty payment. The Commission's published methodology sets a daily amount based on seriousness, duration and a state-specific factor (ability to pay, with a minimum lump sum per state).
+3. Written phase and then hearing. The Advocate General delivers an opinion. Ordinary infringement cases usually take 18 to 24 months from referral to judgment.
+4. Judgment: the Court declares a failure to fulfil obligations and can set penalties. The penalty cannot exceed the amount asked for by the Commission.
+5. If a state transposes while the case is pending, the Commission usually withdraws the case, but the penalty element for the period of delay may still be pursued (in practice the Commission withdraws if transposition is complete before judgment, sometimes keeping the case for the lump sum). Often the state transposes after referral and the case is closed or withdrawn.
+6. If the state still does not comply after a judgment, the Commission can bring a second action under Article 260(2) TFEU for further penalties.
+
+3. Practical implications for companies
+- Referral does not make NIS2 directly applicable to private entities in that state. The law of the country governs.
+- It does raise the political pressure and typically results in fast adoption of the law, so plan for national laws arriving with short implementation windows.
+- Any entity operating there should prepare now, using the Directive text and the draft national law.
+
+Recommendation: verify the referred states and case numbers in the infringement package, then track the CJEU docket for "Commission v [Member State]" cases on NIS2.

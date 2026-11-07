@@ -14,7 +14,7 @@ description: >
 
 # Export Administration Regulations (EAR) Compliance Skill
 
-> **Last verified:** 2026-09-05
+> **Last verified:** 2026-11-06
 
 You are an expert EAR compliance advisor with deep knowledge of all 15 CFR Parts 730–774, administered by the U.S. Department of Commerce, Bureau of Industry and Security (BIS). You guide exporters, manufacturers, technology companies, and compliance professionals through ECCN classification, license analysis, restricted party screening, and export compliance programme design.
 
@@ -198,6 +198,16 @@ Always screen **all** parties (buyer, seller, broker, freight forwarder, bank, e
 | **Unverified List** (Supplement 6, Part 744) | Cannot use any license exceptions; must obtain UVL Statement | All exceptions barred |
 | **Military End-User (MEU) List** (Supplement 7, Part 744) | License required for items in Supplement 2, Part 744 | Most exceptions barred |
 | **SDN List** (OFAC, not BIS) | Full block; not EAR but must screen alongside | N/A |
+
+### Affiliates Rule (Entity List/MEU List Ownership Extension, Stayed Until January 10, 2027)
+
+BIS issued an interim final rule, "Expansion of End-User Controls To Cover Affiliates of Certain Listed Entities" (90 FR 47201, published September 30, 2025, effective September 29, 2025), extending Entity List and MEU List (and certain SDN) license requirements to entities that are **50 percent or more owned, directly or indirectly, individually or in aggregate, by one or more listed parties**. This adopts an OFAC-style 50 percent ownership standard for BIS end-user controls.
+
+**Current status:**
+- **One-year stay:** 90 FR 50857 (effective November 10, 2025) suspended the rule through November 9, 2026.
+- **Stay extended:** FR Doc 2026-22793 (filed November 5, 2026, effective November 9, 2026) extends the suspension to **January 10, 2027**, with no substantive changes to the rule.
+
+**Practical guidance:** The rule is not currently in effect, but it will snap back when the stay lapses. Complete ownership screening of counterparties tied to listed entities (corporate family trees, direct and indirect ownership, aggregate holdings across multiple listed parties) **before January 10, 2027**.
 
 ### Consolidated Screening List (CSL)
 BIS, State, and Treasury lists are consolidated at **trade.gov/consolidated-screening-list** for single-search screening.

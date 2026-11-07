@@ -1,0 +1,33 @@
+{
+  "eval_id": 382,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Cites the FY2025 governmentwide Section 508 assessment, announced March 5, 2026",
+      "passed": true,
+      "evidence": "\"the FY2025 Governmentwide Section 508 Assessment... was announced on March 5, 2026\""
+    },
+    {
+      "text": "States the average conformance score: 1.96 on a 5-point scale",
+      "passed": true,
+      "evidence": "\"Average conformance score | 1.96 on a 5-point scale\""
+    },
+    {
+      "text": "States fewer than half of agencies' most-viewed ICT is fully conformant and about half of agencies do not routinely test ICT",
+      "passed": true,
+      "evidence": "\"most-viewed ICT that was fully conformant | Fewer than half\" and \"About half\" of agencies \"don't routinely test ICT\""
+    },
+    {
+      "text": "States under 30 percent of agencies almost always verify ICT deliverables in acquisition, across 212 reporting agencies and components",
+      "passed": true,
+      "evidence": "\"Under 30 percent\" almost always verify during acquisition; \"Reporting agencies and components | 212\""
+    },
+    {
+      "text": "Notes no FY2026 assessment has been published yet",
+      "passed": true,
+      "evidence": "\"The latest figures come from the FY2025 Governmentwide Section 508 Assessment, which was the third annual assessment\" \u2014 identifies FY2025 as the latest, i.e. no FY2026 assessment yet"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

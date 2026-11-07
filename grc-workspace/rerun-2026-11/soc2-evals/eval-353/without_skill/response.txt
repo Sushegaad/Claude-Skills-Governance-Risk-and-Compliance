@@ -1,0 +1,32 @@
+AI inside SOC 2 scope: the proposed criteria refresh and what applies today
+
+Caveat: I can't verify the contents of any AICPA proposed criteria refresh. I don't have reliable detail on how a draft would treat AI, so I will not invent its wording. Please read the actual exposure draft, if one exists, and confirm its status with your auditor.
+
+What applies to your audit today
+- The 2017 Trust Services Criteria with the 2022 points of focus are the operative standard. They do not mention AI explicitly. They are technology-neutral, so your AI systems are in scope to the extent they are part of the system described in your DC 200 system description and affect your service commitments.
+- The criteria are applied to AI through your existing controls. A practical mapping:
+  - CC1 to CC2 (control environment, communication): AI governance roles, acceptable use policy, ethics and accountability, training.
+  - CC3 (risk assessment): include AI-specific risks such as model errors, bias, hallucination, data leakage, prompt injection, and dependence on third-party model providers. Include fraud risk and change in risk from new technology.
+  - CC4 (monitoring): monitoring of model performance, drift, abuse and incidents.
+  - CC5 to CC6 (control activities, logical and physical access): access to models, training data, prompts, API keys, vector stores and inference endpoints. Least privilege and segregation between environments. Encryption in transit and at rest.
+  - CC7 (system operations): logging, anomaly detection, incident response including AI incidents, vulnerability management for ML libraries and models.
+  - CC8 (change management): model versioning, validation before release, rollback, approval for prompt or model changes, testing of fine-tuned models.
+  - CC9 (risk mitigation, vendors): due diligence and contracts for LLM and AI vendors, including data use and retention terms, no training on customer data, subprocessors.
+  - Confidentiality (C1): handling of customer data sent to models, retention and deletion, training data restrictions.
+  - Processing Integrity (PI1): accuracy, completeness and validity of AI outputs where your commitments depend on them. Human review where appropriate.
+  - Privacy (P series): purpose limitation, consent, and rights handling if personal data is used in training or inference.
+  - Availability (A1): capacity and resilience of model-serving infrastructure and fallback when providers fail.
+- System description: describe the AI components, data flows, third-party models as subservice organizations (carve-out or inclusive), and the commitments made about AI to customers. Make the description accurate, since auditors test what you say.
+
+Where the proposed refresh may matter
+- Any refresh is not effective until finalized. Until then it is not an audit requirement. Auditors may still ask forward-looking questions or add AI-related procedures under their own methodology, which is not the same as a criteria change.
+- You can use a draft as a guide for control design, but do not represent your report as conforming to it.
+
+What to do
+1. Inventory AI systems and data flows in scope.
+2. Add AI risks to your risk assessment and map controls to the existing criteria.
+3. Update policies: AI acceptable use, AI vendor management, model change management, data handling.
+4. Treat model providers as vendors and obtain their SOC 2 reports and subservice organization assurances.
+5. Collect evidence: model change tickets, evaluation results, access reviews, monitoring alerts, vendor reviews.
+6. Ask the auditor how they will test AI-related controls and whether they expect any specific description disclosures.
+7. Consider complementary frameworks, for example ISO 42001 or NIST AI RMF, if customers ask for AI-specific assurance. These are not part of SOC 2.

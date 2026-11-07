@@ -48,12 +48,12 @@
       "category_key": "infosec",
       "region": "global",
       "domains": "audit access-control vendor",
-      "grading_dir": "grc-workspace/iteration-1/soc2",
+      "grading_dir": "grc-workspace/rerun-2026-11/soc2-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "16 May 2026",
-        "tested": "Type 1 vs 2; CC controls checklist; Availability criteria; Access control policy; Audit exception response",
-        "readme_tested": "Type 1 vs 2; CC controls checklist; Availability criteria; Access control policy; Audit exception response"
+        "last_updated": "06 Nov 2026",
+        "tested": "Proposed 2027 TSC exposure draft; criteria for 2027 engagements; AI points of focus; AT-C vs TSC distinction; readiness timeline",
+        "readme_tested": "Proposed 2027 TSC exposure draft; criteria for 2027 engagements; AI points of focus; AT-C vs TSC distinction; readiness timeline"
       },
       "install_framework": "SOC 2",
       "install_desc": "TSC gap analysis, policy drafting, control documentation, audit evidence, vendor risk",
@@ -213,12 +213,12 @@
       "category_key": "infosec",
       "region": "global",
       "domains": "data-protection access-control audit",
-      "grading_dir": "grc-workspace/rerun-2026-09/pci-compliance-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/pci-compliance-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "05 Sep 2026",
-        "tested": "FAQ 1331 ROC scoping change; SAQ A eligibility; v4.0.1 mandatory requirements; scope reduction; compensating vs customized approach",
-        "readme_tested": "FAQ 1331 ROC scoping change; SAQ A eligibility; v4.0.1 mandatory requirements; scope reduction; compensating vs customized approach"
+        "last_updated": "06 Nov 2026",
+        "tested": "Secure SLC v2.0 transition; 3DS SDK/SPoC/CPoC sunsets; DSS version planning; AI supplement; Q3-Q4 ecosystem briefing",
+        "readme_tested": "Secure SLC v2.0 transition; 3DS SDK/SPoC/CPoC sunsets; DSS version planning; AI supplement; Q3-Q4 ecosystem briefing"
       },
       "install_framework": "PCI DSS v4.0.1",
       "install_desc": "CDE scoping, SAQ selection, gap assessments, control guidance, QSA audit prep",
@@ -543,12 +543,12 @@
       "category_key": "cyber-reg",
       "region": "eu",
       "domains": "incident-response risk-assessment vendor reporting bcm",
-      "grading_dir": "grc-workspace/rerun-2026-09/nis2-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/nis2-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "05 Sep 2026",
-        "tested": "Netherlands Cbw entry into force; transposition laggards and CJEU referrals; incident reporting; essential vs important; Art. 21 measures",
-        "readme_tested": "Netherlands Cbw entry into force; transposition laggards and CJEU referrals; incident reporting; essential vs important; Art. 21 measures"
+        "last_updated": "06 Nov 2026",
+        "tested": "Transposition status (24 of 27); Austria NISG 2026 scope and deadlines; Netherlands Cbw; CJEU referrals; multi-country rollout",
+        "readme_tested": "Transposition status (24 of 27); Austria NISG 2026 scope and deadlines; Netherlands Cbw; CJEU referrals; multi-country rollout"
       },
       "install_framework": "NIS2 Directive (EU)",
       "install_desc": "Essential/important entity scoping, Art. 21 technical measures, 24h/72h incident reporting",
@@ -609,12 +609,12 @@
       "category_key": "export-sustain",
       "region": "us",
       "domains": "export-controls access-control",
-      "grading_dir": "grc-workspace/rerun-2026-09/itar-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/itar-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "05 Sep 2026",
-        "tested": "DIRCM civil aircraft rule (USML VIII(a)(8), Oct 13 2026); BAE settlement compliance lessons; Cat XI(b) software status; deemed exports; VSD process",
-        "readme_tested": "DIRCM civil aircraft rule (USML VIII(a)(8), Oct 13 2026); BAE settlement compliance lessons; Cat XI(b) software status; deemed exports; VSD process"
+        "last_updated": "06 Nov 2026",
+        "tested": "VIII(a)(8) interim final rule effective; omnibus NPRM; jurisdiction walkthrough; 2026 H2 rule activity; radar altimeter status",
+        "readme_tested": "VIII(a)(8) interim final rule effective; omnibus NPRM; jurisdiction walkthrough; 2026 H2 rule activity; radar altimeter status"
       },
       "install_framework": "ITAR (22 CFR 120–130)",
       "install_desc": "USML classification, DSP-5/73/85 licence workflows, TAA/MLA drafting, deemed export, DDTC",
@@ -741,12 +741,12 @@
       "category_key": "export-sustain",
       "region": "us",
       "domains": "export-controls vendor",
-      "grading_dir": "grc-workspace/rerun-2026-09/ear-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/ear-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "05 Sep 2026",
-        "tested": "Sub-3-hour drone exports (rewritten 9A012); long-endurance drone; military UAV classification (9A610.a); AI-chip diffusion status; Entity List research sale",
-        "readme_tested": "Sub-3-hour drone exports (rewritten 9A012); long-endurance drone; military UAV classification (9A610.a); AI-chip diffusion status; Entity List research sale"
+        "last_updated": "06 Nov 2026",
+        "tested": "Affiliates Rule status and stay extension; aggregate ownership mechanics; October rule activity; aircraft jurisdiction handoff; compliance program readiness",
+        "readme_tested": "Affiliates Rule status and stay extension; aggregate ownership mechanics; October rule activity; aircraft jurisdiction handoff; compliance program readiness"
       },
       "install_framework": "EAR (15 CFR 730–774)",
       "install_desc": "ECCN classification, licence requirements, Entity List screening, licence exceptions",
@@ -807,12 +807,12 @@
       "category_key": "ai-gov",
       "region": "eu",
       "domains": "ai risk-assessment reporting",
-      "grading_dir": "grc-workspace/rerun-2026-08/eu-ai-act-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/eu-ai-act-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "15 Aug 2026",
-        "tested": "CV screening high-risk + Annex III Area 4 + Digital Omnibus Dec 2027 deadline; Predictive policing Art. 5 prohibition; Open-source GPAI CoP + exception scope (3×10²⁴ FLOPs); MDR+AI Act interaction + Aug 2028 Annex I deadline; E-commerce chatbot Art. 50 disclosure",
-        "readme_tested": "CV screening high-risk + Annex III Area 4 + Digital Omnibus Dec 2027 deadline; Predictive policing Art. 5 prohibition; Open-source GPAI CoP + 3×10²⁴ FLOPs exception; MDR+AI Act interaction + Aug 2028 Annex I deadline; E-commerce chatbot Art. 50 disclosure"
+        "last_updated": "06 Nov 2026",
+        "tested": "GPAI enforcement begun; Implementing Regulation 2026/1755; first harmonised standard; December 2026 deadlines; Code of Practice signatories",
+        "readme_tested": "GPAI enforcement begun; Implementing Regulation 2026/1755; first harmonised standard; December 2026 deadlines; Code of Practice signatories"
       },
       "install_framework": "EU AI Act 2024/1689",
       "install_desc": "Risk classification (9 prohibited practices, high-risk/limited/minimal), Digital Omnibus (Reg. (EU) 2026/1744, in force Jul 27 2026) extended deadlines (Annex III Dec 2027, Annex I Aug 2028), GPAI enforcement active Aug 2, 2026",
@@ -840,12 +840,12 @@
       "category_key": "accessibility",
       "region": "us",
       "domains": "audit reporting",
-      "grading_dir": "grc-workspace/section-508-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/section-508-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "16 May 2026",
-        "tested": "VPAT 2.x procurement language (FAR 52.239-2); Keyboard and screen reader audit methodology; PDF accessibility remediation checklist; JAWS+Chrome AT testing matrix; Undue burden exception documentation",
-        "readme_tested": "VPAT 2.x ACR completion and testing methodology; Keyboard-only navigation failures and WCAG remediation; PDF forms accessibility remediation (200 PDFs); Federal procurement RFP requirements and VPAT evaluation; Undue burden exception process and alternative access obligations"
+        "last_updated": "06 Nov 2026",
+        "tested": "Refresh NPRM rumor check; FY2025 governmentwide assessment; ADA Title II conflation; procurement requirements; WCAG baseline",
+        "readme_tested": "Refresh NPRM rumor check; FY2025 governmentwide assessment; ADA Title II conflation; procurement requirements; WCAG baseline"
       },
       "install_framework": "Section 508 (US)",
       "install_desc": "VPAT 2.x ACR completion, procurement language (FAR 52.239-2), AT testing, undue burden exceptions",
@@ -1005,12 +1005,12 @@
       "category_key": "country-grc",
       "region": "middle-east",
       "domains": "data-protection cloud access-control incident-response",
-      "grading_dir": "grc-workspace/rerun-2026-08/saudi-arabia-grc-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/saudi-arabia-grc-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "23 Aug 2026",
-        "tested": "Market-entry applicability routing; SAMA vs NCA stacking; cloud-for-government residency (CST/CCC); PDPL breach response; ISO 27001 to ECC-2:2024 mapping",
-        "readme_tested": "Market-entry applicability routing; SAMA vs NCA stacking; cloud-for-government residency (CST/CCC); PDPL breach response; ISO 27001 to ECC-2:2024 mapping"
+        "last_updated": "06 Nov 2026",
+        "tested": "NCNICC-1:2025 Category A and B applicability; PDPL enforcement record; draft AI guidelines; SAMA framework status",
+        "readme_tested": "NCNICC-1:2025 Category A and B applicability; PDPL enforcement record; draft AI guidelines; SAMA framework status"
       },
       "install_framework": "Saudi Arabia (NCA/SDAIA/SAMA/CST)",
       "install_desc": "Applicability routing, ECC-2:2024 & PDPL gap assessments, cloud residency, SAMA CSF, ISO/NIST/SOC 2 mapping",
@@ -1104,12 +1104,12 @@
       "category_key": "infosec",
       "region": "global",
       "domains": "vendor risk-assessment audit data-protection",
-      "grading_dir": "grc-workspace/rerun-2026-09/tprm-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/tprm-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "14 Sep 2026",
-        "tested": "Stale SOC 2 report review (carve-outs, CUECs, bridge letters); tiering programme design; DPA and sub-processor review; DORA contract addendum; OAuth-aware offboarding",
-        "readme_tested": "Stale SOC 2 report review (carve-outs, CUECs, bridge letters); tiering programme design; DPA and sub-processor review; DORA contract addendum; OAuth-aware offboarding"
+        "last_updated": "06 Nov 2026",
+        "tested": "Interagency proposal status; CBI CP173; community bank core providers; DORA CTPP interaction; fourth-party trends",
+        "readme_tested": "Interagency proposal status; CBI CP173; community bank core providers; DORA CTPP interaction; fourth-party trends"
       },
       "install_framework": "Third-Party Risk Management",
       "install_desc": "Vendor tiering, due-diligence questionnaires, SOC 2 Type II review (exceptions, CUECs, carve-outs, bridge letters), DPA/sub-processor review, contract addenda, monitoring and offboarding — mapped to ISO 27001, SOC 2, DORA, NIS2, HIPAA, GDPR",
@@ -1170,12 +1170,12 @@
       "category_key": "infosec",
       "region": "us",
       "domains": "access-control audit reporting risk-assessment",
-      "grading_dir": "grc-workspace/rerun-2026-09/sox-itgc-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/sox-itgc-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "14 Sep 2026",
-        "tested": "Post-IPO 404 applicability and EGC status; system scoping; terminated-admin deficiency evaluation; change-management RCM; annual ITGC calendar",
-        "readme_tested": "Post-IPO 404 applicability and EGC status; system scoping; terminated-admin deficiency evaluation; change-management RCM; annual ITGC calendar"
+        "last_updated": "06 Nov 2026",
+        "tested": "QC 1000 impact and amendments; 2025 inspections Spotlight; AS 2201 and agenda status; 404(b) proposal state; year-end checklist",
+        "readme_tested": "QC 1000 impact and amendments; 2025 inspections Spotlight; AS 2201 and agenda status; 404(b) proposal state; year-end checklist"
       },
       "install_framework": "SOX 404 ITGC",
       "install_desc": "Four ITGC domains (access, change, operations, development), top-down scoping, RCMs, control narratives and test scripts, deficiency ladder (AS 2201/Reg S-X), remediation, filer status and IPO timelines, COSO 2013",

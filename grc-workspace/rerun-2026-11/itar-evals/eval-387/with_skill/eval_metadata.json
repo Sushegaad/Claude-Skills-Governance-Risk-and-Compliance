@@ -1,0 +1,13 @@
+{
+  "eval_id": 387,
+  "eval_name": "omnibus-nprm",
+  "run_type": "with_skill",
+  "prompt": "What does DDTC's October 2026 omnibus proposed rule change for avionics manufacturers?",
+  "assertions": [
+    "Cites the proposed rule: 91 FR 62361, published October 1, 2026, docket DOS-2026-0991",
+    "States it would remove and reserve USML Category VIII(h)(10), taking most radar altimeters off the Munitions List",
+    "Makes clear it is proposed only: current classifications remain in effect until a final rule",
+    "Mentions at least one other element (new 22 CFR 120.35 exclusions section, new 120.41 specially designed releases, or the new 123.26 OEM servicing exemption)",
+    "States comments are due November 30, 2026 and advises affected exporters to comment"
+  ]
+}

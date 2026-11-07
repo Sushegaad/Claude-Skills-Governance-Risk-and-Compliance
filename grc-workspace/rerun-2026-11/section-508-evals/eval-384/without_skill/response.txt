@@ -1,0 +1,29 @@
+What a federal procurement officer should require from vendors for ICT accessibility
+
+Legal basis
+- Section 508 of the Rehabilitation Act (29 U.S.C. 794d) requires agencies to procure ICT that conforms to the Revised 508 Standards (36 CFR Part 1194, Appendices A, C and D) unless an exception applies.
+- FAR Subpart 39.2 and FAR 39.203 and 12.202 require agencies to include the applicable accessibility standards in requirements documents, and to use the GSA Section508.gov "Buy Accessible" resources. The Section 508 standards currently incorporate WCAG 2.0 A and AA by reference.
+
+What to require
+1. Applicable standards in the solicitation
+   - Identify which Revised 508 Standards apply (E205 Electronic Content, E207 Software, E204 Functionality, Chapter 3 Functional Performance Criteria, Chapter 4 hardware, Chapter 6 support documentation and services). Don't just state "must be 508 compliant".
+   - Consider requiring WCAG 2.1 AA or 2.2 AA as a higher contractual target while 508 itself is still on WCAG 2.0. This is permitted and is increasingly common in agency policy, but state it explicitly.
+2. Accessibility Conformance Report (ACR)
+   - Require a current ACR based on the VPAT 2.x Revised Section 508 edition (the ITI template), completed for the specific product and version offered, with support remarks and explanations for "Partially Supports" and "Does Not Support".
+   - Don't treat the ACR as proof. It is a vendor self-assessment. Verify through your own testing (for example the DHS Trusted Tester process for web and software, plus assistive technology testing) before award where practical.
+3. Evaluation and award
+   - Make accessibility an evaluation factor where it is a requirement, and compare ACRs across offerors.
+   - Request a roadmap and dates for any known gaps; make remediation commitments contractual.
+4. Contract terms
+   - Warranties or clauses that the delivered ICT conforms to the standards; a defined remediation process and timelines for defects; cooperation with agency testing; and accessibility of updates and new releases.
+   - Include accessible support documentation and support services (Chapter 6), and training and customer support that is accessible.
+   - Flow-down to subcontractors and third-party components, and require that cloud and SaaS services remain conformant after updates.
+5. Exceptions
+   - Only document exceptions properly: national security systems, contractor-held "back office" equipment, fundamental alteration, undue burden, commercial non-availability. Each needs a written determination under the agency's process. Note that non-availability is hard to claim when an accessible product exists.
+6. Post-award
+   - Acceptance testing against the standards, and periodic re-validation.
+   - Use contract options or recompete as leverage on unresolved issues.
+
+Resources
+- Section508.gov "Buy" and "Build" guidance, the Accessibility Requirements Tool (ART), the Trusted Tester program, and your agency's Section 508 program manager.
+- Check with agency counsel for contract language, and monitor the Access Board and FAR Council for changes.

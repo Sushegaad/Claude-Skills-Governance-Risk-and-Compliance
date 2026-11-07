@@ -1,0 +1,33 @@
+{
+  "eval_id": 343,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States that no EAR rules were published by BIS in October 2026 (no Entity List additions or chip-control rules that month)",
+      "passed": false,
+      "evidence": "Declines to state the fact: \"I have no verified information about any specific BIS rule published in October 2026. I will not list rules I cannot confirm.\" It never states that none were published."
+    },
+    {
+      "text": "Identifies the Affiliates Rule stay as the key near-term item",
+      "passed": true,
+      "evidence": "\"The most important EAR date I know of is tied to the BIS Affiliates (50%) Rule... That makes it the most important near-term date for most exporters.\""
+    },
+    {
+      "text": "Gives the extension: the stay now runs to January 10, 2027 (BIS rule effective November 9, 2026)",
+      "passed": false,
+      "evidence": "No mention of the extension or January 10, 2027; says only \"If the suspension has not been extended or changed, the rule comes back into effect right around the date of your question.\""
+    },
+    {
+      "text": "References the original one-year stay window of November 10, 2025 through November 9, 2026",
+      "passed": true,
+      "evidence": "\"suspended for one year starting around November 10, 2025. That suspension was set to end around November 9-10, 2026.\""
+    },
+    {
+      "text": "Does not invent fictitious October 2026 Entity List additions or other October rules",
+      "passed": true,
+      "evidence": "Explicitly refuses to invent: \"I do not want to invent rule titles, dates or citations... I will not list rules I cannot confirm.\" No fictitious October rules appear."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

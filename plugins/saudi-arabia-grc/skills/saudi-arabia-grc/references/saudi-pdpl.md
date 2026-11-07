@@ -20,5 +20,5 @@ Mechanisms: transfers to countries with SDAIA-assessed **adequate protection**; 
 ## Enforcement & penalties
 - Fines up to **SAR 5,000,000** per violation (may double for repeat violations)
 - Criminal exposure: up to **2 years' imprisonment** and fines for unlawful disclosure of sensitive data
-- **Enforcement is active**: SDAIA violation committees issued roughly **48 decisions in the first enforcement wave (2025–26)** — unlawful processing, unauthorized disclosure, inadequate safeguards
-- **Watch item (dated 2026-08):** SDAIA's April 2025 public consultation proposed PDPL amendments (incl. graduated penalties) — **not enacted as of August 2026**; advise confirming current status with SDAIA before relying on proposed changes
+- **Enforcement is active**: SDAIA announced in January 2026 that it issued **48 violation decisions during 2025** (processing without legal basis, unlawful disclosure, inadequate safeguards, marketing without consent); no names or amounts were disclosed
+- **Watch item (dated 2026-11):** SDAIA's April 2025 public consultation proposed PDPL amendments (incl. graduated penalties) — **not enacted as of November 2026**; advise confirming current status with SDAIA before relying on proposed changes

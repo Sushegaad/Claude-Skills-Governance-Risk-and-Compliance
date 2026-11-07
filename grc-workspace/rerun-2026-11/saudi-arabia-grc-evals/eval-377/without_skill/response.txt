@@ -1,0 +1,29 @@
+Short answer: a 40-person private SME supplier is generally not directly bound by the NCA controls, but it can become bound contractually through you. This is general guidance, not legal advice.
+
+1. Direct applicability
+- NCA's ECC applies mandatorily to government bodies and private organizations operating, owning or hosting critical national infrastructure. An ordinary SME supplier outside those groups has no direct statutory ECC obligation.
+- NCA has published lighter-weight material for smaller organizations (a cybersecurity guide for SMEs). It is voluntary and aimed at the basics.
+
+2. Indirect applicability through your contract
+- If you are subject to ECC or have to meet customer-imposed controls, ECC's third-party controls expect you to include cybersecurity requirements in supplier contracts, assess supplier risk, and make sure suppliers with access to your data or systems meet equivalent standards.
+- If the supplier touches government or CNI data or systems, the flow-down is stronger and may include the Third-Party Cybersecurity Controls and, for cloud or hosted services, the Cloud Cybersecurity Controls (CCC).
+- As you are a non-CNI retailer, you can set the level yourself. A proportionate approach is best.
+
+3. Proportionate baseline to request from a 40-person supplier
+- Named cybersecurity owner and a short approved security policy.
+- Asset inventory and access control, with MFA on email, remote access and admin accounts.
+- Endpoint protection, patching, secure configuration, email filtering and basic network security.
+- Encrypted, tested backups.
+- Incident reporting to you within an agreed time (for example 24 to 72 hours).
+- Staff awareness training.
+- Data protection and PDPL-aligned handling where they process your customers' personal data, with a processor agreement and breach notification terms.
+- Right to request evidence (questionnaire, attestation or certificate), and audit rights proportionate to risk.
+- Subcontractor flow-down and secure return or deletion of data on termination.
+
+4. How to apply it
+- Tier suppliers by risk: access to personal or sensitive data, network connectivity, criticality to operations. Only high-risk suppliers need detailed ECC mapping or an independent assessment.
+- Offer a simplified control checklist, a realistic timeline for improvement, and accept an improvement plan as an alternative to a full pass for low-risk suppliers.
+- Note that the PDPL applies to the supplier directly as a processor if it handles personal data, regardless of size.
+
+5. Caveats
+- Verify the current NCA documents and any contractual obligations you inherit. I cannot confirm from memory any 2025 to 2026 changes to the SME guidance.

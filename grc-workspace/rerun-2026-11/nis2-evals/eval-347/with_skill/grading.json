@@ -1,0 +1,33 @@
+{
+  "eval_id": 347,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies the NISG 2026, which entered into force October 1, 2026, replacing the NISG 2018",
+      "passed": true,
+      "evidence": "\"Austria's NISG 2026 (BGBl. I Nr. 94/2025...) entered into force on 1 October 2026 and repealed the NISG 2018\""
+    },
+    {
+      "text": "States the registration deadline: December 31, 2026 (within three months of entry into force)",
+      "passed": true,
+      "evidence": "\"Register by 31 December 2026 with the BCS. This is the immediate deadline\""
+    },
+    {
+      "text": "Names the competent authority: the new Bundesamt fuer Cybersicherheit (BCS) under the Interior Ministry",
+      "passed": true,
+      "evidence": "\"The competent authority is the new Bundesamt fuer Cybersicherheit (BCS), under the Interior Ministry\""
+    },
+    {
+      "text": "Gives the penalty frame: up to EUR 10M or 2 percent of worldwide turnover for essential entities, EUR 7M or 1.4 percent for important entities",
+      "passed": true,
+      "evidence": "\"Penalties are up to EUR 7M or 1.4 percent of worldwide annual turnover... For an essential entity the figures are EUR 10M or 2 percent.\""
+    },
+    {
+      "text": "Applies scope correctly: medium and large entities (50 or more employees or over EUR 10M turnover) across 18 sectors, so a 120-employee manufacturer is likely in scope, with a risk-management self-declaration due within a further 12 months",
+      "passed": true,
+      "evidence": "\"It covers 18 sectors and applies to medium and large entities (50 or more employees, or over EUR 10M turnover)\"; concludes likely Important Entity and \"Self-declare your risk-management measures within a further 12 months\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

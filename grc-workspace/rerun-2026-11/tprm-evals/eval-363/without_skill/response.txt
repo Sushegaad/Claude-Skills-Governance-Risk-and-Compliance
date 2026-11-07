@@ -1,0 +1,29 @@
+Community Bank Dependent on One Core Service Provider: New Supervisory Expectations in Late 2026?
+
+Direct answer: I am not aware of a specific new US supervisory expectation issued in late 2026 targeting core provider dependence, and my knowledge is reliable only through about mid-2026, so verify the latest agency releases. What I can give you is the existing framework examiners will apply to your situation, and how to be prepared.
+
+1. Existing expectations that apply directly
+- Interagency Guidance on Third-Party Relationships: Risk Management (June 2023): critical activities, concentration risk, subcontractor (fourth-party) dependencies, contract terms (performance, audit rights, incident notification, data access, business continuity, exit/transition assistance), and termination planning. Examiners expect heightened oversight for a core processor as a critical activity.
+- Interagency Third-Party Risk Management Guide for Community Banks (May 2024): scenarios, tools and practical examples tailored to smaller banks, including negotiating with large providers that offer limited customization.
+- Bank Service Company Act: the agencies can examine core providers; results are shared through the FFIEC multi-regional data processing servicer (MDPS) program. Obtain and review the provider's FFIEC IT examination report and SOC 1/SOC 2 reports.
+- Computer-Security Incident Notification Rule: provider must notify the bank as soon as possible of an incident causing or likely to cause 4+ hours of material disruption; bank notifies its regulator within 36 hours.
+- FFIEC IT Handbook (Business Continuity Management, Outsourcing Technology Services, Information Security) and the Sound Practices on operational resilience.
+- Dependence/concentration themes in the 2023-2024 agency statements and Federal Reserve/OCC/FDIC speeches: lack of leverage, contract auto-renewals, high termination fees, data de-conversion difficulty, and slow innovation, with regulators repeatedly saying a bank cannot outsource accountability.
+- Possible policy movement to monitor: any agency action on core provider concentration, deregulatory relief aimed at community banks (burden reduction, examination streamlining), the OCC/FDIC/Fed review of bank-fintech partnership guidance, and Congress/Treasury attention to core provider competition and contract fairness. I cannot confirm specific late-2026 items.
+
+2. What examiners will ask of a single-core-provider bank
+- Did the board approve the dependence and define risk appetite and tolerance for the relationship?
+- Have you documented a concentration analysis (core, digital banking, card, payments, bill pay, item processing, hosting cloud) including shared fourth parties such as data centers, network carriers and cloud providers?
+- Is there a tested business continuity and exit strategy: realistic deconversion timeline, data format/portability, interim processing options, contract termination assistance?
+- Do contracts allow audit/information rights, SLAs with meaningful remedies, incident notification, cybersecurity requirements, disaster recovery testing participation, price caps and renewal terms?
+- Is ongoing monitoring risk-based: financial condition, SOC reports, complementary user entity controls (CUECs), subservice organization reports, SLA performance, security ratings, change management, and regulator exam results?
+
+3. Practical steps for the next 90 days
+- Update your critical activity inventory and concentration risk assessment, with a documented risk acceptance and mitigations.
+- Review the contract calendar: renewal dates, notice windows, termination fees; start renegotiation well ahead of renewal, using the 2024 community bank guide and trade association (ICBA, state associations) resources for leverage.
+- Run a core outage tabletop and a data export test; document RTO/RPO alignment between the bank and provider.
+- Evaluate partial diversification (alternate payments, digital channels, backup data copies, escrow of source or data).
+- Brief the board and record oversight.
+- Check agency sites (OCC, FDIC, FRB, FFIEC, CSBS) for post-June 2026 releases, and ask your examiners whether they have emerging focus areas.
+
+Bottom line: expect no relaxation of expectations on concentration and exit planning; the best preparation is evidence of board-level awareness, a tested exit/contingency plan and negotiated contract protections.

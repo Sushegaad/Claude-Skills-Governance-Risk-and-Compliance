@@ -1,0 +1,33 @@
+{
+  "eval_id": 378,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States SDAIA announced in January 2026 that it issued 48 violation decisions during 2025",
+      "passed": true,
+      "evidence": "\"In January 2026 SDAIA announced that it issued 48 violation decisions during 2025.\""
+    },
+    {
+      "text": "Lists the violation categories: processing without legal basis, unlawful disclosure, inadequate safeguards, marketing without consent",
+      "passed": true,
+      "evidence": "\"processing without a legal basis, unlawful disclosure of personal data, inadequate safeguards, and marketing without consent.\""
+    },
+    {
+      "text": "Notes no entity names or penalty amounts were disclosed",
+      "passed": true,
+      "evidence": "\"No entity names and no fine amounts were disclosed.\""
+    },
+    {
+      "text": "Describes the penalty frame accurately (fines up to SAR 5M per violation, doubling for repeat violations)",
+      "passed": true,
+      "evidence": "\"Fines up to SAR 5,000,000 per violation, which may double for repeat violations.\""
+    },
+    {
+      "text": "States the 2025 proposed PDPL amendments are not enacted as of November 2026 and advises confirming current status with SDAIA",
+      "passed": true,
+      "evidence": "\"Proposed amendments ... went to SDAIA public consultation in April 2025. They are not enacted as of November 2026. Confirm the current status with SDAIA\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 342,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States aggregate ownership counts: 30 plus 30 equals 60 percent, meeting the 50 percent threshold",
+      "passed": true,
+      "evidence": "\"two listed parties holding 30 percent each add up to 60 percent, which is above the 50 percent threshold\" and \"30% + 30% = 60%, so the customer qualifies.\""
+    },
+    {
+      "text": "Explains the affiliate inherits the license requirements and policy of the listed parent or parents (most restrictive where multiple apply)",
+      "passed": true,
+      "evidence": "\"the customer is subject to the Entity List license requirement of Supplement 4 to Part 744... normally reviewed under a presumption of denial, though the review policy in each owner's entry may differ. Check both entries.\""
+    },
+    {
+      "text": "Notes indirect ownership chains also count toward the threshold",
+      "passed": true,
+      "evidence": "\"Indirect ownership counts, so a similar calculation applies if the 30 percent stakes are held through holding companies\" and \"Calculate aggregate ownership through every layer.\""
+    },
+    {
+      "text": "Correctly frames current status: not in effect until the stay lapses, currently extended to January 10, 2027",
+      "passed": true,
+      "evidence": "\"has been stayed since November 10, 2025. The stay was extended by FR Doc 2026-22793 (effective November 9, 2026) to January 10, 2027... it resumes after January 10, 2027.\""
+    },
+    {
+      "text": "Recommends obtaining ownership information or certifications from counterparties and screening corporate family trees",
+      "passed": true,
+      "evidence": "\"Confirm the ownership facts using documentary evidence (registry extracts, shareholder lists, certifications)... Update screening to calculate ownership and aggregate holdings.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

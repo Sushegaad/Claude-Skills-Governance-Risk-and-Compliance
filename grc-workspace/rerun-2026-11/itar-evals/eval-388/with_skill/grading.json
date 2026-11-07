@@ -1,0 +1,33 @@
+{
+  "eval_id": 388,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Applies the order of review starting with the USML, noting the VIII(a)(8) exclusion for survivability-enhanced aircraft effective October 13, 2026",
+      "passed": true,
+      "evidence": "\"Step 2. Test the aircraft against the USML (22 CFR 121.1, Category VIII)\" ... \"is EXCLUDED from USML VIII(a)(8) as a 'survivability-enhanced aircraft'\" ... \"effective October 13, 2026.\""
+    },
+    {
+      "text": "Checks the secured ASE definition elements: DIRCM, associated IR/UV missile warning, anti-tamper measures",
+      "passed": true,
+      "evidence": "\"'Secured ASE' means DIRCM plus the associated IR/UV missile-warning system, with anti-tamper.\""
+    },
+    {
+      "text": "Concludes the qualifying aircraft moves to EAR jurisdiction while the ASE stays in USML XI(a)(4)",
+      "passed": true,
+      "evidence": "\"If all conditions are met, the aircraft is not a VIII(a)(8) article ... Resolve the EAR classification\" and \"The ASE remains USML XI(a)(4).\""
+    },
+    {
+      "text": "Cites the new definitional provisions (22 CFR 121.0 and 120.54 additions)",
+      "passed": true,
+      "evidence": "\"The rule adds definitions to 22 CFR 121.0 and new 22 CFR 120.54(a)(8)-(9) on secured ASE activities.\""
+    },
+    {
+      "text": "Recommends re-running jurisdiction and classification analyses for affected product lines after October 13, 2026",
+      "passed": false,
+      "evidence": "Advises documenting the classification and reviewing \"whenever the configuration changes,\" but never recommends re-running jurisdiction/classification analyses across affected product lines now that the rule is effective."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

@@ -1,0 +1,16 @@
+Short answer: I cannot confirm the current status of a change to USML Category VIII(a)(8) as of November 2026, and I do not want to guess at one. My knowledge of 2026 DDTC rulemaking is incomplete. Please treat the points below as framing, and verify against the Federal Register and the current eCFR text of 22 CFR 121.1 before acting.
+
+What I can say with confidence
+- USML Category VIII covers aircraft and related articles. Paragraph (a) lists specific aircraft types, and paragraph (h) lists parts, components, accessories, attachments and associated equipment. I am not certain that (a)(8) is the paragraph that captures civil aircraft modified with self-protection equipment, so confirm the paragraph number in the rule you are relying on before using it.
+- Directed infrared countermeasure (DIRCM) systems and missile warning or infrared countermeasure equipment have historically been controlled on the USML, in Category XII (fire control, sensors, night vision, IR) and Category XI (electronic equipment). They have also been controlled under Category VIII(h) when specially designed for a military aircraft. The exact paragraph depends on the equipment, so check the current text.
+- Installing a DIRCM suite on a civil airframe has historically raised a "specially designed" question. The airframe may stay under Commerce jurisdiction (EAR, ECCN 9A610 and 9A991 family) while the installed defense article remains ITAR-controlled. Whether the modified aircraft changes jurisdiction depends on the control language in force, not on the installation alone.
+
+What your MRO should do now
+1. Pull the Federal Register notice for the Category VIII change and check whether it is a proposed rule, a final rule, or an effective-date announcement. Proposed rules have no legal effect. Only final rules with an effective date change your obligations. Also check for any delayed-compliance or transition provisions.
+2. Identify the exact end items you install by manufacturer, part number and ITAR/EAR classification. Do not classify by function, such as "self-protection suite". Classify by the text of the USML and CCL entries.
+3. Run the order-of-review: USML first, then the "specially designed" analysis in 22 CFR 120.41 (or the current renumbered section after the ITAR reorganization), then the CCL 600 series.
+4. Confirm your registration status with DDTC (22 CFR Part 122). If the installed equipment is a defense article, installing it or providing technical data and defense services to the airline or to foreign persons requires registration and authorization (a DSP-5, TAA or MLA, as applicable). Foreign-person employees and foreign-airline customers raise deemed-export issues.
+5. If the classification is unclear, file a commodity jurisdiction request (DS-4076) or a CCATS request with BIS. Document the analysis either way.
+6. If a rule is effective and moves the item to the CCL, check which license exceptions or license requirements apply. Check whether any existing DDTC licenses or agreements need amendment or transition, and update your technology control plan.
+
+Caveat: I may be missing a rule published in 2026. If you can share the Federal Register citation, I can walk through its text with you. Have empowered-official counsel confirm the final determination.

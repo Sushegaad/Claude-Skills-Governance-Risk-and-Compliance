@@ -1,0 +1,28 @@
+Status as of November 2026: the harmonised standards programme is late and only just beginning to produce results. One standard is cited in the Official Journal. Most of what high-risk providers need is still pending.
+
+What exists
+- EN 18286:2026 (AI quality management system, supporting Art. 17) became the first AI Act harmonised standard cited in the OJEU. It was announced on 15 October 2026.
+- prEN 18228 (risk management, supporting Art. 9) is in final approval but not yet cited.
+- The deadline for the broader standardisation request was revised to February 2027.
+
+Why the delay matters less than it once did
+- Digital Omnibus (Reg. (EU) 2026/1744, in force since 27 July 2026) moved the high-risk dates. Annex III standalone systems now apply from 2 December 2027, and Annex I embedded-product systems from 2 August 2028. That gives standards bodies and providers more time.
+
+What it means for conformity
+1. Presumption of conformity (Art. 40). Applying a cited harmonised standard gives a presumption that you meet the corresponding requirements. Today that covers only the Art. 17 quality management system, and only if you apply EN 18286:2026 fully. It does not cover Arts. 9, 10, 12-15, so you must still show conformity with those by other means: your own documented methods, common specifications if adopted, or ISO/IEC-based frameworks used as evidence.
+2. Presumption is not safe harbour. It is rebuttable, and it covers only the requirements the standard addresses. You still need a risk management system, data governance, technical documentation, logging, transparency, oversight, and accuracy/robustness/cybersecurity.
+3. Conformity assessment route (Art. 43).
+ - Annex III points 2-8: internal control (Annex VI) only, so the lack of standards does not require a notified body. You need to document how you meet each requirement without a presumption.
+ - Annex III point 1 (biometrics): a notified body (Annex VII) is mandatory if you have not applied harmonised standards, or applied them only in part, or none exist. In practice, until standards for Arts. 9-15 are cited, biometric providers should plan on a notified body.
+ - Annex I products: the sectoral conformity procedure applies.
+4. QMS now. If you build a QMS (13 components in Art. 17), design it to EN 18286:2026 now. ISO/IEC 42001 certification helps as supporting evidence but does not by itself give the presumption.
+5. Documentation. Record which standards you applied (Annex IV requires a list of harmonised standards applied, or a description of alternative solutions). Keep a gap register against each article so you can switch to the standards as they are cited.
+
+Recommended actions
+- Adopt EN 18286:2026 for the QMS.
+- Track the cited-standards list in the OJEU and prEN 18228 progress.
+- Build risk management to the Art. 9 text and map to ISO 42001 and NIST AI RMF (MAP/MEASURE) as interim evidence.
+- Biometric providers: start notified-body engagement early.
+- Do not wait for standards to start. The December 2027 date is later but not far off for technical documentation and testing.
+
+This is general compliance information, not legal advice. Confirm current OJEU citation status before relying on a presumption.

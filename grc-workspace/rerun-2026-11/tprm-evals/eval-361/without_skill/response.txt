@@ -1,0 +1,28 @@
+US Banking Third-Party Risk Management Guidance: Status as of November 2026
+
+Caveat up front: my reliable knowledge runs through roughly mid-2026. I cannot verify anything issued after that, so confirm the latest Federal Register notices, OCC bulletins, FDIC FILs and Federal Reserve SR letters before relying on this.
+
+1. The operative baseline
+- Interagency Guidance on Third-Party Relationships: Risk Management (Fed, FDIC, OCC), issued June 6, 2023 (88 Fed. Reg. 37920). It is principles-based, applies to all supervised banks regardless of size, and uses a lifecycle model: planning, due diligence and third-party selection, contract negotiation, ongoing monitoring, and termination.
+- It replaced the earlier agency-specific guidance: OCC Bulletin 2013-29 and 2020-10 FAQs, Federal Reserve SR 13-19 and SR 21-? related outsourcing guidance, and FDIC FIL-44-2008. Those are rescinded.
+- Interagency "Third-Party Risk Management: A Guide for Community Banks" (May 2024) is a non-binding companion tool for smaller institutions.
+- Related, still-in-force items: the Bank Service Company Act (notice of certain service relationships, and examination authority over service providers); the Computer-Security Incident Notification Rule (36-hour bank notice, plus service provider notification to affected bank customers "as soon as possible"); the Interagency Guidelines Establishing Information Security Standards (GLBA 501(b)); FFIEC IT Examination Handbook (Outsourcing Technology Services, Architecture/Infrastructure/Operations, Information Security booklets); the June 2021 interagency Sound Practices to Strengthen Operational Resilience (large firms); and the Sept 2023 Banking-as-a-Service / fintech-partnership emphasis, including the July 2024 Request for Information on bank-fintech arrangements and the Interagency Joint Statement on Banks' Arrangements with Third Parties to Deliver Bank Deposit Products and Services (July 2024).
+- Regulatory posture: Since 2025 the agencies have shifted toward a lighter-touch supervisory stance (focus on material financial risk, removal of "reputation risk" from supervision, review of burdensome guidance and examination practices). I am not aware of the 2023 guidance having been rescinded or formally replaced as of my knowledge, and I would treat it as still the governing interagency standard unless you see a Federal Register notice saying otherwise. Possible amendments, FAQs or a streamlined re-issue would be the likely direction rather than a tightening.
+
+2. What this means practically
+- Examiners still evaluate TPRM through the 2023 guidance and the community bank guide. Expect scrutiny of critical-activity identification, board oversight, risk-based due diligence, contract provisions (audit rights, incident notice, subcontractor/fourth-party controls, exit rights), ongoing monitoring, concentration risk and termination planning.
+- Proportionality is explicit: a community bank is not expected to run a large-bank program but must be able to demonstrate risk-based tailoring.
+- Fintech/BaaS partnerships remain a heightened area, with enforcement actions in 2024-2025 citing weak third-party oversight, ledger and reconciliation failures and BSA/AML gaps.
+
+3. Adjacent items to watch (verify current status)
+- State rules: NYDFS 23 NYCRR 500 (third-party service provider policy requirement, 500.11; amendments fully phased in through November 2025), and state-level requirements for money transmitters/fintechs.
+- Interagency or OCC statements on core service providers, cloud concentration, and the FSOC/Treasury work on critical third parties. The Bank Service Company Act gives agencies authority to examine providers, but no US equivalent of the EU DORA critical-provider designation regime exists as of my knowledge.
+- Any agency-specific FAQs, examination procedures updates (OCC Comptroller's Handbook, FDIC risk management manual) and FFIEC handbook revisions.
+- Cyber incident reporting harmonization (CIRCIA final rule timing) and SEC/other overlaps.
+
+4. Recommended actions
+- Keep your program mapped to the 2023 guidance lifecycle; do not wait for new guidance.
+- Re-validate your critical-activity inventory, fourth-party mapping and exit plans.
+- Check the agencies' websites for any post-June 2026 issuance and document your review for examiners.
+
+Bottom line: as best I know, the June 2023 interagency guidance remains the controlling US banking TPRM standard, supplemented by the 2024 community bank guide, with any late-2026 changes more likely to be deregulatory refinements than new burdens. Verify directly with primary sources.

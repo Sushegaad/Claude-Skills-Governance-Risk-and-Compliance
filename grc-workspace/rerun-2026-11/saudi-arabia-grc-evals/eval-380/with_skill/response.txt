@@ -1,0 +1,22 @@
+Short answer: no. I have no confirmation that SAMA issued an updated Cyber Security Framework in 2026. The operative version remains the SAMA Cyber Security Framework v1.0, issued in May 2017. Treat any claim of a newer version as unconfirmed until it is verified on SAMA's official website or with SAMA directly.
+
+1. Regulator and instrument
+The Saudi Central Bank (SAMA) issues the Cyber Security Framework (CSF). It binds all SAMA-regulated entities: banks, insurers and reinsurers, financing companies, credit bureaus and licensed fintechs.
+
+2. What the CSF contains (v1.0)
+- Four domains: Cyber Security Leadership and Governance; Cyber Security Risk Management and Compliance; Cyber Security Operations and Technology; and Third-Party Cyber Security.
+- A six-level maturity model (0 to 5): 0 non-existent, 1 ad hoc, 2 repeatable but informal, 3 structured and formalised, 4 managed and measurable, 5 adaptive. SAMA expects a minimum of maturity level 3, with periodic self-assessments and SAMA reviews.
+
+3. Adjacent SAMA and NCA items that the client might be thinking of
+- SAMA's IT Governance Framework, Business Continuity Management Framework and Cyber Threat Intelligence Principles (2022) are separate instruments. A change to one of them is not an update to the CSF.
+- If the bank is designated CNI, NCA ECC-2:2024 also applies and stacks with the CSF. ECC-2:2024 supersedes ECC-1:2018, which may be the source of confusion.
+- The NCA adopted NCNICC-1:2025 on 28 December 2025, but it covers non-CNI private entities and is not a SAMA update.
+- The Saudi PDPL, enforced by SDAIA, applies in addition to the above. It has been fully enforced since 14 September 2024.
+
+4. What to tell your client
+- No 2026 CSF update is confirmed. Continue to assess against v1.0 and maturity level 3 or above.
+- Ask whoever claimed an update for the document reference, issue date and the SAMA source. Check SAMA's website and the bank's own SAMA relationship manager.
+- If the bank is CNI-designated, keep one internal control framework mapped to both the CSF and ECC. Where they appear to conflict, satisfy the stricter and document the mapping. The deconfliction protocol between SAMA and NCA is not published, so engage both regulators rather than assuming.
+- I can build a gap assessment for them with the columns Domain | Control ref | Current state | Gap | Evidence needed | Priority, if useful.
+
+This is general compliance information, not legal advice. Verify against SAMA's official publications.

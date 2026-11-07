@@ -1,0 +1,13 @@
+{
+  "eval_id": 382,
+  "eval_name": "governmentwide-assessment",
+  "run_type": "without_skill",
+  "prompt": "How is the federal government actually doing on Section 508 compliance? Give me the latest numbers.",
+  "assertions": [
+    "Cites the FY2025 governmentwide Section 508 assessment, announced March 5, 2026",
+    "States the average conformance score: 1.96 on a 5-point scale",
+    "States fewer than half of agencies' most-viewed ICT is fully conformant and about half of agencies do not routinely test ICT",
+    "States under 30 percent of agencies almost always verify ICT deliverables in acquisition, across 212 reporting agencies and components",
+    "Notes no FY2026 assessment has been published yet"
+  ]
+}

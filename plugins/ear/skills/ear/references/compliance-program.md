@@ -63,6 +63,8 @@ BIS has identified seven elements of an effective Export Compliance Programme. C
 - **Consolidated Screening List (CSL):** trade.gov/consolidated-screening-list — single search covers BIS + State + Treasury
 - Screen at time of: quote/order acceptance, before each shipment, and when parties change
 
+**Affiliates Rule (ownership screening):** The BIS interim final rule "Expansion of End-User Controls To Cover Affiliates of Certain Listed Entities" (90 FR 47201, published September 30, 2025, effective September 29, 2025) extends Entity List/MEU List (and certain SDN) license requirements to entities 50 percent or more owned, directly or indirectly, individually or in aggregate, by listed parties (OFAC-style 50 percent standard). The rule is stayed: a one-year stay (90 FR 50857, effective November 10, 2025) ran through November 9, 2026, and was extended to January 10, 2027 (FR Doc 2026-22793, filed November 5, 2026, effective November 9, 2026, no substantive changes). Build ownership screening of counterparties tied to listed entities into the screening workflow before January 10, 2027.
+
 **Screening cadence for ongoing relationships:**
 - Re-screen existing distributors and customers at minimum **monthly** (list updates are continuous)
 - Automate screening via ERP integration (SAP GTS, Oracle AGIS, Visual Compliance, Restricted Party Screening tools)

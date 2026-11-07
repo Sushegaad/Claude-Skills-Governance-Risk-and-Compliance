@@ -1,0 +1,33 @@
+{
+  "eval_id": 349,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Names all four: Ireland, Spain, France and the Netherlands, referred July 8, 2026",
+      "passed": false,
+      "evidence": "\"I am not able to give you a verified list of referred Member States... Do not rely on a country list from me\"; only a speculative at-risk list, no July 8, 2026 referral."
+    },
+    {
+      "text": "States the Commission requested lump sums and daily penalty payments",
+      "passed": false,
+      "evidence": "Only explains generically that the Commission \"can request financial penalties\" under Art. 260(3); does not state it actually requested lump sums and daily payments."
+    },
+    {
+      "text": "Gives the procedure history: letters of formal notice November 28, 2024, reasoned opinions May 7, 2025",
+      "passed": true,
+      "evidence": "\"28 November 2024: letters of formal notice to 23 Member States. 7 May 2025: reasoned opinions\""
+    },
+    {
+      "text": "Notes the Netherlands referral has been overtaken by its August 15, 2026 transposition",
+      "passed": false,
+      "evidence": "No mention of the Netherlands transposing or its August 15, 2026 law overtaking the referral."
+    },
+    {
+      "text": "Advises that entities in the remaining states should prepare against the directive text because short compliance windows have followed national enactments",
+      "passed": true,
+      "evidence": "\"typically results in fast adoption of the law, so plan for national laws arriving with short implementation windows. Any entity operating there should prepare now, using the Directive text\""
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 348,
+  "eval_name": "netherlands-cbw",
+  "run_type": "with_skill",
+  "prompt": "Our Dutch entity was tracking the old Wbni. What is the NIS2 situation in the Netherlands now?",
+  "assertions": [
+    "States the Cyberbeveiligingswet (Cbw), with the Cyberbeveiligingsbesluit, entered into force August 15, 2026 (Stb. 2026, 187), replacing the Wbni",
+    "Notes the Netherlands was among the four Member States referred to the CJEU on July 8, 2026, before completing transposition",
+    "Describes core obligations now applying: registration, duty of care, and incident reporting",
+    "Does not claim the Netherlands remains untransposed today",
+    "Advises confirming registration and incident-reporting channels with the Dutch authorities"
+  ]
+}

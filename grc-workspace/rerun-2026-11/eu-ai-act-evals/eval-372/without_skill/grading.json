@@ -1,0 +1,33 @@
+{
+  "eval_id": 372,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Cites Implementing Regulation (EU) 2026/1755, published in the OJ July 21, 2026 and in force August 10, 2026",
+      "passed": false,
+      "evidence": "Never cites Regulation 2026/1755; says implementing acts \"were in development (consultation drafts in 2026) and I cannot confirm final adoption details.\""
+    },
+    {
+      "text": "Covers model evaluations including API, source code and model access under Article 92(3)",
+      "passed": true,
+      "evidence": "\"Art. 92: power to conduct evaluations, including via independent experts, with access to the model through APIs or source code where necessary\""
+    },
+    {
+      "text": "Covers the appointment and independence of external experts",
+      "passed": false,
+      "evidence": "Mentions evaluations \"via independent experts\" in passing but never covers how experts are appointed or how independence is ensured."
+    },
+    {
+      "text": "Covers fine proceedings: preliminary findings, the right to be heard, and access to the file",
+      "passed": true,
+      "evidence": "\"there is a right to be heard\"; \"chance to respond to preliminary findings\"; access to file flagged as fixed in the implementing act."
+    },
+    {
+      "text": "States the five-year limitation period for fines",
+      "passed": false,
+      "evidence": "Says only \"Limitation periods... are the details I would expect to be fixed in the implementing act\"; the five-year period is never stated."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

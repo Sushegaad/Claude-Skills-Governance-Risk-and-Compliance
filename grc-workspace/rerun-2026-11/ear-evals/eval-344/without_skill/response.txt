@@ -1,0 +1,32 @@
+SHORT ANSWER, WITH A CAVEAT
+I cannot confirm the specific change you refer to (a rule taking effect in or after October 2026), and I do not want to cite rule details I cannot verify. Below is how the analysis works, which categories are likely to apply, and what to confirm. Your client should not make an export decision on this answer alone.
+
+FRAMEWORK
+1. Two jurisdictions are possible: the ITAR (State/DDTC, USML, 22 CFR 120-130) and the EAR (Commerce/BIS, CCL, 15 CFR 730-774). Each item is analysed on its own, in order: USML first, then the 600 series, then the rest of the CCL.
+2. The aircraft and the protection equipment are classified separately. Adding a military system to a civil aircraft does not by itself change the jurisdiction of the aircraft, but it can.
+
+THE MODIFIED AIRCRAFT
+- A civil airliner type-certificated by the FAA and in production is normally on the CCL: ECCN 9A991 (civil aircraft, EAR) and not on the USML. Under the long-standing rule, a civil aircraft with a type certificate stays EAR-controlled.
+- Military modification: if the aircraft is modified with military equipment, the question is whether the aircraft is "specially designed" for a military purpose under USML Category VIII(a) or ECCN 9A610.a. Historically, a civil aircraft with an installed defensive aids system was considered by many to remain under the EAR (9A610 or 9A991) unless the modification is an ITAR-enumerated one. USML Category VIII(h) and the notes on "specially designed" matter here. Whether the modified aircraft is ITAR or EAR will depend on how the revised rule you mention treats FAA-type-certificated aircraft that are in production and modified.
+- In practice, I would expect the airframe to stay on the EAR (9A610.a or 9A991, depending on whether the modification makes it military aircraft), while the installed military equipment is controlled separately. I cannot confirm that expectation against the rule you mention. Check the current text of USML Category VIII and ECCN 9A610 (including any new paragraph for type-certificated aircraft), and look at any related State Department and BIS final rules.
+
+THE DIRCM / MISSILE PROTECTION EQUIPMENT
+- DIRCM (directed infrared countermeasures) systems, missile approach warning sensors and associated laser jammers are military defensive electronics. They are most often on the USML. The usual candidates are USML Category XI (Military Electronics), for example XI(a)(4) electronic combat equipment, and Category XII (Fire Control, Laser, Imaging, Guidance) for the laser and IR components. Associated parts and software would fall under XI(c) and XII(e) as applicable, with technical data under XI(d) or XII(f), and Category VIII(h) for aircraft-specific parts.
+- Lesser or older systems, or non-laser flare dispensers and similar items, may be on the CCL under the 600 series (for example 9A610.x, 3A611, 6A615, and so on) or under 0A604-type entries, depending on the exact design. Flares and countermeasure dispensers can be a different case again.
+- So the likely answer is that the protection equipment is ITAR (State Department, DDTC), probably in Category XI and/or XII, while the aircraft is EAR (Commerce, BIS). That is consistent with how a civil-aircraft/military-system split generally works. Confirm by a formal classification. Use the order of review in Supplement No. 4 to Part 774 and the USML "specially designed" definition in 22 CFR 120.41. If doubtful, file a Commodity Jurisdiction request (DS-4076) with DDTC, or a CCATS request with BIS.
+
+CONSEQUENCES
+- Installing ITAR items on an EAR aircraft: the ITAR equipment remains subject to ITAR (DSP-5 or other authorisation, TAA/MLA for technical data and defense services, DDTC registration for the installer if it manufactures or exports defense articles, and a US-person definition for foreign participants). The aircraft would still need an EAR license depending on ECCN, the destination and end user, and, if 9A610, a 600-series license with the associated country restrictions (Country Group D:5 and so on).
+- Defense services: integration or installation help given to a foreign person can be a defense service. This is easy to overlook.
+- Technical data: manuals and integration data may be ITAR-controlled even if the aircraft is not.
+- Foreign-origin items and the airframe's de minimis: an ITAR item incorporated in an EAR item can bring the item into other controls (see 22 CFR 123.9 for retransfer of ITAR content, and the EAR's treatment of USML content). Check the treatment of the incorporated ITAR content for the aircraft's later exports and reexports.
+- Other regimes: FAA airworthiness (a supplemental type certificate for the installation), State Department end-use and third-party transfer limits, Congressional notification thresholds for major items, and the countries concerned (the Wassenaar Arrangement and MANPADS-related controls, which are a very sensitive area).
+- Aircraft in production and "in-production" status matter for the type-certificate-based test. A modification after delivery is analysed differently from a production-line one.
+
+WHAT TO DO
+1. Obtain the exact system model, manufacturer, and part numbers for each DIRCM component. Get the manufacturer's jurisdiction and classification.
+2. Pull the current text of USML VIII, XI and XII and ECCN 9A610 and 9A991, and any rule dated 2026 that changes them.
+3. If any doubt remains, file a CJ or CCATS request.
+4. Plan the authorisations: DSP-5, TAA, EAR licenses, and DDTC registration. Treat foreign persons carefully.
+
+This is general information, not legal advice. Please verify against current regulations before advising the client.

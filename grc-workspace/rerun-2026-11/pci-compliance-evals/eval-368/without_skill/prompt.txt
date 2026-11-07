@@ -1,0 +1,1 @@
+Is there a PCI DSS v5? What version should our 2027 validation planning target?

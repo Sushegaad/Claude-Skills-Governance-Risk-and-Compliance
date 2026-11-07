@@ -1,0 +1,33 @@
+{
+  "eval_id": 357,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies the October 22, 2026 Spotlight: Staff Update on 2025 Inspections of Public Company Audits",
+      "passed": false,
+      "evidence": "The response does not identify the publication: \"I do not have a reliable picture of the very latest PCAOB release as of November 2026.\""
+    },
+    {
+      "text": "States the aggregate Part I.A deficiency rate fell to 23 percent in 2025, from 38 percent in 2024 and 46 percent in 2023",
+      "passed": false,
+      "evidence": "None of the required figures are stated; it instead references a \"2022 peak of 46 percent\" and declines to quote 2025 numbers."
+    },
+    {
+      "text": "Gives the scale: 143 firms inspected, portions of 780 audits reviewed",
+      "passed": false,
+      "evidence": "No mention of 143 firms or 780 audits anywhere in the response."
+    },
+    {
+      "text": "Notes Part I.A blends financial-statement and ICFR opinions, with no ITGC-only breakdown published",
+      "passed": false,
+      "evidence": "The response never states that Part I.A blends financial-statement and ICFR opinions or that no ITGC-only breakdown is published; it discusses ICFR-area deficiencies generically."
+    },
+    {
+      "text": "Draws the practical implication: continued auditor focus on evidence sufficiency in ICFR, including IT general controls",
+      "passed": true,
+      "evidence": "\"it tends to drive increased auditor requests and push-back on documentation\" plus extensive guidance on IPE, population completeness, ITGC linkage and SOC 1 evidence."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

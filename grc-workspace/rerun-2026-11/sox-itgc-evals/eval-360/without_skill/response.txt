@@ -1,0 +1,74 @@
+November-December 2026 SOX ITGC checklist heading into year-end (calendar year-end of December 31, 2026)
+
+Assumptions: calendar-year issuer, interim testing done earlier in the year, rollforward and year-end testing remaining. Adjust to your own plan and your auditor's expectations.
+
+1. Governance and scope (early November)
+- Confirm the final scope: in-scope applications, databases, operating systems, and infrastructure supporting key financial reporting controls. Include new systems, migrations, acquisitions, and decommissioned systems since the last scoping.
+- Re-validate the mapping of key automated controls, IPE, and interfaces to ITGCs.
+- Confirm the SOC 1 reports list and which subservice organizations are carved out.
+- Align with the external auditor on their reliance strategy, test dates, sample sizes, and PBC list and due dates.
+- Confirm audit committee reporting dates.
+
+2. Status of open items
+- Review all open ITGC deficiencies and remediation actions. Confirm the remediation date leaves enough time for the control to operate and be tested (usually a minimum operating period before year-end; check your sample-size policy).
+- Reassess deficiency severity as new facts emerge, individually and in aggregate.
+
+3. Change management
+- Reconcile the population of changes (tickets, deployments, code repository) for the whole year and test completeness.
+- Test rollforward samples for the period since interim testing, including emergency and out-of-cycle changes.
+- Check segregation between developers and those who migrate to production.
+- Implement a change freeze plan and its exception approval for the year-end close period.
+- Check approvals for major releases, data conversions, and ERP configuration changes.
+
+4. Access management
+- Complete the periodic user access reviews (including privileged and service accounts) and document the completeness of the user list and reviewer follow-up.
+- Test joiner, mover, and leaver controls for the rollforward period, including timely terminations and removal of access after role changes.
+- Test privileged access and emergency (firefighter) access logs and their reviews.
+- Review segregation of duties conflicts and compensating controls.
+- Check password and authentication settings, MFA for privileged and remote access, and shared or generic accounts.
+- Verify direct database and back-end access.
+
+5. IT operations
+- Check backup success monitoring, restore testing evidence, job scheduling and failure monitoring, and incident management for financial systems.
+- Review batch jobs and interfaces for year-end processing.
+- Confirm DR testing evidence, if relied upon.
+
+6. IPE and automated controls
+- Re-validate key reports used in controls: source, parameters, completeness and accuracy, and report change control.
+- Re-perform or benchmark automated controls where the ITGC reliance strategy needs it. Confirm no changes since the last test, or retest.
+- Test interface and data transfer controls and reconciliations.
+
+7. Third parties and cloud
+- Obtain current SOC 1 Type 2 reports, check the period coverage, exceptions, and subservice organizations. Map CUECs to your controls and test them.
+- Plan for bridge letters for the gap between the report end date and December 31.
+- Review vendor changes or outages.
+
+8. Cyber and other risks
+- Evaluate significant security incidents during the year and their possible effect on financial reporting.
+- Review ransomware or outage events and their effect on ICFR.
+- If you use AI or automation tools in financial reporting, document governance and testing.
+
+9. Documentation and evidence quality
+- Run an internal quality review of workpapers: clear evidence, populations, sampling, dates, and conclusions.
+- Retain screenshots and system-generated evidence with timestamps.
+- Keep a deficiency log and communications with the auditor.
+
+10. Late November through mid-December
+- Complete the rollforward testing and update conclusions.
+- Hold a status meeting with the auditor weekly during the close.
+- Prepare for year-end close freeze periods and emergency change handling.
+
+11. December (to year-end)
+- Finalize management's evaluation timelines.
+- Ensure all remediation retesting is scheduled.
+- Draft the preliminary deficiency summary and the aggregated evaluation.
+- Prepare management representation items related to ICFR and IT.
+
+12. Early January to filing
+- Finish the final testing and deficiency evaluation.
+- Update the management's 404(a) assessment, and the audit committee reporting.
+- Prepare the SOX 302 certifications support (sub-certifications).
+
+Regulatory awareness
+- QC 1000 becomes effective for audit firms on December 15, 2026, so your auditor may adjust processes. No change to AS 2201 that I am aware of. Technology-related audit amendments (AS 1105 and AS 2301) apply for fiscal years beginning on or after December 15, 2025, so expect more auditor attention on the reliability of IPE and system data.
+- Verify the status of any SEC or PCAOB changes before the audit.

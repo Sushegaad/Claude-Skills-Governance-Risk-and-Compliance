@@ -1,0 +1,33 @@
+{
+  "eval_id": 389,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Mentions the Cyprus prohibition revision (September 11, 2026)",
+      "passed": true,
+      "evidence": "\"DDTC suspended Cyprus's 22 CFR 126.1 proscribed status through September 30, 2027 (91 FR 57787, September 11, 2026).\""
+    },
+    {
+      "text": "Mentions the policies of denial / MNNA list update (September 18, 2026)",
+      "passed": false,
+      "evidence": "No mention of a policies-of-denial or MNNA list update anywhere in the response."
+    },
+    {
+      "text": "Mentions at least one more: the Category XX(a) modification (September 18, 2026) or the Syria country policy revision (October 1, 2026)",
+      "passed": false,
+      "evidence": "Neither a Category XX(a) modification nor a Syria country policy revision is mentioned; only a proposed XX(c) restructuring within the omnibus NPRM."
+    },
+    {
+      "text": "Covers the two headline actions: the VIII(a)(8) interim final rule effective October 13 and the October 1 omnibus proposed rule with comments due November 30, 2026",
+      "passed": true,
+      "evidence": "\"91 FR 55457 ... an interim final rule effective October 13, 2026\" and \"91 FR 62361, published October 1, 2026 ... Comments are due November 30, 2026.\""
+    },
+    {
+      "text": "Does not invent rules or dates beyond the published record",
+      "passed": true,
+      "evidence": "Items carry specific FR citations consistent with the record; response states \"I am limiting this to what I can verify and not guessing at others\" and nothing in the text contradicts the published record."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

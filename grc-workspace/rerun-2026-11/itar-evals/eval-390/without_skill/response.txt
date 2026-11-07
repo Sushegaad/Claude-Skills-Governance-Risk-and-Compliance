@@ -1,0 +1,23 @@
+Caveat: I cannot confirm a current rule that changes USML VIII(h)(10) or moves civil radar altimeters, and I cannot give you an effective date. I am also not certain that VIII(h)(10) is the paragraph that currently captures radar altimeters. Radar altimeters are more commonly associated with Category XI (military electronics) and Category XII, and with the CCL (for example ECCN 7A104 and 6A008 for radar altimeters, plus 9A610 and 9A991 for aircraft parts). Verify the paragraph against the current 22 CFR 121.1 first. If your products are classified under VIII(h)(10), confirm the basis for that classification.
+
+Because I do not know the content of the rule, I cannot say "what changes and when". Here is how to find out and what to do with the answer.
+
+Step 1: Find the rule and read its status
+- Get the Federal Register citation. Check whether it is a final rule, an interim final rule, or an NPRM. Only a final rule that has reached its effective date changes your obligations.
+- Note the effective date, and any delayed compliance date and transition provisions. DDTC and BIS rules that move items between the USML and CCL commonly provide a transition window (often 180 days or longer) during which existing USML licenses remain valid and exporters may use either regime in limited ways. Read the specific language of the rule.
+
+Step 2: Reclassify your product
+- If the rule moves civil radar altimeters off the USML, use the order of review: confirm that the item no longer meets any USML paragraph, run the "specially designed" analysis where relevant, then classify on the CCL. Likely candidates: a 9A610.x or 9A610.y entry, an ECCN in Category 6 or 7 (for example 6A008, 7A004 or related), or 9A991, or EAR99. Confirm the specific parameters, such as frequency band, altitude and range, anti-jam features or military performance characteristics.
+- Request a CCATS from BIS if you are uncertain. Request a CJ (DS-4076) if the jurisdiction itself is unclear.
+
+Step 3: Manage licensing and transition
+- List open DSP-5 licenses, TAAs and MLAs that cover these items. Find out whether they remain valid through their expiration and whether DDTC will amend them. Do not export under a DDTC license after the transition period if the item has moved.
+- For new shipments, find out whether a BIS license is required. This depends on the ECCN, reasons for control (NS, RS, AT, 600-series controls), and destination. Check license exceptions (STA, and any 600-series limits) and Country Group status. Check the end-user and end-use screening requirements.
+- Technical data and software move too, for example from VIII(i) to 9E610 or another ECCN.
+
+Step 4: Internal updates
+- Update the classification matrix, ERP flags, shipping documents (the ITAR 123.9 destination control statement versus the EAR 758.6 statement), the technology control plan, the recordkeeping and the deemed-export controls for foreign-person employees.
+- Review your DDTC registration. If all your products move to the CCL you might no longer need to be registered, but do not deregister until you have confirmed this. Keep records for five years (ITAR) or the EAR retention period.
+- Brief sales and customers, because their import and re-export obligations may change.
+
+If you send the Federal Register citation or the rule text, I can map your products to the new entries and tell you what changes and when, with the actual dates.

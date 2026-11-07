@@ -1,0 +1,13 @@
+{
+  "eval_id": 351,
+  "eval_name": "tsc-refresh-status",
+  "run_type": "without_skill",
+  "prompt": "Is SOC 2 changing? Our auditor mentioned new Trust Services Criteria. What exactly is the status as of November 2026 and what should we do?",
+  "assertions": [
+    "States the AICPA issued an exposure draft on October 28, 2026 (draft dated October 27, 2026): the Proposed 2027 SOC 2 Trust Services Criteria and Description Criteria, the first major refresh since the 2017 TSC",
+    "States comments are due January 15, 2027",
+    "States the proposed effective date: engagements beginning on or after December 31, 2027, with early adoption permitted",
+    "States current engagements are unaffected: the 2017 TSC with 2022 revised points of focus remain operative",
+    "Describes the direction accurately: keeps the five trust services categories, consolidates overlapping criteria, adds AI-related points of focus without new AI-specific criteria, and does not assert specific criteria counts as fact"
+  ]
+}

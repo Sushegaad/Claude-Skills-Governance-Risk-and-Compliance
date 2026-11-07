@@ -1,0 +1,33 @@
+{
+  "eval_id": 377,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Places the supplier in Category B (6 to 249 employees or SAR 3M to 200M revenue) under NCNICC-1:2025",
+      "passed": false,
+      "evidence": "Never mentions NCNICC-1:2025 or Category B; says the SME \"is generally not directly bound by the NCA controls.\""
+    },
+    {
+      "text": "States Category B faces 13 sub-components and 26 mandatory controls, with the remainder recommended",
+      "passed": false,
+      "evidence": "No sub-component or control counts anywhere; only references a voluntary NCA \"cybersecurity guide for SMEs.\""
+    },
+    {
+      "text": "Notes the instrument was published in Arabic only",
+      "passed": false,
+      "evidence": "No mention of Arabic-only publication."
+    },
+    {
+      "text": "States compliance is continuous with no published deadline",
+      "passed": false,
+      "evidence": "No statement about continuous compliance or absence of a published deadline."
+    },
+    {
+      "text": "Distinguishes NCNICC applicability from the ECC, which targets critical national infrastructure",
+      "passed": false,
+      "evidence": "Describes ECC's CNI/government scope but never contrasts it with NCNICC, which is absent from the response."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

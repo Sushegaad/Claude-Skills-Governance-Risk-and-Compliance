@@ -1,0 +1,13 @@
+{
+  "eval_id": 359,
+  "eval_name": "404b-proposal",
+  "run_type": "with_skill",
+  "prompt": "Will smaller companies be exempt from SOX 404(b) soon? Should we pause our ICFR auditor-attestation prep?",
+  "assertions": [
+    "Describes the SEC's May 19, 2026 proposal, which would limit 404(b) auditor attestation to large accelerated filers and raise the large accelerated filer threshold",
+    "States comments closed July 20, 2026 and there has been NO final action as of November 2026",
+    "Concludes current 404(b) thresholds remain operative law, so preparation should not pause",
+    "Frames the proposal as proposed only, to be flagged and monitored",
+    "Notes management's 404(a) assessment obligation is unaffected either way"
+  ]
+}

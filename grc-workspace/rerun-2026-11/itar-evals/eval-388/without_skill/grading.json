@@ -1,0 +1,33 @@
+{
+  "eval_id": 388,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Applies the order of review starting with the USML, noting the VIII(a)(8) exclusion for survivability-enhanced aircraft effective October 13, 2026",
+      "passed": false,
+      "evidence": "Applies a generic order of review but states \"I do not have reliable knowledge of any 2026 change to the aircraft survivability entries\" - the VIII(a)(8) exclusion and October 13, 2026 date are never noted."
+    },
+    {
+      "text": "Checks the secured ASE definition elements: DIRCM, associated IR/UV missile warning, anti-tamper measures",
+      "passed": false,
+      "evidence": "Mentions DIRCM and missile warning only as example equipment; never checks the secured ASE definition or anti-tamper requirement."
+    },
+    {
+      "text": "Concludes the qualifying aircraft moves to EAR jurisdiction while the ASE stays in USML XI(a)(4)",
+      "passed": false,
+      "evidence": "Says only that \"A civil aircraft can stay EAR-controlled ... while a DIRCM suite on it is ITAR-controlled\" and places DIRCM in Category XII; never reaches the XI(a)(4) conclusion or the exclusion-based move."
+    },
+    {
+      "text": "Cites the new definitional provisions (22 CFR 121.0 and 120.54 additions)",
+      "passed": false,
+      "evidence": "No mention of 22 CFR 121.0 or 120.54."
+    },
+    {
+      "text": "Recommends re-running jurisdiction and classification analyses for affected product lines after October 13, 2026",
+      "passed": false,
+      "evidence": "Recommends checking \"for a pending or recent final rule\" generically; no recommendation tied to the October 13, 2026 effective date."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

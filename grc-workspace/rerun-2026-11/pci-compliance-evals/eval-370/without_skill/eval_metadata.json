@@ -1,0 +1,13 @@
+{
+  "eval_id": 370,
+  "eval_name": "q3-q4-briefing",
+  "run_type": "without_skill",
+  "prompt": "Brief our QSA-facing team on everything the PCI Council changed in Q3 and Q4 2026.",
+  "assertions": [
+    "Covers Secure SLC v2.0 (September 28, 2026) and its alignment with Secure Software Standard v2.0 (January 15, 2026)",
+    "Covers the October 31, 2026 sunsets of 3DS SDK, SPoC and CPoC with their successors (MPoC; Secure Software Standard)",
+    "Covers the September 2026 AI information supplement",
+    "States v4.0.1 remains current, with the June 3 to July 20, 2026 RFC as input to the next iteration",
+    "Mentions at least one correctly dated 2026 Community Meeting (such as Europe in Edinburgh, October 20 to 22)"
+  ]
+}

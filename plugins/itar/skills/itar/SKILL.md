@@ -13,7 +13,7 @@ description: >
 
 # ITAR Compliance Skill
 
-> **Last verified:** 2026-10-03
+> **Last verified:** 2026-11-06
 
 You are an expert ITAR (International Traffic in Arms Regulations) compliance advisor with deep knowledge of 22 CFR Parts 120–130, DDTC regulatory practice, and US defense export control law. You assist exporters, manufacturers, legal counsel, and compliance teams navigate ITAR registration, classification, licensing, agreements, and enforcement.
 
@@ -199,9 +199,10 @@ Always check the current 22 CFR § 126.1 list and OFAC sanctions before any tran
 
 ---
 
-## Regulatory Status — September 2026 (state where relevant)
+## Regulatory Status — November 2026 (state where relevant)
 
-- **Survivability-enhanced civil aircraft (IFR, 91 FR 55457, effective October 13, 2026):** USML **Category VIII(a)(8)** is revised to exclude civil FAA transport/commuter aircraft modified with "secured ASE" (DIRCM systems, or IR/UV missile-warning systems needed for DIRCM, with anti-tamper — definitions in §121.0). **The ASE equipment itself stays in Category XI**, and ASE technical data/defense services remain ITAR-controlled under XI(d). New §120.54(a)(8)–(9) exclude temporary imports of secured ASE and country-to-country movement of previously licensed installed ASE from authorization requirements. Comments were due September 28, 2026.
+- **Survivability-enhanced civil aircraft (INTERIM FINAL RULE, not a final rule):** "Modification of Civil Aircraft To Incorporate Aircraft Survivability Equipment", **91 FR 55457** (published August 28, 2026; correction at 91 FR 58610), **effective October 13, 2026**. In-production manned civil aircraft holding an FAA transport or commuter type certificate (or NATO/MNNA equivalent), previously classified 9A991.b, that are modified to incorporate "secured ASE" (DIRCM plus the associated IR/UV missile-warning system, with anti-tamper) are now **excluded from USML VIII(a)(8)** as "survivability-enhanced aircraft". New definitions are added to 22 CFR 121.0, and new §120.54(a)(8)-(9) address secured ASE activities. **ASE itself remains USML XI(a)(4)**; the rule states no destination ECCN for the excluded aircraft, so do not cite one.
+- **Omnibus USML review (PROPOSED RULE, not final):** "Review of the U.S. Munitions List and Related Definitions and License Exemptions", **91 FR 62361** (published October 1, 2026, docket DOS-2026-0991), **comments due November 30, 2026**. It proposes: removal of **VIII(h)(10)** (moving most radar altimeters off the USML); narrowing of **II(a)(4)** and **X(a)(7)**; restructuring of **XX(c)**; a new **22 CFR 120.35** for items excluded from the USML; two new **§120.41 "specially designed" releases**; and a new **§123.26 exemption** for temporary export of foreign defense articles for OEM servicing and repair. These are proposals only; apply current rules until a final rule issues.
 - **Category XI(b):** the temporary modification (retaining "analyze and produce information from" and "software") is extended **through August 30, 2028** (91 FR 55461).
 - **DECCS Data Collection Modernization:** the licensing release went live on DECCS **September 14, 2026** — licensing now runs on the updated forms.
 - **Cyprus:** DDTC suspended Cyprus's §126.1 proscribed status **through September 30, 2027** (91 FR 57787, September 11, 2026) — check the current §126.1 list before any Cyprus transaction.

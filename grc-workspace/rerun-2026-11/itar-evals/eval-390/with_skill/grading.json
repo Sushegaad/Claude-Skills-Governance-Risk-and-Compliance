@@ -1,0 +1,33 @@
+{
+  "eval_id": 390,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the October 1, 2026 omnibus proposed rule would remove and reserve VIII(h)(10)",
+      "passed": true,
+      "evidence": "\"91 FR 62361, published October 1, 2026\" ... \"It proposes removing VIII(h)(10), which would move most radar altimeters off the USML.\""
+    },
+    {
+      "text": "Makes clear nothing has changed yet: the items remain ITAR-controlled while the rule is at proposal stage",
+      "passed": true,
+      "evidence": "\"nothing has changed yet. The removal of USML VIII(h)(10) is a PROPOSAL, not a final rule. Until a final rule issues, your civil radar altimeters caught by VIII(h)(10) stay ITAR-controlled.\""
+    },
+    {
+      "text": "States the comment deadline: November 30, 2026 (docket DOS-2026-0991)",
+      "passed": true,
+      "evidence": "\"docket DOS-2026-0991\" and \"Comments are due November 30, 2026.\""
+    },
+    {
+      "text": "Explains that if finalized, the items would transition out of the USML (to EAR jurisdiction) and the final rule's terms should be monitored",
+      "passed": true,
+      "evidence": "\"would move most radar altimeters off the USML. Presumably they would fall under Commerce (EAR) jurisdiction. The destination classification and any retained exceptions should be confirmed in the final text.\""
+    },
+    {
+      "text": "Advises maintaining ITAR compliance in the interim and considering a comment submission",
+      "passed": true,
+      "evidence": "\"Keep treating the altimeters, their technical data and software as ITAR-controlled\" and \"Consider commenting by November 30, 2026.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

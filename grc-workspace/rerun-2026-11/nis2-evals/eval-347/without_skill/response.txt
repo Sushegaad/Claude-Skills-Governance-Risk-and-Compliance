@@ -1,0 +1,29 @@
+Austria: NIS2 implementation for a 120-employee manufacturing subsidiary
+
+Caveat: I cannot browse and my knowledge may lag. Austria's implementing law is the Network and Information Systems Security Act 2026 (NIS-Gesetz 2026, NISG 2026). To my knowledge it was adopted by the National Council in December 2025 and was expected to apply during 2026 (I recall an autumn 2026 start, possibly 1 October 2026). Confirm the exact entry-into-force date, registration deadline and the secondary regulations in the Austrian Federal Law Gazette (BGBl) and RIS before acting.
+
+1. Are you in scope?
+- Size: 120 employees puts you in the "medium" category (50 to 249 staff or turnover/balance sheet above EUR 10m). Check the group: Austria applies the EU size-cap rules, so linked and partner enterprises (Recommendation 2003/361) count. If the group is large, you will likely be assessed as large for sizing purposes.
+- Sector: only certain manufacturing falls into Annex II ("other critical sectors", manufacturing of medical devices and in vitro diagnostics, computer, electronic and optical products, electrical equipment, machinery n.e.c., motor vehicles, trailers, other transport equipment). General manufacturing (for example furniture, food processing) is a different annex: food production is Annex II "production, processing and distribution of food", not manufacturing. Map your NACE codes against the annexes.
+- If in scope, a medium manufacturer is an "important entity" (wichtige Einrichtung), not an "essential entity" (wesentliche Einrichtung), unless it is designated otherwise. Supervision for important entities is ex post, whereas essential entities face proactive supervision.
+
+2. What it requires
+- Registration: in-scope entities must register with the competent authority (the Federal Minister of the Interior, BMI, via the national contact point) within a set period after entry into force. I recall a window of about three months; verify.
+- Risk-management measures (Art. 21 equivalent): risk analysis and information-security policies, incident handling, business continuity and crisis management, supply-chain security, secure acquisition/development and vulnerability handling, effectiveness assessment, cyber hygiene and training, cryptography, access control and asset management, MFA/secure communications. Austria also allows sector-specific or recognised standards (ISO 27001, etc.) as supporting evidence.
+- Incident reporting: early warning within 24 hours, incident notification within 72 hours, final report within one month, to the CSIRT (CERT.at / GovCERT / sector CSIRT as designated) and the authority.
+- Governance: management bodies must approve measures, oversee them and complete training. Management can be held liable.
+- Evidence: important entities must be able to show compliance on request. Essential entities have a periodic proof obligation (I recall every three years). Check whether Austria applies periodic proof also to important entities.
+- Penalties: up to EUR 7m or 1.4% of worldwide turnover for important entities (EUR 10m or 2% for essential), whichever is higher.
+
+3. By when
+- The law's entry into force date is the key trigger. Registration is due within a short window after that, and the risk-management and reporting duties apply from entry into force (with supervision ramping up). If you were not already prepared, treat the registration window as the first hard deadline, and aim to close the main Article 21 gaps within about 6 to 12 months.
+
+4. Practical steps now
+1. Confirm scope with a NACE and group-structure analysis, and document the conclusion.
+2. Register in time.
+3. Run a gap assessment against ISO 27001 / the Art. 21 list, and prioritise supply chain, incident response and OT/ICS security (important for manufacturing).
+4. Build the 24h/72h/1-month reporting procedure and test it.
+5. Brief and train the managing directors (Geschaeftsfuehrer) and keep records.
+6. Align with group NIS2 programmes in other countries, since you may be reporting in more than one state.
+
+Please verify the dates and annex mapping with Austrian counsel.

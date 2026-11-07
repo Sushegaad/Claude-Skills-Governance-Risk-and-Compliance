@@ -1,0 +1,33 @@
+{
+  "eval_id": 381,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States no: no Section 508 refresh rulemaking is under way as of November 2026",
+      "passed": false,
+      "evidence": "Hedges rather than stating no: \"I cannot confirm that claim... My knowledge may lag, so I can't rule it out\""
+    },
+    {
+      "text": "Explains the 2026 reports trace back to the 2015 proposed rule and are not supported by the Federal Register record",
+      "passed": false,
+      "evidence": "Attributes confusion to the January 2017 final rule being misdescribed; never traces the 2026 reports to the 2015 proposed rule (80 FR 10880)"
+    },
+    {
+      "text": "States the operative baseline: the 2017 Revised 508 Standards (82 FR 5790, January 18, 2017) incorporating WCAG 2.0 Level AA",
+      "passed": true,
+      "evidence": "\"Refresh final rule in January 2017 (82 FR 5790)\"; \"Revised 508 Standards (36 CFR Part 1194...) incorporate WCAG 2.0 Level A and AA by reference\""
+    },
+    {
+      "text": "Notes compliance has been required since January 18, 2018, with the legacy safe harbor for unaltered ICT",
+      "passed": false,
+      "evidence": "States \"Its compliance date was January 18, 2018\" but never mentions the legacy ICT safe harbor"
+    },
+    {
+      "text": "Identifies the actual 2026 Access Board rulemakings as unrelated (universal changing stations ANPRM and FOIA regulations) or at minimum confirms no ICT rulemaking exists",
+      "passed": false,
+      "evidence": "Does not confirm no ICT rulemaking exists: \"I can't rule it out\"; no mention of the actual 2026 rulemakings"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

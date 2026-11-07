@@ -1,0 +1,13 @@
+{
+  "eval_id": 378,
+  "eval_name": "pdpl-enforcement",
+  "run_type": "with_skill",
+  "prompt": "Is SDAIA actually enforcing the Saudi PDPL? What enforcement activity is on the record?",
+  "assertions": [
+    "States SDAIA announced in January 2026 that it issued 48 violation decisions during 2025",
+    "Lists the violation categories: processing without legal basis, unlawful disclosure, inadequate safeguards, marketing without consent",
+    "Notes no entity names or penalty amounts were disclosed",
+    "Describes the penalty frame accurately (fines up to SAR 5M per violation, doubling for repeat violations)",
+    "States the 2025 proposed PDPL amendments are not enacted as of November 2026 and advises confirming current status with SDAIA"
+  ]
+}

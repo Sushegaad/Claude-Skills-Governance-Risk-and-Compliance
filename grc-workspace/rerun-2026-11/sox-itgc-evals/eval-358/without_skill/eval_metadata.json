@@ -1,0 +1,13 @@
+{
+  "eval_id": 358,
+  "eval_name": "as2201-agenda",
+  "run_type": "without_skill",
+  "prompt": "Has AS 2201 changed in 2026? What is actually on the PCAOB standard-setting agenda?",
+  "assertions": [
+    "States AS 2201 is unamended in 2026 and is not on the September 30, 2026 agenda",
+    "Lists agenda topics accurately, including fraud (AS 2401), NOCLAR, going concern (AS 2415), comfort letters, and auditor independence",
+    "Notes this is the first agenda under Chair Demetrios Logothetis",
+    "Identifies QC 1000 (effective December 15, 2026) as the near-term change affecting audits",
+    "Does not invent AS 2201 amendments or effective dates"
+  ]
+}

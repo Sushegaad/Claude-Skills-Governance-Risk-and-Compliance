@@ -1,0 +1,20 @@
+Short answer: No. As of November 2026 there is no PCI DSS v5. PCI DSS v4.0.1 (published June 2024) remains the current version, and the Council has not announced a successor. Your 2027 validation should target v4.0.1.
+
+Where things stand
+- v3.2.1 was retired on March 31, 2024.
+- v4.0 (March 2022) was superseded by v4.0.1 (June 2024). v4.0.1 is a limited revision that corrects errors and clarifies wording and adds no new controls.
+- All the "future-dated" v4.0 requirements became mandatory on March 31, 2025. These include 6.4.3 and 11.6.1 (payment page scripts), 8.4.2 (MFA for all access into the CDE), 5.4.1 (anti-phishing), and 10.4.1.1 (automated log review). So your 2027 assessment will treat them as fully in force, with no "best practice" grace.
+- The Council ran a Request for Comments on v4.0.1 from June 3 to July 20, 2026. It is input to the next iteration of the standard. It is not a published draft, and it does not tell us the next version number, its content or its dates.
+
+What to target for 2027
+- Plan and scope against v4.0.1. That is the version your QSA or ISA will assess against and the version your SAQ or AOC will reference.
+- Do not delay work in anticipation of a new version. Historically, new major versions come with a long overlap period between the old and new standard, but I cannot tell you the timing of any future version, so do not plan around it.
+
+Planning points for 2027
+1. Run a v4.0.1 gap assessment now. Focus on the items that most often fail: MFA coverage (8.4.2), script inventory and integrity (6.4.3, 11.6.1), automated log review (10.4.1.1), the targeted risk analysis process (12.3.1), and ASV and pen test evidence including segmentation testing.
+2. Confirm your merchant or service provider level and validation type (ROC or SAQ) with your acquirer or the card brands, because that decides the evidence you need to produce.
+3. If you file a ROC, note the Council's August 31, 2026 update to FAQ 1331. SAQ eligibility criteria cannot be used as a guide for requirement applicability in a ROC unless you have reviewed and agreed it with your compliance accepting entity, such as the payment brands and acquirer. QSA agreement alone is not enough. Anyone marking 6.4.3 or 11.6.1 as not applicable on SAQ A-style reasoning needs written acquirer or brand approval.
+4. Build a small watch process. Track the PCI SSC document library and announcements for the output of the RFC, and re-check quarterly.
+5. Keep a single mapping of your controls to the requirements. If a new version arrives, a clean mapping makes the delta assessment much cheaper.
+
+This is informational guidance based on the published standard. Verify the current version and any announcements on pcisecuritystandards.org and with your QSA or acquirer.

@@ -1,0 +1,26 @@
+Central Bank of Ireland Outsourcing: What Changed in October 2026?
+
+Direct answer: I cannot confirm any specific change in October 2026. My knowledge is reliable through roughly mid-2026 and I do not have verified information on a CBI outsourcing publication, amendment or consultation issued that month. I will not invent one. Below is the verified baseline, what could plausibly have moved, and how to check quickly.
+
+1. Baseline (verified through my knowledge)
+- Cross-Industry Guidance on Outsourcing (CBI, published December 2021; firms had until 14 December 2022 to comply). It covers governance and board accountability, outsourcing policy and strategy, risk assessment, due diligence, contractual provisions, ongoing monitoring, sub-outsourcing (fourth parties), concentration risk, intragroup arrangements, exit strategies and business continuity, and notification to the CBI of planned or actual critical or important outsourcing. It is guidance, but the CBI expects firms to apply it and measures them against it, alongside the Corporate Governance Requirements, the Cross-Industry Guidance on Operational Resilience (2021, in force from December 2023), and IT/cyber risk guidance (2016 Cross-Industry Guidance on IT Outsourcing and cyber).
+- The CBI's Outsourcing Register / outsourcing notification expectations, and its 2022 Dear CEO and thematic findings on outsourcing.
+- DORA (Regulation (EU) 2022/2554) has applied since 17 January 2025 to most CBI-regulated financial entities (banks, investment firms, insurers, payment and e-money institutions, UCITS ManCos/AIFMs, etc.). For ICT third-party arrangements, DORA Chapter V, the RTS on ICT policy and subcontracting, the Register of Information (first submissions 2025) and ITS templates take precedence. The CBI has stated that its outsourcing guidance continues to apply to non-ICT outsourcing and to entities outside DORA's scope, and where it does not conflict with DORA. Entities in scope of EBA Guidelines on outsourcing (EBA/GL/2019/02) and EIOPA/ESMA outsourcing guidelines (cloud) must also consider those.
+
+2. What October 2026 might plausibly involve (unverified)
+- A CBI update, FAQ or consultation to align its 2021 guidance with DORA (for example, clarifying that ICT-related elements are superseded and non-ICT outsourcing remains in scope).
+- Feedback from DORA register of information reviews or supervisory themes in the CBI's regulatory and supervisory outlook.
+- Developments in the EU critical ICT third-party provider (CTPP) oversight regime: ESAs designated CTPPs in late 2025; oversight activity and examinations continue through 2026.
+- Any related Irish items such as the Central Bank (Individual Accountability Framework) interplay with outsourcing responsibility, or an Irish DORA competent authority notice.
+
+3. How to verify within a day
+- Check centralbank.ie: Regulation > Outsourcing, Industry Notices, Consultation Papers, and Markets Update newsletters for October 2026.
+- Check the ESAs' DORA pages (EBA, EIOPA, ESMA) for new RTS/ITS, CTPP oversight updates and Q&As.
+- Ask your CBI supervisory contact whether any guidance revision or thematic review is in flight.
+
+4. Recommended actions regardless
+- Maintain a crosswalk of the CBI outsourcing guidance to DORA Articles 28-30 and the Register of Information, and record where each obligation is covered.
+- Re-check contracts for DORA Art. 30 clauses, sub-outsourcing chains and exit plans; confirm notification processes for critical or important functions.
+- Document the review of any October 2026 publication in your governance records (board/risk committee) and update policies accordingly.
+
+If you can paste the October 2026 publication or its title, I can map the specific changes to your controls.

@@ -1,0 +1,35 @@
+QC 1000 and your December 2026 year-end integrated audit
+
+Short answer: QC 1000 is a firm-level PCAOB standard for audit firms. It is not a requirement on your company. It should not change what you have to do for ICFR or ITGC, but you may notice indirect effects in how your audit firm runs the engagement.
+
+What QC 1000 is
+- QC 1000, "A Firm's System of Quality Control," was adopted by the PCAOB in May 2024 and approved by the SEC later that year.
+- It replaces the legacy QC sections (QC 20 and related) and the "interim" quality control standards.
+- It is a risk-based standard modeled on the IAASB's ISQM 1. The firm identifies quality risks, designs responses, monitors them, and remediates deficiencies.
+- Its components are governance and leadership, the firm's risk assessment process, relevant ethical requirements and independence, acceptance and continuance of engagements, engagement performance, resources (including technology and intellectual resources), information and communication, and the monitoring and remediation process.
+- Firms must make an annual evaluation of the system and report it to the PCAOB on a new Form QC. Larger firms, those that audit accelerated filers or large accelerated filers, have additional requirements. These include designating individuals with specific responsibility (such as a Quality Control Leader) and following specified monitoring and evaluation procedures.
+- Related conforming amendments were adopted at the same time, including changes to the engagement quality review standard (AS 1220) and other standards.
+
+Effective date
+- The original effective date was December 15, 2025. The PCAOB extended it by one year, to December 15, 2026.
+- Firms must have the system designed and implemented by that date. The first annual evaluation is as of a later date (I recall September 30, 2027), with Form QC reporting after that.
+- Please confirm these dates against the current PCAOB website. The PCAOB's agenda and board composition have changed, and I am working from memory without live sources.
+
+Does it affect your December 2026 year-end audit?
+- Legally it applies to the firm. A December 31, 2026 audit is performed after the December 15, 2026 effective date, so your audit will be done by a firm operating under QC 1000.
+- It does not change AS 2201, AS 2110, AS 2301 or your management's SOX 302/404 responsibilities. Management's ICFR assessment criteria (COSO 2013) are unaffected.
+- It does not create new deliverables for the issuer.
+
+Practical indirect effects to expect
+1. Engagement acceptance and continuance. Your firm may ask more questions or refresh its client risk assessment.
+2. Resources and technology. The standard addresses firms' use of technology. Your firm may ask how you use AI or automation in financial reporting and controls, and may document its own tool use more heavily.
+3. Engagement quality review. Expect tighter and better-documented EQR involvement, particularly for higher-risk areas such as ITGC reliance decisions.
+4. Documentation and timing. Firms may add internal consultation or review steps, which could move timetables or increase requests for PBC items. Raise this early.
+5. Communication. Audit committees may hear more about the firm's quality system and its own ICFR-independent monitoring results.
+6. Independence and ethics. The standard reinforces independence monitoring, so confirm that your non-audit services (including any advisory work related to ITGC) are pre-approved by the audit committee.
+
+What I suggest
+- Ask your audit partner how the firm is implementing QC 1000 and whether any timing or request changes are planned for the year-end audit.
+- Confirm the audit committee's pre-approval policy is current.
+- No change to your ITGC test plan is needed because of QC 1000. Keep following the planned scope for access, change management, operations, and interface controls.
+- Verify the dates and any further amendments or deferrals directly on the PCAOB website before relying on them.

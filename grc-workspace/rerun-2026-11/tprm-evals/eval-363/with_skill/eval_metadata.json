@@ -1,0 +1,13 @@
+{
+  "eval_id": 363,
+  "eval_name": "community-bank-core",
+  "run_type": "with_skill",
+  "prompt": "We are a community bank heavily dependent on one core service provider. Any new supervisory expectations in late 2026?",
+  "assertions": [
+    "Mentions the Joint Statement on Community Banks' Engagement with Core Service Providers issued by the agencies alongside the proposal",
+    "Describes the September 15, 2026 interagency proposal that would replace the 2023 guidance and rescind the 2024 community bank TPRM guide",
+    "States the comment deadline: November 16, 2026",
+    "Confirms the June 2023 guidance remains the operative framework today",
+    "Gives practical steps: review the core provider contract, monitoring and exit planning against current guidance while tracking the proposal"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 357,
+  "eval_name": "inspection-trends",
+  "run_type": "without_skill",
+  "prompt": "What did the PCAOB's latest inspection publication say, and what does it mean for our ITGC testing?",
+  "assertions": [
+    "Identifies the October 22, 2026 Spotlight: Staff Update on 2025 Inspections of Public Company Audits",
+    "States the aggregate Part I.A deficiency rate fell to 23 percent in 2025, from 38 percent in 2024 and 46 percent in 2023",
+    "Gives the scale: 143 firms inspected, portions of 780 audits reviewed",
+    "Notes Part I.A blends financial-statement and ICFR opinions, with no ITGC-only breakdown published",
+    "Draws the practical implication: continued auditor focus on evidence sufficiency in ICFR, including IT general controls"
+  ]
+}

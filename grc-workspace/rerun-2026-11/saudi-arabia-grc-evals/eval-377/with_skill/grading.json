@@ -1,0 +1,33 @@
+{
+  "eval_id": 377,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Places the supplier in Category B (6 to 249 employees or SAR 3M to 200M revenue) under NCNICC-1:2025",
+      "passed": true,
+      "evidence": "\"falls under NCA NCNICC-1:2025 as a Category B SME\" ... \"Category B covers 6 to 249 employees or SAR 3M to 200M revenue. 40 employees fits\""
+    },
+    {
+      "text": "States Category B faces 13 sub-components and 26 mandatory controls, with the remainder recommended",
+      "passed": true,
+      "evidence": "\"Category B has 13 sub-components and 26 mandatory controls. The remaining controls are recommended, not required.\""
+    },
+    {
+      "text": "Notes the instrument was published in Arabic only",
+      "passed": true,
+      "evidence": "\"It was adopted on 28 December 2025 and is published in Arabic only.\""
+    },
+    {
+      "text": "States compliance is continuous with no published deadline",
+      "passed": true,
+      "evidence": "\"No compliance deadline has been published, and the NCA may assess at any time without notice. The supplier should treat readiness as immediate.\""
+    },
+    {
+      "text": "Distinguishes NCNICC applicability from the ECC, which targets critical national infrastructure",
+      "passed": true,
+      "evidence": "NCNICC listed as \"Mandatory, Category B SME\" while \"ECC-2:2024 is not mandatory for them\" because the supplier \"does not own, operate or host CNI.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

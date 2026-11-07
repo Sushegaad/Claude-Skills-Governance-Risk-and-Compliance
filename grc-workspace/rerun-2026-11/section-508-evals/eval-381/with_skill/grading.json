@@ -1,0 +1,33 @@
+{
+  "eval_id": 381,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States no: no Section 508 refresh rulemaking is under way as of November 2026",
+      "passed": true,
+      "evidence": "\"As of November 2026 I'm not aware of any Access Board NPRM... the Federal Register record doesn't show one... treat the report as unsupported\""
+    },
+    {
+      "text": "Explains the 2026 reports trace back to the 2015 proposed rule and are not supported by the Federal Register record",
+      "passed": true,
+      "evidence": "\"The most likely source is the 2015 Access Board proposed rule (80 FR 10880)... reports in 2026 appear to have recycled it as if it were new\""
+    },
+    {
+      "text": "States the operative baseline: the 2017 Revised 508 Standards (82 FR 5790, January 18, 2017) incorporating WCAG 2.0 Level AA",
+      "passed": true,
+      "evidence": "\"published at 82 FR 5790 (January 18, 2017)\" with \"WCAG 2.0 Level A and AA, incorporated by reference\""
+    },
+    {
+      "text": "Notes compliance has been required since January 18, 2018, with the legacy safe harbor for unaltered ICT",
+      "passed": true,
+      "evidence": "\"Compliance has been required since January 18, 2018\" and \"Legacy ICT is covered by the safe harbor until it is altered or replaced\""
+    },
+    {
+      "text": "Identifies the actual 2026 Access Board rulemakings as unrelated (universal changing stations ANPRM and FOIA regulations) or at minimum confirms no ICT rulemaking exists",
+      "passed": true,
+      "evidence": "Does not name the changing stations ANPRM or FOIA rules, but confirms no ICT rulemaking: \"the Federal Register record doesn't show one\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

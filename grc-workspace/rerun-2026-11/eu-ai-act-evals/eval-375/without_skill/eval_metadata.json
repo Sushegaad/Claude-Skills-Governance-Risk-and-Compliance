@@ -1,0 +1,13 @@
+{
+  "eval_id": 375,
+  "eval_name": "code-of-practice",
+  "run_type": "without_skill",
+  "prompt": "Should we sign the GPAI Code of Practice? Who has signed as of November 2026 and what does signing get us?",
+  "assertions": [
+    "States the Commission's signatory page (updated October 7, 2026) lists 22 full signatories",
+    "Correctly names several signatories (for example Amazon, Anthropic, Google, IBM, Microsoft, Mistral AI, OpenAI)",
+    "Notes xAI signed the Safety and Security chapter only",
+    "Explains adherence is a recognised way to demonstrate GPAI obligation compliance",
+    "Places the decision in the enforcement context: information requests have reportedly begun, so documentation should be inspection-ready"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 362,
+  "eval_name": "cbi-cp173",
+  "run_type": "with_skill",
+  "prompt": "Our Irish regulated entity follows the Central Bank of Ireland's outsourcing guidance. What changed in October 2026?",
+  "assertions": [
+    "States the CBI published CP173 on October 8, 2026: a consultation on guidance for the sound management of third-party risks",
+    "States the consultation closes December 3, 2026",
+    "States the final guidance will replace the December 2021 Cross-Industry Guidance on Outsourcing",
+    "Describes the shift to an outcomes-based, cross-industry approach and links it to the EBA's September 2026 final guidelines on third-party risk for non-ICT services",
+    "Keeps the 2021 guidance operative pending final guidance and does not assert a fixed publication date for it"
+  ]
+}

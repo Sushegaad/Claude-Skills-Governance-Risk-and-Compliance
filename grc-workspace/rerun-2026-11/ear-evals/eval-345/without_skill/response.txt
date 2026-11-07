@@ -1,0 +1,61 @@
+PREMISE CHECK
+The BIS Affiliates (50%) Rule was issued on September 29, 2025. After the US-China leaders' meeting it was suspended for one year, beginning about November 10, 2025. The suspension is therefore due to lapse around November 9-10, 2026. I cannot confirm what has happened since then, such as an extension, amendment or termination. Verify the status in the Federal Register and BIS website, and adjust the plan below if needed. The program updates below are useful in either case, since they close a real gap (name-only screening).
+
+PROGRAM UPDATE PLAN
+
+1. GOVERNANCE AND POLICY
+- Update the export compliance program (ECP) or manual. Add a section stating that the company treats an entity as restricted if it is 50% or more owned, directly or indirectly, individually or in the aggregate, by one or more Entity List or MEU List parties.
+- Name the owners: the Empowered Official or export control officer, a legal reviewer, and an executive sponsor. Add an escalation path.
+- Record management commitment: a signed statement and a budget for the screening and diligence uplift.
+- Add a trigger for the policy: "regulatory status monitor". Assign an owner to track the suspension, any extension, and any FAQ or guidance updates, and a date to review status each week until the stay date passes.
+- Review the policy against the BIS Export Compliance Guidelines (the eight elements) to be sure each one is covered.
+
+2. RISK ASSESSMENT
+- Map your exposure: customers, distributors, resellers, agents, forwarders, end users, and vendors in China, Hong Kong, Macau, Russia, Belarus, Iran, and other high-diversion locations. Include items controlled by ECCN, items with Part 744 license requirements, and EAR99 items, since the Entity List scope often covers EAR99.
+- Estimate revenue, shipments, open orders and pipeline that would be affected if a counterparty turned out to be an affiliate.
+- Rank the risk. Then plan resources by tier.
+
+3. SCREENING AND DATA
+- Upgrade from name-only screening to ownership-aware screening with beneficial-ownership data. Make sure it computes aggregate ownership across multiple listed parties and across multi-tier chains (for example, 30% + 30% = 60%).
+- Apply the logic to all parties on a transaction: purchaser, consignee, intermediate consignee, end user, bank, and freight forwarder.
+- Update customer master data with ownership percentage, ultimate beneficial owners, date verified, source, reviewer, and next review date.
+- Back-screen the existing customer base, prioritising by risk tier. Document the results, and the way you resolved each hit.
+- Run screening at onboarding, before each order or shipment (transaction screening), on list updates, and on a periodic schedule.
+- Keep an alert-handling procedure: false-positive criteria, evidence needed to clear a hit, and approval levels.
+
+4. DUE DILIGENCE AND CUSTOMER DOCUMENTATION
+- Ownership questionnaire and certification: ultimate beneficial owners at 25% and above, any listed party at any percentage, and a duty to notify within a set time of ownership changes.
+- Evidence standards: corporate registry extracts, shareholder registers, annual filings, and independent data. Escalate where ownership is opaque (nominee holders, trusts, bearer shares, circular holdings).
+- Red-flag procedure: "Know Your Customer" guidance (Supplement No. 3 to Part 732). Control or influence without 50% ownership is not captured by the rule, but should still prompt review.
+- Re-papering: send the questionnaires to the highest-risk customers and distributors first.
+
+5. TRANSACTION CONTROLS
+- Add a hold in ERP/order management for parties with unknown ownership, unresolved alerts, or listed-affiliate status. Release only on documented approval.
+- Add license determination steps: if the party is an affiliate, check the owner's listing scope, license requirement, review policy and any license exceptions, and look at the transition provisions.
+- Check the in-transit and backlog position at the effective date, and any authorisations you may need to apply for in advance. Plan for long license processing times.
+
+6. CONTRACTS
+- Add clauses to customer, distributor, and supplier contracts: compliance with the EAR, ownership representations, notification of changes, suspension and termination rights, audit rights, and no-resale to restricted parties.
+- Review existing agreements for force majeure or change-in-law provisions that you may rely on if shipments stop.
+
+7. TRAINING
+- Role-based training for sales, order management, customer service, logistics, finance, procurement, and the legal team. Cover: what the rule is, how aggregation works, how to spot red flags, whom to escalate to.
+- Brief the board or executive team. Record attendance and keep the material.
+
+8. MONITORING, AUDIT AND RECORDKEEPING
+- Add audit steps for ownership checks in your internal audit plan. Test a sample of transactions, and test the screening tool's aggregate calculation with known examples.
+- Keep records for five years (EAR Part 762): ownership evidence, screening results, decisions, and licenses.
+- Define KPIs: coverage of master data with ownership data, alert volumes and aging, hold times, training completion.
+
+9. VIOLATIONS AND REPORTING
+- Review the escalation and voluntary self-disclosure procedure (EAR 764.5). Add a way to handle any past shipment to a party later found to be an affiliate.
+- Keep a record of the date on which you first knew of the rule and the steps taken. It can help in mitigation.
+
+10. TIMELINE
+- Weeks 0-2: confirm status, appoint owners, risk-rank, choose a data vendor.
+- Weeks 2-6: configure screening, back-screen top-tier parties, issue questionnaires, update the policy.
+- Weeks 6-10: transaction holds, contract updates, training, tests.
+- Ongoing: monitor the status and list changes, and re-screen on each change.
+
+CAUTION
+Details such as exact ownership-measurement rules, the license policy for affiliates, and any transition provisions come from the rule text and BIS FAQs. Have trade counsel verify them. This is general guidance and not legal advice.

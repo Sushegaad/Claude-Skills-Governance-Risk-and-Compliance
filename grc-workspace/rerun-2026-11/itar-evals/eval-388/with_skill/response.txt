@@ -1,0 +1,35 @@
+Jurisdiction analysis: modified civil aircraft with survivability equipment (as of November 6, 2026)
+
+Key rule: "Modification of Civil Aircraft To Incorporate Aircraft Survivability Equipment," an INTERIM FINAL RULE (not a final rule), 91 FR 55457 (published August 28, 2026; correction 91 FR 58610), effective October 13, 2026. It is in force now, but DDTC may revise it after comments.
+
+Step 1. Identify the article and separate it into pieces
+Analyze the aircraft, the survivability equipment, and the technical data and services separately. They can have different jurisdictions.
+
+Step 2. Test the aircraft against the USML (22 CFR 121.1, Category VIII)
+- Under the interim final rule, an in-production, manned civil aircraft that holds an FAA transport or commuter type certificate (or the NATO/MNNA equivalent), was previously classified 9A991.b, and is modified to incorporate "secured ASE" is EXCLUDED from USML VIII(a)(8) as a "survivability-enhanced aircraft."
+- "Secured ASE" means DIRCM plus the associated IR/UV missile-warning system, with anti-tamper.
+- The rule adds definitions to 22 CFR 121.0 and new 22 CFR 120.54(a)(8)-(9) on secured ASE activities.
+- If all conditions are met, the aircraft is not a VIII(a)(8) article. The rule states no destination ECCN, so do not assign one. Resolve the EAR classification through counsel or a commodity classification or CJ request.
+- If any condition fails (out-of-production airframe, non-transport/commuter certificate, unsecured or partial ASE fit, different prior classification, unmanned aircraft), the carve-out may not apply, and the aircraft stays in the general USML analysis. When in doubt, treat the aircraft as ITAR until a CJ confirms otherwise.
+
+Step 3. Test the ASE itself
+- The ASE remains USML XI(a)(4). The DIRCM, the missile-warning sensors, their software and their anti-tamper features stay ITAR-controlled defense articles. The carve-out does not release them.
+- Apply the "specially designed" test (22 CFR 120.41) to any components, such as brackets, wiring and cooling items, to see whether they are caught by XI or VIII, or are released.
+
+Step 4. Technical data and defense services
+- Technical data directly related to the ASE (22 CFR 120.33) stays ITAR-controlled. A release to a foreign person in the US is a deemed export (22 CFR 120.50).
+- Integration, installation, testing, training and maintenance assistance for foreign persons can be defense services (22 CFR 120.32) and needs a TAA or other authorization under Part 124.
+
+Step 5. Licensing and restrictions
+- Exports of the ASE need a DSP-5 (permanent) or DSP-73 (temporary), unless an exemption clearly applies.
+- Check 22 CFR 126.1 and OFAC before any transaction. Cyprus's proscribed status has been suspended through September 30, 2027 (91 FR 57787), so check the current 126.1 list.
+- Registration, Empowered Official, TCP, screening and 5-year records requirements (22 CFR 122.5) are unchanged.
+
+Step 6. Document and escalate
+- Record the classification, the facts supporting each condition, and the rule citation. Review whenever the configuration changes.
+- File a Commodity Jurisdiction request (22 CFR 120.4) if any element is ambiguous.
+- The October 2026 omnibus USML review (91 FR 62361, comments due November 30, 2026) is only proposed and does not change this analysis.
+
+Bottom line: the aircraft may leave VIII(a)(8) if it meets all conditions, but the ASE and its data and services remain ITAR-controlled under XI(a)(4) and Parts 120-126.
+
+This is general compliance information, not legal advice. Verify against the Federal Register text and consult counsel.

@@ -1,0 +1,13 @@
+{
+  "eval_id": 342,
+  "eval_name": "affiliates-licensing-mechanics",
+  "run_type": "with_skill",
+  "prompt": "If the Affiliates Rule takes effect in January 2027, how would it change license requirements for a customer that is 60 percent owned by two different Entity List parties (30 percent each)?",
+  "assertions": [
+    "States aggregate ownership counts: 30 plus 30 equals 60 percent, meeting the 50 percent threshold",
+    "Explains the affiliate inherits the license requirements and policy of the listed parent or parents (most restrictive where multiple apply)",
+    "Notes indirect ownership chains also count toward the threshold",
+    "Correctly frames current status: not in effect until the stay lapses, currently extended to January 10, 2027",
+    "Recommends obtaining ownership information or certifications from counterparties and screening corporate family trees"
+  ]
+}

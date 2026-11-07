@@ -1,0 +1,36 @@
+Short answer: yes, a refresh is in motion, but it is a proposal only. It does not change your current audit.
+
+STATUS AS OF NOVEMBER 2026
+
+- On October 28, 2026, the AICPA's Assurance Services Executive Committee (ASEC) issued an exposure draft titled "Proposed 2027 SOC 2 Trust Services Criteria and Description Criteria" (draft dated October 27, 2026). This is the first major refresh of the Trust Services Criteria (TSC) since the 2017 criteria (which carry the 2022 Revised Points of Focus).
+- What it proposes:
+  - It keeps the five trust services categories: Security, Availability, Processing Integrity, Confidentiality and Privacy.
+  - It consolidates overlapping criteria.
+  - It adds AI-related points of focus. It does not create new AI-specific criteria.
+- Timeline:
+  - Comments are due January 15, 2027.
+  - The proposed effective date is for engagements beginning on or after December 31, 2027. Early adoption would be permitted.
+  - The final text could still change after comments. Treat the details as provisional.
+- An exposure draft has no authority. Until the AICPA finalizes and adopts the new criteria, the 2017 TSC with 2022 Revised Points of Focus are the operative criteria.
+
+WHAT THIS MEANS FOR YOU
+
+- Any Type 1 or Type 2 report whose period starts now, or in 2027, is expected to be examined against the 2017 TSC (with 2022 points of focus). Do not rebuild your control set around the proposed criteria.
+- The proposed effective date is for engagements beginning on or after December 31, 2027. That puts most 2027 periods outside the new criteria. If your auditor offers early adoption later, that is a joint decision with them. It is not a requirement.
+- Because the five categories stay, your scoping decisions (Security always, plus any of Availability, Confidentiality, Processing Integrity and Privacy) are not affected.
+
+WHAT TO DO
+
+1. Confirm with your auditor which draft they mean. Check that it is the October 2026 TSC exposure draft and not the separate attestation standards draft (see below). Ask them to confirm in writing that your current engagement uses the 2017 TSC with 2022 points of focus.
+2. Keep your control mapping anchored to the current criteria (CC1-CC9, A1, C1, PI1, P1-P8). Do not re-map to proposed numbering.
+3. Read the exposure draft, or have your compliance lead do so. Note where criteria are being consolidated and where AI points of focus could touch your environment.
+4. Decide whether to comment by January 15, 2027. This is optional, but it is your chance to influence the final wording.
+5. Prepare cheaply. Controls built to the current criteria generally carry forward. Low-regret steps:
+   - Keep your control library criterion-agnostic. Store the description, owner and evidence once, and tag it to criteria through a mapping table, so a later re-map is a spreadsheet change.
+   - If you use AI systems in scope, start documenting inventory, change control, access, data handling and monitoring for them under the existing criteria (CC6, CC7, CC8, CC9, plus C1, PI1 and P as applicable). Auditors can already ask about them today.
+   - Review your system description. If AI features are part of the service, describe them accurately.
+6. Plan for a transition decision in 2027. Once the final criteria are published, ask your auditor whether they will allow early adoption and what the cutover means for a period that spans December 31, 2027.
+
+One more point: a separate AICPA exposure draft from February 2026 covers attestation standards (AT-C 105, 205 and 210, proposed effective June 15, 2029). It does not change the TSC. If your auditor mentioned "new standards", clarify which of the two projects they meant.
+
+Formal conclusions about which criteria apply to your report are made by your licensed CPA firm. This is general guidance, not an audit opinion or legal advice.

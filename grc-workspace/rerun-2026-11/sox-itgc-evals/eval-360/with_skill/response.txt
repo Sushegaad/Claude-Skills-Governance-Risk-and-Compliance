@@ -1,0 +1,51 @@
+November-December 2026 SOX ITGC checklist (calendar year-end)
+
+Framing: by now the interim work should be done. November and December are about closing remediation, rolling controls forward to year-end, and building management's conclusion. Cadences and sample sizes below are audit convention, not regulation, so agree them with your auditor. Remediation that lands in December usually cannot show enough operation, so triage first.
+
+Early November (now)
+- Deficiency triage: list every open deficiency from interim testing. For each, record owner, root cause, fix date and re-test plan. Anything that can still operate for a sufficient period gets priority.
+- Evaluate deficiencies per AS 2201 Appendix A and Reg S-X Rule 1-02(a)(4): facts, likelihood and magnitude, compensating controls (tested before you credit them), and aggregation across the same account or assertion. Evaluate ITGC failures through the application controls and reports they affect.
+- Confirm with the auditor: year-end timeline, roll-forward expectations, sample sizes, and any change in scope.
+- Confirm filer status and whether 404(b) applies this year. Current thresholds are operative. Flag the SEC's May 19, 2026 proposal, which has no final action as of November 6, 2026.
+
+Access to programs and data
+- Run the Q4 user access review for every in-scope system and show revocations executed. Check reviewer independence and completeness of the user population.
+- Test terminations across the full year, HR term list against disable dates (24-72 hours is convention). Investigate each exception and review activity logs for post-termination use.
+- Re-enumerate privileged access: ERP superuser profiles, DB sysadmin, OS root, service accounts, firefighter logs. Justify each.
+- Check SoD rule set and mitigations, especially after any role changes.
+
+Program changes
+- Reconcile the change population: tool extract against deployment log, including configuration and master-data-engine changes, and emergency changes.
+- Confirm approval before migration, testing evidence, and developer/deployer segregation for the sample.
+- Set a year-end change freeze policy and review any late-year changes to automated controls, interfaces or key reports. Treat AI or model configuration changes as in-scope changes.
+
+Computer operations
+- Review financially relevant batch job failures and their resolution, backup completion monitoring, and the most recent restore test for in-scope systems.
+- Review incidents on financial systems for escalation to finance.
+
+Program development
+- If any implementation or migration went live this year, collect charter approval, UAT sign-off, data conversion reconciliations, go-live approval and hypercare logs.
+
+Cross-cutting
+- IPE and key reports: re-validate source, parameters, and completeness and accuracy for reports used in controls, especially if reports changed.
+- End-user computing: check access restriction, version control and review for in-scope spreadsheets.
+- SOC 1: confirm each report covers your fiscal year, get bridge letters for gaps (about three months or less), and confirm CUECs are mapped to owned controls. An unowned CUEC is a gap.
+- Cyber: if a material incident touched a financial system, assess both SOX and SEC cyber implications (8-K Item 1.05, S-K Item 106).
+
+Late November to mid-December
+- Remediation validation: re-test fixed controls over the operating window (a quarterly control needs one clean occurrence; a daily control commonly a 25-item sample). Document what could not be re-tested in time and treat it as unremediated for conclusion purposes.
+- Roll-forward procedures covering the period since interim testing, driven by risk.
+- Update the scoping memo for any acquisitions, system changes or new applications.
+- Share status with the audit committee: significant deficiencies must be communicated in writing, and any potential material weakness needs early discussion with the auditor, legal and disclosure committee.
+
+Late December and January
+- Capture year-end evidence (final access listings, December terminations, year-end batch and backup logs) promptly.
+- Aggregation analysis across all deficiencies.
+- Draft management's 404(a) conclusion. A material weakness is disclosed in 10-K Item 9A with nature, remediation plan and status, and where 404(b) applies the auditor issues an adverse ICFR opinion.
+- Run a lessons-learned review and set next year's calendar. Q1: refresh scoping and update RCMs. Q2: walkthroughs and first testing wave. Q3: second wave and early deficiency triage. Q4: roll-forward and conclusion.
+
+Context: about 8 percent of annual reports for 2023-24 disclosed material weaknesses (KPMG / Audit Analytics, 279 of 3,502), IT access and SoD are recurring themes, and over 60 percent of adverse assessments are repeat filers (Baker Tilly, through April 2025).
+
+Also note QC 1000 takes effect December 15, 2026. It governs the audit firm, not your controls, but ask your auditor whether it changes their timetable or evidence requests.
+
+This is general compliance information, not legal advice.

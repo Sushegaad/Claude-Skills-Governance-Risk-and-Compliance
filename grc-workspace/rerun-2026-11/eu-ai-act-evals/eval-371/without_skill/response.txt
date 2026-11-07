@@ -1,0 +1,19 @@
+Short answer: formally yes, the powers exist; whether there has been visible enforcement in autumn 2026 is something I cannot confirm, and I do not want to invent events.
+
+What I am confident about
+- GPAI model obligations (Arts. 53 and 55: technical documentation, downstream information, copyright policy, training-content summary, and for systemic-risk models evaluations, adversarial testing, incident reporting and cybersecurity) have applied since 2 August 2025. Models placed on the market before that date have until 2 August 2027 to comply.
+- The Commission's enforcement powers over GPAI providers (the AI Office acting for the Commission: requests for information, model evaluations, requests for mitigation measures, restrictions or recall, and fines of up to 3% of worldwide turnover or EUR 15m under Art. 101) only became applicable on 2 August 2026. From August 2025 to August 2026 the AI Office worked through dialogue, the Code of Practice and supervision without fining powers.
+- So autumn 2026 is the first period in which formal enforcement is legally possible.
+
+What I cannot verify
+- My knowledge does not reliably cover events after roughly mid-2026. I cannot tell you that a specific formal proceeding, fine, or non-compliance decision has been opened or issued against a named provider in autumn 2026. Treat any claim of that kind as something to check against the Commission's AI Office pages, the Official Journal, and reputable legal trackers.
+- The realistic pattern, based on how the Commission behaved under the DSA and GDPR-style regimes, is: information requests and dialogue first, structured engagement with Code signatories, and formal decisions or fines much later. A first fine in the first few months would be unusual.
+
+Practical implications
+1. Assume you are supervisable now. Keep Art. 53 documentation, copyright policy and training-data summary (using the Commission template) current and ready to hand over.
+2. If you signed the Code of Practice, the Commission has said adherence is a way to demonstrate compliance and that it will focus supervision on non-signatories' alternative evidence; keep adherence records.
+3. Systemic-risk providers must have notified the Commission, run evaluations, and have a serious-incident process.
+4. Watch for AI Office information requests; respond quickly and keep a log.
+5. Check the current status of the Digital Omnibus package, which mostly affects high-risk timing and some simplifications rather than GPAI duties, but may touch AI Office powers and centralised supervision of AI systems built on GPAI models by the same provider.
+
+Recommendation: verify the autumn 2026 developments directly with the AI Office pages before relying on any statement that enforcement has or has not begun.

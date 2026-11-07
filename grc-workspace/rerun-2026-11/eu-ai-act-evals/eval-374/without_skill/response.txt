@@ -1,0 +1,24 @@
+Caveat first: the date-specific answer depends on the final text of the Digital Omnibus on AI, and I cannot verify late-2026 adoption. Here is my best understanding.
+
+Baseline dates under Regulation (EU) 2024/1689 as originally enacted
+- 1 Aug 2024: entry into force.
+- 2 Feb 2025: prohibitions (Art. 5) and AI literacy (Art. 4).
+- 2 Aug 2025: GPAI obligations, governance, penalties framework, notified body rules.
+- 2 Aug 2026: most remaining provisions, including Annex III high-risk obligations, Art. 50 transparency, and Commission enforcement powers over GPAI.
+- 2 Aug 2027: Annex I (product-embedded) high-risk and legacy GPAI models.
+None of the original dates falls in December 2026.
+
+What lands in December 2026 via the Digital Omnibus (as I understand the political agreement reached in spring 2026)
+- 2 December 2026 is the new date for a few items: 
+  - the grace period for the Art. 50(2) obligation to mark synthetic audio, image, video and text in machine-readable form, for systems placed on the market before 2 August 2026 (original proposal was February 2027; the compromise shortened it to 2 December 2026, as I recall);
+  - a new prohibition on AI systems generating non-consensual sexual or intimate imagery (so-called nudification) and child sexual abuse material, which I believe applies from 2 December 2026.
+- High-risk obligations did NOT land in December 2026: Annex III obligations were postponed to about 2 December 2027, and Annex I product-related ones to about 2 August 2028.
+- Other Omnibus changes I recall: AI literacy shifted from a direct obligation on providers/deployers to a duty on Member States/Commission to encourage it; broader SME/small mid-cap relief; registration and processing of special-category data for bias detection clarifications; centralisation of supervision for AI systems built on GPAI models by the same provider in the AI Office.
+
+Practical actions for December 2026
+1. Generative AI providers: confirm machine-readable marking (watermark/metadata, detectable) is deployed for all systems, including legacy ones.
+2. Anyone offering image/video generation or editing: verify safeguards against generating non-consensual intimate imagery and CSAM, and document them; these are prohibited practices carrying the top fine tier (up to EUR 35m or 7%).
+3. Do not stop high-risk preparation: the new dates are longer but standards and guidance are still being finalised.
+4. Confirm the Omnibus has been published in the Official Journal and in force, since the original August 2026 deadlines would otherwise have applied. If it was not adopted in time, the original dates applied from 2 August 2026, so verify this immediately.
+
+Verification needed: exact December dates and scope should be checked against the Official Journal text.

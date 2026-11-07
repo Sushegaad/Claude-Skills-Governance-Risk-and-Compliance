@@ -1,0 +1,54 @@
+NIS2 compliance rollout plan: Austria, Germany, Poland, Portugal
+
+Caveat: my knowledge is reliable only to about mid-2026 and I cannot browse. National statuses and dates below must be verified before you commit to a timeline.
+
+1. Country snapshot (verify each)
+- Germany: NIS2 Implementation Act (NIS2UmsuCG) amending the BSI Act; adopted in late 2025 and in force from December 2025. Registration with the BSI is required within three months after the entity first becomes covered (I recall a registration window running into early 2026). Terms: "besonders wichtige" (essential) and "wichtige" (important) entities. Reporting: 24h, 72h and one-month. Management liability and training are explicit. BSI audits for essential entities.
+- Austria: NISG 2026, adopted by Parliament in late 2025, with application during 2026 (I recall around autumn 2026). Registration to the Interior Ministry shortly after entry into force; similar 24h/72h/1-month reporting.
+- Poland: amendment of the National Cybersecurity System Act (KSC). Adoption was long delayed, and I am not certain of its final status or date. Poland's approach includes a high-risk vendor concept and registration in an entity list with a short registration window (I recall about 6 months after entry into force). Sector regulators (cyber-sector authorities) play a large role. Check final law.
+- Portugal: NIS2 transposed by Decree-Law (Regime Juridico da Seguranca do Ciberespaco, replacing the 2018 law), published in late 2025, in force in 2026. The supervisory authority is the Centro Nacional de Cibersegurança (CNCS). Registration window and an annual reporting duty on the entity's cybersecurity (I recall an annual report) should be verified.
+
+2. Programme design: one baseline, local overlays
+Build a single group control framework mapped to NIS2 Article 21 (ISO 27001 as the backbone, supplemented with ISO 27036 for suppliers and IEC 62443 for OT where relevant), then add per-country overlays for scope, registration, reporting recipients, language and penalties.
+
+Phase 0: Governance and scoping (weeks 0-6)
+- Appoint a group NIS2 programme owner, a steering committee including the board, and local legal and security leads in each country.
+- Entity mapping: for each legal entity, determine sector/sub-sector (Annex I or II), size (apply group linkage rules), and any special status (for example digital providers under the one-stop-shop rule - main establishment determines the jurisdiction). Record the scoping decisions with evidence.
+- Determine essential vs important status per country, since national classifications can differ.
+
+Phase 1: Registration and quick legal wins (weeks 4-12)
+- Register in each country within its statutory window (the most urgent, because penalties for missing registration exist). Priorities: Germany (already overdue/at deadline), Austria and Portugal (tied to entry into force), Poland (once law applies).
+- Name national contact persons. Put in place management body approvals and training.
+
+Phase 2: Gap assessment (weeks 6-16)
+- Assess against the ten Art. 21(2) measures: risk analysis, incident handling, business continuity, supply chain, secure development/vulnerability handling, effectiveness testing, cyber hygiene and training, cryptography, HR security/access/asset management, MFA/secured communications.
+- Include OT and shared-service providers; treat the group SOC and IT shared services once for all countries.
+
+Phase 3: Incident reporting (weeks 8-20)
+- One group incident playbook with the 24h early warning, 72h notification and one-month final report timeline, plus a routing table: BSI (DE), national authority/CERT.at/GovCERT (AT), CERT Polska and the sector authority (PL), CNCS (PT). Pre-draft templates in each language. Run a tabletop test.
+- Align with GDPR 72h breach notification, DORA (if financial entities) and CER obligations.
+
+Phase 4: Remediation (months 4-12)
+- Prioritise by risk: identity and MFA, backup/recovery, vulnerability and patch management, logging and detection, network segmentation (OT), supplier security clauses and due diligence, encryption.
+- Update supplier contracts (flow-down clauses, notification duties, audit rights).
+
+Phase 5: Evidence, assurance and certification (months 9-15)
+- Maintain an evidence library; run internal audit; consider ISO 27001 certification. Germany's essential entities face a proof duty to the BSI every three years; Austria and Portugal have their own proof or reporting cycles.
+
+Phase 6: Operate and monitor (continuous)
+- KPIs reporting to the board, annual management training, annual risk review, regulator watch, and a legal change log for implementing acts (for example the Commission implementing regulation 2024/2690 for digital infrastructure and providers).
+
+3. RACI and resourcing
+Group CISO accountable; legal and compliance for scoping and registration; IT and OT owners for remediation; procurement for supplier terms; HR for training; local country leads for liaison with the authority.
+
+4. Risks to watch
+- Divergent national rules (thresholds, registration timing, audit regimes) and language requirements.
+- Poland: legal uncertainty and the high-risk vendor assessment affecting procurement.
+- Overlapping group entities causing double reporting.
+- Board liability: ensure documented approvals.
+
+5. Immediate next steps
+1. Confirm each country's current law, entry into force and registration deadline.
+2. Complete the entity scoping table.
+3. Start registrations in order of deadline.
+4. Launch the gap assessment.

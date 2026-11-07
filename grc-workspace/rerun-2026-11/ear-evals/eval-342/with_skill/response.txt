@@ -1,0 +1,25 @@
+SHORT ANSWER
+Yes, the customer would be covered. The rule counts ownership in the aggregate, so two listed parties holding 30 percent each add up to 60 percent, which is above the 50 percent threshold. The customer would be treated, for licensing purposes, as if it were itself on the Entity List. Neither owner needs to reach 50 percent alone.
+
+A timing correction first: the rule is not scheduled to "take effect" in January 2027. It was issued as 90 FR 47201 (published September 30, 2025, effective September 29, 2025) and has been stayed since November 10, 2025. The stay was extended by FR Doc 2026-22793 (effective November 9, 2026) to January 10, 2027. Unless BIS extends it again or changes the rule, it resumes after January 10, 2027.
+
+HOW THE ANALYSIS WORKS
+1. Ownership test. The rule applies to entities 50 percent or more owned, directly or indirectly, "individually or in aggregate," by one or more listed parties. Here: 30% + 30% = 60%, so the customer qualifies. It makes no difference that the two Entity List owners are unrelated to each other, or that they are listed under different entries. Indirect ownership counts, so a similar calculation applies if the 30 percent stakes are held through holding companies. If both owners are listed, the owners' respective Entity List entries do not need to be identical.
+
+2. Effect on license requirements. Once captured, the customer is subject to the Entity List license requirement of Supplement 4 to Part 744.
+- A license is required for all items subject to the EAR (including EAR99, and including items otherwise NLR in the Country Chart) for export, reexport or transfer (in-country) to the customer.
+- License exceptions are generally not available.
+- License applications are normally reviewed under a presumption of denial, though the review policy in each owner's entry may differ. Check both entries, and consult counsel on which entry's scope governs, since the two listings can differ.
+- The requirement would also reach reexports and in-country transfers by third parties, and releases of controlled technology to the customer, including deemed exports to its personnel.
+
+3. Practical differences from today. While the stay is in force, the customer is not captured by the rule, so there is no automatic Entity List license requirement. But a 60 percent holding by two listed parties is a major red flag under § 732.6 and Supplement 3 to Part 732. Shipping to it now without inquiry risks a "knowledge" problem under General Prohibition 10 if the end-use or end-user is tied to the listed owners' activities. If your name-only screening does not surface the ownership, you are blind to it.
+
+4. What to do now
+- Confirm the ownership facts using documentary evidence (registry extracts, shareholder lists, certifications), not just a database hit.
+- Calculate aggregate ownership through every layer, and recalculate when ownership changes.
+- Decide before January 10, 2027 whether to stop shipping, cancel or hold open orders, or apply for a license. If you ship before the stay lapses, check that nothing remains in transit or is a reexport/transfer event after that date, and set a cut-off for items in the pipeline.
+- Review contracts for suspension and termination rights, and for any customer obligation to notify you of ownership changes.
+- Update screening to calculate ownership and aggregate holdings, as covered in the rule.
+- Keep records of the analysis for 5 years (§ 762.6).
+
+This is general compliance information and not legal advice. Verify the current status of the stay in the Federal Register, and get counsel's input on complex ownership structures.

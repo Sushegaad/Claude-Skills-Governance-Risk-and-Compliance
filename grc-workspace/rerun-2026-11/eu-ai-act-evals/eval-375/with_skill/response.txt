@@ -1,0 +1,38 @@
+Recommendation: if you are a GPAI model provider that places a model on the EU market, sign the Code of Practice unless you have a documented, resourced alternative. For most providers, signing is the cheapest route to demonstrating compliance. It does not guarantee compliance or immunity.
+
+Who has signed (as of November 2026)
+- 22 full signatories per the Commission page updated 7 October 2026. They include Amazon, Anthropic, Google, IBM, Microsoft, Mistral AI, and OpenAI.
+- xAI signed only the Safety and Security chapter. It must show compliance with the Transparency and Copyright obligations by alternative means.
+- Verify the live list on the Commission page, because membership can change.
+
+What the Code is
+- Published 10 July 2025 and endorsed by the Commission and AI Board on 1 August 2025. It is voluntary.
+- Three chapters: (1) Transparency, including the Model Documentation Form; (2) Copyright, including a written policy, respect for robots.txt and other opt-out protocols, and a complaints mechanism; (3) Safety and Security, which applies only to systemic-risk models.
+- A Signatory Taskforce chaired by the AI Office supports implementation.
+
+What signing gets you
+1. A recognised way to demonstrate compliance with Arts. 53 and 55. The Commission treats adherence as a basis for assessing compliance. It is not a formal legal presumption in the way a cited harmonised standard is.
+2. Regulatory predictability. AI Office enforcement powers over GPAI providers have applied since 2 August 2026, and Art. 91 information requests have started (first reported late August 2026, with another wave announced 14 October 2026). Signatories can point to a structured, agreed approach, and enforcement is expected to be more targeted at those who do not follow the Code.
+3. Lower documentation burden. Non-signatories must explain and justify their alternative measures to the AI Office, which is a heavier and less certain exercise.
+4. Fine mitigation. Adherence is a relevant factor when the Commission decides on fines (Art. 101 and Art. 99 proportionality factors such as cooperation and mitigation). It is not a defence.
+
+What signing costs and does not do
+- It commits you to specific measures. Key examples: documentation retention for 10 years, responding to downstream provider requests within 14 days, copyright opt-out compliance, and, if you have a systemic-risk model, a Safety and Security Framework established within 4 weeks of notification and at least 2 weeks before market placement, Model Reports to the AI Office, red-teaming, and staged serious-incident reporting.
+- Signing does not remove obligations. Annex XI/XII documentation, the copyright policy, and the public training-content summary are still required, and the AI Office can still inspect and evaluate.
+- It does not cover downstream high-risk or Art. 50 duties for systems you build on top of the model.
+- If you fall short of your commitments, you lose the benefit and may face a harder conversation than a non-signatory.
+
+Decision framework
+- Are you a GPAI model provider at all? Models trained with at least 10^23 FLOPs are in scope under the Commission guidelines, and the presumption of systemic risk starts at 10^25 FLOPs. If you only use or fine-tune others' models, you are probably a downstream provider or deployer, and the Code is not for you. Check whether a fine-tune makes you a provider under the Commission's guidelines.
+- Open-source model? You get a partial exemption (copyright policy and training summary only) unless the model is systemic-risk. You can sign selected chapters, as xAI did, but partial signing leaves you needing alternative evidence for the rest.
+- Systemic-risk? The Safety and Security chapter is the hardest part, but building an equivalent framework yourself is costly and harder to justify.
+- Legacy model (before 2 Aug 2025)? You have until 2 August 2027, but signing early aligns your programme.
+- Do you have a mature alternative, such as ISO 42001 plus your own safety framework? You may still decide not to sign, but plan for AI Office scrutiny and documented equivalence.
+
+Practical steps
+1. Gap-assess current practice against the three chapters.
+2. Get legal and engineering sign-off on the commitments, especially retention, timelines, and incident reporting.
+3. Decide whether to sign all chapters or only some.
+4. Assign owners and an audit trail, and prepare for an Art. 91 request regardless of the decision.
+
+This is general compliance information, not legal advice. Review the Code's text and the Commission's current signatory list before deciding.

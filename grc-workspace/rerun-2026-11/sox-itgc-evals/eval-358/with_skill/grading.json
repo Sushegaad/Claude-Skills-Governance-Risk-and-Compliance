@@ -1,0 +1,33 @@
+{
+  "eval_id": 358,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States AS 2201 is unamended in 2026 and is not on the September 30, 2026 agenda",
+      "passed": true,
+      "evidence": "\"AS 2201... remains unamended\" and \"AS 2201 is not on the PCAOB's September 30, 2026 standard-setting agenda.\""
+    },
+    {
+      "text": "Lists agenda topics accurately, including fraud (AS 2401), NOCLAR, going concern (AS 2415), comfort letters, and auditor independence",
+      "passed": true,
+      "evidence": "\"The topics on it are: Comfort letters, Auditor independence, Fraud, NOCLAR (non-compliance with laws and regulations), Going concern.\""
+    },
+    {
+      "text": "Notes this is the first agenda under Chair Demetrios Logothetis",
+      "passed": false,
+      "evidence": "No mention of Chair Demetrios Logothetis or that this is the first agenda under his chairmanship."
+    },
+    {
+      "text": "Identifies QC 1000 (effective December 15, 2026) as the near-term change affecting audits",
+      "passed": true,
+      "evidence": "\"QC 1000 (A Firm's System of Quality Control) takes effect December 15, 2026. It governs audit firms' quality control...\""
+    },
+    {
+      "text": "Does not invent AS 2201 amendments or effective dates",
+      "passed": true,
+      "evidence": "Correctly states AS 2201 \"remains unamended\" and attributes no fabricated amendments or effective dates to it."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

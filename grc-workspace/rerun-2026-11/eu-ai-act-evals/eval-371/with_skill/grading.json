@@ -1,0 +1,33 @@
+{
+  "eval_id": 371,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States enforcement has begun: the AI Office issued its first formal requests for information to GPAI providers under Article 91, first reported in late August 2026",
+      "passed": true,
+      "evidence": "\"Late August 2026: the first formal Art. 91 requests for information to GPAI providers were reported.\" and opening \"Short answer: yes. Enforcement has started\""
+    },
+    {
+      "text": "Mentions the further wave announced October 14, 2026 covering security practices, external evaluation and post-market monitoring",
+      "passed": true,
+      "evidence": "\"14 Oct 2026: the AI Office announced a further wave of Art. 91 requests. It covers security practices, external evaluation, and post-market monitoring.\""
+    },
+    {
+      "text": "Uses hedged language and does not name recipients, noting they have not been officially identified",
+      "passed": true,
+      "evidence": "\"The recipients of the requests have not been officially named. Treat press attribution to specific companies as unconfirmed.\""
+    },
+    {
+      "text": "References the procedural framework: Implementing Regulation (EU) 2026/1755, in force August 10, 2026",
+      "passed": true,
+      "evidence": "\"10 Aug 2026: Implementing Regulation (EU) 2026/1755 entered into force.\""
+    },
+    {
+      "text": "States the GPAI fine exposure correctly: up to EUR 15M or 3 percent of worldwide turnover",
+      "passed": true,
+      "evidence": "\"fines (Art. 101) of up to EUR 15M or 3% of worldwide annual turnover, whichever is higher\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

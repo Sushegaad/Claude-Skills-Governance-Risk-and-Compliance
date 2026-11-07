@@ -1,0 +1,33 @@
+{
+  "eval_id": 343,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States that no EAR rules were published by BIS in October 2026 (no Entity List additions or chip-control rules that month)",
+      "passed": false,
+      "evidence": "Hedges instead of stating the fact: \"I can't give you a complete, verified list of every BIS rule published in October 2026... Check the Federal Register.\" It never states that no October 2026 rules were published."
+    },
+    {
+      "text": "Identifies the Affiliates Rule stay as the key near-term item",
+      "passed": true,
+      "evidence": "\"MOST IMPORTANT NEAR-TERM DATE: JANUARY 10, 2027. This is when the stay of the Affiliates Rule ends.\""
+    },
+    {
+      "text": "Gives the extension: the stay now runs to January 10, 2027 (BIS rule effective November 9, 2026)",
+      "passed": true,
+      "evidence": "\"FR Doc 2026-22793 (filed November 5, 2026, effective November 9, 2026) extends the stay to January 10, 2027, with no substantive change.\""
+    },
+    {
+      "text": "References the original one-year stay window of November 10, 2025 through November 9, 2026",
+      "passed": false,
+      "evidence": "Says only \"It was stayed by 90 FR 50857 through November 9, 2026\"; the November 10, 2025 start and the one-year character of the original stay window are never stated."
+    },
+    {
+      "text": "Does not invent fictitious October 2026 Entity List additions or other October rules",
+      "passed": true,
+      "evidence": "Claims no October 2026 rules; other items are explicitly labeled \"not all from October\" (August 2026 UAV rule, August 2026 Plexon settlement), so no fictitious October actions are asserted."
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

@@ -1,0 +1,47 @@
+SUMMARY
+- The BIS "Affiliates Rule" (widely called the 50% Rule) extends Entity List and Military End User (MEU) List restrictions to entities that are owned 50% or more, directly or indirectly, individually or in the aggregate, by one or more listed parties. Those entities do not have to be named on the lists themselves.
+- It was issued as an interim final rule dated September 29, 2025, and it was effective immediately. Following the late-October 2025 US-China leaders' meeting, BIS suspended it for one year, starting November 10, 2025. By my understanding, the suspension runs through about November 9, 2026, so it is expiring right around now.
+- My knowledge of events after mid-2026 is limited. Check the Federal Register and the BIS website today to see whether the suspension has lapsed, been extended, or been replaced. Do not rely on my status statement alone.
+
+WHAT THE RULE DOES
+1. Scope: Adds a new paragraph to the Entity List and MEU List license requirements (EAR 744.11 and 744.21, with related text in Supplement No. 4 to Part 744). It applies the same license requirements, review policy and license exceptions as the listed owner. The rule's "Affiliates" concept also covers MEU-listed owners.
+2. Ownership test: 50% or more owned, directly or indirectly, by one or more listed parties. Aggregation is the key change. Two listed parties at 30% each (60%) trigger the rule, even though neither one alone holds a majority.
+3. Control is not the test. The rule is ownership-based. Control without 50% ownership is not covered by the rule, but it remains a red flag under the Part 732 Supplement No. 3 "Know Your Customer" guidance and General Prohibition 10.
+4. Indirect ownership: ownership flows through chains of subsidiaries. BIS gave no mechanical look-through formula beyond "directly or indirectly". Treat a chain as a pass-through where each link is a majority holder, and aggregate across paths.
+5. No automatic listing: affiliates are not added to the Entity List. The exporter has to work out the status.
+6. Due diligence expectations: BIS expects exporters to do reasonable diligence. It said it may issue "is informed" style guidance, and it would evaluate "knowledge" under the General Prohibition 5 standard. Ignoring ownership red flags can be treated as knowledge.
+7. Licensing: license applications to affiliates are reviewed under the parent's review policy, which is often a presumption of denial. Temporary general licenses were provided in the original rule for a short transition. They were limited, and I would not rely on them without verifying.
+8. Relationship to other regimes: OFAC has had a 50% Rule since 2014, but the OFAC and BIS rules differ in several respects. In particular, OFAC applies to blocked persons, BIS to listed parties. Do not assume one screening answer covers both.
+
+IS IT IN EFFECT TODAY (NOVEMBER 2026)?
+- As best I know, it was suspended and not repealed. Suspended means the rule stays in the regulations, but enforcement is paused until the stay date. A lapse would bring it back into force without a new rulemaking, unless BIS extends or amends the suspension.
+- It is possible BIS has already extended the stay, modified the rule or made it part of a broader trade deal. I cannot confirm that. Confirm with counsel and the Federal Register before relying on any status.
+- Treat the current status as "uncertain until verified, with a high probability of reactivation". Planning on that basis costs little.
+
+WHAT TO DO BEFORE YEAR-END
+Immediate (next 1 to 2 weeks)
+1. Confirm the legal status: Federal Register, BIS press releases, the Entity List page, and the Commerce Department FAQs. Record the date and the source in your compliance file.
+2. Brief management and the export compliance committee. Name an owner for the readiness project.
+3. Pause or flag high-risk pending transactions where the counterparty could be owned 50% or more by listed parties (China, Russia, Iran and similar jurisdictions especially).
+
+Screening tool and data
+4. Replace name-only screening with ownership-aware screening. Options include a vendor that supplies beneficial-ownership data (for example Dow Jones, Moody's/Orbis, S&P, LSEG/Refinitiv, or Sayari and Kharon style data). Make sure the vendor models aggregate ownership across multiple listed parties, not just single-owner majority.
+5. Re-screen your whole active customer, distributor, reseller, freight forwarder, end-user and vendor master data. Prioritise by the risk-based approach, such as items controlled for national security, items with a Part 744 footnote, or ECCN 3A090 and 4A090 advanced computing items. Also prioritise anything going to China, Hong Kong, Macau, Russia, Belarus or Iran.
+6. Add a data field for ownership percentage, the date you checked it, the source document and the person who reviewed it.
+7. Set a re-screening cadence: at onboarding, at each Entity List change, and at least annually for high-risk parties.
+
+Process and policy
+8. Update the export compliance manual (ECP) to include the 50% Rule, aggregate-ownership analysis, escalation and the documentation standard.
+9. Create an ownership questionnaire and certification for customers: the ultimate beneficial owners above 25% (and any listed party at any percentage), the percentage held by each, and a duty to notify you of changes. Add contract language giving you the right to suspend shipments and terminate.
+10. Set up a "hold and review" workflow for any order where ownership is unknown, opaque, or in a high-risk jurisdiction.
+11. Define who decides when ownership data conflicts or cannot be verified (the export control officer or counsel), and keep a decision log.
+12. Train sales, order management, logistics, finance and customer service staff. Keep records for five years (EAR Part 762).
+
+Contracts, licensing and strategy
+13. Review distributor and reseller agreements, and the Entity List clauses and end-use certifications in them.
+14. Identify existing licences and shipments that could be affected, and plan for licence applications, ship-or-hold decisions and stock already in the channel.
+15. Consider whether an internal audit or outside review is warranted. If you find a past violation, evaluate voluntary self-disclosure under 764.5 with counsel.
+16. Monitor related developments: Entity List additions, extensions, FAQ updates, any trade-deal commitments, and similar rules abroad (for example China's countermeasures and the EU).
+
+BOTTOM LINE
+Your tool covers only named matches, which is a gap whether or not the Affiliates Rule is active today. Under the rule you must evaluate 50% aggregate ownership. Verify the legal status this week, then use the rest of the year to fix your data, screening logic, customer certification and procedures so that you can operate under the rule the day it takes effect. This is general guidance, not legal advice. Have trade counsel confirm the details.

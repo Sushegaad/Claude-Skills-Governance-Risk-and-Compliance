@@ -1,0 +1,33 @@
+{
+  "eval_id": 345,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Extends restricted-party screening to ownership analysis: 50 percent threshold, direct and indirect, individual and aggregate ownership by listed parties",
+      "passed": true,
+      "evidence": "\"treats an entity as restricted if it is 50% or more owned, directly or indirectly, individually or in the aggregate, by one or more Entity List or MEU List parties\" plus ownership-aware screening with aggregation (30% + 30% = 60%)."
+    },
+    {
+      "text": "States the operative timeline: the rule takes effect when the stay lapses, currently January 10, 2027",
+      "passed": false,
+      "evidence": "Says the suspension is \"due to lapse around November 9-10, 2026. I cannot confirm what has happened since then.\" Never gives the current January 10, 2027 lapse date."
+    },
+    {
+      "text": "Recommends customer outreach for ownership certifications or corporate family tree data",
+      "passed": true,
+      "evidence": "\"Ownership questionnaire and certification: ultimate beneficial owners at 25% and above... Re-papering: send the questionnaires to the highest-risk customers and distributors first.\""
+    },
+    {
+      "text": "Notes the extension rule made no substantive changes to the underlying Affiliates Rule",
+      "passed": false,
+      "evidence": "The extension rule is never mentioned; the response does not know whether an extension occurred, so it cannot note that it made no substantive changes."
+    },
+    {
+      "text": "Covers MEU List (and certain sanctioned-party) affiliates, not just the Entity List",
+      "passed": true,
+      "evidence": "\"50% or more owned, directly or indirectly, individually or in the aggregate, by one or more Entity List or MEU List parties.\""
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

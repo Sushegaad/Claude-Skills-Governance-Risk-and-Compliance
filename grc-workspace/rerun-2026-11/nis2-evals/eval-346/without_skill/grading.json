@@ -1,0 +1,33 @@
+{
+  "eval_id": 346,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States 24 of 27 Member States have transposed; the outstanding ones are France and Ireland (draft laws pending) and Spain (bill stalled)",
+      "passed": false,
+      "evidence": "Does not state 24 of 27 or name the three laggards; says \"I cannot reliably name which states remained outstanding in November 2026\" and gives only a speculative hypothesis list."
+    },
+    {
+      "text": "States the Commission referred Ireland, Spain, France and the Netherlands to the CJEU on July 8, 2026, seeking financial penalties (lump sums and daily payments)",
+      "passed": false,
+      "evidence": "No referral stated: \"I believe referrals began in the first half of 2026, but I cannot give you reliable names or dates.\""
+    },
+    {
+      "text": "Notes the Netherlands has since transposed: its Cyberbeveiligingswet entered into force August 15, 2026",
+      "passed": false,
+      "evidence": "\"Netherlands: ... I cannot confirm that it was in force by November 2026.\" No August 15, 2026 date."
+    },
+    {
+      "text": "References the earlier procedural steps: letters of formal notice November 2024 and reasoned opinions May 2025",
+      "passed": true,
+      "evidence": "\"On 28 November 2024 the Commission opened infringement proceedings (letters of formal notice)... On 7 May 2025 the Commission escalated to reasoned opinions\""
+    },
+    {
+      "text": "Advises companies in untransposed states to prepare against the directive text rather than wait",
+      "passed": false,
+      "evidence": "Only describes that contracts and group policy \"often push compliance anyway\"; does not advise preparing against the directive text rather than waiting."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

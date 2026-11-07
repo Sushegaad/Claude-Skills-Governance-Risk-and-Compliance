@@ -1,0 +1,27 @@
+SHORT ANSWER
+Under the Affiliates (50%) Rule, a customer owned 30% by Entity List party A and 30% by Entity List party B is treated as if it were itself on the Entity List. Together they hold 60%, which exceeds the 50% threshold, so the aggregation language applies. Neither owner needs a majority on its own.
+
+A CAVEAT ON THE PREMISE
+I cannot verify that the rule takes effect in January 2027. The rule was issued on September 29, 2025, and then suspended for one year from about November 10, 2025. If the suspension was extended, or the rule was changed, the date and the details could differ from what I describe. Confirm the current status in the Federal Register before relying on this. I treat your January 2027 date as a working assumption.
+
+HOW THE LICENSE REQUIREMENT CHANGES
+1. Before the rule: only the named entity is subject to the Entity List license requirement (EAR 744.11). The 60%-owned customer is not named, so, unless there are other red flags, an item subject to the EAR needs only whatever license its ECCN and destination would otherwise require. For EAR99 items, often none.
+2. After the rule: the customer is treated as a listed party, as a matter of law, without being named. A license is needed for exports, reexports and in-country transfers of any item subject to the EAR to that customer. The scope is the same as that of the parties' own listings. Check each owner's Federal Register entry, since some entries cover all items subject to the EAR, while others are limited. The license requirement attaches to the footnote, the scope and the review policy of the owner(s).
+3. Which listing applies when the two owners have different entries: this is not clearly settled. The conservative reading is that the customer takes the most restrictive license requirement and review policy of the listed owners (for example, all items subject to the EAR including EAR99, and a presumption of denial), and not just the common denominator. The rule text and BIS FAQs need to be checked for the exact treatment. Ask counsel or BIS (advisory opinion) if the two listings differ.
+4. License exceptions: they are unavailable except where the listing entry says otherwise. Ordinary license exceptions do not apply.
+5. Review policy: probably presumption of denial, as for the owners' entries, though some entries have different policies.
+6. Reach: it covers foreign-made items subject to the EAR, such as foreign-produced direct products, and de minimis items. Items not subject to the EAR are not covered.
+7. Downstream: the customer's own majority-owned subsidiaries may also become covered. A subsidiary owned 50% or more by the customer is potentially covered by the chain. This applies recursively. Run the look-through.
+
+WHAT STAYS THE SAME
+- Ownership below 50% in aggregate is not captured by the rule. If the shares were 20% and 25% (45%), the customer would not be covered, but control, influence, board seats and similar facts would still be red flags under the "Know Your Customer" guidance (Supplement No. 3 to Part 732) and General Prohibition 10.
+- Percentages are measured as ownership interests (equity, and voting rights if BIS' FAQs say so). Check how the rule treats indirect and non-equity interests. Confirm this against the rule text.
+
+PRACTICAL STEPS
+- Get a documented ownership chart and certification from the customer, with the date, the percentages and the sources. Verify them against corporate registries and commercial data. Aggregate all listed owners across all chains.
+- Hold shipments until the status is clear, and apply for a license if the shipment must go ahead. Expect a long review and probable denial.
+- Update contracts to allow suspension and termination. Re-screen regularly, and keep records for five years.
+- Consider applicable transition provisions or temporary general licenses, if any, in the final text, and the effect on goods in transit and existing licenses.
+- Also check for OFAC issues. OFAC's 50% rule is separate, and aggregate ownership by blocked persons also matters there.
+
+This is general information and not legal advice. Have trade counsel confirm the current rule text.

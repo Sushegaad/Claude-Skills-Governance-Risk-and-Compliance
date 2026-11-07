@@ -1,0 +1,32 @@
+The latest figures come from the FY2025 Governmentwide Section 508 Assessment, which was the third annual assessment and was announced on March 5, 2026. It shows that compliance across the federal government is still weak.
+
+**Headline numbers**
+
+| Measure | Result |
+|---|---|
+| Average conformance score | 1.96 on a 5-point scale |
+| Agencies' most-viewed ICT that was fully conformant | Fewer than half |
+| Agencies that do not routinely test ICT for accessibility | About half |
+| Agencies that almost always verify ICT deliverables during acquisition | Under 30 percent |
+| Reporting agencies and components | 212 |
+
+**What this means**
+
+- **Conformance is low.** A score of 1.96 out of 5 puts the average agency near the bottom of the scale. Even the public-facing content that agencies view most often is fully conformant less than half the time.
+- **Testing is the main gap.** About half of agencies don't routinely test ICT, so many problems go undetected. Use automated scans (which find roughly 30 to 40 percent of issues), keyboard testing, and screen reader testing (JAWS or NVDA, and VoiceOver where relevant).
+- **Procurement is a weak point.** Fewer than 30 percent of agencies almost always verify what vendors deliver. Accepting a vendor's Accessibility Conformance Report (ACR, the completed VPAT) without verification is a common failure.
+
+**How to use the figures**
+
+1. Use them as a realistic baseline in gap assessments. Don't assume that an agency or vendor is conformant.
+2. Use them to justify investment in testing programs and in acquisition verification.
+3. For a vendor or contractor, expect close scrutiny of ACRs. Back each "Supports" claim with evidence, state your testing method and the assistive technology you used, and cover Chapter 3 functional performance.
+
+**Caveats**
+
+- These are governmentwide averages. Individual agencies vary widely, so ask your own agency or customer for its own results.
+- Verify the exact figures against the published assessment on Section508.gov (GSA) before you quote them in a formal document.
+
+The standards behind the assessment have not changed. They are the Revised Section 508 Standards (36 CFR Part 1194), which incorporate WCAG 2.0 Level A and AA.
+
+This is general compliance information, not legal advice.

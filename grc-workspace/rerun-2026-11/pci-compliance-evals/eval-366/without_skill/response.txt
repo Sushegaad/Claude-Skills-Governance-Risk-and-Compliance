@@ -1,0 +1,29 @@
+Short answer: I can't confirm the specific late-2026 changes from memory, so treat what follows as background plus a verification plan. Do not tell your auditors or customers the vendor is "still valid" until you have checked the PCI SSC website.
+
+Background I am confident about
+- PCI Secure Software Lifecycle (Secure SLC) Standard v1.1 is part of the PCI Software Security Framework (SSF). It validates the vendor's software development lifecycle, not a specific product. It sits alongside the Secure Software Standard, which validates the payment software itself and replaced PA-DSS. PA-DSS was retired in October 2022.
+- Secure SLC validation is listed on the PCI SSC website under "Secure Software Lifecycle Vendors". Each listing has an expiry date, normally tied to the standard version and the vendor's revalidation cycle.
+- The Council retires older SSF versions on a published timeline. After a new version is released, there is a transition window. During that window, new assessments against the old version stop, and existing listings stay valid until their expiry or until a sunset date.
+- Secure SLC validation is not a PCI DSS assessment. It does not remove the vendor's PCI DSS obligations if they store, process or transmit account data.
+
+What I cannot verify
+I don't have reliable information about a specific late-2026 announcement for Secure SLC v1.1, such as a retirement date, a new version (for example a v1.2 or v2.0), or a changed listing status. I won't invent dates.
+
+Does their validation still count? How to decide
+1. Look up the vendor on the PCI SSC list of validated Secure SLC vendors. Check that the listing is "Valid", the standard version, the reference number, and the expiry date.
+2. Check the PCI SSC announcements, FAQs and the document library for the Secure SLC standard. Look for a retirement date for v1.1 and whether the listing remains valid until its own expiry.
+3. Ask the vendor in writing for:
+   - their current listing and Attestation of Validation (AOV);
+   - their revalidation plan and target date against the current standard;
+   - whether any scope change, such as an acquisition or a new product line, affects the listing.
+4. Check which products are covered. A Secure SLC listing alone does not mean a particular product has Secure Software validation. If your PCI DSS evidence (for example Req 6.3.2, bespoke and custom software inventory, and Req 12.8 third-party service provider oversight) relied on that product, check what the product itself is listed under.
+5. Record the result in your vendor risk file.
+
+Practical guidance
+- Treat a listing as valid until its stated expiry or an explicit Council sunset date, whichever comes first.
+- If the standard has been retired or the listing is within about 6 months of expiry, require a revalidation plan and put a contract clause in place. Do the same if the status shows "expired" or "revoked".
+- If the listing has lapsed, treat the vendor as not validated for your evidence. Compensate with your own review: secure SDLC evidence, penetration testing, vulnerability management and change control.
+- Note that PCI DSS v4.0.1 requires you to manage the risk from third-party software (Req 6.3.2 inventory, 12.8 TPSP management, 12.9 TPSP acknowledgement). A Secure SLC listing supports but does not satisfy these on its own.
+- Re-check the listing at least annually and whenever you renew the vendor contract.
+
+If you can share the vendor's listing details, I can help interpret them.

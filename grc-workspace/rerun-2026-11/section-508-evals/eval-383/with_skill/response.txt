@@ -1,0 +1,23 @@
+No, that isn't right. Your client is most likely conflating two different rules.
+
+**Section 508 does not apply to state agencies, and it uses WCAG 2.0 AA**
+
+- Section 508 of the Rehabilitation Act (29 U.S.C. 794d) applies to federal agencies and to the contractors and vendors that supply ICT to them. It does not bind state or local governments directly. A state agency can be affected indirectly, for example when it receives federal funds that carry accessibility conditions or when it adopts 508 by state law or policy. Check whether either applies to your client.
+- Section 508 incorporates **WCAG 2.0 Level A and AA**, not 2.1. The Revised Section 508 Standards (36 CFR Part 1194, 82 FR 5790, January 2017) have been in effect since January 18, 2018. There is no 2027 WCAG 2.1 requirement in Section 508, and no refresh rulemaking is under way as of November 2026.
+
+**The rule your client likely means is the DOJ ADA Title II web rule**
+
+- It requires **WCAG 2.1 AA** for state and local government web content and mobile apps.
+- It is binding on state and local governments. It is a separate regime from Section 508 and doesn't bind federal agencies.
+- Its compliance dates were **extended by one year in spring 2026** (91 FR 20902). Don't rely on the original schedule. Read the rule to find the date that applies to your client's entity, because dates depend on factors such as the size of the jurisdiction's population.
+- A related rule is the HHS Section 504 web rule, which also uses WCAG 2.1 AA and applies to HHS-funded entities. Its dates were extended by one year too (91 FR 25496). If your client receives HHS funding, check whether it applies.
+
+**What to tell the client**
+
+1. Correct the citation: the obligation comes from ADA Title II (and possibly Section 504), not Section 508.
+2. Plan to WCAG 2.1 AA, since that is the standard in the DOJ rule. If the state is also bound by Section 508-based rules, WCAG 2.1 AA is a superset of what 508 requires (2.0 AA).
+3. Confirm the compliance date in the DOJ rule as extended. 2027 may or may not be correct for your client, and I'd verify it against the rule text.
+4. Start with an inventory of web content and apps, an audit (automated plus keyboard and screen reader testing), and a prioritized remediation plan. Add procurement language that requires WCAG 2.1 AA and a current VPAT (ACR) from vendors.
+5. Document any undue burden or fundamental alteration claims. The DOJ rule has its own limits on those defenses, so check them in the rule.
+
+This is general compliance information, not legal advice. Please have counsel confirm which rules and dates apply to your client.

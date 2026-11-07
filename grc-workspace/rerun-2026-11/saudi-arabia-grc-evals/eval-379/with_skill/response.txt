@@ -1,0 +1,28 @@
+Short answer: not in final, binding form as of November 2026. The NCA has a draft, but you should not treat it as an enforceable requirement. AI systems are still caught by existing binding rules.
+
+1. What exists on AI cybersecurity
+- The NCA's draft AI Cybersecurity Guidelines (AICG-1:2026) went through public consultation from 5 July to 5 August 2026. The draft has 4 domains and about 42 guidelines and covers generative and agentic AI.
+- As of November 2026 the final version is unpublished. Do not cite it as binding. Check nca.gov.sa for publication, and for whether the final text is a guideline or mandatory.
+
+2. What binds you today when you use or build AI
+
+| Instrument | Regulator | Relevance to AI |
+|---|---|---|
+| Saudi PDPL (M/19, amended by M/148) and its Regulations | SDAIA | Binding if AI processes personal data of Saudi residents. You need a lawful basis, notices, purpose limitation and minimisation, safeguards, a transfer mechanism for offshore models or APIs, and 72-hour breach notification to SDAIA. |
+| NCA ECC-2:2024 | NCA | Mandatory if you are a government entity or subsidiary or a CNI operator. AI systems sit within its asset, access, data, and third-party and cloud controls. |
+| NCA NCNICC-1:2025 | NCA | Mandatory and size-based for private non-CNI entities (Category A or B). AI tools fall under its cybersecurity governance, defence, and third-party and cloud components. |
+| NCA CCC and CST Cloud Framework | NCA / CST | Apply if the AI is cloud-hosted for ECC-covered entities. Government data must stay in the Kingdom. Level 3 and 4 customer data under the CST framework requires in-Kingdom hosting. |
+| Sector rules | SAMA / CMA | For example SAMA CSF for regulated financial entities, which stacks on the above. |
+
+I am not covering SDAIA's AI ethics or other AI governance guidance in detail here. If you need that, tell me, and verify with SDAIA.
+
+3. How to prepare
+- Treat the AICG draft as a design signal, not a compliance obligation.
+- Inventory AI use, including shadow use of generative tools and agents, and record the data each tool touches.
+- Apply the existing controls to AI: access control, logging, vendor risk review, data classification limits on what may be sent to models, and residency for government and Level 3 and 4 data.
+- Run a PDPL assessment for any AI use involving personal data, and check transfers for offshore AI services.
+- Set up a watch on NCA and SDAIA publications, and plan a gap assessment once the AICG is final.
+
+Tell me your entity type (government, CNI, private, or SAMA- or CST-licensed) and your AI use cases, and I can map them to the right instruments.
+
+This is general compliance information, not legal advice.

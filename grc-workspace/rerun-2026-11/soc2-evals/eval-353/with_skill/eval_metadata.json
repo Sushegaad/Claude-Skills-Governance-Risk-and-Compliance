@@ -1,0 +1,13 @@
+{
+  "eval_id": 353,
+  "eval_name": "ai-points-of-focus",
+  "run_type": "with_skill",
+  "prompt": "We run AI systems inside our SOC 2 scope. How does the proposed criteria refresh treat AI, and what applies to our audit today?",
+  "assertions": [
+    "States the proposal adds AI-related points of focus rather than creating new AI-specific criteria",
+    "Dates the exposure draft to late October 2026, issued by the AICPA's Assurance Services Executive Committee",
+    "Explains points of focus are illustrative considerations, not mandatory requirements",
+    "States today's audits evaluate AI systems under the existing 2017 criteria",
+    "Notes the comment window is open until January 15, 2027 for AI-specific feedback"
+  ]
+}

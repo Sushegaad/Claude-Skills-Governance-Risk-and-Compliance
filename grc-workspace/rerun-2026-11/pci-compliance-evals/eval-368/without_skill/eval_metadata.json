@@ -1,0 +1,13 @@
+{
+  "eval_id": 368,
+  "eval_name": "dss-version-planning",
+  "run_type": "without_skill",
+  "prompt": "Is there a PCI DSS v5? What version should our 2027 validation planning target?",
+  "assertions": [
+    "States PCI DSS v4.0.1 remains the current version with no successor announced",
+    "Mentions the RFC on v4.0.1 that ran June 3 to July 20, 2026 as input to the next iteration",
+    "Plans 2027 validation against v4.0.1",
+    "Notes the v4.x future-dated requirements have been mandatory since March 31, 2025",
+    "Does not invent a v5 release or effective date"
+  ]
+}

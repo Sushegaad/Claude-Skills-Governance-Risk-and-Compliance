@@ -1,0 +1,33 @@
+{
+  "eval_id": 354,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States no: the February 2026 AT-C 105/205/210 exposure draft is a separate attestation-standards project",
+      "passed": true,
+      "evidence": "Short answer: no. The February 2026 AT-C exposure draft does not change the SOC 2 Trust Services Criteria... Attestation standards exposure draft on AT-C 105, 205 and 210 (February 2026)."
+    },
+    {
+      "text": "Gives its proposed effective date: June 15, 2029",
+      "passed": true,
+      "evidence": "Proposed effective date: June 15, 2029."
+    },
+    {
+      "text": "Identifies the TSC refresh as the distinct October 2026 exposure draft",
+      "passed": true,
+      "evidence": "Proposed 2027 SOC 2 Trust Services Criteria and Description Criteria (the TSC refresh) - Exposure draft issued October 28, 2026."
+    },
+    {
+      "text": "Confirms operative criteria remain the 2017 TSC with 2022 revised points of focus",
+      "passed": true,
+      "evidence": "Until the AICPA adopts a final TSC refresh, the 2017 TSC with the 2022 Revised Points of Focus are the operative criteria."
+    },
+    {
+      "text": "Distinguishes who owns what: criteria come from ASEC, attestation standards from the Auditing Standards Board",
+      "passed": false,
+      "evidence": "Attributes the TSC draft to ASEC, but never mentions the Auditing Standards Board as owner of the AT-C attestation standards."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

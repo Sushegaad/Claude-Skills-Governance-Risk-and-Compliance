@@ -1,0 +1,13 @@
+{
+  "eval_id": 364,
+  "eval_name": "dora-ctpp-interaction",
+  "run_type": "without_skill",
+  "prompt": "How does DORA's critical ICT third-party provider oversight interact with our own TPRM program for EU operations?",
+  "assertions": [
+    "States the ESAs designated the first critical ICT third-party providers on November 18, 2025 (19 CTPPs)",
+    "Explains direct oversight runs through Joint Examination Teams under the ESAs",
+    "Notes no major new CTPP designations or oversight publications in September or October 2026",
+    "Makes clear the firm's own third-party risk obligations remain in place even when a provider is a designated CTPP",
+    "Does not invent new 2026 designation rounds or oversight decisions"
+  ]
+}

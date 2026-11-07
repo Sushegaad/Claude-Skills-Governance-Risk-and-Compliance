@@ -1,0 +1,31 @@
+Which Trust Services Criteria apply to a SOC 2 Type 2 with a period starting January 2027
+
+Short answer: unless AICPA has finalized and made effective a replacement set, the 2017 Trust Services Criteria (TSP Section 100) with the 2022 revised points of focus apply. I can't confirm any new criteria are effective for a period starting in January 2027. Verify with your auditor and the AICPA site.
+
+Which categories apply
+- Security (Common Criteria CC1.1 to CC9.2) is mandatory in every SOC 2.
+- Availability (A1.1 to A1.3), Confidentiality (C1.1 to C1.2), Processing Integrity (PI1.1 to PI1.5) and Privacy (P1 to P8) are optional. You include them based on your commitments to customers, your system, and what customers expect to see.
+
+How to choose
+- Availability: include it if you have uptime SLAs or customers depend on the service being available.
+- Confidentiality: include it if you hold confidential customer or business information under contract or NDA.
+- Processing Integrity: include it if the accuracy, completeness and timeliness of processing is central to the service, for example payments, calculations or data pipelines.
+- Privacy: include it if you collect, use and retain personal information as a service function and want assurance on the notice, choice, access and disclosure principles. It is distinct from a GDPR assessment.
+- Most SaaS companies choose Security plus Availability and Confidentiality. Fewer add Processing Integrity or Privacy.
+
+Other things that apply to a Type 2 examination
+- The system description is measured against the DC 200 description criteria (2018, with 2022 updated implementation guidance).
+- Type 2 tests operating effectiveness over a period, typically 3 to 12 months. A first-time report often covers 3 to 6 months, and later reports cover 12 months. Controls must be designed and implemented before the period starts.
+- Complementary user entity controls (CUECs) and subservice organization treatment (carve-out or inclusive) must be identified.
+- Standards: AT-C 105 and AT-C 205 govern the engagement.
+
+Period-related watch points for January 2027
+- If a revised criteria set is issued, AICPA normally sets a transition period. A period beginning in January 2027 would most likely still be assessed under the 2017 criteria, but confirm the effective-date language, particularly the rule that applies to periods ending on or after a given date.
+- Ask the auditor to state in the engagement letter which criteria version will be cited.
+- Set your scope (categories, system boundary, subservice organizations) before the period starts and do not change it mid-period without telling the auditor.
+
+Action list
+1. Decide on categories and document the rationale.
+2. Confirm criteria version and any transition guidance in writing with the auditor.
+3. Complete a readiness assessment in Q4 2026.
+4. Have controls operating before January 2027 so there is evidence from day one of the period.

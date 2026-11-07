@@ -1,0 +1,30 @@
+Short answer: yes. Enforcement is active, but the public record is thin. The best-documented data point is aggregate, not named cases.
+
+1. Regulator and instrument
+SDAIA (Saudi Data & AI Authority) enforces the Personal Data Protection Law (Royal Decree M/19, 16 September 2021, amended by Royal Decree M/148, 27 March 2023). The law took effect on 14 September 2023, and the grace period ended. It has been fully enforced since 14 September 2024. The Implementing Regulations and Personal Data Transfer Regulations were issued in September 2023 and amended in September 2024.
+
+2. What is on the record
+- In January 2026 SDAIA announced that it issued 48 violation decisions during 2025.
+- The announced categories were processing without a legal basis, unlawful disclosure of personal data, inadequate safeguards, and marketing without consent.
+- No entity names and no fine amounts were disclosed.
+- I am not aware of confirmed, named public penalty cases or amounts. Anything you read claiming specific fines or named companies should be treated as unverified until SDAIA publishes it. Check SDAIA's channels for anything newer than my information.
+
+3. What the law allows today
+- Fines up to SAR 5,000,000 per violation, which may double for repeat violations.
+- Criminal exposure: up to 2 years' imprisonment and fines for unlawful disclosure or publication of sensitive data.
+- Proposed amendments, including graduated penalties, went to SDAIA public consultation in April 2025. They are not enacted as of November 2026. Confirm the current status with SDAIA before relying on them.
+
+4. What this means for you
+The enforcement themes show what SDAIA is looking at: lawful basis, disclosure controls, security safeguards and marketing consent. Prioritise the following:
+1. Lawful basis documented per processing activity. Consent is the default. Legitimate interest, added by M/148, is available but not for sensitive data.
+2. Privacy notices at collection, and a RoPA.
+3. Controller registration on SDAIA's National Data Governance Platform, and a DPO where SDAIA's rules require one.
+4. Marketing consent and an opt-out that works.
+5. Security safeguards and access controls on personal data, and disclosure controls for third-party sharing.
+6. A transfer mechanism for cross-border flows (adequacy, SDAIA SCCs in the four modules, or BCRs).
+7. A 72-hour breach notification procedure to SDAIA via the platform.
+8. Data subject rights handling: access, correction, deletion and copies.
+
+The law applies to entities outside the Kingdom that process the personal data of Saudi residents, so a foreign company is not exempt.
+
+This is general compliance information, not legal advice.

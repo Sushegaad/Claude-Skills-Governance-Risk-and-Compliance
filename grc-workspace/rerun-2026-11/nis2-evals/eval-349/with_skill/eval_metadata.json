@@ -1,0 +1,13 @@
+{
+  "eval_id": 349,
+  "eval_name": "cjeu-referrals",
+  "run_type": "with_skill",
+  "prompt": "Which Member States were referred to the CJEU over NIS2, and what happens next in that procedure?",
+  "assertions": [
+    "Names all four: Ireland, Spain, France and the Netherlands, referred July 8, 2026",
+    "States the Commission requested lump sums and daily penalty payments",
+    "Gives the procedure history: letters of formal notice November 28, 2024, reasoned opinions May 7, 2025",
+    "Notes the Netherlands referral has been overtaken by its August 15, 2026 transposition",
+    "Advises that entities in the remaining states should prepare against the directive text because short compliance windows have followed national enactments"
+  ]
+}

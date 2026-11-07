@@ -1,0 +1,13 @@
+{
+  "eval_id": 369,
+  "eval_name": "ai-guidance",
+  "run_type": "without_skill",
+  "prompt": "Does the PCI Council say anything about AI systems that we should factor into our compliance program?",
+  "assertions": [
+    "Cites the information supplement Security Considerations for AI Systems published in September 2026",
+    "Explains information supplements are guidance and do not create new requirements",
+    "Notes Secure SLC v2.0 (September 28, 2026) also addresses AI and digital tools in lifecycle processes",
+    "Confirms PCI DSS v4.0.1 itself is unchanged by the supplement",
+    "Gives practical application advice for AI touching cardholder data environments"
+  ]
+}

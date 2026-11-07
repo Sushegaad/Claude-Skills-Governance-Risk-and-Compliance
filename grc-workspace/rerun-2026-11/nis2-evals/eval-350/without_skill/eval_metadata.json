@@ -1,0 +1,13 @@
+{
+  "eval_id": 350,
+  "eval_name": "multi-country-rollout",
+  "run_type": "without_skill",
+  "prompt": "Give me a NIS2 compliance rollout plan for a group with entities in Austria, Germany, Poland and Portugal.",
+  "assertions": [
+    "Austria: NISG 2026 in force October 1, 2026, registration by December 31, 2026",
+    "Germany: national implementation in force since December 2025",
+    "Poland: in force April 2, 2026; Portugal: effective April 2026",
+    "Recommends building the group baseline to the strictest applicable national variant",
+    "Includes identifying each country's registration portal and incident-reporting channel as rollout steps"
+  ]
+}

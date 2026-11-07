@@ -1,0 +1,33 @@
+PCAOB's latest inspection publication and what it means for ITGC testing
+
+Important caveat: I cannot browse live sources and I do not have a reliable picture of the very latest PCAOB release as of November 2026. I do not want to invent specific statistics, so I am not going to quote numbers for a report I cannot verify. What follows is the pattern from recent PCAOB inspection publications and how it translates into ITGC practice. Please pull the actual document from pcaobus.org (Inspections, "Staff Update and Preview of Observations" and the firm-specific inspection reports) and map it to your own program.
+
+What recent PCAOB inspection publications have consistently said
+- Part I.A deficiency rates in audits of ICFR have been a standing concern. The rate of audits with a deficiency in the ICFR area was one of the largest drivers of the overall deficiency rate. The 2024 inspection cycle showed the Part I.A rate falling from the 2022 peak of 46 percent, but it was still high by historical standards. Treat these figures as approximate and check them.
+- The most common ICFR-related deficiencies are:
+  - failure to identify and test controls that address the risks of material misstatement for relevant assertions
+  - insufficient testing of the precision of management review controls
+  - insufficient testing of controls over the completeness and accuracy of information used in the control (IPE / system-generated reports)
+  - when relying on a service organization (SOC 1) report, failure to assess the report's scope, complementary user entity controls, the period covered, and exceptions
+  - failure to evaluate the severity of identified control deficiencies correctly
+  - improper reliance on work of others
+- On IT specifically, inspectors have cited weak testing of ITGCs where the audit relied on automated controls or IPE, including not testing the relevant ITGCs at all or not testing them for the full period of reliance.
+- Staff have also highlighted risks tied to technology and AI, cybersecurity, third-party and cloud providers, and firms' use of tools in audits.
+
+What this means for your ITGC testing (practical implications)
+1. IPE and report logic. Document completeness and accuracy for every report used as evidence in a key control. Include source data, parameters, report logic or query validation, and change control over the report. This is a recurring weak spot for both auditors and management.
+2. Linkage between ITGCs and key controls. Build and maintain a mapping from each key automated control, IPE, and interface to the specific ITGCs (access, change, operations) that support it. If an ITGC fails, document the compensating or alternative approach and its effect on reliance.
+3. Service organizations. Obtain the SOC 1 Type 2 reports, check the period covered against yours, review the scope and subservice organizations (carve-out versus inclusive), map each control objective to your risk, test the complementary user entity controls, and perform bridge-letter or gap-period procedures when the report does not cover year-end.
+4. Management review controls. Document the precision threshold, what the reviewer investigates, and evidence of follow-up. Do the same for ITGC-related review controls, such as periodic user access reviews and privileged access reviews. Auditors have been criticized when the reviewer did not evaluate the completeness of the user list or the review was not precise enough.
+5. Population completeness for sampling. For access provisioning, terminations, and change tickets, the population must be complete (for example, system-generated from the source). Document how that was validated.
+6. Period of reliance and rollforward. If you test at an interim date, plan rollforward procedures. Demonstrate how controls operated through year-end.
+7. Deficiency evaluation. For ITGC deficiencies, evaluate the effect on the dependent application controls and the possible magnitude of misstatement, not only the deficiency itself. Include compensating controls only if they operate at the right level of precision.
+8. Cyber and cloud. Confirm that your scope covers cloud platforms, SaaS applications that feed financial reporting, privileged accounts and break-glass access, and any recent system migrations.
+9. Technology and AI. If you use AI or automation in a financial-reporting control, document governance, change management, and how outputs are validated.
+
+How to use the publication
+- Read the staff observations on ICFR and IT, and compare each cited deficiency against your own testing and evidence.
+- Ask your external audit team how the observations changed their approach this year, and which ITGC evidence they plan to scrutinize.
+- Perform a pre-audit quality check of your ITGC workpapers (a "mock inspection") focused on the points above.
+
+The inspection publication is directed at audit firms, not at management. It does not change management's SOX 404(a) obligations, but it tends to drive increased auditor requests and push-back on documentation, so it is worth acting on early.

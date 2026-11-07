@@ -1,0 +1,13 @@
+{
+  "eval_id": 386,
+  "eval_name": "viii-a8-effective",
+  "run_type": "without_skill",
+  "prompt": "Our MRO installs DIRCM self-protection suites on in-production airline aircraft. What is the current status of the USML Category VIII(a)(8) change?",
+  "assertions": [
+    "States the interim final rule (91 FR 55457, published August 28, 2026) became effective October 13, 2026",
+    "States qualifying survivability-enhanced aircraft are excluded from USML VIII(a)(8) and become subject to the EAR",
+    "Gives the conditions: in-production manned civil aircraft with FAA transport or commuter category type certificate (or NATO/MNNA equivalent) incorporating secured ASE (DIRCM plus associated IR/UV missile warning with anti-tamper), with definitions at 22 CFR 121.0",
+    "States the ASE itself remains on the USML in Category XI(a)(4)",
+    "Correctly characterizes it as an interim final rule (comments closed September 28, 2026) and does not claim the rule assigned a destination ECCN"
+  ]
+}

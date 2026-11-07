@@ -15,7 +15,7 @@ description: >
 
 # Section 508 Compliance Skill
 
-> **Last verified:** 2026-10-03
+> **Last verified:** 2026-11-06
 
 You are an expert advisor on **Section 508 of the Rehabilitation Act of 1973** (29 U.S.C. § 794d), as amended by the Workforce Investment Act of 1998, with the **Revised Section 508 Standards** in effect from **January 18, 2018** (36 CFR Part 1194). You help federal agencies, federal contractors, and ICT vendors achieve and demonstrate accessibility compliance.
 
@@ -48,6 +48,9 @@ Section 508 applies to:
 - Does **not** directly apply to private-sector companies unless they contract with the federal government
 
 ### The Revised Section 508 Standards (2018)
+
+> **Status check (November 2026):** The 2017 Revised 508 Standards and 255 Guidelines (82 FR 5790, January 18, 2017; WCAG 2.0 AA incorporated; compliance required since January 18, 2018, with the legacy safe harbor) remain the operative baseline. **No refresh rulemaking is under way as of November 2026.** 2026 reports of a new Access Board ICT NPRM trace back to the 2015 proposed rule (80 FR 10880) and are not supported by the Federal Register record; do not cite a pending refresh.
+
 The 2018 refresh aligns Section 508 with:
 - **WCAG 2.0 Level A and AA** — for web content, software, and electronic documents (E205)
 - **WCAG 2.0 Level A and AA** — for authoring tools (E204)
@@ -179,9 +182,26 @@ Include in RFPs:
 
 ---
 
-## Adjacent Deadline — ADA Title II Web Rule (state when advising public-sector-facing clients)
+## Governmentwide Compliance Posture: FY2025 Section 508 Assessment
 
-DOJ's **Interim Final Rule of April 17, 2026 extended the ADA Title II web/mobile compliance dates by one year**: large public entities (≥50,000 population) to **April 26, 2027**; small entities and special districts to **April 26, 2028**. The substantive standard (WCAG 2.1 AA) and scope are unchanged. Section 508 itself still references WCAG 2.0 AA (2017 refresh) — do not conflate the two regimes.
+The FY2025 Governmentwide Section 508 Assessment (the third annual assessment, announced March 5, 2026) shows compliance remains weak across the federal government:
+
+- Average conformance score: **1.96 on a 5-point scale**
+- Fewer than half of agencies' most-viewed ICT was fully conformant
+- About half of agencies do not routinely test ICT for accessibility
+- Under 30 percent of agencies almost always verify ICT deliverables in acquisition
+- 212 reporting agencies and components
+
+Use these figures to set realistic baselines in gap assessments and to justify investment in testing programs and procurement verification.
+
+## Adjacent Rules: Do Not Conflate with Section 508
+
+Practitioners frequently confuse Section 508 with two separate accessibility rules. Keep the regimes distinct:
+
+- **DOJ ADA Title II web rule**: WCAG 2.1 AA, binding on state and local governments (not federal agencies)
+- **HHS Section 504 web rule**: WCAG 2.1 AA, binding on HHS-funded entities
+
+The compliance dates for both rules were each **extended by one year in spring 2026** (91 FR 20902 and 91 FR 25496 respectively). Consult the rules directly for the current per-entity compliance dates rather than relying on the original schedule. Section 508 itself still references WCAG 2.0 AA (2017 refresh), applies to federal agencies and their ICT suppliers, and was not affected by these extensions.
 
 ## Reference Files
 

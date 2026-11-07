@@ -1,0 +1,13 @@
+{
+  "eval_id": 347,
+  "eval_name": "austria-nisg-2026",
+  "run_type": "with_skill",
+  "prompt": "We have an Austrian subsidiary with 120 employees in manufacturing. What does Austria's NIS2 implementation require of us and by when?",
+  "assertions": [
+    "Identifies the NISG 2026, which entered into force October 1, 2026, replacing the NISG 2018",
+    "States the registration deadline: December 31, 2026 (within three months of entry into force)",
+    "Names the competent authority: the new Bundesamt fuer Cybersicherheit (BCS) under the Interior Ministry",
+    "Gives the penalty frame: up to EUR 10M or 2 percent of worldwide turnover for essential entities, EUR 7M or 1.4 percent for important entities",
+    "Applies scope correctly: medium and large entities (50 or more employees or over EUR 10M turnover) across 18 sectors, so a 120-employee manufacturer is likely in scope, with a risk-management self-declaration due within a further 12 months"
+  ]
+}

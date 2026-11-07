@@ -1,0 +1,42 @@
+Short answer: because you are a private retailer with 400 employees and no critical national infrastructure (CNI) link, NCA ECC-2:2024 is not mandatory for you. The instrument that applies is NCA NCNICC-1:2025, Category A. Please confirm the CNI and government-ownership assumptions below, because they change the answer.
+
+1. Assumptions to confirm
+- You are a Saudi private-sector entity. You are not a government entity or subsidiary, and you do not own, operate or host CNI.
+- You are not SAMA-licensed (for example, no in-house financing or payments arm) and not CST-licensed.
+- 400 employees puts you above the 250-employee threshold, so you are in Category A whatever your revenue.
+If you hold a government contract, or a government body holds a stake that makes you a "subsidiary", ECC could apply instead. Tell me if either is true.
+
+2. Applicability matrix
+
+| Instrument | Regulator | Applies to you? |
+|---|---|---|
+| NCNICC-1:2025 (Non-CNI Private Sector Entities Cybersecurity Controls) | NCA | Yes. Mandatory and size-based. You are Category A (over 250 employees or over SAR 200M revenue). |
+| ECC-2:2024 (Essential Cybersecurity Controls) | NCA | Not mandatory, because it binds government entities, their subsidiaries and CNI operators. It is recommended best practice for others, and a useful reference architecture. |
+| NCA CCC (Cloud Cybersecurity Controls) | NCA | Only if you are ECC-covered. Otherwise your cloud use is addressed through the third-party and cloud component of NCNICC. |
+| Saudi PDPL (Royal Decree M/19, as amended by M/148) | SDAIA | Yes. A retailer processes customer, loyalty-program and employee personal data. It has been fully enforced since 14 September 2024. |
+| SAMA CSF / CST framework / CMA guidelines | SAMA / CST / CMA | Not unless you hold those licences. Check any payments, BNPL or financing arm. |
+
+The regimes stack. NCNICC covers cybersecurity, and PDPL covers personal data. One does not satisfy the other.
+
+3. What NCNICC-1:2025 requires of a Category A entity
+- It was adopted by the NCA on 28 December 2025 and is published in Arabic only.
+- Category A has 3 main components, 22 sub-components and 65 mandatory controls.
+- The components are cybersecurity governance, cybersecurity defence, and third-party and cloud computing.
+- No compliance deadline has been published, and the NCA may assess compliance at any time without notice. Treat readiness as immediate. Do not wait for a deadline.
+- The official text is Arabic only, so you will need Arabic governance artifacts and an Arabic-reading owner or translator working from the NCA document. I am not citing individual control IDs because I cannot confirm them. Work from the NCA's official NCNICC-1:2025 text and its assessment tooling.
+
+4. Practical roadmap
+1. Confirm your category and that you have no CNI, government or sector-licence links.
+2. Obtain the official Arabic NCNICC-1:2025 and appoint an accountable executive owner.
+3. Run a gap assessment against the 65 mandatory controls. Record each as implemented, partially implemented, not implemented, or not applicable with justification. Use the columns: Domain | Control ref | Current state | Gap | Evidence needed | Priority.
+4. Governance first. You need approved Arabic-language policies, roles and responsibilities, risk management and awareness.
+5. Then defence. Cover asset inventory, identity and access, patching and vulnerability management, logging and monitoring, backup, and incident response for point-of-sale, e-commerce and the customer database.
+6. Third parties and cloud. Keep a supplier register with cybersecurity requirements in contracts. Document where your cloud and SaaS data sits.
+7. In parallel, build the PDPL programme. That means a RoPA, privacy notices, lawful bases (consent for marketing; legitimate interest is available under M/148 but not for sensitive data), registration on SDAIA's National Data Governance Platform, a transfer mechanism for any offshore data flows, and a 72-hour breach notification process to SDAIA.
+8. Reuse existing ISO 27001, SOC 2 or PCI DSS evidence. Cross-map to NCNICC, then add the Saudi-specific deltas: Arabic documents, NCA reporting channels, SDAIA registration and data residency.
+
+5. Watch items
+- Penalties under PDPL as enforced today reach up to SAR 5M per violation, doubling on repeat. SDAIA issued 48 violation decisions in 2025. Proposed amendments from the 2025 consultation are not enacted as of November 2026, so confirm status with SDAIA.
+- The NCA's draft AI Cybersecurity Guidelines (AICG-1:2026) are unpublished in final form and are not binding.
+
+This is general compliance information, not legal advice. Verify against the official NCA documents and consult counsel or an accredited assessor.

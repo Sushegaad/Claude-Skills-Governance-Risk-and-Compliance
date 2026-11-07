@@ -1,0 +1,33 @@
+{
+  "eval_id": 365,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Cites the US interagency proposal (91 FR 58536, September 15, 2026) with comments due November 16, 2026",
+      "passed": true,
+      "evidence": "\"Proposed Third-Party Risk Management Guidance... published September 15, 2026 (91 FR 58536)... Comments are due November 16, 2026\""
+    },
+    {
+      "text": "Cites CBI CP173 (October 8, 2026, closing December 3, 2026) and its cross-industry, outcomes-based scope",
+      "passed": true,
+      "evidence": "\"CP173 on October 8, 2026. The consultation closes December 3, 2026. It would replace the December 2021 Cross-Industry Guidance on Outsourcing with an outcomes-based approach to third-party risks\""
+    },
+    {
+      "text": "Mentions the EBA's September 2026 final guidelines extending third-party risk coverage to non-ICT services",
+      "passed": true,
+      "evidence": "\"It follows the EBA's September 2026 final guidelines on third-party risk for non-ICT services. That widens the lens beyond ICT\""
+    },
+    {
+      "text": "References the DORA CTPP regime (19 providers designated November 2025) as the EU concentration-risk mechanism",
+      "passed": true,
+      "evidence": "\"The first CTPP list was published November 18, 2025... Concentration on a designated provider is now explicit and visible to supervisors\" - count of 19 not given but regime, date and concentration role stated"
+    },
+    {
+      "text": "Recommends mapping subcontractor chains and concentration exposure as a practical step",
+      "passed": true,
+      "evidence": "\"Map beyond the first tier... obtain a sub-processor and fourth-party list\" and \"Find the shared dependencies... the real concentration points\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

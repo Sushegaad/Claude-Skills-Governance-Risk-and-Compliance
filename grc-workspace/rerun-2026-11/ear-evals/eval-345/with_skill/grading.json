@@ -1,0 +1,33 @@
+{
+  "eval_id": 345,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Extends restricted-party screening to ownership analysis: 50 percent threshold, direct and indirect, individual and aggregate ownership by listed parties",
+      "passed": true,
+      "evidence": "\"entities 50 percent or more owned, directly or indirectly, individually or in aggregate, by listed parties\" and Element 5: \"calculate indirect and aggregate holdings... apply the 50 percent threshold.\""
+    },
+    {
+      "text": "States the operative timeline: the rule takes effect when the stay lapses, currently January 10, 2027",
+      "passed": true,
+      "evidence": "\"the stay was extended by FR Doc 2026-22793 (effective November 9, 2026) to January 10, 2027... January 10, 2027: stay lapses. Ownership screening goes live.\""
+    },
+    {
+      "text": "Recommends customer outreach for ownership certifications or corporate family tree data",
+      "passed": true,
+      "evidence": "Element 6: \"Add an ownership certification and an organization chart to onboarding and recertification, including an obligation to notify you of ownership change.\""
+    },
+    {
+      "text": "Notes the extension rule made no substantive changes to the underlying Affiliates Rule",
+      "passed": true,
+      "evidence": "\"the stay was extended by FR Doc 2026-22793 (effective November 9, 2026) to January 10, 2027, with no substantive changes.\""
+    },
+    {
+      "text": "Covers MEU List (and certain sanctioned-party) affiliates, not just the Entity List",
+      "passed": true,
+      "evidence": "\"The rule extends Entity List and MEU List license requirements (and certain SDN-related requirements)...\" and Element 5 screens owners against Entity List, MEU List, SDN and more."
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

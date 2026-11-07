@@ -1,0 +1,33 @@
+PCAOB's latest inspection publication and what it means for ITGC testing
+
+What it said
+The latest publication is the PCAOB Spotlight of October 22, 2026, "Staff Update on 2025 Inspections of Public Company Audits." The headline figures:
+- The aggregate Part I.A deficiency rate fell to 23 percent in 2025.
+- It was 38 percent in 2024 and 46 percent in 2023.
+- The 2025 figure covers 143 firms and portions of 780 audits.
+
+How to read it
+- Part I.A deficiencies are significant enough that the firm had not obtained sufficient evidence to support its opinion. The measure blends financial statement audits and ICFR audits, so it is not an ITGC-only number. Do not tell your audit committee that "ITGC audit quality improved by X." The data does not say that.
+- It is a good-news trend, but 23 percent still means roughly one in four sampled audits had a significant deficiency. Inspectors are still finding things, and ICFR work remains a recurring area of focus.
+- Related context: the PCAOB's 2025 inspection priorities named ICFR quality, generative AI use (at issuers and in audits), and cybersecurity incidents. AS 2201 has not been amended, and it is not on the PCAOB's September 30, 2026 standard-setting agenda. The requirements your auditor tests against have not changed.
+
+What it means for your ITGC testing
+1. Expect auditors who document carefully and push back on weak evidence. Years of deficiency findings in ICFR audits have made firms stricter about the following:
+   - Evidence that populations are complete (for example, the full list of terminated users or all production changes, reconciled tool extract to deployment log).
+   - IPE validation: source, parameters, logic, and completeness and accuracy of any report used in a control, including UARs run off system extracts.
+   - Precision of management review controls: what threshold triggers investigation, and what proof the review was done.
+   - Reliance on SOC 1 reports: period coverage versus fiscal year, bridge letters for gaps, and CUEC mapping to your own controls.
+2. Make your own testing audit-ready. Do not rely on the auditor to catch gaps:
+   - Retain evidence in a form that can be re-performed (parameters, screenshots with timestamps, system-generated listings).
+   - Test terminations and privileged access continuously. These produce the worst late surprises.
+   - Reviewers of UARs should be independent, and revocations should be shown as executed, not just approved.
+3. Keep the ITGC evaluation logic correct. An ITGC deficiency is assessed through the application controls and reports it undermines, not as a standalone material weakness. If dependent automated controls are re-validated clean for the period, the failure often lands at a deficiency or significant deficiency. Aggregate related deficiencies hitting the same account or assertion. Classify using AS 2201 Appendix A and Reg S-X Rule 1-02(a)(4).
+4. Watch the emerging areas inspectors named: generative AI and automated features in financial systems (treat model or config changes to automated financial controls as in-scope Domain 2 changes) and cyber incidents on financial systems, which can implicate both SOX and the SEC cyber rules (8-K Item 1.05, S-K Item 106).
+5. Timing: with year-end close, any remediation needs a sufficient operating window to re-test. A quarterly control needs at least one clean occurrence, and a daily control commonly a 25-item sample over the remediated window. Sample sizes are audit convention, so agree them with your auditor.
+
+Filer status
+Whether your auditor attests at all depends on filer status. 404(a) applies to everyone. 404(b) applies to accelerated and large accelerated filers that are not EGCs. The SEC's May 19, 2026 proposal (comments closed July 20, 2026, no final action as of November 6, 2026) would change those thresholds, but current rules remain operative.
+
+Next steps: ask your audit team what their inspection-driven focus areas are for your engagement, and run a pre-audit evidence check on populations, IPE and UARs.
+
+This is general compliance information, not legal advice.

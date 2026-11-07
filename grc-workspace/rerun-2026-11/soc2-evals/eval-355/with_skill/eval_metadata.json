@@ -1,0 +1,13 @@
+{
+  "eval_id": 355,
+  "eval_name": "readiness-timeline-2027",
+  "run_type": "with_skill",
+  "prompt": "Build a 2027 SOC 2 readiness timeline for us that accounts for the proposed criteria refresh.",
+  "assertions": [
+    "Includes the January 15, 2027 comment deadline as a milestone",
+    "Plans for the proposed effective date: engagements beginning on or after December 31, 2027 (if adopted)",
+    "Covers the early-adoption option as a decision point",
+    "Keeps 2027 engagements on the 2017 TSC with 2022 revised points of focus",
+    "Includes a gap assessment against the final criteria once published, with attention to AI-related points of focus"
+  ]
+}

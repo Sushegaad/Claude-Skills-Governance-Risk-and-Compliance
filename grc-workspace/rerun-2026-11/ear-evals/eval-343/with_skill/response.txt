@@ -1,0 +1,21 @@
+SHORT ANSWER
+I can't give you a complete, verified list of every BIS rule published in October 2026, and I do not want to invent one. Check the Federal Register (BIS agency page) and the BIS "Recent Rules" and "Federal Register Notices" pages for a full docket. What follows are the developments I can verify and the date that matters most.
+
+MOST IMPORTANT NEAR-TERM DATE: JANUARY 10, 2027
+This is when the stay of the Affiliates Rule ends.
+- The rule is "Expansion of End-User Controls To Cover Affiliates of Certain Listed Entities," 90 FR 47201 (published September 30, 2025). It extends Entity List and MEU List requirements (and certain SDN-related requirements) to entities 50 percent or more owned, directly or indirectly, individually or in aggregate, by listed parties.
+- It was stayed by 90 FR 50857 through November 9, 2026. FR Doc 2026-22793 (filed November 5, 2026, effective November 9, 2026) extends the stay to January 10, 2027, with no substantive change.
+- Unless BIS acts again, the rule applies from that date. Do not assume another extension. Ownership screening of counterparties tied to listed parties should be in place before then.
+- The immediate next step is a gap check: if your screening is name-only, it will not identify affiliates.
+
+OTHER CURRENT DEVELOPMENTS TO KNOW (not all from October)
+- UAV classification rule (91 FR 52501, effective August 13, 2026). UAVs with endurance under 3 hours are now 9A012.a.1, controlled for AT only. UAVs with 3 hours or more are 9A012.a.2 (NS Column 1 and AT1, plus MT1 if range is 300 km or more). Any UAV stays NS1/AT1 if it incorporates controlled 6A003 thermal imagers, 6A005 lasers or 7A001-7A005 navigation. Military "specially designed" UAVs not on the USML go to 9A610.a, with less sensitive parts in 9A610.y.33. Military end-use/end-user controls under § 744.21 now cover 9A012, 9D001, 9D002, 9D004 and 9E001. If you handle drones, reclassify your products.
+- Enforcement signal (August 2026): BIS settled with Plexon, Inc., a $1.7M penalty fully suspended for five years, for 8 unlicensed exports (about $179K) of neural-recording systems to the Academy of Military Medical Sciences in China, which was Entity-Listed in 2021. Research and medical technology is not exempt from Entity List screening.
+- AI chips. The January 2025 "diffusion" interim final rule was never formally rescinded in the Federal Register. BIS announced non-enforcement in May 2025, and GAO (B-337935) held that announcement to be a rule under the Congressional Review Act that was not submitted to Congress. The successor approach is country-specific rulemaking, for example the UAE rule (91 FR 43034). Do not advise on the basis of a replacement diffusion framework, because none exists.
+
+WHAT I SUGGEST
+1. Pull the October 2026 BIS Federal Register entries directly and check each for classification (ECCN), Entity List and license-policy changes affecting your products and destinations.
+2. Run Entity List additions against your customer and distributor files.
+3. Plan Affiliates Rule readiness now (ownership data, aggregation, contracts, and a hold protocol for open orders).
+
+This is general compliance information, not legal advice. Verify all citations against official sources.

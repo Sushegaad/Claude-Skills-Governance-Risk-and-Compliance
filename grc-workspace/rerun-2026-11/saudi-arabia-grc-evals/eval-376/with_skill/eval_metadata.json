@@ -1,0 +1,13 @@
+{
+  "eval_id": 376,
+  "eval_name": "ncnicc-category-a",
+  "run_type": "with_skill",
+  "prompt": "We are a 400-employee Saudi retailer, not part of critical national infrastructure. Which NCA cybersecurity controls apply to us?",
+  "assertions": [
+    "Identifies NCNICC-1:2025, the Non-CNI Private Sector Entities Cybersecurity Controls, adopted December 28, 2025",
+    "Applies size-based applicability: over 250 employees (or over SAR 200M revenue) places the company in Category A",
+    "States Category A faces 3 main components, 22 sub-components and 65 mandatory controls",
+    "States no compliance deadline has been published and the NCA may assess compliance at any time without notice",
+    "Describes the component coverage: cybersecurity governance, cybersecurity defence, and third-party and cloud computing"
+  ]
+}

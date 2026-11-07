@@ -1,0 +1,33 @@
+{
+  "eval_id": 386,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the interim final rule (91 FR 55457, published August 28, 2026) became effective October 13, 2026",
+      "passed": false,
+      "evidence": "Response says \"I cannot confirm the current status of a change to USML Category VIII(a)(8) as of November 2026\" - never cites 91 FR 55457 or the dates."
+    },
+    {
+      "text": "States qualifying survivability-enhanced aircraft are excluded from USML VIII(a)(8) and become subject to the EAR",
+      "passed": false,
+      "evidence": "Never states the exclusion; says \"I am not certain that (a)(8) is the paragraph that captures civil aircraft modified with self-protection equipment.\""
+    },
+    {
+      "text": "Gives the conditions: in-production manned civil aircraft with FAA transport or commuter category type certificate (or NATO/MNNA equivalent) incorporating secured ASE (DIRCM plus associated IR/UV missile warning with anti-tamper), with definitions at 22 CFR 121.0",
+      "passed": false,
+      "evidence": "No mention of the in-production/type-certificate conditions, the secured ASE definition, or 22 CFR 121.0."
+    },
+    {
+      "text": "States the ASE itself remains on the USML in Category XI(a)(4)",
+      "passed": false,
+      "evidence": "Only generic historical placement (\"Category XII ... and Category XI\"); never states the ASE remains in XI(a)(4)."
+    },
+    {
+      "text": "Correctly characterizes it as an interim final rule (comments closed September 28, 2026) and does not claim the rule assigned a destination ECCN",
+      "passed": false,
+      "evidence": "Does not characterize the rule at all - advises the user to \"check whether it is a proposed rule, a final rule, or an effective-date announcement\" instead of identifying it as an interim final rule."
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

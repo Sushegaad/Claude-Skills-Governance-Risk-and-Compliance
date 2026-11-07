@@ -1,0 +1,28 @@
+Caveat: I cannot confirm what the rules say as of November 2026. I do not have reliable knowledge of any 2026 change to the aircraft survivability entries. The analysis below follows the framework that applies regardless of the exact text. Re-check every step against the current 22 CFR 121.1 and the CCL.
+
+Scenario: a civil aircraft (a type certificated airframe) modified with survivability equipment, for example missile warning, IR countermeasures or DIRCM, chaff and flare dispensers, armor, or hardening.
+
+Step 1: Establish the facts
+- Identify the airframe, its certification basis (FAA or foreign civil type certificate) and the specific modification.
+- Identify every installed item by manufacturer, part number, function and design history: was it developed for a military program or with government funds? Is it a commercial variant?
+- Identify the customer, end user, end use and destination. Identify any foreign persons involved.
+
+Step 2: Order of review (the ITAR/EAR order of review)
+1. Is the item enumerated on the USML? Read the USML entry text literally. Do not rely on function.
+ - Whole-aircraft entries (Category VIII(a)): a civil aircraft is generally not on the USML merely because it is modified. Check whether any VIII(a) paragraph, including any recently amended one, captures aircraft "specially modified" or "integrated" with military equipment.
+ - Installed equipment: the survivability systems are usually controlled in their own categories, such as Category XI (electronic combat and countermeasures), Category XII (IR sensors and DIRCM-type systems), Category X (armor and protective equipment) and Category IV (flares, countermeasure munitions). They are also covered in VIII(h) when specially designed for a military aircraft.
+2. If an item is enumerated on the USML, it is ITAR-controlled whatever the host platform. Ask whether the USML entry's parameters are met. If not, it is not caught by that entry.
+3. If not enumerated, apply the "specially designed" analysis (22 CFR 120.41, or its current section number) for catch-all entries. Apply the (a)(1) catch and the (b) release criteria, such as the item being identical to a commercial part with the same form, fit and function, or being in production for civil aircraft.
+4. If not USML, classify on the CCL: 9A610 (military aircraft parts), 9A610.y items, 9A991 (civil aircraft parts), 9A004 and others. Check 600-series licensing requirements, the 600-series .y paragraphs and de minimis rules (no de minimis for 600-series to certain destinations).
+
+Step 3: Consider the whole-aircraft consequences
+- The classification of the airframe and the classification of installed equipment are separate questions. A civil aircraft can stay EAR-controlled (9A991 or 9A610 depending on the configuration) while a DIRCM suite on it is ITAR-controlled. The export of the aircraft then needs authorization for the defense-article part (DSP-5, or a DSP-73 if temporary), or an agreement.
+- Technical data for installation, integration and certification is controlled by the same regime as the hardware (Category VIII(i), XI(d), XII(f)). Defense services are triggered when you assist foreign persons with integration.
+- Check whether the aircraft's "specially modified for military use" status triggers a Commodity Jurisdiction or a Category VIII(a) catch-all. When in doubt, use a CJ request (DS-4076).
+
+Step 4: Close out
+- Document the analysis (part-by-part classification matrix), keep records for five years, and mark technical data.
+- Confirm registration (Part 122), licensing, congressional notification thresholds, brokering (Part 129), and any end-use or party restrictions (Parts 126.1 and 126.7).
+- Consult counsel and check for a pending or recent final rule that changes the VIII(a) or VIII(h) text.
+
+I recommend you share the exact rule text you are working from so that the analysis can be tied to specific paragraphs.

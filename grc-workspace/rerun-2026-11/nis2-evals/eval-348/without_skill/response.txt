@@ -1,0 +1,25 @@
+Netherlands: from the Wbni to NIS2 (Cyberbeveiligingswet)
+
+Caveat: I cannot browse and my knowledge is reliable only to about mid-2026. Verify the current status on the Dutch government site (rijksoverheid.nl, wetten.overheid.nl) and NCSC-NL / Digital Trust Center.
+
+1. Where things stand
+- The Netherlands is implementing NIS2 through the Cyberbeveiligingswet (Cbw), which will replace the Wet beveiliging netwerk- en informatiesystemen (Wbni). A Cyberbeveiligingsbesluit (decree) and ministerial regulations accompany it.
+- The Cbw bill went to the House of Representatives (Tweede Kamer) in 2025 after consultation and advice from the Council of State. The Dutch missed the 17 October 2024 deadline and received a letter of formal notice (November 2024) and a reasoned opinion (May 2025) from the Commission. The government repeatedly shifted its target entry into force; I recall it slipping into 2026. I cannot confirm that the Cbw was in force by November 2026. If it is not, the Wbni still applies for operators of essential services and digital service providers.
+
+2. How the Cbw differs from the Wbni
+- Scope expands greatly: from a short list of "aanbieders van essentiele diensten" and digital service providers to roughly 18 sectors with essential and important entities, estimated at several thousand entities. The size-cap rule (medium and large) applies. Government bodies are covered at the national level, and the decentralised government (municipalities, provinces, water boards) was handled as part of the plan.
+- Duty of care: obligations to take appropriate and proportionate technical, operational and organisational measures; the government may issue binding rules per sector. An all-hazards approach applies.
+- Reporting: early warning within 24 hours, notification within 72 hours, and a final report within one month; the Wbni's older notification duty is replaced. Recipients are the CSIRT (NCSC) and the relevant supervisor.
+- Registration: entities must register with the competent authority. I recall an obligation within five weeks after the law's entry into force (there is a single central registration through the Kamer van Koophandel / the supervisor's portal); verify.
+- Management liability and training for bestuurders.
+- Supervision is shared among sector supervisors (for example Rijksinspectie Digitale Infrastructuur (RDI) for digital infrastructure and providers, the Dutch Authority for Digital Infrastructure, Inspectie Leefomgeving en Transport, the Dutch Central Bank and AFM for finance, the NZa for health, and so on). Fines can reach EUR 10m or 2% (essential) and EUR 7m or 1.4% (important). The Wbni's fine levels were considerably lower.
+
+3. What to do
+- Stop treating the Wbni as the target. Treat the Cbw/NIS2 Art. 21 requirements as the baseline, since the Wbni measures are a fraction of that.
+- Re-run scoping against the Cbw annexes, sector by sector, including group linkage.
+- Plan for registration quickly after entry into force, and establish incident reporting (24h/72h/1 month) to NCSC and the sector regulator.
+- Do a gap assessment against ISO 27001, the Dutch BIO or sector frameworks as relevant, covering supply chain and board accountability.
+- Monitor the Dutch bill's status and the secondary decree.
+
+4. Caveats
+Confirm entry-into-force date, the transition periods and the supervisor for your sector with Dutch counsel.

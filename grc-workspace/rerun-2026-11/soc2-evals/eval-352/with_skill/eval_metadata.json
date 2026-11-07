@@ -1,0 +1,13 @@
+{
+  "eval_id": 352,
+  "eval_name": "criteria-for-2027-engagement",
+  "run_type": "with_skill",
+  "prompt": "Which Trust Services Criteria apply to a SOC 2 Type 2 examination with a period starting January 2027?",
+  "assertions": [
+    "States the 2017 TSC (with 2022 revised points of focus) apply, because the 2027 criteria are only a proposal",
+    "Notes the proposed criteria would apply to engagements beginning on or after December 31, 2027 if adopted",
+    "Mentions early adoption would be permitted once the criteria are final",
+    "Confirms the five categories (Security, Availability, Processing Integrity, Confidentiality, Privacy) are unchanged",
+    "Recommends monitoring the exposure draft and commenting by January 15, 2027"
+  ]
+}

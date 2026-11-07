@@ -1,0 +1,28 @@
+Short answer: the October 2026 omnibus is a PROPOSED rule only. Nothing has changed yet. Keep applying the current USML and 22 CFR rules until a final rule issues. For avionics makers, the most important proposal is the removal of most radar altimeters from the USML.
+
+The rule
+- "Review of the U.S. Munitions List and Related Definitions and License Exemptions," 91 FR 62361, published October 1, 2026, docket DOS-2026-0991.
+- Comments are due November 30, 2026. That is about three weeks from today (November 6), so there is still time to comment.
+
+What is proposed
+1. Removal of USML VIII(h)(10). Most radar altimeters would move off the USML. This is the headline item for avionics manufacturers, and the move would presumably put them under Commerce (EAR) jurisdiction. Confirm the destination classification and any retained carve-outs in the final text. Do not assume an ECCN.
+2. Narrowing of II(a)(4) and X(a)(7). Check whether any of your parts, shelters or protective equipment fall in the narrowed paragraphs.
+3. Restructuring of XX(c).
+4. A new 22 CFR 120.35 covering items excluded from the USML.
+5. Two new "specially designed" releases in 22 CFR 120.41. These could take certain parts and components out of the USML if they meet the release conditions.
+6. A new 22 CFR 123.26 exemption for the temporary export of foreign defense articles for OEM servicing and repair. This is relevant if you repair or service foreign-origin equipment.
+
+What it means for avionics manufacturers
+- Radar altimeters: if you make or export them under VIII(h)(10), your licensing, DDTC registration scope, technical data controls and foreign national access rules could change. Altimeters that remain on the USML (anything outside the removed paragraph) would stay under ITAR.
+- Specially designed releases: review your parts list against the existing 22 CFR 120.41 test and the proposed new releases, and identify which components might be released.
+- Repair and servicing: if you take in foreign defense articles for repair, the proposed 123.26 exemption could simplify temporary exports. It is not available until finalized.
+- Product lines straddling Categories VIII, XI and XII need a fresh classification check once the final text is known.
+
+What to do now
+- Do not change classifications, stop licensing or relax TCP controls. Proposed rules have no legal effect. Exporting or releasing technical data on the assumption of a USML change would be an ITAR violation if the final rule differs.
+- Inventory affected items and map them to the proposed paragraphs. Then prepare scenarios for a go-live: reclassification memos, ECCN determinations, license and agreement transitions, customer notices.
+- Consider filing comments by November 30, 2026, particularly on definitions, transition periods and the scope of the altimeter removal.
+- If an item is truly ambiguous today, a Commodity Jurisdiction request under 22 CFR 120.4 is still the route.
+- Track the final rule, its effective date and any transition provisions for existing licenses and agreements.
+
+This is general compliance information, not legal advice. Verify against the Federal Register notice and consult export counsel.

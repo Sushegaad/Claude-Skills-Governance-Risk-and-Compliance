@@ -1,6 +1,6 @@
 # SAMA Cyber Security Framework (CSF)
 
-**Version 1.0 (May 2017)** — issued by the Saudi Central Bank (SAMA); the operative cybersecurity baseline for the financial sector.
+**Version 1.0 (May 2017)** — issued by the Saudi Central Bank (SAMA); the operative cybersecurity baseline for the financial sector. No 2026 framework update has been issued; treat vendor claims of a newer version as unconfirmed.
 
 ## Who it binds
 All SAMA-regulated entities: banks, insurance/reinsurance companies, financing companies, credit bureaus, and licensed fintechs.

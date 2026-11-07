@@ -1,0 +1,33 @@
+{
+  "eval_id": 355,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Includes the January 15, 2027 comment deadline as a milestone",
+      "passed": false,
+      "evidence": "No mention of the January 15, 2027 comment deadline or of commenting on the exposure draft."
+    },
+    {
+      "text": "Plans for the proposed effective date: engagements beginning on or after December 31, 2027 (if adopted)",
+      "passed": false,
+      "evidence": "No December 31, 2027 effective date appears; the refresh is treated only as a generic watch item with unknown dates."
+    },
+    {
+      "text": "Covers the early-adoption option as a decision point",
+      "passed": false,
+      "evidence": "Early adoption is never mentioned; the decision gate concerns only whether a refresh \"has become final with an effective date\"."
+    },
+    {
+      "text": "Keeps 2027 engagements on the 2017 TSC with 2022 revised points of focus",
+      "passed": true,
+      "evidence": "Operative criteria are the 2017 TSC with 2022 points of focus... the plan treats it as a watch item with a decision gate rather than a requirement."
+    },
+    {
+      "text": "Includes a gap assessment against the final criteria once published, with attention to AI-related points of focus",
+      "passed": true,
+      "evidence": "Decision gate: if a refresh has become final with an effective date, assess impact on the period and update the control mapping... Add a light overlay for likely refresh themes (AI governance...)... Any final AICPA change triggers a 30-day impact assessment."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

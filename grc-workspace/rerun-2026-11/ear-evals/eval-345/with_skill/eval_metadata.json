@@ -1,0 +1,13 @@
+{
+  "eval_id": 345,
+  "eval_name": "affiliates-compliance-program",
+  "run_type": "with_skill",
+  "prompt": "Update our export compliance program elements so we are ready for the Affiliates Rule when the stay lapses.",
+  "assertions": [
+    "Extends restricted-party screening to ownership analysis: 50 percent threshold, direct and indirect, individual and aggregate ownership by listed parties",
+    "States the operative timeline: the rule takes effect when the stay lapses, currently January 10, 2027",
+    "Recommends customer outreach for ownership certifications or corporate family tree data",
+    "Notes the extension rule made no substantive changes to the underlying Affiliates Rule",
+    "Covers MEU List (and certain sanctioned-party) affiliates, not just the Entity List"
+  ]
+}

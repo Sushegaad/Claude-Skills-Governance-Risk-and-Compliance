@@ -1,0 +1,33 @@
+{
+  "eval_id": 358,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States AS 2201 is unamended in 2026 and is not on the September 30, 2026 agenda",
+      "passed": false,
+      "evidence": "Only hedges that \"To my knowledge, AS 2201... has not been substantively amended in 2026\"; the September 30, 2026 agenda is never mentioned, and the response says \"I cannot confirm what the current agenda says.\""
+    },
+    {
+      "text": "Lists agenda topics accurately, including fraud (AS 2401), NOCLAR, going concern (AS 2415), comfort letters, and auditor independence",
+      "passed": false,
+      "evidence": "Does not list the actual agenda; instead describes NOCLAR and going concern/fraud changes as \"paused, withdrawn, or deprioritized\" and omits comfort letters and auditor independence."
+    },
+    {
+      "text": "Notes this is the first agenda under Chair Demetrios Logothetis",
+      "passed": false,
+      "evidence": "No mention of Demetrios Logothetis; only a generic note that \"The PCAOB had a significant change in board leadership in 2025 and into 2026.\""
+    },
+    {
+      "text": "Identifies QC 1000 (effective December 15, 2026) as the near-term change affecting audits",
+      "passed": true,
+      "evidence": "\"QC 1000 (firm quality control), effective date extended to December 15, 2026\" listed under items adopted that still matter."
+    },
+    {
+      "text": "Does not invent AS 2201 amendments or effective dates",
+      "passed": true,
+      "evidence": "\"I am not aware of any adopted or SEC-approved change to its requirements\" — no AS 2201 amendments or effective dates are fabricated."
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

@@ -1,0 +1,30 @@
+Short answer: the 2017 Trust Services Criteria with the 2022 Revised Points of Focus apply to a Type 2 period starting January 2027. Within them, Security (the Common Criteria) is mandatory and the other four categories are optional.
+
+WHICH CRITERIA APPLY
+
+| Category | Code | Required? | Criteria |
+|---|---|---|---|
+| Security (Common Criteria) | CC | Always required | CC1-CC9 |
+| Availability | A | Optional | A1 |
+| Confidentiality | C | Optional | C1 |
+| Processing Integrity | PI | Optional | PI1 |
+| Privacy | P | Optional | P1-P8 |
+
+- CC1 Control Environment, CC2 Communication and Information, CC3 Risk Assessment, CC4 Monitoring, CC5 Control Activities, CC6 Logical and Physical Access, CC7 System Operations, CC8 Change Management, CC9 Risk Mitigation (including vendors).
+- You choose the optional categories based on your commitments to customers and the nature of your service. Typical drivers: uptime SLAs (Availability), contractual confidentiality obligations (Confidentiality), transaction or calculation accuracy (Processing Integrity), and personal information you collect directly (Privacy).
+
+WHY THE 2017 CRITERIA, NOT THE PROPOSED ONES
+
+- On October 28, 2026, the AICPA issued an exposure draft of "Proposed 2027 SOC 2 Trust Services Criteria and Description Criteria". It keeps the five categories, consolidates overlapping criteria and adds AI-related points of focus.
+- It is only a proposal. Comments are due January 15, 2027. It is proposed to take effect for engagements beginning on or after December 31, 2027, with early adoption permitted.
+- A period starting January 2027 begins before December 31, 2027. Unless you and your auditor agree to early adoption after a final version exists, which is unlikely so early, you are examined against the current criteria. Do not apply the proposed criteria to this engagement.
+- A separate February 2026 exposure draft on attestation standards (AT-C 105/205/210, proposed effective June 15, 2029) does not change the TSC.
+
+PRACTICAL POINTS FOR A 2027 TYPE 2
+
+1. Lock the scope with your auditor before the period starts: the categories, the system boundary (services, infrastructure, data flows, subservice organizations) and the exact period (6-12 months is typical; first-time Type 2 reports are often 3-6 months, but the auditor decides).
+2. Controls must be designed and in place on day one of the period, because a Type 2 tests operating effectiveness across the whole window. Quarterly controls (such as access reviews) need all four quarters evidenced in a 12-month period. Annual controls (risk assessment, policy review, pen test, DR test) must fall inside the period.
+3. Cost of adding categories: each one adds controls, evidence and test sample work. Add what customers need, not everything.
+4. If your 2027 period will carry into 2028, watch the final criteria and ask your auditor early about transition.
+
+A licensed CPA firm issues the report and confirms the applicable criteria for your engagement. This is general guidance, not legal advice.

@@ -1,0 +1,33 @@
+{
+  "eval_id": 380,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States no: the SAMA Cyber Security Framework remains version 1.0 from May 2017",
+      "passed": true,
+      "evidence": "\"Short answer: no. ... The operative version remains the SAMA Cyber Security Framework v1.0, issued in May 2017.\""
+    },
+    {
+      "text": "Advises treating vendor claims of a newer version as unconfirmed",
+      "passed": true,
+      "evidence": "\"Treat any claim of a newer version as unconfirmed until it is verified on SAMA's official website or with SAMA directly.\""
+    },
+    {
+      "text": "Confirms SAMA-regulated institutions continue under the existing framework and its maturity expectations",
+      "passed": true,
+      "evidence": "\"Continue to assess against v1.0 and maturity level 3 or above\"; describes the six-level maturity model and SAMA's minimum level 3 expectation."
+    },
+    {
+      "text": "Distinguishes SAMA scope from NCNICC-1:2025, which covers non-CNI private sector entities",
+      "passed": true,
+      "evidence": "\"The NCA adopted NCNICC-1:2025 on 28 December 2025, but it covers non-CNI private entities and is not a SAMA update.\""
+    },
+    {
+      "text": "Does not invent a 2026 SAMA framework release",
+      "passed": true,
+      "evidence": "No fabricated release; states \"No 2026 CSF update is confirmed.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

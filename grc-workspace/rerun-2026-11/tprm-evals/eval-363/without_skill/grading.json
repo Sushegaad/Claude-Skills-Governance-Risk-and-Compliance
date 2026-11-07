@@ -1,0 +1,33 @@
+{
+  "eval_id": 363,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Mentions the Joint Statement on Community Banks' Engagement with Core Service Providers issued by the agencies alongside the proposal",
+      "passed": false,
+      "evidence": "No mention of the Joint Statement on Community Banks' Engagement with Core Service Providers"
+    },
+    {
+      "text": "Describes the September 15, 2026 interagency proposal that would replace the 2023 guidance and rescind the 2024 community bank TPRM guide",
+      "passed": false,
+      "evidence": "\"I am not aware of a specific new US supervisory expectation issued in late 2026\" - the September 15, 2026 proposal is never described"
+    },
+    {
+      "text": "States the comment deadline: November 16, 2026",
+      "passed": false,
+      "evidence": "No mention of a November 16, 2026 comment deadline"
+    },
+    {
+      "text": "Confirms the June 2023 guidance remains the operative framework today",
+      "passed": true,
+      "evidence": "Lists the \"Interagency Guidance on Third-Party Relationships: Risk Management (June 2023)\" first among 'Existing expectations that apply directly'"
+    },
+    {
+      "text": "Gives practical steps: review the core provider contract, monitoring and exit planning against current guidance while tracking the proposal",
+      "passed": true,
+      "evidence": "\"Review the contract calendar: renewal dates, notice windows, termination fees\", tested exit/contingency plan, ongoing monitoring items, and \"Check agency sites... for post-June 2026 releases\" as horizon tracking"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

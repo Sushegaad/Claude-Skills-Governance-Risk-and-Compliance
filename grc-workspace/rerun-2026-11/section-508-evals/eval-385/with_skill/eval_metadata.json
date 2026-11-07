@@ -1,0 +1,13 @@
+{
+  "eval_id": 385,
+  "eval_name": "wcag-baseline",
+  "run_type": "with_skill",
+  "prompt": "Which WCAG version does Section 508 incorporate, and is that changing soon?",
+  "assertions": [
+    "States WCAG 2.0 Level AA, incorporated by the 2017 Revised 508 Standards",
+    "States it is not changing soon: no rulemaking is under way as of November 2026",
+    "Notes the October 2026 refresh-NPRM reports are erroneous, tracing to the 2015 proposal",
+    "Notes agencies may voluntarily exceed the baseline (WCAG 2.1/2.2) but the legal floor remains 2.0 AA",
+    "Distinguishes the adjacent DOJ and HHS rules that use WCAG 2.1 AA for different covered entities"
+  ]
+}

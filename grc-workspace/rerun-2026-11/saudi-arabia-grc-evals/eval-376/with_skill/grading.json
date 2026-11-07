@@ -1,0 +1,33 @@
+{
+  "eval_id": 376,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies NCNICC-1:2025, the Non-CNI Private Sector Entities Cybersecurity Controls, adopted December 28, 2025",
+      "passed": true,
+      "evidence": "\"NCNICC-1:2025 (Non-CNI Private Sector Entities Cybersecurity Controls)\" ... \"It was adopted by the NCA on 28 December 2025\""
+    },
+    {
+      "text": "Applies size-based applicability: over 250 employees (or over SAR 200M revenue) places the company in Category A",
+      "passed": true,
+      "evidence": "\"400 employees puts you above the 250-employee threshold, so you are in Category A\" ... \"Category A (over 250 employees or over SAR 200M revenue)\""
+    },
+    {
+      "text": "States Category A faces 3 main components, 22 sub-components and 65 mandatory controls",
+      "passed": true,
+      "evidence": "\"Category A has 3 main components, 22 sub-components and 65 mandatory controls.\""
+    },
+    {
+      "text": "States no compliance deadline has been published and the NCA may assess compliance at any time without notice",
+      "passed": true,
+      "evidence": "\"No compliance deadline has been published, and the NCA may assess compliance at any time without notice.\""
+    },
+    {
+      "text": "Describes the component coverage: cybersecurity governance, cybersecurity defence, and third-party and cloud computing",
+      "passed": true,
+      "evidence": "\"The components are cybersecurity governance, cybersecurity defence, and third-party and cloud computing.\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

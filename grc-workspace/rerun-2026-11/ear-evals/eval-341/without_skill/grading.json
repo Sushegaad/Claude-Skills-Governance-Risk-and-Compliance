@@ -1,0 +1,33 @@
+{
+  "eval_id": 341,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Explains the rule extends Entity List/MEU List license requirements to entities 50 percent or more owned, directly or indirectly, individually or in aggregate, by listed parties (OFAC-style ownership standard)",
+      "passed": true,
+      "evidence": "\"extends Entity List and Military End User (MEU) List restrictions to entities that are owned 50% or more, directly or indirectly, individually or in the aggregate, by one or more listed parties\"; compares to OFAC's 50% Rule."
+    },
+    {
+      "text": "Cites the origin rule: BIS interim final rule published September 30, 2025 (90 FR 47201)",
+      "passed": false,
+      "evidence": "Says only \"interim final rule dated September 29, 2025\"; never gives the 90 FR 47201 citation or the September 30, 2025 publication date."
+    },
+    {
+      "text": "States the rule is NOT currently in effect: stayed since November 10, 2025 (90 FR 50857)",
+      "passed": false,
+      "evidence": "Hedges: \"the suspension runs through about November 9, 2026, so it is expiring right around now... I cannot confirm... Treat the current status as uncertain until verified.\" Does not state the rule is currently stayed and cites no 90 FR 50857."
+    },
+    {
+      "text": "States the stay was extended to January 10, 2027 by a BIS rule effective November 9, 2026 (FR Doc 2026-22793), so it does not snap back on November 10, 2026",
+      "passed": false,
+      "evidence": "No mention of the extension, January 10, 2027, or FR Doc 2026-22793; says only \"It is possible BIS has already extended the stay... I cannot confirm that.\""
+    },
+    {
+      "text": "Advises completing ownership screening of counterparties tied to listed entities before January 10, 2027",
+      "passed": false,
+      "evidence": "Advises ownership-aware re-screening before year-end / \"the day it takes effect\", but never identifies January 10, 2027 as the deadline."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

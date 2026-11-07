@@ -1,0 +1,33 @@
+{
+  "eval_id": 389,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Mentions the Cyprus prohibition revision (September 11, 2026)",
+      "passed": false,
+      "evidence": "\"I cannot give you a reliable list of DDTC rules from the second half of 2026\" - Cyprus revision never mentioned (only generic 126.1 country-policy category)."
+    },
+    {
+      "text": "Mentions the policies of denial / MNNA list update (September 18, 2026)",
+      "passed": false,
+      "evidence": "Not mentioned."
+    },
+    {
+      "text": "Mentions at least one more: the Category XX(a) modification (September 18, 2026) or the Syria country policy revision (October 1, 2026)",
+      "passed": false,
+      "evidence": "Neither is mentioned."
+    },
+    {
+      "text": "Covers the two headline actions: the VIII(a)(8) interim final rule effective October 13 and the October 1 omnibus proposed rule with comments due November 30, 2026",
+      "passed": false,
+      "evidence": "Neither headline action is covered; the response says \"I am also not able to confirm the 'aircraft survivability change' you mention.\""
+    },
+    {
+      "text": "Does not invent rules or dates beyond the published record",
+      "passed": true,
+      "evidence": "\"I do not want to list rules that I may be inventing\" - no specific rules or dates are asserted, so nothing is invented."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

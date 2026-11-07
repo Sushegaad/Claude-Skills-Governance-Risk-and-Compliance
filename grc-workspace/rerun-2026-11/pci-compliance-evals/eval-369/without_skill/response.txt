@@ -1,0 +1,21 @@
+Yes. The PCI Security Standards Council has published AI-related material, though there is no AI-specific requirement in PCI DSS itself. I'm confident of the general direction, but not of every title and date, so verify against the PCI SSC document library.
+
+What the Council has said, as I understand it
+- Guidance on using AI in PCI assessments (2025). It sets out the Council's position for assessors (QSAs, ISAs, and assessor companies) on using AI during assessments. The key principles: AI may support assessment work but must not replace assessor judgment. The assessor stays accountable for findings and the report. Don't send cardholder data or sensitive assessment data to external AI tools without proper controls. Confidentiality, data handling and evidence quality obligations still apply. Disclose AI use to the assessed entity where appropriate.
+- Guidance on AI principles for payments and AI in the cardholder data environment (2025 and after). The messages include: AI systems that store, process or transmit account data, or that can affect the security of the CDE, are in scope for PCI DSS. Existing requirements apply to AI as to any other system component.
+
+What this means for your compliance program
+1. Scope. Identify any AI system, including LLMs, chatbots, copilots, fraud models, and agents, that could touch account data or connect to the CDE. Anything that stores, processes or transmits PAN or SAD, or is connected to or could impact the security of the CDE, is in scope (Req 12.5.2 scope confirmation).
+2. Data. Keep PAN out of prompts, logs, training data, embeddings, and vector stores unless the system is in scope and controlled. Consider tokenization, redaction, and DLP at the AI boundary. Protect SAD (no storage post-authorization, Req 3.3) and keep PAN unreadable wherever stored (Req 3.5).
+3. Access control. Apply least privilege (Req 7), unique IDs, MFA (Req 8) and control for AI agents' service accounts and API keys (8.6). Agents with tool access to payment systems need tight permissions and approval gates.
+4. Secure development and change. AI-generated or AI-assisted code must follow Req 6: code review, secure coding, vulnerability management, and an inventory of bespoke and third-party software (6.3.2). Treat prompt injection, insecure output handling, and model supply chain as threats in your Req 12.2 risk assessment.
+5. Logging and monitoring. Log and review access to AI systems in the CDE (Req 10). Be able to reconstruct what an AI agent did.
+6. Third parties. If an AI service is provided by a third party (an LLM API or SaaS tool), apply Req 12.8 and 12.9: due diligence, a responsibility matrix, a written acknowledgement, and contract terms on data retention and training use.
+7. Testing. Include AI components in vulnerability scans and penetration tests (Req 11), and test for prompt injection and data leakage.
+8. Governance. Add an AI use policy covering approved tools, a ban on pasting cardholder data into unapproved tools, and training in security awareness (Req 12.6). If you use AI in your own assessment or evidence processes, follow the Council's assessor principles and make sure your QSA is comfortable with it.
+9. Targeted risk analyses (12.3.1) and the customized approach can support AI-specific control design where defined approach controls don't fit, but they must still meet the stated objective.
+
+Next steps
+- Pull the latest AI documents from the PCI SSC document library and blog and cite them in your policy.
+- Create an AI inventory and data-flow diagram, and link them to your scope documentation.
+- Talk to your QSA early about how AI components will be assessed.

@@ -1,0 +1,13 @@
+{
+  "eval_id": 389,
+  "eval_name": "2026-h2-rules",
+  "run_type": "without_skill",
+  "prompt": "Were there other notable DDTC rules in the second half of 2026 besides the aircraft survivability change?",
+  "assertions": [
+    "Mentions the Cyprus prohibition revision (September 11, 2026)",
+    "Mentions the policies of denial / MNNA list update (September 18, 2026)",
+    "Mentions at least one more: the Category XX(a) modification (September 18, 2026) or the Syria country policy revision (October 1, 2026)",
+    "Covers the two headline actions: the VIII(a)(8) interim final rule effective October 13 and the October 1 omnibus proposed rule with comments due November 30, 2026",
+    "Does not invent rules or dates beyond the published record"
+  ]
+}

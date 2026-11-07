@@ -1,0 +1,33 @@
+{
+  "eval_id": 350,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Austria: NISG 2026 in force October 1, 2026, registration by December 31, 2026",
+      "passed": true,
+      "evidence": "\"Austria: NISG 2026... in force since 1 October 2026... Register by 31 December 2026\""
+    },
+    {
+      "text": "Germany: national implementation in force since December 2025",
+      "passed": true,
+      "evidence": "\"Germany: in force since 6 December 2025 (BSIG amendment via the NIS2 implementation act)\""
+    },
+    {
+      "text": "Poland: in force April 2, 2026; Portugal: effective April 2026",
+      "passed": true,
+      "evidence": "\"Poland: in force since 2 April 2026. Portugal: effective April 2026.\""
+    },
+    {
+      "text": "Recommends building the group baseline to the strictest applicable national variant",
+      "passed": true,
+      "evidence": "\"Build one group control framework to the strictest national variant, with country overlays\""
+    },
+    {
+      "text": "Includes identifying each country's registration portal and incident-reporting channel as rollout steps",
+      "passed": true,
+      "evidence": "\"Verify each registration portal, reporting channel and deadline with the national authority\"; Phase 2: \"One group playbook with country routing tables: the CSIRT or authority for Germany (BSI), Austria (BCS), Poland and Portugal\""
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

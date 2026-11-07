@@ -1,0 +1,18 @@
+Short answer: I cannot confirm that claim, and I would treat it as unverified until you see it in the Federal Register.
+
+1. The NPRM claim
+- I have no reliable knowledge of a US Access Board NPRM to refresh Section 508 in October 2026. My knowledge may lag, so I can't rule it out. But a rulemaking like that would appear in the Federal Register and on access-board.gov, with a docket on regulations.gov and a comment period. Check those directly.
+- The Access Board did publish a Section 508 / Section 255 "Refresh" final rule in January 2017 (82 FR 5790). Its compliance date was January 18, 2018. That is the "Revised 508 Standards" people usually mean. Many news items, vendor blogs and AI-generated summaries misdescribe that history, so a "refresh NPRM" headline is easy to get wrong.
+- Even if an NPRM was issued, it is only a proposal. It binds no one until a final rule is published and its effective and compliance dates pass.
+
+2. What actually binds you today (assuming US federal context)
+- Section 508 of the Rehabilitation Act (29 U.S.C. 794d) applies to federal agencies' development, procurement, maintenance and use of ICT. It does not directly regulate private companies, but it reaches vendors through federal contracts and procurement (FAR Subpart 39.2, FAR 52.239-1 is privacy; accessibility is handled through FAR 39.2 and the solicitation requirements).
+- The technical standard is the Revised 508 Standards (36 CFR Part 1194, Appendices A, C and D). They incorporate WCAG 2.0 Level A and AA by reference for web content and, through Chapter 5, for electronic documents, software and mobile apps. Chapters 3, 4 and 6 add functional performance criteria, hardware requirements and support documentation and services requirements.
+- Section 255 of the Communications Act covers telecommunications equipment (Access Board guidelines at 36 CFR Part 1193).
+- Related, separate obligations: Section 504 of the Rehabilitation Act, and ADA Titles II and III (DOJ). The DOJ Title II web rule (April 2024) requires WCAG 2.1 AA for state and local governments, and that is a different regime from Section 508.
+- EN 301 549 (v3.2.1) is the European standard and is harmonized with WCAG 2.1. It matters if you sell in the EU, but it does not bind under Section 508.
+
+3. Practical advice
+- Keep building to WCAG 2.0 AA at a minimum to meet 508. Building to WCAG 2.1 or 2.2 AA is a safe superset and is what most agencies and the DOJ rule now expect.
+- Document conformance using a VPAT (Accessibility Conformance Report) based on the VPAT 2.5 Revised 508 edition.
+- Subscribe to Federal Register alerts for the Access Board and watch the Access Board's rulemaking page. If you share the source of the NPRM claim (a link or Federal Register citation), I can help you work through what it would mean.

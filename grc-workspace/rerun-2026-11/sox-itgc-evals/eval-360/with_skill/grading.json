@@ -1,0 +1,33 @@
+{
+  "eval_id": 360,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Includes QC 1000 awareness: effective December 15, 2026 for audit firms",
+      "passed": true,
+      "evidence": "\"Also note QC 1000 takes effect December 15, 2026. It governs the audit firm, not your controls, but ask your auditor whether it changes their timetable or evidence requests.\""
+    },
+    {
+      "text": "Uses the October 22, 2026 PCAOB Spotlight on 2025 inspections to anticipate auditor focus areas",
+      "passed": false,
+      "evidence": "The October 22, 2026 Spotlight is never mentioned; the only statistics cited are KPMG/Audit Analytics material weakness rates and Baker Tilly repeat-filer data."
+    },
+    {
+      "text": "Covers the core ITGC domains (access, change management, IT operations)",
+      "passed": true,
+      "evidence": "Dedicated sections for \"Access to programs and data,\" \"Program changes,\" and \"Computer operations\" (plus program development)."
+    },
+    {
+      "text": "States the current 404(b) framework applies because the SEC proposal has seen no final action",
+      "passed": true,
+      "evidence": "\"Confirm filer status and whether 404(b) applies this year. Current thresholds are operative. Flag the SEC's May 19, 2026 proposal, which has no final action as of November 6, 2026.\""
+    },
+    {
+      "text": "Ties recommendations to correct dates rather than invented deadlines",
+      "passed": true,
+      "evidence": "Dates used are accurate (May 19, 2026 proposal; no final action as of November 6, 2026; QC 1000 effective December 15, 2026); no fabricated deadlines appear."
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

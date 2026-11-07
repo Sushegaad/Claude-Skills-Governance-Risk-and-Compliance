@@ -1,0 +1,33 @@
+Does the 2026 AT-C exposure draft change SOC 2 criteria?
+
+Caveat: I can't verify the specific content of a 2026 AT-C exposure draft. Confirm details against the AICPA document itself. The structural distinction below is what I am confident about.
+
+The key distinction: two different layers
+1. Trust Services Criteria (TSP Section 100). These are the criteria, meaning the subject matter standards your controls are evaluated against: Security, Availability, Confidentiality, Processing Integrity and Privacy. They are developed by the AICPA Assurance Services Executive Committee (ASEC). The current version is the 2017 criteria with the 2022 revised points of focus.
+2. Attestation standards (AT-C sections, such as AT-C 105 general concepts, AT-C 205 examination engagements, and AT-C 320 for user-entity ICFR reporting). These are set by the Auditing Standards Board (ASB) and govern how the practitioner performs the engagement: acceptance and planning, evidence, reporting, management representations, and report wording.
+There is also a third item, the AICPA SOC 2 Guide, which is guidance on applying both.
+
+So an AT-C exposure draft, by its nature, changes practitioner requirements. It does not change the Trust Services Criteria or the controls you must have. Your control set stays mapped to the 2017 TSC.
+
+What an AT-C change could affect for you
+- Report format or wording, for example the practitioner's opinion, the basis for opinion, or required paragraphs.
+- Practitioner procedures that may change auditor workload or timing, such as evaluating the work of others, use of data, or evaluating information produced by the entity (IPE).
+- Management's written assertion and representation letter content.
+- Effective dates, which usually apply to reports or periods ending after a stated date. Exposure drafts are not effective until finalized.
+- Possibly the engagement letter and fees if procedures increase.
+
+What it would not change
+- Which categories you can select.
+- The control criteria (CC1 to CC9, A1, C1, PI1, P1 to P8).
+- Your obligation to describe the system under DC 200.
+
+How to correct the confusion internally
+- Ask the compliance manager to name each project, the issuing body (ASB or ASEC), its status (exposure draft or final), and the effective date.
+- Maintain a short tracker with columns for project, body, what it governs (criteria, standards or guidance), status, effective date, and impact on us.
+- Communicate that the TSC and the attestation standards are separate. If a criteria refresh also exists, it is a separate project and its status should be verified independently.
+
+Actions
+1. Read the exposure draft summary and the comment deadline.
+2. Ask the auditor whether it would alter report or engagement mechanics for your next period.
+3. No control changes are needed because of an AT-C draft alone.
+4. Update the tracker and brief leadership.

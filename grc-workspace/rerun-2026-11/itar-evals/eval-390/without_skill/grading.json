@@ -1,0 +1,33 @@
+{
+  "eval_id": 390,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the October 1, 2026 omnibus proposed rule would remove and reserve VIII(h)(10)",
+      "passed": false,
+      "evidence": "\"I cannot confirm a current rule that changes USML VIII(h)(10)\" - the proposed rule is never identified."
+    },
+    {
+      "text": "Makes clear nothing has changed yet: the items remain ITAR-controlled while the rule is at proposal stage",
+      "passed": false,
+      "evidence": "Says generically \"Only a final rule that has reached its effective date changes your obligations,\" but never affirms the items remain ITAR-controlled today - it instead questions whether VIII(h)(10) even captures them (\"I am also not certain that VIII(h)(10) is the paragraph that currently captures radar altimeters\")."
+    },
+    {
+      "text": "States the comment deadline: November 30, 2026 (docket DOS-2026-0991)",
+      "passed": false,
+      "evidence": "No comment deadline or docket number is stated."
+    },
+    {
+      "text": "Explains that if finalized, the items would transition out of the USML (to EAR jurisdiction) and the final rule's terms should be monitored",
+      "passed": true,
+      "evidence": "\"If the rule moves civil radar altimeters off the USML ... then classify on the CCL\" plus \"Note the effective date, and any delayed compliance date and transition provisions ... Read the specific language of the rule.\""
+    },
+    {
+      "text": "Advises maintaining ITAR compliance in the interim and considering a comment submission",
+      "passed": false,
+      "evidence": "No advice to submit comments, and no clear instruction to maintain ITAR compliance in the interim (only transition-stage licensing guidance)."
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 346,
+  "eval_name": "transposition-status",
+  "run_type": "without_skill",
+  "prompt": "As of November 2026, which EU Member States still have not transposed NIS2, and what enforcement action has the European Commission taken against laggards?",
+  "assertions": [
+    "States 24 of 27 Member States have transposed; the outstanding ones are France and Ireland (draft laws pending) and Spain (bill stalled)",
+    "States the Commission referred Ireland, Spain, France and the Netherlands to the CJEU on July 8, 2026, seeking financial penalties (lump sums and daily payments)",
+    "Notes the Netherlands has since transposed: its Cyberbeveiligingswet entered into force August 15, 2026",
+    "References the earlier procedural steps: letters of formal notice November 2024 and reasoned opinions May 2025",
+    "Advises companies in untransposed states to prepare against the directive text rather than wait"
+  ]
+}

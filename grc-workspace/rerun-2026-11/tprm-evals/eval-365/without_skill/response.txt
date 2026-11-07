@@ -1,0 +1,45 @@
+Late-2026 Regulatory Developments Relevant to Fourth-Party and Concentration Risk
+
+Caveat: my knowledge is reliable through roughly mid-2026. I can describe the regulatory trajectory and dated items I know, but I cannot confirm specific late-2026 releases. Verify each item against primary sources, and treat anything I flag as "expected" as unconfirmed.
+
+1. EU: DORA is the main driver
+- Critical ICT third-party provider (CTPP) oversight: the ESAs published the first CTPP designation list in November 2025. Through 2026, Lead Overseers (EBA, EIOPA, ESMA) have been running oversight plans, information requests and inspections. Expect the first oversight recommendations and follow-up from competent authorities in the 2026-2027 period.
+- Register of Information: annual submissions (first in 2025) feed concentration analysis. Data quality findings and second-cycle submissions in 2026 increase scrutiny of subcontracting chains.
+- RTS on subcontracting of ICT services supporting critical or important functions (Delegated Regulation (EU) 2025/532): requires assessing and monitoring the full chain, with contract provisions for subcontractors. Directly relevant to fourth-party work.
+- Art. 29 requires pre-contract concentration risk assessment (including substitutability, multiple contracts with same or closely linked providers); Art. 28(8) exit plans.
+- DORA threat-led penetration testing (TLPT) with pooled testing involving CTPPs.
+- NIS2 supply chain security obligations (Art. 21(2)(d)) apply in parallel in member states as transposition completes, and the EU Cyber Resilience Act reporting obligations begin September 2026 for manufacturers (vulnerability and incident reporting), which affects software supply chains.
+- EU Data Act cloud switching rules (applicable from September 2025, switching charges eliminated by January 2027) which support exit and portability.
+- AI: the EU AI Act obligations for general-purpose AI models (since August 2025) and high-risk system requirements (August 2026, with possible delay under the digital omnibus proposals). AI model and cloud dependencies are an emerging concentration theme.
+
+2. UK
+- Critical Third Parties regime (FSMA 2023; PRA SS6/24, FCA PS16/25, BoE rules in force from 1 January 2025). HM Treasury designations of CTPs were expected after the regulators' assessments; check for designation announcements in 2026. Operational resilience rules (PS21/3) full compliance since March 2025, PRA SS2/21 outsourcing and third-party risk management.
+
+3. US
+- Interagency Third-Party Risk Management Guidance (June 2023) and the community bank guide (2024) remain the baseline; they explicitly cover subcontractors and concentration. Supervisory emphasis under current leadership is on material risk, with potential burden-reduction changes. Check for any amendment.
+- Computer-Security Incident Notification Rule; SEC cyber disclosure rules (material incidents, including third-party incidents); NYDFS Part 500 third-party provisions and guidance on third-party service provider management; state privacy and AI laws.
+- FSOC/Treasury attention to cloud and critical third-party concentration, and legislative proposals to give regulators authority over critical providers. No DORA-style regime exists as of my knowledge.
+
+4. Other jurisdictions and standards
+- Basel Committee: Principles for the sound management of third-party risk (consultation 2025; final version expected, check for publication); Principles for operational resilience.
+- FSB: Enhancing Third-Party Risk Management and Oversight toolkit (final December 2023), with work on identifying critical third parties and concentration; FSB thematic peer review follow-ups. IOSCO outsourcing principles update, and the IAIS work on third-party risk.
+- Ireland: CBI outsourcing guidance in context of DORA. Singapore (MAS Guidelines on Outsourcing and Third-Party Risk Management, 2024-2025 updates and MAS notices on technology risk), Hong Kong HKMA, Australia (APRA CPS 230 effective 1 July 2025, with material service provider requirements and CPS 234), Canada (OSFI Guideline B-10 revised, effective May 1, 2024; and E-21 operational resilience, with full compliance by 2026), Japan and others.
+
+5. How these should shape your program
+- Map the full supply chain: extend inventory to fourth parties for critical services, using register-of-information data fields (provider hierarchy, ICT subcontractors, locations). Identify "nth-party" concentration, such as common cloud region, CDN, identity provider, payment network, and open-source components.
+- Concentration metrics at multiple levels: provider, service, geography, technology stack, and shared fourth parties. Define risk appetite and thresholds; report to the board.
+- Contracts: flow-down clauses, subcontractor notification and approval rights, termination rights if subcontracting changes, data location and exit support, aligned to DORA RTS and similar regimes (OSFI B-10, APRA CPS 230).
+- Resilience evidence: scenario testing of major cloud or provider outage, and exit/substitution tests including data portability under the EU Data Act.
+- Use regulatory designations (CTPP lists, UK CTP list) as risk signals for tiering but retain own diligence.
+- AI supply chain: track model providers, hosting, data sources and subprocessor dependencies.
+- Governance: assign ownership, update policies, track regulatory horizon quarterly, and maintain a jurisdictional crosswalk.
+
+6. Verification checklist for late 2026
+- ESA DORA pages: updated CTPP list, oversight plans, Q&As and register-of-information feedback.
+- Bank of England, PRA and FCA CTP updates and HM Treasury designations.
+- Basel Committee final TPRM principles.
+- US agencies and FSOC notices; any interagency guidance revisions.
+- OSFI, APRA, MAS, HKMA updates.
+- EU digital omnibus changes affecting NIS2, AI Act, and Data Act timelines.
+
+If you tell me your jurisdictions and sector, I can build a prioritized action plan and crosswalk.

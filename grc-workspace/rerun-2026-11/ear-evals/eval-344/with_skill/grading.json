@@ -1,0 +1,33 @@
+{
+  "eval_id": 344,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States survivability-enhanced aircraft moved off USML Category VIII(a)(8) effective October 13, 2026 (interim final rule, 91 FR 55457)",
+      "passed": false,
+      "evidence": "Explicitly disclaims knowledge of the rule: \"My reference material does not include any October 2026 rule on aircraft or countermeasure jurisdiction.\" No VIII(a)(8), October 13, 2026, or 91 FR 55457."
+    },
+    {
+      "text": "States the modified aircraft are now subject to the EAR (Commerce jurisdiction)",
+      "passed": true,
+      "evidence": "\"The airliner itself, as an FAA type-certificated civil aircraft, would normally remain under the EAR... Installing ITAR-controlled equipment does not by itself move the airframe to the ITAR\" (though framed under the pre-existing regime, not the new rule)."
+    },
+    {
+      "text": "States the secured aircraft survivability equipment itself (DIRCM plus associated IR/UV missile warning with anti-tamper) remains on the USML in Category XI(a)(4)",
+      "passed": false,
+      "evidence": "Says only \"for example Category XI and the aircraft category VIII... and Category XII\" and admits \"I am not certain which paragraph covers a given configuration.\" Never identifies XI(a)(4)."
+    },
+    {
+      "text": "Mentions the conditions: in-production manned civil aircraft with FAA transport/commuter type certificate or NATO/MNNA equivalent, with definitions added at 22 CFR 121.0",
+      "passed": false,
+      "evidence": "No mention of the transport/commuter type-certificate condition, NATO/MNNA equivalents, or the new definitions at 22 CFR 121.0."
+    },
+    {
+      "text": "Does not assert that the rule assigned a specific destination ECCN (the rule names none)",
+      "passed": true,
+      "evidence": "Never claims the rule assigned an ECCN; 9A991/9A610 are offered only as typical pre-existing classifications, with the caveat that classification \"must be analyzed separately.\""
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

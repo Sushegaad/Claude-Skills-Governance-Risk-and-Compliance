@@ -1,0 +1,13 @@
+{
+  "eval_id": 366,
+  "eval_name": "secure-slc-v2",
+  "run_type": "with_skill",
+  "prompt": "Our payment software vendor is Secure SLC v1.1 validated. What changed in late 2026 and does their validation still count?",
+  "assertions": [
+    "States Secure SLC Standard v2.0 was released September 28, 2026, the first major revision",
+    "Notes alignment with the Secure Software Standard v2.0 released January 15, 2026",
+    "Mentions new coverage of digital tools and AI in vendor lifecycle processes",
+    "States existing v1.1 validations remain valid during a transition window tied to v2.0 assessor training availability",
+    "Does not assert exact transition end dates, pointing instead to the official program documentation"
+  ]
+}

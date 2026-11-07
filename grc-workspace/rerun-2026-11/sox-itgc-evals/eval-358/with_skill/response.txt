@@ -1,0 +1,28 @@
+Has AS 2201 changed in 2026, and what is on the PCAOB agenda?
+
+AS 2201: no change
+AS 2201, "An Audit of Internal Control Over Financial Reporting That Is Integrated with An Audit of Financial Statements," remains unamended. Its top-down, risk-based approach and its Appendix A definitions of control deficiency, significant deficiency and material weakness are as they were. Those definitions line up with SEC Reg S-X Rule 1-02(a)(4), which is why deficiency classifications should cite both. COSO 2013 also remains the current framework, with no successor, only supplemental guidance including generative-AI internal control guidance.
+
+What is on the standard-setting agenda
+AS 2201 is not on the PCAOB's September 30, 2026 standard-setting agenda. The topics on it are:
+- Comfort letters
+- Auditor independence
+- Fraud
+- NOCLAR (non-compliance with laws and regulations)
+- Going concern
+
+Note that some of those topics could touch ICFR work indirectly (fraud, for instance, links to how auditors think about risk). That is an observation about overlap, not a stated plan to amend AS 2201.
+
+Other 2026 developments that people confuse with AS 2201 changes
+- QC 1000 (A Firm's System of Quality Control) takes effect December 15, 2026. It governs audit firms' quality control, not your ICFR requirements. The PCAOB adopted targeted amendments September 9, 2026 (rescinding the design-only and External QC Function requirements and allowing firms to choose their annual evaluation date). The SEC approved them November 2, 2026, with the effective date unchanged.
+- AS 1000 became effective for fiscal years beginning on or after December 15, 2024.
+- The PCAOB's October 22, 2026 Spotlight reported that the aggregate Part I.A deficiency rate fell to 23 percent in 2025 (38 percent in 2024, 46 percent in 2023). This blends financial statement and ICFR opinions.
+- The proposal to fold the PCAOB into the SEC was dropped. The PCAOB remains a standalone regulator.
+- The SEC's May 19, 2026 proposal on filer thresholds is not an AS 2201 change. It concerns who must obtain an auditor attestation (404(b)). It would raise the large accelerated threshold to $2B float, exempt all non-accelerated filers, and add a roughly 5-year post-IPO on-ramp. Comments closed July 20, 2026, and there has been no final action as of November 6, 2026. Current thresholds remain operative.
+
+What this means for you
+- Keep designing and testing to the existing AS 2201 and COSO 2013 expectations. Nothing in the standard has moved.
+- The areas that change are applied ones: PCAOB inspection priorities (ICFR quality, generative AI at issuers and in audits, cybersecurity incidents), and AI or agentic features in financial systems (treat model or config changes to automated financial controls as in-scope program changes).
+- Agendas can change, so re-check the PCAOB's standard-setting page periodically rather than treating this as permanent.
+
+This is general compliance information, not legal advice. Verify against the PCAOB and SEC websites.

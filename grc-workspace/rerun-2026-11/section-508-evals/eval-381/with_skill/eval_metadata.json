@@ -1,0 +1,13 @@
+{
+  "eval_id": 381,
+  "eval_name": "refresh-rumor",
+  "run_type": "with_skill",
+  "prompt": "I read that the US Access Board issued a Section 508 refresh NPRM in October 2026. Is that true, and what standards actually bind us?",
+  "assertions": [
+    "States no: no Section 508 refresh rulemaking is under way as of November 2026",
+    "Explains the 2026 reports trace back to the 2015 proposed rule and are not supported by the Federal Register record",
+    "States the operative baseline: the 2017 Revised 508 Standards (82 FR 5790, January 18, 2017) incorporating WCAG 2.0 Level AA",
+    "Notes compliance has been required since January 18, 2018, with the legacy safe harbor for unaltered ICT",
+    "Identifies the actual 2026 Access Board rulemakings as unrelated (universal changing stations ANPRM and FOIA regulations) or at minimum confirms no ICT rulemaking exists"
+  ]
+}

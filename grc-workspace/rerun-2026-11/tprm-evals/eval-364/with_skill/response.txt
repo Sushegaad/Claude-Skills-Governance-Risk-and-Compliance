@@ -1,0 +1,31 @@
+How DORA's CTPP oversight interacts with your own TPRM programme (EU operations)
+
+Short answer: the EU oversight regime does not replace your TPRM obligations. It adds a supervisory layer over the largest providers. You remain fully responsible for managing the risk of every ICT third-party arrangement, including those with designated providers.
+
+1. The two layers
+- Your obligations as a financial entity are in DORA Chapter V (Regulation (EU) 2022/2554, applicable since January 17, 2025):
+  - Art. 28: ICT third-party risk strategy; the Register of Information (Art. 28(3)), with first submissions in April 2025; pre-contract assessment; and exit strategies for critical or important functions.
+  - Art. 29: concentration risk, including how easily a provider can be substituted.
+  - Art. 30: mandatory contract provisions. Art. 30(2) applies to all arrangements. Art. 30(3) is the enhanced set for critical or important functions.
+- The oversight framework (Art. 31 onwards) gives EU authorities direct oversight of designated critical ICT third-party providers (CTPPs). The first CTPP list was published on November 18, 2025, and major cloud providers were designated.
+
+2. How they interact
+- Designation does not transfer your accountability. The oversight framework supervises the provider. It does not discharge your own due diligence, contract, monitoring or exit duties.
+- The Register of Information should flag whether a provider is a CTPP. Include that in your concentration analysis too.
+- Oversight outputs can feed your assessments. Use the provider's public oversight information and any assurance the provider shares as inputs to due diligence, but do not substitute them for your own evidence. Check the current ESA communications for what the overseers publish and what is shared with customers.
+- Concentration is the key link. Many entities rely on the same designated cloud providers. Your Art. 29 analysis must still ask what happens if that provider fails, and whether you can substitute or exit. A CTPP designation does not remove concentration risk. If anything it confirms it.
+- Contracts still matter. Even with a designated provider, check that Art. 30 provisions are in place, particularly the enhanced Art. 30(3) set for critical or important functions: audit and access rights, exit and transition support, incident support and TLPT participation where applicable. Standard hyperscaler terms or DORA addenda need review against the full list.
+
+3. Practical programme steps
+1. Tiering. Treat any CTPP that supports a critical or important function as Tier 1. Tier by data, criticality and substitutability.
+2. Inventory. Keep the Register of Information current, mark CTPPs, and map them to the functions they support, including fourth-party dependencies.
+3. Due diligence. Review the provider's assurance reports properly: opinion, period, scope, exceptions, complementary user entity controls, subservice carve-outs, and bridge letters where there is a gap. Also apply the customer-side controls the provider expects you to run, since cloud shared-responsibility failures are usually on the customer.
+4. Contract. Confirm Art. 30 compliance and the exit provisions. Negotiate where the standard terms fall short.
+5. Exit planning. Write and test an exit strategy for each critical function, including alternatives (Art. 28(8)). The existence of oversight is not an exit plan.
+6. Monitoring. Track provider incidents, oversight publications, sub-processor changes, and concentration across your portfolio. Review integration and OAuth or API scope quarterly.
+7. Governance. Report CTPP dependencies and concentration to the management body.
+
+4. Other regimes
+If you are also in NIS2 scope, Art. 21(2)(d) and 21(3) apply to supply chain security. Under ISO 27001:2022, Annex A 5.19-5.23 are the matching controls. Run one programme and apply the strictest requirement as the baseline.
+
+Caveat: this is general compliance information, not legal advice. Check the current ESA and national competent authority publications for the latest list and oversight outputs.

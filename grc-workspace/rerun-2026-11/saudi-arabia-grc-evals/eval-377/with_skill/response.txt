@@ -1,0 +1,34 @@
+Short answer: a 40-person private Saudi supplier that is not CNI falls under NCA NCNICC-1:2025 as a Category B SME. ECC-2:2024 is not mandatory for them. Their obligation is 26 mandatory controls. Please confirm the points in section 1 first.
+
+1. Assumptions to confirm
+- The supplier is a Saudi private-sector company. It is not a government entity or subsidiary and does not own, operate or host CNI.
+- If it supplies a CNI operator or a government body, it is still not directly bound by ECC. The customer's third-party controls will flow down to it by contract, and that is often what drives the real requirements.
+- It is not SAMA-licensed or CST-licensed.
+- Category B covers 6 to 249 employees or SAR 3M to 200M revenue. 40 employees fits, but check revenue as well. A supplier with under 6 employees and under SAR 3M revenue would sit below the thresholds.
+
+2. Applicability matrix
+
+| Instrument | Regulator | Applies to the supplier? |
+|---|---|---|
+| NCNICC-1:2025 | NCA | Yes. Mandatory, Category B SME. |
+| ECC-2:2024 | NCA | Not mandatory. Recommended best practice only. |
+| NCA CCC | NCA | Only if ECC-covered. Otherwise it is not directly applicable. |
+| Saudi PDPL (M/19, amended by M/148) | SDAIA | Yes, if it processes personal data of Saudi residents. This includes acting as a processor for you. Size does not exempt it. |
+| Contractual flow-down from you | You | Likely. This is your third-party risk programme, not a regulatory duty on them. |
+
+3. What NCNICC-1:2025 requires of Category B
+- It was adopted on 28 December 2025 and is published in Arabic only.
+- Category B has 13 sub-components and 26 mandatory controls. The remaining controls are recommended, not required.
+- The same three components apply as for Category A: cybersecurity governance, cybersecurity defence, and third-party and cloud computing.
+- No compliance deadline has been published, and the NCA may assess at any time without notice. The supplier should treat readiness as immediate.
+- I am not citing individual control IDs because I cannot confirm them. They should work from the official NCA text.
+
+4. Practical advice for you as the customer
+- Do not demand full ECC compliance from a 40-person supplier. It is not their legal baseline, and the NCNICC Category B mandatory set is the proportionate benchmark.
+- Ask for evidence of the 26 mandatory controls, such as an NCA self-assessment or a gap assessment against them.
+- Add contract clauses covering security requirements, incident notification to you, access control, data return and deletion, and audit rights.
+- If they process personal data for you, you need a controller-processor agreement. Under PDPL you stay accountable as controller, and breach notification to SDAIA is 72 hours, so require prompt notice from them.
+- If they use offshore cloud or support, you need a PDPL transfer mechanism (adequacy, SDAIA SCCs in the C2C, C2P, P2C or P2P modules, or BCRs).
+- Tell them to prioritise governance basics (an approved policy set in Arabic, named responsibility, risk register), then defence basics (asset inventory, MFA, patching, backups, logging, incident response), then supplier and cloud management.
+
+This is general compliance information, not legal advice. Check the official NCA documents and consult qualified advisors.

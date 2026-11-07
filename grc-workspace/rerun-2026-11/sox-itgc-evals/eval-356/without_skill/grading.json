@@ -1,0 +1,33 @@
+{
+  "eval_id": 356,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies QC 1000 as the PCAOB quality control standard taking effect December 15, 2026",
+      "passed": true,
+      "evidence": "\"QC 1000, 'A Firm's System of Quality Control,' was adopted by the PCAOB... The PCAOB extended it by one year, to December 15, 2026.\""
+    },
+    {
+      "text": "Describes the September 9, 2026 amendments: rescinded the design-only requirement and the External QC Function requirement, and let firms choose their annual evaluation date",
+      "passed": false,
+      "evidence": "The September 9, 2026 amendments are never mentioned; the response only references the original May 2024 adoption and conforming amendments adopted at that time."
+    },
+    {
+      "text": "States the SEC approved the amendments on November 2, 2026 with the effective date unchanged",
+      "passed": false,
+      "evidence": "No mention of a November 2, 2026 SEC approval; the response only says the SEC approved the original standard \"later that year\" (2024) and tells the user to verify dates on the PCAOB website."
+    },
+    {
+      "text": "Explains it governs audit firms' quality control systems, so it affects the auditor rather than imposing direct issuer obligations",
+      "passed": true,
+      "evidence": "\"QC 1000 is a firm-level PCAOB standard for audit firms. It is not a requirement on your company... It does not create new deliverables for the issuer.\""
+    },
+    {
+      "text": "Advises discussing with the auditor how QC 1000 affects the 2026 year-end audit",
+      "passed": true,
+      "evidence": "\"Ask your audit partner how the firm is implementing QC 1000 and whether any timing or request changes are planned for the year-end audit.\""
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}
