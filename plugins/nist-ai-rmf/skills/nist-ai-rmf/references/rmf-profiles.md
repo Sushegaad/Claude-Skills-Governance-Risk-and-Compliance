@@ -106,20 +106,21 @@ The gap between Current and Target Profile drives the risk management roadmap.
 
 | AI RMF Function/Category | ISO 42001 Equivalent |
 |--------------------------|---------------------|
-| GOVERN 1 (Policies in place) | Clause 5 (Leadership), Clause 6 (Planning), A.2 (AI policy) |
-| GOVERN 2 (Accountability) | Clause 5.3 (Roles and responsibilities), A.2.3 |
-| GOVERN 3 (Workforce diversity and DEIA) | Clause 7.2 (Competence), A.2.5 (Responsibilities for AI system impact) |
-| GOVERN 4 (Cross-functional teams) | Clause 7.1 (Resources), A.2.5 |
-| GOVERN 5 (Engagement with AI actors) | Clause 7.4 (Communication), A.8 (Information for interested parties) |
-| MAP 1 (Context) | Clause 4 (Context of organization), A.3 (Internal/external context) |
-| MAP 2 (Scientific understanding) | A.6 (AI system lifecycle) |
-| MAP 3 (Stakeholder risk/benefit) | Clause 4.2 (Interested parties), A.8.4 (Impact assessment) |
-| MAP 5 (Likelihood/impact) | A.5.2 (AI risk assessment methodology) |
-| MEASURE 2 (System evaluation) | A.6.2 (AI system design), A.10 (Use of AI systems) |
-| MEASURE 3 (Ongoing monitoring) | Clause 9.1 (Monitoring and measurement), A.6.2.5 |
-| MANAGE 1 (Treatment and prioritization) | Clause 6.1.3 (AI risk treatment), A.5.3 |
-| MANAGE 4 (Monitoring, incidents, improvement) | A.9 (Performance evaluation), Clause 10 (Improvement) |
-| MANAGE 4.2 (Continual improvement) | Clause 10.2 (Nonconformity), Clause 9.3 (Management review) |
+| GOVERN 1 (Policies in place) | Clause 5 (Leadership), Clause 6 (Planning), A.2 (Policies related to AI), A.2.2 (AI policy) |
+| GOVERN 2 (Accountability) | Clause 5.3 (Roles and responsibilities), A.3.2 (AI roles and responsibilities) |
+| GOVERN 3 (Workforce diversity and DEIA) | Clause 7.2 (Competence), A.4.6 (Human resources) |
+| GOVERN 4 (Cross-functional teams) | Clause 7.3 (Awareness), A.3.3 (Reporting of concerns) |
+| GOVERN 5 (Engagement with AI actors) | Clause 7.4 (Communication), A.8.5 (Information for interested parties) |
+| MAP 1 (Context) | Clause 4 (Context of the organization), A.3 (Internal organisation) |
+| MAP 2 (Scientific understanding) | A.6 (AI system life cycle) |
+| MAP 3 (Stakeholder risk/benefit) | Clause 4.2 (Interested parties), A.5.4 (Assessing AI system impact on individuals or groups of individuals) |
+| MAP 5 (Likelihood/impact) | A.5.2 (AI system impact assessment process), A.5.5 (Assessing societal impacts of AI systems) |
+| MEASURE 2 (System evaluation) | A.6.2.4 (AI system verification and validation), A.9 (Use of AI systems) |
+| MEASURE 3 (Ongoing monitoring) | Clause 9.1 (Monitoring, measurement, analysis and evaluation), A.6.2.6 (AI system operation and monitoring) |
+| MANAGE 1 (Treatment and prioritization) | Clause 6.1.3 (AI risk treatment), A.5.3 (Documentation of AI system impact assessments) |
+| MANAGE 3 (Third-party risks) | A.10.2 (Allocating responsibilities), A.10.3 (Suppliers) |
+| MANAGE 4 (Monitoring, incidents, improvement) | Clause 9 (Performance evaluation), A.8.4 (Communication of incidents), Clause 10 (Improvement) |
+| MANAGE 4.2 (Continual improvement) | Clause 10.2 (Nonconformity and corrective action), Clause 9.3 (Management review) |
 
 ---
 

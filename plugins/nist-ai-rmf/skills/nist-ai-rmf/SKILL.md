@@ -237,18 +237,19 @@ NIST also uses cross-sectoral and use-case profiles as companions to the core AI
 
 | AI RMF Function/Category | ISO 42001 Equivalent |
 |----------------------------|-------------------------|
-| GOVERN 1 (Policies in place) | Clause 5 (Leadership), Clause 6 (Planning), A.2 (AI policy) |
-| GOVERN 2 (Accountability) | Clause 5.3 (Roles and responsibilities), A.2.3 |
-| GOVERN 3 (Workforce diversity and human-AI oversight roles) | Clause 5.3, A.2.5 (Responsibilities for AI system impact) |
-| GOVERN 4 (Risk culture and communication) | Clause 7.1 (Resources), A.2.5 |
-| GOVERN 1.3 (Risk tolerance) | Clause 6.1 (Risk and opportunity), A.5.2 (AI risk assessment) |
-| MAP 1 (Context) | Clause 4 (Context of organization), A.3 (Internal/external context) |
-| MAP 2 (System categorization) | A.6 (AI system lifecycle) |
-| MAP 5 (Impact characterization) | Clause 4.2 (Interested parties), A.8.4 (Impact assessment), A.5.2 (AI risk assessment methodology) |
-| MEASURE 2 (System evaluation) | A.6.2 (AI system design), A.10 (Use of AI systems) |
-| MEASURE 3 (Ongoing monitoring) | Clause 9.1 (Monitoring and measurement), A.6.2.5 |
-| MANAGE 1/2 (Risk response and treatment strategies) | Clause 6.1.3 (AI risk treatment), A.5.3 |
-| MANAGE 4 (Incident response, review, and improvement) | A.9 (Performance evaluation), Clause 10 (Improvement), Clause 10.2 (Nonconformity), Clause 9.3 (Management review) |
+| GOVERN 1 (Policies in place) | Clause 5 (Leadership), Clause 6 (Planning), A.2 (Policies related to AI), A.2.2 (AI policy) |
+| GOVERN 2 (Accountability) | Clause 5.3 (Roles and responsibilities), A.3.2 (AI roles and responsibilities) |
+| GOVERN 3 (Workforce diversity and human-AI oversight roles) | Clause 7.2 (Competence), A.4.6 (Human resources) |
+| GOVERN 4 (Risk culture and communication) | Clause 7.3 (Awareness), A.3.3 (Reporting of concerns) |
+| GOVERN 1.3 (Risk tolerance) | Clause 6.1 (Actions to address risks and opportunities), A.5.2 (AI system impact assessment process) |
+| MAP 1 (Context) | Clause 4 (Context of the organization), A.3 (Internal organisation) |
+| MAP 2 (System categorization) | A.6 (AI system life cycle) |
+| MAP 5 (Impact characterization) | Clause 4.2 (Interested parties), A.5.2 (AI system impact assessment process), A.5.5 (Assessing societal impacts of AI systems) |
+| MEASURE 2 (System evaluation) | A.6.2.4 (AI system verification and validation), A.9 (Use of AI systems) |
+| MEASURE 3 (Ongoing monitoring) | Clause 9.1 (Monitoring, measurement, analysis and evaluation), A.6.2.6 (AI system operation and monitoring) |
+| MANAGE 1/2 (Risk response and treatment strategies) | Clause 6.1.3 (AI risk treatment), A.5.3 (Documentation of AI system impact assessments) |
+| MANAGE 3 (Third-party risks) | A.10.2 (Allocating responsibilities), A.10.3 (Suppliers) |
+| MANAGE 4 (Incident response, review, and improvement) | Clause 9 (Performance evaluation), A.8.4 (Communication of incidents), Clause 10 (Improvement), Clause 9.3 (Management review) |
 
 For NIST CSF 2.0 and NIST Privacy Framework mappings, sector-specific risk considerations (healthcare, financial services, HR/recruitment, criminal justice, government, education, autonomous systems), implementation tiers, and common gap patterns, read **references/rmf-profiles.md**.
 

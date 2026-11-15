@@ -238,14 +238,14 @@ ISO 42001 is the primary AI management system standard complementing AI Act comp
 
 | AI Act Article | ISO 42001 Element |
 |---------------|-------------------|
-| Art. 9 (Risk Management) | Clause 6.1, Annex A.6 (AI risk assessment), Annex B.3 |
-| Art. 10 (Data Governance) | Clause 8.4, Annex A.8 (AI system operation), A.7 (AI data management) |
-| Art. 13 (Transparency) | Annex A.4.1 (intended purpose documentation), A.4.2 |
-| Art. 14 (Human Oversight) | Annex A.9.3, A.10.1 (human factors in AI) |
-| Art. 15 (Accuracy/Robustness) | Annex A.9.4 (AI system performance), B.5 |
+| Art. 9 (Risk Management) | Clause 6.1 (Actions to address risks and opportunities), A.5.2 (AI system impact assessment process) |
+| Art. 10 (Data Governance) | Clause 8 (Operation), A.7 (Data for AI systems: A.7.2 to A.7.6) |
+| Art. 13 (Transparency) | A.8.2 (System documentation and information for users), A.6.2.7 (AI system technical documentation) |
+| Art. 14 (Human Oversight) | A.9.2 (Processes for responsible use of AI systems), A.6.1.3 (Processes for responsible AI system design and development) |
+| Art. 15 (Accuracy/Robustness) | A.6.2.4 (AI system verification and validation), A.6.2.6 (AI system operation and monitoring) |
 | Art. 17 (QMS) | Clause 4–10 PDCA management system structure |
-| Art. 72 (Post-Market Monitoring) | Clause 9.1 (performance evaluation), A.10.3 |
-| Art. 73 (Incident Reporting) | Annex A.10.5 (adverse impacts), Clause 10.2 |
+| Art. 72 (Post-Market Monitoring) | Clause 9.1 (Monitoring, measurement, analysis and evaluation), A.6.2.6 (AI system operation and monitoring) |
+| Art. 73 (Incident Reporting) | A.8.4 (Communication of incidents), Clause 10.2 (Nonconformity and corrective action) |
 
 **Practical guidance:** ISO 42001 certification can support demonstration of Art. 17 QMS compliance. ISO 42001's Statement of Applicability (SoA) process may be adapted for mapping conformity with AI Act requirements.
 
