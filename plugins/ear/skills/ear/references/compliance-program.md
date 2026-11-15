@@ -1,10 +1,10 @@
 # EAR Export Compliance Programme, Enforcement, and Special Rules
 
-## Export Compliance Programme (ECP) — BIS Seven Elements
+## Export Compliance Programme (ECP) - BIS Eight Elements
 
-BIS has identified seven elements of an effective Export Compliance Programme. Companies with strong ECPs receive significant penalty mitigation in enforcement actions.
+BIS has identified eight elements of an effective Export Compliance Programme: (1) Management Commitment, (2) Risk Assessment, (3) Export Authorization, (4) Recordkeeping, (5) Training, (6) Audits, (7) Handling Export Violations and Corrective Actions, and (8) Build and Maintain the ECP Manual. Companies with strong ECPs receive significant penalty mitigation in enforcement actions.
 
-### Element 1 — Management Commitment
+### Element 1 - Management Commitment
 
 - Senior leadership (CEO/CISO/CCO level) must visibly champion export compliance
 - Written, board-approved export compliance policy signed by senior officer
@@ -14,7 +14,7 @@ BIS has identified seven elements of an effective Export Compliance Programme. C
 
 **Best practice:** Quarterly compliance reporting to senior leadership; annual ECP review with documented findings
 
-### Element 2 — Risk Assessment
+### Element 2 - Risk Assessment
 
 - Identify all products, software, and technology subject to EAR
 - Classify each item: ECCN or EAR99 (document the classification rationale)
@@ -24,32 +24,16 @@ BIS has identified seven elements of an effective Export Compliance Programme. C
 
 **ECCN classification log fields:** Item description, part number, technical parameters reviewed, ECCN assigned, RFC codes, date of classification, classifier name, review date
 
-### Element 3 — Written Policies and Procedures
+### Element 3 - Export Authorization
 
-- Written, procedure-level guidance for each process that touches exports:
-  - Customer onboarding and restricted party screening
-  - Order acceptance and fulfilment (sales, finance, logistics)
-  - ECCN classification and update trigger
-  - Licence application and management
-  - Employee travel with controlled items/technology
-  - Hiring of foreign nationals (deemed export screening)
-  - Distributor/reseller programme requirements
-- Procedures must address digital transactions (cloud, SaaS, APIs) and source code repositories
+- Determine the correct authorization for every transaction before shipment: licence required, licence exception, or NLR (No License Required)
+- Document the ECCN/EAR99 classification, Country Chart analysis, and exception eligibility for each order
+- Complete restricted party screening and end-use/end-user due diligence (see below) before release
+- Manage licence applications, conditions, and expirations through SNAP-R
 
-### Element 4 — Training and Awareness
+The screening and due-diligence processes below are the operational core of Export Authorization.
 
-- Mandatory training for all employees who may touch controlled transactions: sales, engineering, operations, HR (foreign national hiring), finance, legal
-- Role-based training depth: frontline sales (awareness); ECO/lawyers (deep dive)
-- Annual refresher training with sign-off acknowledgement
-- Training records retained for 5 years
-- Training content must cover: EAR basics, ECCN/EAR99, restricted parties, red flag recognition, deemed exports, reporting obligations
-
-**Topics for engineers and developers:**
-- Deemed exports: sharing controlled source code with foreign national colleagues
-- Cloud platforms and access controls for controlled technology
-- Open-source publication — fundamental research exemption vs. EAR controls on software
-
-### Element 5 — Restricted Party Screening
+#### Restricted Party Screening (within Element 3)
 
 - Screen **all parties** to every transaction: buyer, end-user, intermediate consignee, freight forwarder, bank, broker
 - Minimum lists to screen against:
@@ -60,7 +44,7 @@ BIS has identified seven elements of an effective Export Compliance Programme. C
   - State Department Debarred List (DDTC)
   - OFAC SDN List
   - OFAC Consolidated Sanctions List
-- **Consolidated Screening List (CSL):** trade.gov/consolidated-screening-list — single search covers BIS + State + Treasury
+- **Consolidated Screening List (CSL):** trade.gov/consolidated-screening-list - single search covers BIS + State + Treasury
 - Screen at time of: quote/order acceptance, before each shipment, and when parties change
 
 **Affiliates Rule (ownership screening):** The BIS interim final rule "Expansion of End-User Controls To Cover Affiliates of Certain Listed Entities" (90 FR 47201, published September 30, 2025, effective September 29, 2025) extends Entity List/MEU List (and certain SDN) license requirements to entities 50 percent or more owned, directly or indirectly, individually or in aggregate, by listed parties (OFAC-style 50 percent standard). The rule is stayed: a one-year stay (90 FR 50857, effective November 10, 2025) ran through November 9, 2026, and was extended to January 10, 2027 (FR Doc 2026-22793, filed November 5, 2026, effective November 9, 2026, no substantive changes). Build ownership screening of counterparties tied to listed entities into the screening workflow before January 10, 2027.
@@ -76,7 +60,7 @@ BIS has identified seven elements of an effective Export Compliance Programme. C
 4. If true hit: refuse the transaction; do not tip off the customer (no "tipping off" problem under EAR as severe as OFAC, but standard practice)
 5. Document the match, review, and outcome
 
-### Element 6 — Due Diligence (Know Your Customer)
+#### Due Diligence - Know Your Customer (within Element 3)
 
 - Know-Your-Customer (KYC) process for new distributors, resellers, and high-risk end-users
 - For high-risk transactions, obtain:
@@ -86,13 +70,50 @@ BIS has identified seven elements of an effective Export Compliance Programme. C
 - Red flag investigation: BIS publishes 15 "red flags" in Supplement 3 to Part 732; document your review and conclusions
 - **Distributors in high-risk territories (D:1 countries):** Site visits, supply chain audits, enhanced due diligence on sub-distributors
 
-### Element 7 — Recordkeeping and Audits
+### Element 4 - Recordkeeping
 
 - Retain all export-related records for **5 years** from the date of export (§ 762.6)
 - Records include: orders, invoices, bills of lading, Shipper's Export Declarations, EEI filings, classification records, screening records, licence applications and approvals, end-user statements, licence exception documentation
 - Records accessible to BIS within a **reasonable time** (generally within 5 business days of OEE request)
-- Annual internal ECP audit or review
+
+### Element 5 - Training
+
+- Mandatory training for all employees who may touch controlled transactions: sales, engineering, operations, HR (foreign national hiring), finance, legal
+- Role-based training depth: frontline sales (awareness); ECO/lawyers (deep dive)
+- Annual refresher training with sign-off acknowledgement
+- Training records retained for 5 years
+- Training content must cover: EAR basics, ECCN/EAR99, restricted parties, red flag recognition, deemed exports, reporting obligations
+
+**Topics for engineers and developers:**
+- Deemed exports: sharing controlled source code with foreign national colleagues
+- Cloud platforms and access controls for controlled technology
+- Open-source publication - fundamental research exemption vs. EAR controls on software
+
+### Element 6 - Audits
+
+- Annual internal ECP audit or review with documented findings and remediation tracking
 - Periodic third-party ECP assessment recommended for high-volume or high-risk exporters
+- Audit scope: classification accuracy, screening completeness, licence condition adherence, recordkeeping, training currency
+
+### Element 7 - Handling Export Violations and Corrective Actions
+
+- Internal reporting channel for suspected violations; non-retaliation policy
+- On discovery of an apparent violation: stop affected shipments, escalate to the ECO/legal, and preserve records
+- Conduct root cause analysis and implement corrective actions (process fixes, retraining, discipline where warranted)
+- Evaluate Voluntary Self-Disclosure to OEE under § 764.5 (see the VSD section below); deliberate non-disclosure of significant apparent violations is an aggravating factor
+
+### Element 8 - Build and Maintain the ECP Manual
+
+- Written, procedure-level guidance for each process that touches exports:
+  - Customer onboarding and restricted party screening
+  - Order acceptance and fulfilment (sales, finance, logistics)
+  - ECCN classification and update trigger
+  - Licence application and management
+  - Employee travel with controlled items/technology
+  - Hiring of foreign nationals (deemed export screening)
+  - Distributor/reseller programme requirements
+- Procedures must address digital transactions (cloud, SaaS, APIs) and source code repositories
+- Review and update the manual at least annually and on regulatory change
 
 ---
 
@@ -131,7 +152,7 @@ BIS's enforcement arm investigates violations through:
 Willful violations of the EAR may be referred to the Department of Justice for criminal prosecution:
 - **Individuals:** Up to **20 years** imprisonment + fines up to $1 million per violation
 - **Corporations:** Fines up to $1 million per violation (per count)
-- Criminal cases are reserved for deliberate, knowing, or willful violations — particularly those involving proliferation, sanctions evasion, or schemes to evade Entity List restrictions
+- Criminal cases are reserved for deliberate, knowing, or willful violations - particularly those involving proliferation, sanctions evasion, or schemes to evade Entity List restrictions
 
 ### Export Denial Orders (EDOs)
 
@@ -160,7 +181,7 @@ File a VSD when you discover:
 ### VSD Process
 
 1. **Preliminary Inquiry (PI):** Review the facts; if a likely violation is found, stop any ongoing transactions
-2. **Initial Notification:** File a brief initial notification to OEE (letter or email) — as soon as a likely violation is discovered; preserves the VSD date
+2. **Initial Notification:** File a brief initial notification to OEE (letter or email) - as soon as a likely violation is discovered; preserves the VSD date
 3. **Full VSD Submission (within 180 days of initial notification):** Complete written VSD including:
    - Detailed narrative of the facts
    - All transactions identified (shipper, consignee, item, ECCN, value, date, exception claimed)
@@ -178,9 +199,9 @@ File a VSD when you discover:
 
 ---
 
-## Foreign Direct Product Rule (FDPR) — Deep Dive
+## Foreign Direct Product Rule (FDPR) - Deep Dive
 
-### General FDPR (§ 736.2(b)(3))
+### General FDPR (§ 734.9)
 
 Foreign-made items are subject to EAR if they are the **direct product** of US-origin technology or software that is controlled for NS or CB reasons AND the foreign item is to be shipped to a Country Group D:1 or E:1/E:2 country.
 
@@ -188,7 +209,7 @@ Foreign-made items are subject to EAR if they are the **direct product** of US-o
 1. **Technology/software prong:** Was the item produced using US-origin technology or software controlled for NS or CB reasons under the CCL?
 2. **Destination prong:** Is the item destined for a D:1 or E:1/E:2 country?
 
-### Entity List FDPR (2020 — Huawei Rule)
+### Entity List FDPR (2020 - Huawei Rule)
 
 Extended the FDPR to capture foreign-made items when:
 1. The foreign item is produced using equipment or technology that is the direct product of **specific US technology/software** (tooling, wafer fab equipment under 3B001/3B002)
@@ -204,11 +225,11 @@ Captures items produced with US wafer fabrication equipment destined for:
 
 ### Russia/Belarus FDPR (March 2022)
 
-Captures virtually all items produced anywhere with **any** US technology, software, or equipment, destined for Russia or Belarus — with extremely limited exceptions.
+Captures virtually all items produced anywhere with **any** US technology, software, or equipment, destined for Russia or Belarus - with extremely limited exceptions.
 
 ---
 
-## Deemed Export Rules — Compliance Programme Implications
+## Deemed Export Rules - Compliance Programme Implications
 
 ### What Constitutes a Deemed Export
 
@@ -235,7 +256,7 @@ BIS applies the **"most restrictive" nationality rule** for dual nationals or pe
 
 ---
 
-## SNAP-R — Licensing Portal Guidance
+## SNAP-R - Licensing Portal Guidance
 
 **URL:** snap-r.bis.doc.gov (requires free BIS account)
 
@@ -246,7 +267,7 @@ BIS applies the **"most restrictive" nationality rule** for dual nationals or pe
 - BIS-711: Statement by Ultimate Consignee and Purchaser
 
 **SNAP-R Best Practices:**
-- Submit complete applications — missing technical data is the #1 cause of delay
+- Submit complete applications - missing technical data is the #1 cause of delay
 - Include end-use statements and supporting technical documentation proactively
 - Track licence expiration dates and re-apply at least 60 days before expiry
 - For time-sensitive transactions: contact the relevant BIS division directly after submission

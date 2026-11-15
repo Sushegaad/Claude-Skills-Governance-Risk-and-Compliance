@@ -1,0 +1,13 @@
+{
+  "eval_id": 430,
+  "eval_name": "ecp-elements",
+  "run_type": "without_skill",
+  "prompt": "How many elements does the BIS Export Compliance Program framework have? List them.",
+  "assertions": [
+    "States eight elements",
+    "Includes Export Authorization as an element",
+    "Includes Handling Export Violations and Corrective Actions",
+    "Includes Build and Maintain the ECP Manual",
+    "Does not present the framework as seven elements"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 434,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States 2019 temporary files = 7.4.6",
+      "passed": true,
+      "evidence": "'2019: control 7.4.6, Temporary files'"
+    },
+    {
+      "text": "Maps it to A.1.4.7 in 2025",
+      "passed": true,
+      "evidence": "'2025: A.1.4.7 Temporary Files'"
+    },
+    {
+      "text": "States 7.4.5 is PII de-identification and deletion, not temporary files",
+      "passed": false,
+      "evidence": "7.4.5 is never mentioned"
+    },
+    {
+      "text": "Correctly names 7.3.1 as determining and fulfilling obligations to PII principals (7.3.2 = determining information)",
+      "passed": false,
+      "evidence": "7.3.1 and 7.3.2 are never mentioned"
+    },
+    {
+      "text": "Presents a consistent 2019-to-2025 mapping",
+      "passed": true,
+      "evidence": "Consistent shift-by-one mapping: 7.4.6->A.1.4.7, 8.4.1->A.2.4.2, with the objective-takes-.1 explanation"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

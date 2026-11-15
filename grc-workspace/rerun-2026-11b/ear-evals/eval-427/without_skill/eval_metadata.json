@@ -1,0 +1,13 @@
+{
+  "eval_id": 427,
+  "eval_name": "de-minimis",
+  "run_type": "without_skill",
+  "prompt": "Our foreign-made product contains 12 percent US-origin controlled content by value. Can it ship to Cuba? To Germany?",
+  "assertions": [
+    "States the general de minimis threshold is 25 percent for destinations other than E:1/E:2",
+    "States the 10 percent threshold applies to embargoed E:1/E:2 destinations",
+    "Concludes the Cuba shipment IS subject to the EAR (12 exceeds 10)",
+    "Concludes the Germany shipment is below the 25 percent threshold (subject to proper de minimis calculation)",
+    "Does not invert the thresholds"
+  ]
+}

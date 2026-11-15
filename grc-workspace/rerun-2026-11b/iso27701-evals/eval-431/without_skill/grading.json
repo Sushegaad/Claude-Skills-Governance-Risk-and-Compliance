@@ -1,0 +1,33 @@
+{
+  "eval_id": 431,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States 2019 Annex A = 31 controller controls",
+      "passed": true,
+      "evidence": "'Annex A ... for PII controllers) with 31 controls'"
+    },
+    {
+      "text": "States 2019 Annex B = 18 processor controls",
+      "passed": true,
+      "evidence": "'Annex B (for PII processors) with 18 controls'"
+    },
+    {
+      "text": "States 2025 = A.1 (31) + A.2 (18) + A.3 (29) = 78 controls",
+      "passed": false,
+      "evidence": "'The exact count and one-to-one mapping I cannot state with confidence'; no 78 or 29 given"
+    },
+    {
+      "text": "States the controller and processor controls carry over 1:1 (renumbering, not new controls)",
+      "passed": false,
+      "evidence": "Hedges: 'many 2019 controls carry over... some are merged, and some are new' - not 1:1"
+    },
+    {
+      "text": "Does not state 28 or 16 as the 2019 counts",
+      "passed": true,
+      "evidence": "States 31 and 18; never mentions 28 or 16"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

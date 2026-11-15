@@ -55,6 +55,28 @@ FORBIDDEN = {
         "no adequacy decisions issued",          # Decision (EU) 2026/179 exists
         "Arts. 55-A to 55-L",                    # invented range
     ],
+    "iso27701": [
+        "A.7.5.5",                               # invented 2019 control
+        "Annex A \u2014 28 controls", "Annex A - 28 controls",  # fabricated 2019 count
+    ],
+    "swift-csp": [
+        "1.3A", "1.5A", "2.9A",                  # mandatory controls mis-marked advisory
+        "23 mandatory",                          # stale count
+    ],
+    "tsa-compliance": [
+        "Enhancing Surface Transportation Cybersecurity",  # invented NPRM title
+        "1580-21-01E", "1582-21-01E",            # fabricated revisions
+    ],
+    "fedramp": [
+        "LMR-GEN",                               # fabricated rule IDs
+        "High = 421", "High | 421",              # Rev 4 count
+    ],
+    "gdpr-compliance": [
+        "Senior Responsible Individual (SRI) must be designated",  # dead DPDI provision
+    ],
+    "saudi-arabia-grc": [
+        "Levels 3-4 require in-Kingdom", "Levels 3\u20134 require in-Kingdom",  # repealed CCRF v2 scheme
+    ],
     # Guards carried over from issues #62/#63 fix cycles
     "nist-ai-rmf": [
         "GOVERN 3.3", "GOVERN 5.3", "GOVERN 6.3",   # invented subcategories

@@ -1,4 +1,4 @@
-# ITAR Licensing Guide — 22 CFR Parts 123–125
+# ITAR Licensing Guide - 22 CFR Parts 123–125
 
 ## License Types at a Glance
 
@@ -6,11 +6,14 @@
 |--------------------|---------------|---------|-------------|
 | DSP-5 | 22 CFR § 123.1 | Permanent export of defense articles | Hardware sale/transfer to foreign end-user |
 | DSP-73 | 22 CFR § 123.5 | Temporary export | Trade shows, testing, repair abroad |
-| DSP-94 | 22 CFR § 123.6 | Temporary import | Foreign defense article entering US temporarily |
-| DSP-61 | 22 CFR § 123.9 | Import license | Permanent import from certain countries |
+| DSP-61 | 22 CFR § 123.3 | Temporary import of unclassified defense articles | Foreign defense article entering US temporarily (exemptions: § 123.4) |
+| DSP-94 | 22 CFR § 126.6(c) | Authority to Export Defense Articles Sold Under the FMS Program | Exports under Foreign Military Sales cases |
+| DSP-83 | 22 CFR § 123.10 | Nontransfer and Use Certificate | Required for SME and classified exports |
 | Technical Assistance Agreement (TAA) | 22 CFR § 124.1 | Export of technical data / defense services | Engineering support, training, design assistance |
 | Manufacturing License Agreement (MLA) | 22 CFR § 124.2 | Licensed foreign manufacture | Overseas production of US defense articles |
 | Warehouse/Distribution Agreement | 22 CFR § 124.14 | Stocking items abroad for resale | Distributor model |
+
+**Permanent imports are not DDTC jurisdiction:** permanent imports of defense articles are regulated by DOJ/ATF under 27 CFR Part 447 via ATF Form 6 (see 22 CFR § 123.2). Note also: 22 CFR § 123.6 covers foreign trade zones and bonded warehouses; § 123.9 covers country of ultimate destination and reexports/retransfers.
 
 ---
 
@@ -65,7 +68,7 @@ Authorises the export of **technical data** and/or **defense services** to speci
 4. **US government rights**: US government may review all records; terminate agreement
 5. **Record-keeping**: 5-year retention
 6. **Audit rights**: US licensor right to audit foreign licensee compliance
-7. **Term**: Normally 5 years; must renew before expiry
+7. **Term**: No fixed regulatory term; approvals commonly run up to 10 years (renew before expiry)
 8. **Security classification handling** (if applicable)
 
 ### Amendment Requirements
@@ -82,7 +85,7 @@ Any change to scope, parties, or authorised countries requires a formal amendmen
 ## Manufacturing License Agreement (MLA)
 
 ### Purpose
-Allows a foreign person to manufacture a defense article under US licence — typically for local production under an FMS programme or commercial arrangement.
+Allows a foreign person to manufacture a defense article under US licence - typically for local production under an FMS programme or commercial arrangement.
 
 ### Key Differences from TAA
 | Feature | TAA | MLA |
@@ -104,7 +107,7 @@ Allows a foreign person to manufacture a defense article under US licence — ty
 
 ## ITAR Exemptions (Selected)
 
-Certain transfers do not require a licence if all conditions are met. **Exemptions are NOT blanket authorisations — verify conditions every time.**
+Certain transfers do not require a licence if all conditions are met. **Exemptions are NOT blanket authorisations - verify conditions every time.**
 
 ### Key Exemptions (22 CFR Part 123–126)
 

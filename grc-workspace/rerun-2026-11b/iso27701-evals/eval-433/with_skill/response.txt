@@ -1,0 +1,23 @@
+Not true. Retention and disposal are not new in ISO/IEC 27701:2025. Both existed in the 2019 edition and carry over one-for-one under new numbering.
+
+- A.1.4.8 Retention was control 7.4.7 in ISO 27701:2019 (Annex A, controller).
+- A.1.4.9 Disposal was control 7.4.8 in ISO 27701:2019.
+- Neighbouring ones are the same: A.1.4.6 De-identification and Deletion was 7.4.5, and A.1.4.10 PII Transmission Controls was 7.4.9.
+
+Your consultant may have seen new-looking IDs in the 2025 tables and assumed the controls were new. The 2025 edition introduced no new controller controls and no new processor controls. All 31 controller controls (2019 Annex A, 7.2.1 to 7.5.4) and all 18 processor controls (2019 Annex B, 8.2.1 to 8.5.8) were carried over under the new A.1 and A.2 numbering. Because the domain objective now takes the .1 slot, the numbers shift by one, so 7.4.7 shows up as A.1.4.8 instead of A.1.4.7.
+
+For reference, the control as it appears in the 2025 tables:
+- A.1.4.8 Retention: define and implement retention schedules for each PII category, aligned to legal obligations.
+- A.1.4.9 Disposal: securely dispose of PII at the end of retention and document the disposal.
+- On the processor side the equivalent is A.2.4.3, Return, Transfer or Disposal of PII (2019 B.8.4.2).
+
+What did change in 2025, so you can ask the consultant what they actually meant:
+- The standard is standalone (ISO 27001 is no longer a prerequisite).
+- It has its own Clauses 4 to 10 under the high-level structure.
+- Table A.3 holds 29 shared security controls, rationalized from the old Clause 6.
+- Annex B is now implementation guidance. In 2019 Annex B held the processor controls.
+- The edition adds new content on cloud, IoT and AI processing.
+
+Practical consequence: if you are certified to 2019, you should already have retention schedules and disposal evidence. The work is to re-reference that evidence to A.1.4.8 and A.1.4.9 in your SoA, not to build new controls. If you have no retention schedule today, that was a gap under 2019 as well, and it maps to GDPR Art. 5(1)(e) storage limitation. Confirm IDs against the Annex F correspondence table in the standard. If you are paying for "new control implementation" for these two items, challenge that scope.
+
+This is general compliance information, not legal advice.

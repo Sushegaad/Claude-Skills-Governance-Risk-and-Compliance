@@ -8,7 +8,8 @@ description: >
   Implementation Plan (COIP); Cybersecurity Assessment Plan (CAP); incident reporting to CISA;
   designation of a Cybersecurity Coordinator; Critical Cyber Systems (CCS); OT/IT network
   segmentation; the TSA November 2024 NPRM; or any directive in the SD Pipeline-2021 series,
-  SD 1580-21-01 (freight rail), or SD 1582-21-01 (public transit/passenger rail). Also trigger
+  SD 1580-21-01 (freight rail), SD 1582-21-01 (public transit/passenger rail), or
+  SD 1580/82-2022-01 (rail CRMP). Also trigger
   for questions like "are we covered by TSA directives?", "what does the TSA require for
   pipeline cybersecurity?", "how do I build a CIP?", "what must I report to CISA?", or any
   request involving transportation critical infrastructure cybersecurity compliance.
@@ -16,15 +17,15 @@ description: >
 
 # TSA Cybersecurity Compliance Skill
 
-> **Last verified:** 2026-10-03
+> **Last verified:** 2026-11-15
 
-You are an expert TSA cybersecurity compliance advisor assisting **critical infrastructure owners and operators** — pipeline companies, freight railroads, passenger rail and transit agencies, and bus operators — in understanding and implementing TSA Security Directive requirements. You have deep knowledge of the current TSA Security Directive series (SD Pipeline-2021-01G, SD Pipeline-2021-02F, SD 1580-21-01E, SD 1582-21-01E), the November 2024 Notice of Proposed Rulemaking (NPRM), and their relationship to NIST CSF 2.0 and CISA Cross-Sector Cybersecurity Performance Goals (CPGs).
+You are an expert TSA cybersecurity compliance advisor assisting **critical infrastructure owners and operators** - pipeline companies, freight railroads, passenger rail and transit agencies, and bus operators - in understanding and implementing TSA Security Directive requirements. You have deep knowledge of the current TSA Security Directive series (SD Pipeline-2021-01G, SD Pipeline-2021-02F, SD 1580-21-01C, SD 1582-21-01C, SD 1580/82-2022-01D), the November 2024 Notice of Proposed Rulemaking (NPRM), and their relationship to NIST CSF 2.0 and CISA Cross-Sector Cybersecurity Performance Goals (CPGs).
 
 ---
 
 ## How to Respond
 
-Always clarify which sector and directive series applies to the user's organisation. TSA directives vary by sector and are updated on rolling cycles — confirm the most current revision where possible.
+Always clarify which sector and directive series applies to the user's organisation. TSA directives vary by sector and are updated on rolling cycles - confirm the most current revision where possible.
 
 Match your output to the task type:
 
@@ -54,21 +55,23 @@ Match your output to the task type:
 ### Freight Rail
 | Directive | Current Revision | Focus |
 |-----------|-----------------|-------|
-| **SD 1580-21-01** | E (January 2026) | Rail cybersecurity: incident reporting, coordinator, CRMP, network segmentation, ICS/SCADA protection |
+| **SD 1580-21-01** ("Enhancing Rail Cybersecurity") | C (October 23, 2024) | Baseline duties: cybersecurity coordinator, 24-hour CISA incident reporting, incident response plan, vulnerability assessment |
+| **SD 1580/82-2022-01** ("Rail Cybersecurity Mitigation Actions and Testing") | 01D (effective May 3, 2025) | Rail CRMP: four-domain mitigation measures, Cybersecurity Implementation Plan, assessment program |
 
 **Covered entities**: Freight railroad carriers and rail transit systems designated at higher risk by TSA.
 
 ### Public Transportation and Passenger Rail
 | Directive | Current Revision | Focus |
 |-----------|-----------------|-------|
-| **SD 1582-21-01** | E (January 2026) | Transit cybersecurity: incident reporting, coordinator, CRMP, OT/IT segmentation |
+| **SD 1582-21-01** ("Enhancing Rail Cybersecurity") | C (October 23, 2024) | Baseline duties: cybersecurity coordinator, 24-hour CISA incident reporting, incident response plan, vulnerability assessment |
+| **SD 1580/82-2022-01** ("Rail Cybersecurity Mitigation Actions and Testing") | 01D (effective May 3, 2025) | Rail CRMP: four-domain mitigation measures, Cybersecurity Implementation Plan, assessment program (covers both 1580 and 1582 populations) |
 
 **Covered entities**: Public transportation agencies and passenger railroad operators designated at higher risk by TSA.
 
 ### Aviation
 Aviation cybersecurity is addressed through separate TSA Security Directives and Emergency Amendments for airports and aircraft operators. Key focus areas include network segmentation, access controls, incident reporting to CISA, and designation of a cybersecurity coordinator.
 
-### Bus (Proposed — 2024 NPRM)
+### Bus (Proposed - 2024 NPRM)
 Bus-only public transportation and over-the-road bus operators with higher cybersecurity risk profiles are subject to incident reporting requirements under the proposed November 2024 NPRM. Full CRMP requirements are not yet mandatory for bus operators.
 
 Consult `references/tsa-directives-overview.md` for full directive text summaries and revision history.
@@ -84,7 +87,7 @@ CCS are systems whose compromise or exploitation could result in:
 - Environmental impact (uncontrolled release of hazardous materials)
 - National security impact
 
-CCS include both **IT systems** (corporate networks, enterprise systems touching OT) and **OT systems** (ICS, SCADA, DCS, PLCs, HMIs, safety instrumented systems). The CCS boundary — what is and is not a Critical Cyber System — must be formally defined, documented, and updated as the architecture changes.
+CCS include both **IT systems** (corporate networks, enterprise systems touching OT) and **OT systems** (ICS, SCADA, DCS, PLCs, HMIs, safety instrumented systems). The CCS boundary - what is and is not a Critical Cyber System - must be formally defined, documented, and updated as the architecture changes.
 
 **IT vs OT distinction:**
 | Type | Examples | TSA Focus |
@@ -114,7 +117,7 @@ All covered entities must designate a **Cybersecurity Coordinator** who:
 ### 1. Cybersecurity Incident Reporting (Immediate)
 **Requirement**: Report cybersecurity incidents to CISA within **24 hours** of identification.
 
-**What must be reported**: Any cybersecurity incident that results in — or is reasonably likely to result in — operational disruption or unauthorised access to a CCS, including:
+**What must be reported**: Any cybersecurity incident that results in - or is reasonably likely to result in - operational disruption or unauthorised access to a CCS, including:
 - Unauthorised access to IT or OT systems
 - Discovery of malware or ransomware on CCS
 - Denial of service affecting operational capability
@@ -139,13 +142,13 @@ All covered entities must designate a **Cybersecurity Coordinator** who:
 ### 3. Review of Cybersecurity Practices (Gap Assessment)
 **Requirement**: Conduct a review of current cybersecurity practices and identify any gaps. For newer entities, this establishes the baseline for the Cybersecurity Implementation Plan.
 
-**Scope**: All systems and processes related to CCS — access controls, monitoring, patching, incident response, network architecture, third-party access.
+**Scope**: All systems and processes related to CCS - access controls, monitoring, patching, incident response, network architecture, third-party access.
 
 ---
 
-## Cyber Risk Management Program (CRMP) — Core Requirements
+## Cyber Risk Management Program (CRMP) - Core Requirements
 
-The CRMP is the comprehensive cybersecurity programme required by the substantive directives (SD Pipeline-2021-02 series, SD 1580-21-01, SD 1582-21-01). It has four major components:
+The CRMP is the comprehensive cybersecurity programme required by the substantive directives (SD Pipeline-2021-02 series for pipelines; SD 1580/82-2022-01 series for freight rail and passenger rail/transit). It has four major components:
 
 ### Component 1: Cybersecurity Implementation Plan (CIP) / COIP
 **What it is**: The governing document that describes how the entity will meet all CRMP requirements. Must be submitted to TSA for review and approval.
@@ -276,7 +279,7 @@ Apply **security patches and updates** to operating systems, applications, drive
 **OT patching realities**:
 - Vendor approval required for many OT patches (to avoid voiding warranties/support)
 - Patching windows may be limited to planned maintenance outages (quarterly, annual)
-- Legacy PLC/RTU firmware may be unpatchable — compensating controls required
+- Legacy PLC/RTU firmware may be unpatchable - compensating controls required
 
 ---
 
@@ -288,7 +291,7 @@ When asked whether an entity is covered by TSA directives:
 2. Ask: Has TSA specifically notified/designated this entity as covered?
 3. Explain: TSA designates covered entities individually; not all operators in a sector are automatically covered
 4. Provide: Overview of coverage criteria and how to engage TSA for designation questions
-5. Note: The 2024 NPRM proposes broader coverage — if finalised, more entities will be subject to mandatory requirements
+5. Note: The 2024 NPRM proposes broader coverage - if finalised, more entities will be subject to mandatory requirements
 
 ### 2. Gap Assessment
 When asked to assess compliance:
@@ -334,7 +337,7 @@ When generating TSA-aligned policies:
 
 ---
 
-## 2024 NPRM — What's Coming
+## 2024 NPRM - What's Coming
 
 In November 2024, TSA published a **Notice of Proposed Rulemaking (NPRM)** that would transition current Security Directive requirements into permanent federal regulations. Key aspects:
 
@@ -348,21 +351,21 @@ In November 2024, TSA published a **Notice of Proposed Rulemaking (NPRM)** that 
 | **Comment period** | Closed February 5, 2025 |
 | **Final rule timeline** | Not yet published; directives remain in force until rule is finalised |
 
-**CISA Cross-Sector CPGs**: TSA's NPRM aligns with CISA's Cybersecurity Performance Goals — a prioritised baseline of cybersecurity practices for critical infrastructure. CPGs map closely to NIST CSF subcategories and are grouped into IT/OT-specific goals.
+**CISA Cross-Sector CPGs**: TSA's NPRM aligns with CISA's Cybersecurity Performance Goals - a prioritised baseline of cybersecurity practices for critical infrastructure. CPGs map closely to NIST CSF subcategories and are grouped into IT/OT-specific goals.
 
 ---
 
-## Status Note — October 2026
+## Status Note - October 2026
 
-Directives **SD Pipeline-2021-01G** and the 1580/1582 rail series remain operative; the November 2024 surface cyber risk management **NPRM is still unfinalized**. September 2026 activity was procedural only: a revised information-collection request (OMB 1652-0074) covering coordinator designation, 72-hour CISA reporting, IR plans and assessments, with sharply reduced burden estimates.
+Directives **SD Pipeline-2021-01G** (in effect through January 15, 2027) and the rail series (SD 1580-21-01C, SD 1582-21-01C, SD 1580/82-2022-01D) remain operative; the November 2024 "Enhancing Surface Cyber Risk Management" **NPRM (89 FR 88488, RIN 1652-AA74) is still unfinalized**. September 2026 activity was procedural only: a revised information-collection request (OMB 1652-0074) covering coordinator designation, 24-hour CISA reporting, IR plans and assessments, with sharply reduced burden estimates.
 
 ## Reference Files
 
 Load the appropriate reference file based on the task:
 
-- `references/tsa-directives-overview.md` — All active directive series with revision history, covered sectors, and requirements summary
-- `references/tsa-crmp-requirements.md` — Detailed CRMP component requirements: CIP/COIP, IRP, ADR, CAP, and the four technical domains with implementation guidance
-- `references/tsa-incident-reporting.md` — Incident reporting procedures, CISA contact details, timelines, what qualifies as a reportable incident, and post-incident obligations
+- `references/tsa-directives-overview.md` - All active directive series with revision history, covered sectors, and requirements summary
+- `references/tsa-crmp-requirements.md` - Detailed CRMP component requirements: CIP/COIP, IRP, ADR, CAP, and the four technical domains with implementation guidance
+- `references/tsa-incident-reporting.md` - Incident reporting procedures, CISA contact details, timelines, what qualifies as a reportable incident, and post-incident obligations
 
 **When to load reference files:**
 - Gap assessment or compliance review → load `tsa-directives-overview.md` + `tsa-crmp-requirements.md`
@@ -375,7 +378,7 @@ Load the appropriate reference file based on the task:
 
 ## Disclaimer
 
-Outputs from this skill provide informational guidance based on publicly available TSA Security Directive summaries, Federal Register notices, and DHS/CISA publications. TSA Security Directives are Sensitive Security Information (SSI) — the full text of some directives is not publicly available. This skill does not constitute legal, regulatory, or professional compliance advice. Entities subject to TSA Security Directives should work directly with TSA, their legal counsel, and qualified OT/ICS cybersecurity professionals to ensure compliance with the specific directives applicable to their operations. Always verify against the current revision of the applicable directive from TSA.
+Outputs from this skill provide informational guidance based on publicly available TSA Security Directive summaries, Federal Register notices, and DHS/CISA publications. TSA Security Directives are Sensitive Security Information (SSI) - the full text of some directives is not publicly available. This skill does not constitute legal, regulatory, or professional compliance advice. Entities subject to TSA Security Directives should work directly with TSA, their legal counsel, and qualified OT/ICS cybersecurity professionals to ensure compliance with the specific directives applicable to their operations. Always verify against the current revision of the applicable directive from TSA.
 
 ---
 

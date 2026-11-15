@@ -1,0 +1,33 @@
+{
+  "eval_id": 430,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States eight elements",
+      "passed": true,
+      "evidence": "'The BIS Export Compliance Program (ECP) framework has eight elements'"
+    },
+    {
+      "text": "Includes Export Authorization as an element",
+      "passed": true,
+      "evidence": "Element 3: 'Export Authorization'"
+    },
+    {
+      "text": "Includes Handling Export Violations and Corrective Actions",
+      "passed": true,
+      "evidence": "Element 7: 'Handling Export Violations and Corrective Actions'"
+    },
+    {
+      "text": "Includes Build and Maintain the ECP Manual",
+      "passed": true,
+      "evidence": "Element 8: 'Build and Maintain the ECP Manual'"
+    },
+    {
+      "text": "Does not present the framework as seven elements",
+      "passed": true,
+      "evidence": "Consistently eight; never presented as seven"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

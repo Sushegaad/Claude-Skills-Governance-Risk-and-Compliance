@@ -22,8 +22,8 @@ by category and flag each item as: ✅ Met | ⚠️ Partial | ❌ Not Met | N/A
 - [ ] Acceptable Use Policy (Rules of Behavior) is documented and signed by users
 - [ ] Access Control Policy
 - [ ] Configuration Management Policy & Plan
-- [ ] Contingency Plan (CP) — written and tested within last 12 months
-- [ ] Incident Response Plan (IRP) — written and tested within last 12 months
+- [ ] Contingency Plan (CP) - written and tested within last 12 months
+- [ ] Incident Response Plan (IRP) - written and tested within last 12 months
 - [ ] Media Protection Policy
 - [ ] Personnel Security Policy
 - [ ] Physical Security Policy (or inherited from IaaS provider)
@@ -129,6 +129,6 @@ by category and flag each item as: ✅ Met | ⚠️ Partial | ❌ Not Met | N/A
 
 ## 14. OSCAL / Automation (Forward-Looking)
 
-- [ ] Aware of OSCAL mandate (September 2026 deadline)
+- [ ] Aware of CR26 machine-readable data requirements (semi-structured for Classes A/B/C from Jan 1, 2027; comprehensive for Class D from May 1, 2027)
 - [ ] Evaluated OSCAL-capable GRC tools or the FedRAMP automation GitHub repo
 - [ ] SSP data structured to facilitate OSCAL export

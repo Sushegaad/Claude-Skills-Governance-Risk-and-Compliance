@@ -151,7 +151,7 @@ In connection with these Services, Business Associate may create, receive,
 maintain, or transmit Protected Health Information ("PHI") on behalf of
 Covered Entity.
 
-DEFINITIONS  // 45 CFR §164.304
+DEFINITIONS  // 45 CFR §§160.103, 164.304
 Terms used but not otherwise defined shall have the same meaning as under
 the HIPAA Rules (45 CFR Parts 160 and 164).
 
@@ -382,7 +382,7 @@ Date: ________________
 
 ```
 SECURITY INCIDENT REPORT  // 45 CFR §164.308(a)(6)
-[ORGANIZATION NAME] — CONFIDENTIAL
+[ORGANIZATION NAME] - CONFIDENTIAL
 
 Report Date: _________________  Incident #: ___________________
 Reported By: _________________  Department: __________________
@@ -406,7 +406,7 @@ BREACH RISK ASSESSMENT  (see Breach Risk Assessment Template)
 Outcome: □ Reportable Breach  □ Not a Reportable Breach
 Rationale: ____________________________________________________
 
-IF REPORTABLE BREACH — NOTIFICATION STATUS
+IF REPORTABLE BREACH - NOTIFICATION STATUS
 Individual notification date: __________________________________
 HHS notification date: ________________________________________
 Media notification (if 500+): _________________________________
@@ -425,7 +425,7 @@ Date: _________________
 
 ```
 BREACH RISK ASSESSMENT  // 45 CFR §164.402
-[ORGANIZATION NAME] — CONFIDENTIAL — ATTORNEY-CLIENT PRIVILEGED
+[ORGANIZATION NAME] - CONFIDENTIAL - ATTORNEY-CLIENT PRIVILEGED
 
 Incident #: ___________________  Date of Assessment: ____________
 Assessor(s): __________________________________________________

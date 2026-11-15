@@ -1,0 +1,24 @@
+Short answer: In ISO/IEC 27701:2019 it was control B.8.5.4, "Notification of PII disclosure requests", in Annex B (the PII processor controls). In ISO/IEC 27701:2025 it is **A.2.5.5, Notification of PII Disclosure Requests**, in Table A.2 (PII processor controls), domain A.2.5 (PII sharing, transfer and disclosure).
+
+It is a one-for-one carry-over. The control was not added, split or reworded in substance, only renumbered. ISO 27701 is built to support GDPR and similar laws, and this control supports the processor's obligations under Art. 28(3)(a) (processing only on documented instructions) and the related handling of government access requests. Certification is not a GDPR safe harbor.
+
+**Control: A.2.5.5 Notification of PII Disclosure Requests**
+- Purpose: A processor holds PII on behalf of controllers. If a law enforcement body or other third party asks for that PII, the controller must be told, so that it can respond, challenge the request or inform the individuals involved. This addresses the risk of PII being handed over without the controller's knowledge.
+- What to implement:
+  - A documented procedure for receiving third-party or government disclosure requests.
+  - Route every request to legal or privacy review before anything is released.
+  - Notify the affected controller before disclosure, unless the law prohibits notification.
+  - Put the commitment in the DPA or customer agreement (A.2.2.2).
+  - Train support and legal staff, who are often the first to receive such requests.
+- Evidence for audit: the procedure, the contractual notification clause, a log of requests received and the notification sent for each, legal review notes, and training records.
+- Common pitfalls: no process to tell controllers about law enforcement access requests; requests answered directly by support staff; no documented record when notification is legally barred.
+- Regulatory link: GDPR Art. 28(3)(a); Art. 48 for third-country authority requests.
+
+**Related controls**
+- A.2.5.6 Legally Binding PII Disclosures, which is the legally compelled disclosure (2019 B.8.5.5). It covers notifying the controller where permitted and recording the disclosure.
+- A.2.5.4 Records of PII Disclosures (2019 B.8.5.3).
+- On the controller side, A.1.5.5 Records of PII Disclosures (2019 A.7.5.4).
+
+Numbering caution: 2019 Annex B was the processor controls, while in 2025 Annex B is implementation guidance. Do not cite "Annex B" for the 2025 control. Cite A.2.5.5. Check the official Annex F correspondence table in ISO 27701:2025 before using the ID in a formal SoA.
+
+This is general compliance information, not legal advice.

@@ -1,0 +1,23 @@
+The answer depends on your role, because ISO/IEC 27701:2019 had a separate temporary files control for each.
+
+**Controller**
+- 2019: control 7.4.6, Temporary files (Annex A, cited as A.7.4.6).
+- 2025: **A.1.4.7 Temporary Files** (Table A.1, domain A.1.4, privacy by design and by default).
+
+**Processor**
+- 2019: control 8.4.1, Temporary files (Annex B, cited as B.8.4.1).
+- 2025: **A.2.4.2 Temporary Files** (Table A.2, domain A.2.4).
+
+Both are one-for-one carry-overs. The substance did not change; only the ID did. The number moves because, in the 2025 tables, .1 in each domain is the objective statement and controls start at .2.
+
+ISO 27701 supports GDPR alignment (Art. 5(1)(e) storage limitation, Art. 25 data protection by design). Certification is not a GDPR safe harbor.
+
+**What the control requires**
+- Controller (A.1.4.7): make sure temporary files containing PII (exports, caches, logs, scratch files, staging copies) are securely managed and deleted when no longer needed, within a documented period.
+- Processor (A.2.4.2): the same for temporary files created while processing on a controller's behalf, deleted according to the agreed schedules.
+- Evidence an auditor will look for: a retention and deletion rule that explicitly covers temp files, caches and logs; scheduled cleanup jobs or configuration; and spot-check results.
+- Common pitfall: temp files, logs and caches with PII are left out of the retention and deletion policy and persist beyond task completion.
+
+Numbering caution: the 2019 "Annex B" was the processor controls, while the 2025 Annex B is implementation guidance. Cite A.2.4.2 for the processor control, not an Annex B reference. For a formal SoA, confirm against the Annex F correspondence table in ISO 27701:2025.
+
+This is general compliance information, not legal advice.

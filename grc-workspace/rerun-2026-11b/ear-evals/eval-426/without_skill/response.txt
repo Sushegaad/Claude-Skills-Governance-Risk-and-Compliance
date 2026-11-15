@@ -1,0 +1,12 @@
+EAR country groups are in Supplement No. 1 to 15 CFR Part 740. From memory (verify against the current supplement):
+
+Cuba: Country Group E:2 (unilateral embargo, the long-standing basis for its treatment) and, since its State Sponsor of Terrorism designation, E:1 as well. I am not certain whether the E:1 listing is current, so confirm it. Cuba is also D:1? No. It is not in the A groups. It is subject to a license requirement for nearly everything except food and medicine (EAR99 and limited items), with a general policy of denial for most items. License Exception rules are restricted, and OFAC's Cuban Assets Control Regulations apply separately.
+
+Russia: Country Group D (D:1 national security, D:3 chemical and biological, D:4 missile technology). Since 2022 it is also covered by Supplement No. 4 to Part 746 (Russia/Belarus sanctions), which imposes sweeping license requirements on almost all CCL items and many EAR99 items. It is not in Country Group A.
+
+Belarus: Country Group D (D:1, D:3, D:4, D:5 because of the US arms embargo). It is also covered by Part 746 sanctions, in the same way as Russia. It is not in Country Group A.
+
+Country Groups A:2 and A:3:
+- A:2 is the Missile Technology Control Regime (MTCR) members.
+- A:3 is the Australia Group members (chemical and biological weapons nonproliferation).
+Related groups: A:1 is Wassenaar Arrangement participants, A:4 is Nuclear Suppliers Group members, and A:5 and A:6 are close allies eligible for license exceptions such as STA. Being listed in an A group means the country participates in that regime. It does not by itself grant any license exception.

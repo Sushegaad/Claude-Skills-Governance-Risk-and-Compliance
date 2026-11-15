@@ -1,0 +1,33 @@
+{
+  "eval_id": 433,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States retention maps from 2019's 7.4.7 and is not new",
+      "passed": true,
+      "evidence": "'they were 7.4.7 (Retention)... They are not new in 2025'"
+    },
+    {
+      "text": "States disposal maps from 2019's 7.4.8 and is not new",
+      "passed": true,
+      "evidence": "'7.4.8 (Disposal)' - not new"
+    },
+    {
+      "text": "Maps de-identification/deletion to 2019's 7.4.5 and PII transmission controls to 7.4.9 (controller) and 8.4.3 (processor)",
+      "passed": false,
+      "evidence": "No mention of 7.4.5, 7.4.9 or 8.4.3"
+    },
+    {
+      "text": "Maps the subcontractor controls to 2019's 8.5.7 and 8.5.8",
+      "passed": false,
+      "evidence": "No mention of 8.5.7 or 8.5.8"
+    },
+    {
+      "text": "States the carry-over principle: the 2019 controls map across; the 2025 changes are structural (renumbering, standalone requirements, shared A.3 block)",
+      "passed": false,
+      "evidence": "States renumber/restructure and carry-over, but no standalone requirements or shared A.3 block - structural changes not covered"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

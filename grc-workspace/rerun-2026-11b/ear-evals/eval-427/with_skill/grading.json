@@ -1,0 +1,33 @@
+{
+  "eval_id": 427,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the general de minimis threshold is 25 percent for destinations other than E:1/E:2",
+      "passed": true,
+      "evidence": "'The threshold is 25% for most destinations'"
+    },
+    {
+      "text": "States the 10 percent threshold applies to embargoed E:1/E:2 destinations",
+      "passed": true,
+      "evidence": "'10% for destinations in Country Group E:1/E:2 (Cuba is in E:2)'"
+    },
+    {
+      "text": "Concludes the Cuba shipment IS subject to the EAR (12 exceeds 10)",
+      "passed": true,
+      "evidence": "'12% is greater than 10%, so the item is subject to the EAR when reexported to Cuba'"
+    },
+    {
+      "text": "Concludes the Germany shipment is below the 25 percent threshold (subject to proper de minimis calculation)",
+      "passed": true,
+      "evidence": "'12% is less than 25%, so the item is not subject to the EAR through de minimis', with calculation caveats"
+    },
+    {
+      "text": "Does not invert the thresholds",
+      "passed": true,
+      "evidence": "Thresholds applied correctly, not inverted"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

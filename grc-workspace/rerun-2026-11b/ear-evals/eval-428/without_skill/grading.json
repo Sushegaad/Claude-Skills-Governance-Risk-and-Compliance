@@ -1,0 +1,33 @@
+{
+  "eval_id": 428,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States CIV was eliminated in June 2020 (85 FR 23470)",
+      "passed": false,
+      "evidence": "Claims removal 'around 2011 to 2014 timeframe' and 'cannot give you the exact Federal Register date' \u2014 wrong date, hedged on a fact-stating assertion"
+    },
+    {
+      "text": "States 740.5 now houses License Exception SPP (Syria Peace and Prosperity)",
+      "passed": false,
+      "evidence": "States 740.5 'is now [Reserved]' \u2014 does not identify SPP"
+    },
+    {
+      "text": "Identifies 740.16 as APR, Additional Permissive Reexports",
+      "passed": true,
+      "evidence": "'15 CFR 740.16: Additional Permissive Reexports (APR)'"
+    },
+    {
+      "text": "Does not call the 740.16 exception 'ACE'",
+      "passed": true,
+      "evidence": "Never calls 740.16 'ACE' (mentions it is not 'ACA')"
+    },
+    {
+      "text": "Notes publicly available technology is outside the EAR entirely (not a TSU paragraph)",
+      "passed": false,
+      "evidence": "No mention that publicly available technology is outside the EAR"
+    }
+  ],
+  "total": 5,
+  "passed": 2
+}

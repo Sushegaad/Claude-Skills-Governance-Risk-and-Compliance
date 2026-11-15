@@ -5,7 +5,7 @@
 
 ## Table of Contents
 1. [Applicability & Scope](#1-applicability--scope)
-2. [Uses and Disclosures — General Rules](#2-uses-and-disclosures--general-rules)
+2. [Uses and Disclosures - General Rules](#2-uses-and-disclosures--general-rules)
 3. [Permitted Uses Without Authorization](#3-permitted-uses-without-authorization)
 4. [Patient Rights](#4-patient-rights)
 5. [Notice of Privacy Practices (NPP)](#5-notice-of-privacy-practices-npp)
@@ -29,7 +29,7 @@
 - Must sign a **Business Associate Agreement (BAA)** before PHI is shared
 - Subject to Security Rule; portions of Privacy Rule apply via BAA
 
-**PHI Definition** (§164.501):
+**PHI Definition** (§160.103; §164.501 holds Privacy-Rule-specific definitions):
 Protected Health Information = health information that:
 - Is created or received by a CE/BA
 - Relates to past/present/future physical or mental health condition, healthcare provision, or payment
@@ -43,7 +43,7 @@ Protected Health Information = health information that:
 
 ---
 
-## 2. Uses and Disclosures — General Rules
+## 2. Uses and Disclosures - General Rules
 
 ### General Prohibition (§164.502(a))
 A CE/BA may not use or disclose PHI except as permitted or required by the Privacy Rule.
@@ -99,7 +99,7 @@ Permitted if:
 - **Fees**: May charge a reasonable, cost-based fee (labor + supplies + postage only); no retrieval fees
 - **Denials**: Permitted for psychotherapy notes, information compiled for legal proceedings, PHI that could endanger life/safety; some denials are reviewable
 
-> **2021 Rule Update**: HHS reinforced that fees must be limited; EHR patient portal access must be free.
+> **Fee limits - current state**: The patient rate limitations apply to requests by the individual for access to their own records. In *Ciox Health v. Azar* (D.D.C. 2020), the court vacated the extension of the fee cap to third-party directives. The December 2020 access-rights NPRM (published January 2021) was never finalized, so there are no finalized 2021 Privacy Rule amendments.
 
 ### Right to Amend (§164.526)
 - Individual may request amendment to their PHI in a designated record set
@@ -113,7 +113,7 @@ Permitted if:
 
 ### Right to Request Restrictions (§164.522(a))
 - Individual may request restrictions on uses/disclosures for TPO or to family/friends
-- CE is **not required** to agree — **except**: must honor restriction on disclosure to health plan for service paid out-of-pocket in full
+- CE is **not required** to agree - **except**: must honor restriction on disclosure to health plan for service paid out-of-pocket in full
 
 ### Right to Confidential Communications (§164.522(b))
 - Individual may request alternative means or locations for communications
@@ -136,7 +136,7 @@ Permitted if:
 - At first service delivery (in-person)
 - On request
 - On CE's website (if one exists)
-- Health plans: at enrollment and every 3 years if material changes
+- Health plans: at enrollment; a reminder of the notice's availability and how to obtain it at least once every 3 years (regardless of whether the notice changed); and, after a material revision, redistribution or posting duties within 60 days (§164.520(c)(1))
 
 ### Required NPP Contents (§164.520(b)):
 1. **Header**: "THIS NOTICE DESCRIBES HOW MEDICAL INFORMATION ABOUT YOU MAY BE USED AND DISCLOSED AND HOW YOU CAN GET ACCESS TO THIS INFORMATION. PLEASE REVIEW IT CAREFULLY."
@@ -215,7 +215,7 @@ These categories receive **heightened protection** (often under state law as wel
 | **HIV/AIDS information** | Most states have additional restrictions beyond HIPAA |
 | **Substance use disorder** (42 CFR Part 2) | Separate federal law with stricter rules than HIPAA |
 | **Mental health records** | State law often adds restrictions |
-| **Reproductive health** | Post-Dobbs guidance; HHS issued rules limiting disclosure for lawful reproductive care |
+| **Reproductive health** | The April 2024 reproductive health Privacy Rule amendments were **vacated nationwide in June 2025** (*Purl v. HHS*), except the 42 CFR Part 2 and Notice of Privacy Practices provisions, which survive. Do not present the vacated disclosure restrictions as current law; check state law |
 | **Genetic information** (GINA) | Cannot be used for underwriting by health plans |
 | **Minors** | Generally parents are personal representatives; exceptions for emancipated minors, sensitive services |
 
@@ -264,7 +264,7 @@ Communication about a product/service that encourages recipients to purchase or 
 - Face-to-face communication with individual
 - Promotional gifts of nominal value
 - Refill reminders (if financial remuneration is reasonably related to CE's cost)
-- Communications about health-related products/services offered by CE (own services, treatment alternatives, case management) — if no financial remuneration from third party
+- Communications about health-related products/services offered by CE (own services, treatment alternatives, case management) - if no financial remuneration from third party
 
 ### Sale of PHI (§164.502(a)(5)(ii)):
 - Generally prohibited without authorization

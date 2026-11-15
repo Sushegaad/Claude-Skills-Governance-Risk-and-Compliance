@@ -1,0 +1,33 @@
+{
+  "eval_id": 428,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States CIV was eliminated in June 2020 (85 FR 23470)",
+      "passed": true,
+      "evidence": "'It was eliminated on June 29, 2020 (85 FR 23470)'"
+    },
+    {
+      "text": "States 740.5 now houses License Exception SPP (Syria Peace and Prosperity)",
+      "passed": true,
+      "evidence": "'15 CFR 740.5 now holds License Exception SPP (Syria Peace and Prosperity)'"
+    },
+    {
+      "text": "Identifies 740.16 as APR, Additional Permissive Reexports",
+      "passed": true,
+      "evidence": "'15 CFR 740.16 is License Exception APR (Additional Permissive Reexports)'"
+    },
+    {
+      "text": "Does not call the 740.16 exception 'ACE'",
+      "passed": true,
+      "evidence": "Never calls 740.16 'ACE'"
+    },
+    {
+      "text": "Notes publicly available technology is outside the EAR entirely (not a TSU paragraph)",
+      "passed": false,
+      "evidence": "No mention that publicly available technology is outside the EAR"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

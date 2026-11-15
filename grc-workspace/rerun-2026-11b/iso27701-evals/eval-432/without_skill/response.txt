@@ -1,0 +1,3 @@
+In ISO/IEC 27701:2019 this was a processor control, B.8.5.4 "Notification of PII disclosure requests" (under B.8.5, PII sharing, transfer and disclosure). Its companion was B.8.5.5 "Legally binding PII disclosures". Controllers had related controls in A.7.5 (records of PII disclosure to third parties, 7.5.4).
+
+In the 2025 edition, which is standalone and merges controller and processor controls, this sits under the PII sharing, transfer and disclosure group (A.1.5.x). I cannot reliably recall the exact sub-number, so confirm it against the mapping table in the 2025 standard rather than relying on my recollection. The substance (notify the customer/controller of legally binding disclosure requests unless prohibited by law) is carried forward.

@@ -13,8 +13,8 @@ This guide covers: (1) detailed ECCN lookup methodology, (2) key ECCNs by catego
 An item is subject to the EAR if it is:
 - All items **physically in the United States** (including in Foreign Trade Zones)
 - All items of **US origin** (manufactured in the US), regardless of location
-- **Foreign-made items** that incorporate controlled US-origin content above the de minimis threshold (§ 734.4) — 10% or 25% depending on destination
-- **Foreign direct products** of US technology/software that meet the FDPR criteria (§ 736.2(b)(3))
+- **Foreign-made items** that incorporate controlled US-origin content above the de minimis threshold (§ 734.4) - 10% or 25% depending on destination
+- **Foreign direct products** of US technology/software that meet the FDPR criteria (§ 734.9)
 - Items the president has placed under EAR jurisdiction by executive order
 
 **Not subject to EAR:** Publicly available information (§ 734.7), basic scientific research (fundamental research exclusion, § 734.8), patent applications, and items exclusively controlled by another US agency (ITAR/USML, NRC, FDA, etc.)
@@ -48,13 +48,13 @@ Each ECCN entry contains:
 - **Unit:** The unit of measure for reporting
 - **Reasons for Control (RFCs):** NS, AT, CB, NP, MT, etc.
 - **Country Chart columns:** Which RFC columns on the Country Chart to check
-- **License Exceptions:** Which exceptions (LVS, GBS, CIV, etc.) are available
-- **List of Items Controlled — Related Controls:** References to other ECCNs or USML categories
+- **License Exceptions:** Which exceptions (LVS, GBS, STA, etc.) are available
+- **List of Items Controlled - Related Controls:** References to other ECCNs or USML categories
 - **Technical Notes:** Clarifications on measurement and interpretation
 
 ---
 
-### Step 4: EAR99 — When to Use
+### Step 4: EAR99 - When to Use
 
 If after searching the CCL you cannot find an ECCN that covers the item:
 - The item is **EAR99**
@@ -62,7 +62,7 @@ If after searching the CCL you cannot find an ECCN that covers the item:
 - They are subject to EAR jurisdiction but generally do not require a license for export
 
 **EAR99 items still require a license if:**
-- Destined for **embargoed countries** (Cuba, Iran, North Korea, Syria — Part 746)
+- Destined for **embargoed countries** (Cuba, Iran, North Korea, Syria - Part 746)
 - Destined for **Russia or Belarus** under enhanced controls (Part 746.8)
 - The end-user is on the **Entity List** (Supplement 4, Part 744)
 - The end-use is for **WMD development** (§ 744.2–744.6)
@@ -72,7 +72,7 @@ If after searching the CCL you cannot find an ECCN that covers the item:
 
 ## Key ECCNs by Category
 
-### Category 0 — Nuclear Materials, Facilities, and Equipment
+### Category 0 - Nuclear Materials, Facilities, and Equipment
 
 | ECCN | Description |
 |------|-------------|
@@ -82,7 +82,7 @@ If after searching the CCL you cannot find an ECCN that covers the item:
 | 0D001 | Software for items controlled in Category 0 |
 | 0E001 | Technology for nuclear items |
 
-### Category 1 — Chemicals, Microorganisms, and Toxins
+### Category 1 - Chemicals, Microorganisms, and Toxins
 
 | ECCN | Description |
 |------|-------------|
@@ -92,7 +92,7 @@ If after searching the CCL you cannot find an ECCN that covers the item:
 | 1C354 | Plant pathogens |
 | 1C810 | Ammonium nitrate (precursor concerns) |
 
-### Category 3 — Electronics
+### Category 3 - Electronics
 
 | ECCN | Description |
 |------|-------------|
@@ -102,7 +102,7 @@ If after searching the CCL you cannot find an ECCN that covers the item:
 | 3D001 | Software for Category 3 equipment |
 | 3E001 | Technology for Category 3 items |
 
-### Category 4 — Computers
+### Category 4 - Computers
 
 | ECCN | Description |
 |------|-------------|
@@ -111,38 +111,41 @@ If after searching the CCL you cannot find an ECCN that covers the item:
 | 4D001 | Software for high-performance computers |
 | 4E001 | Technology for Category 4 items |
 
-### Category 5 — Telecommunications and Information Security
+### Category 5 - Telecommunications and Information Security
 
 | ECCN | Description |
 |------|-------------|
-| 5A002 | Telecommunications systems (secure comms equipment) |
-| 5B002 | Telecom test equipment |
-| 5D002 | Software for telecommunications/encryption |
-| 5E002 | Technology for encryption and telecom |
-| 5A992 | Telecommunications not controlled by 5A002 (lower performance) |
-| 5D992 | Mass-market software for telecom |
+| 5A001 | Telecommunications equipment |
+| 5A991 | Telecommunications equipment not controlled by 5A001 (residual, AT only) |
+| 5A002 | Information security systems and equipment (cryptographic) |
+| 5A992 | Mass-market cryptographic equipment not controlled by 5A002 (residual) |
+| 5B002 | Information security test, inspection, and production equipment |
+| 5D002 | Software for information security/encryption |
+| 5E002 | Technology for information security items |
+| 5D992 | Mass-market encryption software |
 
-### Category 7 — Navigation and Avionics
+### Category 7 - Navigation and Avionics
 
 | ECCN | Description |
 |------|-------------|
 | 7A001 | Accelerometers with specific performance |
 | 7A004 | Star trackers and attitude control equipment |
-| 7A101 | Gyroscopes and accelerometers for missiles |
+| 7A101 | Accelerometers for missiles |
+| 7A102 | Gyroscopes for missiles |
 | 7E001 | Technology for navigation items |
 
-### Category 9 — Aerospace and Propulsion
+### Category 9 - Aerospace and Propulsion
 
 | ECCN | Description |
 |------|-------------|
-| 9A001 | Aerojet engines and components |
+| 9A001 | Aero gas turbine engines and components |
 | 9A004 | Space launch vehicles and spacecraft |
 | 9A515 | Spacecraft and related items (satellites) |
 | 9E003 | Technology for turbofan and turboprop engines |
 
 ---
 
-## Commerce Country Chart — How to Use (Part 738, Supplement 1)
+## Commerce Country Chart - How to Use (Part 738, Supplement 1)
 
 ### Purpose
 The Country Chart determines if a license is required based on the combination of the item's **Reason(s) for Control** and the **destination country**.
@@ -160,20 +163,20 @@ If your ECCN has multiple RFCs (e.g., NS and AT), check **all applicable columns
 
 | Column | Meaning |
 |--------|---------|
-| NS Column 1 | National security — sensitive items |
-| NS Column 2 | National security — less sensitive items |
+| NS Column 1 | National security - sensitive items |
+| NS Column 2 | National security - less sensitive items |
 | MT Column 1 | Missile technology |
-| NP Column 1 | Nuclear nonproliferation — major suppliers group |
-| NP Column 2 | Nuclear nonproliferation — trigger list |
-| CB Column 1 | Chemical and biological — Australia Group |
-| CB Column 2 | Chemical and biological — non-Australia Group |
-| RS Column 1 | Regional stability — most items |
-| RS Column 2 | Regional stability — less sensitive |
-| CC Column 1 | Crime control — all items |
-| CC Column 2 | Crime control — shotguns |
-| CC Column 3 | Crime control — used equipment |
-| AT Column 1 | Anti-terrorism — all items |
-| AT Column 2 | Anti-terrorism — shotguns |
+| NP Column 1 | Nuclear nonproliferation - major suppliers group |
+| NP Column 2 | Nuclear nonproliferation - trigger list |
+| CB Column 1 | Chemical and biological - Australia Group |
+| CB Column 2 | Chemical and biological - non-Australia Group |
+| RS Column 1 | Regional stability - most items |
+| RS Column 2 | Regional stability - less sensitive |
+| CC Column 1 | Crime control - all items |
+| CC Column 2 | Crime control - shotguns |
+| CC Column 3 | Crime control - used equipment |
+| AT Column 1 | Anti-terrorism - all items |
+| AT Column 2 | Anti-terrorism - shotguns |
 | UN | UN embargo |
 
 ---
@@ -184,21 +187,21 @@ If your ECCN has multiple RFCs (e.g., NS and AT), check **all applicable columns
 
 The US government mandates exporters apply this order before determining export classification:
 
-**STEP 1 — Consult the USML (22 CFR Part 121):**
+**STEP 1 - Consult the USML (22 CFR Part 121):**
 - The USML has 21 categories (Cat. I–XXI) covering military articles
 - If the item is "specially designed" or enumerated on the USML → ITAR jurisdiction, file with DDTC
-- The "specially designed" standard is complex — items designed for civilian use that are identical to military articles may still be EAR
+- The "specially designed" standard is complex - items designed for civilian use that are identical to military articles may still be EAR
 
-**STEP 2 — Consult the CCL:**
+**STEP 2 - Consult the CCL:**
 - If not on USML → check CCL
 - If found on CCL → assign ECCN
 - If not found → EAR99
 
-**When jurisdiction is unclear — Submit a CJ Request:**
-- **CJ (Commodity Jurisdiction) Request** — submitted to DDTC
+**When jurisdiction is unclear - Submit a CJ Request:**
+- **CJ (Commodity Jurisdiction) Request** - submitted to DDTC
 - Used when: an item has both military and commercial versions; an item was transferred from USML to CCL under Export Control Reform; or there's genuine ambiguity
 - Timeline: 45-day statutory deadline; in practice, can take longer
-- **CCATS** — BIS's equivalent for confirming an ECCN (use SNAP-R portal)
+- **CCATS** - BIS's equivalent for confirming an ECCN (use SNAP-R portal)
 
 ### Common EAR/ITAR Boundary Areas
 
@@ -221,20 +224,20 @@ The US government mandates exporters apply this order before determining export 
 
 ---
 
-## EAR99 Items That Still Need Licenses — Common Mistakes
+## EAR99 Items That Still Need Licenses - Common Mistakes
 
 | Scenario | Why License Needed |
 |----------|--------------------|
-| EAR99 electronics exported to Iran | Part 746 embargo — license required |
-| EAR99 software sold to Entity List party | Entity List requirement — license required |
+| EAR99 electronics exported to Iran | Part 746 embargo - license required |
+| EAR99 software sold to Entity List party | Entity List requirement - license required |
 | EAR99 pump sold for nuclear programme | WMD end-use control § 744.2 |
 | EAR99 laptop reexported from Germany to Russia | Part 746.8 Russia controls apply to all items |
-| EAR99 goods with 10%+ US content to D:5 country | De minimis rule — license may be required |
-| EAR99 circuit board demonstrated to Iranian engineer in US | Deemed export to Iran — check § 734.13 |
+| EAR99 goods with 10%+ US content to D:5 country | De minimis rule - license may be required |
+| EAR99 circuit board demonstrated to Iranian engineer in US | Deemed export to Iran - check § 734.13 |
 
 ---
 
-## EAR Controls on Russia and China — Key 2022–2026 Developments
+## EAR Controls on Russia and China - Key 2022–2026 Developments
 
 ### Russia and Belarus (Part 746.8)
 Following February 2022, BIS imposed broad new controls:
@@ -247,4 +250,4 @@ Following February 2022, BIS imposed broad new controls:
 - New ECCNs 3A090, 4A090 control advanced AI chips above performance thresholds
 - Entity List expanded with semiconductor-related entities (Huawei, affiliates, others)
 - FDPR expanded to capture foreign-made chips using US equipment if destined for restricted Chinese entities
-- "ITAR Carve-Out" items — some satellite/military items moved from ITAR to EAR under Export Control Reform but with strict CCL controls
+- "ITAR Carve-Out" items - some satellite/military items moved from ITAR to EAR under Export Control Reform but with strict CCL controls

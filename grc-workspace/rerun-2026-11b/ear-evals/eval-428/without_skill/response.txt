@@ -1,0 +1,5 @@
+License Exception CIV (Civil End-Users) is no longer available. BIS removed it from the EAR years ago (around 2011 to 2014 timeframe as part of a rule on Country Group D:1 items, rather than as a recent change). I cannot give you the exact Federal Register date from memory, so verify it. CIV had allowed certain national security controlled items to go to civil end users in Country Group D:1 other than E:1 and E:2 destinations, such as China and Russia. It no longer exists.
+
+15 CFR 740.5: formerly the CIV section. It is now "[Reserved]". It is not a live exception.
+
+15 CFR 740.16: Additional Permissive Reexports (APR). It authorizes reexports from Country Group A:1 countries and Hong Kong (with limits) of certain items to destinations in other country groups, with conditions. It is separate from CIV and unaffected by its removal. Note that 740.16 is not the "ACA" section; verify the section title and current text in eCFR.

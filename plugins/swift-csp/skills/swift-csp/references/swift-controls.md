@@ -1,8 +1,8 @@
-# SWIFT CSCF v2026 — Full Control Reference
+# SWIFT CSCF v2026 - Full Control Reference
 
 All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture applicability: ✅ = Mandatory | 🔶 = Advisory | ➖ = Not Applicable
 
-> ⚠️ **Verify against the official CSCF v2026** (swift.com Knowledge Centre, requires login) before relying on per-control applicability — SWIFT adjusts control status and architecture-type applicability each cycle. Key v2026 change reflected below: **Control 2.4 promoted Advisory → Mandatory.**
+> ⚠️ **Verify against the official CSCF v2026** (swift.com Knowledge Centre, requires login) before relying on per-control applicability - SWIFT adjusts control status and architecture-type applicability each cycle. Key v2026 change reflected below: **Control 2.4 promoted Advisory → Mandatory.**
 
 ---
 
@@ -12,18 +12,18 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 |---------|----|----|----|----|---|
 | 1.1 SWIFT Environment Protection | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 1.2 OS Privileged Account Control | ✅ | ✅ | ➖ | ➖ | ✅ |
-| 1.3A Virtualisation Platform Security | 🔶 | 🔶 | 🔶 | 🔶 | 🔶 |
+| 1.3 Virtualisation or Cloud Platform Protection | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 1.4 Restriction of Internet Access | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 1.5A Customer Environment Protection | 🔶 | 🔶 | 🔶 | 🔶 | 🔶 |
+| 1.5 Customer Environment Protection | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 2.1 Internal Data Flow Security | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 2.2 Security Updates | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 2.3 System Hardening | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 2.4 Back-Office Data Flow Security *(promoted to Mandatory in v2026)* | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 2.4 Back-Office Data Flow Security *(promoted to Mandatory in v2026)* | ✅ | ✅ | ✅ | ✅ | ➖ |
 | 2.5A External Transmission Data Protection | 🔶 | 🔶 | 🔶 | 🔶 | 🔶 |
 | 2.6 Operator Session Confidentiality | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 2.7 Vulnerability Scanning | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 2.8 Critical Activity Outsourcing | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 2.9A Transaction Business Controls | 🔶 | 🔶 | 🔶 | 🔶 | 🔶 |
+| 2.8 Outsourced Critical Activity Protection | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 2.9 Transaction Business Controls | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 2.10 Application Hardening | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 2.11A RMA Business Controls | 🔶 | 🔶 | 🔶 | 🔶 | 🔶 |
 | 3.1 Physical Security | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -31,23 +31,23 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 | 4.2 Multi-Factor Authentication | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 5.1 Logical Access Controls | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 5.2 Token Management | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 5.3A Staffing | 🔶 | 🔶 | 🔶 | 🔶 | 🔶 |
+| 5.3A Staff Screening Process | 🔶 | 🔶 | 🔶 | 🔶 | 🔶 |
 | 5.4 Physical and Logical Password Storage | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 6.1 Malware Protection | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 6.2 Software Integrity | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 6.3 Database Integrity | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 6.4 Log and Monitoring | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 6.4 Logging and Monitoring | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 6.5A Intrusion Detection | 🔶 | 🔶 | 🔶 | 🔶 | 🔶 |
 | 7.1 Cyber Incident Response Planning | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 7.2 Security Training and Awareness | ✅ | ✅ | ✅ | ✅ | ✅ |
 | 7.3A Penetration Testing | 🔶 | 🔶 | 🔶 | 🔶 | 🔶 |
-| 7.4A Scenario Risk Assessment | 🔶 | 🔶 | 🔶 | 🔶 | 🔶 |
+| 7.4A Scenario-based Risk Assessment | 🔶 | 🔶 | 🔶 | 🔶 | 🔶 |
 
 ---
 
-## Objective 1 — Secure Your Environment
+## Objective 1 - Secure Your Environment
 
-### Control 1.1 — SWIFT Environment Protection (Mandatory)
+### Control 1.1 - SWIFT Environment Protection (Mandatory)
 
 **Purpose:** Create and maintain a dedicated, protected SWIFT zone isolated from the general IT environment and internet.
 
@@ -74,7 +74,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 1.2 — OS Privileged Account Control (Mandatory — A1, A2, B only)
+### Control 1.2 - OS Privileged Account Control (Mandatory - A1, A2, B only)
 
 **Purpose:** Restrict and control privileged operating system accounts on SWIFT infrastructure.
 
@@ -93,7 +93,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 1.3A — Virtualisation Platform Security (Advisory)
+### Control 1.3 - Virtualisation or Cloud Platform Protection (Mandatory)
 
 **Purpose:** Secure the hypervisor and virtualisation layer if SWIFT components run on virtual machines.
 
@@ -110,7 +110,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 1.4 — Restriction of Internet Access (Mandatory)
+### Control 1.4 - Restriction of Internet Access (Mandatory)
 
 **Purpose:** Prevent SWIFT servers and operator workstations from having direct internet access.
 
@@ -127,13 +127,13 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 1.5A — Customer Environment Protection (Advisory)
+### Control 1.5 - Customer Environment Protection (Mandatory)
 
 **Purpose:** Extend security controls to protect the broader customer IT environment from threats that could cascade to SWIFT.
 
 ---
 
-### Control 2.1 — Internal Data Flow Security (Mandatory)
+### Control 2.1 - Internal Data Flow Security (Mandatory)
 
 **Purpose:** Protect SWIFT message data in transit within the customer environment.
 
@@ -150,17 +150,11 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 2.2 — Security Updates (Mandatory)
+### Control 2.2 - Security Updates (Mandatory)
 
 **Purpose:** Apply security patches to SWIFT-related software and underlying systems promptly.
 
-**Patching SLAs:**
-| Severity | Maximum Remediation Time |
-|----------|--------------------------|
-| Critical / Emergency SWIFT advisory | 3 calendar days |
-| High | 90 calendar days |
-| Medium | Next scheduled maintenance cycle |
-| Low | Best effort; documented |
+**Patching expectations:** Apply security updates in a timely manner, prioritised by severity and vendor/SWIFT advisory guidance. CSCF v2026 does not publish fixed day-count SLAs for this control; define risk-based internal timelines and evidence adherence to them.
 
 **Requirements:**
 - All SWIFT-connected systems (OS, middleware, SWIFT application) included in patch scope
@@ -174,7 +168,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 2.3 — System Hardening (Mandatory)
+### Control 2.3 - System Hardening (Mandatory)
 
 **Purpose:** Apply security hardening baselines to all SWIFT-connected systems.
 
@@ -192,21 +186,21 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 2.4 — Back-Office Data Flow Security (Mandatory — promoted from Advisory in v2026)
+### Control 2.4 - Back-Office Data Flow Security (Mandatory - promoted from Advisory in v2026)
 
 **Purpose:** Protect SWIFT transaction data as it flows between SWIFT components and back-office / ERP systems.
 
-**v2026 scope notes:** Encryption is required between the general IT environment and the secure SWIFT infrastructure, including flows via a bridging server. Phased application: legacy direct connections and flows from a bridging server to the back-office first hops are **not yet mandatory** (SWIFT has signalled v2028 for these).
+**v2026 scope notes:** Encryption is required between the general IT environment and the secure SWIFT infrastructure, including flows via a bridging server. Phased application: legacy direct connections and flows from a bridging server to the back-office first hops are **not yet mandatory** (SWIFT has signalled v2028 for these). Control 2.4 is **not applicable to architecture B**, which has no SWIFT-specific local footprint and therefore no in-scope first-hop back-office flows.
 
 ---
 
-### Control 2.5A — External Transmission Data Protection (Advisory)
+### Control 2.5A - External Transmission Data Protection (Advisory)
 
 **Purpose:** Encrypt SWIFT-related data transmitted outside the customer environment.
 
 ---
 
-### Control 2.6 — Operator Session Confidentiality and Integrity (Mandatory)
+### Control 2.6 - Operator Session Confidentiality and Integrity (Mandatory)
 
 **Purpose:** Protect operator sessions to SWIFT applications from interception and tampering.
 
@@ -224,14 +218,14 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 2.7 — Vulnerability Scanning (Mandatory)
+### Control 2.7 - Vulnerability Scanning (Mandatory)
 
 **Purpose:** Identify and remediate vulnerabilities in SWIFT-connected systems through regular scanning.
 
 **Requirements:**
 - Quarterly credentialed vulnerability scans of all in-scope SWIFT systems
-- Scans must be authenticated (credentialed) — unauthenticated scans do not meet the requirement
-- Results reviewed and remediated per Control 2.2 patching SLAs
+- Scans must be authenticated (credentialed) - unauthenticated scans do not meet the requirement
+- Results reviewed and remediated in a timely, severity-prioritised manner per Control 2.2
 - Scan coverage includes OS, middleware, SWIFT application components, and network devices in Secure Zone
 
 **Evidence artifacts:**
@@ -241,7 +235,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 2.8 — Critical Activity Outsourcing (Mandatory)
+### Control 2.8 - Outsourced Critical Activity Protection (Mandatory)
 
 **Purpose:** Ensure security obligations are maintained when SWIFT-related activities are outsourced.
 
@@ -258,7 +252,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 2.9A — Transaction Business Controls (Advisory)
+### Control 2.9 - Transaction Business Controls (Mandatory)
 
 **Purpose:** Implement business-level controls to detect and prevent fraudulent SWIFT transactions.
 
@@ -266,7 +260,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 2.10 — Application Hardening (Mandatory)
+### Control 2.10 - Application Hardening (Mandatory)
 
 **Purpose:** Apply security hardening to SWIFT application software (Alliance Access/Gateway).
 
@@ -283,13 +277,13 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 2.11A — RMA Business Controls (Advisory)
+### Control 2.11A - RMA Business Controls (Advisory)
 
 **Purpose:** Control and monitor Relationship Management Application (RMA) authorisations to limit counterparty message flows.
 
 ---
 
-### Control 3.1 — Physical Security (Mandatory)
+### Control 3.1 - Physical Security (Mandatory)
 
 **Purpose:** Physically protect SWIFT infrastructure from unauthorised access, tampering, and damage.
 
@@ -307,9 +301,9 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-## Objective 2 — Know and Limit Access
+## Objective 2 - Know and Limit Access
 
-### Control 4.1 — Password Policy (Mandatory)
+### Control 4.1 - Password Policy (Mandatory)
 
 **Purpose:** Enforce strong password requirements for all accounts accessing SWIFT systems.
 
@@ -328,7 +322,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 4.2 — Multi-Factor Authentication (Mandatory)
+### Control 4.2 - Multi-Factor Authentication (Mandatory)
 
 **Purpose:** Require MFA for all interactive operator access to the SWIFT environment.
 
@@ -347,12 +341,12 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 5.1 — Logical Access Controls (Mandatory)
+### Control 5.1 - Logical Access Controls (Mandatory)
 
 **Purpose:** Enforce least-privilege access to SWIFT applications and data.
 
 **Requirements:**
-- Individual named accounts for every SWIFT operator — no shared accounts
+- Individual named accounts for every SWIFT operator - no shared accounts
 - Role-based access aligned to business need; no default admin access for standard operators
 - Dual authorisation required for high-risk operations (e.g., creating new BIC connections)
 - Quarterly access reviews; remove stale/terminated user access within 24 hours of departure
@@ -366,7 +360,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 5.2 — Token Management (Mandatory)
+### Control 5.2 - Token Management (Mandatory)
 
 **Purpose:** Manage the lifecycle of authentication tokens used to access SWIFT systems.
 
@@ -386,20 +380,20 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 5.3A — Staffing (Advisory)
+### Control 5.3A - Staff Screening Process (Advisory)
 
 **Purpose:** Implement personnel security measures for staff with SWIFT access.
 
 ---
 
-### Control 5.4 — Physical and Logical Password Storage (Mandatory)
+### Control 5.4 - Physical and Logical Password Storage (Mandatory)
 
 **Purpose:** Protect passwords and credentials used for SWIFT systems from exposure.
 
 **Requirements:**
 - SWIFT application passwords and credentials must be stored in an approved password manager or CyberArk/PAM vault
 - No passwords stored in plaintext files, spreadsheets, or unencrypted documents
-- Emergency/break-glass credentials stored in sealed envelopes with tamper evidence — access logged
+- Emergency/break-glass credentials stored in sealed envelopes with tamper evidence - access logged
 - Default application credentials changed on installation and after each maintenance
 
 **Evidence artifacts:**
@@ -409,9 +403,9 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-## Objective 3 — Detect and Respond
+## Objective 3 - Detect and Respond
 
-### Control 6.1 — Malware Protection (Mandatory)
+### Control 6.1 - Malware Protection (Mandatory)
 
 **Purpose:** Deploy and maintain anti-malware protection on SWIFT-connected systems.
 
@@ -431,7 +425,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 6.2 — Software Integrity (Mandatory)
+### Control 6.2 - Software Integrity (Mandatory)
 
 **Purpose:** Verify the integrity of SWIFT software before installation and after updates to detect tampering.
 
@@ -449,7 +443,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 6.3 — Database Integrity (Mandatory)
+### Control 6.3 - Database Integrity (Mandatory)
 
 **Purpose:** Protect SWIFT transaction data and configuration data in databases from unauthorised modification.
 
@@ -467,7 +461,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 6.4 — Log and Monitoring (Mandatory)
+### Control 6.4 - Logging and Monitoring (Mandatory)
 
 **Purpose:** Capture, retain, and review security-relevant events from SWIFT systems to detect anomalies.
 
@@ -487,19 +481,19 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 6.5A — Intrusion Detection (Advisory)
+### Control 6.5A - Intrusion Detection (Advisory)
 
 **Purpose:** Deploy network or host-based intrusion detection for the SWIFT zone.
 
 ---
 
-### Control 7.1 — Cyber Incident Response Planning (Mandatory)
+### Control 7.1 - Cyber Incident Response Planning (Mandatory)
 
 **Purpose:** Maintain a documented, tested incident response capability for SWIFT-specific cyber incidents.
 
 **Requirements:**
 - Documented **SWIFT-specific Incident Response Plan (IRP)** covering: detection triggers, triage, containment, notification (internal and SWIFT), investigation, recovery, lessons learned
-- IRP must define when and how to notify SWIFT (via SWIFT's CISO or through KYC-SA) — SWIFT requires notification within 24 hours of a confirmed cyber incident affecting SWIFT infrastructure
+- IRP must define when and how to notify SWIFT (via SWIFT's CISO or through KYC-SA) - SWIFT requires notification within 24 hours of a confirmed cyber incident affecting SWIFT infrastructure
 - IRP tested annually (tabletop exercise or live drill)
 - Contact list for SWIFT support and internal incident team maintained and tested
 - Evidence preservation requirements defined (forensic images, log preservation)
@@ -517,7 +511,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 7.2 — Security Training and Awareness (Mandatory)
+### Control 7.2 - Security Training and Awareness (Mandatory)
 
 **Purpose:** Ensure all staff with SWIFT access receive security awareness training.
 
@@ -534,7 +528,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 7.3A — Penetration Testing (Advisory)
+### Control 7.3A - Penetration Testing (Advisory)
 
 **Purpose:** Conduct penetration testing of the SWIFT environment to identify vulnerabilities not found by scanning.
 
@@ -542,7 +536,7 @@ All 32 controls (26 mandatory, 6 advisory) across 3 objectives. Architecture app
 
 ---
 
-### Control 7.4A — Scenario Risk Assessment (Advisory)
+### Control 7.4A - Scenario-based Risk Assessment (Advisory)
 
 **Purpose:** Conduct scenario-based risk assessments for SWIFT-specific attack scenarios.
 

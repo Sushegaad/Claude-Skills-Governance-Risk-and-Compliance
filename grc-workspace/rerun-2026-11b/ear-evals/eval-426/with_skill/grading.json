@@ -1,0 +1,33 @@
+{
+  "eval_id": 426,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Places Cuba in Country Group E:2 (unilateral embargo), not E:1",
+      "passed": true,
+      "evidence": "'Cuba is in Country Group E:2, the unilateral embargo group'"
+    },
+    {
+      "text": "States E:1 contains Iran, North Korea and Syria",
+      "passed": true,
+      "evidence": "'E:1 is the terrorism-supporting group (Iran, North Korea, Syria)'"
+    },
+    {
+      "text": "Places Russia and Belarus in Country Groups D:1-D:5 (subject to the 746.8 sanctions), not in Group E",
+      "passed": true,
+      "evidence": "'They are not in Group E. They sit in Groups D:1 through D:5... comprehensive controls come from 746.8'"
+    },
+    {
+      "text": "States A:2 = Missile Technology Control Regime adherents and A:3 = Australia Group",
+      "passed": true,
+      "evidence": "'A:2 is the Missile Technology Control Regime (MTCR) adherents... A:3 is the Australia Group members'"
+    },
+    {
+      "text": "Does not claim an 'E:2 = Russia/Belarus' group",
+      "passed": true,
+      "evidence": "Explicitly warns against saying 'Russia is Group E'; no E:2=Russia/Belarus claim"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

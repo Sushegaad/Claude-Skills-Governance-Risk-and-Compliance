@@ -1,0 +1,13 @@
+{
+  "eval_id": 435,
+  "eval_name": "transition-work",
+  "run_type": "with_skill",
+  "prompt": "We are certified to ISO 27701:2019. What does transitioning to the 2025 edition actually require us to implement?",
+  "assertions": [
+    "States there are no new controller/processor controls to implement; the work is re-mapping evidence to the new numbering and structure",
+    "Gives the transition deadlines: certification bodies by October 31, 2027 and certified organizations by October 31, 2028",
+    "Notes the 2025 edition is standalone certifiable (no ISO 27001 certificate prerequisite), with the shared A.3 block to account for",
+    "Does not instruct implementing 'new' retention, disposal or transmission controls",
+    "Advises updating the SoA/documentation mapping for the transition audit"
+  ]
+}

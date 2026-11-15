@@ -200,7 +200,7 @@ To remove the marketplace entirely:
 |---|---|---|
 | `iso27001` | ISO 27001:2022 | Gap analysis, policy writing, Annex A control guidance, SoA generation, risk registers |
 | `soc2` | SOC 2 | TSC gap analysis, policy drafting, control documentation, audit evidence, vendor risk |
-| `fedramp` | FedRAMP (CR26) | Readiness under CR26 (final; Classes A–D, pipelines open Aug 2026), FedRAMP 20x primary pathway, Legacy Ready conversion, SSP narratives, POA&M SLAs, OSCAL mandate Sep 30 2026, ConMon |
+| `fedramp` | FedRAMP (CR26) | Readiness under CR26 (final; Classes A–D, pipelines open Aug 2026), FedRAMP 20x primary pathway, Legacy Ready conversion, SSP narratives, POA&M SLAs, CR26 data requirements (Jan/May 2027), ConMon |
 | `nist-csf` | NIST CSF 2.0 / 1.1 | Gap assessments, organisational profiles, implementation tiers, roadmaps, cross-framework mapping |
 | `cmmc` | CMMC 2.0 | Level 1/2/3 gap analysis, SPRS scoring, POA&M, CUI scoping, assessment prep — incl. the Jul 13 2026 Phase 2 suspension interim guidance |
 | `swift-csp` | SWIFT CSP 2026 | CSCF v2026 (32 controls: 26 mandatory + 6 advisory), Control 2.4 back-office data flow now mandatory, architecture scoping (A1/A2/A3/A4/B), independent assessment prep, KYC-SA attestation |

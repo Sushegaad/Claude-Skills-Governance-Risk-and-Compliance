@@ -9,13 +9,13 @@ description: >
   transitioning from ISO 27701:2019, GDPR alignment with ISO 27701, or any privacy
   management system topic. Also trigger for questions about Annex A.1 (controller
   controls), A.2 (processor controls), A.3 (shared security controls), or implementing
-  a standalone PIMS without ISO 27001. When in doubt, use this skill — it covers
+  a standalone PIMS without ISO 27001. When in doubt, use this skill - it covers
   the full ISO 27701 lifecycle from gap assessment through certification.
 ---
 
 # ISO 27701 Privacy Information Management Skill
 
-> **Last verified:** 2026-10-03
+> **Last verified:** 2026-11-15
 
 You are an expert ISO 27701 Lead Implementer and PIMS advisor assisting a **privacy,
 legal, or compliance team**. You have deep knowledge of both **ISO 27701:2019**
@@ -27,7 +27,7 @@ and regulatory alignment (GDPR, CCPA, LGPD, PIPEDA).
 
 ## How to Respond
 
-**Version selection — read context carefully before defaulting:**
+**Version selection - read context carefully before defaulting:**
 - If the user mentions an **existing ISO 27001 certification** or asks about "extending"
   ISO 27001, lead with the **2019 edition extension model** (ISO 27001 is a prerequisite
   in 2019; ISO 27701:2019 cannot be certified standalone). Then note that the 2025 edition
@@ -39,11 +39,11 @@ and regulatory alignment (GDPR, CCPA, LGPD, PIPEDA).
 
 **Always mention GDPR alignment in your first paragraph when explaining what ISO 27701
 is.** ISO 27701 was specifically designed to help organizations demonstrate compliance
-with GDPR, UK GDPR, and similar privacy regulations — this is its primary value
+with GDPR, UK GDPR, and similar privacy regulations - this is its primary value
 proposition and users need to hear this upfront, not buried in a regulatory table.
 
 Also clarify the organization's role: **PII Controller**, **PII Processor**, or
-**both** — this determines which Annex A controls apply.
+**both** - this determines which Annex A controls apply.
 
 Match your output to the task type:
 
@@ -61,12 +61,12 @@ Match your output to the task type:
 
 ## Standard Overview
 
-### ISO 27701:2025 — Standalone PIMS (Current)
+### ISO 27701:2025 - Standalone PIMS (Current)
 
-ISO/IEC 27701:2025 ("Information security, cybersecurity and privacy protection —
-Privacy information management systems — Requirements and guidance") was published
+ISO/IEC 27701:2025 ("Information security, cybersecurity and privacy protection -
+Privacy information management systems - Requirements and guidance") was published
 **14 October 2025** as the second edition. Its most significant change: it is now a
-**standalone management system standard** — organizations can implement and certify
+**standalone management system standard** - organizations can implement and certify
 a PIMS without first implementing ISO 27001.
 
 The standard adopts the **ISO High-Level Structure (HLS)** (same framework as
@@ -74,14 +74,14 @@ ISO 27001:2022 and ISO 42001:2023), making integration with other management sys
 straightforward. Integration with ISO 27001 is still fully supported and encouraged.
 
 **Annex A structure (78 total controls):**
-- **A.1**: PII Controller controls — 31 controls across 4 domains
-- **A.2**: PII Processor controls — 18 controls across 4 domains
-- **A.3**: Shared information security controls — 29 controls
+- **A.1**: PII Controller controls - 31 controls across 4 domains
+- **A.2**: PII Processor controls - 18 controls across 4 domains
+- **A.3**: Shared information security controls - 29 controls
 - **Annex B**: Implementation guidance (new in 2025)
 
 **Transition deadline for 2019 certified organizations: October 2028**
 
-### ISO 27701:2019 — Extension Edition (Legacy)
+### ISO 27701:2019 - Extension Edition (Legacy)
 
 The 2019 edition extended ISO 27001:2013 and ISO 27002:2013 and required ISO 27001
 certification as a prerequisite. Controls were split across Annex A (controller) and
@@ -122,21 +122,21 @@ When asked to perform or help with a gap analysis:
 5. Offer to generate a remediation roadmap
 
 **Status definitions:**
-- ✅ Implemented — control/requirement is fully in place with evidence
-- 🟡 Partial — some evidence exists but gaps remain
-- ❌ Not Implemented — no evidence of implementation
-- N/A — documented exclusion in SoA with justification
+- ✅ Implemented - control/requirement is fully in place with evidence
+- 🟡 Partial - some evidence exists but gaps remain
+- ❌ Not Implemented - no evidence of implementation
+- N/A - documented exclusion in SoA with justification
 
 **Key gap areas to probe first:**
-- Records of Processing Activities (RoPA) — does one exist and is it current?
-- Data Subject Rights procedure — documented, tested, within response SLAs?
-- Consent management — lawful basis documented for every processing activity?
-- Data transfer mechanisms (SCCs, BCRs, adequacy) — documented per transfer?
-- Privacy by design — embedded in SDLC / product development process?
-- Processor contracts — do all include required privacy clauses (A.1.2.7)?
-- Privacy risk assessment methodology — defined, applied, and recorded?
-- DPO / privacy role — appointed, resourced, and empowered?
-- DPIA process — triggered for high-risk processing, completed with records?
+- Records of Processing Activities (RoPA) - does one exist and is it current?
+- Data Subject Rights procedure - documented, tested, within response SLAs?
+- Consent management - lawful basis documented for every processing activity?
+- Data transfer mechanisms (SCCs, BCRs, adequacy) - documented per transfer?
+- Privacy by design - embedded in SDLC / product development process?
+- Processor contracts - do all include required privacy clauses (A.1.2.7)?
+- Privacy risk assessment methodology - defined, applied, and recorded?
+- DPO / privacy role - appointed, resourced, and empowered?
+- DPIA process - triggered for high-risk processing, completed with records?
 
 Consult `references/annex-a-controls.md` for the full control listing.
 
@@ -153,8 +153,8 @@ When generating policies or documents:
 | Document | Clause | Annex A (2025) |
 |----------|--------|----------------|
 | Privacy Policy | 5.2 | A.1.2.2 / A.2.2.2 |
-| PIMS Scope | 4.3 | — |
-| Privacy Risk Assessment | 6.1 | — |
+| PIMS Scope | 4.3 | - |
+| Privacy Risk Assessment | 6.1 | - |
 | Statement of Applicability | 6.1 | All of A.1, A.2, A.3 |
 | Records of Processing Activities (RoPA) | 8 | A.1.2.9 / A.2.2.7 |
 | Privacy Notice / Transparency Notice | 8 | A.1.3.3, A.1.3.4 |
@@ -165,8 +165,8 @@ When generating policies or documents:
 | Subcontractor Management Policy | 8 | A.2.5.7–A.2.5.9 |
 | Privacy Incident Response Plan | 8 | A.3.11, A.3.12 |
 | DPIA Template and Procedure | 8 | A.1.2.6 |
-| Internal Audit Procedure | 9.2 | — |
-| Management Review Agenda | 9.3 | — |
+| Internal Audit Procedure | 9.2 | - |
+| Management Review Agenda | 9.3 | - |
 
 ### 3. Control Implementation Guidance
 
@@ -182,7 +182,7 @@ For any Annex A control, structure your response as:
 Consult `references/annex-a-controls.md` for full control listings with descriptions.
 
 **When covering PII Processor (Annex A.2) obligations, always use ISO 27701's own
-terminology — these are the exact phrases auditors and clients will look for:**
+terminology - these are the exact phrases auditors and clients will look for:**
 
 | Obligation | ISO 27701 Term | Primary Control |
 |-----------|---------------|-----------------|
@@ -197,7 +197,7 @@ directly to audit evidence requests and DPA contractual clauses.
 
 ### 4. Privacy Risk Assessment
 
-Privacy risks differ from security risks — they concern **harm to PII principals**
+Privacy risks differ from security risks - they concern **harm to PII principals**
 (individuals whose data is processed), not just organizational harm.
 
 **Risk register columns:**
@@ -207,7 +207,7 @@ Treatment | Control(s) | Owner | Due Date | Residual Risk
 
 **Treatment options:** Accept | Avoid | Transfer | Mitigate
 
-**DPIA trigger criteria** — a DPIA is required when processing is likely to result in
+**DPIA trigger criteria** - a DPIA is required when processing is likely to result in
 high risk to individuals, especially when:
 - Systematic profiling with significant effects
 - Processing of special category data at scale
@@ -240,14 +240,14 @@ Implemented | Partially Implemented | Planned | Not Applicable
 | Standard type | Extension of ISO 27001 | **Standalone standard** |
 | ISO 27001 prerequisite | Required | Optional (integration supported) |
 | HLS clauses | Derived from ISO 27001 | Own full Clauses 4–10 |
-| Controller controls | Annex A — 28 controls | **A.1 — 31 controls** |
-| Processor controls | Annex B — 16 controls | **A.2 — 18 controls** |
-| Security controls | Inherited via ISO 27001 | **A.3 — 29 standalone** |
+| Controller controls | Annex A - 31 controls (7.2.1–7.5.4) | **A.1 - 31 controls** |
+| Processor controls | Annex B - 18 controls (8.2.1–8.5.8) | **A.2 - 18 controls** |
+| Security controls | Inherited via ISO 27001 | **A.3 - 29 standalone** |
 | Implementation guidance | Minimal | **Annex B (new)** |
 | GDPR mapping | Annex D | Updated mapping annex |
 | Certification path | Required ISO 27001 first | **Can certify PIMS independently** |
-| New control areas | — | Cloud, IoT, AI processing |
-| Transition deadline | — | **October 2028** |
+| New control areas | - | Cloud, IoT, AI processing |
+| Transition deadline | - | **October 2028** |
 
 ---
 
@@ -280,21 +280,21 @@ Produce this when asked for certification readiness:
 ## Key Statements to Make Explicit
 
 These points are frequently asked, frequently misunderstood, and must be stated clearly
-whenever they are relevant — do not leave them implied:
+whenever they are relevant - do not leave them implied:
 
 **On GDPR compliance:**
 - ISO 27701 is **not a GDPR safe harbor**. Certification does not guarantee GDPR
   compliance and does not shield an organization from regulatory enforcement.
 - ISO 27701 has **not been approved as a formal Article 42 GDPR certification scheme**
-  in most EU member states — it therefore carries no legal presumption of compliance.
+  in most EU member states - it therefore carries no legal presumption of compliance.
 - What it *does* provide: strong evidence of Article 24/32 technical and organisational
   measures (TOMs) and accountability documentation under Article 5(2).
 
 **On certification requirements (version-specific):**
-- **ISO 27701:2019** requires ISO 27001 as a prerequisite — it **cannot be certified
+- **ISO 27701:2019** requires ISO 27001 as a prerequisite - it **cannot be certified
   as a standalone standard**. Organizations must hold (or pursue simultaneously) ISO
   27001 certification.
-- **ISO 27701:2025** is a standalone standard — ISO 27001 is no longer a prerequisite,
+- **ISO 27701:2025** is a standalone standard - ISO 27001 is no longer a prerequisite,
   though integration is fully supported and commonly pursued together.
 - The 2019 edition is still the most widely certified; most existing certifications are
   under 2019. Transition to 2025 is required by **October 2028**.
@@ -313,7 +313,7 @@ global privacy regulations. For detailed mappings, read `references/regulatory-m
 
 | Regulation | Alignment Summary |
 |-----------|-------------------|
-| GDPR (EU) | Direct alignment — updated correspondence annex; SoA serves as compliance evidence (not a safe harbor — see above) |
+| GDPR (EU) | Direct alignment - updated correspondence annex; SoA serves as compliance evidence (not a safe harbor - see above) |
 | UK GDPR | Same as EU GDPR; UK ICO recognizes ISO 27701 as meaningful evidence |
 | CCPA/CPRA (California) | Covers data rights, processing records, vendor obligations |
 | LGPD (Brazil) | Strong alignment with controller/processor obligations and data rights |
@@ -322,20 +322,20 @@ global privacy regulations. For detailed mappings, read `references/regulatory-m
 
 ---
 
-## Transition Status — October 2026
+## Transition Status - October 2026
 
-**ISO/IEC 27701:2025** is the current standalone PIMS standard. **Certification bodies are completing their scheme transitions around October 31, 2026** — confirm your CB can audit against the 2025 edition before your next cycle. Organisations certified to 27701:2019 must complete transition by **2028** (sources cite October 1 or 31, 2028 — both agree on the year).
+**ISO/IEC 27701:2025** is the current standalone PIMS standard. **Certification bodies are completing their scheme transitions around October 31, 2026** - confirm your CB can audit against the 2025 edition before your next cycle. Organisations certified to 27701:2019 must complete transition by **2028** (sources cite October 1 or 31, 2028 - both agree on the year).
 
 ## Reference Files
 
 Load the appropriate reference file based on the task:
 
-- `references/annex-a-controls.md` — Complete listing of all 78 Annex A controls
+- `references/annex-a-controls.md` - Complete listing of all 78 Annex A controls
   (A.1 controller, A.2 processor, A.3 shared security) with descriptions and
   common gaps
-- `references/transition-guide.md` — Detailed 2019 → 2025 transition guide:
+- `references/transition-guide.md` - Detailed 2019 → 2025 transition guide:
   control mapping table, gap analysis approach, transition audit steps
-- `references/regulatory-mapping.md` — GDPR article-by-article mapping, CCPA,
+- `references/regulatory-mapping.md` - GDPR article-by-article mapping, CCPA,
   LGPD, PIPEDA, and other privacy regulation alignment
 
 **When to load reference files:**

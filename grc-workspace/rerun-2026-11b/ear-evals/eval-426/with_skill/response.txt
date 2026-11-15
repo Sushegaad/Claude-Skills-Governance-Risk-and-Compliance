@@ -1,0 +1,24 @@
+Short answer: Cuba is in Country Group E:2; Russia and Belarus are not in Group E at all (they sit in Groups D:1 through D:5 and are controlled by Part 746 sanctions); A:2 is the MTCR group and A:3 is the Australia Group. The groups are defined in Supplement No. 1 to 15 CFR Part 740. Check the current table there before relying on any specific membership.
+
+Cuba
+- Cuba is in Country Group E:2, the unilateral embargo group. E:1 is the terrorism-supporting group (Iran, North Korea, Syria).
+- Cuba is controlled mainly by the embargo in Part 746 (§ 746.2), which is separate from the Country Chart. Most items subject to the EAR need a license, and review is generally a policy of denial, with narrow carve-outs such as certain support for the Cuban people.
+- Group E also changes the de minimis threshold. It is 10% for E:1/E:2 destinations and 25% for all others (§ 734.4).
+- License exceptions are heavily restricted for Cuba. GFT (§ 740.12) and a few others have special rules.
+
+Russia and Belarus
+- They are not in Group E. They sit in Groups D:1 through D:5 (national security, nuclear, chemical/biological, missile, and arms embargo concerns).
+- The comprehensive controls come from § 746.8, which covers Russia and Belarus. A license is required for essentially all items subject to the EAR, including EAR99, with very narrow exceptions (for example humanitarian and safety-of-flight).
+- Russia and Belarus-specific foreign direct product rules apply on top of this.
+- A common mistake is saying "Russia is Group E". Their treatment is as heavy as an embargo, but it comes from § 746.8 and the D groups rather than from E membership.
+
+A:2 and A:3
+- A:2 is the Missile Technology Control Regime (MTCR) adherents. It is used for MT-controlled items.
+- A:3 is the Australia Group members. It is used for chemical and biological controls (CB).
+- Related groups: A:1 is Wassenaar Arrangement participants, A:4 is the Nuclear Suppliers Group, and A:5 is the 38 closest allied countries. License Exception STA (§ 740.20) relies on A:5, and a narrower set of items on A:6.
+- Group membership only matters through the specific rule that cites it (a license exception condition, a Country Chart footnote, or a § 744 provision). Being in an "A" group does not by itself authorize an export.
+- Regardless of group, Part 744 end-user and end-use rules and the restricted party lists still apply.
+
+Practical takeaway: for any destination, check (1) the Part 740 Supp. 1 group memberships, (2) Part 746 for embargoes and special controls, (3) the Country Chart for the ECCN's reasons for control, and (4) Part 744 for the parties and end-use.
+
+This is general compliance information, not legal advice. Confirm against the current Federal Register and eCFR before acting.

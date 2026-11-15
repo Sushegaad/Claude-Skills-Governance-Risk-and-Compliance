@@ -1,0 +1,33 @@
+{
+  "eval_id": 435,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States there are no new controller/processor controls to implement; the work is re-mapping evidence to the new numbering and structure",
+      "passed": true,
+      "evidence": "'The 31 controller controls and 18 processor controls carry over one-for-one... no new controls. Re-reference your SoA and evidence'"
+    },
+    {
+      "text": "Gives the transition deadlines: certification bodies by October 31, 2027 and certified organizations by October 31, 2028",
+      "passed": false,
+      "evidence": "Org date hedged ('1 or 31 October 2028') and CB date given as 'around 31 October 2026', not October 31, 2027"
+    },
+    {
+      "text": "Notes the 2025 edition is standalone certifiable (no ISO 27001 certificate prerequisite), with the shared A.3 block to account for",
+      "passed": true,
+      "evidence": "Standalone edition, ISO 27001 no longer prerequisite ('Without ISO 27001, the 29 controls must be independently evidenced'), Table A.3 addressed"
+    },
+    {
+      "text": "Does not instruct implementing 'new' retention, disposal or transmission controls",
+      "passed": true,
+      "evidence": "Explicitly says 'Do not rebuild what already works'; retention/disposal shown as renumbered carry-overs"
+    },
+    {
+      "text": "Advises updating the SoA/documentation mapping for the transition audit",
+      "passed": true,
+      "evidence": "'Re-reference your SoA and evidence to the A.1 IDs'; standalone PIMS SoA and transition audit steps given"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

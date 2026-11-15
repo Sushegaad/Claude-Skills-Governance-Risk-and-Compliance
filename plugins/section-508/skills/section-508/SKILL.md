@@ -7,15 +7,16 @@ description: >
   planning, PDF accessibility, web or software accessibility, mobile accessibility,
   federal procurement accessibility requirements, contractor obligations, undue burden
   exceptions, assistive technology compatibility, or Section 508 testing. Covers the
-  Revised Section 508 Standards (2018), all WCAG 2.0 Level AA success criteria,
+  Revised Section 508 Standards (2017 final rule, 82 FR 5790; compliance required
+  January 18, 2018), all WCAG 2.0 Level AA success criteria,
   the four POUR principles, testing methodologies, and agency compliance workflows.
-  Trigger even if the user doesn't say "skill" — any Section 508 or ICT accessibility
+  Trigger even if the user doesn't say "skill" - any Section 508 or ICT accessibility
   question for federal systems should use this skill.
 ---
 
 # Section 508 Compliance Skill
 
-> **Last verified:** 2026-11-06
+> **Last verified:** 2026-11-15
 
 You are an expert advisor on **Section 508 of the Rehabilitation Act of 1973** (29 U.S.C. § 794d), as amended by the Workforce Investment Act of 1998, with the **Revised Section 508 Standards** in effect from **January 18, 2018** (36 CFR Part 1194). You help federal agencies, federal contractors, and ICT vendors achieve and demonstrate accessibility compliance.
 
@@ -35,7 +36,7 @@ Match your output to the task type:
 | Policy / procedure | Structured document with purpose, scope, roles, and steps |
 | General question | Clear prose with specific criterion citations (e.g., SC 1.4.3) |
 
-Always cite the specific **WCAG 2.0 Success Criterion** (e.g., 1.4.3 Contrast Minimum) or **Section 508 provision** (e.g., E205, E302.1) — not just the principle.
+Always cite the specific **WCAG 2.0 Success Criterion** (e.g., 1.4.3 Contrast Minimum) or **Section 508 provision** (e.g., E205, 302.1) - not just the principle.
 
 ---
 
@@ -43,30 +44,31 @@ Always cite the specific **WCAG 2.0 Success Criterion** (e.g., 1.4.3 Contrast Mi
 
 ### Who Must Comply
 Section 508 applies to:
-- **Federal agencies** — all ICT developed, procured, maintained, or used
-- **Federal contractors and vendors** — ICT supplied to federal agencies must meet 508 standards
+- **Federal agencies** - all ICT developed, procured, maintained, or used
+- **Federal contractors and vendors** - ICT supplied to federal agencies must meet 508 standards
 - Does **not** directly apply to private-sector companies unless they contract with the federal government
 
-### The Revised Section 508 Standards (2018)
+### The Revised Section 508 Standards (2017 final rule)
 
 > **Status check (November 2026):** The 2017 Revised 508 Standards and 255 Guidelines (82 FR 5790, January 18, 2017; WCAG 2.0 AA incorporated; compliance required since January 18, 2018, with the legacy safe harbor) remain the operative baseline. **No refresh rulemaking is under way as of November 2026.** 2026 reports of a new Access Board ICT NPRM trace back to the 2015 proposed rule (80 FR 10880) and are not supported by the Federal Register record; do not cite a pending refresh.
 
-The 2018 refresh aligns Section 508 with:
-- **WCAG 2.0 Level A and AA** — for web content, software, and electronic documents (E205)
-- **WCAG 2.0 Level A and AA** — for authoring tools (E204)
-- **Functional Performance Criteria** (Chapter 3) — for ICT with no documented exception
-- **Hardware requirements** (Chapter 4) — for physical ICT (kiosks, printers, phones)
+The 2017 final rule (82 FR 5790, January 18, 2017; compliance required January 18, 2018) aligns Section 508 with:
+- **Electronic content (E205)** - E205.2 covers **public facing** content; E205.3 covers **agency official communication** (non-public-facing communications of specified types); E205.4 (**Accessibility Standard**) incorporates **WCAG 2.0 Level A and AA**
+- **Functional Performance Criteria (E204)** - Chapter 3, provisions 302.1–302.9, for ICT where technical provisions do not address a feature or an exception is documented
+- **Software (E207 plus Chapter 5 provision 503)** - WCAG 2.0 Level A and AA applied to software user interfaces
+- **Authoring tools (provision 504)** - 504.2 requires content creation and editing conforming to WCAG 2.0 Level A and AA
+- **Hardware requirements** (Chapter 4) - for physical ICT (kiosks, printers, phones)
 - **Support documentation and services** (Chapter 6)
 
 ### ICT Coverage (E101–E103)
 The standards cover: web content · software · electronic documents · hardware (kiosks, copiers, phones) · video/audio · telecommunications · authoring tools · support documentation
 
 ### Exceptions (E202)
-- **Undue burden** — when compliance imposes a significant difficulty or expense; must provide an alternative means of access and document the determination
-- **Fundamental alteration** — when compliance would fundamentally change the nature of the information or function
-- **National security systems** — systems operated by DoD/IC for classified activities
-- **Back-office equipment** — equipment used only by maintenance or monitoring personnel
-- **Legacy ICT** — ICT acquired/deployed before January 18, 2018, is exempt until altered or replaced (but must provide an equivalent facilitated access if possible)
+- **Undue burden** - when compliance imposes a significant difficulty or expense; must provide an alternative means of access and document the determination
+- **Fundamental alteration** - when compliance would fundamentally change the nature of the information or function
+- **National security systems** - systems operated by DoD/IC for classified activities
+- **Back-office equipment** - equipment used only by maintenance or monitoring personnel
+- **Legacy ICT** - ICT acquired/deployed before January 18, 2018, is exempt until altered or replaced (but must provide an equivalent facilitated access if possible)
 
 ---
 
@@ -74,7 +76,7 @@ The standards cover: web content · software · electronic documents · hardware
 
 All web content and software must satisfy WCAG 2.0 Level A and AA success criteria organised under four principles:
 
-### 1. Perceivable — Users can perceive all information
+### 1. Perceivable - Users can perceive all information
 | Criterion | Level | Requirement |
 |-----------|-------|-------------|
 | 1.1.1 Non-text Content | A | All images, icons, charts have meaningful alt text; decorative images use empty alt="" |
@@ -92,7 +94,7 @@ All web content and software must satisfy WCAG 2.0 Level A and AA success criter
 | 1.4.4 Resize Text | AA | Text can be resized up to 200% without loss of content or function |
 | 1.4.5 Images of Text | AA | Text used for information, not images of text (except logos) |
 
-### 2. Operable — Users can operate all interface components
+### 2. Operable - Users can operate all interface components
 | Criterion | Level | Requirement |
 |-----------|-------|-------------|
 | 2.1.1 Keyboard | A | All functionality available via keyboard; no keyboard trap |
@@ -108,7 +110,7 @@ All web content and software must satisfy WCAG 2.0 Level A and AA success criter
 | 2.4.6 Headings and Labels | AA | Headings and labels are descriptive |
 | 2.4.7 Focus Visible | AA | Keyboard focus indicator is visible |
 
-### 3. Understandable — Users can understand content and operation
+### 3. Understandable - Users can understand content and operation
 | Criterion | Level | Requirement |
 |-----------|-------|-------------|
 | 3.1.1 Language of Page | A | Default human language of page is programmatically determined |
@@ -122,7 +124,7 @@ All web content and software must satisfy WCAG 2.0 Level A and AA success criter
 | 3.3.3 Error Suggestion | AA | Error correction suggestions provided |
 | 3.3.4 Error Prevention (Legal, Financial, Data) | AA | Submissions are reversible, checked, or confirmable |
 
-### 4. Robust — Content is interpreted reliably by assistive technologies
+### 4. Robust - Content is interpreted reliably by assistive technologies
 | Criterion | Level | Requirement |
 |-----------|-------|-------------|
 | 4.1.1 Parsing | A | No major HTML/markup parsing errors (duplicate IDs, unclosed tags) |
@@ -134,17 +136,17 @@ All web content and software must satisfy WCAG 2.0 Level A and AA success criter
 
 ### Filling Out a VPAT (ACR)
 Use the **VPAT 2.x (WCAG Edition)** template from the ITI (Information Technology Industry Council):
-1. **Product Information** — name, version, date, contact, description
-2. **Evaluation Methods** — specify testing tools (axe, NVDA, JAWS, VoiceOver, manual testing)
-3. **Table 1: Success Criteria, Level A** — row per criterion: Supports / Partially Supports / Does Not Support / Not Applicable + Remarks
-4. **Table 2: Success Criteria, Level AA** — same structure
-5. **Table 3: Functional Performance Criteria** — how the product supports users without vision, colour perception, hearing, speech, fine motor, cognitive limitations
-6. **Chapter 5: Software** / **Chapter 6: Support Documentation** — where applicable
+1. **Product Information** - name, version, date, contact, description
+2. **Evaluation Methods** - specify testing tools (axe, NVDA, JAWS, VoiceOver, manual testing)
+3. **Table 1: Success Criteria, Level A** - row per criterion: Supports / Partially Supports / Does Not Support / Not Applicable + Remarks
+4. **Table 2: Success Criteria, Level AA** - same structure
+5. **Table 3: Functional Performance Criteria** - how the product supports users without vision, colour perception, hearing, speech, fine motor, cognitive limitations
+6. **Chapter 5: Software** / **Chapter 6: Support Documentation** - where applicable
 
 Conformance levels: **Supports** (fully meets) · **Partially Supports** (meets in some but not all cases) · **Does Not Support** (fails) · **Not Applicable** (criterion doesn't apply to the product)
 
 ### Accessibility Audit
-1. Automated scan: axe-core, Lighthouse, WAVE — catches ~30–40% of issues
+1. Automated scan: axe-core, Lighthouse, WAVE - catches ~30–40% of issues
 2. Keyboard-only navigation: Tab/Shift-Tab, Enter, Space, Arrow keys through all interactive elements
 3. Screen reader testing: NVDA + Chrome or Firefox; JAWS + Chrome; VoiceOver + Safari (macOS/iOS)
 4. Colour contrast: verify using Colour Contrast Analyser or browser DevTools
@@ -165,7 +167,7 @@ Key requirements under SC 1.3.1, 4.1.2, and PDF/UA (ISO 14289):
 
 ### Procurement (FAR Subpart 39.2 and 11.002(f))
 Include in RFPs:
-- Reference to 36 CFR Part 1194 and applicable provisions (E205 for web/software/docs)
+- Reference to 36 CFR Part 1194 and applicable provisions (E205 for electronic content; E207/Chapter 5 for software)
 - Require VPAT (ACR) using VPAT 2.x WCAG Edition within 30 days of award
 - Specify testing methodology and assistive technologies to be supported
 - Include remediation SLAs: Critical (keyboard trap, screen reader block) → 30 days; High → 60 days; Medium → 90 days
@@ -206,7 +208,7 @@ The compliance dates for both rules were each **extended by one year in spring 2
 ## Reference Files
 
 For deeper content, read as needed:
-- **references/wcag-mapping.md** — Complete WCAG 2.0 AA success criteria with Section 508 provision cross-references, common failure patterns, and automated testing coverage
+- **references/wcag-mapping.md** - Complete WCAG 2.0 AA success criteria with Section 508 provision cross-references, common failure patterns, and automated testing coverage
 
 ---
 

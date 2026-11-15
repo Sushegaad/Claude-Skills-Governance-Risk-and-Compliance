@@ -1,20 +1,21 @@
-# Section 508 / WCAG 2.0 AA — Detailed Reference
+# Section 508 / WCAG 2.0 AA - Detailed Reference
 
 ## Section 508 Provision Map
 
 | 508 Provision | Scope | WCAG Equivalent |
 |---------------|-------|-----------------|
-| E205.2 | Web content | WCAG 2.0 Level A and AA |
-| E205.3 | Electronic documents | WCAG 2.0 Level A and AA (as applicable) |
-| E205.4 | Software (user interface) | WCAG 2.0 Level A and AA |
-| E204 | Authoring tools | WCAG 2.0 Level A and AA |
-| Chapter 3 | Functional Performance Criteria | Without visual, colour, hearing, speech, fine motor, cognitive limitations |
+| E205.2 | Public facing content | WCAG 2.0 Level A and AA (via E205.4) |
+| E205.3 | Agency official communication (non-public-facing communications of specified types) | WCAG 2.0 Level A and AA (via E205.4) |
+| E205.4 | Accessibility Standard for electronic content | Incorporates WCAG 2.0 Level A and AA |
+| E204 | Functional Performance Criteria | Chapter 3, provisions 302.1–302.9 |
+| E207 + 503 (Chapter 5) | Software (user interface) | WCAG 2.0 Level A and AA |
+| 504 (Chapter 5) | Authoring tools | 504.2: content creation/editing conforming to WCAG 2.0 Level A and AA |
 | Chapter 4 | Hardware | Physical ICT accessible controls, display, clearance |
 | Chapter 6 | Support docs and services | Documentation and help in accessible formats |
 
 ---
 
-## WCAG 2.0 Level A Success Criteria — Common Failures
+## WCAG 2.0 Level A Success Criteria - Common Failures
 
 ### 1.1.1 Non-text Content
 - **Failure:** `<img>` missing `alt` attribute, or `alt=""` on informative image
@@ -35,7 +36,7 @@
 - **Failure:** Custom dropdowns, date pickers, modal dialogs not operable by keyboard
 - **Failure:** Mouse-only event handlers (`onclick` on non-interactive elements, `mouseover` without `focus` equivalent)
 - **Failure:** Drag-and-drop with no keyboard alternative
-- **Failure:** Keyboard trap in modal — Tab cycles only within modal but no way to close it
+- **Failure:** Keyboard trap in modal - Tab cycles only within modal but no way to close it
 - **Testing:** Tab through entire page; activate all controls; open/close modals
 - **Fix:** Use native HTML controls where possible; for custom widgets, implement ARIA keyboard patterns (ARIA Authoring Practices Guide)
 
@@ -54,12 +55,12 @@
 
 ---
 
-## WCAG 2.0 Level AA Success Criteria — Common Failures
+## WCAG 2.0 Level AA Success Criteria - Common Failures
 
 ### 1.4.3 Contrast (Minimum)
 - Normal text (< 18pt or < 14pt bold): **4.5:1** minimum contrast ratio against background
 - Large text (≥ 18pt or ≥ 14pt bold): **3:1** minimum
-- **Failure:** Light grey text on white background (e.g., #767676 on #FFFFFF = 4.48:1 — fails AA)
+- **Failure:** Light grey text on white background lighter than #767676 (e.g., #777777 on #FFFFFF = 4.48:1 - fails AA); #767676 on #FFFFFF = 4.54:1 passes AA and is the canonical lightest passing grey
 - **Failure:** Placeholder text in input fields (often fails; placeholder is not a label substitute)
 - **Exception:** Text in logos, inactive UI components, decorative text
 - **Tool:** WebAIM Contrast Checker, Colour Contrast Analyser (desktop app), browser DevTools
@@ -80,14 +81,14 @@
 
 ### 3.3.3 Error Suggestion
 - **Failure:** Form validation says "invalid input" without specifying what is wrong or how to fix it
-- **Fix:** "Please enter a date in MM/DD/YYYY format" — specific, actionable suggestion
+- **Fix:** "Please enter a date in MM/DD/YYYY format" - specific, actionable suggestion
 
 ### 3.3.4 Error Prevention
 - **Requirement:** For legal, financial, or data deletion transactions: provide a review-and-confirm step, OR allow the submission to be reversed/cancelled
 
 ---
 
-## Functional Performance Criteria (Chapter 3) — Section 508
+## Functional Performance Criteria (Chapter 3) - Section 508
 
 | Criterion | Requirement |
 |-----------|-------------|
@@ -139,22 +140,22 @@
 
 ## Common Procurement Deficiencies in VPATs
 
-1. **Outdated template** — using VPAT 1.x instead of VPAT 2.x (WCAG Edition). Reject and require resubmission.
-2. **"Supports" without evidence** — vendor claims support with no remarks. Require explanation for each "Supports" claim.
-3. **"Not Applicable" overuse** — vendor marks criteria N/A without justification. Challenge: almost no product has 100% N/A for interactive criteria.
-4. **Missing functional performance criteria** — vendors skip Chapter 3 entirely. Required for all ICT.
-5. **No testing methodology disclosed** — VPAT must state how testing was conducted (automated tools, AT + browser combinations, dates).
-6. **Version mismatch** — VPAT covers version 1.0 but agency is procuring version 2.0. Require VPAT for the exact version being procured.
+1. **Outdated template** - using VPAT 1.x instead of VPAT 2.x (WCAG Edition). Reject and require resubmission.
+2. **"Supports" without evidence** - vendor claims support with no remarks. Require explanation for each "Supports" claim.
+3. **"Not Applicable" overuse** - vendor marks criteria N/A without justification. Challenge: almost no product has 100% N/A for interactive criteria.
+4. **Missing functional performance criteria** - vendors skip Chapter 3 entirely. Required for all ICT.
+5. **No testing methodology disclosed** - VPAT must state how testing was conducted (automated tools, AT + browser combinations, dates).
+6. **Version mismatch** - VPAT covers version 1.0 but agency is procuring version 2.0. Require VPAT for the exact version being procured.
 
 ---
 
 ## Key Legal References
 
-- **29 U.S.C. § 794d** — Section 508 statutory text
-- **36 CFR Part 1194** — Access Board's Revised Section 508 Standards (effective 18 January 2018)
-- **FAR Subpart 39.2** — Federal Acquisition Regulation provisions on Section 508
+- **29 U.S.C. § 794d** - Section 508 statutory text
+- **36 CFR Part 1194** - Access Board's Revised Section 508 Standards (effective 18 January 2018)
+- **FAR Subpart 39.2** - Federal Acquisition Regulation provisions on Section 508
 - **FAR Subpart 39.2 / 11.002(f)**: Section 508 applies through acquisition planning and requirements documents; there is no governmentwide FAR 508 clause, only agency supplement clauses (for example HHS 352.239-74, DOT 1252.239-93)
-- **OMB Memorandum M-24-08** — "Strengthening Digital Accessibility and the Management of Section 508 of the Rehabilitation Act" (January 2024)
-- **Section508.gov** — GSA's official guidance, VPAT templates, testing resources
-- **WCAG 2.0** — W3C Recommendation (11 December 2008) — the incorporated technical standard
-- **WCAG 2.1** — W3C Recommendation (5 June 2018) — supersedes 2.0; additional mobile/cognitive criteria (not yet mandated by 508 but recommended)
+- **OMB Memorandum M-24-08** - "Strengthening Digital Accessibility and the Management of Section 508 of the Rehabilitation Act" (December 21, 2023)
+- **Section508.gov** - GSA's official guidance, VPAT templates, testing resources
+- **WCAG 2.0** - W3C Recommendation (11 December 2008) - the incorporated technical standard
+- **WCAG 2.1** - W3C Recommendation (5 June 2018) - supersedes 2.0; additional mobile/cognitive criteria (not yet mandated by 508 but recommended)

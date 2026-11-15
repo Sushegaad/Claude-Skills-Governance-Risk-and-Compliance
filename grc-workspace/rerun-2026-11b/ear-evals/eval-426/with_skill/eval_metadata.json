@@ -1,0 +1,13 @@
+{
+  "eval_id": 426,
+  "eval_name": "country-groups",
+  "run_type": "with_skill",
+  "prompt": "Where do Cuba, Russia, and Belarus sit in the EAR country groups, and what do Country Groups A:2 and A:3 represent?",
+  "assertions": [
+    "Places Cuba in Country Group E:2 (unilateral embargo), not E:1",
+    "States E:1 contains Iran, North Korea and Syria",
+    "Places Russia and Belarus in Country Groups D:1-D:5 (subject to the 746.8 sanctions), not in Group E",
+    "States A:2 = Missile Technology Control Regime adherents and A:3 = Australia Group",
+    "Does not claim an 'E:2 = Russia/Belarus' group"
+  ]
+}

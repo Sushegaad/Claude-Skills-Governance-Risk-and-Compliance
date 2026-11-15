@@ -1,0 +1,20 @@
+Short answer: No. License Exception CIV (Civil End-Users) is not available. It was eliminated on June 29, 2020 (85 FR 23470). 15 CFR 740.5 now holds License Exception SPP (Syria Peace and Prosperity), added in September 2025. 15 CFR 740.16 is License Exception APR (Additional Permissive Reexports).
+
+CIV
+- CIV used to sit at § 740.5. It allowed certain national-security-controlled items to go to civil end-users in Country Group D:1 destinations. It was removed in 2020 as part of BIS's tightening on military end-use and end-user controls for China, Russia, and Venezuela.
+- Anyone still citing "CIV" in a license exception field, a quote or an old compliance procedure should stop and check the item and destination under the current Country Chart and Part 744. Exports that relied on CIV now need a license or a different exception.
+
+§ 740.5 today: SPP (Syria Peace and Prosperity)
+- It covers the export, reexport and transfer (in-country) of EAR99 items to Syria.
+- Conditions: the item must be EAR99. Part 744 end-user and end-use prohibitions and restricted-party screening still apply. It is not available for prohibited parties or WMD end-uses.
+- Note the status of Syria changes often, so confirm the current text of § 740.5 and the related Part 746 provisions before relying on it. OFAC and State rules apply separately.
+
+§ 740.16 today: APR
+- It authorizes certain reexports from Country Group A or B countries of items originally exported with authorization from the US.
+- It is limited to items with NS or AT controls only, not items with proliferation controls (CB, MT, NP). Check the specific conditions in § 740.16 and the ECCN entry.
+
+Related notes
+- Do not confuse the symbol "GFT" (gift parcels, § 740.12) or "GBS" (§ 740.4) with these.
+- If a legacy control matrix lists CIV, update it and record the change.
+
+This is general compliance information, not legal advice. Verify against the current eCFR.

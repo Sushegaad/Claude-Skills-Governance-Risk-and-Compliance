@@ -1,4 +1,4 @@
-# EAR License Exceptions — Complete Reference (15 CFR Part 740)
+# EAR License Exceptions - Complete Reference (15 CFR Part 740)
 
 ## How License Exceptions Work
 
@@ -18,7 +18,7 @@ A license exception is an authorization in the EAR that allows you to export, re
 
 These exceptions are only available when the CCL entry for the specific ECCN expressly authorizes them. Check the CCL entry column "License Exceptions" to see which are available.
 
-### LVS — Shipments of Limited Value (§ 740.3)
+### LVS - Shipments of Limited Value (§ 740.3)
 
 **Scope:** Low-value shipments of eligible commodities and software  
 **Condition:** The value of the shipment must not exceed the per-shipment dollar threshold listed in the ECCN entry (typically $500–$5,000 depending on ECCN)  
@@ -31,31 +31,31 @@ These exceptions are only available when the CCL entry for the specific ECCN exp
 
 ---
 
-### GBS — Group B Shipments (§ 740.4)
+### GBS - Group B Shipments (§ 740.4)
 
 **Scope:** Items controlled **for national security (NS) reasons only** exported to Country Group B countries  
-**Key identifier:** The CCL entry must say "GBS—Yes" in the License Exceptions column  
+**Key identifier:** The CCL entry must say "GBS-Yes" in the License Exceptions column  
 **Conditions:**
 - Destination must be Country Group B (listed in Supplement 1, Part 740)
-- Only applies when NS is the **sole** reason for control — if CB, MT, NP, or other reasons also apply, GBS is unavailable
+- Only applies when NS is the **sole** reason for control - if CB, MT, NP, or other reasons also apply, GBS is unavailable
 - Item cannot be destined for a prohibited end-use or restricted party  
 **Common uses:** Dual-use electronics, test equipment, and materials destined for commercial use in allied countries
 
 ---
 
-### CIV — Civil End-Users (§ 740.5)
+### SPP - Syria Peace and Prosperity (§ 740.5)
 
-**Scope:** NS-only controlled items exported for **civil end-use** to Country Group D:1 countries  
-**Key identifier:** CCL entry must say "CIV—Yes"  
+**Scope:** Export, reexport, and transfer (in-country) of **EAR99 items** to Syria  
+**Background:** § 740.5 previously housed License Exception CIV (Civil End-Users), which was eliminated on June 29, 2020 (85 FR 23470); the section now houses SPP, added in September 2025  
 **Conditions:**
-- End-use must be strictly civil (not military, intelligence, or security services)
-- Exporter must obtain a **written end-user/end-use statement** from the buyer certifying civil use
-- Enhanced due diligence required — actual knowledge or reason to know of military diversion triggers denial  
-**High-risk alert:** China and Russia are Country Group D:1; this exception is narrow and heavily scrutinised by BIS
+- Item must be designated EAR99
+- Standard Part 744 end-user/end-use prohibitions and restricted party screening still apply
+- Not available for prohibited parties or WMD end-uses  
+**Practical note:** Confirm the current text of § 740.5 before relying on SPP; Syria-related controls change frequently
 
 ---
 
-### APP — Adjusted Peak Performance Computers (§ 740.7)
+### APP - Adjusted Peak Performance Computers (§ 740.7)
 
 **Scope:** Certain computer items (ECCN 4A003) at specified performance levels  
 **Conditions:** Performance (APP, measured in TP) must not exceed the thresholds set in the CCL entry for the destination country group  
@@ -64,10 +64,10 @@ These exceptions are only available when the CCL entry for the specific ECCN exp
 
 ---
 
-### TSR — Technology and Software under Restriction (§ 740.6)
+### TSR - Technology and Software under Restriction (§ 740.6)
 
 **Scope:** Technology and software controlled **for NS reasons only** to Country Group B  
-**Key identifier:** CCL entry must say "TSR—Yes"  
+**Key identifier:** CCL entry must say "TSR-Yes"  
 **Conditions:**
 - Destination is Country Group B
 - Item is technology or software (Product Group D or E)
@@ -82,7 +82,7 @@ These exceptions authorize exports **regardless** of whether the CCL entry lists
 
 ---
 
-### TMP — Temporary Imports/Exports (§ 740.9)
+### TMP - Temporary Imports/Exports (§ 740.9)
 
 **Scope:** Items exported temporarily from the US and returned without transfer of title or ownership  
 **Conditions:**
@@ -95,24 +95,24 @@ These exceptions authorize exports **regardless** of whether the CCL entry lists
 
 ---
 
-### RPL — Servicing and Replacement Parts (§ 740.10)
+### RPL - Servicing and Replacement Parts (§ 740.10)
 
 **Scope:** Replacement parts, components, and assemblies for items previously legally exported  
 **Conditions:**
 - Original export must have been licensed or authorized
-- One-for-one replacement — the old part must be returned or certified as destroyed
+- One-for-one replacement - the old part must be returned or certified as destroyed
 - Cannot be used for embargoed countries or denied parties
 - Not available for items with proliferation controls (CB, MT, NP) without checking CCL  
 **Common uses:** Exporting replacement circuit boards or components to repair previously exported equipment
 
 ---
 
-### GOV — Governments (§ 740.11)
+### GOV - Governments (§ 740.11)
 
 **Scope:** Exports to US government agencies, cooperating governments, and certain international organisations  
 **Four paragraphs:**
-- **(a)** Exports for US government agencies (military, intelligence, diplomatic) — broad coverage
-- **(b)** Exports to cooperating governments for legitimate government use — requires government-to-government verification
+- **(a)** Exports for US government agencies (military, intelligence, diplomatic) - broad coverage
+- **(b)** Exports to cooperating governments for legitimate government use - requires government-to-government verification
 - **(c)** Exports for international inspections (Chemical Weapons Convention verification missions)
 - **(d)** Exports for the International Space Station programme  
 **Restrictions:** Must verify the end-user is an actual government entity; diversion to commercial entities voids the exception  
@@ -120,32 +120,35 @@ These exceptions authorize exports **regardless** of whether the CCL entry lists
 
 ---
 
-### TSU — Technology and Software Unrestricted (§ 740.13)
+### TSU - Technology and Software Unrestricted (§ 740.13)
 
-**Scope:** Publicly available technology and software  
-**Three paragraphs:**
-- **(a) Mass-market software:** Software available to anyone without restriction (retail/internet)
-- **(b) Publicly available technology:** Information in the public domain — published research, textbooks, technical manuals freely available
-- **(c) Pre-release software:** Beta/evaluation software distributed to developers for feedback  
-**Key rule:** The **fundamental research exclusion** (§ 734.8) removes most university research from EAR jurisdiction entirely — TSU covers the remainder  
-**Important:** Technology that is NOT publicly available cannot use TSU, even if widely shared within a company
+**Scope:** Specified low-sensitivity technology and software releases  
+**Paragraphs:**
+- **(a) Operation technology and software:** Minimum necessary to operate lawfully exported equipment
+- **(b) Sales technology:** Data supporting a prospective or actual quotation or bid
+- **(c) Software updates:** Bug-fix updates to legally exported software
+- **(d) General Software Note mass-market software:** Mass-market software per the General Software Note
+- **(f) Release in the US:** Certain releases of technology/source code in the United States
+- **(g) Copies previously authorized:** Additional copies of software previously authorized to the same recipient  
+**Key rule:** **Publicly available** technology and software is **outside the EAR entirely** (§ 734.3(b), §§ 734.7–734.8); it does not need TSU or any license exception, and the **fundamental research exclusion** (§ 734.8) likewise removes most university research from EAR jurisdiction  
+**Important:** Technology that is NOT publicly available and does not fit a TSU paragraph cannot use TSU, even if widely shared within a company
 
 ---
 
-### ENC — Encryption Items (§ 740.17)
+### ENC - Encryption Items (§ 740.17)
 
 **Scope:** Encryption commodities, software, and technology (primarily ECCN 5E002 and 5D002)  
 **Structure:** Three tiers based on encryption strength and market availability:
-- **Tier 1 (§ 740.17(a)):** Mass market encryption (AES-256, standard protocols) — eligible after one-time BIS notification; reexportable to most Country Group B
-- **Tier 2 (§ 740.17(b)(1)):** Source code for mass-market products — one-time BIS notification
-- **Tier 3 (§ 740.17(b)(3)):** Non-standard or proprietary encryption — annual self-classification report  
+- **Tier 1 (§ 740.17(a)):** Mass market encryption (AES-256, standard protocols) - eligible after one-time BIS notification; reexportable to most Country Group B
+- **Tier 2 (§ 740.17(b)(1)):** Source code for mass-market products - one-time BIS notification
+- **Tier 3 (§ 740.17(b)(3)):** Non-standard or proprietary encryption - annual self-classification report  
 **Prior notification required:** File Form BIS-748P-A via SNAP-R before first use  
 **NOT available for:** Cuba, North Korea, Iran, Syria (E:1 countries) for most encryption items  
 **Common uses:** Exporting commercial VPN software, SSL/TLS libraries, encrypted mobile apps, and security products
 
 ---
 
-### BAG — Baggage (§ 740.14)
+### BAG - Baggage (§ 740.14)
 
 **Scope:** Personal items in traveller's baggage or household effects  
 **Conditions:**
@@ -157,7 +160,7 @@ These exceptions authorize exports **regardless** of whether the CCL entry lists
 
 ---
 
-### AVS — Aircraft and Vessels (§ 740.15)
+### AVS - Aircraft and Vessels (§ 740.15)
 
 **Scope:** Items exported on aircraft or vessels of non-US registry for use on that aircraft or vessel  
 **Conditions:**
@@ -171,16 +174,16 @@ These exceptions authorize exports **regardless** of whether the CCL entry lists
 ### APR - Additional Permissive Reexports (§ 740.16)
 
 **Scope:** Reexports of certain controlled items from Country Group A or B countries  
-**Conditions:** The original export from the US must have been authorized; subsequent reexports within specified country groups may use ACE  
+**Conditions:** The original export from the US must have been authorized; subsequent reexports within specified country groups may use APR  
 **Limitation:** Only available for items with NS or AT controls; not for items with proliferation controls
 
 ---
 
-### GFT — Gift Parcels (§ 740.12)
+### GFT - Gift Parcels (§ 740.12)
 
 **Scope:** Gifts sent by individual US citizens/residents to individuals in embargoed countries  
 **Conditions:** Strict value and content limits; not for commercial shipments; recipient must be an individual (not an entity)  
-**Primarily used for:** Cuba — specific limits on food, medicine, personal items
+**Primarily used for:** Cuba - specific limits on food, medicine, personal items
 
 ---
 

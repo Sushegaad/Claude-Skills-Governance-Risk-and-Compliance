@@ -1,0 +1,12 @@
+The BIS Export Compliance Guidelines: The Elements of an Effective Export Compliance Program (2017) have eight elements:
+
+1. Management commitment
+2. Risk assessment
+3. Export authorization (authorization, classification and screening)
+4. Recordkeeping
+5. Training
+6. Audits
+7. Handling export violations and taking corrective actions
+8. Compliance manual (the written Export Compliance Program manual)
+
+Note that some summaries label the elements slightly differently. The 2017 guidelines list these eight. The earlier BIS Export Management and Compliance Program (EMCP) had a different structure.

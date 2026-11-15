@@ -1,0 +1,10 @@
+ISO/IEC 27701:2025 is a standalone standard, not an extension of ISO/IEC 27001, so transition is more than a renumbering. From memory, the work typically involves:
+
+1. Gap assessment: map your 2019 PIMS (clauses 5-8 additions, Annex A/B controls, Statement of Applicability) against the 2025 text and its mapping annex.
+2. Management system: the 2025 edition has its own management system clauses (aligned to harmonised structure). Update scope, context, interested parties, privacy policy, objectives, risk assessment, internal audit, management review and continual improvement accordingly.
+3. Controls: update the Statement of Applicability and control set to the new consolidated controller/processor control annex and numbering, and implement any new or changed controls identified in the gap analysis. Many controls carry over, so effort is mostly reworking documents.
+4. Documentation: revise procedures, records, role definitions (controller, processor, joint controller) and cross-references to ISO/IEC 27002:2022 and 27001:2022.
+5. Certification: the certificate depends on 27001 certification, and the 2025 edition changes this dependence, so confirm with your certification body. Agree the transition timeline (typically a defined period, often about three years from publication, but verify with your CB and IAF/ISO guidance), then schedule a transition audit, ideally combined with a surveillance or recertification audit.
+6. Training and internal audit on the new requirements before the transition audit.
+
+I am not certain of all the details, so verify against the standard and your certification body's transition rules.

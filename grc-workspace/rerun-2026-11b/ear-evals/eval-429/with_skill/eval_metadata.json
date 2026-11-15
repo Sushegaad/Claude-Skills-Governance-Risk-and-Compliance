@@ -1,0 +1,13 @@
+{
+  "eval_id": 429,
+  "eval_name": "category5-classification",
+  "run_type": "with_skill",
+  "prompt": "Classify under the CCL: a 5G base station, a VPN encryption appliance, and mass-market disk-encryption software.",
+  "assertions": [
+    "Maps telecommunications equipment to 5A001 (with 5A991 as the AT-only residual)",
+    "Maps the encryption appliance to 5A002 (information security)",
+    "Maps mass-market crypto to the 5x992 series",
+    "Does not describe 5A002 as 'telecommunications systems'",
+    "Mentions License Exception ENC or mass-market treatment appropriately"
+  ]
+}

@@ -1,0 +1,41 @@
+Short answer: ISO/IEC 27701:2019 had 31 controller controls (Annex A) and 18 processor controls (Annex B), 49 in total. In ISO/IEC 27701:2025 the same 31 and 18 carry over one-for-one into Table A.1 (controller) and Table A.2 (processor). No controller or processor controls were added or dropped. What changed is the numbering, the structure around them, and the security controls.
+
+Context: ISO 27701 exists to help organizations demonstrate alignment with GDPR, UK GDPR and similar privacy laws. It is evidence of accountability, not a GDPR safe harbor. It is not an approved Article 42 certification scheme in most member states, so it carries no legal presumption of compliance.
+
+**2019 edition (extension to ISO 27001:2013 / ISO 27002:2013)**
+- Annex A: 31 PII controller controls, numbered 7.2.1 to 7.5.4 (cited as A.7.2.1 and so on).
+- Annex B: 18 PII processor controls, numbered 8.2.1 to 8.5.8 (cited as B.8.2.1 and so on).
+- Security controls were not a separate table. Clause 6 held 90+ sub-clauses of ISO 27001/27002 guidance, and an ISO 27001 certificate was a prerequisite. 2019 cannot be certified standalone.
+
+**2025 edition (published 14 October 2025, standalone)**
+- Table A.1: 31 controller controls, in four domains (A.1.2 conditions for collection and processing, A.1.3 obligations to PII principals, A.1.4 privacy by design and by default, A.1.5 sharing, transfer and disclosure).
+- Table A.2: 18 processor controls, in four domains (A.2.2 to A.2.5).
+- Table A.3: 29 shared information security controls. These replace the 2019 Clause 6 security content, rationalized and self-contained.
+- Annex B is now implementation guidance. In 2019 Annex B was the processor controls, so watch for citation confusion.
+- Total is 78 controls: 31 + 18 + 29. SoA scope by role:
+  - Controller only: A.1 + A.3 = 60.
+  - Processor only: A.2 + A.3 = 47.
+  - Both roles: 78.
+- Control IDs follow the table pattern A.1.x.x, A.2.x.x and A.3.x. In each domain .1 is the objective statement, so controls start at .2.
+
+**Mapping examples (2019 to 2025)**
+
+| 2019 | Control | 2025 |
+|---|---|---|
+| 7.2.1 | Identify and document purpose | A.1.2.2 |
+| 7.2.8 | Records related to processing PII | A.1.2.9 |
+| 7.3.9 | Handling requests | A.1.3.10 |
+| 7.4.7 | Retention | A.1.4.8 |
+| 7.5.1 | Basis for PII transfer | A.1.5.2 |
+| 8.2.1 | Customer agreement | A.2.2.2 |
+| 8.4.2 | Return, transfer or disposal of PII | A.2.4.3 |
+| 8.5.7 / 8.5.8 | Engagement / change of subcontractor | A.2.5.8 / A.2.5.9 |
+
+Pattern: the second digit group stays aligned (7.2.x becomes A.1.2.x, 7.3.x becomes A.1.3.x, and so on), but because the domain objective now occupies .1, the numbering shifts by one within each domain. For example 7.2.1 becomes A.1.2.2. Verify each ID against the official correspondence table in Annex F of ISO 27701:2025 before putting it in an SoA or audit evidence.
+
+**Practical implications**
+- For a 2019-certified organization, the controller and processor work is re-mapping evidence and updating the SoA to the new IDs, not building new controls.
+- The real new work is in the management-system layer (own Clauses 4 to 10 evidence, standalone scope, policy and SoA) and in A.3 if you do not hold ISO 27001:2022. If you do, cross-reference your ISMS evidence to A.3.
+- 2019 certificates must transition by October 2028. Confirm that your certification body can audit against 2025.
+
+This is general compliance information, not legal advice. Confirm against the official standard and your accredited certification body.

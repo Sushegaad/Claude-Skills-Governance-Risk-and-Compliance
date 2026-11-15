@@ -1,0 +1,13 @@
+{
+  "eval_id": 431,
+  "eval_name": "edition-counts",
+  "run_type": "with_skill",
+  "prompt": "How many controls did ISO/IEC 27701:2019 Annex A and Annex B contain, and how does that map to the 2025 edition?",
+  "assertions": [
+    "States 2019 Annex A = 31 controller controls",
+    "States 2019 Annex B = 18 processor controls",
+    "States 2025 = A.1 (31) + A.2 (18) + A.3 (29) = 78 controls",
+    "States the controller and processor controls carry over 1:1 (renumbering, not new controls)",
+    "Does not state 28 or 16 as the 2019 counts"
+  ]
+}

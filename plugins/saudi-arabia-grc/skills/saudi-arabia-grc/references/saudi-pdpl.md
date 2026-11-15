@@ -1,12 +1,12 @@
 # Saudi Personal Data Protection Law (PDPL)
 
-**Legal basis:** Royal Decree M/19 (16 Sep 2021), amended by Royal Decree M/148 (27 Mar 2023). Effective 14 Sep 2023; grace period ended — **fully enforced since 14 September 2024**. Implementing Regulations + Personal Data Transfer Regulations issued Sep 2023, amended Sep 2024. Regulator: **SDAIA** (Saudi Data & AI Authority).
+**Legal basis:** Royal Decree M/19 (16 Sep 2021), amended by Royal Decree M/148 (27 Mar 2023). Effective 14 Sep 2023; grace period ended - **fully enforced since 14 September 2024**. Implementing Regulations + Personal Data Transfer Regulations issued Sep 2023, amended Sep 2024. Regulator: **SDAIA** (Saudi Data & AI Authority).
 
 ## Scope
-Processing of personal data of individuals residing in KSA, by entities inside the Kingdom or entities outside processing residents' data. Sensitive data: health, genetic, biometric, location, criminal/security data, and data revealing racial/ethnic origin or religious/intellectual/political belief.
+Processing of personal data of individuals residing in KSA, by entities inside the Kingdom or entities outside processing residents' data. Sensitive data (amended Art. 1): data revealing racial or ethnic origin; religious, intellectual or political belief; security and criminal data; biometric data; genetic data; health data; and data indicating that one or both of an individual's parents are unknown. Location data is personal data but is **not** on the sensitive-data list.
 
 ## Core obligations
-- **Lawful basis** — consent as default, with alternatives incl. contract, legal obligation, vital interests, and (added by M/148) **legitimate interest** (not available for sensitive data)
+- **Lawful basis** - consent as default, with alternatives incl. contract, legal obligation, vital interests, and (added by M/148) **legitimate interest** (not available for sensitive data)
 - **Privacy notices** before/at collection; purpose limitation and minimization
 - **RoPA** (records of processing activities)
 - **Controller registration** on SDAIA's **National Data Governance Platform** (dgp.sdaia.gov.sa)
@@ -15,10 +15,10 @@ Processing of personal data of individuals residing in KSA, by entities inside t
 - **Breach notification: 72 hours to SDAIA** via the platform (data-subject notification where risk to them)
 
 ## International transfers (Transfer Regulations, as amended 2024)
-Mechanisms: transfers to countries with SDAIA-assessed **adequate protection**; **SDAIA Standard Contractual Clauses** in four modules (C2C, C2P, P2C, P2P); **Binding Common Rules** for groups; limited derogations. Minimize the data transferred; national-security carve-outs apply.
+Mechanisms: transfers to countries with SDAIA-assessed **adequate protection**; **SDAIA Standard Contractual Clauses** in four modules (C2C, C2P, P2C, P2P); **Binding Common Rules** for groups; **Certificates of Accreditation** from SDAIA-approved bodies; **binding codes of conduct** approved by SDAIA; limited derogations. Minimize the data transferred; national-security carve-outs apply.
 
 ## Enforcement & penalties
 - Fines up to **SAR 5,000,000** per violation (may double for repeat violations)
 - Criminal exposure: up to **2 years' imprisonment** and fines for unlawful disclosure of sensitive data
 - **Enforcement is active**: SDAIA announced in January 2026 that it issued **48 violation decisions during 2025** (processing without legal basis, unlawful disclosure, inadequate safeguards, marketing without consent); no names or amounts were disclosed
-- **Watch item (dated 2026-11):** SDAIA's April 2025 public consultation proposed PDPL amendments (incl. graduated penalties) — **not enacted as of November 2026**; advise confirming current status with SDAIA before relying on proposed changes
+- **Watch item (dated 2026-11):** SDAIA's April 2025 public consultation proposed PDPL amendments (incl. graduated penalties) - **not enacted as of November 2026**; advise confirming current status with SDAIA before relying on proposed changes

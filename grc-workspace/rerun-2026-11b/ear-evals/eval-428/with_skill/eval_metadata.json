@@ -1,0 +1,13 @@
+{
+  "eval_id": 428,
+  "eval_name": "exceptions-status",
+  "run_type": "with_skill",
+  "prompt": "Is License Exception CIV still available? And what sits at 15 CFR 740.5 and 740.16 today?",
+  "assertions": [
+    "States CIV was eliminated in June 2020 (85 FR 23470)",
+    "States 740.5 now houses License Exception SPP (Syria Peace and Prosperity)",
+    "Identifies 740.16 as APR, Additional Permissive Reexports",
+    "Does not call the 740.16 exception 'ACE'",
+    "Notes publicly available technology is outside the EAR entirely (not a TSU paragraph)"
+  ]
+}

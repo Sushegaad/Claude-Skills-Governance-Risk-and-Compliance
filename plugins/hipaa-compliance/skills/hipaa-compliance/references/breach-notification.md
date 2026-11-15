@@ -22,9 +22,9 @@
 ### Definition (§164.402):
 A **breach** is the acquisition, access, use, or disclosure of PHI in a manner not permitted under the Privacy Rule that compromises the security or privacy of the PHI.
 
-### Three Exceptions — These Are NOT Breaches:
-1. **Unintentional access** by workforce member acting in good faith within scope of authority — if no further use/disclosure
-2. **Inadvertent disclosure** between authorized persons at the CE/BA — if no further use/disclosure
+### Three Exceptions - These Are NOT Breaches:
+1. **Unintentional access** by workforce member acting in good faith within scope of authority - if no further use/disclosure
+2. **Inadvertent disclosure** between authorized persons at the CE/BA - if no further use/disclosure
 3. **Good faith belief** that unauthorized person who received PHI could not have retained it (e.g., misdirected fax that was immediately returned/destroyed)
 
 ### Presumption:
@@ -66,8 +66,8 @@ To rebut the presumption of a breach, document a risk assessment considering:
 
 > **Important**: HHS scrutinizes risk assessments. Document contemporaneously, thoroughly, and honestly. A weak or post-hoc justification is worse than treating the incident as a breach.
 
-### Safe Harbor — Encryption:
-If PHI was **encrypted** using NIST-approved methods AND the encryption key was not also compromised → **Not a reportable breach** (§164.402(2) exception).
+### Safe Harbor - Encryption:
+If PHI was **encrypted** using NIST-approved methods AND the encryption key was not also compromised → **Not a reportable breach**, because the Breach Notification Rule applies only to "unsecured PHI" (as defined at §164.402 per the HHS encryption/destruction guidance); §164.402(2) is the breach presumption and 4-factor test, not the safe harbor.
 - Acceptable: AES-128+, NIST FIPS 140-2 validated
 - Must maintain documentation of encryption
 
@@ -106,7 +106,7 @@ Discovery = when CE/BA knew or should have known of the breach (not when investi
 | Affected Individuals | HHS Notification Deadline |
 |---------------------|--------------------------|
 | **500 or more** in a state/jurisdiction | **Simultaneously with individual notice** (within 60 days of discovery) |
-| **Fewer than 500** | **Annual log** — submit within 60 days after end of calendar year |
+| **Fewer than 500** | **Annual log** - submit within 60 days after end of calendar year |
 
 ### How to Submit:
 - HHS Breach Reporting Portal: www.hhs.gov/hipaa/for-professionals/breach-notification/
@@ -141,7 +141,7 @@ Notify prominent media outlets serving the affected state/jurisdiction (e.g., ma
 ### Content:
 Same as individual notification content.
 
-> Note: Media notification is IN ADDITION to individual and HHS notification — not a substitute.
+> Note: Media notification is IN ADDITION to individual and HHS notification - not a substitute.
 
 ---
 
@@ -180,7 +180,7 @@ Same as individual notification content.
 
 ### Retention: 6 years from creation or last effective date
 
-### Best Practice — Incident Log:
+### Best Practice - Incident Log:
 Maintain a running log of all security incidents (whether or not they rise to reportable breach level). Useful for:
 - Demonstrating Security Rule compliance (§164.308(a)(6))
 - Pattern identification
@@ -198,8 +198,8 @@ Maintain a running log of all security incidents (whether or not they rise to re
 |-------------------|--------------|-------------------|
 | Did not know (reasonable diligence) | $137 – $68,928 | $2,067,813 |
 | Reasonable cause (not willful neglect) | $1,379 – $68,928 | $2,067,813 |
-| Willful neglect — corrected | $13,785 – $68,928 | $2,067,813 |
-| Willful neglect — not corrected | $68,928 – $2,067,813 | $2,067,813 |
+| Willful neglect - corrected | $13,785 – $68,928 | $2,067,813 |
+| Willful neglect - not corrected | $68,928 – $2,067,813 | $2,067,813 |
 
 > Note: Penalty amounts are adjusted annually for inflation (figures above are approximate 2024 levels).
 

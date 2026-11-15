@@ -1,0 +1,14 @@
+The BIS Export Compliance Program (ECP) framework has eight elements:
+
+1. Management Commitment: visible senior-leadership support, a written signed export compliance policy, designated Export Control Officer or Export Compliance Manager, adequate resources, and periodic reporting to leadership.
+2. Risk Assessment: identify the products, software and technology subject to the EAR, classify each (ECCN or EAR99, with rationale), and assess risks by customer, geography, channel and transaction type.
+3. Export Authorization: determine the authorization for every transaction before shipment (license, license exception, or NLR), including the Country Chart analysis, restricted party screening of all parties (Denied Persons List, Entity List, Unverified List, MEU List, plus State and OFAC lists, with the Consolidated Screening List as a single search), end-use and end-user due diligence, red flag review, and license management through SNAP-R. Ownership screening for the stayed Affiliates Rule (stay extended to January 10, 2027) should be built into this element.
+4. Recordkeeping: retain export records for five years (§ 762.6, Part 762), including orders, invoices, classification records, screening records, license and license exception documentation, and end-user statements.
+5. Training: role-based training with annual refreshers and sign-off, covering EAR basics, classification, restricted parties, red flags, deemed exports and reporting, with training records kept.
+6. Audits: annual internal review with documented findings and remediation tracking, plus periodic third-party assessment for high-risk or high-volume exporters.
+7. Handling Export Violations and Corrective Actions: internal reporting channel with non-retaliation, stopping affected shipments, escalation, preserving records, root cause analysis, corrective actions, and evaluating a Voluntary Self-Disclosure under § 764.5.
+8. Build and Maintain the ECP Manual: written, procedure-level guidance for each export-touching process (onboarding and screening, order fulfilment, classification, licensing, travel with controlled items, foreign national hiring, distributor requirements, digital transactions), reviewed at least annually and upon regulatory change.
+
+Note: some sources fold screening and due diligence into a separate element, but the standard BIS framework counts eight, with screening and know-your-customer sitting inside Export Authorization. A strong ECP is a significant mitigating factor in enforcement under Part 766, Supp. 1.
+
+This is general compliance information, not legal advice.

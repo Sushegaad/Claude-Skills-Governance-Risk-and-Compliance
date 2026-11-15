@@ -1,4 +1,4 @@
-# SWIFT CSCF — Assessment Process, Attestation, and Cross-Framework Mapping
+# SWIFT CSCF - Assessment Process, Attestation, and Cross-Framework Mapping
 
 ---
 
@@ -9,11 +9,11 @@ All SWIFT users must submit an annual **KYC Security Attestation (KYC-SA)** conf
 
 ### Attestation Workflow
 
-1. **Prepare evidence** — Gather implementation evidence for all 23 mandatory controls applicable to your architecture type
-2. **Engage independent assessor** — Community-standard users must have an independent assessor validate compliance (see below)
-3. **Complete KYC-SA form** — For each mandatory control, attest: Implemented / Partially Implemented / Not Implemented
-4. **Submit by July 31** — Annual deadline; late submission triggers counterparty notifications
-5. **Address counterparty queries** — Counterparties can view your attestation and may request clarification
+1. **Prepare evidence** - Gather implementation evidence for all 26 mandatory controls (v2026) applicable to your architecture type
+2. **Engage independent assessor** - Community-standard users must have an independent assessor validate compliance (see below)
+3. **Complete KYC-SA form** - For each mandatory control, attest: Implemented / Partially Implemented / Not Implemented
+4. **Submit by July 31** - Annual deadline; late submission triggers counterparty notifications
+5. **Address counterparty queries** - Counterparties can view your attestation and may request clarification
 
 ### Independent Assessment Requirements
 
@@ -30,21 +30,21 @@ Since CSCF v2020, an **independent assessment** is required for all users (previ
 - SWIFT-certified assessors (listed on SWIFT's KYC Registry)
 - The assessor must not have operational responsibility for the SWIFT environment assessed
 
-**Assessment scope:** All 23 mandatory controls applicable to the architecture type; advisory controls optionally included.
+**Assessment scope:** All 26 mandatory controls (v2026) applicable to the architecture type; advisory controls optionally included.
 
 ---
 
-## CSCF v2024 → v2025 Key Changes
+## CSCF v2024 → v2026 Key Changes
 
-| Change Area | v2024 | v2025 |
-|-------------|-------|-------|
-| Control count | 31 (23 mandatory, 8 advisory) | 31 (no change) |
-| 2.2 Patching SLAs | Critical: 7 days | Critical: 3 days (tightened) |
-| 4.2 MFA | Hardware token strongly recommended | Hardware token explicitly required; clarified app-based OTP insufficient for most types |
-| 6.4 Log retention | 1 year minimum | Clarified: 1 year online, 3 years total |
-| 7.1 SWIFT notification | 24-hour notification | Unchanged; emphasis on 30-day full report |
-| A4 (Cloud) | Introduced in v2023 | Further clarified; cloud-specific guidance expanded |
-| Assessment guidance | Community standard | Updated assessor qualification criteria |
+| Change Area | v2024 | v2025 | v2026 |
+|-------------|-------|-------|-------|
+| Control count | 32 (25 mandatory, 7 advisory) | 32 (25 mandatory, 7 advisory; no promotions) | 32 (26 mandatory, 6 advisory; 2.4 promoted to Mandatory) |
+| 2.2 Security Updates | Timely security updates, severity-prioritised | Unchanged (qualitative; no published day-count SLAs) | Unchanged |
+| 4.2 MFA | Hardware token strongly recommended | Hardware token explicitly required; clarified app-based OTP insufficient for most types | Unchanged |
+| 6.4 Log retention | 1 year minimum | Clarified: 1 year online, 3 years total | Unchanged |
+| 7.1 SWIFT notification | 24-hour notification | Unchanged; emphasis on 30-day full report | Unchanged |
+| A4 (Cloud) | Introduced in v2023 | Further clarified; cloud-specific guidance expanded | Unchanged |
+| Assessment guidance | Community standard | Updated assessor qualification criteria | Unchanged |
 
 ---
 
@@ -189,11 +189,11 @@ For each mandatory control, assess against these criteria:
 
 1. **Software-based OTP for MFA (Control 4.2):** Many organisations use authenticator apps rather than hardware tokens. SWIFT CSP requires hardware tokens for most architecture types.
 
-2. **Shared operator accounts (Control 5.1):** Named individual accounts not enforced; multiple operators sharing one account ID — makes non-repudiation impossible.
+2. **Shared operator accounts (Control 5.1):** Named individual accounts not enforced; multiple operators sharing one account ID - makes non-repudiation impossible.
 
 3. **Log retention gaps (Control 6.4):** Logs collected but not retained for 1+ years; SWIFT-specific log sources (Alliance Access/Gateway) not included in SIEM scope.
 
-4. **Patch exceptions undocumented (Control 2.2):** Critical patches overdue beyond 3-day SLA with no documented exception/compensating control.
+4. **Patch exceptions undocumented (Control 2.2):** Security updates not applied in a timely manner, with no documented exception/compensating control.
 
 5. **SWIFT zone not documented (Control 1.1):** Secure Zone exists technically but no network diagram; or servers are dual-homed to both SWIFT zone and corporate network.
 

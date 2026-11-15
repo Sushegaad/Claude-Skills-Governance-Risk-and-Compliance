@@ -1,0 +1,33 @@
+{
+  "eval_id": 433,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States retention maps from 2019's 7.4.7 and is not new",
+      "passed": true,
+      "evidence": "'A.1.4.8 Retention was control 7.4.7 in ISO 27701:2019'; 'Not true... not new'"
+    },
+    {
+      "text": "States disposal maps from 2019's 7.4.8 and is not new",
+      "passed": true,
+      "evidence": "'A.1.4.9 Disposal was control 7.4.8 in ISO 27701:2019'"
+    },
+    {
+      "text": "Maps de-identification/deletion to 2019's 7.4.5 and PII transmission controls to 7.4.9 (controller) and 8.4.3 (processor)",
+      "passed": false,
+      "evidence": "Gives 7.4.5 (de-id/deletion) and 7.4.9 (transmission, controller) but never maps processor transmission 8.4.3"
+    },
+    {
+      "text": "Maps the subcontractor controls to 2019's 8.5.7 and 8.5.8",
+      "passed": false,
+      "evidence": "8.5.7 and 8.5.8 are never mentioned in this response"
+    },
+    {
+      "text": "States the carry-over principle: the 2019 controls map across; the 2025 changes are structural (renumbering, standalone requirements, shared A.3 block)",
+      "passed": true,
+      "evidence": "'no new controller controls and no new processor controls... carried over under the new A.1 and A.2 numbering'; standalone, Table A.3 noted"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

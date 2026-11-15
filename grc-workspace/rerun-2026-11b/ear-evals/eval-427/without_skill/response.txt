@@ -1,0 +1,9 @@
+The answer depends on the de minimis rules in 15 CFR 734.4 and Supplement No. 2 to Part 734.
+
+Cuba: 12 percent is over the 10 percent de minimis threshold that applies to destinations in Country Groups E:1 and E:2 (Cuba is in E:2, and likely E:1 too). The foreign-made item is therefore subject to the EAR. It needs a license unless a license exception or other authorization applies. Cuba license review is generally a policy of denial except for certain categories. Cuba also has its own sanctions programme (OFAC Cuban Assets Control Regulations, 31 CFR Part 515). Those can apply to the foreign product regardless of the EAR, especially if a US person or a US-owned or controlled foreign subsidiary is involved. So do not ship without a thorough sanctions analysis. The answer is almost certainly no, absent a license.
+
+Germany: Germany is not in E:1 or E:2, so the 25 percent threshold applies. 12 percent is below that, so the product is generally not subject to the EAR on the de minimis basis. It can ship without EAR authorization, subject to these caveats:
+- Only US-origin controlled content counts, meaning content that would need a license to that destination. Content that is EAR99 or License Exception eligible may not count, so calculate it correctly.
+- Some items have no de minimis eligibility or special rules. Examples are certain encryption items (5D002 and others), 9x515 and 600 series items, and items made with US technology or the direct product rule (such as the Part 734.9 foreign direct product rules).
+- Check for any content that is itself subject to a 0 percent de minimis rule.
+- Keep the calculation on file, and make sure the end use or end user is not otherwise restricted (Entity List, military end-use and similar).

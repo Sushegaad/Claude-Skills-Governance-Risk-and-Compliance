@@ -1,0 +1,33 @@
+{
+  "eval_id": 429,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Maps telecommunications equipment to 5A001 (with 5A991 as the AT-only residual)",
+      "passed": false,
+      "evidence": "Labels 5A991 as 'NS2, AT1' rather than the AT-only residual; 5A001 only an afterthought check"
+    },
+    {
+      "text": "Maps the encryption appliance to 5A002 (information security)",
+      "passed": true,
+      "evidence": "'It is 5A002.a (ENC, NS1, AT1)' for the VPN appliance"
+    },
+    {
+      "text": "Maps mass-market crypto to the 5x992 series",
+      "passed": true,
+      "evidence": "'This is 5D992.c (the mass-market designation)'"
+    },
+    {
+      "text": "Does not describe 5A002 as 'telecommunications systems'",
+      "passed": true,
+      "evidence": "5A002 treated as cryptography/information security, not telecom systems"
+    },
+    {
+      "text": "Mentions License Exception ENC or mass-market treatment appropriately",
+      "passed": true,
+      "evidence": "License Exception ENC 740.17 and mass-market criteria discussed appropriately"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

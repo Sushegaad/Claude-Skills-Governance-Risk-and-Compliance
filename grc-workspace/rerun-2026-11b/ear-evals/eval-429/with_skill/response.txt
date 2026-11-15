@@ -1,0 +1,30 @@
+Method: jurisdiction first (these are commercial items, not on the USML, so EAR), then a CCL search, then the EAR99 fallback. I cannot give a final ECCN without the product's technical parameters. What follows is the likely classification path and what to verify. For a binding answer, file a CCATS (BIS-748P via SNAP-R). Where the encryption is not mass market or unclear, make sure the ENC (§ 740.17) classification request or notification is in place.
+
+1. 5G base station (Category 5, Part 1: telecommunications)
+- Start at 5A001 (telecommunications equipment) and check each paragraph against the product's specifications. Most commercial cellular base stations do not meet a 5A001 control parameter.
+- If no 5A001 paragraph applies, the usual result is 5A991 (telecommunications equipment not controlled by 5A001). That is AT only, so a license is generally needed only for AT Column 1 destinations, embargoed destinations, or Part 744 end-user/end-use reasons.
+- Encryption check: if the base station has cryptography for data confidentiality as a core function and is not excluded by the carve-outs (for example the Note 4 treatment), it can fall under 5A002, with ENC under § 740.17 available. Cryptography used only for authentication or air-interface protocols that the 5A002 notes exclude does not drive the classification.
+- Also check 5E001/5D001 (related technology and software) and Part 744 / Entity List concerns, which are significant for telecom exports to China.
+
+2. VPN encryption appliance (information security)
+- 5A002.a, since it is dedicated cryptography for data confidentiality using a symmetric key length over 56 bits. It is not mass market if it is network infrastructure for enterprise or carrier use, or customizable by the user.
+- Control reasons: NS Column 1, AT Column 1, and EI. Reaching most destinations needs License Exception ENC (§ 740.17) after the classification request or notification (Form BIS-748P-A via SNAP-R). Non-standard or proprietary cryptography needs more review, and self-classification reporting may apply.
+- ENC is not available for Cuba, Iran, North Korea, or Syria (E:1/E:2) for most encryption items.
+- Supporting software is 5D002 and technology is 5E002.
+- Reminder: encryption exports have annual self-classification reporting duties under § 740.17. Ask whether the appliance is mass market. It generally will not be if it is sold to enterprises through custom channels.
+
+3. Mass-market disk-encryption software
+- Generally 5D992.c, if it meets the mass-market criteria in Note 3 to Category 5 Part 2 (sold to the general public via retail, mail order or internet; the cryptographic functionality cannot be easily changed by the user; designed for installation by the user without substantial support). Mass-market status is obtained through the § 740.17(b)(1) self-classification process (and a BIS-748P-A notification where required), after which the software is 5D992.c, AT-only.
+- If the software does not meet mass-market criteria, it is 5D002 and uses ENC under § 740.17.
+- Open-source or published source code can be publicly available and outside the EAR (§ 734.7), but a notification to BIS and NSA may be needed for certain encryption source code under § 742.15(b).
+- Note the 5D992 is "mass-market software", not "EAR99": it is still a classified item, still AT controlled, and Part 744 rules still apply.
+
+Summary table
+| Item | Likely ECCN | Control reasons | Typical authorization |
+| 5G base station | 5A991 (or 5A001 / 5A002 if parameters or core crypto are met) | AT (or NS, EI if 5A001/5A002) | NLR for most destinations (5A991); ENC if 5A002 |
+| VPN appliance | 5A002.a | NS1, AT1, EI | License Exception ENC after notification, otherwise license |
+| Mass-market disk-encryption software | 5D992.c | AT | NLR for most destinations after mass-market self-classification |
+
+Next steps: gather the data sheets (frequency bands, cryptographic algorithms and key lengths, user-modifiability), run the full CCL review in writing, record the rationale, screen all parties (Part 744), and decide whether to request a CCATS.
+
+This is general compliance information, not legal advice. Verify against the current CCL in Part 774.

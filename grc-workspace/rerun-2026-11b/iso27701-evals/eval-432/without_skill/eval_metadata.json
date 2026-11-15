@@ -1,0 +1,13 @@
+{
+  "eval_id": 432,
+  "eval_name": "disclosure-notification",
+  "run_type": "without_skill",
+  "prompt": "Which 2019 control covered notification of PII disclosure requests, and where does it live in the 2025 edition?",
+  "assertions": [
+    "Identifies 2019 processor control 8.5.4 (B.8.5.4)",
+    "Maps it to A.2.5.5 in the 2025 edition",
+    "States no control A.7.5.5 ever existed (2019 clause 7.5 ends at 7.5.4)",
+    "Frames it correctly as a processor-side control",
+    "Does not cite A.7.5.5 as a real 2019 control"
+  ]
+}

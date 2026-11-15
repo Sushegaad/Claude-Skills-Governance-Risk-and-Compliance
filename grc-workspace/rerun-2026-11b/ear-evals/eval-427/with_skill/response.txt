@@ -1,0 +1,29 @@
+Short answer: at 12% controlled US content, the product is subject to the EAR for Cuba (over the 10% threshold) and a license is required under the Cuba embargo. For Germany it is generally not subject to the EAR through de minimis (under the 25% threshold), so no EAR license is needed, subject to the caveats below.
+
+The rule (§ 734.4)
+- A foreign-made item that incorporates controlled US-origin content is subject to the EAR only if the controlled US content exceeds the de minimis percentage of the item's fair market value.
+- The threshold is 25% for most destinations, and 10% for destinations in Country Group E:1/E:2 (Cuba is in E:2). The 10% number applies to all E:1/E:2 destinations.
+
+Cuba
+- 12% is greater than 10%, so the item is subject to the EAR when reexported to Cuba.
+- Cuba is under the Part 746 embargo (§ 746.2). A license is required, and review is generally a policy of denial, with narrow exceptions. License exceptions are very limited.
+- Be aware that the Cuban Assets Control Regulations (OFAC) apply separately to US persons and to foreign entities owned or controlled by US persons, and they may prohibit the transaction regardless of the EAR analysis. Check OFAC authorization too.
+- Recommendation: do not ship to Cuba without legal review.
+
+Germany
+- 12% is less than 25%, so the item is not subject to the EAR through de minimis, and no EAR license is required for the reexport to Germany.
+- Germany is in Country Group A:5, which makes the destination low risk.
+
+Caveats for the Germany answer
+1. Only controlled content counts. Calculate the value of US-origin content that would need a license for the destination (not EAR99 content), against the fair market value of the foreign item. Document the calculation.
+2. Some items have no de minimis eligibility or a different treatment (for example certain 9x515/600-series items and some encryption items). Check the specific ECCNs of the US content.
+3. The foreign direct product rules (§ 734.9) apply independently of de minimis. If the product is a direct product of US technology or software, it may be subject to the EAR regardless of content percentage.
+4. Part 744 and the restricted party lists still apply. Do not ship if the German consignee or end-user is on the Entity List, MEU List, or similar, or if the end-use is prohibited. German consignees do not remove onward-diversion risk to Cuba, Russia, or similar destinations, so keep red flags in view.
+5. Re-run the calculation if the BOM, supplier or pricing changes, and keep records for 5 years (Part 762).
+
+Summary table
+| Destination | Threshold | 12% vs threshold | Subject to EAR? | License |
+| Cuba (E:2) | 10% | over | Yes | Required (Part 746, policy of denial) |
+| Germany (A:5) | 25% | under | Generally no | Not required under the EAR |
+
+This is general compliance information, not legal advice.

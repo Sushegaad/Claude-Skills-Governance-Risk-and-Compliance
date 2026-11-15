@@ -301,12 +301,12 @@
         "map ISO 27701 controls to GDPR articles"
       ],
       "version": "2.2.0",
-      "updatedAt": "2026-05-16T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Data Privacy & Protection",
         "license": "MIT",
-        "evalPassRate": "100%",
-        "evalBaselinePassRate": "100%",
+        "evalPassRate": "76%",
+        "evalBaselinePassRate": "44%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/ISO%2027701%20-%20Claude%20Skill/iso27701.skill"
       }
     },
@@ -691,12 +691,12 @@
         "design an export compliance programme"
       ],
       "version": "2.2.0",
-      "updatedAt": "2026-11-06T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Export Controls & Sustainability",
         "license": "MIT",
-        "evalPassRate": "80%",
-        "evalBaselinePassRate": "56%",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "76%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EAR%20-%20Claude%20Skill/ear.skill"
       }
     },

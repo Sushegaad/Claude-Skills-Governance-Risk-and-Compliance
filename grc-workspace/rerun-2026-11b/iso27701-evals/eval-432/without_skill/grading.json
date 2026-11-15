@@ -1,0 +1,33 @@
+{
+  "eval_id": 432,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies 2019 processor control 8.5.4 (B.8.5.4)",
+      "passed": true,
+      "evidence": "'a processor control, B.8.5.4 Notification of PII disclosure requests'"
+    },
+    {
+      "text": "Maps it to A.2.5.5 in the 2025 edition",
+      "passed": false,
+      "evidence": "Says 'A.1.5.x... I cannot reliably recall the exact sub-number' - hedged and wrong table (A.1 not A.2)"
+    },
+    {
+      "text": "States no control A.7.5.5 ever existed (2019 clause 7.5 ends at 7.5.4)",
+      "passed": false,
+      "evidence": "Never addresses A.7.5.5 or that clause 7.5 ends at 7.5.4"
+    },
+    {
+      "text": "Frames it correctly as a processor-side control",
+      "passed": true,
+      "evidence": "'this was a processor control'"
+    },
+    {
+      "text": "Does not cite A.7.5.5 as a real 2019 control",
+      "passed": true,
+      "evidence": "A.7.5.5 is never cited"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

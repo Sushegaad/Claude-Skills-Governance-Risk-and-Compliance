@@ -1,0 +1,33 @@
+{
+  "eval_id": 432,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies 2019 processor control 8.5.4 (B.8.5.4)",
+      "passed": true,
+      "evidence": "'In ISO/IEC 27701:2019 it was control B.8.5.4'"
+    },
+    {
+      "text": "Maps it to A.2.5.5 in the 2025 edition",
+      "passed": true,
+      "evidence": "'In ISO/IEC 27701:2025 it is A.2.5.5'"
+    },
+    {
+      "text": "States no control A.7.5.5 ever existed (2019 clause 7.5 ends at 7.5.4)",
+      "passed": false,
+      "evidence": "Never states A.7.5.5 did not exist or that 2019 clause 7.5 ends at 7.5.4"
+    },
+    {
+      "text": "Frames it correctly as a processor-side control",
+      "passed": true,
+      "evidence": "'Annex B (the PII processor controls)... Table A.2 (PII processor controls)'"
+    },
+    {
+      "text": "Does not cite A.7.5.5 as a real 2019 control",
+      "passed": true,
+      "evidence": "A.7.5.5 is never mentioned; controller side correctly cited as A.7.5.4"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

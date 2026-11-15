@@ -1,0 +1,3 @@
+Not true, as far as I can tell. Retention and disposal already existed in ISO/IEC 27701:2019. In the controller annex they were 7.4.7 (Retention) and 7.4.8 (Disposal), with processor-side equivalents covering return, transfer or disposal of PII (B.8.4). They are not new in 2025.
+
+What the 2025 edition did is renumber and restructure: privacy by design and default controls now sit in A.1.4.x, so retention and disposal appear at A.1.4.8 and A.1.4.9 in the numbering you quote (I have not verified those exact numbers). Wording may have been updated, but they are carried-over controls, not new ones. Ask the consultant to show the 2019-to-2025 mapping table. A control being newly numbered is not the same as being new.

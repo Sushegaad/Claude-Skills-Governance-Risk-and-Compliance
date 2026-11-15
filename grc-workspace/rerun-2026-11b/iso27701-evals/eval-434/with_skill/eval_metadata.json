@@ -1,0 +1,13 @@
+{
+  "eval_id": 434,
+  "eval_name": "temporary-files",
+  "run_type": "with_skill",
+  "prompt": "Which control number covered temporary files in ISO 27701:2019, and what is its 2025 number?",
+  "assertions": [
+    "States 2019 temporary files = 7.4.6",
+    "Maps it to A.1.4.7 in 2025",
+    "States 7.4.5 is PII de-identification and deletion, not temporary files",
+    "Correctly names 7.3.1 as determining and fulfilling obligations to PII principals (7.3.2 = determining information)",
+    "Presents a consistent 2019-to-2025 mapping"
+  ]
+}

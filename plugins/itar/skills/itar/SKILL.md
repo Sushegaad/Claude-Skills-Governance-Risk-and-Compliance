@@ -7,13 +7,13 @@ description: >
   Assistance Agreements (TAA), Manufacturing License Agreements (MLA), brokering regulations
   (Part 129), deemed export rules for foreign nationals, technology control plans, voluntary
   disclosures, violation mitigation, jurisdiction determination (ITAR vs EAR), or US Munitions
-  List category scoping. Trigger even if the user doesn't say "skill" — any ITAR or US defense
+  List category scoping. Trigger even if the user doesn't say "skill" - any ITAR or US defense
   export control question should use this skill.
 ---
 
 # ITAR Compliance Skill
 
-> **Last verified:** 2026-11-06
+> **Last verified:** 2026-11-15
 
 You are an expert ITAR (International Traffic in Arms Regulations) compliance advisor with deep knowledge of 22 CFR Parts 120–130, DDTC regulatory practice, and US defense export control law. You assist exporters, manufacturers, legal counsel, and compliance teams navigate ITAR registration, classification, licensing, agreements, and enforcement.
 
@@ -37,7 +37,7 @@ Always cite the relevant CFR part and section (e.g., 22 CFR § 120.41) in your r
 
 ---
 
-## Regulatory Structure — 22 CFR Parts 120–130
+## Regulatory Structure - 22 CFR Parts 120–130
 
 | Part | Title | Key Content |
 |------|-------|-------------|
@@ -85,7 +85,7 @@ Who must register (22 CFR § 122.1):
 4. Renewal: annual, 60 days before expiration
 5. Notify DDTC within 5 days of changes to registration details (22 CFR § 122.4)
 
-**Registration does NOT authorise exports** — licenses or agreements are still required.
+**Registration does NOT authorise exports** - licenses or agreements are still required.
 
 ---
 
@@ -97,9 +97,12 @@ Who must register (22 CFR § 122.1):
 |---------|------|----------|
 | Permanent export | DSP-5 | Export of hardware to foreign end-user |
 | Temporary export | DSP-73 | Equipment temporarily abroad (trade shows, repair) |
-| Import certificate | DSP-94 | Temporary import of foreign defense articles |
+| Temporary import | DSP-61 | Temporary import of foreign defense articles (22 CFR § 123.3; exemptions § 123.4) |
+| FMS export | DSP-94 | Authority to Export Defense Articles Sold Under the FMS Program (22 CFR § 126.6(c)) |
 | TAA | N/A (agreement) | Sharing technical data / providing defense services abroad |
 | MLA | N/A (agreement) | Licensed manufacture of US defense articles abroad |
+
+> **Permanent imports are not DDTC jurisdiction:** permanent imports of defense articles are regulated by DOJ/ATF under 27 CFR Part 447 via ATF Form 6 (see 22 CFR § 123.2).
 
 **DSP-5 application requirements:**
 - Detailed item description and USML citation
@@ -123,14 +126,14 @@ Reference licensing details → `references/licensing-guide.md`
 - Define the scope of technical data / defense services precisely
 - Include ITAR-required clauses: retransfer prohibition, US government access rights, record-keeping
 - Submit via DDTC's D-Trade portal; approval takes 30–60 days
-- Valid for 5 years; renewable
+- No fixed regulatory term; approvals commonly run up to 10 years (renew before expiry)
 - Any amendment requires DDTC approval
 
 ---
 
 ### 5. Deemed Exports and Foreign National Access
 
-A **deemed export** occurs when ITAR-controlled technical data is released to a foreign national inside the US — this is treated as an export to their home country (22 CFR § 120.50).
+A **deemed export** occurs when ITAR-controlled technical data is released to a foreign national inside the US - this is treated as an export to their home country (22 CFR § 120.50).
 
 **Compliance steps for employers:**
 1. Identify all foreign nationals with potential access to ITAR-controlled data/areas
@@ -139,7 +142,7 @@ A **deemed export** occurs when ITAR-controlled technical data is released to a 
 4. If required: obtain TAA or individual license before granting access
 5. Maintain a **Technology Control Plan (TCP)**: physical access controls, IT access segregation, visitor procedures, annual training
 
-**Exempt persons**: US persons (22 CFR § 120.62) include US citizens, lawful permanent residents, protected persons under 8 USC § 1324b — these do not require a deemed export license.
+**Exempt persons**: US persons (22 CFR § 120.62) include US citizens, lawful permanent residents, protected persons under 8 USC § 1324b - these do not require a deemed export license.
 
 ---
 
@@ -149,7 +152,7 @@ A **broker** is any person who facilitates the manufacture, export, import, tran
 
 **Obligations:**
 - Separate DDTC registration as a broker (DS-2032, Part B)
-- Prior approval required for transactions involving: embargoed countries, items valued >$1M, certain categories (Cats I, II, III, XI, XIII)
+- Prior approval (22 CFR § 129.4): triggers are item- and destination-based, covering transactions involving § 126.1 proscribed countries and certain enumerated articles (e.g., Cats I, II, III, XI, XIII)
 - Annual reports of all brokering activities (22 CFR § 129.10)
 - Record retention: 5 years
 
@@ -171,7 +174,7 @@ A **broker** is any person who facilitates the manufacture, export, import, tran
 **Aggravating factors**: wilfulness, harm to national security, senior management involvement, prior violations
 **Mitigating factors**: VSD, cooperation, effective compliance programme, no prior history
 
-**Enforcement benchmark (August 2026):** DDTC's **$36M consent agreement with BAE Systems, Inc.** — 104 AECA/ITAR violations (May 2019–Mar 2025, voluntarily disclosed): 38 unauthorized technical-data exports to China (§126.1), unauthorized exports/defense services across six other countries. Terms: $18M suspended for remedial compliance spend, 3-year agreement, Special Compliance Officer, external audit — no debarment (VSD + cooperation credit). Cite it for what drives penalties: weak written procedures, inexperienced staff, poor agreement management, and no authorization-tracking system.
+**Enforcement benchmark (August 2026):** DDTC's **$36M consent agreement with BAE Systems, Inc.** - 104 AECA/ITAR violations (May 2019–Mar 2025, voluntarily disclosed): 38 unauthorized technical-data exports to China (§126.1), unauthorized exports/defense services across six other countries. Terms: $18M suspended for remedial compliance spend, 3-year agreement, Special Compliance Officer, external audit - no debarment (VSD + cooperation credit). Cite it for what drives penalties: weak written procedures, inexperienced staff, poor agreement management, and no authorization-tracking system.
 
 Reference full penalty framework → `references/compliance-program.md`
 
@@ -192,20 +195,20 @@ A TCP is an internal policy document demonstrating how a company controls access
 
 ## Embargoed and Restricted Countries
 
-**Comprehensive arms embargoes** (22 CFR § 126.1) — no ITAR exports without presidential waiver:
-- Belarus, Cuba, Iran, North Korea, Russia, Syria, Venezuela (restricted)
+**Comprehensive arms embargoes and proscribed destinations** (22 CFR § 126.1): the list is substantially longer than the examples below; examples include:
+- Belarus, Cuba, Iran, North Korea, Russia, Syria, Venezuela
 
-Always check the current 22 CFR § 126.1 list and OFAC sanctions before any transaction.
+Always check the current 22 CFR § 126.1 list for the full set of proscribed countries, and OFAC sanctions, before any transaction.
 
 ---
 
-## Regulatory Status — November 2026 (state where relevant)
+## Regulatory Status - November 2026 (state where relevant)
 
 - **Survivability-enhanced civil aircraft (INTERIM FINAL RULE, not a final rule):** "Modification of Civil Aircraft To Incorporate Aircraft Survivability Equipment", **91 FR 55457** (published August 28, 2026; correction at 91 FR 58610), **effective October 13, 2026**. In-production manned civil aircraft holding an FAA transport or commuter type certificate (or NATO/MNNA equivalent), previously classified 9A991.b, that are modified to incorporate "secured ASE" (DIRCM plus the associated IR/UV missile-warning system, with anti-tamper) are now **excluded from USML VIII(a)(8)** as "survivability-enhanced aircraft". New definitions are added to 22 CFR 121.0, and new §120.54(a)(8)-(9) address secured ASE activities. **ASE itself remains USML XI(a)(4)**; the rule states no destination ECCN for the excluded aircraft, so do not cite one.
 - **Omnibus USML review (PROPOSED RULE, not final):** "Review of the U.S. Munitions List and Related Definitions and License Exemptions", **91 FR 62361** (published October 1, 2026, docket DOS-2026-0991), **comments due November 30, 2026**. It proposes: removal of **VIII(h)(10)** (moving most radar altimeters off the USML); narrowing of **II(a)(4)** and **X(a)(7)**; restructuring of **XX(c)**; a new **22 CFR 120.35** for items excluded from the USML; two new **§120.41 "specially designed" releases**; and a new **§123.26 exemption** for temporary export of foreign defense articles for OEM servicing and repair. These are proposals only; apply current rules until a final rule issues.
 - **Category XI(b):** the temporary modification (retaining "analyze and produce information from" and "software") is extended **through August 30, 2028** (91 FR 55461).
-- **DECCS Data Collection Modernization:** the licensing release went live on DECCS **September 14, 2026** — licensing now runs on the updated forms.
-- **Cyprus:** DDTC suspended Cyprus's §126.1 proscribed status **through September 30, 2027** (91 FR 57787, September 11, 2026) — check the current §126.1 list before any Cyprus transaction.
+- **DECCS Data Collection Modernization:** the licensing release went live on DECCS **September 14, 2026** - licensing now runs on the updated forms.
+- **Cyprus:** DDTC suspended Cyprus's §126.1 proscribed status **through September 30, 2027** (91 FR 57787, September 11, 2026) - check the current §126.1 list before any Cyprus transaction.
 - **Answer rule:** for any aircraft-survivability, DIRCM, or Cat VIII/XI jurisdiction question after October 13, 2026, apply the revised VIII(a)(8) carve-out and flag that the equipment/data remain ITAR-controlled.
 
 ---
@@ -214,9 +217,9 @@ Always check the current 22 CFR § 126.1 list and OFAC sanctions before any tran
 
 Load as needed:
 
-- `references/usml-categories.md` — All 21 USML categories with key items and examples
-- `references/licensing-guide.md` — License types, application requirements, conditions, and exemptions
-- `references/compliance-program.md` — Compliance programme elements, penalties, VSD process, TCP template
+- `references/usml-categories.md` - All 21 USML categories with key items and examples
+- `references/licensing-guide.md` - License types, application requirements, conditions, and exemptions
+- `references/compliance-program.md` - Compliance programme elements, penalties, VSD process, TCP template
 
 ---
 

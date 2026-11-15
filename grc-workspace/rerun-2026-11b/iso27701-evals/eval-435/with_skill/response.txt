@@ -1,0 +1,39 @@
+Headline: moving from ISO/IEC 27701:2019 to the 2025 edition is mostly a re-mapping and documentation exercise, not a new-controls project. The 31 controller controls and 18 processor controls carry over one-for-one, so you do not re-implement them. The real work is in the management-system layer and, depending on whether you hold ISO 27001, the new security table A.3. ISO 27701 is designed to help you demonstrate alignment with GDPR and similar laws. It is not a GDPR safe harbor and is not an approved Article 42 scheme in most member states.
+
+Because you are certified to 2019, you also hold ISO 27001 (that was a prerequisite). That is favorable: it makes the A.3 work largely cross-referencing.
+
+**Timing**
+- All 2019 certificates must transition by October 2028 (sources cite 1 or 31 October 2028, so check the exact date with your certification body).
+- Certification bodies are completing their own scheme transitions around 31 October 2026, so confirm yours can audit against 2025 before your next cycle. Do not wait until 2027, since demand will peak.
+
+**What changes and what you must do**
+
+1. Controller controls (2019 Annex A, 7.2.1 to 7.5.4, becomes Table A.1, 31 controls): no new controls. Re-reference your SoA and evidence to the A.1 IDs. Examples: Retention 7.4.7 becomes A.1.4.8, Disposal 7.4.8 becomes A.1.4.9, Records of processing 7.2.8 becomes A.1.2.9. Do not rebuild what already works.
+2. Processor controls (2019 Annex B, 8.2.1 to 8.5.8, becomes Table A.2, 18 controls): no new controls. Re-map evidence, for example 8.5.7 and 8.5.8 (engage and change subcontractors) to A.2.5.8 and A.2.5.9, and 8.4.3 to A.2.4.4. Watch for confusion: in 2025 Annex B is implementation guidance, not the processor controls.
+3. Security controls (2019 Clause 6, 90+ sub-clauses, becomes Table A.3, 29 controls):
+   - With ISO 27001:2022 in place, map your ISMS controls to A.3 and record the mapping in the SoA, for example "A.3.25 Logging, implemented via ISMS A.8.15/A.8.16, evidence ref SIEM-001". Little or no new implementation should be needed.
+   - If your ISMS is still on the 2013 edition, close any differences with the 2022 controls.
+   - Without ISO 27001, the 29 controls must be independently evidenced. That is the largest new work item.
+4. Management-system layer (the main change). The 2025 edition has its own Clauses 4 to 10 under the high-level structure, so you need standalone evidence:
+   - A PIMS scope document (4.3), separate from the ISMS scope.
+   - A dedicated privacy policy (5.2) rather than one embedded in the IS policy.
+   - A documented privacy risk assessment methodology and treatment plan (6.1).
+   - A standalone PIMS Statement of Applicability covering A.1, A.2 and A.3 (6.1). SoA size by role: controller only 60 controls, processor only 47, both 78.
+   - An explicit PIMS internal audit scope (9.2) and management review inputs and outputs (9.3).
+   - Updated RoPA.
+5. New content areas: the 2025 edition adds content on cloud, IoT and AI processing. Review whether any of these apply in your processing, and reflect that in your risk assessment and RoPA.
+
+**Process**
+1. Gap analysis against 2025, documented (months 1 to 3).
+2. Update PIMS documentation (months 3 to 6).
+3. Re-map A.1, A.2 and A.3 evidence (months 6 to 12).
+4. Internal audit against the 2025 requirements.
+5. Transition audit with your certification body (typically a focused assessment on the gap areas, not full recertification), then the new certificate before October 2028.
+
+**Format for tracking:** a gap table of Control ID, Control Name, Status, Evidence Needed, Gap Notes, with the clause 4 to 10 items listed first.
+
+**Scope reminders:** certification covers only the defined PIMS scope, and it does not remedy past violations. Check the official Annex F correspondence table in ISO 27701:2025 for the authoritative mapping.
+
+Next step I can take: a transition gap register or a draft 2025 SoA with your 2019 evidence references. If you tell me your role (controller, processor or both), I can size the SoA and tailor the plan.
+
+This is general compliance information, not legal advice. Confirm timing and requirements with your accredited certification body.
