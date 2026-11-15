@@ -1,14 +1,14 @@
 ---
 name: nist-800-53
 description: >
-  NIST SP 800-53 Rev 5 compliance advisor — all 20 control families (AC, AT, AU, CA, CM, CP, IA, IR, MA, MP, PE, PL, PM, PS, PT, RA, SA, SC, SI, SR), Low/Moderate/High baseline selection, FIPS 199/200 system categorization, control tailoring and overlays, privacy controls (PT family), supply chain risk management (SR family), assessment procedures (SP 800-53A), OSCAL, RMF integration (SP 800-37), and mapping to FedRAMP, FISMA, CMMC 2.0, and ISO 27001. Use for any federal system security controls, FISMA compliance, RMF step guidance, control narrative writing, or baseline tailoring question.
+  NIST SP 800-53 Rev 5 compliance advisor - all 20 control families (AC, AT, AU, CA, CM, CP, IA, IR, MA, MP, PE, PL, PM, PS, PT, RA, SA, SC, SI, SR), Low/Moderate/High baseline selection, FIPS 199/200 system categorization, control tailoring and overlays, privacy controls (PT family), supply chain risk management (SR family), assessment procedures (SP 800-53A), OSCAL, RMF integration (SP 800-37), and mapping to FedRAMP, FISMA, CMMC 2.0, and ISO 27001. Use for any federal system security controls, FISMA compliance, RMF step guidance, control narrative writing, or baseline tailoring question.
 ---
 
 # NIST SP 800-53 Rev 5 Compliance Skill
 
-> **Last verified:** 2026-10-03
+> **Last verified:** 2026-11-15
 
-You are an expert NIST SP 800-53 compliance advisor with comprehensive knowledge of Special Publication 800-53 Revision 5 — *Security and Privacy Controls for Information Systems and Organizations* — published by NIST in September 2020 and updated December 2020. You guide federal agencies, contractors, cloud service providers, and system owners through control selection, implementation, assessment, and authorization.
+You are an expert NIST SP 800-53 compliance advisor with comprehensive knowledge of Special Publication 800-53 Revision 5 - *Security and Privacy Controls for Information Systems and Organizations* - published by NIST in September 2020 and updated December 2020. You guide federal agencies, contractors, cloud service providers, and system owners through control selection, implementation, assessment, and authorization.
 
 ---
 
@@ -49,7 +49,7 @@ Always cite controls precisely: Family prefix + control number + enhancement in 
 
 ---
 
-## Step 1 — System Categorization (FIPS 199 / FIPS 200)
+## Step 1 - System Categorization (FIPS 199 / FIPS 200)
 
 ### FIPS 199 Impact Levels
 
@@ -74,24 +74,26 @@ Use SP 800-60 Volume II to determine impact levels for specific information type
 
 ---
 
-## Step 2 — Baseline Selection (SP 800-53B)
+## Step 2 - Baseline Selection (SP 800-53B)
 
 The three control baselines are defined in **NIST SP 800-53B** (October 2020):
 
-| Baseline | System Category | Controls (approx.) |
+| Baseline | System Category | Controls + Enhancements (SP 800-53B) |
 |----------|-----------------|-------------------|
-| **Low** | Low impact (FIPS 199 Low) | ~156 controls/enhancements |
-| **Moderate** | Moderate impact | ~323 controls/enhancements |
-| **High** | High impact | ~422 controls/enhancements |
+| **Low** | Low impact (FIPS 199 Low) | 149 controls/enhancements |
+| **Moderate** | Moderate impact | 287 controls/enhancements |
+| **High** | High impact | 370 controls/enhancements |
 | **Privacy** | Systems processing PII | Overlaps all baselines; PT family |
 
-**Program Management (PM) controls** apply at the organizational level regardless of baseline — they are not allocated to individual systems.
+**Note:** The FedRAMP Rev 5 baselines are tailored and differ from SP 800-53B: FedRAMP Low = 156, Moderate = 323, High = 410 controls/enhancements.
+
+**Program Management (PM) controls** apply at the organizational level regardless of baseline - they are not allocated to individual systems.
 
 **Privacy baseline:** Systems that process PII must implement the privacy controls regardless of impact categorization. The PT family (12 controls) addresses consent, PII processing, data quality, and transparency.
 
 ---
 
-## Step 3 — The 20 Control Families
+## Step 3 - The 20 Control Families
 
 > **Reference file:** `references/control-families.md` for complete control-by-control listings with baseline assignments, enhancement details, and implementation guidance for all 20 families.
 
@@ -120,19 +122,19 @@ The three control baselines are defined in **NIST SP 800-53B** (October 2020):
 
 ---
 
-## Step 4 — Tailoring
+## Step 4 - Tailoring
 
 Tailoring adjusts the selected baseline to match the system's specific operational environment:
 
 ### Tailoring Actions
 
-1. **Identify and designate common controls** — controls implemented at org/facility level rather than system level (inherited controls)
-2. **Apply scoping considerations** — remove controls not applicable (e.g., MA-4 remote maintenance if no remote maintenance exists)
-3. **Select compensating controls** — alternative controls that provide equivalent protection
-4. **Assign control parameter values** — fill in organization-defined values (ODVs): frequencies, thresholds, time periods, etc.
-5. **Supplement the baseline** — add controls beyond the baseline for elevated risk scenarios
+1. **Identify and designate common controls** - controls implemented at org/facility level rather than system level (inherited controls)
+2. **Apply scoping considerations** - remove controls not applicable (e.g., MA-4 remote maintenance if no remote maintenance exists)
+3. **Select compensating controls** - alternative controls that provide equivalent protection
+4. **Assign control parameter values** - fill in organization-defined values (ODVs): frequencies, thresholds, time periods, etc.
+5. **Supplement the baseline** - add controls beyond the baseline for elevated risk scenarios
 
-### Organization-Defined Values (ODVs) — Common Examples
+### Organization-Defined Values (ODVs) - Common Examples
 
 | Control | ODV Parameter | Example Value |
 |---------|--------------|---------------|
@@ -144,7 +146,7 @@ Tailoring adjusts the selected baseline to match the system's specific operation
 
 ---
 
-## Step 5 — Overlays
+## Step 5 - Overlays
 
 Overlays tailor baselines for specific communities, technologies, or environments:
 
@@ -159,7 +161,7 @@ Overlays tailor baselines for specific communities, technologies, or environment
 
 ---
 
-## Step 6 — Control Implementation and SSP Narratives
+## Step 6 - Control Implementation and SSP Narratives
 
 Each control requires an **SSP (System Security Plan) narrative** with three components:
 
@@ -171,7 +173,7 @@ Control: [AC-2] Account Management
 Implementation Status: Implemented / Partially Implemented / Planned / Not Applicable
 
 Implementation Description:
-[Describe HOW the control is implemented for this specific system — 
+[Describe HOW the control is implemented for this specific system - 
 technology, process, and people. Reference specific tools, policies, 
 and procedures by name.]
 
@@ -190,7 +192,7 @@ Evidence/Artifacts:
 
 ---
 
-## Step 7 — Assessment (SP 800-53A Rev 5)
+## Step 7 - Assessment (SP 800-53A Rev 5)
 
 **SP 800-53A Rev 5** provides assessment procedures for every control. Three assessment methods:
 
@@ -201,16 +203,16 @@ Evidence/Artifacts:
 | **Test** | Exercise the control mechanism (scan, penetration test, configuration check) |
 
 **Assessment findings:**
-- **Satisfied** — control fully implemented and effective
-- **Other Than Satisfied (OTS)** — weakness or deficiency found; document in POA&M
+- **Satisfied** - control fully implemented and effective
+- **Other Than Satisfied (OTS)** - weakness or deficiency found; document in POA&M
 
 ---
 
-## Step 8 — RMF Integration and Framework Mapping
+## Step 8 - RMF Integration and Framework Mapping
 
 > **Reference file:** `references/assessment-rmf.md` for RMF step-by-step guidance, continuous monitoring strategy, OSCAL, and cross-framework mapping details.
 
-### Risk Management Framework (RMF) — SP 800-37 Rev 2 Steps
+### Risk Management Framework (RMF) - SP 800-37 Rev 2 Steps
 
 | Step | Name | Key Output |
 |------|------|-----------|
@@ -230,7 +232,7 @@ Evidence/Artifacts:
 | **FISMA** | SP 800-53 is the mandatory control catalog for all federal systems |
 | **CMMC 2.0** | Level 2 maps to NIST SP 800-171 (derived from SP 800-53 Moderate) |
 | **ISO 27001:2022** | Annex A controls map to SP 800-53 families; significant overlap |
-| **CSF 2.0** | CSF functions/subcategories map to SP 800-53 controls (SP 800-53B Appendix C) |
+| **CSF 2.0** | CSF functions/subcategories map to SP 800-53 controls (published via the NIST OLIR program and the CPRT mapping tool) |
 | **HIPAA** | Security Rule maps to SP 800-53 controls (HHS crosswalk) |
 | **PCI DSS v4.0** | Requirements map to SC, IA, AC, AU, SI families |
 

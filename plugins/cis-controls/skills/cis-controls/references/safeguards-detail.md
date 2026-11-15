@@ -1,4 +1,4 @@
-# CIS Controls v8 — All 153 Safeguards Detail
+# CIS Controls v8 - All 153 Safeguards Detail
 
 ## How to Use This Reference
 
@@ -19,12 +19,12 @@ Each safeguard entry shows:
 | 1.1 | Establish and Maintain Detailed Enterprise Asset Inventory | 1 | Devices | Identify |
 | 1.2 | Address Unauthorized Assets | 1 | Devices | Respond |
 | 1.3 | Utilize an Active Discovery Tool | 2 | Devices | Identify |
-| 1.4 | Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory | 1 | Devices | Identify |
+| 1.4 | Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory | 2 | Devices | Identify |
 | 1.5 | Use a Passive Asset Discovery Tool | 3 | Devices | Identify |
 
 **Implementation Notes:**
 - **1.1:** Maintain inventory in a CMDB, spreadsheet, or MDM tool. Include: IP address, hostname, MAC address, owner, location, OS, asset type, acquisition date
-- **1.2:** Define a process for handling unauthorized devices found on network — quarantine, investigate, document
+- **1.2:** Define a process for handling unauthorized devices found on network - quarantine, investigate, document
 - **1.3:** Run network scanners (Nmap, Nessus, Qualys, Tenable) on scheduled basis (weekly minimum)
 - **1.4:** Enable DHCP server logging; correlate logs with asset inventory; flag unknown MACs
 - **1.5:** Deploy passive network TAP or IDS/NDR sensors for continuous asset detection without active scanning
@@ -43,7 +43,7 @@ Each safeguard entry shows:
 | 2.4 | Utilize Automated Software Inventory Tools | 2 | Applications | Identify |
 | 2.5 | Allowlist Authorized Software | 2 | Applications | Protect |
 | 2.6 | Allowlist Authorized Libraries | 2 | Applications | Protect |
-| 2.7 | Allowlist Authorized Scripts | 2 | Applications | Protect |
+| 2.7 | Allowlist Authorized Scripts | 3 | Applications | Protect |
 
 **Implementation Notes:**
 - **2.1:** Track all installed software: name, version, vendor, license, install date, responsible owner
@@ -66,18 +66,18 @@ Each safeguard entry shows:
 | 3.3 | Configure Data Access Control Lists | 1 | Data | Protect |
 | 3.4 | Enforce Data Retention | 1 | Data | Protect |
 | 3.5 | Securely Dispose of Data | 1 | Data | Protect |
-| 3.6 | Encrypt Data on End-User Devices | 2 | Data | Protect |
+| 3.6 | Encrypt Data on End-User Devices | 1 | Data | Protect |
 | 3.7 | Establish and Maintain a Data Classification Scheme | 2 | Data | Protect |
 | 3.8 | Document Data Flows | 2 | Data | Identify |
 | 3.9 | Encrypt Data on Removable Media | 2 | Data | Protect |
 | 3.10 | Encrypt Sensitive Data in Transit | 2 | Data | Protect |
 | 3.11 | Encrypt Sensitive Data at Rest | 2 | Data | Protect |
-| 3.12 | Segment Data Processing and Storage Based on Sensitivity | 3 | Data | Protect |
+| 3.12 | Segment Data Processing and Storage Based on Sensitivity | 2 | Data | Protect |
 | 3.13 | Deploy a Data Loss Prevention Solution | 3 | Data | Protect |
 | 3.14 | Log Sensitive Data Access | 3 | Data | Detect |
 
 **Implementation Notes:**
-- **3.1:** Written policy covering classification, handling, retention, disposal — reviewed annually
+- **3.1:** Written policy covering classification, handling, retention, disposal - reviewed annually
 - **3.2:** Inventory must include: data type, sensitivity, location (on-prem/cloud), owner, retention period
 - **3.3:** Implement least-privilege on file shares, databases, cloud storage; review ACLs quarterly
 - **3.6:** Enable full-disk encryption (BitLocker for Windows, FileVault for macOS, LUKS for Linux)
@@ -99,8 +99,8 @@ Each safeguard entry shows:
 | 4.3 | Configure Automatic Session Locking on Enterprise Assets | 1 | Devices/Users | Protect |
 | 4.4 | Implement and Manage a Firewall on Servers | 1 | Devices | Protect |
 | 4.5 | Implement and Manage a Firewall on End-User Devices | 1 | Devices | Protect |
-| 4.6 | Securely Manage Enterprise Assets and Software | 2 | Devices | Protect |
-| 4.7 | Manage Default Accounts on Enterprise Assets and Software | 2 | Users | Protect |
+| 4.6 | Securely Manage Enterprise Assets and Software | 1 | Devices | Protect |
+| 4.7 | Manage Default Accounts on Enterprise Assets and Software | 1 | Users | Protect |
 | 4.8 | Uninstall or Disable Unnecessary Services on Enterprise Assets | 2 | Devices | Protect |
 | 4.9 | Configure Trusted DNS Servers on Enterprise Assets | 2 | Devices/Network | Protect |
 | 4.10 | Enforce Automatic Device Lockout on Portable End-User Devices | 2 | Devices | Protect |
@@ -146,16 +146,16 @@ Each safeguard entry shows:
 |-----------|-------|-----|-----------|------------------|
 | 6.1 | Establish an Access Granting Process | 1 | Users | Protect |
 | 6.2 | Establish an Access Revoking Process | 1 | Users | Protect |
-| 6.3 | Require MFA for Externally-Exposed Applications | 2 | Users | Protect |
-| 6.4 | Require MFA for Remote Network Access | 2 | Users | Protect |
-| 6.5 | Require MFA for Administrative Access | 2 | Users | Protect |
+| 6.3 | Require MFA for Externally-Exposed Applications | 1 | Users | Protect |
+| 6.4 | Require MFA for Remote Network Access | 1 | Users | Protect |
+| 6.5 | Require MFA for Administrative Access | 1 | Users | Protect |
 | 6.6 | Establish and Maintain an Inventory of Authentication/Authorization Systems | 2 | Users | Identify |
 | 6.7 | Centralize Access Control | 2 | Users | Protect |
-| 6.8 | Define and Maintain Role-Based Access Control | 2 | Users | Protect |
+| 6.8 | Define and Maintain Role-Based Access Control | 3 | Users | Protect |
 
 **Implementation Notes:**
 - **6.1/6.2:** Formal access request and approval process; link to onboarding/offboarding procedures; review quarterly
-- **6.3:** MFA on all SaaS, web portals, VPN, RDP — phishing-resistant MFA (FIDO2/passkeys) preferred over SMS OTP
+- **6.3:** MFA on all SaaS, web portals, VPN, RDP - phishing-resistant MFA (FIDO2/passkeys) preferred over SMS OTP
 - **6.5:** Require MFA for all admin console access (cloud management, AD, network devices)
 - **6.8:** Define roles in RBAC model; avoid overly broad permissions; apply least-privilege principle
 
@@ -191,7 +191,7 @@ Each safeguard entry shows:
 |-----------|-------|-----|-----------|------------------|
 | 8.1 | Establish and Maintain an Audit Log Management Process | 1 | Network/Devices | Protect |
 | 8.2 | Collect Audit Logs | 1 | Network/Devices | Detect |
-| 8.3 | Ensure Adequate Audit Log Storage | 2 | Network/Devices | Protect |
+| 8.3 | Ensure Adequate Audit Log Storage | 1 | Network/Devices | Protect |
 | 8.4 | Standardize Time Synchronization | 2 | Network/Devices | Protect |
 | 8.5 | Collect Detailed Audit Logs | 2 | Network/Devices | Detect |
 | 8.6 | Collect DNS Query Audit Logs | 2 | Network | Detect |
@@ -200,7 +200,7 @@ Each safeguard entry shows:
 | 8.9 | Centralize Audit Logs | 2 | Network/Devices | Detect |
 | 8.10 | Retain Audit Logs | 2 | Network/Devices | Protect |
 | 8.11 | Conduct Audit Log Reviews | 2 | Network/Devices | Detect |
-| 8.12 | Collect Service Provider Logs | 2 | Data/Network | Detect |
+| 8.12 | Collect Service Provider Logs | 3 | Data/Network | Detect |
 
 **Minimum Log Retention:** 90 days hot (searchable), 1 year cold storage (regulatory minimum varies)
 **Recommended Tools:** Splunk, Microsoft Sentinel, Elastic SIEM, Sumo Logic, IBM QRadar
@@ -210,8 +210,8 @@ Each safeguard entry shows:
 ## CIS Controls 9–18 Summary (Selected Key Safeguards)
 
 ### Control 9: Email and Web Browser Protections
-- 9.3 (IG1): Maintain/enforce email provider anti-spoofing (SPF, DKIM, DMARC)
-- 9.5 (IG2): Implement DMARC policy (p=quarantine or p=reject)
+- 9.3 (IG2): Maintain and enforce network-based URL filters
+- 9.5 (IG2): Implement DMARC anti-spoofing policy (p=quarantine or p=reject, with SPF and DKIM)
 
 ### Control 10: Malware Defenses
 - 10.1 (IG1): Deploy/maintain anti-malware on all endpoints
@@ -244,7 +244,7 @@ Each safeguard entry shows:
 - 16.12 (IG3): SAST/DAST/IAST integrated in CI/CD pipeline
 
 ### Control 17: Incident Response Management
-- 17.4 (IG1): Document incident response plan; test annually
+- 17.4 (IG2): Document incident response process; test annually
 - 17.7 (IG2): Conduct tabletop exercises; include ransomware scenarios
 
 ### Control 18: Penetration Testing

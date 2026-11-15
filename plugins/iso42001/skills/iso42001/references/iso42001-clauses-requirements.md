@@ -1,10 +1,10 @@
-# ISO/IEC 42001:2023 — Mandatory Clause Requirements (Clauses 4–10)
+# ISO/IEC 42001:2023 - Mandatory Clause Requirements (Clauses 4–10)
 
 All clauses are mandatory regardless of organisational size, sector, or role (provider or user). This reference covers each clause in detail with required outputs, audit evidence, and common nonconformities.
 
 ---
 
-## Clause 4 — Context of the Organisation
+## Clause 4 - Context of the Organisation
 
 ### 4.1 Understanding the Organisation and Its Context
 **Requirement:** Determine external and internal issues relevant to the AIMS purpose and that affect the ability to achieve intended outcomes. Include AI-specific factors: regulatory environment, societal expectations of AI, market pressures to adopt AI, and technology risks.
@@ -30,14 +30,14 @@ All clauses are mandatory regardless of organisational size, sector, or role (pr
 **Required outputs:** Stakeholder register with requirements matrix.
 
 ### 4.3 Determining the Scope of the AIMS
-**Requirement:** Document the boundary and applicability of the AIMS — which AI systems, processes, organisational units, and locations are in scope.
+**Requirement:** Document the boundary and applicability of the AIMS - which AI systems, processes, organisational units, and locations are in scope.
 
 **Key scope decisions:**
 - Which AI systems are in scope? (All? Only high-impact? Only AI systems developed in-house?)
 - Are AI systems used by third parties on the organisation's behalf in scope?
 - Which organisational functions (R&D, operations, customer service) are included?
 
-**Required outputs:** AIMS Scope Document — must specify: what is included, what is explicitly excluded, and the justification for exclusions.
+**Required outputs:** AIMS Scope Document - must specify: what is included, what is explicitly excluded, and the justification for exclusions.
 
 **Common nonconformity:** Scope excludes AI tools used in HR (e.g., AI screening tools) without documented justification.
 
@@ -46,10 +46,10 @@ All clauses are mandatory regardless of organisational size, sector, or role (pr
 
 ---
 
-## Clause 5 — Leadership
+## Clause 5 - Leadership
 
 ### 5.1 Leadership and Commitment
-**Requirement:** Top management must demonstrate active commitment to the AIMS — not just sign documents, but actively support AI governance as a strategic priority.
+**Requirement:** Top management must demonstrate active commitment to the AIMS - not just sign documents, but actively support AI governance as a strategic priority.
 
 **Evidence of commitment:**
 - AI policy approved and signed by senior leadership (CEO, Board, or equivalent)
@@ -57,7 +57,7 @@ All clauses are mandatory regardless of organisational size, sector, or role (pr
 - Resources allocated for AIMS implementation
 - AI-related KPIs/objectives set at leadership level
 
-**Audit tip:** Auditors will interview top management — leaders must be able to explain the AIMS scope and their personal role in AI governance.
+**Audit tip:** Auditors will interview top management - leaders must be able to explain the AIMS scope and their personal role in AI governance.
 
 ### 5.2 AI Policy
 **Requirement:** Top management must establish an AI Policy that:
@@ -91,7 +91,7 @@ All clauses are mandatory regardless of organisational size, sector, or role (pr
 
 ---
 
-## Clause 6 — Planning
+## Clause 6 - Planning
 
 ### 6.1 Actions to Address Risks and Opportunities
 **Requirement:** Plan how to address risks and opportunities relevant to the AIMS context and objectives.
@@ -99,17 +99,25 @@ All clauses are mandatory regardless of organisational size, sector, or role (pr
 #### 6.1.1 General
 Determine risks and opportunities that could affect AIMS achievement. Plan actions to address them.
 
-#### 6.1.2 AI Risk Assessment and AI System Impact Assessment (AISIA)
-**This is the most distinctive clause in ISO 42001.** Two separate assessments are required:
-
-**AI Risk Assessment:**
+#### 6.1.2 AI Risk Assessment
+**Requirement:** Establish and apply an AI risk assessment process:
 - Identify risks associated with AI systems (model risks, data risks, operational risks, supply chain risks)
 - Assess likelihood and severity
 - Determine treatment: modify, accept, avoid, or transfer
 - Document results and decisions
 - Must be repeated when AI systems change significantly or on a defined schedule
 
-**AI System Impact Assessment (AISIA):**
+**Required outputs:**
+- AI Risk Assessment register (per AI system or per risk category)
+- Risk treatment decisions documented
+
+**Common nonconformity:** Risk assessment covers organisational risk only, not AI-specific risks.
+
+#### 6.1.3 AI Risk Treatment
+**Requirement:** Select and implement risk treatment options for AI risks identified in 6.1.2. Prepare a risk treatment plan with ownership, timelines, and residual risk acceptance.
+
+#### 6.1.4 AI System Impact Assessment (AISIA)
+**This is the most distinctive clause in ISO 42001.** A separate assessment of impacts on individuals and society:
 - Assess potential impacts on individuals and society (not just organisational risk)
 - Consider: who is affected, what decisions the AI makes, how severe and reversible the impact is
 - Classify impact level (Low / Medium / High) → drives control selection
@@ -117,19 +125,9 @@ Determine risks and opportunities that could affect AIMS achievement. Plan actio
 - Must be updated when the AI system's purpose or operating context changes
 
 **Required outputs:**
-- AI Risk Assessment register (per AI system or per risk category)
 - AISIA records (per AI system)
-- Risk treatment decisions documented
 
-**Common nonconformity:** AISIA completed once during implementation but never revisited; risk assessment covers organisational risk only, not AI-specific risks.
-
-#### 6.1.3 AI Risk Treatment
-**Requirement:** Select and implement risk treatment options for AI risks identified in 6.1.2. Prepare a risk treatment plan with ownership, timelines, and residual risk acceptance.
-
-**Statement of Applicability (SoA):**
-- List all 38 Annex A controls
-- For each: applicable or not? Justification. Implementation status.
-- Exclusions of applicable controls must be justified — "not currently a priority" is not sufficient
+**Common nonconformity:** AISIA completed once during implementation but never revisited.
 
 ### 6.2 AI Objectives and Planning to Achieve Them
 **Requirement:** Establish AI objectives at relevant functions and levels.
@@ -149,7 +147,7 @@ Determine risks and opportunities that could affect AIMS achievement. Plan actio
 
 ---
 
-## Clause 7 — Support
+## Clause 7 - Support
 
 ### 7.1 Resources
 **Requirement:** Provide resources needed for AIMS: budget, personnel, tooling, infrastructure.
@@ -201,7 +199,7 @@ Determine risks and opportunities that could affect AIMS achievement. Plan actio
 
 ---
 
-## Clause 8 — Operation
+## Clause 8 - Operation
 
 ### 8.1 Operational Planning and Control
 **Requirement:** Plan, implement, and control processes to meet AIMS requirements; implement control plans; manage planned changes; address unintended changes.
@@ -210,7 +208,7 @@ Determine risks and opportunities that could affect AIMS achievement. Plan actio
 - AI system development follows documented lifecycle (A.6)
 - Data governance controls applied (A.7)
 - Impact assessments completed before deployment
-- Change management process for AI systems — reassess risk/impact when systems change
+- Change management process for AI systems - reassess risk/impact when systems change
 
 ### 8.2 AI Risk Assessment
 **Requirement:** Execute AI risk assessments per the method established in 6.1.2. Retain documented results.
@@ -220,7 +218,12 @@ Determine risks and opportunities that could affect AIMS achievement. Plan actio
 
 ---
 
-## Clause 9 — Performance Evaluation
+### 8.4 AI System Impact Assessment
+**Requirement:** Perform AI system impact assessments in accordance with Clause 6.1.4 at planned intervals and when significant changes occur, and retain documented results.
+
+**Common nonconformity:** Clause 8.4 treated as a one-time 6.1.4 output rather than an operational, repeated process.
+
+## Clause 9 - Performance Evaluation
 
 ### 9.1 Monitoring, Measurement, Analysis and Evaluation
 **Requirement:** Monitor and measure AI system performance, AIMS process effectiveness, and progress against AI objectives.
@@ -240,7 +243,7 @@ Determine risks and opportunities that could affect AIMS achievement. Plan actio
 
 **Audit programme requirements:**
 - Audit frequency defined (typically annual minimum)
-- Auditor competence and independence — cannot audit own work
+- Auditor competence and independence - cannot audit own work
 - Audit plan covering all AIMS clauses and applicable controls over the audit cycle
 - Audit reports with findings, nonconformities, and opportunities for improvement
 - Audit records retained
@@ -261,7 +264,7 @@ Determine risks and opportunities that could affect AIMS achievement. Plan actio
 
 ---
 
-## Clause 10 — Improvement
+## Clause 10 - Improvement
 
 ### 10.1 Continual Improvement
 **Requirement:** Continually improve the suitability, adequacy, and effectiveness of the AIMS.

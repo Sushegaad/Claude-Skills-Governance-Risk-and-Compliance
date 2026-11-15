@@ -1,7 +1,7 @@
 # SOC 2 Control Matrix Reference
 
 ## Table of Contents
-1. [Security — Common Criteria (CC1–CC9)](#security--common-criteria)
+1. [Security - Common Criteria (CC1–CC9)](#security--common-criteria)
 2. [Availability (A1)](#availability-a1)
 3. [Confidentiality (C1)](#confidentiality-c1)
 4. [Processing Integrity (PI1)](#processing-integrity-pi1)
@@ -10,9 +10,9 @@
 
 ---
 
-## Security — Common Criteria
+## Security - Common Criteria
 
-### CC1 — Control Environment
+### CC1 - Control Environment
 
 | Criterion | What auditors look for | Common gap |
 |---|---|---|
@@ -39,7 +39,7 @@ Test:          Inspect training platform report; confirm >95% completion within 
 
 ---
 
-### CC2 — Communication and Information
+### CC2 - Communication and Information
 
 | Criterion | What auditors look for | Common gap |
 |---|---|---|
@@ -49,7 +49,7 @@ Test:          Inspect training platform report; confirm >95% completion within 
 
 ---
 
-### CC3 — Risk Assessment
+### CC3 - Risk Assessment
 
 | Criterion | What auditors look for | Common gap |
 |---|---|---|
@@ -76,7 +76,7 @@ Test:          Inspect risk register; confirm dated within 12 months; verify
 
 ---
 
-### CC4 — Monitoring Controls
+### CC4 - Monitoring Controls
 
 | Criterion | What auditors look for | Common gap |
 |---|---|---|
@@ -85,7 +85,7 @@ Test:          Inspect risk register; confirm dated within 12 months; verify
 
 ---
 
-### CC5 — Control Activities
+### CC5 - Control Activities
 
 | Criterion | What auditors look for | Common gap |
 |---|---|---|
@@ -95,17 +95,17 @@ Test:          Inspect risk register; confirm dated within 12 months; verify
 
 ---
 
-### CC6 — Logical and Physical Access Controls
+### CC6 - Logical and Physical Access Controls
 
 This is typically the most heavily tested area.
 
 | Criterion | What auditors look for | Common gap |
 |---|---|---|
-| CC6.1 | Logical access security measures | No MFA on critical systems; no SSO; shared accounts |
-| CC6.2 | New access provisioning authorized | No formal access request/approval process |
-| CC6.3 | Termination / role change access removal | Terminated employees not promptly de-provisioned (>24hr is a flag) |
-| CC6.4 | Access credentials protected | Passwords stored in plaintext; no PAM for privileged accounts |
-| CC6.5 | Logical access reviewed | No periodic user access reviews (quarterly/annual) |
+| CC6.1 | Logical access security measures, including protection of access credentials | No MFA on critical systems; no SSO; shared accounts; passwords stored in plaintext; no PAM for privileged accounts |
+| CC6.2 | New access provisioning authorized; access reviewed and removed when no longer needed | No formal access request/approval process; no periodic user access reviews (quarterly/annual) |
+| CC6.3 | Role-based access modified or removed on role change or termination; access reviewed periodically | Terminated employees not promptly de-provisioned (>24hr is a flag); no access recertification |
+| CC6.4 | Physical access to facilities and protected information assets restricted | No badge/keycard controls; no visitor management; data center access not reviewed |
+| CC6.5 | Logical and physical protections over physical assets discontinued only after data can no longer be read or recovered (asset disposal) | No secure disposal/wipe procedures; no certificates of destruction |
 | CC6.6 | Logical access restricted from threats | No IDS/IPS; no network segmentation |
 | CC6.7 | Data transmission protected | Unencrypted data in transit; no TLS enforcement |
 | CC6.8 | Unauthorized software prevented | No application whitelisting or MDM; shadow IT uncontrolled |
@@ -113,7 +113,7 @@ This is typically the most heavily tested area.
 **Example control (CC6.3):**
 ```
 Control ID:    CC6.3-001
-Title:         Access Termination — Employee Offboarding
+Title:         Access Termination - Employee Offboarding
 Type:          Preventive
 Owner:         IT / HR
 Frequency:     Event-driven (each termination)
@@ -128,19 +128,19 @@ Test:          Select sample of 10–25 terminations in audit period; verify acc
 
 ---
 
-### CC7 — System Operations
+### CC7 - System Operations
 
 | Criterion | What auditors look for | Common gap |
 |---|---|---|
-| CC7.1 | Vulnerability and malware detection | No vulnerability scanning; no EDR on endpoints |
+| CC7.1 | Vulnerability identification and remediation; malware and configuration-change detection | No vulnerability scanning; no EDR on endpoints; no SLA for patching critical vulns; no patch cadence |
 | CC7.2 | Monitoring for security events | No SIEM or log aggregation; alerts not reviewed |
 | CC7.3 | Security incidents evaluated and responded to | No incident response plan; incidents not documented |
 | CC7.4 | Security incidents contained and resolved | No IR runbook; no post-incident review process |
-| CC7.5 | Identified vulnerabilities remediated | No SLA for patching critical vulns; no patch cadence |
+| CC7.5 | Recovery from identified security incidents | No recovery procedures; no lessons-learned feeding resilience improvements |
 
 ---
 
-### CC8 — Change Management
+### CC8 - Change Management
 
 | Criterion | What auditors look for | Common gap |
 |---|---|---|
@@ -166,7 +166,7 @@ Test:          Sample 20–30 changes in audit period; verify each has prior
 
 ---
 
-### CC9 — Risk Mitigation
+### CC9 - Risk Mitigation
 
 | Criterion | What auditors look for | Common gap |
 |---|---|---|
@@ -198,11 +198,11 @@ Test:          Sample 20–30 changes in audit period; verify each has prior
 
 | Criterion | What auditors look for | Common gap |
 |---|---|---|
-| PI1.1 | Processing complete, valid, accurate, timely, authorized | No input/output validation; no reconciliation controls |
-| PI1.2 | System inputs authorized | No authorization checks; no separation of duties |
-| PI1.3 | System outputs complete and accurate | No output verification or reconciliation |
-| PI1.4 | Processing errors detected and corrected | No error handling or alerting; errors silently discarded |
-| PI1.5 | Stored items protected | No integrity monitoring; no checksums |
+| PI1.1 | Definitions of data and information specifications maintained to support processing | No data/processing specifications documented |
+| PI1.2 | System inputs complete and accurate | No input validation; no authorization checks on inputs |
+| PI1.3 | System processing complete, accurate, and timely | No processing reconciliation; no error handling or alerting |
+| PI1.4 | System outputs complete and accurate | No output verification or reconciliation |
+| PI1.5 | Inputs, items in processing, and outputs stored completely and accurately | No integrity monitoring; no checksums |
 
 ---
 

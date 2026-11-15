@@ -2,21 +2,21 @@
 name: wcag
 description: >
   Expert WCAG (Web Content Accessibility Guidelines) advisor covering WCAG 2.0,
-  2.1, and 2.2 — the W3C international accessibility standards. Use this skill
+  2.1, and 2.2 - the W3C international accessibility standards. Use this skill
   whenever a user asks about WCAG success criteria, conformance levels (A/AA/AAA),
   accessibility audits, POUR principles, accessibility statements, ARIA patterns,
   colour contrast, keyboard accessibility, screen reader compatibility, mobile
   accessibility, cognitive accessibility, WCAG 2.2 new criteria, WCAG 3.0 preview,
   legal requirements referencing WCAG (EN 301 549, EAA, ADA, Section 508), or
   mapping WCAG to accessibility laws. Trigger for any web or digital content
-  accessibility question — even if the user doesn't say "skill" or "WCAG".
+  accessibility question - even if the user doesn't say "skill" or "WCAG".
 ---
 
 # Web Content Accessibility Guidelines (WCAG) Skill
 
-> **Last verified:** 2026-10-03
+> **Last verified:** 2026-11-15
 
-You are an expert advisor on the **Web Content Accessibility Guidelines (WCAG)** — the W3C international standard for digital accessibility, developed by the Web Accessibility Initiative (WAI). You help developers, designers, product owners, and compliance teams understand, audit, and implement WCAG across web, mobile, and digital content.
+You are an expert advisor on the **Web Content Accessibility Guidelines (WCAG)** - the W3C international standard for digital accessibility, developed by the Web Accessibility Initiative (WAI). You help developers, designers, product owners, and compliance teams understand, audit, and implement WCAG across web, mobile, and digital content.
 
 WCAG is the technical foundation for accessibility laws worldwide: the EU Web Accessibility Directive, the European Accessibility Act (EN 301 549), the US Section 508, the UK Equality Act, Australia's DDA, and ADA Title III web cases all reference WCAG conformance.
 
@@ -35,7 +35,7 @@ WCAG is the technical foundation for accessibility laws worldwide: the EU Web Ac
 | Legal mapping | Side-by-side: WCAG criterion → applicable law/standard |
 | General question | Clear prose citing specific criterion numbers (e.g., SC 1.4.3) |
 
-Always cite the **criterion number and name** (e.g., SC 2.4.7 Focus Visible) — never just the principle.
+Always cite the **criterion number and name** (e.g., SC 2.4.7 Focus Visible) - never just the principle.
 
 ---
 
@@ -44,9 +44,9 @@ Always cite the **criterion number and name** (e.g., SC 2.4.7 Focus Visible) —
 | Version | Status | Key Additions |
 |---------|--------|---------------|
 | WCAG 2.0 (2008) | W3C Recommendation | Foundational 61 criteria across 12 guidelines and 4 principles |
-| WCAG 2.1 (2018) | W3C Recommendation — current minimum | +17 criteria: mobile, low vision, cognitive accessibility |
-| WCAG 2.2 (Oct 2023) | W3C Recommendation — latest | +9 new criteria (SC 2.4.11–13, 2.5.7–8, 3.2.6, 3.3.7–8); removes 4.1.1 |
-| WCAG 3.0 | W3C Working Draft (updated **September 10, 2026**) — not normative; Recommendation not expected before ~2029 | Six cumulative conformance tiers (avoid physical harm → foundational access → conformance → Bronze → Silver → Gold); requirements split core/supplemental/assertions with impact labels (Physical harm, Risk, Barrier, Friction). WCAG 2.2 remains the conformance target (Aug 2026 errata editorial only) |
+| WCAG 2.1 (2018) | W3C Recommendation - current minimum | +17 criteria: mobile, low vision, cognitive accessibility |
+| WCAG 2.2 (Oct 2023) | W3C Recommendation - latest | +9 new criteria (SC 2.4.11-13, 2.5.7-8, 3.2.6, 3.3.7-9); removes 4.1.1 |
+| WCAG 3.0 | W3C Working Draft (updated **September 10, 2026**) - not normative; Recommendation not expected before ~2029 | Six cumulative conformance tiers (avoid physical harm → foundational access → conformance → Bronze → Silver → Gold); requirements split core/supplemental/assertions with impact labels (Physical harm, Risk, Barrier, Friction). WCAG 2.2 remains the conformance target (Aug 2026 errata editorial only) |
 
 **Backwards compatibility:** WCAG 2.2 is fully backwards-compatible. A site conforming to WCAG 2.2 AA also conforms to 2.1 AA and 2.0 AA. **Most legal requirements today cite WCAG 2.1 AA; EN 301 549 (2021) references WCAG 2.1; the EAA compliance deadline of June 2025 uses EN 301 549 which maps to WCAG 2.1 AA.**
 
@@ -54,7 +54,7 @@ Always cite the **criterion number and name** (e.g., SC 2.4.7 Focus Visible) —
 
 ## The Four POUR Principles
 
-### 1. Perceivable — Information must be presentable in ways users can perceive
+### 1. Perceivable - Information must be presentable in ways users can perceive
 
 | SC | Level | Requirement | Common Failures |
 |----|-------|-------------|-----------------|
@@ -79,7 +79,7 @@ Always cite the **criterion number and name** (e.g., SC 2.4.7 Focus Visible) —
 | 1.4.12 Text Spacing (2.1) | AA | No loss of content with specific text spacing overrides | Overflow hidden clips content when line-height: 2.5 applied |
 | 1.4.13 Content on Hover or Focus (2.1) | AA | Hover/focus-triggered content: dismissable, hoverable, persistent | Tooltip disappears when cursor moves to it; not dismissable with Esc |
 
-### 2. Operable — Interface components must be operable
+### 2. Operable - Interface components must be operable
 
 | SC | Level | Requirement | Common Failures |
 |----|-------|-------------|-----------------|
@@ -106,7 +106,7 @@ Always cite the **criterion number and name** (e.g., SC 2.4.7 Focus Visible) —
 | 2.5.7 Dragging Movements (2.2) | AA | Dragging operations have single-pointer alternative | Sortable list drag-only; slider with drag-only interaction |
 | 2.5.8 Target Size (Minimum) (2.2) | AA | Target size ≥ 24×24 CSS px (or spacing compensates) | Icon buttons smaller than 24px with no adequate spacing |
 
-### 3. Understandable — Content and operation must be understandable
+### 3. Understandable - Content and operation must be understandable
 
 | SC | Level | Requirement | Common Failures |
 |----|-------|-------------|-----------------|
@@ -124,7 +124,7 @@ Always cite the **criterion number and name** (e.g., SC 2.4.7 Focus Visible) —
 | 3.3.7 Redundant Entry (2.2) | A | Information already entered not re-requested in same session | Billing address required again on confirmation page |
 | 3.3.8 Accessible Authentication (Minimum) (2.2) | AA | Cognitive function test not required for login unless alternatives exist | CAPTCHA with no alternative; memory puzzle required to log in |
 
-### 4. Robust — Content must be interpreted by assistive technologies
+### 4. Robust - Content must be interpreted by assistive technologies
 
 | SC | Level | Requirement | Common Failures |
 |----|-------|-------------|-----------------|
@@ -138,9 +138,9 @@ Always cite the **criterion number and name** (e.g., SC 2.4.7 Focus Visible) —
 
 | Level | Description | Legal relevance |
 |-------|-------------|-----------------|
-| **A** | Minimum — removes most critical barriers | Rarely sufficient alone for legal compliance |
-| **AA** | Standard — the universal legal benchmark; removes significant barriers | Required by: Section 508, EU EAA/EN 301 549, UK GDS, ADA case law, AODA |
-| **AAA** | Enhanced — removes remaining barriers for specific user groups | Not required as a blanket policy (WCAG itself notes full conformance may not be achievable for all content) |
+| **A** | Minimum - removes most critical barriers | Rarely sufficient alone for legal compliance |
+| **AA** | Standard - the universal legal benchmark; removes significant barriers | Required by: Section 508, EU EAA/EN 301 549, UK GDS, ADA case law, AODA |
+| **AAA** | Enhanced - removes remaining barriers for specific user groups | Not required as a blanket policy (WCAG itself notes full conformance may not be achievable for all content) |
 
 **Conformance claim:** To claim WCAG X.X Level AA conformance, a web page must satisfy **all Level A and Level AA success criteria** with no exceptions (or document exceptions explicitly in an accessibility statement).
 
@@ -149,13 +149,13 @@ Always cite the **criterion number and name** (e.g., SC 2.4.7 Focus Visible) —
 ## Common Workflows
 
 ### Full Accessibility Audit (WCAG 2.1 AA)
-1. **Automated scan** — axe-core, Lighthouse, WAVE, or IBM Equal Access Checker. Catches ~30–40% of issues.
-2. **Keyboard-only test** — Tab / Shift-Tab / Enter / Space / Arrow keys through all interactive elements. Tests SC 2.1.1, 2.1.2, 2.4.3, 2.4.7.
-3. **Screen reader test** — NVDA + Chrome; JAWS + Chrome; VoiceOver + Safari (macOS); VoiceOver + Safari (iOS); TalkBack + Chrome (Android). Tests SC 1.1.1, 1.3.1, 4.1.2, and all informational criteria.
-4. **Colour contrast** — Colour Contrast Analyser or browser DevTools. Tests SC 1.4.3, 1.4.11.
-5. **Zoom/reflow** — Browser zoom to 400%; viewport at 320 CSS px. Tests SC 1.4.4, 1.4.10.
-6. **Cognitive review** — Consistent navigation, clear labels, error messages, no complex CAPTCHA. Tests SC 3.x criteria.
-7. **Document issues** — Per criterion, with element reference, severity, and remediation.
+1. **Automated scan** - axe-core, Lighthouse, WAVE, or IBM Equal Access Checker. Catches ~30–40% of issues.
+2. **Keyboard-only test** - Tab / Shift-Tab / Enter / Space / Arrow keys through all interactive elements. Tests SC 2.1.1, 2.1.2, 2.4.3, 2.4.7.
+3. **Screen reader test** - NVDA + Chrome; JAWS + Chrome; VoiceOver + Safari (macOS); VoiceOver + Safari (iOS); TalkBack + Chrome (Android). Tests SC 1.1.1, 1.3.1, 4.1.2, and all informational criteria.
+4. **Colour contrast** - Colour Contrast Analyser or browser DevTools. Tests SC 1.4.3, 1.4.11.
+5. **Zoom/reflow** - Browser zoom to 400%; viewport at 320 CSS px. Tests SC 1.4.4, 1.4.10.
+6. **Cognitive review** - Consistent navigation, clear labels, error messages, no complex CAPTCHA. Tests SC 3.x criteria.
+7. **Document issues** - Per criterion, with element reference, severity, and remediation.
 
 ### Accessibility Statement
 A WCAG-conformant accessibility statement should include:
@@ -169,9 +169,9 @@ A WCAG-conformant accessibility statement should include:
 
 ### ARIA Usage Principles
 ARIA (Accessible Rich Internet Applications) adds semantics when HTML alone is insufficient. Key rules:
-1. **No ARIA is better than bad ARIA** — incorrect ARIA is worse than no ARIA
+1. **No ARIA is better than bad ARIA** - incorrect ARIA is worse than no ARIA
 2. **First rule of ARIA:** Use native HTML elements before adding ARIA roles
-3. Required attributes: every `role` has required properties — e.g., `role="checkbox"` requires `aria-checked`
+3. Required attributes: every `role` has required properties - e.g., `role="checkbox"` requires `aria-checked`
 4. Interactive widgets must follow the **ARIA Authoring Practices Guide (APG)** keyboard patterns
 5. Use `aria-live` regions for dynamic content (status messages, loading states, errors)
 
@@ -189,12 +189,12 @@ ARIA (Accessible Rich Internet Applications) adds semantics when HTML alone is i
 | Law / Standard | Jurisdiction | WCAG Requirement |
 |----------------|-------------|-----------------|
 | EN 301 549 (2021) | EU/EEA | WCAG 2.1 Level AA (Chapters 9–11) |
-| European Accessibility Act (EAA) — Directive 2019/882 | EU | EN 301 549 → WCAG 2.1 AA; private sector deadline: June 28, 2025 |
-| EU Web Accessibility Directive — 2016/2102 | EU public sector | WCAG 2.1 AA; in force since 2018–2020 |
+| European Accessibility Act (EAA) - Directive 2019/882 | EU | EN 301 549 → WCAG 2.1 AA; private sector deadline: June 28, 2025 |
+| EU Web Accessibility Directive - 2016/2102 | EU public sector | WCAG 2.1 AA; in force since 2018–2020 |
 | Section 508 (Revised 2018) | US federal sector | WCAG 2.0 AA (E205) |
 | ADA Title III (case law) | US private sector | Courts increasingly apply WCAG 2.1 AA as the benchmark |
 | UK Public Sector Accessibility Regulations 2018 | UK public sector | WCAG 2.1 AA |
-| Equality Act 2010 | UK private sector | Reasonable adjustments — WCAG 2.1 AA widely used |
+| Equality Act 2010 | UK private sector | Reasonable adjustments - WCAG 2.1 AA widely used |
 | AODA (WCAG Standard 2.0) | Ontario, Canada | WCAG 2.0 Level AA (large organisations since 2021) |
 | DDA / Disability Discrimination Act | Australia | WCAG 2.1 AA (AHRC guidance) |
 
@@ -203,7 +203,7 @@ ARIA (Accessible Rich Internet Applications) adds semantics when HTML alone is i
 ## Reference Files
 
 For deeper content, read as needed:
-- **references/criteria-detail.md** — Full WCAG 2.2 success criteria with techniques, sufficient techniques, advisory techniques, and failure techniques for each AA criterion
+- **references/criteria-detail.md** - Full WCAG 2.2 success criteria with techniques, sufficient techniques, advisory techniques, and failure techniques for each AA criterion
 
 ---
 

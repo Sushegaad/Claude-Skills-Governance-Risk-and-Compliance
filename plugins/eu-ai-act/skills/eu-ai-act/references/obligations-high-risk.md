@@ -1,10 +1,10 @@
-# EU AI Act — High-Risk AI System Obligations Reference
+# EU AI Act - High-Risk AI System Obligations Reference
 
-All obligations below apply to **providers** unless stated otherwise. Annex III systems: applies from **2 August 2026**. Annex I safety component systems: applies from **2 August 2027**.
+All obligations below apply to **providers** unless stated otherwise. Under the Digital Omnibus date shift, Annex III systems: applies from **2 December 2027**. Annex I safety component systems: applies from **2 August 2028**.
 
 ---
 
-## Art. 9 — Risk Management System
+## Art. 9 - Risk Management System
 
 **Purpose:** Identify and mitigate risks to health, safety, and fundamental rights throughout the AI system lifecycle.
 
@@ -28,7 +28,7 @@ All obligations below apply to **providers** unless stated otherwise. Annex III 
 
 ---
 
-## Art. 10 — Data and Data Governance
+## Art. 10 - Data and Data Governance
 
 **Purpose:** Ensure training, validation, and testing datasets are appropriate for the intended purpose.
 
@@ -47,7 +47,7 @@ All obligations below apply to **providers** unless stated otherwise. Annex III 
 - Bias examination and identification
 - Gap identification in relevant properties
 
-**Special category data (Art. 10(5)) — bias detection exception:**
+**Special category data (Art. 10(5)) - bias detection exception:**
 Processing of special-category personal data (GDPR Art. 9) permitted ONLY when ALL conditions met:
 1. No adequate alternative data source exists
 2. Technical and organizational protections are in place (anonymization, pseudonymization where possible)
@@ -58,7 +58,7 @@ Processing of special-category personal data (GDPR Art. 9) permitted ONLY when A
 
 ---
 
-## Art. 11 — Technical Documentation
+## Art. 11 - Technical Documentation
 
 **Who:** Providers (before market placement), kept up-to-date throughout lifecycle.
 
@@ -78,7 +78,7 @@ Processing of special-category personal data (GDPR Art. 9) permitted ONLY when A
 
 ---
 
-## Art. 12 — Record-Keeping / Automatic Logging
+## Art. 12 - Record-Keeping / Automatic Logging
 
 **Who:** Providers must build in automatic logging capability; deployers must retain logs.
 
@@ -93,7 +93,7 @@ Processing of special-category personal data (GDPR Art. 9) permitted ONLY when A
 
 ---
 
-## Art. 13 — Transparency and Provision of Information to Deployers
+## Art. 13 - Transparency and Provision of Information to Deployers
 
 **Purpose:** Enable deployers to understand and correctly use the AI system.
 
@@ -116,7 +116,7 @@ Processing of special-category personal data (GDPR Art. 9) permitted ONLY when A
 
 ---
 
-## Art. 14 — Human Oversight
+## Art. 14 - Human Oversight
 
 **Purpose:** Enable effective human monitoring during operation to identify and correct AI errors.
 
@@ -139,7 +139,7 @@ High-risk AI systems must be designed to allow natural persons to:
 
 ---
 
-## Art. 15 — Accuracy, Robustness, and Cybersecurity
+## Art. 15 - Accuracy, Robustness, and Cybersecurity
 
 **Accuracy:**
 - System must achieve appropriate accuracy levels for intended purpose throughout its lifecycle
@@ -164,7 +164,7 @@ Resilience against attempts to alter use, outputs, or performance, including:
 
 ---
 
-## Art. 16 — Provider Obligations (Complete 12-Item Checklist)
+## Art. 16 - Provider Obligations (Complete 12-Item Checklist)
 
 Before placing on market or putting into service, providers must:
 
@@ -183,50 +183,50 @@ Before placing on market or putting into service, providers must:
 
 ---
 
-## Art. 17 — Quality Management System (13 Required Components)
+## Art. 17 - Quality Management System (13 Required Components)
 
 Documented policies and procedures covering:
 
 1. **Regulatory compliance strategy** including conformity assessment procedures and modifications management
-2. **Design techniques** — procedures for designing, controlling, and verifying the AI system
+2. **Design techniques** - procedures for designing, controlling, and verifying the AI system
 3. **Development quality control** procedures
-4. **Testing and validation** — before, during, and after development
-5. **Technical standards application** — harmonised standards and common specifications
-6. **Data management** — acquisition, labeling, storage, filtering, retention, cleaning procedures
+4. **Testing and validation** - before, during, and after development
+5. **Technical standards application** - harmonised standards and common specifications
+6. **Data management** - acquisition, labeling, storage, filtering, retention, cleaning procedures
 7. **Risk management** per Art. 9
 8. **Post-market monitoring** per Art. 72
-9. **Serious incident reporting** per Art. 73 — communication with national authorities
+9. **Serious incident reporting** per Art. 73 - communication with national authorities
 10. **Authority communication** procedures for corrective actions and recalls (Art. 20)
-11. **Record-keeping and documentation** — retention periods and access procedures
+11. **Record-keeping and documentation** - retention periods and access procedures
 12. **Resource management** including supply-chain security measures
-13. **Accountability framework** — clear responsibility assignment for all above components
+13. **Accountability framework** - clear responsibility assignment for all above components
 
 **Proportionality:** QMS must be proportionate to provider organization size. Existing sectoral QMS may be adapted/integrated.
 
 ---
 
-## Art. 26 — Deployer Obligations
+## Art. 26 - Deployer Obligations
 
 1. **Instructions compliance:** Use system in accordance with provider's instructions for use (Art. 13)
 2. **Staff assignment:** Assign human oversight to persons with necessary competence, training, authority, and resources
-3. **Input data control:** Where deployer controls input data — ensure it is relevant and sufficiently representative
-4. **Continuous monitoring:** Monitor operations; if risk identified — notify provider/importer/distributor AND market surveillance authority; suspend use where appropriate
+3. **Input data control:** Where deployer controls input data - ensure it is relevant and sufficiently representative
+4. **Continuous monitoring:** Monitor operations; if risk identified - notify provider/importer/distributor AND market surveillance authority; suspend use where appropriate
 5. **Serious incidents:** Immediately notify provider, then importer/distributor and market surveillance authority
 6. **Log retention:** Retain automatically generated logs for **at least 6 months**
-7. **Worker notification:** In employment/worker management contexts — inform workers and representatives before deployment
+7. **Worker notification:** In employment/worker management contexts - inform workers and representatives before deployment
 8. **Public authority registration:** Public authorities must register use in EU AI database (Art. 60) before deployment; cannot use unregistered high-risk systems
 9. **GDPR:** Conduct data protection impact assessments where required under GDPR Art. 35
 10. **Fundamental Rights Impact Assessment:** Required for public authorities before deploying certain high-risk systems under Art. 27
 
 ---
 
-## Arts. 43–49 — Conformity Assessment and CE Marking
+## Arts. 43–49 - Conformity Assessment and CE Marking
 
-### Art. 43 — Conformity Assessment Paths
+### Art. 43 - Conformity Assessment Paths
 
-**Annex III — Point 1 Systems (Biometrics):** Provider chooses between:
-- **(A) Self-assessment** — Internal control via Annex VI procedure; OR
-- **(B) Notified body** — Third-party assessment under Annex VII (QMS review + technical documentation assessment)
+**Annex III - Point 1 Systems (Biometrics):** Provider chooses between:
+- **(A) Self-assessment** - Internal control via Annex VI procedure; OR
+- **(B) Notified body** - Third-party assessment under Annex VII (QMS review + technical documentation assessment)
 
 Notified body (B) is **mandatory** when:
 - No harmonised standards covering the system exist
@@ -234,7 +234,7 @@ Notified body (B) is **mandatory** when:
 - Common specifications are unavailable or not used
 - Standards published with restrictions that limit presumption of conformity
 
-**Annex III — Points 2–8 Systems (Areas 2–8):** Self-assessment only — no notified body assessment available.
+**Annex III - Points 2–8 Systems (Areas 2–8):** Self-assessment only - no notified body assessment available.
 
 **Annex I Products (safety components):** Conformity assessment integrated into the existing conformity procedure for the product under Annex I legislation.
 
@@ -242,23 +242,23 @@ Notified body (B) is **mandatory** when:
 
 **Substantial modifications:** Require full reassessment; except predetermined learning modifications documented in original technical file and declared in conformity declaration.
 
-### Art. 47 — EU Declaration of Conformity
+### Art. 47 - EU Declaration of Conformity
 - Drawn up by provider (or authorised representative); provider assumes full responsibility
 - Must confirm compliance with all applicable AI Act requirements (Section 2)
 - Must identify: system name, provider, version, intended purpose, conformity assessment procedure followed, standards applied
 - Machine-readable format; translation required into languages required by national authorities
 - Maintained for **10 years** from market placement
 
-### Art. 48 — CE Marking
+### Art. 48 - CE Marking
 - Visible, legible, indelible affixation on system, packaging, or documentation
 - Only affixed after successful conformity assessment and drawing up of EU Declaration of Conformity
 - Subject to general principles of CE marking (Regulation 765/2008)
 - Affixed before market placement; re-affixed if system substantially modified
 
-### Arts. 49 and 60 — EU AI Database Registration
+### Arts. 49 and 60 - EU AI Database Registration
 
 **Provider registration (Art. 49):**
-- Before market placement (Annex III systems — Art. 6(2))
+- Before market placement (Annex III systems - Art. 6(2))
 - Information includes: provider/representative identity; system description, intended purpose, accuracy; conformity assessment procedure; CE marking notified body (if applicable)
 - Provider registration covers all deployers and users of that system
 
@@ -266,15 +266,15 @@ Notified body (B) is **mandatory** when:
 - Before deployment of registered high-risk systems
 - Additional system-specific information for public authority use
 
-**Database operation:** Operational from 2 August 2026 (Commission responsibility, Art. 71).
+**Database operation:** Commission responsibility (Art. 71). Registration obligations follow the shifted high-risk application dates under the Digital Omnibus (Annex III: 2 December 2027; Annex I: 2 August 2028).
 
 **Publicly accessible information vs. restricted:** Most information public; some law enforcement/immigration information accessible only to competent authorities.
 
 ---
 
-## Art. 27 — Fundamental Rights Impact Assessment (FRIA)
+## Art. 27 - Fundamental Rights Impact Assessment (FRIA)
 
-**Who:** Public authorities and bodies deploying high-risk AI systems in Annex III Areas 1, 2, 4, 5(b–d), 6, 7, and 8.
+**Who (Art. 27(1)):** Deployers that are bodies governed by public law or private entities providing public services, and any deployer of Annex III point 5(b) or 5(c) systems, before deploying a high-risk AI system under Art. 6(2), except systems intended for use in the area listed in Annex III point 2 (critical infrastructure).
 
 **Content:**
 - Description of the deployer's processes in which the system will be used

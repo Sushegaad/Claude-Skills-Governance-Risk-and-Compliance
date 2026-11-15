@@ -1,4 +1,4 @@
-# ISM — Control Applicability Framework
+# ISM - Control Applicability Framework
 
 Source: Australian Information Security Manual, March 2026 edition  
 Published by: Australian Signals Directorate (ASD)
@@ -32,14 +32,14 @@ Higher classification systems must implement **all controls for lower levels plu
 The ISM does not mandate a one-size-fits-all approach. The selection process:
 
 1. **Determine system classification** based on the highest sensitivity of information the system stores, processes, or communicates
-2. **Define security objectives** — identify CIA (Confidentiality, Integrity, Availability) requirements
+2. **Define security objectives** - identify CIA (Confidentiality, Integrity, Availability) requirements
 3. **Select baseline controls** using applicability markings
-4. **Tailor controls** — add controls for specific threats; document exclusions with risk justification
-5. **Document in SSP** — all selected controls, exclusions, and justifications must be recorded in the System Security Plan
+4. **Tailor controls** - add controls for specific threats; document exclusions with risk justification
+5. **Document in SSP** - all selected controls, exclusions, and justifications must be recorded in the System Security Plan
 
 ---
 
-## System Security Plan (SSP) — Required Content
+## System Security Plan (SSP) - Required Content
 
 The SSP is the primary authorisation artefact. It must include:
 
@@ -90,20 +90,20 @@ The SSP is the primary authorisation artefact. It must include:
 
 ---
 
-## Essential Eight — ISM Relationship
+## Essential Eight - ISM Relationship
 
 The Essential Eight are **eight priority mitigation strategies** extracted from the broader ISM control set. They are not a separate standard but a prioritised subset.
 
 | Essential Eight Strategy | Primary ISM Chapter(s) | Notes |
 |-------------------------|----------------------|-------|
 | Application control (allow-listing) | Ch. 13 System Hardening | Prevents execution of unapproved software |
-| Patch applications | Ch. 14 System Management | Critical patches ≤14 days |
+| Patch applications | Guidelines for system management | 48 hours / two weeks / one month per the ISM patching rule below |
 | Configure Microsoft Office macros | Ch. 13 System Hardening | Restrict macro execution |
 | User application hardening | Ch. 13 System Hardening | Browser, Office, PDF hardening |
 | Restrict administrative privileges | Ch. 13 System Hardening, Ch. 6 Personnel | Least privilege, PAM |
-| Patch operating systems | Ch. 14 System Management | Critical OS patches ≤14 days |
+| Patch operating systems | Guidelines for system management | 48 hours / two weeks / one month per the ISM patching rule below |
 | Multi-factor authentication (MFA) | Ch. 6, Ch. 9, Ch. 19 | MFA for all remote access, privileged accounts |
-| Regular backups | Ch. 14 System Management | Tested, offline/offsite, 3-2-1 rule |
+| Regular backups | Guidelines for system management | Tested, offline/offsite, 3-2-1 rule |
 
 ### Essential Eight Maturity Levels
 
@@ -116,14 +116,13 @@ The Essential Eight are **eight priority mitigation strategies** extracted from 
 
 ---
 
-## Patch Management SLAs (Chapter 14)
+## Patch Management SLAs (Guidelines for system management)
 
-| Patch Criticality | Maximum Remediation Timeframe |
+| Scenario | Maximum Remediation Timeframe |
 |------------------|------------------------------|
-| Critical (CVSS 9–10) | 48 hours for internet-facing; 14 days for internal |
-| High (CVSS 7–8.9) | 14 days |
-| Medium (CVSS 4–6.9) | 30 days |
-| Low (CVSS < 4) | Within next maintenance window |
+| Internet-facing services: an exploit exists or the vulnerability is being exploited | 48 hours |
+| Internet-facing services: all other vulnerabilities | Two weeks |
+| Non-internet-facing systems (workstations, servers, network devices, other internal assets) | One month |
 
 ---
 
@@ -163,7 +162,7 @@ Logs must be stored in a tamper-evident manner, separate from the system being m
 | Structure | 22 guideline chapters + individual controls | 10 clauses + 93 Annex A controls (2022) |
 | Assessment | IRAP (ASD-certified assessors) | Third-party certification bodies |
 | Classification | NC / OS / P / S / TS markings | Not classification-based |
-| Update cycle | Typically annually (March edition) | Major revision every ~7 years |
+| Update cycle | Quarterly (March, June, September and December releases) | Major revision every ~7 years |
 | Audience | Government entities + supply chain | Any organisation |
 | Essential Eight | Subset of ISM; ASD-mandated for government | No direct equivalent |
 

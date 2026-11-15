@@ -77,6 +77,26 @@ FORBIDDEN = {
     "saudi-arabia-grc": [
         "Levels 3-4 require in-Kingdom", "Levels 3\u20134 require in-Kingdom",  # repealed CCRF v2 scheme
     ],
+    "cis-controls": [
+        "PR.AC-", "PR.IP-", "ID.SC-", "RS.RP-1",   # CSF 1.1 IDs in a CSF 2.0 crosswalk
+        "CM.3.068",                                 # CMMC 1.0-style ID
+    ],
+    "nzism": [
+        "16.1.46.C.02 |", "16.3.5.C.02 |",          # controls removed in v3.9 (table rows)
+    ],
+    "pci-compliance": [
+        "8.3.6 | Passwords changed every 90 days",  # scrambled requirement
+    ],
+    "ccpa": [
+        "30-day cure period** applies to AG",       # defunct since Jan 1, 2023
+    ],
+    "soc2": [
+        "CC6.4 | Access credentials",               # real CC6.4 = physical access
+        "CC7.5 | Identified vulnerabilities",       # real CC7.5 = incident recovery
+    ],
+    "nist-800-53": [
+        "~422",                                     # invented High count
+    ],
     # Guards carried over from issues #62/#63 fix cycles
     "nist-ai-rmf": [
         "GOVERN 3.3", "GOVERN 5.3", "GOVERN 6.3",   # invented subcategories

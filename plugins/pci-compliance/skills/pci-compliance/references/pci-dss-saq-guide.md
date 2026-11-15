@@ -1,4 +1,4 @@
-# PCI DSS v4.0.1 — SAQ Selection Guide
+# PCI DSS v4.0.1 - SAQ Selection Guide
 
 Source: PCI DSS v4.0 SAQ documents (PCI Security Standards Council)
 https://www.pcisecuritystandards.org/document_library/
@@ -7,9 +7,9 @@ https://www.pcisecuritystandards.org/document_library/
 
 ## What is a Self-Assessment Questionnaire (SAQ)?
 
-An SAQ is a validation tool intended to assist merchants and service providers in self-evaluating their compliance with PCI DSS. There are multiple SAQ types — each designed for a specific payment channel and cardholder data environment profile. The correct SAQ type depends on **how** your organisation accepts payments and **who** handles cardholder data.
+An SAQ is a validation tool intended to assist merchants and service providers in self-evaluating their compliance with PCI DSS. There are multiple SAQ types - each designed for a specific payment channel and cardholder data environment profile. The correct SAQ type depends on **how** your organisation accepts payments and **who** handles cardholder data.
 
-Level 1 merchants and Level 1 service providers are **not eligible** for SAQs — they require an on-site Report on Compliance (ROC) completed by a Qualified Security Assessor (QSA).
+Level 1 merchants and Level 1 service providers are **not eligible** for SAQs - they require an on-site Report on Compliance (ROC) completed by a Qualified Security Assessor (QSA).
 
 ---
 
@@ -32,7 +32,7 @@ Level 1 merchants and Level 1 service providers are **not eligible** for SAQs �
 - Yes, using payment application systems connected to internet → **SAQ C**
 - Yes, with any other scenario → **SAQ D for Merchants**
 
-**Step 4: Do you accept card-not-present (CNP) — e-commerce or MOTO — only?**
+**Step 4: Do you accept card-not-present (CNP) - e-commerce or MOTO - only?**
 - Yes, and ALL cardholder data functions fully outsourced, no redirect control → **SAQ A**
 - Yes, e-commerce only, but you control the customer redirect to the payment page → **SAQ A-EP**
 - Yes, MOTO only with virtual payment terminals (web-based, isolated device) → **SAQ C-VT**
@@ -40,12 +40,14 @@ Level 1 merchants and Level 1 service providers are **not eligible** for SAQs �
 
 ---
 
-## SAQ Types — Full Reference
+## SAQ Types - Full Reference
 
-### SAQ A — Fully Outsourced Card-Not-Present
+> **Note on question counts**: the approximate question counts below are **v3.2.1-era counts**, retained for rough scale comparison between SAQ types. Question counts under v4.x differ materially: SAQ A was 31 questions under v4.0 and was revised again under v4.0.1 r1. Always pull current counts from the official SAQ PDFs in the PCI SSC document library.
+
+### SAQ A - Fully Outsourced Card-Not-Present
 **Applies to**: E-commerce and/or MOTO (mail order/telephone order) merchants only. No card-present transactions. All cardholder data functions (storage, processing, transmission) fully outsourced to PCI DSS-compliant third-party service providers. Merchant retains no electronic cardholder data.
 
-**Requirements covered**: Subset of Req 2, 6, 8, 9, 10, 11, 12 (~22 controls)
+**Requirements covered**: Subset of Req 2, 6, 8, 9, 10, 11, 12 (~22 questions, v3.2.1-era count; 31 under v4.0, revised in v4.0.1 r1)
 
 **Eligibility criteria**:
 - Cards not present at any time during the transaction
@@ -57,10 +59,10 @@ Level 1 merchants and Level 1 service providers are **not eligible** for SAQs �
 
 ---
 
-### SAQ A-EP — E-commerce with Partial Outsourcing
+### SAQ A-EP - E-commerce with Partial Outsourcing
 **Applies to**: E-commerce merchants ONLY. Merchant outsources payment processing but controls/influences how the customer is directed to the payment service. No card-present transactions.
 
-**Requirements covered**: Subset of Req 2, 6, 8, 9, 10, 11, 12 (~191 controls)
+**Requirements covered**: Subset of Req 2, 6, 8, 9, 10, 11, 12 (~191 questions, v3.2.1-era count)
 
 **Eligibility criteria**:
 - E-commerce only; no card-present
@@ -74,10 +76,10 @@ Level 1 merchants and Level 1 service providers are **not eligible** for SAQs �
 
 ---
 
-### SAQ B — Imprint Machines or Standalone Dial-Out Terminals
+### SAQ B - Imprint Machines or Standalone Dial-Out Terminals
 **Applies to**: Merchants using ONLY imprint machines (knuckle-busters) OR standalone, dial-out (non-IP) terminals. No e-commerce.
 
-**Requirements covered**: Subset of Req 2, 8, 9, 10, 11, 12 (~41 controls)
+**Requirements covered**: Subset of Req 2, 8, 9, 10, 11, 12 (~41 questions, v3.2.1-era count)
 
 **Eligibility criteria**:
 - Transactions processed only via imprint machines or dial-out (telephone-line) terminals
@@ -89,10 +91,10 @@ Level 1 merchants and Level 1 service providers are **not eligible** for SAQs �
 
 ---
 
-### SAQ B-IP — Standalone IP-Connected PTS POI Devices
+### SAQ B-IP - Standalone IP-Connected PTS POI Devices
 **Applies to**: Merchants using ONLY standalone PTS (PIN Transaction Security) POI devices with IP connectivity. Devices must be PCI-listed PTS POI devices. No e-commerce.
 
-**Requirements covered**: Subset of Req 1, 2, 6, 8, 9, 10, 11, 12 (~83 controls)
+**Requirements covered**: Subset of Req 1, 2, 6, 8, 9, 10, 11, 12 (~83 questions, v3.2.1-era count)
 
 **Eligibility criteria**:
 - ONLY standalone PCI-listed PTS POI devices with IP connection used
@@ -103,10 +105,10 @@ Level 1 merchants and Level 1 service providers are **not eligible** for SAQs �
 
 ---
 
-### SAQ C-VT — Virtual Payment Terminals (Web-Based)
+### SAQ C-VT - Virtual Payment Terminals (Web-Based)
 **Applies to**: Merchants using only web-based virtual payment terminal solutions accessed via a web browser on an isolated computing device. No e-commerce; no cardholder data electronically stored.
 
-**Requirements covered**: Subset of Req 1, 2, 6, 8, 9, 10, 11, 12 (~90 controls)
+**Requirements covered**: Subset of Req 1, 2, 6, 8, 9, 10, 11, 12 (~90 questions, v3.2.1-era count)
 
 **Eligibility criteria**:
 - Payment processing via web-browser virtual terminal only
@@ -119,10 +121,10 @@ Level 1 merchants and Level 1 service providers are **not eligible** for SAQs �
 
 ---
 
-### SAQ C — Payment Application Systems Connected to Internet
+### SAQ C - Payment Application Systems Connected to Internet
 **Applies to**: Merchants with payment application systems connected to the internet. No e-commerce. Device/application(s) not connected to other systems in the environment.
 
-**Requirements covered**: Subset of Req 1, 2, 5, 6, 8, 9, 10, 11, 12 (~160 controls)
+**Requirements covered**: Subset of Req 1, 2, 5, 6, 8, 9, 10, 11, 12 (~160 questions, v3.2.1-era count)
 
 **Eligibility criteria**:
 - Payment application connected to internet (e.g., point-of-sale system with internet connectivity)
@@ -134,10 +136,10 @@ Level 1 merchants and Level 1 service providers are **not eligible** for SAQs �
 
 ---
 
-### SAQ P2PE — Validated P2PE Solution
+### SAQ P2PE - Validated P2PE Solution
 **Applies to**: Merchants using ONLY hardware payment terminals in a PCI-validated, PCI-listed P2PE solution. No e-commerce.
 
-**Requirements covered**: Very small subset of Req 9, 12 (~33 controls)
+**Requirements covered**: Very small subset of Req 9, 12 (~33 questions, v3.2.1-era count)
 
 **Eligibility criteria**:
 - ALL cardholder data captured via terminals included in a PCI-validated P2PE solution
@@ -147,16 +149,16 @@ Level 1 merchants and Level 1 service providers are **not eligible** for SAQs �
 
 **Examples**: Merchant using a Verifone or Ingenico terminal within a certified P2PE solution (e.g., Bluefin PayConex P2PE, Worldpay Total P2PE).
 
-**Key benefit**: Dramatically reduces PCI DSS scope — merchants only attest to physical security of terminals and selecting a compliant P2PE provider.
+**Key benefit**: Dramatically reduces PCI DSS scope - merchants only attest to physical security of terminals and selecting a compliant P2PE provider.
 
 ---
 
-### SAQ D — All Other Merchants and Service Providers
+### SAQ D - All Other Merchants and Service Providers
 
 **SAQ D for Merchants**
 **Applies to**: All merchants who do not meet criteria for SAQ A, A-EP, B, B-IP, C, C-VT, or P2PE. Covers all 12 PCI DSS requirements.
 
-**Requirements covered**: All 12 requirements (~340+ controls)
+**Requirements covered**: All 12 requirements (~340+ questions, v3.2.1-era count)
 
 **Examples**: Merchants that store CHD, have complex multi-channel environments, or don't qualify for a simpler SAQ.
 
@@ -165,7 +167,7 @@ Level 1 merchants and Level 1 service providers are **not eligible** for SAQs �
 **SAQ D for Service Providers**
 **Applies to**: All service providers eligible for SAQ validation (Level 2 service providers). Covers all 12 PCI DSS requirements.
 
-**Requirements covered**: All 12 requirements (~340+ controls, service-provider-specific questions)
+**Requirements covered**: All 12 requirements (~340+ questions, v3.2.1-era count; service-provider-specific questions)
 
 **Note**: Service providers have additional requirements vs merchants, particularly around Req 12.8 (TPSP management), Req 12.9 (TPSP acknowledgement), and Req 3.3.2 (SAD protection).
 

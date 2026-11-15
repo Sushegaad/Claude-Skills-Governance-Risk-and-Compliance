@@ -1,6 +1,6 @@
-# NIST SP 800-53 Rev 5 — Baselines, Tailoring, and Overlays Reference
+# NIST SP 800-53 Rev 5 - Baselines, Tailoring, and Overlays Reference
 
-## SP 800-53B — Control Baselines
+## SP 800-53B - Control Baselines
 
 SP 800-53B (October 2020) is the companion publication that separates the control baselines from the main SP 800-53 catalog.
 
@@ -10,16 +10,18 @@ SP 800-53B (October 2020) is the companion publication that separates the contro
 
 **Examples:** Public-facing websites, internal collaboration tools with non-sensitive data, reference databases.
 
-**Approximate scope:** ~156 controls and enhancements across 20 families (not counting PM family).
+**Scope:** 149 controls and enhancements across 20 families (not counting PM family). Note: the FedRAMP Rev 5 Low baseline is tailored and larger, at 156 controls/enhancements.
 
 **Key characteristics:**
 - Policy and procedure controls required for every family
 - Basic access controls (AC-2 account management, AC-3 enforcement, AC-7 logon limits)
 - Fundamental audit logging (AU-2 through AU-12)
-- MFA required for privileged accounts (IA-2(1)) — extended post-EO 14028
+- MFA required for privileged accounts (IA-2(1)) - extended post-EO 14028
 - Basic boundary protection (SC-7) without detailed enhancement requirements
 - Incident response plan (IR-8), incident reporting (IR-6)
-- Vulnerability scanning (RA-5) — frequency defined by ODV
+- Vulnerability scanning (RA-5) - frequency defined by ODV
+- Core supply chain controls (SR-1, SR-2, SR-2(1), SR-3, SR-5, SR-8, SR-10, SR-11, SR-11(1), SR-11(2), SR-12) are already in the Low baseline
+- Baseline selection and tailoring documented (PL-10, PL-11); position descriptions (PS-9)
 
 ### Moderate Impact Baseline
 
@@ -27,7 +29,7 @@ SP 800-53B (October 2020) is the companion publication that separates the contro
 
 **Examples:** HR systems with PII, financial management systems, internal collaboration with sensitive data, most federal agency systems.
 
-**Approximate scope:** ~323 controls and enhancements across 20 families.
+**Scope:** 287 controls and enhancements across 20 families. Note: the FedRAMP Rev 5 Moderate baseline is tailored and larger, at 323 controls/enhancements.
 
 **Key additions over Low:**
 - Automated account management (AC-2(1)), inactivity controls (AC-2(3)(5))
@@ -42,10 +44,10 @@ SP 800-53B (October 2020) is the companion publication that separates the contro
 - PKI/PIV support (IA-2(12), IA-5(2))
 - Incident response testing (IR-3)
 - Developer security testing (SA-11), configuration management (SA-10)
-- Transmission protection (SC-8(1) — TLS required)
-- Encryption at rest (SC-28(1))
+- Transmission protection (SC-8(1) - TLS required)
+- Protection of information at rest (SC-28, SC-28(1)); SC-28 enters the SP 800-53B baseline at Moderate (the FedRAMP Low baseline adds it at Low)
 - Software integrity verification (SI-7(1))
-- Supply chain plan and controls (SR-2, SR-3, SR-5 through SR-8, SR-11, SR-12)
+- Supplier assessments and reviews (SR-6); most other SR controls already start at Low
 
 ### High Impact Baseline
 
@@ -53,7 +55,7 @@ SP 800-53B (October 2020) is the companion publication that separates the contro
 
 **Examples:** National security systems, financial systems holding critical data, emergency services, election systems.
 
-**Approximate scope:** ~422 controls and enhancements across 20 families.
+**Scope:** 370 controls and enhancements across 20 families. Note: the FedRAMP Rev 5 High baseline is tailored and larger, at 410 controls/enhancements.
 
 **Key additions over Moderate:**
 - Account monitoring for atypical usage (AC-2(12))
@@ -62,14 +64,14 @@ SP 800-53B (October 2020) is the companion publication that separates the contro
 - Threat hunting (RA-10)
 - Non-repudiation (AU-10)
 - Session audit (AU-14)
-- Supply chain team, tamper resistance, counterfeit prevention (SR-2(1), SR-6(1), SR-9 through SR-11(1))
+- Supply chain testing, tamper resistance and detection (SR-6(1), SR-9, SR-9(1))
 - Developer architecture review (SA-17)
 - All SI family controls including function verification (SI-6)
 - Enhanced cryptographic protections
 
 ---
 
-## Control Baselines by Family — Quick Reference
+## Control Baselines by Family - Quick Reference
 
 | Family | L Controls | M Controls | H Controls |
 |--------|-----------|-----------|-----------|
@@ -84,14 +86,14 @@ SP 800-53B (October 2020) is the companion publication that separates the contro
 | MA | 3 | 6 | 6 |
 | MP | 3 | 6 | 7 |
 | PE | 11 | 15 | 18 |
-| PL | 4 | 6 | 7 |
-| PS | 8 | 9 | 9 |
+| PL | 6 | 7 | 7 |
+| PS | 9 | 9 | 9 |
 | PT | varies | varies | varies |
 | RA | 5 | 8 | 9 |
 | SA | 7 | 16 | 17 |
 | SC | 14 | 24 | 29 |
 | SI | 9 | 17 | 19 |
-| SR | 1 | 9 | 12 |
+| SR | 11 | 12 | 15 |
 | PM | org-wide | org-wide | org-wide |
 
 ---
@@ -100,7 +102,7 @@ SP 800-53B (October 2020) is the companion publication that separates the contro
 
 Tailoring produces a system-specific set of controls from the starting baseline. Document all tailoring decisions in the SSP.
 
-### Tailoring Step 1 — Identify Common Controls
+### Tailoring Step 1 - Identify Common Controls
 
 **Common controls** (also called "inherited controls") are implemented at the organization or facility level and inherited by multiple systems:
 
@@ -119,7 +121,7 @@ Tailoring produces a system-specific set of controls from the starting baseline.
 
 Document in SSP Section: Common Control Inheritance table.
 
-### Tailoring Step 2 — Apply Scoping Considerations
+### Tailoring Step 2 - Apply Scoping Considerations
 
 Remove controls that are not applicable based on:
 
@@ -132,7 +134,7 @@ Remove controls that are not applicable based on:
 
 **Document every scoping decision** in the SSP with rationale. Regulators and auditors will scrutinize unjustified scoping.
 
-### Tailoring Step 3 — Organization-Defined Values (ODVs)
+### Tailoring Step 3 - Organization-Defined Values (ODVs)
 
 Every control with brackets `[Assignment: ...]` requires an ODV. Failure to fill in ODVs is a common SSP finding.
 
@@ -150,7 +152,7 @@ Every control with brackets `[Assignment: ...]` requires an ODV. Failure to fill
 | RA-5 | Vulnerability scan frequency | CISA BOD 19-02; FedRAMP: monthly OS, weekly DB | Monthly OS scans |
 | SI-2 | Patch critical vulns within | CISA BOD 19-02: 15 days Critical | 15 days critical; 30 days high |
 
-### Tailoring Step 4 — Compensating Controls
+### Tailoring Step 4 - Compensating Controls
 
 A **compensating control** provides equivalent security when the baseline control cannot be implemented as written:
 
@@ -163,7 +165,7 @@ A **compensating control** provides equivalent security when the baseline contro
 
 **Example:** If a legacy system cannot implement IA-2(1) (MFA for privileged accounts), a compensating control could be: enhanced privileged access monitoring (AC-2(12)) + strict IP allowlisting + privileged access workstations + session recording.
 
-### Tailoring Step 5 — Supplementing the Baseline
+### Tailoring Step 5 - Supplementing the Baseline
 
 Add controls beyond the baseline when:
 - Risk assessment identifies elevated threats
@@ -177,7 +179,7 @@ Add controls beyond the baseline when:
 
 ### What is an Overlay?
 
-An overlay is a pre-tailored baseline for a specific community of interest, technology type, or operating environment. Overlays save time and promote consistency — organizations apply the overlay instead of performing baseline tailoring from scratch.
+An overlay is a pre-tailored baseline for a specific community of interest, technology type, or operating environment. Overlays save time and promote consistency - organizations apply the overlay instead of performing baseline tailoring from scratch.
 
 ### FedRAMP Overlay
 
@@ -192,7 +194,7 @@ Key FedRAMP additions to SP 800-53 Moderate baseline:
 
 ### DoD/CNSS Overlay (CNSS Instruction 1253)
 
-**Scope:** National Security Systems (NSS) — classified or intelligence systems.
+**Scope:** National Security Systems (NSS) - classified or intelligence systems.
 
 Key additions:
 - Higher baseline requirements for NSS systems
@@ -214,7 +216,7 @@ Key additions:
 
 **Scope:** Industrial Control Systems, SCADA, Operational Technology.
 
-Reference: **NIST SP 800-82 Rev 3** — Guide to OT Security.
+Reference: **NIST SP 800-82 Rev 3** - Guide to OT Security.
 - Availability prioritized over confidentiality
 - Real-time processing constraints affect control applicability
 - Legacy system accommodations
@@ -223,7 +225,7 @@ Reference: **NIST SP 800-82 Rev 3** — Guide to OT Security.
 
 ---
 
-## Privacy Baseline (PT Family) — Detailed
+## Privacy Baseline (PT Family) - Detailed
 
 ### Privacy Act Connection
 
@@ -247,7 +249,7 @@ Related controls: PL-2 (SSP includes privacy requirements), RA-3 (privacy risk a
 
 ---
 
-## Supply Chain Risk Management (SR Family) — Details
+## Supply Chain Risk Management (SR Family) - Details
 
 ### SCRM Plan (SR-2)
 
@@ -261,9 +263,9 @@ Document organization's SCRM approach:
 ### SBOM (Software Bill of Materials)
 
 EO 14028 and CISA requirements have increased SBOM expectations. SBOMs support:
-- SR-4 (Provenance) — knowing where software components came from
-- SR-11 (Component Authenticity) — verifying software integrity
-- SA-4 (Acquisition) — requiring SBOM in contracts
+- SR-4 (Provenance) - knowing where software components came from
+- SR-11 (Component Authenticity) - verifying software integrity
+- SA-4 (Acquisition) - requiring SBOM in contracts
 
 **SBOM minimum data fields (NTIA):**
 - Supplier name, component name, version, unique identifiers, dependencies, author, timestamp

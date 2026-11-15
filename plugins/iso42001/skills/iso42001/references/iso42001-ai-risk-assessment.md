@@ -1,8 +1,8 @@
-# ISO/IEC 42001:2023 — AI Risk Assessment & AISIA Methodology
+# ISO/IEC 42001:2023 - AI Risk Assessment & AISIA Methodology
 
-This reference covers the two mandatory assessments under Clause 6.1.2:
-1. **AI Risk Assessment** — evaluates risks to the organisation from AI systems
-2. **AI System Impact Assessment (AISIA)** — evaluates risks to individuals and society from AI systems
+This reference covers the two mandatory assessments: AI risk assessment (Clause 6.1.2, operationalised in 8.2) and AI system impact assessment (Clause 6.1.4, operationalised in 8.4):
+1. **AI Risk Assessment** - evaluates risks to the organisation from AI systems
+2. **AI System Impact Assessment (AISIA)** - evaluates risks to individuals and society from AI systems
 
 Both must be completed for every AI system in scope. Both must be maintained and updated over time.
 
@@ -26,7 +26,7 @@ For each AI system in scope, identify risks across these categories:
 | Hallucination / confabulation | Model generates plausible-sounding but incorrect outputs | LLM generates false legal citations |
 | Model drift | Model performance degrades as real-world data distribution shifts | Fraud detection model misses new fraud patterns 12 months post-deployment |
 | Adversarial attacks | Inputs crafted to manipulate model outputs | Adversarial examples cause image classifier to misclassify |
-| Model inversion | Training data can be reconstructed from model outputs | Privacy violation — personal data extracted from model |
+| Model inversion | Training data can be reconstructed from model outputs | Privacy violation - personal data extracted from model |
 | Overfitting | Model performs well in testing but poorly in production | High accuracy in evaluation, low accuracy on live data |
 
 #### Data Risks
@@ -35,7 +35,7 @@ For each AI system in scope, identify risks across these categories:
 | Training data quality | Poor quality data leads to poor model performance | Incomplete labels cause systematic errors |
 | Data poisoning | Attacker inserts malicious training data to manipulate model behaviour | Supply chain compromise of training dataset |
 | Privacy in training data | Training data contains PII or sensitive data unlawfully | Medical data used for AI training without lawful basis |
-| Data representativeness | Training data doesn't represent the deployment population | Model trained on US data deployed globally — cultural bias |
+| Data representativeness | Training data doesn't represent the deployment population | Model trained on US data deployed globally - cultural bias |
 | Data provenance gaps | Origin and rights for training data unknown | Copyright or licence violations in training data |
 
 #### Operational Risks
@@ -53,14 +53,14 @@ For each AI system in scope, identify risks across these categories:
 | Third-party model risk | Pre-trained model from vendor contains bias or backdoor | Open-source LLM used without bias evaluation |
 | API dependency | AI functionality depends on external API with reliability risk | Vendor changes model behaviour mid-contract |
 | Vendor lock-in | Cannot switch AI provider without major operational disruption | All AI inference tied to single cloud provider |
-| Third-party data handling | AI vendor handles sensitive data — data protection risk | Vendor uses customer data to retrain models without consent |
+| Third-party data handling | AI vendor handles sensitive data - data protection risk | Vendor uses customer data to retrain models without consent |
 
 #### Regulatory and Reputational Risks
 | Risk | Description | Example |
 |------|-------------|---------|
 | Regulatory non-compliance | AI system violates applicable law | EU AI Act high-risk AI system deployed without conformity assessment |
 | Reputational harm | AI system behaviour causes public trust damage | Discriminatory AI hiring tool exposed in media |
-| Liability | Organisation liable for AI system harm to individuals | AI medical diagnosis system misses condition — clinical liability |
+| Liability | Organisation liable for AI system harm to individuals | AI medical diagnosis system misses condition - clinical liability |
 
 ---
 
@@ -137,7 +137,7 @@ R-001 | Loan_Approval_Model_v2 | Model - Bias | Model may produce discriminatory
 ## Part 2: AI System Impact Assessment (AISIA)
 
 ### Purpose
-The AISIA takes a **stakeholder and societal lens** — it assesses impacts on individuals, groups, and society from the AI system's outputs and decisions. This is mandatory under Clause 6.1.2 and directly referenced in Annex A.5 (controls A.5.2–A.5.5).
+The AISIA takes a **stakeholder and societal lens** - it assesses impacts on individuals, groups, and society from the AI system's outputs and decisions. This is mandatory under Clause 6.1.4 (operationalised in Clause 8.4) and directly referenced in Annex A.5 (controls A.5.2–A.5.5).
 
 ### When to Conduct an AISIA
 - **Before initial deployment** of any AI system in scope
@@ -157,7 +157,7 @@ The AISIA takes a **stakeholder and societal lens** — it assesses impacts on i
 | Intended purpose | What the system is designed to do |
 | Output type | Decision support / Autonomous decision / Content generation / Classification / Prediction / Recommendation / Other |
 | Inputs | What data is fed into the system |
-| Deployment context | Where and how used — internal/customer-facing/regulatory context |
+| Deployment context | Where and how used - internal/customer-facing/regulatory context |
 | Operating conditions | Conditions under which system is expected to perform correctly |
 
 **Step 2: Identify Affected Populations**
@@ -234,16 +234,16 @@ Review Date: [date]
 | **Key question** | What could go wrong for the organisation? | Who could be harmed and how? |
 | **Output** | Risk register; risk treatment plan | Impact classification; control requirements |
 | **Feeds into** | SoA control selection; risk treatment plan | Transparency obligations; human oversight design |
-| **Mandatory** | Yes (Clause 6.1.2) | Yes (Clause 6.1.2) |
+| **Mandatory** | Yes (Clause 6.1.2) | Yes (Clause 6.1.4) |
 | **Repeated when** | AI system changes; annually recommended | AI system changes; on defined review cycle |
 
-**Important:** A risk that is Low for the organisation may be High impact for individuals (e.g., an AI system with low organisational risk of failure but high impact on vulnerable individuals when it does fail). Both assessments are always required — one does not substitute for the other.
+**Important:** A risk that is Low for the organisation may be High impact for individuals (e.g., an AI system with low organisational risk of failure but high impact on vulnerable individuals when it does fail). Both assessments are always required - one does not substitute for the other.
 
 ---
 
 ## Part 4: Integration with EU AI Act
 
-ISO 42001 AISIA aligns closely with **EU AI Act Fundamental Rights Impact Assessment (FRIA)** requirements for high-risk AI systems. Organisations preparing for EU AI Act compliance can use their 42001 AISIA as a foundation — extending it to cover the specific FRIA requirements for EU high-risk AI system categories:
+ISO 42001 AISIA aligns closely with **EU AI Act Fundamental Rights Impact Assessment (FRIA)** requirements for high-risk AI systems. Organisations preparing for EU AI Act compliance can use their 42001 AISIA as a foundation - extending it to cover the specific FRIA requirements for EU high-risk AI system categories:
 
 | EU AI Act Category | ISO 42001 AISIA Overlap |
 |-------------------|------------------------|

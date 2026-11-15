@@ -1,4 +1,4 @@
-# ISO 27001:2022 Annex A — All 93 Controls
+# ISO 27001:2022 Annex A - All 93 Controls
 
 ## Table of Contents
 - [A.5 Organisational Controls (37 controls)](#a5-organisational-controls)
@@ -40,7 +40,7 @@
 | A.5.26 | Response to information security incidents | Respond to incidents per documented procedures |
 | A.5.27 | Learning from information security incidents | Use knowledge from incidents to improve controls |
 | A.5.28 | Collection of evidence | Define procedures for identifying, collecting, and preserving evidence |
-| A.5.29 | Information security during disruption ⭐NEW | Plan for maintaining IS during disruption |
+| A.5.29 | Information security during disruption | Plan for maintaining IS during disruption (derived from 2013 A.17.1.x, not a new 2022 control) |
 | A.5.30 | ICT readiness for business continuity ⭐NEW | Plan, implement, monitor ICT continuity |
 | A.5.31 | Legal, statutory, regulatory and contractual requirements | Identify and document legal/regulatory requirements |
 | A.5.32 | Intellectual property rights | Protect intellectual property per legal requirements |

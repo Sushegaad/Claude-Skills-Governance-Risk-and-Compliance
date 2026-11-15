@@ -20,7 +20,7 @@ Policy ID:        [e.g., ISP-001]
 Version:          [e.g., 1.2]
 Effective Date:   [Date]
 Last Reviewed:    [Date]
-Next Review Date: [Date — maximum 12 months from last review]
+Next Review Date: [Date - maximum 12 months from last review]
 Policy Owner:     [Role]
 Approved By:      [Executive/leadership role + name]
 TSC Criteria:     [e.g., CC1.1, CC2.1, CC5.3]
@@ -28,14 +28,14 @@ TSC Criteria:     [e.g., CC1.1, CC2.1, CC5.3]
 
 ### Required Sections (every policy)
 
-1. **Purpose** — Why this policy exists; what it protects
-2. **Scope** — Who and what systems it applies to (be explicit)
-3. **Policy Statements** — The actual rules (use "must", not "should")
-4. **Roles and Responsibilities** — Who enforces it, who complies
-5. **Exceptions** — How to request an exception; who approves
-6. **Enforcement** — Consequences of non-compliance
-7. **Related Documents** — Links to procedures, standards, other policies
-8. **Review and Revision History** — Version log
+1. **Purpose** - Why this policy exists; what it protects
+2. **Scope** - Who and what systems it applies to (be explicit)
+3. **Policy Statements** - The actual rules (use "must", not "should")
+4. **Roles and Responsibilities** - Who enforces it, who complies
+5. **Exceptions** - How to request an exception; who approves
+6. **Enforcement** - Consequences of non-compliance
+7. **Related Documents** - Links to procedures, standards, other policies
+8. **Review and Revision History** - Version log
 
 ### Language Standards
 
@@ -65,10 +65,10 @@ TSC Criteria:     [e.g., CC1.1, CC2.1, CC5.3]
 ---
 
 ### 2. Access Control Policy
-**Criteria:** CC6.1, CC6.2, CC6.3, CC6.4, CC6.5, CC6.6  
+**Criteria:** CC6.1, CC6.2, CC6.3, CC6.6 (physical access restriction is CC6.4 and secure asset disposal is CC6.5 - cover those in a physical security policy and the data classification/disposal requirements below)  
 **Must include:**
 - Principles: least privilege, need-to-know, separation of duties
-- MFA requirements (which systems require it — be specific)
+- MFA requirements (which systems require it - be specific)
 - Provisioning process: how access is requested, approved, granted
 - Termination process: timeline for de-provisioning (e.g., within 24 hours)
 - Privileged access: how admin/root access is controlled and reviewed
@@ -78,7 +78,7 @@ TSC Criteria:     [e.g., CC1.1, CC2.1, CC5.3]
 ---
 
 ### 3. Incident Response Policy
-**Criteria:** CC7.3, CC7.4, CC2.3  
+**Criteria:** CC7.3, CC7.4, CC7.5, CC2.3  
 **Must include:**
 - Incident classification levels (with examples: P1–P4 or Critical/High/Medium/Low)
 - Roles: Incident Commander, responders, communications lead
@@ -158,7 +158,7 @@ Severity 4 (Low): Security policy violations, phishing attempts (no compromise),
 ---
 
 ### 8. Data Classification Policy
-**Criteria:** C1.1, P3, CC6.7  
+**Criteria:** C1.1, C1.2, P3, CC6.5, CC6.7  
 **Must include:**
 - Classification tiers (example: Public / Internal / Confidential / Restricted)
 - Definition of each tier with examples
@@ -223,7 +223,7 @@ Public:       Marketing materials, published docs, press releases.
 ---
 
 ### 12. Vulnerability Management Policy
-**Criteria:** CC7.1, CC7.5  
+**Criteria:** CC7.1  
 **Must include:**
 - Scanning frequency (e.g., weekly automated + quarterly penetration test)
 - Severity-based remediation SLAs:
@@ -239,16 +239,16 @@ Public:       Marketing materials, published docs, press releases.
 
 ## Common Mistakes to Avoid
 
-1. **Writing policies that describe the ideal, not the actual** — auditors test what you do, not what you aspirationally wrote. Only commit to what you'll consistently do.
+1. **Writing policies that describe the ideal, not the actual** - auditors test what you do, not what you aspirationally wrote. Only commit to what you'll consistently do.
 
-2. **No approval signatures** — policies must be formally approved by an appropriate executive or the board.
+2. **No approval signatures** - policies must be formally approved by an appropriate executive or the board.
 
-3. **Copy-paste from the internet** — boilerplate policies often contain controls you don't have. Every control stated must be evidenced.
+3. **Copy-paste from the internet** - boilerplate policies often contain controls you don't have. Every control stated must be evidenced.
 
-4. **Missing scope statements** — "this policy applies to all employees" may be incomplete if contractors, vendors, or specific systems need to be called out.
+4. **Missing scope statements** - "this policy applies to all employees" may be incomplete if contractors, vendors, or specific systems need to be called out.
 
-5. **Not distributing policies** — policies must be accessible to all in-scope personnel. Distribution evidence is required (e.g., intranet link, email announcement, acknowledgment log).
+5. **Not distributing policies** - policies must be accessible to all in-scope personnel. Distribution evidence is required (e.g., intranet link, email announcement, acknowledgment log).
 
-6. **Neglecting annual review** — dated policies are a flag. Every policy must have a documented review with any changes noted.
+6. **Neglecting annual review** - dated policies are a flag. Every policy must have a documented review with any changes noted.
 
-7. **Procedures missing from policies** — policies state *what* and *why*; procedures state *how*. Both are needed. "We will respond to incidents" without a runbook is a gap.
+7. **Procedures missing from policies** - policies state *what* and *why*; procedures state *how*. Both are needed. "We will respond to incidents" without a runbook is a gap.

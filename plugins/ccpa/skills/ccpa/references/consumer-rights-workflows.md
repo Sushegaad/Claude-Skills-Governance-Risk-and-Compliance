@@ -1,4 +1,4 @@
-# CCPA/CPRA Consumer Rights — Fulfillment Workflows
+# CCPA/CPRA Consumer Rights - Fulfillment Workflows
 
 ## General Request Handling Principles
 
@@ -39,7 +39,7 @@
 2. Verify consumer identity (2-point match for standard requests)
 3. Search PI systems using identifying data
 4. Compile responsive PI across all systems (CRM, analytics, ad tech, etc.)
-5. Apply exceptions — remove third-party trade secrets, conflicting legal holds
+5. Apply exceptions - remove third-party trade secrets, conflicting legal holds
 6. Deliver response in portable, readily usable format within 45 days
 7. Provide notice if extension is needed (within original 45-day window)
 
@@ -66,11 +66,11 @@
 3. Check if any exceptions apply; document reasoning if invoking an exception
 4. If proceeding with deletion: identify all PI records, propagate deletion to service providers and contractors
 5. Confirm deletion to consumer (or explain exception invoked) within 45 days
-6. Retain deletion request records (for proof of compliance) — note: retaining the request itself is not a contradiction
+6. Retain deletion request records (for proof of compliance) - note: retaining the request itself is not a contradiction
 
 ---
 
-## Right to Correct (§1798.106) — CPRA Addition
+## Right to Correct (§1798.106) - CPRA Addition
 
 **What the business must do:**
 - Take commercially reasonable steps to correct inaccurate PI
@@ -98,7 +98,7 @@
 
 **Mechanics:**
 - "Do Not Sell or Share My Personal Information" link must be prominently placed on homepage and in privacy policy
-- Must honor the **Global Privacy Control (GPC)** signal as a valid opt-out — the CPPA has confirmed GPC compliance is required
+- Must honor the **Global Privacy Control (GPC)** signal as a valid opt-out - the CPPA has confirmed GPC compliance is required
 - Once opted out, the business must wait **12 months** before asking the consumer to re-consent
 
 **Impact on advertising:**
@@ -114,7 +114,7 @@
 
 ---
 
-## Right to Limit Use of Sensitive Personal Information (§1798.121) — CPRA Addition
+## Right to Limit Use of Sensitive Personal Information (§1798.121) - CPRA Addition
 
 **Sensitive Personal Information (SPI) categories:**
 - Social Security numbers, driver's license, passport, other government IDs
@@ -138,7 +138,7 @@ Business may use SPI without offering limitation if the purpose is:
 
 **Workflow:**
 1. Provide "Limit the Use of My Sensitive Personal Information" link on homepage (alongside or combined with "Do Not Sell or Share" link)
-2. Consumer exercises right — no identity verification required beyond confirming consumer identity
+2. Consumer exercises right - no identity verification required beyond confirming consumer identity
 3. Process within **15 business days**
 4. Restrict use of SPI to only the permitted purposes listed above
 5. Propagate limitation to service providers and contractors
@@ -171,7 +171,6 @@ Consumers may designate an authorized agent to submit requests on their behalf. 
 
 ## Record-Keeping
 
-**CPRA requires businesses handling PI of 10M+ consumers/households** to maintain records of:
-- Consumer requests and responses for 24 months
-- Disclosures for 24 months
-- Training records for CCPA/CPRA compliance
+**All businesses** must maintain records of consumer requests and how they responded for at least **24 months** (11 CCR 7101). Records may include the request date, nature of the request, response date, nature of the response, and basis for any denial.
+
+**Businesses that handle PI of 10,000,000 or more consumers in a calendar year** (11 CCR 7102) have one additional duty: compile annual metrics on requests received, complied with, and denied (plus median/mean response times) and disclose them in the privacy policy (or a linked page) by **July 1** each year.

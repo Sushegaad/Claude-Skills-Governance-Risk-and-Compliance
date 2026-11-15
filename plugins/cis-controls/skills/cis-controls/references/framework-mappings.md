@@ -1,4 +1,4 @@
-# CIS Controls v8 — Framework Mapping Reference
+# CIS Controls v8 - Framework Mapping Reference
 
 ## CIS Controls v8 ↔ NIST CSF 2.0 (Detailed)
 
@@ -9,25 +9,25 @@
 | 2.1 | Software Inventory | Identify | Asset Management (ID.AM) | ID.AM-02, ID.AM-08 |
 | 2.2 | Supported Software | Govern | Policy (GV.PO) | GV.PO-01 |
 | 3.1 | Data Management Process | Govern | Policy (GV.PO) | GV.PO-01, GV.PO-02 |
-| 3.3 | Data Access Control Lists | Protect | Data Security (PR.DS) | PR.DS-01, PR.DS-05 |
+| 3.3 | Data Access Control Lists | Protect | Identity Management, Authentication, and Access Control (PR.AA) | PR.AA-05 |
 | 3.6 | Encrypt End-User Devices | Protect | Data Security (PR.DS) | PR.DS-01 |
 | 3.10 | Encrypt Data in Transit | Protect | Data Security (PR.DS) | PR.DS-02 |
 | 3.11 | Encrypt Data at Rest | Protect | Data Security (PR.DS) | PR.DS-01 |
-| 3.13 | Data Loss Prevention | Protect | Data Security (PR.DS) | PR.DS-05 |
-| 4.1 | Secure Configuration Process | Protect | Configuration Management (PR.IP) | PR.IP-01, PR.IP-03 |
+| 3.13 | Data Loss Prevention | Protect | Data Security (PR.DS) | PR.DS-01, PR.DS-02 |
+| 4.1 | Secure Configuration Process | Protect | Platform Security (PR.PS) | PR.PS-01 |
 | 4.4 | Firewall on Servers | Protect | Network Security (PR.IR) | PR.IR-01 |
 | 5.4 | Separate Admin Accounts | Protect | Identity Management (PR.AA) | PR.AA-05 |
 | 6.3 | MFA External Applications | Protect | Identity Management (PR.AA) | PR.AA-03 |
 | 6.4 | MFA Remote Access | Protect | Identity Management (PR.AA) | PR.AA-03 |
 | 6.5 | MFA Admin Access | Protect | Identity Management (PR.AA) | PR.AA-05 |
-| 7.3 | OS Patch Management | Protect | Configuration Management (PR.IP) | PR.IP-12 |
+| 7.3 | OS Patch Management | Protect | Platform Security (PR.PS) | PR.PS-02 |
 | 7.5 | Internal Vulnerability Scans | Identify | Risk Assessment (ID.RA) | ID.RA-01 |
-| 7.7 | Remediate Vulnerabilities | Protect | Configuration Management (PR.IP) | PR.IP-12 |
+| 7.7 | Remediate Vulnerabilities | Protect | Platform Security (PR.PS) | PR.PS-02 |
 | 8.2 | Collect Audit Logs | Detect | Adverse Event Analysis (DE.AE) | DE.AE-02, DE.AE-03 |
 | 8.9 | Centralize Audit Logs | Detect | Adverse Event Analysis (DE.AE) | DE.AE-03 |
 | 8.11 | Log Reviews | Detect | Continuous Monitoring (DE.CM) | DE.CM-09 |
-| 9.3 | Email Anti-Spoofing | Protect | Platform Security (PR.PS) | PR.PS-05 |
-| 9.5 | DMARC | Protect | Platform Security (PR.PS) | PR.PS-05 |
+| 9.3 | Network-Based URL Filters | Protect | Platform Security (PR.PS) | PR.PS (category level) |
+| 9.5 | DMARC | Protect | Platform Security (PR.PS) | PR.PS (category level) |
 | 10.1 | Anti-Malware | Protect | Platform Security (PR.PS) | PR.PS-05 |
 | 10.7 | Behavior-Based AV | Detect | Continuous Monitoring (DE.CM) | DE.CM-09 |
 | 11.2 | Automated Backups | Recover | Incident Recovery Plan (RC.RP) | RC.RP-05 |
@@ -36,7 +36,7 @@
 | 13.1 | Security Event Alerting | Detect | Adverse Event Analysis (DE.AE) | DE.AE-06 |
 | 13.3 | Network Intrusion Detection | Detect | Continuous Monitoring (DE.CM) | DE.CM-01, DE.CM-06 |
 | 14.1 | Security Awareness Program | Protect | Awareness and Training (PR.AT) | PR.AT-01, PR.AT-02 |
-| 15.4 | Vendor Security Requirements | Identify | Supply Chain Risk (ID.SC) | ID.SC-02, ID.SC-04 |
+| 15.4 | Vendor Security Requirements | Govern | Supply Chain Risk Management (GV.SC) | GV.SC-05, GV.SC-07 |
 | 16.1 | Secure Dev Process | Protect | Application Security (PR.PS) | PR.PS-04 |
 | 17.4 | Incident Response Process | Respond | Incident Management (RS.MA) | RS.MA-01, RS.MA-02 |
 | 17.7 | IR Exercises | Respond | Incident Management (RS.MA) | RS.MA-05 |
@@ -73,7 +73,7 @@
 
 | CIS Control | CMMC Domain | NIST 800-171 Requirements |
 |------------|-------------|--------------------------|
-| 1 (Asset Inventory) | Asset Management / System Inventory | Not explicitly in 800-171 but implied by CM.3.068 |
+| 1 (Asset Inventory) | Asset Management / System Inventory | Not explicitly in 800-171 but implied by CM.L2-3.4.1 (baseline configurations include system inventory) |
 | 2 (Software Inventory) | Configuration Management (CM) | 3.4.1 (Baseline configurations), 3.4.2 (Configuration settings) |
 | 3 (Data Protection) | Media Protection (MP) | 3.8.1–3.8.9 |
 | 4 (Secure Config) | Configuration Management (CM) | 3.4.1, 3.4.2, 3.4.6, 3.4.7 |
@@ -90,7 +90,7 @@
 | 15 (Service Providers) | Supply Chain Risk not explicitly in 800-171 | Implied by CM and SI |
 | 16 (App Security) | System & Communications Protection (SC) | 3.13.10, 3.13.16 |
 | 17 (Incident Response) | Incident Response (IR) | 3.6.1, 3.6.2, 3.6.3 |
-| 18 (Pen Testing) | Not explicitly in CMMC L2, required at L3 | NIST SP 800-172: 2.11.3 |
+| 18 (Pen Testing) | Not explicitly in CMMC L2, required at L3 | NIST SP 800-172: 3.12.1e |
 
 ---
 
@@ -131,7 +131,7 @@
 | Req 6: Develop/maintain secure systems | 16 |
 | Req 7: Restrict access by business need | 6 |
 | Req 8: Identify users and authenticate access | 5, 6 |
-| Req 9: Restrict physical access | (Physical — not covered by CIS Controls) |
+| Req 9: Restrict physical access | (Physical - not covered by CIS Controls) |
 | Req 10: Log and monitor all access | 8 |
 | Req 11: Test system/network security | 7, 18 |
 | Req 12: Support information security | 1, 2, 14, 15, 17 |

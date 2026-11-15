@@ -10,10 +10,10 @@ Source: NIST CSF 2.0 (February 2024) and CSF 1.1 (April 2018)
 |--------|---------|---------|
 | Functions | 5 (ID, PR, DE, RS, RC) | 6 (+ **GV: Govern**) |
 | Total subcategories | 108 | 106 |
-| Govern function | Embedded across ID/PR | Standalone — 6 categories, 23 subcategories |
-| Supply chain risk | ID.SC (5 subcategories) | GV.SC (10 subcategories) — significantly expanded |
-| Profiles | Basic concept | Strengthened — org profile templates, community profiles |
-| Tiers | 4 tiers | 4 tiers — refined descriptions |
+| Govern function | Embedded across ID/PR | Standalone - 6 categories, 31 subcategories |
+| Supply chain risk | ID.SC (5 subcategories) | GV.SC (10 subcategories) - significantly expanded |
+| Profiles | Basic concept | Strengthened - org profile templates, community profiles |
+| Tiers | 4 tiers | 4 tiers - refined descriptions |
 | Informative References | Embedded | Moved to online NIST Reference Tool (searchable) |
 | Audience | Critical infrastructure primary | All sectors, all sizes explicitly |
 | Quick Start Guides | None | Added for: SMBs, enterprise risk managers, government |
@@ -135,7 +135,7 @@ Use this checklist when transitioning an existing CSF 1.1 implementation:
 
 ## CSF Version Coexistence
 
-Organizations with CSF 1.1 implementations do not need to immediately migrate — CSF 2.0 is backward compatible in intent. The key practical changes are:
+Organizations with CSF 1.1 implementations do not need to immediately migrate - CSF 2.0 is backward compatible in intent. The key practical changes are:
 
 1. **Govern is not optional**: If your organization has governance practices embedded in ID or PR, map them to the new GV function explicitly
 2. **Supply chain is a first-class concern**: ID.SC (5 subcategories) must be expanded to GV.SC (10 subcategories)

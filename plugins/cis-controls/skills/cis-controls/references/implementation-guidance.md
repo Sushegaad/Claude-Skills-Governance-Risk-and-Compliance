@@ -1,4 +1,4 @@
-# CIS Controls v8 — Implementation Guidance
+# CIS Controls v8 - Implementation Guidance
 
 ## Getting Started: The Prioritization Principle
 
@@ -13,7 +13,7 @@ Start with IG1 completely before moving to IG2. IG1 is the minimum acceptable ba
 
 ---
 
-## Implementation Group 1 (IG1) — Essential Cyber Hygiene
+## Implementation Group 1 (IG1) - Essential Cyber Hygiene
 
 **Target audience:** Organizations with limited IT resources, small teams, commercially available products
 **Goal:** Defend against opportunistic, non-targeted attacks (the majority of incidents affecting small organizations)
@@ -21,87 +21,88 @@ Start with IG1 completely before moving to IG2. IG1 is the minimum acceptable ba
 ### IG1 Quick-Start Checklist (56 Safeguards)
 
 **Week 1-2: Know Your Assets**
-- [ ] Create hardware asset inventory (all computers, servers, printers, network devices) — Safeguard 1.1
-- [ ] Create software inventory (all installed applications) — Safeguard 2.1
-- [ ] Document all user accounts — Safeguard 5.1
-- [ ] Document all data types and where they are stored — Safeguard 3.2
+- [ ] Create hardware asset inventory (all computers, servers, printers, network devices) - Safeguard 1.1
+- [ ] Create software inventory (all installed applications) - Safeguard 2.1
+- [ ] Document all user accounts - Safeguard 5.1
+- [ ] Document all data types and where they are stored - Safeguard 3.2
 
 **Week 3-4: Secure Configuration**
-- [ ] Enable host-based firewall on all workstations and servers — Safeguards 4.4, 4.5
-- [ ] Set screen lock timeout to 15 minutes — Safeguard 4.3
-- [ ] Change all default passwords on network devices, routers, and systems — Safeguard 4.7
-- [ ] Enable full-disk encryption on all laptops — Safeguard 3.6
+- [ ] Enable host-based firewall on all workstations and servers - Safeguards 4.4, 4.5
+- [ ] Set screen lock timeout to 15 minutes - Safeguard 4.3
+- [ ] Change all default passwords on network devices, routers, and systems - Safeguard 4.7
+- [ ] Enable full-disk encryption on all laptops - Safeguard 3.6
 
 **Month 2: Account and Access Controls**
-- [ ] Enforce strong password policy (14+ characters) — Safeguard 5.2
-- [ ] Separate admin accounts from day-to-day user accounts — Safeguard 5.4
-- [ ] Disable accounts unused for 90+ days — Safeguard 5.3
-- [ ] Define and document access request/revoke process — Safeguards 6.1, 6.2
+- [ ] Enforce strong password policy (14+ characters) - Safeguard 5.2
+- [ ] Separate admin accounts from day-to-day user accounts - Safeguard 5.4
+- [ ] Disable accounts unused for 90+ days - Safeguard 5.3
+- [ ] Define and document access request/revoke process - Safeguards 6.1, 6.2
+- [ ] Require MFA for externally-exposed applications, remote network access, and admin access (Safeguards 6.3, 6.4, 6.5)
 
 **Month 2: Patch Management**
-- [ ] Enable automatic OS updates on all endpoints — Safeguard 7.3
-- [ ] Enable automatic application updates (browsers, Office, etc.) — Safeguard 7.4
-- [ ] Define a remediation SLA (e.g., critical patches within 15 days) — Safeguard 7.2
+- [ ] Enable automatic OS updates on all endpoints - Safeguard 7.3
+- [ ] Enable automatic application updates (browsers, Office, etc.) - Safeguard 7.4
+- [ ] Define a remediation SLA (e.g., critical patches within 15 days) - Safeguard 7.2
 
 **Month 3: Backups, Training, Incident Response**
-- [ ] Implement automated, tested backups (3-2-1 rule) — Safeguard 11.2, 11.4
-- [ ] Conduct security awareness training for all employees — Safeguard 14.1, 14.2
-- [ ] Document a basic incident response procedure — Safeguard 17.4
-- [ ] Enable and retain basic audit logs (auth events, admin actions) — Safeguards 8.1, 8.2
+- [ ] Implement automated, tested, protected backups (3-2-1 rule) - Safeguards 11.2, 11.3, 11.4
+- [ ] Conduct security awareness training for all employees - Safeguard 14.1, 14.2
+- [ ] Designate incident handling personnel and document the incident reporting process - Safeguards 17.1, 17.2, 17.3
+- [ ] Enable and retain basic audit logs with adequate storage (auth events, admin actions) - Safeguards 8.1, 8.2, 8.3
 
 ---
 
-## Implementation Group 2 (IG2) — Intermediate Controls
+## Implementation Group 2 (IG2) - Intermediate Controls
 
 **Target audience:** Organizations with dedicated IT staff, sensitive data, moderate risk tolerance
 **Goal:** Defend against more sophisticated, targeted attacks; comply with common regulatory frameworks
 
 ### Key IG2 Additions Beyond IG1
 
-**MFA Everywhere (Control 6)**
-- Deploy MFA on all externally accessible systems (VPN, webmail, SaaS, remote access) — Safeguard 6.3
-- Require MFA for administrative access — Safeguard 6.5
+**MFA Hardening (Control 6)**
+- Note: MFA safeguards 6.3, 6.4, and 6.5 are IG1 requirements; IG2 builds on them
+- Inventory authentication/authorization systems and centralize access control (Safeguards 6.6, 6.7)
 - Phishing-resistant MFA (FIDO2/hardware keys) for privileged users
 
 **Application Allowlisting (Control 2)**
 - Implement application allowlisting via Microsoft AppLocker, WDAC, or Carbon Black
-- Allowlist approved scripts (PowerShell Constrained Language Mode) — Safeguard 2.7
-- Block unauthorized DLLs and libraries — Safeguard 2.6
+- Allowlist approved scripts (PowerShell Constrained Language Mode) - Safeguard 2.7 (IG3)
+- Block unauthorized DLLs and libraries - Safeguard 2.6
 
 **Vulnerability Scanning (Control 7)**
 - Deploy authenticated vulnerability scanner (Nessus, Qualys, Tenable, Rapid7)
-- Weekly authenticated scans of all internal assets — Safeguard 7.5
-- Monthly scans of external attack surface — Safeguard 7.6
-- Track and remediate findings per SLA — Safeguard 7.7
+- Weekly authenticated scans of all internal assets - Safeguard 7.5
+- Monthly scans of external attack surface - Safeguard 7.6
+- Track and remediate findings per SLA - Safeguard 7.7
 
 **SIEM and Log Centralization (Control 8)**
-- Deploy SIEM or log aggregation platform — Safeguard 8.9
-- Collect: Windows event logs (4624, 4625, 4648, 4720, 4728), Linux auth.log, firewall deny logs, DNS, VPN — Safeguard 8.5
-- Retain logs for minimum 12 months — Safeguard 8.10
-- Enable NTP synchronization across all assets — Safeguard 8.4
+- Deploy SIEM or log aggregation platform - Safeguard 8.9
+- Collect: Windows event logs (4624, 4625, 4648, 4720, 4728), Linux auth.log, firewall deny logs, DNS, VPN - Safeguard 8.5
+- Retain logs for minimum 12 months - Safeguard 8.10
+- Enable NTP synchronization across all assets - Safeguard 8.4
 
 **Email Security (Control 9)**
-- Implement DMARC policy (start with p=none monitoring, move to p=quarantine/reject) — Safeguard 9.5
-- Deploy email filtering with sandboxing — Safeguard 9.7
-- Block dangerous attachment types (.exe, .js, .vbs, .bat, .macro-enabled Office) — Safeguard 9.6
+- Implement DMARC policy (start with p=none monitoring, move to p=quarantine/reject) - Safeguard 9.5
+- Deploy email filtering with sandboxing - Safeguard 9.7
+- Block dangerous attachment types (.exe, .js, .vbs, .bat, .macro-enabled Office) - Safeguard 9.6
 
 **EDR/Next-Gen AV (Control 10)**
-- Replace signature-only AV with EDR/XDR (CrowdStrike, SentinelOne, Microsoft Defender for Endpoint) — Safeguard 10.7
-- Enable behavioral analysis and memory protection — Safeguard 10.5
+- Replace signature-only AV with EDR/XDR (CrowdStrike, SentinelOne, Microsoft Defender for Endpoint) - Safeguard 10.7
+- Enable behavioral analysis and memory protection - Safeguard 10.5
 
 **Network Architecture (Control 12)**
-- Segment network by function (servers, workstations, IoT, guest Wi-Fi) — Safeguard 12.2
-- Implement DMZ for externally accessible services — Safeguard 12.2
-- Deploy Next-Gen Firewall with deep packet inspection — Safeguard 12.2
+- Segment network by function (servers, workstations, IoT, guest Wi-Fi) - Safeguard 12.2
+- Implement DMZ for externally accessible services - Safeguard 12.2
+- Deploy Next-Gen Firewall with deep packet inspection - Safeguard 12.2
 
 **Vendor Risk Management (Control 15)**
-- Classify all service providers by data access and criticality — Safeguard 15.3
-- Include security requirements in all vendor contracts — Safeguard 15.4
-- Conduct annual vendor risk assessments for critical suppliers — Safeguard 15.5
+- Classify all service providers by data access and criticality - Safeguard 15.3
+- Include security requirements in all vendor contracts - Safeguard 15.4
+- Conduct annual vendor risk assessments for critical suppliers - Safeguard 15.5
 
 ---
 
-## Implementation Group 3 (IG3) — Advanced Controls
+## Implementation Group 3 (IG3) - Advanced Controls
 
 **Target audience:** Large enterprises with security teams, sensitive regulated data, high-value targets
 **Goal:** Defend against sophisticated, persistent adversaries; maintain continuous security operations
@@ -109,29 +110,29 @@ Start with IG1 completely before moving to IG2. IG1 is the minimum acceptable ba
 ### Key IG3 Capabilities
 
 **Penetration Testing (Control 18)**
-- External pen test: Annual minimum; quarterly for high-risk targets — Safeguard 18.2
-- Internal pen test: Semi-annual — Safeguard 18.5
-- Red team exercises with full adversary simulation — beyond base CIS scope
-- Purple team exercises — combine red team and SOC for knowledge transfer
+- External pen test: Annual minimum; quarterly for high-risk targets - Safeguard 18.2
+- Internal pen test: Semi-annual - Safeguard 18.5
+- Red team exercises with full adversary simulation - beyond base CIS scope
+- Purple team exercises - combine red team and SOC for knowledge transfer
 
 **Advanced Network Defense (Control 13)**
-- Deploy Network Detection and Response (NDR/NTA) solution — Safeguard 13.3
+- Deploy Network Detection and Response (NDR/NTA) solution - Safeguard 13.3
 - Implement SOAR for automated incident response playbooks
-- HIPS on all servers — Safeguard 13.7
-- Tune SIEM alert thresholds to reduce false positives — Safeguard 13.11
+- HIPS on all servers - Safeguard 13.7
+- Tune SIEM alert thresholds to reduce false positives - Safeguard 13.11
 - Threat hunting program: proactive analysis for unknown threats
 
 **Application Security (Control 16)**
-- SAST integrated into CI/CD pipeline (pre-commit, PR gate) — Safeguard 16.12
-- DAST for deployed applications (OWASP ZAP, Burp Suite) — Safeguard 16.12
-- SCA for third-party components (Snyk, Black Duck) — related to 16.5
-- Threat modeling for new features and applications — Safeguard 16.14
-- Bug bounty program or responsible disclosure policy — related to 16.4
+- SAST integrated into CI/CD pipeline (pre-commit, PR gate) - Safeguard 16.12
+- DAST for deployed applications (OWASP ZAP, Burp Suite) - Safeguard 16.12
+- SCA for third-party components (Snyk, Black Duck) - related to 16.5
+- Threat modeling for new features and applications - Safeguard 16.14
+- Bug bounty program or responsible disclosure policy - related to 16.4
 
 **Data Protection (Control 3)**
-- Deploy DLP across email, endpoints, and cloud — Safeguard 3.13
-- Segment data stores by sensitivity — Safeguard 3.12
-- Log all access to sensitive data — Safeguard 3.14
+- Deploy DLP across email, endpoints, and cloud - Safeguard 3.13
+- Segment data stores by sensitivity - Safeguard 3.12
+- Log all access to sensitive data - Safeguard 3.14
 
 ---
 
@@ -147,7 +148,7 @@ Start with IG1 completely before moving to IG2. IG1 is the minimum acceptable ba
 
 ### Pitfall 3: Ignoring cloud assets
 **Problem:** Cloud VMs, SaaS apps, cloud storage not included in inventory or scans
-**Solution:** CIS Controls v8 explicitly addresses cloud assets — include in all inventories; use CSPM tools (Wiz, Prisma, Defender for Cloud)
+**Solution:** CIS Controls v8 explicitly addresses cloud assets - include in all inventories; use CSPM tools (Wiz, Prisma, Defender for Cloud)
 
 ### Pitfall 4: MFA deployment gaps
 **Problem:** MFA enabled on some systems but not others; SMS OTP used for privileged access
@@ -179,8 +180,8 @@ Start with IG1 completely before moving to IG2. IG1 is the minimum acceptable ba
 | Metric | Target | Frequency |
 |--------|--------|-----------|
 | % external systems with MFA | 100% | Monthly |
-| Mean Time to Patch (MTTP) — Critical | ≤ 15 days | Monthly |
-| Mean Time to Patch (MTTP) — High | ≤ 30 days | Monthly |
+| Mean Time to Patch (MTTP) - Critical | ≤ 15 days | Monthly |
+| Mean Time to Patch (MTTP) - High | ≤ 30 days | Monthly |
 | SIEM alert response rate | ≥ 90% actioned | Weekly |
 | Phishing click rate (simulation) | ≤ 5% | Quarterly |
 | Vendor assessments completed | 100% of critical | Annual |

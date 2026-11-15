@@ -1,19 +1,19 @@
-# ESRS Standards — Detailed Reference
+# ESRS Standards - Detailed Reference
 
 ## Cross-Cutting Standards (Mandatory for All In-Scope Companies)
 
 ---
 
-### ESRS 1 — General Requirements
+### ESRS 1 - General Requirements
 
-**Purpose:** Sets the foundations for CSRD reporting — principles, structure, and the double materiality concept.
+**Purpose:** Sets the foundations for CSRD reporting - principles, structure, and the double materiality concept.
 
 **Key Requirements:**
 
 **Reporting Principles (paras. 1–18)**
 - Relevance, faithful representation, comparability, verifiability, understandability
-- Materiality-based reporting — only report what is material after DMA
-- Connected information — sustainability information must connect to financial statements
+- Materiality-based reporting - only report what is material after DMA
+- Connected information - sustainability information must connect to financial statements
 
 **Double Materiality (paras. 19–44)**
 - Two perspectives: impact materiality + financial materiality
@@ -39,13 +39,27 @@
 
 ---
 
-### ESRS 2 — General Disclosures
+### ESRS 2 - General Disclosures
 
 **Purpose:** Mandatory disclosures on governance, strategy, and risk management applicable to all in-scope companies regardless of DMA outcome.
 
-**Status:** Fully mandatory — cannot be omitted even if all topical standards are found non-material.
+**Status:** Fully mandatory - cannot be omitted even if all topical standards are found non-material.
 
-#### GOV — Governance
+ESRS 2 contains 12 disclosure requirements: BP-1, BP-2, GOV-1 to GOV-5, SBM-1 to SBM-3, IRO-1 and IRO-2.
+
+#### BP - Basis for Preparation
+
+**BP-1: General basis for preparation of the sustainability statement**
+- Scope of consolidation and whether it aligns with the financial statements
+- Extent of value chain coverage
+- Any use of the options to omit classified/sensitive information or intellectual property
+
+**BP-2: Disclosures in relation to specific circumstances**
+- Time horizons used, value chain estimation, and sources of estimation and outcome uncertainty
+- Changes in preparation or presentation of sustainability information
+- Reporting errors in prior periods and disclosures stemming from other legislation
+
+#### GOV - Governance
 
 **GOV-1: Role of the administrative, management and supervisory bodies**
 - Composition and diversity of governance bodies related to sustainability
@@ -69,7 +83,7 @@
 - Internal control framework for sustainability reporting
 - How risks of material misstatement in sustainability data are managed
 
-#### SBM — Strategy and Business Model
+#### SBM - Strategy and Business Model
 
 **SBM-1: Strategy, business model, and value chain**
 - Business model overview and key value drivers
@@ -88,7 +102,7 @@
 - Financial effects: current financial effects and anticipated financial effects of material IROs
 - Resilience of strategy under different scenarios
 
-#### IRO — Impacts, Risks and Opportunities
+#### IRO - Impacts, Risks and Opportunities
 
 **IRO-1: Description of the processes to identify and assess material impacts, risks and opportunities**
 - DMA methodology: scope, process, tools, assessment criteria
@@ -97,17 +111,20 @@
 - Stakeholders consulted and how their input was used
 - Any sector-specific guidance applied
 
+**IRO-2: Disclosure requirements in ESRS covered by the undertaking's sustainability statement**
+- List of the ESRS disclosure requirements complied with, following the outcome of the DMA
+- Index of where each disclosure is located in the sustainability statement
+- Explanation of topics assessed as non-material
+
 ---
 
 ## Environmental Standards
 
-### ESRS E1 — Climate Change
+### ESRS E1 - Climate Change
 
-**Applicability:** Apply if material after DMA. Climate is presumed material for most large companies — requires compelling justification to omit.
+**Applicability:** Apply if material after DMA. Climate is presumed material for most large companies - requires compelling justification to omit.
 
-**Mandatory Datapoints Regardless of Materiality:**
-- E1-1: Transition plan for climate change mitigation (Art. 19a(2)(a) — legally required even if topic found non-material)
-- Energy consumption from fossil fuels (ESRS E1-5, para. 40)
+**Materiality note (ESRS 1 para 32):** an undertaking that concludes climate change is not material may omit ALL E1 disclosure requirements, including E1-1 (transition plan) and E1-5 (energy consumption and mix, incl. the fossil-fuel datapoint), provided it discloses a detailed explanation of the conclusions of its materiality assessment for climate change.
 
 **Key Disclosures:**
 
@@ -166,27 +183,27 @@
 
 ---
 
-### ESRS E2 — Pollution
+### ESRS E2 - Pollution
 
-**Applicability:** Apply if material — manufacturing, chemicals, mining, agriculture sectors most likely.
+**Applicability:** Apply if material - manufacturing, chemicals, mining, agriculture sectors most likely.
 
 **Key Disclosures:**
 - **E2-1:** Policies related to pollution
 - **E2-2:** Actions and resources to prevent/control pollution
 - **E2-3:** Targets related to pollution
-- **E2-4:** Pollution of air, water, soil — by pollutant type and medium
+- **E2-4:** Pollution of air, water, soil - by pollutant type and medium
   - Substances of Very High Concern (SVHC) under REACH Regulation
   - Persistent Organic Pollutants (POPs)
   - NOx, SOx, PM2.5 emissions
   - Wastewater discharges by type and receiving body
-- **E2-5:** Substances of concern — use, release, incidents
+- **E2-5:** Substances of concern - use, release, incidents
 - **E2-6:** Anticipated financial effects from pollution-related risks and opportunities
 
 ---
 
-### ESRS E3 — Water and Marine Resources
+### ESRS E3 - Water and Marine Resources
 
-**Applicability:** Apply if material — agriculture, food & beverage, mining, textiles, electronics most likely.
+**Applicability:** Apply if material - agriculture, food & beverage, mining, textiles, electronics most likely.
 
 **Key Disclosures:**
 - **E3-1:** Policies related to water and marine resources
@@ -201,41 +218,41 @@
 
 ---
 
-### ESRS E4 — Biodiversity and Ecosystems
+### ESRS E4 - Biodiversity and Ecosystems
 
-**Applicability:** Apply if material — sites in or adjacent to biodiversity-sensitive areas, land use change, supply chains impacting biodiversity.
+**Applicability:** Apply if material - sites in or adjacent to biodiversity-sensitive areas, land use change, supply chains impacting biodiversity.
 
 **Key Disclosures:**
 - **E4-1:** Transition plan and consideration of biodiversity and ecosystems in strategy and business model
 - **E4-2:** Policies related to biodiversity and ecosystems
 - **E4-3:** Actions and resources related to biodiversity and ecosystems
 - **E4-4:** Targets related to biodiversity and ecosystems
-- **E4-5:** Impact metrics related to biodiversity and ecosystems change — land use, ecosystem fragmentation, invasive species
+- **E4-5:** Impact metrics related to biodiversity and ecosystems change - land use, ecosystem fragmentation, invasive species
 - **E4-6:** Anticipated financial effects from biodiversity and ecosystem-related risks
 
 **Key metric:** Sites owned, leased, or managed in or near protected areas / key biodiversity areas.
 
 ---
 
-### ESRS E5 — Resource Use and Circular Economy
+### ESRS E5 - Resource Use and Circular Economy
 
-**Applicability:** Apply if material — manufacturing, retail, packaging, construction, electronics most likely.
+**Applicability:** Apply if material - manufacturing, retail, packaging, construction, electronics most likely.
 
 **Key Disclosures:**
 - **E5-1:** Policies related to resource use and circular economy
 - **E5-2:** Actions and resources related to resource use and circular economy
 - **E5-3:** Targets related to resource use and circular economy
-- **E5-4:** Resource inflows — material consumption, virgin materials, renewable vs. non-renewable
-- **E5-5:** Resource outflows — waste by type (hazardous/non-hazardous) and disposal method (recycling, landfill, incineration); by-products and secondary raw materials
+- **E5-4:** Resource inflows - material consumption, virgin materials, renewable vs. non-renewable
+- **E5-5:** Resource outflows - waste by type (hazardous/non-hazardous) and disposal method (recycling, landfill, incineration); by-products and secondary raw materials
 - **E5-6:** Anticipated financial effects from resource use and circular economy transition risks/opportunities
 
 ---
 
 ## Social Standards
 
-### ESRS S1 — Own Workforce
+### ESRS S1 - Own Workforce
 
-**Applicability:** Apply if material — workforce impacts are typically material for most large companies.
+**Applicability:** Apply if material - workforce impacts are typically material for most large companies.
 
 **Phase-in:** Gender pay gap and some workforce metrics have phase-in provisions for first-year reporters.
 
@@ -251,7 +268,7 @@
 
 **S1-6:** Characteristics of the undertaking's employees
 - Total number of employees
-- Breakdown: by gender, by country (for companies ≥1,000 employees in a country — if applicable), by employment type (permanent/temporary), by employment regime (full-time/part-time)
+- Breakdown: by gender, by country (for companies ≥1,000 employees in a country - if applicable), by employment type (permanent/temporary), by employment regime (full-time/part-time)
 - Number of non-employee workers (contractors, agency staff)
 
 **S1-7:** Characteristics of non-employees in the undertaking's own workforce
@@ -264,7 +281,7 @@
 - % female employees (total workforce + management levels)
 - % employees by age group (<30, 30-50, >50)
 
-**S1-10:** Adequate wages — alignment with living wage benchmarks
+**S1-10:** Adequate wages - alignment with living wage benchmarks
 
 **S1-11:** Social protection coverage
 
@@ -278,21 +295,26 @@
 **S1-14:** Health and safety
 - % employees covered by health & safety management system (ISO 45001 or equivalent)
 - Number of work-related fatalities (employees and non-employees)
-- Lost Time Injury Frequency Rate (LTIFR) — per 1 million hours worked
+- Lost Time Injury Frequency Rate (LTIFR) - per 1 million hours worked
 - Number of recordable work-related accidents
 - Work-related ill health cases
 
-**S1-15:** Work-life balance — parental leave uptake rates by gender
+**S1-15:** Work-life balance - parental leave uptake rates by gender
 
 **S1-16:** Compensation metrics
 - CEO pay ratio (CEO total remuneration / median employee total remuneration)
 - Gender pay gap (median remuneration women vs. men, %)
 
+**S1-17:** Incidents, complaints and severe human rights impacts
+- Work-related incidents of discrimination, including harassment
+- Complaints filed through channels for own workforce and to National Contact Points for the OECD Guidelines
+- Severe human rights incidents connected to the workforce, and related fines, penalties and compensation
+
 ---
 
-### ESRS S2 — Workers in the Value Chain
+### ESRS S2 - Workers in the Value Chain
 
-**Applicability:** Apply if material — companies with complex supply chains in high-risk sectors (garments, electronics, agriculture) most likely material.
+**Applicability:** Apply if material - companies with complex supply chains in high-risk sectors (garments, electronics, agriculture) most likely material.
 
 **Key Disclosures:**
 - **S2-1:** Policies related to workers in the value chain
@@ -305,9 +327,9 @@
 
 ---
 
-### ESRS S3 — Affected Communities
+### ESRS S3 - Affected Communities
 
-**Applicability:** Apply if material — extractives, infrastructure, large land users, operations in indigenous territories.
+**Applicability:** Apply if material - extractives, infrastructure, large land users, operations in indigenous territories.
 
 **Key Disclosures:**
 - **S3-1:** Policies related to affected communities
@@ -320,9 +342,9 @@
 
 ---
 
-### ESRS S4 — Consumers and End-Users
+### ESRS S4 - Consumers and End-Users
 
-**Applicability:** Apply if material — B2C companies, healthcare, financial services, digital platforms, food/beverage most likely.
+**Applicability:** Apply if material - B2C companies, healthcare, financial services, digital platforms, food/beverage most likely.
 
 **Key Disclosures:**
 - **S4-1:** Policies related to consumers and end-users
@@ -337,9 +359,9 @@
 
 ## Governance Standards
 
-### ESRS G1 — Business Conduct
+### ESRS G1 - Business Conduct
 
-**Applicability:** Apply if material — typically material for most large companies given breadth of topics.
+**Applicability:** Apply if material - typically material for most large companies given breadth of topics.
 
 **Key Disclosures:**
 

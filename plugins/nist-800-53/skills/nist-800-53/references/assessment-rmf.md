@@ -1,14 +1,14 @@
-# NIST SP 800-53 — Assessment, RMF, ConMon, and Framework Mapping Reference
+# NIST SP 800-53 - Assessment, RMF, ConMon, and Framework Mapping Reference
 
-## SP 800-53A Rev 5 — Assessment Procedures
+## SP 800-53A Rev 5 - Assessment Procedures
 
 ### Purpose
 
 SP 800-53A Rev 5 (January 2022) provides **assessment procedures** for every control in SP 800-53 Rev 5. Each procedure specifies:
 
-1. **Objectives** — what the assessment must determine
-2. **Methods** — Examine, Interview, or Test
-3. **Objects** — what to examine/interview/test
+1. **Objectives** - what the assessment must determine
+2. **Methods** - Examine, Interview, or Test
+3. **Objects** - what to examine/interview/test
 
 ### The Three Assessment Methods
 
@@ -30,13 +30,13 @@ SP 800-53A Rev 5 (January 2022) provides **assessment procedures** for every con
 
 The SAR documents assessment results:
 
-1. **Executive Summary** — High-level findings and authorization recommendation
-2. **Assessment Scope** — Systems, components, controls assessed
-3. **Assessment Methodology** — Methods used, depth, timeframe
-4. **Findings** — Control-by-control results
-5. **Weaknesses and Deficiencies** — OTS (Other Than Satisfied) findings
-6. **Risk Exposure** — Risk ratings for identified weaknesses
-7. **Recommendations** — Remediation actions
+1. **Executive Summary** - High-level findings and authorization recommendation
+2. **Assessment Scope** - Systems, components, controls assessed
+3. **Assessment Methodology** - Methods used, depth, timeframe
+4. **Findings** - Control-by-control results
+5. **Weaknesses and Deficiencies** - OTS (Other Than Satisfied) findings
+6. **Risk Exposure** - Risk ratings for identified weaknesses
+7. **Recommendations** - Remediation actions
 
 **Finding format:**
 ```
@@ -45,7 +45,7 @@ Objective: Determine if inactive accounts are disabled within the defined period
 Status: Other Than Satisfied
 Finding: Audit of Active Directory accounts identified 47 accounts inactive for >120 days; 
          ODV is 90 days. Automated account review process is not functioning correctly.
-Risk: Moderate — dormant accounts represent attack surface for credential-based attacks.
+Risk: Moderate - dormant accounts represent attack surface for credential-based attacks.
 Recommendation: Fix automated review process; immediately disable the 47 identified accounts.
 ```
 
@@ -92,9 +92,9 @@ When a weakness cannot be remediated within the standard timeline:
 
 ---
 
-## Risk Management Framework (RMF) — SP 800-37 Rev 2
+## Risk Management Framework (RMF) - SP 800-37 Rev 2
 
-### Step 1 — Prepare
+### Step 1 - Prepare
 
 **Purpose:** Establish the organizational and system context for managing security and privacy risk.
 
@@ -108,7 +108,7 @@ When a weakness cannot be remediated within the standard timeline:
 
 **Output:** Risk management roles assigned; organization-level risk assessment completed; common control inventory established.
 
-### Step 2 — Categorize
+### Step 2 - Categorize
 
 **Purpose:** Categorize the system and information processed, stored, and transmitted based on FIPS 199.
 
@@ -121,7 +121,7 @@ When a weakness cannot be remediated within the standard timeline:
 
 **Output:** System Security Categorization document (signed by AO and SO).
 
-### Step 3 — Select
+### Step 3 - Select
 
 **Purpose:** Select, tailor, and document the controls for the system.
 
@@ -134,7 +134,7 @@ When a weakness cannot be remediated within the standard timeline:
 
 **Output:** SSP with control selection; ConMon strategy.
 
-### Step 4 — Implement
+### Step 4 - Implement
 
 **Purpose:** Implement the controls and document how they are deployed in the operational environment.
 
@@ -146,7 +146,7 @@ When a weakness cannot be remediated within the standard timeline:
 
 **Output:** Implemented controls; completed SSP implementation narratives.
 
-### Step 5 — Assess
+### Step 5 - Assess
 
 **Purpose:** Determine if the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting security and privacy requirements.
 
@@ -164,7 +164,7 @@ When a weakness cannot be remediated within the standard timeline:
 - **Moderate systems:** Independent assessor (different team from implementers)
 - **High systems / FedRAMP:** 3PAO required; must be accredited by A2LA/FedRAMP PMO
 
-### Step 6 — Authorize
+### Step 6 - Authorize
 
 **Purpose:** Provide organizational accountability by requiring a senior official to determine if the security and privacy risk to organizational operations/assets is acceptable.
 
@@ -175,14 +175,14 @@ When a weakness cannot be remediated within the standard timeline:
 4. Executive Summary (for AO review)
 
 **Authorization decisions:**
-- **Authorization to Operate (ATO)** — risk is acceptable; typically granted for 3 years
-- **Common Control Authorization (CCA)** — for common control providers
-- **Denial of Authorization to Operate (DATO)** — risk is not acceptable; system must be shut down or remediated
-- **Authorization to Use (ATU)** — for external systems/services
+- **Authorization to Operate (ATO)** - risk is acceptable; typically granted for 3 years
+- **Common Control Authorization (CCA)** - for common control providers
+- **Denial of Authorization to Operate (DATO)** - risk is not acceptable; system must be shut down or remediated
+- **Authorization to Use (ATU)** - for external systems/services
 
 **Ongoing authorization:** Continuous authorization (preferred for Moderate/High) replaces periodic re-authorization with real-time risk management.
 
-### Step 7 — Monitor
+### Step 7 - Monitor
 
 **Purpose:** Maintain ongoing situational awareness about the security and privacy posture of the system.
 
@@ -221,16 +221,16 @@ When a weakness cannot be remediated within the standard timeline:
 ### ConMon Automation
 
 Support tools for ConMon implementation:
-- **SCAP (Security Content Automation Protocol)** — standardized vulnerability scanning
-- **CVE/CVSS** — common vulnerability scoring
-- **OVAL/XCCDF** — configuration checking
-- **NVD (National Vulnerability Database)** — NIST vulnerability repository
-- **CDM (Continuous Diagnostics and Mitigation)** — DHS/CISA program for federal agencies
-- **OSCAL** — machine-readable security control documentation
+- **SCAP (Security Content Automation Protocol)** - standardized vulnerability scanning
+- **CVE/CVSS** - common vulnerability scoring
+- **OVAL/XCCDF** - configuration checking
+- **NVD (National Vulnerability Database)** - NIST vulnerability repository
+- **CDM (Continuous Diagnostics and Mitigation)** - DHS/CISA program for federal agencies
+- **OSCAL** - machine-readable security control documentation
 
 ---
 
-## OSCAL — Open Security Controls Assessment Language
+## OSCAL - Open Security Controls Assessment Language
 
 OSCAL (developed by NIST) provides machine-readable representations of SP 800-53 content:
 
@@ -265,7 +265,7 @@ OSCAL (developed by NIST) provides machine-readable representations of SP 800-53
 | IA (Authentication) | 5.17 (Authentication), 8.5 (MFA) |
 | IR (Incident Response) | 5.24–5.28 (Incident management) |
 | PE (Physical) | 7.1–7.14 (Physical controls) |
-| RA (Risk Assessment) | 5.1 (Risk treatment), 6.1 (Risk process) |
+| RA (Risk Assessment) | ISMS Clauses 6.1.2 (risk assessment) and 6.1.3 (risk treatment); note Annex A 5.1 is Policies for information security and 6.1 is Screening |
 | SC (Comms Protection) | 5.14 (Transfer), 8.20–8.26 (Network) |
 | SI (Integrity) | 8.7 (Malware), 8.8 (Vulnerability), 8.19 |
 | SR (Supply Chain) | 5.19–5.22 (Supplier security) |
@@ -283,7 +283,7 @@ The CSF 2.0 (February 2024) maps to SP 800-53:
 | **RS (Respond)** | IR, CA |
 | **RC (Recover)** | CP, IR |
 
-Full mapping: SP 800-53B Appendix B provides CSF subcategory → SP 800-53 control mapping.
+Full mapping: NIST publishes the CSF subcategory → SP 800-53 control mapping through the OLIR program and the Cybersecurity and Privacy Reference Tool (CPRT), not in SP 800-53B.
 
 ### SP 800-53 Rev 5 → CMMC 2.0
 
@@ -340,7 +340,7 @@ FedRAMP uses the SP 800-53 Moderate or High baseline with overlay parameters:
 | SP 800-60 Vol I/II | Information Types / Impact Levels | Categorization guidance |
 | SP 800-30 Rev 1 | Risk Assessment | Risk assessment methodology |
 | SP 800-137A | ConMon | Continuous monitoring |
-| SP 800-63 Rev 3 | Digital Identity | Authentication assurance |
+| SP 800-63 Rev 4 | Digital Identity | Authentication assurance |
 | SP 800-82 Rev 3 | OT Security | ICS/SCADA guide |
 | SP 800-88 Rev 1 | Media Sanitization | Media disposal |
 | SP 800-115 | Security Testing | Penetration testing methodology |

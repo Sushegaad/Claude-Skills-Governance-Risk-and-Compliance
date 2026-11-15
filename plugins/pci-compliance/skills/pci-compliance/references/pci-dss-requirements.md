@@ -1,4 +1,4 @@
-# PCI DSS v4.0.1 — All 12 Requirements
+# PCI DSS v4.0.1 - All 12 Requirements
 
 Source: PCI DSS v4.0.1 (PCI Security Standards Council, June 2024)
 https://www.pcisecuritystandards.org/document_library/
@@ -7,9 +7,9 @@ https://www.pcisecuritystandards.org/document_library/
 
 ## GOAL 1: Build and Maintain a Secure Network and Systems
 
-### Requirement 1 — Install and Maintain Network Security Controls
+### Requirement 1 - Install and Maintain Network Security Controls
 
-Network security controls (NSCs) — firewalls, routers, cloud security groups — prevent unauthorised network access to and from the CDE.
+Network security controls (NSCs) - firewalls, routers, cloud security groups - prevent unauthorised network access to and from the CDE.
 
 | Sub-Req | Description | Evidence for QSA |
 |---------|-------------|-----------------|
@@ -39,7 +39,7 @@ Network security controls (NSCs) — firewalls, routers, cloud security groups �
 
 ---
 
-### Requirement 2 — Apply Secure Configurations to All System Components
+### Requirement 2 - Apply Secure Configurations to All System Components
 
 Default credentials and unnecessary services must be eliminated before deployment.
 
@@ -64,7 +64,7 @@ Default credentials and unnecessary services must be eliminated before deploymen
 
 ## GOAL 2: Protect Account Data
 
-### Requirement 3 — Protect Stored Account Data
+### Requirement 3 - Protect Stored Account Data
 
 Minimise storage of account data; never store SAD post-authorisation; protect PAN wherever stored.
 
@@ -76,12 +76,12 @@ Minimise storage of account data; never store SAD post-authorisation; protect PA
 | 3.3 | SAD is not retained after authorisation | Confirmed by system scans and application review |
 | 3.3.1 | SAD not stored (full magnetic stripe, CAV2/CVV2/CVC2/CID, PIN/PIN block) | Application code review; database scans |
 | 3.3.2 | SAD stored prior to authorisation is encrypted | Encryption evidence for pre-auth data |
-| 3.3.3 | Encryption keys for pre-auth SAD are managed securely | Key management docs |
-| 3.4 | PAN is protected wherever it is stored | Encryption, masking, or tokenisation evidence |
-| 3.4.1 | PAN is unreadable anywhere it is stored | AES-256 encryption; tokenisation proof; masking |
-| 3.4.2 | Copies of PAN only on authorised removable media | Media inventory and controls |
-| 3.5 | PAN is secured with strong cryptography | Encryption algorithm and key management review |
-| 3.5.1 | Primary account numbers protected with strong cryptography | AES-256 or equivalent; no DES/RC4 |
+| 3.3.3 | SAD stored by issuers (and companies supporting issuing services) only with legitimate business need, and secured (issuers only) | Business justification; encryption evidence |
+| 3.4 | Access to displays of full PAN and ability to copy PAN are restricted | Masking configuration; remote-access copy controls |
+| 3.4.1 | PAN is masked when displayed (BIN and last four digits maximum), with only personnel with a legitimate business need seeing more | Display masking config; role-based display exceptions |
+| 3.4.2 | Technical controls prevent copy/relocation of PAN when using remote-access technologies, except where explicitly authorised | Remote-access DLP/copy restrictions; authorisation records |
+| 3.5 | PAN is secured wherever it is stored | Unreadable-storage method evidence; key management review |
+| 3.5.1 | PAN rendered unreadable anywhere it is stored, using one of four methods: one-way hashes, truncation, index tokens, or strong cryptography | Hashing/truncation/tokenisation proof; AES-256 or equivalent; no DES/RC4 |
 | 3.6 | Cryptographic keys used for PAN encryption are secured | Key management policy and procedures |
 | 3.6.1 | Key management procedures and processes for cryptographic keys | Key custodian assignments; split knowledge |
 | 3.7 | Key management procedures and processes are implemented | Key rotation, key-encrypting keys, key retirement |
@@ -93,13 +93,13 @@ Minimise storage of account data; never store SAD post-authorisation; protect PA
 | 3.7.6 | Manual keys use split knowledge and dual control | Evidence of two-person key operations |
 | 3.7.7 | Informal key substitution prevented | Formal key management only |
 | 3.7.8 | Key custodians acknowledge their responsibilities | Signed custodian agreements |
-| 3.7.9 | Where key management services are used, they meet Req 3.6–3.7 | CSP KMS compliance evidence |
+| 3.7.9 | Service providers provide guidance to customers on secure transmission, storage, and updating of the customers' cryptographic keys | Customer key-management guidance documentation |
 
 **Common gaps**: CVV stored in database; PAN in log files; no key rotation; encryption with weak algorithms (MD5, SHA-1 for integrity); keys stored alongside encrypted data.
 
 ---
 
-### Requirement 4 — Protect Cardholder Data with Strong Cryptography During Transmission
+### Requirement 4 - Protect Cardholder Data with Strong Cryptography During Transmission
 
 PAN transmitted over open, public networks must be encrypted using strong cryptography.
 
@@ -118,7 +118,7 @@ PAN transmitted over open, public networks must be encrypted using strong crypto
 
 ## GOAL 3: Maintain a Vulnerability Management Program
 
-### Requirement 5 — Protect All Systems and Networks from Malicious Software
+### Requirement 5 - Protect All Systems and Networks from Malicious Software
 
 Anti-malware controls protect against viruses, ransomware, spyware, and other threats.
 
@@ -142,7 +142,7 @@ Anti-malware controls protect against viruses, ransomware, spyware, and other th
 
 ---
 
-### Requirement 6 — Develop and Maintain Secure Systems and Software
+### Requirement 6 - Develop and Maintain Secure Systems and Software
 
 Vulnerabilities must be identified and addressed through patching and secure development practices.
 
@@ -176,7 +176,7 @@ Vulnerabilities must be identified and addressed through patching and secure dev
 
 ## GOAL 4: Implement Strong Access Control Measures
 
-### Requirement 7 — Restrict Access to System Components and Cardholder Data by Business Need to Know
+### Requirement 7 - Restrict Access to System Components and Cardholder Data by Business Need to Know
 
 | Sub-Req | Description | Evidence for QSA |
 |---------|-------------|-----------------|
@@ -197,7 +197,7 @@ Vulnerabilities must be identified and addressed through patching and secure dev
 
 ---
 
-### Requirement 8 — Identify Users and Authenticate Access to System Components
+### Requirement 8 - Identify Users and Authenticate Access to System Components
 
 Every user must have a unique ID; strong authentication required for CDE access.
 
@@ -217,11 +217,11 @@ Every user must have a unique ID; strong authentication required for CDE access.
 | 8.3.1 | All user access into CDE uses MFA (**Extended in v4.0**) | MFA deployment proof for ALL CDE access |
 | 8.3.2 | MFA for all access into the CDE from outside | Remote access MFA (VPN, RDP, etc.) |
 | 8.3.4 | Invalid authentication attempts limited | Account lockout policy (max 10 attempts) |
-| 8.3.5 | Passwords/passphrases set to meet minimum requirements | Password policy config: min 12 chars, complexity |
-| 8.3.6 | Passwords changed every 90 days (or with compensating control/risk analysis) | Password policy; expiry settings |
+| 8.3.5 | Passwords/passphrases set or reset to a unique value for first use, and changed immediately after first use | Initial-password procedure; forced change-on-first-use config |
+| 8.3.6 | Passwords/passphrases meet minimum length of 12 characters (8 if the system is limited) and contain both letters and numbers | Password policy config; complexity settings |
 | 8.3.7 | Individuals not allowed to submit new password same as any of last 4 | Password history settings |
 | 8.3.8 | Authentication policies communicated to users | Training records; policy acknowledgements |
-| 8.3.9 | Passwords for users not using MFA changed at least every 90 days | Password expiry config |
+| 8.3.9 | Where passwords are the only authentication factor, passwords changed at least every 90 days (or dynamic security posture analysis used) | Password expiry config |
 | 8.3.10 | Guidance for changing passwords provided to users at specified intervals | Comms records |
 | 8.4 | MFA implemented for all access into the CDE | MFA for all privileged and standard user access |
 | 8.4.1 | MFA for all non-console admin access to CDE | Admin MFA config |
@@ -233,7 +233,7 @@ Every user must have a unique ID; strong authentication required for CDE access.
 
 ---
 
-### Requirement 9 — Restrict Physical Access to Cardholder Data
+### Requirement 9 - Restrict Physical Access to Cardholder Data
 
 Physical controls prevent unauthorised access to systems, media, and facilities in the CDE.
 
@@ -242,12 +242,12 @@ Physical controls prevent unauthorised access to systems, media, and facilities 
 | 9.1 | Processes for restricting physical access defined | Physical security policy |
 | 9.2 | Physical access controls for appropriate facility entry | Badge access logs; visitor records |
 | 9.2.1 | Individual physical access controls to sensitive areas | Badge reader logs; CCTV |
-| 9.2.2 | Visitor management procedure implemented | Visitor log; escort policy |
+| 9.2.2 | Physical and/or logical controls restrict use of publicly accessible network jacks | Port lock-out; network access control |
 | 9.2.3 | Physical access to wireless access points, gateways, and handheld devices controlled | Device location inventory; lock-down evidence |
-| 9.2.4 | Physical access to CDE systems via publicly accessible network jacks controlled | Port lock-out; network access control |
-| 9.3 | Physical access for personnel and visitors authorised and managed | Access management records |
+| 9.2.4 | Access to consoles in sensitive areas restricted (locked when not in use) | Console lock policy; screen-lock evidence |
+| 9.3 | Physical access for personnel and visitors authorised and managed (visitor management lives here) | Access management records; visitor log; escort policy |
 | 9.3.1 | Physical access controls for personnel with physical access | Access list; revocation process |
-| 9.3.2 | Physical access for visitors authorised and revoked | Visitor badge records |
+| 9.3.2 | Physical access for visitors authorised and managed, with badges and escort | Visitor badge records; visitor log |
 | 9.4 | Media with cardholder data is securely stored, accessed, distributed, and destroyed | Media inventory; destruction records |
 | 9.4.1 | Physical media containing CHD secured | Locked storage; media inventory |
 | 9.4.2 | Physical media containing CHD classified | Classification labels on media |
@@ -265,7 +265,7 @@ Physical controls prevent unauthorised access to systems, media, and facilities 
 
 ## GOAL 5: Regularly Monitor and Test Networks
 
-### Requirement 10 — Log and Monitor All Access to System Components and Cardholder Data
+### Requirement 10 - Log and Monitor All Access to System Components and Cardholder Data
 
 | Sub-Req | Description | Evidence for QSA |
 |---------|-------------|-----------------|
@@ -284,8 +284,9 @@ Physical controls prevent unauthorised access to systems, media, and facilities 
 | 10.3.3 | Audit logs are promptly backed up to a central log server | Syslog/SIEM centralisation evidence |
 | 10.3.4 | File integrity monitoring or change detection on audit logs | FIM solution monitoring log files |
 | 10.4 | Audit logs reviewed to identify anomalies or suspicious activity | Log review process |
-| 10.4.1 | Automated log review mechanisms used (**NEW in v4.0**) | SIEM alert rules; automated review evidence |
-| 10.4.2 | Logs for all system components reviewed daily | Review schedules; SIEM alert evidence |
+| 10.4.1 | Security event logs and logs of critical system components reviewed at least once daily | Review schedules; SIEM alert evidence |
+| 10.4.1.1 | Automated mechanisms used to perform audit log reviews (**NEW in v4.0**) | SIEM alert rules; automated review evidence |
+| 10.4.2 | Logs of all other system components reviewed periodically | Periodic review records; TRA defining frequency |
 | 10.4.3 | Exceptions and anomalies addressed promptly | Ticket records tied to log alerts |
 | 10.5 | Audit log history retained for at least 12 months with last 3 months immediately available | Retention policy; log storage capacity |
 | 10.6 | Time synchronisation technology in use | NTP configuration; stratum 1/2 sync |
@@ -296,7 +297,7 @@ Physical controls prevent unauthorised access to systems, media, and facilities 
 
 ---
 
-### Requirement 11 — Test Security of Systems and Networks Regularly
+### Requirement 11 - Test Security of Systems and Networks Regularly
 
 | Sub-Req | Description | Evidence for QSA |
 |---------|-------------|-----------------|
@@ -313,7 +314,8 @@ Physical controls prevent unauthorised access to systems, media, and facilities 
 | 11.4.2 | Internal penetration testing at least annually and after changes | Annual pen test report |
 | 11.4.3 | External penetration testing at least annually and after changes | External pen test report |
 | 11.4.4 | Exploitable vulnerabilities from pen testing remediated and re-tested | Remediation tracking; re-test confirmation |
-| 11.4.5 | Network segmentation verified by penetration testing at least every 6 months | Segmentation pen test report |
+| 11.4.5 | Network segmentation verified by penetration testing at least every 12 months and after changes to segmentation controls | Segmentation pen test report |
+| 11.4.6 | Service providers: segmentation verified by penetration testing at least every 6 months and after changes | Semi-annual segmentation pen test report |
 | 11.5 | Network intrusion detection/prevention techniques used | IDS/IPS deployment evidence |
 | 11.5.1 | Intrusion detection/prevention used to detect and/or prevent intrusions | IDS/IPS alert logs; tuning records |
 | 11.5.2 | Change detection mechanism deployed on CDE | FIM solution alerts; change records |
@@ -326,7 +328,7 @@ Physical controls prevent unauthorised access to systems, media, and facilities 
 
 ## GOAL 6: Maintain an Information Security Policy
 
-### Requirement 12 — Support Information Security with Organizational Policies and Programs
+### Requirement 12 - Support Information Security with Organizational Policies and Programs
 
 | Sub-Req | Description | Evidence for QSA |
 |---------|-------------|-----------------|

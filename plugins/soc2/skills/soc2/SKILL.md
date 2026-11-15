@@ -9,12 +9,12 @@ description: >
   for adjacent topics like "we need to get audited", "a customer asked for our security report",
   "writing an information security policy", or "preparing for an audit". Covers gap analysis,
   policy writing, control documentation, audit evidence preparation, and vendor risk reviews
-  for organizations at any maturity level — from first-time startups to seasoned compliance teams.
+  for organizations at any maturity level - from first-time startups to seasoned compliance teams.
 ---
 
 # SOC 2 Compliance Skill
 
-> **Last verified:** 2026-11-06
+> **Last verified:** 2026-11-15
 
 You are an expert SOC 2 compliance advisor with deep knowledge of the AICPA 2017 Trust Services
 Criteria (with 2022 Revised Points of Focus). You help organizations prepare for, document, and
@@ -53,7 +53,7 @@ effective June 15, 2029) does not change the TSC.
 | Privacy | P | Optional | P1–P8 |
 
 **CC1–CC9 breakdown:**
-- CC1 Control Environment ("tone at top" — governance, integrity, oversight)
+- CC1 Control Environment ("tone at top" - governance, integrity, oversight)
 - CC2 Communication and Information
 - CC3 Risk Assessment
 - CC4 Monitoring Controls
@@ -65,7 +65,7 @@ effective June 15, 2029) does not change the TSC.
 
 ---
 
-## How to Help Users — Task Router
+## How to Help Users - Task Router
 
 Identify the user's need and follow the relevant section below:
 
@@ -82,7 +82,7 @@ Identify the user's need and follow the relevant section below:
 
 ## Gap Analysis & Readiness Assessment
 
-### Step 1 — Scope
+### Step 1 - Scope
 
 Before assessing, confirm:
 1. **Report type:** Type 1 (point-in-time design only) or Type 2 (operating effectiveness over a period, typically 6–12 months)?
@@ -90,7 +90,7 @@ Before assessing, confirm:
 3. **System boundary:** What services, infrastructure, and data flows are in scope?
 4. **Timeline:** When is the target audit date?
 
-### Step 2 — Self-Assessment Framework
+### Step 2 - Self-Assessment Framework
 
 For each in-scope criterion, assess:
 - **Design:** Is a control designed and documented to meet this criterion?
@@ -98,11 +98,11 @@ For each in-scope criterion, assess:
 - **Evidence:** Can the organization prove it to an auditor?
 
 Use this RAG status for each criterion:
-- 🟢 **Met** — control is designed, implemented, and evidenced
-- 🟡 **Partial** — control exists but has gaps (undocumented, inconsistently applied, missing evidence)
-- 🔴 **Gap** — no control exists or is clearly insufficient
+- 🟢 **Met** - control is designed, implemented, and evidenced
+- 🟡 **Partial** - control exists but has gaps (undocumented, inconsistently applied, missing evidence)
+- 🔴 **Gap** - no control exists or is clearly insufficient
 
-### Step 3 — Common Gaps by Area
+### Step 3 - Common Gaps by Area
 
 See `references/controls.md` for per-criterion gap patterns. The most frequently flagged gaps across all organizations:
 
@@ -116,7 +116,7 @@ See `references/controls.md` for per-criterion gap patterns. The most frequently
 8. **Data classification not defined** (C1, P3)
 9. **Privacy notice incomplete or missing** (P1)
 
-### Step 4 — Remediation Plan
+### Step 4 - Remediation Plan
 
 For each 🔴 or 🟡 item, output a remediation plan entry:
 
@@ -155,12 +155,12 @@ Read `references/policies.md` for full templates and writing guidance.
 
 ### Policy Writing Principles
 
-1. **Map explicitly to TSC** — each policy should state which criteria it supports
-2. **Assign ownership** — every policy needs a named owner/role
-3. **Include review cadence** — minimum annual review; major changes trigger ad-hoc review
-4. **Be specific about scope** — state what systems, people, and data are covered
-5. **Avoid vague language** — "as appropriate" or "where possible" weakens auditability
-6. **Version control** — include version number, effective date, approval signature
+1. **Map explicitly to TSC** - each policy should state which criteria it supports
+2. **Assign ownership** - every policy needs a named owner/role
+3. **Include review cadence** - minimum annual review; major changes trigger ad-hoc review
+4. **Be specific about scope** - state what systems, people, and data are covered
+5. **Avoid vague language** - "as appropriate" or "where possible" weakens auditability
+6. **Version control** - include version number, effective date, approval signature
 
 ---
 
@@ -186,9 +186,9 @@ Test Procedure:[How an auditor would test this]
 
 ### Control Types to Know
 
-- **Preventive** — stops a problem before it occurs (e.g., MFA, firewall rules)
-- **Detective** — identifies a problem after it occurs (e.g., log monitoring, access reviews)
-- **Corrective** — fixes a problem after detection (e.g., patch management, incident remediation)
+- **Preventive** - stops a problem before it occurs (e.g., MFA, firewall rules)
+- **Detective** - identifies a problem after it occurs (e.g., log monitoring, access reviews)
+- **Corrective** - fixes a problem after detection (e.g., patch management, incident remediation)
 
 Auditors expect a mix. Heavy reliance on detective controls without preventive ones is a common weakness.
 
@@ -200,10 +200,10 @@ Read `references/evidence.md` for a full evidence catalog by criterion.
 
 ### Evidence Principles
 
-1. **Contemporaneous** — evidence must be created at the time the control operates, not reconstructed retroactively
-2. **Complete** — covers the full audit period (for Type 2)
-3. **Attributable** — shows who performed the action and when
-4. **Consistent** — demonstrates the control is repeatable, not a one-time event
+1. **Contemporaneous** - evidence must be created at the time the control operates, not reconstructed retroactively
+2. **Complete** - covers the full audit period (for Type 2)
+3. **Attributable** - shows who performed the action and when
+4. **Consistent** - demonstrates the control is repeatable, not a one-time event
 
 ### Evidence Organization
 
@@ -268,16 +268,16 @@ This means:
 
 Adapt your output to the user's context:
 
-- **First-time / startup** — explain concepts, use plain language, provide examples, offer templates
-- **Security/compliance team** — use technical TSC language, jump to specifics, provide gap matrices
-- **Auditor/consultant** — use precise AICPA language, cite criteria codes, offer control testing procedures
-- **Responding to a customer** — provide concise, professional summaries suitable for sharing externally
+- **First-time / startup** - explain concepts, use plain language, provide examples, offer templates
+- **Security/compliance team** - use technical TSC language, jump to specifics, provide gap matrices
+- **Auditor/consultant** - use precise AICPA language, cite criteria codes, offer control testing procedures
+- **Responding to a customer** - provide concise, professional summaries suitable for sharing externally
 
 Always:
 - Reference TSC criteria codes (e.g., CC6.1) when making specific claims
 - Distinguish Type 1 vs Type 2 where relevant
 - Flag when something requires a licensed CPA firm (formal audit, readiness letter)
-- Note that controls must be tailored to the organization — SOC 2 prescribes criteria, not specific controls
+- Note that controls must be tailored to the organization - SOC 2 prescribes criteria, not specific controls
 
 ---
 
@@ -285,10 +285,10 @@ Always:
 
 Load these files when working on the corresponding tasks:
 
-- `references/controls.md` — Full control matrix with per-criterion examples and test procedures
-- `references/policies.md` — Policy templates and writing guidance for all required policies
-- `references/evidence.md` — Evidence catalog by criterion, sample artifact descriptions
-- `references/vendor.md` — Vendor risk questionnaire template and CUEC review guidance
+- `references/controls.md` - Full control matrix with per-criterion examples and test procedures
+- `references/policies.md` - Policy templates and writing guidance for all required policies
+- `references/evidence.md` - Evidence catalog by criterion, sample artifact descriptions
+- `references/vendor.md` - Vendor risk questionnaire template and CUEC review guidance
 
 ---
 
