@@ -29,7 +29,7 @@
         "help me transition from ISO 27001:2013 to the 2022 version"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-05-16T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
@@ -59,7 +59,7 @@
         "review a vendor's SOC 2 report for red flags"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-11-06T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
@@ -91,7 +91,7 @@
         "write SSP control narratives for a federal cloud system"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-09-14T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
@@ -121,7 +121,7 @@
         "handle a 72-hour GDPR breach notification"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-10-03T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Data Privacy & Protection",
         "license": "MIT",
@@ -152,7 +152,7 @@
         "run a HIPAA security risk analysis"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-09-05T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Data Privacy & Protection",
         "license": "MIT",
@@ -182,7 +182,7 @@
         "map our controls to NIST CSF subcategories"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-09-05T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
@@ -212,7 +212,7 @@
         "plan a PCI DSS v4.0.1 migration"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-11-06T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Data Privacy & Protection",
         "license": "MIT",
@@ -242,7 +242,7 @@
         "align our TSA CRMP with NIST CSF"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-05-16T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Cyber & Resilience Regulation",
         "license": "MIT",
@@ -272,7 +272,7 @@
         "integrate an AI management system with our ISO 27001 ISMS"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-05-16T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "AI Governance",
         "license": "MIT",
@@ -421,7 +421,7 @@
         "evaluate an AI model against MEASURE trustworthiness criteria"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-11-14T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "AI Governance",
         "license": "MIT",
@@ -451,7 +451,7 @@
         "run a CSCF v2026 gap assessment"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-09-14T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
@@ -482,7 +482,7 @@
         "map Essential Eight maturity levels to ISM controls"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-09-05T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
@@ -514,7 +514,7 @@
         "draft NIS2 Article 21 security measures"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-11-06T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Cyber & Resilience Regulation",
         "license": "MIT",
@@ -543,7 +543,7 @@
         "classify ad tech data flows as sale or sharing under CPRA"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-10-03T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Data Privacy & Protection",
         "license": "MIT",
@@ -572,7 +572,7 @@
         "prepare a voluntary self-disclosure after an ITAR violation"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-11-06T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Export Controls & Sustainability",
         "license": "MIT",
@@ -631,7 +631,7 @@
         "build a Scope 3 emissions reporting programme"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-10-03T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Export Controls & Sustainability",
         "license": "MIT",
@@ -662,7 +662,7 @@
         "map CIS safeguards to NIST CSF"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-05-16T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
@@ -722,7 +722,7 @@
         "build a continuous monitoring strategy"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-05-16T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
@@ -752,7 +752,7 @@
         "determine GPAI model obligations"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-11-06T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "AI Governance",
         "license": "MIT",
@@ -781,7 +781,7 @@
         "remediate PDFs for accessibility"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-11-06T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Accessibility",
         "license": "MIT",
@@ -810,7 +810,7 @@
         "write an accessibility conformance statement"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-05-16T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Accessibility",
         "license": "MIT",
@@ -840,7 +840,7 @@
         "check NZISM cloud hosting requirements"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-07-03T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
@@ -930,7 +930,7 @@
         "navigate Saudi PDPL and SAMA cybersecurity requirements"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-11-06T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Country GRC",
         "license": "MIT",
@@ -960,7 +960,7 @@
         "meet CBUAE outsourcing and data residency requirements"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-08-23T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Country GRC",
         "license": "MIT",
@@ -992,7 +992,7 @@
         "understand TISAX labels and assessment levels"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-10-03T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
@@ -1053,7 +1053,7 @@
         "prepare for a Cyber Essentials Plus audit"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-09-14T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
@@ -1084,7 +1084,7 @@
         "build a SOX ITGC risk and control matrix for change management"
       ],
       "version": "2.3.0",
-      "updatedAt": "2026-11-06T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",

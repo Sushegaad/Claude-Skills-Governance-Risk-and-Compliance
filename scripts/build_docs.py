@@ -95,7 +95,7 @@ def render_eval_table(skills, stats):
             f'{s["num"]}</td><td>{s["eval_html"]}</td><td>{s["eval"]["cases"]}</td>'
             f'<td><strong>{st["with"]}%</strong></td><td>{st["base"]}%</td>'
             f'<td>{_delta_disp(st["with"], st["base"])}</td>'
-            f'<td style="white-space:nowrap">{s["eval"]["last_updated"]}</td>'
+            f'<td style="white-space:nowrap">{s["updated"]}</td>'
             f'<td>{s["eval"]["tested"]}</td></tr>'
         )
     return "\n".join(rows)
@@ -379,7 +379,7 @@ def render_ai_catalog(skills, stats):
     entries = []
     for s in skills:
         st = stats[s["plugin"]]
-        d, mon, y = s["eval"]["last_updated"].split()
+        d, mon, y = s["updated"].split()
         entries.append({
             "identifier": f'urn:ai:sushegaad.github.io:grc:{s["plugin"]}',
             "displayName": s["readme_name"].strip(),
