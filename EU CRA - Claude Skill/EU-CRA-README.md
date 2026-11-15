@@ -112,4 +112,4 @@ GitHub: [Sushegaad/Claude-Skills-Governance-Risk-and-Compliance](https://github.
 
 ---
 
-*Skill version: 2.2.0 — November 2026*
+*Skill version: 2.3.0 — November 2026*

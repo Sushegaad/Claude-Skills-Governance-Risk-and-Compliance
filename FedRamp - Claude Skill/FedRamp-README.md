@@ -210,4 +210,4 @@ July 2026
 
 ---
 
-*Skill version: 2.2.0 — November 2026*
+*Skill version: 2.3.0 — November 2026*
