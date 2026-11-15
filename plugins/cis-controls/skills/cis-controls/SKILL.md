@@ -92,7 +92,7 @@ The single most important scoping decision. Every organization starts with IG1.
 
 **CIS Control 6: Access Control Management**
 - Use processes and tools to create, assign, manage, and revoke access credentials based on least privilege
-- Key Safeguards: 6.1 Establish an access granting process; 6.2 Establish an access revoking process; 6.3 Require MFA for externally-exposed applications; 6.4 Require MFA for remote network access; 6.5 Require MFA for admin access; 6.8 Define/maintain role-based access control (IG3)
+- Key Safeguards: 6.1 Establish an access granting process; 6.2 Establish an access revoking process; 6.3 Require MFA for externally-exposed applications (IG1); 6.4 Require MFA for remote network access (IG1); 6.5 Require MFA for admin access (IG1); 6.8 Define/maintain role-based access control (IG3)
 
 **CIS Control 7: Continuous Vulnerability Management**
 - Develop a plan to continuously assess/track vulnerabilities on all enterprise assets
@@ -112,7 +112,7 @@ The single most important scoping decision. Every organization starts with IG1.
 
 **CIS Control 11: Data Recovery**
 - Establish/maintain data recovery practices - backup critical data; protect and validate backups
-- Key Safeguards: 11.1 Establish/maintain a data recovery process; 11.2 Perform automated backups; 11.3 Protect recovery data; 11.4 Establish/maintain isolated instance of recovery data; 11.5 Test data recovery (IG2+)
+- Key Safeguards: 11.1 Establish/maintain a data recovery process; 11.2 Perform automated backups; 11.3 Protect recovery data (IG1); 11.4 Establish/maintain isolated instance of recovery data (IG1); 11.5 Test data recovery (IG2)
 
 **CIS Control 12: Network Infrastructure Management**
 - Establish/maintain network devices to prevent attackers from exploiting services and access points
