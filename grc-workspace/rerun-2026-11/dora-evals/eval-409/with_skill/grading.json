@@ -1,0 +1,33 @@
+{
+  "eval_id": 409,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Termination rights = Article 28(7)",
+      "passed": true,
+      "evidence": "'Art. 28(7): financial entities must ensure ICT service arrangements can be terminated'"
+    },
+    {
+      "text": "Exit strategies = Article 28(8)",
+      "passed": true,
+      "evidence": "'Art. 28(8): an exit strategy is required for every arrangement supporting a critical or important function'"
+    },
+    {
+      "text": "Concentration risk = Article 28(4)(c) and Article 29",
+      "passed": true,
+      "evidence": "'Art. 28(4)(c): the pre-contractual assessment includes ICT concentration risk' and 'Art. 29: preliminary assessment of ICT concentration risk'"
+    },
+    {
+      "text": "Pre-determined audit/inspection frequency = Article 28(6)",
+      "passed": true,
+      "evidence": "'Art. 28(6): audit and inspection frequency'"
+    },
+    {
+      "text": "Does not map 28(6) to concentration or 28(7) to exit",
+      "passed": true,
+      "evidence": "28(6) correctly mapped to audit frequency and 28(7) to termination; no mismapping"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

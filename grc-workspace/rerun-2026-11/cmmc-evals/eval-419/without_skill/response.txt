@@ -1,0 +1,3 @@
+Yes, with limits. A Level 3 Conditional status is possible. It requires a minimum score of 80 percent of the selected NIST SP 800-172 requirements, with only POA&M-eligible requirements outstanding. A POA&M must be closed out within 180 days. Some requirements cannot be placed on a POA&M. The organization must also already hold a Final Level 2 (C3PAO) status.
+
+Assessor: the Defense Contract Management Agency's DIBCAC (Defense Industrial Base Cybersecurity Assessment Center) performs the Level 3 certification assessment. C3PAOs do not do it. Results go to the CMMC eMASS system and SPRS. Level 3 status lasts 3 years, with annual affirmations.

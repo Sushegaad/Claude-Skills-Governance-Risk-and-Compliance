@@ -1,0 +1,13 @@
+{
+  "eval_id": 417,
+  "eval_name": "poam-eligibility",
+  "run_type": "without_skill",
+  "prompt": "Can we receive a conditional CMMC Level 2 certification if our only gap is that encryption is deployed but not FIPS-validated (3.13.11)?",
+  "assertions": [
+    "States yes: SC.L2-3.13.11 is the named exception that MAY be on a POA&M when encryption exists but is not FIPS-validated",
+    "States conditional status requires a score of at least 0.8 x 110 (88)",
+    "States POA&Ms are otherwise limited to 1-point items",
+    "Names at least three of the six never-POA&M requirements (AC.L2-3.1.20, AC.L2-3.1.22, CA.L2-3.12.4, PE.L2-3.10.3/4/5) including CA.L2-3.12.4",
+    "Mentions the 180-day POA&M closeout window"
+  ]
+}

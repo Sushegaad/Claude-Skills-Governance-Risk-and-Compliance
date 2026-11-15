@@ -19,13 +19,13 @@ Brazil's national data protection authority, established by Law 13,853/2019 as p
 
 ## Enforcement Process
 
-### Phase 1 — Preliminary Investigation (Processo Administrativo Preliminar)
+### Phase 1 - Preliminary Investigation (Processo Administrativo Preliminar)
 1. ANPD receives complaint, monitoring signal, or self-initiated referral
 2. Preliminary investigation to determine whether to open formal proceedings
 3. Duration: typically 60 days (extendable)
 4. Controller/processor may be contacted for information
 
-### Phase 2 — Administrative Investigation (Processo Administrativo Sancionador)
+### Phase 2 - Administrative Investigation (Processo Administrativo Sancionador)
 1. Formal notice to accused party
 2. Right of defence: 15 business days to present response
 3. Evidence gathering, hearings if necessary
@@ -33,12 +33,12 @@ Brazil's national data protection authority, established by Law 13,853/2019 as p
 5. Board votes on decision
 6. Final administrative decision issued
 
-### Phase 3 — Appeal
+### Phase 3 - Appeal
 1. Decision may be appealed internally to ANPD Board within 10 business days
 2. After ANPD appeal: judicial review available in Federal District courts
 
 ### Timelines
-- **Prescription:** 5 years from when ANPD becomes aware (Art. 54)
+- **Prescription:** 5 years under Lei 9.873/1999, art. 1, counted from the date of the act, or from its cessation for continuing violations
 - **Complaint response:** ANPD aims to respond to complaints within 30 days (varies in practice)
 
 ---
@@ -76,11 +76,11 @@ Each violation may be treated separately. Multiple fines may be stacked.
 ## Enforcement Priorities (ANPD Strategic Agenda)
 
 ANPD has indicated priority focus areas:
-1. **Large-scale data breaches** — incidents affecting many Brazilians
-2. **Sensitive data processing without legal basis** — health, biometric, financial
-3. **Children's data** — processing without verifiable parental consent
-4. **International transfers** — to countries without adequate protection
-5. **Failure to respond to data subject rights** — especially access and deletion
+1. **Large-scale data breaches** - incidents affecting many Brazilians
+2. **Sensitive data processing without legal basis** - health, biometric, financial
+3. **Children's data** - processing without verifiable parental consent
+4. **International transfers** - to countries without adequate protection
+5. **Failure to respond to data subject rights** - especially access and deletion
 6. **Lack of DPO appointment** for controllers required to appoint
 
 ---
@@ -104,14 +104,14 @@ ANPD has issued numerous "Comunicados" and "Notas de Esclarecimento" setting exp
 ## Cooperation with Other Authorities
 
 ### Brazilian Authorities
-- **SENACON (Secretaria Nacional do Consumidor):** Consumer protection — joint enforcement on matters affecting consumers
-- **CADE (Conselho Administrativo de Defesa Econômica):** Competition — data and market power interactions
+- **SENACON (Secretaria Nacional do Consumidor):** Consumer protection - joint enforcement on matters affecting consumers
+- **CADE (Conselho Administrativo de Defesa Econômica):** Competition - data and market power interactions
 - **Banco Central:** Financial data oversight
 - **ANS/ANVISA:** Health sector data
 
 ### International Cooperation
 ANPD has signed MoUs with:
-- Portuguese DPA (CNPD — Portugal)
+- Portuguese DPA (CNPD - Portugal)
 - Uruguayan authority (URCDP)
 - CNIL (France)
 - UK ICO
@@ -144,4 +144,4 @@ Data subjects may file complaints with ANPD at: https://www.gov.br/anpd/pt-br/as
 | Marco Civil da Internet (MCI) | MCI governs internet intermediaries; LGPD applies to personal data |
 | LGPD for financial sector | Central Bank regulations + LGPD | 
 | Health Sector | ANVISA/ANS rules + LGPD (stricter for health/sensitive data) |
-| Credit reporting (Cadastro Positivo) | Art. 7, X — specific legal basis for credit protection |
+| Credit reporting (Cadastro Positivo) | Art. 7, X - specific legal basis for credit protection |

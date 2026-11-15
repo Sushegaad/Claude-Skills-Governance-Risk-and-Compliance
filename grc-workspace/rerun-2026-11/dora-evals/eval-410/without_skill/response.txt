@@ -1,0 +1,22 @@
+These are the closing provisions of Regulation (EU) 2022/2554 (DORA). The numbering is from my recollection, so confirm against the Official Journal text, particularly for Art. 56.
+
+Chapter VII (competent authorities, penalties):
+- Art. 54: publication of administrative penalties.
+- Art. 55: professional secrecy.
+- Art. 56: data protection and related provisions (the least certain of these).
+
+Chapter VIII, delegated acts:
+- Art. 57: exercise of the delegation (and, I believe, committee-related provisions).
+
+Chapter IX, transitional and final provisions:
+- Art. 58: review clause. This includes the Commission review by 17 January 2026, covering among other things the appropriateness of strengthened requirements for statutory auditors and audit firms, and the TLPT and oversight frameworks.
+
+Amending provisions:
+- Art. 59 amends Regulation (EC) No 1060/2009 (credit rating agencies).
+- Art. 60 amends Regulation (EU) No 648/2012 (EMIR).
+- Art. 61 amends Regulation (EU) No 909/2014 (CSDR).
+- Art. 62 amends Regulation (EU) No 600/2014 (MiFIR).
+- Art. 63 amends Regulation (EU) 2016/1011 (Benchmarks Regulation).
+- Art. 64 covers entry into force and application (entry into force in January 2023, application from 17 January 2025).
+
+So the answer to the second part: Art. 59 amends the Credit Rating Agencies Regulation 1060/2009, and Art. 62 amends MiFIR 600/2014. The amendments mostly align ICT risk and operational resilience requirements in those regulations with DORA, for example for CRAs, CCPs, CSDs and trading venues.

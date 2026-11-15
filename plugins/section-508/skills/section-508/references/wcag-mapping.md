@@ -153,7 +153,7 @@
 - **29 U.S.C. § 794d** — Section 508 statutory text
 - **36 CFR Part 1194** — Access Board's Revised Section 508 Standards (effective 18 January 2018)
 - **FAR Subpart 39.2** — Federal Acquisition Regulation provisions on Section 508
-- **FAR clause 52.239-2** — Section 508 contract clause (mandatory for ICT procurement)
+- **FAR Subpart 39.2 / 11.002(f)**: Section 508 applies through acquisition planning and requirements documents; there is no governmentwide FAR 508 clause, only agency supplement clauses (for example HHS 352.239-74, DOT 1252.239-93)
 - **OMB Memorandum M-24-08** — "Strengthening Digital Accessibility and the Management of Section 508 of the Rehabilitation Act" (January 2024)
 - **Section508.gov** — GSA's official guidance, VPAT templates, testing resources
 - **WCAG 2.0** — W3C Recommendation (11 December 2008) — the incorporated technical standard

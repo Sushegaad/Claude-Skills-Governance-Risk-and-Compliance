@@ -1,0 +1,13 @@
+{
+  "eval_id": 414,
+  "eval_name": "annex1-part2",
+  "run_type": "with_skill",
+  "prompt": "List the CRA Annex I Part II vulnerability-handling requirements. Does Part II include 24-hour ENISA reporting?",
+  "assertions": [
+    "States Part II has exactly eight requirements",
+    "Correctly names at least three (for example SBOM, coordinated vulnerability disclosure policy, secure update distribution, free timely security updates)",
+    "States the 24h/72h reporting regime is Article 14, not Annex I Part II",
+    "States support-period and end-of-life information duties sit in Article 13/Annex II",
+    "Does not list reporting or EOL notification as Part II items"
+  ]
+}

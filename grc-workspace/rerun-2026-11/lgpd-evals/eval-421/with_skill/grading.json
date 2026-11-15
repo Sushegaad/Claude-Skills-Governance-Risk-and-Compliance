@@ -1,0 +1,33 @@
+{
+  "eval_id": 421,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States no: credit protection is Article 7, X, a regular-data basis only",
+      "passed": true,
+      "evidence": "\"'Protection of credit' is Art. 7, X, and applies to regular personal data only\""
+    },
+    {
+      "text": "States Article 11's non-consent bases are the closed list II(a)-(g)",
+      "passed": true,
+      "evidence": "Lists Art. 11, II hypotheses (a)-(g) and says Art. 11 allows sensitive data 'only' under these"
+    },
+    {
+      "text": "Correctly names relevant Art. 11 bases (for example health tutelage, legal obligation, protection of life)",
+      "passed": true,
+      "evidence": "Names legal obligation (a), protection of life (e), health tutelage (f) explicitly"
+    },
+    {
+      "text": "States sensitive-data consent must be specific and highlighted (Art. 11, I)",
+      "passed": true,
+      "evidence": "\"Specific and highlighted consent of the data subject (Art. 11, I)\""
+    },
+    {
+      "text": "Does not present credit protection as an Article 11 basis",
+      "passed": true,
+      "evidence": "Explicitly: 'It is not in the Art. 11, II list'; never treats credit protection as an Art. 11 basis"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

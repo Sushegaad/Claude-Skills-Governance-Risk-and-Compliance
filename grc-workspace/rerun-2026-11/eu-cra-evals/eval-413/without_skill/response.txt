@@ -1,0 +1,12 @@
+CRA (Regulation (EU) 2024/2847) timeline:
+
+- 20 November 2024: published in the Official Journal.
+- 10 December 2024: entry into force (20 days after publication).
+- 11 June 2026: Chapter IV (Arts. 35 to 51) on notification of conformity assessment bodies applies. Member States can designate notifying authorities and notified bodies can be assessed and notified. This is 18 months after entry into force.
+- 11 September 2026: Article 14 reporting obligations apply. Manufacturers must report actively exploited vulnerabilities and severe incidents (early warning within 24 hours, notification within 72 hours, final report after that) via the single reporting platform. This is 21 months after entry into force. It applies to all products with digital elements already on the market, including those placed before the main date.
+- 11 December 2027: the rest of the Regulation applies in full (36 months). This covers the Annex I essential requirements, conformity assessment, CE marking and the other manufacturer, importer and distributor obligations, and market surveillance. Products placed on the market from this date must comply.
+
+Related points:
+- Products placed on the market before 11 December 2027 are only subject to the Regulation if they undergo a substantial modification after that date (Art. 69). The Art. 14 reporting duty applies to them regardless.
+- Art. 71 contains the transitional provisions. EU-type examination certificates and similar approvals issued under other Union rules remain valid until 11 June 2028 unless they expire earlier.
+- Commission implementing and delegated acts (technical descriptions of Annex III and IV categories, the Art. 8 certification delegated acts, the Art. 13 and Art. 14 format specifications, and so on) come through the period.

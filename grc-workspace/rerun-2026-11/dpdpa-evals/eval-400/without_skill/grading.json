@@ -1,0 +1,33 @@
+{
+  "eval_id": 400,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies the exemption at Section 17(1)(d)",
+      "passed": true,
+      "evidence": "\"The exemption that matters: Section 17(1)(d)\""
+    },
+    {
+      "text": "Describes its scope correctly: processing in India of non-residents' personal data under a contract with a person outside India",
+      "passed": true,
+      "evidence": "\"personal data of Data Principals NOT within the territory of India is processed pursuant to a contract entered into with any person outside India by any person based in India\""
+    },
+    {
+      "text": "Does not cite 'Section 17(g)' or any (g) to (j) lettering",
+      "passed": true,
+      "evidence": "Only 17(1)(d) is cited; no (g)-(j) lettering appears"
+    },
+    {
+      "text": "Correctly locates the research exemption at 17(2)(b) and the startup relaxations at 17(3)",
+      "passed": false,
+      "evidence": "Response never mentions the research exemption (17(2)(b)) or the startup relaxations (17(3))"
+    },
+    {
+      "text": "Gives practical advice to still maintain safeguards contractually or under other applicable law",
+      "passed": true,
+      "evidence": "\"align your security programme to Section 8(5) and Rule 6\"; GDPR Art. 28/32 and SCCs still govern via the contract"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

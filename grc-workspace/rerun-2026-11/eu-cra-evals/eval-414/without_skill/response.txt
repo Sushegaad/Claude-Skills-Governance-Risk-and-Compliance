@@ -1,0 +1,17 @@
+CRA (Regulation (EU) 2024/2847) Annex I, Part II (vulnerability handling requirements). Manufacturers must:
+
+1. Identify and document vulnerabilities and components contained in the product, including by drawing up a software bill of materials (SBOM) in a commonly used, machine-readable format covering at least the top-level dependencies.
+2. Address and remediate vulnerabilities without delay, including by providing security updates. Where technically feasible, new security updates are provided separately from functionality updates.
+3. Apply effective and regular tests and reviews of the product's security.
+4. Once a security update is available, share and publicly disclose information about fixed vulnerabilities: a description, information allowing users to identify the affected product, the impacts, the severity, and clear and accessible information to help users remediate. In duly justified cases, where security risks of publication outweigh the benefits, publication may be delayed until users have had the opportunity to apply the patch.
+5. Put in place and enforce a policy on coordinated vulnerability disclosure.
+6. Take measures to facilitate the sharing of information about potential vulnerabilities in the product and in third-party components, including by providing a contact address for reporting vulnerabilities.
+7. Provide for mechanisms to securely distribute updates so that vulnerabilities are fixed or mitigated in a timely manner. Where applicable for security updates, this includes automatic updates.
+8. Ensure that, where security patches or updates are available, they are disseminated without delay and, unless otherwise agreed for a tailor-made product, free of charge, accompanied by advisory messages providing users with the relevant information, including on potential action to take.
+
+Does Part II include 24-hour ENISA reporting? No. Part II sets product-level vulnerability handling processes. The 24-hour reporting is in Article 14 (with Art. 16 on the single reporting platform):
+- Actively exploited vulnerabilities and severe incidents with an impact on product security: early warning within 24 hours of becoming aware, a notification within 72 hours, and a final report (14 days after a corrective or mitigating measure is available for vulnerabilities; one month after the notification for incidents).
+- Reports go to the CSIRT designated as coordinator and, at the same time, to ENISA via the single reporting platform.
+- This applies from 11 September 2026, earlier than the main application date of 11 December 2027.
+
+Part II and Art. 14 are related, since vulnerability handling feeds the reporting process, but they are separate obligations.

@@ -1,0 +1,33 @@
+{
+  "eval_id": 423,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States Article 54 sets the daily-fine criteria, not a limitation period",
+      "passed": true,
+      "evidence": "'Art. 54 sets the criteria for calculating the amount of the daily fine... It is not a limitation rule'"
+    },
+    {
+      "text": "States the five-year administrative prescription comes from Lei 9.873/1999",
+      "passed": true,
+      "evidence": "'The administrative prescription period is 5 years under Lei 9.873/1999, art. 1'"
+    },
+    {
+      "text": "Counts it from the act, or from cessation for continuing violations",
+      "passed": true,
+      "evidence": "'runs from the date the infraction was committed or, for a continuing violation, from the date it ceased'"
+    },
+    {
+      "text": "Does not say it runs from ANPD awareness",
+      "passed": true,
+      "evidence": "Never claims the period runs from ANPD awareness"
+    },
+    {
+      "text": "Cites Res. CD/ANPD 4/2023 as the dosimetry regulation",
+      "passed": true,
+      "evidence": "'Resolution CD/ANPD 4/2023 (Dosimetry and Sanctions Application Regulation)'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

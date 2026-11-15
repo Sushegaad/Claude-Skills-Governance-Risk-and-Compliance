@@ -1,0 +1,33 @@
+{
+  "eval_id": 418,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "3.1.3 = 1 point",
+      "passed": true,
+      "evidence": "AC.L2-3.1.3 ... 1 point"
+    },
+    {
+      "text": "3.3.1 = 5 points",
+      "passed": true,
+      "evidence": "AU.L2-3.3.1 ... 5 points"
+    },
+    {
+      "text": "3.4.1 = 5 points",
+      "passed": true,
+      "evidence": "CM.L2-3.4.1 ... 5 points"
+    },
+    {
+      "text": "3.13.8 = 3 points",
+      "passed": true,
+      "evidence": "SC.L2-3.13.8 ... 3 points"
+    },
+    {
+      "text": "Cites the DoD Assessment Methodology v1.2.1 (June 2020)",
+      "passed": true,
+      "evidence": "The authoritative per-practice table is in the DoD Assessment Methodology v1.2.1 (version cited; June 2020 date not stated)"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

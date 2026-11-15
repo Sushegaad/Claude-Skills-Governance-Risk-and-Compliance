@@ -1,0 +1,23 @@
+Yes. Since January 2026 you can transfer personal data from Brazil to the EU/EEA without SCCs, BCRs or other transfer safeguards. The EU/EEA is an adequate destination under LGPD Art. 33, I.
+
+1. Legal basis for the transfer
+- Brazil and the EU established mutual adequacy on 26-27 January 2026.
+- ANPD recognised the EU as adequate through Resolution CD/ANPD 32/2026 (LGPD Art. 33, I).
+- The European Commission adopted an adequacy decision for Brazil under GDPR Art. 45 (Commission Implementing Decision (EU) 2026/179). So the reverse flow, EU to Brazil, is also covered.
+
+2. Important caveat: carve-outs
+ANPD's recognition excludes transfers for public safety, national defence, State security, and criminal investigation or prosecution. If the data is transferred for those purposes, adequacy does not cover it and you need to analyse another mechanism.
+
+3. What you still have to do
+- The transfer must still comply with the rest of the LGPD: legal basis (Art. 7 or 11), purpose limitation, necessity, security (Art. 46), and transparency (Art. 9).
+- Update transfer agreements: replace SCC/BCR references for Brazil-EU flows with a reference to adequacy. Update your privacy notices and RoPA (Art. 37) to name adequacy as the mechanism for EU recipients.
+- Keep safeguards for onward transfers. If the EU recipient sends the data on to a non-adequate country (US, China, and others), the Resolution CD/ANPD 19/2024 standard contractual clauses (adopted without modification) or another Art. 33 mechanism are still required. The SCC grace period ended on 23 August 2025.
+- Keep other mechanisms for other destinations: the US, UK, China and other non-adequate countries still need ANPD standard clauses, BCRs (Art. 33, II(c)), specific consent, ANPD authorisation (Art. 33, V) or another listed hypothesis.
+- Monitor the ANPD adequacy list at anpd.gov.br, which is expected to grow.
+
+4. Note for the EU side
+The EU-to-Brazil direction is governed by GDPR rules, not LGPD. Adequacy under Decision (EU) 2026/179 removes the need for GDPR Chapter V safeguards for those flows, but GDPR obligations on the exporter (lawful basis, transparency, and so on) still apply.
+
+Bottom line: no SCCs needed for Brazil to EU/EEA transfers, except where the transfer purpose falls under the public safety, defence, State security or criminal-enforcement exclusion, or where data goes onward to a non-adequate country.
+
+General information, not legal advice. Check the Resolution text and any later ANPD guidance before changing contracts.

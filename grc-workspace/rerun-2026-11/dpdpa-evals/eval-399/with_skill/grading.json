@@ -1,0 +1,33 @@
+{
+  "eval_id": 399,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Anchors the security-safeguards penalty to Section 8(5) with the Rs 250 crore Schedule tier",
+      "passed": true,
+      "evidence": "Table: \"Failure to take reasonable security safeguards ... Section 8(5) ... Rs 250 crore\""
+    },
+    {
+      "text": "States the breach-notification failure tier of Rs 200 crore",
+      "passed": true,
+      "evidence": "\"Failure to give notice of a personal data breach ... Section 8(6) ... Rs 200 crore\""
+    },
+    {
+      "text": "States voluntary-undertaking breach is Section 32 with the penalty capped at the extent applicable to the underlying breach, not a flat Rs 50 crore",
+      "passed": true,
+      "evidence": "\"Section 32 ... Up to the extent applicable to the underlying breach for which the undertaking was given (no separate flat cap)\""
+    },
+    {
+      "text": "States Rs 50 crore is the residual tier for other breaches",
+      "passed": true,
+      "evidence": "\"Any other violation not specifically listed | Section 33 Schedule residual item | Rs 50 crore\""
+    },
+    {
+      "text": "Lists Section 33(2) factors consistent with the statute (nature/gravity/duration, type of data, repetition, gain or loss avoided, mitigation, proportionality and deterrence, likely impact of the penalty) without invented factors",
+      "passed": true,
+      "evidence": "Seven factors listed matching the statute exactly: nature/gravity/duration, type of data, repetitive nature, gain/loss avoided, mitigation, proportionate and effective (deterrence), likely impact"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

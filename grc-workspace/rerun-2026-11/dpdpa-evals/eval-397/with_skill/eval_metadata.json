@@ -1,0 +1,13 @@
+{
+  "eval_id": 397,
+  "eval_name": "rules-six-seven",
+  "run_type": "with_skill",
+  "prompt": "Under the DPDP Rules 2025, which rule covers security safeguards and which covers breach notification, and what exactly must we do when a breach occurs?",
+  "assertions": [
+    "Identifies Rule 6 as security safeguards (technology-neutral measures; logs and data retained for one year)",
+    "Identifies Rule 7 as personal data breach intimation",
+    "States the fiduciary must notify EACH affected Data Principal directly, without delay",
+    "States the Board gets an intimation without delay plus a detailed report within 72 hours (extendable on written request)",
+    "Does not cite TLS/AES specifications, two-year log retention, or any 'Rule 16' data processing agreement rule"
+  ]
+}

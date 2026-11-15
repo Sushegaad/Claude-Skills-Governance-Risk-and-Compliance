@@ -1,0 +1,26 @@
+**Chapter structure of the Digital Personal Data Protection Act, 2023 (44 sections, 9 chapters)**
+
+| Chapter | Sections | Subject |
+|---|---|---|
+| I | 1-3 | Preliminary: short title, definitions, application (territorial scope) |
+| II | 4-10 | Obligations of Data Fiduciary (grounds for processing, notice, consent, legitimate uses, general obligations, children, Significant Data Fiduciaries) |
+| III | 11-15 | Rights and duties of Data Principal |
+| IV | 16-17 | Special provisions: transfer outside India, exemptions |
+| V | 18-26 | Data Protection Board of India |
+| VI | 27-28 | Powers, functions and procedure of the Board |
+| VII | 29-32 | Appeal and alternate dispute resolution |
+| VIII | 33-34 | Penalties and adjudication |
+| IX | 35-44 | Miscellaneous |
+
+**Appeals to the TDSAT**
+- Section 29 provides that an order of the Board can be appealed to the Telecom Disputes Settlement and Appellate Tribunal (TDSAT) as the Appellate Tribunal, within the prescribed period. Section 30 contains related appellate provisions (check the Act text for its exact title and content).
+- Implementing procedure: Rule 22 of the DPDP Rules 2025 (digital filing, fees and procedure as specified). Rule 22 comes into force on 13 May 2027, with the other remaining rules.
+- Sequence in practice: a Data Principal first exhausts the Fiduciary's grievance mechanism (Section 13), then complains to the Board, which decides after an inquiry, and any party dissatisfied with the Board's order appeals to the TDSAT.
+
+**Voluntary undertakings**
+- Section 32 (in Chapter VII). A Data Fiduciary may offer a voluntary undertaking to remedy a violation, and the Board may accept it. Acceptance can bar further proceedings on the matter, and if the undertaking is breached, the breach is treated as a breach of the Act.
+- Penalty for breach of an accepted undertaking: capped at the extent applicable to the underlying breach for which the undertaking was given. There is no separate flat cap (Section 33 Schedule).
+
+Related: Section 31 (Chapter VII) allows the Board to refer disputes to mediation or other alternate dispute resolution. Penalties are in Section 33 and the Schedule, and Section 34 credits penalties to the Consolidated Fund of India.
+
+This is general compliance information, not legal advice.

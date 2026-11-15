@@ -1,0 +1,19 @@
+Two separate questions here.
+
+1. What Article 54 actually governs
+
+LGPD Art. 54 is not about limitation periods. The article originally dealt with the amount of the daily fine ("multa diária"), and it was vetoed. The veto (by President Temer in 2018) removed Art. 54 text that stated that the value of the daily fine should take into account the severity of the infraction and be justified. It would be within Chapter VIII (Supervision, sanctions) next to Arts. 52 and 53. So the article is effectively empty or vetoed and cannot be used as a source of a statute of limitations. I recall that the veto concerned Art. 54 (daily fine value) together with Art. 52, items X-XII (partial suspension, database activity), but I am not certain of every detail, so check the consolidated text.
+
+2. Statute of limitations on ANPD fines
+
+The LGPD does not contain a dedicated limitation period for ANPD sanctions. The general federal administrative-law rules therefore apply:
+- Law 9.873/1999: the Federal Administration's punitive action (pretensão punitiva) lapses in 5 years from the date the act was committed (or from the date it ceased, for continuing infractions). Prescription is interrupted by notification of the party, by any act that unequivocally identifies the investigation of the fact, and by a decision that ends an appeal.
+- Intercurrent prescription: if the administrative proceeding stays paralysed for more than 3 years awaiting judgment or a decision, it lapses (Art. 1, para. 1), with possible accountability for the official.
+- If the act is also a crime, the criminal limitation period applies (Art. 1, para. 2).
+- The execution period for collecting an already-imposed fine is 5 years (Decree 20.910/1932 and Law 9.873/1999, Art. 1-A, as added by Law 11.941/2009).
+
+The ANPD's Sanctions Regulation (Resolução CD/ANPD nº 4/2023, the Regulamento de Dosimetria e Aplicação de Sanções Administrativas) and its Enforcement Regulation (Resolução CD/ANPD nº 1/2021) apply these rules, referring to Law 9.784/1999 and Law 9.873/1999 for limitation and procedure. The details of interruption and time counting should be verified against the current ANPD texts.
+
+Related points: LGPD fines are up to 2% of revenue in Brazil, capped at R$50 million per infraction (Art. 52, II). The 5-year period interacts with civil liability, which is separate: data subjects' damages claims follow the civil law (generally 3 years under Civil Code Art. 206, para. 3, V, though courts debate whether 5 years under the Consumer Code applies in consumer relationships).
+
+Conclusion: yes, there is a limitation period, but it comes from Law 9.873/1999 (5 years, plus 3-year intercurrent), not from the LGPD. Art. 54 should not be cited for it. Please verify with Brazilian counsel.

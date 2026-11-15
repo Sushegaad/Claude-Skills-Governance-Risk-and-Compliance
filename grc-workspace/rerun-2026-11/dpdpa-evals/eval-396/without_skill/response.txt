@@ -1,0 +1,21 @@
+Section 7 of the Digital Personal Data Protection Act, 2023 ("Certain legitimate uses") lists NINE uses, clauses (a) to (i). The Act is a closed list. There is no residual clause reading "other prescribed purposes as notified". Your vendor's checklist is therefore wrong on two counts: it has eight items instead of nine, and it adds a catch-all that does not exist in Section 7.
+
+The nine legitimate uses, in the order of the Act (from memory, paraphrased):
+
+(a) Specified purpose, voluntarily provided. The Data Principal voluntarily provided the personal data to the Data Fiduciary for a specified purpose and has not indicated that she does not consent to the use of her data for that purpose.
+(b) State subsidies, benefits, services, certificates, licences and permits. The State or its instrumentalities process the data to give the Data Principal a subsidy, benefit, service, certificate, licence or permit, where she previously consented to such processing or the data is already in State databases or notified records, subject to the standards prescribed in the Rules.
+(c) State functions and security. The State or its instrumentalities perform a function under law, or act in the interest of the sovereignty and integrity of India or the security of the State.
+(d) Legal obligation to disclose to the State. A person must disclose information to the State or an instrumentality under any law in force (and the information is processed in accordance with that law).
+(e) Judgments, decrees and orders. Processing is needed to comply with any judgment, decree or order under any law, or any judgment or order relating to contractual or civil claims under a law outside India.
+(f) Medical emergency. A medical emergency involves a threat to the life or immediate threat to the health of the Data Principal or another person.
+(g) Public health. Processing is needed for medical treatment or health services during an epidemic, outbreak of disease or other threat to public health.
+(h) Disasters and public order. Processing is needed to ensure safety of, or give assistance or services to, any person during a disaster or any breakdown of public order.
+(i) Employment. Processing is for the purposes of employment or for safeguarding the employer from loss or liability (for example corporate espionage, confidential information, IP), or to provide a service or benefit sought by an employee.
+
+Points to note for the checklist:
+- Section 7 is exhaustive. The Act itself (and the Rules) do not add "other prescribed purposes". The Rules can prescribe standards or conditions for specific limbs, such as clause (b) (Second Schedule standards for State processing), but they do not create a tenth category.
+- Section 7(a) is a distinct "voluntary provision" ground and not a deemed-consent mechanism for anything the fiduciary likes. The purpose has to be specified and the principal must not have objected.
+- Section 7 uses are exceptions to the consent requirement in Section 4(1)(b). Notice and other obligations such as Section 8 security, accuracy and erasure still apply, subject to any exemptions elsewhere (Section 17).
+- Section 7 no longer carries "reasonable purposes" as in earlier drafts (2018 Bill, 2022 draft), which is possibly where the vendor's open-ended wording came from.
+
+Recommendation: ask the vendor to correct the checklist to nine items (a) to (i), remove the "other prescribed purposes as notified" line, and cite the exact clause for each use they rely on. Verify against the gazetted text before relying on this.

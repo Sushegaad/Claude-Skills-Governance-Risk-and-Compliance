@@ -1,0 +1,13 @@
+{
+  "eval_id": 420,
+  "eval_name": "ecosystem-roles",
+  "run_type": "with_skill",
+  "prompt": "Who runs CMMC assessments and where do the results go?",
+  "assertions": [
+    "C3PAOs conduct Level 2 certification assessments",
+    "The Cyber AB accredits C3PAOs",
+    "Assessment results are entered in CMMC eMASS/SPRS",
+    "Level 1 (and eligible Level 2) self-assessments go into SPRS",
+    "Does not use the name 'CMMC-AB'"
+  ]
+}

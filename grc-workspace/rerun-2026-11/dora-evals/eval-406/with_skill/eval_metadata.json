@@ -1,0 +1,13 @@
+{
+  "eval_id": 406,
+  "eval_name": "oversight-articles",
+  "run_type": "with_skill",
+  "prompt": "Under DORA, which articles give the Lead Overseer its information-request, investigation and inspection powers, and where do joint examination teams come from?",
+  "assertions": [
+    "Request for information = Article 37",
+    "General investigations = Article 38",
+    "Inspections = Article 39",
+    "Joint examination teams = Article 40(1)",
+    "Recommendations flow from the Lead Overseer's powers in Article 35, and oversight fees are Article 43"
+  ]
+}

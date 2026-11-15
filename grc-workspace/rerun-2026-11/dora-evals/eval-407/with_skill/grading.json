@@ -1,0 +1,33 @@
+{
+  "eval_id": 407,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Article 30(2) is the baseline clause set for ALL ICT service contracts",
+      "passed": true,
+      "evidence": "'Baseline clauses, Art. 30(2)(a)-(i), apply to ALL ICT service contracts'"
+    },
+    {
+      "text": "Article 30(3) adds the stricter set for critical or important functions",
+      "passed": true,
+      "evidence": "'Additional clauses, Art. 30(3), apply because the contract supports a critical or important function'"
+    },
+    {
+      "text": "Exit strategies with a mandatory transition period sit at 30(3)(f)",
+      "passed": true,
+      "evidence": "'Exit strategies with a mandatory transition period (Art. 30(3)(f))'"
+    },
+    {
+      "text": "Unrestricted audit, access and inspection rights belong to the 30(3) critical/important set",
+      "passed": true,
+      "evidence": "'Unrestricted audit, access and inspection rights' listed under the Art. 30(3) additional clauses"
+    },
+    {
+      "text": "Register of Information duties (maintain and submit annually) sit in Article 28(3)",
+      "passed": false,
+      "evidence": "Register of Information attributed only to CIR (EU) 2024/2956; Article 28(3) is never mentioned"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

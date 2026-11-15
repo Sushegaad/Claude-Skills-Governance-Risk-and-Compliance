@@ -1,0 +1,13 @@
+{
+  "eval_id": 409,
+  "eval_name": "termination-exit-concentration",
+  "run_type": "with_skill",
+  "prompt": "Which DORA article paragraphs cover termination rights and exit strategies, and where is concentration risk addressed?",
+  "assertions": [
+    "Termination rights = Article 28(7)",
+    "Exit strategies = Article 28(8)",
+    "Concentration risk = Article 28(4)(c) and Article 29",
+    "Pre-determined audit/inspection frequency = Article 28(6)",
+    "Does not map 28(6) to concentration or 28(7) to exit"
+  ]
+}

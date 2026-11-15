@@ -1,0 +1,33 @@
+{
+  "eval_id": 413,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Reporting obligations (Article 14) apply since 11 September 2026",
+      "passed": true,
+      "evidence": "'11 September 2026: Article 14 reporting obligations apply'"
+    },
+    {
+      "text": "Chapter IV notified-body provisions (Articles 35-51) apply from 11 June 2026",
+      "passed": true,
+      "evidence": "'11 June 2026: Chapter IV (Arts. 35 to 51)... applies'"
+    },
+    {
+      "text": "11 December 2026 is only the Article 35(2) target for a sufficient number of notified bodies",
+      "passed": false,
+      "evidence": "11 December 2026 / Art. 35(2) notified-body target is never mentioned"
+    },
+    {
+      "text": "Full application is 11 December 2027",
+      "passed": true,
+      "evidence": "'11 December 2027: the rest of the Regulation applies in full'"
+    },
+    {
+      "text": "Mentions the minimum five-year support period obligation",
+      "passed": false,
+      "evidence": "No mention of the minimum five-year support period anywhere"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

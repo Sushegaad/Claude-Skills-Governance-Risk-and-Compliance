@@ -1,0 +1,13 @@
+{
+  "eval_id": 399,
+  "eval_name": "penalty-anchors",
+  "run_type": "without_skill",
+  "prompt": "What are the key DPDP Act penalty exposures and their exact statutory anchors?",
+  "assertions": [
+    "Anchors the security-safeguards penalty to Section 8(5) with the Rs 250 crore Schedule tier",
+    "States the breach-notification failure tier of Rs 200 crore",
+    "States voluntary-undertaking breach is Section 32 with the penalty capped at the extent applicable to the underlying breach, not a flat Rs 50 crore",
+    "States Rs 50 crore is the residual tier for other breaches",
+    "Lists Section 33(2) factors consistent with the statute (nature/gravity/duration, type of data, repetition, gain or loss avoided, mitigation, proportionality and deterrence, likely impact of the penalty) without invented factors"
+  ]
+}

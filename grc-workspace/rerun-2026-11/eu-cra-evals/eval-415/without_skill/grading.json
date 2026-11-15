@@ -1,0 +1,33 @@
+{
+  "eval_id": 415,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Lists Annex IV: hardware devices with security boxes; smart meter gateways; smartcards or similar devices including secure elements",
+      "passed": true,
+      "evidence": "Lists hardware devices with security boxes; smart meter gateways; smartcards or similar devices, including secure elements"
+    },
+    {
+      "text": "States there are exactly three critical-product categories",
+      "passed": true,
+      "evidence": "Enumerates exactly three Annex IV categories (1-3)"
+    },
+    {
+      "text": "States critical products can be made subject to mandatory EU cybersecurity certification",
+      "passed": true,
+      "evidence": "Art. 8(1) delegated acts can require a European cybersecurity certificate at least at 'substantial' to demonstrate conformity"
+    },
+    {
+      "text": "Distinguishes them from Annex III important products (Class I and II)",
+      "passed": true,
+      "evidence": "'No self-assessment is permitted for them, unlike Class I with applied standards or default products' - critical tier distinguished from important classes"
+    },
+    {
+      "text": "Does not add invented entries such as TPMs or HSMs",
+      "passed": true,
+      "evidence": "Only the three genuine Annex IV entries; no TPM/HSM or other invented entries"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 410,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Article 54 = publication of administrative penalties",
+      "passed": true,
+      "evidence": "'Art. 54 - Publication of administrative penalties'"
+    },
+    {
+      "text": "Article 55 = professional secrecy",
+      "passed": true,
+      "evidence": "'Art. 55 - Professional secrecy'"
+    },
+    {
+      "text": "Article 56 = data protection",
+      "passed": true,
+      "evidence": "'Art. 56 - Data protection'"
+    },
+    {
+      "text": "Article 58 = review clause",
+      "passed": true,
+      "evidence": "'Art. 58 - Review clause'"
+    },
+    {
+      "text": "Article 59 amends Regulation (EC) 1060/2009 (credit rating agencies) and Article 62 amends Regulation (EU) 600/2014 (MiFIR), not AIFMD",
+      "passed": true,
+      "evidence": "'Art. 59 amends Regulation (EC) No 1060/2009 (credit rating agencies)' and 'Art. 62 amends Regulation (EU) No 600/2014 (MiFIR)'; AIFMD not mentioned"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

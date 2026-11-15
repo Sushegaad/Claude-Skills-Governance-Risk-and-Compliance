@@ -1,0 +1,33 @@
+{
+  "eval_id": 412,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States the CRA contains no product-registration database",
+      "passed": true,
+      "evidence": "'The CRA has no EU database registration requirement... contains no product registration database obligation'"
+    },
+    {
+      "text": "States conformity is demonstrated via the Declaration of Conformity and CE marking",
+      "passed": true,
+      "evidence": "'Conformity is demonstrated through the DoC and CE marking, supported by the technical documentation'"
+    },
+    {
+      "text": "Identifies the ENISA single reporting platform (Art. 14 reports) as the only registration-like duty",
+      "passed": true,
+      "evidence": "'ENISA Single Reporting Platform (SRP). This is the only registration-like duty... Art. 14 reports'"
+    },
+    {
+      "text": "Describes the Class I conformity route reasonably (harmonised standards/self-assessment vs third-party where applicable)",
+      "passed": true,
+      "evidence": "Class I: Module A self-assessment or Notified Body, manufacturer's choice; self-assessment needs genuine evidence"
+    },
+    {
+      "text": "Does not endorse any 'register by December 2027' database claim",
+      "passed": true,
+      "evidence": "Explicitly rejects the claim and asks consultant for the specific article; no Dec 2027 database endorsed"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

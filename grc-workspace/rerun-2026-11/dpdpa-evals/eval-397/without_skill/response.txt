@@ -1,0 +1,34 @@
+DPDP Rules, 2025 (notified November 2025): the two rules you are asking about.
+
+- Rule 6: Reasonable security safeguards (implements Section 8(5) of the Act).
+- Rule 7: Intimation of personal data breach (implements Section 8(6) of the Act).
+
+(Context: Rule 3 is the notice, Rule 4 consent managers, Rule 5 State processing, Rule 8 erasure periods with the Third Schedule, Rule 10 verifiable consent for children, Rule 13 Significant Data Fiduciary duties, Rule 14 rights of Data Principals, Rule 15 transfers outside India. Check numbering against the gazetted text.)
+
+RULE 6 - Security safeguards. A Data Fiduciary must put in place reasonable security safeguards, including at minimum:
+1. Securing personal data through encryption, obfuscation or masking, or the use of virtual tokens mapped to that data.
+2. Controlling access to the computer resources used by the fiduciary or its Processor.
+3. Visibility on access, through logs, monitoring and review, to detect unauthorised access, and to investigate, remediate and prevent recurrence.
+4. Continued processing in the event of compromise, through data backups and similar measures.
+5. Retaining logs and personal data for one year, unless law requires otherwise, to detect, investigate and remediate.
+6. Appropriate contractual provisions with Data Processors to take reasonable security safeguards.
+7. Appropriate technical and organisational measures to make sure Rule 6 is observed effectively.
+
+RULE 7 - What must be done on a personal data breach. A breach is unauthorised processing, or accidental disclosure, acquisition, sharing, use, alteration, destruction or loss of access to personal data that compromises confidentiality, integrity or availability (Section 2(u)). Note there is no materiality or harm threshold: every breach must be notified.
+
+(1) To each affected Data Principal, without delay, in a concise, clear and plain manner through her user account or any mode registered with the fiduciary:
+- a description of the breach, including its nature, extent and timing, and the location of occurrence;
+- the consequences relevant to her that are likely to arise;
+- the measures implemented and being implemented by the fiduciary to mitigate risk;
+- safety measures she can take to protect her interests;
+- business contact information of a person who can answer her queries.
+
+(2) To the Data Protection Board of India:
+- (a) without delay: a description of the breach, including its nature, extent, timing and location of occurrence, and the likely impact;
+- (b) within 72 hours of becoming aware (or a longer period the Board allows on request): updated and detailed information on the facts and circumstances that led to the breach, the measures to mitigate risk, any findings about the person who caused it, remedial measures to prevent recurrence, and a report on the intimations given to affected Data Principals.
+
+Practical steps: build an incident response runbook with a clock starting at awareness, pre-approved templates for the Data Principal and Board notices, a processor clause requiring prompt notice to you, evidence preservation (the 1-year log retention in Rule 6), root cause analysis, and a breach register.
+
+Penalty exposure: failure on security safeguards, up to Rs 250 crore (Section 8(5) / Schedule); failure to notify the Board and affected Data Principals, up to Rs 200 crore (Section 8(6) / Schedule).
+
+Timing: Rules were notified in staggered fashion; the substantive obligations (including Rules 6 and 7) generally come into force 18 months after notification (about May 2027), while Board constitution provisions took effect immediately. Confirm against the notification.

@@ -1,0 +1,33 @@
+{
+  "eval_id": 425,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States yes: mutual adequacy has applied since January 2026",
+      "passed": false,
+      "evidence": "Hedged: 'possibly yes, but I cannot confirm... Do not assume SCCs are unnecessary' - fails the fact-stating assertion"
+    },
+    {
+      "text": "Cites Commission Implementing Decision (EU) 2026/179",
+      "passed": false,
+      "evidence": "Never cites Decision (EU) 2026/179; only mentions a September 2025 draft decision"
+    },
+    {
+      "text": "Cites ANPD Resolution CD/ANPD 32/2026 under Article 33, I",
+      "passed": false,
+      "evidence": "Never cites Resolution CD/ANPD 32/2026; says it cannot confirm an in-force ANPD adequacy decision"
+    },
+    {
+      "text": "States the carve-outs: public safety, national defence, State security, criminal investigation/prosecution",
+      "passed": false,
+      "evidence": "No mention of the public safety/defence/State security/criminal carve-outs"
+    },
+    {
+      "text": "Keeps SCCs (Res. 19/2024) and BCRs available for excluded scopes and other countries",
+      "passed": true,
+      "evidence": "Keeps Res. 19/2024 SCCs and BCRs available: 'If not, use the ANPD SCCs..., BCRs, or another Art. 33 mechanism'"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

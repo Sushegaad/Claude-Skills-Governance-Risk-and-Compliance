@@ -1,0 +1,19 @@
+Regulation (EU) 2022/2554 (DORA). Paragraph references are from memory and should be verified.
+
+Termination rights:
+- Art. 28(7): financial entities must be able to terminate an ICT third-party arrangement in specified circumstances. These are:
+  (a) significant breach of laws, regulations or contract terms by the provider;
+  (b) circumstances identified during monitoring that are deemed capable of altering performance of the functions, including material changes affecting the arrangement or the provider's situation;
+  (c) the provider's evidenced weaknesses in ICT risk management, in particular in how it ensures the availability, authenticity, integrity and confidentiality of data;
+  (d) circumstances where the competent authority can no longer effectively supervise the financial entity because of the arrangement.
+- Art. 30(2)(h): contractual termination rights and related minimum notice periods, as required in every ICT contract.
+
+Exit strategies:
+- Art. 28(8): exit strategies for ICT services supporting critical or important functions, covering provider failure, poor service quality, business disruption and termination. They must be documented, tested and periodically reviewed, and include transition plans.
+- Art. 30(3)(f): the contract for critical or important functions must include exit strategies, in particular a mandatory adequate transition period (during which the provider keeps providing the service and supports migration).
+- The RTS on the ICT third-party policy, Delegated Regulation (EU) 2024/1773, adds detail on exit plans and the contract lifecycle.
+
+Concentration risk:
+- Art. 29: preliminary assessment of ICT concentration risk at entity level. It covers contracting with a provider that is not easily substitutable, multiple contracts with the same or closely connected providers, and subcontracting chains, including subcontractors in third countries.
+- Art. 28(4)(c): before signing, assess whether the arrangement would reinforce concentration risk.
+- Art. 31 and following (critical ICT third-party provider designation and EU oversight) address concentration at system level.

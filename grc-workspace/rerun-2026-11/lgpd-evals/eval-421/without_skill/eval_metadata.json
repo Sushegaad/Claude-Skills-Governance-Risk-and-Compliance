@@ -1,0 +1,13 @@
+{
+  "eval_id": 421,
+  "eval_name": "sensitive-credit",
+  "run_type": "without_skill",
+  "prompt": "Can we process sensitive health data in Brazil for credit-protection purposes without consent?",
+  "assertions": [
+    "States no: credit protection is Article 7, X, a regular-data basis only",
+    "States Article 11's non-consent bases are the closed list II(a)-(g)",
+    "Correctly names relevant Art. 11 bases (for example health tutelage, legal obligation, protection of life)",
+    "States sensitive-data consent must be specific and highlighted (Art. 11, I)",
+    "Does not present credit protection as an Article 11 basis"
+  ]
+}

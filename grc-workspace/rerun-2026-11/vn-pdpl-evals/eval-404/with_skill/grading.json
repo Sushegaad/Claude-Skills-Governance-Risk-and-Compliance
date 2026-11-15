@@ -1,0 +1,33 @@
+{
+  "eval_id": 404,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies the Article 38 opt-out covering Articles 21, 22 and 33(2)",
+      "passed": true,
+      "evidence": "'under Article 38 ... may opt out of three provisions': 'Article 21 ... Article 22 ... Article 33(2)'"
+    },
+    {
+      "text": "States the opt-out runs five years",
+      "passed": true,
+      "evidence": "'opt out ... for 5 years from the Law's effective date (1 January 2026), i.e. until about 1 January 2031'"
+    },
+    {
+      "text": "Notes micro-enterprises and household businesses are exempt from the same provisions",
+      "passed": true,
+      "evidence": "'Micro-enterprises and household businesses get the exemption on the same conditions'"
+    },
+    {
+      "text": "Makes clear other PDPL duties still apply",
+      "passed": true,
+      "evidence": "Extensive 'What you CANNOT defer (applies from 1 January 2026)' section: consent, rights, breach, cross-border, notices, DPO, sector overlays"
+    },
+    {
+      "text": "Does not cite invented chapter numbers",
+      "passed": true,
+      "evidence": "No invented chapter numbers; citations are to real articles of Law 91/2025 and Decrees 356/330"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

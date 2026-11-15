@@ -163,7 +163,7 @@ Key requirements under SC 1.3.1, 4.1.2, and PDF/UA (ISO 14289):
 - Document language set in Document Properties → Advanced → Reading Options
 - Document title set (not just filename)
 
-### Procurement (FAR Clause 52.239-2)
+### Procurement (FAR Subpart 39.2 and 11.002(f))
 Include in RFPs:
 - Reference to 36 CFR Part 1194 and applicable provisions (E205 for web/software/docs)
 - Require VPAT (ACR) using VPAT 2.x WCAG Edition within 30 days of award

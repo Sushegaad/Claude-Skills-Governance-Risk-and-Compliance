@@ -1,0 +1,40 @@
+**Which rule covers what (DPDP Rules, 2025)**
+- Security safeguards: Rule 6, implementing Section 8(5) of the Act.
+- Personal data breach intimation: Rule 7, implementing Section 8(6) of the Act.
+
+Both Rules commence on 13 May 2027 (the Rules are staggered: Rules 1, 2 and 17-21 took effect on 13 November 2025, Rule 4 takes effect on 13 November 2026, and the remainder, including Rules 6 and 7, on 13 May 2027). Build your processes now so they are ready by then.
+
+**Rule 6 - Reasonable security safeguards (Section 8(5))**
+Rule 6 is technology-neutral. It requires outcome-level measures, at a minimum:
+- Securing personal data through measures such as encryption, obfuscation, masking or virtual tokens.
+- Appropriate control of access to the systems used to process personal data.
+- Visibility through logs and monitoring to detect, investigate and remediate unauthorised access.
+- Retaining logs and relevant personal data for one year to enable breach detection and investigation (unless another law requires otherwise).
+- Contractual provisions requiring Data Processors to maintain equivalent safeguards (Section 8(2) contract).
+- Measures, such as backups, to ensure continued processing if systems are compromised.
+
+Rule 6 does not prescribe specific technologies, TLS versions, key lengths or patch windows. Those are your own implementation choices and should not be presented as Rule 6 requirements. Penalty for failure: up to Rs 250 crore (Section 33 Schedule), the highest tier.
+
+**Rule 7 - What you must do when a breach occurs**
+On becoming aware of a personal data breach (unauthorised processing or accidental disclosure causing loss of confidentiality, integrity or availability), the Data Fiduciary must:
+
+1. Intimate each affected Data Principal directly, without delay. This is the Fiduciary's own duty and does not depend on any Board direction. Use clear, plain language, via the user account or registered mode of communication. Cover: what happened, the likely consequences, the measures being taken, the safety steps the Data Principal can take, and the contact details of a person who can answer queries.
+2. Intimate the Data Protection Board without delay, with an initial description of the breach (nature, extent, timing, location and likely impact).
+3. Send the Board a detailed report within 72 hours of becoming aware (or a longer period the Board allows on request). It should cover updated and detailed breach information, the circumstances and reasons, mitigation measures, findings about the person who caused the breach, remedial measures, and a report of the intimations given to Data Principals.
+
+Key points:
+- There is no risk-of-harm threshold. Unlike GDPR, all personal data breaches must be intimated, so do not build a "low-risk, no notify" filter into the SOP.
+- The 72-hour clock applies to the detailed Board report, not to the initial intimations, which are "without delay".
+- Penalty for failing to give breach notice: up to Rs 200 crore.
+- Your processors must tell you promptly (contractual term under Section 8(2)), because the clock runs from your awareness.
+
+**Suggested response protocol**
+- T=0: open an incident ticket. Early hours: contain and triage.
+- Within about 24 hours: classify whether it is a personal data breach.
+- Without delay once confirmed: send the Data Principal notices and the initial Board intimation. Do not wait for the investigation to finish.
+- By 72 hours: file the detailed Board report, even if the investigation is ongoing, or ask the Board for an extension. Send supplementary reports as facts develop.
+- Keep logs for a year (Rule 6) and retain evidence of notices sent. Under Section 6(10)-style accountability, you must be able to show what you did and when.
+
+Also consider: pre-draft the notice templates, define who the contact person is (Rule 9), confirm the processor contracts have breach-notification and cooperation clauses, and run a tabletop exercise before 13 May 2027.
+
+This is general compliance information, not legal advice.

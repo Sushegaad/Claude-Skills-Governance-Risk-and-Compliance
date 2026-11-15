@@ -6,24 +6,24 @@
 
 ## 1. LGPD Compliance Roadmap
 
-### Phase 1 — Foundation (Months 1–3)
-- [ ] Appoint DPO (Encarregado) — publish contact on website
+### Phase 1 - Foundation (Months 1–3)
+- [ ] Appoint DPO (Encarregado) - publish contact on website
 - [ ] Conduct personal data inventory / data mapping
 - [ ] Identify all processing activities and responsible owners
 - [ ] Create Records of Processing Activities (RoPA)
 - [ ] Conduct initial LGPD gap assessment
 
-### Phase 2 — Remediation (Months 3–6)
+### Phase 2 - Remediation (Months 3–6)
 - [ ] Map legal basis to each processing activity (Arts. 7, 11)
 - [ ] Draft/update privacy notices (Art. 9)
-- [ ] Update consent mechanisms — ensure validity (Art. 8)
+- [ ] Update consent mechanisms - ensure validity (Art. 8)
 - [ ] Implement data subject rights fulfilment procedures
 - [ ] Conduct Data Protection Impact Assessment (RIPD) for high-risk processing
 - [ ] Review and update supplier/processor contracts (Art. 39)
 - [ ] Implement security technical and administrative measures (Art. 46)
 - [ ] Establish international transfer compliance (Arts. 33–36)
 
-### Phase 3 — Operationalisation (Months 6–9)
+### Phase 3 - Operationalisation (Months 6–9)
 - [ ] Train all employees on LGPD obligations
 - [ ] Implement automated data subject request workflow
 - [ ] Establish breach detection and notification procedure (Art. 48)
@@ -31,7 +31,7 @@
 - [ ] Create internal LGPD governance committee
 - [ ] Conduct privacy by design review of new products/services
 
-### Phase 4 — Ongoing Compliance
+### Phase 4 - Ongoing Compliance
 - [ ] Annual LGPD gap reassessment
 - [ ] RIPD for any new high-risk processing
 - [ ] Monitor ANPD guidance and resolution updates
@@ -50,7 +50,7 @@
 | Processing Activity Name | e.g., "Customer Account Management" |
 | Controller | Legal name, CNPJ |
 | DPO Contact | Name, email, phone |
-| Processor(s) | If applicable — name, CNPJ, role |
+| Processor(s) | If applicable - name, CNPJ, role |
 | Purpose | Specific, legitimate purpose |
 | Legal Basis | Art. 7 or Art. 11 basis; if LI, balancing test reference |
 | Categories of Data | e.g., identification, financial, health, biometric |
@@ -61,24 +61,24 @@
 | International Transfers | Countries; transfer mechanism |
 | Retention Period | Duration; basis for retention or deletion |
 | Security Measures | Technical and administrative measures summary |
-| RIPD Reference | If DPIA/RIPD was conducted — reference number |
+| RIPD Reference | If DPIA/RIPD was conducted - reference number |
 | Last Updated | Date |
 
 ---
 
 ## 3. Data Subject Request (DSR) Procedure
 
-### Step 1 — Receive
+### Step 1 - Receive
 - Provide accessible request channel (web form, email, in-person)
 - Log every request: date, requestor identity, type of request
 - Send acknowledgement within 1 business day
 
-### Step 2 — Verify Identity
+### Step 2 - Verify Identity
 - Request minimum necessary identity proof (name + CPF + account reference)
-- Do not require excessive documentation — proportionate to risk
+- Do not require excessive documentation - proportionate to risk
 - For requests on behalf of another: require valid power of attorney
 
-### Step 3 — Classify Request
+### Step 3 - Classify Request
 | Request Type | LGPD Article | Typical Response |
 |-------------|-------------|-----------------|
 | Confirmation of processing | Art. 18, I | Immediate (simplified) |
@@ -92,16 +92,11 @@
 | Consent revocation | Art. 18, IX | Without undue delay |
 | Automated decision review | Art. 20 | Upon request |
 
-### Step 4 — Assess Exemptions
-Controller may decline if (Art. 18, §3º):
-- Data subject or third party would be harmed
-- National security
-- Financial intelligence or fiscal activities
-- Criminal/civil investigations
-- Economic or financial protection of public entity
-Must inform data subject of exemption applied and right to complain to ANPD.
+### Step 4 - Assess Ability to Comply (Art. 18, §3º–§4º)
+- Rights are exercised by express request of the data subject or of a legally constituted representative (Art. 18, §3º)
+- Where the controller cannot comply immediately, send the data subject a justified response under Art. 18, §4º
 
-### Step 5 — Respond
+### Step 5 - Respond
 - Free of charge
 - Clear, accessible language
 - Immediate for simplified responses; 15 days for full access report
@@ -111,9 +106,9 @@ Must inform data subject of exemption applied and right to complain to ANPD.
 
 ## 4. Data Protection Impact Assessment (RIPD) Template
 
-*Relatório de Impacto à Proteção de Dados Pessoais — Art. 38 LGPD*
+*Relatório de Impacto à Proteção de Dados Pessoais - Art. 38 LGPD*
 
-### Section 1 — Processing Description
+### Section 1 - Processing Description
 - Name and purpose of processing activity
 - Legal basis (Art. 7 or Art. 11)
 - Categories of personal data and data subjects
@@ -122,13 +117,13 @@ Must inform data subject of exemption applied and right to complain to ANPD.
 - Third parties involved (processors, sub-processors)
 - International transfers
 
-### Section 2 — Necessity and Proportionality Assessment
+### Section 2 - Necessity and Proportionality Assessment
 - Is the processing necessary for the stated purpose?
 - Could the purpose be achieved with less data (necessity principle)?
 - Is the retention period proportionate?
 - Could anonymisation or pseudonymisation reduce risk?
 
-### Section 3 — Risk Identification
+### Section 3 - Risk Identification
 | Risk | Likelihood | Impact | Risk Level |
 |------|-----------|--------|-----------|
 | Unauthorised access | High/Med/Low | High/Med/Low | High/Med/Low |
@@ -137,19 +132,19 @@ Must inform data subject of exemption applied and right to complain to ANPD.
 | Discriminatory use | ... | ... | ... |
 | Inaccurate data | ... | ... | ... |
 
-### Section 4 — Mitigation Measures
+### Section 4 - Mitigation Measures
 For each identified risk:
 - Technical measure to be implemented
 - Administrative/process measure
 - Residual risk after mitigation
 - Responsible party and implementation date
 
-### Section 5 — DPO Opinion
+### Section 5 - DPO Opinion
 - DPO name and review date
 - DPO recommendation: Proceed / Proceed with conditions / Do not proceed
 - Conditions/recommendations if applicable
 
-### Section 6 — Management Approval
+### Section 6 - Management Approval
 - Controller representative signature and date
 - Decision: Proceed / Modify / Cancel processing
 
@@ -213,7 +208,7 @@ Content:
 - Produce annual DPO report for management
 
 ### DPO Publication Requirement (Art. 41, §1º)
-Controller must publish DPO identity and contact details — typically on:
+Controller must publish DPO identity and contact details - typically on:
 - Company website (privacy policy page)
 - Privacy notice / cookie notice
 - Any form collecting personal data

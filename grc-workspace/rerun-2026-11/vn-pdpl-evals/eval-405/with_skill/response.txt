@@ -1,0 +1,40 @@
+Vietnamese PDPL provisions for employee monitoring, banking data and AI or cloud processing
+
+The framework has two layers: Law 91/2025/QH15 (substance, with sector articles in Chapter II) and Decree 356/2025/ND-CP (implementing detail). Penalties are in Decree 330/2026/ND-CP (effective 19 August 2026).
+
+1. Employee monitoring
+- Law Article 25 (recruitment and employee data) is the sector article. Also relevant: Article 31 (location and biometric data), because GPS tracking, badge or face or fingerprint attendance and similar monitoring involve data that Decree 356 Art. 4 treats as sensitive.
+- Lawful basis: processing necessary for the employment contract can rely on the contract-performance basis (Art. 19). Optional monitoring or wellness programmes should rest on consent. Legitimate interests is not a standalone basis in Vietnam, so "we monitor for security" needs a contractual, legal or consent footing.
+- Sensitive data (location, biometrics, health, behavioural tracking) needs explicit, separate consent (Art. 10). Consent must be voluntary, specific and recorded (Art. 9; Decree 356 Art. 6 methods). Silence and pre-ticked boxes are invalid, and bundling it into the employment contract is risky.
+- Transparency: tell employees what is monitored, why, retention, and who sees it. Employees have the same data subject rights and deadlines (Decree 356 Art. 5: 2 working days to acknowledge, 10 for access or correction, 15 for withdrawal or restriction, 20 for deletion).
+- Cross-border: employee HR data held in cloud HR systems is within the Art. 20 transfer-assessment exception, if used solely for HR administration. Monitoring data used for other purposes may not qualify. The Labour Code also continues to apply.
+- Penalties: consent violations VND 30-50M; silence-as-consent or processing after withdrawal VND 50-70M.
+
+2. Banking and financial data
+- Law Article 27 (finance, banking and credit) and Decree 356 Article 8 (finance and banking sector).
+- Financial data (accounts, cards, income, credit history) is sensitive under Decree 356 Art. 4, so explicit separate consent is needed.
+- Decree 356 Art. 8 duties: annual documented compliance assessment; detailed periodic audit logs of access (who, when, what, purpose); written processing agreements with outsourced processors, with annual assessment of critical ones recommended; retention per financial regulations, otherwise delete or de-identify.
+- Breach: 72 hours to the authority, and in this sector also to affected data subjects within 72 hours, simultaneously.
+- Credit scoring and financial profiling are high-risk AI uses with enhanced transparency (Decree 356 Art. 10).
+- Banking-sector law, such as State Bank requirements and the Cybersecurity Law, runs alongside.
+
+3. AI processing
+- Law Article 30 (big data, AI, blockchain, metaverse, cloud) and Decree 356 Article 10 (AI and metaverse), with Article 9 for big data.
+- Obligations: inform data subjects when AI or automated processing is used and what the likely outcomes are; provide a simple opt-out from automated processing that significantly affects them; carry out documented periodic assessments of accuracy, bias, rights impact and security; do not use deceptive or manipulative AI processing. Profiling, credit scoring and employment decisions get enhanced transparency.
+- Note the difference from GDPR: there is no explicit right to human review or data portability, but the opt-out is required.
+- Big data (Art. 9): MFA, encryption or anonymisation, continuous monitoring, periodic penetration testing, purging unneeded data, and opt-outs where feasible.
+- Check the cross-border impact assessment if models or data are hosted or processed abroad.
+
+4. Cloud processing
+- Law Article 30 and Decree 356 Article 12.
+- Encrypt at rest and in transit, with controller-managed keys or suitable key management; limit provider access to what is technically necessary and review it; do due diligence on providers (ISO 27001, SOC 2, data centre locations); put VN-PDPL obligations in the cloud contract; the provider must notify the controller immediately of a breach while the controller keeps the 72-hour duty to the authority.
+- Cross-border (Law Art. 20): a transfer impact assessment dossier goes to the Ministry of Public Security within 60 days of the first transfer, with 6-monthly updates or updates on material change. The Ministry can suspend transfers. Failures: VND 30-50M for plain non-filing, and up to 1-5% of Vietnam revenue (or VND 200M-3B fixed tiers) for serious violations involving data loss under Decree 330/2026.
+
+Cross-cutting provisions
+- Principles (Art. 3), consent (Arts. 9 and 10), processing without consent (Art. 19), breach notification (Art. 23), DPIA (Art. 21), controller and processor duties (Art. 37).
+- DPO or protection personnel (Decree 356 Art. 13): needed for large-scale or sensitive processing, which banks and monitoring and AI use cases will usually meet. The DPO needs a degree plus 2 years of relevant experience, and must be independent, report to senior management, and have published contact details. An external DPO is allowed.
+- SME opt-out from Arts. 21, 22 and 33(2) does not apply to any of these, since all involve sensitive or large-scale data.
+
+Citation tip: always name the instrument (Law 91/2025 Art. X versus Decree 356 Art. X). Article numbers differ between them, for example Art. 5 means different things in each.
+
+This is general compliance information, not legal advice. Verify against official texts.

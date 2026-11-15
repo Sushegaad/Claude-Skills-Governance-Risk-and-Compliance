@@ -1,4 +1,4 @@
-# CMMC 2.0 — Assessment Guide: SPRS Scoring, C3PAO Process & POA&M Rules
+# CMMC 2.0 - Assessment Guide: SPRS Scoring, C3PAO Process & POA&M Rules
 
 ## SPRS Score Calculation
 
@@ -29,18 +29,19 @@ Point values are assigned based on the practice's security impact:
 | SC (System & Communications) | 16 | ~39 |
 | SI (System & Information Integrity) | 7 | ~14 |
 
-*Exact point values per practice are published in the DoD Assessment Methodology document (v2.2, Nov 2020).*
+*Exact point values per practice are published in the DoD Assessment Methodology, Version 1.2.1 (June 2020).*
 
 ### Highest-Impact Practices (Largest Point Deductions)
-Prioritize these when remediating — they carry the heaviest scoring weight:
-1. **AC.L2-3.1.3** — CUI flow control (5 pts)
-2. **SC.L2-3.13.8** — Encryption in transit / FIPS validated (5 pts)
-3. **SC.L2-3.13.11** — FIPS-validated cryptography (5 pts)
-4. **IA.L2-3.5.3** — Multifactor authentication (5 pts)
-5. **SI.L2-3.14.6** — Monitoring for attacks (5 pts)
-6. **AC.L2-3.1.5** — Least privilege (3 pts)
-7. **AU.L2-3.3.1** — Audit logging (3 pts)
-8. **CM.L2-3.4.1** — Baseline configuration (3 pts)
+Prioritize these when remediating - they carry the heaviest scoring weight:
+1. **IA.L2-3.5.3** - Multifactor authentication (5 pts)
+2. **SI.L2-3.14.6** - Monitoring for attacks (5 pts)
+3. **AU.L2-3.3.1** - Audit logging (5 pts)
+4. **CM.L2-3.4.1** - Baseline configuration (5 pts)
+5. **SC.L2-3.13.8** - Encryption in transit (3 pts)
+6. **SC.L2-3.13.11** - FIPS-validated cryptography (3 pts)
+7. **AC.L2-3.1.5** - Least privilege (3 pts)
+
+Note: **AC.L2-3.1.3** (CUI flow control) is a **1-point** requirement under the methodology.
 
 ---
 
@@ -57,46 +58,49 @@ Before engaging a C3PAO, ensure:
 
 ### Assessment Phases
 
-**Phase 1 — Documentation Review (Remote)**
+**Phase 1 - Documentation Review (Remote)**
 - C3PAO reviews SSP, network diagrams, policies, and POA&M
 - Requests artifact list: logs, screenshots, configuration exports, training records
 - Duration: 2–4 weeks
 
-**Phase 2 — Assessment Activities (On-site or Remote)**
+**Phase 2 - Assessment Activities (On-site or Remote)**
 - Interviews with system administrators, security personnel, and executives
 - Technical testing: vulnerability scans, configuration reviews, access control verification
 - Observation of processes (incident response tabletop, maintenance procedures)
 - Duration: 1–3 weeks depending on scope
 
-**Phase 3 — Findings and Reporting**
+**Phase 3 - Findings and Reporting**
 - C3PAO issues Findings Report: MET, NOT MET, or NOT APPLICABLE per practice
 - Contractor may provide additional evidence for disputed findings (limited window)
-- Final report submitted to CMMC-AB
+- Final assessment results entered in CMMC eMASS and reflected in SPRS
 
-**Phase 4 — Certification Decision**
+**Phase 4 - Certification Decision**
 - **All 110 practices MET**: Full certification issued; valid 3 years
 - **Limited unmet practices (non-critical)**: Conditional certification with POA&M; must remediate within 180 days
 - **Critical practices unmet**: No certification; remediate and reschedule
 
-### Critical Practices (Cannot Have POA&M at Certification)
-The following practices must be fully MET for any certification to be issued:
-- AC.L2-3.1.3 (CUI flow control)
-- IA.L2-3.5.3 (Multifactor authentication)
-- SC.L2-3.13.8 (Encryption in transit)
-- SC.L2-3.13.11 (FIPS-validated cryptography)
-- SI.L2-3.14.6 (Attack monitoring)
-- AU.L2-3.3.1 (Audit logging)
-- IR.L2-3.6.1 (Incident response capability)
+### POA&M Eligibility Rule (32 CFR 170.21(a)(2))
+A Level 2 POA&M is permitted only when:
+- The assessment score is at least **0.8 × 110 (88)**, AND
+- Every open item is a **1-point** requirement, with one exception: **SC.L2-3.13.11** (CUI encryption, a 3-point requirement) MAY be on a POA&M when encryption is employed but is not FIPS-validated
+
+**Six requirements may NEVER be on a POA&M:**
+- AC.L2-3.1.20 (External connections)
+- AC.L2-3.1.22 (Publicly accessible content)
+- CA.L2-3.12.4 (System security plan)
+- PE.L2-3.10.3 (Escort visitors)
+- PE.L2-3.10.4 (Physical access logs)
+- PE.L2-3.10.5 (Physical access devices)
 
 ---
 
 ## POA&M Rules and Management
 
 ### What Can Be in a POA&M at Certification
-- Level 2: Up to a limited number of non-critical practices may remain in POA&M at time of certification
+- Level 2: only the POA&M-eligible items above (score ≥88; 1-point items plus the SC.L2-3.13.11 exception; never the six barred requirements)
 - POA&M remediation deadline: **180 days** from certification date
 - Failure to remediate = certification revocation
-- Level 3: No POA&M at certification — all practices must be MET
+- Level 3: Conditional Level 3 is permitted (32 CFR 170.21(a)(3)); a POA&M may not include IR.L3-3.6.1e, IR.L3-3.6.2e, RA.L3-3.11.1e, RA.L3-3.11.4e, RA.L3-3.11.6e, RA.L3-3.11.7e, or SI.L3-3.14.3e
 
 ### POA&M Entry Format
 
@@ -112,7 +116,7 @@ The following practices must be fully MET for any certification to be issued:
 | Evidence of Closure | What artifacts will demonstrate completion |
 
 ### POA&M Best Practices
-- Never list a critical practice in a POA&M if seeking certification
+- Never list one of the six barred requirements (AC.L2-3.1.20, AC.L2-3.1.22, CA.L2-3.12.4, PE.L2-3.10.3/4/5) in a POA&M if seeking certification
 - Update monthly; stale POA&Ms raise auditor concerns
 - Link each POA&M item to the relevant SSP section
 - Document root cause, not just the symptom
@@ -135,7 +139,7 @@ The following practices must be fully MET for any certification to be issued:
 ### Interview Evidence
 - Assessors will interview: ISSO/ISSM, system admins, end users, executives
 - Prepare personnel to describe their security responsibilities
-- Cannot substitute documentation for interview — both required
+- Cannot substitute documentation for interview - both required
 
 ---
 

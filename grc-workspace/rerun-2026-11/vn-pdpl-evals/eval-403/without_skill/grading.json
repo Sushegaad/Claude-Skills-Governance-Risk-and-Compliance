@@ -1,0 +1,33 @@
+{
+  "eval_id": 403,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States Article 5 covers application of personal data protection laws (lex specialis/conflict rules), not an obligations catalogue",
+      "passed": false,
+      "evidence": "Guesses Article 5 is 'possibly the principles ... or the state policy/prohibited acts'; does not identify it as application-of-laws/lex specialis"
+    },
+    {
+      "text": "Mentions that a PDPL impact assessment satisfies assessment duties under other data laws",
+      "passed": false,
+      "evidence": "No mention that a PDPL impact assessment satisfies assessment duties under other data laws"
+    },
+    {
+      "text": "Locates controller/processor obligations in Article 37",
+      "passed": false,
+      "evidence": "Article 37 never mentioned; controller/processor obligations not located"
+    },
+    {
+      "text": "Does not present Article 5 as a list of controller duties",
+      "passed": true,
+      "evidence": "Cautiously declines to invent content; does not present Article 5 as a list of controller duties"
+    },
+    {
+      "text": "States the law has been in force since January 1, 2026",
+      "passed": false,
+      "evidence": "Does not state the law has been in force since January 1, 2026"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

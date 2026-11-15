@@ -1,25 +1,25 @@
-# Vietnam PDPL — Decree 356/2025/ND-CP: Implementation Details
+# Vietnam PDPL - Decree 356/2025/ND-CP: Implementation Details
 
 Decree of the Government of Vietnam dated 31 December 2025, elaborating on certain articles of Law No. 91/2025/QH15 on Personal Data Protection. Effective 1 January 2026.
 
 ## Table of Contents
-1. [Article 3 — Basic Personal Data (Exhaustive List)](#article-3--basic-personal-data)
-2. [Article 4 — Sensitive Personal Data (Exhaustive List)](#article-4--sensitive-personal-data)
-3. [Article 5 — Response Timeframes for Data Subject Requests](#article-5--response-timeframes)
-4. [Article 6 — Valid Consent Methods](#article-6--valid-consent-methods)
-5. [Article 8 — Finance and Banking Sector](#article-8--finance-and-banking-sector)
-6. [Article 9 — Big Data Processing](#article-9--big-data-processing)
-7. [Article 10 — Artificial Intelligence and Automated Processing](#article-10--ai-and-automated-processing)
-8. [Article 11 — Blockchain and Distributed Ledger Technology](#article-11--blockchain)
-9. [Article 12 — Cloud Computing Services](#article-12--cloud-computing)
-10. [Article 13 — Data Protection Officer (DPO) Qualifications](#article-13--dpo-qualifications)
+1. [Article 3 - Basic Personal Data (Non-Exhaustive List)](#article-3--basic-personal-data)
+2. [Article 4 - Sensitive Personal Data (Open-Ended List)](#article-4--sensitive-personal-data)
+3. [Article 5 - Response Timeframes for Data Subject Requests](#article-5--response-timeframes)
+4. [Article 6 - Valid Consent Methods](#article-6--valid-consent-methods)
+5. [Article 8 - Finance and Banking Sector](#article-8--finance-and-banking-sector)
+6. [Article 9 - Big Data Processing](#article-9--big-data-processing)
+7. [Article 10 - AI Systems and Metaverse](#article-10--ai-systems-and-metaverse)
+8. [Article 11 - Blockchain and Distributed Ledger Technology](#article-11--blockchain)
+9. [Article 12 - Cloud Computing Services](#article-12--cloud-computing)
+10. [Article 13 - Personal Data Protection Personnel (DPO Qualifications)](#article-13--personal-data-protection-personnel)
 11. [Practical Guidance by Sector](#practical-guidance-by-sector)
 
 ---
 
-## Article 3 — Basic Personal Data
+## Article 3 - Basic Personal Data
 
-The following are the **exhaustive list** of basic personal data categories under VN-PDPL:
+The Law itself (Article 2) defines basic personal data only abstractly and delegates the enumeration to the Government. Decree 356 Article 3 enumerates **10 basic personal data categories plus a catch-all item 11**, so the list is **non-exhaustive**:
 
 1. Full name
 2. Date of birth; date of death or going missing
@@ -31,15 +31,15 @@ The following are the **exhaustive list** of basic personal data categories unde
 8. National identity card/citizen identity card number; passport number; vehicle registration number; driver's licence number
 9. Marital status
 10. Information on family relationships (spouse, children, parents, siblings)
-11. Information on the personal digital account; personal data reflecting activity and history of activities in cyberspace
+11. **Catch-all item:** other personal data attached to a specific individual that is not classified as sensitive - this item makes the basic-data list non-exhaustive
 
-**Note:** Basic personal data still requires lawful basis and appropriate protection, but consent requirements are less stringent than for sensitive data.
+**Note:** Basic personal data still requires lawful basis and appropriate protection, but consent requirements are less stringent than for sensitive data. Because of item 11, do not treat the enumeration as a closed list.
 
 ---
 
-## Article 4 — Sensitive Personal Data
+## Article 4 - Sensitive Personal Data
 
-The following are the **exhaustive list** of sensitive personal data categories under VN-PDPL. Each category requires **explicit, separate consent**:
+The Law itself (Article 2) defines sensitive personal data only abstractly and delegates the enumeration to the Government. Decree 356 Article 4 enumerates **12 sensitive personal data categories plus a catch-all item (m)**, so the list is **open-ended**. Each category requires **explicit, separate consent**:
 
 1. Political views, political party membership
 2. Religious or philosophical views, religious organisation membership
@@ -49,26 +49,26 @@ The following are the **exhaustive list** of sensitive personal data categories 
 6. Data about criminal offences and criminal convictions
 7. Financial information including bank accounts, credit cards, personal income, and credit history
 8. Location data and data on movement of individuals
-9. Biometric data — physiological or behavioural characteristics used to identify individuals: facial recognition data, fingerprints, iris scans, voice recognition, etc.
-10. Genetic data — unique personal biological characteristics inherited or acquired
-11. Social media behaviour tracking data — click-through rates, viewing history, behavioural patterns across platforms
+9. Biometric data - physiological or behavioural characteristics used to identify individuals: facial recognition data, fingerprints, iris scans, voice recognition, etc.
+10. Genetic data - unique personal biological characteristics inherited or acquired
+11. Social media behaviour tracking data - click-through rates, viewing history, behavioural patterns across platforms
 12. Information about private life, personal secrets, family secrets
-13. Data that indicates the above information, including: account credentials for identity verification, images of national identity/citizen identity documents
+13. **Catch-all item (m):** other personal data specified by law as sensitive or requiring special protection - this item makes the sensitive-data list open-ended
 
 ---
 
-## Article 5 — Response Timeframes for Data Subject Requests
+## Article 5 - Response Timeframes for Data Subject Requests
 
 Controllers and processors must respond to data subject rights requests as follows:
 
 | Request Type | Acknowledgement | Fulfilment |
 |---|---|---|
 | Any data subject request | **2 working days** | (see below) |
-| Access to personal data | — | **10 working days** |
-| Correction of personal data | — | **10 working days** |
-| Deletion of personal data | — | **20 working days** |
-| Withdrawal of consent / restriction of processing | — | **15 working days** |
-| Objection to processing | — | **15 working days** |
+| Access to personal data | - | **10 working days** |
+| Correction of personal data | - | **10 working days** |
+| Deletion of personal data | - | **20 working days** |
+| Withdrawal of consent / restriction of processing | - | **15 working days** |
+| Objection to processing | - | **15 working days** |
 
 **Extension:** One extension is allowed per request. The data subject must be notified of the extension and the reason within the original deadline period.
 
@@ -82,16 +82,16 @@ Controllers and processors must respond to data subject rights requests as follo
 
 ---
 
-## Article 6 — Valid Consent Methods
+## Article 6 - Valid Consent Methods
 
 Consent must be expressly given using one of the following verifiable methods:
 
-1. **Written consent** — signed paper document or electronic document with digital signature
-2. **Recorded telephone call** — audio recording of verbal consent, with timestamp and call metadata
-3. **SMS/text message** — specific consent syntax sent from the data subject's registered mobile number
-4. **Email** — consent expressed through email sent from the data subject's registered address
-5. **Website/application/platform form** — checkboxes or confirmation flows on digital platforms (but NOT pre-ticked boxes)
-6. **Other electronic or verifiable format** — any other format that allows identification of the data subject and the specific consent given
+1. **Written consent** - signed paper document or electronic document with digital signature
+2. **Recorded telephone call** - audio recording of verbal consent, with timestamp and call metadata
+3. **SMS/text message** - specific consent syntax sent from the data subject's registered mobile number
+4. **Email** - consent expressed through email sent from the data subject's registered address
+5. **Website/application/platform form** - checkboxes or confirmation flows on digital platforms (but NOT pre-ticked boxes)
+6. **Other electronic or verifiable format** - any other format that allows identification of the data subject and the specific consent given
 
 **Invalid consent forms:**
 - Silence or failure to respond
@@ -102,7 +102,7 @@ Consent must be expressly given using one of the following verifiable methods:
 
 ---
 
-## Article 8 — Finance and Banking Sector
+## Article 8 - Finance and Banking Sector
 
 Special obligations for personal data processing in the **banking, credit, and financial services sector:**
 
@@ -128,7 +128,7 @@ Special obligations for personal data processing in the **banking, credit, and f
 
 ---
 
-## Article 9 — Big Data Processing
+## Article 9 - Big Data Processing
 
 Organisations processing personal data at **large scale or using big data analytics:**
 
@@ -139,7 +139,7 @@ Organisations processing personal data at **large scale or using big data analyt
 - Conduct periodic penetration testing and vulnerability assessments
 
 **Data minimisation:**
-- Big data collection must still comply with purpose limitation — collect only what is demonstrably necessary
+- Big data collection must still comply with purpose limitation - collect only what is demonstrably necessary
 - Regularly purge data that is no longer required for the specified purpose
 
 **Transparency:**
@@ -148,7 +148,7 @@ Organisations processing personal data at **large scale or using big data analyt
 
 ---
 
-## Article 10 — AI and Automated Processing
+## Article 10 - AI Systems and Metaverse
 
 For personal data processing using **artificial intelligence, machine learning, or automated decision-making:**
 
@@ -171,7 +171,7 @@ For personal data processing using **artificial intelligence, machine learning, 
 
 ---
 
-## Article 11 — Blockchain and Distributed Ledger Technology
+## Article 11 - Blockchain and Distributed Ledger Technology
 
 Special rules for personal data in **blockchain and DLT systems:**
 
@@ -192,7 +192,7 @@ Special rules for personal data in **blockchain and DLT systems:**
 
 ---
 
-## Article 12 — Cloud Computing Services
+## Article 12 - Cloud Computing Services
 
 Special rules for personal data processed in **cloud environments:**
 
@@ -202,7 +202,7 @@ Special rules for personal data processed in **cloud environments:**
 - Apply encryption standards appropriate to the sensitivity of the data
 
 **Access control:**
-- Implement **access delegation controls** — cloud provider access to personal data should be limited to what is technically necessary for service delivery
+- Implement **access delegation controls** - cloud provider access to personal data should be limited to what is technically necessary for service delivery
 - Document cloud provider access rights and review regularly
 
 **Data residency:**
@@ -220,7 +220,7 @@ Special rules for personal data processed in **cloud environments:**
 
 ---
 
-## Article 13 — Data Protection Officer (DPO) Qualifications
+## Article 13 - Personal Data Protection Personnel (DPO Qualifications)
 
 **When a DPO is required:** The law requires appointment of a DPO for organisations processing personal data at large scale or processing sensitive personal data. Check with Ministry of Public Security guidelines for specific thresholds.
 
@@ -257,7 +257,7 @@ Special rules for personal data processed in **cloud environments:**
 - Loyalty programme data requires separate consent from transactional data
 
 ### Healthcare
-- Health data is sensitive — requires explicit consent for every distinct processing purpose
+- Health data is sensitive - requires explicit consent for every distinct processing purpose
 - Sharing with third-party providers (insurers, pharmacies) requires separate consent
 - Medical records retention periods are governed by health sector regulations
 

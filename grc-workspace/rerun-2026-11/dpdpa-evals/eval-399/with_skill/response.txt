@@ -1,0 +1,32 @@
+**Where penalties come from**
+Section 33 of the DPDP Act, 2023, with its Schedule, sets the maximum penalties. The Data Protection Board decides the amount under the Section 33(2) factors. There is no statutory minimum. Penalty amounts are credited to the Consolidated Fund of India (Section 34). The full penalty regime applies from 13 May 2027, with no phased reduction.
+
+**Maximum penalty exposures**
+
+| Violation | Statutory anchor | Maximum |
+|---|---|---|
+| Failure to take reasonable security safeguards to prevent a personal data breach | Section 8(5); Rule 6; Section 33 Schedule | Rs 250 crore |
+| Failure to give notice of a personal data breach to the Board and affected Data Principals | Section 8(6); Rule 7; Section 33 Schedule | Rs 200 crore |
+| Breach of children's data obligations (verifiable parental consent, bans on tracking, behavioural monitoring and targeted advertising) | Section 9; Rules 10-12; Section 33 Schedule | Rs 200 crore |
+| Significant Data Fiduciary breach of additional obligations (India-resident DPO, annual DPIA, independent audit, any notified localisation) | Section 10; Rule 13; Section 33 Schedule | Rs 150 crore |
+| Breach of a voluntary undertaking accepted by the Board | Section 32; Section 33 | Up to the extent applicable to the underlying breach for which the undertaking was given (no separate flat cap) |
+| Any other violation not specifically listed | Section 33 Schedule residual item | Rs 50 crore |
+| Data Principal breach of duties (false complaints, impersonation, false particulars) | Section 15; Section 33 Schedule | Rs 10,000 (personal) |
+
+**How the Board sets the amount: Section 33(2), seven factors**
+1. Nature, gravity and duration of the breach.
+2. Type and nature of the personal data affected.
+3. Repetitive nature of the breach.
+4. Whether the person gained or avoided a loss.
+5. Action taken to mitigate the effects, and its timeliness and effectiveness.
+6. Whether the penalty is proportionate and effective (observance and deterrence).
+7. Likely impact of the penalty on the person.
+
+**Points to flag**
+- Caps are fixed rupee amounts, not turnover-linked like GDPR's 4%. Rs 250 crore is roughly USD 30 million. They can be existential for SMEs and startups but less so for large multinationals.
+- Penalties are per violation, and one incident (for example a breach caused by weak controls) can attract several heads at once: Section 8(5) and Section 8(6), plus Section 9 if children's data is involved.
+- Enforcement is by the Board's adjudication, usually after a complaint or a breach intimation. The Board is not a proactive regulator and issues no guidance. Orders are appealable to the TDSAT (Section 29, Rule 22).
+- Mitigation levers: prompt breach intimation, documented safeguards under Rule 6, and a voluntary undertaking under Section 32, all of which bear directly on factor 5.
+- IT Act Section 43A compensation is omitted by Section 44, so the DPDPA penalty regime replaces it.
+
+This is general compliance information, not legal advice.

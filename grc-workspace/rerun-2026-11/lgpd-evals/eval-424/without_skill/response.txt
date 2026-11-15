@@ -1,0 +1,19 @@
+Legal source: LGPD Art. 37 requires controllers and processors to keep records of the personal data processing operations they carry out, especially where legitimate interest is the legal basis. Unlike GDPR Art. 30, the LGPD has no 250-employee threshold written into the statute, so in principle all controllers and processors are covered.
+
+The main qualification is the ANPD's Resolution CD/ANPD nº 2/2022, which created the regime for small processing agents ("agentes de tratamento de pequeno porte"):
+- Covered: microenterprises, small businesses, startups, non-profit legal entities, and natural persons or private legal entities not operating on a corporate basis (as long as they do not process data at high risk).
+- Under Art. 9, these agents may comply with Art. 37 through a simplified RoPA. The ANPD published a simplified template.
+- These agents lose the benefit if they carry out high-risk processing (large scale and significant effect on rights, plus use of emerging or innovative technology, surveillance, automated decisions affecting interests, sensitive data or children's/elderly data), or if they have gross revenue above the Startup limit (R$16 million) or belong to an economic group exceeding the limits.
+- They are also exempt from appointing a DPO (Art. 11), but must provide a communication channel.
+
+Who must keep a RoPA:
+- All controllers (private companies, public bodies, associations), in particular those relying on legitimate interest.
+- All processors.
+- Public authorities (Arts. 23-30), who also must publish processing information.
+- Small processing agents: only a simplified record.
+- Natural persons processing data for exclusively personal, non-economic purposes are outside the LGPD scope (Art. 4, I) and need no RoPA.
+- Processing for journalistic, artistic, academic, public safety or national defence purposes is outside most of the LGPD (Art. 4), so Art. 37 does not apply in the same way.
+
+Minimum content (by practice, following ANPD guidance): data categories, purposes, legal basis, data subjects, retention, sharing with third parties, international transfers, security measures. The ANPD can request the RIPD (DPIA) under Art. 38, and the RoPA is a core part of the Art. 50 governance programme.
+
+Verify against current ANPD guidance and the specific business size.

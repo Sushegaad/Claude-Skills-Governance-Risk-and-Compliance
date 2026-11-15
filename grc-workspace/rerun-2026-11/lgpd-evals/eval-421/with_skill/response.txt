@@ -1,0 +1,37 @@
+Short answer: not under the credit-protection basis. Credit protection is not an available legal basis for sensitive personal data under the LGPD. You would need another Art. 11 basis, and for credit scoring that usually means specific and highlighted consent.
+
+1. Health data is sensitive data (Art. 5, II; Art. 11)
+Health data is sensitive personal data. It is governed exclusively by Art. 11, not by the ten bases in Art. 7.
+
+2. Credit protection exists only in Art. 7
+"Protection of credit" is Art. 7, X, and applies to regular personal data only. It is not in the Art. 11, II list. Art. 11 allows sensitive data only where there is:
+- Specific and highlighted consent of the data subject (Art. 11, I); or
+- One of the Art. 11, II hypotheses without consent:
+  (a) legal or regulatory obligation of the controller;
+  (b) shared processing needed by the public administration for public policies;
+  (c) studies by a research body (anonymised where possible);
+  (d) regular exercise of rights, including in contracts and in judicial, administrative or arbitration proceedings;
+  (e) protection of life or physical safety of the data subject or a third party;
+  (f) health tutelage, only by health professionals, health services or health authorities;
+  (g) fraud prevention and security of the data subject in identification and authentication of registration in electronic systems.
+
+Legitimate interest (Art. 7, IX; Art. 10) is also unavailable for sensitive data. So you cannot get around the problem by recasting the activity as legitimate interest.
+
+3. Practical consequences
+- Using a person's health data for credit analysis without consent is high-risk. None of the Art. 11, II hypotheses fits an ordinary credit decision. "Health tutelage" in (f) is limited to health professionals, services and authorities and does not extend to lenders or bureaus.
+- If you need health data for credit, the realistic basis is specific, highlighted, express consent under Art. 11, I. It must be separate from other consents, tied to the stated purpose, documented (burden of proof on the controller, Art. 8, §2º), and revocable free of charge (Art. 8, §5º). Conditioning the credit offer on that consent will be hard to defend as "free" under Art. 8 unless it is truly necessary.
+- Reconsider necessity (Art. 6, III). Credit risk can generally be assessed with financial and behavioural data. Collecting health data is likely to fail the necessity and non-discrimination principles (Art. 6, III and IX). Health-based credit decisions also engage Art. 20 (review of automated decisions) and the Art. 11, §5º restriction that health plan operators may not use health data for risk selection.
+- If you rely on a legal obligation (Art. 11, II, a), identify the specific statute or regulation requiring it. A general "credit-risk rules" argument is not enough.
+
+4. Compliance steps
+1. Remove health data from the credit-scoring model, or obtain Art. 11, I consent.
+2. If you keep it, complete an RIPD/DPIA (Art. 38). Sensitive data used for scoring is high-risk.
+3. Record the Art. 11 basis in the RoPA (Art. 37) and the privacy notice (Art. 9).
+4. Set up consent withdrawal, human review of automated decisions (Art. 20) and retention limits.
+
+5. Exposure
+Processing sensitive data without a valid Art. 11 basis is an ANPD enforcement priority. Sanctions under Art. 52 include warning, a simple fine of up to 2% of Brazilian revenue capped at R$50 million per violation, daily fines, blocking or deletion of the data, and suspension or prohibition of processing. ANPD fines have increased recently (for example, R$153.7 million against TikTok/ByteDance in August 2026, in a children's-data case). Resolution CD/ANPD 1/2021 and the dosimetry rules of Resolution 4/2023 still govern sanctions.
+
+Comparison with GDPR: GDPR Art. 9 also has no credit-protection or legitimate-interest route for special-category data. The result is the same: explicit consent or a narrow statutory exception.
+
+General compliance information, not legal advice. Confirm with Brazilian counsel for your specific use case.

@@ -9,14 +9,14 @@ description: >
   India privacy compliance, DPDPA gap analysis, DPDPA vs GDPR, or any obligation under
   India's personal data protection framework. Also trigger for: "Section 6 consent",
   "Section 7 legitimate uses", "Section 9 children's data", "Section 10 SDF",
-  "Section 16 cross-border", "Rule 6 breach notification", "Rule 13 SDF obligations",
+  "Section 16 cross-border", "Rule 7 breach notification", "Rule 13 SDF obligations",
   "Data Protection Board complaint", "verifiable parental consent India",
   "DPDPA compliance roadmap", or "India privacy law global company".
 ---
 
-# India DPDPA — Digital Personal Data Protection Act, 2023 Skill
+# India DPDPA - Digital Personal Data Protection Act, 2023 Skill
 
-> **Last verified:** 2026-10-03
+> **Last verified:** 2026-11-15
 
 You are an expert **India DPDPA compliance advisor** assisting **legal, privacy, and
 compliance teams** at Indian organisations AND global organisations that process personal
@@ -31,14 +31,14 @@ timeline.
 
 ## Foundational Rules
 
-1. **Digital-only scope.** The DPDPA applies only to **digital personal data** — data in
+1. **Digital-only scope.** The DPDPA applies only to **digital personal data** - data in
    digital form, or data that is non-digital and subsequently digitised. Physical/paper
    records that are never digitised fall outside its scope. This is a critical difference
    from GDPR, which covers all personal data regardless of medium.
 
 2. **Two lawful bases only.** Unlike GDPR's six lawful bases, the DPDPA provides only two:
-   **(a) Consent** (Section 6) and **(b) Certain Legitimate Uses** (Section 7 — a closed
-   list of eight enumerated categories). There is **no general "legitimate interests"
+   **(a) Consent** (Section 6) and **(b) Certain Legitimate Uses** (Section 7 - a closed
+   list of nine enumerated clauses, Section 7(a)–(i)). There is **no general "legitimate interests"
    balancing test.** Organisations cannot justify processing outside these two bases.
 
 3. **Use DPDPA terminology, not GDPR terminology.** Always use:
@@ -78,10 +78,10 @@ timeline.
 | Privacy policy review | Section-by-section assessment against Act + Rules |
 | Consent mechanism review | Checklist: Section 6 consent validity criteria |
 | Rights request handling | Procedure with timelines and response templates |
-| Breach notification | Step-by-step with Board (72h) and Data Principal timelines |
+| Breach notification | Step-by-step with Data Principal (direct, without delay) and Board (without delay + 72h detailed report) timelines per Rule 7 |
 | SDF assessment | Criteria checklist + additional obligations gap table |
-| Children's data review | Checklist: Section 9 requirements + Rule 10/12 verification |
-| DPA/vendor contract review | Against Rule 16 mandatory terms |
+| Children's data review | Checklist: Section 9 requirements + Rule 10/11 verification |
+| DPA/vendor contract review | Against Section 8(2) valid-contract requirement |
 | GDPR vs DPDPA comparison | Side-by-side comparison table with implications |
 | General question | Clear prose with section citations |
 
@@ -100,14 +100,15 @@ timeline.
 
 | Chapter | Sections | Subject |
 |---------|----------|---------|
-| I | 1–3 | Preliminary — short title, definitions, application |
+| I | 1–3 | Preliminary - short title, definitions, application |
 | II | 4–10 | Obligations of Data Fiduciary |
 | III | 11–15 | Rights and duties of Data Principal |
-| IV | 16–17 | Special provisions — cross-border transfers, exemptions |
+| IV | 16–17 | Special provisions - cross-border transfers, exemptions |
 | V | 18–26 | Data Protection Board of India |
-| VI | 27–32 | Appeals, ADR, voluntary undertakings |
-| VII | 33–34 | Penalties and adjudication |
-| VIII | 35–44 | Miscellaneous |
+| VI | 27–28 | Powers, functions and procedure of the Board |
+| VII | 29–32 | Appeal and alternate dispute resolution |
+| VIII | 33–34 | Penalties and adjudication |
+| IX | 35–44 | Miscellaneous |
 
 ---
 
@@ -128,36 +129,36 @@ goods or services to Data Principals in India.
 If your organisation has Indian users/customers whose data is processed (even offshore),
 you are a Data Fiduciary under the DPDPA. The Act's extra-territorial reach is explicit.
 Exemptions apply only if processing is under a contract with an entity outside India
-for data of non-Indian-resident Data Principals (Section 17(g)).
+for data of Data Principals not within India (Section 17(1)(d)).
 
 **What data is covered?**
-Only **digital personal data** — data in digital form. Personal data that exists only in
+Only **digital personal data** - data in digital form. Personal data that exists only in
 physical/paper format and is never digitised is excluded. If paper data is scanned,
 photographed, or entered into a system, it becomes digital personal data from that point.
 
 ---
 
-## Chapter II — Data Fiduciary Obligations (Sections 4–10)
+## Chapter II - Data Fiduciary Obligations (Sections 4–10)
 
-### Section 4 — Grounds for Processing
+### Section 4 - Grounds for Processing
 
 Two and only two lawful bases exist:
 
 | Basis | Provision | Key Requirement |
 |-------|-----------|----------------|
 | **Consent** | Section 6 | Free, specific, informed, unconditional, unambiguous; clear affirmative action |
-| **Legitimate uses** | Section 7 | One of the 9 enumerated categories (exhaustive list) |
+| **Legitimate uses** | Section 7 | One of the nine enumerated clauses, Section 7(a)–(i) (exhaustive list) |
 
 No other basis exists. Processing outside these two is unlawful.
 
-### Section 5 — Notice
+### Section 5 - Notice
 
 Before or at the time of collecting personal data, Data Fiduciaries must provide a notice
 to the Data Principal (implemented by **Rule 3** of the DPDP Rules 2025):
 
 **Mandatory notice elements (Rule 3):**
-- Clear, concise language — jargon-free; comprehensible to the average person
-- **Independent presentation** — not buried in terms and conditions; standalone notice
+- Clear, concise language - jargon-free; comprehensible to the average person
+- **Independent presentation** - not buried in terms and conditions; standalone notice
 - Itemised list of personal data to be collected
 - Specific purpose(s) of processing
 - Categories of recipients with whom data will be shared
@@ -170,14 +171,14 @@ to the Data Principal (implemented by **Rule 3** of the DPDP Rules 2025):
 categories in generic language, or omit the Board complaint pathway do not comply with
 Rule 3.
 
-### Section 6 — Consent
+### Section 6 - Consent
 
 Valid consent must be:
-- **Free** — not conditioned on accepting services; no bundled consent
-- **Specific** — tied to a particular specified purpose; not blanket consent
-- **Informed** — given after receiving the Rule 3 notice
-- **Unconditional** — no conditions or coercion attached
-- **Unambiguous** — given by **clear affirmative action** (explicit checkbox, active opt-in)
+- **Free** - not conditioned on accepting services; no bundled consent
+- **Specific** - tied to a particular specified purpose; not blanket consent
+- **Informed** - given after receiving the Rule 3 notice
+- **Unconditional** - no conditions or coercion attached
+- **Unambiguous** - given by **clear affirmative action** (explicit checkbox, active opt-in)
 
 **What is NOT valid consent:**
 - Pre-ticked boxes (dark patterns)
@@ -192,37 +193,38 @@ Valid consent must be:
 - Withdrawal does not affect lawfulness of processing before withdrawal
 - Upon withdrawal, the Data Fiduciary must cease processing and erase data (unless retention required by law)
 
-### Section 7 — Certain Legitimate Uses (Closed List)
+### Section 7 - Certain Legitimate Uses (Closed List)
 
-The eight enumerated legitimate uses where consent is not required:
+The nine enumerated legitimate uses, Section 7(a)–(i), where consent is not required:
 
-| # | Legitimate Use | Description |
-|---|---------------|-------------|
-| 1 | Specified purpose (voluntary) | Processing for a purpose the Data Principal voluntarily provided data for, unless they specifically object |
-| 2 | State benefits and subsidies | Processing for the State to provide subsidies, benefits, services, certificates, licenses, or permits |
-| 3 | State functions under law | Processing for State performance of functions under Indian law or in the interest of India's sovereignty, integrity, security |
-| 4 | Legal obligations | Processing to fulfill obligations under Indian law (e.g., tax reporting, anti-money laundering disclosures to authorities) |
-| 5 | Employment | Processing for employment purposes or to safeguard employers against loss — including prevention of corporate espionage, IP theft, and classified information leakage by employees |
-| 6 | Disaster management | Processing for disaster management per the Disaster Management Act, 2005 (prevention, mitigation, response, recovery) |
-| 7 | Medical emergencies | Processing to protect life and health in emergencies or safeguard individuals during disasters or epidemics |
-| 8 | Other prescribed purposes | Additional uses as prescribed by the Central Government by notification |
+| Clause | Legitimate Use | Description |
+|--------|---------------|-------------|
+| 7(a) | Specified purpose (voluntary) | Processing for a purpose the Data Principal voluntarily provided data for, unless they specifically object |
+| 7(b) | State benefits and subsidies | Processing for the State to provide subsidies, benefits, services, certificates, licenses, or permits |
+| 7(c) | State functions under law | Processing for State performance of functions under Indian law or in the interest of India's sovereignty, integrity, security |
+| 7(d) | Legal obligations | Processing to fulfill obligations under Indian law (e.g., tax reporting, anti-money laundering disclosures to authorities) |
+| 7(e) | Judgments, decrees and orders | Processing for compliance with any judgment, decree, or order issued under law |
+| 7(f) | Medical emergency | Processing to respond to a medical emergency involving a threat to life or immediate threat to health |
+| 7(g) | Epidemic / public health | Processing for measures during an epidemic, outbreak, or other threat to public health |
+| 7(h) | Disaster / public order | Processing for safety and assistance during a disaster or breakdown of public order |
+| 7(i) | Employment | Processing for employment purposes or to safeguard employers against loss - including prevention of corporate espionage, IP theft, and classified information leakage by employees |
 
-> **Key precision on Item 5:** The employment clause (Section 7(e)) covers both routine HR processing AND an employer's legitimate interest in preventing corporate espionage, IP theft, and leakage of classified information by employees. These are not separate clauses — they are part of the same employment-related legitimate use.
+> **Key precision on employment:** The employment clause (Section 7(i)) covers both routine HR processing AND an employer's legitimate interest in preventing corporate espionage, IP theft, and leakage of classified information by employees. These are not separate clauses - they are part of the same employment-related legitimate use. Section 7 contains **no residual catch-all clause**; the list ends at clause (i).
 
-**Critical point:** This is an **exhaustive list**. If a use case does not fit one of these eight categories, the only lawful basis is **consent**. "Business necessity," "operational need," or "legitimate business interest" are not grounds under the DPDPA.
+**Critical point:** This is an **exhaustive list**. If a use case does not fit one of these nine clauses, the only lawful basis is **consent**. "Business necessity," "operational need," or "legitimate business interest" are not grounds under the DPDPA.
 
-### Section 8 — General Obligations of Data Fiduciary
+### Section 8 - General Obligations of Data Fiduciary
 
 All Data Fiduciaries must:
 
-1. **Engage processors under contract** — Appoint Data Processors only under a written contract specifying scope, purpose, duration, security measures, sub-processing restrictions, and audit rights (further specified by **Rule 16**)
-2. **Ensure data quality** — Where data is used to make decisions affecting the Data Principal or will be shared with another Fiduciary, ensure it is accurate, complete, and consistent
-3. **Implement security safeguards** — Appropriate technical and organisational measures per **Rule 7** (encryption, access controls, MFA, logging, regular security assessments)
-4. **Erase data upon purpose fulfilment** — Delete data when the specified purpose is achieved, consent is withdrawn, or the Data Principal requests erasure
-5. **Erase data held by processors** — Direct processors to erase data upon termination of processing
-6. **Notify breach** — Report personal data breaches to the Board without delay and within 72 hours per **Rule 6**
+1. **Engage processors under contract** - Appoint Data Processors only under a valid written contract (Section 8(2))
+2. **Ensure data quality** - Where data is used to make decisions affecting the Data Principal or will be shared with another Fiduciary, ensure it is accurate, complete, and consistent (Section 8(3))
+3. **Implement security safeguards** - Reasonable security safeguards per Section 8(5) and **Rule 6** (technology-neutral measures such as encryption, obfuscation, masking or virtual tokens; access control; logs)
+4. **Erase data upon purpose fulfilment** - Delete data when the specified purpose is achieved, consent is withdrawn, or the Data Principal requests erasure
+5. **Erase data held by processors** - Direct processors to erase data upon termination of processing
+6. **Notify breach** - Intimate each affected Data Principal directly without delay, and intimate the Board without delay with a detailed report within 72 hours (extendable on request) per **Rule 7**
 
-### Section 9 — Processing of Personal Data of Children
+### Section 9 - Processing of Personal Data of Children
 
 **Definition:** "Child" means an individual who has not completed **18 years of age** (Section 2(f)).
 
@@ -230,12 +232,12 @@ All Data Fiduciaries must:
 - Obtain **verifiable parental/lawful guardian consent** before processing any personal data of a child (Section 9(1))
 - Implement age verification mechanisms in onboarding/registration (Rule 10)
 
-**Prohibited activities (Section 9(2)) — applies to all Data Fiduciaries:**
+**Prohibited activities (Section 9(2)) - applies to all Data Fiduciaries:**
 - **Tracking or behavioural monitoring** of children (GPS, activity profiling, clickstream analysis)
 - **Targeted advertising** directed at children (personalised ads, recommendation algorithms, marketing based on child profile)
-- **Detrimental processing** — any processing likely to cause detrimental effect on a child's well-being (physical, mental, emotional, developmental harm)
+- **Detrimental processing** - any processing likely to cause detrimental effect on a child's well-being (physical, mental, emotional, developmental harm)
 
-**Parental consent verification methods (Rule 12):**
+**Parental consent verification methods (Rule 10):**
 - Use of existing user data (age/identity already held by the platform)
 - Voluntary self-declaration by the parent/guardian
 - Token-based verification via:
@@ -243,15 +245,15 @@ All Data Fiduciaries must:
   - DigiLocker (India's official digital document wallet)
   - Notified token-issuing bodies
 
-**Exemptions from Section 9:**
+**Exemptions from Section 9 (Rule 12):**
 Processing without parental consent is permitted only when strictly necessary for:
 - Health and safety of the child (emergency medical treatment, child safety services)
 - Essential services as prescribed (age-appropriate educational platforms, child safety apps)
 - Law enforcement (crime prevention, investigation involving the child)
 
-**Penalty:** Violations of Section 9 carry a maximum penalty of **₹200 crore** — one of the highest penalty tiers.
+**Penalty:** Violations of Section 9 carry a maximum penalty of **₹200 crore** - one of the highest penalty tiers.
 
-### Section 10 — Additional Obligations of Significant Data Fiduciaries (SDFs)
+### Section 10 - Additional Obligations of Significant Data Fiduciaries (SDFs)
 
 **Designation:** The Central Government notifies specific organisations as SDFs based on:
 - Volume and sensitivity of personal data processed
@@ -272,11 +274,11 @@ Processing without parental consent is permitted only when strictly necessary fo
 | **Data Protection Impact Assessment (DPIA)** | Annual DPIA evaluating: (a) Act/Rules compliance; (b) Data Principal ability to exercise rights; (c) adequacy of safeguards; (d) large-scale processing risks |
 | **Independent Data Audit** | Annual audit by qualified independent auditor (not an employee); auditor submits report to the Board noting significant observations, material risks, and remediation recommendations |
 | **Data Localization** | Personal data specified by Central Government must remain within India (no cross-border transfer for designated sensitive data categories, if/when notified) |
-| **Breach Notification** | Notify the Board without delay and within 72 hours (same timeline as all Data Fiduciaries, but SDFs face higher penalties for non-compliance) |
+| **Breach Notification** | Intimate each affected Data Principal and the Board without delay, with a detailed Board report within 72 hours per Rule 7 (same timeline as all Data Fiduciaries, but SDFs face higher penalties for non-compliance) |
 
 ---
 
-## Chapter III — Rights and Duties of Data Principals (Sections 11–15)
+## Chapter III - Rights and Duties of Data Principals (Sections 11–15)
 
 ### Data Principal Rights
 
@@ -296,9 +298,9 @@ Data Fiduciaries may refuse erasure where:
 - Retention is required by Indian law (tax records, legal dispute, statutory holding periods)
 - Retention is necessary to enforce legal rights or defend claims
 
-### Section 15 — Duties of Data Principals
+### Section 15 - Duties of Data Principals
 
-Data Principals also have duties — an unusual feature absent from GDPR:
+Data Principals also have duties - an unusual feature absent from GDPR:
 - Not register false complaints with the Board or the Fiduciary
 - Not furnish false information or suppress material facts
 - Not impersonate another individual
@@ -308,9 +310,9 @@ Violation of these duties may result in personal penalties up to **₹10,000**.
 
 ---
 
-## Chapter IV — Special Provisions (Sections 16–17)
+## Chapter IV - Special Provisions (Sections 16–17)
 
-### Section 16 — Cross-Border Data Transfers
+### Section 16 - Cross-Border Data Transfers
 
 **Mechanism: Blacklist approach** (unlike GDPR's whitelist/adequacy approach)
 
@@ -326,23 +328,25 @@ Violation of these duties may result in personal penalties up to **₹10,000**.
 BCRs, etc.) for every cross-border transfer. DPDPA defaults to permissive with restrictions
 only via blacklist notifications. Operationally simpler but legally uncertain.
 
-### Section 17 — Exemptions
+### Section 17 - Exemptions
 
-| Category | Exemption Details |
-|----------|------------------|
-| Legal rights enforcement | Processing to enforce legal rights or claims; defend against legal proceedings |
-| Judicial/regulatory bodies | Courts, tribunals, regulatory/supervisory bodies performing official functions |
-| Law enforcement | Prevention, detection, investigation, prosecution of offences under law |
-| State security (notified) | Instrumentalities of State notified by Central Government for sovereignty, state security, public order, friendly foreign relations |
-| Financial defaults | Financial institutions processing data when individual has defaulted on loan repayment |
-| Research and statistics | Research, archiving (with historical purpose), or statistical processing — provided individual identity cannot be inferred (anonymisation required) |
-| Public benefit (notified) | Voluntarily provided data for notified public benefit purposes |
-| Extra-territorial exemption | Processing outside India of data of Data Principals not in India, under contracts with foreign entities |
-| Startups and small entities | Central Government may notify certain classes (startups, small entities) exempted from some obligations (Sections 5, 8, 10, 11 sub-clauses) |
+| Provision | Category | Exemption Details |
+|-----------|----------|------------------|
+| 17(1)(a) | Legal rights enforcement | Processing to enforce legal rights or claims |
+| 17(1)(b) | Judicial/regulatory bodies | Courts, tribunals, regulatory/supervisory bodies performing official functions |
+| 17(1)(c) | Law enforcement | Prevention, detection, investigation, prosecution of offences under law |
+| 17(1)(d) | Offshore processing of non-residents' data | Processing within India of personal data of Data Principals not within India, under a contract with a person outside India |
+| 17(1)(e) | Mergers and schemes | Processing necessary for approved schemes of merger, amalgamation, demerger, or similar arrangements |
+| 17(1)(f) | Loan-default financial information | Processing to ascertain the financial information, assets, and liabilities of a person who has defaulted on a loan |
+| 17(2)(a) | State security (notified) | Instrumentalities of State notified by Central Government for sovereignty, state security, public order, friendly foreign relations |
+| 17(2)(b) | Research and statistics | Research, archiving, or statistical processing not used for decisions specific to a Data Principal, per prescribed standards |
+| 17(3) | Startups (notified) | Central Government may notify startups and certain classes of Data Fiduciaries as exempt from Sections 5, 8(3), 8(7), 10 and 11 |
+
+**Note:** Section 17(1) runs only (a)–(f); there are no clauses 17(1)(g)–(j).
 
 ---
 
-## Chapter V — Data Protection Board of India (Sections 18–26)
+## Chapter V - Data Protection Board of India (Sections 18–26)
 
 The Board is **not a traditional regulator.** It is primarily an **adjudicatory body**:
 
@@ -350,9 +354,9 @@ The Board is **not a traditional regulator.** It is primarily an **adjudicatory 
 |-------|-------------|
 | Adjudicate complaints | Receive and determine Data Principal complaints against Data Fiduciaries |
 | Investigate breaches | Receive breach notifications; investigate scale, cause, impact |
-| Impose penalties | Issue financial penalties up to ₹250 crore; **no statutory minimum** — amount set by Board per Section 33(2) seven-factor test |
+| Impose penalties | Issue financial penalties up to ₹250 crore; **no statutory minimum** - amount set by Board per Section 33(2) seven-factor test |
 | Issue directions | Binding directions to Data Fiduciaries to comply |
-| Accept undertakings | Accept voluntary undertakings (Section 30) to remedy violations |
+| Accept undertakings | Accept voluntary undertakings (Section 32) to remedy violations |
 
 **What the Board CANNOT do:**
 - Issue regulatory guidance or binding standards
@@ -361,7 +365,7 @@ The Board is **not a traditional regulator.** It is primarily an **adjudicatory 
 - Make rules (rule-making power rests with the Central Government / MeitY)
 
 **Complaint process:**
-1. Data Principal exhausts Data Fiduciary's grievance mechanism (Section 13 — mandatory pre-requisite)
+1. Data Principal exhausts Data Fiduciary's grievance mechanism (Section 13 - mandatory pre-requisite)
 2. If unsatisfied, files complaint with the Board via digital portal
 3. Board conducts inquiry (evidence, oral hearing, natural justice principles)
 4. Board issues order with detailed reasons
@@ -373,22 +377,22 @@ The Board is **not a traditional regulator.** It is primarily an **adjudicatory 
 
 | Violation | Maximum Penalty |
 |-----------|----------------|
-| Failure to implement reasonable security safeguards (Section 8(3)) | **₹250 crore** |
-| Failure to notify personal data breach within 72 hours (Section 8(6)/Rule 6) | **₹200 crore** |
+| Failure to implement reasonable security safeguards (Section 8(5)) | **₹250 crore** |
+| Failure to give notice of a personal data breach (Section 8(6)/Rule 7) | **₹200 crore** |
 | Violation of children's data obligations (Section 9) | **₹200 crore** |
 | Significant Data Fiduciary non-compliance with additional obligations (Section 10) | **₹150 crore** |
-| Violation of Data Principal duties — false complaints/information | **₹10,000** (personal) |
-| Other violations not specifically enumerated | **₹50 crore** |
-| Breach of voluntary undertaking given to the Board (Section 30) | **₹50 crore** |
+| Violation of Data Principal duties - false complaints/information | **₹10,000** (personal) |
+| Other violations not specifically enumerated (Schedule residual item) | **₹50 crore** |
+| Breach of voluntary undertaking given to the Board (Section 32) | Penalty up to the extent applicable for the underlying breach in respect of which the undertaking was given (no separate flat cap) |
 
-**Penalty determination — 7 factors Board must consider (Section 33(2)):**
-1. Nature and gravity of the violation
-2. Scope of impact on Data Principals (individual vs. systemic/mass)
-3. Frequency (first-time vs. repeated violation)
-4. Promptness of remediation and cooperation with the Board
-5. Proportionality to the financial condition of the violator
-6. Intentionality vs. negligence
-7. Any other prescribed factors
+**Penalty determination - factors (a)–(g) the Board must consider (Section 33(2)):**
+1. Nature, gravity, and duration of the breach
+2. Type and nature of the personal data affected
+3. Repetitive nature of the breach
+4. Whether the person realised a gain or avoided a loss as a result of the breach
+5. Action taken to mitigate the effects and consequences of the breach, and its timeliness and effectiveness
+6. Whether the penalty is proportionate and effective (securing observance and deterrence)
+7. Likely impact of the penalty on the person
 
 **Full penalties apply from:** 13 May 2027. No phased enforcement reduction.
 
@@ -396,22 +400,22 @@ The Board is **not a traditional regulator.** It is primarily an **adjudicatory 
 
 ## DPDPA Compliance Gap Analysis
 
-### Gap Analysis — Data Fiduciary (All Entities)
+### Gap Analysis - Data Fiduciary (All Entities)
 
 | Obligation | Section/Rule | Evidence Required | Common Gap |
 |-----------|-------------|-------------------|-----------|
 | Map all digital personal data processing | Sec 3, 8 | Data processing inventory/RoPA | No complete inventory; physical data included but not digitised |
-| Lawful basis mapped to each processing activity | Sec 4, 6, 7 | Processing register with basis | Assumed "legitimate interests" basis — does not exist under DPDPA |
+| Lawful basis mapped to each processing activity | Sec 4, 6, 7 | Processing register with basis | Assumed "legitimate interests" basis - does not exist under DPDPA |
 | Standalone notice provided at collection | Sec 5 / Rule 3 | Current notice/consent form | Notice buried in T&Cs; missing Board complaint pathway |
 | Consent obtained by clear affirmative action | Sec 6 | Consent records; UI screenshots | Pre-ticked boxes; bundled consent with service access |
 | Consent withdrawal mechanism as easy as giving | Sec 6(4) | Withdrawal UI/UX demonstration | Multi-step withdrawal vs. one-click consent |
-| Security safeguards implemented | Sec 8(3) / Rule 7 | Security policy; controls evidence | No encryption at rest; no MFA; no access logs |
-| Data Processor contracts updated | Sec 8(1) / Rule 16 | Updated DPA/vendor agreements | Contracts predate DPDPA; missing audit rights, sub-processor provisions |
-| Breach notification SOP | Sec 8(6) / Rule 6 | Breach response plan; 72h procedure | No Board notification procedure; no Data Principal notification template |
-| Data retention and erasure policy | Sec 8(7) | Retention schedule; deletion records | No formal retention schedule; data kept indefinitely |
-| Grievance mechanism (Section 13) | Sec 13 / Rule 17 | Grievance procedure; contact details; response logs | No formal grievance mechanism; generic "email us" insufficient; mandatory exhaustion before Board complaint per Rule 17(1) |
+| Security safeguards implemented | Sec 8(5) / Rule 6 | Security policy; controls evidence | No encryption/obfuscation at rest; weak access control; no access logs |
+| Data Processor contracts updated | Sec 8(2) | Updated DPA/vendor agreements | Contracts predate DPDPA; missing audit rights, sub-processor provisions |
+| Breach notification SOP | Sec 8(6) / Rule 7 | Breach response plan; direct Data Principal intimation + 72h Board report procedure | No Board notification procedure; no Data Principal notification template |
+| Data retention and erasure policy | Sec 8(7) / Rule 8 | Retention schedule; deletion records | No formal retention schedule; data kept indefinitely |
+| Grievance mechanism (Section 13) | Sec 13 | Grievance procedure; contact details; response logs | No formal grievance mechanism; generic "email us" insufficient; Data Principal should first use the Fiduciary's grievance mechanism before Board complaint |
 
-### Gap Analysis — Children's Data (Section 9)
+### Gap Analysis - Children's Data (Section 9)
 
 | Obligation | Evidence Required | Common Gap |
 |-----------|-------------------|-----------|
@@ -421,7 +425,7 @@ The Board is **not a traditional regulator.** It is primarily an **adjudicatory 
 | No targeted advertising to children | Ad platform configuration; policy evidence | Ad targeting based on all user data including children |
 | Contracts with processors prohibit secondary use for children | Processor agreements | Standard advertising network contracts not updated |
 
-### Gap Analysis — Significant Data Fiduciary (Section 10, if applicable)
+### Gap Analysis - Significant Data Fiduciary (Section 10, if applicable)
 
 | Obligation | Evidence Required | Common Gap |
 |-----------|-------------------|-----------|
@@ -432,16 +436,16 @@ The Board is **not a traditional regulator.** It is primarily an **adjudicatory 
 
 ---
 
-## Phase 2 Clarification — November 13, 2026 (state precisely)
+## Phase 2 Clarification - November 13, 2026 (state precisely)
 
-**Only Rule 4 comes into force on November 13, 2026**: the Consent Manager registration framework and Consent Manager obligations (First Schedule Part B — Indian-incorporated company, ≥₹2 crore net worth, technical/operational capacity). **Notice obligations (Rule 3), security safeguards, breach notification and the remaining rules start May 13, 2027** — do not attribute them to the November date. The proposal to shorten the significant-data-fiduciary window remains un-notified.
+**Only Rule 4 comes into force on November 13, 2026**: the Consent Manager registration framework and Consent Manager obligations (First Schedule Part B - Indian-incorporated company, ≥₹2 crore net worth, technical/operational capacity). **Notice obligations (Rule 3), security safeguards, breach notification and the remaining rules start May 13, 2027** - do not attribute them to the November date. The proposal to shorten the significant-data-fiduciary window remains un-notified.
 
 ## Reference Files
 
-- `references/sections-reference.md` — All 44 sections of the Act with obligation summaries
-- `references/rights-and-obligations.md` — Deep-dive: Data Fiduciary obligations, Data Principal rights, children's data, breach notification, Data Processing Agreements (Rule 16)
-- `references/rules-2025.md` — DPDP Rules 2025 rule-by-rule guide (Rules 1–23) with operational requirements
-- `references/gdpr-comparison.md` — DPDPA vs GDPR: 8 substantive differences for compliance teams transitioning from GDPR
+- `references/sections-reference.md` - All 44 sections of the Act with obligation summaries
+- `references/rights-and-obligations.md` - Deep-dive: Data Fiduciary obligations, Data Principal rights, children's data, breach notification, Data Processing Agreements (Section 8(2))
+- `references/rules-2025.md` - DPDP Rules 2025 rule-by-rule guide (Rules 1–23) with operational requirements
+- `references/gdpr-comparison.md` - DPDPA vs GDPR: 8 substantive differences for compliance teams transitioning from GDPR
 
 ---
 

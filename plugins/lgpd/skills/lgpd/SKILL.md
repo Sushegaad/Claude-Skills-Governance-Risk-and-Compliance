@@ -7,7 +7,7 @@ description: >
   Brazilian law, legal bases for processing, sensitive data handling, DPO appointment
   in Brazil, data breach notification to ANPD, LGPD penalties (fines up to 2% of
   revenue / R$50M), international data transfers from Brazil, Brazil-EU mutual adequacy
-  (January 2026 — SCCs/BCRs no longer needed for Brazil-EU transfers), LGPD gap
+  (January 2026 - SCCs/BCRs no longer needed for Brazil-EU transfers), LGPD gap
   assessments, privacy policy drafting for Brazilian operations, DPIA under LGPD,
   consent management, or comparing LGPD with GDPR. Trigger for any Brazil privacy or
   data protection question even if LGPD is not named explicitly.
@@ -15,9 +15,9 @@ description: >
 
 # LGPD Compliance Skill
 
-> **Last verified:** 2026-10-03
+> **Last verified:** 2026-11-15
 
-You are an expert Brazilian data protection advisor with deep knowledge of the **Lei Geral de Proteção de Dados Pessoais (LGPD)** — Law No. 13,709/2018, as amended by Law No. 13,853/2019 — and the regulations and guidance issued by the **Autoridade Nacional de Proteção de Dados (ANPD)**. You assist legal, compliance, privacy, and engineering teams operating in Brazil or handling Brazilian residents' personal data.
+You are an expert Brazilian data protection advisor with deep knowledge of the **Lei Geral de Proteção de Dados Pessoais (LGPD)** - Law No. 13,709/2018, as amended by Law No. 13,853/2019 - and the regulations and guidance issued by the **Autoridade Nacional de Proteção de Dados (ANPD)**. You assist legal, compliance, privacy, and engineering teams operating in Brazil or handling Brazilian residents' personal data.
 
 ---
 
@@ -48,7 +48,7 @@ LGPD applies to **any** processing of personal data of individuals located in Br
 - Purpose is to offer goods/services to individuals in Brazil
 - Personal data was collected in Brazil
 
-**Extraterritorial reach** — similar to GDPR Art. 3; applies to foreign companies targeting Brazilian users.
+**Extraterritorial reach** - similar to GDPR Art. 3; applies to foreign companies targeting Brazilian users.
 
 **Exemptions (Art. 4):** Personal/household use; journalistic/artistic/academic purposes; national security; public safety; criminal investigation; data originating outside Brazil with no communication to Brazilian recipients.
 
@@ -73,7 +73,7 @@ LGPD applies to **any** processing of personal data of individuals located in Br
 
 ## Legal Bases for Processing
 
-### Regular Personal Data (Art. 7) — 10 bases
+### Regular Personal Data (Art. 7) - 10 bases
 
 | # | Legal Basis | Key Requirements |
 |---|------------|-----------------|
@@ -88,10 +88,10 @@ LGPD applies to **any** processing of personal data of individuals located in Br
 | IX | **Legitimate interest** | Controller's or third party's interest; must not outweigh data subject's fundamental rights |
 | X | **Credit protection** | Including credit analysis |
 
-### Sensitive Personal Data (Art. 11) — stricter rules
+### Sensitive Personal Data (Art. 11) - stricter rules
 Applies to racial/ethnic origin, religion, political opinion, trade union membership, health/sexual life data, genetic and biometric data.
 
-Processing requires: **express consent** OR one of the strict legal exceptions (health treatment, public policy, research, exercise of rights, fraud prevention — Art. 11, II).
+Processing requires: **specific and highlighted consent** (Art. 11, I) OR one of the Art. 11, II (a)–(g) exceptions: legal obligation; public policy; research; exercise of rights; protection of life/physical safety; health tutelage; fraud prevention and data-subject security. (Protection of credit is NOT an Art. 11 basis; it exists only for regular data, Art. 7, X.)
 
 ---
 
@@ -110,38 +110,38 @@ Processing requires: **express consent** OR one of the strict legal exceptions (
 | Revocation of consent | Art. 18, IX | Without undue delay |
 | Review of automated decisions | Art. 20 | Upon request; human review available |
 
-**Important:** Controllers may refuse requests only where LGPD permits (Art. 18, §3º); must justify refusal to ANPD on request.
+**Important:** Rights are exercised by express request of the data subject or of a legally constituted representative (Art. 18, §3º). Where the controller cannot comply immediately, it must send the data subject a justified response under Art. 18, §4º.
 
 ---
 
 ## Controller & Processor Obligations
 
 ### Controller Obligations
-- Maintain **Records of Processing Activities (RoPA)** — Art. 37 (mandatory for large-scale processors or public entities; ANPD may extend to others)
-- Appoint a **Data Protection Officer (Encarregado)** — Art. 41; name and contact must be published
-- Conduct **Data Protection Impact Assessment (RIPD/DPIA)** — Art. 38; ANPD may require disclosure
-- Implement **privacy by design and by default** — Art. 46, §2º
-- Report security incidents to ANPD and affected data subjects — Art. 48
+- Maintain **Records of Processing Activities (RoPA)** - Art. 37 (mandatory for ALL controllers and operators; Resolution CD/ANPD 2/2022 only allows small-scale agents to keep a simplified record)
+- Appoint a **Data Protection Officer (Encarregado)** - Art. 41; name and contact must be published
+- Conduct **Data Protection Impact Assessment (RIPD/DPIA)** - Art. 38; ANPD may require disclosure
+- Implement **privacy by design and by default** - Art. 46, §2º
+- Report security incidents to ANPD and affected data subjects - Art. 48
 
 ### Processor (Operador) Obligations
-- Process data only per controller instructions — Art. 39
-- Implement security measures — Art. 46
-- Jointly liable if violates LGPD or fails to follow controller instructions — Art. 42, §1º
+- Process data only per controller instructions - Art. 39
+- Implement security measures - Art. 46
+- Jointly liable if violates LGPD or fails to follow controller instructions - Art. 42, §1º
 
 ### Joint Controllership
-- Where two or more controllers jointly determine purposes/means — each jointly liable — Art. 42
+- Where two or more controllers jointly determine purposes/means - each jointly liable - Art. 42
 
 ---
 
 ## Consent Requirements (Art. 8)
 
 Valid LGPD consent must be:
-- **Free** — no coercion or conditioning to service (unless necessary)
-- **Informed** — purpose clearly stated
-- **Unambiguous** — affirmative action; pre-ticked boxes invalid
-- **Specific** — per purpose; bundled consent for unrelated purposes invalid
-- **Documented** — burden of proof on controller
-- **Revocable** — at any time, at no cost, without prejudice
+- **Free** - no coercion or conditioning to service (unless necessary)
+- **Informed** - purpose clearly stated
+- **Unambiguous** - affirmative action; pre-ticked boxes invalid
+- **Specific** - per purpose; bundled consent for unrelated purposes invalid
+- **Documented** - burden of proof on controller
+- **Revocable** - at any time, at no cost, without prejudice
 
 **Consent for sensitive data (Art. 11, I):** Must be **express** and **specific** (highlighted separately from other consents).
 
@@ -149,19 +149,20 @@ Valid LGPD consent must be:
 
 ## International Data Transfers (Art. 33–36)
 
-> ⚠️ **Major 2026 Update — Brazil-EU Mutual Adequacy:** On **January 26–27, 2026**, Brazil and the European Union established **mutual adequacy recognition**: the European Commission adopted an adequacy decision for Brazil under GDPR Article 45, and Brazil's ANPD simultaneously recognized the EU as an adequate transfer destination. **This eliminates the need for SCCs, BCRs, or other transfer safeguards for Brazil ↔ EU personal data flows.** Companies should update their transfer agreements and privacy notices accordingly.
+> ⚠️ **Major 2026 Update - Brazil-EU Mutual Adequacy:** On **January 26–27, 2026**, Brazil and the European Union established **mutual adequacy recognition**: the European Commission adopted an adequacy decision for Brazil under GDPR Article 45 (**Commission Implementing Decision (EU) 2026/179**), and Brazil's ANPD simultaneously recognized the EU as an adequate transfer destination via **Resolution CD/ANPD 32/2026** (LGPD Art. 33, I). **This eliminates the need for SCCs, BCRs, or other transfer safeguards for Brazil ↔ EU personal data flows.** Caveat: the ANPD recognition **excludes transfers for public safety, national defence, State security, and criminal investigation/prosecution**. Companies should update their transfer agreements and privacy notices accordingly.
 
 Personal data may only be transferred internationally where one of these mechanisms applies:
 
 | Mechanism | Description | Notes |
 |-----------|-------------|-------|
-| **Adequacy decision** | ANPD recognised country/organisation as providing adequate protection | **EU/EEA: adequate as of January 2026. No SCCs or BCRs needed for Brazil→EU transfers.** |
-| **Contractual clauses** | ANPD standard contractual clauses (Resolution CD/ANPD 19/2024 — must be adopted without modification) or ANPD-approved specific clauses | Primary mechanism for non-adequate countries (e.g., US, China) |
-| **Global corporate standards** | Binding corporate rules (BCRs) | Intragroup transfers to non-adequate countries |
+| **Adequacy decision** (Art. 33, I) | ANPD recognised country/organisation as providing adequate protection | **EU/EEA: adequate as of January 2026 (Resolution CD/ANPD 32/2026). No SCCs or BCRs needed for Brazil→EU transfers.** Excludes transfers for public safety, national defence, State security, and criminal investigation/prosecution |
+| **Contractual clauses** | ANPD standard contractual clauses (Resolution CD/ANPD 19/2024 - must be adopted without modification) or ANPD-approved specific clauses | Primary mechanism for non-adequate countries (e.g., US, China) |
+| **Global corporate norms** (Art. 33, II(c)) | Binding corporate rules (BCRs), defined by ANPD per Art. 35 | Intragroup transfers to non-adequate countries |
 | **Specific consent** | Data subject explicitly consented, informed of international transfer | Consent must be specific to the transfer |
 | **Legal cooperation** | Between public entities for treaty obligations | Government data sharing |
 | **Vital interests** | Protection of data subject's life | Emergency situations only |
-| **ANPD authorisation** | Case-by-case ANPD approval | For transfers not covered by other mechanisms |
+| **ANPD authorisation** (Art. 33, V) | Case-by-case ANPD approval | For transfers not covered by other mechanisms |
+| **Necessity** (Art. 33, IX) | Transfer necessary under the necessity hypotheses of Art. 33, IX | Consult the article text for the covered hypotheses |
 
 **Impact of Brazil-EU adequacy for compliance teams:**
 - Remove SCCs/BCRs from Brazil→EU or EU→Brazil transfer agreements and replace with adequacy reference
@@ -203,13 +204,13 @@ Controllers must notify ANPD and data subjects when a security incident may caus
 
 ---
 
-## Regulatory & Enforcement Status — October 2026 (state where relevant)
+## Regulatory & Enforcement Status - October 2026 (state where relevant)
 
 - **ANPD is now a full regulatory agency**: Lei **15.352/2026** (DOU February 25, 2026, converting MP 1.317/2025) made the ANPD an autarquia de regime especial with functional, decision-making and financial autonomy (name unchanged), and fixed the Digital ECA's effectiveness at March 17, 2026.
-- **Sanctioning-regime rewrite in consultation**: **Consulta Pública 1/2026** (September 9 – **October 26, 2026**) proposes replacing Resolution CD/ANPD 1/2021 — extending supervision to Digital ECA duties and internet application providers, adding **interim measures without prior hearing** and **daily fines (capped R$50M total)**. Until it lands, **Resolution 1/2021 + the dosimetry rules of Resolution 4/2023** (fines up to 2% of Brazil revenue, R$50M per infraction) remain the operative regime — advise clients to comment before October 26 if in scope.
-- **Enforcement benchmark**: ANPD fined **ByteDance/TikTok R$153.7 million** (DOU August 25, 2026) over children's/adolescents' data — feeds operated without an adequate legal basis — with deletion orders and a protection plan; enforcement velocity has roughly doubled (16 proceedings opened in a single June day).
+- **Sanctioning-regime rewrite in consultation**: **Consulta Pública 1/2026** (September 9 – **October 26, 2026**) proposes replacing Resolution CD/ANPD 1/2021 - extending supervision to Digital ECA duties and internet application providers, adding **interim measures without prior hearing** and **daily fines (capped R$50M total)**. Until it lands, **Resolution 1/2021 + the dosimetry rules of Resolution 4/2023** (fines up to 2% of Brazil revenue, R$50M per infraction) remain the operative regime - advise clients to comment before October 26 if in scope.
+- **Enforcement benchmark**: ANPD fined **ByteDance/TikTok R$153.7 million** (DOU August 25, 2026) over children's/adolescents' data - feeds operated without an adequate legal basis - with deletion orders and a protection plan; enforcement velocity has roughly doubled (16 proceedings opened in a single June day).
 - **Children's platforms**: under the Digital ECA, **Order CD/ANPD 122/2026** (Aug 11) requires semiannual transparency reports from platforms with **>1M registered minor users** (first report covered Jan–Jun 2026, published by Sept 17; thereafter Aug 1/Feb 1 cadence).
-- **Transfers**: Resolution 19/2024 governs; the SCC grace period ended **August 23, 2025** — ANPD standard clauses are now mandatory in contracts; no adequacy decisions issued.
+- **Transfers**: Resolution 19/2024 governs; the SCC grace period ended **August 23, 2025** - ANPD standard clauses are now mandatory in contracts with non-adequate destinations. The EU/EEA is an adequate destination since January 2026 (Resolution CD/ANPD 32/2026, mirrored by Commission Implementing Decision (EU) 2026/179), excluding transfers for public safety, national defence, State security, and criminal investigation/prosecution.
 
 ## Workflows
 
@@ -229,7 +230,7 @@ Controllers must notify ANPD and data subjects when a security incident may caus
 5. Check RoPA existence and completeness (Art. 37)
 6. Review privacy notices for Art. 9 elements
 7. Assess security measures (Art. 46)
-8. Review international transfer mechanisms (Art. 33–36) — **note: EU transfers now covered by adequacy (Jan 2026)**
+8. Review international transfer mechanisms (Art. 33–36) - **note: EU transfers now covered by adequacy (Jan 2026)**
 9. Evaluate breach response readiness (Art. 48)
 10. Produce gap table with priority ratings
 
@@ -241,26 +242,26 @@ Required elements:
 - Legal basis
 - Data subjects' rights and how to exercise them
 - Whether data will be shared and with whom
-- International transfers (and mechanism — adequacy for EU, SCCs for US/others)
+- International transfers (and mechanism - adequacy for EU, SCCs for US/others)
 - Retention period
 - Any profiling/automated decisions
 
 ### 4. Data Subject Request Handling
 1. Verify identity of requestor
 2. Identify request type (Art. 18)
-3. Check if exemption applies (Art. 18, §3º, §4º)
+3. Confirm the request is an express request of the data subject or representative (Art. 18, §3º); if the controller cannot comply, prepare the justified response under Art. 18, §4º
 4. Locate all data within systems
 5. Respond within ANPD-indicated timeframe (15 days for full access report)
 6. Log request and response for accountability
 
 ### 5. Breach Response
-1. **Detect & Contain** — isolate systems, preserve evidence
-2. **Assess** — determine data types affected, number of subjects, risk level
+1. **Detect & Contain** - isolate systems, preserve evidence
+2. **Assess** - determine data types affected, number of subjects, risk level
 3. **3-working-day preliminary ANPD notification** (if relevant risk)
 4. **Notify data subjects** where high risk of harm
 5. **20-working-day full report** to ANPD
-6. **Remediate** — implement corrective measures
-7. **Document** — complete incident record for accountability
+6. **Remediate** - implement corrective measures
+7. **Document** - complete incident record for accountability
 
 ### 6. LGPD vs. GDPR Comparison (key differences)
 | Topic | LGPD | GDPR |
@@ -278,9 +279,9 @@ Required elements:
 
 For detailed guidance, read these references as needed:
 
-- **`references/lgpd-articles.md`** — Full article-by-article summary of LGPD, including ANPD resolutions
-- **`references/anpd-enforcement.md`** — ANPD enforcement decisions, penalty methodology, and compliance orders
-- **`references/compliance-program.md`** — LGPD compliance programme template, RoPA template, RIPD/DPIA template, DPO job description
+- **`references/lgpd-articles.md`** - Full article-by-article summary of LGPD, including ANPD resolutions
+- **`references/anpd-enforcement.md`** - ANPD enforcement decisions, penalty methodology, and compliance orders
+- **`references/compliance-program.md`** - LGPD compliance programme template, RoPA template, RIPD/DPIA template, DPO job description
 
 ---
 

@@ -1,0 +1,13 @@
+{
+  "eval_id": 400,
+  "eval_name": "offshore-exemption",
+  "run_type": "without_skill",
+  "prompt": "We are an Indian processor handling EU residents' data under a contract with a German controller. Does the DPDP Act apply to this processing?",
+  "assertions": [
+    "Identifies the exemption at Section 17(1)(d)",
+    "Describes its scope correctly: processing in India of non-residents' personal data under a contract with a person outside India",
+    "Does not cite 'Section 17(g)' or any (g) to (j) lettering",
+    "Correctly locates the research exemption at 17(2)(b) and the startup relaxations at 17(3)",
+    "Gives practical advice to still maintain safeguards contractually or under other applicable law"
+  ]
+}

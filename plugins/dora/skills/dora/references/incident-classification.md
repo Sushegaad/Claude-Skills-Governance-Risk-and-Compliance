@@ -1,11 +1,11 @@
-# DORA — Incident Management, Classification and Reporting Reference
+# DORA - Incident Management, Classification and Reporting Reference
 
 Chapter III, Articles 17–23, Regulation (EU) 2022/2554.
 Key implementing measures: CDR (EU) 2024/1772, CDR (EU) 2025/301, CIR (EU) 2025/302.
 
 ---
 
-## Art. 17 — ICT-Related Incident Management Process
+## Art. 17 - ICT-Related Incident Management Process
 
 Financial entities must establish and implement a **documented ICT-related incident
 management process** as part of their overall ICT risk management framework.
@@ -14,7 +14,7 @@ management process** as part of their overall ICT risk management framework.
 - **(a)** Procedures for detecting, managing, and notifying ICT-related incidents
 - **(b)** Criteria and thresholds for classifying incidents as major (aligned
   with CDR (EU) 2024/1772)
-- **(c)** Escalation procedures — who is notified when, including senior management
+- **(c)** Escalation procedures - who is notified when, including senior management
   and the board
 - **(d)** Roles and responsibilities of ICT incident response staff
 - **(e)** Communication procedures for internal escalation and external reporting
@@ -31,7 +31,7 @@ management process** as part of their overall ICT risk management framework.
 
 ---
 
-## Art. 18 — Classification of ICT-Related Incidents
+## Art. 18 - Classification of ICT-Related Incidents
 
 ### Step 1: Is the incident ICT-related?
 
@@ -47,7 +47,7 @@ systems, data, or services (even without having materialized yet).
 
 | Criterion | Description | Materiality threshold (CDR 2024/1772) |
 |-----------|-------------|--------------------------------------|
-| (a) Clients and transactions | Number of clients affected; value of impacted transactions | ≥ 10% of clients OR > 5,000 clients; value thresholds by entity type |
+| (a) Clients and transactions | Number of clients affected; value of impacted transactions | Higher than 10% of clients OR higher than 100,000 clients; value thresholds by entity type |
 | (b) Reputational impact | Public media coverage; regulatory attention; reputational damage | Significant negative press coverage likely; regulatory inquiry expected |
 | (c) Duration and geographic spread | Hours/days of disruption; number of Member States affected | ≥ 2 hours for critical services; multi-Member State impact |
 | (d) Data losses | Loss of availability, authenticity, integrity or confidentiality | Any loss of client data integrity or confidentiality; availability loss ≥ 2h |
@@ -67,41 +67,49 @@ systems, data, or services (even without having materialized yet).
 
 ---
 
-## Art. 19 — Reporting of Major ICT-Related Incidents
+## Art. 19 - Reporting of Major ICT-Related Incidents
 
 ### Three-Stage Reporting Timeline
 
 | Stage | Deadline | Trigger | Key Content |
 |-------|----------|---------|-------------|
-| **Initial notification** | Within **4 hours** of classification as major | From the moment the entity classifies the incident as major | Incident type; initial impact; functions affected; preliminary recovery estimate |
-| **Intermediate report** | Within **72 hours** of classification | From the same moment as the 4h clock | Updated impact; root cause indications; measures taken; updated recovery estimate |
-| **Final report** | Within **1 month** of the initial notification | One month after the initial report | Root cause analysis; full impact; lessons learned; measures implemented or planned |
+| **Initial notification** | Within **4 hours** of classification as major AND no later than **24 hours** from awareness of the incident | Classification as major (with a 24-hour backstop from awareness) | Incident type; initial impact; functions affected; preliminary recovery estimate |
+| **Intermediate report** | Within **72 hours** from **submission of the initial notification** | Submission of the initial notification | Updated impact; root cause indications; measures taken; updated recovery estimate |
+| **Final report** | No later than **1 month** from the (latest) intermediate report | Submission of the (latest) intermediate report | Root cause analysis; full impact; lessons learned; measures implemented or planned |
 
-**Time counting:** The clocks start when the incident is **classified as major**,
-not when it is first detected. Entities must establish clear classification criteria
-to avoid uncertainty about when the clock starts.
+**Time counting:** The 4-hour initial clock starts when the incident is
+**classified as major**, subject to an absolute backstop of **24 hours from
+awareness** of the incident. The intermediate clock runs from **submission of
+the initial notification**, and the final report is due no later than 1 month
+from the (latest) intermediate report. Entities must establish clear
+classification criteria to avoid uncertainty about when the clock starts.
 
 > **Critical interpretive point:** The 4-hour deadline runs from the moment of
-> **classification as major** (CDR (EU) 2025/301, Art. 3), NOT from the moment of
-> detection. However, entities must not use this to game the timeline — extended
-> triage that delays classification is itself a supervisory risk. The obligation
-> is to classify promptly and report within 4 hours of that classification.
-> Competent authorities may scrutinise delayed classification as evidence of an
-> inadequate incident management process (Art. 17(1)).
+> **classification as major** (CDR (EU) 2025/301), NOT from the moment of
+> detection - but the initial notification must in any case be submitted no
+> later than 24 hours from awareness. Entities must not use classification
+> timing to game the timeline - extended triage that delays classification is
+> itself a supervisory risk. Competent authorities may scrutinise delayed
+> classification as evidence of an inadequate incident management process
+> (Art. 17(1)).
 
 ### How to Count the 4-Hour Deadline
 
 1. **Detection:** ICT monitoring tools detect anomalous activity
-2. **Triage:** Incident response team investigates — is this an ICT-related incident?
-3. **Classification:** Against CDR 2024/1772 thresholds — major or non-major?
-   — Classification must be made **promptly**; triage should not extend beyond
+2. **Triage:** Incident response team investigates - is this an ICT-related incident?
+3. **Classification:** Against CDR 2024/1772 thresholds - major or non-major?
+   - Classification must be made **promptly**; triage should not extend beyond
    what is operationally necessary to apply the thresholds
-4. **Clock starts:** From the moment of classification as major
-5. **Initial notification:** Must reach competent authority within 4 hours
+4. **Clock starts:** From the moment of classification as major (with an
+   absolute backstop of 24 hours from awareness of the incident)
+5. **Initial notification:** Must reach competent authority within 4 hours of
+   classification and no later than 24 hours from awareness
 
-**Practical implication:** If classification occurs at 22:00 on a Friday, the
-initial notification must still be submitted by 02:00 Saturday. DORA does not
-provide for weekend/business hours exceptions in the 4-hour initial notification.
+**Weekend and bank-holiday relief:** Where a reporting deadline falls on a
+weekend or bank holiday, submission may be made by **noon of the next working
+day**. This relief is **disapplied for initial and intermediate reports of
+significant credit institutions**, which must meet the standard deadlines
+regardless of weekends or bank holidays.
 
 ### Reporting Channel
 
@@ -135,7 +143,7 @@ provide templates for voluntary notifications.
 
 ---
 
-## Art. 20 — Harmonisation of Reporting Content, Timelines and Templates
+## Art. 20 - Harmonisation of Reporting Content, Timelines and Templates
 
 ESAs adopted two measures:
 
@@ -177,7 +185,7 @@ ESAs adopted two measures:
 
 ---
 
-## Art. 21 — Centralisation of Reporting
+## Art. 21 - Centralisation of Reporting
 
 - ESAs are tasked with assessing the feasibility of a **single EU reporting hub**
   for major ICT incident reports
@@ -188,7 +196,7 @@ ESAs adopted two measures:
 
 ---
 
-## Art. 22 — Supervisory Feedback
+## Art. 22 - Supervisory Feedback
 
 After receiving a major incident report (any stage), competent authorities:
 - May provide **feedback** to the financial entity, including:
@@ -200,7 +208,7 @@ After receiving a major incident report (any stage), competent authorities:
 
 ---
 
-## Art. 23 — Payment-Related Major Incidents
+## Art. 23 - Payment-Related Major Incidents
 
 **Applies to:**
 - Credit institutions (for payment services)
@@ -212,7 +220,7 @@ After receiving a major incident report (any stage), competent authorities:
 reporting obligation under PSD2 Art. 96 for incidents that qualify as **major**
 under DORA. For non-major payment incidents that would previously have triggered
 PSD2 Art. 96 reporting: PSD2 obligations may still apply for those incidents below
-the DORA major threshold — consult your national competent authority on whether
+the DORA major threshold - consult your national competent authority on whether
 PSD2 reporting continues for sub-threshold payment incidents.
 
 **Dual-licensed entities:** Credit institutions that also hold payment institution
@@ -220,17 +228,17 @@ authorisation must clarify with their competent authority whether payment-relate
 major incidents require reporting to both the banking supervisor (as competent
 authority under DORA) and the payment supervisor. In most Member States, the
 banking supervisor is the single point of receipt and distributes to other
-authorities as needed — but this should be confirmed before an incident occurs.
+authorities as needed - but this should be confirmed before an incident occurs.
 
 **Reporting to payment authorities:** For payment-related major incidents, the
 entity reports to its **home payment supervisor** using the DORA templates, which
-include payment-specific fields per CIR (EU) 2025/302 — the ITS provides a
+include payment-specific fields per CIR (EU) 2025/302 - the ITS provides a
 dedicated payment-incident reporting template aligned with legacy PSD2 Art. 96
 reporting formats.
 
 ---
 
-## Incident Management Policy — Minimum Required Elements
+## Incident Management Policy - Minimum Required Elements
 
 A DORA-compliant incident management policy (Art. 17(1)) must include:
 
@@ -277,9 +285,11 @@ Is the event an ICT-related incident?
          └─ YES → Major ICT-related incident
                   → Escalate to senior management immediately
                   → Notify board (Art. 17(3))
-                  → Initial report to competent authority within 4 HOURS
-                  → Intermediate report within 72 HOURS
-                  → Final report within 1 MONTH
+                  → Initial report within 4 HOURS of classification
+                    (and no later than 24 HOURS from awareness)
+                  → Intermediate report within 72 HOURS of initial submission
+                  → Final report no later than 1 MONTH from the (latest)
+                    intermediate report
                   → Notify affected clients (Art. 17(4))
 ```
 
@@ -290,8 +300,8 @@ Is the event an ICT-related incident?
 | Mistake | Correct Approach |
 |---------|-----------------|
 | Waiting for root cause before classifying | Classify as major the moment any threshold is met; root cause analysis follows |
-| Treating the 4h clock as a business hours deadline | The 4h deadline runs 24/7/365 |
-| Not classifying a third-party outage as a DORA incident | If a TPSP outage causes an ICT-related incident for the financial entity, the entity must classify and report — it is not the TPSP's obligation to report on the entity's behalf |
+| Assuming the deadlines always run on business hours | The clocks run continuously, subject only to the weekend/bank-holiday next-working-day-noon relief, which is disapplied for initial and intermediate reports of significant credit institutions |
+| Not classifying a third-party outage as a DORA incident | If a TPSP outage causes an ICT-related incident for the financial entity, the entity must classify and report - it is not the TPSP's obligation to report on the entity's behalf |
 | Only reporting when the incident is resolved | DORA requires reporting while the incident is ongoing; the intermediate and final reports update as information becomes available |
 | Treating a significant cyber threat as non-reportable | Voluntary notification under Art. 19(2) is encouraged |
 | Confusing Art. 17 (process) with Art. 18 (classification) | Art. 17 = the ongoing process; Art. 18 = how to classify a specific event |

@@ -1,0 +1,18 @@
+Digital Personal Data Protection Act, 2023 - chapter structure (from memory; 44 sections plus one Schedule):
+
+Chapter I - Preliminary (ss. 1-3): short title and commencement, definitions, application of the Act.
+Chapter II - Obligations of Data Fiduciary (ss. 4-10): grounds for processing, notice, consent, legitimate uses (s. 7), general obligations (s. 8), children's data (s. 9), Significant Data Fiduciary (s. 10).
+Chapter III - Rights and Duties of Data Principal (ss. 11-15): access, correction/erasure, grievance redressal, nomination, duties.
+Chapter IV - Special Provisions (ss. 16-17): transfer outside India (s. 16), exemptions (s. 17).
+Chapter V - Data Protection Board of India (ss. 18-26): establishment, composition, qualifications, terms, staff and so on.
+Chapter VI - Powers, Functions and Procedure to be followed by the Board (ss. 27-28).
+Chapter VII - Appeal and Alternate Dispute Resolution (ss. 29-32).
+Chapter VIII - Penalties and Adjudication (ss. 33-34): penalties (s. 33, with the Schedule), crediting of sums to the Consolidated Fund of India (s. 34).
+Chapter IX - Miscellaneous (ss. 35-44): protection of action taken in good faith, power to call for information, blocking of access (s. 37), rule-making and so on, and consequential amendments (s. 44).
+Schedule - the penalty table.
+
+Your two questions:
+- Appeals to the TDSAT: Section 29 (Chapter VII). It makes the Telecom Disputes Settlement and Appellate Tribunal the Appellate Tribunal. Appeals against Board orders (and directions) are to be filed within 60 days, with condonation possible, and the Tribunal is to aim to dispose within six months. Section 30 covers the Appellate Tribunal's orders (enforceable as a decree) and Section 31 covers alternate dispute resolution (mediation). Section 29 as a whole concerns the appellate route.
+- Voluntary undertaking: Section 32 (Chapter VII). The Board may accept a voluntary undertaking at any stage of a proceeding. Acceptance can bar proceedings on the subject matter, and breach of the undertaking is treated as non-compliance and attracts penalty under s. 33 (Schedule item 6).
+
+Caveat: the Section 29 appeal route does not apply to everything; orders under Section 28(7) (rejecting/dismissing complaints) etc. are captured, but refer to the text for the precise list. Verify against the official gazette text.

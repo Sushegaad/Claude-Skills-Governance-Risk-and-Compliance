@@ -1,0 +1,33 @@
+{
+  "eval_id": 424,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States Article 37 binds ALL controllers and operators",
+      "passed": true,
+      "evidence": "'the obligation... applies to all controllers and all processors (operadores)'"
+    },
+    {
+      "text": "Notes the statute highlights processing based on legitimate interest",
+      "passed": false,
+      "evidence": "Never notes that Art. 37 especially highlights legitimate-interest processing; only mentions a balancing-test reference in a template"
+    },
+    {
+      "text": "States Res. CD/ANPD 2/2022 lets small-scale agents keep a simplified record",
+      "passed": true,
+      "evidence": "'Resolution CD/ANPD 2/2022... allows a simplified record of processing. It does not remove the Art. 37 duty'"
+    },
+    {
+      "text": "Does not limit the duty to large-scale processors or public entities",
+      "passed": true,
+      "evidence": "'It is not limited to large companies or to high-risk processing'; covers private, public, NGO, individuals"
+    },
+    {
+      "text": "Correctly contrasts with the GDPR's Article 30(5) derogation if a comparison is drawn",
+      "passed": true,
+      "evidence": "'GDPR Art. 30(5) exempts organisations under 250 employees unless...; the LGPD has no employee-count exemption'"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

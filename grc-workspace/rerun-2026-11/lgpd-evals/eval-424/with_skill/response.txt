@@ -1,0 +1,22 @@
+Under LGPD Art. 37, the obligation to keep records of processing operations (RoPA) applies to all controllers and all processors (operadores). It is not limited to large companies or to high-risk processing.
+
+1. Who must keep a RoPA
+- Every controller (controlador) and every operator/processor (operador), whether private company, public body, NGO or individual acting as a processing agent outside the household exemption of Art. 4.
+- ANPD may also require disclosure of the record, and ANPD can ask for it during an inspection.
+
+2. Small-scale agents: simplified, not exempt
+- Resolution CD/ANPD 2/2022 creates a regime for small-scale processing agents (micro and small enterprises, start-ups, and similar entities, provided they do not carry out high-risk processing).
+- That regime allows a simplified record of processing. It does not remove the Art. 37 duty.
+- The same resolution relaxes the DPO (encarregado) appointment duty for small-scale agents. They still need to provide a communication channel for data subjects. Do not confuse the DPO exemption with the RoPA duty: the RoPA duty remains.
+
+3. Content to record (practical template)
+Activity name; controller (name, CNPJ) and DPO contact; processors; purpose; legal basis (Art. 7 or Art. 11, with balancing test reference if legitimate interest); categories of data, including sensitive and children's data; categories of data subjects; recipients and sharing; international transfers and the mechanism used; retention period; security measures (Art. 46); reference to the RIPD where one exists; last-updated date.
+
+4. Related points
+- The RoPA supports accountability (Art. 6, X), responses to data subject requests (Art. 18), the RIPD (Art. 38) and the transparency notice (Art. 9).
+- Update it for the EU transfer mechanism: since January 2026 the EU/EEA is an adequate destination (Resolution CD/ANPD 32/2026), so record adequacy rather than SCCs for EU recipients. For non-adequate countries record the ANPD standard clauses (Resolution CD/ANPD 19/2024).
+- Failing to keep a RoPA is a governance gap. It can be sanctioned under Art. 52 (warning, fines up to 2% of Brazilian revenue capped at R$50 million per violation), and absence of records weakens the mitigating factors for good faith and internal controls.
+
+Comparison with GDPR: GDPR Art. 30(5) exempts organisations under 250 employees unless processing is not occasional, is risky, or involves special categories. The LGPD has no employee-count exemption, only the simplified form for small-scale agents.
+
+General information, not legal advice.

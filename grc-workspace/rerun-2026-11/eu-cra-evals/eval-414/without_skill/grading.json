@@ -1,0 +1,33 @@
+{
+  "eval_id": 414,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States Part II has exactly eight requirements",
+      "passed": true,
+      "evidence": "Enumerates exactly eight numbered Part II requirements (1-8)"
+    },
+    {
+      "text": "Correctly names at least three (for example SBOM, coordinated vulnerability disclosure policy, secure update distribution, free timely security updates)",
+      "passed": true,
+      "evidence": "Names SBOM, CVD policy, secure update distribution mechanisms, free dissemination of updates"
+    },
+    {
+      "text": "States the 24h/72h reporting regime is Article 14, not Annex I Part II",
+      "passed": true,
+      "evidence": "'Does Part II include 24-hour ENISA reporting? No... The 24-hour reporting is in Article 14'"
+    },
+    {
+      "text": "States support-period and end-of-life information duties sit in Article 13/Annex II",
+      "passed": false,
+      "evidence": "Support-period and end-of-life information duties (Art. 13/Annex II) are never mentioned"
+    },
+    {
+      "text": "Does not list reporting or EOL notification as Part II items",
+      "passed": true,
+      "evidence": "The eight listed items are genuine Part II items; reporting excluded, no EOL notification listed"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

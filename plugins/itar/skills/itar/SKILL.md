@@ -106,7 +106,7 @@ Who must register (22 CFR § 122.1):
 - End-user identity and end-use statement
 - Country of ultimate destination
 - US government contract number (if applicable)
-- Supporting documents: purchase order, end-user certificate (Form DV-1 or equivalent)
+- Supporting documents: purchase order, nontransfer and use certificate (Form DSP-83, required for SME and classified exports under 22 CFR 123.10)
 
 Reference licensing details → `references/licensing-guide.md`
 

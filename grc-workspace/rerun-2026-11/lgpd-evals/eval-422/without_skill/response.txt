@@ -1,0 +1,21 @@
+LGPD (Lei 13.709/2018) structure, by chapter:
+
+- Chapter I - Preliminary Provisions (Arts. 1-6): scope, foundations, application, exceptions, definitions (Art. 5), good faith and the 10 principles (Art. 6).
+- Chapter II - Processing of Personal Data (Arts. 7-16):
+  - Section I: legal bases for personal data (Art. 7)
+  - Section II: sensitive personal data (Arts. 11-13)
+  - Section III: children's and adolescents' data (Art. 14)
+  - Chapter II also contains the rules on data processing by the Public Authorities in Chapter IV, not here.
+  - Termination of processing is in Chapter II, Section IV: Arts. 15-16 (Término do Tratamento). Art. 15 lists when processing ends (purpose achieved or data no longer necessary, end of the period, data subject's request or consent withdrawal, ANPD determination for violation). Art. 16 covers deletion after termination, with retention exceptions (legal obligation, research, transfer to third parties, exclusive controller use with anonymization).
+- Chapter III - Rights of the Data Subject (Arts. 17-22): access, correction, deletion, portability, information, review of automated decisions (Art. 20), defence in court.
+- Chapter IV - Processing by Public Authorities (Arts. 23-32).
+- Chapter V - International Data Transfer (Arts. 33-36).
+- Chapter VI - Processing Agents (Arts. 37-45): controller and processor, DPO/Encarregado (Art. 41), liability and compensation (Arts. 42-45). Section I: controller and processor (37-40); Section II: DPO (41); Section III: liability (42-45).
+- Chapter VII - Security and Good Practices (Arts. 46-51): security and secrecy (46-49), good practice and governance (50-51), incident communication (Art. 48).
+- Chapter VIII - Supervision (Arts. 52-54): administrative sanctions (Arts. 52-54). Art. 52 lists the sanctions (warning, simple fine up to 2% of revenue capped at R$50 million per violation, daily fine, publicization, blocking, deletion, partial suspension, etc.).
+- Chapter IX - The National Data Protection Authority (ANPD) and the National Council for Data Protection and Privacy (Arts. 55-A to 55-L, 56-59). The ANPD sits here, not in Chapter VIII (as originally vetoed, then re-created by MP 869/2018 / Law 13.853/2019). Since 2022 (Law 14.460/2022) the ANPD is an autarchy of special nature. Section I: ANPD (Arts. 55-A to 55-L); Section II: Council (Arts. 58-A and 58-B).
+- Chapter X - Final and Transitional Provisions (Arts. 60-65): amendments to Marco Civil and others; entry into force (Art. 65), with the sanction provisions applicable since 1 August 2021.
+
+Summary: termination of processing = Chapter II (Arts. 15-16); ANPD = Chapter IX (Arts. 55-A onward); sanctions = Chapter VIII (Arts. 52-54).
+
+Caveat: I am working from memory. Verify exact article numbering against the current consolidated text.

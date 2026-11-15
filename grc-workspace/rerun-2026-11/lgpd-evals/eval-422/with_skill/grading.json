@@ -1,0 +1,33 @@
+{
+  "eval_id": 422,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Chapter I = Articles 1-6",
+      "passed": true,
+      "evidence": "Chapter map table: 'I | General provisions... | 1-6'"
+    },
+    {
+      "text": "Articles 15-16 (termination and elimination) sit in Chapter II",
+      "passed": true,
+      "evidence": "\"Chapter II..., Section IV, 'Termino do Tratamento de Dados': Art. 15... Art. 16\""
+    },
+    {
+      "text": "Chapter VIII = inspection/sanctions (Articles 52-54)",
+      "passed": true,
+      "evidence": "Table: 'VIII | Fiscalizacao (oversight): administrative sanctions | 52-54'"
+    },
+    {
+      "text": "Chapter IX = ANPD and CNPD (Article 55-A onward)",
+      "passed": true,
+      "evidence": "\"Chapter IX (ANPD and CNPD), starting at Art. 55-A\"; table says '55-A onward'"
+    },
+    {
+      "text": "Does not use an invented range like 'Arts. 55-A to 55-L'",
+      "passed": true,
+      "evidence": "Uses '55-A onward'; no invented terminal article"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

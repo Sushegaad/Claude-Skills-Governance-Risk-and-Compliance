@@ -168,7 +168,7 @@ These exceptions authorize exports **regardless** of whether the CCL entry lists
 
 ---
 
-### ACE — Additional Permissive Reexports (§ 740.16)
+### APR - Additional Permissive Reexports (§ 740.16)
 
 **Scope:** Reexports of certain controlled items from Country Group A or B countries  
 **Conditions:** The original export from the US must have been authorized; subsequent reexports within specified country groups may use ACE  

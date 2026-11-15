@@ -1,0 +1,13 @@
+{
+  "eval_id": 416,
+  "eval_name": "level1-scope",
+  "run_type": "without_skill",
+  "prompt": "How many requirements does CMMC Level 1 contain, which 800-171 practices map to it, and is there a numeric score?",
+  "assertions": [
+    "States Level 1 = the 15 security requirements of FAR 52.204-21",
+    "Includes 3.1.20 and 3.1.22 in the Level 1 mapped set",
+    "States 3.10.2 is NOT Level 1",
+    "States Level 1 self-assessment is all-requirements-MET with no POA&M and no numeric score",
+    "Explains the 15-vs-17 mapping (one FAR item spans 3.10.3, 3.10.4 and 3.10.5)"
+  ]
+}

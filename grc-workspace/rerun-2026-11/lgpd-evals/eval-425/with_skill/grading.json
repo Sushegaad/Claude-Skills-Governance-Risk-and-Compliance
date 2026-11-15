@@ -1,0 +1,33 @@
+{
+  "eval_id": 425,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States yes: mutual adequacy has applied since January 2026",
+      "passed": true,
+      "evidence": "'Yes. Since January 2026... mutual adequacy on 26-27 January 2026'"
+    },
+    {
+      "text": "Cites Commission Implementing Decision (EU) 2026/179",
+      "passed": true,
+      "evidence": "'Commission Implementing Decision (EU) 2026/179'"
+    },
+    {
+      "text": "Cites ANPD Resolution CD/ANPD 32/2026 under Article 33, I",
+      "passed": true,
+      "evidence": "'ANPD recognised the EU as adequate through Resolution CD/ANPD 32/2026 (LGPD Art. 33, I)'"
+    },
+    {
+      "text": "States the carve-outs: public safety, national defence, State security, criminal investigation/prosecution",
+      "passed": true,
+      "evidence": "'excludes transfers for public safety, national defence, State security, and criminal investigation or prosecution'"
+    },
+    {
+      "text": "Keeps SCCs (Res. 19/2024) and BCRs available for excluded scopes and other countries",
+      "passed": true,
+      "evidence": "Keeps Res. CD/ANPD 19/2024 SCCs and BCRs for non-adequate destinations and says excluded purposes need another mechanism"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

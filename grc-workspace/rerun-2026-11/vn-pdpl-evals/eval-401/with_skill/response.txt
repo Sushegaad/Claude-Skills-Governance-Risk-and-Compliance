@@ -1,0 +1,38 @@
+Structure of Vietnam's Law on Personal Data Protection (Law No. 91/2025/QH15)
+
+Short answer: the Law has FIVE chapters and 39 articles, not nine. If your internal memo says nine chapters, it should be corrected (it may be confusing this Law with another instrument, a draft, or a different statute or decree).
+
+The Law was passed on 26 June 2025 and took effect on 1 January 2026. The specialised administering agency is the Ministry of Public Security.
+
+Chapter layout
+
+| Chapter | Title | Articles |
+|---|---|---|
+| I | General Provisions | 1-8 |
+| II | Personal Data Protection | 9-32 |
+| III | Forces and Conditions for Personal Data Protection | 33-35 |
+| IV | Responsibilities | 36-37 |
+| V | Implementation Provisions | 38-39 |
+
+Where the key content sits
+
+- Chapter I (Arts. 1-8): scope, definitions (Art. 2), principles (Art. 3), data subject rights and obligations (Art. 4), how the PDPL interacts with other data laws (Art. 5), and the penalty framework (Art. 8).
+- Chapter II (Arts. 9-32): the operative rules.
+  - Consent (Art. 9) and consent for sensitive data (Art. 10).
+  - Processing without consent (Art. 19).
+  - Cross-border transfer impact assessment (Art. 20).
+  - Domestic impact assessment (Art. 21).
+  - Breach notification (Art. 23).
+  - Sector-specific articles 25-32: recruitment and employee data (25), health and insurance (26), finance, banking and credit (27), advertising (28), social media and online services (29), big data, AI, blockchain, metaverse and cloud (30), location and biometric data (31), public recording (32).
+- Chapter III (Arts. 33-35): the forces and conditions for data protection, including the processor provisions in Art. 33(2).
+- Chapter IV (Arts. 36-37): responsibilities. The controller and processor obligations catalogue is in Article 37.
+- Chapter V (Arts. 38-39): entry into force (Art. 38) and transitional provisions (Art. 39).
+
+Two points worth flagging in your memo
+
+1. Art. 38 contains both the effective date (1 January 2026) and the 5-year SME/startup opt-out from Arts. 21, 22 and 33(2). Art. 39 keeps Decree 13-era consents and impact-assessment dossiers valid.
+2. The Law is only part of the stack. Detailed rules are in Decree 356/2025/ND-CP (31 December 2025, effective 1 January 2026), which holds the operative lists of basic and sensitive data, response deadlines, consent methods, sector overlays and DPO qualifications. Penalties are implemented by Decree 330/2026/ND-CP (effective 19 August 2026). A memo that describes "the PDPL" should distinguish the Law from these decrees, since each has its own structure and article numbering.
+
+Recommendation: correct the memo to "5 chapters, 39 articles", re-check any article citations in it against the official text published by the National Assembly or the Government's legal portal, and make sure it separates Law 91/2025 from Decrees 356/2025 and 330/2026.
+
+This is general compliance information, not legal advice. Verify against the official gazette text.

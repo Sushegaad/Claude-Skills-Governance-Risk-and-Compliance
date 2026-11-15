@@ -1,0 +1,35 @@
+## CRA Application Timeline (Regulation (EU) 2024/2847)
+
+| Date | Milestone |
+|---|---|
+| 20 November 2024 | Published in the Official Journal |
+| 10 December 2024 | Entry into force |
+| **11 June 2026** | **Chapter IV (Arts. 35-51, conformity assessment bodies / notified bodies) applies** |
+| **11 September 2026** | **Art. 14 vulnerability and incident reporting applies (now in force)**; ENISA Single Reporting Platform launched |
+| 11 December 2026 | Art. 35(2) target date by which Member States are to strive to have a sufficient number of notified bodies available |
+| **11 December 2027** | **Full application of all obligations**, including essential requirements (Annex I), conformity assessment, CE marking, and OSS steward reporting |
+
+### Notified-body provisions
+- The notified-body framework in **Chapter IV (Arts. 35-51) applies from 11 June 2026**. This covers notification of bodies, their requirements and their operation.
+- **11 December 2026 is not the application date of Chapter IV.** It is only the Art. 35(2) target by which Member States should strive to have enough notified bodies. It is a capacity goal, not a legal start date.
+- Notified Bodies are mandatory for Class II products (hypervisors and container runtimes, firewalls and IDS/IPS, tamper-resistant microprocessors and microcontrollers) and optional for Class I. Notified bodies will be listed in NANDO.
+- Practical consequence: Class II manufacturers should engage a Notified Body early, since assessments can take 6-18 months and capacity may be tight before full application.
+
+### Reporting (already live)
+- Since **11 September 2026**, manufacturers must report actively exploited vulnerabilities and severe incidents.
+- Stages: 24h early warning, 72h notification, final report (within 14 days after a corrective or mitigating measure is available for exploited vulnerabilities; within 1 month after the 72h notification for severe incidents).
+- Reports go through the ENISA Single Reporting Platform to the CSIRT designated as coordinator, and are simultaneously available to ENISA.
+- This applies to products already on the market, including those placed before December 2027 (Art. 69(3)). The clock is awareness-based, so there is no duty for awareness predating 11 September 2026.
+- **Open-source software stewards** report from 11 December 2027.
+
+### Transitional position
+- Products already on the market and unchanged have until 11 December 2027 for the main requirements, but reporting duties already apply now.
+- From 11 December 2027, new or substantially modified products placed on the market need the CE marking, DoC and technical documentation.
+
+### Planning implications
+1. Stand up the reporting pipeline now (it is live).
+2. Classify products and decide the conformity route. Book a Notified Body early for Class II.
+3. Complete the Annex I gap analysis, SBOM and technical documentation before December 2027.
+4. Define and publish support periods (minimum 5 years).
+
+*General compliance information, not legal advice.*

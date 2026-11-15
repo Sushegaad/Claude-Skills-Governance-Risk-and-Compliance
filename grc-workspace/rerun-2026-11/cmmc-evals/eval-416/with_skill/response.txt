@@ -1,0 +1,37 @@
+CMMC Level 1 - requirements, 800-171 mapping, and scoring
+
+Short answer: Level 1 contains 15 security requirements, they map to 17 NIST SP 800-171 requirements, and there is no numeric score.
+
+1. How many requirements
+Under the final rule (32 CFR Part 170), Level 1 is the 15 basic safeguarding requirements of FAR 52.204-21(b)(1)(i)-(xv), which protect Federal Contract Information (FCI). Level 1 applies to contractors that handle FCI only (no CUI).
+
+2. Which 800-171 practices map to it
+The 15 FAR items map to 17 NIST SP 800-171 Rev 2 requirements. The count differs because one FAR item (physical access control, FAR (b)(1)(ix)) spans three 800-171 requirements: 3.10.3, 3.10.4 and 3.10.5. The mapped set, by domain:
+
+| Domain | Level 1 practices (800-171 ID) |
+|---|---|
+| AC - Access Control | AC.L1-3.1.1, AC.L1-3.1.2, AC.L1-3.1.20, AC.L1-3.1.22 |
+| IA - Identification & Authentication | IA.L1-3.5.1, IA.L1-3.5.2 |
+| MP - Media Protection | MP.L1-3.8.3 |
+| PE - Physical Protection | PE.L1-3.10.1, PE.L1-3.10.3, PE.L1-3.10.4, PE.L1-3.10.5 |
+| SC - System & Communications Protection | SC.L1-3.13.1, SC.L1-3.13.5 |
+| SI - System & Information Integrity | SI.L1-3.14.1, SI.L1-3.14.2, SI.L1-3.14.4, SI.L1-3.14.5 |
+
+That is 4 + 2 + 1 + 4 + 2 + 4 = 17. In 800-171 numbering: 3.1.1, 3.1.2, 3.1.20, 3.1.22, 3.5.1, 3.5.2, 3.8.3, 3.10.1, 3.10.3, 3.10.4, 3.10.5, 3.13.1, 3.13.5, 3.14.1, 3.14.2, 3.14.4, 3.14.5.
+
+3. Is there a numeric score?
+No. Level 1 has no SPRS-style weighted score (the 110 to -203 range belongs to the Level 2 DoD Assessment Methodology) and no POA&M. Every requirement must be MET, so the result is simply compliant or not. The process is:
+- Annual self-assessment of all 15 requirements.
+- Enter the result in SPRS (sprs.csd.disa.mil).
+- A senior company official affirms the result, and you repeat this every year.
+- A false affirmation carries False Claims Act exposure.
+Level 1 has no conditional certification.
+
+4. Program status (July 13, 2026 suspension)
+On July 13, 2026 DoD suspended CMMC Phase 2, which covers the C3PAO third-party assessment requirements, through two policy memoranda. The suspension does not change Level 1. 32 CFR Part 170 and DFARS 252.204-7012/7019/7020/7021 remain in force, and Phase 1 self-assessments, SPRS submissions and annual affirmations continue unchanged. Level 1 (Self) is one of the only two designations DoD may currently assign; the other is Level 2 (Self).
+
+The CMMC Reform Task Force's 60-day review was due around September 13, 2026. As of September 14, 2026 no report had been published, and I have no later confirmation, so please re-verify. Public release was expected in late September to early October. The report is advisory. Obligations change only through a class deviation, a DFARS rule change or an amendment to 32 CFR Part 170.
+
+Practical note: flow-down applies here too. FCI-only subcontractors at any tier need Level 1, and the prime must verify their status before flowing FCI to them.
+
+This is general compliance information, not legal advice. Check the contract clauses and official sources.

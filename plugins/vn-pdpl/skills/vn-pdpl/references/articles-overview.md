@@ -1,47 +1,60 @@
-# Vietnam PDPL — Law No. 91/2025/QH15: Articles Overview
+# Vietnam PDPL - Law No. 91/2025/QH15: Articles Overview
 
 ## Table of Contents
 1. [Law Structure](#law-structure)
-2. [Article 2 — Definitions](#article-2--definitions)
-3. [Article 3 — Principles](#article-3--principles)
-4. [Article 4 — Data Subject Rights](#article-4--data-subject-rights)
-5. [Article 5 — Obligations of Data Controllers/Processors](#article-5--obligations)
-6. [Article 8 — Penalties](#article-8--penalties)
-7. [Article 9 — Consent](#article-9--consent)
-8. [Article 10 — Consent for Sensitive Data](#article-10--consent-for-sensitive-data)
-9. [Article 19 — Processing Without Consent](#article-19--processing-without-consent)
-10. [Article 20 — Cross-Border Transfer](#article-20--cross-border-transfer)
-11. [Article 21 — Impact Assessment (DPIA)](#article-21--impact-assessment-dpia)
-12. [Article 23 — Breach Notification](#article-23--breach-notification)
-13. [Article 38 — Effective Date and Transitional Provisions](#article-38--effective-date)
+2. [Article 2 - Definitions](#article-2--definitions)
+3. [Article 3 - Principles](#article-3--principles)
+4. [Article 4 - Data Subject Rights](#article-4--data-subject-rights)
+5. [Article 5 - Application of Personal Data Protection Laws](#article-5--application-of-laws)
+6. [Article 37 - Responsibilities of Controllers and Processors](#article-37--responsibilities)
+7. [Article 8 - Penalties](#article-8--penalties)
+8. [Article 9 - Consent](#article-9--consent)
+9. [Article 10 - Consent for Sensitive Data](#article-10--consent-for-sensitive-data)
+10. [Article 19 - Processing Without Consent](#article-19--processing-without-consent)
+11. [Article 20 - Cross-Border Transfer](#article-20--cross-border-transfer)
+12. [Article 21 - Impact Assessment (DPIA)](#article-21--impact-assessment-dpia)
+13. [Article 23 - Breach Notification](#article-23--breach-notification)
+14. [Article 38 - Entry into Force](#article-38--entry-into-force)
+15. [Article 39 - Transitional Provisions](#article-39--transitional-provisions)
 
 ---
 
 ## Law Structure
 
-| Chapter | Title | Key Articles |
+The law has **5 chapters and 39 articles**:
+
+| Chapter | Title | Articles |
 |---|---|---|
-| Chapter I | General Provisions | 1–7 |
-| Chapter II | Consent and Legal Bases | 8–19 |
-| Chapter III | Cross-Border Transfer | 20 |
-| Chapter IV | Impact Assessments | 21–22 |
-| Chapter V | Security and Breach | 23–25 |
-| Chapter VI | Rights of Data Subjects | 26–32 |
-| Chapter VII | Obligations of Parties | 33–35 |
-| Chapter VIII | State Management | 36–37 |
-| Chapter IX | Transitional and Final Provisions | 38–39 |
+| Chapter I | General Provisions | 1–8 |
+| Chapter II | Personal Data Protection | 9–32 |
+| Chapter III | Forces and Conditions for Personal Data Protection | 33–35 |
+| Chapter IV | Responsibilities | 36–37 |
+| Chapter V | Implementation Provisions | 38–39 |
+
+**Chapter II sector-specific articles (Arts. 25–32):**
+
+| Article | Sector / Context |
+|---|---|
+| 25 | Recruitment and employee data |
+| 26 | Health and insurance |
+| 27 | Finance, banking, and credit |
+| 28 | Advertising |
+| 29 | Social media and online services |
+| 30 | Big data, AI, blockchain, metaverse, and cloud computing |
+| 31 | Location and biometric data |
+| 32 | Public recording (audio/video in public places) |
 
 **Administering authority:** Ministry of Public Security (specialized agency for personal data protection)
 
 ---
 
-## Article 2 — Definitions
+## Article 2 - Definitions
 
 | Term | Definition |
 |---|---|
 | **Personal data** | Digital data that identifies or can identify a specific natural person; divided into basic and sensitive |
-| **Basic personal data** | 11 categories: full name, date/place of birth and death, gender, current and permanent address, nationality, personal image, phone number, ID/passport/license plate numbers, marital status, family relationships, digital account information |
-| **Sensitive personal data** | 13 categories: racial/ethnic origin, political views, religious/philosophical views, private life/personal secrets/family secrets, health and medical status, biometric and genetic data, sexual life/orientation, criminal data, location/movement data, electronic account credentials and ID card images, banking/financial/credit/transaction data, social media behavioural tracking data |
+| **Basic personal data** | Defined **abstractly** in the Law; Article 2 delegates the enumeration to the Government. The operative list is in **Decree 356 Article 3**: 10 enumerated categories plus a catch-all item 11, so the list is **non-exhaustive** |
+| **Sensitive personal data** | Defined **abstractly** in the Law; Article 2 delegates the enumeration to the Government. The operative list is in **Decree 356 Article 4**: 12 enumerated categories plus a catch-all item (m), so the list is **open-ended** |
 | **Processing** | Any operation on personal data including collection, recording, analysis, storage, disclosure, combination, access, retrieval, erasure, or destruction |
 | **Personal data controller** | Organisation or individual that decides the purpose and means of processing |
 | **Personal data processor** | Organisation or individual that processes personal data at the request of the controller |
@@ -52,19 +65,21 @@
 
 ---
 
-## Article 3 — Principles of Personal Data Processing
+## Article 3 - Principles of Personal Data Processing
 
-1. **Lawfulness** — processing must have a valid legal basis
-2. **Purpose limitation** — data collected for specified, explicit, legitimate purposes; no further processing incompatible with original purpose
-3. **Data minimisation** — collect only what is necessary for the stated purpose
-4. **Accuracy** — data must be accurate and kept up to date
-5. **Synchronous security measures** — security controls must be implemented before and during processing
-6. **Proactive prevention** — risks must be identified and prevented before harm occurs
-7. **Harmony with national interests** — processing must not threaten national security, social order, or legitimate rights of other organisations/individuals
+1. **Lawfulness** - processing must have a valid legal basis
+2. **Purpose limitation** - data collected for specified, explicit, legitimate purposes; no further processing incompatible with original purpose
+3. **Data minimisation** - collect only what is necessary for the stated purpose
+4. **Accuracy** - data must be accurate and kept up to date
+5. **Synchronous security measures** - security controls must be implemented before and during processing
+6. **Proactive prevention** - risks must be identified and prevented before harm occurs
+7. **Harmony with national interests** - processing must not threaten national security, social order, or legitimate rights of other organisations/individuals
 
 ---
 
-## Article 4 — Data Subject Rights
+## Article 4 - Data Subject Rights
+
+Article 4 sets out the rights of data subjects and also their **obligations** (data subjects must comply with the duties the article prescribes alongside their rights).
 
 Data subjects have the following **6 rights**:
 
@@ -87,7 +102,17 @@ Data subjects have the following **6 rights**:
 
 ---
 
-## Article 5 — Obligations (Summary)
+## Article 5 - Application of Personal Data Protection Laws
+
+Article 5 contains the **lex specialis rules** on how the PDPL interacts with other laws governing data:
+- It determines which law applies where the PDPL and other data-related laws both address a matter
+- A personal data protection impact assessment conducted under the PDPL **satisfies equivalent assessment duties under other data laws** (one assessment, multiple statutory purposes)
+
+---
+
+## Article 37 - Responsibilities of Controllers and Processors
+
+The controller/processor obligations catalogue sits in **Article 37** (Chapter IV, Responsibilities), not Article 5.
 
 **Controllers must:**
 - Establish and maintain a lawful basis for all processing
@@ -107,7 +132,7 @@ Data subjects have the following **6 rights**:
 
 ---
 
-## Article 8 — Penalties
+## Article 8 - Penalties
 
 | Violation | Organisation | Individual |
 |---|---|---|
@@ -120,14 +145,14 @@ Data subjects have the following **6 rights**:
 
 ---
 
-## Article 9 — Consent
+## Article 9 - Consent
 
 **Validity requirements:**
-- **Voluntary** — not coerced or made a condition of service where unnecessary
-- **Explicit** — clear affirmative action; silence, inaction, or pre-ticked boxes do NOT constitute consent
-- **Specific** — separate consent for each distinct purpose
-- **Informed** — data subject must know what they are consenting to
-- **Recorded** — controller must maintain proof of consent
+- **Voluntary** - not coerced or made a condition of service where unnecessary
+- **Explicit** - clear affirmative action; silence, inaction, or pre-ticked boxes do NOT constitute consent
+- **Specific** - separate consent for each distinct purpose
+- **Informed** - data subject must know what they are consenting to
+- **Recorded** - controller must maintain proof of consent
 
 **Consent must specify:**
 - The type of personal data
@@ -139,7 +164,7 @@ Data subjects have the following **6 rights**:
 
 ---
 
-## Article 10 — Consent for Sensitive Personal Data
+## Article 10 - Consent for Sensitive Personal Data
 
 - **Explicit, separate consent** required for each category of sensitive data
 - Controller must clearly distinguish sensitive data consent from general consent
@@ -148,21 +173,21 @@ Data subjects have the following **6 rights**:
 
 ---
 
-## Article 19 — Processing Without Consent (Legal Bases Other Than Consent)
+## Article 19 - Processing Without Consent (Legal Bases Other Than Consent)
 
 Processing without consent is permitted only in these **5 cases**:
 
-1. **Emergency situations** — to protect the life or health of the data subject or another person when the data subject is incapable of giving consent
-2. **National/public security threats** — at the request of competent state agencies in accordance with law
-3. **State agency statutory functions** — public bodies processing data in exercising their legally assigned functions
-4. **Contract performance** — processing is necessary for performance of a contract to which the data subject is party
-5. **Other cases as prescribed by law** — specific sectoral laws may permit additional bases
+1. **Emergency situations** - to protect the life or health of the data subject or another person when the data subject is incapable of giving consent
+2. **National/public security threats** - at the request of competent state agencies in accordance with law
+3. **State agency statutory functions** - public bodies processing data in exercising their legally assigned functions
+4. **Contract performance** - processing is necessary for performance of a contract to which the data subject is party
+5. **Other cases as prescribed by law** - specific sectoral laws may permit additional bases
 
 **Note:** This is narrower than GDPR's 6 lawful bases. Legitimate interests is not a standalone basis under VN-PDPL.
 
 ---
 
-## Article 20 — Cross-Border Transfer of Personal Data
+## Article 20 - Cross-Border Transfer of Personal Data
 
 **General rule:** Personal data of Vietnamese data subjects may be transferred abroad subject to impact assessment.
 
@@ -183,7 +208,7 @@ Processing without consent is permitted only in these **5 cases**:
 
 ---
 
-## Article 21 — Impact Assessment (DPIA)
+## Article 21 - Impact Assessment (DPIA)
 
 **Trigger:** Any organisation commencing personal data processing.
 
@@ -204,7 +229,7 @@ Processing without consent is permitted only in these **5 cases**:
 
 ---
 
-## Article 23 — Breach Notification
+## Article 23 - Breach Notification
 
 **72-hour rule:** Personal data controllers must notify the personal data protection authority **within 72 hours** of becoming aware of a breach.
 
@@ -222,9 +247,18 @@ Processing without consent is permitted only in these **5 cases**:
 
 ---
 
-## Article 38 — Effective Date and Transitional Provisions
+## Article 38 - Entry into Force
+
+Article 38 contains **both** the effective date and the SME/startup opt-out:
 
 - **Law effective date:** 1 January 2026
-- **SME opt-out period:** 5 years from 1 January 2026 for Articles 21, 22, 33(2) — unless processing sensitive data or at large scale
-- **Decree 356** (implementing decree): 31 December 2025, effective 1 January 2026
-- Prior processing activities: organisations had a transition period to align with the law; from 1 January 2026 full compliance is required
+- **SME/startup opt-out:** small enterprises and startups may opt out of Articles 21, 22, and 33(2) for **5 years** from the effective date - unless they process sensitive data or at large scale
+- **Micro-enterprises and household businesses:** exempt from those articles on the same conditions
+
+---
+
+## Article 39 - Transitional Provisions
+
+- **Decree 13-era consents remain valid:** consents lawfully obtained under the prior Decree 13/2023 regime do not need to be re-collected
+- **Decree 13-era dossiers remain valid:** impact assessment dossiers submitted under the prior regime continue to be recognised
+- **Decree 356** (implementing decree): 31 December 2025, effective 1 January 2026; from 1 January 2026 full compliance with the new framework is required

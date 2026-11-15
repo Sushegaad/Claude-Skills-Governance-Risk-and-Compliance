@@ -1,0 +1,13 @@
+{
+  "eval_id": 411,
+  "eval_name": "product-classification",
+  "run_type": "without_skill",
+  "prompt": "Classify these under the EU CRA: a password manager, a hypervisor, a smart meter gateway, and an industrial robot.",
+  "assertions": [
+    "Password manager = Annex III Class I (important products)",
+    "Hypervisor (or container runtime) = Annex III Class II",
+    "Smart meter gateway = Annex IV critical product",
+    "Industrial robot = listed in NO CRA annex (default category)",
+    "States the real counts: Class I 19 categories, Class II 4, Annex IV 3"
+  ]
+}

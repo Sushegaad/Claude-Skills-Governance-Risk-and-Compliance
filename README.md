@@ -1,7 +1,7 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
 Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, DORA Digital Operational Resilience, India's Digital Personal Data Protection Act (DPDPA), CMMC 2.0 Cybersecurity Maturity Model Certification, NIST AI Risk Management Framework, SWIFT Customer Security Programme (CSP), Australian Information Security Manual (ISM), EU NIS2 Directive, CCPA/CPRA California Privacy, ITAR (International Traffic in Arms Regulations), Brazil's LGPD (Lei Geral de Proteção de Dados), EU CSRD (Corporate Sustainability Reporting Directive), CIS Controls v8 (CIS Top 18), EAR (Export Administration Regulations), NIST SP 800-53 (Security and Privacy Controls for Federal Systems), EU AI Act (Regulation (EU) 2024/1689), Section 508 (US Federal ICT Accessibility), WCAG (Web Content Accessibility Guidelines), NZISM (New Zealand Information Security Manual), Vietnam PDPL (Law on Personal Data Protection No. 91/2025/QH15), EU CRA (Cyber Resilience Act, Regulation (EU) 2024/2847), Saudi Arabia GRC (NCA ECC, Saudi PDPL, SAMA, CST), UAE GRC (Federal PDPL, DIFC, ADGM, CBUAE, ICT Health Law), TISAX (VDA ISA / ENX automotive supplier security), TPRM (third-party/vendor risk), UK Cyber Essentials, and SOX ITGC — powered by Claude Skills. **Updated Monthly.**
 
-Benchmarked across 180 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (902 assertions in total). Skills scored **90%** vs a baseline of **50%**.
+Benchmarked across 180 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (902 assertions in total). Skills scored **92%** vs a baseline of **54%**.
 
 [![Release: v2.2.0](https://img.shields.io/badge/Release-v2.2.0-brightgreen.svg)](../../releases/tag/v2.2.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -1122,9 +1122,9 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 
 | Configuration | Pass Rate | Assertions Passed |
 |---------------|-----------|-------------------|
-| **With GRC Skills installed** | **90%** | **810 / 902** |
-| Without skills (baseline Claude) | 50% | 448 / 902 |
-| **Delta** | **+40 points** | **+362 assertions** |
+| **With GRC Skills installed** | **92%** | **833 / 902** |
+| Without skills (baseline Claude) | 54% | 488 / 902 |
+| **Delta** | **+38 points** | **+345 assertions** |
 
 ### Per-Skill Results
 
@@ -1141,16 +1141,16 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | TSA Cybersecurity [US] | 5 | **100%** | 96% | +4% | Pipeline directive requirements; CIRP elements; OT/IT segmentation; Airport applicability; TSA vs CIRCIA |
 | ISO 42001 | 5 | **92%** | 80% | +12% | AIMS applicability; Key requirements; AI-specific risks; Third-party LLM management; AI ethics controls |
 | ISO 27701 | 5 | **100%** | 100% | ±0% | Extension to ISO 27001; GDPR mapping; Processor controls; PIA methodology; Certification as GDPR evidence |
-| DORA [EU] | 5 | **64%** | 56% | +8% | CTPP EU-subsidiary deadline (Art. 31(12)); incident classification and reporting; third-country branches (CSSF 26/915); Register of Information cycle; Art. 30 contract provisions |
-| DPDPA [India] | 5 | **96%** | 80% | +16% | Applicability to foreign entities; Consent vs GDPR; Children's data (18-year threshold); Cross-border transfers; SDF obligations |
-| CMMC 2.0 [US] | 5 | **72%** | 28% | +44% | Task Force status (Sept 14); obligations during the pause; what the suspension did and didn't do; SPRS calculation; enclave scoping |
+| DORA [EU] | 5 | **96%** | 88% | +8% | Lead Overseer powers; Art. 30(2)/(3) contract sets; incident deadlines; termination/exit/concentration; final provisions |
+| DPDPA [India] | 5 | **96%** | 92% | +4% | Section 7 structure; Rules 6/7 mechanics; chapters and appeals; penalty anchors; offshore exemption |
+| CMMC 2.0 [US] | 5 | **88%** | 60% | +28% | Level 1 scope (15); POA&M eligibility and 3.13.11; SPRS weights; Level 3 POA&M; ecosystem roles |
 | NIST AI RMF | 5 | **92%** | 92% | ±0% | GOVERN structure and counts (issue #62 regression); GOVERN mapping; core category/subcategory counts; MEASURE trustworthiness IDs; MANAGE incident anchoring |
 | SWIFT CSP | 5 | **56%** | 12% | +44% | v2026 control counts (26+6) and changes; v2027 status honesty; missed-attestation consequences; architecture typing; independent assessment prep |
 | ISM [Australia] | 5 | **92%** | 16% | +76% | September 2026 release (44 new controls); agentic AI controls; OAuth consent hardening; Essential Eight status; cadences and provider access |
 | NIS2 [EU] | 5 | **100%** | 32% | +68% | Transposition status (24 of 27); Austria NISG 2026 scope and deadlines; Netherlands Cbw; CJEU referrals; multi-country rollout |
 | CCPA/CPRA [California] | 5 | **88%** | 48% | +40% | Broker-data deletion (SB 923); 2026 children's package; sensitive-PI status (AB 1542 veto); data-broker enforcement climate; ADMT countdown |
 | ITAR [US] | 5 | **88%** | 12% | +76% | VIII(a)(8) interim final rule effective; omnibus NPRM; jurisdiction walkthrough; 2026 H2 rule activity; radar altimeter status |
-| LGPD [Brazil] | 5 | **84%** | 44% | +40% | Penalty reality (TikTok R$153.7M); ANPD agency status + CP 1/2026; teen-platform obligations (Digital ECA); Brazil-US transfers; breach response |
+| LGPD [Brazil] | 5 | **96%** | 76% | +20% | Art. 11 bases vs credit; chapter map; prescription and Art. 54; RoPA scope; EU adequacy |
 | CSRD [EU] | 5 | **100%** | 60% | +40% | FY2026/FY2027 ESRS basis (Reg. 2026/1563 in the OJ); below-threshold + voluntary standard; assurance status (CEAOB); double materiality; value-chain cap and Scope 3 |
 | CIS Controls v8 | 5 | **100%** | 80% | +20% | Implementation Group determination; Gap assessment for SaaS startup; MFA safeguard scoping (IG2); CIS v8 to NIST CSF 2.0 mapping; Vulnerability management programme with remediation SLAs |
 | EAR [US] | 5 | **80%** | 56% | +24% | Affiliates Rule status and stay extension; aggregate ownership mechanics; October rule activity; aircraft jurisdiction handoff; compliance program readiness |
@@ -1159,8 +1159,8 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | Section 508 [US] | 5 | **100%** | 32% | +68% | Refresh NPRM rumor check; FY2025 governmentwide assessment; ADA Title II conflation; procurement requirements; WCAG baseline |
 | WCAG [International] | 5 | **100%** | 85% | +15% | Colour contrast audit (SC 1.4.3) with replacement suggestions; WCAG 2.2 upgrade criteria from 2.1 AA; React modal ARIA code review with corrected implementation; Legal compliance mapping across US/EU/UK; Accessibility statement for e-commerce site |
 | NZISM [New Zealand] | 5 | **96%** | 64% | +32% | Restricted system C&A gap analysis; AWS Sydney offshore hosting obligations; Access Control Policy with NZISM control IDs; Ransomware supplier incident response; SaaS vendor due diligence and contractual requirements |
-| VN-PDPL [Vietnam] | 5 | **88%** | 8% | +80% | Decree 330/2026 penalty exposure; cross-border transfer duties; law-stack timeline; consent and rights; SME exemptions |
-| EU CRA [EU] | 5 | **76%** | 48% | +28% | Live Art. 14 filing (exploited vulnerability); severe-incident reporting; firewall classification and conformity; what-applies-when timeline; SRP onboarding and fallback |
+| VN-PDPL [Vietnam] | 5 | **96%** | 24% | +72% | Law structure (5 chapters, 39 articles); data-category lists; Article 5 scope; SME opt-out; sector articles |
+| EU CRA [EU] | 5 | **100%** | 84% | +16% | Product classification (19/4/3); database claim check; application timeline; Annex I Part II; critical products |
 | Saudi Arabia GRC | 5 | **100%** | 20% | +80% | NCNICC-1:2025 Category A and B applicability; PDPL enforcement record; draft AI guidelines; SAMA framework status |
 | UAE GRC | 5 | **84%** | 28% | +56% | DIFC routing + 2025 amendment; health-data localization vs US cloud; mainland PDPL status; ADGM breach clock; CBUAE cloud offshoring constraints |
 | TISAX | 5 | **100%** | 16% | +84% | Order-date decision (ISA 6 vs ISA2027); ISA2027 changes; prototype labels (PTS Basic/Facilities); first-timer process; ISO 27001 vs TISAX |

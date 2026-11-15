@@ -1,0 +1,13 @@
+{
+  "eval_id": 398,
+  "eval_name": "chapters-appeals",
+  "run_type": "without_skill",
+  "prompt": "Give me the chapter structure of the DPDP Act, and tell me which sections cover appeals to the TDSAT and voluntary undertakings.",
+  "assertions": [
+    "States the Act has nine chapters and 44 sections",
+    "Maps appeal to the Appellate Tribunal (TDSAT) to Section 29",
+    "Maps voluntary undertakings to Section 32",
+    "Maps Chapter VI to the Board's powers and procedure (ss.27-28) and Chapter VIII to penalties (ss.33-34)",
+    "Does not cite any 'Section 31 limitation for filing complaints' (Section 31 is alternate dispute resolution)"
+  ]
+}

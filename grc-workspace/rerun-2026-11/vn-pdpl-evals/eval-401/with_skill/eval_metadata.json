@@ -1,0 +1,13 @@
+{
+  "eval_id": 401,
+  "eval_name": "law-structure",
+  "run_type": "with_skill",
+  "prompt": "How is Vietnam's Personal Data Protection Law structured? Our internal memo describes nine chapters.",
+  "assertions": [
+    "States the law has 5 chapters and 39 articles, not nine chapters",
+    "Places the personal data protection core in Chapter II (Articles 9-32)",
+    "Correctly names at least two sector-specific articles among Arts. 25-32 (for example recruitment/employees Art. 25, finance/banking Art. 27, big data/AI/cloud Art. 30)",
+    "States Article 38 is entry into force (January 1, 2026) and includes the SME/startup five-year opt-out",
+    "States Article 39 carries the transitional provisions (Decree 13-era consents and dossiers remain valid)"
+  ]
+}

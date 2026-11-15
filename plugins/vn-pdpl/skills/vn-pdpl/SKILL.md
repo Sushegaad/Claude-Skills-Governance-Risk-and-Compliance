@@ -5,7 +5,7 @@ description: "Expert Vietnam Personal Data Protection Law (PDPL) compliance advi
 
 # Vietnam Personal Data Protection Law (PDPL) Skill
 
-> **Last verified:** 2026-09-05
+> **Last verified:** 2026-11-15
 
 ## Overview
 
@@ -16,8 +16,8 @@ The law applies to:
 - Foreign organisations and individuals processing data of Vietnamese data subjects (extraterritorial reach)
 
 **Always read the relevant reference file before drafting detailed guidance:**
-- `references/articles-overview.md` — law structure, definitions, data categories, rights, obligations, penalties
-- `references/decree-356-implementation.md` — sector rules, consent methods, DPO qualifications, response timeframes
+- `references/articles-overview.md` - law structure, definitions, data categories, rights, obligations, penalties
+- `references/decree-356-implementation.md` - sector rules, consent methods, DPO qualifications, response timeframes
 
 ---
 
@@ -25,9 +25,11 @@ The law applies to:
 
 ### Data Categories
 
-**Basic personal data (11 items):** full name, date/place of birth and death, gender, current and permanent address, nationality, personal image, phone number, ID/passport/license plate numbers, marital status, family relationships, digital account information.
+The Law (Article 2) defines basic and sensitive personal data abstractly and delegates the enumeration to the Government; the operative lists are in **Decree 356 Articles 3 and 4** and both end in a catch-all item, so neither list is exhaustive.
 
-**Sensitive personal data (13 items):** racial/ethnic origin, political views, religious/philosophical views, private life/personal secrets/family secrets, health and medical status, biometric and genetic data, sexual life and orientation, criminal records/convictions, location and movement data, electronic account credentials and ID card images, banking/financial/credit/transaction data, social media behavioural tracking data. **Sensitive data requires explicit, separate consent.**
+**Basic personal data (Decree 356 Art. 3 - 10 enumerated categories + catch-all item 11):** full name, date/place of birth and death, gender, current and permanent address, nationality, personal image, phone number, ID/passport/license plate numbers, marital status, family relationships, plus a catch-all for other non-sensitive personal data.
+
+**Sensitive personal data (Decree 356 Art. 4 - 12 enumerated categories + catch-all item (m)):** racial/ethnic origin, political views, religious/philosophical views, private life/personal secrets/family secrets, health and medical status, biometric and genetic data, sexual life and orientation, criminal records/convictions, location and movement data, banking/financial/credit/transaction data, social media behavioural tracking data, and other data specified by law as sensitive. **Sensitive data requires explicit, separate consent.**
 
 ### Key Roles
 
@@ -39,10 +41,10 @@ The law applies to:
 | **Controlling-and-Processing Party** | Decides purpose AND directly processes |
 | **Third Party** | Any other participant in processing |
 
-### Data Subject Rights (6 rights — Article 4)
+### Data Subject Rights (6 rights - Article 4)
 
 1. **Right to be informed** about processing activities
-2. **Right to consent / withdraw consent** — granular, per-purpose; silence ≠ consent
+2. **Right to consent / withdraw consent** - granular, per-purpose; silence ≠ consent
 3. **Right to access and rectify** their personal data
 4. **Right to delete, restrict, object** to processing
 5. **Right to file complaints, lawsuits, and seek compensation**
@@ -66,7 +68,7 @@ The law applies to:
 
 ## Skill Workflows
 
-### Workflow 1 — Compliance Gap Analysis
+### Workflow 1 - Compliance Gap Analysis
 
 **When to use:** Organisation wants to assess readiness against VN-PDPL.
 
@@ -75,15 +77,15 @@ The law applies to:
 2. Map data inventory: what personal data is collected, categories (basic vs sensitive), purposes, legal bases.
 3. Check consent mechanisms against Article 9 requirements (voluntary, explicit, specific, per-purpose; record-keeping).
 4. Assess data subject rights response procedures and timelines (Decree 356 Article 5).
-5. Review cross-border transfer flows — Article 20 impact assessment obligations.
-6. Review DPIA (Article 21) obligations — note SME exemptions.
+5. Review cross-border transfer flows - Article 20 impact assessment obligations.
+6. Review DPIA (Article 21) obligations - note SME exemptions.
 7. Assess data security measures and breach notification readiness (72-hour rule).
 8. Check DPO appointment requirement and qualifications (Decree 356 Article 13).
 9. Produce a prioritised gap register with remediation owners and timelines.
 
 **Output format:**
 ```
-## VN-PDPL Gap Analysis — [Organisation Name]
+## VN-PDPL Gap Analysis - [Organisation Name]
 ### Executive Summary
 ### Gap Register
 | Control Area | Current State | Gap | Risk | Remediation |
@@ -91,7 +93,7 @@ The law applies to:
 ### SME Exemptions Applicable (if any)
 ```
 
-### Workflow 2 — Data Subject Rights Fulfilment
+### Workflow 2 - Data Subject Rights Fulfilment
 
 **When to use:** Handling data subject requests or building a rights fulfilment process.
 
@@ -105,7 +107,7 @@ The law applies to:
 
 **Key rule:** Consent withdrawal must be honoured; it does not affect the lawfulness of prior processing.
 
-### Workflow 3 — Impact Assessments (DPIA & Cross-Border Transfer)
+### Workflow 3 - Impact Assessments (DPIA & Cross-Border Transfer)
 
 **When to use:** Starting new processing activities or planning to transfer data outside Vietnam.
 
@@ -122,14 +124,14 @@ The law applies to:
 
 **Output:** Provide a structured impact assessment template pre-filled with client's specific facts.
 
-### Workflow 4 — Privacy Notices and Internal Policies
+### Workflow 4 - Privacy Notices and Internal Policies
 
 **When to use:** Drafting or reviewing privacy notices, consent forms, data processing policies.
 
 **Privacy Notice must include:**
 - Identity and contact details of controller/processor
 - Purposes and legal basis for each processing activity
-- Categories of data processed (basic vs sensitive — note separately)
+- Categories of data processed (basic vs sensitive - note separately)
 - Recipients and third parties
 - Cross-border transfer details (if any)
 - Retention periods
@@ -141,17 +143,17 @@ The law applies to:
 
 **Sector-specific overlays:** Read `references/decree-356-implementation.md` for finance/banking, AI, cloud, blockchain, and big data requirements.
 
-### Workflow 5 — Breach Notification and Response
+### Workflow 5 - Breach Notification and Response
 
 **When to use:** A personal data breach has occurred or is suspected.
 
 **Response sequence:**
-1. Contain — isolate affected systems, prevent further exposure.
-2. Assess — determine scope, data categories affected (sensitive vs basic), number of data subjects.
-3. Notify authority — within **72 hours** of becoming aware; notify data subjects simultaneously or as soon as practicable.
-4. Document — maintain an internal breach register.
-5. Remediate — patch root cause, update controls.
-6. Review — post-incident lessons learned and control improvements.
+1. Contain - isolate affected systems, prevent further exposure.
+2. Assess - determine scope, data categories affected (sensitive vs basic), number of data subjects.
+3. Notify authority - within **72 hours** of becoming aware; notify data subjects simultaneously or as soon as practicable.
+4. Document - maintain an internal breach register.
+5. Remediate - patch root cause, update controls.
+6. Review - post-incident lessons learned and control improvements.
 
 **Breach notification content:**
 - Nature of the breach
@@ -163,13 +165,13 @@ The law applies to:
 
 ---
 
-## Penalties — Decree 330/2026/ND-CP (effective August 19, 2026)
+## Penalties - Decree 330/2026/ND-CP (effective August 19, 2026)
 
 **The sanctions regime is now operative.** Decree No. 330/2026/ND-CP (issued and effective **August 19, 2026**; 82 articles, 33 on personal data protection) implements the penalty framework of Law 91/2025 (Article 8) and Decree 356/2025. State this decree in every penalties answer.
 
 | Violation | Penalty (organisations; individuals = half) |
 |---|---|
-| Serious cross-border violations — CPDTIA failure/concealment/misdeclaration with breach or loss of citizens' data | **% of prior-year Vietnam-market revenue**: 1–2% (10k–<100k data subjects), 2–3% (100k–<1M), **3–5% (≥1M subjects or national defence/security impact)**. Where no Vietnam revenue or the % is below the fixed tier: VND 200–500M / 500M–1B / **1–3B** respectively |
+| Serious cross-border violations - CPDTIA failure/concealment/misdeclaration with breach or loss of citizens' data | **% of prior-year Vietnam-market revenue**: 1–2% (10k–<100k data subjects), 2–3% (100k–<1M), **3–5% (≥1M subjects or national defence/security impact)**. Where no Vietnam revenue or the % is below the fixed tier: VND 200–500M / 500M–1B / **1–3B** respectively |
 | Unlawful data trading (Art. 53) | **2×–10× unlawful proceeds**; where indeterminable: VND 500M–1B (basic data ≥10k people or sensitive data ≥2k), **VND 1–3B** where seriously affecting national security, public order, macroeconomy, or life/health/dignity |
 | Plain CPDTIA non-filing / late updates | VND 30–50M |
 | Consent violations | VND 30–50M; silence-as-consent or processing after withdrawal: VND 50–70M |

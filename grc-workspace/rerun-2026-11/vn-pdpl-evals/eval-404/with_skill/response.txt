@@ -1,0 +1,28 @@
+Deferrable PDPL obligations for a 20-person Vietnamese startup
+
+Short answer: under Article 38 of Law 91/2025/QH15, eligible small enterprises and startups may opt out of three provisions for 5 years from the Law's effective date (1 January 2026), i.e. until about 1 January 2031. The three are:
+- Article 21: personal data protection impact assessment (DPIA)
+- Article 22: security measures requirements
+- Article 33(2): certain processor obligations
+
+This is an opt-out, and it must be documented. Your election should be recorded in writing, signed off by management.
+
+Critical exclusion: the exemption is lost if you process sensitive personal data or process data at large scale. For a startup this is the main trap. Under Decree 356 Art. 4, sensitive data includes health data, biometrics (for example face or fingerprint login or eKYC), financial and banking data, location and movement data, and social media or behavioural tracking data, and the list is open-ended. If your product does location tracking, payments, health, KYC or behavioural analytics, you probably cannot rely on the deferral. Large scale is not defined with a bright line in the skill sources; confirm with Ministry of Public Security guidance. Also check whether you actually qualify as a small or micro enterprise under Vietnam's SME definitions (headcount, revenue or capital, and sector); 20 employees is a starting point, not a conclusion. Micro-enterprises and household businesses get the exemption on the same conditions.
+
+What you CANNOT defer (applies from 1 January 2026)
+- Lawful basis and consent rules (Arts. 9, 10, 19): valid consent is voluntary, explicit, specific and recorded; no silence or pre-ticked boxes; separate explicit consent for sensitive data. Consent violations carry fines of VND 30-50M, and silence-as-consent or processing after withdrawal VND 50-70M under Decree 330/2026/ND-CP (effective 19 August 2026).
+- Data subject rights handling (Decree 356 Art. 5): acknowledge in 2 working days; access or correction in 10; withdrawal, restriction or objection in 15; deletion in 20.
+- Breach notification: 72 hours to the authority, with a breach register (Art. 23).
+- Cross-border transfer impact assessment (Art. 20): file with the Ministry of Public Security within 60 days of the first transfer and update every 6 months or on material change. This is NOT covered by the SME opt-out. Using foreign cloud, analytics, CRM or SaaS tools with Vietnamese user data can trigger it. Note the exception for employee HR data in cloud HR systems. Plain non-filing carries VND 30-50M; serious violations can reach a percentage of Vietnam revenue.
+- Privacy notices, retention limits, data minimisation and processor contracts.
+- DPO or personal data protection personnel: required where you process sensitive data or at large scale (Decree 356 Art. 13). If you are exempt on scale and sensitivity, a DPO is less likely to be required, but confirm. If appointed, the person needs a degree and 2 years of relevant experience; an external DPO is permitted. Failures carry VND 10-30M.
+- Sector overlays if relevant: finance (annual assessments, audit logs, dual 72-hour notification), AI (opt-out and periodic assessment), blockchain (no direct personal data on-chain), cloud (encryption, access controls).
+- Transitional benefit: Decree 13-era consents and dossiers remain valid (Art. 39), so you need not re-collect lawful legacy consents.
+
+Practical plan
+1. Classify your data against Decree 356 Arts. 3 and 4. If anything is sensitive or you are large scale, assume no deferral and plan DPIA and security measures now.
+2. If eligible, document the opt-out election and the facts supporting eligibility, with a trigger-based review (new sensitive features, growth in user volume).
+3. Do voluntary lightweight versions of the deferred items anyway: a short DPIA-style record and baseline security controls. Investors, enterprise customers and banks will ask, and the exemption ends around 2031.
+4. Implement the non-deferrable basics now: consent capture and logs, rights-request workflow, 72-hour breach runbook, and a cross-border transfer inventory with a plan to file within 60 days.
+
+This is general compliance information, not legal advice. Confirm SME status and "large scale" thresholds with counsel and current Ministry guidance.

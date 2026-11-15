@@ -1,0 +1,33 @@
+{
+  "eval_id": 401,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the law has 5 chapters and 39 articles, not nine chapters",
+      "passed": false,
+      "evidence": "Claims 7 chapters ('organised in 7 chapters and roughly 39 articles'); corrects nine but states the wrong count"
+    },
+    {
+      "text": "Places the personal data protection core in Chapter II (Articles 9-32)",
+      "passed": false,
+      "evidence": "Seven-chapter layout given; no article ranges and Chapter II not placed at Articles 9-32"
+    },
+    {
+      "text": "Correctly names at least two sector-specific articles among Arts. 25-32 (for example recruitment/employees Art. 25, finance/banking Art. 27, big data/AI/cloud Art. 30)",
+      "passed": false,
+      "evidence": "Mentions sector topics (finance, employment, AI, cloud) but cites no article numbers in 25-32"
+    },
+    {
+      "text": "States Article 38 is entry into force (January 1, 2026) and includes the SME/startup five-year opt-out",
+      "passed": false,
+      "evidence": "Gives the 1 Jan 2026 effective date generally but never ties it to Article 38 and omits the SME five-year opt-out"
+    },
+    {
+      "text": "States Article 39 carries the transitional provisions (Decree 13-era consents and dossiers remain valid)",
+      "passed": false,
+      "evidence": "No mention of Article 39 or of Decree 13-era consents/dossiers remaining valid"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

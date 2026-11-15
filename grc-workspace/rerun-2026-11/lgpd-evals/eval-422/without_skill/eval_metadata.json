@@ -1,0 +1,13 @@
+{
+  "eval_id": 422,
+  "eval_name": "chapter-map",
+  "run_type": "without_skill",
+  "prompt": "Map the LGPD's chapters: where do termination of processing and the ANPD sit?",
+  "assertions": [
+    "Chapter I = Articles 1-6",
+    "Articles 15-16 (termination and elimination) sit in Chapter II",
+    "Chapter VIII = inspection/sanctions (Articles 52-54)",
+    "Chapter IX = ANPD and CNPD (Article 55-A onward)",
+    "Does not use an invented range like 'Arts. 55-A to 55-L'"
+  ]
+}

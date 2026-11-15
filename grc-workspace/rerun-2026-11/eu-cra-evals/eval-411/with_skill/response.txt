@@ -1,0 +1,32 @@
+## CRA Classification (Regulation (EU) 2024/2847)
+
+| Product | Class | Annex | Conformity route |
+|---|---|---|---|
+| Password manager | **Class I** (important product) | Annex III, Class I (one of the 19 categories) | Module A self-assessment OR Notified Body (manufacturer's choice) |
+| Hypervisor | **Class II** (important product) | Annex III, Class II (hypervisors and container runtime systems; one of the 4 categories) | **Mandatory third-party assessment by a Notified Body** |
+| Smart meter gateway | **Critical product** | Annex IV (one of the 3 categories) | May be made subject to **mandatory EU cybersecurity certification** (the Commission can require this by delegated act) |
+| Industrial robot | **Default** (probably) | Not listed in Annex III or IV | Module A self-assessment |
+
+### Notes per product
+
+**Password manager - Class I.** It sits alongside identity/PAM systems, browsers, anti-malware, VPNs and operating systems in the 19 Class I categories. You may self-assess against Annex I (Module A) or use a Notified Body. Self-assessment still requires real technical evidence, technical documentation (Annex VII), an EU Declaration of Conformity (Annex V) and CE marking. Documents are retained for 10 years.
+
+**Hypervisor - Class II.** Hypervisors and container runtime systems are one of the four Class II categories (the others are firewalls and IDS/IPS, tamper-resistant microprocessors, tamper-resistant microcontrollers). A Notified Body assessment is mandatory. The CE mark is followed by the NB's four-digit number. Chapter IV on notified bodies (Arts. 35-51) applies from 11 June 2026. Plan early, because complex Class II assessments can take 6-18 months and NB capacity is still building. The 11 December 2026 date is only the Art. 35(2) target for Member States to strive for sufficient notified bodies.
+
+**Smart meter gateway - Critical (Annex IV).** The three Annex IV categories are hardware devices with security boxes, smart meter gateways, and smartcards or similar devices including secure elements. For these, the Commission can require a European cybersecurity certification scheme. Until such a scheme is adopted and made mandatory, check the current position with counsel or an assessor. The Annex I essential requirements apply regardless. Note that it is "critical" under Annex IV, not "Class II".
+
+**Industrial robot - Default, with caveats.**
+- A robot with a network interface (fieldbus, Ethernet, wireless, remote service access) is a product with digital elements and is in scope.
+- It does not match an Annex III or IV category as a whole, so it is Default and uses Module A.
+- Check embedded components. A security-functional microcontroller or an embedded firewall/router component could itself be a separately classified product. A robot that is only a host is not reclassified by that fact, but check how the robot's own security functions are described.
+- Verify the exclusions. Medical, automotive, aviation, marine and military uses are outside the CRA. Machinery is not excluded: the Machinery Regulation applies in parallel, and its cybersecurity-related requirements should be coordinated with the CRA documentation.
+- The classification depends on the product's core functionality, so confirm it against the final scope of the product.
+
+### Cross-cutting points for all four
+- Annex I Part I (security properties) and Part II (8 vulnerability-handling requirements, including an SBOM) apply to all of them.
+- **Reporting is already live.** Since 11 September 2026, manufacturers must report actively exploited vulnerabilities and severe incidents under Art. 14 through the ENISA Single Reporting Platform (24h early warning, 72h notification, final report). This applies to products already on the market.
+- All other obligations (Annex I conformity, CE marking, etc.) apply from 11 December 2027.
+- There is no EU product registration database under the CRA. Conformity is shown by the DoC and CE marking.
+- Minimum support period is 5 years, or the expected lifetime if shorter.
+
+*General compliance information, not legal advice. Confirm the classification of each specific product against the final text and any implementing acts.*

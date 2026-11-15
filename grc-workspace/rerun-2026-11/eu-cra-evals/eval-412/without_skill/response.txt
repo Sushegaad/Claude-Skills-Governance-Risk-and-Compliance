@@ -1,0 +1,9 @@
+No. The Cyber Resilience Act (Regulation (EU) 2024/2847) has no requirement to register a Class I product (or any product) in an EU database before it is placed on the market. The consultant is likely confusing it with the AI Act (registration of high-risk AI systems in the EU database) or with other regimes such as medical devices (EUDAMED).
+
+What the CRA requires for important products, Class I (Annex III Part I):
+- Conformity assessment under Art. 32 and Annex VIII. For Class I, the manufacturer may use internal control (Module A) only if it applies harmonised standards, common specifications or a European cybersecurity certification scheme (at least "substantial" assurance) covering all the relevant Annex I requirements. If it has not applied them, or only partly, it must use third-party assessment: Module B+C (EU-type examination) or Module H (full quality assurance) through a notified body.
+- Technical documentation (Annex VII), the EU declaration of conformity, and CE marking, with documentation kept for at least 10 years or the support period, whichever is longer.
+- Annex I Part I (product security) and Part II (vulnerability handling).
+- Reporting of actively exploited vulnerabilities and severe incidents through the single reporting platform (Art. 14 and Art. 16) from 11 September 2026. This is incident reporting, not product registration.
+
+Notified-body involvement is not "registration". Notified bodies themselves are notified to the Commission under Chapter IV. Product-level registration does not exist under the CRA. Ask the consultant for the specific article they are relying on.

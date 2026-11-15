@@ -1,0 +1,28 @@
+Short answer: no, the checklist is wrong. Section 7 of the DPDP Act, 2023 has nine legitimate uses, clauses 7(a) to 7(i), and it has no residual "other prescribed purposes as notified" clause. The list ends at clause (i). An eight-item list ending in a catch-all misdescribes the Act in two ways.
+
+**Section 7 - Certain Legitimate Uses (consent not required)**
+
+| Clause | Legitimate use |
+|---|---|
+| 7(a) | Specified purpose for which the Data Principal voluntarily provided data, and has not indicated non-consent (the Data Principal can specifically object) |
+| 7(b) | The State providing subsidies, benefits, services, certificates, licences or permits (Rule 5 and its Schedule set the standards) |
+| 7(c) | State performance of functions under Indian law, or in the interest of India's sovereignty, integrity or security |
+| 7(d) | Fulfilling a legal obligation under Indian law to disclose information to the State or its instrumentalities |
+| 7(e) | Compliance with any judgment, decree or order issued under law |
+| 7(f) | Medical emergency involving a threat to life or immediate threat to health |
+| 7(g) | Measures during an epidemic, outbreak or other threat to public health |
+| 7(h) | Safety and assistance during a disaster or breakdown of public order |
+| 7(i) | Employment purposes, or safeguarding the employer from loss or liability (including preventing corporate espionage, IP theft and leakage of classified information by employees) |
+
+**What is wrong with the vendor's checklist**
+1. Count: the Act has nine clauses, not eight. Check which clause the vendor has dropped or merged. A common error is treating the employment purpose and the "prevent corporate espionage / IP theft / classified-information leakage" limb as two separate items, or omitting one of them. They are a single clause, 7(i). Another common error is omitting 7(e) (judgments, decrees and orders) or 7(g) (epidemics).
+2. The catch-all: Section 7 contains no "other prescribed purposes" or "as notified" residual item. The list is exhaustive and closed. The Central Government cannot add new Section 7 grounds through the Rules or a notification. Doing so would need an amendment to the Act. The DPDP Rules 2025 only add operating detail for existing clauses, for example Rule 5 for State processing under 7(b).
+3. Consequence of the catch-all: it implies a flexible fallback basis. Under the DPDPA there is only a two-ground structure (Section 4): consent (Section 6) or a Section 7 legitimate use. There is no GDPR-style "legitimate interests" balancing test, and "business necessity" or "operational need" is not a ground. Any processing that does not fit 7(a) to 7(i) needs consent, supported by a Rule 3 notice and Section 6 consent mechanics.
+
+**Practical advice**
+- Ask the vendor to correct the checklist to the nine clauses 7(a) to 7(i) and delete the catch-all.
+- For each vendor processing activity, record whether it relies on consent or a specific Section 7 clause. Do not accept "other" as a recorded basis.
+- Be careful with 7(a). It covers only the purpose the Data Principal voluntarily provided the data for, and the Data Principal can object. Do not stretch it to secondary uses such as analytics or marketing.
+- Timing: the Section 7 grounds sit in the substantive provisions that apply in full from 13 May 2027 (Rules 3 and 5 to 16 commence then). Prepare now.
+
+Note: this is general compliance information, not legal advice. Check the gazetted Act text for any dispute over wording.

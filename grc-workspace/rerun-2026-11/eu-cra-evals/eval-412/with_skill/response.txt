@@ -1,0 +1,31 @@
+## No. The CRA has no EU database registration requirement.
+
+The consultant is wrong, for Class I and for every other class.
+
+### What the CRA actually requires before market placement
+For a Class I product (Annex III, important product), the manufacturer must:
+1. Design and develop the product to the Annex I essential requirements (Part I security properties and Part II vulnerability handling).
+2. Carry out a cybersecurity risk assessment.
+3. Complete a conformity assessment. For Class I this is Module A self-assessment OR a Notified Body (manufacturer's choice).
+4. Prepare technical documentation (Annex VII).
+5. Draw up and sign the EU Declaration of Conformity (Annex V).
+6. Affix the CE marking (plus the Notified Body's four-digit number if a Notified Body was used).
+7. Keep the technical documentation and DoC for 10 years.
+
+Conformity is demonstrated through the **DoC and CE marking, supported by the technical documentation**. Nothing is filed in an EU product database beforehand.
+
+### Where the confusion probably comes from
+- **ENISA Single Reporting Platform (SRP).** This is the only registration-like duty. It is for Art. 14 reports of actively exploited vulnerabilities and severe incidents, not for product registration. It has been live since 11 September 2026. A manufacturer's Assigned Representative registers with an EU Login account (MFA) when a notification is needed. It is not a pre-market product registration.
+- **Other EU regimes.** The AI Act has an EU database for high-risk AI systems, EUDAMED applies to medical devices, and EPREL covers energy labelling. These are different laws. If the product also falls under one of them, that regime may require registration, but that is not a CRA requirement.
+- **Notified body involvement.** If you choose the Notified Body route for Class I, you will have an assessment and a certificate. That is not database registration.
+- **Technical documentation on request.** Market surveillance authorities can request the documentation and the DoC at any time. This is on request, not a filing.
+
+### What to tell the consultant
+Ask for the specific article they rely on. The CRA, Regulation (EU) 2024/2847, contains no product registration database obligation. If they point to a national rule, a customer contract or a different regulation, assess that separately.
+
+### What matters instead
+- Reporting obligations are already in force. Be ready to file 24h early warning, 72h notification and final report through the SRP.
+- The conformity obligations (essential requirements, CE marking) apply from 11 December 2027.
+- Decide whether to self-assess or use a Notified Body. Self-assessment needs genuine evidence, and is open to inspection by authorities.
+
+*General compliance information, not legal advice.*

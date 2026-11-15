@@ -1,0 +1,33 @@
+## Annex I Part II - Vulnerability Handling: exactly 8 requirements
+
+Manufacturers must put in place and document a vulnerability handling policy and process covering:
+
+1. **Identify and document vulnerabilities and components**, including a machine-readable Software Bill of Materials (SBOM) covering at least the top-level dependencies. Monitor for new CVEs and advisories affecting the components.
+2. **Address and remediate vulnerabilities without delay**, including through security updates, with documented remediation and fix verification.
+3. **Apply effective and regular tests and reviews** of the security of the product.
+4. **Publicly disclose information about fixed vulnerabilities** once a security update is available.
+5. **Put in place and enforce a coordinated vulnerability disclosure (CVD) policy**, published, with a point of contact.
+6. **Facilitate the sharing of information** about potential vulnerabilities in the product and in third-party components (for example, a contact address for reports).
+7. **Provide mechanisms to securely distribute updates** (signed updates, integrity verification), so that vulnerabilities can be fixed in a timely way.
+8. **Disseminate security updates free of charge and without delay**, with advisory messages to users about available actions. Security patches should be separable from feature updates.
+
+### Does Part II include 24-hour ENISA reporting? No.
+
+The 24h/72h reporting is an **Article 14** obligation, not an Annex I Part II item. Part II covers the ongoing vulnerability-handling process. Art. 14 covers notifications to authorities.
+
+| | Annex I Part II | Article 14 |
+|---|---|---|
+| What | 8 vulnerability-handling requirements | Reporting of actively exploited vulnerabilities and severe incidents |
+| Timing | Continuous process through the support period | 24h early warning, 72h notification, final report |
+| Final report | n/a | Within 14 days after a corrective or mitigating measure is available (exploited vulnerabilities); within 1 month after the 72h notification (severe incidents) |
+| Channel | Own CVD policy and update channels | ENISA Single Reporting Platform, to the CSIRT designated as coordinator, simultaneously available to ENISA |
+
+Related duties also sit outside Part II. Support-period and end-of-life rules (at least 5 years, or expected lifetime if shorter; 1 year notice before end of support) are in Article 13 and Annex II.
+
+### Status
+Art. 14 reporting has been **live since 11 September 2026**, and the Single Reporting Platform is operational. It applies to products already on the market, with an awareness-based clock. Part II and the other Annex I obligations apply in full from 11 December 2027, but you should align your processes now because the reporting pipeline depends on them (for example, tracking exploited vulnerabilities requires the component inventory in item 1).
+
+### Penalty relevance
+Non-compliance with the Annex I essential requirements, including Part II, carries fines up to EUR 15 million or 2.5% of worldwide annual turnover, whichever is higher (Art. 64). Other listed obligations carry up to EUR 10 million or 2%. Misleading information to authorities carries up to EUR 5 million or 1%.
+
+*General compliance information, not legal advice.*

@@ -1,0 +1,33 @@
+{
+  "eval_id": 411,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Password manager = Annex III Class I (important products)",
+      "passed": true,
+      "evidence": "Table: Password manager Class I (important product), Annex III"
+    },
+    {
+      "text": "Hypervisor (or container runtime) = Annex III Class II",
+      "passed": true,
+      "evidence": "Hypervisor Class II, 'hypervisors and container runtime systems; one of the 4 categories'"
+    },
+    {
+      "text": "Smart meter gateway = Annex IV critical product",
+      "passed": true,
+      "evidence": "Smart meter gateway Critical product, Annex IV"
+    },
+    {
+      "text": "Industrial robot = listed in NO CRA annex (default category)",
+      "passed": true,
+      "evidence": "'Not listed in Annex III or IV' -> Default, Module A"
+    },
+    {
+      "text": "States the real counts: Class I 19 categories, Class II 4, Annex IV 3",
+      "passed": true,
+      "evidence": "States 19 Class I categories, 4 Class II categories, 3 Annex IV categories"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

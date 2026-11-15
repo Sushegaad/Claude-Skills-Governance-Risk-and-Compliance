@@ -1,0 +1,18 @@
+Short answer: possibly yes, but I cannot confirm the position without checking the latest ANPD acts. Do not assume SCCs are unnecessary.
+
+Framework: LGPD Art. 33 allows international transfers only under listed mechanisms, including:
+- I: to countries or international bodies that provide an adequate level of protection (adequacy decision by the ANPD);
+- II: where the controller offers and proves guarantees of compliance via specific contractual clauses for the transfer, standard contractual clauses, global corporate rules (BCRs), or seals, certificates and codes of conduct;
+- plus the other grounds in Arts. 33, III to IX: international legal cooperation, protection of life, ANPD authorisation, international commitments, public policy, consent (specific and highlighted, with prior information on the international character), and the Art. 7 II, V, VI grounds (legal obligation, contract, exercise of rights).
+
+Regulation: Resolution CD/ANPD nº 19/2024 (23 August 2024) regulates international transfers and approves the Brazilian Standard Contractual Clauses (SCCs). Companies were given until 23 August 2025 to incorporate the SCCs into existing contracts. It also sets out the adequacy procedure and rules on BCRs and specific clauses.
+
+EU adequacy: Brazil and the European Commission have been working on mutual adequacy. In September 2025 the Commission published a draft adequacy decision for Brazil, and the ANPD was working on recognizing the EU's equivalence. I believe the ANPD has signalled recognition of the EU as adequate, with the ANPD and the Commission both moving toward mutual decisions. As of my knowledge, I cannot confirm that a final, in-force ANPD adequacy decision for the EU/EEA exists. If it has been adopted (check the Diário Oficial da União and ANPD website), then transfers to the EU could rely on Art. 33, I without SCCs, subject to the decision's scope and conditions.
+
+Practical guidance:
+1. Check whether the ANPD has formally published an adequacy decision covering the EU/EEA and in force today. If yes, document reliance on it. The general LGPD obligations still apply (principles, legal basis, security, transparency, record keeping).
+2. If not, use the ANPD SCCs (mandatory text, to be adopted without alteration), BCRs, or another Art. 33 mechanism. Consent only as a last resort.
+3. Keep the transfer mapping in the RoPA and check onward transfers from the EU to third countries.
+4. For the reverse flow (EU to Brazil under the GDPR) a separate adequacy decision is needed. Do not confuse the two directions.
+
+Verify the current status with Brazilian counsel and ANPD publications before relying on this.

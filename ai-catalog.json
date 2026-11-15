@@ -332,12 +332,12 @@
         "review ICT third-party contracts for DORA Article 30"
       ],
       "version": "2.2.0",
-      "updatedAt": "2026-09-14T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Cyber & Resilience Regulation",
         "license": "MIT",
-        "evalPassRate": "64%",
-        "evalBaselinePassRate": "56%",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "88%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DORA%20-%20Claude%20Skill/dora.skill"
       }
     },
@@ -361,12 +361,12 @@
         "handle children's data verification under DPDPA"
       ],
       "version": "2.2.0",
-      "updatedAt": "2026-05-16T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Data Privacy & Protection",
         "license": "MIT",
         "evalPassRate": "96%",
-        "evalBaselinePassRate": "80%",
+        "evalBaselinePassRate": "92%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/DPDPA%20-%20Claude%20Skill/dpdpa.skill"
       }
     },
@@ -391,12 +391,12 @@
         "calculate our SPRS score"
       ],
       "version": "2.2.0",
-      "updatedAt": "2026-09-14T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Information Security & Risk Management",
         "license": "MIT",
-        "evalPassRate": "72%",
-        "evalBaselinePassRate": "28%",
+        "evalPassRate": "88%",
+        "evalBaselinePassRate": "60%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/CMMC%20-%20Claude%20Skill/cmmc.skill"
       }
     },
@@ -602,12 +602,12 @@
         "handle an ANPD breach notification"
       ],
       "version": "2.2.0",
-      "updatedAt": "2026-10-03T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Data Privacy & Protection",
         "license": "MIT",
-        "evalPassRate": "84%",
-        "evalBaselinePassRate": "44%",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "76%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/LGPD%20-%20Claude%20Skill/lgpd.skill"
       }
     },
@@ -869,12 +869,12 @@
         "assess Vietnamese cross-border data transfer obligations"
       ],
       "version": "2.2.0",
-      "updatedAt": "2026-09-05T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Data Privacy & Protection",
         "license": "MIT",
-        "evalPassRate": "88%",
-        "evalBaselinePassRate": "8%",
+        "evalPassRate": "96%",
+        "evalBaselinePassRate": "24%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/Vietnam%20PDPL%20-%20Claude%20Skill/vn-pdpl.skill"
       }
     },
@@ -899,12 +899,12 @@
         "set up CRA vulnerability disclosure and ENISA reporting"
       ],
       "version": "2.2.0",
-      "updatedAt": "2026-09-14T00:00:00Z",
+      "updatedAt": "2026-11-15T00:00:00Z",
       "metadata": {
         "category": "Cyber & Resilience Regulation",
         "license": "MIT",
-        "evalPassRate": "76%",
-        "evalBaselinePassRate": "48%",
+        "evalPassRate": "100%",
+        "evalBaselinePassRate": "84%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/EU%20CRA%20-%20Claude%20Skill/eu-cra.skill"
       }
     },

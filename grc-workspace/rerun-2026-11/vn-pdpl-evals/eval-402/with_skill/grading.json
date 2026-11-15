@@ -1,0 +1,33 @@
+{
+  "eval_id": 402,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States Law Article 2 defines the two types abstractly and delegates the lists to the Government",
+      "passed": true,
+      "evidence": "'Law 91/2025/QH15, Article 2, defines both categories only abstractly and delegates the enumeration to the Government'"
+    },
+    {
+      "text": "Places the lists in Decree 356/2025 Articles 3 (basic) and 4 (sensitive)",
+      "passed": true,
+      "evidence": "'Basic personal data: Decree 356, Article 3 / Sensitive personal data: Decree 356, Article 4'"
+    },
+    {
+      "text": "States the basic list is non-exhaustive (catch-all item 11)",
+      "passed": true,
+      "evidence": "'10 enumerated categories plus catch-all item 11 ... other personal data attached to a specific individual'"
+    },
+    {
+      "text": "States the sensitive list also ends in a catch-all (item (m))",
+      "passed": true,
+      "evidence": "'12 enumerated categories plus catch-all item (m)' with the (m) catch-all quoted"
+    },
+    {
+      "text": "Does not claim the Law itself contains exhaustive category lists",
+      "passed": true,
+      "evidence": "'the Law itself does not list them' and 'the Law has no enumerated lists'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

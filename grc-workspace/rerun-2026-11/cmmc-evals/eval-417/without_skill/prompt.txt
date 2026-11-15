@@ -1,0 +1,1 @@
+Can we receive a conditional CMMC Level 2 certification if our only gap is that encryption is deployed but not FIPS-validated (3.13.11)?

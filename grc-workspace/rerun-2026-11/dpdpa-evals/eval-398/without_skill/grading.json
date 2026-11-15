@@ -1,0 +1,33 @@
+{
+  "eval_id": 398,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the Act has nine chapters and 44 sections",
+      "passed": true,
+      "evidence": "\"44 sections plus one Schedule\" and enumerates all nine chapters (Chapter I through Chapter IX)"
+    },
+    {
+      "text": "Maps appeal to the Appellate Tribunal (TDSAT) to Section 29",
+      "passed": true,
+      "evidence": "\"Appeals to the TDSAT: Section 29 (Chapter VII). It makes the Telecom Disputes Settlement and Appellate Tribunal the Appellate Tribunal\""
+    },
+    {
+      "text": "Maps voluntary undertakings to Section 32",
+      "passed": true,
+      "evidence": "\"Voluntary undertaking: Section 32 (Chapter VII). The Board may accept a voluntary undertaking\""
+    },
+    {
+      "text": "Maps Chapter VI to the Board's powers and procedure (ss.27-28) and Chapter VIII to penalties (ss.33-34)",
+      "passed": true,
+      "evidence": "\"Chapter VI - Powers, Functions and Procedure ... (ss. 27-28)\" and \"Chapter VIII - Penalties and Adjudication (ss. 33-34)\""
+    },
+    {
+      "text": "Does not cite any 'Section 31 limitation for filing complaints' (Section 31 is alternate dispute resolution)",
+      "passed": true,
+      "evidence": "\"Section 31 covers alternate dispute resolution (mediation)\" - no limitation-period claim"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

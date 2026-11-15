@@ -1,0 +1,33 @@
+{
+  "eval_id": 408,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Initial report: within 4 hours of classification AND no later than 24 hours from awareness",
+      "passed": true,
+      "evidence": "'within 4 hours of classifying the incident as major, and no later than 24 hours from the moment the entity became aware'"
+    },
+    {
+      "text": "Intermediate report: within 72 hours from submission of the initial notification",
+      "passed": true,
+      "evidence": "'within 72 hours of the initial notification'"
+    },
+    {
+      "text": "Final report: no later than one month from the (latest) intermediate report",
+      "passed": true,
+      "evidence": "'within 1 month of the latest updated intermediate report'"
+    },
+    {
+      "text": "States the weekend/bank-holiday relief: next working day by noon (with the carve-out for significant credit institutions)",
+      "passed": false,
+      "evidence": "Hedged and partly wrong: no 'by noon' stated, scope given as 'I am not certain of the exact scope', and carve-out described loosely as credit institutions/CCPs/trading venues rather than the significant-credit-institution carve-out for initial/intermediate reports"
+    },
+    {
+      "text": "Cites CDR (EU) 2025/301 as the source of the time limits",
+      "passed": true,
+      "evidence": "'timings are set in Commission Delegated Regulation (EU) 2025/301'"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

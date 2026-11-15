@@ -1,0 +1,12 @@
+Critical products with digital elements are listed in Annex IV of the CRA (Regulation (EU) 2024/2847):
+1. Hardware devices with security boxes.
+2. Smart meter gateways within smart metering systems as defined in Article 2(23) of Directive (EU) 2019/944, and other devices for advanced security purposes, including for secure cryptoprocessing.
+3. Smartcards or similar devices, including secure elements.
+Implementing Regulation (EU) 2025/2392 gives the technical descriptions.
+
+What the Commission can require (Art. 8):
+- Under Art. 8(1), the Commission is empowered to adopt delegated acts supplementing the CRA to specify that critical products (or particular categories of them) must obtain a European cybersecurity certificate at least at assurance level "substantial" under a European cybersecurity certification scheme (such as EUCC under the Cybersecurity Act) to demonstrate conformity with the Annex I essential requirements. The Commission decides this based on criteria including the criticality of the product category, the cybersecurity risk, and the availability of an adequate scheme.
+- A delegated act of this kind must allow a transition period before the certification requirement bites, and the Commission can first request ENISA to prepare a candidate scheme if none exists.
+- Under Art. 7 and Art. 8, the Commission can also amend Annex IV by delegated act (adding or removing categories) using the criticality criteria. It may also move categories under related empowerments.
+- Until such a delegated act applies, the manufacturer of a critical product uses the Annex VIII routes under Art. 32: third-party conformity assessment (Module B+C or Module H) or, where applicable, an EU certification scheme at least at "substantial" level.
+- Critical products also carry the highest conformity-assessment burden. No self-assessment is permitted for them, unlike Class I with applied standards or default products.

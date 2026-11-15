@@ -1,4 +1,4 @@
-# DORA — Adopted RTS and ITS Reference Guide
+# DORA - Adopted RTS and ITS Reference Guide
 
 All Level 2 measures adopted under Regulation (EU) 2022/2554 (DORA).
 Last updated: April 2026.
@@ -7,9 +7,9 @@ Last updated: April 2026.
 
 ## Overview
 
-DORA empowers the European Supervisory Authorities (EBA, ESMA, EIOPA — collectively
+DORA empowers the European Supervisory Authorities (EBA, ESMA, EIOPA - collectively
 the ESAs) to develop binding Regulatory Technical Standards (RTS) and Implementing
-Technical Standards (ITS) under Articles 15, 16, 18, 20, 26, 28, 29, 30, 31, 32,
+Technical Standards (ITS) under Articles 15, 16, 18, 20, 26, 28, 29, 30, 31, 40,
 41, and 43. All key standards were adopted before the DORA application date of
 17 January 2025.
 
@@ -17,12 +17,12 @@ Technical Standards (ITS) under Articles 15, 16, 18, 20, 26, 28, 29, 30, 31, 32,
 
 ## Complete List of Adopted RTS and ITS
 
-### 1. CDR (EU) 2024/1772 — RTS on ICT Incident Classification
+### 1. CDR (EU) 2024/1772 - RTS on ICT Incident Classification
 
 | Field | Detail |
 |-------|--------|
 | Full title | Commission Delegated Regulation (EU) 2024/1772 of 13 March 2024 |
-| DORA basis | Art. 18(3) — classification criteria and materiality thresholds |
+| DORA basis | Art. 18(3) - classification criteria and materiality thresholds |
 | Published | OJ L, 25 June 2024 |
 | Applies from | 17 January 2025 |
 
@@ -34,20 +34,20 @@ Technical Standards (ITS) under Articles 15, 16, 18, 20, 26, 28, 29, 30, 31, 32,
   reporting under Art. 19(2)
 - Includes specific rules for payment-related incidents (Art. 23)
 
-**Thresholds (indicative — consult the CDR for exact values):**
-- Client impact: ≥ 10% of clients (or >5,000 clients for large entities)
+**Thresholds (indicative - consult the CDR for exact values):**
+- Client impact: higher than 10% of clients OR higher than 100,000 clients
 - Transaction value: depending on institution type and size
 - Service unavailability: ≥ 2 hours for critical services
 - Data integrity/confidentiality: any breach affecting core banking data
 
 ---
 
-### 2. CDR (EU) 2024/1773 — RTS on ICT Third-Party Risk Policy
+### 2. CDR (EU) 2024/1773 - RTS on ICT Third-Party Risk Policy
 
 | Field | Detail |
 |-------|--------|
 | Full title | Commission Delegated Regulation (EU) 2024/1773 of 13 March 2024 |
-| DORA basis | Art. 28(10) — content of the ICT third-party risk policy; Art. 30(5) — contractual provisions |
+| DORA basis | Art. 28(10) - content of the ICT third-party risk policy; Art. 30(5) - contractual provisions |
 | Published | OJ L, 25 June 2024 |
 | Applies from | 17 January 2025 |
 
@@ -64,12 +64,12 @@ Technical Standards (ITS) under Articles 15, 16, 18, 20, 26, 28, 29, 30, 31, 32,
 
 ---
 
-### 3. CDR (EU) 2024/1774 — RTS on ICT Risk Management Framework
+### 3. CDR (EU) 2024/1774 - RTS on ICT Risk Management Framework
 
 | Field | Detail |
 |-------|--------|
 | Full title | Commission Delegated Regulation (EU) 2024/1774 of 13 March 2024 |
-| DORA basis | Art. 15 — elements of ICT RMF; Art. 16(3) — simplified framework |
+| DORA basis | Art. 15 - elements of ICT RMF; Art. 16(3) - simplified framework |
 | Published | OJ L, 25 June 2024 |
 | Applies from | 17 January 2025 |
 
@@ -88,59 +88,64 @@ Technical Standards (ITS) under Articles 15, 16, 18, 20, 26, 28, 29, 30, 31, 32,
 
 ---
 
-### 4. CDR (EU) 2025/301 — RTS on Major Incident Reporting
+### 4. CDR (EU) 2025/301 - RTS on Major Incident Reporting
 
 | Field | Detail |
 |-------|--------|
 | Full title | Commission Delegated Regulation (EU) 2025/301 of 18 October 2024 |
-| DORA basis | Art. 20(3) — content, timelines, and format of incident reports |
+| DORA basis | Art. 20(3) - content, timelines, and format of incident reports |
 | Published | OJ L, 14 February 2025 |
 | Applies from | 17 January 2025 (retroactively applicable) |
 
 **Key content:**
 - Mandatory content of each reporting stage:
-  - **Initial notification (within 4 hours):** Incident reference, entity details,
+  - **Initial notification (within 4 hours of classification as major, and no
+    later than 24 hours from awareness):** Incident reference, entity details,
     initial classification rationale, estimated client impact, nature of incident
-  - **Intermediate report (within 72 hours):** Updated impact assessment, root cause
-    indicators, response actions taken, recovery time estimate
-  - **Final report (within 1 month):** Root cause analysis, full impact assessment,
-    lessons learned, preventive measures implemented or planned
-- Rules on how to count the 4-hour and 72-hour timelines from classification
+  - **Intermediate report (within 72 hours from submission of the initial
+    notification):** Updated impact assessment, root cause indicators, response
+    actions taken, recovery time estimate
+  - **Final report (no later than 1 month from the (latest) intermediate
+    report):** Root cause analysis, full impact assessment, lessons learned,
+    preventive measures implemented or planned
+- Rules on how to count the timelines, including weekend/bank-holiday
+  next-working-day-noon relief (disapplied for initial and intermediate reports
+  of significant credit institutions)
 - Provisions for voluntary reporting of significant cyber threats (Art. 19(2))
 
 ---
 
-### 5. CIR (EU) 2025/302 — ITS on Incident Reporting Templates
+### 5. CIR (EU) 2025/302 - ITS on Incident Reporting Templates
 
 | Field | Detail |
 |-------|--------|
 | Full title | Commission Implementing Regulation (EU) 2025/302 of 18 October 2024 |
-| DORA basis | Art. 20(4) — standard forms and templates for incident reports |
+| DORA basis | Art. 20(4) - standard forms and templates for incident reports |
 | Published | OJ L, 14 February 2025 |
 | Applies from | 17 January 2025 (retroactively applicable) |
 
 **Key content:**
 - Standard templates for all three reporting stages (initial, intermediate, final)
 - **Dedicated payment-incident template** per Art. 23 for credit institutions,
-  payment institutions, and e-money institutions — aligned with legacy PSD2 Art. 96
+  payment institutions, and e-money institutions - aligned with legacy PSD2 Art. 96
   reporting fields
 - Separate template for voluntary cyber threat notifications (Art. 19(2))
 - Electronic submission format requirements
-- Competent authority designation — which authority receives reports for each
+- Competent authority designation - which authority receives reports for each
   entity type (home state supervisor as a general rule)
 
 ---
 
-### 6. CIR (EU) 2024/2956 — ITS on Register of Information
+### 6. CIR (EU) 2024/2956 - ITS on Register of Information
 
 | Field | Detail |
 |-------|--------|
 | Full title | Commission Implementing Regulation (EU) 2024/2956 of 20 September 2024 |
-| DORA basis | Art. 28(9) — templates for the Register of Information |
+| DORA basis | Art. 28(9) - templates for the Register of Information |
 | Published | OJ L, 11 December 2024 |
 | Applies from | 17 January 2025 |
 
-**Key content — mandatory Register fields:**
+**Key content - mandatory Register fields:**
 
 The Register of Information (RoI) must capture, for each ICT service arrangement:
 
@@ -162,12 +167,12 @@ annually (or upon request). The ESAs aggregate submissions for the oversight fra
 
 ---
 
-### 7. CDR (EU) 2025/1190 — RTS on TLPT
+### 7. CDR (EU) 2025/1190 - RTS on TLPT
 
 | Field | Detail |
 |-------|--------|
 | Full title | Commission Delegated Regulation (EU) 2025/1190 of 28 February 2025 |
-| DORA basis | Art. 26(11) and Art. 27(9) — TLPT requirements, tester qualifications |
+| DORA basis | Art. 26(11) and Art. 27(9) - TLPT requirements, tester qualifications |
 | Published | OJ L, 18 June 2025 |
 | Applies from | 8 July 2025 |
 
@@ -179,7 +184,7 @@ annually (or upon request). The ESAs aggregate submissions for the oversight fra
   intelligence providers
 - Requirements for **red team testing**: methodology, documentation, attestation
 - **Mutual recognition:** TLPT results recognized across EU jurisdictions for
-  entities operating cross-border — only one test needed (Art. 26(5))
+  entities operating cross-border - only one test needed (Art. 26(5))
 - Tester qualification requirements per Art. 27:
   - Independence from the tested entity
   - Relevant professional certification
@@ -190,12 +195,12 @@ annually (or upon request). The ESAs aggregate submissions for the oversight fra
 
 ---
 
-### 8. CDR (EU) 2025/532 — RTS on Subcontracting of ICT Services
+### 8. CDR (EU) 2025/532 - RTS on Subcontracting of ICT Services
 
 | Field | Detail |
 |-------|--------|
 | Full title | Commission Delegated Regulation (EU) 2025/532 |
-| DORA basis | Art. 30(5) — subcontracting provisions |
+| DORA basis | Art. 30(5) - subcontracting provisions |
 | Applies from | 17 January 2025 |
 
 **Key content:**
@@ -210,16 +215,16 @@ annually (or upon request). The ESAs aggregate submissions for the oversight fra
 
 ---
 
-### 9. CDR (EU) 2024/1502 — Designation Criteria for Critical ICT TPSPs
+### 9. CDR (EU) 2024/1502 - Designation Criteria for Critical ICT TPSPs
 
 | Field | Detail |
 |-------|--------|
 | Full title | Commission Delegated Regulation (EU) 2024/1502 of 22 February 2024 |
-| DORA basis | Art. 31(6) — criteria for designation of critical ICT TPSPs |
+| DORA basis | Art. 31(6) - criteria for designation of critical ICT TPSPs |
 | Published | OJ L, 5 June 2024 |
 | Applies from | 17 January 2025 |
 
-**Key content — designation criteria:**
+**Key content - designation criteria:**
 - **Systemic impact:** Would failure or discontinuation of the TPSP's services
   cause systemic disruption to the financial system?
 - **Scale:** Number and types of financial entities served; proportion of their
@@ -237,12 +242,12 @@ designate an EU legal representative (Art. 31(11)).
 
 ---
 
-### 10. CDR (EU) 2024/1505 — Oversight Fees for Critical ICT TPSPs
+### 10. CDR (EU) 2024/1505 - Oversight Fees for Critical ICT TPSPs
 
 | Field | Detail |
 |-------|--------|
 | Full title | Commission Delegated Regulation (EU) 2024/1505 of 22 February 2024 |
-| DORA basis | Art. 43(2) — methodology for calculating oversight fees |
+| DORA basis | Art. 43(2) - methodology for calculating oversight fees |
 | Published | OJ L, 5 June 2024 |
 | Applies from | 17 January 2025 |
 
@@ -254,12 +259,12 @@ designate an EU legal representative (Art. 31(11)).
 
 ---
 
-### 11. CDR (EU) 2025/295 — RTS on Oversight Activities Harmonisation
+### 11. CDR (EU) 2025/295 - RTS on Oversight Activities Harmonisation
 
 | Field | Detail |
 |-------|--------|
 | Full title | Commission Delegated Regulation (EU) 2025/295 |
-| DORA basis | Art. 41(7) — harmonisation of oversight activities |
+| DORA basis | Art. 41(7) - harmonisation of oversight activities |
 | Applies from | 17 January 2025 |
 
 **Key content:**
@@ -270,12 +275,12 @@ designate an EU legal representative (Art. 31(11)).
 
 ---
 
-### 12. CDR (EU) 2025/420 — RTS on Joint Examination Teams (JETs)
+### 12. CDR (EU) 2025/420 - RTS on Joint Examination Teams (JETs)
 
 | Field | Detail |
 |-------|--------|
 | Full title | Commission Delegated Regulation (EU) 2025/420 |
-| DORA basis | Art. 32 — structure and operation of Joint Examination Teams |
+| DORA basis | Art. 40(1) - joint examination teams |
 | Applies from | 17 January 2025 |
 
 **Key content:**
@@ -301,6 +306,6 @@ designate an EU legal representative (Art. 31(11)).
 | Art. 28(10) + 30(5) | ICT third-party risk policy + contracts | CDR (EU) 2024/1773 |
 | Art. 30(5) | Subcontracting provisions | CDR (EU) 2025/532 |
 | Art. 31(6) | Critical TPSP designation criteria | CDR (EU) 2024/1502 |
-| Art. 32 | Joint Examination Teams (JETs) | CDR (EU) 2025/420 |
+| Art. 40(1) | Joint Examination Teams (JETs) | CDR (EU) 2025/420 |
 | Art. 41(7) | Oversight activities harmonisation | CDR (EU) 2025/295 |
 | Art. 43(2) | Oversight fees for CTPPs | CDR (EU) 2024/1505 |

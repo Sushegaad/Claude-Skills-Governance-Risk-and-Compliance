@@ -1,0 +1,33 @@
+{
+  "eval_id": 423,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States Article 54 sets the daily-fine criteria, not a limitation period",
+      "passed": false,
+      "evidence": "Claims Art. 54 'was vetoed' and is 'effectively empty'; does not state it sets the daily-fine criteria in force"
+    },
+    {
+      "text": "States the five-year administrative prescription comes from Lei 9.873/1999",
+      "passed": true,
+      "evidence": "'Law 9.873/1999: the Federal Administration's punitive action... lapses in 5 years'"
+    },
+    {
+      "text": "Counts it from the act, or from cessation for continuing violations",
+      "passed": true,
+      "evidence": "'from the date the act was committed (or from the date it ceased, for continuing infractions)'"
+    },
+    {
+      "text": "Does not say it runs from ANPD awareness",
+      "passed": true,
+      "evidence": "Never says it runs from ANPD awareness; interruption triggers listed are notification/investigative acts"
+    },
+    {
+      "text": "Cites Res. CD/ANPD 4/2023 as the dosimetry regulation",
+      "passed": true,
+      "evidence": "'Resolucao CD/ANPD no 4/2023, the Regulamento de Dosimetria e Aplicacao de Sancoes Administrativas'"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

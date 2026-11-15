@@ -1,0 +1,23 @@
+SPRS point values for 3.1.3, 3.3.1, 3.4.1 and 3.13.8
+
+| Practice | Requirement | Point value (deduction if NOT MET) |
+|---|---|---|
+| AC.L2-3.1.3 | Control the flow of CUI | 1 point |
+| AU.L2-3.3.1 | Create and retain system audit logs and records | 5 points |
+| CM.L2-3.4.1 | Baseline configurations and inventories | 5 points |
+| SC.L2-3.13.8 | Cryptographic protection of CUI in transit | 3 points |
+
+How the scoring works (DoD Assessment Methodology for NIST SP 800-171)
+- You start at 110 and subtract the weight of each NOT MET practice. Weights are 5, 3 or 1 depending on security impact.
+- There is no partial credit. A practice that is only partially implemented loses its full value.
+- The score range runs from +110 (all MET) to -203 (all NOT MET).
+- Worked example: if all four were NOT MET, the deduction is 1 + 5 + 5 + 3 = 14, giving 110 - 14 = 96. That is still above the 88 POA&M floor, but 3.3.1, 3.4.1 and 3.13.8 are not 1-point items, so they could not be left on a POA&M for conditional certification. Only 3.1.3 could stay open. The one 3-point item that may be on a POA&M is SC.L2-3.13.11, and only if encryption exists but is not FIPS-validated. Note that 3.13.8 is a separate practice with no such exception.
+- 3.1.3 is a common point of confusion. It is a 1-point requirement, so it is eligible for a POA&M, unlike the 3 and 5 point items.
+
+Other high-weight practices: IA.L2-3.5.3 (MFA, 5 points), SI.L2-3.14.6 (monitoring for attacks, 5 points), SC.L2-3.13.11 (FIPS-validated cryptography, 3 points) and AC.L2-3.1.5 (least privilege, 3 points). Remediate these first. The authoritative per-practice table is in the DoD Assessment Methodology v1.2.1; verify against it for any practice not listed here.
+
+Submission and affirmation: the Basic Assessment score goes into SPRS (sprs.csd.disa.mil) with an SSP in place, and a senior company official affirms it annually. A false score carries False Claims Act exposure.
+
+Program status (July 13, 2026 suspension): DoD suspended CMMC Phase 2 and the C3PAO requirements, but self-assessment and SPRS scoring continue unchanged, along with 32 CFR Part 170 and DFARS 252.204-7012/7019/7020/7021. The Reform Task Force report was due around September 13, 2026; as of September 14, 2026 it had not been published and I have no later confirmation. It is advisory, and obligations change only through a class deviation, a DFARS rule change or a 32 CFR Part 170 amendment. Please re-verify.
+
+This is general compliance information, not legal advice.

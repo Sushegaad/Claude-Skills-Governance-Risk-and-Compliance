@@ -1,0 +1,13 @@
+{
+  "eval_id": 408,
+  "eval_name": "incident-deadlines",
+  "run_type": "with_skill",
+  "prompt": "Walk me through DORA's major-incident reporting deadlines. Do weekends count?",
+  "assertions": [
+    "Initial report: within 4 hours of classification AND no later than 24 hours from awareness",
+    "Intermediate report: within 72 hours from submission of the initial notification",
+    "Final report: no later than one month from the (latest) intermediate report",
+    "States the weekend/bank-holiday relief: next working day by noon (with the carve-out for significant credit institutions)",
+    "Cites CDR (EU) 2025/301 as the source of the time limits"
+  ]
+}

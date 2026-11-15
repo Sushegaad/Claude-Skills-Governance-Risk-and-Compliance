@@ -1,0 +1,37 @@
+Regulation (EU) 2022/2554 (DORA), Chapter V, Section I: managing ICT third-party risk. Paragraph references are from memory and should be checked against the text.
+
+Contract clauses: Art. 30, key contractual provisions.
+- Art. 30(2) sets the minimum clauses for ALL ICT service contracts.
+  - Clear description of the functions and services, and whether subcontracting is allowed.
+  - Locations (regions or countries) of service and data processing, with notice of changes.
+  - Provisions on availability, authenticity, integrity and confidentiality of data.
+  - Access, recovery and return of data if the provider fails or on termination.
+  - Service level descriptions.
+  - Assistance at no extra cost, or at a pre-agreed cost, in an ICT incident.
+  - Cooperation with competent and resolution authorities.
+  - Termination rights and minimum notice periods.
+  - Participation in the entity's ICT security awareness programmes and digital operational resilience training.
+- Art. 30(3) adds clauses for services supporting CRITICAL OR IMPORTANT functions.
+  - Full service level descriptions with precise quantitative and qualitative performance targets.
+  - Notice periods and reporting obligations.
+  - Business contingency plans and testing.
+  - ICT security measures and tools.
+  - Participation in the entity's TLPT.
+  - Unrestricted rights of access, inspection and audit.
+  - Exit strategies, in particular a mandatory adequate transition period (Art. 30(3)(f)).
+- Art. 30(4) encourages standard contractual clauses. Art. 30(5) provides for an RTS on subcontracting conditions for critical or important functions (Commission Delegated Regulation (EU) 2025/532).
+
+Related provisions in Art. 28 (general principles).
+- Art. 28(2) covers the third-party risk strategy and policy on ICT services supporting critical or important functions (RTS: Delegated Regulation (EU) 2024/1773).
+- Art. 28(3) requires the register of information. The ITS is Implementing Regulation (EU) 2024/2956.
+- Art. 28(4) covers pre-contract assessment: concentration risk, due diligence and conflicts of interest.
+- Art. 28(5) covers entering contracts only with providers that meet appropriate information security standards.
+- Art. 28(6) covers audit and inspection rights.
+- Art. 28(7) covers termination rights.
+
+Exit strategies:
+- Art. 28(8): financial entities must put in place exit strategies for ICT services supporting critical or important functions. These must be comprehensive, documented and tested. They must cover provider failure, deteriorated service quality, business disruption and termination. They must allow exit without disruption, loss of compliance or detriment to continuity, and include transition plans.
+- Art. 30(3)(f) requires that exit strategies be reflected in the contract itself.
+- Art. 29 covers concentration risk.
+
+If the provider is designated a critical ICT third-party provider (CTPP), Arts. 31-44 (EU oversight) also apply, but your contractual obligations stay with you under Arts. 28 and 30. Also note Art. 3 of the Delegated Regulation 2024/1773 for the policy requirements on contract lifecycle and exit.

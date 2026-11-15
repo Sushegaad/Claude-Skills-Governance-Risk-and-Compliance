@@ -1,0 +1,24 @@
+Major-incident reporting is under Art. 19 DORA (Regulation (EU) 2022/2554), with content and timing in CDR (EU) 2025/301 and templates in CIR (EU) 2025/302. Classification as major follows Art. 18 and CDR (EU) 2024/1772, where meeting any single threshold makes an incident major.
+
+Deadlines
+| Stage | Deadline | Clock starts |
+|---|---|---|
+| Initial notification | Within 4 hours of classification as major, and no later than 24 hours from the entity becoming aware of the incident | Classification as major, with a 24-hour backstop from awareness |
+| Intermediate report | Within 72 hours from submission of the initial notification | Submission of the initial notification |
+| Final report | No later than 1 month from the (latest) intermediate report | Submission of the (latest) intermediate report |
+
+Notes on the clocks
+- The 4-hour clock runs from classification, not detection. Do not delay classification: prolonged triage is itself a supervisory risk under Art. 17(1). Classify as soon as any threshold is met and do not wait for root cause.
+- Updated intermediate reports are required when the situation changes materially. The final report is due after root cause analysis is complete.
+- Reports go to the home Member State competent authority, which forwards them to host authorities (Art. 19(5)).
+- Payment-related incidents follow Art. 23 and the dedicated payment template in CIR (EU) 2025/302.
+
+Do weekends count?
+- Generally the clocks run continuously. They are not business-hour clocks, so a Friday-evening major incident still has a 4-hour and 24-hour deadline.
+- Relief: where a deadline falls on a weekend or bank holiday, submission may be made by noon of the next working day.
+- Exception: this relief is disapplied for the initial and intermediate reports of significant credit institutions. They must meet the standard deadlines regardless of weekends or bank holidays.
+- Plan for a 24/7 reporting capability: an on-call incident commander, pre-populated templates and an escalation chain to senior management and the board (Art. 17(3)).
+
+Also consider voluntary notification of significant cyber threats (Art. 19(2)), and notify affected clients without undue delay (Art. 17(4)).
+
+General compliance information, not legal advice. Check your competent authority's guidance.

@@ -1,0 +1,37 @@
+Short answer: Art. 30 DORA (Regulation (EU) 2022/2554) sets the contract clauses, and exit strategies sit in Art. 28(8) (the entity's own exit strategy) and Art. 30(3)(f) (the contractual exit/transition requirement).
+
+1. Baseline clauses, Art. 30(2)(a)-(i), apply to ALL ICT service contracts
+These include:
+- a clear and complete description of the services
+- locations of service provision and data storage/processing, with notice of changes
+- data protection provisions (GDPR where applicable)
+- availability, authenticity, integrity and security of data
+- TPSP incident assistance, reporting and cooperation
+- termination rights and minimum notice periods
+- data portability, return and migration assistance on termination
+- conditions for sub-contracting
+
+2. Additional clauses, Art. 30(3), apply because the contract supports a critical or important function
+- Full service level descriptions with precise quantitative and qualitative targets.
+- Unrestricted audit, access and inspection rights for the entity, its competent authority (including the ECB for significant institutions) and the resolution authority. This includes on-site rights.
+- Participation by the provider in the entity's TLPT (Art. 26).
+- Exit strategies with a mandatory transition period (Art. 30(3)(f)).
+
+3. Where exit strategies sit
+- Art. 28(8) requires the financial entity to have an exit strategy for every arrangement supporting a critical or important function. It must cover exit triggers, minimum notice and migration period, data portability and return, and transition assistance from the provider. It should be tested periodically, on a risk basis.
+- Art. 30(3)(f) is the contractual counterpart: the contract must contain exit provisions with a mandatory transition period.
+- Art. 28(7) covers termination rights.
+- Art. 30(4) requires a review before renewal of contracts supporting critical functions. The review covers service levels, exercisable audit rights, exit viability and new concentration or substitutability risks.
+
+4. Implementing measures
+- CDR (EU) 2024/1773 gives the detailed policy and contract content.
+- CDR (EU) 2025/532 covers subcontracting of ICT services supporting critical functions: prior consent, flow-down of equivalent terms, audit of sub-processors, and change notification.
+- CIR (EU) 2024/2956 requires the Register of Information to record the arrangement, an exit-strategy reference, substitutability and audit method.
+
+5. Cloud-specific watch points
+- Audit rights: hyperscalers often offer only SOC 2 or ISO certificates and pooled audits. Pooled audits can partly satisfy the entity's own audit right only if you document in writing why direct audit is impracticable and the outputs are meaningful, with risk acceptance at CRO or board level. The competent authority's and resolution authority's on-site inspection right is non-waivable. The contract needs an express, unconditional clause, not one routed through the provider's audit programme.
+- Concentration: assess it under Art. 28(4)(c) and Art. 29.
+- If the provider is a designated CTPP, your Art. 28-30 duties are unchanged. Note the Art. 31(12) point on third-country CTPPs needing an EU subsidiary within 12 months of designation, which falls around November 2026 for the first cohort. Verify the provider's status and prepare exit options.
+- Legacy contracts that predate DORA often lack the Art. 30(2) baseline elements, so run a gap review.
+
+General compliance information, not legal advice.

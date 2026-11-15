@@ -1,0 +1,33 @@
+{
+  "eval_id": 412,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States the CRA contains no product-registration database",
+      "passed": true,
+      "evidence": "'has no requirement to register a Class I product (or any product) in an EU database'"
+    },
+    {
+      "text": "States conformity is demonstrated via the Declaration of Conformity and CE marking",
+      "passed": true,
+      "evidence": "Requires 'the EU declaration of conformity, and CE marking' to demonstrate conformity"
+    },
+    {
+      "text": "Identifies the ENISA single reporting platform (Art. 14 reports) as the only registration-like duty",
+      "passed": true,
+      "evidence": "Identifies 'single reporting platform (Art. 14 and Art. 16)' as incident reporting, not product registration; 'Product-level registration does not exist'"
+    },
+    {
+      "text": "Describes the Class I conformity route reasonably (harmonised standards/self-assessment vs third-party where applicable)",
+      "passed": true,
+      "evidence": "Module A only if harmonised standards/common specs/cert scheme applied, else Module B+C or Module H via notified body"
+    },
+    {
+      "text": "Does not endorse any 'register by December 2027' database claim",
+      "passed": true,
+      "evidence": "Flatly denies any registration requirement; no December 2027 database claim endorsed"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

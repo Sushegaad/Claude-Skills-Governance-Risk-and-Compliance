@@ -1,0 +1,13 @@
+{
+  "eval_id": 402,
+  "eval_name": "data-category-lists",
+  "run_type": "with_skill",
+  "prompt": "Where are 'basic' and 'sensitive' personal data actually listed for Vietnam, and are those lists closed?",
+  "assertions": [
+    "States Law Article 2 defines the two types abstractly and delegates the lists to the Government",
+    "Places the lists in Decree 356/2025 Articles 3 (basic) and 4 (sensitive)",
+    "States the basic list is non-exhaustive (catch-all item 11)",
+    "States the sensitive list also ends in a catch-all (item (m))",
+    "Does not claim the Law itself contains exhaustive category lists"
+  ]
+}

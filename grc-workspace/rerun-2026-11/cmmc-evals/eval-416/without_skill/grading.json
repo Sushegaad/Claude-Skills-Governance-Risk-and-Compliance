@@ -1,0 +1,33 @@
+{
+  "eval_id": 416,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States Level 1 = the 15 security requirements of FAR 52.204-21",
+      "passed": true,
+      "evidence": "15 basic safeguarding requirements of FAR 52.204-21(b)(1)"
+    },
+    {
+      "text": "Includes 3.1.20 and 3.1.22 in the Level 1 mapped set",
+      "passed": true,
+      "evidence": "Access control: 3.1.1, 3.1.2, 3.1.20, 3.1.22"
+    },
+    {
+      "text": "States 3.10.2 is NOT Level 1",
+      "passed": true,
+      "evidence": "Complete 17-item list gives Physical protection as 3.10.1, 3.10.3, 3.10.4, 3.10.5, clearly excluding 3.10.2"
+    },
+    {
+      "text": "States Level 1 self-assessment is all-requirements-MET with no POA&M and no numeric score",
+      "passed": true,
+      "evidence": "All requirements must be MET, and there is no POA&M option... Numeric score: no"
+    },
+    {
+      "text": "Explains the 15-vs-17 mapping (one FAR item spans 3.10.3, 3.10.4 and 3.10.5)",
+      "passed": false,
+      "evidence": "Notes 15 FAR items correspond to 17 practices but never explains why (no mention of one FAR item spanning 3.10.3-3.10.5)"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 405,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Maps recruitment/employee monitoring to Law Article 25",
+      "passed": true,
+      "evidence": "'Law Article 25 (recruitment and employee data) is the sector article' for employee monitoring"
+    },
+    {
+      "text": "Maps finance/banking/credit information to Law Article 27",
+      "passed": true,
+      "evidence": "'Law Article 27 (finance, banking and credit)'"
+    },
+    {
+      "text": "Maps big data, AI, blockchain, metaverse or cloud processing to Law Article 30",
+      "passed": true,
+      "evidence": "'Law Article 30 (big data, AI, blockchain, metaverse, cloud)' cited for both AI and cloud"
+    },
+    {
+      "text": "Cites Decree 356 Articles 8-12 for sector implementation detail (finance 8, big data 9, AI/metaverse 10, blockchain 11, cloud 12)",
+      "passed": true,
+      "evidence": "Cites Decree 356 Art. 8 (finance/banking), Art. 9 (big data), Art. 10 (AI/metaverse), Art. 12 (cloud); only blockchain Art. 11 is omitted, but the sector-implementation mapping for everything the prompt asks about is correctly supported"
+    },
+    {
+      "text": "Cites Decree 356 Article 13 for data protection personnel/DPO conditions",
+      "passed": true,
+      "evidence": "'DPO or protection personnel (Decree 356 Art. 13): needed for large-scale or sensitive processing' with qualification conditions"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

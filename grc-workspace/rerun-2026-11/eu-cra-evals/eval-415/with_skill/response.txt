@@ -1,0 +1,29 @@
+## CRA Critical Products (Annex IV)
+
+Annex IV lists **three categories** of critical products with digital elements:
+
+1. **Hardware devices with security boxes**
+2. **Smart meter gateways**
+3. **Smartcards or similar devices, including secure elements**
+
+### What the Commission can require
+For critical products, the Commission may make **mandatory European cybersecurity certification** a requirement, using a scheme under the Cybersecurity Act (Regulation (EU) 2019/881). In practice this is done by delegated act specifying the certification scheme and assurance level. Manufacturers of the affected products would then have to obtain the certificate to demonstrate conformity, instead of relying on the ordinary Module A or Notified Body routes.
+
+The Commission can also update the list over time through delegated acts, subject to the conditions in the CRA.
+
+Important qualifications:
+- It is a **power** ("may be made subject to"), not an automatic obligation. Mandatory certification applies only once the Commission has adopted the relevant act and a scheme exists. Check the current status for the specific product before assuming it applies.
+- Annex IV products are not the same as Class I or Class II. Those are Annex III "important products" and use Module A / Notified Body routes (Class I: self-assessment or Notified Body; Class II: mandatory Notified Body). Critical products are a separate, higher tier.
+- The Annex I essential requirements (Part I security properties and Part II vulnerability handling), the technical documentation, DoC and CE marking regime still apply to critical products.
+
+### Related duties already live
+Since 11 September 2026, Art. 14 reporting of actively exploited vulnerabilities and severe incidents (24h, 72h, final report) via the ENISA Single Reporting Platform applies to these products as to all others on the market. The main obligations apply from 11 December 2027.
+
+### Practical advice
+If you make a smart meter gateway, secure element, smartcard or a security-box hardware device:
+1. Confirm the product fits the Annex IV wording.
+2. Track the Commission's delegated acts and any applicable certification scheme.
+3. Build to the Annex I requirements and prepare the technical documentation now, so that certification, if required, is a smaller step.
+4. Engage a certification body early.
+
+*General compliance information, not legal advice.*

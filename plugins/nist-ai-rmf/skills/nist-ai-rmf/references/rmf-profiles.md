@@ -135,7 +135,7 @@ The gap between Current and Target Profile drives the risk management roadmap.
 | MEASURE 2 (System evaluation) | Art. 10 (Data governance), Art. 15 (Accuracy, robustness, cybersecurity) |
 | MEASURE 3 (Ongoing monitoring) | Art. 72 (Post-market monitoring), Art. 26(5) — deployer monitoring obligations |
 | MANAGE 4.1/4.3 (Post-deployment monitoring, incident communication) | Art. 73 (Reporting of serious incidents to market surveillance) |
-| All functions | Annex IX (Technical documentation requirements for high-risk AI systems) |
+| All functions | Art. 11 and Annex IV (Technical documentation for high-risk AI systems) |
 
 **Key difference:** The EU AI Act is mandatory for in-scope providers and deployers; the NIST AI RMF is voluntary. Organizations subject to the EU AI Act should use NIST AI RMF as the risk management methodology that satisfies Art. 9's "appropriate risk management system" requirement.
 
@@ -158,28 +158,17 @@ The gap between Current and Target Profile drives the risk management roadmap.
 
 | AI RMF Category | Privacy Framework Core |
 |----------------|----------------------|
-| GV-6 (Regulatory alignment) | GV.PO-P (Privacy policies) |
-| MAP 1 (Context) | CT.DM-P (Data model context) |
+| GOVERN 1.1 (Legal and regulatory requirements) | GV.PO-P (Privacy policies) |
+| MAP 1 (Context) | CT.DM-P (Data Processing Management) |
 | MAP 3 (Affected individuals) | CT.DP-P (Disassociated processing) |
 | MEASURE 2 (Privacy evaluation) | CM.PO-P (Communication policies) |
-| MANAGE 4.1/4.3 (Post-deployment monitoring, incident communication) | RS.CO-P (Response communications) |
+| MANAGE 4.1/4.3 (Post-deployment monitoring, incident communication) | CM.AW-P (Data Processing Awareness) |
 
 ---
 
-## AI RMF Implementation Tiers
+## Maturity Framing
 
-Similar to NIST CSF Implementation Tiers, the AI RMF describes four organizational maturity levels:
-
-| Tier | Name | Description |
-|------|------|-------------|
-| 1 | **Partial** | Ad hoc AI risk practices; limited awareness; reactive to AI incidents |
-| 2 | **Risk Informed** | Approved AI risk policies exist; practices not fully organization-wide; awareness at management level |
-| 3 | **Repeatable** | AI risk management formally documented, consistently applied, regularly reviewed |
-| 4 | **Adaptive** | Organization learns from AI risk experience; proactively updates practices; contributes to sector knowledge |
-
-Most organizations begin at Tier 1–2. Target Tier 3 for regulated contexts; Tier 4 for AI-intensive industries.
-
----
+NIST AI 100-1 defines the Core (GOVERN, MAP, MEASURE, MANAGE) and Profiles only; it defines no implementation tiers. Organizations that want a maturity scale can borrow the NIST CSF Implementation Tiers as an internal convention, clearly labeled as a CSF construct rather than AI RMF structure.
 
 ## Common Gap Patterns and Remediation Priorities
 

@@ -1,0 +1,33 @@
+{
+  "eval_id": 407,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Article 30(2) is the baseline clause set for ALL ICT service contracts",
+      "passed": true,
+      "evidence": "'Art. 30(2) sets the minimum clauses for ALL ICT service contracts'"
+    },
+    {
+      "text": "Article 30(3) adds the stricter set for critical or important functions",
+      "passed": true,
+      "evidence": "'Art. 30(3) adds clauses for services supporting CRITICAL OR IMPORTANT functions'"
+    },
+    {
+      "text": "Exit strategies with a mandatory transition period sit at 30(3)(f)",
+      "passed": true,
+      "evidence": "'Exit strategies, in particular a mandatory adequate transition period (Art. 30(3)(f))'"
+    },
+    {
+      "text": "Unrestricted audit, access and inspection rights belong to the 30(3) critical/important set",
+      "passed": true,
+      "evidence": "'Unrestricted rights of access, inspection and audit' listed under Art. 30(3)"
+    },
+    {
+      "text": "Register of Information duties (maintain and submit annually) sit in Article 28(3)",
+      "passed": true,
+      "evidence": "'Art. 28(3) requires the register of information' (location correctly stated)"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

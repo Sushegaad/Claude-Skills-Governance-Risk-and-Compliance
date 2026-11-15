@@ -1,0 +1,13 @@
+{
+  "eval_id": 415,
+  "eval_name": "critical-products",
+  "run_type": "without_skill",
+  "prompt": "What are the CRA's critical products, and what can the Commission require for them?",
+  "assertions": [
+    "Lists Annex IV: hardware devices with security boxes; smart meter gateways; smartcards or similar devices including secure elements",
+    "States there are exactly three critical-product categories",
+    "States critical products can be made subject to mandatory EU cybersecurity certification",
+    "Distinguishes them from Annex III important products (Class I and II)",
+    "Does not add invented entries such as TPMs or HSMs"
+  ]
+}

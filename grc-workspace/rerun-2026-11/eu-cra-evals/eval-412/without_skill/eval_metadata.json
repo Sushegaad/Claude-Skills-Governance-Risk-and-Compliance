@@ -1,0 +1,13 @@
+{
+  "eval_id": 412,
+  "eval_name": "database-claim",
+  "run_type": "without_skill",
+  "prompt": "A consultant says our Class I product must be registered in an EU database before market placement. Is that a CRA requirement?",
+  "assertions": [
+    "States the CRA contains no product-registration database",
+    "States conformity is demonstrated via the Declaration of Conformity and CE marking",
+    "Identifies the ENISA single reporting platform (Art. 14 reports) as the only registration-like duty",
+    "Describes the Class I conformity route reasonably (harmonised standards/self-assessment vs third-party where applicable)",
+    "Does not endorse any 'register by December 2027' database claim"
+  ]
+}

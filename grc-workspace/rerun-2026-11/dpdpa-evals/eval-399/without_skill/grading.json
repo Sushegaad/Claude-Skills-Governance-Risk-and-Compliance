@@ -1,0 +1,33 @@
+{
+  "eval_id": 399,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Anchors the security-safeguards penalty to Section 8(5) with the Rs 250 crore Schedule tier",
+      "passed": true,
+      "evidence": "\"reasonable security safeguards ... Section 8(5): up to Rs 250 crore\""
+    },
+    {
+      "text": "States the breach-notification failure tier of Rs 200 crore",
+      "passed": true,
+      "evidence": "\"Failure to give the Board or affected Data Principals notice of a personal data breach - Section 8(6): up to Rs 200 crore\""
+    },
+    {
+      "text": "States voluntary-undertaking breach is Section 32 with the penalty capped at the extent applicable to the underlying breach, not a flat Rs 50 crore",
+      "passed": true,
+      "evidence": "\"Breach of a voluntary undertaking accepted by the Board - Section 32(3): up to the extent applicable to the breach in respect of which the undertaking was given\""
+    },
+    {
+      "text": "States Rs 50 crore is the residual tier for other breaches",
+      "passed": true,
+      "evidence": "\"Residuary: breach of any other provision of the Act or Rules - up to Rs 50 crore\""
+    },
+    {
+      "text": "Lists Section 33(2) factors consistent with the statute (nature/gravity/duration, type of data, repetition, gain or loss avoided, mitigation, proportionality and deterrence, likely impact of the penalty) without invented factors",
+      "passed": false,
+      "evidence": "Distorts the statutory factors: \"proportionality of the penalty to the person's ability to pay\" and \"the effect of the penalty on other relevant points\" are not statutory factors; the statute's proportionate-and-effective (observance/deterrence) factor is misstated"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

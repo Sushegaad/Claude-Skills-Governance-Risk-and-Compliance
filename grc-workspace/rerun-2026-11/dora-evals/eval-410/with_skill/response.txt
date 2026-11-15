@@ -1,0 +1,15 @@
+Articles 54-58 DORA (Regulation (EU) 2022/2554)
+- Art. 54 - Publication of administrative penalties. Competent authorities publish information on penalties imposed. The naming-and-shaming regime sits here, not in Art. 53.
+- Art. 55 - Professional secrecy. This applies to persons working for competent authorities.
+- Art. 56 - Data protection. Personal data processing under DORA must comply with applicable EU data protection law.
+- Art. 57 - Exercise of the delegation (Chapter VIII, Delegated acts). It empowers the Commission to adopt delegated acts, for 5 years from 17 January 2025, renewable.
+- Art. 58 - Review clause (opens Chapter IX, Transitional and final provisions). The Commission reviews DORA's operation and reports to the European Parliament and Council.
+
+Amendments
+- Art. 59 amends Regulation (EC) No 1060/2009 (credit rating agencies).
+- Art. 62 amends Regulation (EU) No 600/2014 (MiFIR).
+- For completeness: Art. 60 amends Regulation (EU) No 648/2012 (EMIR), Art. 61 amends Regulation (EU) No 909/2014 (CSDR), and Art. 63 amends Regulation (EU) 2016/1011 (Benchmarks). Art. 64 covers entry into force (16 January 2023) and application from 17 January 2025.
+
+Note: use "Chapter" rather than "Title". Art. 54-56 close Chapter VII (Competent authorities, Art. 46-56).
+
+General compliance information, not legal advice.

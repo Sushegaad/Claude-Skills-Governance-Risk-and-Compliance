@@ -1,0 +1,25 @@
+All in Regulation (EU) 2022/2554 (DORA), Chapter V, Section I.
+
+Termination rights
+- Art. 28(7): financial entities must ensure ICT service arrangements can be terminated in the circumstances DORA requires.
+- Art. 30(2) baseline contractual elements (a)-(i), applying to all ICT contracts, include termination rights and minimum notice periods, plus data portability, return and migration assistance on termination.
+- The detail is in CDR (EU) 2024/1773.
+
+Exit strategies
+- Art. 28(8): an exit strategy is required for every arrangement supporting a critical or important function. It covers triggers, the notice and migration period, data portability and return, and transition assistance. It should be tested periodically on a risk basis.
+- Art. 30(3)(f): for contracts supporting critical or important functions, the contract must contain exit strategies with a mandatory transition period.
+- Art. 30(4): review of exit viability before renewal.
+- The Register of Information (CIR (EU) 2024/2956) carries an exit strategy reference per arrangement.
+
+Concentration risk
+- Art. 28(4)(c): the pre-contractual assessment includes ICT concentration risk. This is where the entity-level duty sits.
+- Art. 29: preliminary assessment of ICT concentration risk at entity level. It covers concentration in a single provider, the risk of ICT services becoming unavailable, and assessment before new arrangements for critical functions. It is transaction-triggered and complements Art. 28(4)(c).
+- Systemic concentration is dealt with through CTPP designation and oversight, Art. 31-44.
+
+Related points
+- Art. 28(3): the Register of Information is maintained and submitted at least annually.
+- Art. 28(6): audit and inspection frequency.
+- Art. 28(1): the ICT third-party risk policy must address concentration, exit and the contract lifecycle.
+- Practical tip: rate each provider on dependency depth, substitutability, contractual exit, financial stability, geographic diversification and enforceability of audit rights. Two or more High ratings should trigger mitigation.
+
+General compliance information, not legal advice.

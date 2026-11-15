@@ -345,12 +345,12 @@
       "category_key": "cyber-reg",
       "region": "eu",
       "domains": "bcm incident-response vendor reporting",
-      "grading_dir": "grc-workspace/rerun-2026-10/dora-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/dora-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "14 Sep 2026",
-        "tested": "CTPP EU-subsidiary deadline (Art. 31(12)); incident classification and reporting; third-country branches (CSSF 26/915); Register of Information cycle; Art. 30 contract provisions",
-        "readme_tested": "CTPP EU-subsidiary deadline (Art. 31(12)); incident classification and reporting; third-country branches (CSSF 26/915); Register of Information cycle; Art. 30 contract provisions"
+        "last_updated": "15 Nov 2026",
+        "tested": "Lead Overseer powers; Art. 30(2)/(3) contract sets; incident deadlines; termination/exit/concentration; final provisions",
+        "readme_tested": "Lead Overseer powers; Art. 30(2)/(3) contract sets; incident deadlines; termination/exit/concentration; final provisions"
       },
       "install_framework": "DORA (EU)",
       "install_desc": "ICT risk management, TLPT, register of information, incident classification, third-party oversight",
@@ -378,12 +378,12 @@
       "category_key": "privacy",
       "region": "apac",
       "domains": "data-protection reporting",
-      "grading_dir": "grc-workspace/iteration-1/dpdpa",
+      "grading_dir": "grc-workspace/rerun-2026-11/dpdpa-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "16 May 2026",
-        "tested": "Applicability to foreign entities; Consent vs GDPR; Children's data (18-year threshold); Cross-border transfers; SDF obligations",
-        "readme_tested": "Applicability to foreign entities; Consent vs GDPR; Children's data (18-year threshold); Cross-border transfers; SDF obligations"
+        "last_updated": "15 Nov 2026",
+        "tested": "Section 7 structure; Rules 6/7 mechanics; chapters and appeals; penalty anchors; offshore exemption",
+        "readme_tested": "Section 7 structure; Rules 6/7 mechanics; chapters and appeals; penalty anchors; offshore exemption"
       },
       "install_framework": "India DPDPA 2023",
       "install_desc": "Data principal rights, consent management, DPDPB registration, breach notification",
@@ -411,12 +411,12 @@
       "category_key": "infosec",
       "region": "us",
       "domains": "access-control audit risk-assessment",
-      "grading_dir": "grc-workspace/rerun-2026-10/cmmc-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/cmmc-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "14 Sep 2026",
-        "tested": "Task Force status (Sept 14); obligations during the pause; what the suspension did and didn't do; SPRS calculation; enclave scoping",
-        "readme_tested": "Task Force status (Sept 14); obligations during the pause; what the suspension did and didn't do; SPRS calculation; enclave scoping"
+        "last_updated": "15 Nov 2026",
+        "tested": "Level 1 scope (15); POA&M eligibility and 3.13.11; SPRS weights; Level 3 POA&M; ecosystem roles",
+        "readme_tested": "Level 1 scope (15); POA&M eligibility and 3.13.11; SPRS weights; Level 3 POA&M; ecosystem roles"
       },
       "install_framework": "CMMC 2.0",
       "install_desc": "Level 1/2/3 gap analysis, SPRS scoring, POA&M, CUI scoping, assessment prep — incl. the Jul 13 2026 Phase 2 suspension interim guidance",
@@ -642,12 +642,12 @@
       "category_key": "privacy",
       "region": "latam",
       "domains": "data-protection incident-response reporting",
-      "grading_dir": "grc-workspace/rerun-2026-10b/lgpd-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/lgpd-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "03 Oct 2026",
-        "tested": "Penalty reality (TikTok R$153.7M); ANPD agency status + CP 1/2026; teen-platform obligations (Digital ECA); Brazil-US transfers; breach response",
-        "readme_tested": "Penalty reality (TikTok R$153.7M); ANPD agency status + CP 1/2026; teen-platform obligations (Digital ECA); Brazil-US transfers; breach response"
+        "last_updated": "15 Nov 2026",
+        "tested": "Art. 11 bases vs credit; chapter map; prescription and Art. 54; RoPA scope; EU adequacy",
+        "readme_tested": "Art. 11 bases vs credit; chapter map; prescription and Art. 54; RoPA scope; EU adequacy"
       },
       "install_framework": "Brazil LGPD",
       "install_desc": "All 10 legal bases, Brazil-EU mutual adequacy (Jan 2026 — SCCs no longer needed for Brazil↔EU transfers), data subject rights, ANPD enforcement, breach notification",
@@ -939,12 +939,12 @@
       "category_key": "privacy",
       "region": "apac",
       "domains": "data-protection incident-response",
-      "grading_dir": "grc-workspace/rerun-2026-09/vn-pdpl-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/vn-pdpl-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "05 Sep 2026",
-        "tested": "Decree 330/2026 penalty exposure; cross-border transfer duties; law-stack timeline; consent and rights; SME exemptions",
-        "readme_tested": "Decree 330/2026 penalty exposure; cross-border transfer duties; law-stack timeline; consent and rights; SME exemptions"
+        "last_updated": "15 Nov 2026",
+        "tested": "Law structure (5 chapters, 39 articles); data-category lists; Article 5 scope; SME opt-out; sector articles",
+        "readme_tested": "Law structure (5 chapters, 39 articles); data-category lists; Article 5 scope; SME opt-out; sector articles"
       },
       "install_framework": "Vietnam PDPL 2026",
       "install_desc": "Gap analysis, cross-border transfer impact assessments, DPIAs, breach notification (72h)",
@@ -972,12 +972,12 @@
       "category_key": "cyber-reg",
       "region": "eu",
       "domains": "vendor incident-response reporting",
-      "grading_dir": "grc-workspace/rerun-2026-10/eu-cra-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/eu-cra-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "14 Sep 2026",
-        "tested": "Live Art. 14 filing (exploited vulnerability); severe-incident reporting; firewall classification and conformity; what-applies-when timeline; SRP onboarding and fallback",
-        "readme_tested": "Live Art. 14 filing (exploited vulnerability); severe-incident reporting; firewall classification and conformity; what-applies-when timeline; SRP onboarding and fallback"
+        "last_updated": "15 Nov 2026",
+        "tested": "Product classification (19/4/3); database claim check; application timeline; Annex I Part II; critical products",
+        "readme_tested": "Product classification (19/4/3); database claim check; application timeline; Annex I Part II; critical products"
       },
       "install_framework": "EU CRA 2024/2847",
       "install_desc": "PDE classification (Default/Class I/Class II), Annex I gap analysis, SBOM, 24/72h ENISA reporting",

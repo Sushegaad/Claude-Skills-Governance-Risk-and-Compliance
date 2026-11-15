@@ -1,0 +1,13 @@
+{
+  "eval_id": 425,
+  "eval_name": "eu-adequacy",
+  "run_type": "without_skill",
+  "prompt": "Can we transfer personal data from Brazil to the EU today without SCCs?",
+  "assertions": [
+    "States yes: mutual adequacy has applied since January 2026",
+    "Cites Commission Implementing Decision (EU) 2026/179",
+    "Cites ANPD Resolution CD/ANPD 32/2026 under Article 33, I",
+    "States the carve-outs: public safety, national defence, State security, criminal investigation/prosecution",
+    "Keeps SCCs (Res. 19/2024) and BCRs available for excluded scopes and other countries"
+  ]
+}

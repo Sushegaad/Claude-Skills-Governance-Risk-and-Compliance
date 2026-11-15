@@ -1,0 +1,13 @@
+{
+  "eval_id": 424,
+  "eval_name": "ropa-scope",
+  "run_type": "with_skill",
+  "prompt": "Which Brazilian entities must keep records of processing operations (RoPA)?",
+  "assertions": [
+    "States Article 37 binds ALL controllers and operators",
+    "Notes the statute highlights processing based on legitimate interest",
+    "States Res. CD/ANPD 2/2022 lets small-scale agents keep a simplified record",
+    "Does not limit the duty to large-scale processors or public entities",
+    "Correctly contrasts with the GDPR's Article 30(5) derogation if a comparison is drawn"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "eval_id": 424,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States Article 37 binds ALL controllers and operators",
+      "passed": true,
+      "evidence": "'in principle all controllers and processors are covered'; 'All controllers... All processors'"
+    },
+    {
+      "text": "Notes the statute highlights processing based on legitimate interest",
+      "passed": true,
+      "evidence": "'especially where legitimate interest is the legal basis' / 'in particular those relying on legitimate interest'"
+    },
+    {
+      "text": "States Res. CD/ANPD 2/2022 lets small-scale agents keep a simplified record",
+      "passed": true,
+      "evidence": "'Under Art. 9, these agents may comply with Art. 37 through a simplified RoPA' (Res. CD/ANPD 2/2022)"
+    },
+    {
+      "text": "Does not limit the duty to large-scale processors or public entities",
+      "passed": true,
+      "evidence": "Duty applies to all agents; only statutory Art. 4 scope exclusions noted, no large-scale/public limit"
+    },
+    {
+      "text": "Correctly contrasts with the GDPR's Article 30(5) derogation if a comparison is drawn",
+      "passed": true,
+      "evidence": "'Unlike GDPR Art. 30, the LGPD has no 250-employee threshold' - correct contrast with the 30(5) derogation"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

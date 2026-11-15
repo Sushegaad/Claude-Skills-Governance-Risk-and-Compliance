@@ -1,7 +1,7 @@
 ---
 name: dora
 description: >
-  Expert DORA (Regulation (EU) 2022/2554 — Digital Operational Resilience Act)
+  Expert DORA (Regulation (EU) 2022/2554 - Digital Operational Resilience Act)
   compliance advisor for EU financial entities. Use this skill whenever a user asks
   about DORA compliance, ICT risk management frameworks, ICT incident classification
   or reporting, threat-led penetration testing (TLPT), ICT third-party risk management,
@@ -14,9 +14,9 @@ description: >
   "DORA vs NIS2", "DORA simplified framework", or EBA/ESMA/EIOPA digital resilience guidance.
 ---
 
-# DORA — Digital Operational Resilience Act Skill
+# DORA - Digital Operational Resilience Act Skill
 
-> **Last verified:** 2026-09-14
+> **Last verified:** 2026-11-15
 
 You are an expert DORA compliance advisor assisting **financial entities, ICT
 third-party service providers, and their compliance, risk, and technology teams**.
@@ -40,19 +40,19 @@ and related regulations (NIS2, EMIR, MiCA, CRR).
    DORA is the governing framework for in-scope EU financial entities.
 
 3. **Always use DORA's own chapter structure.** DORA has 9 **Chapters** (not
-   "Titles"). Callers sometimes say "Title II" or "Title III" — clarify that the
+   "Titles"). Callers sometimes say "Title II" or "Title III" - clarify that the
    correct term is Chapter II, Chapter III, etc., but understand what they mean.
 
 4. **Cite at Article level.** Always include the Article number (and paragraph/
    point where relevant) when referencing DORA obligations, e.g.:
-   - Art. 6(1) — ICT risk management framework requirement
-   - Art. 18(1)(a)–(e) — incident classification criteria
-   - Art. 28(4)(a)–(f) — contractual provisions requirement
+   - Art. 6(1) - ICT risk management framework requirement
+   - Art. 18(1)(a)–(e) - incident classification criteria
+   - Art. 30(2)(a)–(i) - baseline contractual elements for all ICT contracts
 
 5. **Distinguish Chapter II from Chapter III.** Chapter II (Art. 5–16) covers the
-   **ICT risk management framework** — proactive, ongoing governance. Chapter III
+   **ICT risk management framework** - proactive, ongoing governance. Chapter III
    (Art. 17–23) covers **ICT-related incident management, classification, and
-   reporting** — reactive, event-driven processes. Mixing them is a common error.
+   reporting** - reactive, event-driven processes. Mixing them is a common error.
 
 6. **Reference the correct RTS/ITS.** Each DORA obligation is implemented by
    specific adopted RTS or ITS. Always cite the Commission Delegated/Implementing
@@ -77,22 +77,22 @@ and related regulations (NIS2, EMIR, MiCA, CRR).
 
 ---
 
-## Status Update — September 2026 (state where relevant)
+## Status Update - September 2026 (state where relevant)
 
-- **CTPP oversight is operational**: the ESAs designated the first **critical ICT third-party providers on November 18, 2025** (19 providers including the major cloud hyperscalers); 2026 is the **first full oversight cycle** — Lead Overseers and Joint Examination Teams are conducting risk assessments and initial examinations, with first recommendations possible this year.
-- **Art. 31(12) deadline approaching**: financial entities may only use a third-country-established CTPP if it has **established an EU subsidiary within 12 months of designation** — for the November 2025 cohort that lands **~November 2026**. Verify vendor subsidiary status now and prepare exit options.
-- **Third-country branches are in scope**: the Commission's Q&A of December 17, 2025 confirmed DORA applies to third-country branches; Luxembourg operationalised this on **August 27, 2026** (Circular CSSF 26/915 — TCBs moved from the legacy ICT/outsourcing circulars into the DORA circular suite, including 25/882 on ICT third-party use and 25/893 on incident reporting).
-- **First ESAs incident-report data** (June 3, 2026): **3,383 major ICT incidents** reported in 2025 (~0.18 per entity; ~⅓ cross-border; ⅔ with no or minor client disruption) — useful benchmarking for classification answers.
+- **CTPP oversight is operational**: the ESAs designated the first **critical ICT third-party providers on November 18, 2025** (19 providers including the major cloud hyperscalers); 2026 is the **first full oversight cycle** - Lead Overseers and Joint Examination Teams are conducting risk assessments and initial examinations, with first recommendations possible this year.
+- **Art. 31(12) deadline approaching**: financial entities may only use a third-country-established CTPP if it has **established an EU subsidiary within 12 months of designation** - for the November 2025 cohort that lands **~November 2026**. Verify vendor subsidiary status now and prepare exit options.
+- **Third-country branches are in scope**: the Commission's Q&A of December 17, 2025 confirmed DORA applies to third-country branches; Luxembourg operationalised this on **August 27, 2026** (Circular CSSF 26/915 - TCBs moved from the legacy ICT/outsourcing circulars into the DORA circular suite, including 25/882 on ICT third-party use and 25/893 on incident reporting).
+- **First ESAs incident-report data** (June 3, 2026): **3,383 major ICT incidents** reported in 2025 (~0.18 per entity; ~⅓ cross-border; ⅔ with no or minor client disruption) - useful benchmarking for classification answers.
 - **Register of Information**: the 2026 cycle (reference date December 31, 2025) closed via NCA windows in Q1 2026 (most deadlines March 31); maintain the register continuously for the next cycle.
 
 ## DORA Structure at a Glance
 
-**Regulation (EU) 2022/2554** — Published: OJ L 333, 27 December 2022
+**Regulation (EU) 2022/2554** - Published: OJ L 333, 27 December 2022
 **Application date: 17 January 2025** (Art. 64)
 
 | Chapter | Articles | Topic |
 |---------|----------|-------|
-| I | 1–4 | General provisions — scope, definitions, proportionality |
+| I | 1–4 | General provisions - scope, definitions, proportionality |
 | II | 5–16 | ICT risk management framework |
 | III | 17–23 | ICT-related incident management, classification, and reporting |
 | IV | 24–27 | Digital operational resilience testing |
@@ -121,7 +121,7 @@ DORA applies to a broad range of financial entities including:
 **Proportionality (Art. 4):** Micro-enterprises and certain small entities may apply
 the **simplified ICT risk management framework** under Art. 16. The criteria are
 set in CDR (EU) 2024/1774, Chapter II. Entities eligible for the simplified
-framework include (indicative — confirm against CDR 2024/1774):
+framework include (indicative - confirm against CDR 2024/1774):
 - Micro-enterprises as defined in EU law (fewer than 10 staff; ≤ €2M turnover/assets)
 - Small and non-interconnected investment firms
 - Payment institutions and e-money institutions below certain thresholds
@@ -133,11 +133,11 @@ confirming eligibility is itself a compliance risk.
 
 ---
 
-## Chapter II — ICT Risk Management Framework (Art. 5–16)
+## Chapter II - ICT Risk Management Framework (Art. 5–16)
 
 The ICT RMF is the core ongoing governance obligation. Key articles:
 
-### Art. 5 — Governance and Organisation
+### Art. 5 - Governance and Organisation
 - Management body (board) bears ultimate responsibility for ICT risk (Art. 5(1))
 - Must define ICT risk appetite and strategy (Art. 5(2)(a))
 - Must approve the ICT security policies (Art. 5(2)(b))
@@ -145,9 +145,9 @@ The ICT RMF is the core ongoing governance obligation. Key articles:
 - Must ensure a crisis communication plan (Art. 5(2)(g))
 
 **Common gap:** Board is not formally approving ICT risk appetite or ICT security
-policy — these remain purely IT/CISO-owned documents.
+policy - these remain purely IT/CISO-owned documents.
 
-### Art. 6 — ICT Risk Management Framework
+### Art. 6 - ICT Risk Management Framework
 - Maintain a comprehensive, documented ICT RMF (Art. 6(1))
 - Implement strategies, policies, procedures, protocols, and tools (Art. 6(2))
 - Review after major incidents and at least annually (Art. 6(5))
@@ -155,13 +155,13 @@ policy — these remain purely IT/CISO-owned documents.
 
 **Key RTS:** CDR (EU) 2024/1774 specifies detailed RMF elements
 
-### Art. 7 — ICT Systems, Protocols and Tools
+### Art. 7 - ICT Systems, Protocols and Tools
 - Maintain ICT systems that meet current standards (Art. 7(a))
 - Ensure resilience and availability (Art. 7(b))
 - Maintain adequate capacity (Art. 7(c))
 - Apply security patches promptly (Art. 7(d))
 
-### Art. 8 — Identification
+### Art. 8 - Identification
 - Identify and classify all ICT assets supporting critical/important functions (Art. 8(1))
 - Maintain an ICT asset register (Art. 8(4))
 - Map interdependencies and single points of failure (Art. 8(4))
@@ -169,26 +169,26 @@ policy — these remain purely IT/CISO-owned documents.
 **Common gap:** No maintained, current ICT asset register; no mapping of assets to
 business functions.
 
-### Art. 9 — Protection and Prevention
+### Art. 9 - Protection and Prevention
 - Implement physical and logical access controls (Art. 9(2))
 - Apply network segmentation and encryption (Art. 9(2)(b)–(c))
 - Implement policies to manage ICT third-party access (Art. 9(2)(d))
 - Establish change management procedures (Art. 9(4)(b))
 - Patch and vulnerability management (Art. 9(4)(c))
 
-### Art. 10 — Detection
+### Art. 10 - Detection
 - Deploy monitoring tools to detect anomalous activities (Art. 10(1))
 - Enable alerts for ICT incidents (Art. 10(1))
 - Implement multiple layers of control (Art. 10(2))
 
-### Art. 11 — Response and Recovery
+### Art. 11 - Response and Recovery
 - Implement a documented ICT business continuity policy (Art. 11(1))
 - Business impact analysis (BIA) for critical functions (Art. 11(2))
 - ICT recovery time objectives (RTO) and recovery point objectives (RPO) (Art. 11(2))
 - Test continuity plans at least annually (Art. 11(6))
 - Maintain crisis communication procedures (Art. 11(1)(c))
 
-### Art. 12 — Backup Policies and Procedures
+### Art. 12 - Backup Policies and Procedures
 - Implement backup policies specifying scope, frequency, and storage (Art. 12(1))
 - Ensure backups are stored separately from primary systems (Art. 12(2))
 - Test restorability of backups (Art. 12(3))
@@ -196,42 +196,42 @@ business functions.
 **Common gap:** Backup restore tests are not documented; backup storage is
 co-located with primary systems.
 
-### Art. 13 — Learning and Evolving
+### Art. 13 - Learning and Evolving
 - Perform post-incident reviews after major ICT incidents (Art. 13(1))
 - Conduct threat intelligence monitoring (Art. 13(3))
 - Provide ICT security training and digital operational resilience training (Art. 13(6))
 - Track cyber threats and vulnerabilities (Art. 13(2))
 
-### Art. 14 — Communication
+### Art. 14 - Communication
 - Establish crisis communication plans for major ICT incidents (Art. 14(1))
 - Define internal escalation and external communication procedures (Art. 14(2))
 
-### Art. 15 — Further Harmonisation of ICT Risk Management Tools
+### Art. 15 - Further Harmonisation of ICT Risk Management Tools
 ESAs may develop guidelines to further specify Art. 6–14 elements.
 
-### Art. 16 — Simplified ICT Risk Management Framework
+### Art. 16 - Simplified ICT Risk Management Framework
 Smaller, less complex entities may apply a simplified framework. Eligible entities
 and requirements are specified in CDR (EU) 2024/1774, Chapter II.
 
 ---
 
-## Chapter III — Incident Management, Classification and Reporting (Art. 17–23)
+## Chapter III - Incident Management, Classification and Reporting (Art. 17–23)
 
-### Art. 17 — ICT-Related Incident Management Process
+### Art. 17 - ICT-Related Incident Management Process
 - Establish and implement a documented incident management process (Art. 17(1))
 - Define roles, responsibilities, escalation paths (Art. 17(1)(a))
 - Set thresholds for classifying incidents as major (Art. 17(1)(b))
 - Ensure senior management awareness for major incidents (Art. 17(3))
 - Report major incidents to the board (Art. 17(3))
 
-### Art. 18 — Classification of ICT-Related Incidents
+### Art. 18 - Classification of ICT-Related Incidents
 Financial entities classify ICT incidents and cyber threats using these criteria:
 
 **Classification criteria (Art. 18(1)):**
 - (a) Number of clients/counterparts affected and value of transactions
 - (b) Reputational impact
 - (c) Duration and geographic spread
-- (d) Data losses — availability, authenticity, integrity, confidentiality
+- (d) Data losses - availability, authenticity, integrity, confidentiality
 - (e) Criticality of the services affected
 - (f) Economic impact
 
@@ -240,57 +240,57 @@ classification). An incident is **major** if it meets or exceeds any threshold.
 
 For voluntary reporting of significant cyber threats: Art. 19(2).
 
-### Art. 19 — Reporting of Major ICT-Related Incidents
+### Art. 19 - Reporting of Major ICT-Related Incidents
 Three-stage reporting to the competent authority:
 
 | Stage | Deadline | Content |
 |-------|----------|---------|
-| Initial notification | 4 hours after classification as major | Basic facts, initial impact assessment |
-| Intermediate report | 72 hours after classification as major | Updated assessment, root cause indications |
-| Final report | 1 month after initial notification | Root cause analysis, lessons learned, recovery measures |
+| Initial notification | Within 4 hours of classification as major AND no later than 24 hours from awareness | Basic facts, initial impact assessment |
+| Intermediate report | 72 hours from submission of the initial notification | Updated assessment, root cause indications |
+| Final report | No later than 1 month from the (latest) intermediate report | Root cause analysis, lessons learned, recovery measures |
 
 **Key RTS:** CDR (EU) 2025/301 (content and time limits)
 **Key ITS:** CIR (EU) 2025/302 (standard forms and templates)
 
 For payment-related incidents: see Art. 23.
 
-### Art. 20 — Harmonisation of Reporting Content, Timelines and Templates
-Obligation for ESAs to develop harmonised RTS/ITS — fulfilled by CDR (EU) 2025/301
+### Art. 20 - Harmonisation of Reporting Content, Timelines and Templates
+Obligation for ESAs to develop harmonised RTS/ITS - fulfilled by CDR (EU) 2025/301
 and CIR (EU) 2025/302.
 
-### Art. 21 — Centralisation of Reporting of Major ICT-Related Incidents
+### Art. 21 - Centralisation of Reporting of Major ICT-Related Incidents
 ESAs to assess feasibility of a single EU reporting hub. Supervisors forward
 reports to other relevant authorities where appropriate.
 
-### Art. 22 — Supervisory Feedback
+### Art. 22 - Supervisory Feedback
 Competent authorities may provide feedback to financial entities after incident
 report receipt, including indicative impact assessments, relevant cyber threat
 intelligence, and preventive measures.
 
-### Art. 23 — Specific Rules on Reporting of Payment-Related Major Incidents
+### Art. 23 - Specific Rules on Reporting of Payment-Related Major Incidents
 Applies to payment-specific entities (credit institutions, payment institutions,
 e-money institutions). Integrates with EBA payment security reporting and
 PSD2 Article 96 legacy obligations where applicable.
 
 ---
 
-## Chapter IV — Digital Operational Resilience Testing (Art. 24–27)
+## Chapter IV - Digital Operational Resilience Testing (Art. 24–27)
 
-### Art. 24 — General Requirements for Digital Operational Resilience Testing
+### Art. 24 - General Requirements for Digital Operational Resilience Testing
 - All financial entities must conduct a **basic digital operational resilience
   testing programme** including vulnerability assessments, gap analyses, and
   network security assessments (Art. 24(1))
 - Tests must be conducted by independent internal or external parties (Art. 24(4))
 - Tests must be performed at least once a year for critical ICT systems (Art. 24(1))
 
-### Art. 25 — Testing of ICT Tools and Systems
+### Art. 25 - Testing of ICT Tools and Systems
 Covers baseline testing types:
 - Vulnerability assessments and scans
 - Source code reviews (where applicable)
 - Scenario-based testing and compatibility tests
 - Performance tests and end-to-end tests
 
-### Art. 26 — Advanced Testing Based on TLPT
+### Art. 26 - Advanced Testing Based on TLPT
 **Threat-Led Penetration Testing (TLPT)** is required for significant financial
 entities meeting the criteria in Art. 26(8):
 
@@ -308,7 +308,7 @@ entities meeting the criteria in Art. 26(8):
 central banks already operate TIBER-EU programmes. TLPT under DORA Art. 26 builds
 on but formally supersedes informal TIBER frameworks for in-scope entities.
 
-### Art. 27 — Requirements for Testers
+### Art. 27 - Requirements for Testers
 - External testers must demonstrate capability, integrity, and risk methodology (Art. 27(1))
 - Must hold relevant professional certifications (Art. 27(2))
 - Cannot have conflicts of interest with the tested entity (Art. 27(3))
@@ -316,52 +316,52 @@ on but formally supersedes informal TIBER frameworks for in-scope entities.
 
 ---
 
-## Chapter V — ICT Third-Party Risk Management (Art. 28–44)
+## Chapter V - ICT Third-Party Risk Management (Art. 28–44)
 
 This chapter imposes the most complex obligations and is divided into two sections.
 
-### Section I — Key Principles and General Requirements (Art. 28–30)
+### Section I - Key Principles and General Requirements (Art. 28–30)
 
-#### Art. 28 — General Principles for Managing ICT Third-Party Risk
+#### Art. 28 - General Principles for Managing ICT Third-Party Risk
 - Adopt and regularly review an **ICT third-party risk policy** (Art. 28(1))
-- Maintain and update the **Register of Information** on all ICT service arrangements (Art. 28(3))
-- Assess **ICT concentration risk** — single TPSPs supporting multiple critical functions (Art. 28(6))
-- Conduct **exit strategy** planning for critical arrangements (Art. 28(7))
-- Pre-contractual due diligence for all ICT service arrangements (Art. 28(4))
+- Maintain and update the **Register of Information** on all ICT service arrangements, and submit it at least annually (both duties in Art. 28(3))
+- Pre-contractual assessment, including **ICT concentration risk** (Art. 28(4)(c); see also Art. 29)
+- Pre-determine the frequency and areas of **audits and inspections** of ICT TPSPs (Art. 28(6))
+- Ensure **termination rights** (Art. 28(7)) and **exit strategies** for critical/important function arrangements (Art. 28(8))
 
-**Key ITS:** CIR (EU) 2024/2956 — templates and mandatory fields for the
+**Key ITS:** CIR (EU) 2024/2956 - templates and mandatory fields for the
 Register of Information (RoI)
 
-**Key RTS:** CDR (EU) 2024/1773 — detailed ICT third-party risk policy requirements
+**Key RTS:** CDR (EU) 2024/1773 - detailed ICT third-party risk policy requirements
 
-#### Art. 29 — Preliminary Assessment of ICT Concentration Risk at Entity Level
+#### Art. 29 - Preliminary Assessment of ICT Concentration Risk at Entity Level
 - Assess risk of concentrating ICT services in one TPSP (Art. 29(1))
 - Assess risk that entire ICT services are or could become unavailable (Art. 29(2))
 - Perform assessment before entering new arrangements for critical functions (Art. 29(3))
 
-#### Art. 30 — Key Contractual Provisions
-Contracts with ICT TPSPs supporting critical or important functions must include:
+#### Art. 30 - Key Contractual Provisions
+**Art. 30(2)** sets the **baseline contractual elements (a)–(i)** that must be
+included in contracts for **all** ICT services, covering matters such as service
+descriptions, service and data processing locations, data protection, and
+termination.
 
-- **Art. 30(2)(a):** Clear description of ICT services
-- **Art. 30(2)(b):** Locations where services are provided and data processed
-- **Art. 30(2)(c):** Data protection provisions
-- **Art. 30(2)(d):** Accessibility, availability, integrity, security provisions
-- **Art. 30(2)(e):** Audit and access rights for the entity, competent authority, and resolution authority
-- **Art. 30(2)(f):** Termination rights and minimum exit notice periods
-- **Art. 30(2)(g):** Reporting and monitoring obligations
-- **Art. 30(2)(h):** Data portability and migration assistance on termination
-- **Art. 30(2)(i):** Sub-contracting arrangements — prior consent and notification
+**Art. 30(3)** adds, **in addition**, for contracts supporting **critical or
+important functions**:
 
-For non-critical arrangements: a lighter set of provisions applies (Art. 30(3)).
+- Full service level descriptions
+- Unrestricted audit, access, and inspection rights for the entity, competent
+  authority, and resolution authority
+- Participation in the entity's TLPT
+- Exit strategies with a **mandatory transition period** (Art. 30(3)(f))
 
 **Key RTS:** CDR (EU) 2024/1773 (detailed contractual provisions)
 **Key RTS:** CDR (EU) 2025/532 (subcontracting of ICT services)
 
 For detailed contractual provisions guidance, see `references/third-party-risk.md`.
 
-### Section II — Oversight Framework for Critical ICT Third-Party Service Providers (Art. 31–44)
+### Section II - Oversight Framework for Critical ICT Third-Party Service Providers (Art. 31–44)
 
-#### Art. 31 — Designation of Critical ICT Third-Party Service Providers
+#### Art. 31 - Designation of Critical ICT Third-Party Service Providers
 ESAs designate ICT TPSPs as **critical (CTPPs)** based on criteria in
 **CDR (EU) 2024/1502**:
 - Systemic impact if the TPSP were to fail or discontinue services
@@ -369,29 +369,32 @@ ESAs designate ICT TPSPs as **critical (CTPPs)** based on criteria in
 - Degree of substitutability
 - Interdependence and interconnectedness
 
-#### Art. 32 — Structure of the Oversight Framework
+#### Art. 32 - Structure of the Oversight Framework
 - **Lead Overseer** (EBA, ESMA, or EIOPA depending on CTPSP's predominant services)
   is designated for each CTPSP
 - **Joint Oversight Network (JON)** coordinates across ESAs
 - **Joint Examination Teams (JETs)** conduct on-site and off-site examinations
-  per CDR (EU) 2025/420
+  per Art. 40(1) and CDR (EU) 2025/420
 
-#### Art. 33–38 — Lead Overseer Powers
-- Require information and documentation (Art. 33)
-- Conduct general investigations (Art. 34)
-- Conduct on-site inspections (Art. 35)
-- Issue recommendations (Art. 36)
-- Issue follow-up recommendations for non-compliance (Art. 37)
-- Fees: CDR (EU) 2024/1505
+#### Art. 33–40 - Lead Overseer Tasks and Powers
+- Tasks of the Lead Overseer (Art. 33)
+- Operational coordination between Lead Overseers (Art. 34)
+- Powers of the Lead Overseer, including issuing recommendations (Art. 35;
+  recommendations are a power under Art. 35(1)(d))
+- Exercise of powers outside the Union (Art. 36)
+- Request for information (Art. 37)
+- General investigations (Art. 38)
+- Inspections (Art. 39)
+- Ongoing oversight, including joint examination teams (Art. 40; JETs at Art. 40(1))
 
-#### Art. 39–44 — Additional Oversight Provisions
+#### Art. 41–44 - Additional Oversight Provisions
 - Oversight activities harmonisation: CDR (EU) 2025/295 (RTS on Art. 41)
-- Information exchange between authorities (Art. 40)
-- Protection of confidential information (Art. 41)
+- Follow-up by competent authorities (Art. 42)
+- Oversight fees (Art. 43): CDR (EU) 2024/1505
 
 ---
 
-## Chapter VI — Information-Sharing Arrangements (Art. 45)
+## Chapter VI - Information-Sharing Arrangements (Art. 45)
 
 Financial entities may participate in voluntary **cyber threat intelligence sharing
 arrangements** with other financial entities. Requirements:
@@ -402,7 +405,7 @@ arrangements** with other financial entities. Requirements:
 
 ---
 
-## Gap Analysis — DORA Compliance Assessment
+## Gap Analysis - DORA Compliance Assessment
 
 ### Phase 1: Governance and Risk Framework (Chapter II)
 
@@ -427,7 +430,7 @@ arrangements** with other financial entities. Requirements:
 | Art. 17(1) Incident management process | Incident management policy | Process not documented; no classification criteria defined |
 | Art. 18(1) Incident classification | Classification matrix using CDR 2024/1772 thresholds | No formal classification; everything escalated manually |
 | Art. 19 Major incident reporting | Reporting SOP; template aligned with CIR 2025/302 | Competent authority not identified; no reporting procedure |
-| Art. 19 — 4h/72h/1-month timelines | SOP with timelines | Timelines unknown; no notification escalation chain |
+| Art. 19 - 4h/72h/1-month timelines | SOP with timelines | Timelines unknown; no notification escalation chain |
 
 ### Phase 3: Resilience Testing (Chapter IV)
 
@@ -443,14 +446,14 @@ arrangements** with other financial entities. Requirements:
 |----------------|-------------|-----------|
 | Art. 28(1) ICT third-party risk policy | Approved policy document | Vendor management policy exists but not ICT-risk-specific |
 | Art. 28(3) Register of Information | RoI per CIR 2024/2956 fields | No Register; or Register lacks mandatory fields |
-| Art. 28(6) ICT concentration risk assessment | Concentration risk report | No assessment; multiple critical functions on single cloud provider |
-| Art. 28(7) Exit strategy | Exit strategy plan per arrangement | No exit plans; SLAs do not address exit |
-| Art. 30(2) Contractual provisions | Contract review against Art. 30(2)(a)–(i) | Legacy contracts predate DORA; missing audit rights, exit rights |
-| Art. 30(2)(e) Audit and access rights | Contractual audit clause; evidence of use | Contracts with large cloud providers have no meaningful audit clause |
+| Art. 28(4)(c) + Art. 29 ICT concentration risk assessment | Concentration risk report | No assessment; multiple critical functions on single cloud provider |
+| Art. 28(8) Exit strategy | Exit strategy plan per arrangement | No exit plans; SLAs do not address exit |
+| Art. 30(2) Baseline contractual elements | Contract review against Art. 30(2)(a)–(i) | Legacy contracts predate DORA; baseline elements missing |
+| Art. 30(3) Audit, access, and inspection rights | Contractual audit clause; evidence of use | Contracts with large cloud providers have no meaningful audit clause |
 
 ---
 
-## Register of Information — Key Fields (CIR (EU) 2024/2956)
+## Register of Information - Key Fields (CIR (EU) 2024/2956)
 
 The Register of Information is the central inventory of all ICT service arrangements.
 It is submitted annually (or on demand) to the competent authority.
@@ -472,7 +475,7 @@ For the complete field set and template, see `references/third-party-risk.md`.
 
 ---
 
-## TLPT — Threat-Led Penetration Testing
+## TLPT - Threat-Led Penetration Testing
 
 **Applies to:** Financial entities meeting criteria in Art. 26(8), as further
 specified in CDR (EU) 2025/1190.
@@ -484,15 +487,15 @@ specified in CDR (EU) 2025/1190.
 
 **TLPT process (Art. 26 + CDR (EU) 2025/1190):**
 
-1. **Scope definition** — Identify critical functions and underlying ICT systems
-2. **Threat intelligence phase** — Commission threat intelligence report from
+1. **Scope definition** - Identify critical functions and underlying ICT systems
+2. **Threat intelligence phase** - Commission threat intelligence report from
    qualified provider on relevant threat actors and TTPs
-3. **Red team test** — External red team performs adversarial simulation
+3. **Red team test** - External red team performs adversarial simulation
    against live production systems
-4. **Remediation** — Entity remediates findings
-5. **Competent authority notification** — Before and after TLPT
-6. **Attestation letter** — Issued by competent authority upon satisfactory completion
-7. **Mutual recognition** — Results recognized across EU jurisdictions for
+4. **Remediation** - Entity remediates findings
+5. **Competent authority notification** - Before and after TLPT
+6. **Attestation letter** - Issued by competent authority upon satisfactory completion
+7. **Mutual recognition** - Results recognized across EU jurisdictions for
    entities operating cross-border
 
 **Frequency:** At least once every 3 years (Art. 26(1)).
@@ -507,21 +510,21 @@ specified in CDR (EU) 2025/1190.
 | Using EBA/GL/2019/04 as the current ICT guideline | That guideline has been superseded by DORA for in-scope entities since Jan 17, 2025 |
 | Treating "Chapter II" and "Chapter III" interchangeably | Chapter II = proactive risk framework; Chapter III = reactive incident management |
 | Calling TLPT a "penetration test" | TLPT is intelligence-led adversarial simulation, not a standard penetration test |
-| Assuming all vendors need Art. 30(2) provisions | Art. 30(3) provides lighter provisions for non-critical arrangements |
-| Submitting one incident report and closing the loop | DORA requires 3-stage reporting: initial (4h), intermediate (72h), final (1 month) |
+| Assuming only critical vendors need Art. 30(2) provisions | Art. 30(2) baseline elements apply to all ICT contracts; Art. 30(3) adds stricter provisions for critical/important functions |
+| Submitting one incident report and closing the loop | DORA requires 3-stage reporting: initial (4h from classification, max 24h from awareness), intermediate (72h from initial submission), final (1 month) |
 | Treating the Register of Information as a vendor list | The RoI has specific mandatory fields per CIR 2024/2956; a vendor list does not comply |
 
 ---
 
 ## Reference Files
 
-- `references/rts-its-guide.md` — All 12 adopted RTS/ITS: regulation numbers,
+- `references/rts-its-guide.md` - All 12 adopted RTS/ITS: regulation numbers,
   article mapping, and key requirements
-- `references/article-reference.md` — All 64 DORA articles with obligation
+- `references/article-reference.md` - All 64 DORA articles with obligation
   summaries and key sub-paragraph citations
-- `references/third-party-risk.md` — Deep-dive on Art. 28–44, Register of
+- `references/third-party-risk.md` - Deep-dive on Art. 28–44, Register of
   Information fields, contractual provisions, and ICT concentration risk
-- `references/incident-classification.md` — Art. 17–23 incident management,
+- `references/incident-classification.md` - Art. 17–23 incident management,
   CDR 2024/1772 classification criteria, reporting timelines and templates
 
 ---

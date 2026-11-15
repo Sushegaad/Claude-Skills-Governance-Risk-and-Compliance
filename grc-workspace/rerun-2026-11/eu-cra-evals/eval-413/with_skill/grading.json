@@ -1,0 +1,33 @@
+{
+  "eval_id": 413,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Reporting obligations (Article 14) apply since 11 September 2026",
+      "passed": true,
+      "evidence": "'11 September 2026: Art. 14 vulnerability and incident reporting applies (now in force)'"
+    },
+    {
+      "text": "Chapter IV notified-body provisions (Articles 35-51) apply from 11 June 2026",
+      "passed": true,
+      "evidence": "'Chapter IV (Arts. 35-51, ...notified bodies) applies' from 11 June 2026"
+    },
+    {
+      "text": "11 December 2026 is only the Article 35(2) target for a sufficient number of notified bodies",
+      "passed": true,
+      "evidence": "'11 December 2026 is not the application date of Chapter IV. It is only the Art. 35(2) target'"
+    },
+    {
+      "text": "Full application is 11 December 2027",
+      "passed": true,
+      "evidence": "'11 December 2027: Full application of all obligations'"
+    },
+    {
+      "text": "Mentions the minimum five-year support period obligation",
+      "passed": true,
+      "evidence": "'Define and publish support periods (minimum 5 years)'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

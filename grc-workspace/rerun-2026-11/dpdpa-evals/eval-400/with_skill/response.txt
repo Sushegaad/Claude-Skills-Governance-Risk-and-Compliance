@@ -1,0 +1,25 @@
+**Short answer:** Largely no, if the data relates only to EU residents located outside India and the work is done under a contract with the German controller. That fits the offshore-processing exemption in Section 17(1)(d). But the exemption is narrower than it first looks, so confirm the facts below.
+
+**Why the Act is engaged at all**
+Section 3 applies the Act to processing of digital personal data within India's territory. You process in India, so you are within scope. The question is whether an exemption removes the obligations.
+
+**The exemption: Section 17(1)(d)**
+Section 17(1)(d) exempts the processing within India of personal data of Data Principals who are not within India, under a contract with a person outside India (here, your German controller). The exemption lifts most of the Act's obligations (Chapter II Data Fiduciary duties, Chapter III Data Principal rights, and Section 16 on transfers), so you would not need to run Section 5 / Rule 3 notices, Section 6 consent, Section 11-14 rights handling, or the Section 10 SDF obligations for that data. In practice, the controller's GDPR obligations (Art. 28 processor terms, Chapter V transfers into India, Art. 32 security) will continue to bind you contractually, so you still have substantial obligations, but they come from GDPR and the contract, not the DPDP Act.
+
+**Conditions and traps to check**
+1. The data must be of Data Principals who are not within India. If any EU-controller data covers individuals located in India (an EU data set with Indian-resident customers, expats, travellers, or your own Indian staff, whose HR data is separate), the exemption does not cover those individuals.
+2. There must be a contract with a person outside India, and the processing must be under that contract. A written contract with the German controller satisfies this. Keep it current and in force.
+3. Scope of your role. The exemption covers processing under that contract. If you use the same data for your own purposes (analytics, product improvement, marketing), you become a Data Fiduciary for that processing and the exemption will not cover it. Keep a strict instruction-only posture.
+4. Your own Indian data is untouched. Your employees' data (the Section 7(i) employment use), your Indian customers, website visitors and vendors are in scope in full from 13 May 2027.
+5. Section 17(1) runs only (a) to (f). Do not rely on any other exemption clause from a checklist.
+6. Check precisely which provisions the exemption lifts. The exemption is partial. Read the gazetted text of Section 17(1) for what remains (the Board, Section 33 penalty machinery, and any provisions not in the exempted chapters). Do not assume it removes every obligation. Prudently keep Rule 6-grade security (encryption, access control, logs) anyway, because it is needed for GDPR Art. 32 and for your contract.
+7. Watch notifications: any future Central Government notification under Section 16 or exemption changes, and any SDF designation. Rule 13 and SDF duties are unlikely to attach if the exemption holds, but monitor the position.
+
+**Recommended actions**
+- Document the exemption analysis (data inventory showing data-subject location, the contract, and a statement of purposes).
+- Segregate EU-controller data from Indian-resident data in your systems and RoPA, so you can show which processing is exempt.
+- Keep the German controller's data-processing terms, sub-processor approvals and transfer mechanism (EU SCCs for transfers into India) in place. DPDPA exemption does not remove GDPR duties.
+- Build DPDPA readiness for the non-exempt Indian-resident data, with a deadline of 13 May 2027 (notice, consent, Rule 6 safeguards, Rule 7 breach intimation).
+- Ensure you can handle a breach under both regimes: for exempt data, the controller's notice-chain under GDPR Art. 33(2) applies, and for non-exempt data Rule 7 applies.
+
+This is general compliance information, not legal advice. Have counsel confirm the exemption on your facts.

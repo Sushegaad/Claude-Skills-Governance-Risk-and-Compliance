@@ -1,0 +1,10 @@
+Who runs the assessments depends on the level.
+- Level 1: the organization (OSA) does a self-assessment, with an annual affirmation by a senior official.
+- Level 2: either a self-assessment (for some non-prioritized CUI contracts) or a certification assessment by a C3PAO (Certified Third-Party Assessment Organization), depending on the solicitation. C3PAOs are authorized by the Cyber AB, the CMMC Accreditation Body, and use certified assessors (CCAs).
+- Level 3: DCMA DIBCAC runs it, and a Final Level 2 status is a prerequisite.
+
+Where results go:
+- Self-assessment results and affirmations are entered by the organization in SPRS (Supplier Performance Risk System).
+- C3PAO assessment results are uploaded to the DoD's CMMC eMASS system, which feeds SPRS. DIBCAC results go to eMASS and SPRS too.
+- Contracting officers check the status in SPRS to confirm eligibility for award.
+- Assessment artifacts are retained by the assessor for the required period, typically 6 years.

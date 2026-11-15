@@ -1,13 +1,13 @@
-# EU CRA — Conformity Assessment, CE Marking & Market Surveillance
+# EU CRA - Conformity Assessment, CE Marking & Market Surveillance
 
 ## Table of Contents
 1. [Conformity Assessment Routes by Product Class](#conformity-assessment-routes)
-2. [Module A — Self-Assessment](#module-a--self-assessment)
+2. [Module A - Self-Assessment](#module-a--self-assessment)
 3. [Notified Body Assessment (Class I option / Class II mandatory)](#notified-body-assessment)
 4. [Technical Documentation (Annex VII)](#technical-documentation-annex-vii)
 5. [EU Declaration of Conformity (Annex V)](#eu-declaration-of-conformity)
 6. [CE Marking Rules](#ce-marking-rules)
-7. [EU Database Registration](#eu-database-registration)
+7. [No EU Database Registration](#no-eu-database-registration)
 8. [Market Surveillance](#market-surveillance)
 9. [Penalties (Article 64)](#penalties-article-64)
 10. [CRA Harmonised Standards and Guidance](#harmonised-standards-and-guidance)
@@ -19,23 +19,24 @@
 | Product Class | Permitted Routes | Decision Authority |
 |---|---|---|
 | **Default** (all others) | Module A self-assessment only | Manufacturer |
-| **Class I** (Annex III) | Module A self-assessment OR Notified Body (manufacturer chooses) | Manufacturer |
-| **Class II** (Annex IV) | **Mandatory Notified Body** assessment | Notified Body + Manufacturer |
+| **Class I** (Annex III, important products, 19 categories) | Module A self-assessment OR Notified Body (manufacturer chooses) | Manufacturer |
+| **Class II** (Annex III, important products, 4 categories) | **Mandatory Notified Body** assessment | Notified Body + Manufacturer |
+| **Critical** (Annex IV, critical products, 3 categories) | May be made subject to **mandatory EU cybersecurity certification** | Certification scheme + Manufacturer |
 
 ### Important: Harmonised Standards
 Where **EU harmonised standards** covering the CRA's essential requirements have been adopted and published in the Official Journal, manufacturers who comply with those standards benefit from a **presumption of conformity** with the corresponding requirements. This simplifies the conformity assessment process significantly. ENISA and the standardisation bodies (CEN/CENELEC, ETSI) are developing standards aligned with CRA requirements. Key candidates include ETSI EN 303 645 (consumer IoT), IEC 62443 series (industrial), and EN ISO/IEC 27001 (ISMS).
 
 ---
 
-## Module A — Self-Assessment
+## Module A - Self-Assessment
 
 **Applicable to:** Default products; Class I products (manufacturer's choice).
 
 **Steps:**
-1. **Design and conduct internal testing** — test the product against all Annex I Part I and Part II requirements.
-2. **Prepare technical documentation** (Annex VII) — see below.
-3. **Review and internal approval** — senior technical officer or equivalent signs off on conformity.
-4. **Draw up EU Declaration of Conformity** (DoC) — see below.
+1. **Design and conduct internal testing** - test the product against all Annex I Part I and Part II requirements.
+2. **Prepare technical documentation** (Annex VII) - see below.
+3. **Review and internal approval** - senior technical officer or equivalent signs off on conformity.
+4. **Draw up EU Declaration of Conformity** (DoC) - see below.
 5. **Affix CE marking** to product, packaging, or accompanying documents.
 6. **Retain** technical documentation and DoC for 10 years.
 
@@ -52,17 +53,20 @@ Where **EU harmonised standards** covering the CRA's essential requirements have
 ### What is a Notified Body (NB)?
 A Notified Body is a **conformity assessment body (CAB)** that has been accredited by a national accreditation body (e.g., DAkkS in Germany, UKAS in UK/equivalent EU) and formally notified to the European Commission. NBs are listed in the NANDO database (New Approach Notified and Designated Organisations).
 
-**NB designation for CRA:** National authorities must designate NBs by **11 December 2026**. Until then, a transitional period applies.
+**NB designation for CRA:** Chapter IV (Arts. 35–51, notified bodies) applies
+from **11 June 2026**. **11 December 2026** is only the Art. 35(2) target date
+by which Member States are to strive to have a sufficient number of notified
+bodies available. Full application of the CRA follows on 11 December 2027.
 
 ### Assessment process (simplified):
 1. **Manufacturer prepares** complete technical documentation and application dossier.
-2. **NB reviews documentation** — completeness check; requests any missing information.
-3. **Technical examination** — NB performs or commissions testing against Annex I requirements; may audit the manufacturer's development and vulnerability handling processes.
-4. **Assessment report** — NB issues a positive or conditional assessment report.
-5. **Certificate of conformity** — NB issues an EU-type examination certificate (if applicable) or confirms conformity.
+2. **NB reviews documentation** - completeness check; requests any missing information.
+3. **Technical examination** - NB performs or commissions testing against Annex I requirements; may audit the manufacturer's development and vulnerability handling processes.
+4. **Assessment report** - NB issues a positive or conditional assessment report.
+5. **Certificate of conformity** - NB issues an EU-type examination certificate (if applicable) or confirms conformity.
 6. **Manufacturer draws up DoC** referencing the NB assessment.
 7. **Affix CE marking** and NB's four-digit identification number (e.g., CE 1234).
-8. **Surveillance** — NB may require periodic surveillance assessments for Class II products.
+8. **Surveillance** - NB may require periodic surveillance assessments for Class II products.
 
 ### Selecting a Notified Body
 - Confirm the NB is listed on NANDO for the relevant CRA module and product category.
@@ -91,7 +95,7 @@ Technical documentation must demonstrate that the product meets all Annex I esse
    - Software components list (SBOM or equivalent)
 
 3. **Cybersecurity risk assessment:**
-   - Threat model — assets, threat actors, attack vectors
+   - Threat model - assets, threat actors, attack vectors
    - Risk analysis methodology used (e.g., STRIDE, TARA, IEC 62443-3-2)
    - Risk treatment decisions for each identified risk
    - Residual risks and accepted risks
@@ -154,7 +158,7 @@ The DoC is the manufacturer's formal declaration that the product meets all appl
 ### CE marking for Class I and II with Notified Body
 - The NB's **four-digit identification number** must be affixed immediately after the CE marking
 - The NB number is assigned by the European Commission when the NB is notified
-- Format: CE [space] [NB number] — e.g., CE 1234
+- Format: CE [space] [NB number] - e.g., CE 1234
 
 ### What CE marking certifies under CRA
 - The product meets all **essential cybersecurity requirements** of Annex I
@@ -164,25 +168,17 @@ The DoC is the manufacturer's formal declaration that the product meets all appl
 
 ### What CE marking does NOT certify under CRA
 - Ongoing security of future software updates (vulnerability handling is ongoing)
-- That the product has no vulnerabilities — only that known exploitable vulnerabilities were absent at time of market placement
+- That the product has no vulnerabilities - only that known exploitable vulnerabilities were absent at time of market placement
 
 ---
 
-## EU Database Registration
+## No EU Database Registration
 
-**Class I and Class II products** must be registered in the **EU database for products with digital elements** before being placed on the market (once the database is operational — expected by December 2027).
-
-Registration information includes:
-- Product name, type, version
-- Product description and intended use
-- Product class (Class I or Class II)
-- Annex III or IV category reference
-- Manufacturer details
-- Notified Body certificate number (if applicable)
-- Vulnerability reporting contact information
-- Support period
-
-Default class products are **not required** to register in the EU database.
+The CRA contains **no product registration database obligation**. Conformity is
+demonstrated through the **EU Declaration of Conformity (DoC)** and **CE
+marking**, supported by the technical documentation. The only registration-like
+duty under the CRA is the use of the **ENISA single reporting platform** for
+Article 14 reports (actively exploited vulnerabilities and severe incidents).
 
 ---
 
@@ -218,7 +214,7 @@ If a national MSA finds a product presents an unacceptable cybersecurity risk, i
 | Infringement | Maximum Fine |
 |---|---|
 | Non-compliance with Annex I essential requirements (Part I or Part II) | **€15 million** or **2.5% of global annual worldwide turnover** of the preceding financial year, whichever is higher |
-| Non-compliance with other obligations (Art. 13–16, 23, 27, 28, 31, 37, 38, 40) | **€10 million** or **2% of global annual worldwide turnover**, whichever is higher |
+| Non-compliance with the other obligations listed in Art. 64(2) | **€10 million** or **2% of global annual worldwide turnover**, whichever is higher |
 | Providing incorrect, incomplete, or misleading information to authorities | **€5 million** or **1% of global annual worldwide turnover**, whichever is higher |
 
 ### Proportionality factors (Article 64(6))
@@ -248,14 +244,14 @@ The European Commission will mandate standardisation bodies to develop CRA-align
 
 | Standard | Relevance |
 |---|---|
-| **ETSI EN 303 645** | Consumer IoT cybersecurity — directly aligned with many Annex I Part I requirements |
+| **ETSI EN 303 645** | Consumer IoT cybersecurity - directly aligned with many Annex I Part I requirements |
 | **IEC 62443 series** | Industrial automation and control system security |
-| **ISO/IEC 27001:2022** | ISMS — supports organisational security governance |
+| **ISO/IEC 27001:2022** | ISMS - supports organisational security governance |
 | **IEC 62443-4-2** | Component security for OT products |
 | **ETSI EN 303 645 + TS 103 701** | Assessment methodology for consumer IoT |
 | **ISO/IEC 29147** | Vulnerability disclosure |
 | **ISO/IEC 30111** | Vulnerability handling processes |
-| **NIST SSDF (SP 800-218)** | Secure software development framework — aligns with development obligations |
+| **NIST SSDF (SP 800-218)** | Secure software development framework - aligns with development obligations |
 
 ### ENISA guidance documents
 - ENISA regularly publishes non-binding guidance on CRA implementation. Check enisa.europa.eu for:

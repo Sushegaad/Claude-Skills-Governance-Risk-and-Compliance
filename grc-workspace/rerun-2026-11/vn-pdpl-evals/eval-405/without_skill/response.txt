@@ -1,0 +1,5 @@
+I cannot cite exact article numbers with confidence. From memory, the PDPL (Law 91/2025/QH15) has a chapter on personal data processing in specific cases and sectors, which covers:
+- Employee data and monitoring: recruitment and employment data, with requirements of lawful basis, notice and proportionality when monitoring (cameras, devices, location). Decree 13/2023 and labour law also apply.
+- Banking and finance: credit information, financial and bank data (a sensitive category) with stronger security, and limits on sharing and on data used for credit scoring. Banking law and State Bank rules apply as well.
+- AI and cloud: provisions on big data, AI and cloud computing, with transparency, risk assessment and security duties, and rules that AI must not be used to process data unlawfully. These interact with the Data Law, the Law on Digital Technology Industry and the AI Law.
+Also relevant are the cross-border transfer impact assessment requirements. Check the official text for exact article numbers.

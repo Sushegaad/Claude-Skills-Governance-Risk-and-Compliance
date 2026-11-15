@@ -1,0 +1,33 @@
+LGPD (Law 13,709/2018, as amended by Law 13,853/2019) chapter map, with the two locations you asked about first.
+
+Where termination of processing sits
+- Chapter II (Processing of Personal Data), Section IV, "Término do Tratamento de Dados": Art. 15 defines the events on which processing terminates, and Art. 16 requires elimination of the data after termination, subject to the retention exceptions listed there. Art. 18, VI (deletion of consent-based data) cross-refers to Art. 16.
+
+Where the ANPD sits
+- Chapter IX (Autoridade Nacional de Proteção de Dados and Conselho Nacional de Proteção de Dados Pessoais e da Privacidade), starting at Art. 55-A. Art. 55-A establishes the ANPD, and the competencies are in Art. 55-J.
+- Law 15.352/2026 (DOU, 25 February 2026, converting MP 1.317/2025) turned the ANPD into an autarquia de regime especial with functional, decision-making and financial autonomy.
+- Its sanctioning power (Arts. 52-54) is in Chapter VIII, not Chapter IX.
+
+Full chapter map
+| Chapter | Subject | Articles |
+|---|---|---|
+| I | General provisions: purpose, foundations, scope, exemptions, definitions, principles | 1-6 |
+| II | Processing of personal data. Section I: legal bases (Arts. 7-10). Section II: sensitive data (Art. 11-13). Section III: children and adolescents (Art. 14). Section IV: termination (Arts. 15-16) | 7-16 |
+| III | Data subject rights | 17-22 |
+| IV | Processing by public authorities | 23-32 |
+| V | International data transfer | 33-36 |
+| VI | Processing agents: controller and processor (Arts. 37-40), encarregado/DPO (Art. 41), liability and damages (Arts. 42-45) | 37-45 |
+| VII | Security and good practice: security and secrecy (Arts. 46-49, including Art. 48 incident notification), governance and good practices (Arts. 50-51) | 46-51 |
+| VIII | Fiscalização (oversight): administrative sanctions | 52-54 |
+| IX | ANPD and the CNPD | 55-A onward |
+| X | Final and transitional provisions | remaining articles |
+
+Note on section grouping: this reference groups Arts. 11-13 (sensitive data, anonymised data, research) as a sub-part of Chapter II. Art. 14 (children and adolescents) follows, then Section IV. If you cite by section in a formal document, confirm the official Planalto text, because the section numbering inside Chapter II is easy to misquote.
+
+Quick pointers
+- Legal bases: Art. 7 (ten bases) and Art. 11 (sensitive).
+- Rights: Art. 18. Breach notice: Art. 48 (3 working days preliminary under Resolution CD/ANPD 15/2024, 20 working days full report).
+- Transfers: Arts. 33-36. EU/EEA is adequate since January 2026 (Resolution CD/ANPD 32/2026).
+- Sanctions: Art. 52 (fines up to 2% of Brazilian revenue, R$50 million per violation). Art. 54 covers the criteria for the daily fine.
+
+General information, not legal advice.

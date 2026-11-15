@@ -1,0 +1,13 @@
+{
+  "eval_id": 410,
+  "eval_name": "final-provisions",
+  "run_type": "without_skill",
+  "prompt": "What do DORA Articles 54 through 58 cover, and which regulations do Articles 59 and 62 amend?",
+  "assertions": [
+    "Article 54 = publication of administrative penalties",
+    "Article 55 = professional secrecy",
+    "Article 56 = data protection",
+    "Article 58 = review clause",
+    "Article 59 amends Regulation (EC) 1060/2009 (credit rating agencies) and Article 62 amends Regulation (EU) 600/2014 (MiFIR), not AIFMD"
+  ]
+}

@@ -1,0 +1,25 @@
+DPDP Act, 2023: key penalty exposures and statutory anchors
+
+Penalties are imposed by the Data Protection Board under Section 33, after an inquiry, in the amounts set out in the Schedule. They are maximums ("may extend to"). Penalties are not per-incident caps: each breach can attract its own penalty.
+
+Schedule (Section 33(1)):
+1. Breach of the duty to take reasonable security safeguards to prevent a personal data breach - Section 8(5): up to Rs 250 crore.
+2. Failure to give the Board or affected Data Principals notice of a personal data breach - Section 8(6): up to Rs 200 crore.
+3. Breach of additional obligations concerning children (verifiable parental consent, no detrimental processing, no tracking/behavioural monitoring or targeted advertising) - Section 9: up to Rs 200 crore.
+4. Breach of additional obligations of a Significant Data Fiduciary (DPO in India, independent data auditor, DPIA and periodic audit) - Section 10: up to Rs 150 crore.
+5. Breach of the duties of a Data Principal (e.g. false grievance, impersonation, suppressing material information) - Section 15: up to Rs 10,000.
+6. Breach of a voluntary undertaking accepted by the Board - Section 32(3): up to the extent applicable to the breach in respect of which the undertaking was given.
+7. Residuary: breach of any other provision of the Act or Rules - up to Rs 50 crore. This catches things like notice/consent failures (ss. 4-6), s. 8 obligations other than 8(5) and 8(6) (accuracy, erasure, processor contract, grievance mechanism and so on), and Chapter III rights.
+
+Factors the Board weighs (Section 33(2)): nature, gravity and duration of the breach; type and nature of the personal data affected; repetitive nature; whether the person realised a gain or avoided a loss; whether they took action to mitigate the effects; proportionality of the penalty to the person's ability to pay, and the likely impact on them; and the effect of the penalty on other relevant points.
+
+Related provisions:
+- Section 34: sums realised go to the Consolidated Fund of India.
+- Section 32: voluntary undertaking can avoid a penalty on that subject matter.
+- Section 29: appeal to the TDSAT (within 60 days).
+- Section 37: Central Government may direct blocking of access to a Data Fiduciary's platform after repeated Section 33 penalties (two or more) and on the Board's advice.
+- Section 27 and 28: Board's powers, including directing urgent remedial measures, and inquiry.
+- Section 8(1) and 8(2): the Data Fiduciary stays responsible for processing by its Processor, so processor failures flow back to you.
+- Section 17(1)(d) partly exempts certain foreign-data processing but not ss. 8(1) and 8(5).
+
+Note that no imprisonment and no compensation to Data Principals is provided under the Act. The 2023 Act removed the earlier compensation provision. A percentage-of-turnover model was also dropped. Verify the figures against the gazetted Schedule.

@@ -1,0 +1,33 @@
+{
+  "eval_id": 406,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Request for information = Article 37",
+      "passed": true,
+      "evidence": "'Art. 37 - Request for information'"
+    },
+    {
+      "text": "General investigations = Article 38",
+      "passed": true,
+      "evidence": "'Art. 38 - General investigations'"
+    },
+    {
+      "text": "Inspections = Article 39",
+      "passed": true,
+      "evidence": "'Art. 39 - Inspections'"
+    },
+    {
+      "text": "Joint examination teams = Article 40(1)",
+      "passed": true,
+      "evidence": "'The legal basis is Art. 40(1), which sets up joint examination teams'"
+    },
+    {
+      "text": "Recommendations flow from the Lead Overseer's powers in Article 35, and oversight fees are Article 43",
+      "passed": true,
+      "evidence": "'Art. 35 - Powers of the Lead Overseer... issuing recommendations... under Art. 35(1)(d)' and 'Art. 43 - Oversight fees'"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

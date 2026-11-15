@@ -1,0 +1,33 @@
+{
+  "eval_id": 404,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies the Article 38 opt-out covering Articles 21, 22 and 33(2)",
+      "passed": false,
+      "evidence": "Never cites Article 38 or the actual deferred provisions (Arts. 21, 22, 33(2)); instead names DPO appointment and transfer assessments as the deferred items"
+    },
+    {
+      "text": "States the opt-out runs five years",
+      "passed": true,
+      "evidence": "States the relief 'I believe 5 years from the effective date (to about 1 January 2031)' and repeats 'the relief is, as I recall, 5 years'"
+    },
+    {
+      "text": "Notes micro-enterprises and household businesses are exempt from the same provisions",
+      "passed": true,
+      "evidence": "'Micro enterprises, small enterprises and startups (and household businesses) get a transitional period' - same relief extended to them"
+    },
+    {
+      "text": "Makes clear other PDPL duties still apply",
+      "passed": true,
+      "evidence": "'Core obligations are not deferred: lawful basis and consent, notice, data subject rights, security measures, breach notification...'"
+    },
+    {
+      "text": "Does not cite invented chapter numbers",
+      "passed": true,
+      "evidence": "Cites no chapter numbers at all, so none invented"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

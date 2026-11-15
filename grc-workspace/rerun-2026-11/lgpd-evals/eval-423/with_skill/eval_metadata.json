@@ -1,0 +1,13 @@
+{
+  "eval_id": 423,
+  "eval_name": "prescription",
+  "run_type": "with_skill",
+  "prompt": "Is there a statute of limitations on ANPD fines, and what does LGPD Article 54 actually govern?",
+  "assertions": [
+    "States Article 54 sets the daily-fine criteria, not a limitation period",
+    "States the five-year administrative prescription comes from Lei 9.873/1999",
+    "Counts it from the act, or from cessation for continuing violations",
+    "Does not say it runs from ANPD awareness",
+    "Cites Res. CD/ANPD 4/2023 as the dosimetry regulation"
+  ]
+}

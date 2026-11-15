@@ -1,0 +1,33 @@
+{
+  "eval_id": 422,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Chapter I = Articles 1-6",
+      "passed": true,
+      "evidence": "'Chapter I - Preliminary Provisions (Arts. 1-6)'"
+    },
+    {
+      "text": "Articles 15-16 (termination and elimination) sit in Chapter II",
+      "passed": true,
+      "evidence": "'Termination of processing is in Chapter II, Section IV: Arts. 15-16'"
+    },
+    {
+      "text": "Chapter VIII = inspection/sanctions (Articles 52-54)",
+      "passed": true,
+      "evidence": "'Chapter VIII - Supervision (Arts. 52-54): administrative sanctions'"
+    },
+    {
+      "text": "Chapter IX = ANPD and CNPD (Article 55-A onward)",
+      "passed": true,
+      "evidence": "'Chapter IX - The ANPD and the National Council... (Arts. 55-A...)' with ANPD sitting there"
+    },
+    {
+      "text": "Does not use an invented range like 'Arts. 55-A to 55-L'",
+      "passed": false,
+      "evidence": "Uses the invented range twice: '(Arts. 55-A to 55-L, 56-59)' and 'Section I: ANPD (Arts. 55-A to 55-L)'"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

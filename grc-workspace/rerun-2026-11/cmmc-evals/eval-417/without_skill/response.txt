@@ -1,0 +1,14 @@
+Yes, in principle. Under the CMMC program rule (32 CFR 170.21), a Conditional Level 2 status is allowed if two conditions hold.
+
+1. The assessment score is at least 88 of 110 points (80 percent).
+2. Every unmet requirement is on the list of POA&M-eligible requirements.
+
+3.13.11 is a special case. It is normally worth 5 points. The rule allows a partial credit and POA&M when encryption is employed but not FIPS-validated. In that case the requirement is scored 3 points instead of 5, and it may be placed on a POA&M. So a gap that is only 3.13.11 would cost 3 points (score about 107) and is POA&M-eligible.
+
+Conditions that apply:
+- The POA&M must be closed out, and verified by a closeout assessment, within 180 days of the Conditional status date. If it is not, the Conditional status expires.
+- After closeout, the status becomes Final Level 2 (valid 3 years, with annual affirmations).
+- The POA&M must not include requirements outside the eligible list, and the score must stay at or above 88.
+- Encryption that is not FIPS-validated and not used at all is a different case. In that situation the requirement is simply NOT MET at full point value.
+
+Practical advice: confirm with your C3PAO how it will document the partial credit. Plan to move to a FIPS-validated cryptographic module (a CMVP certificate, not just "FIPS-compliant" algorithms) well before the 180 days run out.

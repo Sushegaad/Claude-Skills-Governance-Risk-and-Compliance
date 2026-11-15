@@ -1,4 +1,4 @@
-# DORA — ICT Third-Party Risk Management Reference
+# DORA - ICT Third-Party Risk Management Reference
 
 Chapter V, Articles 28–44, Regulation (EU) 2022/2554.
 Key implementing measures: CDR (EU) 2024/1773, CIR (EU) 2024/2956, CDR (EU) 2025/532,
@@ -10,19 +10,19 @@ CDR (EU) 2024/1502, CDR (EU) 2024/1505, CDR (EU) 2025/295, CDR (EU) 2025/420.
 
 Chapter V operates on two parallel tracks:
 
-**Track 1 — Entity-level obligations (Art. 28–30):**
-Every financial entity must manage its own ICT third-party risks — regardless of
+**Track 1 - Entity-level obligations (Art. 28–30):**
+Every financial entity must manage its own ICT third-party risks - regardless of
 whether its TPSPs are designated critical.
 
-**Track 2 — Systemic oversight of designated CTPPs (Art. 31–44):**
+**Track 2 - Systemic oversight of designated CTPPs (Art. 31–44):**
 ESAs designate and oversee ICT TPSPs that are systemically important to the
 EU financial sector. This is a supervisory regime, not an entity-level compliance task.
 
 ---
 
-## Art. 28 — General Principles for ICT Third-Party Risk
+## Art. 28 - General Principles for ICT Third-Party Risk
 
-### Art. 28(1) — ICT Third-Party Risk Policy
+### Art. 28(1) - ICT Third-Party Risk Policy
 Every financial entity must adopt, regularly review, and update an **ICT third-party
 risk policy** covering:
 - Objectives and principles for managing ICT third-party risk
@@ -34,32 +34,33 @@ risk policy** covering:
 
 **Key RTS:** CDR (EU) 2024/1773, Art. 1–12 (detailed policy content)
 
-### Art. 28(2) — Maintaining the Register of Information
+### Art. 28(3) - Register of Information: Maintenance and Annual Submission
 Financial entities must maintain and update the **Register of Information** (RoI)
 covering **all** ICT service arrangements (not only those supporting critical
-functions). See the Register of Information section below for full field details.
+functions), and must submit it to the competent authority **at least annually**
+and upon specific request. Both RoI duties (maintenance and annual submission)
+sit in Art. 28(3). The submission format follows CIR (EU) 2024/2956 templates.
+See the Register of Information section below for full field details.
 
-### Art. 28(3) — Annual Submission of Register of Information
-The RoI must be submitted to the competent authority **at least annually** and
-upon specific request. The submission format follows CIR (EU) 2024/2956 templates.
-
-### Art. 28(4) — Pre-Contractual Due Diligence
+### Art. 28(4) - Pre-Contractual Due Diligence
 Before entering any new ICT service arrangement supporting a critical or important
 function, financial entities must:
 - **(a)** Assess whether the ICT service arrangement supports a critical or important function
-- **(b)** Assess the risks of the arrangement, including ICT concentration risk
-- **(c)** Carry out appropriate due diligence on prospective ICT TPSPs
+- **(b)** Carry out appropriate due diligence on prospective ICT TPSPs
+- **(c)** Assess the **ICT concentration risk** of the arrangement; this is
+  where the entity-level concentration risk duty sits (Art. 28(4)(c); see also
+  Art. 29)
 
 The due diligence must be documented and commensurate with the criticality of
 the function.
 
-### Art. 28(5) — Ongoing Monitoring of ICT TPSPs
+### Art. 28(5) - Ongoing Monitoring of ICT TPSPs
 - Monitor the performance, security posture, and compliance of ICT TPSPs
   throughout the contract lifecycle
 - Conduct regular reviews aligned with the contract terms and risk profile
 - Verify that ICT TPSPs continue to meet agreed service levels and security standards
 
-### Art. 28(6) — ICT Concentration Risk Assessment
+### ICT Concentration Risk Assessment (Art. 28(4)(c) and Art. 29)
 Financial entities must:
 - Assess the **concentration risk** arising from reliance on a single or limited
   number of ICT TPSPs for critical functions
@@ -71,7 +72,15 @@ Financial entities must:
 provider) for core banking, treasury, and fraud detection creates high concentration
 risk even if the TPSP is not designated critical.
 
-### Art. 28(7) — Exit Strategy
+### Art. 28(6) - Audit and Inspection Frequency
+Financial entities must pre-determine the **frequency of audits and inspections**
+of ICT TPSPs and the **areas to be audited or inspected**.
+
+### Art. 28(7) - Termination Rights
+Financial entities must ensure that ICT service arrangements can be
+**terminated** in the circumstances required by DORA.
+
+### Art. 28(8) - Exit Strategy
 For each ICT arrangement supporting a critical or important function, financial entities must:
 - Develop and maintain an **exit strategy** covering:
   - Conditions and triggers for exit
@@ -82,7 +91,7 @@ For each ICT arrangement supporting a critical or important function, financial 
 
 ---
 
-## Art. 29 — Preliminary Assessment of ICT Concentration Risk
+## Art. 29 - Preliminary Assessment of ICT Concentration Risk
 
 Before entering a new arrangement that would cause an entity's concentration in
 a single TPSP to increase for critical functions:
@@ -91,17 +100,20 @@ a single TPSP to increase for critical functions:
 - Consider the systemic implications if the concentrated TPSP were to fail
 
 This is a transaction-specific obligation (triggered by entering a new arrangement)
-rather than an ongoing monitoring obligation (which is covered by Art. 28(6)).
+that complements the pre-contractual concentration risk assessment at Art. 28(4)(c).
 
 ---
 
-## Art. 30 — Key Contractual Provisions
+## Art. 30 - Key Contractual Provisions
 
-### Scope: When does Art. 30(2) apply?
+### Scope: How Art. 30(2) and Art. 30(3) fit together
 
-Art. 30(2) applies to contracts for ICT services that support **critical or important
-functions**. A lighter set of provisions applies to non-critical arrangements
-(Art. 30(3)).
+**Art. 30(2)** sets the baseline contractual elements (a)–(i) required in
+contracts for **all** ICT services. **Art. 30(3)** adds, in addition, a stricter
+set of provisions for contracts supporting **critical or important functions**:
+full service level descriptions, unrestricted audit/access/inspection rights,
+TLPT participation, and exit strategies with a mandatory transition period
+(Art. 30(3)(f)).
 
 ### Critical or Important Function (CIF)
 
@@ -112,62 +124,73 @@ A function is critical or important if its disruption would:
 
 The criteria for identifying CIF are further specified in CDR (EU) 2024/1773.
 
-### Mandatory Contractual Provisions — Art. 30(2)(a)–(i)
+### Baseline Contractual Elements - Art. 30(2)(a)–(i) (all ICT contracts)
+
+Art. 30(2) requires baseline elements (a)–(i) in **every** ICT service contract,
+covering matters such as:
+
+- Clear and complete description of the ICT services
+- Locations where services are provided and data is stored/processed, with
+  notification obligations if locations change
+- Data protection provisions; compliance with applicable data protection law
+  (GDPR where applicable)
+- Availability, authenticity, integrity, and security of data
+- Incident reporting and monitoring cooperation by the TPSP
+- Termination rights and minimum notice periods
+- Data portability, return, and migration assistance on termination
+- Conditions for sub-contracting
+
+### Additional Provisions for Critical or Important Functions - Art. 30(3)
+
+In addition to the Art. 30(2) baseline, contracts supporting critical or
+important functions must include:
 
 | Provision | DORA Requirement |
 |-----------|-----------------|
-| **(a)** Service description | Clear and complete description of the ICT services to be provided |
-| **(b)** Data locations | Location(s) where services will be provided and data stored/processed, including notification obligations if locations change |
-| **(c)** Data protection | Provisions ensuring data protection; compliance with applicable data protection law (GDPR where applicable) |
-| **(d)** Availability, authenticity, integrity, security | Service level specifications; security standards; incident response obligations of the TPSP |
-| **(e)** Audit and access rights | **Full and unrestricted audit rights** for the financial entity, its competent authorities (including ECB for significant institutions), and resolution authorities — including on-site inspection rights at the TPSP's premises |
-| **(f)** Termination rights | Conditions under which the financial entity may terminate; minimum notice periods; the TPSP's obligation to provide transition services |
-| **(g)** Reporting and monitoring | ICT incident reporting by the TPSP to the financial entity; performance monitoring; regular service reviews |
-| **(h)** Data portability and migration | On termination, the TPSP must provide all data in machine-readable format; migration assistance; data deletion certification |
-| **(i)** Sub-contracting | Conditions under which the TPSP may sub-contract ICT services; prior written consent requirement; equivalent contractual provisions in sub-processor contracts; right to audit sub-processors |
+| Full service level descriptions | Complete SLAs with precise quantitative and qualitative performance targets |
+| Audit, access, and inspection rights | **Unrestricted** rights of access, inspection, and audit for the financial entity, its competent authorities (including ECB for significant institutions), and resolution authorities, including on-site inspection rights at the TPSP's premises |
+| TLPT participation | The TPSP participates in the entity's threat-led penetration testing |
+| Exit strategies | Exit strategies with a **mandatory transition period** (Art. 30(3)(f)) |
 
 **Key RTS:** CDR (EU) 2024/1773 specifies the detailed content of each provision.
 **Key RTS:** CDR (EU) 2025/532 specifies sub-contracting provisions in detail.
 
-### The Audit Rights Problem (Art. 30(2)(e))
+### The Audit Rights Problem (Art. 30(3))
 
 The most common contractual gap: large cloud providers offer only third-party
 audit reports (e.g., SOC 2, ISO 27001 certificates) rather than direct audit
-rights. DORA Art. 30(2)(e) requires:
+rights. For critical or important functions, DORA Art. 30(3) requires:
 - **Full and unrestricted** audit rights for the financial entity
-- **Access rights for competent authorities** — including the right to inspect
+- **Access rights for competent authorities** - including the right to inspect
   the TPSP's premises
 
 ESA guidance has clarified that:
 - Pooled or third-party audits (SOC 2, ISO 27001 certification) may partially
   satisfy the **entity's own audit right** where direct audit is genuinely
-  impracticable at hyperscale TPSPs — but only if the entity documents in writing
+  impracticable at hyperscale TPSPs - but only if the entity documents in writing
   why direct audit is impracticable and confirms the pooled audit outputs are
   meaningful and sufficient
 - Financial entities must still document their assessment of why pooled audits
   are acceptable and ensure they receive meaningful, entity-specific outputs
 - **The competent authority's (and resolution authority's) on-site inspection
-  right under Art. 30(2)(e) is NON-WAIVABLE.** Even where the entity accepts
+  right under Art. 30(3) is NON-WAIVABLE.** Even where the entity accepts
   pooled audits, the contract must contain an express, unconditional clause
   preserving the competent authority's right to inspect the TPSP's premises
   directly. A clause that routes the authority's access through the TPSP's
-  third-party audit programme does NOT satisfy Art. 30(2)(e). This is a common
+  third-party audit programme does NOT satisfy Art. 30(3). This is a common
   failure in standard cloud provider contracts.
 - Acceptance of pooled audits must be documented with a written risk acceptance
   approved at an appropriate governance level (e.g., CRO or board)
 
-### Lighter Provisions for Non-Critical Arrangements (Art. 30(3))
+### Non-Critical Arrangements
 
-For ICT service arrangements that do not support critical or important functions:
-- Service description
-- Data locations
-- Basic availability and security commitments
-- Incident notification obligations
-- Exit/termination provisions
+For ICT service arrangements that do not support critical or important
+functions, the Art. 30(2) baseline elements (a)–(i) still apply. Only the
+additional Art. 30(3) provisions (full SLAs, unrestricted audit/access/
+inspection rights, TLPT participation, exit strategies with transition period)
+are limited to critical or important function contracts.
 
-Full Art. 30(2) provisions are not required.
-
-### Art. 30(4) — Review Before Renewal
+### Art. 30(4) - Review Before Renewal
 
 Before renewing any contract for ICT services supporting critical functions,
 financial entities must review whether:
@@ -178,7 +201,7 @@ financial entities must review whether:
 
 ---
 
-## Register of Information — Complete Field Reference (CIR (EU) 2024/2956)
+## Register of Information - Complete Field Reference (CIR (EU) 2024/2956)
 
 ### When to Maintain and Submit
 
@@ -190,7 +213,7 @@ financial entities must review whether:
 
 ### Complete Field Set
 
-The RoI is structured around **arrangements** — each row represents one ICT
+The RoI is structured around **arrangements** - each row represents one ICT
 service arrangement.
 
 | Field | Field Name (CIR 2024/2956) | Description |
@@ -206,7 +229,7 @@ service arrangement.
 | 9 | TPSP within group? | Is the TPSP part of the same corporate group as the entity? |
 | 10 | ICT service type | Nature of services (per CIR classification codes) |
 | 11 | ICT service description | Free-text description of specific services |
-| 12 | Critical or important function (CIF)? | Y/N — does this arrangement support a CIF? |
+| 12 | Critical or important function (CIF)? | Y/N - does this arrangement support a CIF? |
 | 13 | Function identifier | Reference to the function(s) supported |
 | 14 | Function description | Description of the supported function |
 | 15 | Data types processed | Classification of personal/non-personal data processed |
@@ -216,16 +239,16 @@ service arrangement.
 | 19 | Contract start date | Effective date of the arrangement |
 | 20 | Contract end date or rolling | End date or indication of indefinite/rolling |
 | 21 | Notice period for termination | Minimum notice period (in days) |
-| 22 | Sub-processors used? | Y/N — does the TPSP sub-contract any services? |
+| 22 | Sub-processors used? | Y/N - does the TPSP sub-contract any services? |
 | 23 | Sub-processor names and LEIs | Name and LEI of each sub-processor |
 | 24 | Sub-processor data locations | Country(ies) of data processing by sub-processors |
-| 25 | Substitutability assessment | High / Medium / Low — ease of replacing this TPSP |
+| 25 | Substitutability assessment | High / Medium / Low - ease of replacing this TPSP |
 | 26 | Exit strategy reference | Reference to the exit strategy document for this arrangement |
 | 27 | Last due diligence date | Date of most recent due diligence assessment |
-| 28 | Audit rights exercisable? | Y/N — can audit rights be exercised per contract? |
+| 28 | Audit rights exercisable? | Y/N - can audit rights be exercised per contract? |
 | 29 | Audit method | Direct audit / pooled audit / third-party certification |
 
-### Register of Information — Key Points
+### Register of Information - Key Points
 
 1. **All arrangements, not just critical ones.** The RoI covers every ICT service
    arrangement, not only those supporting critical or important functions. The
@@ -244,7 +267,7 @@ service arrangement.
 
 ---
 
-## ICT Concentration Risk — Practical Assessment
+## ICT Concentration Risk - Practical Assessment
 
 ### What constitutes concentration risk under DORA?
 
@@ -252,7 +275,7 @@ service arrangement.
 (e.g., core banking, fraud detection, and AML all on the same cloud provider).
 
 **Sectoral concentration:** Many financial entities within the EU using the same
-TPSP for critical functions — creating systemic risk even if each entity's own
+TPSP for critical functions - creating systemic risk even if each entity's own
 dependency appears manageable.
 
 **Geographic concentration:** All data and processing in a single geographic region
@@ -292,58 +315,62 @@ CDR (EU) 2024/1502 criteria. The designation process:
 
 ### Lead Overseer Assignment (Art. 32)
 
-Each designated CTPSP is assigned a **Lead Overseer** — one of EBA, ESMA, or EIOPA
-— based on the predominant type of financial entity served. The Lead Overseer
+Each designated CTPSP is assigned a **Lead Overseer** - one of EBA, ESMA, or EIOPA
+- based on the predominant type of financial entity served. The Lead Overseer
 coordinates with other ESAs via the **Joint Oversight Network (JON)**.
 
-**Joint Examination Teams (JETs):** Per CDR (EU) 2025/420, JETs are assembled
+**Joint Examination Teams (JETs):** Per Art. 40(1) and CDR (EU) 2025/420, JETs are assembled
 from Lead Overseer and national authority staff to conduct on-site and off-site
 examinations of CTPPs.
 
-### Oversight Powers (Art. 33–38)
+### Oversight Tasks and Powers (Art. 33–43)
 
-| Power | Description |
-|-------|-------------|
-| Art. 33 — Information requests | Lead Overseer can require CTTPSs to provide information, data, and documents |
-| Art. 34 — General investigations | Including interviews, document reviews |
-| Art. 35 — On-site inspections | Physical inspection of CTPSP premises and systems |
-| Art. 36 — Recommendations | Lead Overseer issues recommendations for improvement |
-| Art. 37 — Follow-up | Follow-up recommendations and potential escalation |
-| Art. 38 — Oversight fees | Annual fees per CDR (EU) 2024/1505 |
+| Article | Description |
+|---------|-------------|
+| Art. 33 - Tasks of the Lead Overseer | Tasks of the Lead Overseer for its assigned CTPPs |
+| Art. 34 - Operational coordination | Operational coordination between Lead Overseers |
+| Art. 35 - Powers of the Lead Overseer | Lead Overseer powers, including issuing recommendations (a power under Art. 35(1)(d)) |
+| Art. 36 - Powers outside the Union | Exercise of the Lead Overseer's powers outside the Union |
+| Art. 37 - Request for information | Lead Overseer can require CTPPs to provide information, data, and documents |
+| Art. 38 - General investigations | Including interviews, document reviews |
+| Art. 39 - Inspections | Physical inspection of CTPSP premises and systems |
+| Art. 40 - Ongoing oversight | Ongoing oversight; joint examination teams under Art. 40(1) |
+| Art. 42 - Follow-up by competent authorities | Competent authorities follow up on oversight outcomes for supervised entities |
+| Art. 43 - Oversight fees | Annual fees per CDR (EU) 2024/1505 |
 
 ### What CTPSP Designation Means for Financial Entities
 
 - **No direct obligations change** for the financial entity when its TPSP is
-  designated critical — the entity's Art. 28–30 obligations apply regardless
+  designated critical - the entity's Art. 28–30 obligations apply regardless
 - The Lead Overseer interacts with the **CTPSP directly**
-- Financial entities must cooperate with information requests from the Lead
-  Overseer about their use of designated CTPPs (Art. 40)
+- Financial entities must cooperate with information requests about their use
+  of designated CTPPs (the Lead Overseer's information request power sits in
+  Art. 37; competent authority follow-up in Art. 42)
 - Financial entities should note that oversight recommendations to a CTPSP
-  may result in changes to service terms — monitor this
+  may result in changes to service terms - monitor this
 
 ---
 
-## Contract Review Checklist — DORA Art. 30(2) Compliance
+## Contract Review Checklist - DORA Art. 30 Compliance
 
-Use this checklist when reviewing existing contracts or negotiating new ones:
+Use this checklist when reviewing existing contracts or negotiating new ones.
+Art. 30(2) baseline elements apply to all ICT contracts; Art. 30(3) items apply
+in addition to contracts supporting critical or important functions.
 
 | Clause | Required by | Present? | Gap? |
 |--------|------------|---------|------|
-| Clear service description | Art. 30(2)(a) | | |
-| Data location — primary and secondary | Art. 30(2)(b) | | |
-| Change notification for data locations | Art. 30(2)(b) | | |
-| GDPR/data protection provisions | Art. 30(2)(c) | | |
-| Service levels (availability, integrity, security) | Art. 30(2)(d) | | |
-| Audit rights — financial entity | Art. 30(2)(e) | | |
-| Audit rights — competent authority | Art. 30(2)(e) | | |
-| Audit rights — resolution authority | Art. 30(2)(e) | | |
-| Termination for cause | Art. 30(2)(f) | | |
-| Termination for regulatory reasons | Art. 30(2)(f) | | |
-| Minimum notice period on exit | Art. 30(2)(f) | | |
-| Incident reporting by TPSP to entity | Art. 30(2)(g) | | |
-| Data portability on exit | Art. 30(2)(h) | | |
-| Migration assistance commitment | Art. 30(2)(h) | | |
-| Data deletion/destruction certificate | Art. 30(2)(h) | | |
-| Sub-contracting — prior consent | Art. 30(2)(i) + CDR 2025/532 | | |
-| Sub-contracting — equivalent provisions | Art. 30(2)(i) + CDR 2025/532 | | |
+| Clear service description | Art. 30(2) baseline | | |
+| Data location - primary and secondary | Art. 30(2) baseline | | |
+| Change notification for data locations | Art. 30(2) baseline | | |
+| GDPR/data protection provisions | Art. 30(2) baseline | | |
+| Termination rights and minimum notice period | Art. 30(2) baseline | | |
+| Incident reporting by TPSP to entity | Art. 30(2) baseline | | |
+| Data portability, return, and migration assistance | Art. 30(2) baseline | | |
+| Sub-contracting conditions | Art. 30(2) baseline + CDR 2025/532 | | |
+| Full service level descriptions (SLAs) | Art. 30(3) - critical/important | | |
+| Audit, access, and inspection rights - financial entity | Art. 30(3) - critical/important | | |
+| Audit, access, and inspection rights - competent authority | Art. 30(3) - critical/important | | |
+| Audit, access, and inspection rights - resolution authority | Art. 30(3) - critical/important | | |
+| TLPT participation by the TPSP | Art. 30(3) - critical/important | | |
+| Exit strategy with mandatory transition period | Art. 30(3)(f) - critical/important | | |
 | Sub-processor change notification | CDR 2025/532 | | |

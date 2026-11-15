@@ -1,0 +1,27 @@
+Short answer: yes, there is a limitation period, but it does not come from LGPD Art. 54. Art. 54 is about the criteria for the daily fine.
+
+1. Limitation (prescription) period for ANPD sanctions
+- The administrative prescription period is 5 years under Lei 9.873/1999, art. 1.
+- It runs from the date the infraction was committed or, for a continuing violation, from the date it ceased.
+- This is the general federal rule on the punitive power of the federal public administration. The LGPD has no prescription clause of its own.
+- Practical effect: for one-off incidents (for example, a single breach), the clock starts at the act. For ongoing processing without a legal basis, or a continuing failure to appoint a DPO or respond to requests, the clock only starts when the conduct stops. Exposure for continuing violations therefore stays open.
+- The statute also has interruption and intercurrent-prescription rules (for example, acts that identify the infraction or notify the accused). Check those against your own timeline.
+
+2. What LGPD Art. 54 governs
+- Art. 54 sets the criteria for calculating the amount of the daily fine (the "multa diária") in Art. 52, III. It is not a limitation rule. It does not set a 5-year period.
+- The general fine methodology for Art. 52 is in Art. 53, which tells ANPD to define the criteria for calculating fines (nature of violation, size of controller, number of data subjects, economic advantage). ANPD did this in Resolution CD/ANPD 4/2023 (Dosimetry and Sanctions Application Regulation).
+
+3. The surrounding sanction framework (Art. 52)
+- Warning with a deadline for corrective measures.
+- Simple fine of up to 2% of revenue in Brazil of the company, group or conglomerate in the prior financial year, excluding taxes, capped at R$50 million per violation.
+- Daily fine, with the same R$50 million cap.
+- Publicisation of the infraction, blocking or deletion of the data, partial suspension of processing for up to 6 months (renewable once), and prohibition of processing activities.
+- The Art. 52, §1º factors: gravity and nature, good faith, advantage obtained, economic condition, recidivism, degree of damage, cooperation, internal controls, prompt corrective action, and proportionality.
+- Procedure: Resolution CD/ANPD 1/2021 (inspection and sanctioning process). Consulta Pública 1/2026 (9 September to 26 October 2026) proposes replacing it, with interim measures without prior hearing and daily fines capped at a total of R$50 million. Until it is adopted, Resolution 1/2021 and Resolution 4/2023 remain the operative regime.
+
+4. Advice
+- Do not cite Art. 54 as the source of the 5-year period. Cite Lei 9.873/1999, art. 1.
+- Do not treat a past date as safe for continuing practices. Assess when the conduct ended.
+- Separate exposure should be tracked: civil liability (Art. 42), consumer claims under the CDC (Art. 45) and Public Prosecutors' actions have their own limitation periods.
+
+General information, not legal advice. Verify the interruption and suspension rules of Lei 9.873/1999 with counsel for a specific case.

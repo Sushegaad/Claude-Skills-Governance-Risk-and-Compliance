@@ -1,0 +1,21 @@
+Who runs CMMC assessments and where results go
+
+| Level | Data | Assessor | Cadence | Where results go |
+|---|---|---|---|---|
+| Level 1 | FCI only (15 FAR 52.204-21 requirements) | The contractor (self-assessment) | Annual | SPRS, with annual senior-official affirmation |
+| Level 2 (Self) | CUI, non-critical programs | The contractor (self-assessment of all 110 practices) | Annual affirmation | SPRS (score from 110 to -203), senior-official affirmation |
+| Level 2 (C3PAO) | CUI, critical programs | A C3PAO (CMMC Third-Party Assessment Organization), authorized by The Cyber AB | Triennial certification, annual affirmation | CMMC eMASS, reflected in SPRS |
+| Level 3 | CUI, highest-priority programs (APT) | DIBCAC, the government team (not contractor-selected; requires a current Level 2 C3PAO certification) | Triennial, plus annual affirmation | CMMC eMASS and SPRS |
+
+Details
+- Self-assessments: the contractor scores itself. At Level 2 it uses the DoD Assessment Methodology (110 minus weighted deductions of 5, 3 or 1 per NOT MET practice; no partial credit), has an SSP in place, submits the result to SPRS (sprs.csd.disa.mil), and a senior company official affirms it. DoD reserves audit rights, and a false affirmation carries False Claims Act exposure. DFARS 252.204-7019 covers the self-assessment requirement and 7020 covers posting in SPRS and DoD access to the assessment results.
+- C3PAO assessments run in phases: document review (SSP, diagrams, policies, POA&M), assessment activities (interviews, technical testing, observation), a findings report (MET, NOT MET or N/A per practice, with a limited window for extra evidence), and a certification decision. All 110 MET gives a final certification valid for 3 years. A conditional certification needs a score of at least 88 with only 1-point items open (the exception is SC.L2-3.13.11 when encryption is not FIPS-validated), and the POA&M must close within 180 days. The Cyber AB accredits the C3PAOs, assessors and consultants.
+- DIBCAC (Defense Industrial Base Cybersecurity Assessment Center) conducts Level 3 assessments and also performs government-led assessments of 800-171 compliance.
+- Results are recorded in CMMC eMASS and reflected in SPRS, where contracting officers can see them. Level 2/3 results appear there so primes can verify subcontractors before flowing down CUI, which DFARS 252.204-7021(c) requires at all tiers. Incident reporting is separate: DFARS 7012 requires reporting to DIBNET within 72 hours.
+
+Program status (July 13, 2026 suspension)
+On July 13, 2026 DoD suspended CMMC Phase 2, including the C3PAO third-party assessment requirements that were due in new contracts from November 10, 2026. This was done through two policy memoranda. Under the interim rule only Level 1 (Self) and Level 2 (Self) may be designated, so in practice the assessor today is the contractor itself, plus select government-led assessments. C3PAO and DIBCAC requirements are being removed from solicitations and existing contracts at the next option or modification. Level 3 (DIBCAC) and Level 2 (C3PAO) cannot currently be designated. Self-assessments, SPRS submissions, annual affirmations, 32 CFR Part 170 and DFARS 252.204-7012/7019/7020/7021 are unchanged.
+
+The CMMC Reform Task Force review was due around September 13, 2026. As of September 14, 2026 no report had been published, and I have no later confirmation, so please re-verify. Public release was expected in late September to early October. The report is advisory; obligations change only through a class deviation, a DFARS rule change or an amendment to 32 CFR Part 170. The signals so far, which are CIO statements and not policy, are dissatisfaction with point-in-time assessments, OT and manufacturing resilience, and CUI-marking discipline. Keep your NIST SP 800-171 Rev 2 remediation on course, as third-party assessment could return on short notice.
+
+This is general compliance information, not legal advice.

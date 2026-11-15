@@ -1,0 +1,20 @@
+Regulation (EU) 2022/2554 (DORA), Chapter V, Section II (oversight framework for critical ICT third-party service providers, CTPPs). Article numbers are from memory; please verify against the Official Journal text.
+
+- Art. 31: designation of critical ICT third-party service providers, and designation of the Lead Overseer (EBA, ESMA or EIOPA, depending on which has the most financial entities relying on that CTPP).
+- Art. 32: structure of the Oversight Framework and the Oversight Forum.
+- Art. 33: tasks of the Lead Overseer. These include assessing the CTPP's rules, procedures and mechanisms for ICT risk, and issuing recommendations.
+- Art. 34: operational coordination between Lead Overseers.
+- Art. 35: powers of the Lead Overseer. These include requesting information and documents, conducting general investigations and inspections, requesting reports, and addressing recommendations.
+- Art. 36: exercise of powers outside the Union.
+- Art. 37: requests for information (by simple request or by decision, with periodic penalty payments for non-compliance).
+- Art. 38: general investigations.
+- Art. 39: inspections, including on-site inspections.
+- Art. 40: ongoing oversight. This is also where the Joint Examination Team (JET) is set up, one per CTPP. I am less sure of this article number than of the others.
+- Art. 41: harmonisation of conditions enabling oversight. It mandates RTS on information to be provided by CTPPs, the oversight conduct, and JET composition and tasks.
+- Art. 42: follow-up by competent authorities.
+- Art. 43: oversight fees.
+- Art. 44: international cooperation.
+
+Joint examination teams: a JET is established for each CTPP under Art. 40. It has staff from the three ESAs (EBA, ESMA, EIOPA) and staff from the relevant national competent authorities that supervise the financial entities using the CTPP. It is led by a Lead Overseer representative (the JET coordinator), and it supports the Lead Overseer in oversight tasks including investigations and inspections. Its detailed composition, designation of members and working arrangements are in the Commission Delegated Regulation adopted under Art. 41 (the JET RTS).
+
+Practical note: the power to require information and to inspect sits mainly in Arts. 35, 37, 38 and 39. The JET is a staffing and coordination mechanism, not a separate power.

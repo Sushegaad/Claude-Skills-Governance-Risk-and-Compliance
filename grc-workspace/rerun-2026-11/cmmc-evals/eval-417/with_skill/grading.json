@@ -1,0 +1,33 @@
+{
+  "eval_id": 417,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States yes: SC.L2-3.13.11 is the named exception that MAY be on a POA&M when encryption exists but is not FIPS-validated",
+      "passed": true,
+      "evidence": "Yes, in principle. SC.L2-3.13.11 is the one 3-point requirement that 32 CFR 170.21(a)(2) allows on a POA&M... when encryption is employed but is not FIPS-validated"
+    },
+    {
+      "text": "States conditional status requires a score of at least 0.8 x 110 (88)",
+      "passed": true,
+      "evidence": "The assessment score is at least 0.8 x 110 = 88"
+    },
+    {
+      "text": "States POA&Ms are otherwise limited to 1-point items",
+      "passed": true,
+      "evidence": "Every open item is a 1-point requirement, except SC.L2-3.13.11"
+    },
+    {
+      "text": "Names at least three of the six never-POA&M requirements (AC.L2-3.1.20, AC.L2-3.1.22, CA.L2-3.12.4, PE.L2-3.10.3/4/5) including CA.L2-3.12.4",
+      "passed": false,
+      "evidence": "Never-POA&M list not given; CA.L2-3.12.4 and the other barred requirements are not named anywhere in the response"
+    },
+    {
+      "text": "Mentions the 180-day POA&M closeout window",
+      "passed": true,
+      "evidence": "The 180-day closeout clock starts at the certification date"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

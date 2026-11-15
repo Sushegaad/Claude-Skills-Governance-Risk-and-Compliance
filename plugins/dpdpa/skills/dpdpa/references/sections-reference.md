@@ -1,20 +1,20 @@
-# DPDPA — Section-by-Section Reference
+# DPDPA - Section-by-Section Reference
 
 Digital Personal Data Protection Act, 2023. Presidential Assent: 11 August 2023.
 44 Sections across 9 Chapters.
 
 ---
 
-## Chapter I — Preliminary (Sections 1–3)
+## Chapter I - Preliminary (Sections 1–3)
 
-### Section 1 — Short Title, Extent, Commencement and Application
+### Section 1 - Short Title, Extent, Commencement and Application
 Establishes the short title: "Digital Personal Data Protection Act, 2023."
 - Extends to the whole of India
 - Commencement by phased notification in the Official Gazette
 - Applies to digital personal data processing within India AND processing outside India
   related to offering goods or services to individuals located in India
 
-### Section 2 — Definitions
+### Section 2 - Definitions
 28 defined terms including:
 
 | Term | Definition |
@@ -34,27 +34,27 @@ Establishes the short title: "Digital Personal Data Protection Act, 2023."
 | **Significant Data Fiduciary (SDF)** | Data Fiduciary notified by Central Government based on volume/sensitivity, risk to rights, impact on sovereignty, electoral democracy, state security, or public order |
 | **Specified purpose** | The purpose mentioned in the Data Fiduciary's notice for which the Data Principal provided personal data |
 
-### Section 3 — Application (Territorial Scope)
+### Section 3 - Application (Territorial Scope)
 The Act applies to:
 - Processing of digital personal data **within India**, and
 - Processing **outside India** if it relates to offering goods or services to individuals
   located in India at the time the personal data is collected
 
 Partial exemption: Processing under contracts with foreign entities of data of
-Data Principals **not located in India** is exempt from most obligations (Section 17(g)).
+Data Principals **not located in India** is exempt from most obligations (Section 17(1)(d)).
 
 ---
 
-## Chapter II — Obligations of Data Fiduciary (Sections 4–10)
+## Chapter II - Obligations of Data Fiduciary (Sections 4–10)
 
-### Section 4 — Grounds for Processing Personal Data
+### Section 4 - Grounds for Processing Personal Data
 Two and only two lawful bases:
 - **(a) Consent** as specified in Section 6
 - **(b) Certain legitimate uses** as enumerated in Section 7
 
 No other lawful basis exists. Processing outside these two grounds is unlawful.
 
-### Section 5 — Notice to Data Principal
+### Section 5 - Notice to Data Principal
 Before or at the time of requesting consent, Data Fiduciaries must provide a notice:
 - In clear and plain language (implemented by Rule 3 of DPDP Rules 2025)
 - As a standalone, independent document (not bundled in T&Cs)
@@ -64,70 +64,75 @@ Before or at the time of requesting consent, Data Fiduciaries must provide a not
 
 **Existing data (Section 5(2)):** For data collected before the Act's commencement but still being processed, Fiduciaries must provide a notice of the same content within prescribed time after the Act takes effect.
 
-### Section 6 — Consent
+### Section 6 - Consent
 Consent must be:
-- **Free** — not conditioned on acceptance of services
-- **Specific** — for a particular specified purpose
-- **Informed** — given after receiving the Section 5 notice
-- **Unconditional** — no conditions or coercion
-- **Unambiguous** — expressed by clear affirmative action
+- **Free** - not conditioned on acceptance of services
+- **Specific** - for a particular specified purpose
+- **Informed** - given after receiving the Section 5 notice
+- **Unconditional** - no conditions or coercion
+- **Unambiguous** - expressed by clear affirmative action
 
-**Section 6(3):** Consent may be given through a Consent Manager registered by the Board.
+**Section 6(2):** Consent is invalid to the extent it infringes the Act (invalidity provision).
 
-**Section 6(4):** Data Principals may withdraw consent at any time. Ease of withdrawal must match ease of giving consent. Prior processing remains lawful; post-withdrawal processing must stop.
+**Section 6(3):** Every request for consent must be presented in clear and plain language, with the contact details of a Data Protection Officer (where applicable) or other person authorised to respond to Data Principal communications.
 
-**Section 6(5):** The burden of proving valid consent lies on the Data Fiduciary.
+**Section 6(4):** Data Principals may withdraw consent at any time. Ease of withdrawal must match ease of giving consent.
 
-**Section 6(6):** Consent obtained in violation of these requirements is void.
+**Section 6(5):** The consequences of withdrawal are borne by the Data Principal; withdrawal does not affect the lawfulness of processing done before withdrawal.
 
-### Section 7 — Certain Legitimate Uses (Closed List)
-Eight enumerated legitimate uses where consent is NOT required:
+**Sections 6(7)–(9):** Consent may be given, managed, reviewed, and withdrawn through a Consent Manager registered with the Board; the Consent Manager is accountable to the Data Principal.
 
-1. Purpose the Data Principal voluntarily provided data for (unless specifically objected)
-2. State benefits, subsidies, services, certificates, licenses, or permits
-3. State functions under Indian law or interests of sovereignty/security/integrity
-4. Legal obligation to disclose to State or its instrumentalities
-5. Employment purposes or safeguarding employer against loss/liability — including prevention of corporate espionage, IP theft, and classified information leakage by employees
-6. Disaster management per the Disaster Management Act, 2005
-7. Medical emergencies and safeguarding individuals during disasters or epidemics
-8. Other prescribed purposes as notified by Central Government
+**Section 6(10):** The burden of proving that notice was given and valid consent obtained lies on the Data Fiduciary.
 
-> **Precision note:** The employment category (Section 7(e)) covers both routine HR processing AND the employer's interest in preventing corporate espionage/IP theft by employees. These are part of a single clause — not separate categories. A prior version of this file incorrectly listed a duplicate "prevention of corporate espionage" as a ninth item; that entry has been removed.
+### Section 7 - Certain Legitimate Uses (Closed List)
+Nine enumerated legitimate uses, clauses 7(a)–(i), where consent is NOT required:
+
+- **(a)** Purpose the Data Principal voluntarily provided data for (unless specifically objected)
+- **(b)** State benefits, subsidies, services, certificates, licenses, or permits
+- **(c)** State functions under Indian law or interests of sovereignty/security/integrity
+- **(d)** Legal obligation to disclose to State or its instrumentalities
+- **(e)** Compliance with any judgment, decree, or order issued under law
+- **(f)** Responding to a medical emergency involving a threat to life or immediate threat to health
+- **(g)** Measures during an epidemic, outbreak, or other threat to public health
+- **(h)** Safety and assistance during a disaster or breakdown of public order
+- **(i)** Employment purposes or safeguarding employer against loss/liability - including prevention of corporate espionage, IP theft, and classified information leakage by employees
+
+> **Precision note:** The employment category (Section 7(i)) covers both routine HR processing AND the employer's interest in preventing corporate espionage/IP theft by employees. These are part of a single clause - not separate categories. Section 7 contains **no residual catch-all clause**; the list ends at clause (i).
 
 This list is **exhaustive**. No general "legitimate interests" balancing test.
 
-### Section 8 — General Obligations of Data Fiduciary
+### Section 8 - General Obligations of Data Fiduciary
 Every Data Fiduciary must:
 
-1. **Appoint Data Processors under contract** — valid written contract per Rule 16
-2. **Ensure data quality** — accuracy, completeness, consistency for data used in decisions or shared with other Fiduciaries
-3. **Implement security safeguards** — appropriate technical and organisational measures per Rule 7
+1. **Appoint Data Processors under contract** - valid written contract (Section 8(2))
+2. **Ensure data quality** - accuracy, completeness, consistency for data used in decisions or shared with other Fiduciaries (Section 8(3))
+3. **Implement security safeguards** - reasonable security safeguards (Section 8(5)) per Rule 6 (technology-neutral: encryption, obfuscation, masking or virtual tokens; access control; logs)
 4. **Erase data** when: purpose fulfilled; consent withdrawn; Data Principal exercises erasure right; retention no longer necessary
 5. **Direct Processors to erase** data upon termination of processing engagement
-6. **Notify personal data breach** to the Board without delay and in detail within 72 hours per Rule 6
-7. **Grievance mechanism** — Establish effective, accessible grievance mechanism and respond within prescribed period
+6. **Intimate personal data breach** to each affected Data Principal directly without delay, and to the Board without delay with a detailed report within 72 hours (extendable on request) per Rule 7
+7. **Grievance mechanism** - Establish effective, accessible grievance mechanism and respond within prescribed period
 
-**Section 8(7) — Retention and Erasure:**
+**Section 8(7) - Retention and Erasure:**
 Data Fiduciaries must erase data from their systems and from Processors' systems upon:
 - Withdrawal of consent (unless retention required by law)
 - Purpose fulfilment
 - Section 12(3) erasure request
 
-### Section 9 — Processing of Children's Personal Data
+### Section 9 - Processing of Children's Personal Data
 **Age threshold:** Under 18 years.
 
 **Section 9(1):** Verifiable parental/lawful guardian consent required before any child data processing.
 
-**Section 9(2) — Prohibited processing (no exceptions unless prescribed):**
+**Section 9(2) - Prohibited processing (no exceptions unless prescribed):**
 - Tracking or behavioural monitoring of children
 - Targeted advertising directed at children
 - Any processing likely to cause detrimental effect on child's well-being
 
-**Section 9(3) — Exemptions:** May be prescribed for certain classes of Data Fiduciaries (health, safety, education, essential services).
+**Section 9(3) - Exemptions:** May be prescribed for certain classes of Data Fiduciaries (health, safety, education, essential services).
 
 **Penalty:** Maximum ₹200 crore per violation. One of the highest penalty tiers.
 
-### Section 10 — Additional Obligations of Significant Data Fiduciaries
+### Section 10 - Additional Obligations of Significant Data Fiduciaries
 
 **Designation:** Central Government notifies entities as SDFs based on:
 - Volume and sensitivity of data processed
@@ -136,24 +141,24 @@ Data Fiduciaries must erase data from their systems and from Processors' systems
 - Risk to electoral democracy or public order
 
 **Additional obligations (beyond Section 8):**
-- **India-based Data Protection Officer** — individual resident in India; sole Board representative; Data Principal grievance contact
-- **Annual Data Protection Impact Assessment (DPIA)** — evaluates compliance, Data Principal rights exercise, safeguard adequacy, large-scale processing risks
-- **Annual independent data audit** — by qualified external auditor; report submitted to the Board
-- **Data localization** — specified data categories must remain within India (when notified)
+- **India-based Data Protection Officer** - individual resident in India; sole Board representative; Data Principal grievance contact
+- **Annual Data Protection Impact Assessment (DPIA)** - evaluates compliance, Data Principal rights exercise, safeguard adequacy, large-scale processing risks
+- **Annual independent data audit** - by qualified external auditor; report submitted to the Board
+- **Data localization** - specified data categories must remain within India (when notified)
 - **Comply with any other prescribed measures** as directed by government
 
 ---
 
-## Chapter III — Rights and Duties of Data Principal (Sections 11–15)
+## Chapter III - Rights and Duties of Data Principal (Sections 11–15)
 
-### Section 11 — Right to Access Information
+### Section 11 - Right to Access Information
 Data Principals may request, and Data Fiduciaries must provide (within prescribed period):
 - Summary of personal data being processed
 - Description of the processing activities (purpose, legal basis, duration)
 - Identities and contact details of all Data Fiduciaries and Processors holding or processing the data
 - Description of personal data shared with each recipient
 
-### Section 12 — Right to Correction, Completion, Updating, and Erasure
+### Section 12 - Right to Correction, Completion, Updating, and Erasure
 Data Principals may:
 - **(12(1)(a))** Request correction of inaccurate or misleading personal data
 - **(12(1)(b))** Request completion of incomplete personal data
@@ -166,20 +171,20 @@ Data Fiduciaries may refuse erasure where:
 - Retention required by law (statutory record-keeping)
 - Retention necessary to enforce/defend legal rights or claims
 
-### Section 13 — Right of Grievance Redressal
+### Section 13 - Right of Grievance Redressal
 - Data Principals must have access to an effective grievance mechanism provided by the Data Fiduciary or Consent Manager
 - Mechanism must be accessible, responsive, and as prescribed by rules
 - Data Fiduciaries must respond within the prescribed timeframe
 - **Mandatory exhaustion:** Data Principals must exhaust the Fiduciary's grievance mechanism before filing a complaint with the Data Protection Board
 
-### Section 14 — Right to Nominate
+### Section 14 - Right to Nominate
 Data Principals may nominate an individual to exercise their Section 11, 12, and 13 rights in the event of:
 - Death of the Data Principal, or
 - Incapacity (defined as unsoundness of mind or infirmity of body rendering the Principal unable to exercise rights)
 
 Nominees exercise rights as if they were the Data Principal.
 
-### Section 15 — Duties of Data Principal
+### Section 15 - Duties of Data Principal
 Data Principals must:
 - Comply with all applicable laws when exercising rights
 - Not register false or frivolous complaints with Fiduciaries or the Board
@@ -191,9 +196,9 @@ Breach of these duties: penalty up to **₹10,000** (personal liability).
 
 ---
 
-## Chapter IV — Special Provisions (Sections 16–17)
+## Chapter IV - Special Provisions (Sections 16–17)
 
-### Section 16 — Transfer of Personal Data Outside India
+### Section 16 - Transfer of Personal Data Outside India
 **Mechanism: Blacklist approach**
 
 Data Fiduciaries may transfer personal data outside India to **any country or territory**, EXCEPT those specifically **notified by the Central Government as restricted**.
@@ -208,112 +213,122 @@ Data Fiduciaries may transfer personal data outside India to **any country or te
 - Do not assume permanent unrestricted status; plan for potential future restrictions
 - Sensitive data categories: apply enhanced protection even when transfer is technically permitted
 
-### Section 17 — Exemptions
+### Section 17 - Exemptions
 Exemptions from Chapters II, III, and Section 16:
 
-| # | Category | Scope of Exemption |
-|---|----------|-------------------|
-| (a) | Legal rights enforcement | Processing to enforce legal rights or claims, or defend legal proceedings |
-| (b) | Judicial/regulatory functions | Courts, tribunals, regulatory/supervisory bodies in official capacity |
-| (c) | Law enforcement | Prevention, detection, investigation, prosecution of offences |
-| (d) | State security (notified) | State instrumentalities notified by Central Government — sovereignty, integrity, security, public order, friendly foreign relations |
-| (e) | Financial defaults | Financial institutions processing data when individual has defaulted on loan repayment |
-| (f) | Research and statistics | Research, archiving, statistical processing — provided individual identity cannot be inferred (anonymisation/pseudonymisation required) |
-| (g) | Extra-territorial / foreign contracts | Processing outside India of non-resident Data Principals under contracts with foreign entities |
-| (h) | Voluntarily provided (notified) | Data voluntarily provided for notified public benefit purposes |
-| (i) | Partial state exemptions | State processing exempt from erasure/correction rights in specific circumstances |
-| (j) | Startups and small entities | Central Government may exempt notified classes from sub-sections of Sections 5, 8, 10, 11 |
+| Provision | Category | Scope of Exemption |
+|-----------|----------|-------------------|
+| 17(1)(a) | Legal rights enforcement | Processing to enforce legal rights or claims |
+| 17(1)(b) | Judicial/regulatory functions | Courts, tribunals, regulatory/supervisory bodies in official capacity |
+| 17(1)(c) | Law enforcement | Prevention, detection, investigation, prosecution of offences |
+| 17(1)(d) | Offshore processing / foreign contracts | Processing within India of personal data of Data Principals not within India, under a contract with a person outside India |
+| 17(1)(e) | Mergers and schemes | Processing necessary for approved schemes of merger, amalgamation, demerger, or similar arrangements |
+| 17(1)(f) | Loan-default financial information | Processing to ascertain financial information, assets, and liabilities of a loan defaulter |
+| 17(2)(a) | State security (notified) | State instrumentalities notified by Central Government - sovereignty, integrity, security, public order, friendly foreign relations |
+| 17(2)(b) | Research and statistics | Research, archiving, statistical processing not used for decisions specific to a Data Principal, per prescribed standards |
+| 17(3) | Startups and notified classes | Central Government may notify startups and certain classes of Data Fiduciaries as exempt from Sections 5, 8(3), 8(7), 10 and 11 |
+
+**Note:** Section 17(1) contains clauses (a)–(f) only; there are no clauses (g)–(j).
 
 ---
 
-## Chapter V — Data Protection Board of India (Sections 18–26)
+## Chapter V - Data Protection Board of India (Sections 18–26)
 
-### Section 18 — Establishment
+### Section 18 - Establishment
 Creates the Data Protection Board of India as a **body corporate** with perpetual succession; power to acquire/hold/dispose property; to contract; to sue and be sued.
 
-### Section 19 — Composition
-- **Chairperson** — Appointed by Central Government; expertise in data governance, IT, cyber law, public administration
-- **Members** — Notified number; appointed by Central Government; similar qualification criteria
+### Section 19 - Composition
+- **Chairperson** - Appointed by Central Government; expertise in data governance, IT, cyber law, public administration
+- **Members** - Notified number; appointed by Central Government; similar qualification criteria
 
-### Section 20–21 — Tenure and Removal
+### Section 20–21 - Tenure and Removal
 Fixed terms; removal possible only for misconduct, incapacity, or insolvency.
 
-### Section 22–23 — Officers, Employees, and Public Servant Status
-Board members and officers are **deemed public servants** under Indian Penal Code — enabling criminal liability for breach of duty.
+### Sections 22–24 - Officers, Employees, and Board Administration
+Appointment of officers and employees of the Board and related administrative and service provisions (consult the Act text for exact titles).
 
-### Section 24 — Chairperson's Powers
-Executive and administrative powers of the Chairperson including agenda-setting, proceedings management.
+### Section 25 - Members and Officers Deemed Public Servants
+The Chairperson, Members, officers, and employees of the Board are **deemed public servants** - enabling criminal liability for breach of duty.
 
-### Section 25 — Powers and Functions of the Board
+### Section 26 - Other Chapter V Provisions
+Remaining Board-related provision of Chapter V (consult the Act text for the exact title).
+
+---
+
+## Chapter VI - Powers, Functions and Procedure of the Board (Sections 27–28)
+
+### Section 27 - Powers and Functions of the Board
 - Receive and adjudicate complaints from Data Principals
 - Investigate personal data breaches
 - Issue financial penalties
 - Issue binding compliance directions
-- Facilitate alternate dispute resolution
 - Accept voluntary undertakings from Data Fiduciaries
 
-### Section 26 — Procedure
-Board establishes hearing rules including evidence presentation, witness examination, and natural justice (right to be heard, impartial adjudication).
+### Section 28 - Procedure of the Board
+Board functions as a digital office and conducts proceedings consistent with natural justice (right to be heard, impartial adjudication), including evidence presentation and examination.
 
 ---
 
-## Chapter VI — Appeals and ADR (Sections 27–32)
+## Chapter VII - Appeal and Alternate Dispute Resolution (Sections 29–32)
 
-### Section 27 — Appeal to TDSAT
-Orders of the Board may be appealed to the **Telecom Disputes Settlement and Appellate Tribunal (TDSAT)** within prescribed period.
+### Sections 29–30 - Appeal to TDSAT and Related Appellate Provisions
+Orders of the Board may be appealed to the **Telecom Disputes Settlement and Appellate Tribunal (TDSAT)** within the prescribed period (Section 29). Section 30 contains related appellate provisions (consult the Act text for the exact title).
 
-### Section 28 — TDSAT Orders Executable as Civil Decree
-TDSAT orders have the force of a civil court decree — enforceable through civil execution proceedings.
+### Section 31 - Alternate Dispute Resolution
+Board may refer disputes to mediation or other dispute resolution processes between Data Principals and Data Fiduciaries.
 
-### Section 29 — Alternate Dispute Resolution
-Board may facilitate mediation/conciliation between Data Principals and Data Fiduciaries.
-
-### Section 30 — Voluntary Undertaking
-Data Fiduciaries may offer voluntary undertakings to remedy violations. Board may accept. Breach of voluntary undertaking: penalty up to **₹50 crore**.
-
-### Section 31 — Limitation for Filing Complaint
-Prescribed time limits for Data Principals to file complaints after becoming aware of a violation.
-
-### Section 32 — Protection of Actions Taken in Good Faith
-Board members and staff protected from civil/criminal liability for good faith actions.
+### Section 32 - Voluntary Undertaking
+Data Fiduciaries may offer voluntary undertakings to remedy violations. Board may accept. Breach of an accepted voluntary undertaking is treated as a breach of the Act: the penalty is capped at the extent applicable to the underlying breach in respect of which the undertaking was given (no separate flat cap).
 
 ---
 
-## Chapter VII — Penalties (Sections 33–34)
+## Chapter VIII - Penalties and Adjudication (Sections 33–34)
 
-### Section 33 — Financial Penalties
+### Section 33 - Financial Penalties
 **Penalty Schedule:**
 
 | Violation | Maximum Penalty |
 |-----------|----------------|
-| Failure to implement reasonable security safeguards (Section 8(3)) | ₹250 crore |
-| Failure to notify personal data breach to Board (Section 8(6)/Rule 6) | ₹200 crore |
+| Failure to implement reasonable security safeguards (Section 8(5)) | ₹250 crore |
+| Failure to give notice of a personal data breach (Section 8(6)/Rule 7) | ₹200 crore |
 | Violation of children's data obligations (Section 9) | ₹200 crore |
 | SDF non-compliance with additional obligations (Section 10) | ₹150 crore |
-| Breach of voluntary undertaking (Section 30) | ₹50 crore |
-| Other violations | ₹50 crore |
+| Breach of voluntary undertaking (Section 32) | Up to the extent applicable for the underlying breach (no separate flat cap) |
+| Other violations (Schedule residual item) | ₹50 crore |
 | Data Principal duty violation (false complaints, impersonation) | ₹10,000 |
 
-**Section 33(2) — Seven factors for penalty determination:**
-1. Nature and gravity of the violation
-2. Scale of impact on Data Principals
-3. Frequency (first-time vs. repeated)
-4. Promptness of remediation and cooperation
-5. Proportionality to violator's financial condition
-6. Intentionality vs. negligence
-7. Other prescribed factors
+**Section 33(2) - Factors (a)–(g) for penalty determination:**
+1. Nature, gravity, and duration of the breach
+2. Type and nature of the personal data affected
+3. Repetitive nature of the breach
+4. Whether the person realised a gain or avoided a loss as a result of the breach
+5. Action taken to mitigate the effects and consequences, and its timeliness and effectiveness
+6. Whether the penalty is proportionate and effective (observance and deterrence)
+7. Likely impact of the penalty on the person
 
-### Section 34 — Crediting of Penalties
+### Section 34 - Crediting of Penalties
 All penalty amounts credited to the Consolidated Fund of India.
 
 ---
 
-## Chapter VIII — Miscellaneous (Sections 35–44)
+## Chapter IX - Miscellaneous (Sections 35–44)
 
-### Section 35 — Power to Make Rules
-Central Government has plenary power to make rules to carry out the provisions of the Act. Rules subject to Parliament laying (approval/modification by Parliament if tabled).
+### Section 35 - Protection of Action Taken in Good Faith
+No suit, prosecution, or other legal proceeding lies against the Central Government, the Board, or its Chairperson, Members, officers, or employees for anything done in good faith under the Act or the Rules.
 
-### Section 36–44
-Cover: power to give directions; delegation to officers; protection from legal proceedings against the Board; amendments to other laws (IT Act 2000, RTI Act 2005); maintenance of confidentiality; publication of Board procedures; interpretation provisions; repeal and savings.
+### Sections 36–39 and 41–42
+Other miscellaneous provisions, including the power to call for information and related machinery provisions (consult the Act text for exact titles).
 
-**Notable:** Section 43 and 44 amend the **Information Technology Act, 2000** — removing IT Act's data protection provisions (Sections 43A and 72A) and replacing them with DPDPA. This clarifies that DPDPA is the lex specialis for digital personal data; IT Act no longer applies to personal data protection.
+### Section 40 - Power to Make Rules
+Central Government has the power to make rules to carry out the provisions of the Act. Rules subject to laying before Parliament.
+
+### Section 43 - Power to Remove Difficulties
+Central Government may, by order, make provisions to remove difficulties arising in giving effect to the Act.
+
+### Section 44 - Amendments to Other Laws
+Section 44 amends:
+- The **Telecom Regulatory Authority of India (TRAI) Act, 1997**
+- The **Information Technology Act, 2000** - Section 43A (compensation for failure to protect data) is **omitted**; Section 72A of the IT Act is **not** amended and remains in force
+- The **Right to Information Act, 2005** - Section 8(1)(j) (personal information exemption) is amended
+
+The DPDPA is the lex specialis for digital personal data protection; the IT Act's Section 43A compensation regime no longer applies.

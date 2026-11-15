@@ -1,0 +1,33 @@
+{
+  "eval_id": 419,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States Conditional Level 3 is permitted under 32 CFR 170.21(a)(3)",
+      "passed": false,
+      "evidence": "States 'A Level 3 Conditional status is possible' but never cites 32 CFR 170.21(a)(3)"
+    },
+    {
+      "text": "Names at least two excluded enhanced requirements (for example IR.L3-3.6.1e, RA.L3-3.11.1e, SI.L3-3.14.3e)",
+      "passed": false,
+      "evidence": "Says 'Some requirements cannot be placed on a POA&M' without naming any"
+    },
+    {
+      "text": "States Level 3 is assessed by DIBCAC on top of a C3PAO Level 2 certification",
+      "passed": true,
+      "evidence": "DCMA DIBCAC runs it, and a Final Level 2 status is a prerequisite... 'already hold a Final Level 2 (C3PAO) status'"
+    },
+    {
+      "text": "Uses 'The Cyber AB' (not CMMC-AB) and places results in CMMC eMASS/SPRS",
+      "passed": false,
+      "evidence": "Results go to CMMC eMASS and SPRS, but The Cyber AB is never mentioned"
+    },
+    {
+      "text": "States Level 3 adds 24 requirements from NIST SP 800-172",
+      "passed": false,
+      "evidence": "Mentions 'selected NIST SP 800-172 requirements' but never the number 24"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

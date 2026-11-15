@@ -1,0 +1,12 @@
+Vietnam's Personal Data Protection Law (Law No. 91/2025/QH15, passed 26 June 2025, effective 1 January 2026) is, to my recollection, organised in 7 chapters and roughly 39 articles, not nine. I am not fully certain of the exact count, so check it against the official gazette text before correcting your memo.
+
+Approximate structure (from memory):
+- Chapter I: General provisions (scope, definitions, principles, prohibited acts, state policy, international cooperation)
+- Chapter II: Personal data processing activities (data subject rights and obligations, consent, notice, processing, breach notification, cross-border transfer, impact assessments)
+- Chapter III: Personal data processing in specific cases and sectors (children, finance and banking, employment, marketing, big data, AI, cloud, etc.)
+- Chapter IV: Personal data protection measures, conditions and workforce (DPO, services)
+- Chapter V: State management responsibilities (Ministry of Public Security as lead)
+- Chapter VI: Handling of violations and dispute resolution
+- Chapter VII: Implementation provisions (effective date, transition, repeal)
+
+The law consolidates Decree 13/2023/ND-CP and the Data Law's overlapping provisions. Implementing decrees and guidance are still needed for detail. The memo's nine-chapter claim looks wrong, and I would verify it against the official text.

@@ -1,0 +1,13 @@
+{
+  "eval_id": 404,
+  "eval_name": "sme-optout",
+  "run_type": "with_skill",
+  "prompt": "We are a 20-person Vietnamese startup. Which PDPL obligations can we defer, and for how long?",
+  "assertions": [
+    "Identifies the Article 38 opt-out covering Articles 21, 22 and 33(2)",
+    "States the opt-out runs five years",
+    "Notes micro-enterprises and household businesses are exempt from the same provisions",
+    "Makes clear other PDPL duties still apply",
+    "Does not cite invented chapter numbers"
+  ]
+}

@@ -5,7 +5,7 @@ description: >
   classification across all 10 CCL categories and 5 product groups (A-E), EAR99 determination,
   jurisdiction analysis (EAR vs ITAR order of review), license requirement analysis via Country
   Chart, all license exceptions (LVS, GBS, CIV, TMP, RPL, GOV, TSU, ENC, TSR, APP, BAG, AVS,
-  ACE), end-user/end-use controls (Entity List, Denied Persons List, Unverified List, MEU List),
+  APR), end-user/end-use controls (Entity List, Denied Persons List, Unverified List, MEU List),
   deemed export rules, Foreign Direct Product Rule (FDPR), de minimis thresholds, 10 General
   Prohibitions, SNAP-R license applications, voluntary self-disclosure, civil/criminal penalties,
   Export Compliance Program (ECP) design, and EAR vs ITAR jurisdiction determination. Use for
@@ -180,7 +180,7 @@ Key license exceptions at a glance:
 | ENC | Encryption | Mass-market encryption products/software |
 | BAG | Baggage | Personal items in traveler's baggage |
 | AVS | Aircraft and Vessels | Exports on aircraft/vessels |
-| ACE | Additional Permissive Reexports | Reexports of certain controlled items |
+| APR | Additional Permissive Reexports | Reexports of certain controlled items |
 | GFT | Gift Parcels | Personal gifts |
 
 ---

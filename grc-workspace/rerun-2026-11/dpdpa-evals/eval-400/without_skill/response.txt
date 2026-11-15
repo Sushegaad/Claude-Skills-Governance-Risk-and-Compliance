@@ -1,0 +1,19 @@
+Short answer: Yes, the DPDP Act applies, but most of it is switched off for your processing. A narrow core remains.
+
+1. Why the Act applies. Section 3(a) applies the Act to processing of digital personal data within the territory of India. Processing physically in India by an Indian processor is within scope, regardless of the data principals' nationality or residence. (Section 3(b), the extra-territorial limb, is a separate point: it covers processing outside India only when connected with offering goods or services to Data Principals in India. It does not help you here.) Note the Act covers digital data, or non-digital data subsequently digitised.
+
+2. The exemption that matters: Section 17(1)(d). The provisions of Chapter II (except Section 8(1) and 8(5)), Chapter III and Section 16 do not apply where personal data of Data Principals NOT within the territory of India is processed pursuant to a contract entered into with any person outside India by any person based in India. This is the outsourcing carve-out. An Indian processor processing EU residents' data under a contract with a German controller fits squarely, as long as the contract is genuinely with the foreign person and the data principals are outside India.
+
+3. What still applies:
+- Section 8(1): the Data Fiduciary must comply with the Act and Rules in respect of processing undertaken by it or on its behalf by a Processor. Section 8(1) is preserved.
+- Section 8(5): reasonable security safeguards to prevent personal data breach (see Rule 6 of the DPDP Rules 2025). Maximum penalty up to Rs 250 crore under the Schedule.
+- The Board's enforcement machinery (Chapters V-VIII), penalties (s. 33), and the general provisions.
+- Section 17(1)(d) applies to "any person based in India", so it protects processors as well, but you should check the facts. If any data principals are in India, or the contract has an Indian-resident counterparty, the exemption weakens for those records.
+
+4. What does not apply: notice and consent (ss. 4-6), legitimate uses (s. 7), most of s. 8 (accuracy, erasure, breach notification under 8(6), processor contract rules under 8(2) and so on), children's data rules (s. 9), Significant Data Fiduciary duties (s. 10), data principal rights (Chapter III), and the cross-border transfer restriction (s. 16). Hence breach notification to the Indian Board under Rule 7 should not be mandatory for this data set, though your contract and GDPR will still require notification.
+
+5. GDPR still governs. The German controller is subject to GDPR (Art. 3(1)), and you are a processor subject to Art. 28 contract terms and Chapter V transfer rules (the transfer from the EU to India needs SCCs or another transfer tool, since India does not have an adequacy decision). Many processors are also directly subject to the GDPR obligations on security (Art. 32), breach notification to the controller (Art. 33(2)), and record-keeping (Art. 30(2)). So your practical compliance load is largely driven by GDPR and the contract, and the DPDP Act adds the Section 8(1)/8(5) layer.
+
+6. Practical steps: document the Section 17(1)(d) basis (contract, data principals outside India); align your security programme to Section 8(5) and Rule 6 (encryption or masking, access control, logging, 1-year log retention, backups); keep Indian-resident personal data (employees, your own customers) on full DPDP compliance, because the exemption covers only the foreign-principal data; and monitor future notifications because the Central Government may change the exemption scope.
+
+Caveat: this is general information based on the Act as I recall it, not legal advice. Check the gazetted text and any Rules provisions on commencement (most operative Rules apply after an 18-month transition).

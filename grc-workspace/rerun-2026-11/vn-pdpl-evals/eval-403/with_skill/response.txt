@@ -1,0 +1,17 @@
+What Article 5 of Vietnam's PDPL (Law 91/2025/QH15) governs
+
+Article 5 is the application-of-laws provision, in Chapter I (General Provisions). It contains the lex specialis rules on how the PDPL interacts with other laws that also regulate data.
+
+What it does
+- It determines which law applies where the PDPL and another data-related law both address the same matter. For personal data the PDPL is the special law, while other laws such as the Cybersecurity Law 2018 (Law 24/2018/QH14) continue to apply to broader data localisation and system-security obligations.
+- It provides that a personal data protection impact assessment done under the PDPL satisfies equivalent assessment duties under other data laws. In practice this means one assessment can serve several statutory purposes, which is a useful efficiency when you also face other data-law assessment requirements.
+
+What it does NOT do
+- Article 5 is not the controller and processor obligations article. That catalogue sits in Article 37 (Chapter IV, Responsibilities): lawful basis, security measures, notifying data subjects, responding to requests, 72-hour breach notification, impact assessments, DPO appointment for controllers; and for processors, acting on documented instructions, equivalent security, assisting with rights requests, immediate breach notice to the controller, and deletion or return of data.
+- It is also not the data subject rights article (Article 4), the consent article (Article 9), or the penalties article (Article 8).
+
+Common citation errors to avoid
+- Citing "Article 5" for controller duties: use Article 37.
+- Citing Article 5 for the response deadlines: those are in Decree 356/2025/ND-CP Article 5 (a different instrument with its own numbering: 2 working days to acknowledge, 10 for access or correction, 15 for withdrawal, restriction or objection, 20 for deletion). Always name the instrument alongside the article number.
+
+This is general compliance information, not legal advice. Verify against the official text.

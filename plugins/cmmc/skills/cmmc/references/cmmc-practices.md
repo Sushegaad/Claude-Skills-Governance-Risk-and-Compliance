@@ -1,10 +1,10 @@
-# CMMC 2.0 — All 110 Practices (NIST SP 800-171 Rev 2 Mapped)
+# CMMC 2.0 - All 110 Practices (NIST SP 800-171 Rev 2 Mapped)
 
-Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **L3** = Level 3 (110 + SP 800-172 enhancements)
+Level codes: **L1** = Level 1 (the 15 security requirements of FAR 52.204-21(b)(1)(i)–(xv), which map to the 17 L1-tagged 800-171 requirements below because one FAR item spans 3.10.3, 3.10.4, and 3.10.5) · **L2** = Level 2 (all 110) · **L3** = Level 3 (110 + SP 800-172 enhancements)
 
 ---
 
-## AC — Access Control (22 practices)
+## AC - Access Control (22 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
@@ -27,13 +27,13 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 | AC.L2-3.1.17 | L2 | Protect wireless access using authentication and encryption. |
 | AC.L2-3.1.18 | L2 | Control connection of mobile devices. |
 | AC.L2-3.1.19 | L2 | Encrypt CUI on mobile devices and mobile computing platforms. |
-| AC.L2-3.1.20 | L2 | Verify and control/limit connections to external systems. |
+| AC.L1-3.1.20 | L1 | Verify and control/limit connections to external systems. |
 | AC.L2-3.1.21 | L2 | Limit use of portable storage devices on external systems. |
-| AC.L2-3.1.22 | L2 | Control CUI posted or processed on publicly accessible systems. |
+| AC.L1-3.1.22 | L1 | Control CUI posted or processed on publicly accessible systems. |
 
 ---
 
-## AT — Awareness and Training (3 practices)
+## AT - Awareness and Training (3 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
@@ -43,7 +43,7 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 
 ---
 
-## AU — Audit and Accountability (9 practices)
+## AU - Audit and Accountability (9 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
@@ -59,7 +59,7 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 
 ---
 
-## CM — Configuration Management (9 practices)
+## CM - Configuration Management (9 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
@@ -75,7 +75,7 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 
 ---
 
-## IA — Identification and Authentication (11 practices)
+## IA - Identification and Authentication (11 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
@@ -93,7 +93,7 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 
 ---
 
-## IR — Incident Response (3 practices)
+## IR - Incident Response (3 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
@@ -103,7 +103,7 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 
 ---
 
-## MA — Maintenance (6 practices)
+## MA - Maintenance (6 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
@@ -116,7 +116,7 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 
 ---
 
-## MP — Media Protection (9 practices)
+## MP - Media Protection (9 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
@@ -132,12 +132,12 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 
 ---
 
-## PE — Physical Protection (6 practices)
+## PE - Physical Protection (6 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
 | PE.L1-3.10.1 | L1 | Limit physical access to systems to authorized individuals. |
-| PE.L1-3.10.2 | L1 | Protect and monitor the physical facility and support infrastructure. |
+| PE.L2-3.10.2 | L2 | Protect and monitor the physical facility and support infrastructure. |
 | PE.L1-3.10.3 | L1 | Escort visitors and monitor visitor activity. |
 | PE.L1-3.10.4 | L1 | Maintain audit logs of physical access. |
 | PE.L1-3.10.5 | L1 | Control and manage physical access devices. |
@@ -145,7 +145,7 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 
 ---
 
-## PS — Personnel Security (2 practices)
+## PS - Personnel Security (2 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
@@ -154,7 +154,7 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 
 ---
 
-## RA — Risk Assessment (3 practices)
+## RA - Risk Assessment (3 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
@@ -164,7 +164,7 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 
 ---
 
-## CA — Security Assessment (4 practices)
+## CA - Security Assessment (4 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
@@ -175,7 +175,7 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 
 ---
 
-## SC — System and Communications Protection (16 practices)
+## SC - System and Communications Protection (16 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|
@@ -198,7 +198,7 @@ Level codes: **L1** = Level 1 (17 practices) · **L2** = Level 2 (all 110) · **
 
 ---
 
-## SI — System and Information Integrity (7 practices)
+## SI - System and Information Integrity (7 practices)
 
 | Practice ID | Level | Requirement |
 |-------------|-------|-------------|

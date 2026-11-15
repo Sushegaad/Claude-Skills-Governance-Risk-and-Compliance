@@ -1,0 +1,33 @@
+{
+  "eval_id": 405,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Maps recruitment/employee monitoring to Law Article 25",
+      "passed": false,
+      "evidence": "'I cannot cite exact article numbers with confidence'; Article 25 never identified"
+    },
+    {
+      "text": "Maps finance/banking/credit information to Law Article 27",
+      "passed": false,
+      "evidence": "Discusses banking data as sensitive but cites no article; Article 27 never identified"
+    },
+    {
+      "text": "Maps big data, AI, blockchain, metaverse or cloud processing to Law Article 30",
+      "passed": false,
+      "evidence": "Mentions big data/AI/cloud provisions exist but cites no article; Article 30 never identified"
+    },
+    {
+      "text": "Cites Decree 356 Articles 8-12 for sector implementation detail (finance 8, big data 9, AI/metaverse 10, blockchain 11, cloud 12)",
+      "passed": false,
+      "evidence": "Decree 356 never mentioned (only Decree 13/2023); no Arts. 8-12 cited"
+    },
+    {
+      "text": "Cites Decree 356 Article 13 for data protection personnel/DPO conditions",
+      "passed": false,
+      "evidence": "No mention of Decree 356 Article 13 or DPO/personnel conditions"
+    }
+  ],
+  "total": 5,
+  "passed": 0
+}

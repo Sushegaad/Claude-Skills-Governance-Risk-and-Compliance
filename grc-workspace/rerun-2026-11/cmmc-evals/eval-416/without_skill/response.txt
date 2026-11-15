@@ -1,0 +1,11 @@
+CMMC Level 1 contains 15 requirements. These are the 15 basic safeguarding requirements of FAR 52.204-21(b)(1), used to protect Federal Contract Information (FCI).
+
+Mapping to NIST SP 800-171 Rev 2: the 15 FAR requirements correspond to 17 NIST SP 800-171 Rev 2 practices:
+- Access control: 3.1.1, 3.1.2, 3.1.20, 3.1.22
+- Identification and authentication: 3.5.1, 3.5.2
+- Media protection: 3.8.3
+- Physical protection: 3.10.1, 3.10.3, 3.10.4, 3.10.5
+- System and communications protection: 3.13.1, 3.13.5
+- System and information integrity: 3.14.1, 3.14.2, 3.14.4, 3.14.5
+
+Numeric score: no. Level 1 is a self-assessment scored only as MET or NOT MET per requirement. All requirements must be MET, and there is no POA&M option. The result is entered in SPRS, and a senior official affirms it annually. The 110-point SPRS scoring methodology applies to Level 2, not Level 1.

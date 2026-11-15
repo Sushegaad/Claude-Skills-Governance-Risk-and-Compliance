@@ -1,0 +1,1 @@
+List the CRA Annex I Part II vulnerability-handling requirements. Does Part II include 24-hour ENISA reporting?

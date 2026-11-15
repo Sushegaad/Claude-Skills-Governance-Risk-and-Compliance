@@ -1,0 +1,33 @@
+CMMC Level 3 - POA&Ms and who assesses
+
+Short answer: Yes, Level 3 allows a POA&M (Conditional Level 3), with a defined list of requirements that must be MET. The assessment is done by the government (DIBCAC), not a commercial C3PAO.
+
+1. Does Level 3 allow POA&Ms?
+Yes. 32 CFR 170.21(a)(3) permits Conditional Level 3. The requirements that may NEVER be on a Level 3 POA&M, and so must be MET, are:
+- IR.L3-3.6.1e
+- IR.L3-3.6.2e
+- RA.L3-3.11.1e
+- RA.L3-3.11.4e
+- RA.L3-3.11.6e
+- RA.L3-3.11.7e
+- SI.L3-3.14.3e
+
+Other points:
+- Level 3 builds on the full Level 2 set. It is the 110 NIST SP 800-171 Rev 2 requirements plus a selected subset of NIST SP 800-172 enhanced requirements aimed at advanced persistent threats.
+- The Level 2 POA&M rules do not disappear. The base-110 portion carries the Level 2 constraints: score of at least 88, 1-point items only (except SC.L2-3.13.11 when encryption is not FIPS-validated), and never the six barred requirements (AC.L2-3.1.20, AC.L2-3.1.22, CA.L2-3.12.4, PE.L2-3.10.3, PE.L2-3.10.4, PE.L2-3.10.5).
+- The 180-day closeout applies. All POA&M items must be closed within 180 days of the conditional certification date, or the certification is revoked.
+
+2. Who performs the assessment?
+- DIBCAC (Defense Industrial Base Cybersecurity Assessment Center, part of DCMA), the government assessment team. It is not contractor-selected and not a commercial C3PAO, and the government sets the schedule.
+- Prerequisite: you must already hold a current Level 2 C3PAO certification.
+- Cadence: triennial, plus the annual senior-official affirmation in SPRS. Results are recorded in CMMC eMASS and SPRS.
+- Level 3 applies to contractors on the highest-priority DoD programs where APT resilience is the concern.
+
+3. Program status (July 13, 2026 suspension)
+This matters directly for Level 3. On July 13, 2026 DoD suspended CMMC Phase 2 via two policy memoranda (DoW CIO and USD(A&S)). Under the interim rule, requiring activities may designate only Level 1 (Self) or Level 2 (Self). Level 3 (DIBCAC) cannot currently be designated, and DIBCAC and C3PAO requirements are being removed from solicitations and from existing contracts at the next option or modification. Because Level 3 depends on a Level 2 C3PAO certification, the pipeline is paused too.
+
+What still stands: 32 CFR Part 170, DFARS 252.204-7012/7019/7020/7021, NIST SP 800-171 Rev 2, SPRS submissions and annual affirmations. During the pause, DoD enforces 800-171 through self-assessments and select government-led assessments.
+
+The CMMC Reform Task Force review was due around September 13, 2026. As of September 14, 2026 no report had been published, and I have no later confirmation, so please re-verify. Release was expected in late September to early October. The report is advisory, and obligations change only through a class deviation, a DFARS rule change or an amendment to 32 CFR Part 170. The signals so far, which are CIO statements and not policy, are dissatisfaction with point-in-time assessments (continuous-monitoring-style assurance favored), OT and manufacturing resilience as a gap, and CUI-marking discipline reform. Keep your 800-171 and 800-172 remediation on course, because third-party and government assessment could return on short notice.
+
+This is general compliance information, not legal advice. Check the contract's clauses and requirements.

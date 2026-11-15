@@ -1,0 +1,6 @@
+Under the PDPL (Law 91/2025/QH15, effective 1 January 2026), transitional provisions give relief to small and micro businesses and startups. From memory:
+- Micro enterprises, small enterprises and startups (and household businesses) get a transitional period, I believe 5 years from the effective date (to about 1 January 2031), for certain obligations, chiefly appointing a DPO / personal data protection department and preparing data processing and cross-border transfer impact assessments.
+- Startups: the relief is, as I recall, 5 years, and may be limited to those not processing sensitive data or not processing at large scale. Micro and small businesses may be exempt from the DPO requirement but not if they process sensitive data.
+- Core obligations are not deferred: lawful basis and consent, notice, data subject rights, security measures, breach notification, and restrictions on selling data.
+
+As a 20-person startup you likely qualify as a small enterprise, and possibly as an innovative startup if you are certified. Confirm your classification under the SME Support Law and the implementing decree, and verify the exact deferral period and conditions in the final text and guidance, as I am not certain of the details.

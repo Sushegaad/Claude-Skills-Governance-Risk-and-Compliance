@@ -1,0 +1,46 @@
+Where "basic" and "sensitive" personal data are listed in Vietnam, and whether the lists are closed
+
+Short answer: the Law itself does not list them. Law 91/2025/QH15, Article 2, defines both categories only abstractly and delegates the enumeration to the Government. The operative lists are in Decree 356/2025/ND-CP (31 December 2025, effective 1 January 2026):
+
+- Basic personal data: Decree 356, Article 3
+- Sensitive personal data: Decree 356, Article 4
+
+Neither list is closed. Each ends in a catch-all item.
+
+Basic personal data (Decree 356 Art. 3): 10 enumerated categories plus catch-all item 11
+1. Full name
+2. Date of birth; date of death or going missing
+3. Gender
+4. Place of birth; permanent residence registration; current residence; hometown; contact address
+5. Nationality
+6. Personal image
+7. Phone number
+8. ID/citizen ID number, passport number, vehicle registration number, driver's licence number
+9. Marital status
+10. Family relationships (spouse, children, parents, siblings)
+11. Catch-all: other personal data attached to a specific individual that is not classified as sensitive
+
+Sensitive personal data (Decree 356 Art. 4): 12 enumerated categories plus catch-all item (m)
+- Political views and party membership
+- Religious or philosophical views
+- Health status and private medical life
+- Racial or ethnic origin
+- Sexual life and orientation
+- Criminal offences and convictions
+- Financial data (bank accounts, credit cards, income, credit history)
+- Location and movement data
+- Biometric data (face, fingerprint, iris, voice and similar)
+- Genetic data
+- Social media behavioural tracking data (click-through, viewing history, cross-platform behaviour)
+- Private life, personal secrets, family secrets
+- (m) Catch-all: other data specified by law as sensitive or requiring special protection
+
+Consequences of the lists being non-exhaustive
+- Do not build a data inventory as a closed checklist. Anything attached to a person is at least basic data under item 11, and further categories can become sensitive through other laws or sector rules via item (m).
+- Classification matters: sensitive data requires explicit, separate consent (Law Art. 10), and processing sensitive data removes SME and startup exemptions from Arts. 21, 22 and 33(2). It also triggers DPO appointment considerations (Decree 356 Art. 13) and higher penalty exposure under Decree 330/2026/ND-CP.
+- Notable practical points: location data, banking and financial data, and behavioural tracking are sensitive here, which is broader than many regimes. Treat adtech, app analytics, fintech and geolocation features as sensitive-data processing unless proven otherwise.
+- Monitor Ministry of Public Security guidance and sector laws for additions to the catch-all.
+
+Citation tip: cite "Law 91/2025 Art. 2 (definitions) read with Decree 356 Arts. 3 and 4", not Art. 2 alone, because the Law has no enumerated lists.
+
+This is general compliance information, not legal advice. Verify against official texts.

@@ -1,0 +1,13 @@
+{
+  "eval_id": 413,
+  "eval_name": "timeline",
+  "run_type": "with_skill",
+  "prompt": "Lay out the CRA application timeline, including when notified-body provisions apply.",
+  "assertions": [
+    "Reporting obligations (Article 14) apply since 11 September 2026",
+    "Chapter IV notified-body provisions (Articles 35-51) apply from 11 June 2026",
+    "11 December 2026 is only the Article 35(2) target for a sufficient number of notified bodies",
+    "Full application is 11 December 2027",
+    "Mentions the minimum five-year support period obligation"
+  ]
+}

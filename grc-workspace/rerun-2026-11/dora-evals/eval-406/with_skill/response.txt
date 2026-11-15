@@ -1,0 +1,30 @@
+Short answer: the Lead Overseer's powers sit in Chapter V, Section II of Regulation (EU) 2022/2554 (DORA), Art. 31-44. Joint examination teams (JETs) are established under Art. 40(1).
+
+Information request, investigation, inspection
+- Art. 37 - Request for information. The Lead Overseer can require a designated critical ICT third-party service provider (CTPP) to provide all relevant information and documentation.
+- Art. 38 - General investigations. This covers interviews, document reviews and similar investigative steps.
+- Art. 39 - Inspections. This covers on-site inspections of CTPP premises and systems, and CTPPs must cooperate.
+
+Related provisions in the same section
+- Art. 32 - Structure of the oversight framework. A Lead Overseer (EBA, ESMA or EIOPA) is designated per CTPP, and the Joint Oversight Network (JON) coordinates across the ESAs.
+- Art. 33 - Tasks of the Lead Overseer.
+- Art. 34 - Operational coordination between Lead Overseers.
+- Art. 35 - Powers of the Lead Overseer. This includes issuing recommendations, which is a power under Art. 35(1)(d).
+- Art. 36 - Exercise of the powers outside the Union.
+- Art. 40 - Ongoing oversight.
+- Art. 42 - Follow-up by competent authorities.
+- Art. 43 - Oversight fees (methodology in CDR (EU) 2024/1505).
+- Art. 31 - Designation of CTPPs (criteria in CDR (EU) 2024/1502).
+
+Where JETs come from
+- The legal basis is Art. 40(1), which sets up joint examination teams for ongoing oversight.
+- The detailed rules are in CDR (EU) 2025/420 (RTS on JETs). JETs are made up of Lead Overseer staff plus experts from the national competent authorities.
+- Their mandate is on-site and off-site examination of designated CTPPs, and they report findings to the Lead Overseer.
+- Harmonised oversight conduct and the recommendation follow-up process are in CDR (EU) 2025/295 (RTS under Art. 41).
+
+Practical points
+- Oversight is a supervisory regime run against the CTPP directly. It does not change the financial entity's own Art. 28-30 obligations.
+- Financial entities should expect to cooperate with information requests about their use of CTPPs. Competent authority follow-up sits in Art. 42.
+- Status: the ESAs designated the first CTPPs on 18 November 2025 (19 providers). 2026 is the first full oversight cycle, with Lead Overseers and JETs running risk assessments and initial examinations. First recommendations are possible this year.
+
+This is general compliance information, not legal advice. Verify against the official texts.

@@ -1,0 +1,13 @@
+{
+  "eval_id": 407,
+  "eval_name": "contract-clauses",
+  "run_type": "with_skill",
+  "prompt": "Our cloud contract supports a critical function. Which DORA provisions set the required contract clauses, and where do exit strategies sit?",
+  "assertions": [
+    "Article 30(2) is the baseline clause set for ALL ICT service contracts",
+    "Article 30(3) adds the stricter set for critical or important functions",
+    "Exit strategies with a mandatory transition period sit at 30(3)(f)",
+    "Unrestricted audit, access and inspection rights belong to the 30(3) critical/important set",
+    "Register of Information duties (maintain and submit annually) sit in Article 28(3)"
+  ]
+}

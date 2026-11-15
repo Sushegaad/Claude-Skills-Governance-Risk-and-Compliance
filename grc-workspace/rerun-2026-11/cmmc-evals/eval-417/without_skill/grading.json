@@ -1,0 +1,33 @@
+{
+  "eval_id": 417,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States yes: SC.L2-3.13.11 is the named exception that MAY be on a POA&M when encryption exists but is not FIPS-validated",
+      "passed": true,
+      "evidence": "Yes, in principle... allows a partial credit and POA&M when encryption is employed but not FIPS-validated"
+    },
+    {
+      "text": "States conditional status requires a score of at least 0.8 x 110 (88)",
+      "passed": true,
+      "evidence": "The assessment score is at least 88 of 110 points (80 percent)"
+    },
+    {
+      "text": "States POA&Ms are otherwise limited to 1-point items",
+      "passed": false,
+      "evidence": "Says only that unmet items must be 'on the list of POA&M-eligible requirements'; never states the 1-point limitation"
+    },
+    {
+      "text": "Names at least three of the six never-POA&M requirements (AC.L2-3.1.20, AC.L2-3.1.22, CA.L2-3.12.4, PE.L2-3.10.3/4/5) including CA.L2-3.12.4",
+      "passed": false,
+      "evidence": "No never-POA&M requirements are named; CA.L2-3.12.4 absent"
+    },
+    {
+      "text": "Mentions the 180-day POA&M closeout window",
+      "passed": true,
+      "evidence": "must be closed out... within 180 days of the Conditional status date"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

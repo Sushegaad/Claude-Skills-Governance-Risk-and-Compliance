@@ -1,0 +1,33 @@
+{
+  "eval_id": 397,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "Identifies Rule 6 as security safeguards (technology-neutral measures; logs and data retained for one year)",
+      "passed": true,
+      "evidence": "\"Rule 6: Reasonable security safeguards\"; lists outcome-level measures (encryption, obfuscation or masking) without mandating specific technologies; \"Retaining logs and personal data for one year\""
+    },
+    {
+      "text": "Identifies Rule 7 as personal data breach intimation",
+      "passed": true,
+      "evidence": "\"Rule 7: Intimation of personal data breach (implements Section 8(6))\""
+    },
+    {
+      "text": "States the fiduciary must notify EACH affected Data Principal directly, without delay",
+      "passed": true,
+      "evidence": "\"To each affected Data Principal, without delay ... through her user account or any mode registered\""
+    },
+    {
+      "text": "States the Board gets an intimation without delay plus a detailed report within 72 hours (extendable on written request)",
+      "passed": true,
+      "evidence": "\"(a) without delay: a description of the breach ... (b) within 72 hours of becoming aware (or a longer period the Board allows on request)\""
+    },
+    {
+      "text": "Does not cite TLS/AES specifications, two-year log retention, or any 'Rule 16' data processing agreement rule",
+      "passed": true,
+      "evidence": "No TLS/AES specs, one-year retention stated, no Rule 16 DPA rule cited (Rule 15 correctly given as transfers)"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

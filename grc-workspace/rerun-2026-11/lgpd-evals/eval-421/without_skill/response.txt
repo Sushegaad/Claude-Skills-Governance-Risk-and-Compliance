@@ -1,0 +1,29 @@
+Short answer: generally no, not on the basis of credit protection.
+
+Under the LGPD (Lei 13.709/2018), health data is "sensitive personal data" (Art. 5, II). Its processing is governed by Art. 11, which has its own, narrower list of legal bases. The Art. 7 bases do not apply to it.
+
+Without consent (Art. 11, II), sensitive data can be processed only where it is indispensable for:
+a) compliance with a legal or regulatory obligation by the controller;
+b) shared processing of data necessary for the execution of public policies provided in laws or regulations by public administration;
+c) studies by a research body (anonymization whenever possible);
+d) regular exercise of rights, including in contracts and in judicial, administrative and arbitral proceedings;
+e) protection of life or physical safety of the data subject or a third party;
+f) health protection, exclusively in procedures carried out by health professionals, health services or health authorities;
+g) fraud prevention and security of the data subject in identification and authentication processes in electronic systems (subject to Art. 9 and except where fundamental rights and freedoms of the data subject requiring personal data protection prevail).
+
+"Credit protection" (proteção do crédito) is a legitimate-interest-adjacent basis in Art. 7, X. It is not among the Art. 11 grounds. So you cannot rely on it for health data. Legitimate interest (Art. 7, IX) is also unavailable for sensitive data.
+
+Further restrictions:
+- Art. 11, para. 4: communication or shared use of health data between controllers for economic advantage is prohibited, except for data portability requested by the data subject and certain health-service purposes. The ANPD and the health regulator (ANS) are involved in the details. Using health data to feed credit decisions would sit squarely in the prohibited area.
+- Art. 11, para. 5: health plan operators and private insurers are prohibited from using health data to select risks or to hire or exclude beneficiaries. This shows the legislative intent against using health data for economic scoring.
+- Credit scoring has its own framework: the Positive Credit Registry Law (Lei do Cadastro Positivo, Lei 12.414/2011, as amended by LC 166/2019) prohibits "sensitive information" in credit databases. Decree 9.936/2019 reinforces this. Health information cannot be used to compute scores.
+- Art. 20: data subjects may request review of automated decisions, including credit profiles, and the controller must give clear information on the criteria used.
+- Principles of purpose, necessity, non-discrimination (Art. 6, IX) and the high risk involved (DPIA/RIPD would be expected).
+
+Practical conclusion:
+1. Do not use health data for credit protection or credit scoring without explicit consent.
+2. If you want to rely on consent, it must be specific and highlighted for the specific purposes (Art. 11, I), free, informed and revocable. In a credit setting, its validity is doubtful because of the power imbalance. The ANPD could view it as not free.
+3. If health data appears incidentally (for example, in a debt-collection context or a court proceeding), assess whether the "regular exercise of rights" ground applies, and limit processing to what is strictly necessary.
+4. Document the analysis in a RIPD and involve the DPO (Encarregado).
+
+This is general information, not legal advice. Check current ANPD guidance and the specific facts with Brazilian counsel.

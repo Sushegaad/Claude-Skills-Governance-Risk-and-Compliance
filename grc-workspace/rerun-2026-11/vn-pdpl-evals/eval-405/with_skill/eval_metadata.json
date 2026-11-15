@@ -1,0 +1,13 @@
+{
+  "eval_id": 405,
+  "eval_name": "sector-articles",
+  "run_type": "with_skill",
+  "prompt": "Which Vietnamese PDPL provisions govern employee monitoring, banking data, and AI or cloud processing?",
+  "assertions": [
+    "Maps recruitment/employee monitoring to Law Article 25",
+    "Maps finance/banking/credit information to Law Article 27",
+    "Maps big data, AI, blockchain, metaverse or cloud processing to Law Article 30",
+    "Cites Decree 356 Articles 8-12 for sector implementation detail (finance 8, big data 9, AI/metaverse 10, blockchain 11, cloud 12)",
+    "Cites Decree 356 Article 13 for data protection personnel/DPO conditions"
+  ]
+}

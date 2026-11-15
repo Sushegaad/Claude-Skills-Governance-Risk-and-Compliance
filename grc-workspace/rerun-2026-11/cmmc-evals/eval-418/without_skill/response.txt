@@ -1,0 +1,7 @@
+SPRS point values under the DoD Assessment Methodology (starting from 110, subtracting for unmet requirements):
+- 3.1.3 (control CUI flow): 1 point
+- 3.3.1 (create and retain audit logs): 1 point
+- 3.4.1 (baseline configurations and inventories): 5 points
+- 3.13.8 (cryptographic protection of CUI in transit): 3 points
+
+Note: 3.13.8 is worth 5 points in the DoD Assessment Methodology, with partial credit available only for 3.13.11. If your source uses the 3-point value for 3.13.8, verify against the current methodology version, because I may be mixing up the two. My best recollection is that 3.13.8 is 3 points.

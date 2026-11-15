@@ -1,0 +1,33 @@
+{
+  "eval_id": 400,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies the exemption at Section 17(1)(d)",
+      "passed": true,
+      "evidence": "\"That fits the offshore-processing exemption in Section 17(1)(d)\""
+    },
+    {
+      "text": "Describes its scope correctly: processing in India of non-residents' personal data under a contract with a person outside India",
+      "passed": true,
+      "evidence": "\"exempts the processing within India of personal data of Data Principals who are not within India, under a contract with a person outside India\""
+    },
+    {
+      "text": "Does not cite 'Section 17(g)' or any (g) to (j) lettering",
+      "passed": true,
+      "evidence": "No (g)-(j) lettering; states \"Section 17(1) runs only (a) to (f)\""
+    },
+    {
+      "text": "Correctly locates the research exemption at 17(2)(b) and the startup relaxations at 17(3)",
+      "passed": false,
+      "evidence": "Response never mentions the research exemption (17(2)(b)) or the startup relaxations (17(3))"
+    },
+    {
+      "text": "Gives practical advice to still maintain safeguards contractually or under other applicable law",
+      "passed": true,
+      "evidence": "\"Prudently keep Rule 6-grade security ... because it is needed for GDPR Art. 32 and for your contract\"; keep SCCs and Art. 28 terms in place"
+    }
+  ],
+  "total": 5,
+  "passed": 4
+}

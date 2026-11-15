@@ -1,0 +1,13 @@
+{
+  "eval_id": 403,
+  "eval_name": "article5-scope",
+  "run_type": "with_skill",
+  "prompt": "What does Article 5 of Vietnam's PDPL govern?",
+  "assertions": [
+    "States Article 5 covers application of personal data protection laws (lex specialis/conflict rules), not an obligations catalogue",
+    "Mentions that a PDPL impact assessment satisfies assessment duties under other data laws",
+    "Locates controller/processor obligations in Article 37",
+    "Does not present Article 5 as a list of controller duties",
+    "States the law has been in force since January 1, 2026"
+  ]
+}

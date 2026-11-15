@@ -1,0 +1,33 @@
+{
+  "eval_id": 396,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "States Section 7 has nine clauses, (a) through (i), not eight",
+      "passed": true,
+      "evidence": "\"Section 7 ... has nine legitimate uses, clauses 7(a) to 7(i)\" and \"the Act has nine clauses, not eight\""
+    },
+    {
+      "text": "States no residual 'other prescribed purposes' clause exists in Section 7",
+      "passed": true,
+      "evidence": "\"Section 7 contains no 'other prescribed purposes' or 'as notified' residual item. The list is exhaustive and closed.\""
+    },
+    {
+      "text": "Maps employment to Section 7(i)",
+      "passed": true,
+      "evidence": "Table row: \"7(i) | Employment purposes, or safeguarding the employer from loss or liability\""
+    },
+    {
+      "text": "Maps Section 7(e) to compliance with judgments, decrees or orders",
+      "passed": true,
+      "evidence": "Table row: \"7(e) | Compliance with any judgment, decree or order issued under law\""
+    },
+    {
+      "text": "Correctly names at least two more: 7(f) medical emergency, 7(g) epidemic/threat to public health, 7(h) disaster or breakdown of public order",
+      "passed": true,
+      "evidence": "7(f) medical emergency, 7(g) epidemic/threat to public health, 7(h) disaster or breakdown of public order all named correctly"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

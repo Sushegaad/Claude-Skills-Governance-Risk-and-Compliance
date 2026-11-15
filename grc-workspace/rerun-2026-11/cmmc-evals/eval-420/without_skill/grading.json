@@ -1,0 +1,33 @@
+{
+  "eval_id": 420,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "C3PAOs conduct Level 2 certification assessments",
+      "passed": true,
+      "evidence": "Level 2: ... a certification assessment by a C3PAO"
+    },
+    {
+      "text": "The Cyber AB accredits C3PAOs",
+      "passed": true,
+      "evidence": "C3PAOs are authorized by the Cyber AB, the CMMC Accreditation Body"
+    },
+    {
+      "text": "Assessment results are entered in CMMC eMASS/SPRS",
+      "passed": true,
+      "evidence": "C3PAO assessment results are uploaded to the DoD's CMMC eMASS system, which feeds SPRS"
+    },
+    {
+      "text": "Level 1 (and eligible Level 2) self-assessments go into SPRS",
+      "passed": true,
+      "evidence": "Self-assessment results and affirmations are entered by the organization in SPRS"
+    },
+    {
+      "text": "Does not use the name 'CMMC-AB'",
+      "passed": true,
+      "evidence": "The literal name 'CMMC-AB' never appears; uses 'Cyber AB' (descriptive phrase 'the CMMC Accreditation Body' is not the CMMC-AB name)"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

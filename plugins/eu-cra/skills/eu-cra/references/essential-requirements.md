@@ -1,10 +1,10 @@
-# EU CRA — Essential Requirements & Obligations Reference
+# EU CRA - Essential Requirements & Obligations Reference
 
 ## Table of Contents
-1. [Annex I Part I — Security Properties of PDEs](#annex-i-part-i--security-properties)
-2. [Annex I Part II — Vulnerability Handling](#annex-i-part-ii--vulnerability-handling)
-3. [Product Categories — Annex III (Class I)](#annex-iii--class-i-products)
-4. [Product Categories — Annex IV (Class II)](#annex-iv--class-ii-products)
+1. [Annex I Part I - Security Properties of PDEs](#annex-i-part-i--security-properties)
+2. [Annex I Part II - Vulnerability Handling](#annex-i-part-ii--vulnerability-handling)
+3. [Product Categories - Annex III (Important Products: Class I and Class II)](#annex-iii--important-products-class-i-and-class-ii)
+4. [Product Categories - Annex IV (Critical Products)](#annex-iv--critical-products)
 5. [Support Period Obligations](#support-period-obligations)
 6. [SBOM Requirements](#sbom-requirements)
 7. [Vulnerability and Incident Reporting](#vulnerability-and-incident-reporting)
@@ -15,15 +15,15 @@
 
 ---
 
-## Annex I Part I — Security Properties
+## Annex I Part I - Security Properties
 
 Products with digital elements must be **designed, developed, and produced** to meet these essential requirements:
 
 1. **No known exploitable vulnerabilities:** Products must be placed on the market without known exploitable vulnerabilities. Manufacturers must exercise due diligence in tracking and addressing vulnerabilities before release.
 
 2. **Secure by default configuration:**
-   - Minimal attack surface — functions and ports not required for the intended purpose must be disabled by default
-   - Secure default settings — passwords, cryptographic keys, and authentication must not use factory defaults that are easily guessable or common across products
+   - Minimal attack surface - functions and ports not required for the intended purpose must be disabled by default
+   - Secure default settings - passwords, cryptographic keys, and authentication must not use factory defaults that are easily guessable or common across products
    - Users must be able to reset the product to a secure factory state
 
 3. **Protection against unauthorised access:**
@@ -31,11 +31,11 @@ Products with digital elements must be **designed, developed, and produced** to 
    - Identity and access management based on the principle of least privilege
    - Where feasible: multi-factor authentication, cryptographic credentials
 
-4. **Confidentiality — data protection:**
+4. **Confidentiality - data protection:**
    - Personal and other sensitive data protected at rest and in transit using state-of-the-art encryption
    - Cryptographic best practices (no deprecated algorithms)
 
-5. **Integrity — data and software protection:**
+5. **Integrity - data and software protection:**
    - Unauthorised modification of data, firmware, or software detected and mitigated
    - Software and firmware updates must be cryptographically signed and the signature verified before installation
    - Secure boot mechanisms where applicable
@@ -44,7 +44,7 @@ Products with digital elements must be **designed, developed, and produced** to 
    - Only personal data and other data necessary for intended function is processed
    - Privacy-by-design principles applied (GDPR Art. 25 alignment)
 
-7. **Availability — resilience against DoS:**
+7. **Availability - resilience against DoS:**
    - Products must be designed to maintain availability of essential functions under denial-of-service attacks
    - Resilience and graceful degradation
 
@@ -62,125 +62,108 @@ Products with digital elements must be **designed, developed, and produced** to 
 
 ---
 
-## Annex I Part II — Vulnerability Handling
+## Annex I Part II - Vulnerability Handling
 
-Manufacturers must put in place and document a **vulnerability handling policy and process** covering:
+Annex I Part II contains **exactly 8 vulnerability-handling requirements**.
+Manufacturers must put in place and document a **vulnerability handling policy
+and process** covering:
 
-1. **Vulnerability identification:**
-   - Maintain an inventory of software components in the product (SBOM basis)
+1. **Identify and document vulnerabilities and components (SBOM):**
+   - Maintain an inventory of software components in the product, including a
+     machine-readable **Software Bill of Materials (SBOM)**
    - Proactively monitor for new CVEs and security advisories affecting integrated components
-   - Apply automated vulnerability scanning in the build pipeline
 
-2. **Vulnerability remediation:**
-   - Vulnerabilities addressed without undue delay
-   - Security updates released promptly and free of charge
+2. **Remediate vulnerabilities without delay:**
+   - Vulnerabilities addressed without delay, including through **free security updates**
    - Document the remediation process and evidence of fix verification
 
-3. **Coordinated Vulnerability Disclosure (CVD) policy:**
-   - Publish a CVD/VDP policy that is publicly accessible
-   - Specify: expected response time, acknowledgement process, scope, responsible disclosure expectations
-   - Provide a named point of contact (email, security advisory page, or bug bounty platform)
+3. **Test and review:**
+   - Apply effective and regular tests and reviews of the security of the product
 
-4. **CERT/CSIRT information sharing:**
-   - Share information about identified vulnerabilities and mitigations with EU CERT/CSIRT networks as appropriate
+4. **Disclose fixed vulnerabilities:**
+   - Publicly disclose information about fixed vulnerabilities once security
+     updates are available
 
-5. **SBOM provision:**
-   - Provide a machine-readable SBOM on request to national authorities
-   - Minimum content: top-level dependencies (name, version, supplier, licence)
-   - Recommended formats: SPDX (ISO/IEC 5962:2021), CycloneDX
-   - SBOM must be kept current throughout the support period
+5. **Coordinated Vulnerability Disclosure (CVD) policy:**
+   - Put in place and enforce a coordinated vulnerability disclosure policy
+   - Publish the policy; provide a named point of contact (email, security
+     advisory page, or bug bounty platform)
 
-6. **Security updates — free of charge:**
-   - Security updates must not be bundled exclusively with feature updates (security patches must be available independently)
-   - Update delivery mechanism must be secure (signed updates, integrity verification)
-   - Users must be notified of available security updates
+6. **Information-sharing facilitation:**
+   - Facilitate the sharing of information about potential vulnerabilities in
+     the product and its third-party components
 
-7. **ENISA/CSIRT reporting — actively exploited vulnerabilities:**
-   - Within **24 hours** of becoming aware: early warning to ENISA and relevant national CSIRT
-   - Within **72 hours** of becoming aware: full vulnerability notification (nature of vulnerability, affected products, remediation status)
-   - Final report within **14 days** of fix availability
-   - Notify affected users as soon as practicable
+7. **Secure update distribution:**
+   - Provide mechanisms to securely distribute updates (signed updates,
+     integrity verification)
 
-8. **Security incident reporting (severe incidents):**
-   - Severe incidents impacting product security → notify ENISA and national CSIRT within 24 hours (early warning)
-   - Full incident report within 72 hours
-   - Final post-incident report within 1 month
+8. **Free, timely security updates:**
+   - Disseminate security updates free of charge and without delay; security
+     patches must be available independently of feature updates
 
-9. **End-of-life notification:**
-   - Notify users of end of security support at least **1 year** before the end-of-support date
-   - Provide final cumulative security update where technically feasible
-   - Document that the product is no longer receiving security updates
+**Not Annex I Part II:** The 24h/72h reporting of actively exploited
+vulnerabilities and severe incidents is an **Article 14** obligation (24-hour
+early warning, 72-hour notification, final report); see the Vulnerability and
+Incident Reporting section below. Support-period and end-of-life duties sit in
+**Article 13 and Annex II**.
 
 ---
 
-## Annex III — Class I Products
+## Annex III - Important Products (Class I and Class II)
 
-Class I products require **enhanced conformity assessment** (manufacturer may choose self-assessment or Notified Body). These 35 categories include:
+Annex III lists the **important products with digital elements**, divided into
+Class I and Class II.
 
-**Identity and access:**
-- Identity management software and hardware (identity providers, SSO systems)
-- Password managers
-- Biometric readers and biometric data management software
-- Privileged access management (PAM) software
+### Class I - 19 categories
 
-**Network security and monitoring:**
-- Network traffic monitoring and analysis tools
-- Network monitoring systems
-- Web application firewalls
-- Network filters (DNS filtering, email filtering)
-- Micro-segmentation tools
-- VPNs (virtual private networks)
-- Security information and event management (SIEM) systems
+Class I products may use self-assessment or a Notified Body (manufacturer's
+choice). The 19 categories are:
 
-**Endpoint security:**
-- Endpoint detection and response (EDR) tools
-- Antivirus and anti-malware software
-- Security update management software (patch management)
+1. Identity management and privileged access management (PAM) systems
+2. Standalone and embedded browsers
+3. Password managers
+4. Anti-malware software
+5. VPN products
+6. Network management systems
+7. Security information and event management (SIEM) systems
+8. Boot managers
+9. PKI and digital certificate software
+10. Network interfaces
+11. Operating systems
+12. Routers, modems, and switches
+13. Microprocessors with security functionalities
+14. Microcontrollers with security functionalities
+15. ASICs and FPGAs with security functionalities
+16. Smart home virtual assistants
+17. Smart home security products
+18. Connected toys with interaction features
+19. Personal wearables with health monitoring
 
-**Cryptography:**
-- Certificate management software
-- PKI components
-- Digital signature software
+### Class II - 4 categories
 
-**Hardware:**
-- Microprocessors, microcontrollers (sold for integration in PDEs)
-- General-purpose processors
-- Routers, modems, and network switches intended for home use
-- Smart meters and energy management systems
+Class II products require **mandatory Notified Body assessment**. The 4
+categories are:
 
-**Development tools:**
-- Application security testing tools (SAST, DAST, IAST)
-- Code integrity tools
-- Compilers and build tools (where used for safety-critical software)
-
-**Other Class I examples:**
-- Mobile applications providing secure communications
-- Industrial automation/monitoring systems (non-critical infrastructure)
-- Remote access software (RDP, SSH clients/servers)
-- Smart home hubs and controllers
+1. Hypervisors and container runtime systems
+2. Firewalls, intrusion detection and prevention systems
+3. Tamper-resistant microprocessors
+4. Tamper-resistant microcontrollers
 
 ---
 
-## Annex IV — Class II Products
+## Annex IV - Critical Products
 
-Class II products require **mandatory Notified Body assessment**. These 12 categories include:
+Annex IV lists the **critical products with digital elements** (3 categories).
+Critical products can be made subject to **mandatory EU cybersecurity
+certification**:
 
-1. **Hypervisors and container runtime environments** (Type 1 hypervisors, Docker, Kubernetes, etc.)
-2. **Trusted Execution Environments (TEEs)** and hardware security enclaves
-3. **Trusted Platform Modules (TPMs)**
-4. **Hardware Security Modules (HSMs)**
-5. **Microprocessors with security functions** (secure elements, cryptographic processors)
-6. **Smart card readers and smart cards** (including NFC-enabled devices)
-7. **Industrial firewalls, intrusion detection/prevention systems (IDS/IPS)** intended for use in critical infrastructure or OT environments
-8. **Industrial control systems (ICS) and SCADA systems** — including PLCs, RTUs, DCS components intended for critical infrastructure sectors (energy, water, transport)
-9. **Industrial robots and robotic control systems**
-10. **Safety-critical automotive components** with network connectivity (ECUs, V2X modules — to the extent not excluded by type-approval)
-11. **Medical-grade network-connected devices** (where not excluded by MDR/IVDR)
-12. **Advanced metering infrastructure (AMI) systems** and grid-connected energy management systems
+1. Hardware devices with security boxes
+2. Smart meter gateways
+3. Smartcards or similar devices, including secure elements
 
 ---
 
-## Support Period Obligations
+## Support Period Obligations (Article 13 / Annex II)
 
 ### Minimum support period
 - **At least 5 years** from the date the product is placed on the market, or the expected product lifetime if shorter than 5 years
@@ -213,8 +196,8 @@ Class II products require **mandatory Notified Body assessment**. These 12 categ
 - The SBOM must be kept **current** throughout the support period
 
 ### Recommended formats
-- **SPDX** (ISO/IEC 5962:2021) — widely used, standardised
-- **CycloneDX** — security-focused, supports VEX (Vulnerability Exploitability eXchange)
+- **SPDX** (ISO/IEC 5962:2021) - widely used, standardised
+- **CycloneDX** - security-focused, supports VEX (Vulnerability Exploitability eXchange)
 - JSON or XML formats preferred for machine readability
 
 ### VEX (Vulnerability Exploitability eXchange)
@@ -229,12 +212,12 @@ Class II products require **mandatory Notified Body assessment**. These 12 categ
 
 ---
 
-## Vulnerability and Incident Reporting
+## Vulnerability and Incident Reporting (Article 14)
 
 ### Reporting recipients
-- **ENISA** (EU Agency for Cybersecurity) — central reporting point; ENISA forwards to national CSIRTs
-- **National CSIRT** — member state's designated CSIRT (e.g., BSI/CERT-Bund in Germany, ANSSI in France, NCSC in Netherlands/UK-equivalent)
-- **Affected users** — direct notification where feasible
+- **ENISA** (EU Agency for Cybersecurity) - central reporting point; ENISA forwards to national CSIRTs
+- **National CSIRT** - member state's designated CSIRT (e.g., BSI/CERT-Bund in Germany, ANSSI in France, NCSC in Netherlands/UK-equivalent)
+- **Affected users** - direct notification where feasible
 
 ### Actively exploited vulnerability
 | Timeframe | Action |
@@ -265,12 +248,11 @@ Manufacturers must:
 4. Conduct conformity assessment (Module A self-assessment or Notified Body)
 5. Draw up EU Declaration of Conformity (Annex V) and retain for 10 years
 6. Affix CE marking
-7. Register Class I and Class II products in the EU database before placing on market
-8. Apply vulnerability handling obligations continuously throughout the support period
-9. Report actively exploited vulnerabilities and severe incidents to ENISA/CSIRTs
-10. Ensure products distributed in the EU have a point of contact address
-11. Cooperate with market surveillance authorities
-12. Take corrective action if product is non-compliant; issue recall if necessary
+7. Apply vulnerability handling obligations continuously throughout the support period
+8. Report actively exploited vulnerabilities and severe incidents to ENISA/CSIRTs (Article 14, via the ENISA single reporting platform)
+9. Ensure products distributed in the EU have a point of contact address
+10. Cooperate with market surveillance authorities
+11. Take corrective action if product is non-compliant; issue recall if necessary
 
 ---
 
@@ -314,7 +296,7 @@ Distributors must:
 
 ---
 
-## Art. 14 Reporting — Operational Since September 11, 2026
+## Art. 14 Reporting - Operational Since September 11, 2026
 
 Reporting obligations are **in force** and the **ENISA Single Reporting Platform (SRP)** is live (launched September 11, 2026; portal.cra-srp.enisa.europa.eu). File the 24h early warning / 72h notification / final report (14 days post-corrective-measure for exploited vulnerabilities; 1 month post-72h-notice for severe incidents) through the SRP to the CSIRT Designated as Coordinator of the main-establishment Member State, with simultaneous availability to ENISA. Assigned-Representative registration uses EU Login with MFA; CSIRT validation runs in parallel (up to 20 notifications pre-verification). If the platform is temporarily down, contact the CSIRT directly and re-file via the SRP once restored. Applies to products already on the market (awareness-based clock); OSS stewards join December 11, 2027.
 

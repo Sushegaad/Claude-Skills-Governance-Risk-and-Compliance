@@ -1,0 +1,33 @@
+{
+  "eval_id": 402,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States Law Article 2 defines the two types abstractly and delegates the lists to the Government",
+      "passed": false,
+      "evidence": "Says definitions are in 'the law's definitions article' but admits 'I am not certain of the exact article numbers'; never identifies Article 2"
+    },
+    {
+      "text": "Places the lists in Decree 356/2025 Articles 3 (basic) and 4 (sensitive)",
+      "passed": false,
+      "evidence": "Points only to unnamed 'implementing decrees' and Decree 13; Decree 356 Arts. 3/4 never cited"
+    },
+    {
+      "text": "States the basic list is non-exhaustive (catch-all item 11)",
+      "passed": false,
+      "evidence": "Does not state the basic list is non-exhaustive or mention catch-all item 11; discusses only the Decree 13 sensitive list"
+    },
+    {
+      "text": "States the sensitive list also ends in a catch-all (item (m))",
+      "passed": false,
+      "evidence": "Catch-all discussed only for the old Decree 13 list, not Decree 356 Art. 4 item (m)"
+    },
+    {
+      "text": "Does not claim the Law itself contains exhaustive category lists",
+      "passed": true,
+      "evidence": "Does not claim the Law contains exhaustive lists; says lists sit in implementing decrees and are 'not permanently closed'"
+    }
+  ],
+  "total": 5,
+  "passed": 1
+}

@@ -1,0 +1,38 @@
+Conditional Level 2 certification with a non-FIPS-validated encryption gap (SC.L2-3.13.11)
+
+Short answer: Yes, in principle. SC.L2-3.13.11 is the one 3-point requirement that 32 CFR 170.21(a)(2) allows on a POA&M, specifically when encryption is employed but is not FIPS-validated. Two conditions still have to hold.
+
+1. The two-part POA&M gate
+A Level 2 POA&M, and therefore a conditional certification, is permitted only if BOTH are true:
+- The assessment score is at least 0.8 x 110 = 88, AND
+- Every open item is a 1-point requirement, except SC.L2-3.13.11, which may stay open only when encryption is in place but not FIPS-validated.
+
+Your situation:
+- The single gap is 3.13.11, which carries 3 points. Score = 110 - 3 = 107, comfortably above 88.
+- The exception applies only if the encryption actually exists. If CUI is unencrypted in transit or at rest, that is a different failure. It would likely also affect SC.L2-3.13.8 (3 points), SC.L2-3.13.16 or AC.L2-3.1.13 (the remote access encryption practice), none of which are eligible for the exception.
+- Related practices must not be the real problem. SC.L2-3.13.10 (key management), IA.L2-3.5.10 and MP.L2-3.8.6 are separate items. If any is NOT MET and is not a 1-point item, the conditional path closes.
+
+Verify before the assessment:
+- Inventory every place CUI is protected by cryptography: TLS, VPN, disk, file, backup and mobile.
+- Check each module against the NIST CMVP list for a current FIPS 140-2/3 certificate. "AES-256" alone is not enough; it must be a validated module in an approved mode. Check that the certificate is not historical.
+- Confirm that everything else in the 110 is MET, apart from 1-point items.
+
+2. What conditional certification means
+- It is a conditional Level 2 status with an approved POA&M.
+- The 180-day closeout clock starts at the certification date. All POA&M items must be closed within 180 days, and you must re-assess the closed items. For 3.13.11 that means moving to validated modules, or showing the vendor's validated module is deployed in its validated configuration.
+- If you miss the 180 days, the conditional certification is revoked. That also breaks the annual senior-official affirmation in SPRS and ends contract eligibility until you are reassessed.
+- When all items are closed, you move to final certification (all 110 MET, valid 3 years).
+
+3. Annual affirmation
+A senior company official must affirm compliance in SPRS every year, including while on a conditional status. Affirming while knowingly out of compliance carries False Claims Act exposure. Describe the 3.13.11 gap honestly in the SSP and tie it to a named POA&M item with milestones, owner and due date.
+
+Suggested POA&M entry: SC.L2-3.13.11 | Encryption deployed, modules not FIPS-validated | Replace or reconfigure with CMVP-validated modules (or move to validated cloud or appliance services); update the SSP and crypto inventory | Milestones: inventory (30 days), procurement and selection (60), deployment (120), validation evidence (150) | Owner: security architecture lead | Due: before day 180 | Evidence: CMVP certificate numbers, configuration exports, scan or test results.
+
+4. Program status (July 13, 2026 suspension)
+DoD suspended CMMC Phase 2, including the C3PAO third-party assessment requirement that was due in new contracts from November 10, 2026. That is done through two policy memoranda, and DoD is removing C3PAO and DIBCAC requirements from solicitations and from existing contracts at the next option or modification. Today only Level 1 (Self) or Level 2 (Self) can be designated. A conditional C3PAO certification is therefore only reachable if your contract still carries a Level 2 (C3PAO) requirement, or if DoD restores third-party assessment. For a self-assessment, the same logic still governs your SPRS score: a 3-point deduction gives 107, and partial implementation gets no partial credit.
+
+32 CFR Part 170 and DFARS 252.204-7012/7019/7020/7021 remain in force, and self-assessments, SPRS submissions and affirmations continue. The Reform Task Force report was due around September 13, 2026. As of September 14, 2026 nothing had been published, and I have no later confirmation, so please re-verify. The report is advisory, and obligations change only through a class deviation, a DFARS rule change or an amendment to 32 CFR Part 170. The signals so far, which are CIO statements and not policy, are dissatisfaction with point-in-time assessments, concern about OT and manufacturing resilience, and CUI-marking reform. Keep remediating on the NIST SP 800-171 Rev 2 baseline, because the obligations did not move and third-party assessment could return on short notice.
+
+Also remember DFARS 7012: cloud services handling CUI must be FedRAMP Moderate (or equivalent), and incidents must be reported to DIBNET within 72 hours.
+
+This is general compliance information, not legal advice.
