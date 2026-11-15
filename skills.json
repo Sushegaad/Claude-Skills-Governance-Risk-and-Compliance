@@ -444,12 +444,12 @@
       "category_key": "ai-gov",
       "region": "us global",
       "domains": "ai risk-assessment",
-      "grading_dir": "grc-workspace/rerun-2026-07c/nist-ai-rmf-evals",
+      "grading_dir": "grc-workspace/rerun-2026-11/nist-ai-rmf-evals",
       "eval": {
         "cases": 5,
-        "last_updated": "03 Jul 2026",
-        "tested": "Four functions overview; Hiring AI risk assessment; Credit scoring risk register; EU AI Act mapping; GOVERN gap assessment",
-        "readme_tested": "Four functions overview; Hiring AI risk assessment; Credit scoring risk register; EU AI Act mapping; GOVERN gap assessment"
+        "last_updated": "14 Nov 2026",
+        "tested": "GOVERN structure and counts (issue #62 regression); GOVERN mapping; core category/subcategory counts; MEASURE trustworthiness IDs; MANAGE incident anchoring",
+        "readme_tested": "GOVERN structure and counts (issue #62 regression); GOVERN mapping; core category/subcategory counts; MEASURE trustworthiness IDs; MANAGE incident anchoring"
       },
       "install_framework": "NIST AI RMF 1.0",
       "install_desc": "GOVERN/MAP/MEASURE/MANAGE function guidance, AI risk registers, organisational profiles",

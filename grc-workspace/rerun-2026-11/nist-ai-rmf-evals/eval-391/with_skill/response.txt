@@ -1,0 +1,34 @@
+Short answer: your auditor's checklist is wrong. GOVERN has 19 subcategories, not 21, and there is no GOVERN 6.3. GOVERN 6 ends at GOVERN 6.2.
+
+The AI RMF 1.0 (NIST AI 100-1, January 2023) Core has 4 functions, 19 categories and 72 subcategories. GOVERN has 6 categories and 19 subcategories:
+
+| Category | Focus | Subcategories | Count |
+|---|---|---|---|
+| GOVERN 1 | Policies, processes, procedures and practices for mapping, measuring and managing AI risk are in place, transparent and implemented effectively | GOVERN 1.1 to 1.7 | 7 |
+| GOVERN 2 | Accountability structures: teams and individuals are empowered, responsible and trained | GOVERN 2.1 to 2.3 | 3 |
+| GOVERN 3 | Workforce diversity, equity, inclusion and accessibility; human-AI oversight roles | GOVERN 3.1 to 3.2 | 2 |
+| GOVERN 4 | Culture that considers and communicates AI risk | GOVERN 4.1 to 4.3 | 3 |
+| GOVERN 5 | Engagement with relevant AI actors | GOVERN 5.1 to 5.2 | 2 |
+| GOVERN 6 | Third-party software, data and supply chain risk | GOVERN 6.1 to 6.2 | 2 |
+| **Total** | | | **19** |
+
+Arithmetic: 7 + 3 + 2 + 3 + 2 + 2 = 19.
+
+GOVERN 6 has only two subcategories:
+- GOVERN 6.1: policies and procedures address AI risks associated with third-party entities, including risk of infringing a third party's intellectual property or other rights.
+- GOVERN 6.2: contingency processes handle failures or incidents in third-party data or AI systems deemed high-risk.
+
+There is no GOVERN 6.3. The checklist's "21" and "6.3" probably come from one of these:
+- A mix-up with another function. MEASURE has 22 subcategories, MAP has 18, and MANAGE has 13.
+- An unofficial or vendor-modified checklist.
+- A draft version or a derivative framework, such as the Generative AI Profile or an organization-specific extension. Anything of that kind is not part of the AI RMF 1.0 Core.
+- A typo that has been copied forward.
+
+What I would do:
+1. Ask the auditor for the source of the checklist and its version. Compare it against NIST AI 100-1, Section 5 (Core, Tables 1 to 4), and the NIST AI RMF Playbook.
+2. Correct the checklist to 19 GOVERN subcategories. Do not carry a phantom GOVERN 6.3 into your gap assessment, because you cannot evidence a requirement that does not exist.
+3. If the auditor wants something that would sit at "6.3" (for example, ongoing monitoring of vendor models), map it to the real anchors. The relevant ones are GOVERN 6.1 and 6.2, MAP 4.1 and 4.2 (third-party component risks and controls), and MANAGE 3.1 and 3.2 (monitoring third-party resources and pre-trained models). Treat it as an organization-specific requirement, not an AI RMF one.
+
+The AI RMF is voluntary, outcome-based and not a compliance checklist. Subcategories are outcomes, and the AI RMF Playbook supplies suggested actions for them. They are not certifiable controls. An auditor's checklist is therefore your organization's interpretation of the framework, and it should be reconciled to the published text.
+
+This is general information, not legal advice. Please confirm counts against the official NIST publication.

@@ -1,0 +1,9 @@
+Mapping to NIST AI RMF 1.0 GOVERN (with related cross-function anchors):
+
+1. Legal and regulatory compliance tracking: GOVERN 1.1 (legal and regulatory requirements involving AI are understood, managed and documented). Related: GOVERN 4.2 and MAP 4.1 for legal risks of components.
+
+2. AI system inventory: GOVERN 1.6 (mechanisms are in place to inventory AI systems and are resourced according to organizational risk priorities). Related: GOVERN 1.7 for decommissioning.
+
+3. Organizational risk tolerance: GOVERN 1.3 (processes determine the needed level of risk management activity based on the organization's risk tolerance) and GOVERN 1.2/1.4 for integrating trustworthy characteristics into policies and the risk management process. Note that MAP 1.5 is where the organizational risk tolerances are determined and documented for a specific system context, so GOVERN sets the process and MAP records the tolerance.
+
+4. Third-party model risk: GOVERN 6 (6.1 policies addressing third-party risks including IP infringement; 6.2 contingency processes for failures of third-party data or AI systems). Related, outside GOVERN: MAP 4.1 and 4.2 (third-party components mapped, risks documented) and MANAGE 3.1/3.2 (third-party risks monitored and pre-trained models monitored).

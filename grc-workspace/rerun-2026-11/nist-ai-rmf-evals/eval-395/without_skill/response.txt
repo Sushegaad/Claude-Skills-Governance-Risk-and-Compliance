@@ -1,0 +1,11 @@
+No, MANAGE 3 is not the right anchor for incident response. In NIST AI RMF 1.0, MANAGE 3 is "AI risks and benefits from third-party entities are managed" (3.1: risks from third-party resources are regularly monitored and controls applied; 3.2: pre-trained models used for development are monitored as part of regular monitoring and maintenance). It is about third-party and pre-trained model risk.
+
+Better anchors for incident handling and response:
+- MANAGE 4.3: incidents and errors are communicated to relevant AI actors, including affected communities; processes for tracking, responding to and recovering from incidents and errors are followed and documented. This is the primary anchor.
+- MANAGE 2.3: procedures are followed to respond to and recover from a previously unknown risk when it is identified.
+- MANAGE 2.4: mechanisms assign responsibility and accountability to supersede, disengage or deactivate AI systems that demonstrate performance or outcomes inconsistent with intended use.
+- MANAGE 4.1: post-deployment monitoring plans, including mechanisms for appeal, override, decommissioning, incident response, recovery and change management.
+- GOVERN 4.3: organizational practices enable AI testing, identification of incidents and information sharing.
+- GOVERN 1.5 (ongoing monitoring and periodic review) and GOVERN 2.1 (roles and responsibilities) as supporting anchors.
+
+Keep MANAGE 3 only if the plan also covers incidents originating in third-party models or data, citing it for that purpose.

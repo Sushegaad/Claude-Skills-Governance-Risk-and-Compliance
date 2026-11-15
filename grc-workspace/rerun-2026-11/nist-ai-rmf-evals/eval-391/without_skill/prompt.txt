@@ -1,0 +1,1 @@
+List the six GOVERN categories of the NIST AI RMF with their subcategory counts. Our auditor's checklist says GOVERN has 21 subcategories including a GOVERN 6.3. Is that right?

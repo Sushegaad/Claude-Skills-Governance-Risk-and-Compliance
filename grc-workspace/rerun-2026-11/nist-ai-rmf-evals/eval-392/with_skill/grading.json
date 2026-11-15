@@ -1,0 +1,33 @@
+{
+  "eval_id": 392,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Maps legal and regulatory requirements to GOVERN 1.1",
+      "passed": true,
+      "evidence": "Legal and regulatory compliance tracking | GOVERN 1.1 ... Legal and regulatory requirements involving AI are understood, managed and documented"
+    },
+    {
+      "text": "Maps the AI system inventory to GOVERN 1.6",
+      "passed": true,
+      "evidence": "AI system inventory | GOVERN 1.6 ... Mechanisms are in place to inventory AI systems"
+    },
+    {
+      "text": "Maps organizational risk tolerance to GOVERN 1.3",
+      "passed": true,
+      "evidence": "Organizational risk tolerance | GOVERN 1.3 ... based on the organization's risk tolerance"
+    },
+    {
+      "text": "Maps third-party model risk to GOVERN 6 (policies in 6.1, contingency processes in 6.2)",
+      "passed": true,
+      "evidence": "Third-party model risk | GOVERN 6.1 and GOVERN 6.2 ... 6.1: policies address third-party AI risks ... 6.2: contingency processes for failures or incidents"
+    },
+    {
+      "text": "Does not cite any nonexistent subcategory such as GOVERN 3.3, 5.3 or 6.3",
+      "passed": true,
+      "evidence": "All cited subcategories (GOVERN 1.1-1.4, 1.6, 6.1-6.2; MAP 1.1, 1.5, 4.1-4.2; MEASURE; MANAGE 1.1, 1.4, 3.1-3.2) exist in NIST AI 100-1"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

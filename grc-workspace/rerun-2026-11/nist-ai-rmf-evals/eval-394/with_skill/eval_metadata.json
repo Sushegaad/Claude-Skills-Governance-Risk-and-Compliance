@@ -1,0 +1,13 @@
+{
+  "eval_id": 394,
+  "eval_name": "measure-trustworthiness",
+  "run_type": "with_skill",
+  "prompt": "Which MEASURE category of the AI RMF covers evaluating systems for trustworthy characteristics, how many subcategories does it have, and which subcategories cover fairness and explainability?",
+  "assertions": [
+    "Identifies MEASURE 2 as the trustworthiness-evaluation category with 13 subcategories (2.1 through 2.13)",
+    "Maps fairness and bias to MEASURE 2.11",
+    "Maps explainability to MEASURE 2.9",
+    "Correctly frames MEASURE overall as 4 categories with 22 subcategories",
+    "Maps at least one more MEASURE 2 subcategory correctly (such as 2.7 security and resilience or 2.10 privacy)"
+  ]
+}

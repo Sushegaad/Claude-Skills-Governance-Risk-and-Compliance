@@ -1,0 +1,1 @@
+Which MEASURE category of the AI RMF covers evaluating systems for trustworthy characteristics, how many subcategories does it have, and which subcategories cover fairness and explainability?

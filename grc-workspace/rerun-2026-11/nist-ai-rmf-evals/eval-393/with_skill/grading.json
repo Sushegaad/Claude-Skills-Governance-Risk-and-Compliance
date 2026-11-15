@@ -1,0 +1,33 @@
+{
+  "eval_id": 393,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "GOVERN: 6 categories, 19 subcategories",
+      "passed": true,
+      "evidence": "GOVERN | 6 | 19 | 1: 7, 2: 3, 3: 2, 4: 3, 5: 2, 6: 2"
+    },
+    {
+      "text": "MAP: 5 categories, 18 subcategories",
+      "passed": true,
+      "evidence": "MAP | 5 | 18 | 1: 6, 2: 3, 3: 5, 4: 2, 5: 2"
+    },
+    {
+      "text": "MEASURE: 4 categories, 22 subcategories",
+      "passed": true,
+      "evidence": "MEASURE | 4 | 22 | 1: 3, 2: 13, 3: 3, 4: 3"
+    },
+    {
+      "text": "MANAGE: 4 categories, 13 subcategories",
+      "passed": true,
+      "evidence": "MANAGE | 4 | 13 | 1: 4, 2: 4, 3: 2, 4: 3"
+    },
+    {
+      "text": "Total: 19 categories and 72 subcategories",
+      "passed": true,
+      "evidence": "4 functions, 19 categories and 72 subcategories ... Categories: 6 + 5 + 4 + 4 = 19 ... Subcategories: 19 + 18 + 22 + 13 = 72"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

@@ -1,0 +1,13 @@
+{
+  "eval_id": 393,
+  "eval_name": "core-counts",
+  "run_type": "with_skill",
+  "prompt": "How many categories and subcategories does each function of the NIST AI RMF Core have, and what is the total?",
+  "assertions": [
+    "GOVERN: 6 categories, 19 subcategories",
+    "MAP: 5 categories, 18 subcategories",
+    "MEASURE: 4 categories, 22 subcategories",
+    "MANAGE: 4 categories, 13 subcategories",
+    "Total: 19 categories and 72 subcategories"
+  ]
+}

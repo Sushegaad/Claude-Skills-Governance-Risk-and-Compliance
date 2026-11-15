@@ -1,7 +1,7 @@
 # Claude Skills for Governance, Risk & Compliance (GRC)
 Expert-level compliance guidance for ISO 27001, SOC 2, FedRAMP, GDPR, HIPAA, NIST CSF, PCI DSS, TSA Cybersecurity, ISO 42001 AI Management System, ISO 27701 Privacy Information Management, DORA Digital Operational Resilience, India's Digital Personal Data Protection Act (DPDPA), CMMC 2.0 Cybersecurity Maturity Model Certification, NIST AI Risk Management Framework, SWIFT Customer Security Programme (CSP), Australian Information Security Manual (ISM), EU NIS2 Directive, CCPA/CPRA California Privacy, ITAR (International Traffic in Arms Regulations), Brazil's LGPD (Lei Geral de Proteção de Dados), EU CSRD (Corporate Sustainability Reporting Directive), CIS Controls v8 (CIS Top 18), EAR (Export Administration Regulations), NIST SP 800-53 (Security and Privacy Controls for Federal Systems), EU AI Act (Regulation (EU) 2024/1689), Section 508 (US Federal ICT Accessibility), WCAG (Web Content Accessibility Guidelines), NZISM (New Zealand Information Security Manual), Vietnam PDPL (Law on Personal Data Protection No. 91/2025/QH15), EU CRA (Cyber Resilience Act, Regulation (EU) 2024/2847), Saudi Arabia GRC (NCA ECC, Saudi PDPL, SAMA, CST), UAE GRC (Federal PDPL, DIFC, ADGM, CBUAE, ICT Health Law), TISAX (VDA ISA / ENX automotive supplier security), TPRM (third-party/vendor risk), UK Cyber Essentials, and SOX ITGC — powered by Claude Skills. **Updated Monthly.**
 
-Benchmarked across 180 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (902 assertions in total). Skills scored **90%** vs a baseline of **49%**.
+Benchmarked across 180 test cases using the eval framework — each graded against at least 5 verifiable assertions by independent agents (902 assertions in total). Skills scored **90%** vs a baseline of **50%**.
 
 [![Release: v2.2.0](https://img.shields.io/badge/Release-v2.2.0-brightgreen.svg)](../../releases/tag/v2.2.0)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -1123,8 +1123,8 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | Configuration | Pass Rate | Assertions Passed |
 |---------------|-----------|-------------------|
 | **With GRC Skills installed** | **90%** | **810 / 902** |
-| Without skills (baseline Claude) | 49% | 446 / 902 |
-| **Delta** | **+41 points** | **+364 assertions** |
+| Without skills (baseline Claude) | 50% | 448 / 902 |
+| **Delta** | **+40 points** | **+362 assertions** |
 
 ### Per-Skill Results
 
@@ -1144,7 +1144,7 @@ These skills were benchmarked using the [Claude Skill Creator](https://claude.ai
 | DORA [EU] | 5 | **64%** | 56% | +8% | CTPP EU-subsidiary deadline (Art. 31(12)); incident classification and reporting; third-country branches (CSSF 26/915); Register of Information cycle; Art. 30 contract provisions |
 | DPDPA [India] | 5 | **96%** | 80% | +16% | Applicability to foreign entities; Consent vs GDPR; Children's data (18-year threshold); Cross-border transfers; SDF obligations |
 | CMMC 2.0 [US] | 5 | **72%** | 28% | +44% | Task Force status (Sept 14); obligations during the pause; what the suspension did and didn't do; SPRS calculation; enclave scoping |
-| NIST AI RMF | 5 | **92%** | 84% | +8% | Four functions overview; Hiring AI risk assessment; Credit scoring risk register; EU AI Act mapping; GOVERN gap assessment |
+| NIST AI RMF | 5 | **92%** | 92% | ±0% | GOVERN structure and counts (issue #62 regression); GOVERN mapping; core category/subcategory counts; MEASURE trustworthiness IDs; MANAGE incident anchoring |
 | SWIFT CSP | 5 | **56%** | 12% | +44% | v2026 control counts (26+6) and changes; v2027 status honesty; missed-attestation consequences; architecture typing; independent assessment prep |
 | ISM [Australia] | 5 | **92%** | 16% | +76% | September 2026 release (44 new controls); agentic AI controls; OAuth consent hardening; Essential Eight status; cadences and provider access |
 | NIS2 [EU] | 5 | **100%** | 32% | +68% | Transposition status (24 of 27); Austria NISG 2026 scope and deadlines; Netherlands Cbw; CJEU referrals; multi-country rollout |

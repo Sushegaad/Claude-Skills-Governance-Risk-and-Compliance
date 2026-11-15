@@ -1,0 +1,35 @@
+No. MANAGE 3 is the wrong anchor for incident handling. It covers third-party risk. Incident handling and response sits in MANAGE 4, with supporting anchors elsewhere.
+
+**What MANAGE 3 actually is.** MANAGE 3, "AI risks and benefits from third-party entities are managed", has two subcategories:
+- MANAGE 3.1: third-party resources are regularly monitored, and risk controls are applied and documented.
+- MANAGE 3.2: pre-trained models used for development are monitored as part of regular monitoring and maintenance.
+
+**Correct anchors for an incident response plan:**
+
+| Plan element | Anchor |
+|---|---|
+| Post-deployment monitoring, appeal and override, incident response, recovery, change management | **MANAGE 4.1** |
+| Communicating incidents and errors to relevant AI actors, including affected communities; tracking, responding to and recovering from incidents | **MANAGE 4.3** |
+| Lessons learned and continual improvement | MANAGE 4.2 |
+| Responding to and recovering from a previously unknown risk | MANAGE 2.3 |
+| Kill switch or deactivation, with assigned responsibilities | MANAGE 2.4 |
+| Negative residual risk documented | MANAGE 1.4 |
+| Detecting issues in production (triggers) | MEASURE 2.4, MEASURE 3.1 and MEASURE 3.3 (user problem reports and appeals) |
+| Culture and capability for incident identification and information sharing | GOVERN 4.3 |
+| Incidents in third-party AI that you depend on | GOVERN 6.2 (contingency), MANAGE 3.1 and 3.2 |
+
+MANAGE 3 is a legitimate secondary citation only for the vendor and third-party portion of the plan, such as a vendor model failing or changing without notice.
+
+**Suggested plan structure aligned to the framework:**
+1. Trigger conditions: accuracy degradation, bias threshold breach, adversarial attack, data drift.
+2. Severity classification: low, medium, high or critical, with pre-defined notification thresholds (internal escalation, customer notice, regulatory disclosure) under MANAGE 4.3.
+3. Response sequence: contain, assess impact, notify stakeholders (MANAGE 4.3), remediate, document, update the risk register, then feed lessons into GOVERN policy (MANAGE 4.2).
+4. Deactivation authority and procedure (MANAGE 2.4).
+5. Third-party failure contingencies, such as fallback to a prior model version (GOVERN 6.2).
+6. Post-incident review and an AI incident log. Consider sharing anonymized learnings through AI incident databases.
+
+**Cross-framework note.** If the EU AI Act applies, reporting of serious incidents maps to Art. 73. That obligation is mandatory, whereas the AI RMF is voluntary and outcome-based. In ISO/IEC 42001 terms, look at Clause 10.2 (nonconformity) and A.9.
+
+Fix the citation to "MANAGE 4.1 and 4.3, with MANAGE 2.3 and 2.4 for recovery and deactivation". Keep MANAGE 3 only for the third-party component.
+
+This is general information, not legal advice.

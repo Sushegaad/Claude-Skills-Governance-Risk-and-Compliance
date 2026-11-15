@@ -1,0 +1,23 @@
+The AI RMF 1.0 Core (NIST AI 100-1, January 2023) has 4 functions, 19 categories and 72 subcategories.
+
+| Function | Categories | Subcategories | Breakdown by category |
+|---|---|---|---|
+| GOVERN | 6 | 19 | 1: 7, 2: 3, 3: 2, 4: 3, 5: 2, 6: 2 |
+| MAP | 5 | 18 | 1: 6, 2: 3, 3: 5, 4: 2, 5: 2 |
+| MEASURE | 4 | 22 | 1: 3, 2: 13, 3: 3, 4: 3 |
+| MANAGE | 4 | 13 | 1: 4, 2: 4, 3: 2, 4: 3 |
+| **Total** | **19** | **72** | |
+
+Arithmetic:
+- Categories: 6 + 5 + 4 + 4 = 19.
+- Subcategories: 19 + 18 + 22 + 13 = 72.
+
+Points to note:
+- The category-level detail shows where the weight sits. GOVERN 1 has 7 subcategories, MAP 3 has 5, and MEASURE 2 has 13, which is the largest single category in the framework.
+- GOVERN is cross-cutting. It is drawn as the base of the AI RMF diagram, and MAP, MEASURE and MANAGE operate inside the structures it sets up.
+- Citations use function, category and subcategory, for example GOVERN 1.1, MAP 5.1, MEASURE 2.11, MANAGE 4.3.
+- The AI RMF is voluntary, outcome-based and not a compliance checklist. The companion AI RMF Playbook offers suggested actions for each category and subcategory.
+- The Core is organized around the seven trustworthiness characteristics: valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed.
+- Any count other than 19 / 72 (for example a checklist showing 21 GOVERN subcategories) is not from the AI RMF 1.0 Core. NIST profiles such as the Generative AI Profile are companion documents, not changes to the Core. Verify the counts against the official NIST text.
+
+This is general information, not legal advice.

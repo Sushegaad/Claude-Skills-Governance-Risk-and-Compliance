@@ -8,11 +8,11 @@
 
 The NIST AI RMF Skill transforms Claude into an expert AI risk management advisor with comprehensive knowledge of the NIST AI Risk Management Framework (AI RMF 1.0), published January 2023 as NIST AI 100-1. The framework provides a structured, outcome-based approach to identifying, assessing, and managing AI risks throughout the complete AI lifecycle — from design and development through deployment, monitoring, and decommissioning.
 
-The skill covers all four core functions of the AI RMF: GOVERN (6 categories, 21 subcategories), MAP (5 categories), MEASURE (4 categories), and MANAGE (4 categories) — a total of 19 categories. Every response cites the specific function and category (for example, "GOVERN 1.1" or "MAP 3.2") rather than function names alone. The skill also covers the AI RMF Playbook's suggested actions for each category, enabling organisations to move directly from framework understanding to practical implementation steps.
+The skill covers all four core functions of the AI RMF: GOVERN (6 categories, 19 subcategories), MAP (5 categories, 18 subcategories), MEASURE (4 categories, 22 subcategories), and MANAGE (4 categories, 13 subcategories) — a total of 19 categories and 72 subcategories. Every response cites the specific function and category (for example, "GOVERN 1.1" or "MAP 3.2") rather than function names alone. The skill also covers the AI RMF Playbook's suggested actions for each category, enabling organisations to move directly from framework understanding to practical implementation steps.
 
 A central feature of the skill is the seven trustworthiness properties defined by the AI RMF: Accountable and Transparent, Explainable and Interpretable, Fair and Bias-Managed, Privacy-Enhanced, Reliable, Resilient, Safe, Secure and Cyber-Resilient, and Valid and Verified. The skill applies these properties as evaluation lenses when assessing specific AI systems, building risk registers, or determining which categories of the framework to prioritise.
 
-The skill supports AI risk profile construction — building both Current Profile (where the organisation is today) and Target Profile (where it needs to be), with gap analysis and a prioritised remediation roadmap. It also covers AI risk register design, AI incident response planning (aligned to MANAGE 3.x), and cross-framework alignment to the EU AI Act, ISO 42001:2023, and NIST CSF 2.0. The framework's voluntary and non-prescriptive nature is respected throughout: the skill provides structured guidance without implying a single mandatory implementation path.
+The skill supports AI risk profile construction — building both Current Profile (where the organisation is today) and Target Profile (where it needs to be), with gap analysis and a prioritised remediation roadmap. It also covers AI risk register design, AI incident response planning (aligned to MANAGE 4.x), and cross-framework alignment to the EU AI Act, ISO 42001:2023, and NIST CSF 2.0. The framework's voluntary and non-prescriptive nature is respected throughout: the skill provides structured guidance without implying a single mandatory implementation path.
 
 ---
 
@@ -44,7 +44,7 @@ The skill supports AI risk profile construction — building both Current Profil
 - "Draft an organisational AI Risk Management Policy aligned to GOVERN 1.1–1.7"
 - "What accountability structures does the AI RMF recommend under GOVERN 2.x?"
 - "How should we define and communicate our AI risk tolerance (GOVERN 1.3)?"
-- "Draft an AI governance charter with roles and responsibilities for GOVERN 3.x"
+- "Draft an AI governance charter with roles and responsibilities for GOVERN 2.x"
 
 ### Risk Context and Identification (MAP Function)
 - "We're deploying an AI-powered credit scoring system — walk me through MAP 1.x context establishment"
@@ -59,10 +59,10 @@ The skill supports AI risk profile construction — building both Current Profil
 - "Build an AI trustworthiness scorecard for our customer-facing recommendation system"
 
 ### Risk Response and Management (MANAGE Function)
-- "Draft an AI incident response plan aligned to MANAGE 3.x"
+- "Draft an AI incident response plan aligned to MANAGE 4.x"
 - "What does MANAGE 2.x require for resourcing AI risk treatment strategies?"
 - "How do we document risk treatment outcomes and feed lessons learned back into GOVERN?"
-- "We detected model drift — walk me through the MANAGE 3.x response workflow"
+- "We detected model drift — walk me through the MANAGE 4.x response workflow"
 
 ### AI Risk Register
 - "Build an AI risk register template aligned to the AI RMF"
@@ -125,7 +125,7 @@ including the EU AI Act.
 
 ```
 We detected that our customer churn prediction model has significantly degraded
-in accuracy after a data pipeline change. Walk me through the MANAGE 3.x incident
+in accuracy after a data pipeline change. Walk me through the MANAGE 4.x incident
 response workflow: trigger conditions, containment, stakeholder notification,
 remediation steps, documentation, and how to update our risk register.
 ```
@@ -171,13 +171,13 @@ plugins/nist-ai-rmf/
 - MEASURE function: 4 categories (MS-1 through MS-4) with focus descriptions
 - MANAGE function: 4 categories (MG-1 through MG-4) with focus descriptions
 - Seven trustworthiness properties table with key questions for each property
-- Three common workflows: gap assessment (19-category rating), AI risk register entry structure, incident response (MANAGE 3.x)
+- Three common workflows: gap assessment (19-category rating), AI risk register entry structure, incident response (MANAGE 4.x)
 
 ### What's in the reference files
 
 | File | Contents |
 |------|----------|
-| `references/rmf-core.md` | All 19 AI RMF categories with full subcategory text and Playbook suggested actions: GOVERN (6 categories, 21 subcategories) including GV-1 (policies/processes), GV-2 (accountability), GV-3 (roles), GV-4 (cross-functional teams), GV-5 (risk tolerance), GV-6 (regulatory alignment); MAP function with context establishment, scientific understanding, stakeholder mapping, risk prioritization, harm characterisation; MEASURE function with measurement approaches, trustworthiness evaluation, risk tracking, feedback mechanisms; MANAGE function with risk prioritization, treatment strategies, monitoring and adjustment, lessons learned |
+| `references/rmf-core.md` | All 19 AI RMF categories with full subcategory text and Playbook suggested actions: GOVERN (6 categories, 19 subcategories) including GV-1 (policies/processes), GV-2 (accountability), GV-3 (workforce diversity, equity, inclusion, and accessibility), GV-4 (risk culture and communication), GV-5 (engagement with relevant AI actors), GV-6 (third-party and supply chain risk); MAP function (5 categories, 18 subcategories) with context establishment, system categorization, benefits/costs, third-party component risk, impact characterisation; MEASURE function (4 categories, 22 subcategories) with measurement approaches, trustworthiness evaluation, risk tracking, feedback mechanisms; MANAGE function (4 categories, 13 subcategories) with risk prioritization and response, treatment strategies, third-party risk management, monitoring and incident communication |
 | `references/rmf-profiles.md` | AI risk profile concept (Current vs. Target profile); 6-step profile-building methodology; trustworthy AI characteristics metrics and indicators for Accuracy/Validity (precision, recall, AUC-ROC, calibration, OOD performance), Fairness/Bias (demographic parity, equalized odds, counterfactual fairness, disparate impact ratio, disaggregated reporting), Explainability (SHAP, LIME, counterfactual explanations, model cards, saliency maps), Robustness/Reliability (adversarial accuracy, poisoning resilience, input perturbation sensitivity, availability, model drift detection), Privacy (differential privacy, k-anonymity, federated learning, membership inference resistance), Security (adversarial ML threats); cross-framework mapping to ISO 42001:2023, EU AI Act, and NIST CSF 2.0 |
 
 ### Inputs used to build the skill

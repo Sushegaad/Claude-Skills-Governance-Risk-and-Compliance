@@ -1,0 +1,12 @@
+GOVERN has 6 categories and 19 subcategories in NIST AI RMF 1.0 (not 21):
+
+- GOVERN 1: policies, processes, procedures and practices for mapping, measuring and managing AI risk are in place, transparent and implemented: 7 subcategories (1.1-1.7)
+- GOVERN 2: accountability structures so appropriate teams and individuals are empowered, responsible and trained: 3 (2.1-2.3)
+- GOVERN 3: workforce diversity, equity, inclusion and accessibility processes: 2 (3.1-3.2)
+- GOVERN 4: organizational teams committed to a culture that considers and communicates AI risk: 3 (4.1-4.3)
+- GOVERN 5: robust engagement with relevant AI actors: 2 (5.1-5.2)
+- GOVERN 6: policies and procedures for AI risks and benefits arising from third-party software, data and supply chain issues: 2 (6.1-6.2)
+
+Total: 7+3+2+3+2+2 = 19.
+
+Your auditor's checklist is not right. GOVERN 6.3 does not exist; GOVERN 6 ends at 6.2 (6.1 covers third-party IP and other rights risks; 6.2 covers contingency processes for third-party data or AI system failures). The 21 count is also wrong. I'd ask the auditor which source they used (possibly a draft, a vendor mapping, or a conflation with another framework) and correct the checklist to 19 subcategories against the published AI RMF 1.0 (NIST AI 100-1) and the AI RMF Playbook.

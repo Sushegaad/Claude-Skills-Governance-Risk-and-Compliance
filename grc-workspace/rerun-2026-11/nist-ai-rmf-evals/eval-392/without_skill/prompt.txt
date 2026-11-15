@@ -1,0 +1,1 @@
+Under the NIST AI RMF GOVERN function, where exactly do these belong: legal and regulatory compliance tracking, our AI system inventory, organizational risk tolerance, and third-party model risk?

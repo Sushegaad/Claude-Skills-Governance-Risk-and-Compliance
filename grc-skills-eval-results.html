@@ -334,11 +334,11 @@
     <div class="stat-label">With Skill</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value neutral">49%</div>
+    <div class="stat-value neutral">50%</div>
     <div class="stat-label">Baseline (No Skill)</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value positive">+41%</div>
+    <div class="stat-value positive">+40%</div>
     <div class="stat-label">Improvement</div>
   </div>
   <div class="stat-card">
@@ -346,7 +346,7 @@
     <div class="stat-label">Total Assertions</div>
   </div>
   <div class="stat-card">
-    <div class="stat-value positive">+364</div>
+    <div class="stat-value positive">+362</div>
     <div class="stat-label">Extra Assertions Passed</div>
   </div>
 </div>
@@ -478,8 +478,8 @@
           <td style="text-align:center;font-weight:600;color:var(--muted)">14</td>
           <td><a href="#skill-nist-ai-rmf" onclick="openSkill('nist-ai-rmf'); return false;" class="skill-link">NIST AI RMF</a></td>
           <td class="stat-cell">92%</td>
-          <td class="stat-cell">84%</td>
-          <td class="stat-cell delta-positive">+8%</td>
+          <td class="stat-cell">92%</td>
+          <td class="stat-cell delta-neutral">±0%</td>
           <td class="stat-cell">23/25</td>
         </tr>
         <tr>
@@ -11878,1016 +11878,306 @@ Bottom line: enclaving is a sound, widely used strategy to shrink your complianc
         <button class="skill-toggle" onclick="toggleSkill('nist-ai-rmf')">
           <div class="skill-toggle-left">
             <span class="skill-toggle-name">NIST AI RMF</span>
-            <span class="skill-toggle-stats">92% with skill · 84% baseline · <span class="delta-positive">+8%</span></span>
+            <span class="skill-toggle-stats">92% with skill · 92% baseline · <span class="delta-neutral">±0%</span></span>
           </div>
           <span class="skill-chevron">▼</span>
         </button>
         <div class="skill-content" style="display:none">
           <div class="eval-item" id="eval-nist-ai-rmf-0">
             <button class="eval-toggle" onclick="toggleEval('nist-ai-rmf-0')">
-              <span class="eval-label">Test 1: Four Functions Overview</span>
+              <span class="eval-label">Test 1: Govern Structure</span>
               <span class="eval-chevron">▼</span>
             </button>
             <div class="eval-content" style="display:none">
               <div class="eval-prompt">
-                <strong>Prompt:</strong> Our company is starting to deploy AI systems and wants to use the NIST AI RMF. Can you explain the four core functions — GOVERN, MAP, MEASURE, and MANAGE — and how they relate to each other? What should we implement first?
+                <strong>Prompt:</strong> List the six GOVERN categories of the NIST AI RMF with their subcategory counts. Our auditor&#x27;s checklist says GOVERN has 21 subcategories including a GOVERN 6.3. Is that right?
               </div>
               <div class="eval-outputs">
                 <div class="output-panel">
                   <div class="output-header with-header">With Skill</div>
-                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Describes all four functions faithfully to NIST AI 100-1: GOVERN (cross-cutting culture, policies, roles, risk tolerance), MAP (context, categorization, capabilities/limitations, impacts), MEASURE (TEVV — analyze, assess, track risks with metrics), MANAGE (prioritize, treat, respond, recover)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">States the structural relationship correctly: GOVERN is the cross-cutting foundation feeding the other three; MAP informs MEASURE which informs MANAGE, iteratively across the AI lifecycle</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Recommends starting with GOVERN (policies, accountability, inventory, risk tolerance) — the canonical NIST guidance for organizations beginning adoption</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Mentions that the framework is voluntary and outcome-based (not a compliance checklist), organized into categories/subcategories with a companion Playbook</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">References the seven trustworthiness characteristics (valid &amp; reliable, safe, secure &amp; resilient, accountable &amp; transparent, explainable &amp; interpretable, privacy-enhanced, fair with harmful bias managed) as the risk lens the functions operationalize</span></div></div></div>
-                  <div class="output-text"><pre># NIST AI RMF: The Four Core Functions
+                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">States GOVERN has 19 subcategories, not 21 (1.1-1.7, 2.1-2.3, 3.1-3.2, 4.1-4.3, 5.1-5.2, 6.1-6.2)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">States GOVERN 3.3, 5.3 and 6.3 do not exist in NIST AI 100-1</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Describes GOVERN 3 as workforce diversity, equity, inclusion and accessibility processes</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Describes GOVERN 5 as engagement with relevant AI actors</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Describes GOVERN 6 as third-party software and data and supply chain risk</span></div></div></div>
+                  <div class="output-text"><pre>Short answer: your auditor&#x27;s checklist is wrong. GOVERN has 19 subcategories, not 21, and there is no GOVERN 6.3. GOVERN 6 ends at GOVERN 6.2.
 
-The **NIST AI Risk Management Framework (AI RMF 1.0)**, published January 2023 as NIST AI 100-1, is a great foundation for a company just starting to deploy AI systems. Before diving into the functions, it&#x27;s worth being clear about what the framework is and isn&#x27;t: the AI RMF is **voluntary, outcome-based, and not a compliance checklist**. It won&#x27;t hand you a pass/fail audit — instead it gives you a structured way to reason about AI risk across the lifecycle, and you decide how deep to go based on your context and risk tolerance. The companion **AI RMF Playbook** is where NIST publishes suggested actions for every category, so once you&#x27;ve read this, that&#x27;s your next stop for implementation detail.
+The AI RMF 1.0 (NIST AI 100-1, January 2023) Core has 4 functions, 19 categories and 72 subcategories. GOVERN has 6 categories and 19 subcategories:
 
-Underlying all four functions is a shared risk lens: the **seven characteristics of trustworthy AI** — Valid &amp; Reliable, Safe, Secure &amp; Resilient, Accountable &amp; Transparent, Explainable &amp; Interpretable, Privacy-Enhanced, and Fair with Harmful Bias Managed. GOVERN, MAP, MEASURE, and MANAGE are essentially the operational machinery for making deliberate, documented tradeoffs across those seven properties — no system is perfectly trustworthy on every dimension at once.
+| Category | Focus | Subcategories | Count |
+|---|---|---|---|
+| GOVERN 1 | Policies, processes, procedures and practices for mapping, measuring and managing AI risk are in place, transparent and implemented effectively | GOVERN 1.1 to 1.7 | 7 |
+| GOVERN 2 | Accountability structures: teams and individuals are empowered, responsible and trained | GOVERN 2.1 to 2.3 | 3 |
+| GOVERN 3 | Workforce diversity, equity, inclusion and accessibility; human-AI oversight roles | GOVERN 3.1 to 3.2 | 2 |
+| GOVERN 4 | Culture that considers and communicates AI risk | GOVERN 4.1 to 4.3 | 3 |
+| GOVERN 5 | Engagement with relevant AI actors | GOVERN 5.1 to 5.2 | 2 |
+| GOVERN 6 | Third-party software, data and supply chain risk | GOVERN 6.1 to 6.2 | 2 |
+| **Total** | | | **19** |
 
-## The Four Functions
+Arithmetic: 7 + 3 + 2 + 3 + 2 + 2 = 19.
 
-### GOVERN — Organizational Accountability (6 categories, ~21 subcategories)
-GOVERN sets the culture, policies, accountability structures, and risk tolerance for AI across the organization. It is drawn as the *base* of the AI RMF diagram in NIST&#x27;s own visualization because it&#x27;s cross-cutting — every MAP, MEASURE, and MANAGE activity should operate inside the accountability structures GOVERN establishes. Key categories:
-- **GOVERN 1** — AI risk policies, processes, and risk tolerance are established and integrated into enterprise risk management (ERM)
-- **GOVERN 2** — Accountability structures (who owns AI risk decisions)
-- **GOVERN 3** — Roles and responsibilities across the AI lifecycle, including third-party/vendor roles
-- **GOVERN 4** — Cross-functional collaboration (legal, privacy, security, HR, ethics)
-- **GOVERN 5** — Risk tolerance is communicated and drives go/no-go deployment decisions
-- **GOVERN 6** — Alignment with applicable laws, regulations, and ethical principles (GOVERN 6.1/6.2 also cover third-party AI risk)
+GOVERN 6 has only two subcategories:
+- GOVERN 6.1: policies and procedures address AI risks associated with third-party entities, including risk of infringing a third party&#x27;s intellectual property or other rights.
+- GOVERN 6.2: contingency processes handle failures or incidents in third-party data or AI systems deemed high-risk.
 
-### MAP — Risk Identification (5 categories, ~20 subcategories)
-MAP establishes context — intended use, deployment environment, affected stakeholders, and likely risks — *before* you invest in measuring or managing anything. A weak MAP means you&#x27;ll measure the wrong things later. Key categories:
-- **MAP 1** — Intended use, deployment context, and affected populations are documented (MAP 1.4, MAP 1.5)
-- **MAP 2** — Scientific understanding of the system&#x27;s capabilities/limitations is applied
-- **MAP 3** — Risks and benefits are mapped to specific stakeholder groups (who benefits vs. who bears risk)
-- **MAP 4** — Risks are prioritized (severity × breadth × reversibility)
-- **MAP 5** — Likelihood and impact of harms are characterized, including systemic/cumulative effects
+There is no GOVERN 6.3. The checklist&#x27;s &quot;21&quot; and &quot;6.3&quot; probably come from one of these:
+- A mix-up with another function. MEASURE has 22 subcategories, MAP has 18, and MANAGE has 13.
+- An unofficial or vendor-modified checklist.
+- A draft version or a derivative framework, such as the Generative AI Profile or an organization-specific extension. Anything of that kind is not part of the AI RMF 1.0 Core.
+- A typo that has been copied forward.
 
-### MEASURE — Risk Analysis (4 categories, ~16 subcategories)
-MEASURE applies quantitative, qualitative, and mixed-method **TEVV (Test, Evaluation, Verification, and Validation)** activities to the risks MAP identified. Key categories:
-- **MEASURE 1** — Metrics and measurement approaches are defined per risk (e.g., accuracy, demographic parity, adversarial accuracy)
-- **MEASURE 2** — Systems are evaluated for trustworthiness pre-deployment (bias testing, explainability testing, security/privacy assessment, human oversight validation)
-- **MEASURE 3** — Risk is tracked over time; drift and degradation are monitored post-deployment
-- **MEASURE 4** — Measurement results feed decision-makers and update the risk register
+What I would do:
+1. Ask the auditor for the source of the checklist and its version. Compare it against NIST AI 100-1, Section 5 (Core, Tables 1 to 4), and the NIST AI RMF Playbook.
+2. Correct the checklist to 19 GOVERN subcategories. Do not carry a phantom GOVERN 6.3 into your gap assessment, because you cannot evidence a requirement that does not exist.
+3. If the auditor wants something that would sit at &quot;6.3&quot; (for example, ongoing monitoring of vendor models), map it to the real anchors. The relevant ones are GOVERN 6.1 and 6.2, MAP 4.1 and 4.2 (third-party component risks and controls), and MANAGE 3.1 and 3.2 (monitoring third-party resources and pre-trained models). Treat it as an organization-specific requirement, not an AI RMF one.
 
-### MANAGE — Risk Response (4 categories, ~18 subcategories)
-MANAGE is where risks get treated — and where the loop closes back into GOVERN. Key categories:
-- **MANAGE 1** — Risks are prioritized, assigned owners, and residual risk is formally accepted by an accountable authority
-- **MANAGE 2** — Treatment strategies (mitigate, transfer, avoid, accept) are resourced and implemented, including emergency &quot;kill switch&quot; procedures
-- **MANAGE 3** — Treatments are monitored for effectiveness; AI incidents are logged, investigated, and escalated
-- **MANAGE 4** — Outcomes and lessons learned are reviewed and fed back into GOVERN policy updates
+The AI RMF is voluntary, outcome-based and not a compliance checklist. Subcategories are outcomes, and the AI RMF Playbook supplies suggested actions for them. They are not certifiable controls. An auditor&#x27;s checklist is therefore your organization&#x27;s interpretation of the framework, and it should be reconciled to the published text.
 
-## How They Relate
-
-GOVERN → MAP → MEASURE → MANAGE isn&#x27;t a strict waterfall — it&#x27;s a continuous loop with GOVERN as the always-on foundation underneath the other three:
-
-```
-        ┌────────────────────────────────────────┐
-        │                GOVERN                   │
-        │   (continuous — culture, accountability, │
-        │       policy, risk tolerance)             │
-        └───────────────┬──────────────────────────┘
-                         │
-        ┌────────────────▼────────────────┐
-        │   MAP → MEASURE → MANAGE          │
-        │   (cycles per system, per         │
-        │    lifecycle stage, per release)  │
-        └────────────────┬──────────────────┘
-                         │
-              feeds back into GOVERN
-              (MANAGE 4.3, MEASURE 3.3)
-```
-
-- MAP identifies and scopes risk.
-- MEASURE quantifies and tests what MAP identified.
-- MANAGE treats what MEASURE found and monitors treatment effectiveness.
-- Findings from MANAGE (incidents, new risks) and MEASURE (drift, new failure modes) flow back into MAP for re-scoping and into GOVERN for policy updates — this is what makes the framework a continuous risk management cycle rather than a one-time assessment.
-
-## What to Implement First
-
-**Start with GOVERN.** It&#x27;s the prerequisite, not an optional first module:
-
-1. **GOVERN 1.3** — Establish and document your organizational risk tolerance for AI (what&#x27;s acceptable, what isn&#x27;t).
-2. **GOVERN 2.1/2.2** — Name an accountable owner (AI Risk Owner or similar) with clear reporting lines.
-3. **GOVERN 1.6 / GOVERN 6.1** — Build an inventory of AI systems in use or planned, and a regulatory register of applicable laws.
-4. **GOVERN 4.1** — Stand up a cross-functional AI risk group (legal, security, privacy, the business owner) so MAP/MEASURE/MANAGE work later has the right people at the table.
-
-Only after those foundations are in place should you run MAP on your first AI system (starting with your highest-stakes or highest-visibility deployment), then MEASURE it, then MANAGE identified risks. Trying to do MAP/MEASURE/MANAGE without GOVERN is the most common failure pattern — you end up with fragmented, inconsistent risk assessments across teams with nobody accountable for the results.
-
----
-*This is general compliance information, not legal advice. Verify current requirements against the official NIST AI 100-1 publication and the AI RMF Playbook, and consult qualified counsel for regulatory decisions specific to your organization.*
+This is general information, not legal advice. Please confirm counts against the official NIST publication.
 </pre></div>
                 </div><div class="output-panel">
                   <div class="output-header without-header">Without Skill (Baseline)</div>
-                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐ 4/5 assertions passed (80%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Describes all four functions faithfully to NIST AI 100-1: GOVERN (cross-cutting culture, policies, roles, risk tolerance), MAP (context, categorization, capabilities/limitations, impacts), MEASURE (TEVV — analyze, assess, track risks with metrics), MANAGE (prioritize, treat, respond, recover)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">States the structural relationship correctly: GOVERN is the cross-cutting foundation feeding the other three; MAP informs MEASURE which informs MANAGE, iteratively across the AI lifecycle</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Recommends starting with GOVERN (policies, accountability, inventory, risk tolerance) — the canonical NIST guidance for organizations beginning adoption</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Mentions that the framework is voluntary and outcome-based (not a compliance checklist), organized into categories/subcategories with a companion Playbook</span></div><div class="assertion"><span class="assertion-icon">❌</span><span class="assertion-text">References the seven trustworthiness characteristics (valid &amp; reliable, safe, secure &amp; resilient, accountable &amp; transparent, explainable &amp; interpretable, privacy-enhanced, fair with harmful bias managed) as the risk lens the functions operationalize</span></div></div></div>
-                  <div class="output-text"><pre># NIST AI Risk Management Framework: The Four Core Functions
+                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">States GOVERN has 19 subcategories, not 21 (1.1-1.7, 2.1-2.3, 3.1-3.2, 4.1-4.3, 5.1-5.2, 6.1-6.2)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">States GOVERN 3.3, 5.3 and 6.3 do not exist in NIST AI 100-1</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Describes GOVERN 3 as workforce diversity, equity, inclusion and accessibility processes</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Describes GOVERN 5 as engagement with relevant AI actors</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Describes GOVERN 6 as third-party software and data and supply chain risk</span></div></div></div>
+                  <div class="output-text"><pre>GOVERN has 6 categories and 19 subcategories in NIST AI RMF 1.0 (not 21):
 
-Great timing to start with the NIST AI RMF — it&#x27;s the most widely referenced voluntary framework for AI risk management in the US, and it&#x27;s designed to be flexible enough to layer onto whatever AI governance maturity you currently have (even &quot;none yet&quot;). Here&#x27;s a breakdown of the four core functions, how they interact, and where to start.
+- GOVERN 1: policies, processes, procedures and practices for mapping, measuring and managing AI risk are in place, transparent and implemented: 7 subcategories (1.1-1.7)
+- GOVERN 2: accountability structures so appropriate teams and individuals are empowered, responsible and trained: 3 (2.1-2.3)
+- GOVERN 3: workforce diversity, equity, inclusion and accessibility processes: 2 (3.1-3.2)
+- GOVERN 4: organizational teams committed to a culture that considers and communicates AI risk: 3 (4.1-4.3)
+- GOVERN 5: robust engagement with relevant AI actors: 2 (5.1-5.2)
+- GOVERN 6: policies and procedures for AI risks and benefits arising from third-party software, data and supply chain issues: 2 (6.1-6.2)
 
-## Overview: What the AI RMF Is (and Isn&#x27;t)
+Total: 7+3+2+3+2+2 = 19.
 
-The NIST AI Risk Management Framework (AI RMF 1.0), published in January 2023, is a voluntary, non-sector-specific framework to help organizations manage risks associated with AI systems throughout their lifecycle. It&#x27;s paired with a companion **AI RMF Playbook** that gives concrete suggested actions for each function.
-
-Two things to keep in mind:
-- It is **not a checklist or certification scheme** — it&#x27;s a structured way of thinking about and organizing AI risk management activities.
-- It&#x27;s built around the idea that AI risks are **socio-technical**: they arise from the interaction of technical systems with people, organizations, and society, not just from model performance metrics.
-
-## The Four Core Functions
-
-### 1. GOVERN — The Foundation
-
-GOVERN is the cross-cutting function that establishes the organizational culture, structures, and accountability mechanisms for managing AI risk. It&#x27;s meant to inform and be infused into the other three functions rather than operate as a discrete, one-time phase.
-
-Key elements include:
-- **Policies, processes, and procedures** for AI risk management, aligned to organizational risk tolerance
-- **Accountability structures** — clear roles and responsibilities for AI risk decisions (who can approve deployment, who owns residual risk, etc.)
-- **Culture** — incentivizing risk-aware practices among teams building/deploying AI, not just compliance teams
-- **Workforce diversity and skills** — ensuring teams have the expertise (technical, legal, ethical, domain) to identify risks
-- **Third-party/supply chain risk management** — governance over vendors, open-source models, data providers, and other external dependencies
-- **Mechanisms for monitoring effectiveness** of the risk management program itself, plus channels for feedback, contestability, and redress
-
-Think of GOVERN as the &quot;operating system&quot; the other three functions run on. Without it, MAP/MEASURE/MANAGE activities tend to be ad hoc, inconsistent across teams, and disconnected from actual accountability.
-
-### 2. MAP — Establishing Context
-
-MAP focuses on establishing the context to frame risks related to an AI system. You can&#x27;t manage risk you haven&#x27;t identified, and you can&#x27;t identify risk without understanding what the system is, how it will be used, and who it affects.
-
-Key activities:
-- Identifying the **intended purpose, scope, and context of use** for the AI system
-- Understanding **who is impacted** — end users, third parties, non-users who may still be affected, and vulnerable populations
-- Categorizing the AI system (e.g., is it a general-purpose model, a high-stakes decision system, embedded in a larger product?)
-- Identifying **benefits and potential negative impacts**, including impacts that may not be obvious at design time (bias, safety, environmental, societal)
-- Mapping **dependencies** — data sources, third-party components, downstream systems
-- Determining **risk tolerance and go/no-go criteria** for that specific system before it&#x27;s built or procured
-
-MAP is typically the first function applied to any *individual* AI system or use case, because its output (context, intended use, stakeholders, risk categorization) feeds directly into what you measure and how you manage.
-
-### 3. MEASURE — Analyzing and Tracking Risk
-
-MEASURE involves using quantitative, qualitative, or mixed-method tools and techniques to analyze, assess, benchmark, and monitor AI risk and related impacts identified in MAP.
-
-Key activities:
-- Selecting **appropriate metrics** for the risks identified (accuracy, robustness, fairness/bias metrics, explainability, privacy leakage, security vulnerabilities, etc.)
-- **Testing and evaluation**, including red-teaming, adversarial testing, and stress testing
-- Tracking metrics **over time**, not just at launch (model drift, performance degradation, emerging harms)
-- Assessing risks that are **difficult to quantify** (societal impact, psychological effects) using qualitative or mixed methods
-- Independent/third-party validation where feasible, to reduce self-assessment bias
-- Documenting measurement results in a way that&#x27;s usable by decision-makers (not just data scientists)
-
-MEASURE is where GOVERN&#x27;s policies and MAP&#x27;s identified risks get turned into evidence — actual data about whether the system behaves as expected and within acceptable risk thresholds.
-
-### 4. MANAGE — Acting on Risk
-
-MANAGE involves allocating resources to identified risks (mapped and measured) on a regular basis, and implementing responses to maximize benefits and minimize negative impacts.
-
-Key activities:
-- **Prioritizing risks** based on MEASURE outputs and organizational risk tolerance from GOVERN
-- Deciding on treatment: **mitigate, transfer, avoid, or accept** each identified risk
-- Implementing **risk response plans** — technical controls, process changes, human oversight mechanisms, or in some cases not deploying the system at all
-- Planning for **incident response, recovery, and communication** when things go wrong
-- Ongoing **monitoring after deployment**, since AI risk isn&#x27;t static (data drift, new attack vectors, changing use context)
-- Feeding lessons learned back into GOVERN (policy updates), MAP (context reassessment), and MEASURE (new metrics)
-
-## How the Four Functions Relate to Each Other
-
-This is the part people most often get wrong — it&#x27;s not a strict linear sequence (Govern → Map → Measure → Manage → done). NIST explicitly designed it as **interconnected and iterative**:
-
-- **GOVERN is cross-cutting and continuous.** It surrounds and informs the other three at all times — it&#x27;s not &quot;step one&quot; in a sequence so much as the context in which the sequence happens. Good governance should already be functioning before you MAP your first system, and it keeps operating throughout.
-- **MAP → MEASURE → MANAGE forms a cycle**, applied per AI system, per use case, and often per lifecycle stage (design, development, deployment, decommissioning). You typically MAP context first, then MEASURE against that context, then MANAGE based on what you measured.
-- **The cycle repeats.** AI systems change (retraining, new data, model updates), contexts change (new use cases, new regulations), and risks change (new attack techniques, emergent behavior at scale). So organizations continuously loop back through MAP → MEASURE → MANAGE — it&#x27;s not &quot;one and done&quot; per system.
-- **Feedback flows backward too.** Something discovered in MANAGE (e.g., an incident) should trigger a re-MAP (did we understand the context correctly?) and update GOVERN (do our policies need to change?).
-
-A simple mental model:
-&gt; **GOVERN** sets the rules of the game and runs continuously in the background → for each AI system, you **MAP** the context and risks → you **MEASURE** those risks with real evidence → you **MANAGE** by acting on that evidence → and the results feed back into all three other functions, on a recurring loop.
-
-## What to Implement First
-
-Given that you&#x27;re just starting out, here&#x27;s a pragmatic sequencing recommendation:
-
-### Start with a baseline of GOVERN — but don&#x27;t over-invest before you have real systems to govern
-
-You need *some* minimum governance scaffolding before anything else is meaningful:
-1. **Designate accountability** — name an owner (individual or committee) responsible for AI risk oversight, even if it&#x27;s a part-time responsibility initially.
-2. **Inventory what you already have** — most companies &quot;deploying AI&quot; already have shadow AI usage (SaaS tools with embedded AI, employees using LLMs, vendor products with AI features). You can&#x27;t govern what you don&#x27;t know exists.
-3. **Set a basic risk tolerance/policy statement** — what AI use cases are acceptable, which are prohibited or require review (e.g., anything touching PII, hiring, credit, health decisions), and what approval gates exist.
-4. **Establish an intake process** — a lightweight way for teams to flag &quot;we want to build/buy/use an AI system&quot; so it gets routed through MAP before deployment.
-
-This is deliberately minimal — you&#x27;re not writing a 100-page AI governance manual on day one. You&#x27;re creating just enough structure that the next AI system deployed doesn&#x27;t happen completely outside of oversight.
-
-### Then apply MAP to your first (or highest-priority) AI use case
-
-Pick a real, concrete system — ideally either your **highest-risk** current initiative (something touching sensitive data or consequential decisions) or a **low-stakes pilot** to build organizational muscle. For that system, document: intended use, users/impacted parties, data sources, and a first-pass risk categorization.
-
-### Then build MEASURE and MANAGE capability around that first use case, and iterate
-
-Use that first system as a template/pilot to figure out what metrics matter, what your testing process looks like, and how risk decisions get made and documented. Then generalize those practices into repeatable playbooks for the next systems.
-
-### Practical tips for a first implementation
-
-- **Use the AI RMF Playbook** alongside the framework itself — it has concrete suggested actions mapped to each subcategory, which is far more actionable than the framework document alone.
-- **Don&#x27;t try to do all four functions &quot;completely&quot; before moving forward.** Maturity builds iteratively — a thin slice through all four functions for one real use case teaches you more than a perfect GOVERN function with nothing to apply it to.
-- **Tie it to existing risk/compliance infrastructure** if you have it (enterprise risk management, information security, privacy programs) rather than building an entirely parallel AI governance structure from scratch.
-- **Right-size to risk.** NIST explicitly intends the framework to scale — a low-risk internal chatbot doesn&#x27;t need the same rigor as a system influencing hiring or lending decisions. Use MAP&#x27;s risk categorization to decide how much MEASURE/MANAGE rigor to apply.
-- **Consider the NIST Generative AI Profile (NIST AI 600-1)** as a companion resource if generative AI/LLMs are part of your deployment — it applies the same four functions with GenAI-specific risks and actions called out.
-
-## Bottom Line
-
-GOVERN is the continuous foundation; MAP, MEASURE, and MANAGE form an iterative cycle applied to each AI system and revisited over its lifecycle. For a company just starting out, implement a lean version of GOVERN first (ownership, inventory, basic policy, intake process) — just enough to create accountability — then immediately apply the full MAP → MEASURE → MANAGE cycle to one real, concrete AI use case rather than trying to perfect the framework in the abstract. Let that first pass teach you what your organization actually needs, then scale the practices to additional systems.
+Your auditor&#x27;s checklist is not right. GOVERN 6.3 does not exist; GOVERN 6 ends at 6.2 (6.1 covers third-party IP and other rights risks; 6.2 covers contingency processes for third-party data or AI system failures). The 21 count is also wrong. I&#x27;d ask the auditor which source they used (possibly a draft, a vendor mapping, or a conflation with another framework) and correct the checklist to 19 subcategories against the published AI RMF 1.0 (NIST AI 100-1) and the AI RMF Playbook.
 </pre></div>
                 </div></div>
             </div>
           </div><div class="eval-item" id="eval-nist-ai-rmf-1">
             <button class="eval-toggle" onclick="toggleEval('nist-ai-rmf-1')">
-              <span class="eval-label">Test 2: Hiring Ai Risk Assessment</span>
+              <span class="eval-label">Test 2: Govern Mapping</span>
               <span class="eval-chevron">▼</span>
             </button>
             <div class="eval-content" style="display:none">
               <div class="eval-prompt">
-                <strong>Prompt:</strong> We have an AI hiring tool that screens resumes and ranks candidates. Using the NIST AI RMF, what are the key risks we need to assess, which trustworthiness properties are most relevant, and what specific MEASURE-function actions should we take before deploying it?
+                <strong>Prompt:</strong> Under the NIST AI RMF GOVERN function, where exactly do these belong: legal and regulatory compliance tracking, our AI system inventory, organizational risk tolerance, and third-party model risk?
               </div>
               <div class="eval-outputs">
                 <div class="output-panel">
                   <div class="output-header with-header">With Skill</div>
-                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Identifies the core risks: harmful bias/disparate impact on protected groups, validity/job-relatedness of rankings, transparency to candidates, privacy of applicant data, drift over time</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps to the right trustworthiness characteristics: fair with harmful bias managed, valid &amp; reliable, accountable &amp; transparent, explainable &amp; interpretable, privacy-enhanced</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Prescribes concrete MEASURE-function actions: pre-deployment disparate-impact testing across demographic groups, validity testing against job performance criteria, documented TEVV with defined metrics, and ongoing monitoring cadence</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Brings in MAP context work (intended use, affected communities, failure impacts) and MANAGE treatments (human review of rankings, thresholds for suspension, feedback channels)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Flags the regulatory overlay accurately (e.g., EEOC/Title VII exposure, NYC Local Law 144 bias audits, EU AI Act Annex III employment high-risk if EU-facing) without inventing requirements</span></div></div></div>
-                  <div class="output-text"><pre># AI Hiring Tool — NIST AI RMF Risk Assessment
+                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps legal and regulatory requirements to GOVERN 1.1</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps the AI system inventory to GOVERN 1.6</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps organizational risk tolerance to GOVERN 1.3</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps third-party model risk to GOVERN 6 (policies in 6.1, contingency processes in 6.2)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Does not cite any nonexistent subcategory such as GOVERN 3.3, 5.3 or 6.3</span></div></div></div>
+                  <div class="output-text"><pre>All four items belong in GOVERN. Each has a primary anchor, and some have secondary anchors in MAP or MANAGE.
 
-An AI resume-screening and ranking tool is a textbook high-stakes AI use case under the NIST AI RMF (NIST AI 100-1) — it makes or heavily influences decisions about individuals&#x27; economic opportunity, which puts it squarely in the &quot;consequential decision&quot; category the framework treats most seriously. Note up front: the AI RMF itself is voluntary and outcome-based, not a compliance checklist — but for hiring AI you&#x27;re also operating under mandatory external law (EEOC, and in NYC, Local Law 144), so treat the RMF as your risk management *methodology* while checking specific legal thresholds against counsel.
+| Topic | Primary GOVERN anchor | What the subcategory says | Related anchors outside GOVERN |
+|---|---|---|---|
+| Legal and regulatory compliance tracking | **GOVERN 1.1** (under GOVERN 1) | Legal and regulatory requirements involving AI are understood, managed and documented | MAP 1.1 (context-specific laws and norms for each system) |
+| AI system inventory | **GOVERN 1.6** (under GOVERN 1) | Mechanisms are in place to inventory AI systems, resourced according to organizational risk priorities | MAP 4.1 and 4.2 (component-level inventory) |
+| Organizational risk tolerance | **GOVERN 1.3** (under GOVERN 1) | Processes are in place to determine the needed level of risk management activity based on the organization&#x27;s risk tolerance | MAP 1.5 (risk tolerances determined and documented); MANAGE 1.4 (residual risk against tolerance) |
+| Third-party model risk | **GOVERN 6.1 and GOVERN 6.2** (GOVERN 6) | 6.1: policies address third-party AI risks, including IP infringement. 6.2: contingency processes for failures or incidents in high-risk third-party data or AI systems | MAP 4.1 and 4.2; MANAGE 3.1 and 3.2 |
 
-## Key Risks to Assess
+Notes on each item:
 
-Using **MAP 1** (context) and **MAP 3** (stakeholder risk/benefit mapping) as your starting point:
+1. **Legal and regulatory tracking (GOVERN 1.1).**
+   - Keep a regulatory register covering the EU AI Act, state AI laws, sector rules and similar.
+   - Name a legal or compliance owner for it.
+   - Align policy to the trustworthy-AI characteristics (GOVERN 1.2) and publish the policy under GOVERN 1.4.
+   - GOVERN 1.1 is organization-wide. Per-system legal context is documented in MAP 1.1.
 
-1. **Disparate impact / hiring bias** — the model systematically disadvantages candidates by race, sex, age, disability, or other protected characteristics, even without explicit protected-attribute inputs (proxy discrimination via zip code, school name, employment gaps, etc.)
-2. **Lack of explainability for adverse decisions** — rejected candidates (and your own recruiters) can&#x27;t understand why a candidate was screened out or ranked low
-3. **Training data bias** — if the model was trained on historical hiring decisions, it can encode and amplify past discriminatory patterns
-4. **Validity/reliability gaps** — the model may not have been validated for your specific role types, industries, or candidate pools; performance may degrade for underrepresented resume formats or non-native English writing
-5. **Over-reliance / inadequate human oversight** — fully automated rejection without meaningful human review, which several jurisdictions restrict or prohibit
-6. **Regulatory exposure** — EEOC disparate impact liability, NYC Local Law 144 (bias audit + candidate notice requirements for automated employment decision tools), and EU AI Act high-risk classification (Annex III) if you have EU candidates or operations
-7. **Third-party/vendor risk** — if the screening tool is vendor-built or vendor-hosted, you inherit risk from a model you don&#x27;t fully control or see inside (undisclosed retraining, opaque training data, limited audit rights)
+2. **AI inventory (GOVERN 1.6).**
+   - The inventory must be resourced in proportion to risk priority, not just exist.
+   - Minimum fields: system name and owner, purpose and users, model type and provenance (built, bought or fine-tuned), data categories, lifecycle stage, risk tier, and last TEVV date.
+   - Third-party models belong in it. They are often the ones missed.
 
-## Trustworthiness Properties Most Relevant
+3. **Risk tolerance (GOVERN 1.3).**
+   - GOVERN 1.3 sets the organization-level appetite. MAP 1.5 documents tolerances for each system.
+   - Example statements: &quot;We do not deploy AI that makes fully automated adverse decisions about individuals without human review&quot;; &quot;Disaggregated performance gaps above X% between demographic groups block deployment until remediated.&quot;
+   - Tie these to concrete bias and accuracy thresholds in MEASURE, and to go/no-go decisions under MANAGE 1.1.
 
-Of the seven AI RMF trustworthiness characteristics, three are primary for this use case:
+4. **Third-party model risk (GOVERN 6).**
+   - GOVERN 6 is the policy layer. It covers contractual requirements for AI vendors and a third-party AI register.
+   - It also covers fallback and contingency plans, such as a documented fallback to a prior model version.
+   - GOVERN 6 does not cover the operational monitoring. Vendor models, external data, APIs and pre-trained models are monitored under MANAGE 3.1 and 3.2. Component-level risk mapping sits in MAP 4.
+   - Typical controls: change-notification and audit rights, validation report review, and champion-challenger benchmarking against an internal model. In financial services, align these with SR 11-7 and OCC 2011-12 model risk practice (independent validation, ongoing monitoring, effective challenge).
 
-- **Fair with Harmful Bias Managed** — the central risk. Are demographic biases identified, measured, and mitigated? Does disaggregated performance meet the applicable threshold (e.g., EEOC&#x27;s &quot;4/5ths rule&quot; — disparate impact ratio ≥ 0.8)?
-- **Explainable &amp; Interpretable** — can you produce a reason for any adverse decision, understandable to both a compliance reviewer and the affected candidate?
-- **Accountable &amp; Transparent** — is there a documented model/system card, and can every ranking decision be traced to a responsible party and a defined process?
+Keep in mind that GOVERN is cross-cutting. These are organization-wide policies and structures, and MAP, MEASURE and MANAGE activity for each system should operate inside them. The AI RMF is voluntary, outcome-based and not a compliance checklist. The AI RMF Playbook gives suggested actions for each subcategory.
 
-Secondary but still relevant: **Valid &amp; Reliable** (has it been tested on your actual applicant pool, not just a generic benchmark?) and **Privacy-Enhanced** (resumes contain PII; ensure minimization and lawful handling).
-
-## MEASURE-Function Actions Before Deployment
-
-Concrete TEVV (Test, Evaluation, Verification, and Validation) actions, mapped to MEASURE subcategories:
-
-1. **MEASURE 2.2 — Disaggregated bias/fairness testing.** Run the model against a representative test set and compute disparate impact ratio, demographic parity, and equalized odds across protected classes (race, sex, age, disability status where legally permissible to test). Flag any subgroup below the 4/5ths threshold.
-2. **MEASURE 2.3 — Explainability testing.** Generate SHAP or LIME explanations for a sample of ranking/rejection decisions; confirm you can produce an adverse-action-style explanation for any candidate who requests one.
-3. **MEASURE 2.1 — Pre-deployment technical/safety evaluation.** Validate accuracy and ranking quality specifically on your applicant population and role types — not just the vendor&#x27;s generic benchmark.
-4. **MEASURE 2.5 — Human oversight validation.** Confirm and test that a human reviewer meaningfully reviews rejections (not a rubber-stamp) before candidates are eliminated, and that the review step is actually exercised in practice, not just documented.
-5. **MEASURE 1.1/1.3 — Define metrics and document measurement gaps.** Identify which fairness/explainability metrics you can compute given available data (e.g., if you don&#x27;t collect race/gender at application stage, document how you&#x27;ll estimate disparate impact — proxy analysis, post-hire surveys, etc. — and the limitations of that approach).
-6. **MEASURE 2.6 — Document and share results.** Produce a written pre-deployment evaluation report covering the above, reviewed by legal/HR/compliance before go-live.
-7. **MEASURE 3.1/3.2 — Post-deployment monitoring.** Once live, monitor disaggregated performance and disparate impact ratio on an ongoing basis (not just at launch) — hiring pools and resume patterns shift over time, and model or vendor updates can silently reintroduce bias.
-
-## Recommended Next Steps (MAP → MANAGE)
-
-- **MAP**: Document intended use and bound it explicitly (e.g., &quot;screening/ranking only, not sole basis for rejection&quot;) and identify affected populations (applicants, especially those in protected classes) — MAP 1.2/1.4.
-- **MANAGE**: For any subgroup below the 4/5ths threshold, define treatment — retrain with rebalanced data, add/strengthen human review gate, or restrict use for that role type — MANAGE 2.1.
-- Cross-reference **NYC Local Law 144** (requires an independent bias audit published publicly and candidate notice before use) and **EU AI Act** Annex III high-risk classification for employment AI if applicable to your candidate pool.
-
----
-*This is general compliance information, not legal advice. EEOC, state/local automated-employment-decision-tool laws (e.g., NYC Local Law 144), and EU AI Act obligations should be verified with qualified employment counsel before deployment.*
+This is general information, not legal advice.
 </pre></div>
                 </div><div class="output-panel">
                   <div class="output-header without-header">Without Skill (Baseline)</div>
-                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Identifies the core risks: harmful bias/disparate impact on protected groups, validity/job-relatedness of rankings, transparency to candidates, privacy of applicant data, drift over time</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps to the right trustworthiness characteristics: fair with harmful bias managed, valid &amp; reliable, accountable &amp; transparent, explainable &amp; interpretable, privacy-enhanced</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Prescribes concrete MEASURE-function actions: pre-deployment disparate-impact testing across demographic groups, validity testing against job performance criteria, documented TEVV with defined metrics, and ongoing monitoring cadence</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Brings in MAP context work (intended use, affected communities, failure impacts) and MANAGE treatments (human review of rankings, thresholds for suspension, feedback channels)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Flags the regulatory overlay accurately (e.g., EEOC/Title VII exposure, NYC Local Law 144 bias audits, EU AI Act Annex III employment high-risk if EU-facing) without inventing requirements</span></div></div></div>
-                  <div class="output-text"><pre># AI Hiring Tool: NIST AI RMF Risk Assessment and MEASURE-Function Actions
+                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps legal and regulatory requirements to GOVERN 1.1</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps the AI system inventory to GOVERN 1.6</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps organizational risk tolerance to GOVERN 1.3</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps third-party model risk to GOVERN 6 (policies in 6.1, contingency processes in 6.2)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Does not cite any nonexistent subcategory such as GOVERN 3.3, 5.3 or 6.3</span></div></div></div>
+                  <div class="output-text"><pre>Mapping to NIST AI RMF 1.0 GOVERN (with related cross-function anchors):
 
-An AI resume-screening and candidate-ranking tool is one of the highest-scrutiny use cases in AI governance today — it directly affects people&#x27;s livelihoods, is subject to specific regulation (e.g., NYC Local Law 144, EEOC guidance, EU AI Act &quot;high-risk&quot; classification for employment), and has a well-documented history of bias incidents (e.g., Amazon&#x27;s scrapped recruiting tool). Applying the NIST AI Risk Management Framework (AI RMF 1.0) is a sound approach. Here&#x27;s a structured breakdown.
+1. Legal and regulatory compliance tracking: GOVERN 1.1 (legal and regulatory requirements involving AI are understood, managed and documented). Related: GOVERN 4.2 and MAP 4.1 for legal risks of components.
 
----
+2. AI system inventory: GOVERN 1.6 (mechanisms are in place to inventory AI systems and are resourced according to organizational risk priorities). Related: GOVERN 1.7 for decommissioning.
 
-## 1. Key Risks to Assess
+3. Organizational risk tolerance: GOVERN 1.3 (processes determine the needed level of risk management activity based on the organization&#x27;s risk tolerance) and GOVERN 1.2/1.4 for integrating trustworthy characteristics into policies and the risk management process. Note that MAP 1.5 is where the organizational risk tolerances are determined and documented for a specific system context, so GOVERN sets the process and MAP records the tolerance.
 
-### Bias and discrimination risks
-- **Historical bias baked into training data** — if the model learns from past hiring decisions, it can replicate and amplify prior discriminatory patterns (e.g., against women, older candidates, racial/ethnic minorities, candidates with employment gaps, non-traditional education).
-- **Proxy discrimination** — variables like zip code, school name, gaps in employment, or even resume formatting/language patterns can act as proxies for protected characteristics (race, sex, age, disability, national origin).
-- **Disparate impact across demographic groups** at each stage: sourcing, screening, ranking, and final recommendation.
-
-### Validity and reliability risks
-- **Construct validity problem** — does &quot;predicted job success&quot; or a ranking score actually measure job-relevant competence, or does it measure something else (e.g., resume-writing skill, keyword-stuffing, applicant tracking system familiarity)?
-- **Performance drift** — model accuracy degrading over time as job requirements, applicant pools, or resume formats change.
-- **Generalization failure** — model trained on one role/department/geography performing poorly when applied to another.
-
-### Transparency and explainability risks
-- **Black-box ranking** — candidates and recruiters may not understand why someone was ranked low or filtered out, undermining due process and trust.
-- **Lack of documentation** — recruiters treating scores as ground truth without understanding model limitations (&quot;automation bias&quot;).
-
-### Accountability and human oversight risks
-- **Over-reliance / automation complacency** — human reviewers rubber-stamping AI rankings without meaningful review.
-- **Unclear ownership** — no clear accountability for adverse outcomes (vendor vs. deploying organization).
-
-### Privacy risks
-- **Sensitive data exposure** — resumes often contain proxies for protected class info, and sometimes explicit sensitive data (age via graduation dates, health-related gaps, national origin via names/language).
-- **Data retention and secondary use** — candidate data used beyond the original hiring purpose, or retained longer than necessary.
-- **Scraping/sourcing risk** — if the tool pulls candidate data from external sources (LinkedIn, social media), consent and lawful basis issues arise.
-
-### Security risks
-- **Data poisoning / manipulation** — resumes crafted (or gamed) specifically to exploit scoring weaknesses (keyword stuffing, adversarial formatting, hidden white text).
-- **Model/IP theft or leakage** of proprietary scoring logic.
-- **PII breach** — candidate data is a high-value target.
-
-### Legal and regulatory risk
-- **Non-compliance** with EEOC/Title VII (disparate impact liability), ADA (disability discrimination, reasonable accommodation in AI-driven processes), ADEA (age discrimination), state/local laws (NYC LL144 bias audits, Illinois AI Video Interview Act, Colorado AI Act, EU AI Act Annex III high-risk employment systems), and OFCCP requirements for federal contractors.
-- **Litigation and reputational risk** from adverse impact lawsuits or public bias incidents.
-
-### Third-party/vendor risk
-- If the tool is vendor-supplied, risk of insufficient visibility into training data, model architecture, and validation evidence (&quot;black box&quot; vendor risk).
-
----
-
-## 2. Most Relevant Trustworthiness Characteristics
-
-All seven AI RMF trustworthiness characteristics matter, but for a hiring tool these are the most critical, roughly in priority order:
-
-1. **Fair – with Harmful Bias Managed** (the central risk for this use case)
-   - Systemic bias (baked into training data/design), statistical/computational bias (sampling, model behavior), and human/cognitive bias (recruiter over-trust in scores) all apply.
-
-2. **Valid and Reliable**
-   - The model must actually predict job-relevant outcomes accurately and consistently across subpopulations, roles, and time — foundational to every other trustworthiness property; an invalid model can&#x27;t be fair or safe.
-
-3. **Explainable and Interpretable**
-   - Candidates, recruiters, and auditors need to understand the basis for rankings/rejections — both for due process and for bias detection.
-
-4. **Accountable and Transparent**
-   - Clear documentation of how the system works, who is responsible for outcomes, and disclosure to candidates that AI is used in the process (increasingly a legal requirement).
-
-5. **Privacy-Enhanced**
-   - Resumes and candidate data are personal data requiring data minimization, purpose limitation, and appropriate handling of sensitive proxies.
-
-6. **Safe**
-   - &quot;Safe&quot; in this context means avoiding harmful downstream consequences — unjust denial of employment opportunity, economic harm, psychological harm from opaque rejection.
-
-7. **Secure and Resilient**
-   - Protecting the system and data against adversarial manipulation (resume gaming) and breach, and ensuring the system degrades gracefully rather than failing silently.
-
----
-
-## 3. MEASURE-Function Actions Before Deployment
-
-The MEASURE function is where you analyze, benchmark, and track identified risks using quantitative, qualitative, or mixed-method tools. Below are concrete actions mapped to MEASURE&#x27;s four categories (Measure 1–4).
-
-### Measure 1: Appropriate methods and metrics are identified and applied
-- Select and document metrics for **fairness** across protected classes:
-  - Disparate/adverse impact ratio (four-fifths rule) by race, sex, age, disability status, and intersectional groups.
-  - Statistical parity difference, equal opportunity difference, false negative rate parity across groups (false negatives are especially harmful here — qualified candidates wrongly filtered out).
-- Select **validity/performance** metrics: precision/recall against actual hiring/performance outcomes, calibration, AUC by subgroup, inter-rater agreement between model and human expert review on a sample.
-- Define **explainability** metrics/methods: feature importance stability, SHAP/LIME-style local explanation consistency, human-comprehension testing of generated explanations.
-- Define **robustness** metrics: performance under adversarial resume manipulation (keyword stuffing, formatting tricks), performance on out-of-distribution resumes (non-traditional career paths, veterans, career changers).
-- Document metric selection rationale, including known limitations and tradeoffs (e.g., fairness metric tensions — you cannot simultaneously satisfy all fairness definitions).
-
-### Measure 2: AI systems are evaluated for trustworthy characteristics
-- **Bias testing / disparate impact analysis**: Run structured bias audits segmented by protected class and intersectional subgroups, before go-live and on a recurring cadence (aligns with laws like NYC LL144 requiring independent bias audits within the last year).
-- **Independent/third-party audit**: Engage an external auditor for the bias audit where feasible or legally required, to avoid conflict of interest.
-- **Red-teaming**: Test for adversarial gaming (resumes engineered to exploit the model), prompt/feature injection if LLM-based, and edge cases (non-English resumes, unconventional formats, career gaps for caregiving/disability/military service).
-- **Human factors evaluation**: Test whether recruiters over-trust or under-trust the tool&#x27;s output (automation bias/complacency); assess usability of explanations provided to end users.
-- **Privacy evaluation**: Conduct a privacy risk/impact assessment — data minimization check, review of sensitive-proxy variables, review of retention periods.
-- **Validity testing against ground truth**: Compare model rankings to actual downstream job performance/retention data where available, not just to historical hiring decisions (to avoid validating against the very bias you&#x27;re trying to avoid).
-- **Environmental/contextual testing**: Evaluate performance separately for each job family/role/level, since a single model may not generalize.
-- Benchmark against a **non-AI baseline** (e.g., structured human review) to confirm the tool actually improves outcomes rather than just adding automation.
-
-### Measure 3: Mechanisms for tracking identified risks over time are in place
-- Establish **ongoing monitoring dashboards** tracking adverse impact ratios, selection rates by group, and score distributions on a recurring (e.g., quarterly) basis post-deployment — not just a one-time pre-deployment test.
-- Set **thresholds/triggers** for re-evaluation (e.g., if adverse impact ratio drops below 0.8, automatically flag for human review and possible suspension of automated ranking).
-- Track **model drift** indicators as applicant pools, job descriptions, or labor market conditions change.
-- Maintain **incident logging** — track complaints, appeals, or override decisions by human recruiters as signals of model problems.
-- Log **vendor model updates** — if using a third-party tool, require notification and re-testing whenever the vendor updates the underlying model.
-
-### Measure 4: Feedback about efficacy of measurement is gathered and assessed
-- Establish a **feedback loop** with recruiters, hiring managers, and candidates (e.g., appeals/contest mechanism for candidates who believe they were unfairly screened out, as some laws require).
-- Periodically **reassess whether chosen metrics are still the right ones** — e.g., if a fairness metric was gamed or a new subgroup harm emerges, revise the measurement approach.
-- Conduct **post-deployment validation** comparing predicted vs. actual candidate/employee outcomes to close the loop on whether the tool measured the right construct.
-- Document lessons learned and feed them back into the GOVERN function (update policies) and MAP function (re-examine context/purpose) — MEASURE should not be a one-off gate but a continuous cycle integrated with the other three RMF functions (Govern, Map, Manage).
-
----
-
-## Practical Pre-Deployment Checklist (Summary)
-
-- [ ] Conduct a documented bias/disparate impact audit across protected classes and intersectional groups
-- [ ] Validate the model against actual job-relevant outcomes, not just historical hiring labels
-- [ ] Test robustness against resume gaming and adversarial manipulation
-- [ ] Implement human-in-the-loop review with meaningful (not rubber-stamp) oversight, especially for adverse decisions
-- [ ] Provide candidate-facing notice and explanation of AI use, consistent with applicable law (e.g., NYC LL144, EU AI Act, state laws)
-- [ ] Complete a privacy/data protection impact assessment covering data minimization and sensitive proxy variables
-- [ ] Define fairness and performance metrics with documented thresholds and escalation triggers
-- [ ] Establish ongoing (not one-time) monitoring, re-audit cadence, and an appeals/complaint mechanism
-- [ ] Clarify accountability — who owns model risk, who can override/suspend the tool, and vendor contractual obligations for transparency and re-testing
-- [ ] Maintain documentation sufficient to demonstrate compliance to regulators, auditors, or in litigation
-
-This MEASURE work should feed directly into the **MANAGE** function (deciding whether/how to deploy, mitigations, and risk acceptance) and be underpinned by **GOVERN** (policies, accountability structures) and **MAP** (understanding context, intended use, and impacted stakeholders) — the four functions are meant to operate iteratively, not as a linear checklist.
+4. Third-party model risk: GOVERN 6 (6.1 policies addressing third-party risks including IP infringement; 6.2 contingency processes for failures of third-party data or AI systems). Related, outside GOVERN: MAP 4.1 and 4.2 (third-party components mapped, risks documented) and MANAGE 3.1/3.2 (third-party risks monitored and pre-trained models monitored).
 </pre></div>
                 </div></div>
             </div>
           </div><div class="eval-item" id="eval-nist-ai-rmf-2">
             <button class="eval-toggle" onclick="toggleEval('nist-ai-rmf-2')">
-              <span class="eval-label">Test 3: Credit Scoring Risk Register</span>
+              <span class="eval-label">Test 3: Core Counts</span>
               <span class="eval-chevron">▼</span>
             </button>
             <div class="eval-content" style="display:none">
               <div class="eval-prompt">
-                <strong>Prompt:</strong> Build me an AI risk register template for a financial services firm deploying a credit scoring model. Include the AI RMF categories each risk maps to, and suggest treatment options.
+                <strong>Prompt:</strong> How many categories and subcategories does each function of the NIST AI RMF Core have, and what is the total?
               </div>
               <div class="eval-outputs">
                 <div class="output-panel">
                   <div class="output-header with-header">With Skill</div>
-                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐ 4/5 assertions passed (80%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Delivers an actual register template with sensible columns (risk ID/description, lifecycle stage, AI RMF function/category mapping, trustworthiness characteristic, likelihood/impact, treatment, owner, status)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Populates credit-scoring-specific risks: disparate impact/fair lending, model validity/population drift, explainability of adverse-action reasons, data quality/privacy, third-party model dependencies, security/adversarial manipulation</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps risks to plausible AI RMF functions/categories (e.g., bias testing under MEASURE 2.x, context/impact identification under MAP, treatment decisions under MANAGE 1.x/2.x, oversight under GOVERN) without inventing nonexistent category IDs</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Treatment options are concrete and financial-services-appropriate: fairness constraints/reweighting, challenger models, human review bands, adverse action reason-code validation, model risk management (SR 11-7-style) integration</span></div><div class="assertion"><span class="assertion-icon">❌</span><span class="assertion-text">Flags applicable regulatory context accurately: ECOA/Reg B adverse action notices, FCRA, fair lending exams — treatments tied to those obligations</span></div></div></div>
-                  <div class="output-text"><pre># AI Risk Register — Credit Scoring Model (Financial Services)
+                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">GOVERN: 6 categories, 19 subcategories</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">MAP: 5 categories, 18 subcategories</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">MEASURE: 4 categories, 22 subcategories</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">MANAGE: 4 categories, 13 subcategories</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Total: 19 categories and 72 subcategories</span></div></div></div>
+                  <div class="output-text"><pre>The AI RMF 1.0 Core (NIST AI 100-1, January 2023) has 4 functions, 19 categories and 72 subcategories.
 
-Below is a working AI risk register built on the NIST AI RMF structure — columns are aligned to MAP (identification), MEASURE (TEVV), and MANAGE (treatment) so every entry traces cleanly back to the framework. Treatments are connected to model risk management practice under **SR 11-7 / OCC 2011-12**: independent validation before use, champion–challenger comparison in production, ongoing monitoring, and documented effective challenge at the model risk committee. This register is illustrative — populate Likelihood/Impact scoring and owners with your actual governance structure.
+| Function | Categories | Subcategories | Breakdown by category |
+|---|---|---|---|
+| GOVERN | 6 | 19 | 1: 7, 2: 3, 3: 2, 4: 3, 5: 2, 6: 2 |
+| MAP | 5 | 18 | 1: 6, 2: 3, 3: 5, 4: 2, 5: 2 |
+| MEASURE | 4 | 22 | 1: 3, 2: 13, 3: 3, 4: 3 |
+| MANAGE | 4 | 13 | 1: 4, 2: 4, 3: 2, 4: 3 |
+| **Total** | **19** | **72** | |
 
-| Risk ID | AI System | Lifecycle Stage | TEVV Activity | Characteristic at Risk | Likelihood / Impact | Treatment | Owner |
-|---------|-----------|------------------|----------------|--------------------------|------------------------|-----------|-------|
-| R-01 | Credit Scoring Model v4 | Deployment | Disaggregated performance and disparate impact ratio testing across protected classes (MEASURE 2.2) | Fair with Harmful Bias Managed | High likelihood / High impact — disparate impact ratio below 0.8 threshold observed for one applicant subgroup in back-testing | **Mitigate** — retrain with rebalanced/reweighted features, remove/replace proxy variables correlated with protected class, add human review gate for declines in the affected subgroup; re-validate before re-enabling automated decisions (MANAGE 2.1) | Head of Credit Risk (treatment); Model Risk Committee (residual risk acceptance) |
-| R-02 | Credit Scoring Model v4 | Deployment | Adverse-action explainability testing — SHAP/LIME sufficient to generate ECOA-compliant reason codes (MEASURE 2.3) | Explainable &amp; Interpretable; Accountable &amp; Transparent | Medium likelihood / High impact — reason-code generation not yet validated against all decline scenarios | **Mitigate** — implement and test SHAP-based reason-code generation for every decline; legal review of reason-code language against Regulation B requirements | VP Model Risk (treatment); Chief Compliance Officer (residual risk acceptance) |
-| R-03 | Credit Scoring Model (vendor-hosted) | Deployment / Monitoring | Vendor validation-report review + independent benchmark against internal champion model (GOVERN 6.1, MEASURE 2.5) | Valid &amp; Reliable; Accountable &amp; Transparent | Medium likelihood / High impact — vendor retrains without notice; population drift undetected between reviews | **Mitigate** — contractual change-notification and audit rights, quarterly champion–challenger comparison against internal benchmark model, documented fallback/rollback to prior model version | VP Model Risk (treatment); CRO (residual risk acceptance) |
-| R-04 | Credit Scoring Model v4 | Monitoring | Ongoing model performance and score-drift monitoring (MEASURE 3.1/3.2) | Valid &amp; Reliable | Medium likelihood / Medium impact — macroeconomic shifts or population drift degrade discriminative accuracy (AUC-ROC decline) over time | **Mitigate** — monthly monitoring dashboard with defined drift thresholds (e.g., AUC drop &gt;X%, PSI/KS statistic threshold) that trigger revalidation | Model Owner / Credit Risk Analytics (treatment); Model Risk Committee (residual risk acceptance) |
-| R-05 | Credit Scoring Model v4 | Development / Testing | Adversarial and data-quality robustness testing (MEASURE 2.4) | Secure &amp; Resilient | Low likelihood / High impact — synthetic identity fraud or manipulated application data could exploit model blind spots | **Mitigate** — combine credit score with fraud-detection controls; adversarial robustness testing prior to deployment; periodic red-team exercises | Head of Fraud &amp; Model Risk (treatment); CRO (residual risk acceptance) |
-| R-06 | Credit Scoring Model v4 | Design / Deployment | Legal/regulatory mapping to ECOA, Fair Housing Act, state fair-lending laws, and EU AI Act high-risk classification if applicable (GOVERN 6.1) | Accountable &amp; Transparent; Fair with Harmful Bias Managed | Medium likelihood / High impact — regulatory exposure if fair-lending testing is inadequate or undocumented | **Mitigate** — maintain regulatory register, engage legal/compliance at design stage, document fair-lending testing methodology for examiner review | Chief Compliance Officer (treatment); Board Risk Committee (residual risk acceptance) |
-| R-07 | Credit Scoring Model v4 | Deployment | Human oversight and override validation — escalation path for borderline/declined applications (MEASURE 2.5) | Accountable &amp; Transparent | Low likelihood / Medium impact — automated declines without meaningful human recourse | **Mitigate** — establish human review/appeal path for declined applicants; test that override mechanism is actually used, not just documented | Head of Credit Operations (treatment); Head of Credit Risk (residual risk acceptance) |
+Arithmetic:
+- Categories: 6 + 5 + 4 + 4 = 19.
+- Subcategories: 19 + 18 + 22 + 13 = 72.
 
-## AI RMF Category Mapping Summary
+Points to note:
+- The category-level detail shows where the weight sits. GOVERN 1 has 7 subcategories, MAP 3 has 5, and MEASURE 2 has 13, which is the largest single category in the framework.
+- GOVERN is cross-cutting. It is drawn as the base of the AI RMF diagram, and MAP, MEASURE and MANAGE operate inside the structures it sets up.
+- Citations use function, category and subcategory, for example GOVERN 1.1, MAP 5.1, MEASURE 2.11, MANAGE 4.3.
+- The AI RMF is voluntary, outcome-based and not a compliance checklist. The companion AI RMF Playbook offers suggested actions for each category and subcategory.
+- The Core is organized around the seven trustworthiness characteristics: valid and reliable, safe, secure and resilient, accountable and transparent, explainable and interpretable, privacy-enhanced, and fair with harmful bias managed.
+- Any count other than 19 / 72 (for example a checklist showing 21 GOVERN subcategories) is not from the AI RMF 1.0 Core. NIST profiles such as the Generative AI Profile are companion documents, not changes to the Core. Verify the counts against the official NIST text.
 
-| Risk | MAP | MEASURE | MANAGE | GOVERN |
-|------|-----|---------|--------|--------|
-| R-01 Bias/disparate impact | MAP 3, MAP 5 | MEASURE 2.2 | MANAGE 2.1, MANAGE 1.3 | GOVERN 1.3 (risk tolerance threshold) |
-| R-02 Explainability/adverse action | MAP 1.6 (legal constraints) | MEASURE 2.3 | MANAGE 2.1 | GOVERN 6.1 |
-| R-03 Vendor/third-party dependency | MAP 1.3 | MEASURE 2.5 | MANAGE 2.1, MANAGE 3.1 | GOVERN 6.1, GOVERN 6.2 |
-| R-04 Drift/degradation | MAP 5.3 | MEASURE 3.1, MEASURE 3.2 | MANAGE 3.1 | GOVERN 5.2 |
-| R-05 Security/adversarial | MAP 5.1 | MEASURE 2.4 | MANAGE 2.3 (emergency intervention) | GOVERN 1.3 |
-| R-06 Regulatory alignment | MAP 1.6 | — | MANAGE 1.3 | GOVERN 6.1, GOVERN 6.3 |
-| R-07 Human oversight | MAP 1.2 | MEASURE 2.5 | MANAGE 2.4 | GOVERN 2.1 |
-
-## Treatment Options Reference
-
-- **Mitigate** — technical (retrain, remove proxy features, add human review), operational (restrict use case, tighten thresholds), or process controls that reduce likelihood/impact
-- **Transfer** — contractual risk-shifting to vendor (indemnification, warranty on fair-lending testing, audit rights) — relevant for R-03
-- **Avoid** — decommission or decline to deploy a feature/model version where residual risk cannot be brought within tolerance
-- **Accept** — formally document and obtain Model Risk Committee / CRO sign-off for any residual risk below full mitigation, per MANAGE 1.3
-
-## Financial-Services Model Risk Alignment (SR 11-7 / OCC 2011-12)
-
-Every treatment above should map to standard MRM lifecycle controls:
-- **Independent validation** before initial production use and after any material model change (applies to R-01, R-02, R-05)
-- **Champion–challenger comparison** in production, particularly for the vendor-hosted model (R-03) and ongoing drift monitoring (R-04)
-- **Ongoing monitoring** with defined thresholds and escalation triggers (R-04, R-03)
-- **Effective challenge** documented at the Model Risk Committee — the committee (not the model owner alone) should be the accepting authority for any residual risk above tolerance (MANAGE 1.3), consistent with SR 11-7&#x27;s requirement for independent, skeptical review
-
-Update the Likelihood/Impact and Treatment columns whenever MEASURE produces new evidence (MEASURE 4.3), and log outcomes back into MANAGE 4 for the quarterly model risk review.
-
----
-*This is general compliance information, not legal advice. Verify fair-lending testing methodology, reason-code requirements, and EU AI Act applicability with qualified counsel and your model risk governance function.*
+This is general information, not legal advice.
 </pre></div>
                 </div><div class="output-panel">
                   <div class="output-header without-header">Without Skill (Baseline)</div>
-                  <div class="output-grading"><div class="grade-summary" style="color:#eab308;font-weight:600;margin-bottom:8px">⭐⭐⭐ 3/5 assertions passed (60%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">❌</span><span class="assertion-text">Delivers an actual register template with sensible columns (risk ID/description, lifecycle stage, AI RMF function/category mapping, trustworthiness characteristic, likelihood/impact, treatment, owner, status)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Populates credit-scoring-specific risks: disparate impact/fair lending, model validity/population drift, explainability of adverse-action reasons, data quality/privacy, third-party model dependencies, security/adversarial manipulation</span></div><div class="assertion"><span class="assertion-icon">❌</span><span class="assertion-text">Maps risks to plausible AI RMF functions/categories (e.g., bias testing under MEASURE 2.x, context/impact identification under MAP, treatment decisions under MANAGE 1.x/2.x, oversight under GOVERN) without inventing nonexistent category IDs</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Treatment options are concrete and financial-services-appropriate: fairness constraints/reweighting, challenger models, human review bands, adverse action reason-code validation, model risk management (SR 11-7-style) integration</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Flags applicable regulatory context accurately: ECOA/Reg B adverse action notices, FCRA, fair lending exams — treatments tied to those obligations</span></div></div></div>
-                  <div class="output-text"><pre># AI Risk Register Template — Credit Scoring Model (Financial Services)
+                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">GOVERN: 6 categories, 19 subcategories</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">MAP: 5 categories, 18 subcategories</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">MEASURE: 4 categories, 22 subcategories</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">MANAGE: 4 categories, 13 subcategories</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Total: 19 categories and 72 subcategories</span></div></div></div>
+                  <div class="output-text"><pre>NIST AI RMF 1.0 Core structure:
 
-This is a working risk register template designed for a financial institution deploying a machine learning credit scoring model. It maps each risk to the **NIST AI Risk Management Framework (AI RMF 1.0)** functions and categories (GOVERN, MAP, MEASURE, MANAGE) and cross-references relevant financial services regulatory drivers (ECOA/Reg B, FCRA, SR 11-7/OCC 2011-12, GLBA) where applicable. It is intended as a starting point to be tailored, populated with real ownership/dates, and integrated into your enterprise risk management (ERM) and model risk management (MRM) systems.
+- GOVERN: 6 categories, 19 subcategories (1: 7, 2: 3, 3: 2, 4: 3, 5: 2, 6: 2)
+- MAP: 5 categories, 18 subcategories (1: 6, 2: 3, 3: 5, 4: 2, 5: 2)
+- MEASURE: 4 categories, 22 subcategories (1: 3, 2: 13, 3: 3, 4: 3)
+- MANAGE: 4 categories, 13 subcategories (1: 4, 2: 4, 3: 2, 4: 3)
 
----
-
-## How to Use This Register
-
-- **Risk ID**: Unique identifier (prefix by category, e.g., FL = Fair Lending, MD = Model/Data, TP = Third Party, CY = Cyber, PR = Privacy, RC = Regulatory Compliance, OP = Operational).
-- **AI RMF Mapping**: The primary NIST AI RMF 1.0 subcategory(ies) the risk and its controls relate to. Most risks touch multiple functions (GOVERN is nearly always relevant as the umbrella); the mapping below lists the *primary* driving subcategory plus key secondary ones.
-- **Likelihood / Impact**: Score 1 (Low) – 5 (Very High). Adjust scale to match your enterprise risk taxonomy.
-- **Risk Rating**: Likelihood x Impact, banded as Low (1–6), Medium (7–12), High (13–19), Critical (20–25).
-- **Treatment Option**: Mitigate / Transfer / Avoid / Accept.
-- **Treatment Actions/Owner**: Concrete control activities and the accountable role (not a named individual — map to your governance structure).
-
-Recommended review cadence: quarterly for High/Critical risks, semi-annually for Medium, annually for Low, plus ad hoc review upon model change, material data drift, or regulatory guidance updates.
-
----
-
-## Risk Register
-
-| Risk ID | Risk Description | AI RMF Mapping (Primary + Secondary) | Likelihood (1–5) | Impact (1–5) | Risk Rating | Treatment Option | Treatment Actions / Owner |
-|---|---|---|---|---|---|---|---|
-| FL-01 | **Disparate impact / fair lending violation**: Model produces statistically significant adverse outcomes for a protected class (race, sex, age, national origin, receipt of public assistance) even without intent, violating ECOA/Reg B and FHA. | MEASURE 2.11 (fairness &amp; bias testing); MAP 2.3 (context of use), MAP 5.1 (impacted individuals/groups); GOVERN 1.2, 6.1 | 4 | 5 | Critical | Mitigate | Run pre-deployment and quarterly disparate impact testing (adverse impact ratio, marginal effect analysis) across protected classes and proxies (zip code, alternative data). Engage Fair Lending/Compliance and independent model validation. Owner: Chief Model Risk Officer + Fair Lending Officer. |
-| FL-02 | **Proxy discrimination**: Model uses facially neutral features (zip code, education, device type, alternative/utility data) that act as proxies for protected characteristics, reintroducing bias indirectly. | MAP 2.3, MAP 5.1; MEASURE 2.11; GOVERN 1.1 | 3 | 5 | High | Mitigate | Proxy correlation analysis and feature-level fair lending review before feature inclusion; document business justification for each feature under Reg B &quot;empirically derived, demonstrably and statistically sound&quot; standard. Owner: Model Development Lead + Fair Lending Counsel. |
-| EX-01 | **Inadequate adverse action explainability**: Model cannot generate specific, accurate reasons for denial/adverse terms required under ECOA/Reg B and FCRA (e.g., black-box ensemble/neural net lacks traceable reason codes). | MAP 2.2, MAP 3.1 (explainability requirements); MEASURE 2.9 (explainability/interpretability); MANAGE 2.2 | 3 | 5 | High | Mitigate | Implement SHAP/LIME or reason-code engine validated against model logic; ensure top adverse action reasons are accurate, stable, and human-reviewable; independent validation of explanation fidelity. Owner: Model Development Lead + Compliance. |
-| MD-01 | **Model drift / performance degradation**: Shifts in applicant population, macroeconomic conditions, or credit behavior (e.g., rate environment change) degrade predictive accuracy and calibration over time, undermining safety and soundness. | MEASURE 2.4 (ongoing monitoring), MEASURE 3.1; MANAGE 4.1, 4.3; GOVERN 1.5 | 4 | 4 | High | Mitigate | Establish ongoing performance monitoring (PSI/CSI, KS statistic, AUC tracking, calibration drift) with defined thresholds and retraining triggers; champion-challenger framework. Owner: Model Validation / Model Risk Management. |
-| DQ-01 | **Data quality and representativeness gaps**: Training data underrepresents certain applicant segments (thin-file, credit invisible, new-to-country applicants), or contains errors, leading to unreliable predictions for those groups. | MAP 2.3, MAP 3.1 (data suitability); MEASURE 2.1, 2.2 (data quality metrics); GOVERN 1.1 | 3 | 4 | High | Mitigate | Data lineage documentation, representativeness analysis vs. target population, data quality scorecards, gap remediation plan (e.g., alternative data pilots for thin-file applicants) with fairness testing. Owner: Data Governance Lead. |
-| TP-01 | **Third-party/vendor model risk**: Credit scoring model or key components (bureau scores, alternative data, ML platform) sourced from a vendor with insufficient transparency, validation evidence, or SLA around model changes. | GOVERN 6.1 (third-party risk), MAP 4.1 (third-party/vendor context); MEASURE 1.1 | 3 | 4 | High | Mitigate | Vendor due diligence per SR 11-7/OCC 2013-29 third-party risk guidance; contractual rights to audit, obtain model documentation, and receive advance notice of model changes; independent validation of vendor model where feasible. Owner: Vendor/Third-Party Risk Management + MRM. |
-| RC-01 | **Non-compliance with SR 11-7 / OCC 2011-12 model risk management expectations**: Insufficient independent validation, documentation, or ongoing monitoring fails supervisory model risk management standards. | GOVERN 1.1, 1.3, 1.4 (policies, roles, documentation); MANAGE 1.1, 1.2; MEASURE 1.1 | 3 | 5 | High | Mitigate | Full model risk management lifecycle per SR 11-7: independent validation, effective challenge, model inventory, tiering by risk, documented limitations/assumptions. Owner: Model Risk Management (independent from development). |
-| PR-01 | **Applicant data privacy violation**: Use of alternative data (social media, geolocation, transaction data) or insufficient consent/notice violates GLBA, state privacy laws (e.g., CCPA/CPRA), or FCRA permissible purpose requirements. | MAP 1.1 (context/legal requirements), MAP 5.1; GOVERN 1.2, 4.1; MANAGE 2.3 | 2 | 4 | Medium | Mitigate | Privacy impact assessment prior to onboarding new data sources; verify FCRA permissible purpose and GLBA notice requirements; data minimization; consent tracking. Owner: Privacy Officer + Legal. |
-| CY-01 | **Cybersecurity of training/inference data and model artifacts**: Sensitive applicant financial data or model weights/parameters are exposed via breach, insider threat, or insecure MLOps pipeline, or model is subject to adversarial manipulation/data poisoning. | MANAGE 2.1, 2.4 (security incident response); MEASURE 2.7 (security testing); GOVERN 1.1, 5.1 | 3 | 5 | High | Mitigate | Encrypt data at rest/in transit; access controls and audit logging on training pipelines and model registry; adversarial robustness/poisoning testing; incident response plan covering AI-specific scenarios; align with GLBA Safeguards Rule. Owner: CISO + ML Engineering. |
-| GV-01 | **Insufficient AI governance structure / unclear accountability**: No formal cross-functional AI governance committee, unclear RACI between model development, compliance, risk, and business lines for credit model decisions. | GOVERN 1.1, 2.1, 2.2, 2.3 (roles and responsibilities); GOVERN 4.1 | 3 | 4 | High | Mitigate | Stand up AI/Model Governance Committee with Compliance, Legal, Risk, Data Science, and Business representation; formal charter, escalation paths, and sign-off gates for model deployment/changes. Owner: Chief Risk Officer. |
-| GV-02 | **Inadequate documentation for regulatory examination**: Model documentation (development, validation, monitoring) is insufficient to support examiner review or litigation defense, increasing regulatory and legal exposure. | GOVERN 1.4, 4.2 (documentation practices); MAP 1.1; MEASURE 4.1 | 3 | 4 | High | Mitigate | Maintain model documentation per SR 11-7 standards: conceptual soundness, data sources, assumptions/limitations, validation results, ongoing monitoring reports, change logs. Owner: Model Documentation Lead / MRM. |
-| HO-01 | **Inappropriate human oversight / over-reliance on automated decision**: Loan officers or automated straight-through processing rubber-stamp model output without meaningful human review or override capability for edge cases. | GOVERN 3.2 (human-AI configuration); MANAGE 3.1, 3.2; MAP 2.1 | 3 | 3 | Medium | Mitigate | Define human-in-the-loop checkpoints for borderline/declined cases; override authority and logging; training for staff on model limitations. Owner: Credit Policy / Business Line Owner. |
-| MD-02 | **Model complexity / lack of conceptual soundness**: Overly complex ensemble or deep learning architecture chosen without adequate justification relative to interpretability needs, increasing validation difficulty and regulatory scrutiny. | MAP 1.1, 2.2 (fit for purpose); MEASURE 2.9; GOVERN 1.1 | 2 | 3 | Medium | Mitigate | Require documented rationale for model architecture choice weighing performance vs. interpretability; consider constrained/monotonic models for credit decisioning where feasible. Owner: Model Development Lead. |
-| MD-03 | **Feedback loop / reject inference bias**: Model trained only on approved/funded loans creates selection bias, as outcomes for rejected applicants are never observed, compounding bias over successive model generations. | MAP 2.3; MEASURE 2.2, 2.11; MANAGE 4.1 | 3 | 4 | High | Mitigate | Apply reject inference techniques (augmentation, reweighting) with validation; periodic &quot;low-side&quot; testing/champion challenger with expanded approval pilots; document methodology and limitations. Owner: Data Science Lead + MRM. |
-| RC-02 | **Regulatory change risk**: Emerging AI-specific regulation (e.g., state AI/algorithmic discrimination laws, CFPB guidance on AI in credit decisions, potential federal AI legislation) creates compliance gap for existing model. | GOVERN 1.2, 1.3 (legal/regulatory alignment); MAP 1.1 | 3 | 3 | Medium | Mitigate | Establish regulatory horizon-scanning process for AI/credit-specific rulemaking; periodic compliance gap assessments; legal review of CFPB circulars (e.g., on adverse action and complex algorithms). Owner: Compliance / Regulatory Affairs. |
-| OP-01 | **Business continuity / model availability failure**: Credit scoring service outage or degraded performance disrupts loan origination pipeline, causing operational and reputational impact. | MANAGE 4.2 (incident response and recovery); MEASURE 2.6 (reliability/robustness) | 2 | 3 | Medium | Mitigate | Define SLAs, failover/fallback scoring process (e.g., manual underwriting fallback), resilience testing. Owner: IT Operations / Business Continuity. |
-| RP-01 | **Reputational risk from public bias incident**: Media, advocacy group, or regulator publicizes disparate outcomes or a high-profile denial, damaging brand and triggering broader scrutiny (regardless of legal finding). | MAP 5.1, 5.2 (societal impact); GOVERN 6.2; MEASURE 4.2 | 2 | 4 | Medium | Mitigate | Proactive fairness testing and public-facing transparency (model risk disclosures where appropriate); crisis communication plan; social listening. Owner: Corporate Communications + Compliance. |
-| VD-01 | **Vendor/model concentration risk**: Over-reliance on a single scoring vendor or bureau data source creates single point of failure and limits ability to switch if performance or compliance issues arise. | GOVERN 6.1; MAP 4.1; MANAGE 1.3 | 2 | 3 | Medium | Transfer / Mitigate | Diversify data/vendor sources where feasible; contractual exit and portability clauses; maintain in-house fallback scoring capability. Owner: Vendor Management + MRM. |
-| NU-01 | **Non-deployment of higher-accuracy but non-compliant model**: Pressure to adopt a marginally more predictive but less explainable/fair model creates tension between business performance goals and compliance requirements. | GOVERN 1.2, 1.5 (risk tolerance); MAP 1.2 | 2 | 4 | Medium | Avoid | Formal risk-acceptance gate requiring Compliance/Legal sign-off before deploying any model that cannot meet explainability or fairness thresholds, regardless of accuracy gain. Owner: AI Governance Committee. |
-| IN-01 | **Model inventory / shadow AI risk**: Business units use or modify scoring logic (e.g., local overrides, spreadsheet adjustments) outside the formal model inventory, evading governance and validation. | GOVERN 1.1, 1.6 (inventory); MAP 1.1 | 3 | 3 | Medium | Mitigate | Enforce enterprise AI/model inventory with mandatory registration; periodic audit for unregistered/shadow models; access controls preventing unauthorized production changes. Owner: Model Risk Management. |
-
----
-
-## Risk Rating Heat Map (for reference)
-
-| Impact \ Likelihood | 1 (Rare) | 2 (Unlikely) | 3 (Possible) | 4 (Likely) | 5 (Almost Certain) |
-|---|---|---|---|---|---|
-| **5 (Severe)** | Medium | High | Critical | Critical | Critical |
-| **4 (Major)** | Low | Medium | High | High | Critical |
-| **3 (Moderate)** | Low | Medium | Medium | High | High |
-| **2 (Minor)** | Low | Low | Medium | Medium | High |
-| **1 (Negligible)** | Low | Low | Low | Medium | Medium |
-
----
-
-## NIST AI RMF Function Reference (for mapping consistency)
-
-- **GOVERN** — Culture, policies, accountability, roles, risk tolerance, third-party risk, and documentation practices that cut across the AI lifecycle. Nearly every risk in this register has a GOVERN component as the accountability backbone.
-- **MAP** — Establishing context: intended use, impacted individuals/groups, legal/regulatory requirements, and appropriateness of data/model for the use case.
-- **MEASURE** — Testing, evaluation, and monitoring: bias/fairness metrics, performance, robustness, security, explainability, and ongoing monitoring.
-- **MANAGE** — Risk response: prioritization, resource allocation, incident response, third-party risk treatment, and continuous improvement based on MEASURE outputs.
-
----
-
-## Notes on Treatment Options
-
-- **Mitigate**: Reduce likelihood or impact through controls (most common for credit scoring risks given regulatory obligations that can&#x27;t be waived).
-- **Transfer**: Shift risk via insurance, vendor contractual indemnification, or outsourcing (limited applicability for fair lending risk, which cannot be fully transferred away from the institution).
-- **Avoid**: Decline to deploy a feature, data source, or model architecture that creates unacceptable risk (e.g., NU-01).
-- **Accept**: Formally accept residual risk within risk appetite after mitigation, with sign-off from appropriate risk committee (not illustrated above as a primary treatment given the regulated nature of credit decisioning, but applicable to low-rated residual risks after controls are applied).
-
----
-
-*Disclaimer: This template is provided for informational purposes based on general NIST AI RMF 1.0 principles and common financial services regulatory considerations (ECOA/Reg B, FCRA, SR 11-7/OCC 2011-12, GLBA). It is not legal advice. Validate against your institution&#x27;s specific regulatory obligations, primary regulator expectations, and legal counsel before operational use.*
+Total: 19 categories and 72 subcategories (19+18+22+13 = 72).
 </pre></div>
                 </div></div>
             </div>
           </div><div class="eval-item" id="eval-nist-ai-rmf-3">
             <button class="eval-toggle" onclick="toggleEval('nist-ai-rmf-3')">
-              <span class="eval-label">Test 4: Eu Ai Act Mapping</span>
+              <span class="eval-label">Test 4: Measure Trustworthiness</span>
               <span class="eval-chevron">▼</span>
             </button>
             <div class="eval-content" style="display:none">
               <div class="eval-prompt">
-                <strong>Prompt:</strong> We are subject to the EU AI Act and also want to align with NIST AI RMF. How do these two frameworks map to each other? Are there gaps we need to fill if we implement AI RMF but still need to comply with the EU AI Act?
+                <strong>Prompt:</strong> Which MEASURE category of the AI RMF covers evaluating systems for trustworthy characteristics, how many subcategories does it have, and which subcategories cover fairness and explainability?
               </div>
               <div class="eval-outputs">
                 <div class="output-panel">
                   <div class="output-header with-header">With Skill</div>
-                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐ 4/5 assertions passed (80%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">States the fundamental difference correctly: AI RMF is voluntary risk guidance; the EU AI Act is binding law with penalties, conformity assessment, and CE marking — RMF alignment alone never satisfies the AI Act</span></div><div class="assertion"><span class="assertion-icon">❌</span><span class="assertion-text">Provides sensible construct mappings: GOVERN ↔ QMS Art. 17 / accountability; MAP ↔ risk classification + intended-purpose documentation; MEASURE ↔ Art. 15 accuracy/robustness testing + Art. 9 risk management evidence; MANAGE ↔ Art. 9 lifecycle risk management + post-market monitoring Art. 72</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Identifies concrete AI Act obligations with no RMF equivalent: conformity assessment/CE marking, EU database registration, technical documentation per Annex IV, serious-incident reporting, FRIA (Art. 27) where applicable, prohibited-practice screening</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Notes risk-tiering difference: AI Act&#x27;s fixed legal tiers (prohibited/high/limited/minimal + GPAI) vs RMF&#x27;s contextual risk assessment</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Recommends a practical integration: use RMF processes as the management-system engine, then overlay AI Act artifact requirements — one programme, two outputs</span></div></div></div>
-                  <div class="output-text"><pre># NIST AI RMF ↔ EU AI Act: Mapping and Gap Analysis
+                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Identifies MEASURE 2 as the trustworthiness-evaluation category with 13 subcategories (2.1 through 2.13)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps fairness and bias to MEASURE 2.11</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps explainability to MEASURE 2.9</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Correctly frames MEASURE overall as 4 categories with 22 subcategories</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps at least one more MEASURE 2 subcategory correctly (such as 2.7 security and resilience or 2.10 privacy)</span></div></div></div>
+                  <div class="output-text"><pre>**MEASURE 2** (&quot;AI systems are evaluated for trustworthy characteristics&quot;) is the category you want. It has **13 subcategories**, MEASURE 2.1 to 2.13. That is the largest category in the framework, and it makes up 13 of the 22 subcategories in the MEASURE function.
 
-Short answer: the two frameworks are highly complementary, and NIST AI RMF (NIST AI 100-1, January 2023) is explicitly designed to be usable as the risk management *methodology* that satisfies the EU AI Act&#x27;s Article 9 &quot;appropriate risk management system&quot; requirement. But they are not equivalent — the AI RMF is **voluntary and outcome-based, not a compliance checklist**, while the EU AI Act is a binding legal regulation with specific mandatory deliverables, deadlines, and penalties. If you implement AI RMF alone, you will build strong risk management *practice* but will still have concrete compliance gaps to fill for legal conformity.
+**Fairness: MEASURE 2.11.** Fairness and bias, as identified in the MAP function, are evaluated and the results are documented.
+- Run disaggregated performance testing across demographic subgroups (age, gender, race, geography).
+- Use metrics such as demographic parity, equalized odds and the disparate impact ratio. In hiring contexts, the EEOC 4/5ths rule is a reference threshold.
+- Link the thresholds to your GOVERN 1.3 risk tolerance statements.
 
-## Framework-to-Article Mapping
+**Explainability: MEASURE 2.9.** The AI model is explained, validated and documented, and system output is interpreted within its context to inform responsible use and governance.
+- Use SHAP, LIME, counterfactual explanations or saliency maps.
+- For high-stakes individual decisions, document explanations for each decision. In credit, this supports adverse-action notices.
 
-| AI RMF Function | EU AI Act Requirement |
-|------------------|------------------------|
-| GOVERN 1 (AI risk policies) | Art. 9 (Risk management system) for high-risk AI |
-| GOVERN 2/3 (Accountability) | Art. 16 (Obligations of high-risk AI providers), Art. 26 (Deployer obligations) |
-| MAP 1 (Intended use) | Art. 9(2) — risk management must cover intended and reasonably foreseeable misuse |
-| MAP 3 (Stakeholder mapping) | Art. 9(2)(b) — identification and analysis of known and foreseeable risks |
-| MEASURE 2 (System evaluation) | Art. 10 (Data governance), Art. 15 (Accuracy, robustness, cybersecurity) |
-| MEASURE 3 (Ongoing monitoring) | Art. 72 (Post-market monitoring), Art. 26(5) — deployer monitoring obligations |
-| MANAGE 3 (Incident response) | Art. 73 (Reporting of serious incidents to market surveillance) |
-| All functions | Annex IX (Technical documentation requirements for high-risk AI systems) |
+Related subcategories that are often needed with them:
+- MEASURE 2.8: transparency and accountability risks examined and documented.
+- MEASURE 2.10: privacy risk examined and documented.
+- MEASURE 2.3 and 2.5: performance demonstrated under deployment-like conditions; validity and reliability, with documented generalizability limits.
+- MEASURE 2.6 and 2.7: safety (including failing safely) and security and resilience.
+- MEASURE 2.1: test sets, metrics and tools documented.
 
-## Key Structural Difference
+For context, the other MEASURE categories are MEASURE 1 (methods and metrics, 3 subcategories), MEASURE 3 (tracking risks over time, 3) and MEASURE 4 (feedback on measurement efficacy, 3). Together with MEASURE 2&#x27;s 13, that makes 22.
 
-| | NIST AI RMF | EU AI Act |
-|---|---|---|
-| Nature | Voluntary, outcome-based framework | Mandatory regulation (Regulation (EU) 2024/1689) |
-| Scope | Any AI system, any organization, self-scoped | Risk-tiered (unacceptable/high-risk/limited/minimal), applies to in-scope providers &amp; deployers with EU nexus |
-| Deliverables | Risk register, profiles, policies — format is your choice | Specific mandated artifacts: conformity assessment, technical documentation (Annex IV), EU database registration, CE marking (for high-risk) |
-| Enforcement | None — self-directed | Market surveillance authorities, fines up to €35M or 7% of global turnover for prohibited-practice violations |
-| Timing | Continuous, iterative | Phased mandatory deadlines (prohibited practices Feb 2025, GPAI obligations Aug 2025, high-risk obligations Aug 2026/2027 depending on annex) |
+Practical use: require a pre-deployment evaluation report that covers all seven trustworthiness characteristics. Findings should feed MANAGE through a measurement-to-action protocol (MEASURE 4.2 and 4.3). The AI RMF is voluntary and outcome-based, and the Playbook provides suggested actions.
 
-## Gaps You Need to Fill If You Implement AI RMF Alone
-
-Even with a mature AI RMF program (all four functions operating well), these EU AI Act-specific obligations have **no direct AI RMF equivalent** and must be addressed separately:
-
-1. **Risk-tier classification itself.** AI RMF doesn&#x27;t tell you whether your system is &quot;high-risk&quot; under Annex III — that&#x27;s a legal classification exercise you must do against the Act&#x27;s specific categories (employment, credit, law enforcement, critical infrastructure, etc.). Do this before mapping anything else.
-2. **Conformity assessment procedure (Art. 43).** High-risk systems require either self-assessment or third-party (notified body) conformity assessment before market placement — AI RMF has no equivalent &quot;certification&quot; step.
-3. **CE marking and EU database registration (Art. 48, Art. 71).** Purely regulatory/administrative — high-risk AI systems must be registered in the EU public database before deployment.
-4. **Annex IV technical documentation format.** MEASURE 2.6 and MAP 2 documentation get you most of the content, but the Act specifies a particular structural format (Annex IV) that your existing model/system cards likely won&#x27;t match without reformatting.
-5. **Fundamental Rights Impact Assessment (Art. 27)** — required specifically for certain deployers (public bodies, and private operators in the specified sectors like banking/insurance) of high-risk systems. MAP 3 (stakeholder risk/benefit mapping) is a strong foundation but doesn&#x27;t satisfy the Article 27 form and filing requirement on its own.
-6. **Serious incident reporting to market surveillance authorities within mandated timeframes (Art. 73).** MANAGE 3.2 gets you incident logging and investigation, but the Act adds a specific external regulatory notification clock (15 days, shorter for critical infrastructure) that your internal MANAGE process needs to be re-tuned to meet.
-7. **Prohibited practices screening (Art. 5).** AI RMF has no direct equivalent to the Act&#x27;s specific list of banned AI practices (social scoring, real-time remote biometric identification in public spaces for law enforcement with narrow exceptions, manipulative/subliminal techniques, etc.) — this is a hard legal gate that must be checked independently, ideally as an extension of MAP 1.5 (scoping prohibited/misuse cases).
-8. **General-Purpose AI (GPAI) model obligations (Art. 53-55).** If you build or fine-tune foundation models, there are separate transparency and systemic-risk obligations not covered by the core AI RMF functions.
-9. **Human oversight design requirements (Art. 14).** MEASURE 2.5 tests that human oversight exists and works; Art. 14 additionally mandates specific *design* requirements (the system must be built to enable a human to understand, monitor, and intervene) — this needs to be checked at MAP 1 / system design, not just validated at MEASURE.
-10. **Notified body / authorized representative requirements** for non-EU providers placing high-risk AI on the EU market — a corporate/legal structural requirement with no AI RMF analog at all.
-
-## Recommended Approach
-
-1. Use **AI RMF GOVERN** as your organizational foundation (policy, accountability, risk tolerance) — this satisfies the spirit and much of the substance of Art. 9&#x27;s &quot;appropriate risk management system.&quot;
-2. Run **Art. 5 prohibited-practice screening** and **Annex III risk-tier classification** as an EU AI Act-specific extension of your MAP 1 work, before anything else.
-3. Use **MAP/MEASURE** to generate the technical content, then **reformat into Annex IV structure** for any system classified high-risk.
-4. Add the EU AI Act-specific mandatory artifacts (conformity assessment, CE marking, EU database registration, Fundamental Rights Impact Assessment where applicable) as parallel workstreams — track them in your GOVERN 6.1 regulatory register alongside AI RMF activity so nothing falls through.
-5. Re-tune your **MANAGE 3** incident response timelines to meet the Act&#x27;s specific external reporting deadlines, not just your internal escalation cadence.
-
----
-*This is general compliance information, not legal advice. EU AI Act obligations, deadlines, and risk-tier classifications should be verified against the official regulation text and confirmed with qualified EU regulatory counsel, especially given the Act&#x27;s phased applicability dates through 2027.*
+This is general information, not legal advice.
 </pre></div>
                 </div><div class="output-panel">
                   <div class="output-header without-header">Without Skill (Baseline)</div>
-                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">States the fundamental difference correctly: AI RMF is voluntary risk guidance; the EU AI Act is binding law with penalties, conformity assessment, and CE marking — RMF alignment alone never satisfies the AI Act</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Provides sensible construct mappings: GOVERN ↔ QMS Art. 17 / accountability; MAP ↔ risk classification + intended-purpose documentation; MEASURE ↔ Art. 15 accuracy/robustness testing + Art. 9 risk management evidence; MANAGE ↔ Art. 9 lifecycle risk management + post-market monitoring Art. 72</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Identifies concrete AI Act obligations with no RMF equivalent: conformity assessment/CE marking, EU database registration, technical documentation per Annex IV, serious-incident reporting, FRIA (Art. 27) where applicable, prohibited-practice screening</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Notes risk-tiering difference: AI Act&#x27;s fixed legal tiers (prohibited/high/limited/minimal + GPAI) vs RMF&#x27;s contextual risk assessment</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Recommends a practical integration: use RMF processes as the management-system engine, then overlay AI Act artifact requirements — one programme, two outputs</span></div></div></div>
-                  <div class="output-text"><pre># Mapping NIST AI RMF to the EU AI Act — and Where the Gaps Are
+                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Identifies MEASURE 2 as the trustworthiness-evaluation category with 13 subcategories (2.1 through 2.13)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps fairness and bias to MEASURE 2.11</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps explainability to MEASURE 2.9</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Correctly frames MEASURE overall as 4 categories with 22 subcategories</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Maps at least one more MEASURE 2 subcategory correctly (such as 2.7 security and resilience or 2.10 privacy)</span></div></div></div>
+                  <div class="output-text"><pre>MEASURE 2 is the category covering evaluation of AI systems for trustworthy characteristics (&quot;AI systems are evaluated for trustworthy characteristics&quot;). It has 13 subcategories (MEASURE 2.1 through 2.13). MEASURE overall has 22 subcategories across 4 categories (1: 3, 2: 13, 3: 3, 4: 3).
 
-Short answer: NIST AI RMF and the EU AI Act rhyme conceptually, but they are fundamentally different instruments. Implementing AI RMF well will build most of the *organizational muscle* you need for EU AI Act compliance, but it will **not**, on its own, satisfy the Act&#x27;s legal obligations. You will need a compliance layer on top. Below is the detail.
+Fairness: MEASURE 2.11, fairness and bias are evaluated and results documented.
 
----
+Explainability and interpretability: MEASURE 2.9, the AI model is explained, validated and documented, and AI system output is interpreted within its context to inform responsible use and governance. MEASURE 2.8 (transparency and accountability risks examined and documented) is adjacent.
 
-## 1. Two Different Kinds of Things
-
-| | **NIST AI RMF** | **EU AI Act** |
-|---|---|---|
-| Nature | Voluntary, non-binding risk management framework | Binding EU regulation (directly applicable law in all Member States) |
-| Purpose | Help organizations *think about and manage* AI risk | Set *legal requirements* organizations must meet, with penalties for non-compliance |
-| Structure | Four functions: Govern, Map, Measure, Manage | Risk-tiered legal obligations (unacceptable, high, limited, minimal risk) + GPAI rules |
-| Enforcement | None — it&#x27;s guidance | Yes — fines up to €35M or 7% of global turnover (prohibited practices); €15M/3% (most high-risk violations); market surveillance authorities, conformity assessment bodies |
-| Scope of &quot;risk&quot; | Broad, sociotechnical, trustworthiness-oriented (validity, safety, security, accountability, transparency, fairness, privacy) | Legally defined risk tiers tied to specific use cases (Annex III) and specific legal rights (safety, fundamental rights) |
-| Flexibility | Adaptable to any org, any AI use case, any sector | Prescriptive: specific documentation, specific processes, specific timelines, specific registration |
-| Output | A risk management *practice/culture* | A compliance *dossier* (technical documentation, conformity assessment, CE marking, registration) |
-
-**Bottom line:** AI RMF is a &quot;how to think&quot; framework; the EU AI Act is a &quot;what you must do, prove, and file&quot; law. You can be excellent at AI RMF and still be non-compliant with the Act if you haven&#x27;t done the legally-mandated paperwork, assessments, and registrations.
-
----
-
-## 2. Conceptual Mapping: NIST Functions to EU AI Act Provisions
-
-NIST itself has published crosswalk resources (including an AI RMF Crosswalk mapping to ISO/IEC 23894, OECD, and elements relevant to the EU AI Act) — the mapping below follows that general spirit, applied specifically to the Act&#x27;s Title III, Chapter 2 requirements for high-risk AI systems (Articles 9–15), plus surrounding obligations.
-
-| NIST AI RMF Function | Sub-elements | Related EU AI Act Provisions |
-|---|---|---|
-| **GOVERN** | Policies, accountability structures, risk culture, roles/responsibilities, third-party risk | Art. 9 (risk management system as ongoing process), Art. 17 (Quality Management System), Art. 4 (AI literacy), provider/deployer role definitions (Art. 3, 16, 26), Art. 25 (authorized representative obligations) |
-| **MAP** | Context establishment, categorizing AI systems, identifying impacted stakeholders, intended use/foreseeable misuse | Art. 6 + Annex III (high-risk classification logic), Art. 5 (prohibited practices screening), Art. 27 (Fundamental Rights Impact Assessment for certain deployers), Art. 10 (data governance — understanding data provenance/context) |
-| **MEASURE** | Metrics, testing, evaluation, monitoring for validity/reliability/bias/safety | Art. 15 (accuracy, robustness, cybersecurity — with specific metrics disclosed in instructions for use), Art. 9(6)-(8) (testing against risk management system), Art. 72 (post-market monitoring plan and system) |
-| **MANAGE** | Risk prioritization, response, resource allocation, incident response, third-party risk management | Art. 9 (risk mitigation measures), Art. 73 (serious incident reporting), Art. 20 (corrective actions), Art. 21 (cooperation with authorities), Art. 16 (provider obligations broadly) |
-
-### Additional mapping for specific Articles
-
-| EU AI Act Requirement (High-Risk Systems) | Nearest NIST AI RMF Analog |
-|---|---|
-| Art. 9 — Risk management system | GOVERN + MAP + MEASURE + MANAGE (the full lifecycle loop) — closest single analog to the entire AI RMF cycle |
-| Art. 10 — Data and data governance | MAP 2.x (data/context characterization); MEASURE (data quality metrics) — but AI RMF doesn&#x27;t mandate specific data governance controls (bias examination, representativeness, error correction) the way Art. 10 does |
-| Art. 11 — Technical documentation | Loosely reflected in MANAGE 4.x (documentation of risk decisions) — but NIST doesn&#x27;t specify a document format; EU Act has an Annex IV template |
-| Art. 12 — Record-keeping / logging | MEASURE 2.x, MANAGE 4.x (monitoring/logging as good practice) — Act mandates automatic log retention, minimum periods, specific traceability |
-| Art. 13 — Transparency &amp; instructions for use | MAP 3.x, GOVERN 4.x (documentation for downstream users) — Act requires specific disclosures to deployers |
-| Art. 14 — Human oversight | GOVERN 3.x, MANAGE 2.x (human-AI teaming, oversight mechanisms) — Act requires designed-in oversight measures (stop buttons, override capability) as a legal design requirement, not just a practice |
-| Art. 15 — Accuracy, robustness, cybersecurity | MEASURE 2.5–2.7 (robustness, security) — conceptually aligned but Act ties this to conformity assessment and CE marking, which AI RMF has no equivalent for |
-| Art. 16-27 — Provider/deployer/importer/distributor obligations | Not addressed by AI RMF at all — this is supply-chain legal role allocation unique to product-safety-style regulation |
-| Art. 43 — Conformity assessment | No NIST equivalent — this is a legal certification process |
-| Art. 49 — EU database registration | No NIST equivalent |
-| Art. 72 — Post-market monitoring | MEASURE + MANAGE (continuous monitoring is a RMF theme) but Act requires a formal plan and specific reporting channel to authorities |
-| Art. 73 — Serious incident reporting | MANAGE 4.x (incident response) exists as a practice, but the Act adds legally binding **timelines** (e.g., report serious incidents within 15 days, or 2 days for deaths/critical infrastructure disruption, 10 days for widespread infringement/serious harm to property or environment — exact windows vary by incident severity under the Act and its implementing guidance) |
-
----
-
-## 3. Where AI RMF Alone Leaves Gaps for EU AI Act Compliance
-
-If you implement NIST AI RMF faithfully and assume you&#x27;re &quot;covered&quot; for the EU AI Act, here is what&#x27;s still missing. These are the concrete gaps to close:
-
-### a) Legal classification and prohibited practices screening (Art. 5)
-AI RMF has no equivalent of the Act&#x27;s **prohibited AI practices list** — e.g., social scoring, manipulative/subliminal techniques causing harm, exploiting vulnerabilities, certain biometric categorization, untargeted facial scraping for recognition databases, emotion recognition in workplace/education (with narrow exceptions), and real-time remote biometric identification in public spaces for law enforcement (with narrow exceptions). You need a **legal screening step** before any risk management even begins — some AI uses simply cannot proceed in the EU regardless of how well-managed the risk is.
-
-### b) Formal conformity assessment and CE marking (Arts. 43, 48)
-High-risk systems generally require a conformity assessment (self-assessment or third-party/notified body assessment depending on the category) and must bear a **CE marking** before being placed on the market. This is a legal certification and labeling regime with no AI RMF counterpart — RMF is about internal risk management, not third-party attestation for market access.
-
-### c) EU database registration (Art. 49, Art. 71)
-Providers (and in some cases deployers, e.g., public authorities) of high-risk AI systems must **register** in the EU-wide database before placing the system on the market or putting it into service. AI RMF has no registration or public-disclosure mechanism.
-
-### d) Prescribed documentation formats (Annex IV, Art. 11)
-The Act mandates technical documentation in a specific structure (Annex IV) covering system description, development process, risk management measures, performance metrics, etc. AI RMF encourages documentation but doesn&#x27;t specify a template — you&#x27;ll need to translate your RMF documentation practices into the Act&#x27;s required format.
-
-### e) Quality Management System (Art. 17)
-Providers of high-risk AI systems must maintain a documented **QMS** covering regulatory compliance strategy, design control, data management, post-market monitoring, and more — similar in spirit to ISO 9001/13485-style QMS obligations in other EU product law. This is an organizational/procedural requirement AI RMF doesn&#x27;t specify.
-
-### f) GPAI (General-Purpose AI Model) obligations (Arts. 53–55)
-If you develop or fine-tune foundation/general-purpose models, there are separate obligations: technical documentation for downstream providers, copyright/training-data summary disclosure, and — for models with &quot;systemic risk&quot; (based on compute thresholds, currently &gt;10^25 FLOPs presumption) — model evaluation, adversarial testing, incident reporting to the AI Office, and cybersecurity obligations. AI RMF&#x27;s generative AI profile (NIST AI 600-1) offers useful risk guidance here but does not satisfy these specific legal disclosure and reporting duties.
-
-### g) Designated EU representative (Art. 22)
-Non-EU providers placing high-risk AI systems on the EU market must appoint an **authorized representative established in the EU**. This is a pure legal/administrative requirement with no RMF analog — relevant to you as a non-EU-headquartered organization if that&#x27;s your situation.
-
-### h) Fundamental Rights Impact Assessment (Art. 27)
-Certain deployers of high-risk AI systems (notably public bodies and private entities providing public services, banking/insurance in specified use cases) must conduct an **FRIA** before deployment — assessing impacts on fundamental rights, affected persons, oversight measures, and complaint mechanisms. This is distinct from and narrower/more legalistic than NIST&#x27;s broader &quot;map context and impacted stakeholders&quot; activities — it&#x27;s a specific, sometimes publicly-filed legal assessment.
-
-### i) Serious incident reporting with legal timelines (Art. 73)
-AI RMF&#x27;s MANAGE function encourages incident response processes, but doesn&#x27;t impose deadlines. The Act requires providers to report **serious incidents** to market surveillance authorities within legally fixed windows (severity-dependent — as short as 2 days for deaths or serious/irreversible disruption of critical infrastructure), with specific content requirements. You need an operational process capable of meeting these clock-driven obligations, not just a general incident-response capability.
-
-### j) Role-based legal obligations across the value chain (Arts. 16–27)
-The Act imposes different, specific legal duties depending on whether you&#x27;re a **provider, deployer, importer, distributor,** or a **provider whose system is substantially modified downstream** (which can convert a deployer into a provider). AI RMF doesn&#x27;t have this legal role taxonomy — you need a separate exercise to determine which hat(s) you wear per system and what obligations attach to each.
-
-### k) Notified body engagement and post-market surveillance system (Arts. 43, 72)
-For certain high-risk categories, a **notified body** (independent conformity assessment body) must be involved. You&#x27;ll also need a formal, documented **post-market monitoring system** proportionate to the AI system&#x27;s risks, feeding into your incident reporting obligations. RMF&#x27;s &quot;Measure&quot; and &quot;Manage&quot; functions support this conceptually but don&#x27;t require the specific regulatory touchpoints.
-
-### l) Transparency obligations for limited-risk systems (Art. 50)
-Even outside the high-risk tier, systems like chatbots, deepfake generators, and emotion-recognition/biometric-categorization systems have **standalone disclosure obligations** to users (e.g., &quot;you are interacting with AI,&quot; labeling of synthetic content). This is a separate, lighter-touch legal track that AI RMF doesn&#x27;t address as a distinct compliance category.
-
-### m) Penalties, market surveillance, and regulatory engagement
-AI RMF has no equivalent of the Act&#x27;s enforcement architecture — market surveillance authorities, the EU AI Office (for GPAI), national competent authorities, and tiered administrative fines. Compliance programs need a regulatory-engagement and audit-readiness layer that pure risk management frameworks don&#x27;t anticipate.
-
----
-
-## 4. Practical Recommendation
-
-A reasonable approach for an organization in your position:
-
-1. **Use NIST AI RMF as your internal risk management operating system** — Govern/Map/Measure/Manage gives you the organizational scaffolding (policies, roles, risk registers, testing, monitoring, incident response) that regulators generally expect to see evidenced anyway.
-2. **Overlay a legal compliance workstream specific to the EU AI Act**, covering: role determination (provider/deployer/etc.), Annex III classification screening, Art. 5 prohibited-practices screening, Annex IV technical documentation, QMS (Art. 17), conformity assessment and CE marking (Art. 43/48), EU database registration (Art. 49), FRIA where applicable (Art. 27), GPAI obligations if relevant (Arts. 53–55), and incident reporting playbooks with the Act&#x27;s specific timelines (Art. 73).
-3. **Map your AI RMF artifacts directly into Annex IV documentation** to avoid duplicative work — your risk register, testing results, and monitoring plan under RMF&#x27;s Measure/Manage functions can largely populate the Act&#x27;s technical documentation, saving effort.
-4. **Assign clear ownership**: risk management (RMF) can sit with AI governance/data science teams; legal conformity workstreams (classification, conformity assessment, registration, FRIA, incident reporting deadlines) need legal/compliance ownership with regulatory affairs expertise, since these carry statutory liability.
-
----
-
-## 5. EU AI Act Phased Timeline (for planning purposes)
-
-- **August 1, 2024** — Act enters into force
-- **February 2, 2025** — Prohibited practices (Art. 5) become applicable; AI literacy obligations begin
-- **August 2, 2025** — Governance rules and GPAI model obligations (Arts. 53–55) become applicable; penalty provisions apply; Member States must designate competent authorities
-- **August 2, 2026** — Bulk of the Act applies, including high-risk system obligations for Annex III (Article 6(1)-referenced) use cases and the transparency obligations (Art. 50)
-- **August 2, 2027** — High-risk obligations extend to AI systems embedded as safety components in products covered by Annex I (e.g., machinery, medical devices, toys) under the &quot;Annex I&quot; product-safety route
-
-Some deadlines and secondary/implementing measures (delegated acts, standards from CEN-CENELEC, Commission guidance) were still evolving as of my knowledge cutoff — given today&#x27;s date is July 2026, you are very close to the August 2026 high-risk compliance deadline for Annex III systems, so I&#x27;d treat this as urgent and **verify current status directly against the EU AI Office&#x27;s published guidance, the official Union register, and any Commission implementing/delegated acts** rather than relying solely on this summary, since implementation details (harmonized standards, notified body capacity, specific FRIA templates, incident-reporting portals) continue to be finalized and may have changed since my training data was current.
-
----
-
-## 6. Key Takeaway
-
-NIST AI RMF gives you the risk management *engine*; the EU AI Act requires that engine to be bolted onto a specific, auditable, legally-defined *chassis* — classification, documentation formats, conformity assessment, registration, role-based obligations, and hard deadlines. Treat AI RMF as necessary but not sufficient: it&#x27;s excellent foundational practice, but full EU AI Act compliance requires a dedicated legal/regulatory compliance workstream layered on top, ideally with legal counsel experienced in EU product-safety-style regulation given the Act&#x27;s CE-marking/conformity-assessment architecture (borrowed from the EU&#x27;s &quot;New Legislative Framework&quot; used for medical devices, machinery, etc.).
+Other MEASURE 2 subcategories for context: 2.5 validity and reliability, 2.6 safety, 2.7 security and resilience, 2.10 privacy, 2.12 environmental impact, 2.13 effectiveness of the TEVV metrics and processes.
 </pre></div>
                 </div></div>
             </div>
           </div><div class="eval-item" id="eval-nist-ai-rmf-4">
             <button class="eval-toggle" onclick="toggleEval('nist-ai-rmf-4')">
-              <span class="eval-label">Test 5: Govern Gap Assessment</span>
+              <span class="eval-label">Test 5: Manage Incidents</span>
               <span class="eval-chevron">▼</span>
             </button>
             <div class="eval-content" style="display:none">
               <div class="eval-prompt">
-                <strong>Prompt:</strong> Conduct a GOVERN gap assessment for our organization. We have an AI ethics statement but no formal AI risk policy, no cross-functional AI team, no defined risk tolerance for AI, and our legal team is not involved in AI deployments. Rate each GOVERN category and give us a prioritised remediation plan.
+                <strong>Prompt:</strong> Our AI incident response plan cites NIST AI RMF MANAGE 3 for incident handling and response. Is that the right anchor?
               </div>
               <div class="eval-outputs">
                 <div class="output-panel">
                   <div class="output-header with-header">With Skill</div>
-                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐⭐ 5/5 assertions passed (100%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Structures the assessment around the GOVERN categories (policies/processes; accountability structures; workforce diversity/culture; organizational engagement; third-party risk; monitoring/inventory-type categories) with a rating per area — consistent with the six GOVERN categories of AI RMF 1.0</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Correctly rates the described state: ethics statement = partial credit on culture/policy, while missing risk policy, missing cross-functional team, undefined risk tolerance, and absent legal involvement are each flagged as specific gaps against specific GOVERN areas</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Flags undefined risk tolerance as a foundational gap (GOVERN 1.x expects documented risk tolerance informing all downstream MAP/MEASURE/MANAGE work)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Remediation plan is prioritised and sequenced (policy + accountability + tolerance first; team formation and legal integration next; inventory and third-party processes after) with owners/timeframes</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Deliverables are concrete: AI risk policy outline, RACI or committee charter, risk tolerance statement examples, AI system inventory — not just abstract advice</span></div></div></div>
-                  <div class="output-text"><pre># GOVERN Function Gap Assessment
+                  <div class="output-grading"><div class="grade-summary" style="color:#eab308;font-weight:600;margin-bottom:8px">⭐⭐⭐ 3/5 assertions passed (60%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">States no: MANAGE 3 covers managing AI risks and benefits from third-party entities</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Anchors incident response correctly in MANAGE 4 (post-deployment monitoring in 4.1, incident and error communication to relevant AI actors in 4.3)</span></div><div class="assertion"><span class="assertion-icon">❌</span><span class="assertion-text">States MANAGE has 4 categories and 13 subcategories</span></div><div class="assertion"><span class="assertion-icon">❌</span><span class="assertion-text">Places risk treatment and prioritization under MANAGE 1</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Does not cite invented MANAGE subcategories</span></div></div></div>
+                  <div class="output-text"><pre>No. MANAGE 3 is the wrong anchor for incident handling. It covers third-party risk. Incident handling and response sits in MANAGE 4, with supporting anchors elsewhere.
 
-Based on what you&#x27;ve described — an AI ethics statement but no formal AI risk policy, no cross-functional AI team, no defined risk tolerance, and legal not involved in AI deployments — here is a rating across all six GOVERN categories, with gaps, evidence needed, a prioritized remediation roadmap, and pasteable templates to get started immediately.
+**What MANAGE 3 actually is.** MANAGE 3, &quot;AI risks and benefits from third-party entities are managed&quot;, has two subcategories:
+- MANAGE 3.1: third-party resources are regularly monitored, and risk controls are applied and documented.
+- MANAGE 3.2: pre-trained models used for development are monitored as part of regular monitoring and maintenance.
 
-## Category Ratings
+**Correct anchors for an incident response plan:**
 
-| Category | Status | Gap Notes |
-|----------|--------|-----------|
-| **GOVERN 1** — Policies, processes, risk tolerance in place | 🔴 Not Started | An ethics statement is a values document, not a risk management policy — it doesn&#x27;t define risk tolerance, ERM integration, or a review cadence. No formal AI Risk Management Policy exists (GOVERN 1.1, 1.2, 1.5). |
-| **GOVERN 2** — Accountability structures | 🔴 Not Started | No named AI Risk Owner or accountable senior official. No documented RACI for AI decisions. Without this, every other GOVERN gap will stay unresolved because no one owns closing it. |
-| **GOVERN 3** — Roles and responsibilities | 🔴 Not Started | No AI roles register; responsibilities across the AI lifecycle (design, development, deployment, monitoring) are undefined, including for any third-party/vendor AI. |
-| **GOVERN 4** — Cross-functional collaboration | 🔴 Not Started | No cross-functional AI team exists. Legal is explicitly not involved in deployments — this is the most urgent structural gap since it also blocks GOVERN 6. |
-| **GOVERN 5** — Risk tolerance communicated | 🔴 Not Started | No defined risk tolerance for AI means there is no basis for go/no-go deployment decisions (GOVERN 5.3) — deployments are likely proceeding without a consistent bar. |
-| **GOVERN 6** — Alignment with laws/regulations/principles | 🟡 Partial | The ethics statement suggests some principle-level alignment exists, but with legal excluded from deployments, there&#x27;s no mechanism tracking regulatory requirements (GOVERN 6.1) or ensuring deployments are checked against them before launch. |
+| Plan element | Anchor |
+|---|---|
+| Post-deployment monitoring, appeal and override, incident response, recovery, change management | **MANAGE 4.1** |
+| Communicating incidents and errors to relevant AI actors, including affected communities; tracking, responding to and recovering from incidents | **MANAGE 4.3** |
+| Lessons learned and continual improvement | MANAGE 4.2 |
+| Responding to and recovering from a previously unknown risk | MANAGE 2.3 |
+| Kill switch or deactivation, with assigned responsibilities | MANAGE 2.4 |
+| Negative residual risk documented | MANAGE 1.4 |
+| Detecting issues in production (triggers) | MEASURE 2.4, MEASURE 3.1 and MEASURE 3.3 (user problem reports and appeals) |
+| Culture and capability for incident identification and information sharing | GOVERN 4.3 |
+| Incidents in third-party AI that you depend on | GOVERN 6.2 (contingency), MANAGE 3.1 and 3.2 |
 
-**Overall: 5 of 6 categories Not Started, 1 Partial.** This is a Tier 1 (&quot;Partial&quot; / ad hoc) organization on the AI RMF&#x27;s implementation-tier scale — reactive, not yet risk-informed.
+MANAGE 3 is a legitimate secondary citation only for the vendor and third-party portion of the plan, such as a vendor model failing or changing without notice.
 
-## Flag: Complete-on-Paper vs. Operationalized
+**Suggested plan structure aligned to the framework:**
+1. Trigger conditions: accuracy degradation, bias threshold breach, adversarial attack, data drift.
+2. Severity classification: low, medium, high or critical, with pre-defined notification thresholds (internal escalation, customer notice, regulatory disclosure) under MANAGE 4.3.
+3. Response sequence: contain, assess impact, notify stakeholders (MANAGE 4.3), remediate, document, update the risk register, then feed lessons into GOVERN policy (MANAGE 4.2).
+4. Deactivation authority and procedure (MANAGE 2.4).
+5. Third-party failure contingencies, such as fallback to a prior model version (GOVERN 6.2).
+6. Post-incident review and an AI incident log. Consider sharing anonymized learnings through AI incident databases.
 
-Your situation is actually the *inverse* of the common &quot;policy exists but isn&#x27;t operationalized&quot; pattern — you have a values artifact (the ethics statement) with almost no operational infrastructure underneath it. That&#x27;s arguably higher-risk than a stalled policy, because the ethics statement can create a false impression of governance maturity to leadership, auditors, or customers, while zero enforcement mechanism actually exists. Treat the ethics statement as an input to GOVERN 1.2, not evidence that GOVERN 1 is complete.
+**Cross-framework note.** If the EU AI Act applies, reporting of serious incidents maps to Art. 73. That obligation is mandatory, whereas the AI RMF is voluntary and outcome-based. In ISO/IEC 42001 terms, look at Clause 10.2 (nonconformity) and A.9.
 
-## Prioritized Remediation Roadmap
+Fix the citation to &quot;MANAGE 4.1 and 4.3, with MANAGE 2.3 and 2.4 for recovery and deactivation&quot;. Keep MANAGE 3 only for the third-party component.
 
-**Quick Wins (0–30 days) — unblock everything else:**
-1. Name an accountable AI Risk Owner (GOVERN 2.2) — even an interim owner while you build the permanent structure.
-2. Add legal/compliance to any AI deployment decision immediately, even informally, pending a formal committee (GOVERN 4.1, GOVERN 6.1).
-3. Draft an initial risk tolerance statement (GOVERN 1.3, GOVERN 5.1) — start simple; see template below.
-4. Start an AI system inventory — even a spreadsheet — covering every AI system in use or planned (GOVERN 1.6).
-
-**Medium Term (30–90 days) — build the structure:**
-5. Publish a formal AI Risk Management Policy, signed by senior leadership, superseding/incorporating the ethics statement (GOVERN 1.1, 1.2, 1.5).
-6. Stand up the AI governance committee / cross-functional working group with defined RACI, including legal, privacy, security, and the business (GOVERN 2.1, GOVERN 3.1, GOVERN 4.1).
-7. Build the AI roles register mapping lifecycle stages to responsible teams, including third-party/vendor AI responsibilities (GOVERN 3.2).
-8. Define an escalation path from teams to executives for AI risk concerns (GOVERN 4.3).
-
-**Long Term (90+ days) — operationalize and sustain:**
-9. Build a deployment checklist that validates every new AI system against the risk tolerance statement before go-live (GOVERN 5.2, 5.3) — this is what actually connects GOVERN to MAP/MEASURE/MANAGE in practice.
-10. Establish a regulatory register and a periodic (at least annual) policy review cadence (GOVERN 1.7, GOVERN 6.1, GOVERN 6.3).
-11. Once GOVERN 1–6 are at least 🟡, begin systematic MAP-function work on your existing deployed AI systems — GOVERN gaps of this scale mean any MAP/MEASURE/MANAGE work done today is happening without accountability structure behind it, and should be revisited once GOVERN is operational.
-
-## Mini-Templates
-
-### AI Risk Policy Outline (GOVERN 1.2)
-1. Purpose &amp; scope
-2. Definitions &amp; AI system inventory criteria
-3. Risk tolerance statement
-4. Roles &amp; accountability (RACI)
-5. Lifecycle requirements (MAP/MEASURE/MANAGE gates per stage)
-6. Third-party AI requirements
-7. Incident response &amp; escalation
-8. Review cadence
-
-### AI Governance Committee Charter — RACI Skeleton (GOVERN 2.1)
-- **Accountable** — Executive sponsor / Chief AI Officer (or interim AI Risk Owner)
-- **Responsible** — AI product owners, data science/engineering leads
-- **Consulted** — Legal, privacy, security (mandatory for every deployment decision going forward — this directly closes your stated legal-involvement gap); HR for any employment-related AI
-- **Informed** — Internal audit, board risk committee
-- Define quorum, meeting cadence (recommend monthly to start), and decision rights: who can approve a deployment, who can deny one, who can accept residual risk above tolerance
-
-### Risk Tolerance Statement Examples (GOVERN 1.3)
-- &quot;We do not deploy AI that makes fully automated adverse decisions about individuals without human review.&quot;
-- &quot;Disaggregated performance gaps above [X]% between demographic groups block deployment until remediated.&quot;
-- Adapt these two starting statements to your specific AI use cases and have legal/compliance and the executive sponsor sign off before publishing.
-
-### AI Inventory — Minimum Fields (GOVERN 1.6)
-- System name / owner
-- Purpose &amp; users
-- Model type/provenance (built in-house / bought / fine-tuned third-party model)
-- Data categories used
-- Lifecycle stage (design / development / testing / deployment / monitoring / decommission)
-- Risk tier (once GOVERN 5 risk tolerance is defined)
-- Last TEVV (Test, Evaluation, Verification, Validation) date
-
-## Bottom Line
-
-Your single highest-leverage action is **naming an accountable owner and pulling legal into deployment decisions this week** — every other gap (policy, cross-functional team, risk tolerance) depends on someone being responsible for driving it, and right now nobody is. Everything in the Quick Wins column above can start in parallel without waiting for the formal policy to be finished.
-
----
-*This is general compliance information, not legal advice. Consult qualified counsel to confirm applicable regulatory obligations before finalizing your AI risk policy and deployment decisions.*
+This is general information, not legal advice.
 </pre></div>
                 </div><div class="output-panel">
                   <div class="output-header without-header">Without Skill (Baseline)</div>
-                  <div class="output-grading"><div class="grade-summary" style="color:#22c55e;font-weight:600;margin-bottom:8px">⭐⭐⭐⭐ 4/5 assertions passed (80%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Structures the assessment around the GOVERN categories (policies/processes; accountability structures; workforce diversity/culture; organizational engagement; third-party risk; monitoring/inventory-type categories) with a rating per area — consistent with the six GOVERN categories of AI RMF 1.0</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Correctly rates the described state: ethics statement = partial credit on culture/policy, while missing risk policy, missing cross-functional team, undefined risk tolerance, and absent legal involvement are each flagged as specific gaps against specific GOVERN areas</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Flags undefined risk tolerance as a foundational gap (GOVERN 1.x expects documented risk tolerance informing all downstream MAP/MEASURE/MANAGE work)</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Remediation plan is prioritised and sequenced (policy + accountability + tolerance first; team formation and legal integration next; inventory and third-party processes after) with owners/timeframes</span></div><div class="assertion"><span class="assertion-icon">❌</span><span class="assertion-text">Deliverables are concrete: AI risk policy outline, RACI or committee charter, risk tolerance statement examples, AI system inventory — not just abstract advice</span></div></div></div>
-                  <div class="output-text"><pre># GOVERN Function Gap Assessment — NIST AI RMF 1.0
+                  <div class="output-grading"><div class="grade-summary" style="color:#eab308;font-weight:600;margin-bottom:8px">⭐⭐⭐ 3/5 assertions passed (60%)</div><div class="assertions"><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">States no: MANAGE 3 covers managing AI risks and benefits from third-party entities</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Anchors incident response correctly in MANAGE 4 (post-deployment monitoring in 4.1, incident and error communication to relevant AI actors in 4.3)</span></div><div class="assertion"><span class="assertion-icon">❌</span><span class="assertion-text">States MANAGE has 4 categories and 13 subcategories</span></div><div class="assertion"><span class="assertion-icon">❌</span><span class="assertion-text">Places risk treatment and prioritization under MANAGE 1</span></div><div class="assertion"><span class="assertion-icon">✅</span><span class="assertion-text">Does not cite invented MANAGE subcategories</span></div></div></div>
+                  <div class="output-text"><pre>No, MANAGE 3 is not the right anchor for incident response. In NIST AI RMF 1.0, MANAGE 3 is &quot;AI risks and benefits from third-party entities are managed&quot; (3.1: risks from third-party resources are regularly monitored and controls applied; 3.2: pre-trained models used for development are monitored as part of regular monitoring and maintenance). It is about third-party and pre-trained model risk.
 
-**Prepared for:** hemant.naik@gmail.com
-**Date:** July 3, 2026
-**Scope:** NIST AI Risk Management Framework — GOVERN function (Categories 1–6)
+Better anchors for incident handling and response:
+- MANAGE 4.3: incidents and errors are communicated to relevant AI actors, including affected communities; processes for tracking, responding to and recovering from incidents and errors are followed and documented. This is the primary anchor.
+- MANAGE 2.3: procedures are followed to respond to and recover from a previously unknown risk when it is identified.
+- MANAGE 2.4: mechanisms assign responsibility and accountability to supersede, disengage or deactivate AI systems that demonstrate performance or outcomes inconsistent with intended use.
+- MANAGE 4.1: post-deployment monitoring plans, including mechanisms for appeal, override, decommissioning, incident response, recovery and change management.
+- GOVERN 4.3: organizational practices enable AI testing, identification of incidents and information sharing.
+- GOVERN 1.5 (ongoing monitoring and periodic review) and GOVERN 2.1 (roles and responsibilities) as supporting anchors.
 
----
-
-## 1. Executive Summary
-
-Based on the facts provided, your organization has taken a first, meaningful step (a published AI ethics statement) but has **not yet built the operational governance infrastructure** needed to manage AI risk in practice. In NIST AI RMF terms, GOVERN is the *cross-cutting foundation* that the other three functions (MAP, MEASURE, MANAGE) depend on — weak GOVERN maturity means any risk identification or mitigation work happening elsewhere in the organization is likely ad hoc, inconsistent, and unable to scale or withstand audit/regulatory scrutiny.
-
-**Overall GOVERN maturity: Initial (Red/Yellow border)** — you have intent (values) but not infrastructure (policy, accountability, tolerance, legal integration).
-
-| Category | Focus Area | Rating |
-|---|---|---|
-| GOVERN 1 | Policies, processes, legal/regulatory alignment, risk tolerance | 🔴 **Not Started / Initial** |
-| GOVERN 2 | Accountability structures, roles &amp; responsibilities | 🔴 **Not Started** |
-| GOVERN 3 | Workforce diversity, competency, AI literacy | 🟡 **Initial** |
-| GOVERN 4 | Risk culture, safety mindset, continuous improvement | 🟡 **Initial** |
-| GOVERN 5 | Stakeholder engagement (internal &amp; external) | 🟡 **Initial** |
-| GOVERN 6 | Third-party and supply chain risk policies | 🔴 **Not Started** |
-
-Rating scale used: **Not Started → Initial → Developing → Managed → Optimized**
-
----
-
-## 2. Category-by-Category Rating and Rationale
-
-### GOVERN 1 — Policies, Processes, Procedures &amp; Practices
-*(Legal/regulatory requirements understood and managed; risk tolerance determined and documented; policies for mapping/measuring/managing risk in place)*
-
-**Rating: 🔴 Not Started / Initial (1 of 5)**
-
-**Rationale:**
-- An AI ethics *statement* is a values declaration, not an operational policy. It does not tell employees what they must do, what is prohibited, what approvals are required, or how exceptions are handled.
-- No formal AI risk policy means there is no documented linkage between your ethics principles and actual controls (e.g., acceptable use, model risk tiers, prohibited use cases, data governance for training/fine-tuning, human oversight requirements).
-- **No defined risk tolerance** is a critical gap — without it, no one in the organization can consistently decide what level of AI risk is acceptable, so decisions default to individual judgment or vendor sales pitches.
-- Legal/regulatory mapping is implicitly absent since legal isn&#x27;t involved (see GOVERN 1.1&#x27;s explicit requirement that legal and regulatory requirements involving AI are understood, managed, and documented).
-- GOVERN 1 is the anchor category — nearly every other GOVERN, MAP, MEASURE, and MANAGE activity depends on having tolerance thresholds and policy to measure against.
-
-### GOVERN 2 — Accountability Structures
-*(Roles, responsibilities, and lines of communication for AI risk are clear and understood across the organization; leadership is responsible for decisions built on AI risk understanding)*
-
-**Rating: 🔴 Not Started (0–1 of 5)**
-
-**Rationale:**
-- No cross-functional AI team means there is no defined owner for AI risk — not for approvals, not for incident response, not for policy exceptions.
-- No RACI exists (who Recommends, who Approves, who is Consulted, who is Informed) for AI system intake, procurement, or deployment decisions.
-- Without accountable owners, AI risk responsibility is diffused (i.e., &quot;everyone&#x27;s job&quot; = &quot;no one&#x27;s job&quot;), which is a classic root cause of shadow AI adoption and uncontrolled tool sprawl.
-- Executive/Board-level accountability and reporting lines for AI risk are presumably also undefined, which will be a gap in any future audit (SOC 2, ISO 42001, EU AI Act governance obligations).
-
-### GOVERN 3 — Workforce Diversity, Equity, and Competency
-*(Team composition includes diverse perspectives and disciplines; workforce has necessary skills and is empowered to raise AI risk concerns)*
-
-**Rating: 🟡 Initial (1–2 of 5)**
-
-**Rationale:**
-- Not explicitly discussed in the facts given, but since there is no cross-functional AI team, GOVERN 3 is structurally impossible to satisfy today — you cannot have diverse, empowered participation in AI governance if there is no forum for it to occur in.
-- Rated slightly above &quot;Not Started&quot; only because the existence of an ethics statement implies *some* baseline organizational awareness and values-setting occurred, which is a precursor to competency building.
-- No evidence of AI literacy training, escalation channels for concerns, or psychological safety mechanisms for staff to flag AI risk issues.
-
-### GOVERN 4 — Organizational Culture of Risk Management
-*(Organizational commitment to a culture that considers and communicates AI risk; leadership models values; lessons learned are incorporated; there is a focus on safety and continuous improvement)*
-
-**Rating: 🟡 Initial (2 of 5)**
-
-**Rationale:**
-- The ethics statement is genuine evidence of cultural intent — this is worth crediting, as GOVERN 4 is partly about tone from the top.
-- However, culture without mechanism doesn&#x27;t hold under pressure: without a risk policy, tolerance thresholds, or accountable owners, there&#x27;s no way to know whether the ethics statement actually changes behavior day-to-day (e.g., during a rushed vendor deployment).
-- No indication of a feedback loop (post-incident reviews, red-teaming, lessons-learned processes) tied to AI specifically.
-- This category will naturally mature once GOVERN 1 and 2 are addressed — culture needs structure to become durable rather than aspirational.
-
-### GOVERN 5 — Stakeholder Engagement Mechanisms
-*(Processes for consulting and incorporating feedback from internal and external stakeholders, including affected individuals/communities, in AI risk decisions)*
-
-**Rating: 🟡 Initial (1–2 of 5)**
-
-**Rationale:**
-- No described mechanism for internal stakeholders (business units, legal, security, privacy, HR) to weigh in on AI deployments before they go live — legal&#x27;s total absence from AI deployment decisions is a direct, explicit failure of this category.
-- No described mechanism for external stakeholder input (customers, affected users, regulators, auditors, civil society groups) regarding AI use.
-- Some credit given if the ethics statement was developed with any stakeholder input, but this is not confirmed in the facts provided.
-
-### GOVERN 6 — Third-Party and Supply Chain Risk Policies
-*(Policies and procedures address AI risks and benefits from third-party software, data, and other supply chain issues, including monitoring, documentation of third-party requirements, and processes for third-party incident response)*
-
-**Rating: 🔴 Not Started (0 of 5)**
-
-**Rationale:**
-- No formal AI risk policy and no legal involvement together strongly imply there is no vendor AI risk assessment process, no AI-specific contract clauses (data use, IP, model training restrictions, right-to-audit, incident notification, indemnification), and no inventory of third-party AI tools/models in use.
-- This is a significant exposure category because most organizations&#x27; actual AI risk today comes through **third-party and embedded AI features** (SaaS vendors quietly adding AI capabilities, employees using consumer AI tools, procurement without AI risk review) rather than internally built models.
-- This is often the fastest-growing risk surface and the one most likely to cause a near-term incident (data leakage via an unreviewed AI vendor, contractual gaps on liability, etc.).
-
----
-
-## 3. Why This Matters Now
-
-- **Regulatory exposure:** Depending on your jurisdiction and industry, frameworks such as the EU AI Act, Colorado AI Act, NYC Local Law 144, and sector regulators (financial services, healthcare) increasingly expect documented AI governance, risk tolerance, and legal review of AI use — an ethics statement alone will not satisfy these expectations.
-- **Audit/customer trust exposure:** Enterprise customers and auditors (SOC 2, ISO 42001) are starting to ask for evidence of AI governance, not just intent. Without policy, accountability, and legal sign-off, you cannot produce that evidence.
-- **Operational risk:** Without cross-functional governance and legal involvement, AI deployments are likely proceeding today based on individual team judgment — increasing the chance of a data privacy incident, IP/contract exposure, or reputational event before governance catches up.
-
----
-
-## 4. Prioritized Remediation Plan
-
-Plan is phased across **30 / 60 / 90 days**, then **Quarter 2 (Days 91–180)** for maturation. Priorities are marked **P1 (urgent/foundational)**, **P2 (high)**, **P3 (important, sequenced after foundations)**.
-
-### Phase 1: Days 1–30 — Establish Foundation &amp; Stop the Bleeding
-
-| # | Action Item | GOVERN Category | Owner | Priority |
-|---|---|---|---|---|
-| 1.1 | Stand up a cross-functional **AI Governance Working Group** (Legal, Security/IT, Privacy, HR, a business unit lead, and an executive sponsor) with a charter and recurring cadence | GOVERN 2, 3 | CEO/COO sponsor to charter; convened by whoever owns AI initiative (e.g., CIO/CTO) | **P1** |
-| 1.2 | Conduct an **AI inventory/discovery sweep**: identify all AI tools, features, and vendors currently in use across the org (including &quot;shadow AI&quot;) | GOVERN 1, 6 | IT/Security + Working Group | **P1** |
-| 1.3 | **Mandate legal review** as a required gate for any new AI vendor contract or deployment, effective immediately (interim control while formal policy is built) | GOVERN 1, 5, 6 | General Counsel | **P1** |
-| 1.4 | Draft a **risk tolerance statement** (even a first-draft, board-reviewable version): what AI use cases are prohibited, what require approval, what are low-risk/self-serve | GOVERN 1 | Working Group + Legal, ratified by executive sponsor | **P1** |
-| 1.5 | Communicate an interim **&quot;AI use guardrails&quot; memo** to all staff bridging the gap until formal policy exists (references the existing ethics statement, adds concrete do&#x27;s/don&#x27;ts) | GOVERN 4 | Working Group, issued by executive sponsor | **P2** |
-
-### Phase 2: Days 31–60 — Build Policy and Accountability
-
-| # | Action Item | GOVERN Category | Owner | Priority |
-|---|---|---|---|---|
-| 2.1 | Draft and approve a **formal AI Risk Management Policy** — translating the ethics statement into enforceable requirements (risk tiering, approval workflows, human oversight requirements, prohibited uses, data handling rules) | GOVERN 1 | Working Group lead + Legal; approved by executive sponsor/Board committee | **P1** |
-| 2.2 | Define and publish **RACI for AI governance** — who approves new AI use cases, who owns incident response, who owns vendor risk review, who reports to the Board | GOVERN 2 | Working Group + HR (for role definitions) | **P1** |
-| 2.3 | Formalize **legal&#x27;s role in AI deployment lifecycle** — required legal review checkpoints at procurement, contract, and pre-launch stages; update procurement policy accordingly | GOVERN 1, 5, 6 | General Counsel + Procurement | **P1** |
-| 2.4 | Draft **third-party/vendor AI risk assessment questionnaire and contract clause library** (data use rights, training restrictions, audit rights, incident notification SLAs, liability/indemnification) | GOVERN 6 | Legal + Security | **P2** |
-| 2.5 | Establish an **AI risk register** and intake process tied to the risk tolerance thresholds from 1.4 | GOVERN 1, 4 | Working Group (Security/Risk function to maintain) | **P2** |
-| 2.6 | Launch baseline **AI literacy training** for the Working Group and any staff regularly deploying/using AI tools | GOVERN 3 | HR/L&amp;D + Working Group | **P2** |
-
-### Phase 3: Days 61–90 — Operationalize and Test
-
-| # | Action Item | GOVERN Category | Owner | Priority |
-|---|---|---|---|---|
-| 3.1 | Run the new intake/approval process end-to-end on 2–3 real, pending AI deployments; refine based on friction points | GOVERN 1, 2 | Working Group | **P1** |
-| 3.2 | Complete **legal review and re-papering** of top 5–10 highest-risk existing AI vendor contracts | GOVERN 6 | General Counsel | **P1** |
-| 3.3 | Define **external stakeholder engagement mechanism** (e.g., a channel for customer/user AI concerns, and a process for monitoring regulatory developments relevant to your sector) | GOVERN 5 | Legal + Communications/Compliance | **P2** |
-| 3.4 | Define **internal escalation and &quot;speak up&quot; channel** for AI risk concerns, distinct from general compliance hotline if needed | GOVERN 3, 4 | HR + Working Group | **P2** |
-| 3.5 | Present first **AI risk governance report to executive leadership/Board**, including inventory results, policy status, open risks, and remediation progress | GOVERN 2, 4 | Executive sponsor | **P1** |
-| 3.6 | Broaden AI literacy training to all employees; add role-specific modules (engineering, procurement, marketing/customer-facing) | GOVERN 3 | HR/L&amp;D | **P3** |
-
-### Phase 4: Quarter 2 (Days 91–180) — Mature and Sustain
-
-| # | Action Item | GOVERN Category | Owner | Priority |
-|---|---|---|---|---|
-| 4.1 | Formalize **quarterly AI governance reporting cadence** to executive leadership and Board (risk register status, tolerance breaches, incidents, new deployments) | GOVERN 2, 4 | Working Group lead | **P2** |
-| 4.2 | Conduct first **internal audit/self-assessment** against the new AI risk policy to test whether practice matches policy | GOVERN 1, 4 | Internal Audit / Compliance (or external advisor if no internal audit function exists) | **P2** |
-| 4.3 | Formalize **continuous monitoring of third-party AI risk** (annual/periodic vendor reassessment, monitoring for vendor AI feature changes) | GOVERN 6 | Security + Procurement | **P2** |
-| 4.4 | Evaluate need for **diversity/inclusion review of the Working Group and AI decision-making bodies** to ensure varied perspectives (technical, legal, ethical, customer-facing, and potentially affected-community input) | GOVERN 3, 5 | HR + Working Group | **P3** |
-| 4.5 | Benchmark toward a recognized standard (e.g., **ISO/IEC 42001** AI Management System) if AI is becoming core to the business, to move from &quot;Managed&quot; toward &quot;Optimized&quot; | GOVERN 1–6 (all) | Executive sponsor + Working Group | **P3** |
-| 4.6 | Incorporate **lessons learned / post-incident review process** specific to AI into existing incident management program | GOVERN 4 | Security/Risk function | **P2** |
-
----
-
-## 5. Quick-Reference Priority Summary
-
-**Do first (this month), non-negotiable:**
-1. Stand up the cross-functional AI governance group
-2. Mandate legal review of AI deployments/contracts as an interim gate
-3. Draft even a first-pass risk tolerance statement
-4. Inventory existing AI tool/vendor usage
-
-**Do next (60 days):** formal AI risk policy, RACI/accountability structure, vendor risk questionnaire and contract clauses, baseline training.
-
-**Then operationalize (90 days):** pilot the process on real deployments, re-paper top vendor contracts, report to leadership, stand up stakeholder/escalation channels.
-
-**Then sustain (Q2):** recurring governance reporting, internal audit against policy, continuous vendor monitoring, consider ISO 42001 alignment.
-
----
-
-## 6. Key Takeaway
-
-Your ethics statement is a legitimate starting asset — it signals leadership intent and gives the Working Group something to operationalize rather than starting from a blank page. But intent without policy, accountability, tolerance, and legal integration will not hold up to a regulator, an auditor, an enterprise customer&#x27;s security questionnaire, or a real incident. The single highest-leverage move you can make in the next 30 days is standing up the cross-functional governance group and putting a legal review gate in front of all AI deployments — nearly every other gap identified above becomes easier to close once those two things exist.
+Keep MANAGE 3 only if the plan also covers incidents originating in third-party models or data, citing it for that purpose.
 </pre></div>
                 </div></div>
             </div>

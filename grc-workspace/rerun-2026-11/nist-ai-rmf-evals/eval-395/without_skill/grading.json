@@ -1,0 +1,33 @@
+{
+  "eval_id": 395,
+  "run_type": "without_skill",
+  "expectations": [
+    {
+      "text": "States no: MANAGE 3 covers managing AI risks and benefits from third-party entities",
+      "passed": true,
+      "evidence": "No, MANAGE 3 is not the right anchor ... MANAGE 3 is \"AI risks and benefits from third-party entities are managed\""
+    },
+    {
+      "text": "Anchors incident response correctly in MANAGE 4 (post-deployment monitoring in 4.1, incident and error communication to relevant AI actors in 4.3)",
+      "passed": true,
+      "evidence": "MANAGE 4.3: incidents and errors are communicated to relevant AI actors ... This is the primary anchor ... MANAGE 4.1: post-deployment monitoring plans, including ... incident response"
+    },
+    {
+      "text": "States MANAGE has 4 categories and 13 subcategories",
+      "passed": false,
+      "evidence": "The response never states the MANAGE function's category or subcategory counts"
+    },
+    {
+      "text": "Places risk treatment and prioritization under MANAGE 1",
+      "passed": false,
+      "evidence": "MANAGE 1 is never mentioned; no placement of risk treatment and prioritization"
+    },
+    {
+      "text": "Does not cite invented MANAGE subcategories",
+      "passed": true,
+      "evidence": "Cites only real MANAGE subcategories: 2.3, 2.4, 3.1, 3.2, 4.1, 4.3 (plus real GOVERN 1.5, 2.1, 4.3)"
+    }
+  ],
+  "total": 5,
+  "passed": 3
+}

@@ -1,0 +1,8 @@
+NIST AI RMF 1.0 Core structure:
+
+- GOVERN: 6 categories, 19 subcategories (1: 7, 2: 3, 3: 2, 4: 3, 5: 2, 6: 2)
+- MAP: 5 categories, 18 subcategories (1: 6, 2: 3, 3: 5, 4: 2, 5: 2)
+- MEASURE: 4 categories, 22 subcategories (1: 3, 2: 13, 3: 3, 4: 3)
+- MANAGE: 4 categories, 13 subcategories (1: 4, 2: 4, 3: 2, 4: 3)
+
+Total: 19 categories and 72 subcategories (19+18+22+13 = 72).

@@ -1,0 +1,33 @@
+{
+  "eval_id": 394,
+  "run_type": "with_skill",
+  "expectations": [
+    {
+      "text": "Identifies MEASURE 2 as the trustworthiness-evaluation category with 13 subcategories (2.1 through 2.13)",
+      "passed": true,
+      "evidence": "MEASURE 2 (\"AI systems are evaluated for trustworthy characteristics\") ... It has 13 subcategories, MEASURE 2.1 to 2.13"
+    },
+    {
+      "text": "Maps fairness and bias to MEASURE 2.11",
+      "passed": true,
+      "evidence": "Fairness: MEASURE 2.11. Fairness and bias, as identified in the MAP function, are evaluated and the results are documented"
+    },
+    {
+      "text": "Maps explainability to MEASURE 2.9",
+      "passed": true,
+      "evidence": "Explainability: MEASURE 2.9. The AI model is explained, validated and documented"
+    },
+    {
+      "text": "Correctly frames MEASURE overall as 4 categories with 22 subcategories",
+      "passed": true,
+      "evidence": "13 of the 22 subcategories in the MEASURE function ... MEASURE 1 (3), MEASURE 3 (3), MEASURE 4 (3). Together with MEASURE 2's 13, that makes 22"
+    },
+    {
+      "text": "Maps at least one more MEASURE 2 subcategory correctly (such as 2.7 security and resilience or 2.10 privacy)",
+      "passed": true,
+      "evidence": "MEASURE 2.10: privacy risk examined and documented ... MEASURE 2.6 and 2.7: safety ... and security and resilience"
+    }
+  ],
+  "total": 5,
+  "passed": 5
+}

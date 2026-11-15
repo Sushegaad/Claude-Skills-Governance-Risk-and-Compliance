@@ -421,12 +421,12 @@
         "evaluate an AI model against MEASURE trustworthiness criteria"
       ],
       "version": "2.2.0",
-      "updatedAt": "2026-07-03T00:00:00Z",
+      "updatedAt": "2026-11-14T00:00:00Z",
       "metadata": {
         "category": "AI Governance",
         "license": "MIT",
         "evalPassRate": "92%",
-        "evalBaselinePassRate": "84%",
+        "evalBaselinePassRate": "92%",
         "installUrl": "https://github.com/Sushegaad/Claude-Skills-Governance-Risk-and-Compliance/raw/main/NIST%20AI%20RMF%20-%20Claude%20Skill/nist-ai-rmf.skill"
       }
     },

@@ -1,0 +1,23 @@
+**MEASURE 2** ("AI systems are evaluated for trustworthy characteristics") is the category you want. It has **13 subcategories**, MEASURE 2.1 to 2.13. That is the largest category in the framework, and it makes up 13 of the 22 subcategories in the MEASURE function.
+
+**Fairness: MEASURE 2.11.** Fairness and bias, as identified in the MAP function, are evaluated and the results are documented.
+- Run disaggregated performance testing across demographic subgroups (age, gender, race, geography).
+- Use metrics such as demographic parity, equalized odds and the disparate impact ratio. In hiring contexts, the EEOC 4/5ths rule is a reference threshold.
+- Link the thresholds to your GOVERN 1.3 risk tolerance statements.
+
+**Explainability: MEASURE 2.9.** The AI model is explained, validated and documented, and system output is interpreted within its context to inform responsible use and governance.
+- Use SHAP, LIME, counterfactual explanations or saliency maps.
+- For high-stakes individual decisions, document explanations for each decision. In credit, this supports adverse-action notices.
+
+Related subcategories that are often needed with them:
+- MEASURE 2.8: transparency and accountability risks examined and documented.
+- MEASURE 2.10: privacy risk examined and documented.
+- MEASURE 2.3 and 2.5: performance demonstrated under deployment-like conditions; validity and reliability, with documented generalizability limits.
+- MEASURE 2.6 and 2.7: safety (including failing safely) and security and resilience.
+- MEASURE 2.1: test sets, metrics and tools documented.
+
+For context, the other MEASURE categories are MEASURE 1 (methods and metrics, 3 subcategories), MEASURE 3 (tracking risks over time, 3) and MEASURE 4 (feedback on measurement efficacy, 3). Together with MEASURE 2's 13, that makes 22.
+
+Practical use: require a pre-deployment evaluation report that covers all seven trustworthiness characteristics. Findings should feed MANAGE through a measurement-to-action protocol (MEASURE 4.2 and 4.3). The AI RMF is voluntary and outcome-based, and the Playbook provides suggested actions.
+
+This is general information, not legal advice.

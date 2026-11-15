@@ -108,18 +108,18 @@ The gap between Current and Target Profile drives the risk management roadmap.
 |--------------------------|---------------------|
 | GOVERN 1 (Policies in place) | Clause 5 (Leadership), Clause 6 (Planning), A.2 (AI policy) |
 | GOVERN 2 (Accountability) | Clause 5.3 (Roles and responsibilities), A.2.3 |
-| GOVERN 3 (Roles) | Clause 5.3, A.2.5 (Responsibilities for AI system impact) |
+| GOVERN 3 (Workforce diversity and DEIA) | Clause 7.2 (Competence), A.2.5 (Responsibilities for AI system impact) |
 | GOVERN 4 (Cross-functional teams) | Clause 7.1 (Resources), A.2.5 |
-| GOVERN 5 (Risk tolerance) | Clause 6.1 (Risk and opportunity), A.5.2 (AI risk assessment) |
+| GOVERN 5 (Engagement with AI actors) | Clause 7.4 (Communication), A.8 (Information for interested parties) |
 | MAP 1 (Context) | Clause 4 (Context of organization), A.3 (Internal/external context) |
 | MAP 2 (Scientific understanding) | A.6 (AI system lifecycle) |
 | MAP 3 (Stakeholder risk/benefit) | Clause 4.2 (Interested parties), A.8.4 (Impact assessment) |
 | MAP 5 (Likelihood/impact) | A.5.2 (AI risk assessment methodology) |
 | MEASURE 2 (System evaluation) | A.6.2 (AI system design), A.10 (Use of AI systems) |
 | MEASURE 3 (Ongoing monitoring) | Clause 9.1 (Monitoring and measurement), A.6.2.5 |
-| MANAGE 2 (Treatment strategies) | Clause 6.1.3 (AI risk treatment), A.5.3 |
-| MANAGE 3 (Incident response) | A.9 (Performance evaluation), Clause 10 (Improvement) |
-| MANAGE 4 (Review and improve) | Clause 10.2 (Nonconformity), Clause 9.3 (Management review) |
+| MANAGE 1 (Treatment and prioritization) | Clause 6.1.3 (AI risk treatment), A.5.3 |
+| MANAGE 4 (Monitoring, incidents, improvement) | A.9 (Performance evaluation), Clause 10 (Improvement) |
+| MANAGE 4.2 (Continual improvement) | Clause 10.2 (Nonconformity), Clause 9.3 (Management review) |
 
 ---
 
@@ -133,7 +133,7 @@ The gap between Current and Target Profile drives the risk management roadmap.
 | MAP 3 (Stakeholder mapping) | Art. 9(2)(b) — identification and analysis of known and foreseeable risks |
 | MEASURE 2 (System evaluation) | Art. 10 (Data governance), Art. 15 (Accuracy, robustness, cybersecurity) |
 | MEASURE 3 (Ongoing monitoring) | Art. 72 (Post-market monitoring), Art. 26(5) — deployer monitoring obligations |
-| MANAGE 3 (Incident response) | Art. 73 (Reporting of serious incidents to market surveillance) |
+| MANAGE 4.1/4.3 (Post-deployment monitoring, incident communication) | Art. 73 (Reporting of serious incidents to market surveillance) |
 | All functions | Annex IX (Technical documentation requirements for high-risk AI systems) |
 
 **Key difference:** The EU AI Act is mandatory for in-scope providers and deployers; the NIST AI RMF is voluntary. Organizations subject to the EU AI Act should use NIST AI RMF as the risk management methodology that satisfies Art. 9's "appropriate risk management system" requirement.
@@ -161,7 +161,7 @@ The gap between Current and Target Profile drives the risk management roadmap.
 | MAP 1 (Context) | CT.DM-P (Data model context) |
 | MAP 3 (Affected individuals) | CT.DP-P (Disassociated processing) |
 | MEASURE 2 (Privacy evaluation) | CM.PO-P (Communication policies) |
-| MANAGE 3 (Incident response) | RS.CO-P (Response communications) |
+| MANAGE 4.1/4.3 (Post-deployment monitoring, incident communication) | RS.CO-P (Response communications) |
 
 ---
 

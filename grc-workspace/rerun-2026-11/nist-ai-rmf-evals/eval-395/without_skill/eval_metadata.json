@@ -1,0 +1,13 @@
+{
+  "eval_id": 395,
+  "eval_name": "manage-incidents",
+  "run_type": "without_skill",
+  "prompt": "Our AI incident response plan cites NIST AI RMF MANAGE 3 for incident handling and response. Is that the right anchor?",
+  "assertions": [
+    "States no: MANAGE 3 covers managing AI risks and benefits from third-party entities",
+    "Anchors incident response correctly in MANAGE 4 (post-deployment monitoring in 4.1, incident and error communication to relevant AI actors in 4.3)",
+    "States MANAGE has 4 categories and 13 subcategories",
+    "Places risk treatment and prioritization under MANAGE 1",
+    "Does not cite invented MANAGE subcategories"
+  ]
+}

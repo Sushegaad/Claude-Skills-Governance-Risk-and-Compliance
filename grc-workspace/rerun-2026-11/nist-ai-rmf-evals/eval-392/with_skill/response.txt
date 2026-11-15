@@ -1,0 +1,36 @@
+All four items belong in GOVERN. Each has a primary anchor, and some have secondary anchors in MAP or MANAGE.
+
+| Topic | Primary GOVERN anchor | What the subcategory says | Related anchors outside GOVERN |
+|---|---|---|---|
+| Legal and regulatory compliance tracking | **GOVERN 1.1** (under GOVERN 1) | Legal and regulatory requirements involving AI are understood, managed and documented | MAP 1.1 (context-specific laws and norms for each system) |
+| AI system inventory | **GOVERN 1.6** (under GOVERN 1) | Mechanisms are in place to inventory AI systems, resourced according to organizational risk priorities | MAP 4.1 and 4.2 (component-level inventory) |
+| Organizational risk tolerance | **GOVERN 1.3** (under GOVERN 1) | Processes are in place to determine the needed level of risk management activity based on the organization's risk tolerance | MAP 1.5 (risk tolerances determined and documented); MANAGE 1.4 (residual risk against tolerance) |
+| Third-party model risk | **GOVERN 6.1 and GOVERN 6.2** (GOVERN 6) | 6.1: policies address third-party AI risks, including IP infringement. 6.2: contingency processes for failures or incidents in high-risk third-party data or AI systems | MAP 4.1 and 4.2; MANAGE 3.1 and 3.2 |
+
+Notes on each item:
+
+1. **Legal and regulatory tracking (GOVERN 1.1).**
+   - Keep a regulatory register covering the EU AI Act, state AI laws, sector rules and similar.
+   - Name a legal or compliance owner for it.
+   - Align policy to the trustworthy-AI characteristics (GOVERN 1.2) and publish the policy under GOVERN 1.4.
+   - GOVERN 1.1 is organization-wide. Per-system legal context is documented in MAP 1.1.
+
+2. **AI inventory (GOVERN 1.6).**
+   - The inventory must be resourced in proportion to risk priority, not just exist.
+   - Minimum fields: system name and owner, purpose and users, model type and provenance (built, bought or fine-tuned), data categories, lifecycle stage, risk tier, and last TEVV date.
+   - Third-party models belong in it. They are often the ones missed.
+
+3. **Risk tolerance (GOVERN 1.3).**
+   - GOVERN 1.3 sets the organization-level appetite. MAP 1.5 documents tolerances for each system.
+   - Example statements: "We do not deploy AI that makes fully automated adverse decisions about individuals without human review"; "Disaggregated performance gaps above X% between demographic groups block deployment until remediated."
+   - Tie these to concrete bias and accuracy thresholds in MEASURE, and to go/no-go decisions under MANAGE 1.1.
+
+4. **Third-party model risk (GOVERN 6).**
+   - GOVERN 6 is the policy layer. It covers contractual requirements for AI vendors and a third-party AI register.
+   - It also covers fallback and contingency plans, such as a documented fallback to a prior model version.
+   - GOVERN 6 does not cover the operational monitoring. Vendor models, external data, APIs and pre-trained models are monitored under MANAGE 3.1 and 3.2. Component-level risk mapping sits in MAP 4.
+   - Typical controls: change-notification and audit rights, validation report review, and champion-challenger benchmarking against an internal model. In financial services, align these with SR 11-7 and OCC 2011-12 model risk practice (independent validation, ongoing monitoring, effective challenge).
+
+Keep in mind that GOVERN is cross-cutting. These are organization-wide policies and structures, and MAP, MEASURE and MANAGE activity for each system should operate inside them. The AI RMF is voluntary, outcome-based and not a compliance checklist. The AI RMF Playbook gives suggested actions for each subcategory.
+
+This is general information, not legal advice.

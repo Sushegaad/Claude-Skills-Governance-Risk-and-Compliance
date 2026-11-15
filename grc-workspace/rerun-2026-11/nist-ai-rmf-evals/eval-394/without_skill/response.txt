@@ -1,0 +1,7 @@
+MEASURE 2 is the category covering evaluation of AI systems for trustworthy characteristics ("AI systems are evaluated for trustworthy characteristics"). It has 13 subcategories (MEASURE 2.1 through 2.13). MEASURE overall has 22 subcategories across 4 categories (1: 3, 2: 13, 3: 3, 4: 3).
+
+Fairness: MEASURE 2.11, fairness and bias are evaluated and results documented.
+
+Explainability and interpretability: MEASURE 2.9, the AI model is explained, validated and documented, and AI system output is interpreted within its context to inform responsible use and governance. MEASURE 2.8 (transparency and accountability risks examined and documented) is adjacent.
+
+Other MEASURE 2 subcategories for context: 2.5 validity and reliability, 2.6 safety, 2.7 security and resilience, 2.10 privacy, 2.12 environmental impact, 2.13 effectiveness of the TEVV metrics and processes.
